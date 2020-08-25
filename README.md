@@ -3,31 +3,36 @@
 A collection of interpreters, compilers, and programs for the Whitespace
 programming language.
 
-## Interpreters and compilers
+## Compilers
 
-| Name            | Author           | Language   | Kind         | Date        | Spec | Source |
-| --------------- | ---------------- | ---------- | ------------ | ----------- | ---- | ------ |
-| *JavaScript interpreter* | Arnauld | JavaScript | Interpreter  | 1 Feb 2020  | 0.3  | [Code Golf](https://codegolf.stackexchange.com/questions/198694/write-a-whitespace-interpreter/198770#198770) |
-| Nebula          | Andrew Archibald | Go         | Compiler     | 8 Jun 2019  | 0.3  | [GitHub](https://github.com/andrewarchi/nebula) |
-| interpret.wsa   | Andrew Archibald | Whitespace | Interpreter  | 5 Jun 2019  | 0.3  | [GitHub](https://github.com/andrewarchi/nebula/blob/master/programs/interpret.wsa) |
-| Respace         | Andrew Archibald | C++        | Interpreter  | 15 Apr 2018 | 0.3  | [GitHub](https://github.com/andrewarchi/respace) |
-| Mr. White       | Derek Brown      | Erlang     | Interpreter  | 23 Mar 2017 | 0.3  | [GitHub](https://github.com/derek121/mrwhite) |
-| whitepy         | Yasser Saleemi   | Python     | Interpreter  | 4 Mar 2017  | 0.2  | [GitHub](https://github.com/yasn77/whitepy) |
-| Whitespacers    | CensoredUsername | Rust       | JIT compiler | 19 Jun 2016 | 0.3  | [GitHub](https://github.com/CensoredUsername/whitespace-rs) |
-| WS-idr          | Edwin Brady      | Idris      | Interpreter  | 25 Nov 2012 | 0.3  | [GitHub](https://github.com/edwinb/WS-idr) |
-| whitespace.lol  | D.E. Akers       | LOLCODE    | Interpreter  | 20 Nov 2016 | 0.3  | [GitHub](https://github.com/hostilefork/whitespacers/tree/master/lolcode) |
-| whitespace-interpreter | Azige     | Java       | Interpreter  | 18 Jun 2014 | 0.2  | [GitHub](https://github.com/azige/whitespace-interpreter) |
-| whitespace      | Djordje Lukic    | JavaScript | Interpreter  | 27 Mar 2013 | 0.3 | [GitHub](https://github.com/rumpl/whitespace) |
-| whitespace-interpreter | Simon Klaver, Tim van der Meij, and Willem Obbens | C++ | Interpreter | 6 Feb 2013 | 0.3 | [GitHub](https://github.com/timvandermeij/whitespace-interpreter) |
-| whitespace-nd   | Harold Lee       | Haskell    | Interpreter  | 9 Jun 2012  | 0.3 with shuffle | [GitHub](https://github.com/haroldl/whitespace-nd) |
-| whitespace-go   | ANDO Yasushi     | Go         | Interpreter  | 8 Oct 2010  | 0.3  | [GitHub](https://github.com/technohippy/go-whitespace) |
-| whitespace.reb  | Hostile Fork     | Rebol      | Interpreter  | 10 Jul 2010 | 0.3  | [GitHub](https://github.com/hostilefork/whitespacers/tree/master/rebol) |
-| *C++ interpreter* | Peasley        | C++        | Interpreter  | 5 Feb 2010  | 0.3  | [rohitab.com](http://www.rohitab.com/discuss/topic/35639-c-whitespace-interpreter/?p=10074137) |
-| Whitespace Interpreter v1.0 | MeTh0Dz | C       | Interpreter  | 30 Jan 2010 | 0.3  | [rohitab.com](http://www.rohitab.com/discuss/topic/35639-c-whitespace-interpreter/) |
-| wsinterws       | Oliver Burghard  | Whitespace | Interpreter  | 24 Apr 2003 | 0.2  | [burghard.info](https://web.archive.org/web/20030608024503/http://www.burghard.info/code/whitespace/wsinterws/index.html) |
-| whitespace-ruby | Wayne Conrad     | Ruby       | Interpreter  | 2 Apr 2003  | 0.2  | [yagni.com](https://web.archive.org/web/20120417161917/http://yagni.com/whitespace/index.html) |
-| whitespace.pl   | Mike Kölbl       | Perl       | Interpreter  | 1 Apr 2003  | 0.2  | [CompSoc][compsoc] |
-| wspace          | Edwin Brady      | Haskell    | Interpreter  | 2002        | 0.2, 0.3 | [CompSoc][compsoc] |
+| Name            | Author           | Language   | Kind | Date        | Spec | Source |
+| --------------- | ---------------- | ---------- | ---- | ----------- | ---- | ------ |
+| Nebula          | Andrew Archibald | Go         | AOT  | 8 Jun 2019  | 0.3  | [GitHub](https://github.com/andrewarchi/nebula) |
+| Whitespacers    | CensoredUsername | Rust       | JIT  | 19 Jun 2016 | 0.3  | [GitHub](https://github.com/CensoredUsername/whitespace-rs) |
+
+## Interpreters
+
+| Name            | Author           | Language   | Date        | Spec | Source |
+| --------------- | ---------------- | ---------- | ----------- | ---- | ------ |
+| *JavaScript interpreter* | Arnauld | JavaScript | 1 Feb 2020  | 0.3  | [Code Golf](https://codegolf.stackexchange.com/questions/198694/write-a-whitespace-interpreter/198770#198770) |
+| interpret.wsa   | Andrew Archibald | Whitespace | 5 Jun 2019  | 0.3  | [GitHub](https://github.com/andrewarchi/nebula/blob/master/programs/interpret.wsa) |
+| Respace         | Andrew Archibald | C++        | 15 Apr 2018 | 0.3  | [GitHub](https://github.com/andrewarchi/respace) |
+| Mr. White       | Derek Brown      | Erlang     | 23 Mar 2017 | 0.3  | [GitHub](https://github.com/derek121/mrwhite) |
+| whitepy         | Yasser Saleemi   | Python     | 4 Mar 2017  | 0.2  | [GitHub](https://github.com/yasn77/whitepy) |
+| WS-idr          | Edwin Brady      | Idris      | 25 Nov 2012 | 0.3  | [GitHub](https://github.com/edwinb/WS-idr) |
+| whitespace.lol  | D.E. Akers       | LOLCODE    | 20 Nov 2016 | 0.3  | [GitHub](https://github.com/hostilefork/whitespacers/tree/master/lolcode) |
+| whitespace-interpreter | Azige     | Java       | 18 Jun 2014 | 0.2  | [GitHub](https://github.com/azige/whitespace-interpreter) |
+| whitespace      | Djordje Lukic    | JavaScript | 27 Mar 2013 | 0.3  | [GitHub](https://github.com/rumpl/whitespace) |
+| whitespace-interpreter | Simon Klaver, Tim van der Meij, and Willem Obbens | C++ | 6 Feb 2013 | 0.3 | [GitHub](https://github.com/timvandermeij/whitespace-interpreter) |
+| whitespace-nd   | Harold Lee       | Haskell    | 9 Jun 2012  | 0.3 with shuffle | [GitHub](https://github.com/haroldl/whitespace-nd) |
+| whitespace-go   | ANDO Yasushi     | Go         | 8 Oct 2010  | 0.3  | [GitHub](https://github.com/technohippy/go-whitespace) |
+| whitespace.reb  | Hostile Fork     | Rebol      | 10 Jul 2010 | 0.3  | [GitHub](https://github.com/hostilefork/whitespacers/tree/master/rebol) |
+| *C++ interpreter* | Peasley        | C++        | 5 Feb 2010  | 0.3  | [rohitab.com](http://www.rohitab.com/discuss/topic/35639-c-whitespace-interpreter/?p=10074137) |
+| Whitespace Interpreter v1.0 | MeTh0Dz | C       | 30 Jan 2010 | 0.3  | [rohitab.com](http://www.rohitab.com/discuss/topic/35639-c-whitespace-interpreter/) |
+| wsinterws       | Oliver Burghard  | Whitespace | 24 Apr 2003 | 0.2  | [burghard.info](https://web.archive.org/web/20030608024503/http://www.burghard.info/code/whitespace/wsinterws/index.html) |
+| whitespace-ruby | Wayne Conrad     | Ruby       | 2 Apr 2003  | 0.2  | [yagni.com](https://web.archive.org/web/20120417161917/http://yagni.com/whitespace/index.html) |
+| whitespace.pl   | Mike Kölbl       | Perl       | 1 Apr 2003  | 0.2  | [CompSoc][compsoc] |
+| wspace          | Edwin Brady      | Haskell    | 2002        | 0.2, 0.3 | [CompSoc][compsoc] |
 
 ## Programs
 
