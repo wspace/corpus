@@ -46,6 +46,7 @@ programming language.
 | wvm                    | Apua             | Python      | Interpreter  | 24 Nov 2013 | 0.3  | [GitHub](https://github.com/apua/whitespace) |
 | ws-interpreter         | YuukiARIA        | C++         | Interpreter  |  5 May 2013 | 0.3  | [GitHub](https://github.com/YuukiARIA/ws-interpreter) |
 | whitespace             | Djordje Lukic    | JavaScript  | Interpreter  | 27 Mar 2013 | 0.3  | [GitHub](https://github.com/rumpl/whitespace) |
+| Whitelips IDE          | Henri Lakk       | JavaScript  | Interpreter, optimizer, assembler, IDE | 20 Mar 2013 | 0.3 | [GitHub](https://github.com/vii5ard/whitespace), [IDE](https://vii5ard.github.io/whitespace/) |
 | whitespace-interpreter | Simon Klaver, Tim van der Meij, Willem Obbens | C++ | Interpreter | 6 Feb 2013 | 0.3 | [GitHub](https://github.com/timvandermeij/whitespace-interpreter) |
 | ws                     | Kyle Morgan      | C++         | Interpreter  | 19 Dec 2012 | 0.3  | [GitHub](https://github.com/knmorgan/ws) |
 | Whitespace-Interpreter | Tucker Noia      | C++         | Interpreter  | 15 Dec 2012 | 0.2 (incomplete) | [GitHub](https://github.com/noia1/Whitespace-Interpreter) |
@@ -70,6 +71,7 @@ programming language.
 | --------------- | ---------------- | -------- | ----------- | ---- | ------ |
 | 1to10.ws<br>helloworld_cn.ws | Azige | -      | 29 Jul 2014 | 0.2  | [GitHub](https://github.com/azige/whitespace-interpreter/tree/master/src/main/pack/example) |
 | bf.ws<br>bf.wsa | Henri Lakk       | -        | 22 Jul 2013 | 0.3  | [GitHub](https://github.com/vii5ard/brainfuck-whitespace) |
+| sudoku.ws       | Huf Lungdung     | -        | 19 May 2009 | 0.3  | [What the Daily WTF?](https://what.thedailywtf.com/topic/5980/stupid-coding-tricks-sudoku-solver-in-whitespace), [Whitespace mailing list](https://web.archive.org/web/20141011193156/http://compsoc.dur.ac.uk/archives/whitespace/2009-November/000072.html), [Pastebin](https://web.archive.org/web/20100807004910/http://whitespace.pastebin.com/f761fc4b5) |
 | tetris.ws       | Peter De Wachter | -        | 2 Jan 2008  | 0.2  | [Whitespace mailing list](https://web.archive.org/web/20141011193149/http://compsoc.dur.ac.uk/archives/whitespace/2008-January/000067.html), [r/programming](https://www.reddit.com/r/programming/comments/9nw1e/most_unreadable_programming_language_ever/c0dkzzw/) *(mirrored)* |
 | loctest.ws      | Edwin Brady      | -        | 2003        | 0.3  | [CompSoc][compsoc] |
 | tutorial.html   | Edwin Brady      | HTML     | 2003        | 0.2  | [CompSoc][compsoc] |
