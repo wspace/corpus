@@ -32,7 +32,7 @@ programming language.
 | whitespace-interpreter | Benjamin Wilkins | C++         | Interpreter  |  7 Jun 2017 | 0.2  | [GitHub](https://github.com/benajmin/whitespace-interpreter) |
 | Mr. White              | Derek Brown      | Erlang      | Interpreter  | 23 Mar 2017 | 0.3  | [GitHub](https://github.com/derek121/mrwhite) |
 | whitepy                | Yasser Saleemi   | Python      | Interpreter  |  4 Mar 2017 | 0.2  | [GitHub](https://github.com/yasn77/whitepy) |
-| whitespace.lol         | D.E. Akers       | LOLCODE     | Interpreter  | 20 Nov 2016 | 0.3  | [GitHub](https://github.com/hostilefork/whitespacers/tree/master/lolcode) |
+| whitespace.lol         | D.E. Akers       | LOLCODE     | Interpreter  | 20 Nov 2016 | 0.3  | [GitHub](https://github.com/hostilefork/whitespacers/tree/master/lolcode) (mirrored) |
 | whitespace-python      | Dwayne Crooks    | Python      | Interpreter  | 31 Aug 2016 | 0.2  | [GitHub](https://github.com/dwayne/whitespace-python) |
 | White++                | Marcel Lippmann  | C++         | Interpreter  | 27 Jul 2016 | 0.2  | [GitHub](https://github.com/marcellippmann/Whitepp) |
 | Whitespacers           | CensoredUsername | Rust        | JIT compiler | 19 Jun 2016 | 0.3  | [GitHub](https://github.com/CensoredUsername/whitespace-rs) |
@@ -65,11 +65,11 @@ programming language.
 | SignificantWhitespace  | Peter van der Zee | JavaScript | Interpreter  | 16 Feb 2012 | 0.3  | [GitHub](https://github.com/pvdz/SignificantWhitespace) |
 | hws                    | takatoh          | Haskell     | Interpreter  | 29 Oct 2010 | 0.3  | [GitHub](https://github.com/takatoh/hws) |
 | whitespace-go          | ANDO Yasushi     | Go          | Interpreter  |  8 Oct 2010 | 0.3  | [GitHub](https://github.com/technohippy/go-whitespace) |
-| whitespace.reb         | Hostile Fork     | Rebol       | Interpreter  | 10 Jul 2010 | 0.3  | [GitHub](https://github.com/hostilefork/whitespacers/tree/master/rebol) |
+| whitespace.reb         | Hostile Fork     | Rebol       | Interpreter  | 10 Jul 2010 | 0.3  | [GitHub](https://github.com/hostilefork/whitespacers/tree/master/rebol) (mirrored) |
 | HaPyLi                 | Huf Lungdung     | Python      | Language, interpreter | 23 May 2010 | 0.3 | [hapyli.webs.com](https://web.archive.org/web/20110212015726/http://hapyli.webs.com/), [Mailing list](https://web.archive.org/web/20141011193154/http://compsoc.dur.ac.uk/archives/whitespace/2010-May/000075.html) (unavailable) |
 | *C++ interpreter*      | Peasley          | C++         | Interpreter  |  5 Feb 2010 | 0.3  | [rohitab.com](http://www.rohitab.com/discuss/topic/35639-c-whitespace-interpreter/?p=10074137) (mirrored) |
 | Whitespace Interpreter v1.0 | MeTh0Dz     | C           | Interpreter  | 30 Jan 2010 | 0.3  | [rohitab.com](http://www.rohitab.com/discuss/topic/35639-c-whitespace-interpreter/) (mirrored) |
-| wspace                 | Pavel Shub       | C++         | Interpreter  | 26 May 2007 | 0.3  | [Mailing list](https://web.archive.org/web/20141011193149/http://compsoc.dur.ac.uk/archives/whitespace/2008-April/000068.html), [pavelshub.com](http://pavelshub.com/blog/2010/10/wspace/) (mirrored) |
+| wspace                 | Pavel Shub       | C++         | Interpreter  | 26 May 2007 | 0.3  | [GitHub](https://github.com/pavel987/wspace), [Mailing list](https://web.archive.org/web/20141011193149/http://compsoc.dur.ac.uk/archives/whitespace/2008-April/000068.html), [pavelshub.com](http://pavelshub.com/blog/2010/10/wspace/) (mirrored) |
 | pywhitespace           | Phillip Bradbury | Python      | Interpreter  |  3 Aug 2004 | 0.3 with trace | 2004: [Mailing list](https://web.archive.org/web/20141011193201/http://compsoc.dur.ac.uk/archives/whitespace/2004-August/000048.html), [Newcastle](https://web.archive.org/web/20061209092911/http://www.cs.newcastle.edu.au/~c3018900/pywhitespace.tar.bz2); 2007: [Mailing list](https://web.archive.org/web/20161009051032/http://compsoc.dur.ac.uk/archives/whitespace/2007-December/000065.html), [mrphlip.com](https://www.mrphlip.com/pywhitespace.tar.bz2) (mirrored) |
 | wsinterws              | Oliver Burghard  | Whitespace  | Interpreter  | 24 Apr 2003 | 0.2  | [burghard.info](https://web.archive.org/web/20030608024503/http://www.burghard.info/code/whitespace/wsinterws/index.html) |
 | whitespace-ruby        | Wayne Conrad     | Ruby        | Interpreter  |  2 Apr 2003 | 0.2  | [yagni.com](https://web.archive.org/web/20120417161917/http://yagni.com/whitespace/index.html) |
