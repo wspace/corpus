@@ -4,3 +4,201 @@
 [submodule "cpp/andrewarchi-respace"]
 	path = cpp/andrewarchi-respace
 	url = https://github.com/andrewarchi/respace
+[submodule "cpp/pavelshub/wspace"]
+	path = cpp/pavelshub/wspace
+	url = https://github.com/pavel987/wspace
+[submodule "go/technohippy"]
+	path = go/technohippy
+	url = https://github.com/technohippy/go-whitespace
+[submodule "haskell/takatoh-hws"]
+	path = haskell/takatoh-hws
+	url = https://github.com/takatoh/hws
+[submodule "javascript/pvdz-significant-whitespace"]
+	path = javascript/pvdz-significant-whitespace
+	url = https://github.com/pvdz/SignificantWhitespace
+[submodule "ruby/bossiernesto"]
+	path = ruby/bossiernesto
+	url = https://github.com/bossiernesto/whitespace
+[submodule "cpp/abcsharp"]
+	path = cpp/abcsharp
+	url = https://github.com/abcsharp/Whitespace
+[submodule "java/brumbeere-whitespace4j"]
+	path = java/brumbeere-whitespace4j
+	url = https://github.com/Brumbeere/Whitespace4j
+[submodule "idris/edwinb-ws-idr"]
+	path = idris/edwinb-ws-idr
+	url = https://github.com/edwinb/WS-idr
+[submodule "cpp/dpohanlon-wsint"]
+	path = cpp/dpohanlon-wsint
+	url = https://github.com/dpohanlon/wsInt
+[submodule "cpp/noia"]
+	path = cpp/noia
+	url = https://github.com/noia1/Whitespace-Interpreter
+[submodule "cpp/knmorgan"]
+	path = cpp/knmorgan
+	url = https://github.com/knmorgan/ws
+[submodule "cpp/timvandermeij"]
+	path = cpp/timvandermeij
+	url = https://github.com/timvandermeij/whitespace-interpreter
+[submodule "javascript/vii5ard-whitelips"]
+	path = javascript/vii5ard-whitelips
+	url = https://github.com/vii5ard/whitespace
+[submodule "javascript/rumpl"]
+	path = javascript/rumpl
+	url = https://github.com/rumpl/whitespace
+[submodule "cpp/yuukiaria"]
+	path = cpp/yuukiaria
+	url = https://github.com/YuukiARIA/ws-interpreter
+[submodule "python/apua-wvm"]
+	path = python/apua-wvm
+	url = https://github.com/apua/whitespace
+[submodule "go/yshr-wspacego"]
+	path = go/yshr-wspacego
+	url = https://github.com/135yshr/wspacego
+[submodule "elixir/quinnwilton"]
+	path = elixir/quinnwilton
+	url = https://github.com/QuinnWilton/elixir-whitespace
+[submodule "cpp/keirua-white"]
+	path = cpp/keirua-white
+	url = https://github.com/Keirua/whitespace
+[submodule "java/azige"]
+	path = java/azige
+	url = https://github.com/azige/whitespace-interpreter
+[submodule "rust/faultier-whitebase"]
+	path = rust/faultier-whitebase
+	url = https://github.com/faultier/whitebase
+[submodule "rust/faultier-albino"]
+	path = rust/faultier-albino
+	url = https://github.com/faultier/albino
+[submodule "php/johankj"]
+	path = php/johankj
+	url = https://github.com/johankj/whitespace-interpreter-php
+[submodule "c/koturn"]
+	path = c/koturn
+	url = https://github.com/koturn/Whitespace
+[submodule "csharp/reflash"]
+	path = csharp/reflash
+	url = https://github.com/reflash-blog/WhiteSpaceInterpreter
+[submodule "cpp/sudheesh"]
+	path = cpp/sudheesh
+	url = https://github.com/sudheesh4/Whitespace-Interpreter-C-
+[submodule "java/faurehu"]
+	path = java/faurehu
+	url = https://github.com/faurehu/whiteSpaceInterpreter
+[submodule "php/nobody1986"]
+	path = php/nobody1986
+	url = https://github.com/nobody1986/whitespace-php
+[submodule "clojure/tsuyusato"]
+	path = clojure/tsuyusato
+	url = https://github.com/MakeNowJust/whitespace-clj
+[submodule "go/kinu"]
+	path = go/kinu
+	url = https://github.com/kinu/whitespace
+[submodule "java/kmizu"]
+	path = java/kmizu
+	url = https://github.com/kmizu/ws_interpreter
+[submodule "python/mcolom"]
+	path = python/mcolom
+	url = https://github.com/mcolom/whitespace
+[submodule "cpp/frmsaul-cupertino"]
+	path = cpp/frmsaul-cupertino
+	url = https://github.com/frmsaul/Cupertino-WhiteSpace-Interperter
+[submodule "python/dalleng"]
+	path = python/dalleng
+	url = https://github.com/dalleng/Whitespace
+[submodule "cpp/abac-whint"]
+	path = cpp/abac-whint
+	url = https://github.com/abac00s/WHINT
+[submodule "javascript/uraza"]
+	path = javascript/uraza
+	url = https://github.com/uraza/whitespace-interpreter
+[submodule "javascript/susisu"]
+	path = javascript/susisu
+	url = https://github.com/susisu/Whitespace-JS
+[submodule "javascript/kanra1412"]
+	path = javascript/kanra1412
+	url = https://github.com/kanra1412/whitespace-interpreter
+[submodule "rust/jayshua"]
+	path = rust/jayshua
+	url = https://github.com/Jayshua/rust-whitespace
+[submodule "rust/censoredusername-whitespacers"]
+	path = rust/censoredusername-whitespacers
+	url = https://github.com/CensoredUsername/whitespace-rs
+[submodule "cpp/marcellippmann-whitepp"]
+	path = cpp/marcellippmann-whitepp
+	url = https://github.com/marcellippmann/Whitepp
+[submodule "python/dwayne"]
+	path = python/dwayne
+	url = https://github.com/dwayne/whitespace-python
+[submodule "java/eia"]
+	path = java/eia
+	url = https://github.com/EIA-University/WhiteSpaceInterpreter
+[submodule "python/yasn-whitepy"]
+	path = python/yasn-whitepy
+	url = https://github.com/yasn77/whitepy
+[submodule "erlang/derek-mrwhite"]
+	path = erlang/derek-mrwhite
+	url = https://github.com/derek121/mrwhite
+[submodule "cpp/benajmin"]
+	path = cpp/benajmin
+	url = https://github.com/benajmin/whitespace-interpreter
+[submodule "python/bornlex"]
+	path = python/bornlex
+	url = https://github.com/Bornlex/Whitespace-interpreter
+[submodule "python/rumaxwell"]
+	path = python/rumaxwell
+	url = https://github.com/RuMaxwell/whitespace-interpreter
+[submodule "clojure/jmesyou-erasure"]
+	path = clojure/jmesyou-erasure
+	url = https://github.com/jmesyou/erasure
+[submodule "python/maximegoyette"]
+	path = python/maximegoyette
+	url = https://github.com/MaximeGoyette/whitespace_interpreter
+[submodule "kotlin/ze-space"]
+	path = kotlin/ze-space
+	url = https://github.com/ze/space
+[submodule "java/wrotycz"]
+	path = java/wrotycz
+	url = https://github.com/wrotycz/whitespace-interpreter
+[submodule "python/adapap"]
+	path = python/adapap
+	url = https://github.com/adapap/whitespace-interpreter
+[submodule "rust/7ma7X"]
+	path = rust/7ma7X
+	url = https://github.com/7ma7X/WhitespaceInterpreter
+[submodule "go/tempxla-go-wspace"]
+	path = go/tempxla-go-wspace
+	url = https://github.com/tempxla/go-wspace
+[submodule "ruby/pocke-akaza"]
+	path = ruby/pocke-akaza
+	url = https://github.com/pocke/akaza
+[submodule "rust/nareshganduri"]
+	path = rust/nareshganduri
+	url = https://github.com/nareshganduri/WhitespaceVM
+[submodule "scala/dashlambda-eso"]
+	path = scala/dashlambda-eso
+	url = https://github.com/Dash-Lambda/Eso
+[submodule "haskell/jhmcstanton-marginal"]
+	path = haskell/jhmcstanton-marginal
+	url = https://github.com/jhmcstanton/marginal
+[submodule "python/hearnderek"]
+	path = python/hearnderek
+	url = https://github.com/hearnderek/WhiteSpaceInterpreter
+[submodule "csharp/denislabrecque"]
+	path = csharp/denislabrecque
+	url = https://github.com/DenisLabrecque/Whitespace-Interpreter
+[submodule "haskell/helvm-helcam"]
+	path = haskell/helvm-helcam
+	url = https://github.com/helvm/helcam
+[submodule "haskell/helvm-wsa"]
+	path = haskell/helvm-wsa
+	url = https://github.com/helvm/wsa
+[submodule "cpp/ricardoluis"]
+	path = cpp/ricardoluis
+	url = https://github.com/RicardoLuis0/whitespace
+[submodule "haskell/ft-spaceman"]
+	path = haskell/ft-spaceman
+	url = https://gitlab.com/ft/spaceman
+[submodule "javascript/kosei"]
+	path = javascript/kosei
+	url = https://github.com/kosei28/Whitespace
