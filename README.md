@@ -150,3 +150,9 @@ I'll make sure to add it.
 I also am seeking a copy of the HaPyLi language source as the HaPyLi
 website is now defunct and the compiler and example programs were not
 archived.
+
+## License
+
+This collection is licensed under the [MIT License](LICENSE.md) by
+Andrew Archibald. Submodules and mirrored projects are licensed by their
+respective owners.
