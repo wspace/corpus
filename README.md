@@ -17,7 +17,7 @@ programming language.
 | *JavaScript interpreter*                 | Arnauld          | JavaScript  | Interpreter  | 2020-02-01 | 0.3  | [Code Golf](https://codegolf.stackexchange.com/questions/198694/write-a-whitespace-interpreter/198770#198770) |
 | Marginal                                 | Jim McStanton    | Haskell     | Interpreter  | 2019-06-28 | 0.2  | [GitHub](https://github.com/jhmcstanton/marginal) |
 | Eso                                      | Dash-Lambda      | Scala       | Interpreter, assembler | 2019-06-19 | 0.2, wsa | [GitHub](https://github.com/Dash-Lambda/Eso) |
-| Nebula                                   | Andrew Archibald | Go          | AOT compiler, optimizer | 2019-06-08 | 0.3 | [GitHub](https://github.com/andrewarchi/nebula) |
+| [Nebula](go/andrewarchi-nebula)          | Andrew Archibald | Go          | AOT compiler, optimizer | 2019-06-08 | 0.3 | [GitHub](https://github.com/andrewarchi/nebula) |
 | interpret.wsa                            | Andrew Archibald | Whitespace  | Interpreter  | 2019-06-05 | 0.3  | [GitHub](https://github.com/andrewarchi/nebula/blob/master/programs/interpret.wsa) |
 | WhitespaceVM                             | Naresh Ganduri   | Rust        | Interpreter  | 2019-05-13 | 0.3  | [GitHub](https://github.com/nareshganduri/WhitespaceVM) |
 | Akaza                                    | Masataka Pocke Kuwabara | Ruby | Interpreter  | 2019-04-28 | 0.2  | [GitHub](https://github.com/pocke/akaza) |
@@ -26,7 +26,7 @@ programming language.
 | whitespace-interpreter                   | Adam Papenhausen | Python      | Interpreter  | 2018-11-16 | 0.3  | [GitHub](https://github.com/adapap/whitespace-interpreter)
 | whitespace-interpreter                   | Kamil Węglarz    | Java        | Interpreter  | 2018-05-21 | 0.3  | [GitHub](https://github.com/wrotycz/whitespace-interpreter) |
 | space                                    | Zakaria Elkatani | Kotlin      | Interpreter  | 2018-04-21 | 0.3  | [GitHub](https://github.com/ze/space) |
-| Respace                                  | Andrew Archibald | C++         | Interpreter  | 2018-04-15 | 0.3  | [GitHub](https://github.com/andrewarchi/respace) |
+| [Respace](cpp/andrewarchi-respace)       | Andrew Archibald | C++         | Interpreter  | 2018-04-15 | 0.3  | [GitHub](https://github.com/andrewarchi/respace) |
 | whitespace_interpreter                   | Maxime Goyette   | Python      | Interpreter  | 2018-03-09 | incomplete | [GitHub](https://github.com/MaximeGoyette/whitespace_interpreter) |
 | erasure                                  | James You        | Clojure     | Interpreter  | 2018-02-24 | 0.2  | [GitHub](https://github.com/jmesyou/erasure) |
 | whitespace-interperter                   | RuMaxwell        | Python      | Interpreter  | 2018-02-21 | 0.3  | [GitHub](https://github.com/RuMaxwell/whitespace-interpreter) |

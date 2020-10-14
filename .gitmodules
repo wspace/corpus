@@ -1,0 +1,6 @@
+[submodule "go/andrewarchi-nebula"]
+	path = go/andrewarchi-nebula
+	url = https://github.com/andrewarchi/nebula
+[submodule "cpp/andrewarchi-respace"]
+	path = cpp/andrewarchi-respace
+	url = https://github.com/andrewarchi/respace
