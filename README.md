@@ -122,3 +122,31 @@ programming language.
 | whitespace-0.4     | Harold Lee       | 2011-03-10 | 0.3 with shuffle | [GitHub](https://github.com/haroldl/whitespace-nd), [Mailing list](https://web.archive.org/web/20141011193201/http://compsoc.dur.ac.uk/archives/whitespace/2011-March/000080.html), [hotelling.net](https://harold.hotelling.net/shuffle.html), [Hackage](https://hackage.haskell.org/package/whitespace-0.4) |
 
 [compsoc]: https://web.archive.org/web/20150717140342/http://compsoc.dur.ac.uk:80/whitespace/download.php
+
+## Usage
+
+Projects with source hosted on GitHub or GitLab are included as
+submodules. Projects from other locations are mirrored in this
+repository.
+
+To clone all submodules, run:
+
+```sh
+git submodule update --init --recursive
+```
+
+To update all submodules to latest remote head, run:
+
+```sh
+git submodule update --recursive --remote
+```
+
+## Contributing
+
+Do you know of any Whitespace projects that are not listed? If so,
+[file an issue](https://github.com/andrewarchi/ws-collection/issues) and
+I'll make sure to add it.
+
+I also am seeking a copy of the HaPyLi language source as the HaPyLi
+website is now defunct and the compiler and example programs were not
+archived.
