@@ -8,7 +8,7 @@ programming language.
 | Name                                           | Author(s)        | Language    | Kind         | Date       | Spec | Source |
 | ---------------------------------------------- | ---------------- | ----------- | ------------ | -----------| ---- | ------ |
 | [Whitespace](javascript/kosei)                 | kosei28          | JavaScript  | Interpreter  | 2020-08-03 | 0.2  | [GitHub](https://github.com/kosei28/Whitespace) |
-| [SpaceMan](haskell/ft-spaceman)                | Frank Terbeck    | Haskell     | Interpreter  | 2020-07-09 | 0.3  | [GitLab](https://gitlab.com/ft/spaceman), [ftblog](http://bewatermyfriend.org/p/2020/000/) |
+| [SpaceMan](haskell/ft-spaceman)                | Frank Terbeck    | Haskell     | Interpreter  | 2020-07-09 | 0.3  | [GitLab](https://gitlab.com/ft/spaceman), [GitHub](https://github.com/ft/spaceman), [ftblog](http://bewatermyfriend.org/p/2020/000/), [HN](https://news.ycombinator.com/item?id=24763312) |
 | [whitespace](cpp/ricardoluis)                  | Ricardo Luís Vaz Silva | C++   | Interpreter  | 2020-06-03 | 0.3  | [GitHub](https://github.com/RicardoLuis0/whitespace) |
 | [WhiteSpace Assembler](haskell/helvm-wsa)      | Kamil Adam       | Haskell     | Assembler    | 2020-05-18 | 0.2, wsa | [GitHub](https://github.com/helvm/wsa) |
 | [HELCAM](haskell/helvm-helcam)                 | Kamil Adam       | Haskell/Eta | Interpreter  | 2020-05-08 | 0.3  | [GitHub](https://github.com/helvm/helcam) |
