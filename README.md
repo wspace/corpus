@@ -8,6 +8,7 @@ programming language.
 | Name                   | Author(s)        | Language    | Kind         | Date        | Spec | Source |
 | ---------------------- | ---------------- | ----------- | ------------ | ----------- | ---- | ------ |
 | Whitespace             | kosei28          | JavaScript  | Interpreter  |  3 Aug 2020 | 0.2  | [GitHub](https://github.com/kosei28/Whitespace) |
+| SpaceMan               | Frank Terbeck    | Haskell     | Interpreter  |  9 Jul 2020 | 0.3  | [GitLab](https://gitlab.com/ft/spaceman), [ftblog](http://bewatermyfriend.org/p/2020/000/) |
 | whitespace             | Ricardo Luís Vaz Silva | C++   | Interpreter  |  3 Jun 2020 | 0.3  | [GitHub](https://github.com/RicardoLuis0/whitespace) |
 | WhiteSpace Assembler   | Kamil Adam       | Haskell     | Assembler    | 18 May 2020 | 0.2, wsa | [GitHub](https://github.com/helvm/wsa) |
 | HELCAM                 | Kamil Adam       | Haskell/Eta | Interpreter  |  8 May 2020 | 0.3  | [GitHub](https://github.com/helvm/helcam) |
