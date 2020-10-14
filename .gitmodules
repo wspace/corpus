@@ -198,7 +198,7 @@
 	url = https://github.com/RicardoLuis0/whitespace
 [submodule "haskell/ft-spaceman"]
 	path = haskell/ft-spaceman
-	url = https://gitlab.com/ft/spaceman
+	url = https://gitlab.com/ft/spaceman.git
 [submodule "javascript/kosei"]
 	path = javascript/kosei
 	url = https://github.com/kosei28/Whitespace
