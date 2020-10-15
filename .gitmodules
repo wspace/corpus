@@ -172,6 +172,9 @@
 [submodule "python/rumaxwell"]
 	path = python/rumaxwell
 	url = https://github.com/RuMaxwell/whitespace-interpreter
+[submodule "python/stephenchappell/activestate"]
+	path = python/stephenchappell/activestate
+	url = https://github.com/ActiveState/code
 [submodule "python/yasn-whitepy"]
 	path = python/yasn-whitepy
 	url = https://github.com/yasn77/whitepy
