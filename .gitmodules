@@ -1,12 +1,18 @@
 [submodule "c/koturn"]
 	path = c/koturn
 	url = https://github.com/koturn/Whitespace
+[submodule "c/threeifbywhiskey-satan"]
+	path = c/threeifbywhiskey-satan
+	url = https://github.com/threeifbywhiskey/satan
 [submodule "clojure/jmesyou-erasure"]
 	path = clojure/jmesyou-erasure
 	url = https://github.com/jmesyou/erasure
 [submodule "clojure/tsuyusato"]
 	path = clojure/tsuyusato
 	url = https://github.com/MakeNowJust/whitespace-clj
+[submodule "coffeescript/ehrlichbryan"]
+	path = coffeescript/ehrlichbryan
+	url = https://github.com/adotout/whitespace-js
 [submodule "cpp/abac-whint"]
 	path = cpp/abac-whint
 	url = https://github.com/abac00s/WHINT
@@ -43,12 +49,21 @@
 [submodule "cpp/ricardoluis"]
 	path = cpp/ricardoluis
 	url = https://github.com/RicardoLuis0/whitespace
+[submodule "cpp/sonicyang-ws-frontend"]
+	path = cpp/sonicyang-ws-frontend
+	url = https://github.com/sonicyang/ws-frontend
+[submodule "cpp/subv-whitespace-llvm"]
+	path = cpp/subv-whitespace-llvm
+	url = https://github.com/Subv/Whitespace-LLVM
 [submodule "cpp/sudheesh"]
 	path = cpp/sudheesh
 	url = https://github.com/sudheesh4/Whitespace-Interpreter-C-
 [submodule "cpp/timvandermeij"]
 	path = cpp/timvandermeij
 	url = https://github.com/timvandermeij/whitespace-interpreter
+[submodule "cpp/tycho-whitespace-llvm"]
+	path = cpp/tycho-whitespace-llvm
+	url = https://github.com/worktycho/whitespace-llvm
 [submodule "cpp/yuukiaria"]
 	path = cpp/yuukiaria
 	url = https://github.com/YuukiARIA/ws-interpreter
@@ -97,6 +112,9 @@
 [submodule "idris/edwinb-ws-idr"]
 	path = idris/edwinb-ws-idr
 	url = https://github.com/edwinb/WS-idr
+[submodule "java/abhijitsharma"]
+	path = java/abhijitsharma
+	url = https://github.com/abhijitsharma/whitespace
 [submodule "java/azige"]
 	path = java/azige
 	url = https://github.com/azige/whitespace-interpreter
@@ -115,6 +133,9 @@
 [submodule "java/wrotycz"]
 	path = java/wrotycz
 	url = https://github.com/wrotycz/whitespace-interpreter
+[submodule "java/yuukiaria-wseditor"]
+	path = java/yuukiaria-wseditor
+	url = https://github.com/YuukiARIA/wseditor
 [submodule "javascript/kanra1412"]
 	path = javascript/kanra1412
 	url = https://github.com/kanra1412/whitespace-interpreter
@@ -205,3 +226,9 @@
 [submodule "scala/dashlambda-eso"]
 	path = scala/dashlambda-eso
 	url = https://github.com/Dash-Lambda/Eso
+[submodule "scheme/athos-white-scheme"]
+	path = scheme/athos-white-scheme
+	url = https://github.com/athos/white-scheme
+[submodule "scheme/niyarin"]
+	path = scheme/niyarin
+	url = https://github.com/niyarin/whitespace-scheme
