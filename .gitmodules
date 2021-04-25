@@ -1,6 +1,9 @@
 [submodule "c/koturn"]
 	path = c/koturn
 	url = https://github.com/koturn/Whitespace
+[submodule "c/kspalaiologos-asm2ws"]
+	path = c/kspalaiologos-asm2ws
+	url = https://github.com/kspalaiologos/asm2ws
 [submodule "c/threeifbywhiskey-satan"]
 	path = c/threeifbywhiskey-satan
 	url = https://github.com/threeifbywhiskey/satan
@@ -97,9 +100,9 @@
 [submodule "haskell/ft-spaceman"]
 	path = haskell/ft-spaceman
 	url = https://gitlab.com/ft/spaceman.git
-[submodule "haskell/helvm-helcam"]
-	path = haskell/helvm-helcam
-	url = https://github.com/helvm/helcam
+[submodule "haskell/helvm-helma"]
+	path = haskell/helvm-helma
+	url = https://github.com/helvm/helma
 [submodule "haskell/helvm-wsa"]
 	path = haskell/helvm-wsa
 	url = https://github.com/helvm/wsa
@@ -205,12 +208,12 @@
 [submodule "ruby/pocke-akaza"]
 	path = ruby/pocke-akaza
 	url = https://github.com/pocke/akaza
-[submodule "rust/7ma7X"]
-	path = rust/7ma7X
-	url = https://github.com/7ma7X/WhitespaceInterpreter
 [submodule "rust/censoredusername-whitespacers"]
 	path = rust/censoredusername-whitespacers
 	url = https://github.com/CensoredUsername/whitespace-rs
+[submodule "rust/collidedscope-albus"]
+	path = rust/collidedscope-albus
+	url = https://github.com/collidedscope/albus
 [submodule "rust/faultier-albino"]
 	path = rust/faultier-albino
 	url = https://github.com/faultier/albino
@@ -220,6 +223,12 @@
 [submodule "rust/jayshua"]
 	path = rust/jayshua
 	url = https://github.com/Jayshua/rust-whitespace
+[submodule "rust/kaisugi"]
+	path = rust/kaisugi
+	url = https://github.com/HelloRusk/WhitespaceInterpreter
+[submodule "rust/luminighty"]
+	path = rust/luminight
+	url = https://github.com/Luminighty/rustws
 [submodule "rust/nareshganduri"]
 	path = rust/nareshganduri
 	url = https://github.com/nareshganduri/WhitespaceVM
