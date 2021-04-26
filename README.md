@@ -6,7 +6,7 @@ programming language.
 ## Interpreters, compilers, and assemblers
 
 | Name                                           | Author(s)        | Language    | Kind         | Date       | Spec | Source |
-| ---------------------------------------------- | ---------------- | ----------- | ------------ | -----------| ---- | ------ |
+| ---------------------------------------------- | ---------------- | ----------- | ------------ | ---------- | ---- | ------ |
 | [Albus](rust/collidedscope-albus)              | Collided Scope   | Rust        | Interpreter  | 2021-02-12 | 0.3  | [GitHub](https://github.com/collidedscope/albus) |
 | [asm2ws](c/kspalaiologos-asm2ws)               | Kamila Szewczyk (Palaiologos) | C | Interpreter, JIT, macro assembler, disassembler, optimizer | 2020-12-31 | 0.3 | [GitHub](https://github.com/kspalaiologos/asm2ws) |
 | [rustws](rust/luminight)                       | Luminight        | Rust        | Interpreter  | 2020-08-04 | 0.2  | [GitHub](https://github.com/Luminighty/rustws) |
@@ -14,6 +14,7 @@ programming language.
 | [SpaceMan](haskell/ft-spaceman)                | Frank Terbeck    | Haskell     | Interpreter  | 2020-07-09 | 0.3  | [GitLab](https://gitlab.com/ft/spaceman), [GitHub](https://github.com/ft/spaceman), [ftblog](http://bewatermyfriend.org/p/2020/000/), [HN](https://news.ycombinator.com/item?id=24763312) |
 | [whitespace](cpp/ricardoluis)                  | Ricardo Luís Vaz Silva | C++   | Interpreter  | 2020-06-03 | 0.3  | [GitHub](https://github.com/RicardoLuis0/whitespace) |
 | [WhiteSpace Assembler](haskell/helvm-wsa)      | Kamil Adam       | Haskell     | Assembler    | 2020-05-18 | 0.2, wsa | [GitHub](https://github.com/helvm/wsa) |
+| [HelPA](haskell/helvm-helpa)                   | Kamil Adam       | Haskell/Eta | Assembler    | 2020-05-09 | 0.2  | [GitHub](https://github.com/helvm/helpa) |
 | [HelMA](haskell/helvm-helma)                   | Kamil Adam       | Haskell/Eta | Interpreter  | 2020-05-08 | 0.3  | [GitHub](https://github.com/helvm/helma) |
 | [WhitespaceInterpreter](csharp/denislabrecque) | Denis G. Labrecque | C#        | Interpreter  | 2020-03-26 | 0.2 incomplete | [GitHub](https://github.com/DenisLabrecque/Whitespace-Interpreter) |
 | [WhiteSpaceInterpreter](python/hearnderek)     | Derek Hearn      | Python      | Interpreter  | 2020-02-09 | 0.3  | [GitHub](https://github.com/hearnderek/WhiteSpaceInterpreter) |
@@ -23,10 +24,12 @@ programming language.
 | [Nebula](go/andrewarchi-nebula)                | Andrew Archibald | Go, LLVM    | Compiler, optimizer | 2019-06-08 | 0.3 | [GitHub](https://github.com/andrewarchi/nebula) |
 | [interpret.wsa](go/andrewarchi-nebula/programs/interpret.wsa) | Andrew Archibald | Whitespace | Interpreter | 2019-06-05 | 0.3 | [GitHub](https://github.com/andrewarchi/nebula/blob/master/programs/interpret.wsa) |
 | [WhitespaceVM](rust/nareshganduri)             | Naresh Ganduri   | Rust        | Interpreter  | 2019-05-13 | 0.3  | [GitHub](https://github.com/nareshganduri/WhitespaceVM) |
-| [Akaza](ruby/pocke-akaza)                      | Masataka Pocke Kuwabara | Ruby | Interpreter  | 2019-04-28 | 0.2  | [GitHub](https://github.com/pocke/akaza) |
+| [Akaza](ruby/pocke-akaza)                      | Masataka Pocke Kuwabara | Ruby | Interpreter, assembler | 2019-04-28 | 0.2 | [GitHub](https://github.com/pocke/akaza) |
 | [go-wspace](go/tempxla-go-wspace)              | tempxla          | Go          | Interpreter  | 2019-02-24 | 0.2  | [GitHub](https://github.com/tempxla/go-wspace) |
 | [Whitespace Interpreter](rust/kaisugi)         | Kaito Sugimoto   | Rust        | Interpreter  | 2018-11-23 | 0.2  | [GitHub](https://github.com/HelloRusk/WhitespaceInterpreter) |
 | [whitespace-interpreter](python/adapap)        | Adam Papenhausen | Python      | Interpreter  | 2018-11-16 | 0.3  | [GitHub](https://github.com/adapap/whitespace-interpreter)
+| [whitespace](python/ahl27)                     | Aidan Lakshman   | Python      | Interpreter, text to Whitespace | 2018-11-08 | 0.3 | [GitHub](https://github.com/ahl27/whitespace) |
+| [nospace](cpp/buyoh-nospace)                   | 舞葉 (Mai Buyoh) | C++, Ruby   | Language that compiles to Whitespace, interpreter | 2018-09-05 | 0.2 | [GitHub](https://github.com/buyoh/nospace) |
 | [whitespace-interpreter](java/wrotycz)         | Kamil Węglarz    | Java        | Interpreter  | 2018-05-21 | 0.3  | [GitHub](https://github.com/wrotycz/whitespace-interpreter) |
 | [space](kotlin/ze-space)                       | Zakaria Elkatani | Kotlin      | Interpreter  | 2018-04-21 | 0.3  | [GitHub](https://github.com/ze/space) |
 | [Respace](cpp/andrewarchi-respace)             | Andrew Archibald | C++         | Interpreter  | 2018-04-15 | 0.3  | [GitHub](https://github.com/andrewarchi/respace) |
@@ -35,6 +38,7 @@ programming language.
 | [whitespace-interperter](python/rumaxwell)     | RuMaxwell        | Python      | Interpreter  | 2018-02-21 | 0.3  | [GitHub](https://github.com/RuMaxwell/whitespace-interpreter) |
 | [Whitespace-interpreter](python/bornlex)       | Bornlex          | Python      | Interpreter  | 2017-08-09 | 0.3  | [GitHub](https://github.com/Bornlex/Whitespace-interpreter) |
 | [whitespace-interpreter](cpp/benajmin)         | Benjamin Wilkins | C++         | Interpreter  | 2017-06-07 | 0.2  | [GitHub](https://github.com/benajmin/whitespace-interpreter) |
+| [ws.vim](vim/rolf-ws-vim)                      | Rolf Asmund      | Vim script  | Syntax highlighting | 2017-05-15 | 0.3 | [GitHub](https://github.com/rolf007/ws.vim) |
 | [Mr. White](erlang/derek-mrwhite)              | Derek Brown      | Erlang      | Interpreter  | 2017-03-23 | 0.3  | [GitHub](https://github.com/derek121/mrwhite) |
 | [whitepy](python/yasn-whitepy)                 | Yasser Saleemi   | Python      | Interpreter  | 2017-03-04 | 0.2  | [GitHub](https://github.com/yasn77/whitepy) |
 | [whitespace-scheme](scheme/niyarin)            | Akira Inoue      | Scheme      | Interpreter  | 2017-02-15 | 0.2  | [GitHub](https://github.com/niyarin/whitespace-scheme) |
@@ -50,9 +54,10 @@ programming language.
 | [whitespace-interpreter](javascript/uraza)     | Uraza            | JavaScript  | Interpreter  | 2016-02-08 | 0.2  | [GitHub](https://github.com/uraza/whitespace-interpreter) |
 | [WHINT](cpp/abac-whint)                        | Adam Bac         | C++         | Interpreter  | 2015-12-31 | 0.2  | [GitHub](https://github.com/abac00s/WHINT) |
 | [Whitespace](python/dalleng)                   | Diego Allen      | Python      | Interperter  | 2015-09-28 | 0.3  | [GitHub](https://github.com/dalleng/Whitespace) |
-| [Cupertino-WhiteSpace-Interperter](cpp/frmsaul-cupertino) | Saul Fuhrmann | C++   | Interpreter  | 2015-05-22 | 0.3  | [GitHub](https://github.com/frmsaul/Cupertino-WhiteSpace-Interperter) |
+| [Cupertino-WhiteSpace-Interperter](cpp/frmsaul-cupertino) | Saul Fuhrmann | C++ | Interpreter  | 2015-05-22 | 0.3  | [GitHub](https://github.com/frmsaul/Cupertino-WhiteSpace-Interperter) |
 | [whitespace](python/mcolom)                    | Miguel Colom     | Python      | Interpreter  | 2015-05-18 | 0.3  | [GitHub](https://github.com/mcolom/whitespace) |
 | [ws_interpreter](java/kmizu)                   | Kota Mizushima   | Java        | Interpreter  | 2015-05-13 | 0.3  | [GitHub](https://github.com/kmizu/ws_interpreter) |
+| [I C Whitespace](c/strangepan-i-c-whitespace)  | Dan Andrus       | C           | Interpreter  | 2015-03-10 | 0.3  | [GitHub](https://github.com/StrangePan/I_C_Whitespace) |
 | [whitespace](go/kinu)                          | Kinuko Yasuda    | Go          | Interpreter  | 2015-02-19 | 0.3  | [GitHub](https://github.com/kinu/whitespace) |
 | [whitespace-clj](clojure/tsuyusato)            | TSUYUSATO Kitsune | Clojure    | Interpreter  | 2015-02-11 | 0.2  | [GitHub](https://github.com/MakeNowJust/whitespace-clj) |
 | [whitespace-php](php/nobody1986)               | nobody1986       | PHP, C      | Interpreter  | 2015-02-04 | 0.3  | [GitHub](https://github.com/nobody1986/whitespace-php) |
@@ -110,6 +115,8 @@ programming language.
 | 55960.ws                                 | Kamila Szewczyk (Palaiologos) | Malbolge | 2019-08-30 | 0.2 | [CodeGolf](https://codegolf.stackexchange.com/questions/55960/im-not-the-language-youre-looking-for/191063#191063), [GitHub](https://github.com/kspalaiologos/codegolf-submissions/blob/master/55960.ws) |
 | ascii.wsa<br>ascii4.wsa<br>caesar.wsa<br>fib.wsa<br>interpret.wsa<br>math.wsa<br>pi.wsa<br>postfix.wsa | Andrew Archibald | - | 2019-06-05 | 0.3 | [GitHub](https://github.com/andrewarchi/nebula/tree/master/programs) |
 | 99_bottles.wsa<br>collatz.wsa<br>factorial.wsa<br>fizz_buzz.wsa<br>hello_world.ws<br>test_ret_underflow.wsa | Andrew Archibald | - | 2019-06-05 | 0.2 | [GitHub](https://github.com/andrewarchi/nebula/tree/master/programs) |
+| hello_world.wsp<br>test.wsp              | Aidan Lakshman   | -        | 2018-11-07 | 0.2  | [GitHub](https://github.com/ahl27/whitespace) |
+| Did you see anything?                    | Daniel Chen      | -        | 2017-02-23 | 0.2  | [GitHub](https://github.com/ccns/105-club-fair-game-problems/blob/master/2/2/Did%20you%20see%20anything%3F) |
 | fichero.bin                              | Zuleimi Esteffanny González Muñoz | - | 2016-10-27 | 0.2 | [GitHub](https://github.com/EIA-University/WhiteSpaceInterpreter/blob/master/src/fichero.bin) |
 | EsoPoly                                  | Ivan Zolotarev   | Malbolge, Brainfuck, Spoon, asdf, 123, EXCON | 2016-09-13 | 0.2 | [GitHub](https://github.com/kenrube/Esopoly) |
 | Hello World                              | Petri Heikkonen  | -        | before 2016-08-20 | 0.2 | [Hello World Collection](http://helloworldcollection.de/#Whitespace), [GitLab](https://gitlab.com/wolframroesler/helloworld/-/blob/master/files/Whitespace.txt) |
@@ -132,7 +139,7 @@ programming language.
 | ------------------ | ---------------- | ---------- | ---- | ------ |
 | WSpace             | Kamil Adam       | 2019-11-24 | 0.3  | [GitHub](https://github.com/helvm/WSpace) |
 | whitespace-haskell | Andrew Archibald | 2019-08-07 | 0.2, 0.3 | [GitHub](https://github.com/andrewarchi/whitespace-haskell) |
-| WSpace             | Andrew Savinykh  | 2017-01-30 | 0.3  | [GitHub](https://github.com/TryItOnline/WSpace/) |
+| WSpace             | Andrew Savinykh  | 2017-01-30 | 0.3  | [GitHub](https://github.com/TryItOnline/WSpace) |
 | whitespace-0.4     | Harold Lee       | 2011-03-10 | 0.3 with shuffle | [GitHub](https://github.com/haroldl/whitespace-nd), [Mailing list](https://web.archive.org/web/20141011193201/http://compsoc.dur.ac.uk/archives/whitespace/2011-March/000080.html), [hotelling.net](https://harold.hotelling.net/shuffle.html), [Hackage](https://hackage.haskell.org/package/whitespace-0.4) |
 
 [compsoc]: https://web.archive.org/web/20150717140342/http://compsoc.dur.ac.uk:80/whitespace/download.php

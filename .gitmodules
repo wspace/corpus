@@ -4,6 +4,9 @@
 [submodule "c/kspalaiologos-asm2ws"]
 	path = c/kspalaiologos-asm2ws
 	url = https://github.com/kspalaiologos/asm2ws
+[submodule "c/strangepan-i-c-whitespace"]
+	path = c/strangepan-i-c-whitespace
+	url = https://github.com/StrangePan/I_C_Whitespace
 [submodule "c/threeifbywhiskey-satan"]
 	path = c/threeifbywhiskey-satan
 	url = https://github.com/threeifbywhiskey/satan
@@ -28,6 +31,9 @@
 [submodule "cpp/benajmin"]
 	path = cpp/benajmin
 	url = https://github.com/benajmin/whitespace-interpreter
+[submodule "cpp/buyoh-nospace"]
+	path = cpp/buyoh-nospace
+	url = https://github.com/buyoh/nospace
 [submodule "cpp/dpohanlon-wsint"]
 	path = cpp/dpohanlon-wsint
 	url = https://github.com/dpohanlon/wsInt
@@ -103,6 +109,9 @@
 [submodule "haskell/helvm-helma"]
 	path = haskell/helvm-helma
 	url = https://github.com/helvm/helma
+[submodule "haskell/helvm-helpa"]
+	path = haskell/helvm-helpa
+	url = https://github.com/helvm/helpa
 [submodule "haskell/helvm-wsa"]
 	path = haskell/helvm-wsa
 	url = https://github.com/helvm/wsa
@@ -172,6 +181,9 @@
 [submodule "python/adapap"]
 	path = python/adapap
 	url = https://github.com/adapap/whitespace-interpreter
+[submodule "python/ahl27"]
+	path = python/ahl27
+	url = https://github.com/ahl27/whitespace
 [submodule "python/apua-wvm"]
 	path = python/apua-wvm
 	url = https://github.com/apua/whitespace
@@ -241,3 +253,6 @@
 [submodule "scheme/niyarin"]
 	path = scheme/niyarin
 	url = https://github.com/niyarin/whitespace-scheme
+[submodule "vim/rolf-ws-vim"]
+	path = vim/rolf-ws-vim
+	url = https://github.com/rolf007/ws.vim
