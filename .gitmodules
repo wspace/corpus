@@ -19,6 +19,9 @@
 [submodule "coffeescript/ehrlichbryan"]
 	path = coffeescript/ehrlichbryan
 	url = https://github.com/adotout/whitespace-js
+[submodule "collections/hostilefork-whitespacers"]
+	path = collections/hostilefork-whitespacers
+	url = https://github.com/hostilefork/whitespacers
 [submodule "cpp/abac-whint"]
 	path = cpp/abac-whint
 	url = https://github.com/abac00s/WHINT

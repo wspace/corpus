@@ -109,6 +109,12 @@ programming language.
 | wspace                                         | Edwin Brady      | Haskell     | interpreter  | 2004-05-04 | 0.3  | [CompSoc][compsoc], [Mailing list](https://web.archive.org/web/20141011193201/http://compsoc.dur.ac.uk/archives/whitespace/2004-May/000047.html) |
 | wspace                                         | Edwin Brady      | Haskell     | interpreter  | 2002       | 0.2  | [CompSoc][compsoc] |
 
+## Collections
+
+| Name                                     | Curator(s)       | Languages | Date | Source |
+| ---------------------------------------- | ---------------- | --------- | ---- | ------ |
+| [Whitespacers](collections/hostilefork-whitespacers) | Hostile Fork | C, C++, Crystal, Erlang, Haskell, Idris, LOLCODE, Perl, Python, Rebol, Ren-C, Ruby, Whitespace | 2010-07-10 | [GitHub](https://github.com/hostilefork/whitespacers) |
+
 ## Programs
 
 | Name                                     | Author           | Polyglot | Date       | Spec | Source |
@@ -154,13 +160,13 @@ repository.
 To clone all submodules, run:
 
 ```sh
-git submodule update --init --recursive
+git submodule update --init
 ```
 
 To update all submodules to latest remote head, run:
 
 ```sh
-git submodule update --recursive --remote
+git submodule update --remote
 ```
 
 ## Contributing
