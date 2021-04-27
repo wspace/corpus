@@ -162,7 +162,10 @@
     "tags": ["compiler", "optimizer", "programs"],
     "date": "2019-06-05",
     "spec_version": "0.3",
-    "source": ["https://github.com/andrewarchi/nebula"]
+    "source": ["https://github.com/andrewarchi/nebula"],
+    "features": {
+      "arbitrary_precision": false
+    }
   },
   {
     "name": "WhitespaceVM",
@@ -262,7 +265,10 @@
     "tags": ["interpreter"],
     "date": "2018-04-15",
     "spec_version": "0.3",
-    "source": ["https://github.com/andrewarchi/respace"]
+    "source": ["https://github.com/andrewarchi/respace"],
+    "features": {
+      "arbitrary_precision": false
+    }
   },
   {
     "name": "whitespace_interpreter",
@@ -1091,7 +1097,10 @@
     "source": [
       "https://web.archive.org/web/20150717140342/http://compsoc.dur.ac.uk:80/whitespace/download.php",
       "https://web.archive.org/web/20141011193201/http://compsoc.dur.ac.uk/archives/whitespace/2004-May/000047.html"
-    ]
+    ],
+    "features": {
+      "arbitrary_precision": true
+    }
   },
   {
     "name": "wspace",
@@ -1101,6 +1110,9 @@
     "tags": ["interpreter"],
     "date": "2002",
     "spec_version": "0.2",
-    "source": ["https://web.archive.org/web/20150717140342/http://compsoc.dur.ac.uk:80/whitespace/download.php"]
+    "source": ["https://web.archive.org/web/20150717140342/http://compsoc.dur.ac.uk:80/whitespace/download.php"],
+    "features": {
+      "arbitrary_precision": true
+    }
   }
 ]

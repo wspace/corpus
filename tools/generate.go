@@ -5,6 +5,7 @@ import (
 	"net/url"
 	"os"
 	"strings"
+	"text/template"
 	"unicode/utf8"
 
 	"github.com/andrewarchi/browser/jsonutil"
@@ -13,9 +14,15 @@ import (
 func main() {
 	var projects []Project
 	try(jsonutil.DecodeFile("../projects.json", &projects))
+	t, err := template.ParseFiles("../README.md.tmpl")
+	try(err)
+	f, err := os.Create("../README.md")
+	try(err)
 	var b strings.Builder
 	try(renderTable(&b, projects))
-	fmt.Println(b.String())
+	t.Execute(f, map[string]interface{}{
+		"projects": b.String(),
+	})
 }
 
 func try(err error) {
@@ -36,66 +43,91 @@ type Project struct {
 	Source      []string `json:"source"`
 	Mirrored    bool     `json:"mirrored,omitempty"`
 	Features    struct {
-		ArbitraryPrecision bool              `json:"arbitrary_precision"`
-		Assembly           map[string]string `json:"assembly"`
+		ArbitraryPrecision bool              `json:"arbitrary_precision,omitempty"`
+		Assembly           map[string]string `json:"assembly,omitempty"` // key: alias, instruction name
 	} `json:"features,omitempty"`
 }
 
 func renderTable(b *strings.Builder, projects []Project) error {
-	padding := []int{46, 16, 11, 12, 10, 4, 0}
-	renderColumns(b, padding, "Name", "Author(s)", "Language(s)", "Tags", "Date", "Spec", "Source")
-	b.WriteString("| ---------------------------------------------- | ---------------- | ----------- | ------------ | ---------- | ---- | ------ |\n")
-	for _, p := range projects {
-		name := p.Name
-		if p.Path != "" {
-			var err error
-			name, err = formatLink(p.Name, p.Path)
-			if err != nil {
-				return err
-			}
+	padding := []int{46, 16, 11, 12, 10, 3, 0}
+	head := []string{"Name", "Author(s)", "Language(s)", "Tags", "Date", "Spec", "Source"}
+	renderRow(b, padding, head, false)
+	b.WriteByte('\n')
+	renderRow(b, padding, head, true)
+	for i := range projects {
+		b.WriteByte('\n')
+		row, err := projectColumns(&projects[i])
+		if err != nil {
+			return err
 		}
-		links := make([]string, 0, len(p.Source))
-		for _, s := range p.Source {
-			label, err := getURLLabel(s)
-			if err != nil {
-				return err
-			}
-			link, err := formatLink(label, s)
-			if err != nil {
-				return err
-			}
-			links = append(links, link)
-		}
-		renderColumns(b, padding,
-			name,
-			strings.Join(p.Authors, ", "),
-			strings.Join(p.Languages, ", "),
-			strings.Join(p.Tags, ", "),
-			p.Date,
-			p.SpecVersion,
-			strings.Join(links, ", "))
+		renderRow(b, padding, row, false)
 	}
 	return nil
 }
 
-func renderColumns(b *strings.Builder, padding []int, cols ...string) {
+func projectColumns(p *Project) ([]string, error) {
+	name := p.Name
+	if p.Path != "" {
+		var err error
+		name, err = formatLink(p.Name, p.Path)
+		if err != nil {
+			return nil, err
+		}
+	}
+	links := make([]string, 0, len(p.Source))
+	for _, s := range p.Source {
+		label, err := getURLLabel(s)
+		if err != nil {
+			return nil, err
+		}
+		link, err := formatLink(label, s)
+		if err != nil {
+			return nil, err
+		}
+		links = append(links, link)
+	}
+	return []string{
+		name,
+		strings.Join(p.Authors, ", "),
+		strings.Join(p.Languages, ", "),
+		strings.Join(p.Tags, ", "),
+		p.Date,
+		p.SpecVersion,
+		strings.Join(links, ", ")}, nil
+}
+
+func renderRow(b *strings.Builder, padding []int, row []string, dashes bool) {
+	if len(padding) != len(row) {
+		panic("row length mismatch")
+	}
 	width := 0
 	padWidth := 0
-	for i, col := range cols {
+	pad := byte(' ')
+	if dashes {
+		pad = '-'
+	}
+	for i, col := range row {
 		b.WriteString("| ")
-		b.WriteString(col)
-		width += utf8.RuneCountInString(col)
-		if i < len(padding) && padding[i] != 0 {
-			padWidth += padding[i]
-			for ; width < padWidth; width++ {
-				b.WriteByte(' ')
+		n := utf8.RuneCountInString(col)
+		width += n
+		padWidth += padding[i]
+		if dashes {
+			for i := 0; i < n; i++ {
+				b.WriteByte('-')
 			}
-			b.WriteByte(' ')
-		} else if len(col) != 0 {
+		} else {
+			b.WriteString(col)
+		}
+		if padding[i] != 0 {
+			for ; width < padWidth; width++ {
+				b.WriteByte(pad)
+			}
+		}
+		if col != "" || padding[i] != 0 {
 			b.WriteByte(' ')
 		}
 	}
-	b.WriteString("|\n")
+	b.WriteByte('|')
 }
 
 func formatLink(label, url string) (string, error) {
