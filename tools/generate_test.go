@@ -1,8 +1,6 @@
 package main
 
-import (
-	"testing"
-)
+import "testing"
 
 func TestGetURLLabel(t *testing.T) {
 	tests := []struct {

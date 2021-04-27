@@ -13,16 +13,16 @@ import (
 
 func main() {
 	var projects []Project
-	try(jsonutil.DecodeFile("../projects.json", &projects))
-	t, err := template.ParseFiles("../README.md.tmpl")
+	try(jsonutil.DecodeFile("projects.json", &projects))
+	t, err := template.ParseFiles("README.md.tmpl")
 	try(err)
-	f, err := os.Create("../README.md")
+	f, err := os.Create("README.md")
 	try(err)
 	var b strings.Builder
 	try(renderTable(&b, projects))
-	t.Execute(f, map[string]interface{}{
+	try(t.Execute(f, map[string]interface{}{
 		"projects": b.String(),
-	})
+	}))
 }
 
 func try(err error) {
@@ -68,11 +68,7 @@ func renderTable(b *strings.Builder, projects []Project) error {
 func projectColumns(p *Project) ([]string, error) {
 	name := p.Name
 	if p.Path != "" {
-		var err error
-		name, err = formatLink(p.Name, p.Path)
-		if err != nil {
-			return nil, err
-		}
+		name = formatLink(p.Name, p.Path)
 	}
 	links := make([]string, 0, len(p.Source))
 	for _, s := range p.Source {
@@ -80,11 +76,7 @@ func projectColumns(p *Project) ([]string, error) {
 		if err != nil {
 			return nil, err
 		}
-		link, err := formatLink(label, s)
-		if err != nil {
-			return nil, err
-		}
-		links = append(links, link)
+		links = append(links, formatLink(label, s))
 	}
 	return []string{
 		name,
@@ -130,15 +122,10 @@ func renderRow(b *strings.Builder, padding []int, row []string, dashes bool) {
 	b.WriteByte('|')
 }
 
-func formatLink(label, url string) (string, error) {
-	// TODO escape ] and )
-	if strings.IndexByte(label, ']') != -1 {
-		return "", fmt.Errorf("label contains ]: %s", label)
-	}
-	if strings.IndexByte(url, ')') != -1 {
-		return "", fmt.Errorf("URL contains ): %s", url)
-	}
-	return fmt.Sprintf("[%s](%s)", label, url), nil
+func formatLink(label, url string) string {
+	label = strings.ReplaceAll(label, "]", `\]`)
+	url = strings.ReplaceAll(url, ")", `\)`)
+	return fmt.Sprintf("[%s](%s)", label, url)
 }
 
 var domainLabels = map[string]string{
