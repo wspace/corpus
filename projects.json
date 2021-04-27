@@ -20,6 +20,16 @@
     "source": ["https://github.com/kspalaiologos/asm2ws"]
   },
   {
+    "name": "Spiceweight",
+    "path": "crystal/collidedscope-spiceweight",
+    "authors": ["Collided Scope"],
+    "language": ["Crystal"],
+    "tags": ["interpreter"],
+    "date": "2020-12-11",
+    "spec_version": "0.3",
+    "source": ["https://github.com/collidedscope/spiceweight"],
+  },
+  {
     "name": "rustws",
     "path": "rust/luminight",
     "authors": ["Luminight"],
@@ -396,6 +406,16 @@
     "source": ["https://github.com/sonicyang/ws-frontend"]
   },
   {
+    "name": "Whitespace",
+    "path": "r/bmazoure",
+    "authors": ["Bogdan Mazoure"],
+    "language": ["R"],
+    "tags": ["interpreter"],
+    "date": "2016-07-30",
+    "spec_version": "0.2",
+    "source": ["https://github.com/bmazoure/whitespace"],
+  },
+  {
     "name": "White++",
     "path": "cpp/marcellippmann-whitepp",
     "authors": ["Marcel Lippmann"],
@@ -414,6 +434,16 @@
     "date": "2016-06-19",
     "spec_version": "0.3",
     "source": ["https://github.com/CensoredUsername/whitespace-rs"]
+  },
+  {
+    "name": "whitespace",
+    "path": "c/bvisness",
+    "authors": ["Ben Visness"],
+    "language": ["C", "Yacc"],
+    "tags": ["interpreter", "syntax highlighting"],
+    "date": "2016-05-20",
+    "spec_version": "0.3",
+    "source": ["https://github.com/bvisness/whitespace"],
   },
   {
     "name": "Rust-Whitespace",
@@ -868,6 +898,16 @@
     "date": "2010-12-23",
     "spec_version": "0.3",
     "source": ["https://github.com/athos/white-scheme"]
+  },
+  {
+    "name": "Colorspace",
+    "path": "python/dos1-colorspace",
+    "authors": ["Sebastian Krzyszkowiak"],
+    "language": ["Python"],
+    "tags": ["image steganography"],
+    "date": "2010-11-22",
+    "spec_version": "-",
+    "source": ["https://github.com/dos1/colorspace"],
   },
   {
     "name": "hws",

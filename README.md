@@ -3,12 +3,13 @@
 A collection of interpreters, compilers, and programs for the Whitespace
 programming language.
 
-## Interpreters, compilers, and assemblers
+## Projects
 
-| Name                                           | Author(s)        | Language    | Kind         | Date       | Spec | Source |
+| Name                                           | Author(s)        | Language(s) | Kind         | Date       | Spec | Source |
 | ---------------------------------------------- | ---------------- | ----------- | ------------ | ---------- | ---- | ------ |
 | [Albus](rust/collidedscope-albus)              | Collided Scope   | Rust        | interpreter  | 2021-02-12 | 0.3  | [GitHub](https://github.com/collidedscope/albus) |
 | [asm2ws](c/kspalaiologos-asm2ws)               | Kamila Szewczyk (Palaiologos) | C | interpreter, JIT, macro assembler, disassembler, optimizer | 2020-12-31 | 0.3 | [GitHub](https://github.com/kspalaiologos/asm2ws) |
+| [Spiceweight](crystal/collidedscope-spiceweight) | Collided Scope | Crystal     | interpreter  | 2020-12-11 | 0.3  | [GitHub](https://github.com/collidedscope/spiceweight) |
 | [rustws](rust/luminight)                       | Luminight        | Rust        | interpreter  | 2020-08-04 | 0.2  | [GitHub](https://github.com/Luminighty/rustws) |
 | [Whitespace](javascript/kosei)                 | kosei28          | JavaScript  | interpreter  | 2020-08-03 | 0.2  | [GitHub](https://github.com/kosei28/Whitespace) |
 | [SpaceMan](haskell/ft-spaceman)                | Frank Terbeck    | Haskell     | interpreter  | 2020-07-09 | 0.3  | [GitLab](https://gitlab.com/ft/spaceman), [GitHub](https://github.com/ft/spaceman), [ftblog](http://bewatermyfriend.org/p/2020/000/), [HN](https://news.ycombinator.com/item?id=24763312) |
@@ -46,8 +47,10 @@ programming language.
 | [WhiteSpaceInterpreter](java/eia)              | Zuleimi Esteffanny González Muñoz | Java | interpreter | 2016-10-27 | incomplete | [GitHub](https://github.com/EIA-University/WhiteSpaceInterpreter) |
 | [whitespace-python](python/dwayne)             | Dwayne Crooks    | Python      | interpreter  | 2016-08-31 | 0.2  | [GitHub](https://github.com/dwayne/whitespace-python) |
 | [ws-frontent](cpp/sonicyang-ws-frontend)       | Yang Chung-Fan   | C++, LLVM   | compiler     | 2016-08-20 | 0.2 (incomplete) | [GitHub](https://github.com/sonicyang/ws-frontend) |
+| [Whitespace](r/bmazoure)                       | Bogdan Mazoure   | R           | interpreter  | 2016-07-30 | 0.2  | [GitHub](https://github.com/bmazoure/whitespace) |
 | [White++](cpp/marcellippmann-whitepp)          | Marcel Lippmann  | C++         | interpreter  | 2016-07-27 | 0.2  | [GitHub](https://github.com/marcellippmann/Whitepp) |
 | [Whitespacers](rust/censoredusername-whitespacers) | CensoredUsername | Rust    | JIT compiler | 2016-06-19 | 0.3  | [GitHub](https://github.com/CensoredUsername/whitespace-rs) |
+| [whitespace](c/bvisness)                       | Ben Visness      | C, Yacc     | interpreter, syntax highlighting | 2016-05-20 | 0.3 | [GitHub](https://github.com/bvisness/whitespace) |
 | [Rust-Whitespace](rust/jayshua)                | Jayshua Nelson   | Rust        | interpreter  | 2016-05-08 | 0.2  | [GitHub](https://github.com/Jayshua/rust-whitespace) |
 | [whitespace-interpreter](javascript/kanra1412) | kanra1412        | JavaScript  | interpreter  | 2016-04-29 | 0.3  | [GitHub](https://github.com/kanra1412/whitespace-interpreter) |
 | [Whitespace-JS](javascript/susisu)             | Susisu           | JavaScript  | interpreter  | 2016-04-12 | 0.3  | [GitHub](https://github.com/susisu/Whitespace-JS) |
@@ -93,6 +96,7 @@ programming language.
 | [whitespace](ruby/bossiernesto)                | Ernesto Bossi    | Ruby        | interpreter  | 2012-10-15 | 0.2  | [GitHub](https://github.com/bossiernesto/whitespace) |
 | [SignificantWhitespace](javascript/pvdz-significant-whitespace) | Peter van der Zee | JavaScript | interpreter | 2012-02-16 | 0.3 | [GitHub](https://github.com/pvdz/SignificantWhitespace) |
 | [white-scheme](scheme/athos-white-scheme)      | Ohta Shogo       | Scheme      | interpreter  | 2010-12-23 | 0.3  | [GitHub](https://github.com/athos/white-scheme) |
+| [Colorspace](python/dos1-colorspace)           | Sebastian Krzyszkowiak | Python | image steganography | 2010-11-22 | - | [GitHub](https://github.com/dos1/colorspace) |
 | [hws](haskell/takatoh-hws)                     | takatoh          | Haskell     | interpreter  | 2010-10-29 | 0.3  | [GitHub](https://github.com/takatoh/hws) |
 | [whitespace-go](go/technohippy)                | ANDO Yasushi     | Go          | interpreter  | 2010-10-08 | 0.3  | [GitHub](https://github.com/technohippy/go-whitespace) |
 | [whitespace.reb](rebol/hostilefork)            | Hostile Fork     | Rebol       | interpreter  | 2010-07-10 | 0.3  | [GitHub](https://github.com/hostilefork/whitespacers/tree/master/rebol) (mirrored) |
@@ -123,6 +127,7 @@ programming language.
 | ascii.wsa<br>ascii4.wsa<br>caesar.wsa<br>fib.wsa<br>interpret.wsa<br>math.wsa<br>pi.wsa<br>postfix.wsa | Andrew Archibald | - | 2019-06-05 | 0.3 | [GitHub](https://github.com/andrewarchi/nebula/tree/master/programs) |
 | 99_bottles.wsa<br>collatz.wsa<br>factorial.wsa<br>fizz_buzz.wsa<br>hello_world.ws<br>test_ret_underflow.wsa | Andrew Archibald | - | 2019-06-05 | 0.2 | [GitHub](https://github.com/andrewarchi/nebula/tree/master/programs) |
 | hello_world.wsp<br>test.wsp              | Aidan Lakshman   | -        | 2018-11-07 | 0.2  | [GitHub](https://github.com/ahl27/whitespace) |
+| helloWhitespace.ws                       | Heo Kyungyoung   | -        | 2018-08-09 | 0.2  | [GitHub](https://github.com/bbvch13531/HelloWhitespace) |
 | Did you see anything?                    | Daniel Chen      | -        | 2017-02-23 | 0.2  | [GitHub](https://github.com/ccns/105-club-fair-game-problems/blob/master/2/2/Did%20you%20see%20anything%3F) |
 | fichero.bin                              | Zuleimi Esteffanny González Muñoz | - | 2016-10-27 | 0.2 | [GitHub](https://github.com/EIA-University/WhiteSpaceInterpreter/blob/master/src/fichero.bin) |
 | EsoPoly                                  | Ivan Zolotarev   | Malbolge, Brainfuck, Spoon, asdf, 123, EXCON | 2016-09-13 | 0.2 | [GitHub](https://github.com/kenrube/Esopoly) |

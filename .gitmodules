@@ -1,3 +1,6 @@
+[submodule "c/bvisness"]
+	path = c/bvisness
+	url = https://github.com/bvisness/whitespace
 [submodule "c/koturn"]
 	path = c/koturn
 	url = https://github.com/koturn/Whitespace
@@ -79,6 +82,9 @@
 [submodule "cpp/yuukiaria"]
 	path = cpp/yuukiaria
 	url = https://github.com/YuukiARIA/ws-interpreter
+[submodule "crystal/collidedscope-spiceweight"]
+	path = crystal/collidedscope-spiceweight
+	url = https://github.com/collidedscope/spiceweight
 [submodule "csharp/denislabrecque"]
 	path = csharp/denislabrecque
 	url = https://github.com/DenisLabrecque/Whitespace-Interpreter
@@ -202,6 +208,9 @@
 [submodule "python/dalleng"]
 	path = python/dalleng
 	url = https://github.com/dalleng/Whitespace
+[submodule "python/dos1-colorspace"]
+	path = python/dos1-colorspace
+	url = https://github.com/dos1/colorspace
 [submodule "python/dwayne"]
 	path = python/dwayne
 	url = https://github.com/dwayne/whitespace-python
@@ -223,6 +232,9 @@
 [submodule "python/yasn-whitepy"]
 	path = python/yasn-whitepy
 	url = https://github.com/yasn77/whitepy
+[submodule "r/bmazoure"]
+	path = r/bmazoure
+	url = https://github.com/bmazoure/whitespace
 [submodule "ruby/bossiernesto"]
 	path = ruby/bossiernesto
 	url = https://github.com/bossiernesto/whitespace
