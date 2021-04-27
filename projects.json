@@ -23,7 +23,7 @@
     "name": "Spiceweight",
     "path": "crystal/collidedscope-spiceweight",
     "authors": ["Collided Scope"],
-    "language": ["Crystal"],
+    "languages": ["Crystal"],
     "tags": ["interpreter"],
     "date": "2020-12-11",
     "spec_version": "0.3",
@@ -159,7 +159,7 @@
     "path": "go/andrewarchi-nebula",
     "authors": ["Andrew Archibald"],
     "languages": ["Go", "LLVM", "Whitespace"],
-    "tags": ["compiler", "optimizer"],
+    "tags": ["compiler", "optimizer", "programs"],
     "date": "2019-06-08",
     "spec_version": "0.3",
     "source": ["https://github.com/andrewarchi/nebula"]
@@ -409,7 +409,7 @@
     "name": "Whitespace",
     "path": "r/bmazoure",
     "authors": ["Bogdan Mazoure"],
-    "language": ["R"],
+    "languages": ["R"],
     "tags": ["interpreter"],
     "date": "2016-07-30",
     "spec_version": "0.2",
@@ -439,7 +439,7 @@
     "name": "whitespace",
     "path": "c/bvisness",
     "authors": ["Ben Visness"],
-    "language": ["C", "Yacc"],
+    "languages": ["C", "Yacc"],
     "tags": ["interpreter", "syntax highlighting"],
     "date": "2016-05-20",
     "spec_version": "0.3",
@@ -494,6 +494,16 @@
     "date": "2015-12-31",
     "spec_version": "0.2",
     "source": ["https://github.com/abac00s/WHINT"]
+  },
+  {
+    "name": "callisto",
+    "path": "lua/vyo-callisto",
+    "authors": ["Manu Weidmann"],
+    "languages": ["Lua"],
+    "tags": ["interpreter"],
+    "date": "2015-10-15",
+    "spec_version": "0.3",
+    "source": "https://github.com/vyo/callisto"
   },
   {
     "name": "Whitespace",
@@ -684,6 +694,16 @@
     "date": "2014-05-30",
     "spec_version": "0.3",
     "source": ["https://github.com/Keirua/whitespace"]
+  },
+  {
+    "name": "Kairos",
+    "path": "java/vyo-kairos",
+    "authors": ["Manu Weidmann"],
+    "languages": ["Java"],
+    "tags": ["interpreter", "assembler", "arbitrary precision", "programs"],
+    "date": "2014-05-10",
+    "spec_version": "0.3",
+    "source": "https://github.com/vyo/kairos"
   },
   {
     "name": "elixir-whitespace",
@@ -903,7 +923,7 @@
     "name": "Colorspace",
     "path": "python/dos1-colorspace",
     "authors": ["Sebastian Krzyszkowiak"],
-    "language": ["Python"],
+    "languages": ["Python"],
     "tags": ["image steganography"],
     "date": "2010-11-22",
     "spec_version": "-",

@@ -151,6 +151,9 @@
 [submodule "java/kmizu"]
 	path = java/kmizu
 	url = https://github.com/kmizu/ws_interpreter
+[submodule "java/vyo-kairos"]
+	path = java/vyo-kairos
+	url = https://github.com/vyo/kairos
 [submodule "java/wrotycz"]
 	path = java/wrotycz
 	url = https://github.com/wrotycz/whitespace-interpreter
@@ -181,6 +184,9 @@
 [submodule "kotlin/ze-space"]
 	path = kotlin/ze-space
 	url = https://github.com/ze/space
+[submodule "lua/vyo-callisto"]
+	path = lua/vyo-callisto
+	url = https://github.com/vyo/callisto
 [submodule "perl/ephphatha-wsm2ws"]
 	path = perl/ephphatha-wsm2ws
 	url = https://github.com/ephphatha/wsm2ws

@@ -5,7 +5,7 @@ programming language.
 
 ## Projects
 
-| Name                                           | Author(s)        | Language(s) | Kind         | Date       | Spec | Source |
+| Name                                           | Author(s)        | Language(s) | Tags         | Date       | Spec | Source |
 | ---------------------------------------------- | ---------------- | ----------- | ------------ | ---------- | ---- | ------ |
 | [Albus](rust/collidedscope-albus)              | Collided Scope   | Rust        | interpreter  | 2021-02-12 | 0.3  | [GitHub](https://github.com/collidedscope/albus) |
 | [asm2ws](c/kspalaiologos-asm2ws)               | Kamila Szewczyk (Palaiologos) | C | interpreter, JIT, macro assembler, disassembler, optimizer | 2020-12-31 | 0.3 | [GitHub](https://github.com/kspalaiologos/asm2ws) |
@@ -22,7 +22,7 @@ programming language.
 | *JavaScript interpreter*                       | Arnauld          | JavaScript  | interpreter  | 2020-02-01 | 0.3  | [Code Golf](https://codegolf.stackexchange.com/questions/198694/write-a-whitespace-interpreter/198770#198770) |
 | [Marginal](haskell/jhmcstanton-marginal)       | Jim McStanton    | Haskell     | interpreter  | 2019-06-28 | 0.2  | [GitHub](https://github.com/jhmcstanton/marginal) |
 | [Eso](scala/dashlambda-eso)                    | Dash-Lambda      | Scala       | interpreter, assembler | 2019-06-19 | 0.2, wsa | [GitHub](https://github.com/Dash-Lambda/Eso) |
-| [Nebula](go/andrewarchi-nebula)                | Andrew Archibald | Go, LLVM, Whitespace | compiler, optimizer | 2019-06-05 | 0.3 | [GitHub](https://github.com/andrewarchi/nebula) |
+| [Nebula](go/andrewarchi-nebula)                | Andrew Archibald | Go, LLVM, Whitespace | compiler, optimizer, programs | 2019-06-05 | 0.3 | [GitHub](https://github.com/andrewarchi/nebula) |
 | [WhitespaceVM](rust/nareshganduri)             | Naresh Ganduri   | Rust        | interpreter  | 2019-05-13 | 0.3  | [GitHub](https://github.com/nareshganduri/WhitespaceVM) |
 | [Akaza](ruby/pocke-akaza)                      | Masataka Pocke Kuwabara | Ruby | interpreter, assembler | 2019-04-28 | 0.2 | [GitHub](https://github.com/pocke/akaza) |
 | [go-wspace](go/tempxla-go-wspace)              | tempxla          | Go          | interpreter  | 2019-02-24 | 0.2  | [GitHub](https://github.com/tempxla/go-wspace) |
@@ -56,6 +56,7 @@ programming language.
 | [Whitespace-JS](javascript/susisu)             | Susisu           | JavaScript  | interpreter  | 2016-04-12 | 0.3  | [GitHub](https://github.com/susisu/Whitespace-JS) |
 | [whitespace-interpreter](javascript/uraza)     | Uraza            | JavaScript  | interpreter  | 2016-02-08 | 0.2  | [GitHub](https://github.com/uraza/whitespace-interpreter) |
 | [WHINT](cpp/abac-whint)                        | Adam Bac         | C++         | interpreter  | 2015-12-31 | 0.2  | [GitHub](https://github.com/abac00s/WHINT) |
+| [callisto](lua/vyo-callisto)                   | Manu Weidmann    | Lua         | interpreter  | 2015-10-15 | 0.3  | [GitHub](https://github.com/vyo/callisto) |
 | [Whitespace](python/dalleng)                   | Diego Allen      | Python      | interpreter  | 2015-09-28 | 0.3  | [GitHub](https://github.com/dalleng/Whitespace) |
 | [Cupertino-WhiteSpace-Interperter](cpp/frmsaul-cupertino) | Saul Fuhrmann | C++ | interpreter  | 2015-05-22 | 0.3  | [GitHub](https://github.com/frmsaul/Cupertino-WhiteSpace-Interperter) |
 | [whitespace](python/mcolom)                    | Miguel Colom     | Python      | interpreter  | 2015-05-18 | 0.3  | [GitHub](https://github.com/mcolom/whitespace) |
@@ -75,6 +76,7 @@ programming language.
 | [Whitebase](rust/faultier-whitebase)           | Taro Sako        | Rust        | interpreter, assembler, bytecode | 2014-07-15 | 0.3 | [GitHub](https://github.com/faultier/whitebase) |
 | [whitespace-interpreter](java/azige)           | Azige            | Java        | interpreter  | 2014-06-18 | 0.2  | [GitHub](https://github.com/azige/whitespace-interpreter) |
 | [white](cpp/keirua-white)                      | Keirua           | C++         | interpreter  | 2014-05-30 | 0.3  | [GitHub](https://github.com/Keirua/whitespace) |
+| [Kairos](java/vyo-kairos)                      | Manu Weidmann    | Java        | interpreter, assembler, arbitrary precision, programs | 2014-05-10 | 0.3 | [GitHub](https://github.com/vyo/kairos) |
 | [elixir-whitespace](elixir/quinnwilton)        | Quinn Wilton     | Elixir      | interpreter  | 2014-03-07 | 0.3  | [GitHub](https://github.com/QuinnWilton/elixir-whitespace) |
 | [SaTaN](c/threeifbywhiskey-satan)              | Dorien Snake     | C           | interpreter  | 2014-03-03 | 0.3  | [GitHub](https://github.com/threeifbywhiskey/satan) |
 | [wspacego](go/yshr-wspacego)                   | Yosihiro Isago   | Go          | interpreter  | 2013-12-27 | 0.3  | [GitHub](https://github.com/135yshr/wspacego) |
