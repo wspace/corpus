@@ -1,0 +1,1039 @@
+[
+  {
+    "name": "Albus",
+    "path": "rust/collidedscope-albus",
+    "authors": ["Collided Scope"],
+    "languages": ["Rust"],
+    "tags": ["interpreter"],
+    "date": "2021-02-12",
+    "spec_version": "0.3",
+    "source": ["[GitHub](https://github.com/collidedscope/albus)"]
+  },
+  {
+    "name": "asm2ws",
+    "path": "c/kspalaiologos-asm2ws",
+    "authors": ["Kamila Szewczyk (Palaiologos)"],
+    "languages": ["C"],
+    "tags": ["interpreter", "JIT", "macro assembler", "disassembler", "optimizer"],
+    "date": "2020-12-31",
+    "spec_version": "0.3",
+    "source": ["[GitHub](https://github.com/kspalaiologos/asm2ws)"]
+  },
+  {
+    "name": "rustws",
+    "path": "rust/luminight",
+    "authors": ["Luminight"],
+    "languages": ["Rust"],
+    "tags": ["interpreter"],
+    "date": "2020-08-04",
+    "spec_version": "0.2",
+    "source": ["[GitHub](https://github.com/Luminighty/rustws)"]
+  },
+  {
+    "name": "Whitespace",
+    "path": "javascript/kosei",
+    "authors": ["kosei28"],
+    "languages": ["JavaScript"],
+    "tags": ["interpreter"],
+    "date": "2020-08-03",
+    "spec_version": "0.2",
+    "source": ["[GitHub](https://github.com/kosei28/Whitespace)"]
+  },
+  {
+    "name": "SpaceMan",
+    "path": "haskell/ft-spaceman",
+    "authors": ["Frank Terbeck"],
+    "languages": ["Haskell"],
+    "tags": ["interpreter"],
+    "date": "2020-07-09",
+    "spec_version": "0.3",
+    "source": [
+      "[GitLab](https://gitlab.com/ft/spaceman)",
+      "[GitHub](https://github.com/ft/spaceman)",
+      "[ftblog](http://bewatermyfriend.org/p/2020/000/)",
+      "[HN](https://news.ycombinator.com/item?id=24763312)"
+    ]
+  },
+  {
+    "name": "whitespace",
+    "path": "cpp/ricardoluis",
+    "authors": ["Ricardo Luís Vaz Silva"],
+    "languages": ["C++"],
+    "tags": ["interpreter"],
+    "date": "2020-06-03",
+    "spec_version": "0.3",
+    "source": ["[GitHub](https://github.com/RicardoLuis0/whitespace)"]
+  },
+  {
+    "name": "WhiteSpace Assembler",
+    "path": "haskell/helvm-wsa",
+    "authors": ["Kamil Adam"],
+    "languages": ["Haskell"],
+    "tags": ["assembler"],
+    "date": "2020-05-18",
+    "spec_version": "0.2",
+    "source": ["[GitHub](https://github.com/helvm/wsa)"]
+  },
+  {
+    "name": "HelPA",
+    "path": "haskell/helvm-helpa",
+    "authors": ["Kamil Adam"],
+    "languages": ["Haskell/Eta"],
+    "tags": ["assembler"],
+    "date": "2020-05-09",
+    "spec_version": "0.2",
+    "source": ["[GitHub](https://github.com/helvm/helpa)"]
+  },
+  {
+    "name": "HelMA",
+    "path": "haskell/helvm-helma",
+    "authors": ["Kamil Adam"],
+    "languages": ["Haskell/Eta"],
+    "tags": ["interpreter"],
+    "date": "2020-05-08",
+    "spec_version": "0.3",
+    "source": ["[GitHub](https://github.com/helvm/helma)"]
+  },
+  {
+    "name": "WhitespaceInterpreter",
+    "path": "csharp/denislabrecque",
+    "authors": ["Denis G. Labrecque"],
+    "languages": ["C#"],
+    "tags": ["interpreter"],
+    "date": "2020-03-26",
+    "spec_version": "0.2 incomplete",
+    "source": ["[GitHub](https://github.com/DenisLabrecque/Whitespace-Interpreter)"]
+  },
+  {
+    "name": "WhiteSpaceInterpreter",
+    "path": "python/hearnderek",
+    "authors": ["Derek Hearn"],
+    "languages": ["Python"],
+    "tags": ["interpreter"],
+    "date": "2020-02-09",
+    "spec_version": "0.3",
+    "source": ["[GitHub](https://github.com/hearnderek/WhiteSpaceInterpreter)"]
+  },
+  {
+    "name": "*JavaScript interpreter*",
+    "path": "",
+    "authors": ["Arnauld"],
+    "languages": ["JavaScript"],
+    "tags": ["interpreter"],
+    "date": "2020-02-01",
+    "spec_version": "0.3",
+    "source": ["[Code Golf](https://codegolf.stackexchange.com/questions/198694/write-a-whitespace-interpreter/198770#198770)"]
+  },
+  {
+    "name": "Marginal",
+    "path": "haskell/jhmcstanton-marginal",
+    "authors": ["Jim McStanton"],
+    "languages": ["Haskell"],
+    "tags": ["interpreter"],
+    "date": "2019-06-28",
+    "spec_version": "0.2",
+    "source": ["[GitHub](https://github.com/jhmcstanton/marginal)"]
+  },
+  {
+    "name": "Eso",
+    "path": "scala/dashlambda-eso",
+    "authors": ["Dash-Lambda"],
+    "languages": ["Scala"],
+    "tags": ["interpreter", "assembler"],
+    "date": "2019-06-19",
+    "spec_version": "0.2",
+    "source": ["[GitHub](https://github.com/Dash-Lambda/Eso)"]
+  },
+  {
+    "name": "Nebula",
+    "path": "go/andrewarchi-nebula",
+    "authors": ["Andrew Archibald"],
+    "languages": ["Go", "LLVM", "Whitespace"],
+    "tags": ["compiler", "optimizer"],
+    "date": "2019-06-08",
+    "spec_version": "0.3",
+    "source": ["[GitHub](https://github.com/andrewarchi/nebula)"]
+  },
+  {
+    "name": "WhitespaceVM",
+    "path": "rust/nareshganduri",
+    "authors": ["Naresh Ganduri"],
+    "languages": ["Rust"],
+    "tags": ["interpreter"],
+    "date": "2019-05-13",
+    "spec_version": "0.3",
+    "source": ["[GitHub](https://github.com/nareshganduri/WhitespaceVM)"]
+  },
+  {
+    "name": "Akaza",
+    "path": "ruby/pocke-akaza",
+    "authors": ["Masataka Pocke Kuwabara"],
+    "languages": ["Ruby"],
+    "tags": ["interpreter", "assembler"],
+    "date": "2019-04-28",
+    "spec_version": "0.2",
+    "source": ["[GitHub](https://github.com/pocke/akaza)"]
+  },
+  {
+    "name": "go-wspace",
+    "path": "go/tempxla-go-wspace",
+    "authors": ["tempxla"],
+    "languages": ["Go"],
+    "tags": ["interpreter"],
+    "date": "2019-02-24",
+    "spec_version": "0.2",
+    "source": ["[GitHub](https://github.com/tempxla/go-wspace)"]
+  },
+  {
+    "name": "Whitespace Interpreter",
+    "path": "rust/kaisugi",
+    "authors": ["Kaito Sugimoto"],
+    "languages": ["Rust"],
+    "tags": ["interpreter"],
+    "date": "2018-11-23",
+    "spec_version": "0.2",
+    "source": ["[GitHub](https://github.com/HelloRusk/WhitespaceInterpreter)"]
+  },
+  {
+    "name": "whitespace-interpreter",
+    "path": "python/adapap",
+    "authors": ["Adam Papenhausen"],
+    "languages": ["Python"],
+    "tags": ["interpreter"],
+    "date": "2018-11-16",
+    "spec_version": "0.3",
+    "source": ["[GitHub](https://github.com/adapap/whitespace-interpreter)"]
+  },
+  {
+    "name": "whitespace",
+    "path": "python/ahl27",
+    "authors": ["Aidan Lakshman"],
+    "languages": ["Python"],
+    "tags": ["interpreter", "text to Whitespace"],
+    "date": "2018-11-08",
+    "spec_version": "0.3",
+    "source": ["[GitHub](https://github.com/ahl27/whitespace)"]
+  },
+  {
+    "name": "nospace",
+    "path": "cpp/buyoh-nospace",
+    "authors": ["舞葉 (Mai Buyoh)"],
+    "languages": ["C++", "Ruby"],
+    "tags": ["language", "interpreter"],
+    "date": "2018-09-05",
+    "spec_version": "0.2",
+    "source": ["[GitHub](https://github.com/buyoh/nospace)"]
+  },
+  {
+    "name": "whitespace-interpreter",
+    "path": "java/wrotycz",
+    "authors": ["Kamil Węglarz"],
+    "languages": ["Java"],
+    "tags": ["interpreter"],
+    "date": "2018-05-21",
+    "spec_version": "0.3",
+    "source": ["[GitHub](https://github.com/wrotycz/whitespace-interpreter)"]
+  },
+  {
+    "name": "space",
+    "path": "kotlin/ze-space",
+    "authors": ["Zakaria Elkatani"],
+    "languages": ["Kotlin"],
+    "tags": ["interpreter"],
+    "date": "2018-04-21",
+    "spec_version": "0.3",
+    "source": ["[GitHub](https://github.com/ze/space)"]
+  },
+  {
+    "name": "Respace",
+    "path": "cpp/andrewarchi-respace",
+    "authors": ["Andrew Archibald"],
+    "languages": ["C++"],
+    "tags": ["interpreter"],
+    "date": "2018-04-15",
+    "spec_version": "0.3",
+    "source": ["[GitHub](https://github.com/andrewarchi/respace)"]
+  },
+  {
+    "name": "whitespace_interpreter",
+    "path": "python/maximegoyette",
+    "authors": ["Maxime Goyette"],
+    "languages": ["Python"],
+    "tags": ["interpreter"],
+    "date": "2018-03-09",
+    "spec_version": "incomplete",
+    "source": ["[GitHub](https://github.com/MaximeGoyette/whitespace_interpreter)"]
+  },
+  {
+    "name": "erasure",
+    "path": "clojure/jmesyou-erasure",
+    "authors": ["James You"],
+    "languages": ["Clojure"],
+    "tags": ["interpreter"],
+    "date": "2018-02-24",
+    "spec_version": "0.2",
+    "source": ["[GitHub](https://github.com/jmesyou/erasure)"]
+  },
+  {
+    "name": "whitespace-interperter",
+    "path": "python/rumaxwell",
+    "authors": ["RuMaxwell"],
+    "languages": ["Python"],
+    "tags": ["interpreter"],
+    "date": "2018-02-21",
+    "spec_version": "0.3",
+    "source": ["[GitHub](https://github.com/RuMaxwell/whitespace-interpreter)"]
+  },
+  {
+    "name": "Whitespace-interpreter",
+    "path": "python/bornlex",
+    "authors": ["Bornlex"],
+    "languages": ["Python"],
+    "tags": ["interpreter"],
+    "date": "2017-08-09",
+    "spec_version": "0.3",
+    "source": ["[GitHub](https://github.com/Bornlex/Whitespace-interpreter)"]
+  },
+  {
+    "name": "whitespace-interpreter",
+    "path": "cpp/benajmin",
+    "authors": ["Benjamin Wilkins"],
+    "languages": ["C++"],
+    "tags": ["interpreter"],
+    "date": "2017-06-07",
+    "spec_version": "0.2",
+    "source": ["[GitHub](https://github.com/benajmin/whitespace-interpreter)"]
+  },
+  {
+    "name": "wsm2ws",
+    "path": "perl/ephphatha-wsm2ws",
+    "authors": ["Andrew James"],
+    "languages": ["Perl"],
+    "tags": ["assembler"],
+    "date": "2017-05-28",
+    "spec_version": "0.3",
+    "source": ["[GitHub](https://github.com/ephphatha/wsm2ws)"]
+  },
+  {
+    "name": "ws.vim",
+    "path": "vim/rolf-ws-vim",
+    "authors": ["Rolf Asmund"],
+    "languages": ["Vim script"],
+    "tags": ["syntax highlighting"],
+    "date": "2017-05-15",
+    "spec_version": "0.3",
+    "source": ["[GitHub](https://github.com/rolf007/ws.vim)"]
+  },
+  {
+    "name": "Mr. White",
+    "path": "erlang/derek-mrwhite",
+    "authors": ["Derek Brown"],
+    "languages": ["Erlang"],
+    "tags": ["interpreter"],
+    "date": "2017-03-23",
+    "spec_version": "0.3",
+    "source": ["[GitHub](https://github.com/derek121/mrwhite)"]
+  },
+  {
+    "name": "whitepy",
+    "path": "python/yasn-whitepy",
+    "authors": ["Yasser Saleemi"],
+    "languages": ["Python"],
+    "tags": ["interpreter"],
+    "date": "2017-03-04",
+    "spec_version": "0.2",
+    "source": ["[GitHub](https://github.com/yasn77/whitepy)"]
+  },
+  {
+    "name": "whitespace-scheme",
+    "path": "scheme/niyarin",
+    "authors": ["Akira Inoue"],
+    "languages": ["Scheme"],
+    "tags": ["interpreter"],
+    "date": "2017-02-15",
+    "spec_version": "0.2",
+    "source": ["[GitHub](https://github.com/niyarin/whitespace-scheme)"]
+  },
+  {
+    "name": "whitespace.lol",
+    "path": "lolcode/akers",
+    "authors": ["D.E. Akers"],
+    "languages": ["LOLCODE"],
+    "tags": ["interpreter"],
+    "date": "2016-11-20",
+    "spec_version": "0.3",
+    "source": ["[GitHub](https://github.com/hostilefork/whitespacers/tree/master/lolcode) (mirrored)"]
+  },
+  {
+    "name": "WhiteSpaceInterpreter",
+    "path": "java/eia",
+    "authors": ["Zuleimi Esteffanny González Muñoz"],
+    "languages": ["Java"],
+    "tags": ["interpreter"],
+    "date": "2016-10-27",
+    "spec_version": "incomplete",
+    "source": ["[GitHub](https://github.com/EIA-University/WhiteSpaceInterpreter)"]
+  },
+  {
+    "name": "whitespace-python",
+    "path": "python/dwayne",
+    "authors": ["Dwayne Crooks"],
+    "languages": ["Python"],
+    "tags": ["interpreter"],
+    "date": "2016-08-31",
+    "spec_version": "0.2",
+    "source": ["[GitHub](https://github.com/dwayne/whitespace-python)"]
+  },
+  {
+    "name": "ws-frontent",
+    "path": "cpp/sonicyang-ws-frontend",
+    "authors": ["Yang Chung-Fan"],
+    "languages": ["C++", "LLVM"],
+    "tags": ["compiler"],
+    "date": "2016-08-20",
+    "spec_version": "0.2 (incomplete)",
+    "source": ["[GitHub](https://github.com/sonicyang/ws-frontend)"]
+  },
+  {
+    "name": "White++",
+    "path": "cpp/marcellippmann-whitepp",
+    "authors": ["Marcel Lippmann"],
+    "languages": ["C++"],
+    "tags": ["interpreter"],
+    "date": "2016-07-27",
+    "spec_version": "0.2",
+    "source": ["[GitHub](https://github.com/marcellippmann/Whitepp)"]
+  },
+  {
+    "name": "Whitespacers",
+    "path": "rust/censoredusername-whitespacers",
+    "authors": ["CensoredUsername"],
+    "languages": ["Rust"],
+    "tags": ["JIT compiler"],
+    "date": "2016-06-19",
+    "spec_version": "0.3",
+    "source": ["[GitHub](https://github.com/CensoredUsername/whitespace-rs)"]
+  },
+  {
+    "name": "Rust-Whitespace",
+    "path": "rust/jayshua",
+    "authors": ["Jayshua Nelson"],
+    "languages": ["Rust"],
+    "tags": ["interpreter"],
+    "date": "2016-05-08",
+    "spec_version": "0.2",
+    "source": ["[GitHub](https://github.com/Jayshua/rust-whitespace)"]
+  },
+  {
+    "name": "whitespace-interpreter",
+    "path": "javascript/kanra1412",
+    "authors": ["kanra1412"],
+    "languages": ["JavaScript"],
+    "tags": ["interpreter"],
+    "date": "2016-04-29",
+    "spec_version": "0.3",
+    "source": ["[GitHub](https://github.com/kanra1412/whitespace-interpreter)"]
+  },
+  {
+    "name": "Whitespace-JS",
+    "path": "javascript/susisu",
+    "authors": ["Susisu"],
+    "languages": ["JavaScript"],
+    "tags": ["interpreter"],
+    "date": "2016-04-12",
+    "spec_version": "0.3",
+    "source": ["[GitHub](https://github.com/susisu/Whitespace-JS)"]
+  },
+  {
+    "name": "whitespace-interpreter",
+    "path": "javascript/uraza",
+    "authors": ["Uraza"],
+    "languages": ["JavaScript"],
+    "tags": ["interpreter"],
+    "date": "2016-02-08",
+    "spec_version": "0.2",
+    "source": ["[GitHub](https://github.com/uraza/whitespace-interpreter)"]
+  },
+  {
+    "name": "WHINT",
+    "path": "cpp/abac-whint",
+    "authors": ["Adam Bac"],
+    "languages": ["C++"],
+    "tags": ["interpreter"],
+    "date": "2015-12-31",
+    "spec_version": "0.2",
+    "source": ["[GitHub](https://github.com/abac00s/WHINT)"]
+  },
+  {
+    "name": "Whitespace",
+    "path": "python/dalleng",
+    "authors": ["Diego Allen"],
+    "languages": ["Python"],
+    "tags": ["interpreter"],
+    "date": "2015-09-28",
+    "spec_version": "0.3",
+    "source": ["[GitHub](https://github.com/dalleng/Whitespace)"]
+  },
+  {
+    "name": "Cupertino-WhiteSpace-Interperter",
+    "path": "cpp/frmsaul-cupertino",
+    "authors": ["Saul Fuhrmann"],
+    "languages": ["C++"],
+    "tags": ["interpreter"],
+    "date": "2015-05-22",
+    "spec_version": "0.3",
+    "source": ["[GitHub](https://github.com/frmsaul/Cupertino-WhiteSpace-Interperter)"]
+  },
+  {
+    "name": "whitespace",
+    "path": "python/mcolom",
+    "authors": ["Miguel Colom"],
+    "languages": ["Python"],
+    "tags": ["interpreter"],
+    "date": "2015-05-18",
+    "spec_version": "0.3",
+    "source": ["[GitHub](https://github.com/mcolom/whitespace)"]
+  },
+  {
+    "name": "ws_interpreter",
+    "path": "java/kmizu",
+    "authors": ["Kota Mizushima"],
+    "languages": ["Java"],
+    "tags": ["interpreter"],
+    "date": "2015-05-13",
+    "spec_version": "0.3",
+    "source": ["[GitHub](https://github.com/kmizu/ws_interpreter)"]
+  },
+  {
+    "name": "I C Whitespace",
+    "path": "c/strangepan-i-c-whitespace",
+    "authors": ["Dan Andrus"],
+    "languages": ["C"],
+    "tags": ["interpreter"],
+    "date": "2015-03-10",
+    "spec_version": "0.3",
+    "source": ["[GitHub](https://github.com/StrangePan/I_C_Whitespace)"]
+  },
+  {
+    "name": "whitespace",
+    "path": "go/kinu",
+    "authors": ["Kinuko Yasuda"],
+    "languages": ["Go"],
+    "tags": ["interpreter"],
+    "date": "2015-02-19",
+    "spec_version": "0.3",
+    "source": ["[GitHub](https://github.com/kinu/whitespace)"]
+  },
+  {
+    "name": "whitespace-clj",
+    "path": "clojure/tsuyusato",
+    "authors": ["TSUYUSATO Kitsune"],
+    "languages": ["Clojure"],
+    "tags": ["interpreter"],
+    "date": "2015-02-11",
+    "spec_version": "0.2",
+    "source": ["[GitHub](https://github.com/MakeNowJust/whitespace-clj)"]
+  },
+  {
+    "name": "whitespace-php",
+    "path": "php/nobody1986",
+    "authors": ["nobody1986"],
+    "languages": ["PHP", "C"],
+    "tags": ["interpreter"],
+    "date": "2015-02-04",
+    "spec_version": "0.3",
+    "source": ["[GitHub](https://github.com/nobody1986/whitespace-php)"]
+  },
+  {
+    "name": "whiteSpaceInterpreter",
+    "path": "java/faurehu",
+    "authors": ["Matias Faure"],
+    "languages": ["Java"],
+    "tags": ["interpreter"],
+    "date": "2015-01-29",
+    "spec_version": "0.3",
+    "source": ["[GitHub](https://github.com/faurehu/whiteSpaceInterpreter)"]
+  },
+  {
+    "name": "Whitespace-Interpreter--C-",
+    "path": "cpp/sudheesh",
+    "authors": ["sudheesh4"],
+    "languages": ["C++"],
+    "tags": ["interpreter"],
+    "date": "2014-12-02",
+    "spec_version": "0.2",
+    "source": ["[GitHub](https://github.com/sudheesh4/Whitespace-Interpreter-C-)"]
+  },
+  {
+    "name": "WhiteSpaceInterpreter",
+    "path": "csharp/reflash",
+    "authors": ["reflash"],
+    "languages": ["C#"],
+    "tags": ["interpreter"],
+    "date": "2014-11-21",
+    "spec_version": "0.3",
+    "source": ["[GitHub](https://github.com/reflash-blog/WhiteSpaceInterpreter)"]
+  },
+  {
+    "name": "Whitespace",
+    "path": "c/koturn",
+    "authors": ["koturn"],
+    "languages": ["C"],
+    "tags": ["interpreter", "translator"],
+    "date": "2014-11-08",
+    "spec_version": "0.3",
+    "source": ["[GitHub](https://github.com/koturn/Whitespace)"]
+  },
+  {
+    "name": "whitespace.php",
+    "path": "php/johankj",
+    "authors": ["Johan K. Jensen"],
+    "languages": ["PHP"],
+    "tags": ["interpreter"],
+    "date": "2014-11-01",
+    "spec_version": "0.2",
+    "source": ["[GitHub](https://github.com/johankj/whitespace-interpreter-php)"]
+  },
+  {
+    "name": "wsm",
+    "path": "php/igorw-wsm",
+    "authors": ["Igor Wiedler"],
+    "languages": ["PHP"],
+    "tags": ["assembler"],
+    "date": "2014-09-27",
+    "spec_version": "0.2",
+    "source": ["[GitHub](https://github.com/igorw/wsm)"]
+  },
+  {
+    "name": "Albino",
+    "path": "rust/faultier-albino",
+    "authors": ["Taro Sako"],
+    "languages": ["Rust"],
+    "tags": ["interpreter", "assembler", "bytecode"],
+    "date": "2014-07-18",
+    "spec_version": "0.3",
+    "source": ["[GitHub](https://github.com/faultier/albino)"]
+  },
+  {
+    "name": "Whitespace-LLVM",
+    "path": "cpp/subv-whitespace-llvm",
+    "authors": ["Sebastian Valle"],
+    "languages": ["C++", "LLVM"],
+    "tags": ["interpreter"],
+    "date": "2014-07-16",
+    "spec_version": "0.3",
+    "source": ["[GitHub](https://github.com/Subv/Whitespace-LLVM)"]
+  },
+  {
+    "name": "Whitebase",
+    "path": "rust/faultier-whitebase",
+    "authors": ["Taro Sako"],
+    "languages": ["Rust"],
+    "tags": ["interpreter", "assembler", "bytecode"],
+    "date": "2014-07-15",
+    "spec_version": "0.3",
+    "source": ["[GitHub](https://github.com/faultier/whitebase)"]
+  },
+  {
+    "name": "whitespace-interpreter",
+    "path": "java/azige",
+    "authors": ["Azige"],
+    "languages": ["Java"],
+    "tags": ["interpreter"],
+    "date": "2014-06-18",
+    "spec_version": "0.2",
+    "source": ["[GitHub](https://github.com/azige/whitespace-interpreter)"]
+  },
+  {
+    "name": "white",
+    "path": "cpp/keirua-white",
+    "authors": ["Keirua"],
+    "languages": ["C++"],
+    "tags": ["interpreter"],
+    "date": "2014-05-30",
+    "spec_version": "0.3",
+    "source": ["[GitHub](https://github.com/Keirua/whitespace)"]
+  },
+  {
+    "name": "elixir-whitespace",
+    "path": "elixir/quinnwilton",
+    "authors": ["Quinn Wilton"],
+    "languages": ["Elixir"],
+    "tags": ["interpreter"],
+    "date": "2014-03-07",
+    "spec_version": "0.3",
+    "source": ["[GitHub](https://github.com/QuinnWilton/elixir-whitespace)"]
+  },
+  {
+    "name": "SaTaN",
+    "path": "c/threeifbywhiskey-satan",
+    "authors": ["Dorien Snake"],
+    "languages": ["C"],
+    "tags": ["interpreter"],
+    "date": "2014-03-03",
+    "spec_version": "0.3",
+    "source": ["[GitHub](https://github.com/threeifbywhiskey/satan)"]
+  },
+  {
+    "name": "wspacego",
+    "path": "go/yshr-wspacego",
+    "authors": ["Yosihiro Isago"],
+    "languages": ["Go"],
+    "tags": ["interpreter"],
+    "date": "2013-12-27",
+    "spec_version": "0.3",
+    "source": ["[GitHub](https://github.com/135yshr/wspacego)"]
+  },
+  {
+    "name": "wvm",
+    "path": "python/apua-wvm",
+    "authors": ["Apua"],
+    "languages": ["Python"],
+    "tags": ["interpreter"],
+    "date": "2013-11-24",
+    "spec_version": "0.3",
+    "source": ["[GitHub](https://github.com/apua/whitespace)"]
+  },
+  {
+    "name": "wseditor",
+    "path": "java/yuukiaria-wseditor",
+    "authors": ["YuukiARIA"],
+    "languages": ["Java"],
+    "tags": ["IDE"],
+    "date": "2013-11-21",
+    "spec_version": "-",
+    "source": ["[GitHub](https://github.com/YuukiARIA/wseditor)"]
+  },
+  {
+    "name": "whitespace-llvm",
+    "path": "cpp/tycho-whitespace-llvm",
+    "authors": ["Tycho Bickerstaff"],
+    "languages": ["C++", "LLVM"],
+    "tags": ["compiler", "JIT", "optimizer"],
+    "date": "2013-08-31",
+    "spec_version": "0.3",
+    "source": ["[GitHub](https://github.com/worktycho/whitespace-llvm)"]
+  },
+  {
+    "name": "Whitespace-JS",
+    "path": "coffeescript/ehrlichbryan",
+    "authors": ["Bryan Ehrlich"],
+    "languages": ["CoffeeScript"],
+    "tags": ["interpreter", "assembler"],
+    "date": "2013-08-14",
+    "spec_version": "0.3",
+    "source": ["[GitHub](https://github.com/adotout/whitespace-js)"]
+  },
+  {
+    "name": "ws-interpreter",
+    "path": "cpp/yuukiaria",
+    "authors": ["YuukiARIA"],
+    "languages": ["C++"],
+    "tags": ["interpreter"],
+    "date": "2013-05-05",
+    "spec_version": "0.3",
+    "source": ["[GitHub](https://github.com/YuukiARIA/ws-interpreter)"]
+  },
+  {
+    "name": "whitespace",
+    "path": "java/abhijitsharma",
+    "authors": ["Abhijit Sharma"],
+    "languages": ["Java"],
+    "tags": ["interpreter"],
+    "date": "2013-04-05",
+    "spec_version": "0.2 incomplete",
+    "source": ["[GitHub](https://github.com/abhijitsharma/whitespace)"]
+  },
+  {
+    "name": "whitespace",
+    "path": "javascript/rumpl",
+    "authors": ["Djordje Lukic"],
+    "languages": ["JavaScript"],
+    "tags": ["interpreter"],
+    "date": "2013-03-27",
+    "spec_version": "0.3",
+    "source": ["[GitHub](https://github.com/rumpl/whitespace)"]
+  },
+  {
+    "name": "Whitelips IDE",
+    "path": "javascript/vii5ard-whitelips",
+    "authors": ["Henri Lakk"],
+    "languages": ["JavaScript"],
+    "tags": ["interpreter", "optimizer", "assembler", "IDE"],
+    "date": "2013-03-20",
+    "spec_version": "0.3",
+    "source": [
+      "[GitHub](https://github.com/vii5ard/whitespace)",
+      "[IDE](https://vii5ard.github.io/whitespace/)",
+      "[Mailing list](https://web.archive.org/web/20141011193149/http://compsoc.dur.ac.uk/archives/whitespace/2013-April/000082.html)"
+    ]
+  },
+  {
+    "name": "whitespace-interpreter",
+    "path": "cpp/timvandermeij",
+    "authors": ["Simon Klaver", "Tim van der Meij", "Willem Obbens"],
+    "languages": ["C++"],
+    "tags": ["interpreter"],
+    "date": "2013-02-06",
+    "spec_version": "0.3",
+    "source": ["[GitHub](https://github.com/timvandermeij/whitespace-interpreter)"]
+  },
+  {
+    "name": "ws",
+    "path": "cpp/knmorgan",
+    "authors": ["Kyle Morgan"],
+    "languages": ["C++"],
+    "tags": ["interpreter"],
+    "date": "2012-12-19",
+    "spec_version": "0.3",
+    "source": ["[GitHub](https://github.com/knmorgan/ws)"]
+  },
+  {
+    "name": "Whitespace-Interpreter",
+    "path": "cpp/noia",
+    "authors": ["Tucker Noia"],
+    "languages": ["C++"],
+    "tags": ["interpreter"],
+    "date": "2012-12-15",
+    "spec_version": "0.2 incomplete",
+    "source": ["[GitHub](https://github.com/noia1/Whitespace-Interpreter)"]
+  },
+  {
+    "name": "wsInt",
+    "path": "cpp/dpohanlon-wsint",
+    "authors": ["Daniel O'Hanlon"],
+    "languages": ["C++"],
+    "tags": ["interpreter"],
+    "date": "2012-12-02",
+    "spec_version": "0.2",
+    "source": ["[GitHub](https://github.com/dpohanlon/wsInt)"]
+  },
+  {
+    "name": "WS-idr",
+    "path": "idris/edwinb-ws-idr",
+    "authors": ["Edwin Brady"],
+    "languages": ["Idris"],
+    "tags": ["interpreter"],
+    "date": "2012-11-25",
+    "spec_version": "0.3",
+    "source": ["[GitHub](https://github.com/edwinb/WS-idr)"]
+  },
+  {
+    "name": "Whitespace4j",
+    "path": "java/brumbeere-whitespace4j",
+    "authors": ["Philipp Speck"],
+    "languages": ["Java"],
+    "tags": ["interpreter"],
+    "date": "2012-11-04",
+    "spec_version": "0.3",
+    "source": ["[GitHub](https://github.com/Brumbeere/Whitespace4j)"]
+  },
+  {
+    "name": "whitespace",
+    "path": "cpp/abcsharp",
+    "authors": ["abcsharp"],
+    "languages": ["C++"],
+    "tags": ["interpreter"],
+    "date": "2012-10-29",
+    "spec_version": "0.3",
+    "source": ["[GitHub](https://github.com/abcsharp/Whitespace)"]
+  },
+  {
+    "name": "whitespace",
+    "path": "ruby/bossiernesto",
+    "authors": ["Ernesto Bossi"],
+    "languages": ["Ruby"],
+    "tags": ["interpreter"],
+    "date": "2012-10-15",
+    "spec_version": "0.2",
+    "source": ["[GitHub](https://github.com/bossiernesto/whitespace)"]
+  },
+  {
+    "name": "SignificantWhitespace",
+    "path": "javascript/pvdz-significant-whitespace",
+    "authors": ["Peter van der Zee"],
+    "languages": ["JavaScript"],
+    "tags": ["interpreter"],
+    "date": "2012-02-16",
+    "spec_version": "0.3",
+    "source": ["[GitHub](https://github.com/pvdz/SignificantWhitespace)"]
+  },
+  {
+    "name": "white-scheme",
+    "path": "scheme/athos-white-scheme",
+    "authors": ["Ohta Shogo"],
+    "languages": ["Scheme"],
+    "tags": ["interpreter"],
+    "date": "2010-12-23",
+    "spec_version": "0.3",
+    "source": ["[GitHub](https://github.com/athos/white-scheme)"]
+  },
+  {
+    "name": "hws",
+    "path": "haskell/takatoh-hws",
+    "authors": ["takatoh"],
+    "languages": ["Haskell"],
+    "tags": ["interpreter"],
+    "date": "2010-10-29",
+    "spec_version": "0.3",
+    "source": ["[GitHub](https://github.com/takatoh/hws)"]
+  },
+  {
+    "name": "whitespace-go",
+    "path": "go/technohippy",
+    "authors": ["ANDO Yasushi"],
+    "languages": ["Go"],
+    "tags": ["interpreter"],
+    "date": "2010-10-08",
+    "spec_version": "0.3",
+    "source": ["[GitHub](https://github.com/technohippy/go-whitespace)"]
+  },
+  {
+    "name": "whitespace.reb",
+    "path": "rebol/hostilefork",
+    "authors": ["Hostile Fork"],
+    "languages": ["Rebol"],
+    "tags": ["interpreter"],
+    "date": "2010-07-10",
+    "spec_version": "0.3",
+    "source": ["[GitHub](https://github.com/hostilefork/whitespacers/tree/master/rebol) (mirrored)"]
+  },
+  {
+    "name": "HaPyLi",
+    "path": "",
+    "authors": ["Huf Lungdung"],
+    "languages": ["Python"],
+    "tags": ["language", "interpreter"],
+    "date": "2010-05-23",
+    "spec_version": "0.3",
+    "source": [
+      "[hapyli.webs.com](https://web.archive.org/web/20110212015726/http://hapyli.webs.com/)",
+      "[Mailing list](https://web.archive.org/web/20141011193154/http://compsoc.dur.ac.uk/archives/whitespace/2010-May/000075.html) (unavailable)"
+    ]
+  },
+  {
+    "name": "Whitespace Interpreter and Assembler",
+    "path": "python/stephenchappell",
+    "authors": ["Stephen Chappell"],
+    "languages": ["Python"],
+    "tags": ["interpreter", "assembler"],
+    "date": "2010-03-14",
+    "spec_version": "0.3",
+    "source": [
+      "[ActiveState](https://code.activestate.com/recipes/sets/12/)",
+      "[GitHub](https://github.com/ActiveState/code) (mirrored)"
+    ]
+  },
+  {
+    "name": "*C++ interpreter*",
+    "path": "cpp/peasley",
+    "authors": ["Peasley"],
+    "languages": ["C++"],
+    "tags": ["interpreter"],
+    "date": "2010-02-05",
+    "spec_version": "0.3",
+    "source": ["[rohitab.com](http://www.rohitab.com/discuss/topic/35639-c-whitespace-interpreter/?p=10074137) (mirrored)"]
+  },
+  {
+    "name": "Whitespace Interpreter v1.0",
+    "path": "c/meth0dz",
+    "authors": ["MeTh0Dz"],
+    "languages": ["C"],
+    "tags": ["interpreter"],
+    "date": "2010-01-30",
+    "spec_version": "0.3",
+    "source": ["[rohitab.com](http://www.rohitab.com/discuss/topic/35639-c-whitespace-interpreter/) (mirrored)"]
+  },
+  {
+    "name": "wspace",
+    "path": "",
+    "authors": ["hogelog"],
+    "languages": ["C++"],
+    "tags": ["interpreter"],
+    "date": "2008-05-02",
+    "spec_version": "0.3",
+    "source": ["[GitHub](https://github.com/hogelog/hogel.org-old/tree/master/content/lib/c/ws)"]
+  },
+  {
+    "name": "wspace",
+    "path": "cpp/pavelshub",
+    "authors": ["Pavel Shub"],
+    "languages": ["C++"],
+    "tags": ["interpreter"],
+    "date": "2007-05-26",
+    "spec_version": "0.3",
+    "source": [
+      "[GitHub](https://github.com/pavel987/wspace)",
+      "[Mailing list](https://web.archive.org/web/20141011193149/http://compsoc.dur.ac.uk/archives/whitespace/2008-April/000068.html)",
+      "[pavelshub.com](http://pavelshub.com/blog/2010/10/wspace/) (mirrored)"
+    ]
+  },
+  {
+    "name": "pywhitespace",
+    "path": "python/phlip-pywhitespace",
+    "authors": ["Phillip Bradbury"],
+    "languages": ["Python"],
+    "tags": ["interpreter"],
+    "date": "2004-08-03",
+    "spec_version": "0.3 with trace",
+    "source": [
+      "[Mailing list (2004)](https://web.archive.org/web/20141011193201/http://compsoc.dur.ac.uk/archives/whitespace/2004-August/000048.html)",
+      "[Newcastle (2004)](https://web.archive.org/web/20061209092911/http://www.cs.newcastle.edu.au/~c3018900/pywhitespace.tar.bz2)",
+      "[Mailing list (2007)](https://web.archive.org/web/20161009051032/http://compsoc.dur.ac.uk/archives/whitespace/2007-December/000065.html)",
+      "[mrphlip.com (2007)](https://www.mrphlip.com/pywhitespace.tar.bz2) (mirrored)"
+    ]
+  },
+  {
+    "name": "wsinterws",
+    "path": "",
+    "authors": ["Oliver Burghard"],
+    "languages": ["Whitespace"],
+    "tags": ["interpreter"],
+    "date": "2003-04-24",
+    "spec_version": "0.2",
+    "source": ["[burghard.info](https://web.archive.org/web/20030608024503/http://www.burghard.info/code/whitespace/wsinterws/index.html)"]
+  },
+  {
+    "name": "whitespace-ruby",
+    "path": "",
+    "authors": ["Wayne Conrad"],
+    "languages": ["Ruby"],
+    "tags": ["interpreter"],
+    "date": "2003-04-02",
+    "spec_version": "0.2",
+    "source": ["[yagni.com](https://web.archive.org/web/20120417161917/http://yagni.com/whitespace/index.html)"]
+  },
+  {
+    "name": "whitespace.pl",
+    "path": "",
+    "authors": ["Mike Kölbl"],
+    "languages": ["Perl"],
+    "tags": ["interpreter"],
+    "date": "2003-04-01",
+    "spec_version": "0.2",
+    "source": ["[CompSoc](https://web.archive.org/web/20150717140342/http://compsoc.dur.ac.uk:80/whitespace/download.php)"]
+  },
+  {
+    "name": "wspace",
+    "path": "",
+    "authors": ["Edwin Brady"],
+    "languages": ["Haskell"],
+    "tags": ["interpreter"],
+    "date": "2004-05-04",
+    "spec_version": "0.3",
+    "source": [
+      "[CompSoc](https://web.archive.org/web/20150717140342/http://compsoc.dur.ac.uk:80/whitespace/download.php)",
+      "[Mailing list](https://web.archive.org/web/20141011193201/http://compsoc.dur.ac.uk/archives/whitespace/2004-May/000047.html)"
+    ]
+  },
+  {
+    "name": "wspace",
+    "path": "",
+    "authors": ["Edwin Brady"],
+    "languages": ["Haskell"],
+    "tags": ["interpreter"],
+    "date": "2002",
+    "spec_version": "0.2",
+    "source": ["[CompSoc](https://web.archive.org/web/20150717140342/http://compsoc.dur.ac.uk:80/whitespace/download.php)"]
+  }
+]
