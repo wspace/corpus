@@ -5,6 +5,7 @@ import (
 	"net/url"
 	"os"
 	"strings"
+	"unicode/utf8"
 
 	"github.com/andrewarchi/browser/jsonutil"
 )
@@ -14,6 +15,7 @@ func main() {
 	try(jsonutil.DecodeFile("../projects.json", &projects))
 	var b strings.Builder
 	try(renderTable(&b, projects))
+	fmt.Println(b.String())
 }
 
 func try(err error) {
@@ -33,44 +35,78 @@ type Project struct {
 	SpecVersion string   `json:"spec_version"`
 	Source      []string `json:"source"`
 	Mirrored    bool     `json:"mirrored,omitempty"`
+	Features    struct {
+		ArbitraryPrecision bool              `json:"arbitrary_precision"`
+		Assembly           map[string]string `json:"assembly"`
+	} `json:"features,omitempty"`
 }
 
 func renderTable(b *strings.Builder, projects []Project) error {
+	padding := []int{46, 16, 11, 12, 10, 4, 0}
+	renderColumns(b, padding, "Name", "Author(s)", "Language(s)", "Tags", "Date", "Spec", "Source")
+	b.WriteString("| ---------------------------------------------- | ---------------- | ----------- | ------------ | ---------- | ---- | ------ |\n")
 	for _, p := range projects {
-		b.WriteString("| ")
+		name := p.Name
 		if p.Path != "" {
-			renderLink(b, p.Name, p.Path)
-		} else {
-			b.WriteString(p.Name)
+			var err error
+			name, err = formatLink(p.Name, p.Path)
+			if err != nil {
+				return err
+			}
 		}
-		// TODO padding and additional fields
-		b.WriteString(" |")
-		for i, s := range p.Source {
+		links := make([]string, 0, len(p.Source))
+		for _, s := range p.Source {
 			label, err := getURLLabel(s)
 			if err != nil {
 				return err
 			}
-			if i != 0 {
-				b.WriteByte(',')
+			link, err := formatLink(label, s)
+			if err != nil {
+				return err
 			}
-			b.WriteByte(' ')
-			renderLink(b, label, s)
+			links = append(links, link)
 		}
-		b.WriteString(" |\n")
+		renderColumns(b, padding,
+			name,
+			strings.Join(p.Authors, ", "),
+			strings.Join(p.Languages, ", "),
+			strings.Join(p.Tags, ", "),
+			p.Date,
+			p.SpecVersion,
+			strings.Join(links, ", "))
 	}
 	return nil
 }
 
-func renderLink(b *strings.Builder, label, url string) error {
+func renderColumns(b *strings.Builder, padding []int, cols ...string) {
+	width := 0
+	padWidth := 0
+	for i, col := range cols {
+		b.WriteString("| ")
+		b.WriteString(col)
+		width += utf8.RuneCountInString(col)
+		if i < len(padding) && padding[i] != 0 {
+			padWidth += padding[i]
+			for ; width < padWidth; width++ {
+				b.WriteByte(' ')
+			}
+			b.WriteByte(' ')
+		} else if len(col) != 0 {
+			b.WriteByte(' ')
+		}
+	}
+	b.WriteString("|\n")
+}
+
+func formatLink(label, url string) (string, error) {
 	// TODO escape ] and )
 	if strings.IndexByte(label, ']') != -1 {
-		return fmt.Errorf("label contains ]: %s", label)
+		return "", fmt.Errorf("label contains ]: %s", label)
 	}
 	if strings.IndexByte(url, ')') != -1 {
-		return fmt.Errorf("URL contains ): %s", url)
+		return "", fmt.Errorf("URL contains ): %s", url)
 	}
-	fmt.Fprintf(b, "[%s](%s)", label, url)
-	return nil
+	return fmt.Sprintf("[%s](%s)", label, url), nil
 }
 
 var domainLabels = map[string]string{

@@ -27,7 +27,7 @@
     "tags": ["interpreter"],
     "date": "2020-12-11",
     "spec_version": "0.3",
-    "source": ["https://github.com/collidedscope/spiceweight"],
+    "source": ["https://github.com/collidedscope/spiceweight"]
   },
   {
     "name": "rustws",
@@ -160,7 +160,7 @@
     "authors": ["Andrew Archibald"],
     "languages": ["Go", "LLVM", "Whitespace"],
     "tags": ["compiler", "optimizer", "programs"],
-    "date": "2019-06-08",
+    "date": "2019-06-05",
     "spec_version": "0.3",
     "source": ["https://github.com/andrewarchi/nebula"]
   },
@@ -413,7 +413,7 @@
     "tags": ["interpreter"],
     "date": "2016-07-30",
     "spec_version": "0.2",
-    "source": ["https://github.com/bmazoure/whitespace"],
+    "source": ["https://github.com/bmazoure/whitespace"]
   },
   {
     "name": "White++",
@@ -443,7 +443,7 @@
     "tags": ["interpreter", "syntax highlighting"],
     "date": "2016-05-20",
     "spec_version": "0.3",
-    "source": ["https://github.com/bvisness/whitespace"],
+    "source": ["https://github.com/bvisness/whitespace"]
   },
   {
     "name": "Rust-Whitespace",
@@ -503,7 +503,7 @@
     "tags": ["interpreter"],
     "date": "2015-10-15",
     "spec_version": "0.3",
-    "source": "https://github.com/vyo/callisto"
+    "source": ["https://github.com/vyo/callisto"]
   },
   {
     "name": "Whitespace",
@@ -703,7 +703,7 @@
     "tags": ["interpreter", "assembler", "arbitrary precision", "programs"],
     "date": "2014-05-10",
     "spec_version": "0.3",
-    "source": "https://github.com/vyo/kairos"
+    "source": ["https://github.com/vyo/kairos"]
   },
   {
     "name": "elixir-whitespace",
@@ -927,7 +927,7 @@
     "tags": ["image steganography"],
     "date": "2010-11-22",
     "spec_version": "-",
-    "source": ["https://github.com/dos1/colorspace"],
+    "source": ["https://github.com/dos1/colorspace"]
   },
   {
     "name": "hws",
