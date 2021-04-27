@@ -7,7 +7,7 @@
     "tags": ["interpreter"],
     "date": "2021-02-12",
     "spec_version": "0.3",
-    "source": ["[GitHub](https://github.com/collidedscope/albus)"]
+    "source": ["https://github.com/collidedscope/albus"]
   },
   {
     "name": "asm2ws",
@@ -17,7 +17,7 @@
     "tags": ["interpreter", "JIT", "macro assembler", "disassembler", "optimizer"],
     "date": "2020-12-31",
     "spec_version": "0.3",
-    "source": ["[GitHub](https://github.com/kspalaiologos/asm2ws)"]
+    "source": ["https://github.com/kspalaiologos/asm2ws"]
   },
   {
     "name": "rustws",
@@ -27,7 +27,7 @@
     "tags": ["interpreter"],
     "date": "2020-08-04",
     "spec_version": "0.2",
-    "source": ["[GitHub](https://github.com/Luminighty/rustws)"]
+    "source": ["https://github.com/Luminighty/rustws"]
   },
   {
     "name": "Whitespace",
@@ -37,7 +37,7 @@
     "tags": ["interpreter"],
     "date": "2020-08-03",
     "spec_version": "0.2",
-    "source": ["[GitHub](https://github.com/kosei28/Whitespace)"]
+    "source": ["https://github.com/kosei28/Whitespace"]
   },
   {
     "name": "SpaceMan",
@@ -48,10 +48,10 @@
     "date": "2020-07-09",
     "spec_version": "0.3",
     "source": [
-      "[GitLab](https://gitlab.com/ft/spaceman)",
-      "[GitHub](https://github.com/ft/spaceman)",
-      "[ftblog](http://bewatermyfriend.org/p/2020/000/)",
-      "[HN](https://news.ycombinator.com/item?id=24763312)"
+      "https://gitlab.com/ft/spaceman",
+      "https://github.com/ft/spaceman",
+      "http://bewatermyfriend.org/p/2020/000/",
+      "https://news.ycombinator.com/item?id=24763312"
     ]
   },
   {
@@ -62,7 +62,7 @@
     "tags": ["interpreter"],
     "date": "2020-06-03",
     "spec_version": "0.3",
-    "source": ["[GitHub](https://github.com/RicardoLuis0/whitespace)"]
+    "source": ["https://github.com/RicardoLuis0/whitespace"]
   },
   {
     "name": "WhiteSpace Assembler",
@@ -72,7 +72,7 @@
     "tags": ["assembler"],
     "date": "2020-05-18",
     "spec_version": "0.2",
-    "source": ["[GitHub](https://github.com/helvm/wsa)"]
+    "source": ["https://github.com/helvm/wsa"]
   },
   {
     "name": "HelPA",
@@ -82,7 +82,7 @@
     "tags": ["assembler"],
     "date": "2020-05-09",
     "spec_version": "0.2",
-    "source": ["[GitHub](https://github.com/helvm/helpa)"]
+    "source": ["https://github.com/helvm/helpa"]
   },
   {
     "name": "HelMA",
@@ -92,7 +92,7 @@
     "tags": ["interpreter"],
     "date": "2020-05-08",
     "spec_version": "0.3",
-    "source": ["[GitHub](https://github.com/helvm/helma)"]
+    "source": ["https://github.com/helvm/helma"]
   },
   {
     "name": "WhitespaceInterpreter",
@@ -102,7 +102,7 @@
     "tags": ["interpreter"],
     "date": "2020-03-26",
     "spec_version": "0.2 incomplete",
-    "source": ["[GitHub](https://github.com/DenisLabrecque/Whitespace-Interpreter)"]
+    "source": ["https://github.com/DenisLabrecque/Whitespace-Interpreter"]
   },
   {
     "name": "WhiteSpaceInterpreter",
@@ -112,7 +112,7 @@
     "tags": ["interpreter"],
     "date": "2020-02-09",
     "spec_version": "0.3",
-    "source": ["[GitHub](https://github.com/hearnderek/WhiteSpaceInterpreter)"]
+    "source": ["https://github.com/hearnderek/WhiteSpaceInterpreter"]
   },
   {
     "name": "*JavaScript interpreter*",
@@ -122,7 +122,7 @@
     "tags": ["interpreter"],
     "date": "2020-02-01",
     "spec_version": "0.3",
-    "source": ["[Code Golf](https://codegolf.stackexchange.com/questions/198694/write-a-whitespace-interpreter/198770#198770)"]
+    "source": ["https://codegolf.stackexchange.com/questions/198694/write-a-whitespace-interpreter/198770#198770"]
   },
   {
     "name": "Marginal",
@@ -132,7 +132,7 @@
     "tags": ["interpreter"],
     "date": "2019-06-28",
     "spec_version": "0.2",
-    "source": ["[GitHub](https://github.com/jhmcstanton/marginal)"]
+    "source": ["https://github.com/jhmcstanton/marginal"]
   },
   {
     "name": "Eso",
@@ -142,7 +142,7 @@
     "tags": ["interpreter", "assembler"],
     "date": "2019-06-19",
     "spec_version": "0.2",
-    "source": ["[GitHub](https://github.com/Dash-Lambda/Eso)"]
+    "source": ["https://github.com/Dash-Lambda/Eso"]
   },
   {
     "name": "Nebula",
@@ -152,7 +152,7 @@
     "tags": ["compiler", "optimizer"],
     "date": "2019-06-08",
     "spec_version": "0.3",
-    "source": ["[GitHub](https://github.com/andrewarchi/nebula)"]
+    "source": ["https://github.com/andrewarchi/nebula"]
   },
   {
     "name": "WhitespaceVM",
@@ -162,7 +162,7 @@
     "tags": ["interpreter"],
     "date": "2019-05-13",
     "spec_version": "0.3",
-    "source": ["[GitHub](https://github.com/nareshganduri/WhitespaceVM)"]
+    "source": ["https://github.com/nareshganduri/WhitespaceVM"]
   },
   {
     "name": "Akaza",
@@ -172,7 +172,7 @@
     "tags": ["interpreter", "assembler"],
     "date": "2019-04-28",
     "spec_version": "0.2",
-    "source": ["[GitHub](https://github.com/pocke/akaza)"]
+    "source": ["https://github.com/pocke/akaza"]
   },
   {
     "name": "go-wspace",
@@ -182,7 +182,7 @@
     "tags": ["interpreter"],
     "date": "2019-02-24",
     "spec_version": "0.2",
-    "source": ["[GitHub](https://github.com/tempxla/go-wspace)"]
+    "source": ["https://github.com/tempxla/go-wspace"]
   },
   {
     "name": "Whitespace Interpreter",
@@ -192,7 +192,7 @@
     "tags": ["interpreter"],
     "date": "2018-11-23",
     "spec_version": "0.2",
-    "source": ["[GitHub](https://github.com/HelloRusk/WhitespaceInterpreter)"]
+    "source": ["https://github.com/HelloRusk/WhitespaceInterpreter"]
   },
   {
     "name": "whitespace-interpreter",
@@ -202,7 +202,7 @@
     "tags": ["interpreter"],
     "date": "2018-11-16",
     "spec_version": "0.3",
-    "source": ["[GitHub](https://github.com/adapap/whitespace-interpreter)"]
+    "source": ["https://github.com/adapap/whitespace-interpreter"]
   },
   {
     "name": "whitespace",
@@ -212,7 +212,7 @@
     "tags": ["interpreter", "text to Whitespace"],
     "date": "2018-11-08",
     "spec_version": "0.3",
-    "source": ["[GitHub](https://github.com/ahl27/whitespace)"]
+    "source": ["https://github.com/ahl27/whitespace"]
   },
   {
     "name": "nospace",
@@ -222,7 +222,7 @@
     "tags": ["language", "interpreter"],
     "date": "2018-09-05",
     "spec_version": "0.2",
-    "source": ["[GitHub](https://github.com/buyoh/nospace)"]
+    "source": ["https://github.com/buyoh/nospace"]
   },
   {
     "name": "whitespace-interpreter",
@@ -232,7 +232,7 @@
     "tags": ["interpreter"],
     "date": "2018-05-21",
     "spec_version": "0.3",
-    "source": ["[GitHub](https://github.com/wrotycz/whitespace-interpreter)"]
+    "source": ["https://github.com/wrotycz/whitespace-interpreter"]
   },
   {
     "name": "space",
@@ -242,7 +242,7 @@
     "tags": ["interpreter"],
     "date": "2018-04-21",
     "spec_version": "0.3",
-    "source": ["[GitHub](https://github.com/ze/space)"]
+    "source": ["https://github.com/ze/space"]
   },
   {
     "name": "Respace",
@@ -252,7 +252,7 @@
     "tags": ["interpreter"],
     "date": "2018-04-15",
     "spec_version": "0.3",
-    "source": ["[GitHub](https://github.com/andrewarchi/respace)"]
+    "source": ["https://github.com/andrewarchi/respace"]
   },
   {
     "name": "whitespace_interpreter",
@@ -262,7 +262,7 @@
     "tags": ["interpreter"],
     "date": "2018-03-09",
     "spec_version": "incomplete",
-    "source": ["[GitHub](https://github.com/MaximeGoyette/whitespace_interpreter)"]
+    "source": ["https://github.com/MaximeGoyette/whitespace_interpreter"]
   },
   {
     "name": "erasure",
@@ -272,7 +272,7 @@
     "tags": ["interpreter"],
     "date": "2018-02-24",
     "spec_version": "0.2",
-    "source": ["[GitHub](https://github.com/jmesyou/erasure)"]
+    "source": ["https://github.com/jmesyou/erasure"]
   },
   {
     "name": "whitespace-interperter",
@@ -282,7 +282,7 @@
     "tags": ["interpreter"],
     "date": "2018-02-21",
     "spec_version": "0.3",
-    "source": ["[GitHub](https://github.com/RuMaxwell/whitespace-interpreter)"]
+    "source": ["https://github.com/RuMaxwell/whitespace-interpreter"]
   },
   {
     "name": "Whitespace-interpreter",
@@ -292,7 +292,7 @@
     "tags": ["interpreter"],
     "date": "2017-08-09",
     "spec_version": "0.3",
-    "source": ["[GitHub](https://github.com/Bornlex/Whitespace-interpreter)"]
+    "source": ["https://github.com/Bornlex/Whitespace-interpreter"]
   },
   {
     "name": "whitespace-interpreter",
@@ -302,7 +302,7 @@
     "tags": ["interpreter"],
     "date": "2017-06-07",
     "spec_version": "0.2",
-    "source": ["[GitHub](https://github.com/benajmin/whitespace-interpreter)"]
+    "source": ["https://github.com/benajmin/whitespace-interpreter"]
   },
   {
     "name": "wsm2ws",
@@ -312,7 +312,7 @@
     "tags": ["assembler"],
     "date": "2017-05-28",
     "spec_version": "0.3",
-    "source": ["[GitHub](https://github.com/ephphatha/wsm2ws)"]
+    "source": ["https://github.com/ephphatha/wsm2ws"]
   },
   {
     "name": "ws.vim",
@@ -322,7 +322,7 @@
     "tags": ["syntax highlighting"],
     "date": "2017-05-15",
     "spec_version": "0.3",
-    "source": ["[GitHub](https://github.com/rolf007/ws.vim)"]
+    "source": ["https://github.com/rolf007/ws.vim"]
   },
   {
     "name": "Mr. White",
@@ -332,7 +332,7 @@
     "tags": ["interpreter"],
     "date": "2017-03-23",
     "spec_version": "0.3",
-    "source": ["[GitHub](https://github.com/derek121/mrwhite)"]
+    "source": ["https://github.com/derek121/mrwhite"]
   },
   {
     "name": "whitepy",
@@ -342,7 +342,7 @@
     "tags": ["interpreter"],
     "date": "2017-03-04",
     "spec_version": "0.2",
-    "source": ["[GitHub](https://github.com/yasn77/whitepy)"]
+    "source": ["https://github.com/yasn77/whitepy"]
   },
   {
     "name": "whitespace-scheme",
@@ -352,7 +352,7 @@
     "tags": ["interpreter"],
     "date": "2017-02-15",
     "spec_version": "0.2",
-    "source": ["[GitHub](https://github.com/niyarin/whitespace-scheme)"]
+    "source": ["https://github.com/niyarin/whitespace-scheme"]
   },
   {
     "name": "whitespace.lol",
@@ -362,7 +362,8 @@
     "tags": ["interpreter"],
     "date": "2016-11-20",
     "spec_version": "0.3",
-    "source": ["[GitHub](https://github.com/hostilefork/whitespacers/tree/master/lolcode) (mirrored)"]
+    "source": ["https://github.com/hostilefork/whitespacers/tree/master/lolcode"],
+    "mirrored": true
   },
   {
     "name": "WhiteSpaceInterpreter",
@@ -372,7 +373,7 @@
     "tags": ["interpreter"],
     "date": "2016-10-27",
     "spec_version": "incomplete",
-    "source": ["[GitHub](https://github.com/EIA-University/WhiteSpaceInterpreter)"]
+    "source": ["https://github.com/EIA-University/WhiteSpaceInterpreter"]
   },
   {
     "name": "whitespace-python",
@@ -382,7 +383,7 @@
     "tags": ["interpreter"],
     "date": "2016-08-31",
     "spec_version": "0.2",
-    "source": ["[GitHub](https://github.com/dwayne/whitespace-python)"]
+    "source": ["https://github.com/dwayne/whitespace-python"]
   },
   {
     "name": "ws-frontent",
@@ -392,7 +393,7 @@
     "tags": ["compiler"],
     "date": "2016-08-20",
     "spec_version": "0.2 (incomplete)",
-    "source": ["[GitHub](https://github.com/sonicyang/ws-frontend)"]
+    "source": ["https://github.com/sonicyang/ws-frontend"]
   },
   {
     "name": "White++",
@@ -402,7 +403,7 @@
     "tags": ["interpreter"],
     "date": "2016-07-27",
     "spec_version": "0.2",
-    "source": ["[GitHub](https://github.com/marcellippmann/Whitepp)"]
+    "source": ["https://github.com/marcellippmann/Whitepp"]
   },
   {
     "name": "Whitespacers",
@@ -412,7 +413,7 @@
     "tags": ["JIT compiler"],
     "date": "2016-06-19",
     "spec_version": "0.3",
-    "source": ["[GitHub](https://github.com/CensoredUsername/whitespace-rs)"]
+    "source": ["https://github.com/CensoredUsername/whitespace-rs"]
   },
   {
     "name": "Rust-Whitespace",
@@ -422,7 +423,7 @@
     "tags": ["interpreter"],
     "date": "2016-05-08",
     "spec_version": "0.2",
-    "source": ["[GitHub](https://github.com/Jayshua/rust-whitespace)"]
+    "source": ["https://github.com/Jayshua/rust-whitespace"]
   },
   {
     "name": "whitespace-interpreter",
@@ -432,7 +433,7 @@
     "tags": ["interpreter"],
     "date": "2016-04-29",
     "spec_version": "0.3",
-    "source": ["[GitHub](https://github.com/kanra1412/whitespace-interpreter)"]
+    "source": ["https://github.com/kanra1412/whitespace-interpreter"]
   },
   {
     "name": "Whitespace-JS",
@@ -442,7 +443,7 @@
     "tags": ["interpreter"],
     "date": "2016-04-12",
     "spec_version": "0.3",
-    "source": ["[GitHub](https://github.com/susisu/Whitespace-JS)"]
+    "source": ["https://github.com/susisu/Whitespace-JS"]
   },
   {
     "name": "whitespace-interpreter",
@@ -452,7 +453,7 @@
     "tags": ["interpreter"],
     "date": "2016-02-08",
     "spec_version": "0.2",
-    "source": ["[GitHub](https://github.com/uraza/whitespace-interpreter)"]
+    "source": ["https://github.com/uraza/whitespace-interpreter"]
   },
   {
     "name": "WHINT",
@@ -462,7 +463,7 @@
     "tags": ["interpreter"],
     "date": "2015-12-31",
     "spec_version": "0.2",
-    "source": ["[GitHub](https://github.com/abac00s/WHINT)"]
+    "source": ["https://github.com/abac00s/WHINT"]
   },
   {
     "name": "Whitespace",
@@ -472,7 +473,7 @@
     "tags": ["interpreter"],
     "date": "2015-09-28",
     "spec_version": "0.3",
-    "source": ["[GitHub](https://github.com/dalleng/Whitespace)"]
+    "source": ["https://github.com/dalleng/Whitespace"]
   },
   {
     "name": "Cupertino-WhiteSpace-Interperter",
@@ -482,7 +483,7 @@
     "tags": ["interpreter"],
     "date": "2015-05-22",
     "spec_version": "0.3",
-    "source": ["[GitHub](https://github.com/frmsaul/Cupertino-WhiteSpace-Interperter)"]
+    "source": ["https://github.com/frmsaul/Cupertino-WhiteSpace-Interperter"]
   },
   {
     "name": "whitespace",
@@ -492,7 +493,7 @@
     "tags": ["interpreter"],
     "date": "2015-05-18",
     "spec_version": "0.3",
-    "source": ["[GitHub](https://github.com/mcolom/whitespace)"]
+    "source": ["https://github.com/mcolom/whitespace"]
   },
   {
     "name": "ws_interpreter",
@@ -502,7 +503,7 @@
     "tags": ["interpreter"],
     "date": "2015-05-13",
     "spec_version": "0.3",
-    "source": ["[GitHub](https://github.com/kmizu/ws_interpreter)"]
+    "source": ["https://github.com/kmizu/ws_interpreter"]
   },
   {
     "name": "I C Whitespace",
@@ -512,7 +513,7 @@
     "tags": ["interpreter"],
     "date": "2015-03-10",
     "spec_version": "0.3",
-    "source": ["[GitHub](https://github.com/StrangePan/I_C_Whitespace)"]
+    "source": ["https://github.com/StrangePan/I_C_Whitespace"]
   },
   {
     "name": "whitespace",
@@ -522,7 +523,7 @@
     "tags": ["interpreter"],
     "date": "2015-02-19",
     "spec_version": "0.3",
-    "source": ["[GitHub](https://github.com/kinu/whitespace)"]
+    "source": ["https://github.com/kinu/whitespace"]
   },
   {
     "name": "whitespace-clj",
@@ -532,7 +533,7 @@
     "tags": ["interpreter"],
     "date": "2015-02-11",
     "spec_version": "0.2",
-    "source": ["[GitHub](https://github.com/MakeNowJust/whitespace-clj)"]
+    "source": ["https://github.com/MakeNowJust/whitespace-clj"]
   },
   {
     "name": "whitespace-php",
@@ -542,7 +543,7 @@
     "tags": ["interpreter"],
     "date": "2015-02-04",
     "spec_version": "0.3",
-    "source": ["[GitHub](https://github.com/nobody1986/whitespace-php)"]
+    "source": ["https://github.com/nobody1986/whitespace-php"]
   },
   {
     "name": "whiteSpaceInterpreter",
@@ -552,7 +553,7 @@
     "tags": ["interpreter"],
     "date": "2015-01-29",
     "spec_version": "0.3",
-    "source": ["[GitHub](https://github.com/faurehu/whiteSpaceInterpreter)"]
+    "source": ["https://github.com/faurehu/whiteSpaceInterpreter"]
   },
   {
     "name": "Whitespace-Interpreter--C-",
@@ -562,7 +563,7 @@
     "tags": ["interpreter"],
     "date": "2014-12-02",
     "spec_version": "0.2",
-    "source": ["[GitHub](https://github.com/sudheesh4/Whitespace-Interpreter-C-)"]
+    "source": ["https://github.com/sudheesh4/Whitespace-Interpreter-C-"]
   },
   {
     "name": "WhiteSpaceInterpreter",
@@ -572,7 +573,7 @@
     "tags": ["interpreter"],
     "date": "2014-11-21",
     "spec_version": "0.3",
-    "source": ["[GitHub](https://github.com/reflash-blog/WhiteSpaceInterpreter)"]
+    "source": ["https://github.com/reflash-blog/WhiteSpaceInterpreter"]
   },
   {
     "name": "Whitespace",
@@ -582,7 +583,7 @@
     "tags": ["interpreter", "translator"],
     "date": "2014-11-08",
     "spec_version": "0.3",
-    "source": ["[GitHub](https://github.com/koturn/Whitespace)"]
+    "source": ["https://github.com/koturn/Whitespace"]
   },
   {
     "name": "whitespace.php",
@@ -592,7 +593,7 @@
     "tags": ["interpreter"],
     "date": "2014-11-01",
     "spec_version": "0.2",
-    "source": ["[GitHub](https://github.com/johankj/whitespace-interpreter-php)"]
+    "source": ["https://github.com/johankj/whitespace-interpreter-php"]
   },
   {
     "name": "wsm",
@@ -602,7 +603,7 @@
     "tags": ["assembler"],
     "date": "2014-09-27",
     "spec_version": "0.2",
-    "source": ["[GitHub](https://github.com/igorw/wsm)"]
+    "source": ["https://github.com/igorw/wsm"]
   },
   {
     "name": "Albino",
@@ -612,7 +613,7 @@
     "tags": ["interpreter", "assembler", "bytecode"],
     "date": "2014-07-18",
     "spec_version": "0.3",
-    "source": ["[GitHub](https://github.com/faultier/albino)"]
+    "source": ["https://github.com/faultier/albino"]
   },
   {
     "name": "Whitespace-LLVM",
@@ -622,7 +623,7 @@
     "tags": ["interpreter"],
     "date": "2014-07-16",
     "spec_version": "0.3",
-    "source": ["[GitHub](https://github.com/Subv/Whitespace-LLVM)"]
+    "source": ["https://github.com/Subv/Whitespace-LLVM"]
   },
   {
     "name": "Whitebase",
@@ -632,7 +633,7 @@
     "tags": ["interpreter", "assembler", "bytecode"],
     "date": "2014-07-15",
     "spec_version": "0.3",
-    "source": ["[GitHub](https://github.com/faultier/whitebase)"]
+    "source": ["https://github.com/faultier/whitebase"]
   },
   {
     "name": "whitespace-interpreter",
@@ -642,7 +643,7 @@
     "tags": ["interpreter"],
     "date": "2014-06-18",
     "spec_version": "0.2",
-    "source": ["[GitHub](https://github.com/azige/whitespace-interpreter)"]
+    "source": ["https://github.com/azige/whitespace-interpreter"]
   },
   {
     "name": "white",
@@ -652,7 +653,7 @@
     "tags": ["interpreter"],
     "date": "2014-05-30",
     "spec_version": "0.3",
-    "source": ["[GitHub](https://github.com/Keirua/whitespace)"]
+    "source": ["https://github.com/Keirua/whitespace"]
   },
   {
     "name": "elixir-whitespace",
@@ -662,7 +663,7 @@
     "tags": ["interpreter"],
     "date": "2014-03-07",
     "spec_version": "0.3",
-    "source": ["[GitHub](https://github.com/QuinnWilton/elixir-whitespace)"]
+    "source": ["https://github.com/QuinnWilton/elixir-whitespace"]
   },
   {
     "name": "SaTaN",
@@ -672,7 +673,7 @@
     "tags": ["interpreter"],
     "date": "2014-03-03",
     "spec_version": "0.3",
-    "source": ["[GitHub](https://github.com/threeifbywhiskey/satan)"]
+    "source": ["https://github.com/threeifbywhiskey/satan"]
   },
   {
     "name": "wspacego",
@@ -682,7 +683,7 @@
     "tags": ["interpreter"],
     "date": "2013-12-27",
     "spec_version": "0.3",
-    "source": ["[GitHub](https://github.com/135yshr/wspacego)"]
+    "source": ["https://github.com/135yshr/wspacego"]
   },
   {
     "name": "wvm",
@@ -692,7 +693,7 @@
     "tags": ["interpreter"],
     "date": "2013-11-24",
     "spec_version": "0.3",
-    "source": ["[GitHub](https://github.com/apua/whitespace)"]
+    "source": ["https://github.com/apua/whitespace"]
   },
   {
     "name": "wseditor",
@@ -702,7 +703,7 @@
     "tags": ["IDE"],
     "date": "2013-11-21",
     "spec_version": "-",
-    "source": ["[GitHub](https://github.com/YuukiARIA/wseditor)"]
+    "source": ["https://github.com/YuukiARIA/wseditor"]
   },
   {
     "name": "whitespace-llvm",
@@ -712,7 +713,7 @@
     "tags": ["compiler", "JIT", "optimizer"],
     "date": "2013-08-31",
     "spec_version": "0.3",
-    "source": ["[GitHub](https://github.com/worktycho/whitespace-llvm)"]
+    "source": ["https://github.com/worktycho/whitespace-llvm"]
   },
   {
     "name": "Whitespace-JS",
@@ -722,7 +723,7 @@
     "tags": ["interpreter", "assembler"],
     "date": "2013-08-14",
     "spec_version": "0.3",
-    "source": ["[GitHub](https://github.com/adotout/whitespace-js)"]
+    "source": ["https://github.com/adotout/whitespace-js"]
   },
   {
     "name": "ws-interpreter",
@@ -732,7 +733,7 @@
     "tags": ["interpreter"],
     "date": "2013-05-05",
     "spec_version": "0.3",
-    "source": ["[GitHub](https://github.com/YuukiARIA/ws-interpreter)"]
+    "source": ["https://github.com/YuukiARIA/ws-interpreter"]
   },
   {
     "name": "whitespace",
@@ -742,7 +743,7 @@
     "tags": ["interpreter"],
     "date": "2013-04-05",
     "spec_version": "0.2 incomplete",
-    "source": ["[GitHub](https://github.com/abhijitsharma/whitespace)"]
+    "source": ["https://github.com/abhijitsharma/whitespace"]
   },
   {
     "name": "whitespace",
@@ -752,7 +753,7 @@
     "tags": ["interpreter"],
     "date": "2013-03-27",
     "spec_version": "0.3",
-    "source": ["[GitHub](https://github.com/rumpl/whitespace)"]
+    "source": ["https://github.com/rumpl/whitespace"]
   },
   {
     "name": "Whitelips IDE",
@@ -763,9 +764,9 @@
     "date": "2013-03-20",
     "spec_version": "0.3",
     "source": [
-      "[GitHub](https://github.com/vii5ard/whitespace)",
-      "[IDE](https://vii5ard.github.io/whitespace/)",
-      "[Mailing list](https://web.archive.org/web/20141011193149/http://compsoc.dur.ac.uk/archives/whitespace/2013-April/000082.html)"
+      "https://github.com/vii5ard/whitespace",
+      "https://vii5ard.github.io/whitespace/",
+      "https://web.archive.org/web/20141011193149/http://compsoc.dur.ac.uk/archives/whitespace/2013-April/000082.html"
     ]
   },
   {
@@ -776,7 +777,7 @@
     "tags": ["interpreter"],
     "date": "2013-02-06",
     "spec_version": "0.3",
-    "source": ["[GitHub](https://github.com/timvandermeij/whitespace-interpreter)"]
+    "source": ["https://github.com/timvandermeij/whitespace-interpreter"]
   },
   {
     "name": "ws",
@@ -786,7 +787,7 @@
     "tags": ["interpreter"],
     "date": "2012-12-19",
     "spec_version": "0.3",
-    "source": ["[GitHub](https://github.com/knmorgan/ws)"]
+    "source": ["https://github.com/knmorgan/ws"]
   },
   {
     "name": "Whitespace-Interpreter",
@@ -796,7 +797,7 @@
     "tags": ["interpreter"],
     "date": "2012-12-15",
     "spec_version": "0.2 incomplete",
-    "source": ["[GitHub](https://github.com/noia1/Whitespace-Interpreter)"]
+    "source": ["https://github.com/noia1/Whitespace-Interpreter"]
   },
   {
     "name": "wsInt",
@@ -806,7 +807,7 @@
     "tags": ["interpreter"],
     "date": "2012-12-02",
     "spec_version": "0.2",
-    "source": ["[GitHub](https://github.com/dpohanlon/wsInt)"]
+    "source": ["https://github.com/dpohanlon/wsInt"]
   },
   {
     "name": "WS-idr",
@@ -816,7 +817,7 @@
     "tags": ["interpreter"],
     "date": "2012-11-25",
     "spec_version": "0.3",
-    "source": ["[GitHub](https://github.com/edwinb/WS-idr)"]
+    "source": ["https://github.com/edwinb/WS-idr"]
   },
   {
     "name": "Whitespace4j",
@@ -826,7 +827,7 @@
     "tags": ["interpreter"],
     "date": "2012-11-04",
     "spec_version": "0.3",
-    "source": ["[GitHub](https://github.com/Brumbeere/Whitespace4j)"]
+    "source": ["https://github.com/Brumbeere/Whitespace4j"]
   },
   {
     "name": "whitespace",
@@ -836,7 +837,7 @@
     "tags": ["interpreter"],
     "date": "2012-10-29",
     "spec_version": "0.3",
-    "source": ["[GitHub](https://github.com/abcsharp/Whitespace)"]
+    "source": ["https://github.com/abcsharp/Whitespace"]
   },
   {
     "name": "whitespace",
@@ -846,7 +847,7 @@
     "tags": ["interpreter"],
     "date": "2012-10-15",
     "spec_version": "0.2",
-    "source": ["[GitHub](https://github.com/bossiernesto/whitespace)"]
+    "source": ["https://github.com/bossiernesto/whitespace"]
   },
   {
     "name": "SignificantWhitespace",
@@ -856,7 +857,7 @@
     "tags": ["interpreter"],
     "date": "2012-02-16",
     "spec_version": "0.3",
-    "source": ["[GitHub](https://github.com/pvdz/SignificantWhitespace)"]
+    "source": ["https://github.com/pvdz/SignificantWhitespace"]
   },
   {
     "name": "white-scheme",
@@ -866,7 +867,7 @@
     "tags": ["interpreter"],
     "date": "2010-12-23",
     "spec_version": "0.3",
-    "source": ["[GitHub](https://github.com/athos/white-scheme)"]
+    "source": ["https://github.com/athos/white-scheme"]
   },
   {
     "name": "hws",
@@ -876,7 +877,7 @@
     "tags": ["interpreter"],
     "date": "2010-10-29",
     "spec_version": "0.3",
-    "source": ["[GitHub](https://github.com/takatoh/hws)"]
+    "source": ["https://github.com/takatoh/hws"]
   },
   {
     "name": "whitespace-go",
@@ -886,7 +887,7 @@
     "tags": ["interpreter"],
     "date": "2010-10-08",
     "spec_version": "0.3",
-    "source": ["[GitHub](https://github.com/technohippy/go-whitespace)"]
+    "source": ["https://github.com/technohippy/go-whitespace"]
   },
   {
     "name": "whitespace.reb",
@@ -896,7 +897,8 @@
     "tags": ["interpreter"],
     "date": "2010-07-10",
     "spec_version": "0.3",
-    "source": ["[GitHub](https://github.com/hostilefork/whitespacers/tree/master/rebol) (mirrored)"]
+    "source": ["https://github.com/hostilefork/whitespacers/tree/master/rebol"],
+    "mirrored": true
   },
   {
     "name": "HaPyLi",
@@ -907,8 +909,8 @@
     "date": "2010-05-23",
     "spec_version": "0.3",
     "source": [
-      "[hapyli.webs.com](https://web.archive.org/web/20110212015726/http://hapyli.webs.com/)",
-      "[Mailing list](https://web.archive.org/web/20141011193154/http://compsoc.dur.ac.uk/archives/whitespace/2010-May/000075.html) (unavailable)"
+      "https://web.archive.org/web/20110212015726/http://hapyli.webs.com/",
+      "https://web.archive.org/web/20141011193154/http://compsoc.dur.ac.uk/archives/whitespace/2010-May/000075.html"
     ]
   },
   {
@@ -920,9 +922,10 @@
     "date": "2010-03-14",
     "spec_version": "0.3",
     "source": [
-      "[ActiveState](https://code.activestate.com/recipes/sets/12/)",
-      "[GitHub](https://github.com/ActiveState/code) (mirrored)"
-    ]
+      "https://code.activestate.com/recipes/sets/12/",
+      "https://github.com/ActiveState/code"
+    ],
+    "mirrored": true
   },
   {
     "name": "*C++ interpreter*",
@@ -932,7 +935,8 @@
     "tags": ["interpreter"],
     "date": "2010-02-05",
     "spec_version": "0.3",
-    "source": ["[rohitab.com](http://www.rohitab.com/discuss/topic/35639-c-whitespace-interpreter/?p=10074137) (mirrored)"]
+    "source": ["http://www.rohitab.com/discuss/topic/35639-c-whitespace-interpreter/?p=10074137"],
+    "mirrored": true
   },
   {
     "name": "Whitespace Interpreter v1.0",
@@ -942,7 +946,8 @@
     "tags": ["interpreter"],
     "date": "2010-01-30",
     "spec_version": "0.3",
-    "source": ["[rohitab.com](http://www.rohitab.com/discuss/topic/35639-c-whitespace-interpreter/) (mirrored)"]
+    "source": ["http://www.rohitab.com/discuss/topic/35639-c-whitespace-interpreter/"],
+    "mirrored": true
   },
   {
     "name": "wspace",
@@ -952,7 +957,7 @@
     "tags": ["interpreter"],
     "date": "2008-05-02",
     "spec_version": "0.3",
-    "source": ["[GitHub](https://github.com/hogelog/hogel.org-old/tree/master/content/lib/c/ws)"]
+    "source": ["https://github.com/hogelog/hogel.org-old/tree/master/content/lib/c/ws"]
   },
   {
     "name": "wspace",
@@ -963,10 +968,11 @@
     "date": "2007-05-26",
     "spec_version": "0.3",
     "source": [
-      "[GitHub](https://github.com/pavel987/wspace)",
-      "[Mailing list](https://web.archive.org/web/20141011193149/http://compsoc.dur.ac.uk/archives/whitespace/2008-April/000068.html)",
-      "[pavelshub.com](http://pavelshub.com/blog/2010/10/wspace/) (mirrored)"
-    ]
+      "https://github.com/pavel987/wspace",
+      "https://web.archive.org/web/20141011193149/http://compsoc.dur.ac.uk/archives/whitespace/2008-April/000068.html",
+      "http://pavelshub.com/blog/2010/10/wspace/"
+    ],
+    "mirrored": true
   },
   {
     "name": "pywhitespace",
@@ -977,11 +983,12 @@
     "date": "2004-08-03",
     "spec_version": "0.3 with trace",
     "source": [
-      "[Mailing list (2004)](https://web.archive.org/web/20141011193201/http://compsoc.dur.ac.uk/archives/whitespace/2004-August/000048.html)",
-      "[Newcastle (2004)](https://web.archive.org/web/20061209092911/http://www.cs.newcastle.edu.au/~c3018900/pywhitespace.tar.bz2)",
-      "[Mailing list (2007)](https://web.archive.org/web/20161009051032/http://compsoc.dur.ac.uk/archives/whitespace/2007-December/000065.html)",
-      "[mrphlip.com (2007)](https://www.mrphlip.com/pywhitespace.tar.bz2) (mirrored)"
-    ]
+      "https://web.archive.org/web/20141011193201/http://compsoc.dur.ac.uk/archives/whitespace/2004-August/000048.html",
+      "https://web.archive.org/web/20161009051032/http://compsoc.dur.ac.uk/archives/whitespace/2007-December/000065.html",
+      "https://web.archive.org/web/20061209092911/http://www.cs.newcastle.edu.au/~c3018900/pywhitespace.tar.bz2",
+      "https://www.mrphlip.com/pywhitespace.tar.bz2"
+    ],
+    "mirrored": true
   },
   {
     "name": "wsinterws",
@@ -991,7 +998,7 @@
     "tags": ["interpreter"],
     "date": "2003-04-24",
     "spec_version": "0.2",
-    "source": ["[burghard.info](https://web.archive.org/web/20030608024503/http://www.burghard.info/code/whitespace/wsinterws/index.html)"]
+    "source": ["https://web.archive.org/web/20030608024503/http://www.burghard.info/code/whitespace/wsinterws/index.html"]
   },
   {
     "name": "whitespace-ruby",
@@ -1001,7 +1008,7 @@
     "tags": ["interpreter"],
     "date": "2003-04-02",
     "spec_version": "0.2",
-    "source": ["[yagni.com](https://web.archive.org/web/20120417161917/http://yagni.com/whitespace/index.html)"]
+    "source": ["https://web.archive.org/web/20120417161917/http://yagni.com/whitespace/index.html"]
   },
   {
     "name": "whitespace.pl",
@@ -1011,7 +1018,7 @@
     "tags": ["interpreter"],
     "date": "2003-04-01",
     "spec_version": "0.2",
-    "source": ["[CompSoc](https://web.archive.org/web/20150717140342/http://compsoc.dur.ac.uk:80/whitespace/download.php)"]
+    "source": ["https://web.archive.org/web/20150717140342/http://compsoc.dur.ac.uk:80/whitespace/download.php"]
   },
   {
     "name": "wspace",
@@ -1022,8 +1029,8 @@
     "date": "2004-05-04",
     "spec_version": "0.3",
     "source": [
-      "[CompSoc](https://web.archive.org/web/20150717140342/http://compsoc.dur.ac.uk:80/whitespace/download.php)",
-      "[Mailing list](https://web.archive.org/web/20141011193201/http://compsoc.dur.ac.uk/archives/whitespace/2004-May/000047.html)"
+      "https://web.archive.org/web/20150717140342/http://compsoc.dur.ac.uk:80/whitespace/download.php",
+      "https://web.archive.org/web/20141011193201/http://compsoc.dur.ac.uk/archives/whitespace/2004-May/000047.html"
     ]
   },
   {
@@ -1034,6 +1041,6 @@
     "tags": ["interpreter"],
     "date": "2002",
     "spec_version": "0.2",
-    "source": ["[CompSoc](https://web.archive.org/web/20150717140342/http://compsoc.dur.ac.uk:80/whitespace/download.php)"]
+    "source": ["https://web.archive.org/web/20150717140342/http://compsoc.dur.ac.uk:80/whitespace/download.php"]
   }
 ]
