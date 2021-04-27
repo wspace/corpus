@@ -38,6 +38,7 @@ programming language.
 | [whitespace-interperter](python/rumaxwell)     | RuMaxwell        | Python      | Interpreter  | 2018-02-21 | 0.3  | [GitHub](https://github.com/RuMaxwell/whitespace-interpreter) |
 | [Whitespace-interpreter](python/bornlex)       | Bornlex          | Python      | Interpreter  | 2017-08-09 | 0.3  | [GitHub](https://github.com/Bornlex/Whitespace-interpreter) |
 | [whitespace-interpreter](cpp/benajmin)         | Benjamin Wilkins | C++         | Interpreter  | 2017-06-07 | 0.2  | [GitHub](https://github.com/benajmin/whitespace-interpreter) |
+| [wsm2ws](perl/ephphatha-wsm2ws)                | Andrew James     | Perl        | Assembler    | 2017-05-28 | 0.3  | [GitHub](https://github.com/ephphatha/wsm2ws) |
 | [ws.vim](vim/rolf-ws-vim)                      | Rolf Asmund      | Vim script  | Syntax highlighting | 2017-05-15 | 0.3 | [GitHub](https://github.com/rolf007/ws.vim) |
 | [Mr. White](erlang/derek-mrwhite)              | Derek Brown      | Erlang      | Interpreter  | 2017-03-23 | 0.3  | [GitHub](https://github.com/derek121/mrwhite) |
 | [whitepy](python/yasn-whitepy)                 | Yasser Saleemi   | Python      | Interpreter  | 2017-03-04 | 0.2  | [GitHub](https://github.com/yasn77/whitepy) |
@@ -66,6 +67,7 @@ programming language.
 | [WhiteSpaceInterpreter](csharp/reflash)        | reflash          | C#          | Interpreter  | 2014-11-21 | 0.3  | [GitHub](https://github.com/reflash-blog/WhiteSpaceInterpreter) |
 | [Whitespace](c/koturn)                         | koturn           | C           | Interpreter, translator | 2014-11-08 | 0.3 | [GitHub](https://github.com/koturn/Whitespace) |
 | [whitespace.php](php/johankj)                  | Johan K. Jensen  | PHP         | Interpreter  | 2014-11-01 | 0.2  | [GitHub](https://github.com/johankj/whitespace-interpreter-php) |
+| [wsm](php/igorw-wsm)                           | Igor Wiedler     | PHP         | Assembler    | 2014-09-27 | 0.2  | [GitHub](https://github.com/igorw/wsm) |
 | [Albino](rust/faultier-albino)                 | Taro Sako        | Rust        | Interpreter, assembler, bytecode | 2014-07-18 | 0.3 | [GitHub](https://github.com/faultier/albino) |
 | [Whitespace-LLVM](cpp/subv-whitespace-llvm)    | Sebastian Valle  | C++, LLVM   | Interpreter  | 2014-07-16 | 0.3 | [GitHub](https://github.com/Subv/Whitespace-LLVM) |
 | [Whitebase](rust/faultier-whitebase)           | Taro Sako        | Rust        | Interpreter, assembler, bytecode | 2014-07-15 | 0.3 | [GitHub](https://github.com/faultier/whitebase) |

@@ -172,6 +172,12 @@
 [submodule "kotlin/ze-space"]
 	path = kotlin/ze-space
 	url = https://github.com/ze/space
+[submodule "perl/ephphatha-wsm2ws"]
+	path = perl/ephphatha-wsm2ws
+	url = https://github.com/ephphatha/wsm2ws
+[submodule "php/igorw-wsm"]
+	path = php/igorw-wsm
+	url = https://github.com/igorw/wsm
 [submodule "php/johankj"]
 	path = php/johankj
 	url = https://github.com/johankj/whitespace-interpreter-php
