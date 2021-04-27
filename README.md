@@ -27,7 +27,7 @@ programming language.
 | [Akaza](ruby/pocke-akaza)                      | Masataka Pocke Kuwabara | Ruby | Interpreter, assembler | 2019-04-28 | 0.2 | [GitHub](https://github.com/pocke/akaza) |
 | [go-wspace](go/tempxla-go-wspace)              | tempxla          | Go          | Interpreter  | 2019-02-24 | 0.2  | [GitHub](https://github.com/tempxla/go-wspace) |
 | [Whitespace Interpreter](rust/kaisugi)         | Kaito Sugimoto   | Rust        | Interpreter  | 2018-11-23 | 0.2  | [GitHub](https://github.com/HelloRusk/WhitespaceInterpreter) |
-| [whitespace-interpreter](python/adapap)        | Adam Papenhausen | Python      | Interpreter  | 2018-11-16 | 0.3  | [GitHub](https://github.com/adapap/whitespace-interpreter)
+| [whitespace-interpreter](python/adapap)        | Adam Papenhausen | Python      | Interpreter  | 2018-11-16 | 0.3  | [GitHub](https://github.com/adapap/whitespace-interpreter) |
 | [whitespace](python/ahl27)                     | Aidan Lakshman   | Python      | Interpreter, text to Whitespace | 2018-11-08 | 0.3 | [GitHub](https://github.com/ahl27/whitespace) |
 | [nospace](cpp/buyoh-nospace)                   | 舞葉 (Mai Buyoh) | C++, Ruby   | Language that compiles to Whitespace, interpreter | 2018-09-05 | 0.2 | [GitHub](https://github.com/buyoh/nospace) |
 | [whitespace-interpreter](java/wrotycz)         | Kamil Węglarz    | Java        | Interpreter  | 2018-05-21 | 0.3  | [GitHub](https://github.com/wrotycz/whitespace-interpreter) |
@@ -48,7 +48,7 @@ programming language.
 | [whitespace-python](python/dwayne)             | Dwayne Crooks    | Python      | Interpreter  | 2016-08-31 | 0.2  | [GitHub](https://github.com/dwayne/whitespace-python) |
 | [ws-frontent](cpp/sonicyang-ws-frontend)       | Yang Chung-Fan   | C++, LLVM   | Compiler     | 2016-08-20 | 0.2 (incomplete) | [GitHub](https://github.com/sonicyang/ws-frontend) |
 | [White++](cpp/marcellippmann-whitepp)          | Marcel Lippmann  | C++         | Interpreter  | 2016-07-27 | 0.2  | [GitHub](https://github.com/marcellippmann/Whitepp) |
-| [Whitespacers](rust/censoredusername-whitespacers) | CensoredUsername | Rust      | JIT compiler | 2016-06-19 | 0.3  | [GitHub](https://github.com/CensoredUsername/whitespace-rs) |
+| [Whitespacers](rust/censoredusername-whitespacers) | CensoredUsername | Rust    | JIT compiler | 2016-06-19 | 0.3  | [GitHub](https://github.com/CensoredUsername/whitespace-rs) |
 | [Rust-Whitespace](rust/jayshua)                | Jayshua Nelson   | Rust        | Interpreter  | 2016-05-08 | 0.2  | [GitHub](https://github.com/Jayshua/rust-whitespace) |
 | [whitespace-interpreter](javascript/kanra1412) | kanra1412        | JavaScript  | Interpreter  | 2016-04-29 | 0.3  | [GitHub](https://github.com/kanra1412/whitespace-interpreter) |
 | [Whitespace-JS](javascript/susisu)             | Susisu           | JavaScript  | Interpreter  | 2016-04-12 | 0.3  | [GitHub](https://github.com/susisu/Whitespace-JS) |

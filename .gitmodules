@@ -244,7 +244,7 @@
 [submodule "rust/kaisugi"]
 	path = rust/kaisugi
 	url = https://github.com/HelloRusk/WhitespaceInterpreter
-[submodule "rust/luminighty"]
+[submodule "rust/luminight"]
 	path = rust/luminight
 	url = https://github.com/Luminighty/rustws
 [submodule "rust/nareshganduri"]
