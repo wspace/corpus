@@ -1,4 +1,4 @@
-.PHONY: generate
-generate:
+.PHONY: all
+all:
 	go run tools/generate.go
-	tools/sort_gitmodules.sh
+	tools/format.sh

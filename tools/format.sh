@@ -5,3 +5,9 @@
 
 perl -0ne 'print sort split(/^(?=\S)/m)' .gitmodules > tmp
 mv tmp .gitmodules
+
+# Format JSON and append missing LF
+# npm install -g underscore-cli
+# https://github.com/ddopson/underscore-cli
+underscore print -i projects.json -o projects.json
+echo >> projects.json

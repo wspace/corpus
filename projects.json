@@ -187,11 +187,7 @@
     "date": "2019-07-25",
     "spec_version": "0.3",
     "source": ["https://github.com/loklaan/zerowidth-lang"],
-    "mapping": {
-      "space": "&#8203;",
-      "tab": "&#8204;",
-      "lf": "\n"
-    },
+    "mapping": { "space": "&#8203;", "tab": "&#8204;", "lf": "\n" },
     "notes": "Fork of vii5ard/whitespace"
   },
   {
@@ -223,9 +219,7 @@
     "date": "2019-06-05",
     "spec_version": "0.3",
     "source": ["https://github.com/andrewarchi/nebula"],
-    "features": {
-      "arbitrary_precision": false
-    }
+    "features": { "arbitrary_precision": false }
   },
   {
     "name": "WhitespaceVM",
@@ -276,12 +270,7 @@
     "date": "2018-11-22",
     "spec_version": "-",
     "source": ["https://github.com/freyamade/hohoho"],
-    "mapping": {
-      "space": "snow",
-      "tab": "hohoho",
-      "lf": "\n",
-      "spaces_between": "true"
-    }
+    "mapping": { "space": "snow", "tab": "hohoho", "lf": "\n", "spaces_between": "true" }
   },
   {
     "name": "whitespace-interpreter",
@@ -342,9 +331,7 @@
     "date": "2018-04-15",
     "spec_version": "0.3",
     "source": ["https://github.com/andrewarchi/respace"],
-    "features": {
-      "arbitrary_precision": false
-    }
+    "features": { "arbitrary_precision": false }
   },
   {
     "name": "whitespace_interpreter",
@@ -690,11 +677,7 @@
     "date": "2015-02-26",
     "spec_version": "0.3",
     "source": ["https://github.com/brainbush/Tomato-Programming-Language"],
-    "mapping": {
-      "space": "番",
-      "tab": "茄",
-      "lf": "干"
-    }
+    "mapping": { "space": "番", "tab": "茄", "lf": "干" }
   },
   {
     "name": "whitespace",
@@ -1152,10 +1135,7 @@
     "tags": ["interpreter", "assembler"],
     "date": "2010-03-14",
     "spec_version": "0.3",
-    "source": [
-      "https://code.activestate.com/recipes/sets/12/",
-      "https://github.com/ActiveState/code"
-    ],
+    "source": ["https://code.activestate.com/recipes/sets/12/", "https://github.com/ActiveState/code"],
     "mirrored": true
   },
   {
@@ -1229,7 +1209,9 @@
     "tags": ["interpreter"],
     "date": "2003-04-24",
     "spec_version": "0.2",
-    "source": ["https://web.archive.org/web/20030608024503/http://www.burghard.info/code/whitespace/wsinterws/index.html"]
+    "source": [
+      "https://web.archive.org/web/20030608024503/http://www.burghard.info/code/whitespace/wsinterws/index.html"
+    ]
   },
   {
     "name": "whitespace-ruby",
@@ -1263,9 +1245,7 @@
       "https://web.archive.org/web/20150717140342/http://compsoc.dur.ac.uk:80/whitespace/download.php",
       "https://web.archive.org/web/20141011193201/http://compsoc.dur.ac.uk/archives/whitespace/2004-May/000047.html"
     ],
-    "features": {
-      "arbitrary_precision": true
-    }
+    "features": { "arbitrary_precision": true }
   },
   {
     "name": "wspace",
@@ -1276,8 +1256,6 @@
     "date": "2002",
     "spec_version": "0.2",
     "source": ["https://web.archive.org/web/20150717140342/http://compsoc.dur.ac.uk:80/whitespace/download.php"],
-    "features": {
-      "arbitrary_precision": true
-    }
+    "features": { "arbitrary_precision": true }
   }
 ]
