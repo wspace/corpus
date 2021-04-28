@@ -7,6 +7,7 @@ import (
 	"regexp"
 	"strings"
 	"text/template"
+	"time"
 	"unicode/utf8"
 
 	"github.com/andrewarchi/browser/jsonutil"
@@ -85,6 +86,10 @@ func (p *Project) formatColumns() ([]string, error) {
 	if p.Path != "" {
 		name = formatLink(p.Name, p.Path)
 	}
+	date := p.Date
+	if t, err := time.Parse("2006-01-02 15:04:05 -0700", date); err == nil {
+		date = t.Format("2006-01-02")
+	}
 	links := make([]string, 0, len(p.Source))
 	for _, s := range p.Source {
 		label, err := getURLLabel(s)
@@ -98,7 +103,7 @@ func (p *Project) formatColumns() ([]string, error) {
 		strings.Join(p.Authors, ", "),
 		strings.Join(p.Languages, ", "),
 		strings.Join(p.Tags, ", "),
-		p.Date,
+		date,
 		p.SpecVersion,
 		strings.Join(links, ", ")}, nil
 }
