@@ -29,7 +29,7 @@ programming language.
 | [Akaza](ruby/pocke-akaza)                      | Masataka Pocke Kuwabara | Ruby | interpreter, assembler | 2019-04-28 | 0.2 | [GitHub](https://github.com/pocke/akaza) |
 | [go-wspace](go/tempxla-go-wspace)              | tempxla          | Go         | interpreter  | 2019-02-24 | 0.2 | [GitHub](https://github.com/tempxla/go-wspace) |
 | [Whitespace Interpreter](rust/kaisugi)         | Kaito Sugimoto   | Rust       | interpreter  | 2018-11-23 | 0.2 | [GitHub](https://github.com/HelloRusk/WhitespaceInterpreter) |
-| [hohoho](python/freyamade-hohoho)              | Freya Broderick, Omar Sallam | Python | mapping | 2018-11-22 | - | [GitHub](https://github.com/freyamade/hohoho) |
+| [hohoho](python/freyamade-hohoho)              | Freya Madeline Broderick, Omar Sallam | Python | mapping | 2018-11-22 | - | [GitHub](https://github.com/freyamade/hohoho) |
 | [whitespace-interpreter](python/adapap)        | Adam Papenhausen | Python     | interpreter  | 2018-11-16 | 0.3 | [GitHub](https://github.com/adapap/whitespace-interpreter) |
 | [whitespace](python/ahl27)                     | Aidan Lakshman   | Python     | interpreter, text to Whitespace | 2018-11-08 | 0.3 | [GitHub](https://github.com/ahl27/whitespace) |
 | [nospace](cpp/buyoh-nospace)                   | 舞葉 (Mai Buyoh)   | C++, Ruby  | language, interpreter | 2018-09-05 | 0.2 | [GitHub](https://github.com/buyoh/nospace) |
@@ -48,20 +48,25 @@ programming language.
 | [whitespace-scheme](scheme/niyarin)            | Akira Inoue      | Scheme     | interpreter  | 2017-02-15 | 0.2 | [GitHub](https://github.com/niyarin/whitespace-scheme) |
 | [whitepy](python/yasn-whitepy)                 | Yasser Saleemi   | Python     | interpreter  | 2017-01-31 | 0.2 | [GitHub](https://github.com/yasn77/whitepy) |
 | [whitespace.lol](lolcode/akers)                | D.E. Akers       | LOLCODE    | interpreter  | 2016-11-20 | 0.3 | [GitHub](https://github.com/hostilefork/whitespacers/tree/master/lolcode) |
+| [whitespac3](python/alecgraves-whitespac3)     | Alec Graves      | Python     | interpreter  | 2016-11-17 | 0.3 | [GitHub](https://github.com/alecGraves/whitespac3) |
 | [WhiteSpaceInterpreter](java/eia)              | Zuleimi Esteffanny González Muñoz | Java | interpreter | 2016-10-27 | incomplete | [GitHub](https://github.com/EIA-University/WhiteSpaceInterpreter) |
-| [whitespace-python](python/dwayne)             | Dwayne Crooks    | Python     | interpreter  | 2016-08-31 | 0.2 | [GitHub](https://github.com/dwayne/whitespace-python) |
+| [whitespace-python](python/dwayne)             | Dwayne R. Crooks | Python     | interpreter  | 2016-08-31 | 0.2 | [GitHub](https://github.com/dwayne/whitespace-python) |
 | [ws-frontent](cpp/sonicyang-ws-frontend)       | Yang Chung-Fan   | C++, LLVM  | compiler     | 2016-08-20 | 0.2 (incomplete) | [GitHub](https://github.com/sonicyang/ws-frontend) |
 | [Whitespace](r/bmazoure)                       | Bogdan Mazoure   | R          | interpreter  | 2016-07-30 | 0.2 | [GitHub](https://github.com/bmazoure/whitespace) |
 | [White++](cpp/marcellippmann-whitepp)          | Marcel Lippmann  | C++        | interpreter  | 2016-07-27 | 0.2 | [GitHub](https://github.com/marcellippmann/Whitepp) |
+| [whitespace-ruby](ruby/dwayne)                 | Dwayne R. Crooks | Python     | interpreter  | 2016-07-11 | 0.2 | [GitHub](https://github.com/dwayne/whitespace-ruby) |
 | [Whitespacers](rust/censoredusername-whitespacers) | CensoredUsername | Rust   | JIT          | 2016-06-19 | 0.3 | [GitHub](https://github.com/CensoredUsername/whitespace-rs) |
 | [whitespace](c/bvisness)                       | Ben Visness      | C, Yacc    | interpreter, syntax highlighting | 2016-05-20 | 0.3 | [GitHub](https://github.com/bvisness/whitespace) |
 | [Rust-Whitespace](rust/jayshua)                | Jayshua Nelson   | Rust       | interpreter  | 2016-05-08 | 0.2 | [GitHub](https://github.com/Jayshua/rust-whitespace) |
 | [whitespace-interpreter](javascript/kanra1412) | kanra1412        | JavaScript | interpreter  | 2016-04-29 | 0.3 | [GitHub](https://github.com/kanra1412/whitespace-interpreter) |
 | [Whitespace-JS](javascript/susisu)             | Susisu           | JavaScript | interpreter  | 2016-04-12 | 0.3 | [GitHub](https://github.com/susisu/Whitespace-JS) |
+| [whitespace-ruby](ruby/alesiong)               | alesiong         | Ruby       | interpreter, disassembler, programs | 2016-03-05 | 0.3 | [GitHub](https://github.com/alesiong/whitespace-ruby) |
 | [whitespace-interpreter](javascript/uraza)     | Uraza            | JavaScript | interpreter  | 2016-02-08 | 0.2 | [GitHub](https://github.com/uraza/whitespace-interpreter) |
 | [WHINT](cpp/abac-whint)                        | Adam Bac         | C++        | interpreter  | 2015-12-31 | 0.2 | [GitHub](https://github.com/abac00s/WHINT) |
+| [Whitespacing](scala/ojha-whitespacing)        | Alexandra Ojha   | Scala      | interpreter  | 2015-12-11 | 0.2 | [GitHub](https://github.com/polyglotpiglet/Whitespacing) |
 | [callisto](lua/vyo-callisto)                   | Manu Weidmann    | Lua        | interpreter  | 2015-10-15 | 0.3 | [GitHub](https://github.com/vyo/callisto) |
 | [Whitespace](python/dalleng)                   | Diego Allen      | Python     | interpreter  | 2015-09-28 | 0.3 | [GitHub](https://github.com/dalleng/Whitespace) |
+| [whitespacer](javascript/macocha-whitespacer)  | Maciej Siwek     | JavaScript/React | IDE, interpreter | 2015-09-04 | 0.3 | [GitHub](https://github.com/macocha/whitespacer) |
 | [Cupertino-WhiteSpace-Interperter](cpp/frmsaul-cupertino) | Saul Fuhrmann | C++ | interpreter | 2015-05-22 | 0.3 | [GitHub](https://github.com/frmsaul/Cupertino-WhiteSpace-Interperter) |
 | [whitespace](python/mcolom)                    | Miguel Colom     | Python     | interpreter  | 2015-05-18 | 0.3 | [GitHub](https://github.com/mcolom/whitespace) |
 | [ws_interpreter](java/kmizu)                   | Kota Mizushima   | Java       | interpreter  | 2015-05-13 | 0.3 | [GitHub](https://github.com/kmizu/ws_interpreter) |
@@ -116,7 +121,7 @@ programming language.
 | [pywhitespace](python/phlip-pywhitespace)      | Phillip Bradbury | Python     | interpreter  | 2004-08-03 | 0.3 with trace | [Mailing list](https://web.archive.org/web/20141011193201/http://compsoc.dur.ac.uk/archives/whitespace/2004-August/000048.html), [Mailing list](https://web.archive.org/web/20161009051032/http://compsoc.dur.ac.uk/archives/whitespace/2007-December/000065.html), [Newcastle](https://web.archive.org/web/20061209092911/http://www.cs.newcastle.edu.au/~c3018900/pywhitespace.tar.bz2), [mrphlip.com](https://www.mrphlip.com/pywhitespace.tar.bz2) |
 | wspace                                         | Edwin Brady      | Haskell, Emacs Lisp | interpreter, syntax highlighting, programs | 2004-05-04 | 0.3 | [CompSoc](https://web.archive.org/web/20150717140342/http://compsoc.dur.ac.uk:80/whitespace/download.php), [Mailing list](https://web.archive.org/web/20141011193201/http://compsoc.dur.ac.uk/archives/whitespace/2004-May/000047.html) |
 | wsinterws                                      | Oliver Burghard  | Whitespace | interpreter  | 2003-04-24 | 0.2 | [burghard.info](https://web.archive.org/web/20030608024503/http://www.burghard.info/code/whitespace/wsinterws/index.html) |
-| whitespace-ruby                                | Wayne Conrad     | Ruby       | interpreter  | 2003-04-02 | 0.2 | [yagni.com](https://web.archive.org/web/20120417161917/http://yagni.com/whitespace/index.html) |
+| whitespace-ruby                                | Wayne E. Conrad  | Ruby       | interpreter  | 2003-04-02 | 0.2 | [yagni.com](https://web.archive.org/web/20120417161917/http://yagni.com/whitespace/index.html) |
 | whitespace.pl                                  | Mike Kölbl       | Perl       | interpreter  | 2003-04-01 | 0.2 | [CompSoc](https://web.archive.org/web/20150717140342/http://compsoc.dur.ac.uk:80/whitespace/download.php) |
 | wspace                                         | Edwin Brady      | Haskell    | interpreter, programs | 2002 | 0.2 | [CompSoc](https://web.archive.org/web/20150717140342/http://compsoc.dur.ac.uk:80/whitespace/download.php) |
 

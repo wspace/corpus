@@ -178,6 +178,9 @@
 [submodule "javascript/loklaan-zerowidth-lang"]
 	path = javascript/loklaan-zerowidth-lang
 	url = https://github.com/loklaan/zerowidth-lang
+[submodule "javascript/macocha-whitespacer"]
+	path = javascript/macocha-whitespacer
+	url = https://github.com/macocha/whitespacer
 [submodule "javascript/pvdz-significant-whitespace"]
 	path = javascript/pvdz-significant-whitespace
 	url = https://github.com/pvdz/SignificantWhitespace
@@ -217,6 +220,9 @@
 [submodule "python/ahl27"]
 	path = python/ahl27
 	url = https://github.com/ahl27/whitespace
+[submodule "python/alecgraves-whitespac3"]
+	path = python/alecgraves-whitespac3
+	url = https://github.com/alecGraves/whitespac3
 [submodule "python/apua-wvm"]
 	path = python/apua-wvm
 	url = https://github.com/apua/whitespace
@@ -256,12 +262,18 @@
 [submodule "r/bmazoure"]
 	path = r/bmazoure
 	url = https://github.com/bmazoure/whitespace
+[submodule "ruby/alesiong"]
+	path = ruby/alesiong
+	url = https://github.com/alesiong/whitespace-ruby
 [submodule "ruby/bossiernesto"]
 	path = ruby/bossiernesto
 	url = https://github.com/bossiernesto/whitespace
 [submodule "ruby/collidedscope-spitewaste"]
 	path = ruby/collidedscope-spitewaste
 	url = https://github.com/collidedscope/spitewaste
+[submodule "ruby/dwayne"]
+	path = ruby/dwayne
+	url = https://github.com/dwayne/whitespace-ruby
 [submodule "ruby/pocke-akaza"]
 	path = ruby/pocke-akaza
 	url = https://github.com/pocke/akaza
@@ -292,6 +304,9 @@
 [submodule "scala/dashlambda-eso"]
 	path = scala/dashlambda-eso
 	url = https://github.com/Dash-Lambda/Eso
+[submodule "scala/ojha-whitespacing"]
+	path = scala/ojha-whitespacing
+	url = https://github.com/polyglotpiglet/Whitespacing
 [submodule "scheme/athos-white-scheme"]
 	path = scheme/athos-white-scheme
 	url = https://github.com/athos/white-scheme

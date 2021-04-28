@@ -264,7 +264,7 @@
   {
     "name": "hohoho",
     "path": "python/freyamade-hohoho",
-    "authors": ["Freya Broderick", "Omar Sallam"],
+    "authors": ["Freya Madeline Broderick", "Omar Sallam"],
     "languages": ["Python"],
     "tags": ["mapping"],
     "date": "2018-11-22 18:48:52 +0000",
@@ -489,6 +489,16 @@
     "mirrored": true
   },
   {
+    "name": "whitespac3",
+    "path": "python/alecgraves-whitespac3",
+    "authors": ["Alec Graves"],
+    "languages": ["Python"],
+    "tags": ["interpreter"],
+    "date": "2016-11-17 18:52:26 -0500",
+    "spec_version": "0.3",
+    "source": ["https://github.com/alecGraves/whitespac3"]
+  },
+  {
     "name": "WhiteSpaceInterpreter",
     "path": "java/eia",
     "authors": ["Zuleimi Esteffanny González Muñoz"],
@@ -501,7 +511,7 @@
   {
     "name": "whitespace-python",
     "path": "python/dwayne",
-    "authors": ["Dwayne Crooks"],
+    "authors": ["Dwayne R. Crooks"],
     "languages": ["Python"],
     "tags": ["interpreter"],
     "date": "2016-08-31 05:09:16 -0400",
@@ -537,6 +547,16 @@
     "date": "2016-07-27 17:01:11 +0200",
     "spec_version": "0.2",
     "source": ["https://github.com/marcellippmann/Whitepp"]
+  },
+  {
+    "name": "whitespace-ruby",
+    "path": "ruby/dwayne",
+    "authors": ["Dwayne R. Crooks"],
+    "languages": ["Python"],
+    "tags": ["interpreter"],
+    "date": "2016-07-11 15:39:42 -0400",
+    "spec_version": "0.2",
+    "source": ["https://github.com/dwayne/whitespace-ruby"]
   },
   {
     "name": "Whitespacers",
@@ -589,6 +609,17 @@
     "source": ["https://github.com/susisu/Whitespace-JS"]
   },
   {
+    "name": "whitespace-ruby",
+    "path": "ruby/alesiong",
+    "authors": ["alesiong"],
+    "languages": ["Ruby"],
+    "tags": ["interpreter", "disassembler", "programs"],
+    "date": "2016-03-05 16:39:05 +0800",
+    "spec_version": "0.3",
+    "source": ["https://github.com/alesiong/whitespace-ruby"],
+    "notes": "Forked from Wayne Conrad's Ruby programs"
+  },
+  {
     "name": "whitespace-interpreter",
     "path": "javascript/uraza",
     "authors": ["Uraza"],
@@ -609,6 +640,16 @@
     "source": ["https://github.com/abac00s/WHINT"]
   },
   {
+    "name": "Whitespacing",
+    "path": "scala/ojha-whitespacing",
+    "authors": ["Alexandra Ojha"],
+    "languages": ["Scala"],
+    "tags": ["interpreter"],
+    "date": "2015-12-11 15:56:06 +0000",
+    "spec_version": "0.2",
+    "source": ["https://github.com/polyglotpiglet/Whitespacing"]
+  },
+  {
     "name": "callisto",
     "path": "lua/vyo-callisto",
     "authors": ["Manu Weidmann"],
@@ -627,6 +668,45 @@
     "date": "2015-09-28 12:31:30 -0400",
     "spec_version": "0.3",
     "source": ["https://github.com/dalleng/Whitespace"]
+  },
+  {
+    "name": "whitespacer",
+    "path": "javascript/macocha-whitespacer",
+    "authors": ["Maciej Siwek"],
+    "languages": ["JavaScript/React"],
+    "tags": ["IDE", "interpreter"],
+    "date": "2015-09-04 14:22:57 +0200",
+    "spec_version": "0.3",
+    "source": ["https://github.com/macocha/whitespacer"],
+    "assembly": {
+      "instructions": {
+        "push": ["PUSH"],
+        "dup": ["DUPL"],
+        "copy": ["COPY"],
+        "swap": ["SWP"],
+        "drop": ["DISC"],
+        "slide": ["SLIDE"],
+        "add": ["ADD"],
+        "sub": ["SUB"],
+        "mul": ["MUL"],
+        "div": ["DIV"],
+        "mod": ["MOD"],
+        "store": ["STORE"],
+        "retrieve": ["GET"],
+        "label": ["LABEL"],
+        "call": ["CALL"],
+        "jmp": ["JMP"],
+        "jz": ["JEZ"],
+        "jn": ["JLZ"],
+        "ret": ["RET"],
+        "end": ["EXIT"],
+        "printc": ["OUTC"],
+        "printn": ["OUTN"],
+        "readc": ["INPC"],
+        "readn": ["INPN"]
+      }
+    },
+    "notes": "Assembly is only displayed, not disassembled"
   },
   {
     "name": "Cupertino-WhiteSpace-Interperter",
@@ -827,7 +907,36 @@
     "tags": ["interpreter", "bytecode"],
     "date": "2014-07-15 22:27:17 +0900",
     "spec_version": "0.3",
-    "source": ["https://github.com/faultier/whitebase"]
+    "source": ["https://github.com/faultier/whitebase"],
+    "assembly": {
+      "instructions": {
+        "push": ["PUSH"],
+        "dup": ["DUP"],
+        "copy": ["COPY"],
+        "swap": ["SWAP"],
+        "drop": ["DISCARD"],
+        "slide": ["SLIDE"],
+        "add": ["ADD"],
+        "sub": ["SUB"],
+        "mul": ["MUL"],
+        "div": ["DIV"],
+        "mod": ["MOD"],
+        "store": ["STORE"],
+        "retrieve": ["RETRIEVE"],
+        "label": ["MARK"],
+        "call": ["CALL"],
+        "jmp": ["JUMP"],
+        "jz": ["JUMPZ"],
+        "jn": ["JUMPN"],
+        "ret": ["RETURN"],
+        "end": ["EXIT"],
+        "printc": ["PUTC"],
+        "printn": ["PUTN"],
+        "readc": ["GETC"],
+        "readn": ["GETN"]
+      }
+    },
+    "notes": "Assembly is only displayed when debugging, not disassembled"
   },
   {
     "name": "whitespace-interpreter",
@@ -1231,7 +1340,7 @@
   {
     "name": "whitespace-ruby",
     "path": "",
-    "authors": ["Wayne Conrad"],
+    "authors": ["Wayne E. Conrad"],
     "languages": ["Ruby"],
     "tags": ["interpreter"],
     "date": "2003-04-02",
