@@ -249,7 +249,8 @@
     "tags": ["interpreter"],
     "date": "2019-02-24 18:51:26 +0900",
     "spec_version": "0.2",
-    "source": ["https://github.com/tempxla/go-wspace"]
+    "source": ["https://github.com/tempxla/go-wspace"],
+    "features": { "arbitrary_precision": false }
   },
   {
     "name": "Whitespace Interpreter",
@@ -764,10 +765,40 @@
     "path": "go/kinu",
     "authors": ["Kinuko Yasuda"],
     "languages": ["Go"],
-    "tags": ["interpreter"],
+    "tags": ["interpreter", "disassembler"],
     "date": "2015-02-19 00:54:08 +0900",
     "spec_version": "0.3",
-    "source": ["https://github.com/kinu/whitespace"]
+    "source": ["https://github.com/kinu/whitespace"],
+    "features": { "arbitrary_precision": false },
+    "assembly": {
+      "instructions": {
+        "push": ["PUSH"],
+        "dup": ["DUP"],
+        "copy": ["COPY"],
+        "swap": ["SWAP"],
+        "drop": ["DISCARD"],
+        "slide": ["SLIDE"],
+        "add": ["ADD"],
+        "sub": ["SUB"],
+        "mul": ["MUL"],
+        "div": ["DIV"],
+        "mod": ["MOD"],
+        "store": ["STORE"],
+        "retrieve": ["RETRIEVE"],
+        "label": ["MARK"],
+        "call": ["CALL"],
+        "jmp": ["JMP"],
+        "lz": ["JMP_IF0"],
+        "jn": ["JMP_NEG"],
+        "ret": ["RET"],
+        "end": ["FINISH"],
+        "printc": ["PUTCHAR"],
+        "printn": ["PUTNUM"],
+        "readc": ["READCHAR"],
+        "readn": ["READNUM"]
+      }
+    },
+    "notes": "Assembly is displayed by -v flag"
   },
   {
     "name": "whitespace-clj",
@@ -996,7 +1027,8 @@
     "tags": ["interpreter"],
     "date": "2013-12-27 19:29:40 -0800",
     "spec_version": "0.3",
-    "source": ["https://github.com/135yshr/wspacego"]
+    "source": ["https://github.com/135yshr/wspacego"],
+    "features": { "arbitrary_precision": false }
   },
   {
     "name": "wvm",
@@ -1211,7 +1243,8 @@
     "tags": ["interpreter"],
     "date": "2010-10-08 03:12:01 +0900",
     "spec_version": "0.3",
-    "source": ["https://github.com/technohippy/go-whitespace"]
+    "source": ["https://github.com/technohippy/go-whitespace"],
+    "features": { "arbitrary_precision": false }
   },
   {
     "name": "whitespace.reb",

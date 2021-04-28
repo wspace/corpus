@@ -72,7 +72,7 @@ programming language.
 | [ws_interpreter](java/kmizu)                   | Kota Mizushima   | Java       | interpreter  | 2015-05-13 | 0.3 | [GitHub](https://github.com/kmizu/ws_interpreter) |
 | [I C Whitespace](c/strangepan-i-c-whitespace)  | Dan Andrus       | C          | interpreter  | 2015-03-10 | 0.3 | [GitHub](https://github.com/StrangePan/I_C_Whitespace) |
 | [Tomato Programming Language](haskell/brainbrush-tomato) | brainbrush | Haskell | interpreter, mapping, programs | 2015-02-26 | 0.3 | [GitHub](https://github.com/brainbush/Tomato-Programming-Language) |
-| [whitespace](go/kinu)                          | Kinuko Yasuda    | Go         | interpreter  | 2015-02-19 | 0.3 | [GitHub](https://github.com/kinu/whitespace) |
+| [whitespace](go/kinu)                          | Kinuko Yasuda    | Go         | interpreter, disassembler | 2015-02-19 | 0.3 | [GitHub](https://github.com/kinu/whitespace) |
 | [whitespace-clj](clojure/tsuyusato)            | TSUYUSATO Kitsune | Clojure   | interpreter  | 2015-02-11 | 0.2 | [GitHub](https://github.com/MakeNowJust/whitespace-clj) |
 | [whitespace-php](php/nobody1986)               | nobody1986       | PHP, C     | interpreter  | 2015-02-04 | 0.3 | [GitHub](https://github.com/nobody1986/whitespace-php) |
 | [whiteSpaceInterpreter](java/faurehu)          | Matias Faure     | Java       | interpreter  | 2015-01-29 | 0.3 | [GitHub](https://github.com/faurehu/whiteSpaceInterpreter) |
