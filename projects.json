@@ -179,6 +179,22 @@
     "source": ["https://codegolf.stackexchange.com/questions/198694/write-a-whitespace-interpreter/198770#198770"]
   },
   {
+    "name": "zerospace-lang",
+    "path": "javascript/loklaan-zerowidth-lang",
+    "authors": ["Lochlan Bunn"],
+    "languages": ["JavaScript"],
+    "tags": ["interpreter", "mapping"],
+    "date": "2019-07-25",
+    "spec_version": "0.3",
+    "source": ["https://github.com/loklaan/zerowidth-lang"],
+    "mapping": {
+      "space": "&#8203;",
+      "tab": "&#8204;",
+      "lf": "\n"
+    },
+    "notes": "Fork of vii5ard/whitespace"
+  },
+  {
     "name": "Marginal",
     "path": "haskell/jhmcstanton-marginal",
     "authors": ["Jim McStanton"],
@@ -250,6 +266,22 @@
     "date": "2018-11-23",
     "spec_version": "0.2",
     "source": ["https://github.com/HelloRusk/WhitespaceInterpreter"]
+  },
+  {
+    "name": "hohoho",
+    "path": "python/freyamade-hohoho",
+    "authors": ["Freya Broderick", "Omar Sallam"],
+    "languages": ["Python"],
+    "tags": ["mapping"],
+    "date": "2018-11-22",
+    "spec_version": "-",
+    "source": ["https://github.com/freyamade/hohoho"],
+    "mapping": {
+      "space": "snow",
+      "tab": "hohoho",
+      "lf": "\n",
+      "spaces_between": "true"
+    }
   },
   {
     "name": "whitespace-interpreter",
@@ -343,6 +375,17 @@
     "date": "2018-02-21",
     "spec_version": "0.3",
     "source": ["https://github.com/RuMaxwell/whitespace-interpreter"]
+  },
+  {
+    "name": "whitespace-lang",
+    "path": "javascript/loklaan-whitespace-lang",
+    "authors": ["Lochlan Bunn"],
+    "languages": ["JavaScript"],
+    "tags": ["interpreter"],
+    "date": "2018-02-14",
+    "spec_version": "0.3",
+    "source": ["https://github.com/loklaan/whitespace-lang"],
+    "notes": "Fork of vii5ard/whitespace"
   },
   {
     "name": "Whitespace-interpreter",
@@ -637,6 +680,21 @@
     "date": "2015-03-10",
     "spec_version": "0.3",
     "source": ["https://github.com/StrangePan/I_C_Whitespace"]
+  },
+  {
+    "name": "Tomato Programming Language",
+    "path": "haskell/brainbrush-tomato",
+    "authors": ["brainbrush"],
+    "languages": ["Haskell"],
+    "tags": ["interpreter", "mapping", "programs"],
+    "date": "2015-02-26",
+    "spec_version": "0.3",
+    "source": ["https://github.com/brainbush/Tomato-Programming-Language"],
+    "mapping": {
+      "space": "番",
+      "tab": "茄",
+      "lf": "干"
+    }
   },
   {
     "name": "whitespace",
@@ -1197,8 +1255,8 @@
     "name": "wspace",
     "path": "",
     "authors": ["Edwin Brady"],
-    "languages": ["Haskell"],
-    "tags": ["interpreter"],
+    "languages": ["Haskell", "Emacs Lisp"],
+    "tags": ["interpreter", "syntax highlighting", "programs"],
     "date": "2004-05-04",
     "spec_version": "0.3",
     "source": [
@@ -1214,7 +1272,7 @@
     "path": "",
     "authors": ["Edwin Brady"],
     "languages": ["Haskell"],
-    "tags": ["interpreter"],
+    "tags": ["interpreter", "programs"],
     "date": "2002",
     "spec_version": "0.2",
     "source": ["https://web.archive.org/web/20150717140342/http://compsoc.dur.ac.uk:80/whitespace/download.php"],

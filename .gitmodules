@@ -112,6 +112,9 @@
 [submodule "go/yshr-wspacego"]
 	path = go/yshr-wspacego
 	url = https://github.com/135yshr/wspacego
+[submodule "haskell/brainbrush-tomato"]
+	path = haskell/brainbrush-tomato
+	url = https://github.com/brainbush/Tomato-Programming-Language
 [submodule "haskell/ft-spaceman"]
 	path = haskell/ft-spaceman
 	url = https://gitlab.com/ft/spaceman.git
@@ -166,6 +169,12 @@
 [submodule "javascript/kosei"]
 	path = javascript/kosei
 	url = https://github.com/kosei28/Whitespace
+[submodule "javascript/loklaan-whitespace-lang"]
+	path = javascript/loklaan-whitespace-lang
+	url = https://github.com/loklaan/whitespace-lang
+[submodule "javascript/loklaan-zerowidth-lang"]
+	path = javascript/loklaan-zerowidth-lang
+	url = https://github.com/loklaan/zerowidth-lang
 [submodule "javascript/pvdz-significant-whitespace"]
 	path = javascript/pvdz-significant-whitespace
 	url = https://github.com/pvdz/SignificantWhitespace
@@ -220,6 +229,9 @@
 [submodule "python/dwayne"]
 	path = python/dwayne
 	url = https://github.com/dwayne/whitespace-python
+[submodule "python/freyamade-hohoho"]
+	path = python/freyamade-hohoho
+	url = https://github.com/freyamade/hohoho
 [submodule "python/hearnderek"]
 	path = python/hearnderek
 	url = https://github.com/hearnderek/WhiteSpaceInterpreter

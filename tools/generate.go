@@ -53,6 +53,12 @@ type Project struct {
 		LabelRefFormat            string              `json:"label_ref_format,omitempty"`
 		Extension                 string              `json:"extension,omitempty"`
 	} `json:"assembly,omitempty"`
+	Mapping *struct {
+		Space         string `json:"space"`
+		Tab           string `json:"tab"`
+		LF            string `json:"lf"`
+		SpacesBetween string `json:"spaces_between,omitempty"`
+	} `json:"mapping,omitempty"`
 	Notes string `json:"notes,omitempty"`
 }
 

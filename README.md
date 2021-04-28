@@ -21,6 +21,7 @@ programming language.
 | [WhitespaceInterpreter](csharp/denislabrecque) | Denis G. Labrecque | C#       | interpreter  | 2020-03-26 | 0.2 incomplete | [GitHub](https://github.com/DenisLabrecque/Whitespace-Interpreter) |
 | [WhiteSpaceInterpreter](python/hearnderek)     | Derek Hearn      | Python     | interpreter  | 2020-02-09 | 0.3 | [GitHub](https://github.com/hearnderek/WhiteSpaceInterpreter) |
 | *JavaScript interpreter*                       | Arnauld          | JavaScript | interpreter  | 2020-02-01 | 0.3 | [Code Golf](https://codegolf.stackexchange.com/questions/198694/write-a-whitespace-interpreter/198770#198770) |
+| [zerospace-lang](javascript/loklaan-zerowidth-lang) | Lochlan Bunn | JavaScript | interpreter, mapping | 2019-07-25 | 0.3 | [GitHub](https://github.com/loklaan/zerowidth-lang) |
 | [Marginal](haskell/jhmcstanton-marginal)       | Jim McStanton    | Haskell    | interpreter  | 2019-06-28 | 0.2 | [GitHub](https://github.com/jhmcstanton/marginal) |
 | [Eso](scala/dashlambda-eso)                    | Dash-Lambda      | Scala      | interpreter, assembler | 2019-06-19 | 0.2 | [GitHub](https://github.com/Dash-Lambda/Eso) |
 | [Nebula](go/andrewarchi-nebula)                | Andrew Archibald | Go, LLVM, Whitespace | compiler, optimizer, programs | 2019-06-05 | 0.3 | [GitHub](https://github.com/andrewarchi/nebula) |
@@ -28,6 +29,7 @@ programming language.
 | [Akaza](ruby/pocke-akaza)                      | Masataka Pocke Kuwabara | Ruby | interpreter, assembler | 2019-04-28 | 0.2 | [GitHub](https://github.com/pocke/akaza) |
 | [go-wspace](go/tempxla-go-wspace)              | tempxla          | Go         | interpreter  | 2019-02-24 | 0.2 | [GitHub](https://github.com/tempxla/go-wspace) |
 | [Whitespace Interpreter](rust/kaisugi)         | Kaito Sugimoto   | Rust       | interpreter  | 2018-11-23 | 0.2 | [GitHub](https://github.com/HelloRusk/WhitespaceInterpreter) |
+| [hohoho](python/freyamade-hohoho)              | Freya Broderick, Omar Sallam | Python | mapping | 2018-11-22 | - | [GitHub](https://github.com/freyamade/hohoho) |
 | [whitespace-interpreter](python/adapap)        | Adam Papenhausen | Python     | interpreter  | 2018-11-16 | 0.3 | [GitHub](https://github.com/adapap/whitespace-interpreter) |
 | [whitespace](python/ahl27)                     | Aidan Lakshman   | Python     | interpreter, text to Whitespace | 2018-11-08 | 0.3 | [GitHub](https://github.com/ahl27/whitespace) |
 | [nospace](cpp/buyoh-nospace)                   | 舞葉 (Mai Buyoh)   | C++, Ruby  | language, interpreter | 2018-09-05 | 0.2 | [GitHub](https://github.com/buyoh/nospace) |
@@ -37,6 +39,7 @@ programming language.
 | [whitespace_interpreter](python/maximegoyette) | Maxime Goyette   | Python     | interpreter  | 2018-03-09 | incomplete | [GitHub](https://github.com/MaximeGoyette/whitespace_interpreter) |
 | [erasure](clojure/jmesyou-erasure)             | James You        | Clojure    | interpreter  | 2018-02-24 | 0.2 | [GitHub](https://github.com/jmesyou/erasure) |
 | [whitespace-interperter](python/rumaxwell)     | RuMaxwell        | Python     | interpreter  | 2018-02-21 | 0.3 | [GitHub](https://github.com/RuMaxwell/whitespace-interpreter) |
+| [whitespace-lang](javascript/loklaan-whitespace-lang) | Lochlan Bunn | JavaScript | interpreter | 2018-02-14 | 0.3 | [GitHub](https://github.com/loklaan/whitespace-lang) |
 | [Whitespace-interpreter](python/bornlex)       | Bornlex          | Python     | interpreter  | 2017-08-09 | 0.3 | [GitHub](https://github.com/Bornlex/Whitespace-interpreter) |
 | [whitespace-interpreter](cpp/benajmin)         | Benjamin Wilkins | C++        | interpreter  | 2017-06-07 | 0.2 | [GitHub](https://github.com/benajmin/whitespace-interpreter) |
 | [wsm2ws](perl/ephphatha-wsm2ws)                | Andrew James     | Perl       | assembler, programs | 2017-05-28 | 0.3 | [GitHub](https://github.com/ephphatha/wsm2ws) |
@@ -63,6 +66,7 @@ programming language.
 | [whitespace](python/mcolom)                    | Miguel Colom     | Python     | interpreter  | 2015-05-18 | 0.3 | [GitHub](https://github.com/mcolom/whitespace) |
 | [ws_interpreter](java/kmizu)                   | Kota Mizushima   | Java       | interpreter  | 2015-05-13 | 0.3 | [GitHub](https://github.com/kmizu/ws_interpreter) |
 | [I C Whitespace](c/strangepan-i-c-whitespace)  | Dan Andrus       | C          | interpreter  | 2015-03-10 | 0.3 | [GitHub](https://github.com/StrangePan/I_C_Whitespace) |
+| [Tomato Programming Language](haskell/brainbrush-tomato) | brainbrush | Haskell | interpreter, mapping, programs | 2015-02-26 | 0.3 | [GitHub](https://github.com/brainbush/Tomato-Programming-Language) |
 | [whitespace](go/kinu)                          | Kinuko Yasuda    | Go         | interpreter  | 2015-02-19 | 0.3 | [GitHub](https://github.com/kinu/whitespace) |
 | [whitespace-clj](clojure/tsuyusato)            | TSUYUSATO Kitsune | Clojure   | interpreter  | 2015-02-11 | 0.2 | [GitHub](https://github.com/MakeNowJust/whitespace-clj) |
 | [whitespace-php](php/nobody1986)               | nobody1986       | PHP, C     | interpreter  | 2015-02-04 | 0.3 | [GitHub](https://github.com/nobody1986/whitespace-php) |
@@ -113,8 +117,8 @@ programming language.
 | wsinterws                                      | Oliver Burghard  | Whitespace | interpreter  | 2003-04-24 | 0.2 | [burghard.info](https://web.archive.org/web/20030608024503/http://www.burghard.info/code/whitespace/wsinterws/index.html) |
 | whitespace-ruby                                | Wayne Conrad     | Ruby       | interpreter  | 2003-04-02 | 0.2 | [yagni.com](https://web.archive.org/web/20120417161917/http://yagni.com/whitespace/index.html) |
 | whitespace.pl                                  | Mike Kölbl       | Perl       | interpreter  | 2003-04-01 | 0.2 | [CompSoc](https://web.archive.org/web/20150717140342/http://compsoc.dur.ac.uk:80/whitespace/download.php) |
-| wspace                                         | Edwin Brady      | Haskell    | interpreter  | 2004-05-04 | 0.3 | [CompSoc](https://web.archive.org/web/20150717140342/http://compsoc.dur.ac.uk:80/whitespace/download.php), [Mailing list](https://web.archive.org/web/20141011193201/http://compsoc.dur.ac.uk/archives/whitespace/2004-May/000047.html) |
-| wspace                                         | Edwin Brady      | Haskell    | interpreter  | 2002       | 0.2 | [CompSoc](https://web.archive.org/web/20150717140342/http://compsoc.dur.ac.uk:80/whitespace/download.php) |
+| wspace                                         | Edwin Brady      | Haskell, Emacs Lisp | interpreter, syntax highlighting, programs | 2004-05-04 | 0.3 | [CompSoc](https://web.archive.org/web/20150717140342/http://compsoc.dur.ac.uk:80/whitespace/download.php), [Mailing list](https://web.archive.org/web/20141011193201/http://compsoc.dur.ac.uk/archives/whitespace/2004-May/000047.html) |
+| wspace                                         | Edwin Brady      | Haskell    | interpreter, programs | 2002 | 0.2 | [CompSoc](https://web.archive.org/web/20150717140342/http://compsoc.dur.ac.uk:80/whitespace/download.php) |
 
 ## Collections
 
