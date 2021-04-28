@@ -9,8 +9,8 @@ programming language.
 | ---------------------------------------------- | ---------------- | ---------- | ------------ | ---------- | ---- | ------ |
 | [Albus](rust/collidedscope-albus)              | Collided Scope   | Rust       | interpreter  | 2021-02-12 | 0.3 | [GitHub](https://github.com/collidedscope/albus) |
 | [asm2ws](c/kspalaiologos-asm2ws)               | Kamila Szewczyk (Palaiologos) | C | interpreter, JIT, assembler, disassembler, optimizer, programs | 2020-12-31 | 0.3 | [GitHub](https://github.com/kspalaiologos/asm2ws) |
-| [Spitewaste](ruby/collidedscope-spitewaste)    | Collided Scope   | Ruby       | assembler, compiler, programs | 2020-12-11 | 0.3 with shell and eval | [GitHub](https://github.com/collidedscope/spitewaste) |
-| [Spiceweight](crystal/collidedscope-spiceweight) | Collided Scope | Crystal    | interpreter, programs | 2020-12-11 | 0.3 | [GitHub](https://github.com/collidedscope/spiceweight) |
+| [Spitewaste](ruby/collidedscope-spitewaste)    | Collided Scope   | Ruby       | assembler, compiler, programs, stdlib | 2020-12-11 | 0.3 with shell and eval | [GitHub](https://github.com/collidedscope/spitewaste) |
+| [Spiceweight](crystal/collidedscope-spiceweight) | Collided Scope | Crystal    | interpreter, benchmarking, programs | 2020-12-11 | 0.3 | [GitHub](https://github.com/collidedscope/spiceweight) |
 | [rustws](rust/luminight)                       | Luminight        | Rust       | interpreter  | 2020-08-04 | 0.2 | [GitHub](https://github.com/Luminighty/rustws) |
 | [Whitespace](javascript/kosei)                 | kosei28          | JavaScript | interpreter  | 2020-08-03 | 0.2 | [GitHub](https://github.com/kosei28/Whitespace) |
 | [SpaceMan](haskell/ft-spaceman)                | Frank Terbeck    | Haskell    | interpreter  | 2020-07-09 | 0.3 | [GitLab](https://gitlab.com/ft/spaceman), [GitHub](https://github.com/ft/spaceman), [bewatermyfriend.org](http://bewatermyfriend.org/p/2020/000/), [HN](https://news.ycombinator.com/item?id=24763312) |
@@ -20,7 +20,7 @@ programming language.
 | [HelMA](haskell/helvm-helma)                   | Kamil Adam       | Haskell/Eta | interpreter | 2020-05-08 | 0.3 | [GitHub](https://github.com/helvm/helma) |
 | [WhitespaceInterpreter](csharp/denislabrecque) | Denis G. Labrecque | C#       | interpreter  | 2020-03-26 | 0.2 incomplete | [GitHub](https://github.com/DenisLabrecque/Whitespace-Interpreter) |
 | [WhiteSpaceInterpreter](python/hearnderek)     | Derek Hearn      | Python     | interpreter  | 2020-02-09 | 0.3 | [GitHub](https://github.com/hearnderek/WhiteSpaceInterpreter) |
-| *JavaScript interpreter*                       | Arnauld          | JavaScript | interpreter  | 2020-02-01 | 0.3 | [Code Golf](https://codegolf.stackexchange.com/questions/198694/write-a-whitespace-interpreter/198770#198770) |
+| Whitespace Interpreter in JavaScript           | Arnauld          | JavaScript | interpreter  | 2020-02-01 | 0.3 | [Code Golf](https://codegolf.stackexchange.com/questions/198694/write-a-whitespace-interpreter/198770#198770) |
 | [zerospace-lang](javascript/loklaan-zerowidth-lang) | Lochlan Bunn | JavaScript | interpreter, mapping | 2019-07-25 | 0.3 | [GitHub](https://github.com/loklaan/zerowidth-lang) |
 | [Marginal](haskell/jhmcstanton-marginal)       | Jim McStanton    | Haskell    | interpreter  | 2019-06-28 | 0.2 | [GitHub](https://github.com/jhmcstanton/marginal) |
 | [Eso](scala/dashlambda-eso)                    | Dash-Lambda      | Scala      | interpreter, assembler | 2019-06-19 | 0.2 | [GitHub](https://github.com/Dash-Lambda/Eso) |
@@ -109,7 +109,7 @@ programming language.
 | [whitespace.reb](rebol/hostilefork)            | Hostile Fork     | Rebol      | interpreter  | 2010-07-10 | 0.3 | [GitHub](https://github.com/hostilefork/whitespacers/tree/master/rebol) |
 | HaPyLi                                         | Huf Lungdung     | Python     | language, interpreter | 2010-05-23 | 0.3 | [hapyli.webs.com](https://web.archive.org/web/20110212015726/http://hapyli.webs.com/), [Mailing list](https://web.archive.org/web/20141011193154/http://compsoc.dur.ac.uk/archives/whitespace/2010-May/000075.html) |
 | [Whitespace Interpreter and Assembler](python/stephenchappell) | Stephen Chappell | Python | interpreter, assembler | 2010-03-14 | 0.3 | [ActiveState Code](https://code.activestate.com/recipes/sets/12/), [GitHub](https://github.com/ActiveState/code) |
-| [*C++ interpreter*](cpp/peasley)               | Peasley          | C++        | interpreter  | 2010-02-05 | 0.3 | [rohitab.com](http://www.rohitab.com/discuss/topic/35639-c-whitespace-interpreter/?p=10074137) |
+| [Whitespace Interpreter in C++](cpp/peasley)   | Peasley          | C++        | interpreter  | 2010-02-05 | 0.3 | [rohitab.com](http://www.rohitab.com/discuss/topic/35639-c-whitespace-interpreter/?p=10074137) |
 | [Whitespace Interpreter v1.0](c/meth0dz)       | MeTh0Dz          | C          | interpreter  | 2010-01-30 | 0.3 | [rohitab.com](http://www.rohitab.com/discuss/topic/35639-c-whitespace-interpreter/) |
 | wspace                                         | hogelog          | C++        | interpreter  | 2008-05-02 | 0.3 | [GitHub](https://github.com/hogelog/hogel.org-old/tree/master/content/lib/c/ws) |
 | [wspace](cpp/pavelshub)                        | Pavel Shub       | C++        | interpreter  | 2007-05-26 | 0.3 | [GitHub](https://github.com/pavel987/wspace), [Mailing list](https://web.archive.org/web/20141011193149/http://compsoc.dur.ac.uk/archives/whitespace/2008-April/000068.html), [pavelshub.com](http://pavelshub.com/blog/2010/10/wspace/) |
@@ -124,6 +124,7 @@ programming language.
 
 | Name                                     | Curator(s)       | Languages | Date | Source |
 | ---------------------------------------- | ---------------- | --------- | ---- | ------ |
+| [ws-compilers](collections/andrewarchi-ws-archive) | Andrew Archibald | Haskell, Whitespace, Perl, PHP, Ruby, Emacs Lisp | 2018-06-06 | [GitHub](https://github.com/andrewarchi/ws-archive) |
 | [Whitespacers](collections/hostilefork-whitespacers) | Hostile Fork | C, C++, Crystal, Erlang, Haskell, Idris, LOLCODE, Perl, Python, Rebol, Ren-C, Ruby, Whitespace | 2010-07-10 | [GitHub](https://github.com/hostilefork/whitespacers) |
 
 ## Programs

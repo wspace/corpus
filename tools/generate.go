@@ -4,6 +4,7 @@ import (
 	"fmt"
 	"net/url"
 	"os"
+	"regexp"
 	"strings"
 	"text/template"
 	"unicode/utf8"
@@ -150,6 +151,15 @@ var domainLabels = map[string]string{
 	"code.activestate.com":       "ActiveState Code",
 	"compsoc.dur.ac.uk":          "CompSoc",
 	"cs.newcastle.edu.au":        "Newcastle",
+	"what.thedailywtf.com":       "What the Daily WTF?",
+}
+
+var subSites = map[string]struct{}{
+	"blogspot.com": {},
+}
+
+var pathPatterns = map[string]*regexp.Regexp{
+	"reddit.com": regexp.MustCompile("/(r/[^/]+).*"),
 }
 
 func getURLLabel(rawURL string) (string, error) {
@@ -169,6 +179,16 @@ func getURLLabel(rawURL string) (string, error) {
 	host := strings.TrimPrefix(u.Hostname(), "www.")
 	if host == "compsoc.dur.ac.uk" && strings.HasPrefix(u.Path, "/archives/whitespace/") {
 		return "Mailing list", nil
+	}
+	if i := strings.IndexByte(host, '.'); i != -1 {
+		if _, ok := subSites[host[i+1:]]; ok {
+			return host[:i], nil
+		}
+	}
+	if pattern, ok := pathPatterns[host]; ok {
+		if label := pattern.ReplaceAllString(u.Path, "$1"); label != "" {
+			return label, nil
+		}
 	}
 	if label, ok := domainLabels[host]; ok {
 		return label, nil

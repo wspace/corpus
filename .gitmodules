@@ -22,6 +22,9 @@
 [submodule "coffeescript/ehrlichbryan"]
 	path = coffeescript/ehrlichbryan
 	url = https://github.com/adotout/whitespace-js
+[submodule "collections/andrewarchi-ws-archive"]
+	path = collections/andrewarchi-ws-archive
+	url = https://github.com/andrewarchi/ws-archive
 [submodule "collections/hostilefork-whitespacers"]
 	path = collections/hostilefork-whitespacers
 	url = https://github.com/hostilefork/whitespacers

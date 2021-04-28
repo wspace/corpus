@@ -58,7 +58,7 @@
     "path": "ruby/collidedscope-spitewaste",
     "authors": ["Collided Scope"],
     "languages": ["Ruby"],
-    "tags": ["assembler", "compiler", "programs"],
+    "tags": ["assembler", "compiler", "programs", "stdlib"],
     "date": "2020-12-11",
     "spec_version": "0.3 with shell and eval",
     "source": ["https://github.com/collidedscope/spitewaste"]
@@ -68,7 +68,7 @@
     "path": "crystal/collidedscope-spiceweight",
     "authors": ["Collided Scope"],
     "languages": ["Crystal"],
-    "tags": ["interpreter", "programs"],
+    "tags": ["interpreter", "benchmarking", "programs"],
     "date": "2020-12-11",
     "spec_version": "0.3",
     "source": ["https://github.com/collidedscope/spiceweight"]
@@ -169,7 +169,7 @@
     "source": ["https://github.com/hearnderek/WhiteSpaceInterpreter"]
   },
   {
-    "name": "*JavaScript interpreter*",
+    "name": "Whitespace Interpreter in JavaScript",
     "path": "",
     "authors": ["Arnauld"],
     "languages": ["JavaScript"],
@@ -1159,7 +1159,7 @@
     "mirrored": true
   },
   {
-    "name": "*C++ interpreter*",
+    "name": "Whitespace Interpreter in C++",
     "path": "cpp/peasley",
     "authors": ["Peasley"],
     "languages": ["C++"],
