@@ -8,8 +8,9 @@ programming language.
 | Name                                           | Authors          | Languages  | Tags         | Date       | Spec | Source |
 | ---------------------------------------------- | ---------------- | ---------- | ------------ | ---------- | ---- | ------ |
 | [Albus](rust/collidedscope-albus)              | Collided Scope   | Rust       | interpreter  | 2021-02-12 | 0.3 | [GitHub](https://github.com/collidedscope/albus) |
-| [asm2ws](c/kspalaiologos-asm2ws)               | Kamila Szewczyk (Palaiologos) | C | interpreter, JIT, macro assembler, disassembler, optimizer | 2020-12-31 | 0.3 | [GitHub](https://github.com/kspalaiologos/asm2ws) |
-| [Spiceweight](crystal/collidedscope-spiceweight) | Collided Scope | Crystal    | interpreter  | 2020-12-11 | 0.3 | [GitHub](https://github.com/collidedscope/spiceweight) |
+| [asm2ws](c/kspalaiologos-asm2ws)               | Kamila Szewczyk (Palaiologos) | C | interpreter, JIT, assembler, disassembler, optimizer, programs | 2020-12-31 | 0.3 | [GitHub](https://github.com/kspalaiologos/asm2ws) |
+| [Spitewaste](ruby/collidedscope-spitewaste)    | Collided Scope   | Ruby       | assembler, compiler, programs | 2020-12-11 | 0.3 with shell and eval | [GitHub](https://github.com/collidedscope/spitewaste) |
+| [Spiceweight](crystal/collidedscope-spiceweight) | Collided Scope | Crystal    | interpreter, programs | 2020-12-11 | 0.3 | [GitHub](https://github.com/collidedscope/spiceweight) |
 | [rustws](rust/luminight)                       | Luminight        | Rust       | interpreter  | 2020-08-04 | 0.2 | [GitHub](https://github.com/Luminighty/rustws) |
 | [Whitespace](javascript/kosei)                 | kosei28          | JavaScript | interpreter  | 2020-08-03 | 0.2 | [GitHub](https://github.com/kosei28/Whitespace) |
 | [SpaceMan](haskell/ft-spaceman)                | Frank Terbeck    | Haskell    | interpreter  | 2020-07-09 | 0.3 | [GitLab](https://gitlab.com/ft/spaceman), [GitHub](https://github.com/ft/spaceman), [bewatermyfriend.org](http://bewatermyfriend.org/p/2020/000/), [HN](https://news.ycombinator.com/item?id=24763312) |
@@ -38,8 +39,8 @@ programming language.
 | [whitespace-interperter](python/rumaxwell)     | RuMaxwell        | Python     | interpreter  | 2018-02-21 | 0.3 | [GitHub](https://github.com/RuMaxwell/whitespace-interpreter) |
 | [Whitespace-interpreter](python/bornlex)       | Bornlex          | Python     | interpreter  | 2017-08-09 | 0.3 | [GitHub](https://github.com/Bornlex/Whitespace-interpreter) |
 | [whitespace-interpreter](cpp/benajmin)         | Benjamin Wilkins | C++        | interpreter  | 2017-06-07 | 0.2 | [GitHub](https://github.com/benajmin/whitespace-interpreter) |
-| [wsm2ws](perl/ephphatha-wsm2ws)                | Andrew James     | Perl       | assembler    | 2017-05-28 | 0.3 | [GitHub](https://github.com/ephphatha/wsm2ws) |
-| [ws.vim](vim/rolf-ws-vim)                      | Rolf Asmund      | Vim script | syntax highlighting | 2017-05-15 | 0.3 | [GitHub](https://github.com/rolf007/ws.vim) |
+| [wsm2ws](perl/ephphatha-wsm2ws)                | Andrew James     | Perl       | assembler, programs | 2017-05-28 | 0.3 | [GitHub](https://github.com/ephphatha/wsm2ws) |
+| [ws.vim](vim/rolf-ws-vim)                      | Rolf Asmund      | Vim script | syntax highlighting, programs | 2017-05-15 | 0.3 | [GitHub](https://github.com/rolf007/ws.vim) |
 | [Mr. White](erlang/derek-mrwhite)              | Derek Brown      | Erlang     | interpreter  | 2017-03-23 | 0.3 | [GitHub](https://github.com/derek121/mrwhite) |
 | [whitepy](python/yasn-whitepy)                 | Yasser Saleemi   | Python     | interpreter  | 2017-03-04 | 0.2 | [GitHub](https://github.com/yasn77/whitepy) |
 | [whitespace-scheme](scheme/niyarin)            | Akira Inoue      | Scheme     | interpreter  | 2017-02-15 | 0.2 | [GitHub](https://github.com/niyarin/whitespace-scheme) |
@@ -70,10 +71,10 @@ programming language.
 | [WhiteSpaceInterpreter](csharp/reflash)        | reflash          | C#         | interpreter  | 2014-11-21 | 0.3 | [GitHub](https://github.com/reflash-blog/WhiteSpaceInterpreter) |
 | [Whitespace](c/koturn)                         | koturn           | C          | interpreter, translator | 2014-11-08 | 0.3 | [GitHub](https://github.com/koturn/Whitespace) |
 | [whitespace.php](php/johankj)                  | Johan K. Jensen  | PHP        | interpreter  | 2014-11-01 | 0.2 | [GitHub](https://github.com/johankj/whitespace-interpreter-php) |
-| [wsm](php/igorw-wsm)                           | Igor Wiedler     | PHP        | assembler    | 2014-09-27 | 0.2 | [GitHub](https://github.com/igorw/wsm) |
-| [Albino](rust/faultier-albino)                 | Taro Sako        | Rust       | interpreter, assembler, bytecode | 2014-07-18 | 0.3 | [GitHub](https://github.com/faultier/albino) |
+| [wsm](php/igorw-wsm)                           | Igor Wiedler     | PHP        | assembler, programs | 2014-09-27 | 0.2 | [GitHub](https://github.com/igorw/wsm) |
+| [Albino](rust/faultier-albino)                 | Taro Sako        | Rust       | interpreter, bytecode | 2014-07-18 | 0.3 | [GitHub](https://github.com/faultier/albino) |
 | [Whitespace-LLVM](cpp/subv-whitespace-llvm)    | Sebastian Valle  | C++, LLVM  | interpreter  | 2014-07-16 | 0.3 | [GitHub](https://github.com/Subv/Whitespace-LLVM) |
-| [Whitebase](rust/faultier-whitebase)           | Taro Sako        | Rust       | interpreter, assembler, bytecode | 2014-07-15 | 0.3 | [GitHub](https://github.com/faultier/whitebase) |
+| [Whitebase](rust/faultier-whitebase)           | Taro Sako        | Rust       | interpreter, bytecode | 2014-07-15 | 0.3 | [GitHub](https://github.com/faultier/whitebase) |
 | [whitespace-interpreter](java/azige)           | Azige            | Java       | interpreter  | 2014-06-18 | 0.2 | [GitHub](https://github.com/azige/whitespace-interpreter) |
 | [white](cpp/keirua-white)                      | Keirua           | C++        | interpreter  | 2014-05-30 | 0.3 | [GitHub](https://github.com/Keirua/whitespace) |
 | [Kairos](java/vyo-kairos)                      | Manu Weidmann    | Java       | interpreter, assembler, arbitrary precision, programs | 2014-05-10 | 0.3 | [GitHub](https://github.com/vyo/kairos) |

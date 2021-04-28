@@ -46,12 +46,12 @@ type Project struct {
 		ArbitraryPrecision bool `json:"arbitrary_precision,omitempty"`
 	} `json:"features,omitempty"`
 	Assembly *struct {
-		Instructions              map[string]string `json:"instructions,omitempty"` // key: alias, instruction name
-		CaseSensitiveInstructions bool              `json:"case_sensitive_instructions,omitempty"`
-		LineCommentPrefix         string            `json:"line_comment_prefix,omitempty"`
-		LabelDefFormat            string            `json:"label_def_format,omitempty"`
-		LabelRefFormat            string            `json:"label_ref_format,omitempty"`
-		Filetype                  string            `json:"filetype,omitempty"`
+		Instructions              map[string][]string `json:"instructions,omitempty"` // key: instruction name, aliases
+		CaseSensitiveInstructions bool                `json:"case_sensitive_instructions,omitempty"`
+		LineCommentPrefix         string              `json:"line_comment_prefix,omitempty"`
+		LabelDefFormat            string              `json:"label_def_format,omitempty"`
+		LabelRefFormat            string              `json:"label_ref_format,omitempty"`
+		Extension                 string              `json:"extension,omitempty"`
 	} `json:"assembly,omitempty"`
 	Notes string `json:"notes,omitempty"`
 }

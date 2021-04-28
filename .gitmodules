@@ -244,6 +244,9 @@
 [submodule "ruby/bossiernesto"]
 	path = ruby/bossiernesto
 	url = https://github.com/bossiernesto/whitespace
+[submodule "ruby/collidedscope-spitewaste"]
+	path = ruby/collidedscope-spitewaste
+	url = https://github.com/collidedscope/spitewaste
 [submodule "ruby/pocke-akaza"]
 	path = ruby/pocke-akaza
 	url = https://github.com/pocke/akaza
