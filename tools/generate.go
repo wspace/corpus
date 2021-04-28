@@ -43,20 +43,28 @@ type Project struct {
 	Source      []string `json:"source"`
 	Mirrored    bool     `json:"mirrored,omitempty"`
 	Features    struct {
-		ArbitraryPrecision bool              `json:"arbitrary_precision,omitempty"`
-		Assembly           map[string]string `json:"assembly,omitempty"` // key: alias, instruction name
+		ArbitraryPrecision bool `json:"arbitrary_precision,omitempty"`
 	} `json:"features,omitempty"`
+	Assembly *struct {
+		Instructions              map[string]string `json:"instructions,omitempty"` // key: alias, instruction name
+		CaseSensitiveInstructions bool              `json:"case_sensitive_instructions,omitempty"`
+		LineCommentPrefix         string            `json:"line_comment_prefix,omitempty"`
+		LabelDefFormat            string            `json:"label_def_format,omitempty"`
+		LabelRefFormat            string            `json:"label_ref_format,omitempty"`
+		Filetype                  string            `json:"filetype,omitempty"`
+	} `json:"assembly,omitempty"`
+	Notes string `json:"notes,omitempty"`
 }
 
 func renderTable(b *strings.Builder, projects []Project) error {
-	padding := []int{46, 16, 11, 12, 10, 3, 0}
-	head := []string{"Name", "Author(s)", "Language(s)", "Tags", "Date", "Spec", "Source"}
+	padding := []int{46, 16, 10, 12, 10, 3, 0}
+	head := []string{"Name", "Authors", "Languages", "Tags", "Date", "Spec", "Source"}
 	renderRow(b, padding, head, false)
 	b.WriteByte('\n')
 	renderRow(b, padding, head, true)
-	for i := range projects {
+	for _, p := range projects {
 		b.WriteByte('\n')
-		row, err := projectColumns(&projects[i])
+		row, err := p.formatColumns()
 		if err != nil {
 			return err
 		}
@@ -65,7 +73,7 @@ func renderTable(b *strings.Builder, projects []Project) error {
 	return nil
 }
 
-func projectColumns(p *Project) ([]string, error) {
+func (p *Project) formatColumns() ([]string, error) {
 	name := p.Name
 	if p.Path != "" {
 		name = formatLink(p.Name, p.Path)

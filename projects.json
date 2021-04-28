@@ -17,7 +17,56 @@
     "tags": ["interpreter", "JIT", "macro assembler", "disassembler", "optimizer"],
     "date": "2020-12-31",
     "spec_version": "0.3",
-    "source": ["https://github.com/kspalaiologos/asm2ws"]
+    "source": ["https://github.com/kspalaiologos/asm2ws"],
+    "assembly": {
+      "instructions": {
+        "GETC": "readc",
+        "GETN": "readi",
+        "PUTC": "printc",
+        "PUTN": "printi",
+
+        "PSH": "push",
+        "PUSH": "push",
+        "DUP": "dup",
+        "XCHG": "swap",
+        "SWP": "swap",
+        "SWAP": "swap",
+        "DROP": "drop",
+        "DSC": "drop",
+        "COPY": "copy",
+        "TAKE": "copy",
+        "PULL": "copy",
+        "SLIDE": "slide",
+
+        "ADD": "add",
+        "SUB": "sub",
+        "MUL": "mul",
+        "DIV": "div",
+        "MOD": "mod",
+
+        "STO": "store",
+        "RCL": "retrieve",
+
+        "CALL": "call",
+        "GOSUB": "call",
+        "JSR": "call",
+        "J": "jmp",
+        "B": "jmp",
+        "JMP": "jmp",
+        "JZ": "jz",
+        "BZ": "jz",
+        "JLTZ": "jn",
+        "BLTZ": "jn",
+        "RET": "ret",
+        "END": "end"
+      },
+      "case_sensitive_instructions": false,
+      "line_comment_prefix": ";",
+      "label_def_format": "@[A-Za-z_][A-Za-z0-9_]*",
+      "label_ref_format": "%[A-Za-z_][A-Za-z0-9_]*",
+      "filetype": "asm"
+    },
+    "notes": "Has various number formats and REP instruction"
   },
   {
     "name": "Spiceweight",
