@@ -543,7 +543,7 @@
     "path": "rust/censoredusername-whitespacers",
     "authors": ["CensoredUsername"],
     "languages": ["Rust"],
-    "tags": ["JIT compiler"],
+    "tags": ["JIT"],
     "date": "2016-06-19 01:53:07 +0200",
     "spec_version": "0.3",
     "source": ["https://github.com/CensoredUsername/whitespace-rs"]

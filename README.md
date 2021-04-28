@@ -53,7 +53,7 @@ programming language.
 | [ws-frontent](cpp/sonicyang-ws-frontend)       | Yang Chung-Fan   | C++, LLVM  | compiler     | 2016-08-20 | 0.2 (incomplete) | [GitHub](https://github.com/sonicyang/ws-frontend) |
 | [Whitespace](r/bmazoure)                       | Bogdan Mazoure   | R          | interpreter  | 2016-07-30 | 0.2 | [GitHub](https://github.com/bmazoure/whitespace) |
 | [White++](cpp/marcellippmann-whitepp)          | Marcel Lippmann  | C++        | interpreter  | 2016-07-27 | 0.2 | [GitHub](https://github.com/marcellippmann/Whitepp) |
-| [Whitespacers](rust/censoredusername-whitespacers) | CensoredUsername | Rust   | JIT compiler | 2016-06-19 | 0.3 | [GitHub](https://github.com/CensoredUsername/whitespace-rs) |
+| [Whitespacers](rust/censoredusername-whitespacers) | CensoredUsername | Rust   | JIT          | 2016-06-19 | 0.3 | [GitHub](https://github.com/CensoredUsername/whitespace-rs) |
 | [whitespace](c/bvisness)                       | Ben Visness      | C, Yacc    | interpreter, syntax highlighting | 2016-05-20 | 0.3 | [GitHub](https://github.com/bvisness/whitespace) |
 | [Rust-Whitespace](rust/jayshua)                | Jayshua Nelson   | Rust       | interpreter  | 2016-05-08 | 0.2 | [GitHub](https://github.com/Jayshua/rust-whitespace) |
 | [whitespace-interpreter](javascript/kanra1412) | kanra1412        | JavaScript | interpreter  | 2016-04-29 | 0.3 | [GitHub](https://github.com/kanra1412/whitespace-interpreter) |
