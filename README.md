@@ -94,7 +94,7 @@ programming language.
 | [whitespace](javascript/rumpl)                 | Djordje Lukic    | JavaScript | interpreter  | 2013-03-27 | 0.3 | [GitHub](https://github.com/rumpl/whitespace) |
 | [Whitelips IDE](javascript/vii5ard-whitelips)  | Henri Lakk       | JavaScript | interpreter, optimizer, assembler, IDE | 2013-03-20 | 0.3 | [GitHub](https://github.com/vii5ard/whitespace), [vii5ard.github.io](https://vii5ard.github.io/whitespace/), [Mailing list](https://web.archive.org/web/20141011193149/http://compsoc.dur.ac.uk/archives/whitespace/2013-April/000082.html) |
 | [whitespace-interpreter](cpp/timvandermeij)    | Simon Klaver, Tim van der Meij, Willem Obbens | C++ | interpreter | 2013-02-06 | 0.3 | [GitHub](https://github.com/timvandermeij/whitespace-interpreter) |
-| [ws](cpp/knmorgan)                             | Kyle Morgan      | C++        | interpreter  | 2012-12-19 | 0.3 | [GitHub](https://github.com/knmorgan/ws) |
+| [ws](cpp/knmorgan)                             | Kyle Morgan      | C++        | interpreter  | 2012-12-29 | 0.3 | [GitHub](https://github.com/knmorgan/ws) |
 | [Whitespace-Interpreter](cpp/noia)             | Tucker Noia      | C++        | interpreter  | 2012-12-15 | 0.2 incomplete | [GitHub](https://github.com/noia1/Whitespace-Interpreter) |
 | [wsInt](cpp/dpohanlon-wsint)                   | Daniel O'Hanlon  | C++        | interpreter  | 2012-12-02 | 0.2 | [GitHub](https://github.com/dpohanlon/wsInt) |
 | [WS-idr](idris/edwinb-ws-idr)                  | Edwin Brady      | Idris      | interpreter  | 2012-11-25 | 0.3 | [GitHub](https://github.com/edwinb/WS-idr) |

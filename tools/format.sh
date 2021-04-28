@@ -2,11 +2,10 @@
 
 # Sort git submodules
 # https://unix.stackexchange.com/questions/524048/sort-file-by-group-of-lines/524051#524051
-
 perl -0ne 'print sort split(/^(?=\S)/m)' .gitmodules > tmp
 mv tmp .gitmodules
 
-# Format JSON and append missing LF
+# Format JSON
 # npm install -g underscore-cli
 # https://github.com/ddopson/underscore-cli
 underscore print -i projects.json -o projects.json
