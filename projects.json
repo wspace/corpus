@@ -1243,7 +1243,7 @@
     "tags": ["interpreter"],
     "date": "2010-10-08 03:12:01 +0900",
     "spec_version": "0.3",
-    "source": ["https://github.com/technohippy/go-whitespace"],
+    "source": ["https://github.com/technohippy/go-whitespace", "https://github.com/wspace-lang/go-whitespace"],
     "features": { "arbitrary_precision": false }
   },
   {
@@ -1267,7 +1267,8 @@
     "spec_version": "0.3",
     "source": [
       "https://web.archive.org/web/20110212015726/http://hapyli.webs.com/",
-      "https://web.archive.org/web/20141011193154/http://compsoc.dur.ac.uk/archives/whitespace/2010-May/000075.html"
+      "https://web.archive.org/web/20141011193154/http://compsoc.dur.ac.uk/archives/whitespace/2010-May/000075.html",
+      "https://github.com/helvm/hapyli"
     ]
   },
   {
