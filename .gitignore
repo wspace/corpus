@@ -7,7 +7,3 @@
 *.nir
 *.o
 *.s
-
-# Binaries
-whitespace/pdewacht-tetris/tetris
-whitespace/pdewacht-tetris/tetrisrun/tetrisrun

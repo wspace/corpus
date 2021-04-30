@@ -43,7 +43,6 @@ type Project struct {
 	Date        string   `json:"date"`
 	SpecVersion string   `json:"spec_version"`
 	Source      []string `json:"source"`
-	Mirrored    bool     `json:"mirrored,omitempty"`
 	Features    struct {
 		ArbitraryPrecision bool `json:"arbitrary_precision,omitempty"`
 	} `json:"features,omitempty"`

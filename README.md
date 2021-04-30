@@ -8,6 +8,7 @@ programming language.
 | Name                                           | Authors          | Languages  | Tags         | Date       | Spec | Source |
 | ---------------------------------------------- | ---------------- | ---------- | ------------ | ---------- | ---- | ------ |
 | [Albus](rust/collidedscope-albus)              | Collided Scope   | Rust       | interpreter  | 2021-02-12 | 0.3 | [GitHub](https://github.com/collidedscope/albus) |
+| [whitespace.reb (Ren-C)](ren-c/hostilefork)    | Brian Dickens (Hostile Fork) | Ren-C | interpreter | 2021-01-31 | 0.3 | [GitHub](https://github.com/hostilefork/whitespacers/tree/master/ren-c), [GitHub](https://github.com/wspace-lang/hostilefork-ren-c) |
 | [asm2ws](c/kspalaiologos-asm2ws)               | Kamila Szewczyk (Palaiologos) | C | interpreter, JIT, assembler, disassembler, optimizer, programs | 2020-12-31 | 0.3 | [GitHub](https://github.com/kspalaiologos/asm2ws) |
 | [Spitewaste](ruby/collidedscope-spitewaste)    | Collided Scope   | Ruby       | assembler, compiler, programs, stdlib | 2020-12-11 | 0.3 with shell and eval | [GitHub](https://github.com/collidedscope/spitewaste) |
 | [Spiceweight](crystal/collidedscope-spiceweight) | Collided Scope | Crystal    | interpreter, benchmarking, programs | 2020-12-11 | 0.3 | [GitHub](https://github.com/collidedscope/spiceweight) |
@@ -47,7 +48,7 @@ programming language.
 | [Mr. White](erlang/derek-mrwhite)              | Derek Brown      | Erlang     | interpreter  | 2017-03-23 | 0.3 | [GitHub](https://github.com/derek121/mrwhite) |
 | [whitespace-scheme](scheme/niyarin)            | Akira Inoue      | Scheme     | interpreter  | 2017-02-15 | 0.2 | [GitHub](https://github.com/niyarin/whitespace-scheme) |
 | [whitepy](python/yasn-whitepy)                 | Yasser Saleemi   | Python     | interpreter  | 2017-01-31 | 0.2 | [GitHub](https://github.com/yasn77/whitepy) |
-| [whitespace.lol](lolcode/akers)                | D.E. Akers       | LOLCODE    | interpreter  | 2016-11-20 | 0.3 | [GitHub](https://github.com/hostilefork/whitespacers/tree/master/lolcode) |
+| [whitespace.lol](lolcode/akers)                | D.E. Akers       | LOLCODE    | interpreter  | 2016-11-21 | 0.3 | [GitHub](https://github.com/hostilefork/whitespacers/tree/master/lolcode), [GitHub](https://github.com/wspace-lang/akers-lolcode) |
 | [whitespac3](python/alecgraves-whitespac3)     | Alec Graves      | Python     | interpreter  | 2016-11-17 | 0.3 | [GitHub](https://github.com/alecGraves/whitespac3) |
 | [WhiteSpaceInterpreter](java/eia)              | Zuleimi Esteffanny González Muñoz | Java | interpreter | 2016-10-27 | incomplete | [GitHub](https://github.com/EIA-University/WhiteSpaceInterpreter) |
 | [whitespace-python](python/dwayne)             | Dwayne R. Crooks | Python     | interpreter  | 2016-08-31 | 0.2 | [GitHub](https://github.com/dwayne/whitespace-python) |
@@ -111,14 +112,14 @@ programming language.
 | [Colorspace](python/dos1-colorspace)           | Sebastian Krzyszkowiak | Python | image steganography | 2010-11-22 | - | [GitHub](https://github.com/dos1/colorspace) |
 | [hws](haskell/takatoh-hws)                     | takatoh          | Haskell    | interpreter  | 2010-10-29 | 0.3 | [GitHub](https://github.com/takatoh/hws) |
 | [whitespace-go](go/technohippy)                | ANDO Yasushi     | Go         | interpreter  | 2010-10-08 | 0.3 | [GitHub](https://github.com/technohippy/go-whitespace), [GitHub](https://github.com/wspace-lang/go-whitespace) |
-| [whitespace.reb](rebol/hostilefork)            | Hostile Fork     | Rebol      | interpreter  | 2010-07-10 | 0.3 | [GitHub](https://github.com/hostilefork/whitespacers/tree/master/rebol) |
+| [whitespace.reb](rebol/hostilefork)            | Brian Dickens (Hostile Fork) | Rebol | interpreter | 2010-07-10 | 0.3 | [GitHub](https://github.com/hostilefork/whitespacers/tree/master/rebol), [GitHub](https://github.com/wspace-lang/hostilefork-rebol) |
 | HaPyLi                                         | Huf Lungdung     | Python     | language, interpreter | 2010-05-23 | 0.3 | [hapyli.webs.com](https://web.archive.org/web/20110212015726/http://hapyli.webs.com/), [Mailing list](https://web.archive.org/web/20141011193154/http://compsoc.dur.ac.uk/archives/whitespace/2010-May/000075.html), [GitHub](https://github.com/helvm/hapyli) |
-| [Whitespace Interpreter and Assembler](python/stephenchappell) | Stephen Chappell | Python | interpreter, assembler | 2010-03-14 | 0.3 | [ActiveState Code](https://code.activestate.com/recipes/sets/12/), [GitHub](https://github.com/ActiveState/code) |
-| [Whitespace Interpreter in C++](cpp/peasley)   | Peasley          | C++        | interpreter  | 2010-02-05 | 0.3 | [rohitab.com](http://www.rohitab.com/discuss/topic/35639-c-whitespace-interpreter/?p=10074137) |
-| [Whitespace Interpreter v1.0](c/meth0dz)       | MeTh0Dz          | C          | interpreter  | 2010-01-30 | 0.3 | [rohitab.com](http://www.rohitab.com/discuss/topic/35639-c-whitespace-interpreter/) |
+| [Whitespace Interpreter and Assembler](python/stephenchappell) | Stephen Chappell | Python | interpreter, assembler | 2010-03-14 | 0.3 | [ActiveState Code](https://code.activestate.com/recipes/sets/12/), [GitHub](https://github.com/ActiveState/code), [GitHub](https://github.com/wspace-lang/stephenchappell-python) |
+| [Whitespace Interpreter in C++](cpp/peasley)   | Peasley          | C++        | interpreter  | 2010-02-05 | 0.3 | [rohitab.com](http://www.rohitab.com/discuss/topic/35639-c-whitespace-interpreter/?p=10074137), [GitHub](https://github.com/wspace-lang/peasley-cpp) |
+| [Whitespace Interpreter v1.0](c/meth0dz)       | MeTh0Dz          | C          | interpreter  | 2010-02-01 | 0.3 | [rohitab.com](http://www.rohitab.com/discuss/topic/35639-c-whitespace-interpreter/), [GitHub](https://github.com/wspace-lang/meth0dz-c) |
 | wspace                                         | hogelog          | C++        | interpreter  | 2008-05-02 | 0.3 | [GitHub](https://github.com/hogelog/hogel.org-old/tree/master/content/lib/c/ws) |
-| [wspace](cpp/pavelshub)                        | Pavel Shub       | C++        | interpreter  | 2007-05-26 | 0.3 | [GitHub](https://github.com/pavel987/wspace), [Mailing list](https://web.archive.org/web/20141011193149/http://compsoc.dur.ac.uk/archives/whitespace/2008-April/000068.html), [pavelshub.com](http://pavelshub.com/blog/2010/10/wspace/) |
-| [pywhitespace](python/phlip-pywhitespace)      | Phillip Bradbury | Python     | interpreter  | 2004-08-03 | 0.3 with trace | [Mailing list](https://web.archive.org/web/20141011193201/http://compsoc.dur.ac.uk/archives/whitespace/2004-August/000048.html), [Mailing list](https://web.archive.org/web/20161009051032/http://compsoc.dur.ac.uk/archives/whitespace/2007-December/000065.html), [Newcastle](https://web.archive.org/web/20061209092911/http://www.cs.newcastle.edu.au/~c3018900/pywhitespace.tar.bz2), [mrphlip.com](https://www.mrphlip.com/pywhitespace.tar.bz2) |
+| [wspace](cpp/pavelshub)                        | Pavel Shub       | C++        | interpreter  | 2007-05-26 | 0.3 | [GitHub](https://github.com/pavel987/wspace), [Mailing list](https://web.archive.org/web/20141011193149/http://compsoc.dur.ac.uk/archives/whitespace/2008-April/000068.html), [pavelshub.com](http://pavelshub.com/blog/2010/10/wspace/), [GitHub](https://github.com/wspace-lang/pavelshub-cpp) |
+| [pywhitespace](python/phlip-pywhitespace)      | Phillip Bradbury | Python     | interpreter  | 2004-08-03 | 0.3 with trace | [Mailing list](https://web.archive.org/web/20141011193201/http://compsoc.dur.ac.uk/archives/whitespace/2004-August/000048.html), [Mailing list](https://web.archive.org/web/20161111081914/http://compsoc.dur.ac.uk/archives/whitespace/2007-December/000065.html), [Newcastle](https://web.archive.org/web/20061209092911/http://www.cs.newcastle.edu.au/~c3018900/pywhitespace.tar.bz2), [mrphlip.com](https://www.mrphlip.com/pywhitespace.tar.bz2), [GitHub](https://github.com/wspace-lang/phlip-pywhitespace) |
 | wspace                                         | Edwin Brady      | Haskell, Emacs Lisp | interpreter, syntax highlighting, programs | 2004-05-04 | 0.3 | [CompSoc](https://web.archive.org/web/20150717140342/http://compsoc.dur.ac.uk:80/whitespace/download.php), [Mailing list](https://web.archive.org/web/20141011193201/http://compsoc.dur.ac.uk/archives/whitespace/2004-May/000047.html) |
 | wsinterws                                      | Oliver Burghard  | Whitespace | interpreter  | 2003-04-24 | 0.2 | [burghard.info](https://web.archive.org/web/20030608024503/http://www.burghard.info/code/whitespace/wsinterws/index.html) |
 | whitespace-ruby                                | Wayne E. Conrad  | Ruby       | interpreter  | 2003-04-02 | 0.2 | [yagni.com](https://web.archive.org/web/20120417161917/http://yagni.com/whitespace/index.html) |
@@ -152,7 +153,7 @@ programming language.
 | c.ws<br>collatz.wsa<br>hmacro.wsa<br>nerd.ws<br>nerd.wsa<br>lib/alias.wsa<br>lib/math.wsa<br>lib/rot13.wsa<br>lib/std.wsa<br>lib/string.wsa | Henri Lakk | - | 2013-03-30 | 0.3  | [GitHub](https://github.com/vii5ard/whitespace/tree/master/example) |
 | bf.ws<br>bf.wsa                          | Henri Lakk       | -        | 2013-03-30 | 0.3  | [GitHub](https://github.com/vii5ard/whitespace/tree/master/example), [GitHub](https://github.com/vii5ard/brainfuck-whitespace) |
 | sudoku.ws                                | Huf Lungdung     | -        | 2009-05-19 | 0.3  | [What the Daily WTF?](https://what.thedailywtf.com/topic/5980/stupid-coding-tricks-sudoku-solver-in-whitespace), [Mailing list](https://web.archive.org/web/20141011193156/http://compsoc.dur.ac.uk/archives/whitespace/2009-November/000072.html), [Pastebin](https://web.archive.org/web/20100807004910/http://whitespace.pastebin.com/f761fc4b5) |
-| [tetris.ws](whitespace/pdewacht-tetris)  | Peter De Wachter | -        | 2008-01-02 | 0.2  | [Mailing list](https://web.archive.org/web/20141011193149/http://compsoc.dur.ac.uk/archives/whitespace/2008-January/000067.html), [r/programming](https://www.reddit.com/r/programming/comments/9nw1e/most_unreadable_programming_language_ever/c0dkzzw/) (mirrored) |
+| [tetris.ws](whitespace/pdewacht-tetris)  | Peter De Wachter | -        | 2008-01-02 | 0.2  | [Mailing list](https://web.archive.org/web/20141011193149/http://compsoc.dur.ac.uk/archives/whitespace/2008-January/000067.html), [r/programming](https://www.reddit.com/r/programming/comments/9nw1e/most_unreadable_programming_language_ever/c0dkzzw/), [GitHub](https://github.com/wspace-lang/pdewacht-tetris) |
 | chr.ws<br>ord.ws                         | Phillip Bradbury | -        | 2004-08-03 | 0.2  | See pywhitespace |
 | loctest.ws                               | Edwin Brady      | -        | 2003       | 0.3  | [CompSoc][compsoc] |
 | tutorial.html                            | Edwin Brady      | HTML     | 2003       | 0.2  | [CompSoc][compsoc] |
@@ -172,8 +173,8 @@ programming language.
 ## Usage
 
 Projects with source hosted on GitHub or GitLab are included as
-submodules. Projects from other locations are mirrored in this
-repository.
+submodules. Projects from other locations are reconstructed as git
+repositories.
 
 To clone all submodules, run:
 
@@ -200,5 +201,4 @@ archived.
 ## License
 
 This collection is licensed under the [MIT License](LICENSE.md) by
-Andrew Archibald. Submodules and mirrored projects are licensed by their
-respective owners.
+Andrew Archibald. Submodules are licensed by their respective owners.

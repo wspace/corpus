@@ -10,6 +10,19 @@
     "source": ["https://github.com/collidedscope/albus"]
   },
   {
+    "name": "whitespace.reb (Ren-C)",
+    "path": "ren-c/hostilefork",
+    "authors": ["Brian Dickens (Hostile Fork)"],
+    "languages": ["Ren-C"],
+    "tags": ["interpreter"],
+    "date": "2021-01-31 08:01:42 -0500",
+    "spec_version": "0.3",
+    "source": [
+      "https://github.com/hostilefork/whitespacers/tree/master/ren-c",
+      "https://github.com/wspace-lang/hostilefork-ren-c"
+    ]
+  },
+  {
     "name": "asm2ws",
     "path": "c/kspalaiologos-asm2ws",
     "authors": ["Kamila Szewczyk (Palaiologos)"],
@@ -484,10 +497,12 @@
     "authors": ["D.E. Akers"],
     "languages": ["LOLCODE"],
     "tags": ["interpreter"],
-    "date": "2016-11-20",
+    "date": "2016-11-21 01:10:33 -0500",
     "spec_version": "0.3",
-    "source": ["https://github.com/hostilefork/whitespacers/tree/master/lolcode"],
-    "mirrored": true
+    "source": [
+      "https://github.com/hostilefork/whitespacers/tree/master/lolcode",
+      "https://github.com/wspace-lang/akers-lolcode"
+    ]
   },
   {
     "name": "whitespac3",
@@ -1249,13 +1264,15 @@
   {
     "name": "whitespace.reb",
     "path": "rebol/hostilefork",
-    "authors": ["Hostile Fork"],
+    "authors": ["Brian Dickens (Hostile Fork)"],
     "languages": ["Rebol"],
     "tags": ["interpreter"],
     "date": "2010-07-10 23:12:40 -0700",
     "spec_version": "0.3",
-    "source": ["https://github.com/hostilefork/whitespacers/tree/master/rebol"],
-    "mirrored": true
+    "source": [
+      "https://github.com/hostilefork/whitespacers/tree/master/rebol",
+      "https://github.com/wspace-lang/hostilefork-rebol"
+    ]
   },
   {
     "name": "HaPyLi",
@@ -1277,10 +1294,13 @@
     "authors": ["Stephen Chappell"],
     "languages": ["Python"],
     "tags": ["interpreter", "assembler"],
-    "date": "2010-03-14",
+    "date": "2010-03-14 15:35:04 +0000",
     "spec_version": "0.3",
-    "source": ["https://code.activestate.com/recipes/sets/12/", "https://github.com/ActiveState/code"],
-    "mirrored": true
+    "source": [
+      "https://code.activestate.com/recipes/sets/12/",
+      "https://github.com/ActiveState/code",
+      "https://github.com/wspace-lang/stephenchappell-python"
+    ]
   },
   {
     "name": "Whitespace Interpreter in C++",
@@ -1288,10 +1308,12 @@
     "authors": ["Peasley"],
     "languages": ["C++"],
     "tags": ["interpreter"],
-    "date": "2010-02-05",
+    "date": "2010-02-05 08:24:04 +0000",
     "spec_version": "0.3",
-    "source": ["http://www.rohitab.com/discuss/topic/35639-c-whitespace-interpreter/?p=10074137"],
-    "mirrored": true
+    "source": [
+      "http://www.rohitab.com/discuss/topic/35639-c-whitespace-interpreter/?p=10074137",
+      "https://github.com/wspace-lang/peasley-cpp"
+    ]
   },
   {
     "name": "Whitespace Interpreter v1.0",
@@ -1299,10 +1321,12 @@
     "authors": ["MeTh0Dz"],
     "languages": ["C"],
     "tags": ["interpreter"],
-    "date": "2010-01-30",
+    "date": "2010-02-01 01:56:47 +0000",
     "spec_version": "0.3",
-    "source": ["http://www.rohitab.com/discuss/topic/35639-c-whitespace-interpreter/"],
-    "mirrored": true
+    "source": [
+      "http://www.rohitab.com/discuss/topic/35639-c-whitespace-interpreter/",
+      "https://github.com/wspace-lang/meth0dz-c"
+    ]
   },
   {
     "name": "wspace",
@@ -1325,9 +1349,9 @@
     "source": [
       "https://github.com/pavel987/wspace",
       "https://web.archive.org/web/20141011193149/http://compsoc.dur.ac.uk/archives/whitespace/2008-April/000068.html",
-      "http://pavelshub.com/blog/2010/10/wspace/"
-    ],
-    "mirrored": true
+      "http://pavelshub.com/blog/2010/10/wspace/",
+      "https://github.com/wspace-lang/pavelshub-cpp"
+    ]
   },
   {
     "name": "pywhitespace",
@@ -1335,15 +1359,15 @@
     "authors": ["Phillip Bradbury"],
     "languages": ["Python"],
     "tags": ["interpreter"],
-    "date": "2004-08-03",
+    "date": "2004-08-03 07:32:50 +0000",
     "spec_version": "0.3 with trace",
     "source": [
       "https://web.archive.org/web/20141011193201/http://compsoc.dur.ac.uk/archives/whitespace/2004-August/000048.html",
-      "https://web.archive.org/web/20161009051032/http://compsoc.dur.ac.uk/archives/whitespace/2007-December/000065.html",
+      "https://web.archive.org/web/20161111081914/http://compsoc.dur.ac.uk/archives/whitespace/2007-December/000065.html",
       "https://web.archive.org/web/20061209092911/http://www.cs.newcastle.edu.au/~c3018900/pywhitespace.tar.bz2",
-      "https://www.mrphlip.com/pywhitespace.tar.bz2"
-    ],
-    "mirrored": true
+      "https://www.mrphlip.com/pywhitespace.tar.bz2",
+      "https://github.com/wspace-lang/phlip-pywhitespace"
+    ]
   },
   {
     "name": "wspace",
