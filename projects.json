@@ -162,6 +162,51 @@
     "source": ["https://github.com/helvm/helma"]
   },
   {
+    "name": "Whitelie",
+    "description": "Self-hosted Whitespace compiler for 64-bit Linux",
+    "path": "whitespace/keens-whitelie",
+    "authors": ["κeen"],
+    "languages": ["Whitespace", "Ruby"],
+    "tags": ["compiler", "assembler", "programs"],
+    "date": "2020-03-31 23:46:45 +0900",
+    "spec_version": "0.3",
+    "source": [
+      "https://github.com/KeenS/whitelie",
+      "https://gist.github.com/KeenS/6081b0c802a4e575ddbacb1930680870"
+    ],
+    "assembly": {
+      "instructions": {
+        "push": ["Stack push"],
+        "dup": ["Stack dup"],
+        "drop": ["Stack discard"],
+        "copy": ["Stack copy"],
+        "swap": ["Stack swap"],
+        "slide": ["Stack slide"],
+        "add": ["Arith add"],
+        "sub": ["Arith sub"],
+        "mul": ["Arith mul"],
+        "div": ["Arith div"],
+        "mod": ["Arith mod"],
+        "store": ["Heap store"],
+        "retrieve": ["Heap retrieve"],
+        "label": ["Flow label"],
+        "jmp": ["Flow jump"],
+        "jz": ["Flow jz"],
+        "jn": ["Flow jneg"],
+        "call": ["Flow call"],
+        "ret": ["Flow return"],
+        "end": ["Flow end"],
+        "printc": ["IO outchar"],
+        "printn": ["IO outnumber"],
+        "readc": ["IO readchar"],
+        "readn": ["IO readnumber"]
+      },
+      "case_sensitive_instructions": true,
+      "line_comment_prefix": "#",
+      "extension": "wsa"
+    }
+  },
+  {
     "name": "WhitespaceInterpreter",
     "path": "csharp/denislabrecque",
     "authors": ["Denis G. Labrecque"],
@@ -170,6 +215,26 @@
     "date": "2020-03-26 22:16:49 -0500",
     "spec_version": "0.2 incomplete",
     "source": ["https://github.com/DenisLabrecque/Whitespace-Interpreter"]
+  },
+  {
+    "name": "EvanescoJS",
+    "path": "javascript/damle-evanescojs",
+    "authors": ["Atharv Damle"],
+    "languages": ["JavaScript"],
+    "tags": ["text to Whitespace", "web app"],
+    "date": "2020-03-14 00:42:59 +1100",
+    "spec_version": "-",
+    "source": ["https://github.com/AD9000/EvanescoJS"]
+  },
+  {
+    "name": "Evanesco",
+    "path": "python/damle-evanesco",
+    "authors": ["Atharv Damle"],
+    "languages": ["Python 3"],
+    "tags": ["text to Whitespace"],
+    "date": "2020-02-20 09:18:38 +1100",
+    "spec_version": "-",
+    "source": ["https://github.com/AD9000/Evanesco"]
   },
   {
     "name": "WhiteSpaceInterpreter",
@@ -192,6 +257,46 @@
     "source": ["https://codegolf.stackexchange.com/questions/198694/write-a-whitespace-interpreter/198770#198770"]
   },
   {
+    "name": "Whitespace UnC",
+    "path": "python/ilikepython256-whitespace-unc",
+    "authors": ["Python Whiz 256"],
+    "languages": ["Python"],
+    "tags": ["assembler", "web client", "programs"],
+    "date": "2019-09-24 10:11:31 -0600",
+    "spec_version": "0.3",
+    "source": ["https://github.com/ILikePython256/Whitespace_UnC"],
+    "assembly": {
+      "instructions": {
+        "push": ["MOD.PUSH"],
+        "dup": ["MOD.DUPE"],
+        "copy": ["MOD.COPY"],
+        "swap": ["MOD.SWAP"],
+        "drop": ["MOD.POP"],
+        "slide": ["MOD.SLDE"],
+        "add": ["MATH.ADD"],
+        "sub": ["MATH.SUB"],
+        "mul": ["MATH.MULT"],
+        "div": ["MATH.DIV"],
+        "mod": ["MATH.MOD"],
+        "store": ["HEAP.STOR"],
+        "retrieve": ["HEAP.RET"],
+        "labl": ["FLOW.LABL"],
+        "call": ["FLOW.SUB"],
+        "jmp": ["FLOW.JUMP"],
+        "jz": ["FLOW.JMPZ"],
+        "jn": ["FLOW.JMPN"],
+        "ret": ["FLOW.RET"],
+        "end": ["FLOW.HALT"],
+        "printc": ["IO.OUT"],
+        "printn": ["IO.NOUT"],
+        "readc": ["IO.IN"],
+        "readn": ["IO.NIN"]
+      },
+      "case_sensitive_instructions": false
+    },
+    "notes": "Web client and test programs are on web branch"
+  },
+  {
     "name": "zerospace-lang",
     "path": "javascript/loklaan-zerowidth-lang",
     "authors": ["Lochlan Bunn"],
@@ -200,7 +305,7 @@
     "date": "2019-07-25 16:02:44 +1000",
     "spec_version": "0.3",
     "source": ["https://github.com/loklaan/zerowidth-lang"],
-    "mapping": { "space": "&#8203;", "tab": "&#8204;", "lf": "\n" },
+    "mapping": { "space": "&#8203;", "tab": "&#8204;", "lf": "\n", "extension": "zw" },
     "notes": "Fork of vii5ard/whitespace"
   },
   {
@@ -222,6 +327,17 @@
     "date": "2019-06-19 03:00:21 -0400",
     "spec_version": "0.2",
     "source": ["https://github.com/Dash-Lambda/Eso"]
+  },
+  {
+    "name": "baudelaire-whitespace",
+    "description": "Web service that executes baudelaire.ws with the given word using the EsCo interpreter",
+    "path": "python/qwhxm-baudelaire",
+    "authors": ["Marek Tomáštík"],
+    "languages": ["Python"],
+    "tags": ["web service", "programs"],
+    "date": "2019-06-08 23:22:47 +0200",
+    "spec_version": "0.3",
+    "source": ["https://github.com/qwhxm/baudelaire-whitespace"]
   },
   {
     "name": "Nebula",
@@ -255,6 +371,45 @@
     "source": ["https://github.com/pocke/akaza"]
   },
   {
+    "name": "whitespace-language-converter",
+    "path": "python/drafear-converter",
+    "authors": ["Takeshi Nishikawa"],
+    "languages": ["Python"],
+    "tags": ["assembler"],
+    "date": "2019-03-30 02:52:41 +0900",
+    "spec_version": "0.3",
+    "source": ["https://github.com/drafear/whitespace-language-converter"],
+    "assembly": {
+      "instructions": {
+        "push": ["push"],
+        "dup": ["dup"],
+        "copy": ["copy"],
+        "swap": ["swap"],
+        "drop": ["drop"],
+        "slide": ["slide"],
+        "add": ["add"],
+        "sub": ["sub"],
+        "mul": ["mul"],
+        "div": ["div"],
+        "mod": ["mod"],
+        "store": ["store"],
+        "retrieve": ["retrieve"],
+        "label": ["[label]:"],
+        "call": ["call"],
+        "jmp": ["jmp"],
+        "jz": ["jz"],
+        "jn": ["jn"],
+        "ret": ["ret"],
+        "end": ["end"],
+        "readc": ["readc"],
+        "readi": ["readi"],
+        "printc": ["printc"],
+        "printi": ["printi"]
+      },
+      "case_sensitive_instructions": true
+    }
+  },
+  {
     "name": "go-wspace",
     "path": "go/tempxla-go-wspace",
     "authors": ["tempxla"],
@@ -284,7 +439,7 @@
     "date": "2018-11-22 18:48:52 +0000",
     "spec_version": "-",
     "source": ["https://github.com/freyamade/hohoho"],
-    "mapping": { "space": "snow", "tab": "hohoho", "lf": "\n", "spaces_between": "true" }
+    "mapping": { "space": "snow", "tab": "hohoho", "lf": "\n", "spaces_between": true, "extension": "ho" }
   },
   {
     "name": "whitespace-interpreter",
@@ -346,6 +501,18 @@
     "spec_version": "0.3",
     "source": ["https://github.com/andrewarchi/respace"],
     "features": { "arbitrary_precision": false }
+  },
+  {
+    "name": "projectOne",
+    "description": "GUI to convert between Whitespace syntax and S/T/L",
+    "path": "csharp/north-projectone",
+    "authors": ["Jacob North"],
+    "languages": ["C#"],
+    "tags": ["mapping", "GUI"],
+    "date": "2018-04-11 01:33:40 -0400",
+    "spec_version": "-",
+    "source": ["https://github.com/North15/projectOne"],
+    "mapping": { "space": "S", "tab": "T", "lf": "L", "extension": "txt" }
   },
   {
     "name": "whitespace_interpreter",
@@ -725,6 +892,49 @@
     "notes": "Assembly is only displayed, not disassembled"
   },
   {
+    "name": "BlueSpace",
+    "path": "python/smithers-bluespace",
+    "authors": ["Christopher Smith"],
+    "languages": ["Python 3"],
+    "tags": ["interpreter", "compiler", "assembler", "optimizer", "mapping", "programs"],
+    "date": "2015-08-13 20:46:55 +0100",
+    "spec_version": "0.3",
+    "source": ["https://github.com/Smithers888/BlueSpace", "https://cpjsmith.uk/whitespace"],
+    "assembly": {
+      "instructions": {
+        "push": ["Push"],
+        "dup": ["Duplicate"],
+        "copy": ["Copy"],
+        "swap": ["Swap"],
+        "drop": ["Discard"],
+        "slide": ["Slide"],
+        "add": ["Add"],
+        "sub": ["Subtract"],
+        "mul": ["Multiply"],
+        "div": ["Divide"],
+        "mod": ["Modulo"],
+        "store": ["Store"],
+        "retrieve": ["Retrieve"],
+        "label": ["Label"],
+        "call": ["Call"],
+        "jmp": ["Jump"],
+        "jz": ["JumpZero"],
+        "jn": ["JumpNegative"],
+        "ret": ["Return"],
+        "end": ["End"],
+        "printc": ["OutputChar"],
+        "printn": ["OutputNum"],
+        "readc": ["ReadChar"],
+        "readn": ["ReadNum"]
+      },
+      "case_sensitive_instructions": false,
+      "line_comment_prefix": "#",
+      "extension": "wsa"
+    },
+    "mapping": { "space": "s", "tab": "t", "lf": "n", "extension": "wsp" },
+    "notes": "Mapping has spaces between opcode and param and each instruction is on a separate line. Assembly string parameters are written with s/t/l"
+  },
+  {
     "name": "Cupertino-WhiteSpace-Interperter",
     "path": "cpp/frmsaul-cupertino",
     "authors": ["Saul Fuhrmann"],
@@ -763,6 +973,50 @@
     "date": "2015-03-10 01:25:16 -0600",
     "spec_version": "0.3",
     "source": ["https://github.com/StrangePan/I_C_Whitespace"]
+  },
+  {
+    "name": "whitespace-translater",
+    "path": "javascript/kmyk-translater",
+    "authors": ["Kimiyuki Onaka"],
+    "languages": ["JavaScript"],
+    "tags": ["assembler", "disassembler", "mapping"],
+    "date": "2015-03-01 21:07:23 +0900",
+    "spec_version": "0.3",
+    "source": [
+      "https://github.com/kmyk/whitespace-translater",
+      "https://web.archive.org/web/20160307155202/http://solorab.net/works/whitespace-translater/"
+    ],
+    "assembly": {
+      "instructions": {
+        "push": ["PUSH"],
+        "dup": ["DUP"],
+        "copy": ["COPYNTH"],
+        "swap": ["SWAP"],
+        "drop": ["DISCARD"],
+        "slide": ["SLIDE"],
+        "add": ["ADD"],
+        "sub": ["SUB"],
+        "mul": ["MULT"],
+        "div": ["DIV"],
+        "mod": ["MOD"],
+        "store": ["STORE"],
+        "retrieve": ["RETRIEVE"],
+        "label": ["LABEL"],
+        "call": ["CALL"],
+        "jmp": ["JUMP"],
+        "jz": ["JUMPZERO"],
+        "jn": ["JUMPNEG"],
+        "ret": ["RETURN"],
+        "end": ["EXIT"],
+        "printc": ["PUTCHAR"],
+        "printn": ["PUTNUM"],
+        "readc": ["GETCHAR"],
+        "readn": ["GETNUM"]
+      },
+      "case_sensitive_instructions": true,
+      "line_comment_prefix": "#"
+    },
+    "mapping": { "space": "S", "tab": "T", "lf": "\n" }
   },
   {
     "name": "Tomato Programming Language",
@@ -923,6 +1177,46 @@
       },
       "extension": "wsm"
     }
+  },
+  {
+    "name": "pyws",
+    "path": "python/eizoassik-pyws",
+    "authors": ["Eizo Assik"],
+    "languages": ["Python"],
+    "tags": ["interpreter", "assembler", "disassembler"],
+    "date": "2014-08-28 10:18:04 +0800",
+    "spec_version": "0.3",
+    "source": ["https://github.com/EizoAssik/pyws"],
+    "assembly": {
+      "instructions": {
+        "push": ["PUSH"],
+        "dup": ["DUP"],
+        "copy": ["COPY"],
+        "swap": ["SWAP"],
+        "drop": ["POP"],
+        "slide": ["SKIP"],
+        "store": ["STORE"],
+        "retrieve": ["RETRIEVE"],
+        "add": ["ADD"],
+        "sub": ["SUB"],
+        "mul": ["MUL"],
+        "div": ["DIV"],
+        "mod": ["MOD"],
+        "label": ["MARK"],
+        "call": ["CALL"],
+        "jmp": ["JUMP"],
+        "jz": ["JZ"],
+        "jn": ["JS"],
+        "ret": ["RET"],
+        "end": ["END"],
+        "printc": ["PCHR"],
+        "printn": ["PNUM"],
+        "readc": ["RCHR"],
+        "readn": ["RNUM"]
+      },
+      "line_comment_prefix": "#"
+    },
+    "notes": "Has PYFN (call Python function) and PUSHS"
   },
   {
     "name": "Albino",

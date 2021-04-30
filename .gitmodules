@@ -97,6 +97,9 @@
 [submodule "csharp/denislabrecque"]
 	path = csharp/denislabrecque
 	url = https://github.com/DenisLabrecque/Whitespace-Interpreter
+[submodule "csharp/north-projectone"]
+	path = csharp/north-projectone
+	url = https://github.com/North15/projectOne
 [submodule "csharp/reflash"]
 	path = csharp/reflash
 	url = https://github.com/reflash-blog/WhiteSpaceInterpreter
@@ -172,9 +175,15 @@
 [submodule "java/yuukiaria-wseditor"]
 	path = java/yuukiaria-wseditor
 	url = https://github.com/YuukiARIA/wseditor
+[submodule "javascript/damle-evanescojs"]
+	path = javascript/damle-evanescojs
+	url = https://github.com/AD9000/EvanescoJS
 [submodule "javascript/kanra1412"]
 	path = javascript/kanra1412
 	url = https://github.com/kanra1412/whitespace-interpreter
+[submodule "javascript/kmyk-translater"]
+	path = javascript/kmyk-translater
+	url = https://github.com/kmyk/whitespace-translater
 [submodule "javascript/kosei"]
 	path = javascript/kosei
 	url = https://github.com/kosei28/Whitespace
@@ -241,18 +250,30 @@
 [submodule "python/dalleng"]
 	path = python/dalleng
 	url = https://github.com/dalleng/Whitespace
+[submodule "python/damle-evanesco"]
+	path = python/damle-evanesco
+	url = https://github.com/AD9000/Evanesco
 [submodule "python/dos1-colorspace"]
 	path = python/dos1-colorspace
 	url = https://github.com/dos1/colorspace
+[submodule "python/drafear-converter"]
+	path = python/drafear-converter
+	url = https://github.com/drafear/whitespace-language-converter
 [submodule "python/dwayne"]
 	path = python/dwayne
 	url = https://github.com/dwayne/whitespace-python
+[submodule "python/eizoassik-pyws"]
+	path = python/eizoassik-pyws
+	url = https://github.com/EizoAssik/pyws
 [submodule "python/freyamade-hohoho"]
 	path = python/freyamade-hohoho
 	url = https://github.com/freyamade/hohoho
 [submodule "python/hearnderek"]
 	path = python/hearnderek
 	url = https://github.com/hearnderek/WhiteSpaceInterpreter
+[submodule "python/ilikepython256-whitespace-unc"]
+	path = python/ilikepython256-whitespace-unc
+	url = https://github.com/ILikePython256/Whitespace_UnC
 [submodule "python/maximegoyette"]
 	path = python/maximegoyette
 	url = https://github.com/MaximeGoyette/whitespace_interpreter
@@ -262,9 +283,15 @@
 [submodule "python/phlip-pywhitespace"]
 	path = python/phlip-pywhitespace
 	url = https://github.com/wspace-lang/phlip-pywhitespace
+[submodule "python/qwhxm-baudelaire"]
+	path = python/qwhxm-baudelaire
+	url = https://github.com/qwhxm/baudelaire-whitespace
 [submodule "python/rumaxwell"]
 	path = python/rumaxwell
 	url = https://github.com/RuMaxwell/whitespace-interpreter
+[submodule "python/smithers-bluespace"]
+	path = python/smithers-bluespace
+	url = https://github.com/Smithers888/BlueSpace
 [submodule "python/stephenchappell"]
 	path = python/stephenchappell
 	url = https://github.com/wspace-lang/stephenchappell-python
@@ -334,6 +361,9 @@
 [submodule "vim/rolf-ws-vim"]
 	path = vim/rolf-ws-vim
 	url = https://github.com/rolf007/ws.vim
+[submodule "whitespace/keens-whitelie"]
+	path = whitespace/keens-whitelie
+	url = https://github.com/KeenS/whitelie
 [submodule "whitespace/pdewacht-tetris"]
 	path = whitespace/pdewacht-tetris
 	url = https://github.com/wspace-lang/pdewacht-tetris

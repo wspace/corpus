@@ -9,6 +9,7 @@ func TestGetURLLabel(t *testing.T) {
 	}{
 		{"https://github.com/andrewarchi/nebula", "GitHub"},
 		{"https://gitlab.com/ft/spaceman", "GitLab"},
+		{"https://gist.github.com/KeenS/6081b0c802a4e575ddbacb1930680870", "GitHub Gist"},
 		{"https://web.archive.org/web/20141011193201/http://compsoc.dur.ac.uk/archives/whitespace/2004-May/000047.html", "Mailing list"},
 		{"https://web.archive.org/web/20110212015726/http://hapyli.webs.com/", "hapyli.webs.com"},
 		{"https://web.archive.org/web/20061209092911/http://www.cs.newcastle.edu.au/~c3018900/pywhitespace.tar.bz2", "Newcastle"},

@@ -36,6 +36,7 @@ func try(err error) {
 
 type Project struct {
 	Name        string   `json:"name"`
+	Description string   `json:"description"`
 	Path        string   `json:"path"`
 	Authors     []string `json:"authors"`
 	Languages   []string `json:"languages"`
@@ -58,7 +59,8 @@ type Project struct {
 		Space         string `json:"space"`
 		Tab           string `json:"tab"`
 		LF            string `json:"lf"`
-		SpacesBetween string `json:"spaces_between,omitempty"`
+		SpacesBetween bool   `json:"spaces_between,omitempty"`
+		Extension     string `json:"extension,omitempty"`
 	} `json:"mapping,omitempty"`
 	Notes string `json:"notes,omitempty"`
 }
@@ -150,6 +152,7 @@ func formatLink(label, url string) string {
 var domainLabels = map[string]string{
 	"github.com":                 "GitHub",
 	"gitlab.com":                 "GitLab",
+	"gist.github.com":            "GitHub Gist",
 	"news.ycombinator.com":       "HN",
 	"codegolf.stackexchange.com": "Code Golf",
 	"code.activestate.com":       "ActiveState Code",
