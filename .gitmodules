@@ -280,6 +280,9 @@
 [submodule "python/mcolom"]
 	path = python/mcolom
 	url = https://github.com/mcolom/whitespace
+[submodule "python/mikecat"]
+	path = python/mikecat
+	url = https://github.com/mikecat/python-whitespace
 [submodule "python/phlip-pywhitespace"]
 	path = python/phlip-pywhitespace
 	url = https://github.com/wspace-lang/phlip-pywhitespace

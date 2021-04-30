@@ -100,6 +100,7 @@ programming language.
 | [Kairos](java/vyo-kairos)                      | Manu Weidmann    | Java       | interpreter, assembler, arbitrary precision, programs | 2014-05-10 | 0.3 | [GitHub](https://github.com/vyo/kairos) |
 | [elixir-whitespace](elixir/quinnwilton)        | Quinn Wilton     | Elixir     | interpreter  | 2014-03-07 | 0.3 | [GitHub](https://github.com/QuinnWilton/elixir-whitespace) |
 | [SaTaN](c/threeifbywhiskey-satan)              | Dorien Snake     | C          | interpreter  | 2014-03-03 | 0.3 | [GitHub](https://github.com/threeifbywhiskey/satan) |
+| [python-whitespace](python/mikecat)            | みけCAT (MikeCAT)  | Python 2, Python 3 | interpreter | 2014-02-16 | 0.3 | [GitHub](https://github.com/mikecat/python-whitespace) |
 | [wspacego](go/yshr-wspacego)                   | Yosihiro Isago   | Go         | interpreter  | 2013-12-27 | 0.3 | [GitHub](https://github.com/135yshr/wspacego) |
 | [wvm](python/apua-wvm)                         | Apua             | Python     | interpreter  | 2013-11-24 | 0.3 | [GitHub](https://github.com/apua/whitespace) |
 | [wseditor](java/yuukiaria-wseditor)            | YuukiARIA        | Java       | IDE          | 2013-11-21 | -   | [GitHub](https://github.com/YuukiARIA/wseditor) |
@@ -147,11 +148,14 @@ programming language.
 
 | Name                                     | Author           | Polyglot | Date       | Spec | Source |
 | ---------------------------------------- | ---------------- | -------- | ---------- | ---- | ------ |
+| hello.go<br>index.html<br>figlet.js      | Chris Nguyen     | Go, HTML, JavaScript | 2016-06-26 | 0.2 | [GitHub](https://github.com/uncompiled/steganographic-polyglots) |
 | 55960.ws                                 | Kamila Szewczyk (Palaiologos) | Malbolge | 2019-08-30 | 0.2 | [CodeGolf](https://codegolf.stackexchange.com/questions/55960/im-not-the-language-youre-looking-for/191063#191063), [GitHub](https://github.com/kspalaiologos/codegolf-submissions/blob/master/55960.ws) |
 | baudelaire.ws                            | Marek Tomáštík   | -        | 2019-06-08 | 0.2 | [GitHub](https://github.com/qwhxm/baudelaire-whitespace/blob/master/backend/baudelaire.ws) |
 | ascii.wsa<br>ascii4.wsa<br>caesar.wsa<br>fib.wsa<br>interpret.wsa<br>math.wsa<br>pi.wsa<br>postfix.wsa | Andrew Archibald | - | 2019-06-05 | 0.3 | [GitHub](https://github.com/andrewarchi/nebula/tree/master/programs) |
 | 99_bottles.wsa<br>collatz.wsa<br>factorial.wsa<br>fizz_buzz.wsa<br>hello_world.ws<br>test_ret_underflow.wsa | Andrew Archibald | - | 2019-06-05 | 0.2 | [GitHub](https://github.com/andrewarchi/nebula/tree/master/programs) |
+| KevinLovesWhitespace.ws                  | Riedl Kevin      | -        | 2018-12-01 | 0.2 | [GitHub](https://github.com/wsdt/WhiteSpace_Brainfuck/blob/master/KevinLovesWhitespace.ws) |
 | hello_world.wsp<br>test.wsp              | Aidan Lakshman   | -        | 2018-11-07 | 0.2 | [GitHub](https://github.com/ahl27/whitespace) |
+| goto.ws                                  | Trevor Bennett   | -        | 2018-09-07 | 0.2 | [GitHub](https://github.com/trevorbennett/whitespace-stack-flood), [r/ProgrammerHumor](https://www.reddit.com/r/ProgrammerHumor/comments/9dvwhn/java_java/e5kg126/) |
 | helloWhitespace.ws                       | Heo Kyungyoung   | -        | 2018-08-09 | 0.2 | [GitHub](https://github.com/bbvch13531/HelloWhitespace) |
 | Did you see anything?                    | Daniel Chen      | -        | 2017-02-23 | 0.2 | [GitHub](https://github.com/ccns/105-club-fair-game-problems/blob/master/2/2/Did%20you%20see%20anything%3F) |
 | fichero.bin                              | Zuleimi Esteffanny González Muñoz | - | 2016-10-27 | 0.2 | [GitHub](https://github.com/EIA-University/WhiteSpaceInterpreter/blob/master/src/fichero.bin) |

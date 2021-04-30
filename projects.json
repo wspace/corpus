@@ -1329,6 +1329,16 @@
     "source": ["https://github.com/threeifbywhiskey/satan"]
   },
   {
+    "name": "python-whitespace",
+    "path": "python/mikecat",
+    "authors": ["みけCAT (MikeCAT)"],
+    "languages": ["Python 2", "Python 3"],
+    "tags": ["interpreter"],
+    "date": "2014-02-16 11:04:37 +0900",
+    "spec_version": "0.3",
+    "source": ["https://github.com/mikecat/python-whitespace"]
+  },
+  {
     "name": "wspacego",
     "path": "go/yshr-wspacego",
     "authors": ["Yosihiro Isago"],
