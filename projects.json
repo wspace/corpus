@@ -46,7 +46,7 @@
         "mod": ["MOD"],
         "store": ["STO"],
         "retrieve": ["RCL"],
-        "label": ["@[label]", "@L[number]"],
+        "label": ["@<label>", "@L<number>"],
         "call": ["CALL", "GOSUB", "JSR"],
         "jmp": ["JMP", "J", "B"],
         "jz": ["JZ", "BZ"],
@@ -394,7 +394,7 @@
         "mod": ["mod"],
         "store": ["store"],
         "retrieve": ["retrieve"],
-        "label": ["[label]:"],
+        "label": ["<label>:"],
         "call": ["call"],
         "jmp": ["jmp"],
         "jz": ["jz"],
@@ -600,7 +600,7 @@
         "mod": ["mod", "rem"],
         "store": ["store", "stor"],
         "retrieve": ["retrieve", "retr"],
-        "label": ["[label]:", "label"],
+        "label": ["<label>:", "label"],
         "call": ["call"],
         "jmp": ["jmp", "jump", "goto"],
         "jz": ["jez", "jz"],
@@ -1457,13 +1457,54 @@
     "path": "cpp/timvandermeij",
     "authors": ["Tim van der Meij", "Willem Obbens", "Simon Klaver"],
     "languages": ["C++"],
-    "tags": ["interpreter", "programs"],
+    "tags": ["interpreter", "assembler", "disassembler", "mapping", "programs"],
     "date": "2013-02-06 06:24:15 -0800",
     "spec_version": "0.3",
     "source": [
       "https://github.com/timvandermeij/whitespace-interpreter",
       "https://github.com/wspace-lang/timvandermeij-cpp"
-    ]
+    ],
+    "features": {
+      "arbitrary_precision": false,
+      "negative_heap": false
+    },
+    "assembly": {
+      "instructions": {
+        "push": ["PUSH"],
+        "dup": ["DUP"],
+        "copy": ["COPY"],
+        "swap": ["SWAP"],
+        "drop": ["DISCARD"],
+        "slide": ["SLIDE"],
+        "add": ["ADD"],
+        "sub": ["SUB"],
+        "mul": ["MUL"],
+        "div": ["DIV"],
+        "mod": ["MOD"],
+        "store": ["STORE"],
+        "retrieve": ["RETRIEVE"],
+        "label": ["MARK"],
+        "call": ["CALL"],
+        "jmp": ["JUMP"],
+        "jz": ["JUMPZERO"],
+        "jn": ["JUMPNEG"],
+        "ret": ["ENDSUB"],
+        "end": ["ENDPROG"],
+        "printc": ["WRITEC"],
+        "printn": ["WRITEN"],
+        "readc": ["READC"],
+        "readn": ["READN"]
+      },
+      "case_sensitive_instructions": true
+    },
+    "mapping": { "space": "S ", "tab": "T ", "lf": "LF\n", "spaces_between": false },
+    "scripts": {
+      "build": "make -C $DIR",
+      "interpret": {
+        "bin": "$DIR/whitespace",
+        "usage": "$0"
+      }
+    }
   },
   {
     "name": "ws",
