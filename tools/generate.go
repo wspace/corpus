@@ -46,6 +46,8 @@ type Project struct {
 	Source      []string `json:"source"`
 	Features    struct {
 		ArbitraryPrecision bool `json:"arbitrary_precision,omitempty"`
+		BufferedOutput     bool `json:"buffered_output,omitempty"`
+		NegativeHeap       bool `json:"negative_heap,omitempty"`
 	} `json:"features,omitempty"`
 	Assembly *struct {
 		Instructions              map[string][]string `json:"instructions,omitempty"` // key: instruction name, aliases
@@ -62,7 +64,24 @@ type Project struct {
 		SpacesBetween bool   `json:"spaces_between,omitempty"`
 		Extension     string `json:"extension,omitempty"`
 	} `json:"mapping,omitempty"`
+	Scripts *struct {
+		Dependencies []string `json:"dependencies,omitempty"`
+		Build        string   `json:"build,omitempty"`
+		Interpret    *Command `json:"interpret,omitempty"`
+	} `json:"scripts,omitempty"`
 	Notes string `json:"notes,omitempty"`
+}
+
+type Command struct {
+	Bin   string `json:"bin"`
+	Usage string `json:"usage,omitempty"`
+	Flags []struct {
+		Long    string      `json:"long,omitempty"`
+		Short   string      `json:"short,omitempty"`
+		Arg     string      `json:"arg,omitempty"`
+		Default interface{} `json:"default,omitempty"`
+		Desc    string      `json:"desc,omitempty"`
+	} `json:"flags,omitempty"`
 }
 
 func renderTable(b *strings.Builder, projects []Project) error {

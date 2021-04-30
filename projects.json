@@ -496,7 +496,7 @@
     "path": "cpp/andrewarchi-respace",
     "authors": ["Andrew Archibald"],
     "languages": ["C++"],
-    "tags": ["interpreter"],
+    "tags": ["interpreter", "programs"],
     "date": "2018-04-15 21:35:34 -0600",
     "spec_version": "0.3",
     "source": ["https://github.com/andrewarchi/respace"],
@@ -570,10 +570,11 @@
     "path": "cpp/benajmin",
     "authors": ["Benjamin Wilkins"],
     "languages": ["C++"],
-    "tags": ["interpreter"],
+    "tags": ["interpreter", "programs"],
     "date": "2017-06-05 09:34:24 -0400",
     "spec_version": "0.2",
-    "source": ["https://github.com/benajmin/whitespace-interpreter"]
+    "source": ["https://github.com/benajmin/whitespace-interpreter"],
+    "features": { "arbitrary_precision": false }
   },
   {
     "name": "wsm2ws",
@@ -820,7 +821,8 @@
     "tags": ["interpreter"],
     "date": "2015-12-31 17:35:38 +0100",
     "spec_version": "0.2",
-    "source": ["https://github.com/abac00s/WHINT"]
+    "source": ["https://github.com/abac00s/WHINT"],
+    "features": { "arbitrary_precision": false }
   },
   {
     "name": "Whitespacing",
@@ -1094,7 +1096,7 @@
     "path": "java/faurehu",
     "authors": ["Matias Faure"],
     "languages": ["Java"],
-    "tags": ["interpreter"],
+    "tags": ["interpreter", "programs"],
     "date": "2015-01-29 00:49:03 +0000",
     "spec_version": "0.3",
     "source": ["https://github.com/faurehu/whiteSpaceInterpreter"]
@@ -1336,7 +1338,11 @@
     "tags": ["interpreter"],
     "date": "2014-02-16 11:04:37 +0900",
     "spec_version": "0.3",
-    "source": ["https://github.com/mikecat/python-whitespace"]
+    "source": ["https://github.com/mikecat/python-whitespace"],
+    "scripts": {
+      "dependencies": ["python"],
+      "interpret": { "bin": "$DIR/whitespace.py", "usage": "python $0 <file>" }
+    }
   },
   {
     "name": "wspacego",
@@ -1394,10 +1400,23 @@
     "path": "cpp/yuukiaria",
     "authors": ["YuukiARIA"],
     "languages": ["C++"],
-    "tags": ["interpreter"],
+    "tags": ["interpreter", "programs"],
     "date": "2013-05-05 04:06:36 -0700",
     "spec_version": "0.3",
-    "source": ["https://github.com/YuukiARIA/ws-interpreter"]
+    "source": ["https://github.com/YuukiARIA/ws-interpreter"],
+    "features": { "arbitrary_precision": false, "negative_heap": false },
+    "scripts": {
+      "build": "mkdir -p $DIR/bin && make TARGET=../bin/ws -C $DIR/src",
+      "interpret": {
+        "bin": "$DIR/bin/ws",
+        "usage": "$0 [flags] <file>",
+        "flags": [
+          { "short": "v", "arg": "size", "default": 256, "desc": "value stack size, must be greater than 0" },
+          { "short": "c", "arg": "size", "default": 256, "desc": "call stack size, must be greater than 0" },
+          { "short": "h", "arg": "size", "default": 2048, "desc": "heap size, must be greater than 0" }
+        ]
+      }
+    }
   },
   {
     "name": "whitespace",
@@ -1436,12 +1455,15 @@
   {
     "name": "whitespace-interpreter",
     "path": "cpp/timvandermeij",
-    "authors": ["Simon Klaver", "Tim van der Meij", "Willem Obbens"],
+    "authors": ["Tim van der Meij", "Willem Obbens", "Simon Klaver"],
     "languages": ["C++"],
-    "tags": ["interpreter"],
+    "tags": ["interpreter", "programs"],
     "date": "2013-02-06 06:24:15 -0800",
     "spec_version": "0.3",
-    "source": ["https://github.com/timvandermeij/whitespace-interpreter"]
+    "source": [
+      "https://github.com/timvandermeij/whitespace-interpreter",
+      "https://github.com/wspace-lang/timvandermeij-cpp"
+    ]
   },
   {
     "name": "ws",
@@ -1502,7 +1524,8 @@
     "tags": ["interpreter"],
     "date": "2012-10-29 02:26:23 +0900",
     "spec_version": "0.3",
-    "source": ["https://github.com/abcsharp/Whitespace"]
+    "source": ["https://github.com/abcsharp/Whitespace"],
+    "features": { "arbitrary_precision": false }
   },
   {
     "name": "whitespace",
