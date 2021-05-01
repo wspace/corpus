@@ -26,7 +26,7 @@
     "name": "asm2ws",
     "path": "c/kspalaiologos-asm2ws",
     "authors": ["Kamila Szewczyk (Palaiologos)"],
-    "languages": ["C"],
+    "languages": ["C", "Yacc"],
     "tags": ["interpreter", "JIT", "assembler", "disassembler", "optimizer", "programs"],
     "date": "2020-12-31 22:37:25 +0100",
     "spec_version": "0.3",
@@ -53,10 +53,10 @@
         "jn": ["JLTZ", "BLTZ"],
         "ret": ["RET"],
         "end": ["END"],
-        "readc": ["GETC"],
-        "readi": ["GETN"],
         "printc": ["PUTC"],
-        "printi": ["PUTN"]
+        "printi": ["PUTN"],
+        "readc": ["GETC"],
+        "readi": ["GETN"]
       },
       "case_sensitive_instructions": false,
       "line_comment_prefix": ";",
@@ -178,9 +178,9 @@
       "instructions": {
         "push": ["Stack push"],
         "dup": ["Stack dup"],
-        "drop": ["Stack discard"],
         "copy": ["Stack copy"],
         "swap": ["Stack swap"],
+        "drop": ["Stack discard"],
         "slide": ["Stack slide"],
         "add": ["Arith add"],
         "sub": ["Arith sub"],
@@ -190,16 +190,16 @@
         "store": ["Heap store"],
         "retrieve": ["Heap retrieve"],
         "label": ["Flow label"],
+        "call": ["Flow call"],
         "jmp": ["Flow jump"],
         "jz": ["Flow jz"],
         "jn": ["Flow jneg"],
-        "call": ["Flow call"],
         "ret": ["Flow return"],
         "end": ["Flow end"],
         "printc": ["IO outchar"],
-        "printn": ["IO outnumber"],
+        "printi": ["IO outnumber"],
         "readc": ["IO readchar"],
-        "readn": ["IO readnumber"]
+        "readi": ["IO readnumber"]
       },
       "case_sensitive_instructions": true,
       "line_comment_prefix": "#",
@@ -257,6 +257,81 @@
     "source": ["https://codegolf.stackexchange.com/questions/198694/write-a-whitespace-interpreter/198770#198770"]
   },
   {
+    "name": "WhitespaceAssembler",
+    "path": "csharp/littlebughunter-assembler",
+    "authors": ["Paul (littleBugHunter)"],
+    "languages": ["C#"],
+    "tags": ["assembler", "programs"],
+    "date": "2019-12-27 01:01:55 +0100",
+    "spec_version": "0.2",
+    "source": ["https://github.com/littleBugHunter/WhitespaceAssembler"],
+    "assembly": {
+      "instructions": {
+        "push": ["push <number>", "push <address>"],
+        "dup": ["dup"],
+        "swap": ["swap"],
+        "drop": ["pop"],
+        "add": [
+          "add",
+          "add <number>",
+          "add <address>",
+          "add <address> <number>",
+          "add <number> <address>",
+          "add <address> <address>"
+        ],
+        "sub": [
+          "sub",
+          "sub <number>",
+          "sub <address>",
+          "sub <address> <number>",
+          "sub <number> <address>",
+          "sub <address> <address>"
+        ],
+        "mul": [
+          "mul",
+          "mul <number>",
+          "mul <address>",
+          "mul <address> <number>",
+          "mul <number> <address>",
+          "mul <address> <address>"
+        ],
+        "div": [
+          "div",
+          "div <number>",
+          "div <address>",
+          "div <address> <number>",
+          "div <number> <address>",
+          "div <address> <address>"
+        ],
+        "mod": [
+          "mod",
+          "mod <number>",
+          "mod <address>",
+          "mod <address> <number>",
+          "mod <number> <address>",
+          "mod <address> <address>"
+        ],
+        "store": ["store", "store <number>", "store <number> <number>"],
+        "retrieve": ["retrieve", "retrieve <number>"],
+        "label": ["lbl .<label>"],
+        "call": ["call .<label>"],
+        "jmp": ["jmp .<label>"],
+        "jz": ["jpz .<label>"],
+        "jn": ["jpn .<label>"],
+        "ret": ["ret"],
+        "end": ["exit"],
+        "printc": ["print_char"],
+        "printi": ["print_number"],
+        "readc": ["read_char"],
+        "readi": ["read_number"]
+      },
+      "case_sensitive_instructions": false,
+      "line_comment_prefix": "//"
+    },
+    "scripts": { "assemble": { "usage": "WhitespaceAssembler <input_file> <output_file>" } },
+    "notes": "<number> is a number literal or the value of a variable (formats: <int>, #<hex>, '<char>', and &<variable>).\n<address> is the value on the heap at the variable value (format: *<variable>), i.e. `push <variable> retrieve`.\n<int> is a base 10 integer, i.e. /[+-]?[0-9]+/.\n<hex> is a base 16 integer, i.e. /[0-9A-Fa-f]+/.\n<char> is one UTF-16 character, escape sequences aren't supported.\n<label> and <variable> values increment (with separate counters), starting at 0."
+  },
+  {
     "name": "Whitespace UnC",
     "path": "python/ilikepython256-whitespace-unc",
     "authors": ["Python Whiz 256"],
@@ -280,7 +355,7 @@
         "mod": ["MATH.MOD"],
         "store": ["HEAP.STOR"],
         "retrieve": ["HEAP.RET"],
-        "labl": ["FLOW.LABL"],
+        "label": ["FLOW.LABL"],
         "call": ["FLOW.SUB"],
         "jmp": ["FLOW.JUMP"],
         "jz": ["FLOW.JMPZ"],
@@ -288,9 +363,9 @@
         "ret": ["FLOW.RET"],
         "end": ["FLOW.HALT"],
         "printc": ["IO.OUT"],
-        "printn": ["IO.NOUT"],
+        "printi": ["IO.NOUT"],
         "readc": ["IO.IN"],
-        "readn": ["IO.NIN"]
+        "readi": ["IO.NIN"]
       },
       "case_sensitive_instructions": false
     },
@@ -312,7 +387,7 @@
     "name": "Marginal",
     "path": "haskell/jhmcstanton-marginal",
     "authors": ["Jim McStanton"],
-    "languages": ["Haskell"],
+    "languages": ["Haskell", "Yacc"],
     "tags": ["interpreter"],
     "date": "2019-06-28 20:19:29 -0500",
     "spec_version": "0.2",
@@ -401,10 +476,10 @@
         "jn": ["jn"],
         "ret": ["ret"],
         "end": ["end"],
-        "readc": ["readc"],
-        "readi": ["readi"],
         "printc": ["printc"],
-        "printi": ["printi"]
+        "printi": ["printi"],
+        "readc": ["readc"],
+        "readi": ["readi"]
       },
       "case_sensitive_instructions": true
     }
@@ -460,6 +535,44 @@
     "date": "2018-11-08 00:38:53 -0500",
     "spec_version": "0.3",
     "source": ["https://github.com/ahl27/whitespace"]
+  },
+  {
+    "name": "Whitespace-Compiler",
+    "path": "java/wysang",
+    "authors": ["wysang"],
+    "languages": ["Java", "ANTLR4"],
+    "tags": ["grammar", "incomplete"],
+    "date": "2018-10-21 19:31:04 -0700",
+    "spec_version": "0.3 incomplete",
+    "source": ["https://github.com/wysang/Whitespace-Compiler"],
+    "assembly": {
+      "instructions": {
+        "push": ["push"],
+        "dup": ["copy"],
+        "copy": ["copynth"],
+        "swap": ["swicth"],
+        "drop": ["pop"],
+        "slide": ["slide"],
+        "add": ["add"],
+        "sub": ["sub"],
+        "mul": ["mult"],
+        "div": ["div"],
+        "mod": ["mod"],
+        "store": [ ],
+        "retrieve": [ ],
+        "label": ["mark"],
+        "call": ["call"],
+        "jmp": ["jump"],
+        "jz": ["jumpz"],
+        "jn": ["jumpn"],
+        "ret": ["ends"],
+        "end": ["endp"],
+        "printc": ["outchar"],
+        "printi": ["outnum"],
+        "readc": ["readchar"],
+        "readi": ["readnum"]
+      }
+    }
   },
   {
     "name": "nospace",
@@ -604,11 +717,9 @@
         "call": ["call"],
         "jmp": ["jmp", "jump", "goto"],
         "jz": ["jez", "jz"],
-        "jn": ["jn"],
-        "jlz": ["jlz"],
+        "jn": ["jlz", "jn"],
         "ret": ["ret"],
-        "end": ["end"],
-        "exit": ["exit"],
+        "end": ["end", "exit"],
         "printc": ["ochar", "putchar"],
         "printi": ["onum", "putnum"],
         "readc": ["ichar", "getchar"],
@@ -709,7 +820,7 @@
     "languages": ["C++", "LLVM"],
     "tags": ["compiler"],
     "date": "2016-08-20 08:45:25 +0800",
-    "spec_version": "0.2 (incomplete)",
+    "spec_version": "0.2 incomplete",
     "source": ["https://github.com/sonicyang/ws-frontend"]
   },
   {
@@ -886,9 +997,9 @@
         "ret": ["RET"],
         "end": ["EXIT"],
         "printc": ["OUTC"],
-        "printn": ["OUTN"],
+        "printi": ["OUTN"],
         "readc": ["INPC"],
-        "readn": ["INPN"]
+        "readi": ["INPN"]
       }
     },
     "notes": "Assembly is only displayed, not disassembled"
@@ -925,9 +1036,9 @@
         "ret": ["Return"],
         "end": ["End"],
         "printc": ["OutputChar"],
-        "printn": ["OutputNum"],
+        "printi": ["OutputNum"],
         "readc": ["ReadChar"],
-        "readn": ["ReadNum"]
+        "readi": ["ReadNum"]
       },
       "case_sensitive_instructions": false,
       "line_comment_prefix": "#",
@@ -1011,9 +1122,9 @@
         "ret": ["RETURN"],
         "end": ["EXIT"],
         "printc": ["PUTCHAR"],
-        "printn": ["PUTNUM"],
+        "printi": ["PUTNUM"],
         "readc": ["GETCHAR"],
-        "readn": ["GETNUM"]
+        "readi": ["GETNUM"]
       },
       "case_sensitive_instructions": true,
       "line_comment_prefix": "#"
@@ -1059,14 +1170,14 @@
         "label": ["MARK"],
         "call": ["CALL"],
         "jmp": ["JMP"],
-        "lz": ["JMP_IF0"],
+        "jz": ["JMP_IF0"],
         "jn": ["JMP_NEG"],
         "ret": ["RET"],
         "end": ["FINISH"],
         "printc": ["PUTCHAR"],
-        "printn": ["PUTNUM"],
+        "printi": ["PUTNUM"],
         "readc": ["READCHAR"],
-        "readn": ["READNUM"]
+        "readi": ["READNUM"]
       }
     },
     "notes": "Assembly is displayed by -v flag"
@@ -1173,9 +1284,9 @@
         "ret": ["ret"],
         "end": ["exit"],
         "printc": ["write_char"],
-        "printn": ["write_num"],
+        "printi": ["write_num"],
         "readc": ["read_char"],
-        "readn": ["read_num"]
+        "readi": ["read_num"]
       },
       "extension": "wsm"
     }
@@ -1197,13 +1308,13 @@
         "swap": ["SWAP"],
         "drop": ["POP"],
         "slide": ["SKIP"],
-        "store": ["STORE"],
-        "retrieve": ["RETRIEVE"],
         "add": ["ADD"],
         "sub": ["SUB"],
         "mul": ["MUL"],
         "div": ["DIV"],
         "mod": ["MOD"],
+        "store": ["STORE"],
+        "retrieve": ["RETRIEVE"],
         "label": ["MARK"],
         "call": ["CALL"],
         "jmp": ["JUMP"],
@@ -1212,9 +1323,9 @@
         "ret": ["RET"],
         "end": ["END"],
         "printc": ["PCHR"],
-        "printn": ["PNUM"],
+        "printi": ["PNUM"],
         "readc": ["RCHR"],
-        "readn": ["RNUM"]
+        "readi": ["RNUM"]
       },
       "line_comment_prefix": "#"
     },
@@ -1273,9 +1384,9 @@
         "ret": ["RETURN"],
         "end": ["EXIT"],
         "printc": ["PUTC"],
-        "printn": ["PUTN"],
+        "printi": ["PUTN"],
         "readc": ["GETC"],
-        "readn": ["GETN"]
+        "readi": ["GETN"]
       }
     },
     "notes": "Assembly is only displayed when debugging, not disassembled"
@@ -1440,7 +1551,7 @@
   },
   {
     "name": "Whitelips IDE",
-    "path": "javascript/vii5ard-whitelips",
+    "path": "javascript/vii5ard-whitelips-ide",
     "authors": ["Henri Lakk"],
     "languages": ["JavaScript"],
     "tags": ["interpreter", "optimizer", "assembler", "IDE"],
@@ -1464,10 +1575,7 @@
       "https://github.com/timvandermeij/whitespace-interpreter",
       "https://github.com/wspace-lang/timvandermeij-cpp"
     ],
-    "features": {
-      "arbitrary_precision": false,
-      "negative_heap": false
-    },
+    "features": { "arbitrary_precision": false, "negative_heap": false },
     "assembly": {
       "instructions": {
         "push": ["PUSH"],
@@ -1491,20 +1599,14 @@
         "ret": ["ENDSUB"],
         "end": ["ENDPROG"],
         "printc": ["WRITEC"],
-        "printn": ["WRITEN"],
+        "printi": ["WRITEN"],
         "readc": ["READC"],
-        "readn": ["READN"]
+        "readi": ["READN"]
       },
       "case_sensitive_instructions": true
     },
     "mapping": { "space": "S ", "tab": "T ", "lf": "LF\n", "spaces_between": false },
-    "scripts": {
-      "build": "make -C $DIR",
-      "interpret": {
-        "bin": "$DIR/whitespace",
-        "usage": "$0"
-      }
-    }
+    "scripts": { "build": "make -C $DIR", "interpret": { "bin": "$DIR/whitespace", "usage": "$0" } }
   },
   {
     "name": "ws",
@@ -1577,6 +1679,16 @@
     "date": "2012-10-15 09:37:19 -0300",
     "spec_version": "0.2",
     "source": ["https://github.com/bossiernesto/whitespace"]
+  },
+  {
+    "name": "Whitespace",
+    "path": "java/yawkat",
+    "authors": ["Jonas Konrad"],
+    "languages": ["Java"],
+    "tags": ["interpreter"],
+    "date": "2012-10-06 20:46:37 +0200",
+    "spec_version": "0.3",
+    "source": ["https://github.com/yawkat/Whitespace"]
   },
   {
     "name": "SignificantWhitespace",

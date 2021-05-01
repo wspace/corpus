@@ -27,7 +27,7 @@
 	url = https://github.com/adotout/whitespace-js
 [submodule "collections/andrewarchi-ws-archive"]
 	path = collections/andrewarchi-ws-archive
-	url = https://github.com/andrewarchi/ws-archive
+	url = https://github.com/wspace-lang/ws-archive
 [submodule "collections/hostilefork-whitespacers"]
 	path = collections/hostilefork-whitespacers
 	url = https://github.com/hostilefork/whitespacers
@@ -97,6 +97,9 @@
 [submodule "csharp/denislabrecque"]
 	path = csharp/denislabrecque
 	url = https://github.com/DenisLabrecque/Whitespace-Interpreter
+[submodule "csharp/littlebughunter-assembler"]
+	path = csharp/littlebughunter-assembler
+	url = https://github.com/littleBugHunter/WhitespaceAssembler
 [submodule "csharp/north-projectone"]
 	path = csharp/north-projectone
 	url = https://github.com/North15/projectOne
@@ -172,6 +175,12 @@
 [submodule "java/wrotycz"]
 	path = java/wrotycz
 	url = https://github.com/wrotycz/whitespace-interpreter
+[submodule "java/wysang"]
+	path = java/wysang
+	url = https://github.com/wysang/Whitespace-Compiler
+[submodule "java/yawkat"]
+	path = java/yawkat
+	url = https://github.com/yawkat/Whitespace
 [submodule "java/yuukiaria-wseditor"]
 	path = java/yuukiaria-wseditor
 	url = https://github.com/YuukiARIA/wseditor
@@ -208,8 +217,8 @@
 [submodule "javascript/uraza"]
 	path = javascript/uraza
 	url = https://github.com/uraza/whitespace-interpreter
-[submodule "javascript/vii5ard-whitelips"]
-	path = javascript/vii5ard-whitelips
+[submodule "javascript/vii5ard-whitelips-ide"]
+	path = javascript/vii5ard-whitelips-ide
 	url = https://github.com/vii5ard/whitespace
 [submodule "kotlin/ze-space"]
 	path = kotlin/ze-space

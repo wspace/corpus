@@ -50,12 +50,12 @@ type Project struct {
 		NegativeHeap       bool `json:"negative_heap,omitempty"`
 	} `json:"features,omitempty"`
 	Assembly *struct {
-		Instructions              map[string][]string `json:"instructions,omitempty"` // key: instruction name, aliases
-		CaseSensitiveInstructions bool                `json:"case_sensitive_instructions,omitempty"`
-		LineCommentPrefix         string              `json:"line_comment_prefix,omitempty"`
-		LabelDefFormat            string              `json:"label_def_format,omitempty"`
-		LabelRefFormat            string              `json:"label_ref_format,omitempty"`
-		Extension                 string              `json:"extension,omitempty"`
+		Instructions              map[Instruction][]string `json:"instructions,omitempty"`
+		CaseSensitiveInstructions bool                     `json:"case_sensitive_instructions,omitempty"`
+		LineCommentPrefix         string                   `json:"line_comment_prefix,omitempty"`
+		LabelDefFormat            string                   `json:"label_def_format,omitempty"`
+		LabelRefFormat            string                   `json:"label_ref_format,omitempty"`
+		Extension                 string                   `json:"extension,omitempty"`
 	} `json:"assembly,omitempty"`
 	Mapping *struct {
 		Space         string `json:"space"`
@@ -68,6 +68,7 @@ type Project struct {
 		Dependencies []string `json:"dependencies,omitempty"`
 		Build        string   `json:"build,omitempty"`
 		Interpret    *Command `json:"interpret,omitempty"`
+		Assemble     *Command `json:"assemble,omitempty"`
 	} `json:"scripts,omitempty"`
 	Notes string `json:"notes,omitempty"`
 }
@@ -82,6 +83,91 @@ type Command struct {
 		Default interface{} `json:"default,omitempty"`
 		Desc    string      `json:"desc,omitempty"`
 	} `json:"flags,omitempty"`
+}
+
+type Instruction uint8
+
+const (
+	Push Instruction = iota + 1
+	Dup
+	Copy
+	Swap
+	Drop
+	Slide
+	Add
+	Sub
+	Mul
+	Div
+	Mod
+	Store
+	Retrieve
+	Label
+	Call
+	Jmp
+	Jz
+	Jn
+	Ret
+	End
+	Printc
+	Printi
+	Readc
+	Readi
+)
+
+func (inst *Instruction) UnmarshalText(text []byte) error {
+	switch string(text) {
+	case "push":
+		*inst = Push
+	case "dup":
+		*inst = Dup
+	case "copy":
+		*inst = Copy
+	case "swap":
+		*inst = Swap
+	case "drop":
+		*inst = Drop
+	case "slide":
+		*inst = Slide
+	case "add":
+		*inst = Add
+	case "sub":
+		*inst = Sub
+	case "mul":
+		*inst = Mul
+	case "div":
+		*inst = Div
+	case "mod":
+		*inst = Mod
+	case "store":
+		*inst = Store
+	case "retrieve":
+		*inst = Retrieve
+	case "label":
+		*inst = Label
+	case "call":
+		*inst = Call
+	case "jmp":
+		*inst = Jmp
+	case "jz":
+		*inst = Jz
+	case "jn":
+		*inst = Jn
+	case "ret":
+		*inst = Ret
+	case "end":
+		*inst = End
+	case "printc":
+		*inst = Printc
+	case "printi":
+		*inst = Printi
+	case "readc":
+		*inst = Readc
+	case "readi":
+		*inst = Readi
+	default:
+		return fmt.Errorf("illegal instruction: %s", text)
+	}
+	return nil
 }
 
 func renderTable(b *strings.Builder, projects []Project) error {
