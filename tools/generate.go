@@ -62,14 +62,15 @@ type Project struct {
 		Tab           string `json:"tab"`
 		LF            string `json:"lf"`
 		SpacesBetween bool   `json:"spaces_between,omitempty"`
+		IgnoreCase    bool   `json:"ignore_case,omitempty"`
 		Extension     string `json:"extension,omitempty"`
 	} `json:"mapping,omitempty"`
-	Scripts *struct {
+	Run *struct {
 		Dependencies []string `json:"dependencies,omitempty"`
 		Build        string   `json:"build,omitempty"`
 		Interpret    *Command `json:"interpret,omitempty"`
 		Assemble     *Command `json:"assemble,omitempty"`
-	} `json:"scripts,omitempty"`
+	} `json:"run,omitempty"`
 	Notes string `json:"notes,omitempty"`
 }
 

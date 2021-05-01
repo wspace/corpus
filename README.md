@@ -12,7 +12,7 @@ programming language.
 | [asm2ws](c/kspalaiologos-asm2ws)               | Kamila Szewczyk (Palaiologos) | C, Yacc | interpreter, JIT, assembler, disassembler, optimizer, programs | 2020-12-31 | 0.3 | [GitHub](https://github.com/kspalaiologos/asm2ws) |
 | [Spitewaste](ruby/collidedscope-spitewaste)    | Collided Scope   | Ruby       | assembler, compiler, programs, stdlib | 2020-12-11 | 0.3 with shell and eval | [GitHub](https://github.com/collidedscope/spitewaste) |
 | [Spiceweight](crystal/collidedscope-spiceweight) | Collided Scope | Crystal    | interpreter, benchmarking, programs | 2020-12-11 | 0.3 | [GitHub](https://github.com/collidedscope/spiceweight) |
-| [rustws](rust/luminight)                       | Luminight        | Rust       | interpreter  | 2020-08-04 | 0.2 | [GitHub](https://github.com/Luminighty/rustws) |
+| [rustws](rust/luminight)                       | Luminight        | Rust       | interpreter, mapping, library | 2020-08-04 | 0.2 | [GitHub](https://github.com/Luminighty/rustws) |
 | [Whitespace](javascript/kosei)                 | kosei28          | JavaScript | interpreter  | 2020-08-03 | 0.2 | [GitHub](https://github.com/kosei28/Whitespace) |
 | [SpaceMan](haskell/ft-spaceman)                | Frank Terbeck    | Haskell    | interpreter  | 2020-07-09 | 0.3 | [GitLab](https://gitlab.com/ft/spaceman), [GitHub](https://github.com/ft/spaceman), [bewatermyfriend.org](http://bewatermyfriend.org/p/2020/000/), [HN](https://news.ycombinator.com/item?id=24763312) |
 | [whitespace](cpp/ricardoluis)                  | Ricardo Luís Vaz Silva | C++  | interpreter  | 2020-06-03 | 0.3 | [GitHub](https://github.com/RicardoLuis0/whitespace) |
@@ -32,11 +32,11 @@ programming language.
 | [Eso](scala/dashlambda-eso)                    | Dash-Lambda      | Scala      | interpreter, assembler | 2019-06-19 | 0.2 | [GitHub](https://github.com/Dash-Lambda/Eso) |
 | [baudelaire-whitespace](python/qwhxm-baudelaire) | Marek Tomáštík | Python     | web service, programs | 2019-06-08 | 0.3 | [GitHub](https://github.com/qwhxm/baudelaire-whitespace) |
 | [Nebula](go/andrewarchi-nebula)                | Andrew Archibald | Go, LLVM, Whitespace | compiler, optimizer, programs | 2019-06-05 | 0.3 | [GitHub](https://github.com/andrewarchi/nebula) |
-| [WhitespaceVM](rust/nareshganduri)             | Naresh Ganduri   | Rust       | interpreter  | 2019-05-13 | 0.3 | [GitHub](https://github.com/nareshganduri/WhitespaceVM) |
+| [Whitespace VM](rust/nareshganduri)            | Naresh Ganduri   | Rust       | interpreter  | 2019-05-13 | 0.3 | [GitHub](https://github.com/nareshganduri/WhitespaceVM) |
 | [Akaza](ruby/pocke-akaza)                      | Masataka Pocke Kuwabara | Ruby | interpreter, assembler | 2019-04-28 | 0.2 | [GitHub](https://github.com/pocke/akaza) |
 | [whitespace-language-converter](python/drafear-converter) | Takeshi Nishikawa | Python | assembler | 2019-03-30 | 0.3 | [GitHub](https://github.com/drafear/whitespace-language-converter) |
 | [go-wspace](go/tempxla-go-wspace)              | tempxla          | Go         | interpreter  | 2019-02-24 | 0.2 | [GitHub](https://github.com/tempxla/go-wspace) |
-| [Whitespace Interpreter](rust/kaisugi)         | Kaito Sugimoto   | Rust       | interpreter  | 2018-11-23 | 0.2 | [GitHub](https://github.com/HelloRusk/WhitespaceInterpreter) |
+| [Whitespace Interpreter](rust/kaisugi)         | Kaito Sugimoto   | Rust       | interpreter, programs | 2018-11-23 | 0.2 | [GitHub](https://github.com/HelloRusk/WhitespaceInterpreter) |
 | [hohoho](python/freyamade-hohoho)              | Freya Madeline Broderick, Omar Sallam | Python | mapping | 2018-11-22 | - | [GitHub](https://github.com/freyamade/hohoho) |
 | [whitespace-interpreter](python/adapap)        | Adam Papenhausen | Python     | interpreter  | 2018-11-16 | 0.3 | [GitHub](https://github.com/adapap/whitespace-interpreter) |
 | [whitespace](python/ahl27)                     | Aidan Lakshman   | Python     | interpreter, text to Whitespace | 2018-11-08 | 0.3 | [GitHub](https://github.com/ahl27/whitespace) |
