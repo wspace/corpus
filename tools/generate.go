@@ -74,15 +74,15 @@ type Project struct {
 }
 
 type Command struct {
-	Bin   string `json:"bin"`
-	Usage string `json:"usage,omitempty"`
-	Flags []struct {
+	Bin     string `json:"bin"`
+	Usage   string `json:"usage,omitempty"`
+	Options []struct {
 		Long    string      `json:"long,omitempty"`
 		Short   string      `json:"short,omitempty"`
 		Arg     string      `json:"arg,omitempty"`
 		Default interface{} `json:"default,omitempty"`
 		Desc    string      `json:"desc,omitempty"`
-	} `json:"flags,omitempty"`
+	} `json:"options,omitempty"`
 }
 
 type Instruction uint8

@@ -645,7 +645,22 @@
     "tags": ["interpreter"],
     "date": "2018-02-24 19:28:32 -0500",
     "spec_version": "0.2",
-    "source": ["https://github.com/jmesyou/erasure"]
+    "source": ["https://github.com/jmesyou/erasure", "https://github.com/wspace-lang/jmesyou-erasure-clojure"],
+    "scripts": {
+      "build": "lein uberjar",
+      "interpret": {
+        "bin": "$DIR/target/uberjar/erasure-2.0-standalone.jar",
+        "usage": "java -jar $0 [options] <file>",
+        "options": [
+          {
+            "short": "i",
+            "long": "intermediate",
+            "desc": "Generate intermediate Clojure for the Whitespace source"
+          },
+          { "short": "h", "long": "help" }
+        ]
+      }
+    }
   },
   {
     "name": "whitespace-interperter",
@@ -1190,7 +1205,23 @@
     "tags": ["interpreter"],
     "date": "2015-02-11 15:15:52 +0900",
     "spec_version": "0.2",
-    "source": ["https://github.com/MakeNowJust/whitespace-clj"]
+    "source": ["https://github.com/MakeNowJust/whitespace-clj"],
+    "scripts": {
+      "build": "lein uberjar",
+      "interpret": {
+        "bin": "$DIR/target/whitespace-clj-0.1.0-SNAPSHOT-standalone.jar",
+        "usage": "java -jar $0 [options] <file>",
+        "options": [
+          { "short": "h", "long": "help", "desc": "show this help" },
+          { "short": "v", "long": "version", "desc": "show version" },
+          { "short": "c", "long": "chars", "desc": "show source code as visible characters" },
+          { "short": "t", "long": "text", "desc": "show source code as assembled text" },
+          { "short": "l", "long": "lisp", "desc": "compile to Clojure code and run" },
+          { "short": "s", "long": "sexp", "desc": "compile to Clojure code and show" },
+          { "long": "time", "desc": "show executing time" }
+        ]
+      }
+    }
   },
   {
     "name": "whitespace-php",
@@ -1517,11 +1548,11 @@
     "source": ["https://github.com/YuukiARIA/ws-interpreter"],
     "features": { "arbitrary_precision": false, "negative_heap": false },
     "scripts": {
-      "build": "mkdir -p $DIR/bin && make TARGET=../bin/ws -C $DIR/src",
+      "build": "mkdir -p bin && make TARGET=../bin/ws -C src",
       "interpret": {
         "bin": "$DIR/bin/ws",
-        "usage": "$0 [flags] <file>",
-        "flags": [
+        "usage": "$0 [options] <file>",
+        "options": [
           { "short": "v", "arg": "size", "default": 256, "desc": "value stack size, must be greater than 0" },
           { "short": "c", "arg": "size", "default": 256, "desc": "call stack size, must be greater than 0" },
           { "short": "h", "arg": "size", "default": 2048, "desc": "heap size, must be greater than 0" }
@@ -1606,7 +1637,7 @@
       "case_sensitive_instructions": true
     },
     "mapping": { "space": "S ", "tab": "T ", "lf": "LF\n", "spaces_between": false },
-    "scripts": { "build": "make -C $DIR", "interpret": { "bin": "$DIR/whitespace", "usage": "$0" } }
+    "scripts": { "build": "make", "interpret": { "bin": "$DIR/whitespace", "usage": "$0" } }
   },
   {
     "name": "ws",
