@@ -873,10 +873,42 @@
     "path": "rust/censoredusername-whitespacers",
     "authors": ["CensoredUsername"],
     "languages": ["Rust"],
-    "tags": ["JIT"],
+    "tags": ["JIT", "assembler", "disassembler"],
     "date": "2016-06-19 01:53:07 +0200",
     "spec_version": "0.3",
-    "source": ["https://github.com/CensoredUsername/whitespace-rs"]
+    "source": ["https://github.com/CensoredUsername/whitespace-rs"],
+    "assembly": {
+      "instructions": {
+        "push": ["push"],
+        "dup": ["dup"],
+        "copy": ["copy"],
+        "swap": ["swap"],
+        "drop": ["pop"],
+        "slide": ["slide"],
+        "add": ["add"],
+        "sub": ["sub"],
+        "mul": ["mul"],
+        "div": ["div"],
+        "mod": ["mod"],
+        "store": ["set"],
+        "retrieve": ["get"],
+        "label": ["<label>:", "lbl <label>"],
+        "call": ["call"],
+        "jmp": ["jmp"],
+        "jz": ["jz"],
+        "jn": ["jn"],
+        "ret": ["ret"],
+        "end": ["exit"],
+        "printc": ["pchr"],
+        "printi": ["pnum"],
+        "readc": ["ichr"],
+        "readi": ["inum"]
+      }
+    },
+    "scripts": {
+      "build": "cargo build --release",
+      "interpret": { "bin": "$DIR/target/release/wsc", "usage": "$0 [options] <file>" }
+    }
   },
   {
     "name": "whitespace",
@@ -1367,7 +1399,7 @@
     "path": "rust/faultier-albino",
     "authors": ["Taro Sako"],
     "languages": ["Rust"],
-    "tags": ["interpreter", "bytecode"],
+    "tags": ["interpreter", "bytecode", "Brainfuck to Whitespace"],
     "date": "2014-07-18 09:13:55 +0900",
     "spec_version": "0.3",
     "source": ["https://github.com/faultier/albino"],
@@ -1388,7 +1420,7 @@
     "path": "rust/faultier-whitebase",
     "authors": ["Taro Sako"],
     "languages": ["Rust"],
-    "tags": ["interpreter", "bytecode"],
+    "tags": ["interpreter", "bytecode", "Brainfuck to Whitespace", "library"],
     "date": "2014-07-15 22:27:17 +0900",
     "spec_version": "0.3",
     "source": ["https://github.com/faultier/whitebase"],

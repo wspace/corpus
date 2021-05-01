@@ -65,7 +65,7 @@ programming language.
 | [Whitespace](r/bmazoure)                       | Bogdan Mazoure   | R          | interpreter  | 2016-07-30 | 0.2 | [GitHub](https://github.com/bmazoure/whitespace) |
 | [White++](cpp/marcellippmann-whitepp)          | Marcel Lippmann  | C++        | interpreter  | 2016-07-27 | 0.2 | [GitHub](https://github.com/marcellippmann/Whitepp) |
 | [whitespace-ruby](ruby/dwayne)                 | Dwayne R. Crooks | Python     | interpreter  | 2016-07-11 | 0.2 | [GitHub](https://github.com/dwayne/whitespace-ruby) |
-| [Whitespacers](rust/censoredusername-whitespacers) | CensoredUsername | Rust   | JIT          | 2016-06-19 | 0.3 | [GitHub](https://github.com/CensoredUsername/whitespace-rs) |
+| [Whitespacers](rust/censoredusername-whitespacers) | CensoredUsername | Rust   | JIT, assembler, disassembler | 2016-06-19 | 0.3 | [GitHub](https://github.com/CensoredUsername/whitespace-rs) |
 | [whitespace](c/bvisness)                       | Ben Visness      | C, Yacc    | interpreter, syntax highlighting | 2016-05-20 | 0.3 | [GitHub](https://github.com/bvisness/whitespace) |
 | [Rust-Whitespace](rust/jayshua)                | Jayshua Nelson   | Rust       | interpreter  | 2016-05-08 | 0.2 | [GitHub](https://github.com/Jayshua/rust-whitespace) |
 | [whitespace-interpreter](javascript/kanra1412) | kanra1412        | JavaScript | interpreter  | 2016-04-29 | 0.3 | [GitHub](https://github.com/kanra1412/whitespace-interpreter) |
@@ -94,9 +94,9 @@ programming language.
 | [whitespace.php](php/johankj)                  | Johan K. Jensen  | PHP        | interpreter  | 2014-11-01 | 0.2 | [GitHub](https://github.com/johankj/whitespace-interpreter-php) |
 | [wsm](php/igorw-wsm)                           | Igor Wiedler     | PHP        | assembler, programs | 2014-09-27 | 0.2 | [GitHub](https://github.com/igorw/wsm) |
 | [pyws](python/eizoassik-pyws)                  | Eizo Assik       | Python     | interpreter, assembler, disassembler | 2014-08-28 | 0.3 | [GitHub](https://github.com/EizoAssik/pyws) |
-| [Albino](rust/faultier-albino)                 | Taro Sako        | Rust       | interpreter, bytecode | 2014-07-18 | 0.3 | [GitHub](https://github.com/faultier/albino) |
+| [Albino](rust/faultier-albino)                 | Taro Sako        | Rust       | interpreter, bytecode, Brainfuck to Whitespace | 2014-07-18 | 0.3 | [GitHub](https://github.com/faultier/albino) |
 | [Whitespace-LLVM](cpp/subv-whitespace-llvm)    | Sebastian Valle  | C++, LLVM  | interpreter  | 2014-07-16 | 0.3 | [GitHub](https://github.com/Subv/Whitespace-LLVM) |
-| [Whitebase](rust/faultier-whitebase)           | Taro Sako        | Rust       | interpreter, bytecode | 2014-07-15 | 0.3 | [GitHub](https://github.com/faultier/whitebase) |
+| [Whitebase](rust/faultier-whitebase)           | Taro Sako        | Rust       | interpreter, bytecode, Brainfuck to Whitespace, library | 2014-07-15 | 0.3 | [GitHub](https://github.com/faultier/whitebase) |
 | [whitespace-interpreter](java/azige)           | Azige            | Java       | interpreter  | 2014-06-18 | 0.2 | [GitHub](https://github.com/azige/whitespace-interpreter) |
 | [white](cpp/keirua-white)                      | Keirua           | C++        | interpreter  | 2014-05-30 | 0.3 | [GitHub](https://github.com/Keirua/whitespace) |
 | [Kairos](java/vyo-kairos)                      | Manu Weidmann    | Java       | interpreter, assembler, arbitrary precision, programs | 2014-05-10 | 0.3 | [GitHub](https://github.com/vyo/kairos) |
