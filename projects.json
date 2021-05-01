@@ -594,10 +594,15 @@
     "path": "cpp/buyoh-nospace",
     "authors": ["舞葉 (Mai Buyoh)"],
     "languages": ["C++", "Ruby"],
-    "tags": ["language", "interpreter"],
+    "tags": ["language", "interpreter", "programs"],
     "date": "2018-09-05 15:36:34 +0900",
     "spec_version": "0.2",
-    "source": ["https://github.com/buyoh/nospace"]
+    "source": ["https://github.com/buyoh/nospace"],
+    "run": {
+      "build": "make",
+      "other": { "bin": "$DIR/maicomp", "usage": "$0 < <file>" },
+      "interpret": { "bin": "$DIR/run.rb", "usage": "ruby $0 <file> [stdin_file]" }
+    }
   },
   {
     "name": "whitespace-interpreter",
@@ -624,11 +629,13 @@
     "path": "cpp/andrewarchi-respace",
     "authors": ["Andrew Archibald"],
     "languages": ["C++"],
-    "tags": ["interpreter", "programs"],
+    "tags": ["interpreter", "disassembler", "bit packing", "programs"],
     "date": "2018-04-15 21:35:34 -0600",
     "spec_version": "0.3",
     "source": ["https://github.com/andrewarchi/respace"],
-    "features": { "arbitrary_precision": false }
+    "features": { "arbitrary_precision": false },
+    "run": { "build": "make", "interpret": { "bin": "$DIR/respace", "usage": "$0 <file>" } },
+    "notes": "Disassembler and bit packer are only available via code modification."
   },
   {
     "name": "projectOne",
@@ -717,7 +724,8 @@
     "date": "2017-06-05 09:34:24 -0400",
     "spec_version": "0.2",
     "source": ["https://github.com/benajmin/whitespace-interpreter"],
-    "features": { "arbitrary_precision": false }
+    "features": { "arbitrary_precision": false },
+    "run": { "build": "make", "interpret": { "bin": "WhitespaceInterpreter.out", "usage": "$0 <file>" } }
   },
   {
     "name": "wsm2ws",
@@ -1000,7 +1008,11 @@
     "date": "2015-12-31 17:35:38 +0100",
     "spec_version": "0.2",
     "source": ["https://github.com/abac00s/WHINT"],
-    "features": { "arbitrary_precision": false }
+    "features": { "arbitrary_precision": false },
+    "run": {
+      "build": "g++ -O3 -Wall -o whint whint.cpp",
+      "interpret": { "bin": "$DIR/whint", "usage": "$0 <file>" }
+    }
   },
   {
     "name": "Whitespacing",
@@ -1554,7 +1566,7 @@
     "path": "python/apua-wvm",
     "authors": ["Apua"],
     "languages": ["Python"],
-    "tags": ["interpreter"],
+    "tags": ["interpreter", "programs"],
     "date": "2013-11-24 15:06:57 +0800",
     "spec_version": "0.3",
     "source": ["https://github.com/apua/whitespace"]
@@ -1720,7 +1732,9 @@
     "tags": ["interpreter"],
     "date": "2012-12-02 06:45:50 -0800",
     "spec_version": "0.2",
-    "source": ["https://github.com/dpohanlon/wsInt"]
+    "source": ["https://github.com/dpohanlon/wsInt", "https://github.com/wspace-lang/dpohanlon-wsint-cpp"],
+    "run": { "build": "make", "interpret": { "bin": "$DIR/bin/wsInt", "usage": "$0" } },
+    "notes": "wsInt currently only runs ./count.ws"
   },
   {
     "name": "WS-idr",
@@ -1751,7 +1765,11 @@
     "date": "2012-10-29 02:26:23 +0900",
     "spec_version": "0.3",
     "source": ["https://github.com/abcsharp/Whitespace"],
-    "features": { "arbitrary_precision": false }
+    "features": { "arbitrary_precision": false },
+    "run": {
+      "build": "g++ -O3 -Wall -std=c++11 -o wsi whitespace/main.cpp",
+      "interpret": { "bin": "$DIR/wsi", "usage": "$0 <file>" }
+    }
   },
   {
     "name": "whitespace",

@@ -70,6 +70,7 @@ type Project struct {
 		Build        string   `json:"build,omitempty"`
 		Interpret    *Command `json:"interpret,omitempty"`
 		Assemble     *Command `json:"assemble,omitempty"`
+		Other        *Command `json:"other,omitempty"`
 	} `json:"run,omitempty"`
 	Notes string `json:"notes,omitempty"`
 }
