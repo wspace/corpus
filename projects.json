@@ -340,7 +340,7 @@
       "case_sensitive_instructions": false,
       "line_comment_prefix": "//"
     },
-    "run": { "assemble": { "usage": "WhitespaceAssembler <input_file> <output_file>" } },
+    "run": { "assemble": { "bin": "WhitespaceAssembler", "usage": "$0 <file> <output_file>" } },
     "notes": "<number> is a number literal or the value of a variable (formats: <int>, #<hex>, '<char>', and &<variable>).\n<address> is the value on the heap at the variable value (format: *<variable>), i.e. `push <variable> retrieve`.\n<int> is a base 10 integer, i.e. /[+-]?[0-9]+/.\n<hex> is a base 16 integer, i.e. /[0-9A-Fa-f]+/.\n<char> is one UTF-16 character, escape sequences aren't supported.\n<label> and <variable> values increment (with separate counters), starting at 0."
   },
   {
@@ -635,7 +635,7 @@
     "run": {
       "build": "make",
       "other": { "bin": "maicomp", "usage": "$0 < <file>" },
-      "interpret": { "bin": "run.rb", "usage": "ruby $0 <file> [stdin_file]" }
+      "interpret": { "bin": "vm/run.rb", "usage": "ruby $0 <file> [stdin_file]" }
     }
   },
   {
@@ -1498,7 +1498,7 @@
     "date": "2014-07-16 08:48:25 -0500",
     "spec_version": "0.3",
     "source": ["https://github.com/Subv/Whitespace-LLVM"],
-    "run": { "build_errors": "Requires LLVM", "compile": { "usage": "$0" } },
+    "run": { "build_errors": "Requires LLVM", "compile": { "bin": "bin/Whitespace-LLVM", "usage": "$0" } },
     "notes": "File is hardcoded to ./count.ws"
   },
   {
