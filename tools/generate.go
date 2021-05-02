@@ -68,7 +68,9 @@ type Project struct {
 	Run *struct {
 		Dependencies []string `json:"dependencies,omitempty"`
 		Build        string   `json:"build,omitempty"`
+		BuildErrors  string   `json:"build_errors,omitempty"`
 		Interpret    *Command `json:"interpret,omitempty"`
+		Compile      *Command `json:"compile,omitempty"`
 		Assemble     *Command `json:"assemble,omitempty"`
 		Other        *Command `json:"other,omitempty"`
 	} `json:"run,omitempty"`
@@ -79,12 +81,16 @@ type Command struct {
 	Bin     string `json:"bin"`
 	Usage   string `json:"usage,omitempty"`
 	Options []struct {
-		Long    string      `json:"long,omitempty"`
-		Short   string      `json:"short,omitempty"`
+		Short   string      `json:"short,omitempty"` // -s
+		Long    string      `json:"long,omitempty"`  // --long
 		Arg     string      `json:"arg,omitempty"`
 		Default interface{} `json:"default,omitempty"`
 		Desc    string      `json:"desc,omitempty"`
 	} `json:"options,omitempty"`
+	Commands []struct {
+		Name string `json:"name"`
+		Desc string `json:"desc,omitempty"`
+	} `json:"commands,omitempty"`
 }
 
 type Instruction uint8
