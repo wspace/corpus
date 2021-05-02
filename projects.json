@@ -435,7 +435,7 @@
     "date": "2019-06-05 23:59:44 -0700",
     "spec_version": "0.3",
     "source": ["https://github.com/andrewarchi/nebula"],
-    "features": { "arbitrary_precision": false },
+    "features": { "precision": "fixed" },
     "run": { "build_errors": "Requires LLVM, no go.mod" }
   },
   {
@@ -510,7 +510,7 @@
     "date": "2019-02-24 18:51:26 +0900",
     "spec_version": "0.2",
     "source": ["https://github.com/tempxla/go-wspace"],
-    "features": { "arbitrary_precision": false },
+    "features": { "precision": "fixed" },
     "assembly": {
       "instructions": {
         "push": ["psh"],
@@ -667,7 +667,7 @@
     "date": "2018-04-15 21:35:34 -0600",
     "spec_version": "0.3",
     "source": ["https://github.com/andrewarchi/respace"],
-    "features": { "arbitrary_precision": false },
+    "features": { "precision": "fixed" },
     "run": { "build": "make", "interpret": { "bin": "respace", "usage": "$0 <file>" } },
     "notes": "Disassembler and bit packer are only available via code modification"
   },
@@ -759,7 +759,7 @@
     "date": "2017-06-05 09:34:24 -0400",
     "spec_version": "0.2",
     "source": ["https://github.com/benajmin/whitespace-interpreter"],
-    "features": { "arbitrary_precision": false },
+    "features": { "precision": "fixed" },
     "run": { "build": "make", "interpret": { "bin": "WhitespaceInterpreter.out", "usage": "$0 <file>" } }
   },
   {
@@ -939,7 +939,7 @@
     "date": "2016-06-19 01:53:07 +0200",
     "spec_version": "0.3",
     "source": ["https://github.com/CensoredUsername/whitespace-rs"],
-    "features": { "arbitrary_precision": true },
+    "features": { "precision": "arbitrary" },
     "assembly": {
       "instructions": {
         "push": ["push"],
@@ -1047,7 +1047,7 @@
     "date": "2015-12-31 17:35:38 +0100",
     "spec_version": "0.2",
     "source": ["https://github.com/abac00s/WHINT"],
-    "features": { "arbitrary_precision": false },
+    "features": { "precision": "fixed" },
     "run": { "build": "g++ -O3 -Wall -o whint whint.cpp", "interpret": { "bin": "whint", "usage": "$0 <file>" } }
   },
   {
@@ -1271,7 +1271,7 @@
     "date": "2015-02-19 00:54:08 +0900",
     "spec_version": "0.3",
     "source": ["https://github.com/kinu/whitespace"],
-    "features": { "arbitrary_precision": false },
+    "features": { "precision": "fixed" },
     "assembly": {
       "instructions": {
         "push": ["PUSH"],
@@ -1639,7 +1639,7 @@
     "date": "2013-12-27 19:29:40 -0800",
     "spec_version": "0.3",
     "source": ["https://github.com/135yshr/wspacego"],
-    "features": { "arbitrary_precision": false },
+    "features": { "precision": "fixed" },
     "mapping": { "space": "S", "tab": "T", "lf": "\n", "spaces_between": false },
     "run": {
       "build_errors": "No go.mod",
@@ -1684,7 +1684,7 @@
     "date": "2013-08-31 19:34:35 +0100",
     "spec_version": "0.3",
     "source": ["https://github.com/worktycho/whitespace-llvm"],
-    "features": { "arbitrary_precision": true },
+    "features": { "precision": "arbitrary" },
     "run": {
       "build": "make",
       "build_errors": "Requires LLVM",
@@ -1714,7 +1714,7 @@
     "date": "2013-05-05 04:06:36 -0700",
     "spec_version": "0.3",
     "source": ["https://github.com/YuukiARIA/ws-interpreter"],
-    "features": { "arbitrary_precision": false, "negative_heap": false },
+    "features": { "precision": "fixed", "negative_heap": false },
     "run": {
       "build": "mkdir -p bin && make TARGET=../bin/ws -C src",
       "interpret": {
@@ -1774,7 +1774,7 @@
       "https://github.com/timvandermeij/whitespace-interpreter",
       "https://github.com/wspace-lang/timvandermeij-cpp"
     ],
-    "features": { "arbitrary_precision": false, "negative_heap": false },
+    "features": { "precision": "fixed", "negative_heap": false },
     "assembly": {
       "instructions": {
         "push": ["PUSH"],
@@ -1817,7 +1817,7 @@
     "date": "2012-12-29 00:19:16 -0500",
     "spec_version": "0.3",
     "source": ["https://github.com/knmorgan/ws"],
-    "features": { "arbitrary_precision": true }
+    "features": { "precision": "arbitrary" }
   },
   {
     "name": "Whitespace-Interpreter",
@@ -1901,7 +1901,7 @@
     "date": "2012-10-29 02:26:23 +0900",
     "spec_version": "0.3",
     "source": ["https://github.com/abcsharp/Whitespace"],
-    "features": { "arbitrary_precision": false },
+    "features": { "precision": "fixed" },
     "run": {
       "build": "g++ -O3 -Wall -std=c++11 -o wsi whitespace/main.cpp",
       "interpret": { "bin": "wsi", "usage": "$0 <file>" }
@@ -1976,7 +1976,7 @@
     "date": "2010-10-08 03:12:01 +0900",
     "spec_version": "0.3",
     "source": ["https://github.com/technohippy/go-whitespace", "https://github.com/wspace-lang/go-whitespace"],
-    "features": { "arbitrary_precision": false },
+    "features": { "precision": "fixed" },
     "run": {
       "build_errors": "No go.mod",
       "interpret": {
@@ -2160,7 +2160,7 @@
       "https://web.archive.org/web/20150717140342/http://compsoc.dur.ac.uk:80/whitespace/download.php",
       "https://web.archive.org/web/20141011193201/http://compsoc.dur.ac.uk/archives/whitespace/2004-May/000047.html"
     ],
-    "features": { "arbitrary_precision": true }
+    "features": { "precision": "arbitrary" }
   },
   {
     "name": "wsinterws",
@@ -2203,6 +2203,6 @@
     "date": "2002",
     "spec_version": "0.2",
     "source": ["https://web.archive.org/web/20150717140342/http://compsoc.dur.ac.uk:80/whitespace/download.php"],
-    "features": { "arbitrary_precision": true }
+    "features": { "precision": "arbitrary" }
   }
 ]
