@@ -854,7 +854,9 @@
     "source": [
       "https://github.com/hostilefork/whitespacers/tree/master/lolcode",
       "https://github.com/wspace-lang/akers-lolcode"
-    ]
+    ],
+    "run": { "interpret": { "bin": "whitespace.lol", "usage": "cat <(echo <file>) - | lci $0" } },
+    "notes": "When the program contains no read instructions, it can be run with `lci $0 <<< <file>`"
   },
   {
     "name": "whitespac3",
@@ -1978,7 +1980,7 @@
     "run": {
       "build_errors": "No go.mod",
       "interpret": {
-        "bin": "whitespace-go",
+        "bin": "go-whitespace",
         "usage": "$0 [options] <file>",
         "options": [{ "short": "d", "long": "d", "desc": "debug mode" }]
       }

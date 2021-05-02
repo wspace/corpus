@@ -45,9 +45,10 @@ type Project struct {
 	SpecVersion string   `json:"spec_version"`
 	Source      []string `json:"source"`
 	Features    struct {
-		ArbitraryPrecision bool `json:"arbitrary_precision,omitempty"`
-		BufferedOutput     bool `json:"buffered_output,omitempty"`
-		NegativeHeap       bool `json:"negative_heap,omitempty"`
+		ArbitraryPrecision bool   `json:"arbitrary_precision,omitempty"`
+		BufferedOutput     bool   `json:"buffered_output,omitempty"`
+		NegativeHeap       bool   `json:"negative_heap,omitempty"`
+		EOFBehavior        string `json:"eof_behavior,omitempty"`
 	} `json:"features,omitempty"`
 	Assembly *struct {
 		Instructions              map[Instruction][]string `json:"instructions,omitempty"`
