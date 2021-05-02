@@ -1,5 +1,16 @@
 [
   {
+    "name": "ws.jq",
+    "path": "jq/andrewarchi-wsjq",
+    "authors": ["Andrew Archibald"],
+    "languages": ["jq"],
+    "tags": ["interpreter"],
+    "date": "2021-05-02 07:26:45 -0700",
+    "spec_version": "0.3",
+    "source": ["https://github.com/andrewarchi/wsjq"],
+    "features": { "precision": "float64" }
+  },
+  {
     "name": "Albus",
     "path": "rust/collidedscope-albus",
     "authors": ["Collided Scope"],

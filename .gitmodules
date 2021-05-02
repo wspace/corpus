@@ -220,6 +220,9 @@
 [submodule "javascript/vii5ard-whitelips-ide"]
 	path = javascript/vii5ard-whitelips-ide
 	url = https://github.com/vii5ard/whitespace
+[submodule "jq/andrewarchi-wsjq"]
+	path = jq/andrewarchi-wsjq
+	url = https://github.com/andrewarchi/wsjq
 [submodule "kotlin/ze-space"]
 	path = kotlin/ze-space
 	url = https://github.com/ze/space
