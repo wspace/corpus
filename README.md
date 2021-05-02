@@ -98,7 +98,7 @@ programming language.
 | [Whitespace-LLVM](cpp/subv-whitespace-llvm)    | Sebastian Valle  | C++, LLVM  | interpreter  | 2014-07-16 | 0.3 | [GitHub](https://github.com/Subv/Whitespace-LLVM) |
 | [Whitebase](rust/faultier-whitebase)           | Taro Sako        | Rust       | interpreter, bytecode, Brainfuck to Whitespace, library | 2014-07-15 | 0.3 | [GitHub](https://github.com/faultier/whitebase) |
 | [whitespace-interpreter](java/azige)           | Azige            | Java       | interpreter  | 2014-06-18 | 0.2 | [GitHub](https://github.com/azige/whitespace-interpreter) |
-| [white](cpp/keirua-white)                      | Keirua           | C++        | interpreter  | 2014-05-30 | 0.3 | [GitHub](https://github.com/Keirua/whitespace) |
+| [white](cpp/keirua-white)                      | Keirua           | C++        | interpreter, disassembler | 2014-05-30 | 0.3 | [GitHub](https://github.com/Keirua/whitespace) |
 | [Kairos](java/vyo-kairos)                      | Manu Weidmann    | Java       | interpreter, assembler, arbitrary precision, programs | 2014-05-10 | 0.3 | [GitHub](https://github.com/vyo/kairos) |
 | [elixir-whitespace](elixir/quinnwilton)        | Quinn Wilton     | Elixir     | interpreter  | 2014-03-07 | 0.3 | [GitHub](https://github.com/QuinnWilton/elixir-whitespace) |
 | [SaTaN](c/threeifbywhiskey-satan)              | Dorien Snake     | C          | interpreter  | 2014-03-03 | 0.3 | [GitHub](https://github.com/threeifbywhiskey/satan) |
@@ -115,7 +115,7 @@ programming language.
 | [whitespace-interpreter](cpp/timvandermeij)    | Tim van der Meij, Willem Obbens, Simon Klaver | C++ | interpreter, assembler, disassembler, mapping, programs | 2013-02-06 | 0.3 | [GitHub](https://github.com/timvandermeij/whitespace-interpreter), [GitHub](https://github.com/wspace-lang/timvandermeij-cpp) |
 | [ws](cpp/knmorgan)                             | Kyle Morgan      | C++        | interpreter  | 2012-12-29 | 0.3 | [GitHub](https://github.com/knmorgan/ws) |
 | [Whitespace-Interpreter](cpp/noia)             | Tucker Noia      | C++        | interpreter  | 2012-12-15 | 0.2 incomplete | [GitHub](https://github.com/noia1/Whitespace-Interpreter) |
-| [wsInt](cpp/dpohanlon-wsint)                   | Daniel O'Hanlon  | C++        | interpreter  | 2012-12-02 | 0.2 | [GitHub](https://github.com/dpohanlon/wsInt), [GitHub](https://github.com/wspace-lang/dpohanlon-wsint-cpp) |
+| [wsInt](cpp/dpohanlon-wsint)                   | Daniel O'Hanlon  | C++        | interpreter, disassembler | 2012-12-02 | 0.2 | [GitHub](https://github.com/dpohanlon/wsInt), [GitHub](https://github.com/wspace-lang/dpohanlon-wsint-cpp) |
 | [WS-idr](idris/edwinb-ws-idr)                  | Edwin Brady      | Idris      | interpreter  | 2012-11-25 | 0.3 | [GitHub](https://github.com/edwinb/WS-idr) |
 | [Whitespace4j](java/brumbeere-whitespace4j)    | Philipp Speck    | Java       | interpreter  | 2012-11-04 | 0.3 | [GitHub](https://github.com/Brumbeere/Whitespace4j) |
 | [whitespace](cpp/abcsharp)                     | abcsharp         | C++        | interpreter  | 2012-10-29 | 0.3 | [GitHub](https://github.com/abcsharp/Whitespace) |
