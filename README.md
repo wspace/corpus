@@ -87,6 +87,7 @@ programming language.
 | [Whitespace](python/dalleng)                   | Diego Allen      | Python     | interpreter  | 2015-09-28 | 0.3 | [GitHub](https://github.com/dalleng/Whitespace) |
 | [Whitespace](javascript/therebelrobot)         | Aster Haven      | JavaScript | mapping      | 2015-09-09 | -   | [GitHub](https://github.com/therebelrobot/whitespace) |
 | [whitespacer](javascript/macocha-whitespacer)  | Maciej Siwek     | JavaScript/React | IDE, interpreter | 2015-09-04 | 0.3 | [GitHub](https://github.com/macocha/whitespacer) |
+| [Whitespace](c/rdebath)                        | Robert de Bath   | C, Lex     | compiler, interpreter, assembler, programs | 2015-08-18 | 0.3 | [GitHub](https://github.com/rdebath/whitespace) |
 | [BlueSpace](python/smithers-bluespace)         | Christopher Smith | Python    | interpreter, compiler, assembler, optimizer, mapping, programs | 2015-08-13 | 0.3 | [GitHub](https://github.com/Smithers888/BlueSpace), [cpjsmith.uk](https://cpjsmith.uk/whitespace) |
 | [Cupertino-WhiteSpace-Interperter](cpp/frmsaul-cupertino) | Saul Fuhrmann | C++ | interpreter | 2015-05-22 | 0.3 | [GitHub](https://github.com/frmsaul/Cupertino-WhiteSpace-Interperter) |
 | [whitespace](python/mcolom)                    | Miguel Colom     | Python     | interpreter  | 2015-05-18 | 0.3 | [GitHub](https://github.com/mcolom/whitespace) |

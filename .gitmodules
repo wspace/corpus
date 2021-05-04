@@ -10,6 +10,9 @@
 [submodule "c/meth0dz"]
 	path = c/meth0dz
 	url = https://github.com/wspace-lang/meth0dz-c
+[submodule "c/rdebath"]
+	path = c/rdebath
+	url = https://github.com/rdebath/whitespace
 [submodule "c/ryzheboka"]
 	path = c/ryzheboka
 	url = https://github.com/ryzheboka/Whitespace

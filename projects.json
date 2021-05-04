@@ -1045,7 +1045,8 @@
     "run": {
       "build": "cargo build --release",
       "interpret": { "bin": "target/release/wsc", "usage": "$0 [options] <file>" }
-    }
+    },
+    "notes": "TODO document options"
   },
   {
     "name": "whitespace",
@@ -1249,6 +1250,36 @@
       }
     },
     "notes": "Assembly is only displayed, not disassembled"
+  },
+  {
+    "name": "Whitespace",
+    "path": "c/rdebath",
+    "authors": ["Robert de Bath"],
+    "languages": ["C", "Lex"],
+    "tags": ["compiler", "interpreter", "assembler", "programs"],
+    "date": "2015-08-18 14:25:03 +0100",
+    "spec_version": "0.3",
+    "source": ["https://github.com/rdebath/whitespace"],
+    "run": {
+      "build": "make",
+      "interpret": {
+        "bin": "ws2c",
+        "usage": "$0 [options] [--] [file]",
+        "options": [
+          { "short": "r" },
+          { "short": "c" },
+          { "short": "v" },
+          { "short": "q" },
+          { "short": "e" },
+          { "short": "z" },
+          { "short": "n" },
+          { "short": "d" },
+          { "short": "old" }
+        ]
+      },
+      "other": { "bin": "blockquote", "usage": "$0 [options] [--] [file|-]...", "options": [{ "short": "f" }] }
+    },
+    "notes": "TODO document more commands and flags. Compiles to C and converts from other Whitespace assembly dialects. tests directory contains Whitespace programs from many authors."
   },
   {
     "name": "BlueSpace",
