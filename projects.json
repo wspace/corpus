@@ -19,10 +19,14 @@
     "date": "2021-02-12 08:39:06 -0500",
     "spec_version": "0.3",
     "source": ["https://github.com/collidedscope/albus"],
-    "run": {
-      "build": "cargo build --release",
-      "interpret": { "bin": "target/release/albus", "usage": "$0 <file>" }
-    }
+    "commands": [
+      {
+        "type": "interpreter",
+        "bin": "target/release/albus",
+        "build": "cargo build --release",
+        "usage": "$0 <file>"
+      }
+    ]
   },
   {
     "name": "whitespace.reb (Ren-C)",
@@ -111,7 +115,7 @@
     "spec_version": "0.2",
     "source": ["https://github.com/Luminighty/rustws"],
     "mapping": { "space": "S", "tab": "T", "lf": "L", "spaces_between": false, "ignore_case": true },
-    "run": { "build": "cargo build --release" },
+    "commands": [{ "build": "cargo build --release" }],
     "notes": "No main() entry point. Mapping ignores lines prefixed with `--`."
   },
   {
@@ -148,11 +152,15 @@
     "date": "2020-06-03 01:52:57 -0300",
     "spec_version": "0.3",
     "source": ["https://github.com/RicardoLuis0/whitespace"],
-    "run": {
-      "build": "g++ -O3 -Wall -std=c++11 -o whitespace whitespace.cpp",
-      "build_errors": "`#include <conio.h>` not found, `floor` cannot be used in a constant expression",
-      "interpret": { "bin": "whitespace", "usage": "$0 <file>" }
-    }
+    "commands": [
+      {
+        "type": "interpreter",
+        "bin": "whitespace",
+        "build": "g++ -O3 -Wall -std=c++11 -o whitespace whitespace.cpp",
+        "build_errors": "`#include <conio.h>` not found, `floor` cannot be used in a constant expression",
+        "usage": "$0 <file>"
+      }
+    ]
   },
   {
     "name": "WhiteSpace Assembler",
@@ -361,7 +369,7 @@
       "case_sensitive_instructions": false,
       "line_comment_prefix": "//"
     },
-    "run": { "assemble": { "bin": "WhitespaceAssembler", "usage": "$0 <file> <output_file>" } },
+    "commands": [{ "type": "assembler", "bin": "WhitespaceAssembler", "usage": "$0 <file> <output_file>" }],
     "notes": "<number> is a number literal or the value of a variable (formats: <int>, #<hex>, '<char>', and &<variable>).\n<address> is the value on the heap at the variable value (format: *<variable>), i.e. `push <variable> retrieve`.\n<int> is a base 10 integer, i.e. /[+-]?[0-9]+/.\n<hex> is a base 16 integer, i.e. /[0-9A-Fa-f]+/.\n<char> is one UTF-16 character, escape sequences aren't supported.\n<label> and <variable> values increment (with separate counters), starting at 0."
   },
   {
@@ -468,7 +476,7 @@
     "spec_version": "0.3",
     "source": ["https://github.com/andrewarchi/nebula"],
     "features": { "precision": "fixed" },
-    "run": { "build_errors": "Requires LLVM, no go.mod" }
+    "commands": [{ "build_errors": "Requires LLVM, no go.mod" }]
   },
   {
     "name": "Whitespace VM",
@@ -479,10 +487,14 @@
     "date": "2019-05-13 03:46:04 -0500",
     "spec_version": "0.3",
     "source": ["https://github.com/nareshganduri/WhitespaceVM"],
-    "run": {
-      "build": "cargo build --release",
-      "interpret": { "bin": "target/release/whitespace-vm", "usage": "$0 <file>" }
-    }
+    "commands": [
+      {
+        "type": "interpreter",
+        "bin": "target/release/whitespace-vm",
+        "build": "cargo build --release",
+        "usage": "$0 <file>"
+      }
+    ]
   },
   {
     "name": "Akaza",
@@ -569,7 +581,9 @@
         "readi": ["rdn"]
       }
     },
-    "run": { "build_errors": "No go.mod", "interpret": { "bin": "bin/go-wspace", "usage": "$0 <file>" } },
+    "commands": [
+      { "type": "interpreter", "bin": "bin/go-wspace", "build_errors": "No go.mod", "usage": "$0 <file>" }
+    ],
     "notes": "Assembly is only displayed when debugging"
   },
   {
@@ -591,10 +605,14 @@
     "date": "2018-11-23 21:35:24 +0900",
     "spec_version": "0.2",
     "source": ["https://github.com/HelloRusk/WhitespaceInterpreter"],
-    "run": {
-      "build": "rustc whitespace_interpreter.rs -o wi",
-      "interpret": { "bin": "wi", "usage": "$0 <file>" }
-    }
+    "commands": [
+      {
+        "type": "interpreter",
+        "bin": "wi",
+        "build": "rustc whitespace_interpreter.rs -o wi",
+        "usage": "$0 <file>"
+      }
+    ]
   },
   {
     "name": "hohoho",
@@ -674,11 +692,10 @@
     "date": "2018-09-05 15:36:34 +0900",
     "spec_version": "0.2",
     "source": ["https://github.com/buyoh/nospace"],
-    "run": {
-      "build": "make",
-      "other": { "bin": "maicomp", "usage": "$0 < <file>" },
-      "interpret": { "bin": "vm/run.rb", "usage": "ruby $0 <file> [stdin_file]" }
-    }
+    "commands": [
+      { "type": "other", "bin": "maicomp", "build": "make", "usage": "$0 < <file>" },
+      { "type": "interpreter", "bin": "vm/run.rb", "usage": "ruby $0 <file> [stdin_file]" }
+    ]
   },
   {
     "name": "Whitespace compiler for 64-bit macOS",
@@ -722,7 +739,7 @@
     "spec_version": "0.3",
     "source": ["https://github.com/andrewarchi/respace"],
     "features": { "precision": "fixed" },
-    "run": { "build": "make", "interpret": { "bin": "respace", "usage": "$0 <file>" } },
+    "commands": [{ "type": "interpreter", "bin": "respace", "build": "make", "usage": "$0 <file>" }],
     "notes": "Disassembler and bit packer are only available via code modification"
   },
   {
@@ -756,11 +773,12 @@
     "date": "2018-02-24 19:28:32 -0500",
     "spec_version": "0.2",
     "source": ["https://github.com/jmesyou/erasure", "https://github.com/wspace-lang/jmesyou-erasure-clojure"],
-    "run": {
-      "build": "lein uberjar",
-      "build_errors": "Parser namespace is clj-whitespace, not erasure",
-      "interpret": {
+    "commands": [
+      {
+        "type": "interpreter",
         "bin": "target/uberjar/erasure-2.0-standalone.jar",
+        "build": "lein uberjar",
+        "build_errors": "Parser namespace is clj-whitespace, not erasure",
         "usage": "java -jar $0 [options] <file>",
         "options": [
           {
@@ -771,7 +789,7 @@
           { "short": "h", "long": "help" }
         ]
       }
-    }
+    ]
   },
   {
     "name": "whitespace-interperter",
@@ -824,7 +842,9 @@
     "spec_version": "0.2",
     "source": ["https://github.com/benajmin/whitespace-interpreter"],
     "features": { "precision": "fixed" },
-    "run": { "build": "make", "interpret": { "bin": "WhitespaceInterpreter.out", "usage": "$0 <file>" } }
+    "commands": [
+      { "type": "interpreter", "bin": "WhitespaceInterpreter.out", "build": "make", "usage": "$0 <file>" }
+    ]
   },
   {
     "name": "wsm2ws",
@@ -929,7 +949,7 @@
       "https://github.com/hostilefork/whitespacers/tree/master/lolcode",
       "https://github.com/wspace-lang/akers-lolcode"
     ],
-    "run": { "interpret": { "bin": "whitespace.lol", "usage": "cat <(echo <file>) - | lci $0" } },
+    "commands": [{ "type": "interpreter", "bin": "whitespace.lol", "usage": "cat <(echo <file>) - | lci $0" }],
     "notes": "When the program contains no read instructions, it can be run with `lci $0 <<< <file>`"
   },
   {
@@ -971,7 +991,7 @@
     "date": "2016-08-20 08:45:25 +0800",
     "spec_version": "0.2 incomplete",
     "source": ["https://github.com/sonicyang/ws-frontend"],
-    "run": { "build_errors": "Requires LLVM", "compile": { "bin": "wsjit", "usage": "$0 <file>" } }
+    "commands": [{ "type": "compiler", "bin": "wsjit", "build_errors": "Requires LLVM", "usage": "$0 <file>" }]
   },
   {
     "name": "Whitespace",
@@ -992,7 +1012,7 @@
     "date": "2016-07-27 17:01:11 +0200",
     "spec_version": "0.2",
     "source": ["https://github.com/marcellippmann/Whitepp"],
-    "run": { "build": "make", "interpret": { "bin": "bin/White++", "usage": "$0 <file>" } }
+    "commands": [{ "type": "interpreter", "bin": "bin/White++", "build": "make", "usage": "$0 <file>" }]
   },
   {
     "name": "whitespace-ruby",
@@ -1042,11 +1062,15 @@
         "readi": ["inum"]
       }
     },
-    "run": {
-      "build": "cargo build --release",
-      "interpret": { "bin": "target/release/wsc", "usage": "$0 [options] <file>" }
-    },
-    "notes": "TODO document options"
+    "commands": [
+      {
+        "type": "interpreter",
+        "bin": "target/release/wsc",
+        "build": "cargo build --release",
+        "usage": "$0 [options] <file>",
+        "notes": "TODO document options"
+      }
+    ]
   },
   {
     "name": "whitespace",
@@ -1067,10 +1091,14 @@
     "date": "2016-05-08 16:05:03 -0700",
     "spec_version": "0.2",
     "source": ["https://github.com/Jayshua/rust-whitespace"],
-    "run": {
-      "build": "cargo build --release",
-      "interpret": { "bin": "target/release/whitespace", "usage": "$0 [list] <file>" }
-    }
+    "commands": [
+      {
+        "type": "interpreter",
+        "bin": "target/release/whitespace",
+        "build": "cargo build --release",
+        "usage": "$0 [list] <file>"
+      }
+    ]
   },
   {
     "name": "whitespace-interpreter",
@@ -1169,7 +1197,14 @@
     "spec_version": "0.2",
     "source": ["https://github.com/abac00s/WHINT"],
     "features": { "precision": "fixed" },
-    "run": { "build": "g++ -O3 -Wall -o whint whint.cpp", "interpret": { "bin": "whint", "usage": "$0 <file>" } }
+    "commands": [
+      {
+        "type": "interpreter",
+        "bin": "whint",
+        "build": "g++ -O3 -Wall -o whint whint.cpp",
+        "usage": "$0 <file>"
+      }
+    ]
   },
   {
     "name": "Whitespacing",
@@ -1260,10 +1295,11 @@
     "date": "2015-08-18 14:25:03 +0100",
     "spec_version": "0.3",
     "source": ["https://github.com/rdebath/whitespace"],
-    "run": {
-      "build": "make",
-      "interpret": {
+    "commands": [
+      {
+        "type": "interpreter",
         "bin": "ws2c",
+        "build": "make",
         "usage": "$0 [options] [--] [file]",
         "options": [
           { "short": "r" },
@@ -1277,8 +1313,14 @@
           { "short": "old" }
         ]
       },
-      "other": { "bin": "blockquote", "usage": "$0 [options] [--] [file|-]...", "options": [{ "short": "f" }] }
-    },
+      {
+        "type": "other",
+        "bin": "blockquote",
+        "build": "make",
+        "usage": "$0 [options] [--] [file|-]...",
+        "options": [{ "short": "f" }]
+      }
+    ],
     "notes": "TODO document more commands and flags. Compiles to C and converts from other Whitespace assembly dialects. tests directory contains Whitespace programs from many authors."
   },
   {
@@ -1333,10 +1375,14 @@
     "date": "2015-05-22 21:54:51 -0700",
     "spec_version": "0.3",
     "source": ["https://github.com/frmsaul/Cupertino-WhiteSpace-Interperter"],
-    "run": {
-      "build": "g++ -O3 -o whitespace src/*.cpp",
-      "interpret": { "bin": "whitespace", "usage": "$0 <file>" }
-    },
+    "commands": [
+      {
+        "type": "interpreter",
+        "bin": "whitespace",
+        "build": "g++ -O3 -o whitespace src/*.cpp",
+        "usage": "$0 <file>"
+      }
+    ],
     "notes": "make fails because Makefile is named MakeFile and paths use backslash"
   },
   {
@@ -1462,17 +1508,18 @@
         "readi": ["READNUM"]
       }
     },
-    "run": {
-      "build_errors": "No go.mod",
-      "interpret": {
+    "commands": [
+      {
+        "type": "interpreter",
         "bin": "whitespace",
+        "build_errors": "No go.mod",
         "usage": "$0 <file>",
         "options": [
           { "short": "v", "long": "v", "desc": "verbose" },
           { "short": "dry_run", "long": "dry_run", "desc": "dry run" }
         ]
       }
-    }
+    ]
   },
   {
     "name": "whitespace-clj",
@@ -1483,10 +1530,11 @@
     "date": "2015-02-11 15:15:52 +0900",
     "spec_version": "0.2",
     "source": ["https://github.com/MakeNowJust/whitespace-clj"],
-    "run": {
-      "build": "lein uberjar",
-      "interpret": {
+    "commands": [
+      {
+        "type": "interpreter",
         "bin": "target/whitespace-clj-0.1.0-SNAPSHOT-standalone.jar",
+        "build": "lein uberjar",
         "usage": "java -jar $0 [options] <file>",
         "options": [
           { "short": "h", "long": "help", "desc": "show this help" },
@@ -1498,7 +1546,7 @@
           { "long": "time", "desc": "show executing time" }
         ]
       }
-    }
+    ]
   },
   {
     "name": "whitespace-php",
@@ -1529,7 +1577,14 @@
     "date": "2014-12-02 05:59:27 +0530",
     "spec_version": "0.2",
     "source": ["https://github.com/sudheesh4/Whitespace-Interpreter-C-"],
-    "run": { "build": "g++ -O3 -o space space.cpp", "interpret": { "bin": "space", "usage": "$0 < <file>" } }
+    "commands": [
+      {
+        "type": "interpreter",
+        "bin": "space",
+        "build": "g++ -O3 -o space space.cpp",
+        "usage": "$0 < <file>"
+      }
+    ]
   },
   {
     "name": "WhiteSpaceInterpreter",
@@ -1660,8 +1715,15 @@
     "date": "2014-07-16 08:48:25 -0500",
     "spec_version": "0.3",
     "source": ["https://github.com/Subv/Whitespace-LLVM"],
-    "run": { "build_errors": "Requires LLVM", "compile": { "bin": "bin/Whitespace-LLVM", "usage": "$0" } },
-    "notes": "File is hardcoded to ./count.ws"
+    "commands": [
+      {
+        "type": "compiler",
+        "bin": "bin/Whitespace-LLVM",
+        "build_errors": "Requires LLVM",
+        "usage": "$0",
+        "notes": "File is hardcoded to ./count.ws"
+      }
+    ]
   },
   {
     "name": "Whitebase",
@@ -1749,7 +1811,14 @@
         "readi": ["read_i"]
       }
     },
-    "run": { "build": "g++ -O3 -Wall -o white main.cpp", "interpret": { "bin": "white", "usage": "$0 <file>" } }
+    "commands": [
+      {
+        "type": "interpreter",
+        "bin": "white",
+        "build": "g++ -O3 -Wall -o white main.cpp",
+        "usage": "$0 <file>"
+      }
+    ]
   },
   {
     "name": "Kairos",
@@ -1800,7 +1869,7 @@
     "date": "2014-02-16 11:04:37 +0900",
     "spec_version": "0.3",
     "source": ["https://github.com/mikecat/python-whitespace"],
-    "run": { "dependencies": ["python"], "interpret": { "bin": "whitespace.py", "usage": "python $0 <file>" } }
+    "commands": [{ "type": "interpreter", "bin": "whitespace.py", "usage": "python $0 <file>" }]
   },
   {
     "name": "wspacego",
@@ -1813,19 +1882,20 @@
     "source": ["https://github.com/135yshr/wspacego"],
     "features": { "precision": "fixed" },
     "mapping": { "space": "S", "tab": "T", "lf": "\n", "spaces_between": false },
-    "run": {
-      "build_errors": "No go.mod",
-      "interpret": {
+    "commands": [
+      {
+        "type": "interpreter",
         "bin": "wspacego",
+        "build_errors": "No go.mod",
         "usage": "$0 [-h] [run|disasm|char] <file>",
         "options": [{ "short": "h", "long": "h", "desc": "display this help and exit" }],
-        "commands": [
+        "subcommands": [
           { "name": "run", "desc": "run the program" },
           { "name": "disasm", "desc": "disassemble the program" },
           { "name": "char", "desc": "convert the program (space -> S, Tab -> T)" }
         ]
       }
-    }
+    ]
   },
   {
     "name": "wvm",
@@ -1857,15 +1927,16 @@
     "spec_version": "0.3",
     "source": ["https://github.com/worktycho/whitespace-llvm"],
     "features": { "precision": "arbitrary" },
-    "run": {
-      "build": "make",
-      "build_errors": "Requires LLVM",
-      "compile": {
+    "commands": [
+      {
+        "type": "compiler",
         "bin": "wspace-jit",
+        "build": "make",
+        "build_errors": "Requires LLVM",
         "usage": "$0 [--list-instructions] <file>",
         "options": [{ "long": "list-instructions" }]
       }
-    }
+    ]
   },
   {
     "name": "Whitespace-JS",
@@ -1887,10 +1958,11 @@
     "spec_version": "0.3",
     "source": ["https://github.com/YuukiARIA/ws-interpreter"],
     "features": { "precision": "fixed", "negative_heap": false },
-    "run": {
-      "build": "mkdir -p bin && make TARGET=../bin/ws -C src",
-      "interpret": {
+    "commands": [
+      {
+        "type": "interpreter",
         "bin": "bin/ws",
+        "build": "mkdir -p bin && make TARGET=../bin/ws -C src",
         "usage": "$0 [options] <file>",
         "options": [
           { "short": "v", "arg": "size", "default": 256, "desc": "value stack size, must be greater than 0" },
@@ -1898,7 +1970,7 @@
           { "short": "h", "arg": "size", "default": 2048, "desc": "heap size, must be greater than 0" }
         ]
       }
-    }
+    ]
   },
   {
     "name": "whitespace",
@@ -1977,8 +2049,15 @@
       "case_sensitive_instructions": true
     },
     "mapping": { "space": "S ", "tab": "T ", "lf": "LF\n", "spaces_between": false },
-    "run": { "build": "make", "interpret": { "bin": "whitespace", "usage": "$0" } },
-    "notes": "File is hardcoded to ./hello_worldvanwiki.ws"
+    "commands": [
+      {
+        "type": "interpreter",
+        "bin": "whitespace",
+        "build": "make",
+        "usage": "$0",
+        "notes": "File is hardcoded to ./hello_worldvanwiki.ws"
+      }
+    ]
   },
   {
     "name": "ws",
@@ -2000,11 +2079,16 @@
     "date": "2012-12-15 11:48:38 -0800",
     "spec_version": "0.2 incomplete",
     "source": ["https://github.com/noia1/Whitespace-Interpreter"],
-    "run": {
-      "build": "g++ -O3 -Wall -Werror -o ws Lexer.cc Parser.cc",
-      "interpret": { "bin": "ws", "usage": "$0 <file>" }
-    },
-    "notes": "Makefile is broken. Only has instructions: push drop add sub mul div mod store retrieve printc printi readc readi"
+    "commands": [
+      {
+        "type": "interpreter",
+        "bin": "ws",
+        "build": "g++ -O3 -Wall -Werror -o ws Lexer.cc Parser.cc",
+        "usage": "$0 <file>",
+        "notes": "Makefile is broken"
+      }
+    ],
+    "notes": "Only has instructions: push drop add sub mul div mod store retrieve printc printi readc readi"
   },
   {
     "name": "wsInt",
@@ -2041,8 +2125,15 @@
         "readi": ["ReadInt"]
       }
     },
-    "run": { "build": "make", "interpret": { "bin": "bin/wsInt", "usage": "$0" } },
-    "notes": "File is hardcoded to ./count.ws"
+    "commands": [
+      {
+        "type": "interpreter",
+        "bin": "bin/wsInt",
+        "build": "make",
+        "usage": "$0",
+        "notes": "File is hardcoded to ./count.ws"
+      }
+    ]
   },
   {
     "name": "WS-idr",
@@ -2074,10 +2165,14 @@
     "spec_version": "0.3",
     "source": ["https://github.com/abcsharp/Whitespace"],
     "features": { "precision": "fixed" },
-    "run": {
-      "build": "g++ -O3 -Wall -std=c++11 -o wsi whitespace/main.cpp",
-      "interpret": { "bin": "wsi", "usage": "$0 <file>" }
-    }
+    "commands": [
+      {
+        "type": "interpreter",
+        "bin": "wsi",
+        "build": "g++ -O3 -Wall -std=c++11 -o wsi whitespace/main.cpp",
+        "usage": "$0 <file>"
+      }
+    ]
   },
   {
     "name": "whitespace",
@@ -2187,14 +2282,15 @@
     "spec_version": "0.3",
     "source": ["https://github.com/technohippy/go-whitespace", "https://github.com/wspace-lang/go-whitespace"],
     "features": { "precision": "fixed" },
-    "run": {
-      "build_errors": "No go.mod",
-      "interpret": {
+    "commands": [
+      {
+        "type": "interpreter",
         "bin": "go-whitespace",
+        "build_errors": "No go.mod",
         "usage": "$0 [options] <file>",
         "options": [{ "short": "d", "long": "d", "desc": "debug mode" }]
       }
-    }
+    ]
   },
   {
     "name": "whitespace.reb",
@@ -2249,10 +2345,14 @@
       "http://www.rohitab.com/discuss/topic/35639-c-whitespace-interpreter/?p=10074137",
       "https://github.com/wspace-lang/peasley-cpp"
     ],
-    "run": {
-      "build": "g++ -O3 -Wall -o whitespace whitespace.cpp",
-      "interpret": { "bin": "whitespace", "usage": "$0 <file>" }
-    }
+    "commands": [
+      {
+        "type": "interpreter",
+        "bin": "whitespace",
+        "build": "g++ -O3 -Wall -o whitespace whitespace.cpp",
+        "usage": "$0 <file>"
+      }
+    ]
   },
   {
     "name": "Whitespace Interpreter v1.0",
@@ -2320,10 +2420,11 @@
       }
     },
     "mapping": { "space": "A", "tab": "B", "lf": "C\n", "spaces_between": false },
-    "run": {
-      "build": "g++ -O3 -Wall -o wspace wspace.cpp",
-      "interpret": {
+    "commands": [
+      {
+        "type": "interpreter",
         "bin": "wspace",
+        "build": "g++ -O3 -Wall -o wspace wspace.cpp",
         "usage": "$0 [algdh] <file>",
         "options": [
           { "short": "a", "desc": "print whitespace assembly language instead of program execution" },
@@ -2337,10 +2438,10 @@
             "desc": "prints stack and heap size after program execution similar to original ws interpreter"
           },
           { "short": "h", "long": "help", "desc": "print this menu then exit" }
-        ]
+        ],
+        "notes": "Flags combine similar to `tar`, without dash required"
       }
-    },
-    "notes": "Flags combine similar to `tar`, without dash required"
+    ]
   },
   {
     "name": "pywhitespace",
