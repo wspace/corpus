@@ -10,6 +10,12 @@
 [submodule "c/meth0dz"]
 	path = c/meth0dz
 	url = https://github.com/wspace-lang/meth0dz-c
+[submodule "c/ryzheboka"]
+	path = c/ryzheboka
+	url = https://github.com/ryzheboka/Whitespace
+[submodule "c/sandeep"]
+	path = c/sandeep
+	url = https://github.com/Sandeep023/Whitespace
 [submodule "c/strangepan-i-c-whitespace"]
 	path = c/strangepan-i-c-whitespace
 	url = https://github.com/StrangePan/I_C_Whitespace
@@ -58,6 +64,9 @@
 [submodule "cpp/knmorgan"]
 	path = cpp/knmorgan
 	url = https://github.com/knmorgan/ws
+[submodule "cpp/malkiewiczm"]
+	path = cpp/malkiewiczm
+	url = https://github.com/malkiewiczm/whitespace_compiler
 [submodule "cpp/marcellippmann-whitepp"]
 	path = cpp/marcellippmann-whitepp
 	url = https://github.com/marcellippmann/Whitepp
@@ -106,6 +115,9 @@
 [submodule "csharp/reflash"]
 	path = csharp/reflash
 	url = https://github.com/reflash-blog/WhiteSpaceInterpreter
+[submodule "csharp/rolisoft-esoteric"]
+	path = csharp/rolisoft-esoteric
+	url = https://github.com/RoliSoft/Esoteric-Code-Interpreter
 [submodule "elixir/quinnwilton"]
 	path = elixir/quinnwilton
 	url = https://github.com/QuinnWilton/elixir-whitespace
@@ -169,6 +181,9 @@
 [submodule "java/kmizu"]
 	path = java/kmizu
 	url = https://github.com/kmizu/ws_interpreter
+[submodule "java/praveenvaka-coder"]
+	path = java/praveenvaka-coder
+	url = https://github.com/praveenvaka/whitespace-coder
 [submodule "java/vyo-kairos"]
 	path = java/vyo-kairos
 	url = https://github.com/vyo/kairos
@@ -184,6 +199,9 @@
 [submodule "java/yuukiaria-wseditor"]
 	path = java/yuukiaria-wseditor
 	url = https://github.com/YuukiARIA/wseditor
+[submodule "javascript/briantran-generator"]
+	path = javascript/briantran-generator
+	url = https://github.com/TranBrian10/WhitespaceGenerator
 [submodule "javascript/damle-evanescojs"]
 	path = javascript/damle-evanescojs
 	url = https://github.com/AD9000/EvanescoJS
@@ -214,12 +232,18 @@
 [submodule "javascript/susisu"]
 	path = javascript/susisu
 	url = https://github.com/susisu/Whitespace-JS
+[submodule "javascript/therebelrobot"]
+	path = javascript/therebelrobot
+	url = https://github.com/therebelrobot/whitespace
 [submodule "javascript/uraza"]
 	path = javascript/uraza
 	url = https://github.com/uraza/whitespace-interpreter
 [submodule "javascript/vii5ard-whitelips-ide"]
 	path = javascript/vii5ard-whitelips-ide
 	url = https://github.com/vii5ard/whitespace
+[submodule "javascript/wdalmut"]
+	path = javascript/wdalmut
+	url = https://github.com/wdalmut/whitespace-lang-compiler
 [submodule "jq/andrewarchi-wsjq"]
 	path = jq/andrewarchi-wsjq
 	url = https://github.com/andrewarchi/wsjq
@@ -292,6 +316,9 @@
 [submodule "python/mcolom"]
 	path = python/mcolom
 	url = https://github.com/mcolom/whitespace
+[submodule "python/meand"]
+	path = python/meand
+	url = https://github.com/me-and/whitespace-compiler
 [submodule "python/mikecat"]
 	path = python/mikecat
 	url = https://github.com/mikecat/python-whitespace
@@ -373,6 +400,9 @@
 [submodule "scheme/niyarin"]
 	path = scheme/niyarin
 	url = https://github.com/niyarin/whitespace-scheme
+[submodule "textmate/veniversum"]
+	path = textmate/veniversum
+	url = https://github.com/veniversum/language-whitespace
 [submodule "vim/rolf-ws-vim"]
 	path = vim/rolf-ws-vim
 	url = https://github.com/rolf007/ws.vim
@@ -382,3 +412,6 @@
 [submodule "whitespace/pdewacht-tetris"]
 	path = whitespace/pdewacht-tetris
 	url = https://github.com/wspace-lang/pdewacht-tetris
+[submodule "whitespace/tewort-hello-whitespace"]
+	path = whitespace/tewort-hello-whitespace
+	url = https://github.com/Tewort/Hello-Whitespace

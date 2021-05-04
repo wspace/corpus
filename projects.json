@@ -1,6 +1,6 @@
 [
   {
-    "name": "ws.jq",
+    "name": "wsjq",
     "path": "jq/andrewarchi-wsjq",
     "authors": ["Andrew Archibald"],
     "languages": ["jq"],
@@ -253,7 +253,7 @@
     "name": "Evanesco",
     "path": "python/damle-evanesco",
     "authors": ["Atharv Damle"],
-    "languages": ["Python 3"],
+    "languages": ["Python"],
     "tags": ["text to Whitespace"],
     "date": "2020-02-20 09:18:38 +1100",
     "spec_version": "-",
@@ -278,6 +278,16 @@
     "date": "2020-02-01",
     "spec_version": "0.3",
     "source": ["https://codegolf.stackexchange.com/questions/198694/write-a-whitespace-interpreter/198770#198770"]
+  },
+  {
+    "name": "Whitespace Lang Compiler",
+    "path": "javascript/wdalmut",
+    "authors": ["Walter Dal Mut"],
+    "languages": ["JavaScript"],
+    "tags": ["disassembler"],
+    "date": "2019-12-28 16:28:47 +0100",
+    "spec_version": "0.2",
+    "source": ["https://github.com/wdalmut/whitespace-lang-compiler"]
   },
   {
     "name": "WhitespaceAssembler",
@@ -353,6 +363,17 @@
     },
     "run": { "assemble": { "bin": "WhitespaceAssembler", "usage": "$0 <file> <output_file>" } },
     "notes": "<number> is a number literal or the value of a variable (formats: <int>, #<hex>, '<char>', and &<variable>).\n<address> is the value on the heap at the variable value (format: *<variable>), i.e. `push <variable> retrieve`.\n<int> is a base 10 integer, i.e. /[+-]?[0-9]+/.\n<hex> is a base 16 integer, i.e. /[0-9A-Fa-f]+/.\n<char> is one UTF-16 character, escape sequences aren't supported.\n<label> and <variable> values increment (with separate counters), starting at 0."
+  },
+  {
+    "name": "whitespace_compiler",
+    "path": "cpp/malkiewiczm",
+    "authors": ["Michael Malkiewicz"],
+    "languages": ["C++", "Yacc", "Lex"],
+    "tags": ["language", "programs"],
+    "date": "2019-10-20",
+    "spec_version": "0.2",
+    "source": ["https://github.com/malkiewiczm/whitespace_compiler"],
+    "notes": "Creation date mentioned in README"
   },
   {
     "name": "Whitespace UnC",
@@ -552,6 +573,16 @@
     "notes": "Assembly is only displayed when debugging"
   },
   {
+    "name": "Hello-Whitespace",
+    "path": "whitespace/tewort-hello-whitespace",
+    "authors": ["David"],
+    "languages": ["Whitespace"],
+    "tags": ["programs"],
+    "date": "2019-01-28 17:17:14 +0300",
+    "spec_version": "0.2",
+    "source": ["https://github.com/Tewort/Hello-Whitespace"]
+  },
+  {
     "name": "Whitespace Interpreter",
     "path": "rust/kaisugi",
     "authors": ["Kaito Sugimoto"],
@@ -648,6 +679,18 @@
       "other": { "bin": "maicomp", "usage": "$0 < <file>" },
       "interpret": { "bin": "vm/run.rb", "usage": "ruby $0 <file> [stdin_file]" }
     }
+  },
+  {
+    "name": "Whitespace compiler for 64-bit macOS",
+    "path": "c/ryzheboka",
+    "authors": ["Elena Mokeeva"],
+    "languages": ["C", "Python"],
+    "tags": ["interpreter", "mapping"],
+    "date": "2018-09-04 11:25:14 +0200",
+    "spec_version": "0.2 incomplete",
+    "source": ["https://github.com/ryzheboka/Whitespace"],
+    "mapping": { "space": "A", "tab": "B", "lf": "C", "spaces_between": false },
+    "notes": "FF and CR also grouped with LF in mapping"
   },
   {
     "name": "whitespace-interpreter",
@@ -752,6 +795,16 @@
     "notes": "Fork of vii5ard/whitespace"
   },
   {
+    "name": "Whitespace",
+    "path": "c/sandeep",
+    "authors": ["Sandeep Varma"],
+    "languages": ["C", "Yacc", "Lex"],
+    "tags": ["programs"],
+    "date": "2017-11-11 05:17:01 +0000",
+    "spec_version": "0.3 incomplete",
+    "source": ["https://github.com/Sandeep023/Whitespace"]
+  },
+  {
     "name": "Whitespace-interpreter",
     "path": "python/bornlex",
     "authors": ["Bornlex"],
@@ -853,6 +906,16 @@
     "date": "2017-01-31 16:21:48 +0000",
     "spec_version": "0.2",
     "source": ["https://github.com/yasn77/whitepy"]
+  },
+  {
+    "name": "WhitespaceGenerator",
+    "path": "javascript/briantran-generator",
+    "authors": ["Brian Tran"],
+    "languages": ["JavaScript"],
+    "tags": ["text to Whitespace"],
+    "date": "2017-01-22 01:38:36 -0500",
+    "spec_version": "0.2",
+    "source": ["https://github.com/TranBrian10/WhitespaceGenerator"]
   },
   {
     "name": "whitespace.lol",
@@ -1019,6 +1082,42 @@
     "source": ["https://github.com/kanra1412/whitespace-interpreter"]
   },
   {
+    "name": "whitespace-compiler",
+    "path": "python/meand",
+    "authors": ["Adam Dinwoodie"],
+    "languages": ["Python"],
+    "tags": ["assembler"],
+    "date": "2016-04-13 13:40:50 +0100",
+    "spec_version": "0.2",
+    "source": ["https://github.com/me-and/whitespace-compiler"],
+    "assembly": {
+      "instructions": {
+        "push": ["PUSH"],
+        "dup": ["DUPE"],
+        "swap": ["SWAP"],
+        "drop": ["DROP"],
+        "add": ["ADD"],
+        "sub": ["SUB"],
+        "mul": ["MUL"],
+        "div": ["DIV"],
+        "mod": ["MOD"],
+        "store": ["STORE"],
+        "retrieve": ["RETRV"],
+        "label": ["LABEL"],
+        "call": ["GOSUB"],
+        "jmp": ["JMP"],
+        "jz": ["JEZ"],
+        "jn": ["JLZ"],
+        "ret": ["RETURN"],
+        "end": ["END"],
+        "printc": ["PUTC"],
+        "printi": ["PUTN"],
+        "readc": ["GETC"],
+        "readi": ["GETN"]
+      }
+    }
+  },
+  {
     "name": "Whitespace-JS",
     "path": "javascript/susisu",
     "authors": ["Susisu"],
@@ -1038,6 +1137,16 @@
     "spec_version": "0.3",
     "source": ["https://github.com/alesiong/whitespace-ruby"],
     "notes": "Forked from Wayne Conrad's Ruby programs"
+  },
+  {
+    "name": "Whitespace support in Atom",
+    "path": "textmate/veniversum",
+    "authors": ["Qingzhuo"],
+    "languages": ["TextMate"],
+    "tags": ["syntax highlighting"],
+    "date": "2016-02-20 16:31:58 +0000",
+    "spec_version": "-",
+    "source": ["https://github.com/veniversum/language-whitespace"]
   },
   {
     "name": "whitespace-interpreter",
@@ -1092,6 +1201,17 @@
     "source": ["https://github.com/dalleng/Whitespace"]
   },
   {
+    "name": "Whitespace",
+    "path": "javascript/therebelrobot",
+    "authors": ["Aster Haven"],
+    "languages": ["JavaScript"],
+    "tags": ["mapping"],
+    "date": "2015-09-09 08:16:43 -0700",
+    "spec_version": "-",
+    "source": ["https://github.com/therebelrobot/whitespace"],
+    "mapping": { "space": "s", "tab": "t", "lf": "n", "spaces_between": false }
+  },
+  {
     "name": "whitespacer",
     "path": "javascript/macocha-whitespacer",
     "authors": ["Maciej Siwek"],
@@ -1134,7 +1254,7 @@
     "name": "BlueSpace",
     "path": "python/smithers-bluespace",
     "authors": ["Christopher Smith"],
-    "languages": ["Python 3"],
+    "languages": ["Python"],
     "tags": ["interpreter", "compiler", "assembler", "optimizer", "mapping", "programs"],
     "date": "2015-08-13 20:46:55 +0100",
     "spec_version": "0.3",
@@ -1556,9 +1676,9 @@
     "path": "java/azige",
     "authors": ["Azige"],
     "languages": ["Java"],
-    "tags": ["interpreter"],
+    "tags": ["language", "interpreter"],
     "date": "2014-06-18 23:38:41 +0800",
-    "spec_version": "0.2",
+    "spec_version": "0.3",
     "source": ["https://github.com/azige/whitespace-interpreter"]
   },
   {
@@ -1621,6 +1741,16 @@
     "source": ["https://github.com/QuinnWilton/elixir-whitespace"]
   },
   {
+    "name": "whitespace-coder",
+    "path": "java/praveenvaka-coder",
+    "authors": ["Praveen Reddy Vaka"],
+    "languages": ["Java"],
+    "tags": ["program builder"],
+    "date": "2014-03-07 05:39:21 -0800",
+    "spec_version": "0.2",
+    "source": ["https://github.com/praveenvaka/whitespace-coder"]
+  },
+  {
     "name": "SaTaN",
     "path": "c/threeifbywhiskey-satan",
     "authors": ["Dorien Snake"],
@@ -1634,7 +1764,7 @@
     "name": "python-whitespace",
     "path": "python/mikecat",
     "authors": ["みけCAT (MikeCAT)"],
-    "languages": ["Python 2", "Python 3"],
+    "languages": ["Python"],
     "tags": ["interpreter"],
     "date": "2014-02-16 11:04:37 +0900",
     "spec_version": "0.3",
@@ -1946,7 +2076,8 @@
     "tags": ["interpreter"],
     "date": "2012-02-16 23:15:56 +0100",
     "spec_version": "0.3",
-    "source": ["https://github.com/pvdz/SignificantWhitespace"]
+    "source": ["https://github.com/pvdz/SignificantWhitespace"],
+    "notes": "JS1k competition submission"
   },
   {
     "name": "white-scheme",
@@ -1977,6 +2108,43 @@
     "date": "2010-10-29 10:48:21 +0900",
     "spec_version": "0.3",
     "source": ["https://github.com/takatoh/hws"]
+  },
+  {
+    "name": "Esoteric Code Interpreter",
+    "path": "csharp/rolisoft-esoteric",
+    "authors": ["Roland Bogosi"],
+    "languages": ["C#"],
+    "tags": ["interpreter", "disassembler"],
+    "date": "2010-10-11 09:33:25 +0300",
+    "spec_version": "0.2",
+    "source": ["https://github.com/RoliSoft/Esoteric-Code-Interpreter"],
+    "assembly": {
+      "instructions": {
+        "push": ["push"],
+        "dup": ["dup"],
+        "swap": ["swap"],
+        "drop": ["pop"],
+        "add": ["add"],
+        "sub": ["sub"],
+        "mul": ["mul"],
+        "div": ["div"],
+        "mod": ["mod"],
+        "store": ["store"],
+        "retrieve": ["retr"],
+        "label": ["label"],
+        "call": ["call"],
+        "jmp": ["jmp"],
+        "jz": ["jz"],
+        "jn": ["jn"],
+        "ret": ["ret"],
+        "end": ["exit"],
+        "printc": ["outchar"],
+        "printi": ["outnum"],
+        "readc": ["readchar"],
+        "readi": ["readnum"]
+      }
+    },
+    "notes": "Disassembles program trace, including escaped output. Also interprets Brainfuck (and Ook! and Spoon variants), Byter, and Befunge93 programs"
   },
   {
     "name": "whitespace-go",
