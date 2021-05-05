@@ -13,7 +13,7 @@ programming language.
 | [asm2ws](c/kspalaiologos-asm2ws)               | Kamila Szewczyk (Palaiologos) | C, Yacc | interpreter, JIT, assembler, disassembler, optimizer, programs | 2020-12-31 | 0.3 | [GitHub](https://github.com/kspalaiologos/asm2ws) |
 | [Spitewaste](ruby/collidedscope-spitewaste)    | Collided Scope   | Ruby       | assembler, compiler, programs, stdlib | 2020-12-11 | 0.3 with shell and eval | [GitHub](https://github.com/collidedscope/spitewaste) |
 | [Spiceweight](crystal/collidedscope-spiceweight) | Collided Scope | Crystal    | interpreter, benchmarking, programs | 2020-12-11 | 0.3 | [GitHub](https://github.com/collidedscope/spiceweight) |
-| [rustws](rust/luminight)                       | Luminight        | Rust       | interpreter, mapping, library | 2020-08-04 | 0.2 | [GitHub](https://github.com/Luminighty/rustws) |
+| [rustws](rust/luminight)                       | Luminight        | Rust       | library, mapping | 2020-08-04 | 0.2 | [GitHub](https://github.com/Luminighty/rustws) |
 | [Whitespace](javascript/kosei)                 | kosei28          | JavaScript | interpreter  | 2020-08-03 | 0.2 | [GitHub](https://github.com/kosei28/Whitespace) |
 | [SpaceMan](haskell/ft-spaceman)                | Frank Terbeck    | Haskell    | interpreter  | 2020-07-09 | 0.3 | [GitLab](https://gitlab.com/ft/spaceman), [GitHub](https://github.com/ft/spaceman), [bewatermyfriend.org](http://bewatermyfriend.org/p/2020/000/), [HN](https://news.ycombinator.com/item?id=24763312) |
 | [whitespace](cpp/ricardoluis)                  | Ricardo Luís Vaz Silva | C++  | interpreter  | 2020-06-03 | 0.3 | [GitHub](https://github.com/RicardoLuis0/whitespace) |

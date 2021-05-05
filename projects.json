@@ -110,13 +110,25 @@
     "path": "rust/luminight",
     "authors": ["Luminight"],
     "languages": ["Rust"],
-    "tags": ["interpreter", "mapping", "library"],
+    "tags": ["library", "mapping"],
     "date": "2020-08-04 15:04:18 +0200",
     "spec_version": "0.2",
     "source": ["https://github.com/Luminighty/rustws"],
     "mapping": { "space": "S", "tab": "T", "lf": "L", "spaces_between": false, "ignore_case": true },
-    "commands": [{ "build": "cargo build --release" }],
-    "notes": "No main() entry point. Mapping ignores lines prefixed with `--`."
+    "commands": [
+      {
+        "type": "library",
+        "bin": "librustws.rlib",
+        "build": "cargo build --release",
+        "notes": "No main() entry point"
+      },
+      {
+        "type": "mapping",
+        "bin": "wsconvert.py",
+        "usage": "$0 <FILE>",
+        "notes": "Converts from mapping to Whitespace and writes to a file. Ignores lines prefixed with `--`."
+      }
+    ]
   },
   {
     "name": "Whitespace",
@@ -478,6 +490,8 @@
     "features": { "precision": "fixed" },
     "commands": [
       {
+        "type": "compiler",
+        "bin": "nebula",
         "build_errors": "Requires LLVM, no go.mod",
         "options": [ ],
         "option_parse": "go",
@@ -1901,6 +1915,35 @@
     "source": ["https://github.com/faultier/albino"],
     "commands": [
       {
+        "bin": "albino",
+        "build": "cargo build --release",
+        "build_errors": "Needs many changes for latest Rust",
+        "options": [ ],
+        "option_parse": "manual"
+      },
+      {
+        "bin": "albino-run",
+        "build": "cargo build --release",
+        "build_errors": "Needs many changes for latest Rust",
+        "options": [ ],
+        "option_parse": "manual"
+      },
+      {
+        "bin": "albino-build",
+        "build": "cargo build --release",
+        "build_errors": "Needs many changes for latest Rust",
+        "options": [ ],
+        "option_parse": "manual"
+      },
+      {
+        "bin": "albino-exec",
+        "build": "cargo build --release",
+        "build_errors": "Needs many changes for latest Rust",
+        "options": [ ],
+        "option_parse": "manual"
+      },
+      {
+        "bin": "albino-gen",
         "build": "cargo build --release",
         "build_errors": "Needs many changes for latest Rust",
         "options": [ ],
