@@ -77,12 +77,18 @@ type Command struct {
 	BuildErrors string `json:"build_errors,omitempty"`
 	Usage       string `json:"usage,omitempty"`
 	Options     []struct {
-		Short   string      `json:"short,omitempty"` // -s
-		Long    string      `json:"long,omitempty"`  // --long
-		Arg     string      `json:"arg,omitempty"`
-		Default interface{} `json:"default,omitempty"`
-		Desc    string      `json:"desc,omitempty"`
+		Short       string      `json:"short,omitempty"` // -s
+		Long        string      `json:"long,omitempty"`  // --long
+		Arg         string      `json:"arg,omitempty"`
+		ArgRequired bool        `json:"arg_required,omitempty"`
+		Default     interface{} `json:"default,omitempty"`
+		Desc        string      `json:"desc,omitempty"`
+		Values      []struct {
+			Values []string `json:"values,omitempty"`
+			Desc   string   `json:"desc,omitempty"`
+		} `json:"values,omitempty"`
 	} `json:"options,omitempty"`
+	OptionParse string `json:"option_parse,omitempty"`
 	Subcommands []struct {
 		Name string `json:"name"`
 		Desc string `json:"desc,omitempty"`

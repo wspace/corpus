@@ -73,7 +73,7 @@ programming language.
 | [White++](cpp/marcellippmann-whitepp)          | Marcel Lippmann  | C++        | interpreter  | 2016-07-27 | 0.2 | [GitHub](https://github.com/marcellippmann/Whitepp) |
 | [whitespace-ruby](ruby/dwayne)                 | Dwayne R. Crooks | Python     | interpreter  | 2016-07-11 | 0.2 | [GitHub](https://github.com/dwayne/whitespace-ruby) |
 | [Whitespacers](rust/censoredusername-whitespacers) | CensoredUsername | Rust   | JIT, assembler, disassembler | 2016-06-19 | 0.3 | [GitHub](https://github.com/CensoredUsername/whitespace-rs) |
-| [whitespace](c/bvisness)                       | Ben Visness      | C, Yacc    | interpreter, syntax highlighting | 2016-05-20 | 0.3 | [GitHub](https://github.com/bvisness/whitespace) |
+| [whitespace](c/bvisness)                       | Ben Visness      | C, Yacc, TextMate | interpreter, syntax highlighting | 2016-05-20 | 0.3 | [GitHub](https://github.com/bvisness/whitespace) |
 | [Rust-Whitespace](rust/jayshua)                | Jayshua Nelson   | Rust       | interpreter  | 2016-05-08 | 0.2 | [GitHub](https://github.com/Jayshua/rust-whitespace) |
 | [whitespace-interpreter](javascript/kanra1412) | kanra1412        | JavaScript | interpreter  | 2016-04-29 | 0.3 | [GitHub](https://github.com/kanra1412/whitespace-interpreter) |
 | [whitespace-compiler](python/meand)            | Adam Dinwoodie   | Python     | assembler    | 2016-04-13 | 0.2 | [GitHub](https://github.com/me-and/whitespace-compiler) |
@@ -87,7 +87,7 @@ programming language.
 | [Whitespace](python/dalleng)                   | Diego Allen      | Python     | interpreter  | 2015-09-28 | 0.3 | [GitHub](https://github.com/dalleng/Whitespace) |
 | [Whitespace](javascript/therebelrobot)         | Aster Haven      | JavaScript | mapping      | 2015-09-09 | -   | [GitHub](https://github.com/therebelrobot/whitespace) |
 | [whitespacer](javascript/macocha-whitespacer)  | Maciej Siwek     | JavaScript/React | IDE, interpreter | 2015-09-04 | 0.3 | [GitHub](https://github.com/macocha/whitespacer) |
-| [Whitespace](c/rdebath)                        | Robert de Bath   | C, Lex     | compiler, interpreter, assembler, programs | 2015-08-18 | 0.3 | [GitHub](https://github.com/rdebath/whitespace) |
+| [Whitespace](c/rdebath)                        | Robert de Bath   | C, Lex     | transpiler, interpreter, assembler, programs | 2015-08-18 | 0.3 | [GitHub](https://github.com/rdebath/whitespace) |
 | [BlueSpace](python/smithers-bluespace)         | Christopher Smith | Python    | interpreter, compiler, assembler, optimizer, mapping, programs | 2015-08-13 | 0.3 | [GitHub](https://github.com/Smithers888/BlueSpace), [cpjsmith.uk](https://cpjsmith.uk/whitespace) |
 | [Cupertino-WhiteSpace-Interperter](cpp/frmsaul-cupertino) | Saul Fuhrmann | C++ | interpreter | 2015-05-22 | 0.3 | [GitHub](https://github.com/frmsaul/Cupertino-WhiteSpace-Interperter) |
 | [whitespace](python/mcolom)                    | Miguel Colom     | Python     | interpreter  | 2015-05-18 | 0.3 | [GitHub](https://github.com/mcolom/whitespace) |
@@ -101,7 +101,7 @@ programming language.
 | [whiteSpaceInterpreter](java/faurehu)          | Matias Faure     | Java       | interpreter, programs | 2015-01-29 | 0.3 | [GitHub](https://github.com/faurehu/whiteSpaceInterpreter) |
 | [Whitespace-Interpreter--C-](cpp/sudheesh)     | sudheesh4        | C++        | interpreter  | 2014-12-02 | 0.2 | [GitHub](https://github.com/sudheesh4/Whitespace-Interpreter-C-) |
 | [WhiteSpaceInterpreter](csharp/reflash)        | reflash          | C#         | interpreter  | 2014-11-21 | 0.3 | [GitHub](https://github.com/reflash-blog/WhiteSpaceInterpreter) |
-| [Whitespace](c/koturn)                         | koturn           | C          | interpreter, translator | 2014-11-08 | 0.3 | [GitHub](https://github.com/koturn/Whitespace) |
+| [Whitespace](c/koturn)                         | koturn           | C          | interpreter, translator, programs | 2014-11-08 | 0.3 | [GitHub](https://github.com/koturn/Whitespace) |
 | [whitespace.php](php/johankj)                  | Johan K. Jensen  | PHP        | interpreter  | 2014-11-01 | 0.2 | [GitHub](https://github.com/johankj/whitespace-interpreter-php) |
 | [wsm](php/igorw-wsm)                           | Igor Wiedler     | PHP        | assembler, programs | 2014-09-27 | 0.2 | [GitHub](https://github.com/igorw/wsm) |
 | [pyws](python/eizoassik-pyws)                  | Eizo Assik       | Python     | interpreter, assembler, disassembler | 2014-08-28 | 0.3 | [GitHub](https://github.com/EizoAssik/pyws) |
