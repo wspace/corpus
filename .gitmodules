@@ -69,7 +69,7 @@
 	url = https://github.com/malkiewiczm/whitespace_compiler
 [submodule "cpp/marcellippmann-whitepp"]
 	path = cpp/marcellippmann-whitepp
-	url = https://github.com/marcellippmann/Whitepp
+	url = https://github.com/wspace-lang/marcellippmann-whitepp
 [submodule "cpp/noia"]
 	path = cpp/noia
 	url = https://github.com/noia1/Whitespace-Interpreter

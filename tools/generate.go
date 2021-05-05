@@ -303,10 +303,11 @@ func getURLLabel(rawURL string) (string, error) {
 	if u.Hostname() == "web.archive.org" && strings.HasPrefix(u.Path, "/web/") {
 		path := strings.TrimPrefix(u.Path, "/web/")
 		if i := strings.IndexByte(path, '/'); i != -1 {
-			u, err = url.Parse(path[i+1:])
+			label, err := getURLLabel(path[i+1:])
 			if err != nil {
 				return "", err
 			}
+			return label + " (archive)", nil
 		}
 	}
 	host := strings.TrimPrefix(u.Hostname(), "www.")
