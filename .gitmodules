@@ -13,9 +13,6 @@
 [submodule "c/rdebath"]
 	path = c/rdebath
 	url = https://github.com/rdebath/whitespace
-[submodule "c/ryzheboka"]
-	path = c/ryzheboka
-	url = https://github.com/ryzheboka/Whitespace
 [submodule "c/sandeep"]
 	path = c/sandeep
 	url = https://github.com/Sandeep023/Whitespace
@@ -334,6 +331,9 @@
 [submodule "python/rumaxwell"]
 	path = python/rumaxwell
 	url = https://github.com/RuMaxwell/whitespace-interpreter
+[submodule "python/ryzheboka"]
+	path = python/ryzheboka
+	url = https://github.com/ryzheboka/Whitespace
 [submodule "python/smithers-bluespace"]
 	path = python/smithers-bluespace
 	url = https://github.com/Smithers888/BlueSpace

@@ -44,12 +44,21 @@ type Project struct {
 	Date        string   `json:"date"`
 	SpecVersion string   `json:"spec_version"`
 	Source      []string `json:"source"`
-	Features    struct {
-		Precision      string `json:"precision,omitempty"` // "arbitrary", "fixed", "int64", "int32", "int16", "int8", "float64", "float32"
+	Bounds      struct {
+		Precision      string      `json:"precision,omitempty"`
+		LabelPrecision string      `json:"label_precision,omitempty"` // usually the same as precision
+		StackCap       interface{} `json:"stack_cap,omitempty"`       // int or string
+		CallStackCap   interface{} `json:"call_stack_cap,omitempty"`  // int or string
+		HeapMin        interface{} `json:"heap_min,omitempty"`        // int or string
+		HeapMax        interface{} `json:"heap_max,omitempty"`        // int or string
+		HeapCap        interface{} `json:"heap_cap,omitempty"`        // int or string
+		LabelCap       interface{} `json:"label_cap,omitempty"`       // int or string
+		InstructionCap interface{} `json:"instruction_cap,omitempty"` // int or string
+	} `json:"bounds,omitempty"`
+	Behavior struct {
 		BufferedOutput bool   `json:"buffered_output,omitempty"`
-		NegativeHeap   bool   `json:"negative_heap,omitempty"`
-		EOFBehavior    string `json:"eof_behavior,omitempty"`
-	} `json:"features,omitempty"`
+		EOF            string `json:"eof,omitempty"`
+	} `json:"behavior,omitempty"`
 	Assembly *struct {
 		Instructions              map[Instruction][]string `json:"instructions,omitempty"`
 		CaseSensitiveInstructions bool                     `json:"case_sensitive_instructions,omitempty"`
@@ -71,12 +80,13 @@ type Project struct {
 }
 
 type Command struct {
-	Type        string `json:"type"`
-	Bin         string `json:"bin"`
-	Build       string `json:"build,omitempty"`
-	BuildErrors string `json:"build_errors,omitempty"`
-	Usage       string `json:"usage,omitempty"`
-	Options     []struct {
+	Type                string   `json:"type"`
+	Bin                 string   `json:"bin"`
+	InstallDependencies []string `json:"install_dependencies,omitempty"`
+	Build               string   `json:"build,omitempty"`
+	BuildErrors         string   `json:"build_errors,omitempty"`
+	Usage               string   `json:"usage,omitempty"`
+	Options             []struct {
 		Short       string      `json:"short,omitempty"` // -s
 		Long        string      `json:"long,omitempty"`  // --long
 		Arg         string      `json:"arg,omitempty"`

@@ -7,11 +7,16 @@ Build errors are included.
 
 - c/bvisness/whitespace `make`
 - c/koturn/whitespace.out `make`
+- c/kspalaiologos-asm2ws/wsi `./configure --with-target=release && make -j4 wsi`: bison syntax error
+- c/meth0dz/whitespace `gcc -O3 -Wall -o whitespace whitespace.c`
 - c/rdebath/blockquote `make`
 - c/rdebath/ws2c `make`
 - c/rdebath/wsa `make`
 - c/rdebath/wsa.sed: `i` flag is not recognized on macOS
 - c/rdebath/wsc.sh
+- c/sandeep/white `gcc -O3 -Wall -o white y.tab.c lex.yy.c`
+- c/strangepan-i-c-whitespace/whitespace `make`
+- c/threeifbywhiskey-satan/satan `make`
 - clojure/jmesyou-erasure/target/uberjar/erasure-2.0-standalone.jar `lein uberjar`: Parser namespace is clj-whitespace, not erasure
 - clojure/tsuyusato/target/whitespace-clj-0.1.0-SNAPSHOT-standalone.jar `lein uberjar`
 - cpp/abac-whint/whint `g++ -O3 -Wall -o whint whint.cpp`
@@ -35,13 +40,15 @@ Build errors are included.
 - cpp/tycho-whitespace-llvm/wspace-jit `make`: Requires LLVM
 - cpp/yuukiaria/bin/ws `mkdir -p bin && make TARGET=../bin/ws -C src`
 - csharp/littlebughunter-assembler/WhitespaceAssembler
-- go/andrewarchi-nebula/nebula: Requires LLVM, no go.mod
-- go/kinu/whitespace: No go.mod
-- go/technohippy/go-whitespace: No go.mod
-- go/tempxla-go-wspace/bin/go-wspace: No go.mod
-- go/yshr-wspacego/wspacego: No go.mod
+- go/andrewarchi-nebula/nebula `go mod init github.com/andrewarchi/nebula && go mod tidy && go build`: Requires LLVM
+- go/kinu/whitespace `go mod init github.com/kinu/whitespace && go build`
+- go/technohippy/go-whitespace: Go version is pre-go1
+- go/tempxla-go-wspace/bin/go-wspace `make`
+- go/yshr-wspacego/wspacego `go mod init github.com/135yshr/wspacego && go mod tidy && go build`
 - lolcode/akers/whitespace.lol
 - python/mikecat/whitespace.py
+- python/ryzheboka/wsCompiler.py
+- python/ryzheboka/wsInterpreter `gcc -O3 -Wall -o wsInterpreter wsInterpreter.c`
 - rust/censoredusername-whitespacers/target/release/wsc `cargo build --release`
 - rust/collidedscope-albus/target/release/albus `cargo build --release`
 - rust/faultier-albino/albino `cargo build --release`: Needs many changes for latest Rust

@@ -8,7 +8,7 @@
     "date": "2021-05-02 07:26:45 -0700",
     "spec_version": "0.3",
     "source": ["https://github.com/andrewarchi/wsjq"],
-    "features": { "precision": "float64" }
+    "bounds": { "precision": "float64" }
   },
   {
     "name": "Albus",
@@ -45,7 +45,7 @@
     "name": "asm2ws",
     "path": "c/kspalaiologos-asm2ws",
     "authors": ["Kamila Szewczyk (Palaiologos)"],
-    "languages": ["C", "Yacc"],
+    "languages": ["C", "Yacc", "Lex"],
     "tags": ["interpreter", "JIT", "assembler", "disassembler", "optimizer", "programs"],
     "date": "2020-12-31 22:37:25 +0100",
     "spec_version": "0.3",
@@ -83,6 +83,26 @@
       "label_ref_format": "%[A-Za-z_][A-Za-z0-9_]*",
       "extension": "asm"
     },
+    "commands": [
+      {
+        "bin": "wsi",
+        "build": "./configure --with-target=release && make -j4 wsi",
+        "build_errors": "bison syntax error",
+        "usage": "$0 [OPTIONS] <FILE>",
+        "options": [
+          { "short": "h", "long": "help", "desc": "display this screen." },
+          { "short": "d", "long": "disassemble", "desc": "disassemble the whitespace program." },
+          { "short": "c", "long": "cycles", "desc": "count operations made by the program." },
+          { "short": "a", "long": "aot", "desc": "build a C source file." },
+          { "short": "j", "long": "jit", "desc": "enable the JIT compiler." },
+          { "short": "m", "long": "masm", "desc": "run the macro assembler." },
+          { "short": "Os", "desc": "optimize for size." },
+          { "short": "Of", "desc": "optimize to produce fast code." }
+        ],
+        "option_parse": "manual",
+        "notes": "default operation: run whitespace code."
+      }
+    ],
     "notes": "Has various number formats and REP instruction"
   },
   {
@@ -487,12 +507,13 @@
     "date": "2019-06-05 23:59:44 -0700",
     "spec_version": "0.3",
     "source": ["https://github.com/andrewarchi/nebula"],
-    "features": { "precision": "fixed" },
+    "bounds": { "precision": "fixed" },
     "commands": [
       {
         "type": "compiler",
         "bin": "nebula",
-        "build_errors": "Requires LLVM, no go.mod",
+        "build": "go mod init github.com/andrewarchi/nebula && go mod tidy && go build",
+        "build_errors": "Requires LLVM",
         "options": [ ],
         "option_parse": "go",
         "notes": "TODO document options"
@@ -575,7 +596,17 @@
     "date": "2019-02-24 18:51:26 +0900",
     "spec_version": "0.2",
     "source": ["https://github.com/tempxla/go-wspace"],
-    "features": { "precision": "fixed" },
+    "bounds": {
+      "precision": "Go int",
+      "label_precision": "arbitrary",
+      "stack_cap": "unbounded",
+      "call_stack_cap": "unbounded",
+      "heap_min": "unbounded",
+      "heap_max": "unbounded",
+      "heap_cap": "unbounded",
+      "label_cap": "unbounded",
+      "instruction_cap": "unbounded"
+    },
     "assembly": {
       "instructions": {
         "push": ["psh"],
@@ -602,9 +633,7 @@
         "readi": ["rdn"]
       }
     },
-    "commands": [
-      { "type": "interpreter", "bin": "bin/go-wspace", "build_errors": "No go.mod", "usage": "$0 <FILE>" }
-    ],
+    "commands": [{ "type": "interpreter", "bin": "bin/go-wspace", "build": "make", "usage": "$0 <FILE>" }],
     "notes": "Assembly is only displayed when debugging"
   },
   {
@@ -720,14 +749,30 @@
   },
   {
     "name": "Whitespace compiler for 64-bit macOS",
-    "path": "c/ryzheboka",
+    "path": "python/ryzheboka",
     "authors": ["Elena Mokeeva"],
-    "languages": ["C", "Python"],
+    "languages": ["Python", "x86-64 NASM assembly", "C"],
     "tags": ["interpreter", "mapping"],
     "date": "2018-09-04 11:25:14 +0200",
-    "spec_version": "0.2 incomplete",
+    "spec_version": "0.2",
     "source": ["https://github.com/ryzheboka/Whitespace"],
     "mapping": { "space": "A", "tab": "B", "lf": "C", "spaces_between": false },
+    "commands": [
+      {
+        "type": "compiler",
+        "bin": "wsCompiler.py",
+        "install_dependencies": ["brew install nasm"],
+        "usage": "python3 wsCompiler.py <FILE> && nasm -fmacho64 <FILE_WITHOUT_EXTENSION>.asm && ld -o <FILE_WITHOUT_EXTENSION> <FILE_WITHOUT_EXTENSION>.o && ./<FILE_WITHOUT_EXTENSION>",
+        "notes": "Creates .asm file in the same directory as the .ws file"
+      },
+      {
+        "type": "interpreter",
+        "bin": "wsInterpreter",
+        "build": "gcc -O3 -Wall -o wsInterpreter wsInterpreter.c",
+        "usage": "$0 < <FILE>",
+        "notes": "Only implements push, dup, printc, and printi"
+      }
+    ],
     "notes": "FF and CR also grouped with LF in mapping"
   },
   {
@@ -759,7 +804,7 @@
     "date": "2018-04-15 21:35:34 -0600",
     "spec_version": "0.3",
     "source": ["https://github.com/andrewarchi/respace"],
-    "features": { "precision": "fixed" },
+    "bounds": { "precision": "fixed" },
     "commands": [{ "type": "interpreter", "bin": "respace", "build": "make", "usage": "$0 <FILE>" }],
     "notes": "Disassembler and bit packer are only available via code modification"
   },
@@ -839,10 +884,20 @@
     "path": "c/sandeep",
     "authors": ["Sandeep Varma"],
     "languages": ["C", "Yacc", "Lex"],
-    "tags": ["programs"],
+    "tags": ["interpreter", "programs"],
     "date": "2017-11-11 05:17:01 +0000",
     "spec_version": "0.3 incomplete",
-    "source": ["https://github.com/Sandeep023/Whitespace"]
+    "source": ["https://github.com/Sandeep023/Whitespace"],
+    "commands": [
+      {
+        "type": "interpreter",
+        "bin": "white",
+        "build": "gcc -O3 -Wall -o white y.tab.c lex.yy.c",
+        "usage": "$0",
+        "notes": "File is hardcoded to ./basic.ws"
+      }
+    ],
+    "notes": "Has git conflict markers remaining in source"
   },
   {
     "name": "Whitespace-interpreter",
@@ -863,7 +918,7 @@
     "date": "2017-06-05 09:34:24 -0400",
     "spec_version": "0.2",
     "source": ["https://github.com/benajmin/whitespace-interpreter"],
-    "features": { "precision": "fixed" },
+    "bounds": { "precision": "fixed" },
     "commands": [
       { "type": "interpreter", "bin": "WhitespaceInterpreter.out", "build": "make", "usage": "$0 <FILE>" }
     ]
@@ -1055,7 +1110,7 @@
     "date": "2016-06-19 01:53:07 +0200",
     "spec_version": "0.3",
     "source": ["https://github.com/CensoredUsername/whitespace-rs"],
-    "features": { "precision": "arbitrary" },
+    "bounds": { "precision": "arbitrary" },
     "assembly": {
       "instructions": {
         "push": ["push"],
@@ -1329,7 +1384,7 @@
     "date": "2015-12-31 17:35:38 +0100",
     "spec_version": "0.2",
     "source": ["https://github.com/abac00s/WHINT"],
-    "features": { "precision": "fixed" },
+    "bounds": { "precision": "fixed" },
     "commands": [
       {
         "type": "interpreter",
@@ -1567,8 +1622,7 @@
         "build": "g++ -O3 -o whitespace src/*.cpp",
         "usage": "$0 <FILE>"
       }
-    ],
-    "notes": "make fails because Makefile is named MakeFile and paths use backslash"
+    ]
   },
   {
     "name": "whitespace",
@@ -1598,7 +1652,18 @@
     "tags": ["interpreter"],
     "date": "2015-03-10 01:25:16 -0600",
     "spec_version": "0.3",
-    "source": ["https://github.com/StrangePan/I_C_Whitespace"]
+    "source": ["https://github.com/StrangePan/I_C_Whitespace"],
+    "bounds": {
+      "precision": "C int",
+      "stack_cap": 1028,
+      "call_stack_cap": 512,
+      "heap_min": 0,
+      "heap_max": "unbounded",
+      "heap_cap": 1024,
+      "label_cap": 512,
+      "instruction_cap": "unbounded"
+    },
+    "commands": [{ "type": "interpreter", "build": "make", "bin": "whitespace", "usage": "$0 <FILE>" }]
   },
   {
     "name": "whitespace-translater",
@@ -1664,7 +1729,16 @@
     "date": "2015-02-19 00:54:08 +0900",
     "spec_version": "0.3",
     "source": ["https://github.com/kinu/whitespace"],
-    "features": { "precision": "fixed" },
+    "bounds": {
+      "precision": "Go int",
+      "stack_cap": 20,
+      "call_stack_cap": 20,
+      "heap_min": 0,
+      "heap_max": "unbounded",
+      "heap_cap": "unbounded",
+      "label_cap": "unbounded",
+      "instruction_cap": "unbounded"
+    },
     "assembly": {
       "instructions": {
         "push": ["PUSH"],
@@ -1697,7 +1771,7 @@
       {
         "type": "interpreter",
         "bin": "whitespace",
-        "build_errors": "No go.mod",
+        "build": "go mod init github.com/kinu/whitespace && go build",
         "usage": "$0 <FILE>",
         "options": [
           { "short": "v", "long": "v", "desc": "verbose" },
@@ -2105,7 +2179,18 @@
     "tags": ["interpreter"],
     "date": "2014-03-03 16:03:49 -0500",
     "spec_version": "0.3",
-    "source": ["https://github.com/threeifbywhiskey/satan"]
+    "source": ["https://github.com/threeifbywhiskey/satan"],
+    "bounds": {
+      "precision": "C int",
+      "stack_cap": "unbounded",
+      "call_stack_cap": "unbounded",
+      "heap_min": "unbounded",
+      "heap_max": "unbounded",
+      "heap_cap": "unbounded",
+      "label_cap": "unbounded",
+      "instruction_cap": "unbounded"
+    },
+    "commands": [{ "type": "interpreter", "bin": "satan", "build": "make", "usage": "$0 <FILE>" }]
   },
   {
     "name": "python-whitespace",
@@ -2127,13 +2212,22 @@
     "date": "2013-12-27 19:29:40 -0800",
     "spec_version": "0.3",
     "source": ["https://github.com/135yshr/wspacego"],
-    "features": { "precision": "fixed" },
+    "bounds": {
+      "precision": "fixed",
+      "stack_cap": "unbounded",
+      "call_stack_cap": "unbounded",
+      "heap_min": "unbounded",
+      "heap_max": "unbounded",
+      "heap_cap": "unbounded",
+      "label_cap": "unbounded",
+      "instruction_cap": "unbounded"
+    },
     "mapping": { "space": "S", "tab": "T", "lf": "\n", "spaces_between": false },
     "commands": [
       {
         "type": "interpreter",
         "bin": "wspacego",
-        "build_errors": "No go.mod",
+        "build": "go mod init github.com/135yshr/wspacego && go mod tidy && go build",
         "usage": "$0 [-h] [run|disasm|char] <FILE>",
         "options": [{ "short": "h", "long": "h", "desc": "display this help and exit" }],
         "option_parse": "go",
@@ -2143,7 +2237,8 @@
           { "name": "char", "desc": "convert the program (space -> S, Tab -> T)" }
         ]
       }
-    ]
+    ],
+    "notes": "copy uses top of stack, not argument"
   },
   {
     "name": "wvm",
@@ -2174,7 +2269,7 @@
     "date": "2013-08-31 19:34:35 +0100",
     "spec_version": "0.3",
     "source": ["https://github.com/worktycho/whitespace-llvm"],
-    "features": { "precision": "arbitrary" },
+    "bounds": { "precision": "arbitrary" },
     "commands": [
       {
         "type": "compiler",
@@ -2206,7 +2301,7 @@
     "date": "2013-05-05 04:06:36 -0700",
     "spec_version": "0.3",
     "source": ["https://github.com/YuukiARIA/ws-interpreter"],
-    "features": { "precision": "fixed", "negative_heap": false },
+    "bounds": { "precision": "fixed", "heap_min": 0 },
     "commands": [
       {
         "type": "interpreter",
@@ -2268,7 +2363,7 @@
       "https://github.com/timvandermeij/whitespace-interpreter",
       "https://github.com/wspace-lang/timvandermeij-cpp"
     ],
-    "features": { "precision": "fixed", "negative_heap": false },
+    "bounds": { "precision": "fixed", "heap_min": 0 },
     "assembly": {
       "instructions": {
         "push": ["PUSH"],
@@ -2318,7 +2413,7 @@
     "date": "2012-12-29 00:19:16 -0500",
     "spec_version": "0.3",
     "source": ["https://github.com/knmorgan/ws"],
-    "features": { "precision": "arbitrary" }
+    "bounds": { "precision": "arbitrary" }
   },
   {
     "name": "Whitespace-Interpreter",
@@ -2414,7 +2509,7 @@
     "date": "2012-10-29 02:26:23 +0900",
     "spec_version": "0.3",
     "source": ["https://github.com/abcsharp/Whitespace"],
-    "features": { "precision": "fixed" },
+    "bounds": { "precision": "fixed" },
     "commands": [
       {
         "type": "interpreter",
@@ -2531,12 +2626,21 @@
     "date": "2010-10-08 03:12:01 +0900",
     "spec_version": "0.3",
     "source": ["https://github.com/technohippy/go-whitespace", "https://github.com/wspace-lang/go-whitespace"],
-    "features": { "precision": "fixed" },
+    "bounds": {
+      "precision": "Go int",
+      "stack_cap": 30000,
+      "call_stack_cap": 30000,
+      "heap_min": "unbounded",
+      "heap_max": "unbounded",
+      "heap_cap": "unbounded",
+      "label_cap": "unbounded",
+      "instruction_cap": 30000
+    },
     "commands": [
       {
         "type": "interpreter",
         "bin": "go-whitespace",
-        "build_errors": "No go.mod",
+        "build_errors": "Go version is pre-go1",
         "usage": "$0 [OPTIONS] <FILE>",
         "options": [{ "short": "d", "long": "d", "desc": "debug mode" }],
         "option_parse": "go"
@@ -2616,6 +2720,14 @@
     "source": [
       "http://www.rohitab.com/discuss/topic/35639-c-whitespace-interpreter/",
       "https://github.com/wspace-lang/meth0dz-c"
+    ],
+    "commands": [
+      {
+        "type": "interpreter",
+        "bin": "whitespace",
+        "build": "gcc -O3 -Wall -o whitespace whitespace.c",
+        "usage": "$0 <FILE>"
+      }
     ]
   },
   {
@@ -2723,7 +2835,7 @@
       "https://web.archive.org/web/20150717140342/http://compsoc.dur.ac.uk:80/whitespace/download.php",
       "https://web.archive.org/web/20141011193201/http://compsoc.dur.ac.uk/archives/whitespace/2004-May/000047.html"
     ],
-    "features": { "precision": "arbitrary" }
+    "bounds": { "precision": "arbitrary" }
   },
   {
     "name": "wsinterws",
@@ -2766,6 +2878,6 @@
     "date": "2002",
     "spec_version": "0.2",
     "source": ["https://web.archive.org/web/20150717140342/http://compsoc.dur.ac.uk:80/whitespace/download.php"],
-    "features": { "precision": "arbitrary" }
+    "bounds": { "precision": "arbitrary" }
   }
 ]
