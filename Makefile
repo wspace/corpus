@@ -1,7 +1,7 @@
 .PHONY: generate
 generate:
 	tools/format.sh
-	go run tools/generate.go
+	go run tools/generate/generate.go
 	tools/generate.sh
 
 .PHONY: init

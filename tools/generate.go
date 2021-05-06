@@ -1,38 +1,13 @@
-package main
+package tools
 
 import (
 	"fmt"
 	"net/url"
-	"os"
 	"regexp"
 	"strings"
-	"text/template"
 	"time"
 	"unicode/utf8"
-
-	"github.com/andrewarchi/browser/jsonutil"
 )
-
-func main() {
-	var projects []Project
-	try(jsonutil.DecodeFile("projects.json", &projects))
-	t, err := template.ParseFiles("README.md.tmpl")
-	try(err)
-	f, err := os.Create("README.md")
-	try(err)
-	var b strings.Builder
-	try(renderTable(&b, projects))
-	try(t.Execute(f, map[string]interface{}{
-		"projects": b.String(),
-	}))
-}
-
-func try(err error) {
-	if err != nil {
-		fmt.Fprintln(os.Stderr, err)
-		os.Exit(1)
-	}
-}
 
 type Project struct {
 	Name        string   `json:"name"`
@@ -192,7 +167,7 @@ func (inst *Instruction) UnmarshalText(text []byte) error {
 	return nil
 }
 
-func renderTable(b *strings.Builder, projects []Project) error {
+func RenderProjectTable(b *strings.Builder, projects []Project) error {
 	padding := []int{46, 16, 10, 12, 10, 3, 0}
 	head := []string{"Name", "Authors", "Languages", "Tags", "Date", "Spec", "Source"}
 	renderRow(b, padding, head, false)
