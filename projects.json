@@ -8,7 +8,8 @@
     "date": "2021-05-02 07:26:45 -0700",
     "spec_version": "0.3",
     "source": ["https://github.com/andrewarchi/wsjq"],
-    "bounds": { "precision": "float64" }
+    "bounds": { "precision": "float64" },
+    "commands": [{ "type": "interpreter", "bin": "wsjq", "usage": "$0 <FILE>" }]
   },
   {
     "name": "Albus",
@@ -29,7 +30,7 @@
     ]
   },
   {
-    "name": "whitespace.reb (Ren-C)",
+    "name": "Whitespace Intepreter",
     "path": "ren-c/hostilefork",
     "authors": ["Brian Dickens (Hostile Fork)"],
     "languages": ["Ren-C"],
@@ -468,6 +469,28 @@
     "notes": "Fork of vii5ard/whitespace"
   },
   {
+    "name": "WSC",
+    "path": "ocaml/jgkaplan-wsc",
+    "authors": ["Joshua Kaplan"],
+    "languages": ["OCaml"],
+    "tags": ["language", "programs"],
+    "date": "2019-07-04 02:09:08 -0400",
+    "spec_version": "0.3",
+    "source": ["https://github.com/jgkaplan/whitespaceTranspiler"],
+    "commands": [
+      {
+        "type": "language compiler",
+        "bin": "main.byte",
+        "install_dependencies": ["brew install opam", "opam init", "opam install ocamlbuild memhir"],
+        "build": "make",
+        "usage": "$0 <FILE>",
+        "options": [{ "short": "help", "long": "help", "desc": "Display this list of options" }],
+        "options_parse": "OCaml Arg",
+        "notes": "Writes output to <FILE_NO_EXT>.ws"
+      }
+    ]
+  },
+  {
     "name": "Marginal",
     "path": "haskell/jhmcstanton-marginal",
     "authors": ["Jim McStanton"],
@@ -515,7 +538,7 @@
         "build": "go mod init github.com/andrewarchi/nebula && go mod tidy && go build",
         "build_errors": "Requires LLVM",
         "options": [ ],
-        "option_parse": "go",
+        "option_parse": "Go flag",
         "notes": "TODO document options"
       }
     ]
@@ -743,15 +766,15 @@
     "spec_version": "0.2",
     "source": ["https://github.com/buyoh/nospace"],
     "commands": [
-      { "type": "other", "bin": "maicomp", "build": "make", "usage": "$0 < <FILE>" },
+      { "type": "language compiler", "bin": "maicomp", "build": "make", "usage": "$0 < <FILE>" },
       { "type": "interpreter", "bin": "vm/run.rb", "usage": "ruby $0 <FILE> [STDIN_FILE]" }
     ]
   },
   {
     "name": "Whitespace compiler for 64-bit macOS",
-    "path": "python/ryzheboka",
+    "path": "nasm/ryzheboka",
     "authors": ["Elena Mokeeva"],
-    "languages": ["Python", "x86-64 NASM assembly", "C"],
+    "languages": ["NASM", "Python", "C"],
     "tags": ["interpreter", "mapping"],
     "date": "2018-09-04 11:25:14 +0200",
     "spec_version": "0.2",
@@ -762,7 +785,7 @@
         "type": "compiler",
         "bin": "wsCompiler.py",
         "install_dependencies": ["brew install nasm"],
-        "usage": "python3 wsCompiler.py <FILE> && nasm -fmacho64 <FILE_WITHOUT_EXTENSION>.asm && ld -o <FILE_WITHOUT_EXTENSION> <FILE_WITHOUT_EXTENSION>.o && ./<FILE_WITHOUT_EXTENSION>",
+        "usage": "python3 wsCompiler.py <FILE> && nasm -fmacho64 <FILE_NO_EXT>.asm && ld -o <FILE_NO_EXT> <FILE_NO_EXT>.o && ./<FILE_NO_EXT>",
         "notes": "Creates .asm file in the same directory as the .ws file"
       },
       {
@@ -784,6 +807,24 @@
     "date": "2018-05-21 13:44:13 +0200",
     "spec_version": "0.3",
     "source": ["https://github.com/wrotycz/whitespace-interpreter"]
+  },
+  {
+    "name": "whitespace",
+    "path": "ruby/nishiwakki",
+    "authors": ["nishiwakki"],
+    "languages": ["Ruby"],
+    "tags": ["interpreter"],
+    "date": "2018-05-17 02:29:29 +0900",
+    "spec_version": "0.2",
+    "source": ["https://github.com/nishiwakki/whitespace"],
+    "commands": [
+      {
+        "type": "interpreter",
+        "bin": "whitespace.rb",
+        "usage": "ruby $0 <FILE>",
+        "notes": "Fails on Whitespace programs with comments"
+      }
+    ]
   },
   {
     "name": "space",
@@ -1266,6 +1307,25 @@
         "build": "make",
         "usage": "$0 [FILE]",
         "notes": "Reads from stdin, if no file is given"
+      }
+    ]
+  },
+  {
+    "name": "Abyad",
+    "path": "python/kareeeeem-abyad",
+    "authors": ["Mohammed Kareem"],
+    "languages": ["Python"],
+    "tags": ["interpreter", "program builder", "programs"],
+    "date": "2016-05-13 12:50:00 +0200",
+    "spec_version": "0.2",
+    "source": ["https://github.com/Kareeeeem/abyad"],
+    "commands": [
+      { "type": "interpreter", "bin": "src/__main__.py", "usage": "python2.7 $0 <FILE>" },
+      {
+        "type": "program builder",
+        "bin": "generate_programs",
+        "usage": "python2.7 $0",
+        "notes": "Generates programs in tests/ from definitions in tests/programs.py"
       }
     ]
   },
@@ -1780,7 +1840,7 @@
           { "short": "v", "long": "v", "desc": "verbose" },
           { "short": "dry_run", "long": "dry_run", "desc": "dry run" }
         ],
-        "option_parse": "go"
+        "option_parse": "Go flag"
       }
     ]
   },
@@ -2099,6 +2159,25 @@
     "source": ["https://github.com/azige/whitespace-interpreter"]
   },
   {
+    "name": "wsint",
+    "path": "masm/jarsp-wsint",
+    "authors": ["jarsp"],
+    "languages": ["MASM"],
+    "tags": ["interpreter"],
+    "date": "2014-06-01 19:15:40 +0800",
+    "spec_version": "0.3",
+    "source": ["https://github.com/jarsp/wsint"],
+    "commands": [
+      {
+        "type": "interpreter",
+        "bin": "wsint",
+        "build_errors": "Requires Visual Studio",
+        "usage": "$0",
+        "notes": "File is hardcoded to ./script.ws"
+      }
+    ]
+  },
+  {
     "name": "white",
     "path": "cpp/keirua-white",
     "authors": ["Keirua"],
@@ -2196,6 +2275,17 @@
     "commands": [{ "type": "interpreter", "bin": "satan", "build": "make", "usage": "$0 <FILE>" }]
   },
   {
+    "name": "Whitespace Covert Channel",
+    "path": "php/jseidl-wcc",
+    "authors": ["Jan Seidl"],
+    "languages": ["PHP"],
+    "tags": ["text to Whitespace", "web service"],
+    "date": "2014-02-18 17:13:16 -0300",
+    "spec_version": "0.2",
+    "source": ["https://github.com/jseidl/whitespace"],
+    "notes": "HTTP service that converts text to a sequence of push and printc instructions that produce the same text"
+  },
+  {
     "name": "python-whitespace",
     "path": "python/mikecat",
     "authors": ["みけCAT (MikeCAT)"],
@@ -2233,7 +2323,7 @@
         "build": "go mod init github.com/135yshr/wspacego && go mod tidy && go build",
         "usage": "$0 [-h] [run|disasm|char] <FILE>",
         "options": [{ "short": "h", "long": "h", "desc": "display this help and exit" }],
-        "option_parse": "go",
+        "option_parse": "Go flag",
         "subcommands": [
           { "name": "run", "desc": "run the program" },
           { "name": "disasm", "desc": "disassemble the program" },
@@ -2646,12 +2736,12 @@
         "build_errors": "Go version is pre-go1",
         "usage": "$0 [OPTIONS] <FILE>",
         "options": [{ "short": "d", "long": "d", "desc": "debug mode" }],
-        "option_parse": "go"
+        "option_parse": "Go flag"
       }
     ]
   },
   {
-    "name": "whitespace.reb",
+    "name": "Whitespace Intepreter",
     "path": "rebol/hostilefork",
     "authors": ["Brian Dickens (Hostile Fork)"],
     "languages": ["Rebol"],

@@ -31,6 +31,7 @@ programming language.
 | [whitespace_compiler](cpp/malkiewiczm)         | Michael Malkiewicz | C++, Yacc, Lex | language, programs | 2019-10-20 | 0.2 | [GitHub](https://github.com/malkiewiczm/whitespace_compiler) |
 | [Whitespace UnC](python/ilikepython256-whitespace-unc) | Python Whiz 256 | Python | assembler, web client, programs | 2019-09-24 | 0.3 | [GitHub](https://github.com/ILikePython256/Whitespace_UnC) |
 | [zerospace-lang](javascript/loklaan-zerowidth-lang) | Lochlan Bunn | JavaScript | interpreter, mapping | 2019-07-25 | 0.3 | [GitHub](https://github.com/loklaan/zerowidth-lang) |
+| [WSC](ocaml/jgkaplan-wsc)                      | Joshua Kaplan    | OCaml      | language, programs | 2019-07-04 | 0.3 | [GitHub](https://github.com/jgkaplan/whitespaceTranspiler) |
 | [Marginal](haskell/jhmcstanton-marginal)       | Jim McStanton    | Haskell, Yacc | interpreter | 2019-06-28 | 0.2 | [GitHub](https://github.com/jhmcstanton/marginal) |
 | [Eso](scala/dashlambda-eso)                    | Dash-Lambda      | Scala      | interpreter, assembler | 2019-06-19 | 0.2 | [GitHub](https://github.com/Dash-Lambda/Eso) |
 | [baudelaire-whitespace](python/qwhxm-baudelaire) | Marek Tomáštík | Python     | web service, programs | 2019-06-08 | 0.3 | [GitHub](https://github.com/qwhxm/baudelaire-whitespace) |
@@ -46,7 +47,7 @@ programming language.
 | [whitespace](python/ahl27)                     | Aidan Lakshman   | Python     | interpreter, text to Whitespace | 2018-11-08 | 0.3 | [GitHub](https://github.com/ahl27/whitespace) |
 | [Whitespace-Compiler](java/wysang)             | wysang           | Java, ANTLR4 | grammar, incomplete | 2018-10-21 | 0.3 incomplete | [GitHub](https://github.com/wysang/Whitespace-Compiler) |
 | [nospace](cpp/buyoh-nospace)                   | 舞葉 (Mai Buyoh)   | C++, Ruby  | language, interpreter, programs | 2018-09-05 | 0.2 | [GitHub](https://github.com/buyoh/nospace) |
-| [Whitespace compiler for 64-bit macOS](python/ryzheboka) | Elena Mokeeva | Python, x86-64 NASM assembly, C | interpreter, mapping | 2018-09-04 | 0.2 | [GitHub](https://github.com/ryzheboka/Whitespace) |
+| [Whitespace compiler for 64-bit macOS](nasm/ryzheboka) | Elena Mokeeva | NASM, Python, C | interpreter, mapping | 2018-09-04 | 0.2 | [GitHub](https://github.com/ryzheboka/Whitespace) |
 | [whitespace-interpreter](java/wrotycz)         | Kamil Węglarz    | Java       | interpreter  | 2018-05-21 | 0.3 | [GitHub](https://github.com/wrotycz/whitespace-interpreter) |
 | [space](kotlin/ze-space)                       | Zakaria Elkatani | Kotlin     | interpreter  | 2018-04-21 | 0.3 | [GitHub](https://github.com/ze/space) |
 | [Respace](cpp/andrewarchi-respace)             | Andrew Archibald | C++        | interpreter, disassembler, bit packing, programs | 2018-04-15 | 0.3 | [GitHub](https://github.com/andrewarchi/respace) |
@@ -109,6 +110,7 @@ programming language.
 | [Whitespace-LLVM](cpp/subv-whitespace-llvm)    | Sebastian Valle  | C++, LLVM  | interpreter  | 2014-07-16 | 0.3 | [GitHub](https://github.com/Subv/Whitespace-LLVM) |
 | [Whitebase](rust/faultier-whitebase)           | Taro Sako        | Rust       | interpreter, bytecode, Brainfuck to Whitespace, library | 2014-07-15 | 0.3 | [GitHub](https://github.com/faultier/whitebase) |
 | [whitespace-interpreter](java/azige)           | Azige            | Java       | language, interpreter | 2014-06-18 | 0.3 | [GitHub](https://github.com/azige/whitespace-interpreter) |
+| [wsint](masm/jarsp-wsint)                      | jarsp            | MASM       | interpreter  | 2014-06-01 | 0.3 | [GitHub](https://github.com/jarsp/wsint) |
 | [white](cpp/keirua-white)                      | Keirua           | C++        | interpreter, disassembler | 2014-05-30 | 0.3 | [GitHub](https://github.com/Keirua/whitespace) |
 | [Kairos](java/vyo-kairos)                      | Manu Weidmann    | Java       | interpreter, assembler, arbitrary precision, programs | 2014-05-10 | 0.3 | [GitHub](https://github.com/vyo/kairos) |
 | [elixir-whitespace](elixir/quinnwilton)        | Quinn Wilton     | Elixir     | interpreter  | 2014-03-07 | 0.3 | [GitHub](https://github.com/QuinnWilton/elixir-whitespace) |

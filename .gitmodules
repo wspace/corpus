@@ -256,6 +256,15 @@
 [submodule "lua/vyo-callisto"]
 	path = lua/vyo-callisto
 	url = https://github.com/vyo/callisto
+[submodule "masm/jarsp-wsint"]
+	path = masm/jarsp-wsint
+	url = https://github.com/jarsp/wsint
+[submodule "nasm/ryzheboka"]
+	path = nasm/ryzheboka
+	url = https://github.com/ryzheboka/Whitespace
+[submodule "ocaml/jgkaplan-wsc"]
+	path = ocaml/jgkaplan-wsc
+	url = https://github.com/jgkaplan/whitespaceTranspiler
 [submodule "perl/ephphatha-wsm2ws"]
 	path = perl/ephphatha-wsm2ws
 	url = https://github.com/ephphatha/wsm2ws
@@ -265,6 +274,9 @@
 [submodule "php/johankj"]
 	path = php/johankj
 	url = https://github.com/johankj/whitespace-interpreter-php
+[submodule "php/jseidl-wcc"]
+	path = php/jseidl-wcc
+	url = https://github.com/jseidl/whitespace
 [submodule "php/nobody1986"]
 	path = php/nobody1986
 	url = https://github.com/nobody1986/whitespace-php
@@ -310,6 +322,9 @@
 [submodule "python/ilikepython256-whitespace-unc"]
 	path = python/ilikepython256-whitespace-unc
 	url = https://github.com/ILikePython256/Whitespace_UnC
+[submodule "python/kareem-abyad"]
+	path = python/kareeeeem-abyad
+	url = https://github.com/Kareeeeem/abyad
 [submodule "python/maximegoyette"]
 	path = python/maximegoyette
 	url = https://github.com/MaximeGoyette/whitespace_interpreter
@@ -331,9 +346,6 @@
 [submodule "python/rumaxwell"]
 	path = python/rumaxwell
 	url = https://github.com/RuMaxwell/whitespace-interpreter
-[submodule "python/ryzheboka"]
-	path = python/ryzheboka
-	url = https://github.com/ryzheboka/Whitespace
 [submodule "python/smithers-bluespace"]
 	path = python/smithers-bluespace
 	url = https://github.com/Smithers888/BlueSpace
@@ -364,6 +376,9 @@
 [submodule "ruby/dwayne"]
 	path = ruby/dwayne
 	url = https://github.com/dwayne/whitespace-ruby
+[submodule "ruby/nishiwakki"]
+	path = ruby/nishiwakki
+	url = https://github.com/nishiwakki/whitespace
 [submodule "ruby/pocke-akaza"]
 	path = ruby/pocke-akaza
 	url = https://github.com/pocke/akaza
