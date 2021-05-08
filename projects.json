@@ -4,7 +4,7 @@
     "path": "jq/andrewarchi-wsjq",
     "authors": ["Andrew Archibald"],
     "languages": ["jq"],
-    "tags": ["interpreter"],
+    "tags": ["interpreter", "debugger", "disassembler"],
     "date": "2021-05-02 07:26:45 -0700",
     "spec_version": "0.3",
     "source": ["https://github.com/andrewarchi/wsjq"],
@@ -485,7 +485,7 @@
         "build": "make",
         "usage": "$0 <FILE>",
         "options": [{ "short": "help", "long": "help", "desc": "Display this list of options" }],
-        "options_parse": "OCaml Arg",
+        "option_parse": "OCaml Arg",
         "notes": "Writes output to <FILE_NO_EXT>.ws"
       }
     ]
@@ -2838,7 +2838,7 @@
     "path": "cpp/pavelshub",
     "authors": ["Pavel Shub"],
     "languages": ["C++"],
-    "tags": ["interpreter", "disassembler", "mapping"],
+    "tags": ["interpreter", "debugger", "disassembler", "mapping"],
     "date": "2007-05-26 17:19:24",
     "spec_version": "0.3",
     "source": [
