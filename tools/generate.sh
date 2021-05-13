@@ -35,6 +35,6 @@ jq -r '
   "- \($p.path)"
   + if .bin!=null then "/\(.bin)" else "" end
   + if .build!=null then " `\(.build//"")`" else "" end
-  + if .build_errors!=null then ": \(.build_errors//"")" else "" end
+  + if .build_errors!=null then ": ⚠️ \(.build_errors//"")" else "" end
 ] | sort[]
 ' projects.json >> building.md
