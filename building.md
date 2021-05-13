@@ -45,12 +45,16 @@ Build errors are included.
 - go/technohippy/go-whitespace: Go version is pre-go1
 - go/tempxla-go-wspace/bin/go-wspace `make`
 - go/yshr-wspacego/wspacego `go mod init github.com/135yshr/wspacego && go mod tidy && go build`
+- jq/andrewarchi-wsjq/wsjq
 - lolcode/akers/whitespace.lol
 - masm/jarsp-wsint/wsint: Requires Visual Studio
 - nasm/ryzheboka/wsCompiler.py
 - nasm/ryzheboka/wsInterpreter `gcc -O3 -Wall -o wsInterpreter wsInterpreter.c`
 - ocaml/jgkaplan-wsc/main.byte `make`
+- python/kareeeeem-abyad/generate_programs
+- python/kareeeeem-abyad/src/__main__.py
 - python/mikecat/whitespace.py
+- ruby/nishiwakki/whitespace.rb
 - rust/censoredusername-whitespacers/target/release/wsc `cargo build --release`
 - rust/collidedscope-albus/target/release/albus `cargo build --release`
 - rust/faultier-albino/albino `cargo build --release`: Needs many changes for latest Rust

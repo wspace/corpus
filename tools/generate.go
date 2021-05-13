@@ -86,6 +86,7 @@ type Command struct {
 	Build               string   `json:"build,omitempty"`
 	BuildErrors         string   `json:"build_errors,omitempty"`
 	Usage               string   `json:"usage,omitempty"`
+	Output              string   `json:"output,omitempty"`
 	Options             []struct {
 		Short       string      `json:"short,omitempty"` // -s
 		Long        string      `json:"long,omitempty"`  // --long
