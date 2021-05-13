@@ -9,7 +9,21 @@
     "spec_version": "0.3",
     "source": ["https://github.com/andrewarchi/wsjq"],
     "bounds": { "precision": "float64" },
-    "commands": [{ "type": "interpreter", "bin": "wsjq", "usage": "$0 <file>" }]
+    "commands": [
+      {
+        "type": "interpreter",
+        "bin": "wsjq",
+        "usage": "$0 [<mode>] <file>",
+        "options": [{ "short": "h", "long": "help", "desc": "Show usage" }],
+        "option_parse": "manual",
+        "subcommands": [
+          { "name": "run", "desc": "Run the program (default)" },
+          { "name": "debug", "desc": "Run the program in the debugger" },
+          { "name": "disasm", "desc": "Disassemble the program" },
+          { "name": "help", "desc": "Show usage" }
+        ]
+      }
+    ]
   },
   {
     "name": "Albus",
