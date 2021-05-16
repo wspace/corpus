@@ -7,12 +7,11 @@ Build errors are included.
 
 - c/bvisness/whitespace `make`
 - c/koturn/whitespace.out `make`
-- c/kspalaiologos-asm2ws/wsi `./configure --with-target=release && make -j4 wsi`: ⚠️ bison syntax error
+- c/kspalaiologos-asm2ws/wsi `./configure --with-target=release && make -j4 wsi`
 - c/meth0dz/whitespace `gcc -O3 -Wall -o whitespace whitespace.c`
-- c/rdebath/blockquote `make`
 - c/rdebath/ws2c `make`
 - c/rdebath/wsa `make`
-- c/rdebath/wsa.sed: ⚠️ `i` flag is not recognized on macOS
+- c/rdebath/wsa.sed
 - c/rdebath/wsc.sh
 - c/sandeep/white `gcc -O3 -Wall -o white y.tab.c lex.yy.c`
 - c/strangepan-i-c-whitespace/whitespace `make`
@@ -23,11 +22,13 @@ Build errors are included.
 - cpp/abcsharp/wsi `g++ -O3 -Wall -std=c++11 -o wsi whitespace/main.cpp`
 - cpp/andrewarchi-respace/respace `make`
 - cpp/benajmin/WhitespaceInterpreter.out `make`
-- cpp/buyoh-nospace/maicomp `make`
+- cpp/buyoh-nospace/maicomp `make release`
 - cpp/buyoh-nospace/vm/run.rb
 - cpp/dpohanlon-wsint/bin/wsInt `make`
 - cpp/frmsaul-cupertino/whitespace `g++ -O3 -o whitespace src/*.cpp`
 - cpp/keirua-white/white `g++ -O3 -Wall -o white main.cpp`
+- cpp/knmorgan/ws `make CXXFLAGS='-Wall -pedantic -O3'`
+- cpp/malkiewiczm/compile `make`
 - cpp/marcellippmann-whitepp/bin/White++ `make`
 - cpp/noia/ws `g++ -O3 -Wall -Werror -o ws Lexer.cc Parser.cc`
 - cpp/pavelshub/wspace `g++ -O3 -Wall -o wspace wspace.cpp`

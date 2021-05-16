@@ -67,7 +67,9 @@ type Command struct {
 		Long        string      `json:"long,omitempty"`  // --long
 		Arg         string      `json:"arg,omitempty"`
 		ArgRequired bool        `json:"arg_required,omitempty"`
+		Type        string      `json:"type,omitempty"`
 		Default     interface{} `json:"default,omitempty"`
+		Min         interface{} `json:"min,omitempty"`
 		Desc        string      `json:"desc,omitempty"`
 		Values      []struct {
 			Values []string `json:"values,omitempty"`
@@ -258,6 +260,8 @@ var domainLabels = map[string]string{
 	"news.ycombinator.com":       "HN",
 	"codegolf.stackexchange.com": "Code Golf",
 	"code.activestate.com":       "ActiveState Code",
+	"pastebin.com":               "Pastebin",
+	"whitespace.pastebin.com":    "Pastebin",
 	"compsoc.dur.ac.uk":          "CompSoc",
 	"cs.newcastle.edu.au":        "Newcastle",
 	"what.thedailywtf.com":       "What the Daily WTF?",

@@ -101,8 +101,8 @@
     "commands": [
       {
         "bin": "wsi",
+        "install_dependencies": ["brew install flex bison"],
         "build": "./configure --with-target=release && make -j4 wsi",
-        "build_errors": "bison syntax error",
         "usage": "$0 [-h | --help] [-d | --disassemble] [-c | --cycles] [-a | --aot] [-j | --jit] [-m | --masm] [-Os] [-Of] <file>",
         "options": [
           { "short": "h", "long": "help", "desc": "display this screen." },
@@ -436,6 +436,21 @@
     "date": "2019-10-20",
     "spec_version": "0.2",
     "source": ["https://github.com/malkiewiczm/whitespace_compiler"],
+    "commands": [
+      {
+        "type": "language compiler",
+        "bin": "compile",
+        "install_dependencies": ["brew install flex bison"],
+        "build": "make",
+        "usage": "$0 [-h] [-a] [-i] <file>",
+        "options": [
+          { "short": "h", "desc": "show this help" },
+          { "short": "a", "desc": "include annotations in compiler output" },
+          { "short": "i", "desc": "include debug instructions in compiler output" }
+        ],
+        "option_parse": "manual"
+      }
+    ],
     "notes": "Creation date mentioned in README"
   },
   {
@@ -788,7 +803,7 @@
     "spec_version": "0.2",
     "source": ["https://github.com/buyoh/nospace"],
     "commands": [
-      { "type": "language compiler", "bin": "maicomp", "build": "make", "usage": "$0 < <file>" },
+      { "type": "language compiler", "bin": "maicomp", "build": "make release", "usage": "$0 < <file>" },
       { "type": "interpreter", "bin": "vm/run.rb", "usage": "ruby $0 <file> [<stdin_file>]" }
     ]
   },
@@ -1217,6 +1232,7 @@
             "short": "f",
             "long": "format",
             "arg": "FORMAT",
+            "type": "enum",
             "desc": "Input file format. The default is plain whitespace. Options are:",
             "values": [
               { "values": ["ws", "whitespace"], "desc": "Plain whitespace." },
@@ -1230,18 +1246,21 @@
             "short": "i",
             "long": "input",
             "arg": "INFILE",
+            "type": "string",
             "desc": "File to read input from (defaults to stdin)"
           },
           {
             "short": "o",
             "long": "output",
             "arg": "OUTFILE",
+            "type": "string",
             "desc": "File to write output to (defaults to stdout)"
           },
           {
             "short": "e",
             "long": "execute",
             "arg": "STRATEGY",
+            "type": "enum",
             "desc": "Execute the file using specific settings. This is the default using the precompiled setting. Options are as following:",
             "values": [
               {
@@ -1289,6 +1308,7 @@
             "short": "d",
             "long": "dump",
             "arg": "DUMPFILE",
+            "type": "string",
             "desc": "Just compiles the program into assembly and dumps the result into a file. This is mainly for debugging."
           },
           { "short": "p", "long": "perf", "desc": "Prints performance information to stdout." },
@@ -1634,20 +1654,10 @@
       {
         "type": "assembler",
         "bin": "wsa.sed",
-        "build_errors": "`i` flag is not recognized on macOS",
+        "install_dependencies": ["brew install gnu-sed"],
         "usage": "sed -f $0 <file>",
         "output": "stdout",
-        "notes": "Assembles Oliver Burghard's Whitespace assembly dialect, including shorthand instructions."
-      },
-      {
-        "type": "other",
-        "bin": "blockquote",
-        "build": "make",
-        "usage": "$0 [-f] [--] [<file> | -]...",
-        "output": "stdout",
-        "options": [{ "short": "f" }],
-        "option_parse": "manual",
-        "notes": "Formats the contents of a file as a C string"
+        "notes": "Assembles Oliver Burghard's Whitespace assembly dialect, including shorthand instructions"
       }
     ],
     "notes": "Transpiles to C. Supports non-standard instructions: jzp, jzn, jp, jnz, ifoption, endoption, include, debug_printheap, and debug_printstack. The input assembly dialects of wsa and wsa.sed, as well as the output C function calls, are combined in .assembly.instructions. Has tests directory contains Whitespace programs from many authors."
@@ -1972,6 +1982,7 @@
             "long": "output",
             "arg": "file",
             "arg_required": true,
+            "type": "string",
             "desc": "Specify output filename"
           },
           { "short": "t", "long": "translate", "desc": "Translate Whitespace to C source code" }
@@ -2433,9 +2444,23 @@
         "build": "mkdir -p bin && make TARGET=../bin/ws -C src",
         "usage": "$0 [-v <size>] [-c <size>] [-h <size>] <file>",
         "options": [
-          { "short": "v", "arg": "size", "default": 256, "desc": "value stack size (greater than 0)" },
-          { "short": "c", "arg": "size", "default": 256, "desc": "call stack size (greater than 0)" },
-          { "short": "h", "arg": "size", "default": 2048, "desc": "heap size (greater than 0)" }
+          {
+            "short": "v",
+            "arg": "size",
+            "type": "C++ int",
+            "default": 256,
+            "min": 1,
+            "desc": "value stack size"
+          },
+          {
+            "short": "c",
+            "arg": "size",
+            "type": "C++ int",
+            "default": 256,
+            "min": 1,
+            "desc": "call stack size"
+          },
+          { "short": "h", "arg": "size", "type": "C++ int", "default": 2048, "min": 1, "desc": "heap size" }
         ],
         "option_parse": "manual"
       }
@@ -2537,7 +2562,28 @@
     "date": "2012-12-29 00:19:16 -0500",
     "spec_version": "0.3",
     "source": ["https://github.com/knmorgan/ws"],
-    "bounds": { "precision": "arbitrary" }
+    "bounds": { "precision": "arbitrary" },
+    "commands": [
+      {
+        "type": "interpreter",
+        "bin": "ws",
+        "install_dependencies": ["brew install gmp"],
+        "build": "make CXXFLAGS='-Wall -pedantic -O3'",
+        "usage": "$0 [-v | --version] [-h | --help] [-s <size> | --stack-size <size>] <file>",
+        "options": [
+          { "short": "v", "long": "version", "desc": "Print version and copyright" },
+          { "short": "h", "long": "help", "desc": "Print usage" },
+          {
+            "short": "s",
+            "long": "stack-size",
+            "arg": "size",
+            "type": "C++ unsigned long",
+            "default": 1000000,
+            "desc": "Set stack limit"
+          }
+        ]
+      }
+    ]
   },
   {
     "name": "Whitespace-Interpreter",
