@@ -1,0 +1,15 @@
+#!/bin/bash -e
+
+# Write to file, only if changed
+
+if [ $# -ne 1 ]; then
+  echo "usage: $0 <file>" && exit 2
+fi
+file="$1"
+
+cat > "$file"~
+if diff -q "$file"{,~} > /dev/null; then
+  rm "$file"~
+else
+  mv "$file"{~,}
+fi
