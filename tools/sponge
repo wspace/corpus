@@ -7,9 +7,13 @@ if [ $# -ne 1 ]; then
 fi
 file="$1"
 
-cat > "$file"~
-if diff -q "$file"{,~} > /dev/null; then
-  rm "$file"~
+if [ -f "$file" ]; then
+  cat > "$file"~
+  if diff -q "$file"{,~} > /dev/null; then
+    rm "$file"~
+  else
+    mv "$file"{~,}
+  fi
 else
-  mv "$file"{~,}
+  cat > "$file"
 fi

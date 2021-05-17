@@ -8,11 +8,22 @@
 "Build errors are included.",
 "",
 (
-  [
-    .[] | . as $p | .commands[]? |
-    "- \($p.path)"
-    + if .bin!=null then "/\(.bin)" else "" end
-    + if .build!=null then " `\(.build//"")`" else "" end
-    + if .build_errors!=null then ": ⚠️ \(.build_errors//"")" else "" end
-  ] | sort[]
+  map(.name = (.path // "“\(.name)” by " + (.authors|join(", ")))) |
+  sort_by(.name)[] |
+  .name as $name |
+  .commands |
+  def ok: .bin!=null and .build_errors==null;
+  def status: if . then "" else "⚠️ " end;
+  def fmt:
+    (.bin // "*unspecified*") +
+    if .build!=null or .build_errors!=null then ":" else "" end +
+    if .build!=null then " `\(.build)`" else "" end +
+    if .build_errors!=null then " \(.build_errors)" else "" end;
+  if length == 0 then "- ❌ \($name)"
+  elif length == 1 then
+    .[0] | "- \(ok | status)\($name)/" + fmt
+  else
+    "- \(all(ok) | status)\($name):",
+    (sort_by(.bin)[] | "  - \(ok | status)" + fmt)
+  end
 )

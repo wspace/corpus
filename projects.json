@@ -327,7 +327,6 @@
   },
   {
     "name": "Whitespace Interpreter in JavaScript",
-    "path": "",
     "authors": ["Arnauld"],
     "languages": ["JavaScript"],
     "tags": ["interpreter"],
@@ -2836,7 +2835,6 @@
   },
   {
     "name": "HaPyLi",
-    "path": "",
     "authors": ["Huf Lungdung"],
     "languages": ["Python"],
     "tags": ["language", "interpreter"],
@@ -2906,7 +2904,6 @@
   },
   {
     "name": "wspace",
-    "path": "",
     "authors": ["hogelog"],
     "languages": ["C++"],
     "tags": ["interpreter"],
@@ -2998,8 +2995,7 @@
     ]
   },
   {
-    "name": "wspace",
-    "path": "",
+    "name": "wspace 0.3",
     "authors": ["Edwin Brady"],
     "languages": ["Haskell", "Emacs Lisp"],
     "tags": ["interpreter", "syntax highlighting", "programs"],
@@ -3013,7 +3009,6 @@
   },
   {
     "name": "wsinterws",
-    "path": "",
     "authors": ["Oliver Burghard"],
     "languages": ["Whitespace"],
     "tags": ["interpreter"],
@@ -3027,7 +3022,6 @@
   },
   {
     "name": "whitespace-ruby",
-    "path": "",
     "authors": ["Wayne E. Conrad"],
     "languages": ["Ruby"],
     "tags": ["interpreter"],
@@ -3037,7 +3031,6 @@
   },
   {
     "name": "whitespace.pl",
-    "path": "",
     "authors": ["Mike Kölbl"],
     "languages": ["Perl"],
     "tags": ["interpreter"],
@@ -3047,7 +3040,6 @@
   },
   {
     "name": "wsa",
-    "path": "",
     "authors": ["Oliver Burghard"],
     "languages": ["Haskell"],
     "tags": ["assembler"],
@@ -3062,7 +3054,6 @@
   },
   {
     "name": "wsintercpp",
-    "path": "",
     "authors": ["Oliver Burghard"],
     "languages": ["C++"],
     "tags": ["interpreter"],
@@ -3076,8 +3067,7 @@
     "notes": "Supports non-standard instructions"
   },
   {
-    "name": "wspace",
-    "path": "",
+    "name": "wspace 0.2",
     "authors": ["Edwin Brady"],
     "languages": ["Haskell"],
     "tags": ["interpreter", "programs"],

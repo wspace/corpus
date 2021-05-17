@@ -5,67 +5,172 @@
 This is a list of executables that have building and running documented.
 Build errors are included.
 
-- c/bvisness/whitespace `make`
-- c/koturn/whitespace.out `make`
-- c/kspalaiologos-asm2ws/wsi `./configure --with-target=release && make -j4 wsi`
-- c/meth0dz/whitespace `gcc -O3 -Wall -o whitespace whitespace.c`
-- c/rdebath/ws2c `make`
-- c/rdebath/wsa `make`
-- c/rdebath/wsa.sed
-- c/rdebath/wsc.sh
-- c/sandeep/white `gcc -O3 -Wall -o white y.tab.c lex.yy.c`
-- c/strangepan-i-c-whitespace/whitespace `make`
-- c/threeifbywhiskey-satan/satan `make`
-- clojure/jmesyou-erasure/target/uberjar/erasure-2.0-standalone.jar `lein uberjar`: ⚠️ Parser namespace is clj-whitespace, not erasure
-- clojure/tsuyusato/target/whitespace-clj-0.1.0-SNAPSHOT-standalone.jar `lein uberjar`
-- cpp/abac-whint/whint `g++ -O3 -Wall -o whint whint.cpp`
-- cpp/abcsharp/wsi `g++ -O3 -Wall -std=c++11 -o wsi whitespace/main.cpp`
-- cpp/andrewarchi-respace/respace `make`
-- cpp/benajmin/WhitespaceInterpreter.out `make`
-- cpp/buyoh-nospace/maicomp `make release`
-- cpp/buyoh-nospace/vm/run.rb
-- cpp/dpohanlon-wsint/bin/wsInt `make`
-- cpp/frmsaul-cupertino/whitespace `g++ -O3 -o whitespace src/*.cpp`
-- cpp/keirua-white/white `g++ -O3 -Wall -o white main.cpp`
-- cpp/knmorgan/ws `make CXXFLAGS='-Wall -pedantic -O3'`
-- cpp/malkiewiczm/compile `make`
-- cpp/marcellippmann-whitepp/bin/White++ `make`
-- cpp/noia/ws `g++ -O3 -Wall -Werror -o ws Lexer.cc Parser.cc`
-- cpp/pavelshub/wspace `g++ -O3 -Wall -o wspace wspace.cpp`
-- cpp/peasley/whitespace `g++ -O3 -Wall -o whitespace whitespace.cpp`
-- cpp/ricardoluis/whitespace `g++ -O3 -Wall -std=c++11 -o whitespace whitespace.cpp`: ⚠️ `#include <conio.h>` not found, `floor` cannot be used in a constant expression
-- cpp/sonicyang-ws-frontend/wsjit: ⚠️ Requires LLVM
-- cpp/subv-whitespace-llvm/bin/Whitespace-LLVM: ⚠️ Requires LLVM
-- cpp/sudheesh/space `g++ -O3 -o space space.cpp`
-- cpp/timvandermeij/whitespace `make`
-- cpp/tycho-whitespace-llvm/wspace-jit `make`: ⚠️ Requires LLVM
-- cpp/yuukiaria/bin/ws `mkdir -p bin && make TARGET=../bin/ws -C src`
+- c/bvisness/whitespace: `make`
+- c/koturn/whitespace.out: `make`
+- c/kspalaiologos-asm2ws/wsi: `./configure --with-target=release && make -j4 wsi`
+- c/meth0dz/whitespace: `gcc -O3 -Wall -o whitespace whitespace.c`
+- c/rdebath:
+  - ws2c: `make`
+  - wsa: `make`
+  - wsa.sed
+  - wsc.sh
+- c/sandeep/white: `gcc -O3 -Wall -o white y.tab.c lex.yy.c`
+- c/strangepan-i-c-whitespace/whitespace: `make`
+- c/threeifbywhiskey-satan/satan: `make`
+- ⚠️ clojure/jmesyou-erasure/target/uberjar/erasure-2.0-standalone.jar: `lein uberjar` Parser namespace is clj-whitespace, not erasure
+- clojure/tsuyusato/target/whitespace-clj-0.1.0-SNAPSHOT-standalone.jar: `lein uberjar`
+- ⚠️ coffeescript/ehrlichbryan/*unspecified*: `npm install && grunt` Unclear how to run
+- cpp/abac-whint/whint: `g++ -O3 -Wall -o whint whint.cpp`
+- cpp/abcsharp/wsi: `g++ -O3 -Wall -std=c++11 -o wsi whitespace/main.cpp`
+- cpp/andrewarchi-respace/respace: `make`
+- cpp/benajmin/WhitespaceInterpreter.out: `make`
+- cpp/buyoh-nospace:
+  - maicomp: `make release`
+  - vm/run.rb
+- cpp/dpohanlon-wsint/bin/wsInt: `make`
+- cpp/frmsaul-cupertino/whitespace: `g++ -O3 -o whitespace src/*.cpp`
+- cpp/keirua-white/white: `g++ -O3 -Wall -o white main.cpp`
+- cpp/knmorgan/ws: `make CXXFLAGS='-Wall -pedantic -O3'`
+- cpp/malkiewiczm/compile: `make`
+- cpp/marcellippmann-whitepp/bin/White++: `make`
+- cpp/noia/ws: `g++ -O3 -Wall -Werror -o ws Lexer.cc Parser.cc`
+- cpp/pavelshub/wspace: `g++ -O3 -Wall -o wspace wspace.cpp`
+- cpp/peasley/whitespace: `g++ -O3 -Wall -o whitespace whitespace.cpp`
+- ⚠️ cpp/ricardoluis/whitespace: `g++ -O3 -Wall -std=c++11 -o whitespace whitespace.cpp` `#include <conio.h>` not found, `floor` cannot be used in a constant expression
+- ⚠️ cpp/sonicyang-ws-frontend/wsjit: Requires LLVM
+- ⚠️ cpp/subv-whitespace-llvm/bin/Whitespace-LLVM: Requires LLVM
+- cpp/sudheesh/space: `g++ -O3 -o space space.cpp`
+- cpp/timvandermeij/whitespace: `make`
+- ⚠️ cpp/tycho-whitespace-llvm/wspace-jit: `make` Requires LLVM
+- cpp/yuukiaria/bin/ws: `mkdir -p bin && make TARGET=../bin/ws -C src`
+- ❌ crystal/collidedscope-spiceweight
+- ❌ csharp/denislabrecque
 - csharp/littlebughunter-assembler/WhitespaceAssembler
-- go/andrewarchi-nebula/nebula `go mod init github.com/andrewarchi/nebula && go mod tidy && go build`: ⚠️ Requires LLVM
-- go/kinu/whitespace `go mod init github.com/kinu/whitespace && go build`
-- go/technohippy/go-whitespace: ⚠️ Go version is pre-go1
-- go/tempxla-go-wspace/bin/go-wspace `make`
-- go/yshr-wspacego/wspacego `go mod init github.com/135yshr/wspacego && go mod tidy && go build`
+- ❌ csharp/north-projectone
+- ❌ csharp/reflash
+- ❌ csharp/rolisoft-esoteric
+- ❌ elixir/quinnwilton
+- ❌ erlang/derek-mrwhite
+- ⚠️ go/andrewarchi-nebula/nebula: `go mod init github.com/andrewarchi/nebula && go mod tidy && go build` Requires LLVM
+- go/kinu/whitespace: `go mod init github.com/kinu/whitespace && go build`
+- ⚠️ go/technohippy/go-whitespace: Go version is pre-go1
+- go/tempxla-go-wspace/bin/go-wspace: `make`
+- go/yshr-wspacego/wspacego: `go mod init github.com/135yshr/wspacego && go mod tidy && go build`
+- ❌ haskell/brainbrush-tomato
+- ❌ haskell/ft-spaceman
+- ❌ haskell/helvm-helma
+- ❌ haskell/helvm-helpa
+- ❌ haskell/helvm-wsa
+- ❌ haskell/jhmcstanton-marginal
+- ❌ haskell/takatoh-hws
+- ❌ idris/edwinb-ws-idr
+- ❌ java/abhijitsharma
+- ❌ java/azige
+- ❌ java/brumbeere-whitespace4j
+- ❌ java/eia
+- ❌ java/faurehu
+- ❌ java/kmizu
+- ❌ java/praveenvaka-coder
+- ❌ java/vyo-kairos
+- ❌ java/wrotycz
+- ❌ java/wysang
+- ❌ java/yawkat
+- ❌ java/yuukiaria-wseditor
+- ❌ javascript/briantran-generator
+- ❌ javascript/damle-evanescojs
+- ❌ javascript/kanra1412
+- ❌ javascript/kmyk-translater
+- ❌ javascript/kosei
+- ❌ javascript/loklaan-whitespace-lang
+- ❌ javascript/loklaan-zerowidth-lang
+- ❌ javascript/macocha-whitespacer
+- ❌ javascript/pvdz-significant-whitespace
+- ❌ javascript/rumpl
+- ❌ javascript/susisu
+- ❌ javascript/therebelrobot
+- ❌ javascript/uraza
+- ❌ javascript/vii5ard-whitelips-ide
+- ❌ javascript/wdalmut
 - jq/andrewarchi-wsjq/wsjq
+- ❌ kotlin/ze-space
 - lolcode/akers/whitespace.lol
-- masm/jarsp-wsint/wsint: ⚠️ Requires Visual Studio
-- nasm/ryzheboka/wsCompiler.py
-- nasm/ryzheboka/wsInterpreter `gcc -O3 -Wall -o wsInterpreter wsInterpreter.c`
-- ocaml/jgkaplan-wsc/main.byte `make`
-- python/kareeeeem-abyad/generate_programs
-- python/kareeeeem-abyad/src/__main__.py
+- ❌ lua/vyo-callisto
+- ⚠️ masm/jarsp-wsint/wsint: Requires Visual Studio
+- nasm/ryzheboka:
+  - wsCompiler.py
+  - wsInterpreter: `gcc -O3 -Wall -o wsInterpreter wsInterpreter.c`
+- ocaml/jgkaplan-wsc/main.byte: `make`
+- ❌ perl/ephphatha-wsm2ws
+- ❌ php/igorw-wsm
+- ❌ php/johankj
+- ❌ php/jseidl-wcc
+- ❌ php/nobody1986
+- ❌ python/adapap
+- ❌ python/ahl27
+- ❌ python/alecgraves-whitespac3
+- ❌ python/apua-wvm
+- ❌ python/bornlex
+- ❌ python/dalleng
+- ❌ python/damle-evanesco
+- ❌ python/dos1-colorspace
+- ❌ python/drafear-converter
+- ❌ python/dwayne
+- ❌ python/eizoassik-pyws
+- ❌ python/freyamade-hohoho
+- ❌ python/hearnderek
+- ❌ python/ilikepython256-whitespace-unc
+- python/kareeeeem-abyad:
+  - generate_programs
+  - src/__main__.py
+- ❌ python/maximegoyette
+- ❌ python/mcolom
+- ❌ python/meand
 - python/mikecat/whitespace.py
+- ❌ python/phlip-pywhitespace
+- ❌ python/qwhxm-baudelaire
+- ❌ python/rumaxwell
+- ❌ python/smithers-bluespace
+- ❌ python/stephenchappell
+- ❌ python/yasn-whitepy
+- ❌ r/bmazoure
+- ❌ rebol/hostilefork
+- ❌ ren-c/hostilefork
+- ❌ ruby/alesiong
+- ❌ ruby/bossiernesto
+- ❌ ruby/collidedscope-spitewaste
+- ❌ ruby/dwayne
 - ruby/nishiwakki/whitespace.rb
-- rust/censoredusername-whitespacers/target/release/wsc `cargo build --release`
-- rust/collidedscope-albus/target/release/albus `cargo build --release`
-- rust/faultier-albino/albino `cargo build --release`: ⚠️ Needs many changes for latest Rust
-- rust/faultier-albino/albino-build `cargo build --release`: ⚠️ Needs many changes for latest Rust
-- rust/faultier-albino/albino-exec `cargo build --release`: ⚠️ Needs many changes for latest Rust
-- rust/faultier-albino/albino-gen `cargo build --release`: ⚠️ Needs many changes for latest Rust
-- rust/faultier-albino/albino-run `cargo build --release`: ⚠️ Needs many changes for latest Rust
-- rust/faultier-whitebase `cargo build --release`: ⚠️ Needs many changes for latest Rust
-- rust/jayshua/target/release/whitespace `cargo build --release`
-- rust/kaisugi/wi `rustc whitespace_interpreter.rs -o wi`
-- rust/luminight/librustws.rlib `cargo build --release`
-- rust/luminight/wsconvert.py
-- rust/nareshganduri/target/release/whitespace-vm `cargo build --release`
+- ❌ ruby/pocke-akaza
+- rust/censoredusername-whitespacers/target/release/wsc: `cargo build --release`
+- rust/collidedscope-albus/target/release/albus: `cargo build --release`
+- ⚠️ rust/faultier-albino:
+  - ⚠️ albino: `cargo build --release` Needs many changes for latest Rust
+  - ⚠️ albino-build: `cargo build --release` Needs many changes for latest Rust
+  - ⚠️ albino-exec: `cargo build --release` Needs many changes for latest Rust
+  - ⚠️ albino-gen: `cargo build --release` Needs many changes for latest Rust
+  - ⚠️ albino-run: `cargo build --release` Needs many changes for latest Rust
+- ⚠️ rust/faultier-whitebase/*unspecified*: `cargo build --release` Needs many changes for latest Rust
+- rust/jayshua/target/release/whitespace: `cargo build --release`
+- rust/kaisugi/wi: `rustc whitespace_interpreter.rs -o wi`
+- rust/luminight:
+  - librustws.rlib: `cargo build --release`
+  - wsconvert.py
+- rust/nareshganduri/target/release/whitespace-vm: `cargo build --release`
+- ❌ scala/dashlambda-eso
+- ❌ scala/ojha-whitespacing
+- ❌ scheme/athos-white-scheme
+- ❌ scheme/niyarin
+- ❌ textmate/veniversum
+- ❌ vim/rolf-ws-vim
+- ❌ whitespace/keens-whitelie
+- ❌ whitespace/tewort-hello-whitespace
+- ❌ “HaPyLi” by Huf Lungdung
+- ❌ “Whitespace Interpreter in JavaScript” by Arnauld
+- ❌ “whitespace-ruby” by Wayne E. Conrad
+- ❌ “whitespace.pl” by Mike Kölbl
+- ❌ “wsa” by Oliver Burghard
+- ❌ “wsintercpp” by Oliver Burghard
+- ❌ “wsinterws” by Oliver Burghard
+- ❌ “wspace 0.2” by Edwin Brady
+- ❌ “wspace 0.3” by Edwin Brady
+- ❌ “wspace” by hogelog
