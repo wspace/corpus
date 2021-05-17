@@ -111,6 +111,11 @@ const (
 	Printi
 	Readc
 	Readi
+
+	Shuffle
+	Trace
+	DumpStack
+	DumpHeap
 )
 
 func (inst *Instruction) UnmarshalText(text []byte) error {
@@ -163,6 +168,14 @@ func (inst *Instruction) UnmarshalText(text []byte) error {
 		*inst = Readc
 	case "readi":
 		*inst = Readi
+	case "shuffle":
+		*inst = Shuffle
+	case "trace":
+		*inst = Trace
+	case "dumpstack":
+		*inst = DumpStack
+	case "dumpheap":
+		*inst = DumpHeap
 	default:
 		return fmt.Errorf("illegal instruction: %s", text)
 	}

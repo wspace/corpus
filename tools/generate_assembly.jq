@@ -14,4 +14,15 @@
   | map(ascii_downcase) | group_by(.) | sort_by(-length)
   | map("`\(.[0])`" + if length != 1 then " (\(length | tostring))" else "" end)
   | "- " + join(", ")
+),
+"",
+"## Need documentation",
+"",
+(
+  [
+    .[]
+    | select(.tags | contains(["assembler"]) or contains(["disassembler"]))
+    | select(.assembly.instructions == null)
+    | "- " + (.path // "“\(.name)” by " + (.authors|join(", ")))
+  ] | sort[]
 )
