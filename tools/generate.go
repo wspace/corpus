@@ -21,6 +21,7 @@ type Project struct {
 	Source      []string `json:"source"`
 	Bounds      struct {
 		Precision      string      `json:"precision,omitempty"`
+		ArgPrecision   string      `json:"arg_precision,omitempty"`   // usually the same as precision
 		LabelPrecision string      `json:"label_precision,omitempty"` // usually the same as precision
 		StackCap       interface{} `json:"stack_cap,omitempty"`       // int or string
 		CallStackCap   interface{} `json:"call_stack_cap,omitempty"`  // int or string

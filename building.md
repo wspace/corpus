@@ -43,7 +43,7 @@ Build errors are included.
 - cpp/timvandermeij/whitespace: `make`
 - ⚠️ cpp/tycho-whitespace-llvm/wspace-jit: `make` Requires LLVM
 - cpp/yuukiaria/bin/ws: `mkdir -p bin && make TARGET=../bin/ws -C src`
-- ❌ crystal/collidedscope-spiceweight
+- crystal/collidedscope-spiceweight/spwt: `make`
 - ❌ csharp/denislabrecque
 - csharp/littlebughunter-assembler/WhitespaceAssembler
 - ❌ csharp/north-projectone

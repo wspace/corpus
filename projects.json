@@ -154,7 +154,7 @@
     "path": "ruby/collidedscope-spitewaste",
     "authors": ["Collided Scope"],
     "languages": ["Ruby"],
-    "tags": ["assembler", "compiler", "programs", "stdlib"],
+    "tags": ["language compiler", "assembler", "disassembler", "programs", "stdlib"],
     "date": "2020-12-11 23:54:53 -0500",
     "spec_version": "0.3 with shell and eval",
     "source": ["https://github.com/collidedscope/spitewaste"]
@@ -167,7 +167,41 @@
     "tags": ["interpreter", "benchmarking", "programs"],
     "date": "2020-12-11 19:09:25 -0500",
     "spec_version": "0.3",
-    "source": ["https://github.com/collidedscope/spiceweight"]
+    "source": ["https://github.com/collidedscope/spiceweight"],
+    "bounds": {
+      "precision": "arbitrary",
+      "arg_precision": "int64",
+      "label_precision": "int64",
+      "stack_cap": "unbounded",
+      "heap_min": "unbounded",
+      "heap_max": "unbounded",
+      "heap_cap": "unbounded",
+      "label_cap": "uint64",
+      "instruction_cap": "int32"
+    },
+    "commands": [
+      {
+        "type": "interpreter",
+        "bin": "spwt",
+        "install_dependencies": ["brew install crystal"],
+        "build": "make",
+        "usage": "$0 [options] <file>",
+        "options": [
+          {
+            "short": "r",
+            "long": "report",
+            "desc": "Display stack, heap, and instruction count after executing"
+          },
+          {
+            "short": "b",
+            "long": "bench",
+            "desc": "Benchmark calls to labels whose names begin with 'bench'. Labels in Whitespace code are purely numerical, of course, so this relies on some other tool having previously generated a symbol table mapping label names to their corresponding numbers. The Spitewaste assembler is one such tool."
+          },
+          { "short": "h", "long": "help", "desc": "Show this help" }
+        ],
+        "option_parse": "Crystal option_parser"
+      }
+    ]
   },
   {
     "name": "rustws",

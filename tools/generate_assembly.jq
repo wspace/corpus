@@ -15,14 +15,14 @@
   | map("`\(.[0])`" + if length != 1 then " (\(length | tostring))" else "" end)
   | "- " + join(", ")
 ),
-"",
-"## Need documentation",
-"",
 (
   [
     .[]
     | select(.tags | contains(["assembler"]) or contains(["disassembler"]))
     | select(.assembly.instructions == null)
     | "- " + (.path // "“\(.name)” by " + (.authors|join(", ")))
-  ] | sort[]
+  ]
+  | sort
+  | if length == 0 then empty
+    else "", "## Need documentation", "", .[] end
 )
