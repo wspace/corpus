@@ -100,11 +100,14 @@ Build errors are included.
   - wsCompiler.py
   - wsInterpreter: `gcc -O3 -Wall -o wsInterpreter wsInterpreter.c`
 - ocaml/jgkaplan-wsc/main.byte: `make`
-- ❌ perl/ephphatha-wsm2ws
-- ❌ php/igorw-wsm
-- ❌ php/johankj
+- perl/ephphatha-wsm2ws/wsm2ws.pl
+- php/igorw/bin/interpreter
+- php/igorw-wsm/bin/wsm
+- php/johankj/whitespace.php
 - ❌ php/jseidl-wcc
-- ❌ php/nobody1986
+- php/nobody1986:
+  - whitespace: `gcc -O3 -o whitespace whitespace.c list.c stack.c`
+  - whitespace.php
 - ❌ python/adapap
 - ❌ python/ahl27
 - ❌ python/alecgraves-whitespac3

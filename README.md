@@ -101,18 +101,19 @@ programming language.
 | [Tomato Programming Language](haskell/brainbrush-tomato) | brainbrush | Haskell | interpreter, mapping, programs | 2015-02-26 | 0.3 | [GitHub](https://github.com/brainbush/Tomato-Programming-Language) |
 | [whitespace](go/kinu)                          | Kinuko Yasuda    | Go         | interpreter, disassembler | 2015-02-19 | 0.3 | [GitHub](https://github.com/kinu/whitespace) |
 | [whitespace-clj](clojure/tsuyusato)            | TSUYUSATO Kitsune | Clojure   | interpreter  | 2015-02-11 | 0.2 | [GitHub](https://github.com/MakeNowJust/whitespace-clj) |
-| [whitespace-php](php/nobody1986)               | nobody1986       | PHP, C     | interpreter  | 2015-02-04 | 0.3 | [GitHub](https://github.com/nobody1986/whitespace-php) |
+| [whitespace-php](php/nobody1986)               | nobody1986       | PHP, C     | interpreter, disassembler, programs | 2015-02-04 | 0.3 | [GitHub](https://github.com/nobody1986/whitespace-php) |
 | [whiteSpaceInterpreter](java/faurehu)          | Matias Faure     | Java       | interpreter, programs | 2015-01-29 | 0.3 | [GitHub](https://github.com/faurehu/whiteSpaceInterpreter) |
 | [Whitespace-Interpreter--C-](cpp/sudheesh)     | sudheesh4        | C++        | interpreter  | 2014-12-02 | 0.2 | [GitHub](https://github.com/sudheesh4/Whitespace-Interpreter-C-) |
 | [WhiteSpaceInterpreter](csharp/reflash)        | reflash          | C#         | interpreter  | 2014-11-21 | 0.3 | [GitHub](https://github.com/reflash-blog/WhiteSpaceInterpreter) |
 | [Whitespace](c/koturn)                         | koturn           | C          | interpreter, translator, programs | 2014-11-08 | 0.3 | [GitHub](https://github.com/koturn/Whitespace) |
-| [whitespace.php](php/johankj)                  | Johan K. Jensen  | PHP        | interpreter  | 2014-11-01 | 0.2 | [GitHub](https://github.com/johankj/whitespace-interpreter-php) |
+| [whitespace.php](php/johankj)                  | Johan K. Jensen  | PHP        | interpreter, programs | 2014-11-01 | 0.2 | [GitHub](https://github.com/johankj/whitespace-interpreter-php) |
 | [wsm](php/igorw-wsm)                           | Igor Wiedler     | PHP        | assembler, programs | 2014-09-27 | 0.2 | [GitHub](https://github.com/igorw/wsm) |
 | [pyws](python/eizoassik-pyws)                  | Eizo Assik       | Python     | interpreter, assembler, disassembler | 2014-08-28 | 0.3 | [GitHub](https://github.com/EizoAssik/pyws) |
 | [Albino](rust/faultier-albino)                 | Taro Sako        | Rust       | interpreter, assembler, disassembler, bytecode, Brainfuck to Whitespace | 2014-07-18 | 0.3 | [GitHub](https://github.com/faultier/albino) |
 | [Whitespace-LLVM](cpp/subv-whitespace-llvm)    | Sebastian Valle  | C++, LLVM  | interpreter  | 2014-07-16 | 0.3 | [GitHub](https://github.com/Subv/Whitespace-LLVM) |
 | [Whitebase](rust/faultier-whitebase)           | Taro Sako        | Rust       | interpreter, assembler, disassembler, bytecode, Brainfuck to Whitespace, library | 2014-07-15 | 0.3 | [GitHub](https://github.com/faultier/whitebase) |
 | [whitespace-interpreter](java/azige)           | Azige            | Java       | language, interpreter | 2014-06-18 | 0.3 | [GitHub](https://github.com/azige/whitespace-interpreter) |
+| [whitespace-php](php/igorw)                    | Igor Wiedler     | PHP        | interpreter  | 2014-06-10 | 0.3 | [GitHub](https://github.com/igorw/whitespace-php) |
 | [wsint](masm/jarsp-wsint)                      | jarsp            | MASM       | interpreter  | 2014-06-01 | 0.3 | [GitHub](https://github.com/jarsp/wsint) |
 | [white](cpp/keirua-white)                      | Keirua           | C++        | interpreter, disassembler | 2014-05-30 | 0.3 | [GitHub](https://github.com/Keirua/whitespace) |
 | [Kairos](java/vyo-kairos)                      | Manu Weidmann    | Java       | interpreter, assembler, arbitrary precision, programs | 2014-05-10 | 0.3 | [GitHub](https://github.com/vyo/kairos) |

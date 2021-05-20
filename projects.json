@@ -1210,6 +1210,17 @@
       "line_comment_prefix": ";",
       "extension": "wsm"
     },
+    "commands": [
+      {
+        "type": "assembler",
+        "bin": "wsm2ws.pl",
+        "install_dependencies": [
+          "perl -MCPAN -e 'install Algorithm::Combinatorics, File::Basename, Parse::Token::Lite, String::Unescape, Tie::RegexpHash'"
+        ],
+        "usage": "perl $0 <file>",
+        "output": "<file_no_suffix:.wsm>.ws"
+      }
+    ],
     "notes": "Has optional assembly arguments"
   },
   {
@@ -2095,10 +2106,52 @@
     "path": "php/nobody1986",
     "authors": ["nobody1986"],
     "languages": ["PHP", "C"],
-    "tags": ["interpreter"],
+    "tags": ["interpreter", "disassembler", "programs"],
     "date": "2015-02-04 17:15:42 +0800",
     "spec_version": "0.3",
-    "source": ["https://github.com/nobody1986/whitespace-php"]
+    "source": ["https://github.com/nobody1986/whitespace-php"],
+    "assembly": {
+      "instructions": {
+        "push": ["PUSH"],
+        "dup": ["COPY"],
+        "copy": ["COPYN"],
+        "swap": ["EXCHANGE"],
+        "drop": ["DROP"],
+        "slide": ["SLIDEOFF"],
+        "add": ["ADD"],
+        "sub": ["SUB"],
+        "mul": ["MUL"],
+        "div": ["DIV"],
+        "mod": ["MOD"],
+        "store": ["STORE"],
+        "retrieve": ["READ"],
+        "label": ["MARK"],
+        "call": ["CALL"],
+        "jmp": ["JUMP"],
+        "jz": ["JUMPNULL"],
+        "jn": ["JUMPDE"],
+        "ret": ["ENDFUNC"],
+        "end": ["ENDLE"],
+        "printc": ["OUTCHAR"],
+        "printi": ["OUTNUM"],
+        "readc": ["INCHAR"],
+        "readi": ["INNUM"]
+      }
+    },
+    "commands": [
+      {
+        "type": "interpreter",
+        "bin": "whitespace.php",
+        "usage": "php $0 <file>",
+        "notes": "`compile2File` function, if uncommented, can disassembly to file"
+      },
+      {
+        "type": "interpreter",
+        "bin": "whitespace",
+        "build": "gcc -O3 -o whitespace whitespace.c list.c stack.c",
+        "usage": "$0 <file>"
+      }
+    ]
   },
   {
     "name": "whiteSpaceInterpreter",
@@ -2176,10 +2229,11 @@
     "path": "php/johankj",
     "authors": ["Johan K. Jensen"],
     "languages": ["PHP"],
-    "tags": ["interpreter"],
+    "tags": ["interpreter", "programs"],
     "date": "2014-11-01 16:50:34 +0100",
     "spec_version": "0.2",
-    "source": ["https://github.com/johankj/whitespace-interpreter-php"]
+    "source": ["https://github.com/johankj/whitespace-interpreter-php"],
+    "commands": [{ "type": "interpreter", "bin": "whitespace.php", "usage": "php whitespace.php <file>" }]
   },
   {
     "name": "wsm",
@@ -2218,7 +2272,8 @@
         "readi": ["read_num"]
       },
       "extension": "wsm"
-    }
+    },
+    "commands": [{ "type": "assembler", "bin": "bin/wsm", "usage": "php $0 <file>" }]
   },
   {
     "name": "pyws",
@@ -2405,6 +2460,17 @@
     "date": "2014-06-18 23:38:41 +0800",
     "spec_version": "0.3",
     "source": ["https://github.com/azige/whitespace-interpreter"]
+  },
+  {
+    "name": "whitespace-php",
+    "path": "php/igorw",
+    "authors": ["Igor Wiedler"],
+    "languages": ["PHP"],
+    "tags": ["interpreter"],
+    "date": "2014-06-10 00:59:21 +0200",
+    "spec_version": "0.3",
+    "source": ["https://github.com/igorw/whitespace-php"],
+    "commands": [{ "type": "interpreter", "bin": "bin/interpreter", "usage": "php $0 <file>" }]
   },
   {
     "name": "wsint",
