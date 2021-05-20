@@ -11,15 +11,16 @@ import (
 
 type Project struct {
 	Name        string   `json:"name"`
-	Description string   `json:"description"`
-	Path        string   `json:"path"`
+	Description string   `json:"description,omitempty"`
+	Path        string   `json:"path,omitempty"`
 	Authors     []string `json:"authors"`
+	License     string   `json:"license,omitempty"`
 	Languages   []string `json:"languages"`
 	Tags        []string `json:"tags"`
 	Date        string   `json:"date"`
 	SpecVersion string   `json:"spec_version"`
 	Source      []string `json:"source"`
-	Bounds      struct {
+	Bounds      *struct {
 		Precision      string      `json:"precision,omitempty"`
 		ArgPrecision   string      `json:"arg_precision,omitempty"`   // usually the same as precision
 		LabelPrecision string      `json:"label_precision,omitempty"` // usually the same as precision
@@ -31,24 +32,53 @@ type Project struct {
 		LabelCap       interface{} `json:"label_cap,omitempty"`       // int or string
 		InstructionCap interface{} `json:"instruction_cap,omitempty"` // int or string
 	} `json:"bounds,omitempty"`
-	Behavior struct {
-		BufferedOutput bool   `json:"buffered_output,omitempty"`
+	Behavior *struct {
+		BufferedOutput *bool  `json:"buffered_output,omitempty"`
 		EOF            string `json:"eof,omitempty"`
 	} `json:"behavior,omitempty"`
 	Assembly *struct {
-		Instructions              map[Instruction][]string `json:"instructions,omitempty"`
-		CaseSensitiveInstructions bool                     `json:"case_sensitive_instructions,omitempty"`
-		LineCommentPrefix         string                   `json:"line_comment_prefix,omitempty"`
-		LabelDefFormat            string                   `json:"label_def_format,omitempty"`
-		LabelRefFormat            string                   `json:"label_ref_format,omitempty"`
-		Extension                 string                   `json:"extension,omitempty"`
+		Instructions *struct {
+			Push      []string `json:"push"`
+			Dup       []string `json:"dup"`
+			Copy      []string `json:"copy,omitempty"`
+			Swap      []string `json:"swap"`
+			Drop      []string `json:"drop"`
+			Slide     []string `json:"slide,omitempty"`
+			Add       []string `json:"add"`
+			Sub       []string `json:"sub"`
+			Mul       []string `json:"mul"`
+			Div       []string `json:"div"`
+			Mod       []string `json:"mod"`
+			Store     []string `json:"store"`
+			Retrieve  []string `json:"retrieve"`
+			Label     []string `json:"label"`
+			Call      []string `json:"call"`
+			Jmp       []string `json:"jmp"`
+			Jz        []string `json:"jz"`
+			Jn        []string `json:"jn"`
+			Ret       []string `json:"ret"`
+			End       []string `json:"end"`
+			Printc    []string `json:"printc"`
+			Printi    []string `json:"printi"`
+			Readc     []string `json:"readc"`
+			Readi     []string `json:"readi"`
+			Shuffle   []string `json:"shuffle,omitempty"`
+			Trace     []string `json:"trace,omitempty"`
+			DumpStack []string `json:"dumpstack,omitempty"`
+			DumpHeap  []string `json:"dumpheap,omitempty"`
+		} `json:"instructions,omitempty"`
+		CaseSensitiveInstructions *bool  `json:"case_sensitive_instructions,omitempty"`
+		LineCommentPrefix         string `json:"line_comment_prefix,omitempty"`
+		LabelDefFormat            string `json:"label_def_format,omitempty"`
+		LabelRefFormat            string `json:"label_ref_format,omitempty"`
+		Extension                 string `json:"extension,omitempty"`
 	} `json:"assembly,omitempty"`
 	Mapping *struct {
 		Space         string `json:"space"`
 		Tab           string `json:"tab"`
 		LF            string `json:"lf"`
-		SpacesBetween bool   `json:"spaces_between,omitempty"`
-		IgnoreCase    bool   `json:"ignore_case,omitempty"`
+		SpacesBetween *bool  `json:"spaces_between,omitempty"`
+		IgnoreCase    *bool  `json:"ignore_case,omitempty"`
 		Extension     string `json:"extension,omitempty"`
 	} `json:"mapping,omitempty"`
 	Commands []Command `json:"commands,omitempty"`
@@ -56,8 +86,8 @@ type Project struct {
 }
 
 type Command struct {
-	Type                string   `json:"type"`
-	Bin                 string   `json:"bin"`
+	Type                string   `json:"type,omitempty"`
+	Bin                 string   `json:"bin,omitempty"`
 	Dependencies        []string `json:"dependencies,omitempty"`
 	InstallDependencies []string `json:"install_dependencies,omitempty"`
 	Build               string   `json:"build,omitempty"`
@@ -68,7 +98,7 @@ type Command struct {
 		Short       string      `json:"short,omitempty"` // -s
 		Long        string      `json:"long,omitempty"`  // --long
 		Arg         string      `json:"arg,omitempty"`
-		ArgRequired bool        `json:"arg_required,omitempty"`
+		ArgRequired *bool       `json:"arg_required,omitempty"`
 		Type        string      `json:"type,omitempty"`
 		Default     interface{} `json:"default,omitempty"`
 		Min         interface{} `json:"min,omitempty"`
@@ -182,6 +212,69 @@ func (inst *Instruction) UnmarshalText(text []byte) error {
 		return fmt.Errorf("illegal instruction: %s", text)
 	}
 	return nil
+}
+
+func (inst Instruction) String() string {
+	switch inst {
+	case Push:
+		return "push"
+	case Dup:
+		return "dup"
+	case Copy:
+		return "copy"
+	case Swap:
+		return "swap"
+	case Drop:
+		return "drop"
+	case Slide:
+		return "slide"
+	case Add:
+		return "add"
+	case Sub:
+		return "sub"
+	case Mul:
+		return "mul"
+	case Div:
+		return "div"
+	case Mod:
+		return "mod"
+	case Store:
+		return "store"
+	case Retrieve:
+		return "retrieve"
+	case Label:
+		return "label"
+	case Call:
+		return "call"
+	case Jmp:
+		return "jmp"
+	case Jz:
+		return "jz"
+	case Jn:
+		return "jn"
+	case Ret:
+		return "ret"
+	case End:
+		return "end"
+	case Printc:
+		return "printc"
+	case Printi:
+		return "printi"
+	case Readc:
+		return "readc"
+	case Readi:
+		return "readi"
+	case Shuffle:
+		return "shuffle"
+	case Trace:
+		return "trace"
+	case DumpStack:
+		return "dumpstack"
+	case DumpHeap:
+		return "dumpheap"
+	default:
+		return fmt.Sprintf("instruction(%d)", uint8(inst))
+	}
 }
 
 func RenderProjectTable(b *strings.Builder, projects []Project) error {

@@ -695,7 +695,6 @@
         "dependencies": ["LLVM"],
         "build": "go mod init github.com/andrewarchi/nebula && go mod tidy && go build",
         "build_errors": "Requires LLVM",
-        "options": [ ],
         "option_parse": "Go flag",
         "subcommands": [
           { "name": "pack", "desc": "compress program to bit packed format" },
@@ -1973,7 +1972,7 @@
       "label_cap": 512,
       "instruction_cap": "unbounded"
     },
-    "commands": [{ "type": "interpreter", "build": "make", "bin": "whitespace", "usage": "$0 <file>" }]
+    "commands": [{ "type": "interpreter", "bin": "whitespace", "build": "make", "usage": "$0 <file>" }]
   },
   {
     "name": "whitespace-translater",
@@ -2377,35 +2376,30 @@
         "bin": "albino",
         "build": "cargo build --release",
         "build_errors": "Needs many changes for latest Rust",
-        "options": [ ],
         "option_parse": "manual"
       },
       {
         "bin": "albino-run",
         "build": "cargo build --release",
         "build_errors": "Needs many changes for latest Rust",
-        "options": [ ],
         "option_parse": "manual"
       },
       {
         "bin": "albino-build",
         "build": "cargo build --release",
         "build_errors": "Needs many changes for latest Rust",
-        "options": [ ],
         "option_parse": "manual"
       },
       {
         "bin": "albino-exec",
         "build": "cargo build --release",
         "build_errors": "Needs many changes for latest Rust",
-        "options": [ ],
         "option_parse": "manual"
       },
       {
         "bin": "albino-gen",
         "build": "cargo build --release",
         "build_errors": "Needs many changes for latest Rust",
-        "options": [ ],
         "option_parse": "manual"
       }
     ],
@@ -2704,8 +2698,8 @@
       {
         "type": "compiler",
         "bin": "wspace-jit",
-        "build": "make",
         "dependencies": ["LLVM"],
+        "build": "make",
         "build_errors": "Requires LLVM",
         "usage": "$0 [--list-instructions] <file>",
         "options": [{ "long": "list-instructions" }],
