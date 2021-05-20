@@ -171,6 +171,8 @@ Build errors are included.
 - ❌ whitespace/tewort-hello-whitespace
 - ❌ “HaPyLi” by Huf Lungdung
 - ❌ “Whitespace Interpreter in JavaScript” by Arnauld
+- ❌ “whitespace-asm” by Wayne E. Conrad
+- ❌ “whitespace-disassem” by Wayne E. Conrad
 - ❌ “whitespace-ruby” by Wayne E. Conrad
 - ❌ “whitespace.pl” by Mike Kölbl
 - ❌ “wsa” by Oliver Burghard

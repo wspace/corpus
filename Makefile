@@ -1,10 +1,15 @@
 .PHONY: all
-all: format_projects README.md assembly.md building.md tidy_submodules
+all: format_projects licenses README.md assembly.md building.md tidy_submodules
 
 .PHONY: format_projects
 format_projects: projects.json tools/format_projects.bash
 	@echo 'Formatting projects.json'
 	@tools/format_projects.bash
+
+.PHONY: licenses
+licenses: projects.json tools/licenses/licenses.go
+	@echo 'Getting licenses'
+	@go run tools/licenses/licenses.go | underscore print | tools/sponge projects.json
 
 README.md: projects.json README.md.tmpl tools/generate/generate.go
 	@echo 'Generating README.md'

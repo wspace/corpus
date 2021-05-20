@@ -3,7 +3,6 @@ package main
 import (
 	"encoding/json"
 	"fmt"
-	"io"
 	"net/http"
 	"os"
 	"regexp"
@@ -13,21 +12,28 @@ import (
 	"github.com/andrewarchi/ws-corpus/tools"
 )
 
+// Uses SPDX license IDs
+// https://spdx.org/licenses/
+
+// Stack Exchange content licenses
+// https://meta.stackexchange.com/help/licensing
+// CC BY-SA 2.5 before 2011-04-08
+// CC BY-SA 3.0 from 2011-04-08 up to but not including 2018-05-02
+// CC BY-SA 4.0 on or after 2018-05-02
+
 var ghRepo = regexp.MustCompile("^https://github.com/[^/]+/[^/]+$")
 var ghToken = os.Getenv("GITHUB_ACCESS_TOKEN")
 
 func main() {
 	var projects []tools.Project
-	f, err := os.OpenFile("projects.json", os.O_RDWR, 0o644)
-	try(err)
-	try(jsonutil.Decode(f, &projects))
+	try(jsonutil.DecodeFile("projects.json", &projects))
 	for i := range projects {
 		p := &projects[i]
 		if p.License != "" || len(p.Source) == 0 || !ghRepo.MatchString(p.Source[0]) {
 			continue
 		}
 		repo := p.Source[0]
-		fmt.Printf("Getting license for %s\n", repo)
+		fmt.Fprintf(os.Stderr, "Getting license for %s\n", repo)
 		repo = strings.TrimPrefix(repo, "https://github.com/")
 		license, err := getGitHubLicense(repo)
 		if err != nil {
@@ -36,10 +42,7 @@ func main() {
 		}
 		p.License = license
 	}
-	try(f.Truncate(0))
-	_, err = f.Seek(0, io.SeekStart)
-	try(err)
-	e := json.NewEncoder(f)
+	e := json.NewEncoder(os.Stdout)
 	e.SetEscapeHTML(false)
 	try(e.Encode(projects))
 }
