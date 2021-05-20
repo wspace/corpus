@@ -72,7 +72,7 @@ programming language.
 | [WhiteSpaceInterpreter](java/eia)              | Zuleimi Esteffanny González Muñoz | Java | interpreter | 2016-10-27 | incomplete | [GitHub](https://github.com/EIA-University/WhiteSpaceInterpreter) |
 | [whitespace-python](python/dwayne)             | Dwayne R. Crooks | Python     | interpreter  | 2016-08-31 | 0.2 | [GitHub](https://github.com/dwayne/whitespace-python) |
 | [ws-frontend](cpp/sonicyang-ws-frontend)       | Yang Chung-Fan   | C++, LLVM  | compiler     | 2016-08-20 | 0.2 incomplete | [GitHub](https://github.com/sonicyang/ws-frontend) |
-| [Whitespace](r/bmazoure)                       | Bogdan Mazoure   | R          | interpreter  | 2016-07-30 | 0.2 | [GitHub](https://github.com/bmazoure/whitespace) |
+| [Whitespace](r/bmazoure)                       | Bogdan Mazoure   | R          | interpreter, grammar DFA | 2016-07-30 | 0.2 | [GitHub](https://github.com/bmazoure/whitespace) |
 | [White++](cpp/marcellippmann-whitepp)          | Marcel Lippmann  | C++        | interpreter  | 2016-07-27 | 0.2 | [GitHub](https://github.com/wspace-lang/marcellippmann-whitepp), [GitHub (archive)](https://web.archive.org/web/20200906224652/https://github.com/marcellippmann/Whitepp/) |
 | [whitespace-ruby](ruby/dwayne)                 | Dwayne R. Crooks | Python     | interpreter  | 2016-07-11 | 0.2 | [GitHub](https://github.com/dwayne/whitespace-ruby) |
 | [Whitespacers](rust/censoredusername-whitespacers) | CensoredUsername | Rust   | JIT, assembler, disassembler | 2016-06-19 | 0.3 | [GitHub](https://github.com/CensoredUsername/whitespace-rs) |

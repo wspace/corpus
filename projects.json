@@ -1342,10 +1342,22 @@
     "path": "r/bmazoure",
     "authors": ["Bogdan Mazoure"],
     "languages": ["R"],
-    "tags": ["interpreter"],
+    "tags": ["interpreter", "grammar DFA"],
     "date": "2016-07-30 12:44:29 -0400",
     "spec_version": "0.2",
-    "source": ["https://github.com/bmazoure/whitespace"]
+    "source": ["https://github.com/bmazoure/whitespace"],
+    "commands": [
+      {
+        "type": "interpreter",
+        "bin": "R/whitespace.R",
+        "install_dependencies": [
+          "brew install r",
+          "Rscript -e 'install.packages(c(\"compositions\", \"readr\"), repos=\"http://cran.us.r-project.org\")'"
+        ],
+        "usage": "Rscript -e 'source(\"R/whitespace.R\"); library(readr); compile(parse(dfa(read_file(\"<file>\"))))'"
+      }
+    ],
+    "notes": "Supports non-standard jp instruction: [LF][Tab][LF]"
   },
   {
     "name": "White++",

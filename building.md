@@ -136,7 +136,7 @@ Build errors are included.
 - ❌ python/smithers-bluespace
 - ❌ python/stephenchappell
 - ❌ python/yasn-whitepy
-- ❌ r/bmazoure
+- r/bmazoure/R/whitespace.R
 - ❌ rebol/hostilefork
 - ❌ ren-c/hostilefork
 - ❌ ruby/alesiong
