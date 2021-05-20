@@ -92,7 +92,7 @@ Build errors are included.
 - ❌ javascript/vii5ard-whitelips-ide
 - ❌ javascript/wdalmut
 - jq/andrewarchi-wsjq/wsjq
-- ❌ kotlin/ze-space
+- ⚠️ kotlin/ze-space/build/libs/space.jar: `./gradlew` Dependencies not packaged
 - lolcode/akers/whitespace.lol
 - ❌ lua/vyo-callisto
 - ⚠️ masm/jarsp-wsint/wsint: Requires Visual Studio
@@ -116,6 +116,7 @@ Build errors are included.
 - ❌ python/drafear-converter
 - ❌ python/dwayne
 - ❌ python/eizoassik-pyws
+- python/francoisrozet-whitespacy/whitespacy.py
 - ❌ python/freyamade-hohoho
 - ❌ python/hearnderek
 - ❌ python/ilikepython256-whitespace-unc
@@ -152,8 +153,8 @@ Build errors are included.
 - ⚠️ rust/faultier-whitebase/*unspecified*: `cargo build --release` Needs many changes for latest Rust
 - rust/jayshua/target/release/whitespace: `cargo build --release`
 - rust/kaisugi/wi: `rustc whitespace_interpreter.rs -o wi`
-- rust/luminight:
-  - librustws.rlib: `cargo build --release`
+- ⚠️ rust/luminight:
+  - ⚠️ librustws.rlib: `cargo build --release`
   - wsconvert.py
 - rust/nareshganduri/target/release/whitespace-vm: `cargo build --release`
 - ❌ scala/dashlambda-eso

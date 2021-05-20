@@ -12,7 +12,7 @@
   sort_by(.name)[] |
   .name as $name |
   .commands |
-  def ok: .bin!=null and .build_errors==null;
+  def ok: .bin!=null and .build_errors==null and .usage!=null;
   def status: if . then "" else "⚠️ " end;
   def fmt:
     (.bin // "*unspecified*") +

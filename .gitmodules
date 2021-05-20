@@ -313,6 +313,9 @@
 [submodule "python/eizoassik-pyws"]
 	path = python/eizoassik-pyws
 	url = https://github.com/EizoAssik/pyws
+[submodule "python/francoisrozet-whitespacy"]
+	path = python/francoisrozet-whitespacy
+	url = https://github.com/francois-rozet/whitespacy
 [submodule "python/freyamade-hohoho"]
 	path = python/freyamade-hohoho
 	url = https://github.com/freyamade/hohoho

@@ -42,6 +42,7 @@ instructions, ranked by popularity.
 - java/vyo-kairos
 - javascript/vii5ard-whitelips-ide
 - javascript/wdalmut
+- kotlin/ze-space
 - python/stephenchappell
 - ruby/alesiong
 - ruby/collidedscope-spitewaste

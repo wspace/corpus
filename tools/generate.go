@@ -58,6 +58,7 @@ type Project struct {
 type Command struct {
 	Type                string   `json:"type"`
 	Bin                 string   `json:"bin"`
+	Dependencies        []string `json:"dependencies,omitempty"`
 	InstallDependencies []string `json:"install_dependencies,omitempty"`
 	Build               string   `json:"build,omitempty"`
 	BuildErrors         string   `json:"build_errors,omitempty"`

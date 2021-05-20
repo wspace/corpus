@@ -24,4 +24,4 @@ end
 echo ']' >> tmp
 
 mv tmp projects.json
-tools/format.sh
+tools/format_projects.bash

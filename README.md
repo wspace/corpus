@@ -13,6 +13,7 @@ programming language.
 | [asm2ws](c/kspalaiologos-asm2ws)               | Kamila Szewczyk (Palaiologos) | C, Yacc, Lex | interpreter, JIT, assembler, disassembler, optimizer, programs | 2020-12-31 | 0.3 | [GitHub](https://github.com/kspalaiologos/asm2ws) |
 | [Spitewaste](ruby/collidedscope-spitewaste)    | Collided Scope   | Ruby       | language compiler, assembler, disassembler, programs, stdlib | 2020-12-11 | 0.3 with shell and eval | [GitHub](https://github.com/collidedscope/spitewaste) |
 | [Spiceweight](crystal/collidedscope-spiceweight) | Collided Scope | Crystal    | interpreter, benchmarking, programs | 2020-12-11 | 0.3 | [GitHub](https://github.com/collidedscope/spiceweight) |
+| [Whitespacy](python/francoisrozet-whitespacy)  | François Rozet   | Python     | polyglot formatter | 2020-12-08 | - | [GitHub](https://github.com/francois-rozet/whitespacy) |
 | [rustws](rust/luminight)                       | Luminight        | Rust       | library, mapping | 2020-08-04 | 0.2 | [GitHub](https://github.com/Luminighty/rustws) |
 | [Whitespace](javascript/kosei)                 | kosei28          | JavaScript | interpreter  | 2020-08-03 | 0.2 | [GitHub](https://github.com/kosei28/Whitespace) |
 | [SpaceMan](haskell/ft-spaceman)                | Frank Terbeck    | Haskell    | interpreter  | 2020-07-09 | 0.3 | [GitLab](https://gitlab.com/ft/spaceman), [GitHub](https://github.com/ft/spaceman), [bewatermyfriend.org](http://bewatermyfriend.org/p/2020/000/), [HN](https://news.ycombinator.com/item?id=24763312) |
@@ -50,7 +51,7 @@ programming language.
 | [Whitespace compiler for 64-bit macOS](nasm/ryzheboka) | Elena Mokeeva | NASM, Python, C | interpreter, mapping | 2018-09-04 | 0.2 | [GitHub](https://github.com/ryzheboka/Whitespace) |
 | [whitespace-interpreter](java/wrotycz)         | Kamil Węglarz    | Java       | interpreter  | 2018-05-21 | 0.3 | [GitHub](https://github.com/wrotycz/whitespace-interpreter) |
 | [whitespace](ruby/nishiwakki)                  | nishiwakki       | Ruby       | interpreter  | 2018-05-17 | 0.2 | [GitHub](https://github.com/nishiwakki/whitespace) |
-| [space](kotlin/ze-space)                       | Zakaria Elkatani | Kotlin     | interpreter  | 2018-04-21 | 0.3 | [GitHub](https://github.com/ze/space) |
+| [space](kotlin/ze-space)                       | Zakaria Elkatani | Kotlin     | interpreter, disassembler | 2018-04-21 | 0.3 | [GitHub](https://github.com/ze/space) |
 | [Respace](cpp/andrewarchi-respace)             | Andrew Archibald | C++        | interpreter, disassembler, bit packer, programs | 2018-04-15 | 0.3 | [GitHub](https://github.com/andrewarchi/respace) |
 | [projectOne](csharp/north-projectone)          | Jacob North      | C#         | mapping, GUI | 2018-04-11 | -   | [GitHub](https://github.com/North15/projectOne) |
 | [whitespace_interpreter](python/maximegoyette) | Maxime Goyette   | Python     | interpreter  | 2018-03-09 | incomplete | [GitHub](https://github.com/MaximeGoyette/whitespace_interpreter) |
@@ -171,6 +172,7 @@ programming language.
 
 | Name                                     | Author           | Polyglot | Date       | Spec | Source |
 | ---------------------------------------- | ---------------- | -------- | ---------- | ---- | ------ |
+| Program.java.rb.ws.txt                   | ParadoxV5        | Java, Ruby | 2021-01-29 | 0.2 | [GitHub](https://github.com/ParadoxV5/Program-java-rb-ws-txt) |
 | Am I divisible by double the sum of my digits? | Kevin Cruijssen | -   | 2021-01-19 | 0.3 | [Code Golf](https://codegolf.stackexchange.com/questions/129596/am-i-divisible-by-double-the-sum-of-my-digits/217735#217735) |
 | Follow a linked list                     | Kevin Cruijssen  | -        | 2020-12-11 | 0.2 | [Code Golf](https://codegolf.stackexchange.com/questions/216196/follow-a-linked-list/216208#216208) |
 | hello.ws                                 | Peter Koncelik   | -        | 2019-11-22 | 0.2 | [GitHub](https://github.com/petek222/whitespace) |

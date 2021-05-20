@@ -130,6 +130,7 @@
     "commands": [
       {
         "bin": "wsi",
+        "dependencies": ["Flex", "Bison"],
         "install_dependencies": ["brew install flex bison"],
         "build": "./configure --with-target=release && make -j4 wsi",
         "usage": "$0 [-h | --help] [-d | --disassemble] [-c | --cycles] [-a | --aot] [-j | --jit] [-m | --masm] [-Os] [-Of] <file>",
@@ -202,6 +203,29 @@
         "option_parse": "Crystal option_parser"
       }
     ]
+  },
+  {
+    "name": "Whitespacy",
+    "path": "python/francoisrozet-whitespacy",
+    "authors": ["François Rozet"],
+    "languages": ["Python"],
+    "tags": ["polyglot formatter"],
+    "date": "2020-12-08 16:33:12 +0100",
+    "spec_version": "-",
+    "source": ["https://github.com/francois-rozet/whitespacy"],
+    "commands": [
+      {
+        "type": "polyglot formatter",
+        "bin": "whitespacy.py",
+        "usage": "python $0 [-o <output_file> | --output <output_file>] [-v | --verbose] <c_file> <whitespace_file>",
+        "options": [
+          { "short": "o", "long": "output", "desc": "output file" },
+          { "short": "v", "long": "verbose", "desc": "print minified version on std" }
+        ],
+        "option_parse": "Python argparse"
+      }
+    ],
+    "notes": "Polyglot formatter for C and Whitespace"
   },
   {
     "name": "rustws",
@@ -502,6 +526,7 @@
       {
         "type": "language compiler",
         "bin": "compile",
+        "dependencies": ["Flex", "Bison"],
         "install_dependencies": ["brew install flex bison"],
         "build": "make",
         "usage": "$0 [-h] [-a] [-i] <file>",
@@ -667,6 +692,7 @@
       {
         "type": "compiler",
         "bin": "nebula",
+        "dependencies": ["LLVM"],
         "build": "go mod init github.com/andrewarchi/nebula && go mod tidy && go build",
         "build_errors": "Requires LLVM",
         "options": [ ],
@@ -971,10 +997,20 @@
     "path": "kotlin/ze-space",
     "authors": ["Zakaria Elkatani"],
     "languages": ["Kotlin"],
-    "tags": ["interpreter"],
+    "tags": ["interpreter", "disassembler"],
     "date": "2018-04-21 21:02:23 -0400",
     "spec_version": "0.3",
-    "source": ["https://github.com/ze/space"]
+    "source": ["https://github.com/ze/space"],
+    "commands": [
+      {
+        "type": "interpreter",
+        "bin": "build/libs/space.jar",
+        "dependencies": ["Java 8"],
+        "install_dependencies": ["brew install kotlin"],
+        "build": "./gradlew",
+        "build_errors": "Dependencies not packaged"
+      }
+    ]
   },
   {
     "name": "Respace",
@@ -1280,7 +1316,15 @@
     "date": "2016-08-20 08:45:25 +0800",
     "spec_version": "0.2 incomplete",
     "source": ["https://github.com/sonicyang/ws-frontend"],
-    "commands": [{ "type": "compiler", "bin": "wsjit", "build_errors": "Requires LLVM", "usage": "$0 <file>" }]
+    "commands": [
+      {
+        "type": "compiler",
+        "bin": "wsjit",
+        "dependencies": ["LLVM"],
+        "build_errors": "Requires LLVM",
+        "usage": "$0 <file>"
+      }
+    ]
   },
   {
     "name": "Whitespace",
@@ -1781,7 +1825,9 @@
       {
         "type": "assembler",
         "bin": "wsa",
+        "dependencies": ["Flex"],
         "build": "make",
+        "usage": "$0 [<file>...]",
         "output": "stdout",
         "notes": "Assembles other Whitespace assembly dialects"
       },
@@ -2303,6 +2349,7 @@
       {
         "type": "compiler",
         "bin": "bin/Whitespace-LLVM",
+        "dependencies": ["LLVM"],
         "build_errors": "Requires LLVM",
         "usage": "$0",
         "notes": "File is hardcoded to ./count.ws"
@@ -2572,6 +2619,7 @@
         "type": "compiler",
         "bin": "wspace-jit",
         "build": "make",
+        "dependencies": ["LLVM"],
         "build_errors": "Requires LLVM",
         "usage": "$0 [--list-instructions] <file>",
         "options": [{ "long": "list-instructions" }],
@@ -2766,6 +2814,7 @@
       {
         "type": "interpreter",
         "bin": "ws",
+        "dependencies": ["GMP"],
         "install_dependencies": ["brew install gmp"],
         "build": "make CXXFLAGS='-Wall -pedantic -O3'",
         "usage": "$0 [-v | --version] [-h | --help] [-s <size> | --stack-size <size>] <file>",
