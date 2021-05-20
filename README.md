@@ -41,12 +41,13 @@ programming language.
 | [Akaza](ruby/pocke-akaza)                      | Masataka Pocke Kuwabara | Ruby | interpreter, assembler | 2019-04-28 | 0.2 | [GitHub](https://github.com/pocke/akaza) |
 | [whitespace-language-converter](python/drafear-converter) | Takeshi Nishikawa | Python | assembler | 2019-03-30 | 0.3 | [GitHub](https://github.com/drafear/whitespace-language-converter) |
 | [go-wspace](go/tempxla-go-wspace)              | tempxla          | Go         | interpreter  | 2019-02-24 | 0.2 | [GitHub](https://github.com/tempxla/go-wspace) |
-| [Hello-Whitespace](whitespace/tewort-hello-whitespace) | David    | Whitespace | programs     | 2019-01-28 | 0.2 | [GitHub](https://github.com/Tewort/Hello-Whitespace) |
+| [Hello-Whitespace](whitespace/tewort-hello-whitespace) | David (Tewort) | Whitespace | programs | 2019-01-28 | 0.2 | [GitHub](https://github.com/Tewort/Hello-Whitespace) |
 | [Whitespace Interpreter](rust/kaisugi)         | Kaito Sugimoto   | Rust       | interpreter, programs | 2018-11-23 | 0.2 | [GitHub](https://github.com/HelloRusk/WhitespaceInterpreter) |
 | [hohoho](python/freyamade-hohoho)              | Freya Madeline Broderick, Omar Sallam | Python | mapping | 2018-11-22 | - | [GitHub](https://github.com/freyamade/hohoho) |
 | [whitespace-interpreter](python/adapap)        | Adam Papenhausen | Python     | interpreter  | 2018-11-16 | 0.3 | [GitHub](https://github.com/adapap/whitespace-interpreter) |
 | [whitespace](python/ahl27)                     | Aidan Lakshman   | Python     | interpreter, text to Whitespace | 2018-11-08 | 0.3 | [GitHub](https://github.com/ahl27/whitespace) |
 | [Whitespace-Compiler](java/wysang)             | wysang           | Java, ANTLR4 | grammar, incomplete | 2018-10-21 | 0.3 incomplete | [GitHub](https://github.com/wysang/Whitespace-Compiler) |
+| [Hello World.txt](whitespace/eah-hello-world)  | Ethan Hall       | Whitespace | programs     | 2018-10-06 | 0.2 | [GitHub](https://github.com/wspace-lang/eah-hello-world-whitespace), [GitHub](https://github.com/Aniket965/Hello-world/tree/master/Whitespace) |
 | [nospace](cpp/buyoh-nospace)                   | 舞葉 (Mai Buyoh)   | C++, Ruby  | language, interpreter, programs | 2018-09-05 | 0.3 | [GitHub](https://github.com/buyoh/nospace) |
 | [Whitespace compiler for 64-bit macOS](nasm/ryzheboka) | Elena Mokeeva | NASM, Python, C | interpreter, mapping | 2018-09-04 | 0.2 | [GitHub](https://github.com/ryzheboka/Whitespace) |
 | [whitespace-interpreter](java/wrotycz)         | Kamil Węglarz    | Java       | interpreter  | 2018-05-21 | 0.3 | [GitHub](https://github.com/wrotycz/whitespace-interpreter) |

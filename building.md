@@ -167,6 +167,7 @@ Build errors are included.
 - ❌ scheme/niyarin
 - ❌ textmate/veniversum
 - ❌ vim/rolf-ws-vim
+- ❌ whitespace/eah-hello-world
 - ❌ whitespace/keens-whitelie
 - ❌ whitespace/tewort-hello-whitespace
 - ❌ “HaPyLi” by Huf Lungdung
