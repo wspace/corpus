@@ -929,10 +929,10 @@
     "languages": ["C++", "Ruby"],
     "tags": ["language", "interpreter", "programs"],
     "date": "2018-09-05 15:36:34 +0900",
-    "spec_version": "0.2",
+    "spec_version": "0.3",
     "source": ["https://github.com/buyoh/nospace"],
     "commands": [
-      { "type": "language compiler", "bin": "maicomp", "build": "make release", "usage": "$0 < <file>" },
+      { "type": "language compiler", "bin": "maicomp", "build": "make release", "usage": "$0 [<file>]" },
       { "type": "interpreter", "bin": "vm/run.rb", "usage": "ruby $0 <file> [<stdin_file>]" }
     ]
   },

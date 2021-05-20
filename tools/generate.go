@@ -279,6 +279,7 @@ var domainLabels = map[string]string{
 	"whitespace.pastebin.com":    "Pastebin",
 	"compsoc.dur.ac.uk":          "CompSoc",
 	"cs.newcastle.edu.au":        "Newcastle",
+	"hackage.haskell.org":        "Hackage",
 	"what.thedailywtf.com":       "What the Daily WTF?",
 }
 
