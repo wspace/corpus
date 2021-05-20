@@ -125,8 +125,8 @@ Build errors are included.
 - ❌ python/hearnderek
 - ❌ python/ilikepython256-whitespace-unc
 - python/kareeeeem-abyad:
-  - generate_programs
-  - src/__main__.py
+  - generate\_programs
+  - src/\_\_main\_\_.py
 - ❌ python/maximegoyette
 - ❌ python/mcolom
 - ❌ python/meand

@@ -8,17 +8,19 @@
 "Build errors are included.",
 "",
 (
-  map(.name = (.path // "“\(.name)” by " + (.authors|join(", ")))) |
-  sort_by(.name)[] |
-  .name as $name |
-  .commands |
   def ok: .bin!=null and .build_errors==null and .usage!=null;
   def status: if . then "" else "⚠️ " end;
+  def escape: gsub("_"; "\\_")? | gsub("\\*"; "\\*")?;
   def fmt:
-    (.bin // "*unspecified*") +
+    ((.bin | escape) // "*unspecified*") +
     if .build!=null or .build_errors!=null then ":" else "" end +
     if .build!=null then " `\(.build)`" else "" end +
-    if .build_errors!=null then " \(.build_errors)" else "" end;
+    if .build_errors!=null then " \(.build_errors | escape)" else "" end;
+
+  map(.name = (.path // "“\(.name)” by " + (.authors|join(", ")))) |
+  sort_by(.name)[] |
+  (.name | escape) as $name |
+  .commands |
   if length == 0 then "- ❌ \($name)"
   elif length == 1 then
     .[0] | "- \(ok | status)\($name)/" + fmt
