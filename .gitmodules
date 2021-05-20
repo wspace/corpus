@@ -145,6 +145,9 @@
 [submodule "haskell/ft-spaceman"]
 	path = haskell/ft-spaceman
 	url = https://gitlab.com/ft/spaceman.git
+[submodule "haskell/haroldl-wspace-0.4"]
+	path = haskell/haroldl-wspace-0.4
+	url = https://github.com/haroldl/whitespace-nd
 [submodule "haskell/helvm-helma"]
 	path = haskell/helvm-helma
 	url = https://github.com/helvm/helma

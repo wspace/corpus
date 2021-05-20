@@ -848,7 +848,7 @@
       {
         "type": "interpreter",
         "bin": "wi",
-        "build": "rustc whitespace_interpreter.rs -o wi",
+        "build": "rustc -o wi whitespace_interpreter.rs",
         "usage": "$0 <file>"
       }
     ]
@@ -1285,8 +1285,16 @@
       "https://github.com/hostilefork/whitespacers/tree/master/lolcode",
       "https://github.com/wspace-lang/akers-lolcode"
     ],
-    "commands": [{ "type": "interpreter", "bin": "whitespace.lol", "usage": "cat <(echo <file>) - | lci $0" }],
-    "notes": "When the program contains no read instructions, it can be run with `lci $0 <<< <file>`"
+    "commands": [
+      {
+        "type": "interpreter",
+        "bin": "whitespace.lol",
+        "dependencies": ["lci"],
+        "install_dependencies": ["git clone -b future https://github.com/justinmeza/lci", "cd lci", "python install.py"],
+        "usage": "cat <(echo <file>) - | lci $0",
+        "notes": "When the program contains no read instructions, it can be run with `lci $0 <<< <file>`"
+      }
+    ]
   },
   {
     "name": "whitespac3",
@@ -3045,6 +3053,22 @@
     "spec_version": "0.3",
     "source": ["https://github.com/pvdz/SignificantWhitespace"],
     "notes": "JS1k competition submission"
+  },
+  {
+    "name": "whitespace-0.4",
+    "path": "haskell/haroldl-wspace-0.4",
+    "authors": ["Harold Lee", "Edwin Brady"],
+    "languages": ["Haskell"],
+    "tags": ["interpreter"],
+    "date": "2011-03-10",
+    "spec_version": "0.3 with shuffle",
+    "source": [
+      "https://github.com/haroldl/whitespace-nd",
+      "https://web.archive.org/web/20141011193201/http://compsoc.dur.ac.uk/archives/whitespace/2011-March/000080.html",
+      "https://harold.hotelling.net/shuffle.html",
+      "https://hackage.haskell.org/package/whitespace-0.4"
+    ],
+    "notes": "Supports non-standard shuffle instruction. Fork of reference interpreter."
   },
   {
     "name": "white-scheme",

@@ -141,6 +141,7 @@ programming language.
 | [whitespace](ruby/bossiernesto)                | Ernesto Bossi    | Ruby       | interpreter  | 2012-10-15 | 0.2 | [GitHub](https://github.com/bossiernesto/whitespace) |
 | [Whitespace](java/yawkat)                      | Jonas Konrad     | Java       | interpreter  | 2012-10-06 | 0.3 | [GitHub](https://github.com/yawkat/Whitespace) |
 | [SignificantWhitespace](javascript/pvdz-significant-whitespace) | Peter van der Zee | JavaScript | interpreter | 2012-02-16 | 0.3 | [GitHub](https://github.com/pvdz/SignificantWhitespace) |
+| [whitespace-0.4](haskell/haroldl-wspace-0.4)   | Harold Lee, Edwin Brady | Haskell | interpreter | 2011-03-10 | 0.3 with shuffle | [GitHub](https://github.com/haroldl/whitespace-nd), [Mailing list (archive)](https://web.archive.org/web/20141011193201/http://compsoc.dur.ac.uk/archives/whitespace/2011-March/000080.html), [harold.hotelling.net](https://harold.hotelling.net/shuffle.html), [Hackage](https://hackage.haskell.org/package/whitespace-0.4) |
 | [white-scheme](scheme/athos-white-scheme)      | Ohta Shogo       | Scheme     | interpreter  | 2010-12-23 | 0.3 | [GitHub](https://github.com/athos/white-scheme) |
 | [Colorspace](python/dos1-colorspace)           | Sebastian Krzyszkowiak | Python | image steganography | 2010-11-22 | - | [GitHub](https://github.com/dos1/colorspace) |
 | [hws](haskell/takatoh-hws)                     | takatoh          | Haskell    | interpreter  | 2010-10-29 | 0.3 | [GitHub](https://github.com/takatoh/hws) |
@@ -207,14 +208,13 @@ programming language.
 | tutorial.html                            | Edwin Brady      | HTML     | 2003       | 0.2 | [CompSoc (archive)][compsoc] |
 | calc.ws<br>count.ws<br>fact.ws<br>hanoi.ws<br>hworld.ws<br>name.ws | Edwin Brady | - | 2003 | 0.2 | [CompSoc (archive)][compsoc] |
 
-## Reference interpreter mirrors and forks
+## Reference interpreter mirrors
 
 | Name               | Maintainer       | Date       | Spec | Source |
 | ------------------ | ---------------- | ---------- | ---- | ------ |
 | WSpace             | Kamil Adam       | 2019-11-24 | 0.3  | [GitHub](https://github.com/helvm/WSpace) |
 | whitespace-haskell | Andrew Archibald | 2019-08-07 | 0.2, 0.3 | [GitHub](https://github.com/wspace-lang/whitespace-haskell) |
 | WSpace             | Andrew Savinykh  | 2017-01-30 | 0.3  | [GitHub](https://github.com/TryItOnline/WSpace) |
-| whitespace-0.4     | Harold Lee       | 2011-03-10 | 0.3 with shuffle | [GitHub](https://github.com/haroldl/whitespace-nd), [Mailing list (archive)](https://web.archive.org/web/20141011193201/http://compsoc.dur.ac.uk/archives/whitespace/2011-March/000080.html), [hotelling.net](https://harold.hotelling.net/shuffle.html), [Hackage](https://hackage.haskell.org/package/whitespace-0.4) |
 
 [compsoc]: https://web.archive.org/web/20150717140342/http://compsoc.dur.ac.uk:80/whitespace/download.php
 

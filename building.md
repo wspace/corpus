@@ -58,6 +58,7 @@ Build errors are included.
 - go/yshr-wspacego/wspacego: `go mod init github.com/135yshr/wspacego && go mod tidy && go build`
 - ❌ haskell/brainbrush-tomato
 - ❌ haskell/ft-spaceman
+- ❌ haskell/haroldl-wspace-0.4
 - ❌ haskell/helvm-helma
 - ❌ haskell/helvm-helpa
 - ❌ haskell/helvm-wsa
@@ -155,7 +156,7 @@ Build errors are included.
   - ⚠️ albino-run: `cargo build --release` Needs many changes for latest Rust
 - ⚠️ rust/faultier-whitebase/*unspecified*: `cargo build --release` Needs many changes for latest Rust
 - rust/jayshua/target/release/whitespace: `cargo build --release`
-- rust/kaisugi/wi: `rustc whitespace_interpreter.rs -o wi`
+- rust/kaisugi/wi: `rustc -o wi whitespace_interpreter.rs`
 - ⚠️ rust/luminight:
   - ⚠️ librustws.rlib: `cargo build --release`
   - wsconvert.py
