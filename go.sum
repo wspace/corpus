@@ -2,6 +2,8 @@ github.com/PuerkitoBio/goquery v1.6.1/go.mod h1:GsLWisAFVj4WgDibEWF4pvYnkVQBpKBK
 github.com/andrewarchi/archive v0.0.0-20210205094453-9a6f6fa5022b/go.mod h1:4eMQEeM0qZfgxjVyKYYh+Mq1D2cotLPGy2GKpofYFRo=
 github.com/andrewarchi/browser v0.0.0-20210409224226-19233a6bc0d2 h1:rnUf41VC0RaWmmGcBcD2ycUy4/C6CF7taWGgmg4RjhE=
 github.com/andrewarchi/browser v0.0.0-20210409224226-19233a6bc0d2/go.mod h1:fIyWA87GnLlH7Gs4dVGwatgw7XIYtrMpqOvYiPFrHZs=
+github.com/andrewarchi/browser v0.0.0-20210520203030-ff923bf720d6 h1:KTGvOZ4rW8n0HXTMApNbqF5mbrksvT6zx2l3QLsZZVs=
+github.com/andrewarchi/browser v0.0.0-20210520203030-ff923bf720d6/go.mod h1:fIyWA87GnLlH7Gs4dVGwatgw7XIYtrMpqOvYiPFrHZs=
 github.com/andybalholm/cascadia v1.1.0/go.mod h1:GsXiBklL0woXo1j/WYWtSYYC4ouU9PqHO0sqidkEA4Y=
 github.com/andybalholm/cascadia v1.2.0/go.mod h1:YCyR8vOZT9aZ1CHEd8ap0gMVm2aFgxBp0T0eFw1RUQY=
 github.com/gopherjs/gopherjs v0.0.0-20181017120253-0766667cb4d1/go.mod h1:wJfORRmW1u3UXTncJ5qlYoELFm8eSnnEO6hX4iZ3EWY=
