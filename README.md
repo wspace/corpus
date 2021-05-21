@@ -45,7 +45,7 @@ programming language.
 | [Whitespace Interpreter](rust/kaisugi)         | Kaito Sugimoto   | Rust       | interpreter, programs | 2018-11-23 | 0.2 | [GitHub](https://github.com/HelloRusk/WhitespaceInterpreter) |
 | [hohoho](python/freyamade-hohoho)              | Freya Madeline Broderick, Omar Sallam | Python | mapping | 2018-11-22 | - | [GitHub](https://github.com/freyamade/hohoho) |
 | [whitespace-interpreter](python/adapap)        | Adam Papenhausen | Python     | interpreter  | 2018-11-16 | 0.3 | [GitHub](https://github.com/adapap/whitespace-interpreter) |
-| [whitespace](python/ahl27)                     | Aidan Lakshman   | Python     | interpreter, text to Whitespace | 2018-11-08 | 0.3 | [GitHub](https://github.com/ahl27/whitespace) |
+| [whitespace](python/ahl27)                     | Aidan Lakshman   | Python     | interpreter, text to Whitespace, programs | 2018-11-08 | 0.3 | [GitHub](https://github.com/ahl27/whitespace) |
 | [Whitespace-Compiler](java/wysang)             | wysang           | Java, ANTLR4 | grammar, incomplete | 2018-10-21 | 0.3 incomplete | [GitHub](https://github.com/wysang/Whitespace-Compiler) |
 | [Hello World.txt](whitespace/eah-hello-world)  | Ethan Hall       | Whitespace | programs     | 2018-10-06 | 0.2 | [GitHub](https://github.com/wspace-lang/eah-hello-world-whitespace), [GitHub](https://github.com/Aniket965/Hello-world/tree/master/Whitespace) |
 | [nospace](cpp/buyoh-nospace)                   | 舞葉 (Mai Buyoh)   | C++, Ruby  | language, interpreter, programs | 2018-09-05 | 0.3 | [GitHub](https://github.com/buyoh/nospace) |

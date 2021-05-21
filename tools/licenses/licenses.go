@@ -10,6 +10,7 @@ import (
 
 	"github.com/andrewarchi/browser/jsonutil"
 	"github.com/andrewarchi/ws-corpus/tools"
+	"github.com/pelletier/go-toml"
 )
 
 // Uses SPDX license IDs
@@ -29,18 +30,34 @@ func main() {
 	try(jsonutil.DecodeFile("projects.json", &projects))
 	for i := range projects {
 		p := &projects[i]
-		if p.License != "" || len(p.Source) == 0 || !ghRepo.MatchString(p.Source[0]) {
-			continue
+		l := p.License
+		var err error
+		if l == "" && len(p.Source) > 0 && ghRepo.MatchString(p.Source[0]) {
+			fmt.Fprintf(os.Stderr, "Getting license for %s from GitHub\n", p.Path)
+			repo := strings.TrimPrefix(p.Source[0], "https://github.com/")
+			l, err = getGitHubLicense(repo)
+			if err != nil {
+				fmt.Fprintln(os.Stderr, err)
+				break
+			}
 		}
-		repo := p.Source[0]
-		fmt.Fprintf(os.Stderr, "Getting license for %s\n", repo)
-		repo = strings.TrimPrefix(repo, "https://github.com/")
-		license, err := getGitHubLicense(repo)
+		if (l == "" || l == "not found" || l == "none") && p.Path != "" {
+			l, err = getPackageJSONLicense(p.Path)
+			if l != "" {
+				fmt.Fprintf(os.Stderr, "Got license for %s from package.json\n", p.Path)
+			} else if err == nil {
+				l, err = getCargoTOMLLicense(p.Path)
+				if l != "" {
+					fmt.Fprintf(os.Stderr, "Got license for %s from Cargo.toml\n", p.Path)
+				}
+			}
+		}
 		if err != nil {
 			fmt.Fprintln(os.Stderr, err)
-			break
 		}
-		p.License = license
+		if l != "" {
+			p.License = l
+		}
 	}
 	e := json.NewEncoder(os.Stdout)
 	e.SetEscapeHTML(false)
@@ -83,6 +100,35 @@ func getGitHubLicense(repo string) (string, error) {
 			return "not found", nil
 		}
 		return "", fmt.Errorf("message: %s", l.Message)
+	}
+	return "", nil
+}
+
+func getPackageJSONLicense(path string) (string, error) {
+	filename := path + "/package.json"
+	if stat, err := os.Stat(filename); err != nil || stat.IsDir() {
+		return "", nil
+	}
+	var pack struct {
+		License string `json:"license"`
+	}
+	if err := jsonutil.DecodeFileAllowUnknownFields(filename, &pack); err != nil {
+		return "", err
+	}
+	return pack.License, nil
+}
+
+func getCargoTOMLLicense(path string) (string, error) {
+	filename := path + "/Cargo.toml"
+	if stat, err := os.Stat(filename); err != nil || stat.IsDir() {
+		return "", nil
+	}
+	tree, err := toml.LoadFile(filename)
+	if err != nil {
+		return "", err
+	}
+	if l, ok := tree.Get("package.license").(string); ok {
+		return l, nil
 	}
 	return "", nil
 }
