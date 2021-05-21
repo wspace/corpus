@@ -142,7 +142,7 @@ Build errors are included.
 - ❌ ren-c/hostilefork
 - ❌ ruby/alesiong
 - ❌ ruby/bossiernesto
-- ❌ ruby/collidedscope-spitewaste
+- ⚠️ ruby/collidedscope-spitewaste/*unspecified*
 - ❌ ruby/dwayne
 - ruby/nishiwakki/whitespace.rb
 - ❌ ruby/pocke-akaza

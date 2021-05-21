@@ -36,6 +36,13 @@ type Project struct {
 		BufferedOutput *bool  `json:"buffered_output,omitempty"`
 		EOF            string `json:"eof,omitempty"`
 	} `json:"behavior,omitempty"`
+	Whitespace *struct {
+		NonStandard []struct {
+			Name string `json:"name,omitempty"`
+			Seq  string `json:"seq,omitempty"`
+		} `json:"nonstandard,omitempty"`
+		Extension string `json:"extension,omitempty"`
+	} `json:"whitespace,omitempty"`
 	Assembly *struct {
 		Instructions *struct {
 			Push      []string `json:"push"`
@@ -63,14 +70,15 @@ type Project struct {
 			Readc     []string `json:"readc"`
 			Readi     []string `json:"readi"`
 			Shuffle   []string `json:"shuffle,omitempty"`
-			Trace     []string `json:"trace,omitempty"`
 			DumpStack []string `json:"dumpstack,omitempty"`
 			DumpHeap  []string `json:"dumpheap,omitempty"`
+			DumpTrace []string `json:"dumptrace,omitempty"`
 		} `json:"instructions,omitempty"`
 		CaseSensitiveInstructions *bool  `json:"case_sensitive_instructions,omitempty"`
 		LineCommentPrefix         string `json:"line_comment_prefix,omitempty"`
 		LabelDefFormat            string `json:"label_def_format,omitempty"`
 		LabelRefFormat            string `json:"label_ref_format,omitempty"`
+		DebugOnly                 *bool  `json:"debug_only,omitempty"`
 		Extension                 string `json:"extension,omitempty"`
 	} `json:"assembly,omitempty"`
 	Mapping *struct {
@@ -145,9 +153,9 @@ const (
 	Readi
 
 	Shuffle
-	Trace
 	DumpStack
 	DumpHeap
+	DumpTrace
 )
 
 func (inst *Instruction) UnmarshalText(text []byte) error {
@@ -202,12 +210,12 @@ func (inst *Instruction) UnmarshalText(text []byte) error {
 		*inst = Readi
 	case "shuffle":
 		*inst = Shuffle
-	case "trace":
-		*inst = Trace
 	case "dumpstack":
 		*inst = DumpStack
 	case "dumpheap":
 		*inst = DumpHeap
+	case "dumptrace":
+		*inst = DumpTrace
 	default:
 		return fmt.Errorf("illegal instruction: %s", text)
 	}
@@ -266,12 +274,12 @@ func (inst Instruction) String() string {
 		return "readi"
 	case Shuffle:
 		return "shuffle"
-	case Trace:
-		return "trace"
 	case DumpStack:
 		return "dumpstack"
 	case DumpHeap:
 		return "dumpheap"
+	case DumpTrace:
+		return "dumptrace"
 	default:
 		return fmt.Sprintf("instruction(%d)", uint8(inst))
 	}

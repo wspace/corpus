@@ -162,8 +162,24 @@
     "languages": ["Ruby"],
     "tags": ["language compiler", "assembler", "disassembler", "programs", "stdlib"],
     "date": "2020-12-11 23:54:53 -0500",
-    "spec_version": "0.3 with shell and eval",
-    "source": ["https://github.com/collidedscope/spitewaste"]
+    "spec_version": "0.3",
+    "source": ["https://github.com/collidedscope/spitewaste"],
+    "whitespace": { "nonstandard": [{ "name": "shell", "seq": "TLL" }, { "name": "eval", "seq": "LLT" }] },
+    "commands": [
+      {
+        "install_dependencies": ["brew install ruby"],
+        "subcommands": [
+          { "name": "asm", "desc": "Generate plain Whitespace assembly from INPUT and write it to OUTPUT." },
+          { "name": "compile", "desc": "Compile a Whitespace program to native machine instructions." },
+          { "name": "convert", "desc": "Convert a Whitespace program from one format to another." },
+          { "name": "docs", "desc": "Search for matching terms in the documentation of the standard library." },
+          { "name": "exec", "desc": "Execute a Whitespace program using the specified interpreter." },
+          { "name": "help", "desc": "Describe available commands or one specific command." },
+          { "name": "image", "desc": "Generate a PNG file of syntax-highlighted Whitespace." }
+        ],
+        "notes": "TODO document options"
+      }
+    ]
   },
   {
     "name": "Spiceweight",
@@ -685,6 +701,7 @@
     "spec_version": "0.3",
     "source": ["https://github.com/andrewarchi/nebula"],
     "bounds": { "precision": "fixed" },
+    "whitespace": { "extension": "ws" },
     "assembly": {
       "instructions": {
         "push": ["push"],
@@ -712,9 +729,9 @@
         "readc": ["readc"],
         "readi": ["readi"],
         "shuffle": ["shuffle"],
-        "trace": ["trace"],
         "dumpstack": ["dumpstack"],
-        "dumpheap": ["dumpheap"]
+        "dumpheap": ["dumpheap"],
+        "dumptrace": ["trace"]
       },
       "extension": "wsa"
     },
@@ -853,10 +870,10 @@
         "printi": ["wtn"],
         "readc": ["rdc"],
         "readi": ["rdn"]
-      }
+      },
+      "debug_only": true
     },
-    "commands": [{ "type": "interpreter", "bin": "bin/go-wspace", "build": "make", "usage": "$0 <file>" }],
-    "notes": "Assembly is only displayed when debugging"
+    "commands": [{ "type": "interpreter", "bin": "bin/go-wspace", "build": "make", "usage": "$0 <file>" }]
   },
   {
     "name": "Hello-Whitespace",
@@ -920,7 +937,8 @@
     "tags": ["interpreter", "text to Whitespace", "programs"],
     "date": "2018-11-08 00:38:53 -0500",
     "spec_version": "0.3",
-    "source": ["https://github.com/ahl27/whitespace"]
+    "source": ["https://github.com/ahl27/whitespace"],
+    "whitespace": { "extension": "wsp" }
   },
   {
     "name": "Whitespace-Compiler",
@@ -932,6 +950,7 @@
     "date": "2018-10-21 19:31:04 -0700",
     "spec_version": "0.3 incomplete",
     "source": ["https://github.com/wysang/Whitespace-Compiler"],
+    "whitespace": { "extension": "whitespace" },
     "assembly": {
       "instructions": {
         "push": ["push"],
@@ -1177,7 +1196,8 @@
     "tags": ["interpreter"],
     "date": "2018-02-21 22:02:54 +0800",
     "spec_version": "0.3",
-    "source": ["https://github.com/RuMaxwell/whitespace-interpreter"]
+    "source": ["https://github.com/RuMaxwell/whitespace-interpreter"],
+    "whitespace": { "extension": "whitespace" }
   },
   {
     "name": "whitespace-lang",
@@ -1433,6 +1453,7 @@
     "date": "2016-07-30 12:44:29 -0400",
     "spec_version": "0.2",
     "source": ["https://github.com/bmazoure/whitespace"],
+    "whitespace": { "nonstandard": [{ "name": "jp", "seq": "LSL" }] },
     "commands": [
       {
         "type": "interpreter",
@@ -1443,8 +1464,7 @@
         ],
         "usage": "Rscript -e 'source(\"R/whitespace.R\"); library(readr); compile(parse(dfa(read_file(\"<file>\"))))'"
       }
-    ],
-    "notes": "Supports non-standard jp instruction: [LF][Tab][LF]"
+    ]
   },
   {
     "name": "White++",
@@ -1909,7 +1929,7 @@
         "div": ["ws_div();", "div"],
         "mod": ["ws_mod();", "mod"],
         "store": ["ws_store();", "store"],
-        "retrieve": ["ws_fetch();", "fetch", "retrieve", "retrive", "retreive"],
+        "retrieve": ["ws_fetch();", "ws_retrieve();", "fetch", "retrieve", "retrive", "retreive"],
         "label": ["ws_label(<label>);", "<number>:", ".<label>:", "<label>:", "label"],
         "call": ["ws_call(<label>);", "call"],
         "jmp": ["ws_jump(<label>);", "jmp", "jump"],
@@ -1920,7 +1940,9 @@
         "printc": ["ws_outc();", "outc", "outchar", "printc"],
         "printi": ["ws_outn();", "outn", "outnum", "printi"],
         "readc": ["ws_readc();", "readc", "readchar", "inc"],
-        "readi": ["ws_readn();", "readn", "readnum", "readi", "inn"]
+        "readi": ["ws_readn();", "readn", "readnum", "readi", "inn"],
+        "dumpstack": ["debug_printstack();"],
+        "dumpheap": ["debug_printheap();"]
       },
       "case_sensitive_instructions": false
     },
@@ -2579,10 +2601,10 @@
         "printi": ["PUTN"],
         "readc": ["GETC"],
         "readi": ["GETN"]
-      }
+      },
+      "debug_only": true
     },
-    "commands": [{ "build": "cargo build --release", "build_errors": "Needs many changes for latest Rust" }],
-    "notes": "Assembly is only displayed when debugging, not disassembled"
+    "commands": [{ "build": "cargo build --release", "build_errors": "Needs many changes for latest Rust" }]
   },
   {
     "name": "whitespace-interpreter",
@@ -3129,7 +3151,36 @@
     "tags": ["interpreter"],
     "date": "2012-11-25 16:53:09 +0000",
     "spec_version": "0.3",
-    "source": ["https://github.com/edwinb/WS-idr"]
+    "source": ["https://github.com/edwinb/WS-idr"],
+    "assembly": {
+      "instructions": {
+        "push": ["PUSH"],
+        "dup": ["DUP"],
+        "copy": ["COPY"],
+        "swap": ["SWAP"],
+        "drop": ["DISCARD"],
+        "slide": ["SLIDE"],
+        "add": ["ADD"],
+        "sub": ["SUB"],
+        "mul": ["MUL"],
+        "div": ["DIV"],
+        "mod": ["MOD"],
+        "store": ["STORE"],
+        "retrieve": ["RETRIEVE"],
+        "label": ["LABEL"],
+        "call": ["CALL"],
+        "jmp": ["JUMP"],
+        "jz": ["JZ"],
+        "jn": ["JNEG"],
+        "ret": ["RETURN"],
+        "end": ["END"],
+        "printc": ["OUTPUT"],
+        "printi": ["OUTPUTNUM"],
+        "readc": ["READCHAR"],
+        "readi": ["READNUM"]
+      },
+      "debug_only": true
+    }
   },
   {
     "name": "Whitespace4j",
@@ -3204,14 +3255,15 @@
     "languages": ["Haskell"],
     "tags": ["interpreter"],
     "date": "2011-03-10",
-    "spec_version": "0.3 with shuffle",
+    "spec_version": "0.3",
     "source": [
       "https://github.com/haroldl/whitespace-nd",
       "https://web.archive.org/web/20141011193201/http://compsoc.dur.ac.uk/archives/whitespace/2011-March/000080.html",
       "https://harold.hotelling.net/shuffle.html",
       "https://hackage.haskell.org/package/whitespace-0.4"
     ],
-    "notes": "Supports non-standard shuffle instruction. Fork of reference interpreter."
+    "whitespace": { "nonstandard": [{ "name": "shuffle", "seq": "STTS" }] },
+    "notes": "Fork of reference interpreter."
   },
   {
     "name": "white-scheme",
@@ -3492,14 +3544,15 @@
     "languages": ["Python"],
     "tags": ["interpreter"],
     "date": "2004-08-03 07:32:50 +0000",
-    "spec_version": "0.3 with trace",
+    "spec_version": "0.3",
     "source": [
       "https://github.com/wspace-lang/phlip-pywhitespace",
       "https://web.archive.org/web/20141011193201/http://compsoc.dur.ac.uk/archives/whitespace/2004-August/000048.html",
       "https://web.archive.org/web/20161111081914/http://compsoc.dur.ac.uk/archives/whitespace/2007-December/000065.html",
       "https://web.archive.org/web/20061209092911/http://www.cs.newcastle.edu.au/~c3018900/pywhitespace.tar.bz2",
       "https://www.mrphlip.com/pywhitespace.tar.bz2"
-    ]
+    ],
+    "whitespace": { "nonstandard": [{ "name": "trace", "seq": "LLT" }] }
   },
   {
     "name": "wspace 0.3",
