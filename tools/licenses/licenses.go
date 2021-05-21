@@ -30,38 +30,34 @@ func main() {
 	try(jsonutil.DecodeFile("projects.json", &projects))
 	for i := range projects {
 		p := &projects[i]
-		l := p.License
-		var err error
-		if l == "" && len(p.Source) > 0 && ghRepo.MatchString(p.Source[0]) {
-			fmt.Fprintf(os.Stderr, "Getting license for %s from GitHub\n", p.Path)
-			repo := strings.TrimPrefix(p.Source[0], "https://github.com/")
-			l, err = getGitHubLicense(repo)
-			if err != nil {
+		if p.License == "" {
+			if l, err := getLicense(p); err != nil {
 				fmt.Fprintln(os.Stderr, err)
 				break
+			} else {
+				p.License = l
 			}
-		}
-		if (l == "" || l == "not found" || l == "none") && p.Path != "" {
-			l, err = getPackageJSONLicense(p.Path)
-			if l != "" {
-				fmt.Fprintf(os.Stderr, "Got license for %s from package.json\n", p.Path)
-			} else if err == nil {
-				l, err = getCargoTOMLLicense(p.Path)
-				if l != "" {
-					fmt.Fprintf(os.Stderr, "Got license for %s from Cargo.toml\n", p.Path)
-				}
-			}
-		}
-		if err != nil {
-			fmt.Fprintln(os.Stderr, err)
-		}
-		if l != "" {
-			p.License = l
 		}
 	}
 	e := json.NewEncoder(os.Stdout)
 	e.SetEscapeHTML(false)
 	try(e.Encode(projects))
+}
+
+func getLicense(p *tools.Project) (string, error) {
+	if len(p.Source) > 0 && ghRepo.MatchString(p.Source[0]) {
+		fmt.Fprintf(os.Stderr, "Getting license for %s from GitHub\n", p.Path)
+		repo := strings.TrimPrefix(p.Source[0], "https://github.com/")
+		return getGitHubLicense(repo)
+	}
+	if p.Path != "" {
+		if l := getLicenseFromFile(p.Path, "package.json", getPackageJSONLicense); l != "" {
+			return l, nil
+		} else if l := getLicenseFromFile(p.Path, "Cargo.toml", getCargoTOMLLicense); l != "" {
+			return l, nil
+		}
+	}
+	return "", nil
 }
 
 func getGitHubLicense(repo string) (string, error) {
@@ -95,20 +91,28 @@ func getGitHubLicense(repo string) (string, error) {
 		}
 		return l.License.ID, nil
 	}
-	if l.Message != "" {
-		if l.Message == "Not Found" {
-			return "not found", nil
-		}
+	if l.Message != "" && l.Message == "Not Found" {
 		return "", fmt.Errorf("message: %s", l.Message)
 	}
 	return "", nil
 }
 
-func getPackageJSONLicense(path string) (string, error) {
-	filename := path + "/package.json"
+func getLicenseFromFile(path, filename string, f func(string) (string, error)) string {
+	filename = path + "/" + filename
 	if stat, err := os.Stat(filename); err != nil || stat.IsDir() {
-		return "", nil
+		return ""
 	}
+	l, err := getPackageJSONLicense(filename)
+	if err != nil {
+		fmt.Fprintln(os.Stderr, err)
+	}
+	if l != "" {
+		fmt.Fprintf(os.Stderr, "Got license for %s from package.json\n", path)
+	}
+	return l
+}
+
+func getPackageJSONLicense(filename string) (string, error) {
 	var pack struct {
 		License string `json:"license"`
 	}
@@ -118,11 +122,7 @@ func getPackageJSONLicense(path string) (string, error) {
 	return pack.License, nil
 }
 
-func getCargoTOMLLicense(path string) (string, error) {
-	filename := path + "/Cargo.toml"
-	if stat, err := os.Stat(filename); err != nil || stat.IsDir() {
-		return "", nil
-	}
+func getCargoTOMLLicense(filename string) (string, error) {
 	tree, err := toml.LoadFile(filename)
 	if err != nil {
 		return "", err
