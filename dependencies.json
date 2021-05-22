@@ -1,6 +1,7 @@
 {
   "Bison": { "brew": "bison" },
   "Crystal": { "brew": "crystal" },
+  "Erlang": { "brew": "erlang" },
   "Flex": { "brew": "flex" },
   "GMP": { "brew": "gmp" },
   "GNU sed": { "brew": "gnu-sed" },
@@ -20,6 +21,7 @@
   "opam": { "brew": "opam", "init": "opam init" },
   "Perl": { "brew": "perl" },
   "R": { "brew": "r" },
+  "Rebar3": { "brew": "rebar3" },
   "Rebol 3": { "manual": "https://rebolsource.net/" },
   "Ren-C": {
     "git": {

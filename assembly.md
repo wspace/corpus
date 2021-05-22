@@ -5,30 +5,30 @@
 These are the names used by known Whitespace assembly dialects for
 instructions, ranked by popularity.
 
-- `push` (29), `psh` (2), `mod.push`, `push <address>`, `push <number>`, `stack push`, `ws_push(<number>);`
-- `dup` (25), `copy` (3), `doub`, `dupe`, `dupl`, `duplicate`, `mod.dupe`, `stack dup`, `ws_dup();`
-- `copy` (19), `copynth` (2), `copy_n`, `copyn`, `mod.copy`, `pick`, `pull`, `ref`, `stack copy`, `take`, `ws_pick(<number>);`
-- `swap` (27), `swp` (3), `exchange`, `mod.swap`, `stack swap`, `swa`, `swicth`, `ws_swap();`, `xchg`
-- `discard` (14), `drop` (9), `pop` (9), `disc`, `dsc`, `mod.pop`, `stack discard`, `ws_drop();`
-- `slide` (22), `mod.slde`, `skip`, `slideoff`, `stack slide`, `ws_slide(<number>);`
-- `add` (30), `add <address>`, `add <address> <address>`, `add <address> <number>`, `add <number>`, `add <number> <address>`, `arith add`, `math.add`, `plus`, `ws_add();`
-- `sub` (29), `arith sub`, `math.sub`, `minus`, `sub <address>`, `sub <address> <address>`, `sub <address> <number>`, `sub <number>`, `sub <number> <address>`, `subtract`, `ws_sub();`
-- `mul` (26), `mult` (3), `arith mul`, `math.mult`, `mul <address>`, `mul <address> <address>`, `mul <address> <number>`, `mul <number>`, `mul <number> <address>`, `multiply`, `times`, `ws_mul();`
-- `div` (29), `divide` (2), `arith div`, `div <address>`, `div <address> <address>`, `div <address> <number>`, `div <number>`, `div <number> <address>`, `math.div`, `ws_div();`
-- `mod` (29), `modulo` (2), `arith mod`, `math.mod`, `mod <address>`, `mod <address> <address>`, `mod <address> <number>`, `mod <number>`, `mod <number> <address>`, `rem`, `ws_mod();`
-- `store` (27), `sto` (2), `heap store`, `heap.stor`, `set`, `stor`, `store <number>`, `store <number> <number>`, `ws_store();`
-- `retrieve` (22), `get` (2), `retr` (2), `fetch`, `heap retrieve`, `heap.ret`, `load`, `lod`, `rcl`, `read`, `retreive`, `retrieve <number>`, `retrive`, `retrv`, `ws_fetch();`, `ws_retrieve();`
-- `label` (15), `mark` (8), `<label>:` (5), `label_<number>:` (2), `.<label>:`, `<number>:`, `@<label>`, `@l<number>`, `flow label`, `flow.labl`, `lbl .<label>`, `lbl <label>`, `mrk`, `setlabel`, `ws_label(<label>);`
-- `call` (27), `gosub` (2), `call .<label>`, `call_subroutine`, `cll`, `flow call`, `flow.sub`, `jsr`, `ws_call(<label>);`
-- `jump` (17), `jmp` (15), `b`, `flow jump`, `flow.jump`, `goto`, `j`, `jmp .<label>`, `ws_jump(<label>);`
-- `jz` (15), `jumpz` (6), `jez` (3), `jumpzero` (3), `bz`, `flow jz`, `flow.jmpz`, `jeq`, `jmp_if0`, `jpz .<label>`, `jumpnull`, `jze`, `jzero`, `ws_jz(<label>);`
-- `jn` (12), `jumpn` (5), `jlz` (3), `jneg` (2), `jumpneg` (2), `bltz`, `flow jneg`, `flow.jmpn`, `jlt`, `jltz`, `jmp_neg`, `jne`, `jpn .<label>`, `js`, `jumpde`, `jumplz`, `jumpnegative`, `ws_jn(<label>);`
-- `ret` (19), `return` (8), `end_sub`, `endfunc`, `endofsubroutine`, `ends`, `endsub`, `flow return`, `flow.ret`, `ws_return();`
-- `end` (15), `exit` (13), `endle`, `endofprogram`, `endp`, `endprog`, `finish`, `flow end`, `flow.halt`, `quit`, `ws_exit();`
-- `outchar` (7), `printc` (6), `putc` (4), `putchar` (3), `outc` (2), `pchr` (2), `io outchar`, `io.out`, `ochar`, `out`, `output`, `outputchar`, `print_c`, `print_char`, `write_char`, `writec`, `writechar`, `ws_outc();`, `wtc`
-- `outnum` (7), `printi` (6), `putn` (4), `putnum` (3), `outn` (2), `outputnum` (2), `pnum` (2), `io outnumber`, `io.nout`, `onum`, `out_n`, `print_i`, `print_number`, `write_num`, `writeint`, `writen`, `ws_outn();`, `wtn`
-- `readchar` (10), `readc` (7), `getc` (4), `getchar` (2), `read_char` (2), `ichar`, `ichr`, `in`, `inc`, `inchar`, `inpc`, `io readchar`, `io.in`, `rchr`, `rdc`, `read_c`, `ws_readc();`
-- `readnum` (9), `readi` (6), `getn` (4), `getnum` (2), `inum` (2), `readn` (2), `in_n`, `inn`, `innum`, `inpn`, `io readnumber`, `io.nin`, `rdn`, `read_i`, `read_num`, `read_number`, `readint`, `rnum`, `ws_readn();`
+- `push` (30), `psh` (2), `mod.push`, `push <address>`, `push <number>`, `stack push`, `ws_push(<number>);`
+- `dup` (26), `copy` (3), `doub`, `dupe`, `dupl`, `duplicate`, `mod.dupe`, `stack dup`, `ws_dup();`
+- `copy` (20), `copynth` (2), `copy_n`, `copyn`, `mod.copy`, `pick`, `pull`, `ref`, `stack copy`, `take`, `ws_pick(<number>);`
+- `swap` (28), `swp` (3), `exchange`, `mod.swap`, `stack swap`, `swa`, `swicth`, `ws_swap();`, `xchg`
+- `discard` (14), `pop` (10), `drop` (9), `disc`, `dsc`, `mod.pop`, `stack discard`, `ws_drop();`
+- `slide` (23), `mod.slde`, `skip`, `slideoff`, `stack slide`, `ws_slide(<number>);`
+- `add` (31), `add <address>`, `add <address> <address>`, `add <address> <number>`, `add <number>`, `add <number> <address>`, `arith add`, `math.add`, `plus`, `ws_add();`
+- `sub` (30), `arith sub`, `math.sub`, `minus`, `sub <address>`, `sub <address> <address>`, `sub <address> <number>`, `sub <number>`, `sub <number> <address>`, `subtract`, `ws_sub();`
+- `mul` (27), `mult` (3), `arith mul`, `math.mult`, `mul <address>`, `mul <address> <address>`, `mul <address> <number>`, `mul <number>`, `mul <number> <address>`, `multiply`, `times`, `ws_mul();`
+- `div` (30), `divide` (2), `arith div`, `div <address>`, `div <address> <address>`, `div <address> <number>`, `div <number>`, `div <number> <address>`, `math.div`, `ws_div();`
+- `mod` (30), `modulo` (2), `arith mod`, `math.mod`, `mod <address>`, `mod <address> <address>`, `mod <address> <number>`, `mod <number>`, `mod <number> <address>`, `rem`, `ws_mod();`
+- `store` (28), `sto` (2), `heap store`, `heap.stor`, `set`, `stor`, `store <number>`, `store <number> <number>`, `ws_store();`
+- `retrieve` (22), `retr` (3), `get` (2), `fetch`, `heap retrieve`, `heap.ret`, `load`, `lod`, `rcl`, `read`, `retreive`, `retrieve <number>`, `retrive`, `retrv`, `ws_fetch();`, `ws_retrieve();`
+- `label` (16), `mark` (8), `<label>:` (5), `label_<number>:` (2), `.<label>:`, `<number>:`, `@<label>`, `@l<number>`, `flow label`, `flow.labl`, `lbl .<label>`, `lbl <label>`, `mrk`, `setlabel`, `ws_label(<label>);`
+- `call` (28), `gosub` (2), `call .<label>`, `call_subroutine`, `cll`, `flow call`, `flow.sub`, `jsr`, `ws_call(<label>);`
+- `jump` (18), `jmp` (15), `b`, `flow jump`, `flow.jump`, `goto`, `j`, `jmp .<label>`, `ws_jump(<label>);`
+- `jz` (15), `jumpz` (6), `jez` (3), `jumpzero` (3), `bz`, `bzero`, `flow jz`, `flow.jmpz`, `jeq`, `jmp_if0`, `jpz .<label>`, `jumpnull`, `jze`, `jzero`, `ws_jz(<label>);`
+- `jn` (12), `jumpn` (5), `jlz` (3), `jneg` (2), `jumpneg` (2), `bltz`, `bneg`, `flow jneg`, `flow.jmpn`, `jlt`, `jltz`, `jmp_neg`, `jne`, `jpn .<label>`, `js`, `jumpde`, `jumplz`, `jumpnegative`, `ws_jn(<label>);`
+- `ret` (20), `return` (8), `end_sub`, `endfunc`, `endofsubroutine`, `ends`, `endsub`, `flow return`, `flow.ret`, `ws_return();`
+- `end` (15), `exit` (13), `quit` (2), `endle`, `endofprogram`, `endp`, `endprog`, `finish`, `flow end`, `flow.halt`, `ws_exit();`
+- `outchar` (7), `printc` (6), `putc` (5), `putchar` (3), `outc` (2), `pchr` (2), `io outchar`, `io.out`, `ochar`, `out`, `output`, `outputchar`, `print_c`, `print_char`, `write_char`, `writec`, `writechar`, `ws_outc();`, `wtc`
+- `outnum` (7), `printi` (6), `putn` (5), `putnum` (3), `outn` (2), `outputnum` (2), `pnum` (2), `io outnumber`, `io.nout`, `onum`, `out_n`, `print_i`, `print_number`, `write_num`, `writeint`, `writen`, `ws_outn();`, `wtn`
+- `readchar` (10), `readc` (7), `getc` (5), `getchar` (2), `read_char` (2), `ichar`, `ichr`, `in`, `inc`, `inchar`, `inpc`, `io readchar`, `io.in`, `rchr`, `rdc`, `read_c`, `ws_readc();`
+- `readnum` (9), `readi` (6), `getn` (5), `getnum` (2), `inum` (2), `readn` (2), `in_n`, `inn`, `innum`, `inpn`, `io readnumber`, `io.nin`, `rdn`, `read_i`, `read_num`, `read_number`, `readint`, `rnum`, `ws_readn();`
 - `shuffle`
 - `debug_printstack`, `debug_printstack();`, `dumpstack`
 - `debug_printheap`, `debug_printheap();`, `dumpheap`

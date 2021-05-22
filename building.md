@@ -50,7 +50,7 @@ Build errors are included.
 - ❌ csharp/reflash
 - ❌ csharp/rolisoft-esoteric
 - ❌ elixir/quinnwilton
-- ❌ erlang/derek-mrwhite
+- ⚠️ erlang/derek-mrwhite/*unspecified*: `make` Unclear how to run
 - ⚠️ go/andrewarchi-nebula/nebula: `go mod init github.com/andrewarchi/nebula && go mod tidy && go build` Requires LLVM
 - go/kinu/whitespace: `go mod init github.com/kinu/whitespace && go build`
 - ⚠️ go/technohippy/go-whitespace: Go version is pre-go1
@@ -58,7 +58,7 @@ Build errors are included.
 - go/yshr-wspacego/wspacego: `go mod init github.com/135yshr/wspacego && go mod tidy && go build`
 - ⚠️ haskell/brainbrush-tomato/wspace: `make` Needs changes for latest Haskell
 - ❌ haskell/ft-spaceman
-- ❌ haskell/haroldl-wspace-0.4
+- ⚠️ haskell/haroldl-wspace-0.4/wspace: `make` Needs changes for latest Haskell
 - ❌ haskell/helvm-helma
 - ❌ haskell/helvm-helpa
 - ❌ haskell/helvm-wsa

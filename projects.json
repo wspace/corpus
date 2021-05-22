@@ -1341,7 +1341,8 @@
     "tags": ["interpreter"],
     "date": "2017-03-23 09:48:51 -0700",
     "spec_version": "0.3",
-    "source": ["https://github.com/derek121/mrwhite"]
+    "source": ["https://github.com/derek121/mrwhite"],
+    "commands": [{ "dependencies": ["Erlang", "Rebar3"], "build": "make", "build_errors": "Unclear how to run" }]
   },
   {
     "name": "whitespace-scheme",
@@ -3375,6 +3376,15 @@
       "https://hackage.haskell.org/package/whitespace-0.4"
     ],
     "whitespace": { "nonstandard": [{ "name": "shuffle", "seq": "STTS" }] },
+    "commands": [
+      {
+        "type": "interpreter",
+        "bin": "wspace",
+        "build": "make",
+        "build_errors": "Needs changes for latest Haskell",
+        "usage": "$0 <file>"
+      }
+    ],
     "notes": "Fork of reference interpreter."
   },
   {
@@ -3386,7 +3396,36 @@
     "tags": ["interpreter"],
     "date": "2010-12-23 08:35:18 +0900",
     "spec_version": "0.3",
-    "source": ["https://github.com/athos/white-scheme"]
+    "source": ["https://github.com/athos/white-scheme"],
+    "assembly": {
+      "instructions": {
+        "push": ["PUSH"],
+        "dup": ["DUP"],
+        "copy": ["COPY"],
+        "swap": ["SWAP"],
+        "drop": ["POP"],
+        "slide": ["SLIDE"],
+        "add": ["ADD"],
+        "sub": ["SUB"],
+        "mul": ["MUL"],
+        "div": ["DIV"],
+        "mod": ["MOD"],
+        "store": ["STORE"],
+        "retrieve": ["RETR"],
+        "label": ["LABEL"],
+        "call": ["CALL"],
+        "jmp": ["JUMP"],
+        "jz": ["BZERO"],
+        "jn": ["BNEG"],
+        "ret": ["RET"],
+        "end": ["QUIT"],
+        "printc": ["PUTC"],
+        "printi": ["PUTN"],
+        "readc": ["GETC"],
+        "readi": ["GETN"]
+      }
+    },
+    "notes": "TODO assembly may only be used internally"
   },
   {
     "name": "Colorspace",
