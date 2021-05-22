@@ -102,7 +102,7 @@
     "name": "asm2ws",
     "path": "c/kspalaiologos-asm2ws",
     "authors": ["Kamila Szewczyk (Palaiologos)"],
-    "license": "GPL-3.0",
+    "license": "GPL-3.0-or-later",
     "languages": ["C", "Yacc", "Lex"],
     "tags": ["interpreter", "JIT", "assembler", "disassembler", "optimizer", "programs"],
     "date": "2020-12-31 22:37:25 +0100",
@@ -269,7 +269,7 @@
     "date": "2020-08-04 15:04:18 +0200",
     "spec_version": "0.2",
     "source": ["https://github.com/Luminighty/rustws"],
-    "mapping": { "space": "S", "tab": "T", "lf": "L", "spaces_between": false, "ignore_case": true },
+    "mappings": [{ "space": "S", "tab": "T", "lf": "L", "spaces_between": false, "ignore_case": true }],
     "commands": [
       {
         "type": "library",
@@ -371,7 +371,7 @@
     "description": "Self-hosted Whitespace compiler for 64-bit Linux",
     "path": "whitespace/keens-whitelie",
     "authors": ["κeen"],
-    "license": "GPL-2.0",
+    "license": "GPL-2.0-or-later",
     "languages": ["Whitespace", "Ruby"],
     "tags": ["compiler", "assembler", "programs"],
     "date": "2020-03-31 23:46:45 +0900",
@@ -427,7 +427,7 @@
     "name": "EvanescoJS",
     "path": "javascript/damle-evanescojs",
     "authors": ["Atharv Damle"],
-    "license": "GPL-3.0",
+    "license": "GPL-3.0-or-later",
     "languages": ["JavaScript"],
     "tags": ["text to Whitespace", "web app"],
     "date": "2020-03-14 00:42:59 +1100",
@@ -591,7 +591,7 @@
     "name": "Whitespace UnC",
     "path": "python/ilikepython256-whitespace-unc",
     "authors": ["Python Whiz 256"],
-    "license": "GPL-3.0",
+    "license": "GPL-3.0-or-later",
     "languages": ["Python"],
     "tags": ["assembler", "web client", "programs"],
     "date": "2019-09-24 10:11:31 -0600",
@@ -638,7 +638,7 @@
     "date": "2019-07-25 16:02:44 +1000",
     "spec_version": "0.3",
     "source": ["https://github.com/loklaan/zerowidth-lang"],
-    "mapping": { "space": "&#8203;", "tab": "&#8204;", "lf": "\n", "extension": "zw" },
+    "mappings": [{ "space": "&#8203;", "tab": "&#8204;", "lf": "\n", "extension": "zw" }],
     "notes": "Fork of vii5ard/whitespace"
   },
   {
@@ -924,7 +924,7 @@
     "date": "2018-11-22 18:48:52 +0000",
     "spec_version": "-",
     "source": ["https://github.com/freyamade/hohoho"],
-    "mapping": { "space": "snow", "tab": "hohoho", "lf": "\n", "spaces_between": true, "extension": "ho" }
+    "mappings": [{ "space": "snow", "tab": "hohoho", "lf": "\n", "spaces_between": true, "extension": "ho" }]
   },
   {
     "name": "whitespace-interpreter",
@@ -1028,7 +1028,7 @@
     "date": "2018-09-04 11:25:14 +0200",
     "spec_version": "0.2",
     "source": ["https://github.com/ryzheboka/Whitespace"],
-    "mapping": { "space": "A", "tab": "B", "lf": "C", "spaces_between": false },
+    "mappings": [{ "space": "A", "tab": "B", "lf": "C", "spaces_between": false }],
     "commands": [
       {
         "type": "compiler",
@@ -1153,7 +1153,7 @@
     "date": "2018-04-11 01:33:40 -0400",
     "spec_version": "-",
     "source": ["https://github.com/North15/projectOne"],
-    "mapping": { "space": "S", "tab": "T", "lf": "L", "extension": "txt" }
+    "mappings": [{ "space": "S", "tab": "T", "lf": "L", "extension": "txt" }]
   },
   {
     "name": "whitespace_interpreter",
@@ -1311,6 +1311,7 @@
       {
         "type": "assembler",
         "bin": "wsm2ws.pl",
+        "dependencies": ["Perl"],
         "install_dependencies": [
           "perl -MCPAN -e 'install Algorithm::Combinatorics, File::Basename, Parse::Token::Lite, String::Unescape, Tie::RegexpHash'"
         ],
@@ -1402,7 +1403,7 @@
     "name": "whitespac3",
     "path": "python/alecgraves-whitespac3",
     "authors": ["Alec Graves"],
-    "license": "GPL-3.0",
+    "license": "GPL-3.0-or-later",
     "languages": ["Python"],
     "tags": ["interpreter"],
     "date": "2016-11-17 18:52:26 -0500",
@@ -1461,7 +1462,7 @@
     "date": "2016-07-30 12:44:29 -0400",
     "spec_version": "0.2",
     "source": ["https://github.com/bmazoure/whitespace"],
-    "whitespace": { "nonstandard": [{ "name": "jp", "seq": "LSL" }] },
+    "whitespace": { "nonstandard": [{ "name": "jp", "seq": "LSL", "arg": "label" }] },
     "commands": [
       {
         "type": "interpreter",
@@ -1478,7 +1479,7 @@
     "name": "White++",
     "path": "cpp/marcellippmann-whitepp",
     "authors": ["Marcel Lippmann"],
-    "license": "GPL-3.0",
+    "license": "GPL-3.0-or-later",
     "languages": ["C++"],
     "tags": ["interpreter"],
     "date": "2016-07-27 17:01:11 +0200",
@@ -1778,7 +1779,7 @@
     "name": "whitespace-ruby",
     "path": "ruby/alesiong",
     "authors": ["alesiong"],
-    "license": "GPL-2.0",
+    "license": "GPL-2.0-or-later",
     "languages": ["Ruby"],
     "tags": ["interpreter", "disassembler", "programs"],
     "date": "2016-03-05 16:39:05 +0800",
@@ -1812,7 +1813,7 @@
     "name": "WHINT",
     "path": "cpp/abac-whint",
     "authors": ["Adam Bac"],
-    "license": "GPL-2.0",
+    "license": "GPL-2.0-or-later",
     "languages": ["C++"],
     "tags": ["interpreter"],
     "date": "2015-12-31 17:35:38 +0100",
@@ -1871,7 +1872,7 @@
     "date": "2015-09-09 08:16:43 -0700",
     "spec_version": "-",
     "source": ["https://github.com/therebelrobot/whitespace"],
-    "mapping": { "space": "s", "tab": "t", "lf": "n", "spaces_between": false }
+    "mappings": [{ "space": "s", "tab": "t", "lf": "n", "spaces_between": false }]
   },
   {
     "name": "whitespacer",
@@ -1923,6 +1924,17 @@
     "date": "2015-08-18 14:25:03 +0100",
     "spec_version": "0.3",
     "source": ["https://github.com/rdebath/whitespace"],
+    "whitespace": {
+      "nonstandard": [
+        { "name": "jzp", "arg": "label" },
+        { "name": "jzn", "arg": "label" },
+        { "name": "jp", "arg": "label" },
+        { "name": "jnz", "arg": "label" },
+        { "name": "ifoption" },
+        { "name": "endoption" },
+        { "name": "include" }
+      ]
+    },
     "assembly": {
       "instructions": {
         "push": ["ws_push(<number>);", "push"],
@@ -1999,7 +2011,7 @@
         "notes": "Assembles Oliver Burghard's Whitespace assembly dialect, including shorthand instructions"
       }
     ],
-    "notes": "Transpiles to C. Supports non-standard instructions: jzp, jzn, jp, jnz, ifoption, endoption, include, debug_printheap, and debug_printstack. The input assembly dialects of wsa and wsa.sed, as well as the output C function calls, are combined in .assembly.instructions. Has tests directory contains Whitespace programs from many authors."
+    "notes": "Transpiles to C. The input assembly dialects of wsa and wsa.sed, as well as the output C function calls, are combined in .assembly.instructions. Has tests directory contains Whitespace programs from many authors."
   },
   {
     "name": "BlueSpace",
@@ -2042,7 +2054,7 @@
       "line_comment_prefix": "#",
       "extension": "wsa"
     },
-    "mapping": { "space": "s", "tab": "t", "lf": "n", "extension": "wsp" },
+    "mappings": [{ "space": "s", "tab": "t", "lf": "n", "extension": "wsp" }],
     "notes": "Mapping has spaces between opcode and param and each instruction is on a separate line. Assembly string parameters are written with s/t/l"
   },
   {
@@ -2068,7 +2080,7 @@
     "name": "whitespace",
     "path": "python/mcolom",
     "authors": ["Miguel Colom"],
-    "license": "GPL-3.0",
+    "license": "GPL-3.0-or-later",
     "languages": ["Python"],
     "tags": ["interpreter"],
     "date": "2015-05-18 18:10:03 +0200",
@@ -2090,7 +2102,7 @@
     "name": "I C Whitespace",
     "path": "c/strangepan-i-c-whitespace",
     "authors": ["Dan Andrus"],
-    "license": "GPL-2.0",
+    "license": "GPL-2.0-or-later",
     "languages": ["C"],
     "tags": ["interpreter"],
     "date": "2015-03-10 01:25:16 -0600",
@@ -2151,19 +2163,28 @@
       "case_sensitive_instructions": true,
       "line_comment_prefix": "#"
     },
-    "mapping": { "space": "S", "tab": "T", "lf": "\n" }
+    "mappings": [{ "space": "S", "tab": "T", "lf": "\n" }]
   },
   {
     "name": "Tomato Programming Language",
     "path": "haskell/brainbrush-tomato",
     "authors": ["brainbrush"],
-    "license": "GPL-2.0",
+    "license": "GPL-2.0-or-later",
     "languages": ["Haskell"],
     "tags": ["interpreter", "mapping", "programs"],
     "date": "2015-02-26 20:31:40 +0800",
     "spec_version": "0.3",
     "source": ["https://github.com/brainbush/Tomato-Programming-Language"],
-    "mapping": { "space": "番", "tab": "茄", "lf": "干" }
+    "mappings": [{ "space": "番", "tab": "茄", "lf": "干" }],
+    "commands": [
+      {
+        "type": "interpreter",
+        "bin": "wspace",
+        "build": "make",
+        "build_errors": "Needs changes for latest Haskell",
+        "usage": "$0 <file>"
+      }
+    ]
   },
   {
     "name": "whitespace",
@@ -2391,7 +2412,7 @@
     "name": "whitespace.php",
     "path": "php/johankj",
     "authors": ["Johan K. Jensen"],
-    "license": "not found",
+    "license": "MIT",
     "languages": ["PHP"],
     "tags": ["interpreter", "programs"],
     "date": "2014-11-01 16:50:34 +0100",
@@ -2403,7 +2424,7 @@
     "name": "wsm",
     "path": "php/igorw-wsm",
     "authors": ["Igor Wiedler"],
-    "license": "not found",
+    "license": "none",
     "languages": ["PHP"],
     "tags": ["assembler", "programs"],
     "date": "2014-09-27 22:24:38 +0200",
@@ -2441,15 +2462,18 @@
     "commands": [{ "type": "assembler", "bin": "bin/wsm", "usage": "php $0 <file>" }]
   },
   {
-    "name": "pyws",
+    "name": "PYWS",
     "path": "python/eizoassik-pyws",
     "authors": ["Eizo Assik"],
-    "license": "not found",
+    "license": "none",
     "languages": ["Python"],
-    "tags": ["interpreter", "assembler", "disassembler"],
+    "tags": ["interpreter", "assembler", "disassembler", "mapping"],
     "date": "2014-08-28 10:18:04 +0800",
     "spec_version": "0.3",
     "source": ["https://github.com/EizoAssik/pyws"],
+    "whitespace": {
+      "nonstandard": [{ "name": "PYFN", "seq": "LLS", "arg": "label" }, { "name": "PUSHS", "arg": "string" }]
+    },
     "assembly": {
       "instructions": {
         "push": ["PUSH"],
@@ -2479,7 +2503,52 @@
       },
       "line_comment_prefix": "#"
     },
-    "notes": "Has PYFN (call Python function) and PUSHS"
+    "mappings": [
+      { "space": "S", "tab": "T", "lf": "L", "spaces_between": false },
+      { "space": "草", "tab": "泥", "lf": "马", "spaces_between": false }
+    ],
+    "commands": [
+      {
+        "bin": "pyws.py",
+        "dependencies": ["Python 3"],
+        "usage": "python3 $0 [-h | --help] [-A] [--IR] [--strict] [--style <style>] [--sep <sep>] [--arg-sep <arg_sep>] [--debug] [--traceall] $0 <file>",
+        "options": [
+          { "short": "h", "long": "help", "desc": "show this help message and exit" },
+          { "short": "A", "desc": "use assembler instead of compiler" },
+          { "long": "IR", "desc": "compile to WSIR instead of running it" },
+          { "long": "strict", "desc": "use strict mode" },
+          {
+            "long": "style",
+            "arg": "STYLE",
+            "type": "enum",
+            "default": "ORIGIN",
+            "desc": "code style",
+            "values": [
+              { "values": ["ORIGIN"], "desc": "use space/tab/lf" },
+              { "values": ["STL"], "desc": "use S/T/L instead space/tab/lf" },
+              { "values": ["GMH"], "desc": "use 草/泥/马 instead of space/tab/lf" }
+            ]
+          },
+          {
+            "long": "sep",
+            "arg": "SEP",
+            "type": "string",
+            "default": ";",
+            "desc": "separator for assembled code between operators"
+          },
+          {
+            "long": "arg-sep",
+            "arg": "ARG_SEP",
+            "type": "string",
+            "default": ";",
+            "desc": "separator for assembled code between arguments"
+          },
+          { "long": "debug", "desc": "run with debug mode" },
+          { "long": "traceall", "desc": "store heap and stack after EACH operator" }
+        ],
+        "option_parse": "Python argparse"
+      }
+    ]
   },
   {
     "name": "Albino",
@@ -2557,7 +2626,7 @@
     "name": "Whitespace-LLVM",
     "path": "cpp/subv-whitespace-llvm",
     "authors": ["Sebastian Valle"],
-    "license": "GPL-3.0",
+    "license": "GPL-3.0-or-later",
     "languages": ["C++", "LLVM"],
     "tags": ["interpreter"],
     "date": "2014-07-16 08:48:25 -0500",
@@ -2619,7 +2688,7 @@
     "name": "whitespace-interpreter",
     "path": "java/azige",
     "authors": ["Azige"],
-    "license": "not found",
+    "license": "Apache-2.0",
     "languages": ["Java"],
     "tags": ["language", "interpreter"],
     "date": "2014-06-18 23:38:41 +0800",
@@ -2642,7 +2711,7 @@
     "name": "wsint",
     "path": "masm/jarsp-wsint",
     "authors": ["jarsp"],
-    "license": "not found",
+    "license": "none",
     "languages": ["MASM"],
     "tags": ["interpreter"],
     "date": "2014-06-01 19:15:40 +0800",
@@ -2662,7 +2731,7 @@
     "name": "white",
     "path": "cpp/keirua-white",
     "authors": ["Keirua"],
-    "license": "not found",
+    "license": "none",
     "languages": ["C++"],
     "tags": ["interpreter", "disassembler"],
     "date": "2014-05-30 23:51:59 +0200",
@@ -2720,7 +2789,7 @@
     "name": "elixir-whitespace",
     "path": "elixir/quinnwilton",
     "authors": ["Quinn Wilton"],
-    "license": "not found",
+    "license": "none",
     "languages": ["Elixir"],
     "tags": ["interpreter"],
     "date": "2014-03-07 17:08:19 -0500",
@@ -2731,7 +2800,7 @@
     "name": "whitespace-coder",
     "path": "java/praveenvaka-coder",
     "authors": ["Praveen Reddy Vaka"],
-    "license": "not found",
+    "license": "none",
     "languages": ["Java"],
     "tags": ["program builder"],
     "date": "2014-03-07 05:39:21 -0800",
@@ -2742,7 +2811,7 @@
     "name": "SaTaN",
     "path": "c/threeifbywhiskey-satan",
     "authors": ["Dorien Snake"],
-    "license": "not found",
+    "license": "none",
     "languages": ["C"],
     "tags": ["interpreter"],
     "date": "2014-03-03 16:03:49 -0500",
@@ -2764,7 +2833,7 @@
     "name": "Whitespace Covert Channel",
     "path": "php/jseidl-wcc",
     "authors": ["Jan Seidl"],
-    "license": "not found",
+    "license": "none",
     "languages": ["PHP"],
     "tags": ["text to Whitespace", "web service"],
     "date": "2014-02-18 17:13:16 -0300",
@@ -2804,7 +2873,7 @@
       "label_cap": "unbounded",
       "instruction_cap": "unbounded"
     },
-    "mapping": { "space": "S", "tab": "T", "lf": "\n", "spaces_between": false },
+    "mappings": [{ "space": "S", "tab": "T", "lf": "\n", "spaces_between": false }],
     "commands": [
       {
         "type": "interpreter",
@@ -2829,7 +2898,7 @@
     "name": "wvm",
     "path": "python/apua-wvm",
     "authors": ["Apua"],
-    "license": "not found",
+    "license": "none",
     "languages": ["Python"],
     "tags": ["interpreter", "programs"],
     "date": "2013-11-24 15:06:57 +0800",
@@ -2840,7 +2909,7 @@
     "name": "wseditor",
     "path": "java/yuukiaria-wseditor",
     "authors": ["YuukiARIA"],
-    "license": "not found",
+    "license": "none",
     "languages": ["Java"],
     "tags": ["IDE"],
     "date": "2013-11-21 22:29:13 -0800",
@@ -2851,7 +2920,7 @@
     "name": "whitespace-llvm",
     "path": "cpp/tycho-whitespace-llvm",
     "authors": ["Tycho Bickerstaff"],
-    "license": "GPL-2.0",
+    "license": "GPL-2.0-or-later",
     "languages": ["C++", "LLVM"],
     "tags": ["compiler", "JIT", "optimizer", "programs"],
     "date": "2013-08-31 19:34:35 +0100",
@@ -2875,7 +2944,7 @@
     "name": "Whitespace-JS",
     "path": "coffeescript/ehrlichbryan",
     "authors": ["Bryan Ehrlich"],
-    "license": "not found",
+    "license": "none",
     "languages": ["CoffeeScript"],
     "tags": ["interpreter", "assembler"],
     "date": "2013-08-14 18:12:35 -0400",
@@ -2919,7 +2988,7 @@
     "name": "ws-interpreter",
     "path": "cpp/yuukiaria",
     "authors": ["YuukiARIA"],
-    "license": "not found",
+    "license": "none",
     "languages": ["C++"],
     "tags": ["interpreter", "programs"],
     "date": "2013-05-05 04:06:36 -0700",
@@ -2959,7 +3028,7 @@
     "name": "whitespace",
     "path": "java/abhijitsharma",
     "authors": ["Abhijit Sharma"],
-    "license": "not found",
+    "license": "none",
     "languages": ["Java"],
     "tags": ["interpreter"],
     "date": "2013-04-05 10:21:09 -0700",
@@ -2981,22 +3050,51 @@
     "name": "Whitelips IDE",
     "path": "javascript/vii5ard-whitelips-ide",
     "authors": ["Henri Lakk"],
-    "license": "not found",
+    "license": "none",
     "languages": ["JavaScript"],
-    "tags": ["interpreter", "optimizer", "assembler", "IDE"],
+    "tags": ["interpreter", "optimizer", "assembler", "IDE", "programs"],
     "date": "2013-03-20 23:47:24 +0200",
     "spec_version": "0.3",
     "source": [
       "https://github.com/vii5ard/whitespace",
       "https://vii5ard.github.io/whitespace/",
       "https://web.archive.org/web/20141011193149/http://compsoc.dur.ac.uk/archives/whitespace/2013-April/000082.html"
-    ]
+    ],
+    "assembly": {
+      "instructions": {
+        "push": ["push"],
+        "dup": ["dup"],
+        "copy": ["copy"],
+        "swap": ["swap"],
+        "drop": ["drop"],
+        "slide": ["slide"],
+        "add": ["add"],
+        "sub": ["sub"],
+        "mul": ["mul"],
+        "div": ["div"],
+        "mod": ["mod"],
+        "store": ["store"],
+        "retrieve": ["retrieve"],
+        "label": ["label"],
+        "call": ["call"],
+        "jmp": ["jmp"],
+        "jz": ["jz"],
+        "jn": ["jn"],
+        "ret": ["ret"],
+        "end": ["end"],
+        "printc": ["printc"],
+        "printi": ["printi"],
+        "readc": ["readc"],
+        "readi": ["readi"]
+      }
+    },
+    "notes": "TODO document macros"
   },
   {
     "name": "whitespace-interpreter",
     "path": "cpp/timvandermeij",
     "authors": ["Tim van der Meij", "Willem Obbens", "Simon Klaver"],
-    "license": "not found",
+    "license": "none",
     "languages": ["C++"],
     "tags": ["interpreter", "assembler", "disassembler", "mapping", "programs"],
     "date": "2013-02-06 06:24:15 -0800",
@@ -3035,7 +3133,7 @@
       },
       "case_sensitive_instructions": true
     },
-    "mapping": { "space": "S ", "tab": "T ", "lf": "LF\n", "spaces_between": false },
+    "mappings": [{ "space": "S ", "tab": "T ", "lf": "LF\n", "spaces_between": false }],
     "commands": [
       {
         "type": "interpreter",
@@ -3050,7 +3148,7 @@
     "name": "ws",
     "path": "cpp/knmorgan",
     "authors": ["Kyle Morgan"],
-    "license": "GPL-3.0",
+    "license": "GPL-3.0-or-later",
     "languages": ["C++"],
     "tags": ["interpreter"],
     "date": "2012-12-29 00:19:16 -0500",
@@ -3083,7 +3181,7 @@
     "name": "Whitespace-Interpreter",
     "path": "cpp/noia",
     "authors": ["Tucker Noia"],
-    "license": "not found",
+    "license": "none",
     "languages": ["C++"],
     "tags": ["interpreter", "programs"],
     "date": "2012-12-15 11:48:38 -0800",
@@ -3104,7 +3202,7 @@
     "name": "wsInt",
     "path": "cpp/dpohanlon-wsint",
     "authors": ["Daniel O'Hanlon"],
-    "license": "not found",
+    "license": "none",
     "languages": ["C++"],
     "tags": ["interpreter", "disassembler"],
     "date": "2012-12-02 06:45:50 -0800",
@@ -3150,7 +3248,7 @@
     "name": "WS-idr",
     "path": "idris/edwinb-ws-idr",
     "authors": ["Edwin Brady"],
-    "license": "not found",
+    "license": "none",
     "languages": ["Idris"],
     "tags": ["interpreter"],
     "date": "2012-11-25 16:53:09 +0000",
@@ -3184,13 +3282,22 @@
         "readi": ["READNUM"]
       },
       "debug_only": true
-    }
+    },
+    "commands": [
+      {
+        "bin": "wspace",
+        "dependencies": ["Idris"],
+        "build": "idris --build wspace.ipkg",
+        "build_errors": "Needs changes for latest Idris",
+        "usage": "$0 <file>"
+      }
+    ]
   },
   {
     "name": "Whitespace4j",
     "path": "java/brumbeere-whitespace4j",
     "authors": ["Philipp Speck"],
-    "license": "not found",
+    "license": "none",
     "languages": ["Java"],
     "tags": ["interpreter"],
     "date": "2012-11-04 21:47:04 +0100",
@@ -3201,7 +3308,7 @@
     "name": "whitespace",
     "path": "cpp/abcsharp",
     "authors": ["abcsharp"],
-    "license": "not found",
+    "license": "none",
     "languages": ["C++"],
     "tags": ["interpreter"],
     "date": "2012-10-29 02:26:23 +0900",
@@ -3221,7 +3328,7 @@
     "name": "whitespace",
     "path": "ruby/bossiernesto",
     "authors": ["Ernesto Bossi"],
-    "license": "not found",
+    "license": "GPL-3.0-or-later",
     "languages": ["Ruby"],
     "tags": ["interpreter"],
     "date": "2012-10-15 09:37:19 -0300",
@@ -3232,18 +3339,19 @@
     "name": "Whitespace",
     "path": "java/yawkat",
     "authors": ["Jonas Konrad"],
-    "license": "not found",
+    "license": "none",
     "languages": ["Java"],
     "tags": ["interpreter"],
     "date": "2012-10-06 20:46:37 +0200",
     "spec_version": "0.3",
-    "source": ["https://github.com/yawkat/Whitespace"]
+    "source": ["https://github.com/yawkat/Whitespace"],
+    "notes": "Program is hardcoded to the source of fibonacci.ws"
   },
   {
     "name": "SignificantWhitespace",
     "path": "javascript/pvdz-significant-whitespace",
     "authors": ["Peter van der Zee"],
-    "license": "not found",
+    "license": "none",
     "languages": ["JavaScript"],
     "tags": ["interpreter"],
     "date": "2012-02-16 23:15:56 +0100",
@@ -3255,7 +3363,7 @@
     "name": "whitespace-0.4",
     "path": "haskell/haroldl-wspace-0.4",
     "authors": ["Harold Lee", "Edwin Brady"],
-    "license": "GPL-2.0",
+    "license": "GPL-2.0-or-later",
     "languages": ["Haskell"],
     "tags": ["interpreter"],
     "date": "2011-03-10",
@@ -3273,7 +3381,7 @@
     "name": "white-scheme",
     "path": "scheme/athos-white-scheme",
     "authors": ["Ohta Shogo"],
-    "license": "not found",
+    "license": "MIT",
     "languages": ["Scheme"],
     "tags": ["interpreter"],
     "date": "2010-12-23 08:35:18 +0900",
@@ -3284,7 +3392,7 @@
     "name": "Colorspace",
     "path": "python/dos1-colorspace",
     "authors": ["Sebastian Krzyszkowiak"],
-    "license": "not found",
+    "license": "GPL-2.0-or-later",
     "languages": ["Python"],
     "tags": ["image steganography"],
     "date": "2010-11-22 15:54:53 +0100",
@@ -3295,18 +3403,33 @@
     "name": "hws",
     "path": "haskell/takatoh-hws",
     "authors": ["takatoh"],
-    "license": "not found",
+    "license": "none",
     "languages": ["Haskell"],
-    "tags": ["interpreter"],
+    "tags": ["interpreter", "programs"],
     "date": "2010-10-29 10:48:21 +0900",
     "spec_version": "0.3",
-    "source": ["https://github.com/takatoh/hws"]
+    "source": ["https://github.com/takatoh/hws"],
+    "commands": [
+      {
+        "type": "interpreter",
+        "bin": "hws",
+        "build": "make",
+        "build_errors": "Needs changes for latest Haskell",
+        "usage": "$0 <file>",
+        "options": [
+          { "short": "i", "long": "instruction", "desc": "show instructions" },
+          { "short": "v", "long": "version", "desc": "show version" },
+          { "short": ["h", "?"], "long": "help", "desc": "show this message" }
+        ],
+        "option_parse": "manual"
+      }
+    ]
   },
   {
     "name": "Esoteric Code Interpreter",
     "path": "csharp/rolisoft-esoteric",
     "authors": ["Roland Bogosi"],
-    "license": "not found",
+    "license": "GPL-3.0-or-later",
     "languages": ["C#"],
     "tags": ["interpreter", "disassembler"],
     "date": "2010-10-11 09:33:25 +0300",
@@ -3344,7 +3467,7 @@
     "name": "whitespace-go",
     "path": "go/technohippy",
     "authors": ["ANDO Yasushi"],
-    "license": "not found",
+    "license": "none",
     "languages": ["Go"],
     "tags": ["interpreter"],
     "date": "2010-10-08 03:12:01 +0900",
@@ -3378,7 +3501,7 @@
   {
     "name": "HaPyLi",
     "authors": ["Huf Lungdung"],
-    "license": "not found",
+    "license": "unknown",
     "languages": ["Python"],
     "tags": ["language", "interpreter"],
     "date": "2010-05-23",
@@ -3485,7 +3608,7 @@
     "name": "wspace",
     "path": "cpp/pavelshub",
     "authors": ["Pavel Shub"],
-    "license": "GPL-2.0",
+    "license": "GPL-2.0-or-later",
     "languages": ["C++"],
     "tags": ["interpreter", "debugger", "disassembler", "mapping"],
     "date": "2007-05-26 17:19:24",
@@ -3524,7 +3647,7 @@
         "readi": ["readnum"]
       }
     },
-    "mapping": { "space": "A", "tab": "B", "lf": "C\n", "spaces_between": false },
+    "mappings": [{ "space": "A", "tab": "B", "lf": "C\n", "spaces_between": false }],
     "commands": [
       {
         "type": "interpreter",
@@ -3553,7 +3676,7 @@
     "name": "pywhitespace",
     "path": "python/phlip-pywhitespace",
     "authors": ["Phillip Bradbury"],
-    "license": "GPL-2.0",
+    "license": "GPL-2.0-or-later",
     "languages": ["Python"],
     "tags": ["interpreter"],
     "date": "2004-08-03 07:32:50 +0000",
@@ -3570,7 +3693,7 @@
   {
     "name": "wspace 0.3",
     "authors": ["Edwin Brady"],
-    "license": "GPL-2.0",
+    "license": "GPL-2.0-or-later",
     "languages": ["Haskell", "Emacs Lisp"],
     "tags": ["interpreter", "syntax highlighting", "programs"],
     "date": "2004-05-04",
@@ -3598,7 +3721,7 @@
   {
     "name": "whitespace-ruby",
     "authors": ["Wayne E. Conrad"],
-    "license": "GPL-2.0",
+    "license": "GPL-2.0-or-later",
     "languages": ["Ruby"],
     "tags": ["interpreter"],
     "date": "2003-04-02",
@@ -3611,7 +3734,7 @@
   {
     "name": "whitespace.pl",
     "authors": ["Mike Kölbl"],
-    "license": "GPL-2.0",
+    "license": "GPL-2.0-or-later",
     "languages": ["Perl"],
     "tags": ["interpreter"],
     "date": "2003-04-01",
@@ -3624,7 +3747,7 @@
   {
     "name": "whitespace-asm",
     "authors": ["Wayne E. Conrad"],
-    "license": "GPL-2.0",
+    "license": "GPL-2.0-or-later",
     "languages": ["Ruby"],
     "tags": ["assembler"],
     "date": "2003",
@@ -3664,7 +3787,7 @@
   {
     "name": "whitespace-disassem",
     "authors": ["Wayne E. Conrad"],
-    "license": "GPL-2.0",
+    "license": "GPL-2.0-or-later",
     "languages": ["Ruby"],
     "tags": ["disassembler"],
     "date": "2003",
@@ -3733,7 +3856,7 @@
   {
     "name": "wspace 0.2",
     "authors": ["Edwin Brady"],
-    "license": "GPL-2.0",
+    "license": "GPL-2.0-or-later",
     "languages": ["Haskell"],
     "tags": ["interpreter", "programs"],
     "date": "2002",

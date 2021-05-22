@@ -5,6 +5,7 @@
   "GMP": { "brew": "gmp" },
   "GNU sed": { "brew": "gnu-sed" },
   "Grunt": { "shell": "npm install -g grunt-cli" },
+  "Idris": { "brew": "idris" },
   "jq": { "brew": "jq" },
   "lci": {
     "git": {
@@ -17,6 +18,7 @@
   "Leiningen": { "brew": "leiningen" },
   "NASM": { "brew": "nasm" },
   "opam": { "brew": "opam", "init": "opam init" },
+  "Perl": { "brew": "perl" },
   "R": { "brew": "r" },
   "Rebol 3": { "manual": "https://rebolsource.net/" },
   "Ren-C": {

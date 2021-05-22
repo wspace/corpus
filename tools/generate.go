@@ -40,6 +40,7 @@ type Project struct {
 		NonStandard []struct {
 			Name string `json:"name,omitempty"`
 			Seq  string `json:"seq,omitempty"`
+			Arg  string `json:"arg,omitempty"`
 		} `json:"nonstandard,omitempty"`
 		Extension string `json:"extension,omitempty"`
 	} `json:"whitespace,omitempty"`
@@ -81,14 +82,14 @@ type Project struct {
 		DebugOnly                 *bool  `json:"debug_only,omitempty"`
 		Extension                 string `json:"extension,omitempty"`
 	} `json:"assembly,omitempty"`
-	Mapping *struct {
+	Mappings []struct {
 		Space         string `json:"space"`
 		Tab           string `json:"tab"`
 		LF            string `json:"lf"`
 		SpacesBetween *bool  `json:"spaces_between,omitempty"`
 		IgnoreCase    *bool  `json:"ignore_case,omitempty"`
 		Extension     string `json:"extension,omitempty"`
-	} `json:"mapping,omitempty"`
+	} `json:"mappings,omitempty"`
 	Commands []Command `json:"commands,omitempty"`
 	Notes    string    `json:"notes,omitempty"`
 }
@@ -103,7 +104,7 @@ type Command struct {
 	Usage               string   `json:"usage,omitempty"`
 	Output              string   `json:"output,omitempty"`
 	Options             []struct {
-		Short       string      `json:"short,omitempty"` // -s
+		Short       interface{} `json:"short,omitempty"` // -s
 		Long        string      `json:"long,omitempty"`  // --long
 		Arg         string      `json:"arg,omitempty"`
 		ArgRequired *bool       `json:"arg_required,omitempty"`

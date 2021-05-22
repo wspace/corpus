@@ -56,15 +56,15 @@ Build errors are included.
 - ⚠️ go/technohippy/go-whitespace: Go version is pre-go1
 - go/tempxla-go-wspace/bin/go-wspace: `make`
 - go/yshr-wspacego/wspacego: `go mod init github.com/135yshr/wspacego && go mod tidy && go build`
-- ❌ haskell/brainbrush-tomato
+- ⚠️ haskell/brainbrush-tomato/wspace: `make` Needs changes for latest Haskell
 - ❌ haskell/ft-spaceman
 - ❌ haskell/haroldl-wspace-0.4
 - ❌ haskell/helvm-helma
 - ❌ haskell/helvm-helpa
 - ❌ haskell/helvm-wsa
 - ❌ haskell/jhmcstanton-marginal
-- ❌ haskell/takatoh-hws
-- ❌ idris/edwinb-ws-idr
+- ⚠️ haskell/takatoh-hws/hws: `make` Needs changes for latest Haskell
+- ⚠️ idris/edwinb-ws-idr/wspace: `idris --build wspace.ipkg` Needs changes for latest Idris
 - ❌ java/abhijitsharma
 - ❌ java/azige
 - ❌ java/brumbeere-whitespace4j
@@ -119,7 +119,7 @@ Build errors are included.
 - ❌ python/dos1-colorspace
 - ❌ python/drafear-converter
 - ❌ python/dwayne
-- ❌ python/eizoassik-pyws
+- python/eizoassik-pyws/pyws.py
 - python/francoisrozet-whitespacy/whitespacy.py
 - ❌ python/freyamade-hohoho
 - ❌ python/hearnderek
