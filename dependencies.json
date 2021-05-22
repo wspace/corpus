@@ -1,0 +1,31 @@
+{
+  "Bison": { "brew": "bison" },
+  "Crystal": { "brew": "crystal" },
+  "Flex": { "brew": "flex" },
+  "GMP": { "brew": "gmp" },
+  "GNU sed": { "brew": "gnu-sed" },
+  "Grunt": { "shell": "npm install -g grunt-cli" },
+  "jq": { "brew": "jq" },
+  "lci": {
+    "git": {
+      "repo": "https://github.com/justinmeza/lci",
+      "branch": "future",
+      "build": "python install.py",
+      "bin": "lci"
+    }
+  },
+  "Leiningen": { "brew": "leiningen" },
+  "NASM": { "brew": "nasm" },
+  "opam": { "brew": "opam", "init": "opam init" },
+  "R": { "brew": "r" },
+  "Rebol 3": { "manual": "https://rebolsource.net/" },
+  "Ren-C": {
+    "git": {
+      "repo": "https://github.com/metaeducation/ren-c",
+      "branch": "951f68a5",
+      "build": "sh make.sh",
+      "bin": "build/r3"
+    }
+  },
+  "Ruby 3": { "brew": "ruby" }
+}

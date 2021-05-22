@@ -43,6 +43,7 @@
       {
         "type": "interpreter",
         "bin": "wsjq",
+        "dependencies": ["jq"],
         "usage": "$0 [<mode>] <file>",
         "options": [{ "short": "h", "long": "help", "desc": "Show usage" }],
         "option_parse": "manual",
@@ -75,7 +76,7 @@
     ]
   },
   {
-    "name": "Whitespace Intepreter",
+    "name": "%whitespace.reb",
     "path": "ren-c/hostilefork",
     "authors": ["Brian Dickens (Hostile Fork)"],
     "license": "MIT",
@@ -86,6 +87,15 @@
     "source": [
       "https://github.com/wspace-lang/hostilefork-ren-c",
       "https://github.com/hostilefork/whitespacers/tree/master/ren-c"
+    ],
+    "commands": [
+      {
+        "type": "interpreter",
+        "bin": "whitespace.reb",
+        "dependencies": ["Ren-C"],
+        "usage": "r3 $0",
+        "notes": "Program is hardcoded to one that counts from 1 to 10. Prints instructions while executing."
+      }
     ]
   },
   {
@@ -135,7 +145,6 @@
       {
         "bin": "wsi",
         "dependencies": ["Flex", "Bison"],
-        "install_dependencies": ["brew install flex bison"],
         "build": "./configure --with-target=release && make -j4 wsi",
         "usage": "$0 [-h | --help] [-d | --disassemble] [-c | --cycles] [-a | --aot] [-j | --jit] [-m | --masm] [-Os] [-Of] <file>",
         "options": [
@@ -167,7 +176,7 @@
     "whitespace": { "nonstandard": [{ "name": "shell", "seq": "TLL" }, { "name": "eval", "seq": "LLT" }] },
     "commands": [
       {
-        "install_dependencies": ["brew install ruby"],
+        "dependencies": ["Ruby 3"],
         "subcommands": [
           { "name": "asm", "desc": "Generate plain Whitespace assembly from INPUT and write it to OUTPUT." },
           { "name": "compile", "desc": "Compile a Whitespace program to native machine instructions." },
@@ -206,7 +215,7 @@
       {
         "type": "interpreter",
         "bin": "spwt",
-        "install_dependencies": ["brew install crystal"],
+        "dependencies": ["Crystal"],
         "build": "make",
         "usage": "$0 [options] <file>",
         "options": [
@@ -566,7 +575,6 @@
         "type": "language compiler",
         "bin": "compile",
         "dependencies": ["Flex", "Bison"],
-        "install_dependencies": ["brew install flex bison"],
         "build": "make",
         "usage": "$0 [-h] [-a] [-i] <file>",
         "options": [
@@ -647,7 +655,8 @@
       {
         "type": "language compiler",
         "bin": "main.byte",
-        "install_dependencies": ["brew install opam", "opam init", "opam install ocamlbuild memhir"],
+        "dependencies": ["opam"],
+        "install_dependencies": ["opam install ocamlbuild memhir"],
         "build": "make",
         "usage": "$0 [--help] <file>",
         "output": "<file_no_ext>.ws",
@@ -1024,7 +1033,7 @@
       {
         "type": "compiler",
         "bin": "wsCompiler.py",
-        "install_dependencies": ["brew install nasm"],
+        "dependencies": ["NASM"],
         "usage": "python3 wsCompiler.py <file> && nasm -fmacho64 <file_no_ext>.asm && ld -o <file_no_ext> <file_no_ext>.o && ./<file_no_ext>",
         "output": "<file_no_ext>.asm"
       },
@@ -1083,7 +1092,6 @@
         "type": "interpreter",
         "bin": "build/libs/space.jar",
         "dependencies": ["Java 8"],
-        "install_dependencies": ["brew install kotlin"],
         "build": "./gradlew",
         "build_errors": "Dependencies not packaged"
       }
@@ -1172,6 +1180,7 @@
       {
         "type": "interpreter",
         "bin": "target/uberjar/erasure-2.0-standalone.jar",
+        "dependencies": ["Leiningen"],
         "build": "lein uberjar",
         "build_errors": "Parser namespace is clj-whitespace, not erasure",
         "usage": "java -jar $0 [-i | --intermediate] [-h | --help] <file>",
@@ -1227,7 +1236,7 @@
         "bin": "white",
         "build": "gcc -O3 -Wall -o white y.tab.c lex.yy.c",
         "usage": "$0",
-        "notes": "File is hardcoded to ./basic.ws"
+        "notes": "Filename is hardcoded to ./basic.ws"
       }
     ],
     "notes": "Has git conflict markers remaining in source"
@@ -1384,7 +1393,6 @@
         "type": "interpreter",
         "bin": "whitespace.lol",
         "dependencies": ["lci"],
-        "install_dependencies": ["git clone -b future https://github.com/justinmeza/lci", "cd lci", "python install.py"],
         "usage": "cat <(echo <file>) - | lci $0",
         "notes": "When the program contains no read instructions, it can be run with `lci $0 <<< <file>`"
       }
@@ -1458,8 +1466,8 @@
       {
         "type": "interpreter",
         "bin": "R/whitespace.R",
+        "dependencies": ["R"],
         "install_dependencies": [
-          "brew install r",
           "Rscript -e 'install.packages(c(\"compositions\", \"readr\"), repos=\"http://cran.us.r-project.org\")'"
         ],
         "usage": "Rscript -e 'source(\"R/whitespace.R\"); library(readr); compile(parse(dfa(read_file(\"<file>\"))))'"
@@ -1985,7 +1993,7 @@
       {
         "type": "assembler",
         "bin": "wsa.sed",
-        "install_dependencies": ["brew install gnu-sed"],
+        "dependencies": ["GNU sed"],
         "usage": "sed -f $0 <file>",
         "output": "stdout",
         "notes": "Assembles Oliver Burghard's Whitespace assembly dialect, including shorthand instructions"
@@ -2235,6 +2243,7 @@
       {
         "type": "interpreter",
         "bin": "target/whitespace-clj-0.1.0-SNAPSHOT-standalone.jar",
+        "dependencies": ["Leiningen"],
         "build": "lein uberjar",
         "usage": "java -jar $0 [-h | --help] [-v | --version] [-c | --chars] [-t | --text] [-l | --lisp] [-s | --sexp] [--time] <file>",
         "options": [
@@ -2561,7 +2570,7 @@
         "dependencies": ["LLVM"],
         "build_errors": "Requires LLVM",
         "usage": "$0",
-        "notes": "File is hardcoded to ./count.ws"
+        "notes": "Filename is hardcoded to ./count.ws"
       }
     ]
   },
@@ -2645,7 +2654,7 @@
         "bin": "wsint",
         "build_errors": "Requires Visual Studio",
         "usage": "$0",
-        "notes": "File is hardcoded to ./script.ws"
+        "notes": "Filename is hardcoded to ./script.ws"
       }
     ]
   },
@@ -2903,11 +2912,7 @@
       "extension": "bs"
     },
     "commands": [
-      {
-        "install_dependencies": ["npm install -g grunt-cli"],
-        "build": "npm install && grunt",
-        "build_errors": "Unclear how to run"
-      }
+      { "dependencies": ["Grunt"], "build": "npm install && grunt", "build_errors": "Unclear how to run" }
     ]
   },
   {
@@ -3037,7 +3042,7 @@
         "bin": "whitespace",
         "build": "make",
         "usage": "$0",
-        "notes": "File is hardcoded to ./hello_worldvanwiki.ws"
+        "notes": "Filename is hardcoded to ./hello_worldvanwiki.ws"
       }
     ]
   },
@@ -3057,7 +3062,6 @@
         "type": "interpreter",
         "bin": "ws",
         "dependencies": ["GMP"],
-        "install_dependencies": ["brew install gmp"],
         "build": "make CXXFLAGS='-Wall -pedantic -O3'",
         "usage": "$0 [-v | --version] [-h | --help] [-s <size> | --stack-size <size>] <file>",
         "options": [
@@ -3138,7 +3142,7 @@
         "bin": "bin/wsInt",
         "build": "make",
         "usage": "$0",
-        "notes": "File is hardcoded to ./count.ws"
+        "notes": "Filename is hardcoded to ./count.ws"
       }
     ]
   },
@@ -3372,20 +3376,6 @@
     ]
   },
   {
-    "name": "Whitespace Intepreter",
-    "path": "rebol/hostilefork",
-    "authors": ["Brian Dickens (Hostile Fork)"],
-    "license": "MIT",
-    "languages": ["Rebol"],
-    "tags": ["interpreter"],
-    "date": "2010-07-10 23:12:40 -0700",
-    "spec_version": "0.3",
-    "source": [
-      "https://github.com/wspace-lang/hostilefork-rebol",
-      "https://github.com/hostilefork/whitespacers/tree/master/rebol"
-    ]
-  },
-  {
     "name": "HaPyLi",
     "authors": ["Huf Lungdung"],
     "license": "not found",
@@ -3455,6 +3445,29 @@
         "bin": "whitespace",
         "build": "gcc -O3 -Wall -o whitespace whitespace.c",
         "usage": "$0 <file>"
+      }
+    ]
+  },
+  {
+    "name": "%whitespace.reb",
+    "path": "rebol/hostilefork",
+    "authors": ["Brian Dickens (Hostile Fork)"],
+    "license": "MIT",
+    "languages": ["Rebol"],
+    "tags": ["interpreter"],
+    "date": "2009-10-08",
+    "spec_version": "0.3",
+    "source": [
+      "https://github.com/wspace-lang/hostilefork-rebol",
+      "https://github.com/hostilefork/whitespacers/tree/master/rebol"
+    ],
+    "commands": [
+      {
+        "type": "interpreter",
+        "bin": "whitespace.reb",
+        "dependencies": ["Rebol 3"],
+        "usage": "r3 $0",
+        "notes": "Program is hardcoded to one that counts from 1 to 10. Prints instructions while executing."
       }
     ]
   },

@@ -9,7 +9,7 @@ programming language.
 | ---------------------------------------------- | ---------------- | ---------- | ------------ | ---------- | ---- | ------ |
 | [wsjq](jq/andrewarchi-wsjq)                    | Andrew Archibald | jq         | interpreter, debugger, disassembler | 2021-05-02 | 0.3 | [GitHub](https://github.com/andrewarchi/wsjq) |
 | [Albus](rust/collidedscope-albus)              | Collided Scope   | Rust       | interpreter  | 2021-02-12 | 0.3 | [GitHub](https://github.com/collidedscope/albus) |
-| [Whitespace Intepreter](ren-c/hostilefork)     | Brian Dickens (Hostile Fork) | Ren-C | interpreter | 2021-01-31 | 0.3 | [GitHub](https://github.com/wspace-lang/hostilefork-ren-c), [GitHub](https://github.com/hostilefork/whitespacers/tree/master/ren-c) |
+| [%whitespace.reb](ren-c/hostilefork)           | Brian Dickens (Hostile Fork) | Ren-C | interpreter | 2021-01-31 | 0.3 | [GitHub](https://github.com/wspace-lang/hostilefork-ren-c), [GitHub](https://github.com/hostilefork/whitespacers/tree/master/ren-c) |
 | [asm2ws](c/kspalaiologos-asm2ws)               | Kamila Szewczyk (Palaiologos) | C, Yacc, Lex | interpreter, JIT, assembler, disassembler, optimizer, programs | 2020-12-31 | 0.3 | [GitHub](https://github.com/kspalaiologos/asm2ws) |
 | [Spitewaste](ruby/collidedscope-spitewaste)    | Collided Scope   | Ruby       | language compiler, assembler, disassembler, programs, stdlib | 2020-12-11 | 0.3 | [GitHub](https://github.com/collidedscope/spitewaste) |
 | [Spiceweight](crystal/collidedscope-spiceweight) | Collided Scope | Crystal    | interpreter, benchmarking, programs | 2020-12-11 | 0.3 | [GitHub](https://github.com/collidedscope/spiceweight) |
@@ -148,11 +148,11 @@ programming language.
 | [hws](haskell/takatoh-hws)                     | takatoh          | Haskell    | interpreter  | 2010-10-29 | 0.3 | [GitHub](https://github.com/takatoh/hws) |
 | [Esoteric Code Interpreter](csharp/rolisoft-esoteric) | Roland Bogosi | C#     | interpreter, disassembler | 2010-10-11 | 0.2 | [GitHub](https://github.com/RoliSoft/Esoteric-Code-Interpreter) |
 | [whitespace-go](go/technohippy)                | ANDO Yasushi     | Go         | interpreter  | 2010-10-08 | 0.3 | [GitHub](https://github.com/technohippy/go-whitespace), [GitHub](https://github.com/wspace-lang/go-whitespace) |
-| [Whitespace Intepreter](rebol/hostilefork)     | Brian Dickens (Hostile Fork) | Rebol | interpreter | 2010-07-10 | 0.3 | [GitHub](https://github.com/wspace-lang/hostilefork-rebol), [GitHub](https://github.com/hostilefork/whitespacers/tree/master/rebol) |
 | HaPyLi                                         | Huf Lungdung     | Python     | language, interpreter | 2010-05-23 | 0.3 | [hapyli.webs.com (archive)](https://web.archive.org/web/20110212015726/http://hapyli.webs.com/), [Mailing list (archive)](https://web.archive.org/web/20141011193154/http://compsoc.dur.ac.uk/archives/whitespace/2010-May/000075.html), [GitHub](https://github.com/helvm/hapyli) |
 | [Whitespace Interpreter and Assembler](python/stephenchappell) | Stephen Chappell | Python | interpreter, assembler | 2010-03-14 | 0.3 | [GitHub](https://github.com/wspace-lang/stephenchappell-python), [ActiveState Code](https://code.activestate.com/recipes/sets/12/), [GitHub](https://github.com/ActiveState/code) |
 | [Whitespace Interpreter in C++](cpp/peasley)   | Peasley          | C++        | interpreter  | 2010-02-05 | 0.3 | [GitHub](https://github.com/wspace-lang/peasley-cpp), [rohitab.com](http://www.rohitab.com/discuss/topic/35639-c-whitespace-interpreter/?p=10074137) |
 | [Whitespace Interpreter v1.0](c/meth0dz)       | MeTh0Dz          | C          | interpreter  | 2010-02-01 | 0.3 | [GitHub](https://github.com/wspace-lang/meth0dz-c), [rohitab.com](http://www.rohitab.com/discuss/topic/35639-c-whitespace-interpreter/) |
+| [%whitespace.reb](rebol/hostilefork)           | Brian Dickens (Hostile Fork) | Rebol | interpreter | 2009-10-08 | 0.3 | [GitHub](https://github.com/wspace-lang/hostilefork-rebol), [GitHub](https://github.com/hostilefork/whitespacers/tree/master/rebol) |
 | wspace                                         | hogelog          | C++        | interpreter  | 2008-05-02 | 0.3 | [GitHub](https://github.com/hogelog/hogel.org-old/tree/master/content/lib/c/ws) |
 | [wspace](cpp/pavelshub)                        | Pavel Shub       | C++        | interpreter, debugger, disassembler, mapping | 2007-05-26 17:19:24 | 0.3 | [GitHub](https://github.com/pavel987/wspace), [Mailing list (archive)](https://web.archive.org/web/20141011193149/http://compsoc.dur.ac.uk/archives/whitespace/2008-April/000068.html), [pavelshub.com](http://pavelshub.com/blog/2010/10/wspace/), [GitHub](https://github.com/wspace-lang/pavelshub-cpp) |
 | [pywhitespace](python/phlip-pywhitespace)      | Phillip Bradbury | Python     | interpreter  | 2004-08-03 | 0.3 | [GitHub](https://github.com/wspace-lang/phlip-pywhitespace), [Mailing list (archive)](https://web.archive.org/web/20141011193201/http://compsoc.dur.ac.uk/archives/whitespace/2004-August/000048.html), [Mailing list (archive)](https://web.archive.org/web/20161111081914/http://compsoc.dur.ac.uk/archives/whitespace/2007-December/000065.html), [Newcastle (archive)](https://web.archive.org/web/20061209092911/http://www.cs.newcastle.edu.au/~c3018900/pywhitespace.tar.bz2), [mrphlip.com](https://www.mrphlip.com/pywhitespace.tar.bz2) |
@@ -195,8 +195,6 @@ programming language.
 | Did you see anything?                    | Daniel Chen      | -        | 2017-02-23 | 0.2 | [GitHub](https://github.com/ccns/105-club-fair-game-problems/blob/master/2/2/Did%20you%20see%20anything%3F) |
 | fichero.bin                              | Zuleimi Esteffanny González Muñoz | - | 2016-10-27 | 0.2 | [GitHub](https://github.com/EIA-University/WhiteSpaceInterpreter/blob/master/src/fichero.bin) |
 | EsoPoly                                  | Ivan Zolotarev   | Malbolge, Brainfuck, Spoon, asdf, 123, EXCON | 2016-09-13 | 0.2 | [GitHub](https://github.com/kenrube/Esopoly) |
-| Hello World                              | Petri Heikkonen  | -        | before 2016-08-20 | 0.2 | [Hello World Collection](http://helloworldcollection.de/#Whitespace), [GitLab](https://gitlab.com/wolframroesler/helloworld/-/blob/master/files/Whitespace.txt) |
-| VirtualDust.txt                          | Raphaël Bois     | C, Brainfuck, Perl | before 2016-08-20 | 0.2 | [Hello World Collection](http://helloworldcollection.de/hellopics/VirtualDust.txt), [GitLab](https://gitlab.com/wolframroesler/helloworld/-/blob/master/hellopics/VirtualDust.txt) |
 | hello.go<br>index.html<br>figlet.js      | Chris Nguyen     | Go, HTML, JavaScript | 2016-06-26 | 0.2 | [GitHub](https://github.com/uncompiled/steganographic-polyglots) |
 | yokoyama.ws                              | Kengo Yokoyama   | -        | 2015-01-29 | 0.2 | [GitHub](https://github.com/ait8/fizzbuzz/blob/master/yokoyama.ws) |
 | 1to10.ws<br>helloworld_cn.ws             | Azige            | -        | 2014-07-29 | 0.2 | [GitHub](https://github.com/azige/whitespace-interpreter/tree/master/src/main/pack/example) |
@@ -204,9 +202,11 @@ programming language.
 | c.ws<br>collatz.wsa<br>hmacro.wsa<br>nerd.ws<br>nerd.wsa<br>lib/alias.wsa<br>lib/math.wsa<br>lib/rot13.wsa<br>lib/std.wsa<br>lib/string.wsa | Henri Lakk | - | 2013-03-30 | 0.3  | [GitHub](https://github.com/vii5ard/whitespace/tree/master/example) |
 | bf.ws<br>bf.wsa                          | Henri Lakk       | -        | 2013-03-30 | 0.3 | [GitHub](https://github.com/vii5ard/whitespace/tree/master/example), [GitHub](https://github.com/vii5ard/brainfuck-whitespace) |
 | sudoku.ws                                | Huf Lungdung     | -        | 2009-05-19 | 0.3 | [What the Daily WTF?](https://what.thedailywtf.com/topic/5980/stupid-coding-tricks-sudoku-solver-in-whitespace), [Mailing list (archive)](https://web.archive.org/web/20141011193156/http://compsoc.dur.ac.uk/archives/whitespace/2009-November/000072.html), [Pastebin](https://pastebin.com/f761fc4b5) |
+| VirtualDust.txt                          | Raphaël Bois     | C, Brainfuck, Perl | 2008-05-14 20:13:29 +0000 | 0.2 | [Hello World Collection](http://helloworldcollection.de/hellopics/VirtualDust.txt), [helloworldsite.he.funpic.de (archive)](https://web.archive.org/web/20080520072335/http://helloworldsite.he.funpic.de/hellopics/VirtualDust.txt), [GitLab](https://gitlab.com/wolframroesler/helloworld/-/blob/master/hellopics/VirtualDust.txt) |
 | [tetris.ws](whitespace/pdewacht-tetris)  | Peter De Wachter | -        | 2008-01-02 | 0.2 | [Mailing list (archive)](https://web.archive.org/web/20141011193149/http://compsoc.dur.ac.uk/archives/whitespace/2008-January/000067.html), [r/programming](https://www.reddit.com/r/programming/comments/9nw1e/most_unreadable_programming_language_ever/c0dkzzw/), [GitHub](https://github.com/wspace-lang/pdewacht-tetris) |
 | 99 Bottles of Beer                       | Andrew Kemp      | -        | 2005-04-20 | 0.2 | [99-bottles-of-beer.net](https://99-bottles-of-beer.net/language-whitespace-154.html) |
 | chr.ws<br>ord.ws                         | Phillip Bradbury | -        | 2004-08-03 | 0.2 | See pywhitespace |
+| Hello World                              | Petri Heikkonen  | -        | 2003-07-29 18:29:36 +0000 | 0.2 | [Hello World Collection](http://helloworldcollection.de/#Whitespace), [roesler-ac.de (archive)](https://web.archive.org/web/20030811004421/http://www.roesler-ac.de:80/wolfram/hello.htm#Whitespace), [GitLab](https://gitlab.com/wolframroesler/helloworld/-/blob/master/files/Whitespace.txt) |
 | loctest.ws                               | Edwin Brady      | -        | 2003       | 0.3 | [CompSoc (archive)][compsoc] |
 | tutorial.html                            | Edwin Brady      | HTML     | 2003       | 0.2 | [CompSoc (archive)][compsoc] |
 | calc.ws<br>count.ws<br>fact.ws<br>hanoi.ws<br>hworld.ws<br>name.ws | Edwin Brady | - | 2003 | 0.2 | [CompSoc (archive)][compsoc] |
@@ -255,19 +255,6 @@ archived.
 - [jq](https://stedolan.github.io/jq/) for JSON filtering
 - [underscore-cli](https://github.com/ddopson/underscore-cli) for JSON
   formatting: `npm install -g underscore-cli`
-
-### Project dependencies
-
-- C++: make, cmake, LLVM lib
-- Clojure: Java, [Leiningen](https://leiningen.org/)
-- Go: Go
-- LOLCODE: [lci (future branch)](https://github.com/justinmeza/lci/tree/future)
-
-  ```sh
-  git clone -b future https://github.com/justinmeza/lci
-  cd lci
-  python install.py
-  ```
 
 ## License
 

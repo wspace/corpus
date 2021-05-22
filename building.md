@@ -138,8 +138,8 @@ Build errors are included.
 - ❌ python/stephenchappell
 - ❌ python/yasn-whitepy
 - r/bmazoure/R/whitespace.R
-- ❌ rebol/hostilefork
-- ❌ ren-c/hostilefork
+- rebol/hostilefork/whitespace.reb
+- ren-c/hostilefork/whitespace.reb
 - ❌ ruby/alesiong
 - ❌ ruby/bossiernesto
 - ⚠️ ruby/collidedscope-spitewaste/*unspecified*
