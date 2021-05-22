@@ -57,12 +57,12 @@ Build errors are included.
 - go/tempxla-go-wspace/bin/go-wspace: `make`
 - go/yshr-wspacego/wspacego: `go mod init github.com/135yshr/wspacego && go mod tidy && go build`
 - ⚠️ haskell/brainbrush-tomato/wspace: `make` Needs changes for latest Haskell
-- ❌ haskell/ft-spaceman
+- ⚠️ haskell/ft-spaceman/*unspecified*: `cabal build`
 - ⚠️ haskell/haroldl-wspace-0.4/wspace: `make` Needs changes for latest Haskell
-- ❌ haskell/helvm-helma
-- ❌ haskell/helvm-helpa
+- ⚠️ haskell/helvm-helma/helma: `cabal build` -XMonadFailDesugaring is deprecated
+- ⚠️ haskell/helvm-helpa/helpa: `cabal build` -XMonadFailDesugaring is deprecated
 - ❌ haskell/helvm-wsa
-- ❌ haskell/jhmcstanton-marginal
+- ⚠️ haskell/jhmcstanton-marginal/*unspecified*: `stack build` `stack setup` fails with link error
 - ⚠️ haskell/takatoh-hws/hws: `make` Needs changes for latest Haskell
 - ⚠️ idris/edwinb-ws-idr/wspace: `idris --build wspace.ipkg` Needs changes for latest Idris
 - ❌ java/abhijitsharma

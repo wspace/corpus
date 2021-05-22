@@ -311,6 +311,21 @@
       "https://github.com/ft/spaceman",
       "http://bewatermyfriend.org/p/2020/000/",
       "https://news.ycombinator.com/item?id=24763312"
+    ],
+    "commands": [
+      {
+        "build": "cabal build",
+        "usage": "cabal run spaceman -- [-d | --dump-ast] [-t | --transform-labels] [-h | --help] [-V | --version] [--numeric-version] <file>",
+        "options": [
+          { "short": "d", "long": "dump-ast", "desc": "Dump Program AST instead of executing" },
+          { "short": "t", "long": "transform-labels", "desc": "Transform Label Names to ASCII" },
+          { "short": "h", "long": "help", "desc": "Display help message" },
+          { "short": "V", "long": "version", "desc": "Print version information" },
+          { "long": "numeric-version", "desc": "Print just the version number" }
+        ],
+        "option_parse": "Haskell System.Console.CmdArgs",
+        "notes": "TODO figure out how to run without `cabal run`"
+      }
     ]
   },
   {
@@ -353,7 +368,8 @@
     "tags": ["assembler"],
     "date": "2020-05-09 17:49:43 +0200",
     "spec_version": "0.2",
-    "source": ["https://github.com/helvm/helpa"]
+    "source": ["https://github.com/helvm/helpa"],
+    "commands": [{ "bin": "helpa", "build": "cabal build", "build_errors": "-XMonadFailDesugaring is deprecated" }]
   },
   {
     "name": "HelMA",
@@ -364,7 +380,8 @@
     "tags": ["interpreter"],
     "date": "2020-05-08 13:18:50 +0200",
     "spec_version": "0.3",
-    "source": ["https://github.com/helvm/helma"]
+    "source": ["https://github.com/helvm/helma"],
+    "commands": [{ "bin": "helma", "build": "cabal build", "build_errors": "-XMonadFailDesugaring is deprecated" }]
   },
   {
     "name": "Whitelie",
@@ -674,7 +691,14 @@
     "tags": ["interpreter"],
     "date": "2019-06-28 20:19:29 -0500",
     "spec_version": "0.2",
-    "source": ["https://github.com/jhmcstanton/marginal"]
+    "source": ["https://github.com/jhmcstanton/marginal"],
+    "commands": [
+      {
+        "install_dependencies": ["stack setup"],
+        "build": "stack build",
+        "build_errors": "`stack setup` fails with link error"
+      }
+    ]
   },
   {
     "name": "Eso",
@@ -3385,7 +3409,7 @@
         "usage": "$0 <file>"
       }
     ],
-    "notes": "Fork of reference interpreter."
+    "notes": "Fork of reference interpreter"
   },
   {
     "name": "white-scheme",
