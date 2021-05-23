@@ -38,9 +38,9 @@ type Project struct {
 	} `json:"behavior,omitempty"`
 	Whitespace *struct {
 		NonStandard []struct {
-			Name string `json:"name,omitempty"`
-			Seq  string `json:"seq,omitempty"`
-			Arg  string `json:"arg,omitempty"`
+			Name string   `json:"name,omitempty"`
+			Seq  string   `json:"seq,omitempty"`
+			Args []string `json:"args,omitempty"`
 		} `json:"nonstandard,omitempty"`
 		Extension string `json:"extension,omitempty"`
 	} `json:"whitespace,omitempty"`
@@ -375,16 +375,20 @@ var domainLabels = map[string]string{
 	"github.com":                 "GitHub",
 	"gitlab.com":                 "GitLab",
 	"gist.github.com":            "GitHub Gist",
-	"news.ycombinator.com":       "HN",
-	"slashdot.org":               "Slashdot",
+	"hackage.haskell.org":        "Hackage",
+	"en.wikipedia.org":           "Wikipedia",
+	"progopedia.com":             "Progopedia",
 	"codegolf.stackexchange.com": "Code Golf",
+	"rosettacode.org":            "Rosetta Code",
+	"codewars.com":               "Codewars",
 	"code.activestate.com":       "ActiveState Code",
 	"pastebin.com":               "Pastebin",
 	"whitespace.pastebin.com":    "Pastebin",
 	"compsoc.dur.ac.uk":          "CompSoc",
 	"cs.newcastle.edu.au":        "Newcastle",
-	"hackage.haskell.org":        "Hackage",
 	"dcode.fr":                   "dCode",
+	"news.ycombinator.com":       "HN",
+	"slashdot.org":               "Slashdot",
 	"what.thedailywtf.com":       "What the Daily WTF?",
 }
 

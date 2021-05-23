@@ -23,7 +23,9 @@ Build errors are included.
 - ⚠️ coffeescript/ehrlichbryan/*unspecified*: `npm install && grunt` Unclear how to run
 - cpp/abac-whint/whint: `g++ -O3 -Wall -o whint whint.cpp`
 - cpp/abcsharp/wsi: `g++ -O3 -Wall -std=c++11 -o wsi whitespace/main.cpp`
-- cpp/andrewarchi-respace/respace: `make`
+- ⚠️ cpp/andrewarchi-respace:
+  - ⚠️ programs/ws/interpreter.wsa
+  - respace: `make`
 - cpp/benajmin/WhitespaceInterpreter.out: `make`
 - cpp/buyoh-nospace:
   - maicomp: `make release`
@@ -53,7 +55,9 @@ Build errors are included.
 - ❌ csharp/rolisoft-esoteric
 - ❌ elixir/quinnwilton
 - ⚠️ erlang/derek-mrwhite/*unspecified*: `make` Unclear how to run
-- ⚠️ go/andrewarchi-nebula/nebula: `go mod init github.com/andrewarchi/nebula && go mod tidy && go build` Requires LLVM
+- ⚠️ go/andrewarchi-nebula:
+  - ⚠️ nebula: `go mod init github.com/andrewarchi/nebula && go mod tidy && go build` Requires LLVM
+  - ⚠️ programs/interpret.wsa
 - go/kinu/whitespace: `go mod init github.com/kinu/whitespace && go build`
 - ⚠️ go/technohippy/go-whitespace: Go version is pre-go1
 - go/tempxla-go-wspace/bin/go-wspace: `make`
