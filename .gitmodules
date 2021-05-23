@@ -223,6 +223,9 @@
 [submodule "javascript/loklaan-zerowidth-lang"]
 	path = javascript/loklaan-zerowidth-lang
 	url = https://github.com/loklaan/zerowidth-lang
+[submodule "javascript/luilak-ws2js"]
+	path = javascript/luilak-ws2js
+	url = https://github.com/Luilak/WS2JS
 [submodule "javascript/macocha-whitespacer"]
 	path = javascript/macocha-whitespacer
 	url = https://github.com/macocha/whitespacer

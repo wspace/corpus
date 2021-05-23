@@ -17,6 +17,7 @@
     }
   },
   "Leiningen": { "brew": "leiningen" },
+  "make": { "brew": "make" },
   "NASM": { "brew": "nasm" },
   "opam": { "brew": "opam", "init": "opam init" },
   "Perl": { "brew": "perl" },

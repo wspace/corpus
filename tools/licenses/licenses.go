@@ -34,8 +34,10 @@ func main() {
 			if l, err := getLicense(p); err != nil {
 				fmt.Fprintln(os.Stderr, err)
 				break
-			} else {
+			} else if l != "" {
 				p.License = l
+			} else {
+				p.License = "not found"
 			}
 		}
 	}
@@ -91,7 +93,7 @@ func getGitHubLicense(repo string) (string, error) {
 		}
 		return l.License.ID, nil
 	}
-	if l.Message != "" && l.Message == "Not Found" {
+	if l.Message != "" && l.Message != "Not Found" {
 		return "", fmt.Errorf("message: %s", l.Message)
 	}
 	return "", nil

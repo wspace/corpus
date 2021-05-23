@@ -87,6 +87,7 @@ type Project struct {
 		Tab           string `json:"tab"`
 		LF            string `json:"lf"`
 		SpacesBetween *bool  `json:"spaces_between,omitempty"`
+		BeforeSTL     *bool  `json:"before_stl,omitempty"`
 		IgnoreCase    *bool  `json:"ignore_case,omitempty"`
 		Extension     string `json:"extension,omitempty"`
 	} `json:"mappings,omitempty"`
@@ -375,6 +376,7 @@ var domainLabels = map[string]string{
 	"gitlab.com":                 "GitLab",
 	"gist.github.com":            "GitHub Gist",
 	"news.ycombinator.com":       "HN",
+	"slashdot.org":               "Slashdot",
 	"codegolf.stackexchange.com": "Code Golf",
 	"code.activestate.com":       "ActiveState Code",
 	"pastebin.com":               "Pastebin",
@@ -382,6 +384,7 @@ var domainLabels = map[string]string{
 	"compsoc.dur.ac.uk":          "CompSoc",
 	"cs.newcastle.edu.au":        "Newcastle",
 	"hackage.haskell.org":        "Hackage",
+	"dcode.fr":                   "dCode",
 	"what.thedailywtf.com":       "What the Daily WTF?",
 }
 

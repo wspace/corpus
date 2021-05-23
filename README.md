@@ -14,6 +14,7 @@ programming language.
 | [Spitewaste](ruby/collidedscope-spitewaste)    | Collided Scope   | Ruby       | language compiler, assembler, disassembler, programs, stdlib | 2020-12-11 | 0.3 | [GitHub](https://github.com/collidedscope/spitewaste) |
 | [Spiceweight](crystal/collidedscope-spiceweight) | Collided Scope | Crystal    | interpreter, benchmarking, programs | 2020-12-11 | 0.3 | [GitHub](https://github.com/collidedscope/spiceweight) |
 | [Whitespacy](python/francoisrozet-whitespacy)  | François Rozet   | Python     | polyglot formatter | 2020-12-08 | - | [GitHub](https://github.com/francois-rozet/whitespacy) |
+| Whitespace Language                            | dCode            | JavaScript | interpreter, text to Whitespace, mapping | 2020-09-30 | 0.2 | [dCode](https://www.dcode.fr/whitespace-language) |
 | [rustws](rust/luminight)                       | Luminight        | Rust       | library, mapping | 2020-08-04 | 0.2 | [GitHub](https://github.com/Luminighty/rustws) |
 | [Whitespace](javascript/kosei)                 | kosei28          | JavaScript | interpreter  | 2020-08-03 | 0.2 | [GitHub](https://github.com/kosei28/Whitespace) |
 | [SpaceMan](haskell/ft-spaceman)                | Frank Terbeck    | Haskell    | interpreter  | 2020-07-09 | 0.3 | [GitLab](https://gitlab.com/ft/spaceman), [GitHub](https://github.com/ft/spaceman), [bewatermyfriend.org](http://bewatermyfriend.org/p/2020/000/), [HN](https://news.ycombinator.com/item?id=24763312) |
@@ -128,6 +129,7 @@ programming language.
 | [wseditor](java/yuukiaria-wseditor)            | YuukiARIA        | Java       | IDE          | 2013-11-21 | -   | [GitHub](https://github.com/YuukiARIA/wseditor) |
 | [whitespace-llvm](cpp/tycho-whitespace-llvm)   | Tycho Bickerstaff | C++, LLVM | compiler, JIT, optimizer, programs | 2013-08-31 | 0.3 | [GitHub](https://github.com/worktycho/whitespace-llvm) |
 | [Whitespace-JS](coffeescript/ehrlichbryan)     | Bryan Ehrlich    | CoffeeScript | interpreter, assembler | 2013-08-14 | 0.3 | [GitHub](https://github.com/adotout/whitespace-js) |
+| [WS2JS](javascript/luilak-ws2js)               | Luilak           | JavaScript | transpiler   | 2013-06-03 | 0.3 | [GitHub](https://github.com/Luilak/WS2JS) |
 | [ws-interpreter](cpp/yuukiaria)                | YuukiARIA        | C++        | interpreter, programs | 2013-05-05 | 0.3 | [GitHub](https://github.com/YuukiARIA/ws-interpreter) |
 | [whitespace](java/abhijitsharma)               | Abhijit Sharma   | Java       | interpreter  | 2013-04-05 | 0.2 incomplete | [GitHub](https://github.com/abhijitsharma/whitespace) |
 | [whitespace](javascript/rumpl)                 | Djordje Lukic    | JavaScript | interpreter  | 2013-03-27 | 0.3 | [GitHub](https://github.com/rumpl/whitespace) |
@@ -164,7 +166,7 @@ programming language.
 | whitespace-disassem                            | Wayne E. Conrad  | Ruby       | disassembler | 2003       | 0.2 | [yagni.com (archive)](https://web.archive.org/web/20110916112141/http://yagni.com/whitespace/whitespace-disassem), [yagni.com (archive)](https://web.archive.org/web/20120417161917/http://yagni.com/whitespace/index.html) |
 | wsa                                            | Oliver Burghard  | Haskell    | assembler    | 2003       | 0.3 | [burghard.info (archive)](https://web.archive.org/web/20030629154300/http://www.burghard.info/code/whitespace/wsa/index.html), [burghard.info (archive)](https://web.archive.org/web/20110911114338/http://www.burghard.info/Code/Whitespace/wsa.zip), [burghard.info (archive)](https://web.archive.org/web/20110911114338/http://www.burghard.info/Code/Whitespace/) |
 | wsintercpp                                     | Oliver Burghard  | C++        | interpreter  | 2003       | 0.2 | [burghard.info (archive)](https://web.archive.org/web/20030629125208/http://www.burghard.info/code/whitespace/wsintercpp/index.html), [burghard.info (archive)](https://web.archive.org/web/20140609162801/http://www.burghard.info/Code/Whitespace/wsintercpp.zip), [burghard.info (archive)](https://web.archive.org/web/20110911114338/http://www.burghard.info/Code/Whitespace/) |
-| wspace 0.2                                     | Edwin Brady      | Haskell    | interpreter, programs | 2002 | 0.2 | [CompSoc (archive)](https://web.archive.org/web/20150717140342/http://compsoc.dur.ac.uk:80/whitespace/download.php) |
+| wspace 0.2                                     | Edwin Brady      | Haskell    | interpreter, programs | 2002 | 0.2 | [CompSoc (archive)](https://web.archive.org/web/20150717140342/http://compsoc.dur.ac.uk:80/whitespace/download.php), [Slashdot](https://slashdot.org/story/03/04/01/0332202/new-whitespace-only-programming-language) |
 
 ## Collections
 

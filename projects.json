@@ -260,6 +260,18 @@
     "notes": "Polyglot formatter for C and Whitespace"
   },
   {
+    "name": "Whitespace Language",
+    "authors": ["dCode"],
+    "license": "proprietary",
+    "languages": ["JavaScript"],
+    "tags": ["interpreter", "text to Whitespace", "mapping"],
+    "date": "2020-09-30 06:55:37 +0000",
+    "spec_version": "0.2",
+    "source": ["https://www.dcode.fr/whitespace-language"],
+    "mappings": [{ "space": "S", "tab": "T", "lf": "L", "before_stl": true }],
+    "notes": "Interpreter uses javascript/luilak-ws2js"
+  },
+  {
     "name": "rustws",
     "path": "rust/luminight",
     "authors": ["Luminight"],
@@ -1038,8 +1050,16 @@
     "spec_version": "0.3",
     "source": ["https://github.com/buyoh/nospace"],
     "commands": [
-      { "type": "language compiler", "bin": "maicomp", "build": "make release", "usage": "$0 [<file>]" },
-      { "type": "interpreter", "bin": "vm/run.rb", "usage": "ruby $0 <file> [<stdin_file>]" }
+      {
+        "type": "language compiler",
+        "bin": "maicomp",
+        "dependencies": ["make"],
+        "build": "make release",
+        "usage": "$0 [<file>]",
+        "notes": "Reads from stdin, if no file is given"
+      },
+      { "type": "interpreter", "bin": "vm/run.rb", "usage": "ruby $0 <file> [<stdin_file>]" },
+      { "type": "test", "bin": "test.rb", "usage": "ruby $0" }
     ]
   },
   {
@@ -3010,6 +3030,17 @@
     ]
   },
   {
+    "name": "WS2JS",
+    "path": "javascript/luilak-ws2js",
+    "authors": ["Luilak"],
+    "license": "MIT",
+    "languages": ["JavaScript"],
+    "tags": ["transpiler"],
+    "date": "2013-06-03 16:34:31 +0900",
+    "spec_version": "0.3",
+    "source": ["https://github.com/Luilak/WS2JS"]
+  },
+  {
     "name": "ws-interpreter",
     "path": "cpp/yuukiaria",
     "authors": ["YuukiARIA"],
@@ -3924,7 +3955,10 @@
     "tags": ["interpreter", "programs"],
     "date": "2002",
     "spec_version": "0.2",
-    "source": ["https://web.archive.org/web/20150717140342/http://compsoc.dur.ac.uk:80/whitespace/download.php"],
+    "source": [
+      "https://web.archive.org/web/20150717140342/http://compsoc.dur.ac.uk:80/whitespace/download.php",
+      "https://slashdot.org/story/03/04/01/0332202/new-whitespace-only-programming-language"
+    ],
     "bounds": { "precision": "arbitrary" }
   }
 ]

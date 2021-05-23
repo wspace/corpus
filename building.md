@@ -26,6 +26,7 @@ Build errors are included.
 - cpp/benajmin/WhitespaceInterpreter.out: `make`
 - cpp/buyoh-nospace:
   - maicomp: `make release`
+  - test.rb
   - vm/run.rb
 - cpp/dpohanlon-wsint/bin/wsInt: `make`
 - cpp/frmsaul-cupertino/whitespace: `g++ -O3 -o whitespace src/*.cpp`
@@ -84,6 +85,7 @@ Build errors are included.
 - ❌ javascript/kosei
 - ❌ javascript/loklaan-whitespace-lang
 - ❌ javascript/loklaan-zerowidth-lang
+- ❌ javascript/luilak-ws2js
 - ❌ javascript/macocha-whitespacer
 - ❌ javascript/pvdz-significant-whitespace
 - ❌ javascript/rumpl
@@ -172,6 +174,7 @@ Build errors are included.
 - ❌ whitespace/tewort-hello-whitespace
 - ❌ “HaPyLi” by Huf Lungdung
 - ❌ “Whitespace Interpreter in JavaScript” by Arnauld
+- ❌ “Whitespace Language” by dCode
 - ❌ “whitespace-asm” by Wayne E. Conrad
 - ❌ “whitespace-disassem” by Wayne E. Conrad
 - ❌ “whitespace-ruby” by Wayne E. Conrad
