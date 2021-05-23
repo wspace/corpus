@@ -1,7 +1,7 @@
-# Whitespace Corpus
+# The Whitespace Corpus
 
-A collection of interpreters, compilers, and programs for the Whitespace
-programming language.
+The definitive collection of interpreters, compilers, and programs for
+the Whitespace programming language.
 
 ## Projects
 
@@ -258,6 +258,17 @@ archived.
 - [jq](https://stedolan.github.io/jq/) for JSON filtering
 - [underscore-cli](https://github.com/ddopson/underscore-cli) for JSON
   formatting: `npm install -g underscore-cli`
+
+## TODO
+
+- [CompSoc](compsoc)
+- [Whitespace mailing list](https://web.archive.org/web/20141011193126/http://compsoc.dur.ac.uk/archives/whitespace/)
+- [HaPyLi and Sudoku program](https://web.archive.org/web/20110212015726/http://hapyli.webs.com/)
+- [Code Golf](https://codegolf.stackexchange.com/)
+- [Rosetta Code](https://rosettacode.org/wiki/Category:Whitespace)
+- [Codewars](https://www.codewars.com/kata/whitespace-interpreter)
+- [Wikipedia](https://en.wikipedia.org/wiki/Whitespace_(programming_language)) (and other languages)
+- [Progopedia][http://progopedia.com/language/whitespace/]
 
 ## License
 
