@@ -260,16 +260,16 @@
     "notes": "Polyglot formatter for C and Whitespace"
   },
   {
-    "name": "Whitespace Language",
+    "name": "Whitespace Language - Online Translator/Interpreter",
     "authors": ["dCode"],
-    "license": "proprietary",
-    "languages": ["JavaScript"],
+    "license": "MIT (JavaScript) and proprietary (PHP)",
+    "languages": ["JavaScript", "PHP"],
     "tags": ["interpreter", "text to Whitespace", "mapping"],
-    "date": "2020-09-30 06:55:37 +0000",
+    "date": "2020-09-23",
     "spec_version": "0.2",
     "source": ["https://www.dcode.fr/whitespace-language"],
     "mappings": [{ "space": "S", "tab": "T", "lf": "L", "before_stl": true }],
-    "notes": "Interpreter uses javascript/luilak-ws2js"
+    "notes": "Interpreter uses javascript/luilak-ws2js, text to Whitespace converter is proprietary PHP"
   },
   {
     "name": "rustws",

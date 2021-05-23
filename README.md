@@ -14,7 +14,7 @@ programming language.
 | [Spitewaste](ruby/collidedscope-spitewaste)    | Collided Scope   | Ruby       | language compiler, assembler, disassembler, programs, stdlib | 2020-12-11 | 0.3 | [GitHub](https://github.com/collidedscope/spitewaste) |
 | [Spiceweight](crystal/collidedscope-spiceweight) | Collided Scope | Crystal    | interpreter, benchmarking, programs | 2020-12-11 | 0.3 | [GitHub](https://github.com/collidedscope/spiceweight) |
 | [Whitespacy](python/francoisrozet-whitespacy)  | François Rozet   | Python     | polyglot formatter | 2020-12-08 | - | [GitHub](https://github.com/francois-rozet/whitespacy) |
-| Whitespace Language                            | dCode            | JavaScript | interpreter, text to Whitespace, mapping | 2020-09-30 | 0.2 | [dCode](https://www.dcode.fr/whitespace-language) |
+| Whitespace Language - Online Translator/Interpreter | dCode       | JavaScript, PHP | interpreter, text to Whitespace, mapping | 2020-09-23 | 0.2 | [dCode](https://www.dcode.fr/whitespace-language) |
 | [rustws](rust/luminight)                       | Luminight        | Rust       | library, mapping | 2020-08-04 | 0.2 | [GitHub](https://github.com/Luminighty/rustws) |
 | [Whitespace](javascript/kosei)                 | kosei28          | JavaScript | interpreter  | 2020-08-03 | 0.2 | [GitHub](https://github.com/kosei28/Whitespace) |
 | [SpaceMan](haskell/ft-spaceman)                | Frank Terbeck    | Haskell    | interpreter  | 2020-07-09 | 0.3 | [GitLab](https://gitlab.com/ft/spaceman), [GitHub](https://github.com/ft/spaceman), [bewatermyfriend.org](http://bewatermyfriend.org/p/2020/000/), [HN](https://news.ycombinator.com/item?id=24763312) |
