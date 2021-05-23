@@ -66,6 +66,7 @@ programming language.
 | [wsm2ws](perl/ephphatha-wsm2ws)                | Andrew James     | Perl       | assembler, programs | 2017-05-28 | 0.3 | [GitHub](https://github.com/ephphatha/wsm2ws) |
 | [ws.vim](vim/rolf-ws-vim)                      | Rolf Asmund      | Vim script | syntax highlighting, programs | 2017-05-15 | 0.3 | [GitHub](https://github.com/rolf007/ws.vim) |
 | [Mr. White](erlang/derek-mrwhite)              | Derek Brown      | Erlang     | interpreter  | 2017-03-23 | 0.3 | [GitHub](https://github.com/derek121/mrwhite) |
+| [Whitespace Esolang Compiler](c/tejaskasetty)  | Sushrith Arkal, Tejas Kasetty, Suhas Sumukh | C, Yacc, Lex | parser | 2017-03-21 |  | [GitLab](https://gitlab.com/tejaskasetty/ws-compiler) |
 | [whitespace-scheme](scheme/niyarin)            | Akira Inoue      | Scheme     | interpreter  | 2017-02-15 | 0.2 | [GitHub](https://github.com/niyarin/whitespace-scheme) |
 | [whitepy](python/yasn-whitepy)                 | Yasser Saleemi   | Python     | interpreter  | 2017-01-31 | 0.2 | [GitHub](https://github.com/yasn77/whitepy) |
 | [WhitespaceGenerator](javascript/briantran-generator) | Brian Tran | JavaScript | text to Whitespace | 2017-01-22 | 0.2 | [GitHub](https://github.com/TranBrian10/WhitespaceGenerator) |
@@ -124,7 +125,7 @@ programming language.
 | [SaTaN](c/threeifbywhiskey-satan)              | Dorien Snake     | C          | interpreter  | 2014-03-03 | 0.3 | [GitHub](https://github.com/threeifbywhiskey/satan) |
 | [Whitespace Covert Channel](php/jseidl-wcc)    | Jan Seidl        | PHP        | text to Whitespace, web service | 2014-02-18 | 0.2 | [GitHub](https://github.com/jseidl/whitespace) |
 | [python-whitespace](python/mikecat)            | みけCAT (MikeCAT)  | Python     | interpreter  | 2014-02-16 | 0.3 | [GitHub](https://github.com/mikecat/python-whitespace) |
-| [wspacego](go/yshr-wspacego)                   | Yosihiro Isago   | Go         | interpreter, disassembler, mapping | 2013-12-27 | 0.3 | [GitHub](https://github.com/135yshr/wspacego) |
+| [wspacego](go/yshr-wspacego)                   | Yosihiro Isago   | Go         | interpreter, disassembler, mapping | 2013-12-27 | 0.3 | [GitHub](https://github.com/135yshr/wspacego), [GitLab](https://gitlab.com/yshr135/wspacego) |
 | [wvm](python/apua-wvm)                         | Apua             | Python     | interpreter, programs | 2013-11-24 | 0.3 | [GitHub](https://github.com/apua/whitespace) |
 | [wseditor](java/yuukiaria-wseditor)            | YuukiARIA        | Java       | IDE          | 2013-11-21 | -   | [GitHub](https://github.com/YuukiARIA/wseditor) |
 | [whitespace-llvm](cpp/tycho-whitespace-llvm)   | Tycho Bickerstaff | C++, LLVM | compiler, JIT, optimizer, programs | 2013-08-31 | 0.3 | [GitHub](https://github.com/worktycho/whitespace-llvm) |

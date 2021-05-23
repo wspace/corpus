@@ -16,6 +16,7 @@ Build errors are included.
   - wsc.sh
 - c/sandeep/white: `gcc -O3 -Wall -o white y.tab.c lex.yy.c`
 - c/strangepan-i-c-whitespace/whitespace: `make`
+- c/tejaskasetty/flex-bison/262\_267\_256/ws: `make`
 - c/threeifbywhiskey-satan/satan: `make`
 - ⚠️ clojure/jmesyou-erasure/target/uberjar/erasure-2.0-standalone.jar: `lein uberjar` Parser namespace is clj-whitespace, not erasure
 - clojure/tsuyusato/target/whitespace-clj-0.1.0-SNAPSHOT-standalone.jar: `lein uberjar`

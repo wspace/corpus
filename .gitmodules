@@ -19,6 +19,9 @@
 [submodule "c/strangepan-i-c-whitespace"]
 	path = c/strangepan-i-c-whitespace
 	url = https://github.com/StrangePan/I_C_Whitespace
+[submodule "c/tejaskasetty"]
+	path = c/tejaskasetty
+	url = https://gitlab.com/tejaskasetty/ws-compiler
 [submodule "c/threeifbywhiskey-satan"]
 	path = c/threeifbywhiskey-satan
 	url = https://github.com/threeifbywhiskey/satan

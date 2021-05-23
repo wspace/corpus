@@ -1389,6 +1389,26 @@
     "commands": [{ "dependencies": ["Erlang", "Rebar3"], "build": "make", "build_errors": "Unclear how to run" }]
   },
   {
+    "name": "Whitespace Esolang Compiler",
+    "path": "c/tejaskasetty",
+    "authors": ["Sushrith Arkal", "Tejas Kasetty", "Suhas Sumukh"],
+    "license": "none",
+    "languages": ["C", "Yacc", "Lex"],
+    "tags": ["parser"],
+    "date": "2017-03-21 12:42:53 +0530",
+    "spec_version": "",
+    "source": ["https://gitlab.com/tejaskasetty/ws-compiler"],
+    "commands": [
+      {
+        "type": "parser",
+        "bin": "flex-bison/262_267_256/ws",
+        "dependencies": ["make", "Flex", "Bison"],
+        "build": "make",
+        "usage": "$0 < <file>"
+      }
+    ]
+  },
+  {
     "name": "whitespace-scheme",
     "path": "scheme/niyarin",
     "authors": ["Akira Inoue"],
@@ -2907,7 +2927,7 @@
     "tags": ["interpreter", "disassembler", "mapping"],
     "date": "2013-12-27 19:29:40 -0800",
     "spec_version": "0.3",
-    "source": ["https://github.com/135yshr/wspacego"],
+    "source": ["https://github.com/135yshr/wspacego", "https://gitlab.com/yshr135/wspacego"],
     "bounds": {
       "precision": "fixed",
       "stack_cap": "unbounded",
