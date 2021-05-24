@@ -153,7 +153,7 @@ Build errors are included.
 - ❌ ruby/dwayne
 - ruby/nishiwakki/whitespace.rb
 - ❌ ruby/pocke-akaza
-- rust/censoredusername-whitespacers/target/release/wsc: `cargo build --release`
+- rust/censoredusername-whitespace-rs/target/release/wsc: `cargo build --release`
 - rust/collidedscope-albus/target/release/albus: `cargo build --release`
 - ⚠️ rust/faultier-albino:
   - ⚠️ albino: `cargo build --release` Needs many changes for latest Rust

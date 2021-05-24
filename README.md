@@ -78,7 +78,7 @@ the Whitespace programming language.
 | [Whitespace](r/bmazoure)                       | Bogdan Mazoure   | R          | interpreter, grammar DFA | 2016-07-30 | 0.2 | [GitHub](https://github.com/bmazoure/whitespace) |
 | [White++](cpp/marcellippmann-whitepp)          | Marcel Lippmann  | C++        | interpreter  | 2016-07-27 | 0.2 | [GitHub](https://github.com/wspace-lang/marcellippmann-whitepp), [GitHub (archive)](https://web.archive.org/web/20200906224652/https://github.com/marcellippmann/Whitepp/) |
 | [whitespace-ruby](ruby/dwayne)                 | Dwayne R. Crooks | Python     | interpreter  | 2016-07-11 | 0.2 | [GitHub](https://github.com/dwayne/whitespace-ruby) |
-| [Whitespacers](rust/censoredusername-whitespacers) | CensoredUsername | Rust   | JIT, assembler, disassembler | 2016-06-19 | 0.3 | [GitHub](https://github.com/CensoredUsername/whitespace-rs) |
+| [Whitespacers](rust/censoredusername-whitespace-rs) | CensoredUsername | Rust  | JIT, assembler, disassembler | 2016-06-19 | 0.3 | [GitHub](https://github.com/CensoredUsername/whitespace-rs) |
 | [whitespace](c/bvisness)                       | Ben Visness      | C, Yacc, TextMate | interpreter, syntax highlighting | 2016-05-20 | 0.3 | [GitHub](https://github.com/bvisness/whitespace) |
 | [Abyad](python/kareeeeem-abyad)                | Mohammed Kareem  | Python     | interpreter, program builder, programs | 2016-05-13 | 0.2 | [GitHub](https://github.com/Kareeeeem/abyad) |
 | [Rust-Whitespace](rust/jayshua)                | Jayshua Nelson   | Rust       | interpreter  | 2016-05-08 | 0.2 | [GitHub](https://github.com/Jayshua/rust-whitespace) |
@@ -268,7 +268,7 @@ archived.
 - [Rosetta Code](https://rosettacode.org/wiki/Category:Whitespace)
 - [Codewars](https://www.codewars.com/kata/whitespace-interpreter)
 - [Wikipedia](https://en.wikipedia.org/wiki/Whitespace_(programming_language)) (and other languages)
-- [Progopedia][http://progopedia.com/language/whitespace/]
+- [Progopedia](http://progopedia.com/language/whitespace/)
 
 ## License
 

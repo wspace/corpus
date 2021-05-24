@@ -1594,7 +1594,7 @@
   },
   {
     "name": "Whitespacers",
-    "path": "rust/censoredusername-whitespacers",
+    "path": "rust/censoredusername-whitespace-rs",
     "authors": ["CensoredUsername"],
     "license": "MPL-2.0",
     "languages": ["Rust"],
@@ -1701,7 +1701,7 @@
             ]
           },
           {
-            "short": "d",
+            "short": "c",
             "long": "count",
             "desc": "Use the reference interpreter with no bignum fallback to count the amount of instructions executed."
           },
