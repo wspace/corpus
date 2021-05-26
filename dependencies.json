@@ -23,7 +23,25 @@
   "Perl": { "brew": "perl" },
   "R": { "brew": "r" },
   "Rebar3": { "brew": "rebar3" },
-  "Rebol 3": { "manual": "https://rebolsource.net/" },
+  "Rebol 3": {
+    "url": {
+      "Linux x86": "https://rebolsource.net/downloads/linux-x86/r3-g25033f8",
+      "Linux x86_64": "https://rebolsource.net/downloads/experimental/r3-linux-x64-gbf237fc",
+      "Linux x86_64 (static)": "https://rebolsource.net/downloads/experimental/r3-linux-x64-gbf237fc-static",
+      "Linux ARMsf": "https://rebolsource.net/downloads/experimental/r3-linux-armsf-g25033f8",
+      "Linux ARMhf": "https://rebolsource.net/downloads/experimental/r3-linux-armhf-g25033f8",
+      "Mac x86": "https://rebolsource.net/downloads/osx-x86/r3-g25033f8",
+      "Mac x86_64": "https://rebolsource.net/downloads/experimental/r3-osx-x64-gbf237fc",
+      "Mac PPC": "https://rebolsource.net/downloads/experimental/r3-osx-ppc-gfc51038",
+      "Win x86": "https://rebolsource.net/downloads/win32-x86/r3-g25033f8.exe",
+      "FreeBSD x86": "https://rebolsource.net/downloads/experimental/r3-freebsd-x86-g25033f8",
+      "FreeBSD x86_64": "https://rebolsource.net/downloads/experimental/r3-freebsd-x64-gbf237fc",
+      "OpenBSD x86": "https://rebolsource.net/downloads/experimental/r3-openbsd-x86-g25033f8",
+      "Haiku x86": "https://rebolsource.net/downloads/experimental/r3-haiku-x86-g25033f8",
+      "Android ARM": "https://rebolsource.net/downloads/experimental/r3-linux-arm-bionic-g25033f8"
+    },
+    "site": "https://rebolsource.net/"
+  },
   "Ren-C": {
     "git": {
       "repo": "https://github.com/metaeducation/ren-c",
