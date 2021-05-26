@@ -21,7 +21,7 @@
 	url = https://github.com/StrangePan/I_C_Whitespace
 [submodule "c/tejaskasetty"]
 	path = c/tejaskasetty
-	url = https://gitlab.com/tejaskasetty/ws-compiler
+	url = https://gitlab.com/tejaskasetty/ws-compiler.git
 [submodule "c/threeifbywhiskey-satan"]
 	path = c/threeifbywhiskey-satan
 	url = https://github.com/threeifbywhiskey/satan
