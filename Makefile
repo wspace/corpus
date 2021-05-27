@@ -2,9 +2,9 @@
 all: format_projects licenses README.md assembly.md building.md tidy_submodules
 
 .PHONY: format_projects
-format_projects: projects.json tools/format_projects.bash
+format_projects: projects.json tools/format_projects.sh
 	@echo 'Formatting projects.json'
-	@tools/format_projects.bash
+	@tools/format_projects.sh
 
 .PHONY: licenses
 licenses: projects.json tools/licenses/licenses.go
@@ -24,10 +24,10 @@ building.md: projects.json tools/generate_building.jq
 	@jq -rf tools/generate_building.jq projects.json > building.md
 
 .PHONY: tidy_submodules
-tidy_submodules: projects.json tools/add_submodules.jq tools/format_gitmodules.bash
+tidy_submodules: projects.json tools/add_submodules.jq tools/format_gitmodules.sh
 	@echo 'Tidying Git submodules'
 	@jq -rf tools/add_submodules.jq projects.json | sh
-	@tools/format_gitmodules.bash
+	@tools/format_gitmodules.sh
 	@git add .gitmodules
 
 .PHONY: init_submodules

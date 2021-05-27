@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/sh
 
 # Format JSON and sort by decreasing date, then name
 underscore print -i projects.json |
