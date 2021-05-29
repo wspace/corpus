@@ -5,10 +5,40 @@
     "authors": ["Andrew Archibald"],
     "license": "MPL-2.0",
     "languages": ["Whitespace"],
-    "tags": ["standard library", "programs"],
+    "tags": ["standard library", "programs", "assembler"],
     "date": "2021-05-24 15:38:17 -0700",
     "spec_version": "0.3",
-    "source": ["https://github.com/andrewarchi/wslib"]
+    "source": ["https://github.com/andrewarchi/wslib"],
+    "assembly": {
+      "instructions": {
+        "push": ["push"],
+        "dup": ["dup"],
+        "copy": ["copy"],
+        "swap": ["swap"],
+        "drop": ["drop"],
+        "slide": ["slide"],
+        "add": ["add"],
+        "sub": ["sub"],
+        "mul": ["mul"],
+        "div": ["div"],
+        "mod": ["mod"],
+        "store": ["store"],
+        "retrieve": ["retrieve"],
+        "label": ["label"],
+        "call": ["call"],
+        "jmp": ["jmp"],
+        "jz": ["jz"],
+        "jn": ["jn"],
+        "ret": ["ret"],
+        "end": ["end"],
+        "printc": ["printc"],
+        "printi": ["printi"],
+        "readc": ["readc"],
+        "readi": ["readi"]
+      },
+      "extension": "wsa"
+    },
+    "commands": [{ "type": "assembler", "bin": "assemble.sh", "usage": "$0 <file> [<file>...]" }]
   },
   {
     "name": "wsjq",

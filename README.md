@@ -7,7 +7,7 @@ the Whitespace programming language.
 
 | Name                                           | Authors          | Languages  | Tags         | Date       | Spec | Source |
 | ---------------------------------------------- | ---------------- | ---------- | ------------ | ---------- | ---- | ------ |
-| [wslib](whitespace/andrewarchi-wslib)          | Andrew Archibald | Whitespace | standard library, programs | 2021-05-24 | 0.3 | [GitHub](https://github.com/andrewarchi/wslib) |
+| [wslib](whitespace/andrewarchi-wslib)          | Andrew Archibald | Whitespace | standard library, programs, assembler | 2021-05-24 | 0.3 | [GitHub](https://github.com/andrewarchi/wslib) |
 | [wsjq](jq/andrewarchi-wsjq)                    | Andrew Archibald | jq         | interpreter, debugger, disassembler | 2021-05-02 | 0.3 | [GitHub](https://github.com/andrewarchi/wsjq) |
 | [Albus](rust/collidedscope-albus)              | Collided Scope   | Rust       | interpreter  | 2021-02-12 | 0.3 | [GitHub](https://github.com/collidedscope/albus) |
 | [%whitespace.reb](ren-c/hostilefork)           | Brian Dickens (Hostile Fork) | Ren-C | interpreter | 2021-01-31 | 0.3 | [GitHub](https://github.com/wspace-lang/hostilefork-ren-c), [GitHub](https://github.com/hostilefork/whitespacers/tree/master/ren-c) |
