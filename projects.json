@@ -1,5 +1,16 @@
 [
   {
+    "name": "wslib",
+    "path": "whitespace/andrewarchi-wslib",
+    "authors": ["Andrew Archibald"],
+    "license": "MPL-2.0",
+    "languages": ["Whitespace"],
+    "tags": ["standard library", "programs"],
+    "date": "2021-05-24 15:38:17 -0700",
+    "spec_version": "0.3",
+    "source": ["https://github.com/andrewarchi/wslib"]
+  },
+  {
     "name": "wsjq",
     "path": "jq/andrewarchi-wsjq",
     "authors": ["Andrew Archibald"],

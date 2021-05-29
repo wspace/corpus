@@ -439,6 +439,9 @@
 [submodule "vim/rolf-ws-vim"]
 	path = vim/rolf-ws-vim
 	url = https://github.com/rolf007/ws.vim
+[submodule "whitespace/andrewarchi-wslib"]
+	path = whitespace/andrewarchi-wslib
+	url = https://github.com/andrewarchi/wslib
 [submodule "whitespace/eah-hello-world"]
 	path = whitespace/eah-hello-world
 	url = https://github.com/wspace-lang/eah-hello-world-whitespace

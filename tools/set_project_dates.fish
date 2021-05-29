@@ -4,9 +4,10 @@ set root (git rev-parse --show-toplevel)
 echo '[' > tmp
 for p in (jq -c .[] projects.json)
   set path (echo $p | jq -r .path)
-  # Only check submodules
-  if test -n "$path" -a -d "$path"
+  set date (echo $p | jq -r .date)
+  if test \( -z "$date" -o "$date" = null \) -a -n "$path" -a -d "$path"
     set project_root (git -C $path rev-parse --show-toplevel)
+    # Only check submodules
     if test "$project_root" != "$root"
       set dates (git -C $path log --reverse --format=%ai\n%ci | head -n2)
       set author_date $dates[1]
@@ -24,4 +25,4 @@ end
 echo ']' >> tmp
 
 mv tmp projects.json
-tools/format_projects.bash
+tools/format_projects.sh
