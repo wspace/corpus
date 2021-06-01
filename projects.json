@@ -1163,7 +1163,8 @@
     "tags": ["interpreter"],
     "date": "2018-05-21 13:44:13 +0200",
     "spec_version": "0.3",
-    "source": ["https://github.com/wrotycz/whitespace-interpreter"]
+    "source": ["https://github.com/wrotycz/whitespace-interpreter"],
+    "notes": "Codewars solution"
   },
   {
     "name": "whitespace",
@@ -1274,7 +1275,8 @@
     "tags": ["interpreter"],
     "date": "2018-03-09 16:19:48 -0500",
     "spec_version": "incomplete",
-    "source": ["https://github.com/MaximeGoyette/whitespace_interpreter"]
+    "source": ["https://github.com/MaximeGoyette/whitespace_interpreter"],
+    "notes": "Partial Codewars solution"
   },
   {
     "name": "erasure",
@@ -1938,7 +1940,8 @@
     "tags": ["interpreter"],
     "date": "2016-02-08 10:12:54 +0100",
     "spec_version": "0.2",
-    "source": ["https://github.com/uraza/whitespace-interpreter"]
+    "source": ["https://github.com/uraza/whitespace-interpreter"],
+    "notes": "Codewars solution"
   },
   {
     "name": "WHINT",
@@ -2003,7 +2006,8 @@
     "date": "2015-09-09 08:16:43 -0700",
     "spec_version": "-",
     "source": ["https://github.com/therebelrobot/whitespace"],
-    "mappings": [{ "space": "s", "tab": "t", "lf": "n", "spaces_between": false }]
+    "mappings": [{ "space": "s", "tab": "t", "lf": "n", "spaces_between": false }],
+    "notes": "Identical to Codewars template"
   },
   {
     "name": "whitespacer",
