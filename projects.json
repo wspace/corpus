@@ -2234,6 +2234,19 @@
     "source": ["https://github.com/kmizu/ws_interpreter"]
   },
   {
+    "name": "Whitespace compiler targeting JVM bytecode",
+    "authors": ["Bruno Kim Medeiros Cesar"],
+    "license": "unknown",
+    "languages": ["JVM"],
+    "tags": ["compiler"],
+    "date": "2015-04-03 06:30:42 +0000",
+    "spec_version": "unknown",
+    "source": [
+      "https://stackoverflow.com/questions/29427419/ifeq-ifne-jvm-opcode-always-branches",
+      "https://drive.google.com/drive/folders/0B8vCNP4j9pRKfmpOT2dGeWRTN0lrbFlPS0xMRENlSWJPMW44TVZDM0hWMVJJUGZQZC1NcGM"
+    ]
+  },
+  {
     "name": "I C Whitespace",
     "path": "c/strangepan-i-c-whitespace",
     "authors": ["Dan Andrus"],
@@ -3684,32 +3697,19 @@
     ]
   },
   {
-    "name": "HaPyLi",
-    "authors": ["Huf Lungdung"],
-    "license": "unknown",
-    "languages": ["Python"],
-    "tags": ["language", "interpreter"],
-    "date": "2010-05-23",
-    "spec_version": "0.3",
-    "source": [
-      "https://web.archive.org/web/20110212015726/http://hapyli.webs.com/",
-      "https://web.archive.org/web/20141011193154/http://compsoc.dur.ac.uk/archives/whitespace/2010-May/000075.html",
-      "https://github.com/helvm/hapyli"
-    ]
-  },
-  {
     "name": "Whitespace Interpreter and Assembler",
     "path": "python/stephenchappell",
     "authors": ["Stephen Chappell"],
     "license": "MIT",
     "languages": ["Python"],
-    "tags": ["interpreter", "assembler"],
+    "tags": ["interpreter", "assembler", "programs"],
     "date": "2010-03-14 15:35:04 +0000",
     "spec_version": "0.3",
     "source": [
       "https://github.com/wspace-lang/stephenchappell-python",
       "https://code.activestate.com/recipes/sets/12/",
-      "https://github.com/ActiveState/code"
+      "https://github.com/ActiveState/code",
+      "https://stackoverflow.com/questions/2901274/do-you-have-suggestions-for-these-assembly-mnemonics"
     ]
   },
   {
@@ -3778,6 +3778,22 @@
         "notes": "Program is hardcoded to one that counts from 1 to 10. Prints instructions while executing."
       }
     ]
+  },
+  {
+    "name": "HaPyLi",
+    "authors": ["Huf Lungdung (Cybis)"],
+    "license": "unknown",
+    "languages": ["Python"],
+    "tags": ["language", "interpreter", "standard library", "programs"],
+    "date": "2009-03-03 19:44:31 +0000",
+    "spec_version": "0.3",
+    "source": [
+      "https://web.archive.org/web/20110212015726/http://hapyli.webs.com/",
+      "https://web.archive.org/web/20141011193154/http://compsoc.dur.ac.uk/archives/whitespace/2010-May/000075.html",
+      "https://github.com/helvm/hapyli",
+      "https://stackoverflow.com/questions/607830/use-of-haskell-state-monad-a-code-smell"
+    ],
+    "notes": "A Sudoku solver was written in HaPyLi"
   },
   {
     "name": "wspace",

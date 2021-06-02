@@ -178,9 +178,10 @@ Build errors are included.
 - ❌ whitespace/eah-hello-world
 - ❌ whitespace/keens-whitelie
 - ❌ whitespace/tewort-hello-whitespace
-- ❌ “HaPyLi” by Huf Lungdung
+- ❌ “HaPyLi” by Huf Lungdung (Cybis)
 - ❌ “Whitespace Interpreter in JavaScript” by Arnauld
 - ❌ “Whitespace Language - Online Translator/Interpreter” by dCode
+- ❌ “Whitespace compiler targeting JVM bytecode” by Bruno Kim Medeiros Cesar
 - ❌ “whitespace-asm” by Wayne E. Conrad
 - ❌ “whitespace-disassem” by Wayne E. Conrad
 - ❌ “whitespace-ruby” by Wayne E. Conrad
