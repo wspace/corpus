@@ -75,15 +75,13 @@ type Project struct {
 			DumpHeap  []string `json:"dumpheap,omitempty"`
 			DumpTrace []string `json:"dumptrace,omitempty"`
 		} `json:"instructions,omitempty"`
-		CaseSensitiveInstructions *bool  `json:"case_sensitive_instructions,omitempty"`
-		LineCommentPrefix         string `json:"line_comment_prefix,omitempty"`
-		LabelDefFormat            string `json:"label_def_format,omitempty"`
-		LabelRefFormat            string `json:"label_ref_format,omitempty"`
-		NumberFormat              string `json:"number_format,omitempty"`
-		Indentation               string `json:"indentation,omitempty"`
-		LabelIndentation          string `json:"label_indentation,omitempty"`
-		DebugOnly                 *bool  `json:"debug_only,omitempty"`
-		Extension                 string `json:"extension,omitempty"`
+		Patterns                  map[string]string `json:"patterns,omitempty"`
+		CaseSensitiveInstructions *bool             `json:"case_sensitive_instructions,omitempty"`
+		LineCommentPrefix         string            `json:"line_comment_prefix,omitempty"`
+		Indentation               string            `json:"indentation,omitempty"`
+		LabelIndentation          string            `json:"label_indentation,omitempty"`
+		Usage                     []string          `json:"usage,omitempty"`
+		Extension                 string            `json:"extension,omitempty"`
 	} `json:"assembly,omitempty"`
 	Mappings []struct {
 		Space         string `json:"space"`

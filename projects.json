@@ -57,30 +57,36 @@
     "source": ["https://github.com/andrewarchi/wslib"],
     "assembly": {
       "instructions": {
-        "push": ["push"],
+        "push": ["push <number_char>"],
         "dup": ["dup"],
-        "copy": ["copy"],
+        "copy": ["copy <number>"],
         "swap": ["swap"],
-        "drop": ["drop"],
-        "slide": ["slide"],
-        "add": ["add"],
-        "sub": ["sub"],
-        "mul": ["mul"],
-        "div": ["div"],
-        "mod": ["mod"],
-        "store": ["store"],
-        "retrieve": ["retrieve"],
-        "label": ["label"],
-        "call": ["call"],
-        "jmp": ["jmp"],
-        "jz": ["jz"],
-        "jn": ["jn"],
-        "ret": ["ret"],
+        "drop": ["drop", "drop <number>"],
+        "slide": ["slide <number>"],
+        "add": ["add", "add <arg>", "add <arg> <arg>", "add <arg> _"],
+        "sub": ["sub", "sub <arg>", "sub <arg> <arg>", "sub <arg> _"],
+        "mul": ["mul", "mul <arg>", "mul <arg> <arg>", "mul <arg> _"],
+        "div": ["div", "div <arg>", "div <arg> <arg>", "div <arg> _"],
+        "mod": ["mod", "mod <arg>", "mod <arg> <arg>", "mod <arg> _"],
+        "store": ["store", "store <arg>", "store <arg> <arg>", "store <arg> _"],
+        "retrieve": ["retrieve", "retrieve <arg>"],
+        "label": ["<label>:"],
+        "call": ["call <args> <label>"],
+        "jmp": ["jmp <args> <label>"],
+        "jz": ["jz <args> <label>", "jeof <args> <label>"],
+        "jn": ["jn <args> <label>"],
+        "ret": ["ret", "ret <arg>"],
         "end": ["end"],
-        "printc": ["printc"],
-        "printi": ["printi"],
-        "readc": ["readc"],
-        "readi": ["readi"]
+        "printc": ["printc", "printc <arg>"],
+        "printi": ["printi", "printi <arg>"],
+        "readc": ["readc", "readc <arg>"],
+        "readi": ["readi", "readi <arg>"]
+      },
+      "patterns": {
+        "arg": "<number_char>|\\*?\\^?<number>",
+        "args": "<arg>*|_?|<arg>*",
+        "number": "[+-]?[0-9]+",
+        "number_char": "<number>|'\\x[0-9A-Fa-f]{2}'|-?0x[0-9A-Fa-f]{2}|'\\[abtnvfre\\]'|'[ -!(-\\[\\]-~]'"
       },
       "extension": "wsa"
     },
@@ -99,7 +105,7 @@
     "bounds": { "precision": "float64" },
     "assembly": {
       "instructions": {
-        "push": ["push"],
+        "push": ["push <number>"],
         "dup": ["dup"],
         "copy": ["copy"],
         "swap": ["swap"],
@@ -112,7 +118,7 @@
         "mod": ["mod"],
         "store": ["store"],
         "retrieve": ["retrieve"],
-        "label": ["label"],
+        "label": ["<label>:", "%<number>:"],
         "call": ["call"],
         "jmp": ["jmp"],
         "jz": ["jz"],
@@ -124,6 +130,8 @@
         "readc": ["readc"],
         "readi": ["readi"]
       },
+      "indentation": "    ",
+      "usage": ["disassembler", "debugger"],
       "extension": "wsa"
     },
     "commands": [
@@ -177,10 +185,11 @@
         "printi": ["OTN"],
         "readc": ["RDC"],
         "readi": ["RDN"]
-      }
+      },
+      "usage": ["enums"]
     },
     "commands": [{ "bin": "ws.py", "usage": "python3 $0 < <file>" }],
-    "notes": "TODO assembly mnemonics only used as enums. Only implements push, print, printi, and end."
+    "notes": "Only implements push, print, printi, and end"
   },
   {
     "name": "Albus",
@@ -262,11 +271,11 @@
         "mod": ["MOD"],
         "store": ["STO"],
         "retrieve": ["RCL"],
-        "label": ["@<label>", "@L<number>"],
-        "call": ["CALL", "GOSUB", "JSR"],
-        "jmp": ["JMP", "J", "B"],
-        "jz": ["JZ", "BZ"],
-        "jn": ["JLTZ", "BLTZ"],
+        "label": ["@<label>"],
+        "call": ["CALL %<label>", "GOSUB %<label>", "JSR %<label>"],
+        "jmp": ["JMP %<label>", "J %<label>", "B %<label>"],
+        "jz": ["JZ %<label>", "BZ %<label>"],
+        "jn": ["JLTZ %<label>", "BLTZ %<label>"],
         "ret": ["RET"],
         "end": ["END"],
         "printc": ["PUTC"],
@@ -274,10 +283,9 @@
         "readc": ["GETC"],
         "readi": ["GETN"]
       },
+      "patterns": { "label": "@([A-Za-z_][A-Za-z0-9_]*|L<number>)" },
       "case_sensitive_instructions": false,
       "line_comment_prefix": ";",
-      "label_def_format": "@[A-Za-z_][A-Za-z0-9_]*",
-      "label_ref_format": "%[A-Za-z_][A-Za-z0-9_]*",
       "extension": "asm"
     },
     "commands": [
@@ -736,6 +744,14 @@
         "readc": ["read_char"],
         "readi": ["read_number"]
       },
+      "patterns": {
+        "address": "\\*<variable>",
+        "char": "'.'",
+        "hex": "#[0-9A-Fa-f]+",
+        "int": "[+-]?[0-9]+",
+        "number": "<int>|<hex>|<char>|&<variable>",
+        "variable": "[^ \t]+"
+      },
       "case_sensitive_instructions": false,
       "line_comment_prefix": "//"
     },
@@ -938,6 +954,8 @@
         "dumpheap": ["dumpheap"],
         "dumptrace": ["trace"]
       },
+      "indentation": "    ",
+      "usage": ["disassembler"],
       "extension": "wsa"
     },
     "commands": [
@@ -1077,7 +1095,7 @@
         "readc": ["rdc"],
         "readi": ["rdn"]
       },
-      "debug_only": true
+      "usage": ["debug"]
     },
     "commands": [{ "type": "interpreter", "bin": "bin/go-wspace", "build": "make", "usage": "$0 <file>" }]
   },
@@ -2952,7 +2970,7 @@
         "readc": ["GETC"],
         "readi": ["GETN"]
       },
-      "debug_only": true
+      "usage": ["debug"]
     },
     "commands": [{ "build": "cargo build --release", "build_errors": "Needs many changes for latest Rust" }]
   },
@@ -3565,7 +3583,7 @@
         "readc": ["READCHAR"],
         "readi": ["READNUM"]
       },
-      "debug_only": true
+      "usage": ["debug"]
     },
     "commands": [
       {
@@ -3706,9 +3724,9 @@
         "printi": ["PUTN"],
         "readc": ["GETC"],
         "readi": ["GETN"]
-      }
-    },
-    "notes": "TODO assembly may only be used internally"
+      },
+      "usage": ["enums"]
+    }
   },
   {
     "name": "Colorspace",
@@ -3862,11 +3880,9 @@
         "readc": ["ichr"],
         "readi": ["iint"]
       },
+      "patterns": { "label": "\"[A-Za-z0-9_]+\"", "number": "[+-]?[0-9]+" },
       "case_sensitive_instructions": true,
       "line_comment_prefix": "#",
-      "label_def_format": "\"[A-Za-z0-9_]+\"",
-      "label_ref_format": "\"[A-Za-z0-9_]+\"",
-      "number_format": "[+-]?[0-9]+",
       "indentation": "     ",
       "extension": "wsa"
     },
