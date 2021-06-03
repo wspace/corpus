@@ -639,7 +639,10 @@
     "commands": [
       {
         "type": "interpreter",
-        "build": "msbuild /p:Configuration=Debug /t:build /restore WhitespaceInterpreter/WhitespaceInterpreter.csproj"
+        "bin": "WhitespaceInterpreter.exe",
+        "build": "mcs -debug -out:WhitespaceInterpreter.exe WhitespaceInterpreter/*.cs",
+        "usage": "mono $0",
+        "notes": "Program is hardcoded to a test program. Prints instructions while executing."
       }
     ],
     "notes": "Only implements push, dup, swap, drop, add, sub, mul, store, retrieve, end, printc, and printi"
@@ -1408,7 +1411,7 @@
     "mappings": [{ "space": "S", "tab": "T", "lf": "L", "extension": "txt" }],
     "commands": [
       {
-        "type": "ide",
+        "type": "IDE",
         "bin": "The-Code/WhitespaceInterpreter/bin/Debug/WhitespaceInterpreter.exe",
         "build": "msbuild /p:Configuration=Debug The-Code/WhitespaceInterpreter/WhitespaceInterpreter.csproj",
         "usage": "mono $0",
@@ -2693,7 +2696,7 @@
     "authors": ["reflash"],
     "license": "none",
     "languages": ["C#"],
-    "tags": ["interpreter"],
+    "tags": ["IDE", "interpreter"],
     "date": "2014-11-21 13:18:03 +0300",
     "spec_version": "0.3",
     "source": ["https://github.com/reflash-blog/WhiteSpaceInterpreter"],
@@ -2702,7 +2705,7 @@
         "type": "interpreter",
         "bin": "WhiteSpaceInterpretator/bin/Debug/WhiteSpaceInterpretator.exe",
         "build": "msbuild /p:Configuration=Debug WhiteSpaceInterpretator/WhiteSpaceInterpretator.csproj",
-        "build_errors": "Could not locate the assemblies `PresentationCore` or `PresentationFramework`"
+        "build_errors": "Mono does not implement WPF APIs"
       }
     ]
   },
@@ -3394,7 +3397,7 @@
     "authors": ["Henri Lakk"],
     "license": "none",
     "languages": ["JavaScript"],
-    "tags": ["interpreter", "optimizer", "assembler", "IDE", "programs"],
+    "tags": ["IDE", "interpreter", "optimizer", "assembler", "programs"],
     "date": "2013-03-20 23:47:24 +0200",
     "spec_version": "0.3",
     "source": [
@@ -3844,8 +3847,8 @@
     "commands": [
       {
         "type": "interactive",
-        "bin": "bin/Debug/ConsoleApplication1.exe",
-        "build": "msbuild /p:Configuration=Debug EsotericCodeInterpreter.csproj",
+        "bin": "bin/Debug/EsotericCodeInterpreter.exe",
+        "build": "msbuild /p:Configuration=Debug\\;AssemblyName=EsotericCodeInterpreter EsotericCodeInterpreter.csproj",
         "usage": "mono $0",
         "subcommands": [
           { "name": "start", "desc": "interpret program written in CLI" },

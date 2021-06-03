@@ -2,6 +2,7 @@
 
 set root (git rev-parse --show-toplevel)
 echo '[' > tmp
+# for path in (jq -r '.[] | select((.date|length==0) and (.path|length!=0)).path' projects.json)
 for p in (jq -c .[] projects.json)
   set path (echo $p | jq -r .path)
   set date (echo $p | jq -r .date)

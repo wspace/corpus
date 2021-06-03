@@ -48,12 +48,12 @@ Build and run errors are included.
 - ⚠️ cpp/tycho-whitespace-llvm/wspace-jit: `make` Requires LLVM
 - cpp/yuukiaria/bin/ws: `mkdir -p bin && make TARGET=../bin/ws -C src`
 - crystal/collidedscope-spiceweight/spwt: `make`
-- ⚠️ csharp/denislabrecque/*unspecified*: `msbuild /p:Configuration=Debug /t:build /restore WhitespaceInterpreter/WhitespaceInterpreter.csproj`
+- csharp/denislabrecque/WhitespaceInterpreter.exe: `mcs -debug -out:WhitespaceInterpreter.exe WhitespaceInterpreter/*.cs`
 - csharp/littlebughunter-assembler/bin/Debug/WhitespaceAssembler.exe: `msbuild /p:Configuration=Debug WhitespaceAssembler.csproj`
 - csharp/nicolasff-spacesharp/wsc.exe: `make`
 - ⚠️ csharp/north-projectone/The-Code/WhitespaceInterpreter/bin/Debug/WhitespaceInterpreter.exe: `msbuild /p:Configuration=Debug The-Code/WhitespaceInterpreter/WhitespaceInterpreter.csproj` The Carbon driver has not been ported to 64-bit, so very few parts of Windows.Forms work properly
-- ⚠️ csharp/reflash/WhiteSpaceInterpretator/bin/Debug/WhiteSpaceInterpretator.exe: `msbuild /p:Configuration=Debug WhiteSpaceInterpretator/WhiteSpaceInterpretator.csproj` Could not locate the assemblies `PresentationCore` or `PresentationFramework`
-- csharp/rolisoft-esoteric/bin/Debug/ConsoleApplication1.exe: `msbuild /p:Configuration=Debug EsotericCodeInterpreter.csproj`
+- ⚠️ csharp/reflash/WhiteSpaceInterpretator/bin/Debug/WhiteSpaceInterpretator.exe: `msbuild /p:Configuration=Debug WhiteSpaceInterpretator/WhiteSpaceInterpretator.csproj` Mono does not implement WPF APIs
+- csharp/rolisoft-esoteric/bin/Debug/EsotericCodeInterpreter.exe: `msbuild /p:Configuration=Debug\;AssemblyName=EsotericCodeInterpreter EsotericCodeInterpreter.csproj`
 - ❌ elixir/quinnwilton
 - ⚠️ erlang/derek-mrwhite/*unspecified*: `make` Unclear how to run
 - ⚠️ go/andrewarchi-nebula:

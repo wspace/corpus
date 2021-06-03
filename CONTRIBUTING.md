@@ -21,11 +21,6 @@ Dockerfile for each project.
 The current status of building and running each project is documented in
 [building.md](./building.md).
 
-#### C#
-
-If you know how to build C# code on Unix systems, help would be
-appreciated.
-
 ### HaPyLi
 
 I am seeking a copy of the HaPyLi language source as the HaPyLi website
