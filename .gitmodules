@@ -112,6 +112,9 @@
 [submodule "csharp/littlebughunter-assembler"]
 	path = csharp/littlebughunter-assembler
 	url = https://github.com/littleBugHunter/WhitespaceAssembler
+[submodule "csharp/nicolasff-spacesharp"]
+	path = csharp/nicolasff-spacesharp
+	url = https://github.com/nicolasff/spacesharp
 [submodule "csharp/north-projectone"]
 	path = csharp/north-projectone
 	url = https://github.com/North15/projectOne
@@ -325,12 +328,18 @@
 [submodule "python/eizoassik-pyws"]
 	path = python/eizoassik-pyws
 	url = https://github.com/EizoAssik/pyws
+[submodule "python/ffanzhang"]
+	path = python/ffanzhang
+	url = https://github.com/ffanzhang/ws
 [submodule "python/francoisrozet-whitespacy"]
 	path = python/francoisrozet-whitespacy
 	url = https://github.com/francois-rozet/whitespacy
 [submodule "python/freyamade-hohoho"]
 	path = python/freyamade-hohoho
 	url = https://github.com/freyamade/hohoho
+[submodule "python/ganeshsankaran"]
+	path = python/ganeshsankaran
+	url = https://github.com/ganeshsankaran/interpreter
 [submodule "python/hearnderek"]
 	path = python/hearnderek
 	url = https://github.com/hearnderek/WhiteSpaceInterpreter
@@ -436,6 +445,9 @@
 [submodule "textmate/veniversum"]
 	path = textmate/veniversum
 	url = https://github.com/veniversum/language-whitespace
+[submodule "typescript/fy0u11"]
+	path = typescript/fy0u11
+	url = https://github.com/FY0u11/whitespace-interpreter
 [submodule "vim/rolf-ws-vim"]
 	path = vim/rolf-ws-vim
 	url = https://github.com/rolf007/ws.vim

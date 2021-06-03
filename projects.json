@@ -1,5 +1,51 @@
 [
   {
+    "name": "Interpreter",
+    "path": "python/ganeshsankaran",
+    "authors": ["Ganesh Sankaran"],
+    "license": "none",
+    "languages": ["Python"],
+    "tags": ["wsa interpreter", "programs"],
+    "date": "2021-05-29 10:30:15 -0700",
+    "spec_version": "0.2",
+    "source": ["https://github.com/ganeshsankaran/interpreter"],
+    "assembly": {
+      "instructions": {
+        "push": ["push <number>"],
+        "dup": ["dup"],
+        "swap": ["swap"],
+        "drop": ["pop"],
+        "add": ["add"],
+        "sub": ["sub"],
+        "mul": ["mul"],
+        "div": ["div"],
+        "mod": ["mod"],
+        "store": ["store"],
+        "retrieve": ["load"],
+        "label": ["label <label>"],
+        "call": ["call <label>"],
+        "jmp": ["jump <label>"],
+        "jz": ["jnil <label>"],
+        "jn": ["jneg <label>"],
+        "ret": ["ret"],
+        "end": ["halt"],
+        "printc": ["putchar"],
+        "printi": ["putint"],
+        "readc": ["getchar"],
+        "readi": ["getint"]
+      },
+      "extension": "txt"
+    },
+    "commands": [
+      {
+        "type": "wsa interpreter",
+        "bin": "interpreter.py",
+        "usage": "python3 $0 <file>",
+        "notes": "Directly executes wsa files, starting at the `main` label. Files must not have any blank or trailing lines"
+      }
+    ]
+  },
+  {
     "name": "wslib",
     "path": "whitespace/andrewarchi-wslib",
     "authors": ["Andrew Archibald"],
@@ -98,6 +144,45 @@
     ]
   },
   {
+    "name": "ws",
+    "path": "python/ffanzhang",
+    "authors": ["ffanzhang"],
+    "license": "MIT",
+    "languages": ["Python"],
+    "tags": ["interpreter"],
+    "date": "2021-03-06 22:34:15 -0800",
+    "spec_version": "0.2",
+    "source": ["https://github.com/ffanzhang/ws"],
+    "assembly": {
+      "instructions": {
+        "push": ["PUSH"],
+        "dup": ["DUPL"],
+        "swap": ["SWAP"],
+        "drop": ["DISC"],
+        "add": ["ADD"],
+        "sub": ["SUB"],
+        "mul": ["MUL"],
+        "div": ["DIV"],
+        "mod": ["MOD"],
+        "store": ["PUT"],
+        "retrieve": ["GET"],
+        "label": ["MARK"],
+        "call": ["CALL"],
+        "jmp": ["JUMP"],
+        "jz": ["JZER"],
+        "jn": ["JNEG"],
+        "ret": ["ENDS"],
+        "end": ["ENDP"],
+        "printc": ["OTC"],
+        "printi": ["OTN"],
+        "readc": ["RDC"],
+        "readi": ["RDN"]
+      }
+    },
+    "commands": [{ "bin": "ws.py", "usage": "python3 $0 < <file>" }],
+    "notes": "TODO assembly mnemonics only used as enums. Only implements push, print, printi, and end."
+  },
+  {
     "name": "Albus",
     "path": "rust/collidedscope-albus",
     "authors": ["Collided Scope"],
@@ -138,6 +223,19 @@
         "notes": "Program is hardcoded to one that counts from 1 to 10. Prints instructions while executing."
       }
     ]
+  },
+  {
+    "name": "Whitespace exotic programming language interpreter",
+    "path": "typescript/fy0u11",
+    "authors": ["Sergey Strigin"],
+    "license": "ISC",
+    "languages": ["TypeScript"],
+    "tags": ["interpreter"],
+    "date": "2021-01-12 22:32:44 +0600",
+    "spec_version": "0.3",
+    "source": ["https://github.com/FY0u11/whitespace-interpreter"],
+    "commands": [{ "type": "interpreter", "bin": "dist/Whitespace.js", "build": "npm install && npm run build" }],
+    "notes": "Codewars solution"
   },
   {
     "name": "asm2ws",
@@ -1462,13 +1560,39 @@
     "authors": ["Sushrith Arkal", "Tejas Kasetty", "Suhas Sumukh"],
     "license": "none",
     "languages": ["C", "Yacc", "Lex"],
-    "tags": ["parser"],
+    "tags": ["disassembler", "parser"],
     "date": "2017-03-21 12:42:53 +0530",
-    "spec_version": "",
+    "spec_version": "0.2",
     "source": ["https://gitlab.com/tejaskasetty/ws-compiler"],
+    "assembly": {
+      "instructions": {
+        "push": ["push <number>"],
+        "dup": ["dup"],
+        "swap": ["swap"],
+        "drop": ["pop"],
+        "add": ["add"],
+        "sub": ["sub"],
+        "mul": ["mul"],
+        "div": ["div"],
+        "mod": ["mod"],
+        "store": ["store"],
+        "retrieve": ["retrieve"],
+        "label": ["L<number>:"],
+        "call": ["call F<number>"],
+        "jmp": ["goto L<number>"],
+        "jz": ["gotoiz L<number>"],
+        "jn": ["gotoin L<number>"],
+        "ret": ["return"],
+        "end": ["end"],
+        "printc": ["printchar"],
+        "printi": ["printnum"],
+        "readc": ["readchar"],
+        "readi": ["readnum"]
+      }
+    },
     "commands": [
       {
-        "type": "parser",
+        "type": "disassembler",
         "bin": "flex-bison/262_267_256/ws",
         "dependencies": ["make", "Flex", "Bison"],
         "build": "make",
@@ -3857,6 +3981,58 @@
       "https://stackoverflow.com/questions/607830/use-of-haskell-state-monad-a-code-smell"
     ],
     "notes": "A Sudoku solver was written in HaPyLi"
+  },
+  {
+    "name": "Spacesharp",
+    "description": "Compiles to MSIL executable using the .NET System.Reflection.Emit API",
+    "path": "csharp/nicolasff-spacesharp",
+    "authors": ["Nicolas Favre-Felix"],
+    "license": "GPL-2.0-or-later",
+    "languages": ["C#", "C", "Yacc", "Lex"],
+    "tags": ["compiler", "programs"],
+    "date": "2008-08-25 08:55:11 +0000",
+    "spec_version": "0.3",
+    "source": ["https://github.com/nicolasff/spacesharp"],
+    "assembly": {
+      "instructions": {
+        "push": ["Push"],
+        "dup": ["Duplicate"],
+        "copy": ["Copy"],
+        "swap": ["Swap"],
+        "drop": ["Discard"],
+        "slide": ["Slide"],
+        "add": ["Addition"],
+        "sub": ["Substraction"],
+        "mul": ["Multiplication"],
+        "div": ["Division"],
+        "mod": ["Modulo"],
+        "store": ["Store"],
+        "retrieve": ["Retrieve"],
+        "label": ["Mark"],
+        "call": ["CallSub"],
+        "jmp": ["Jmp"],
+        "jz": ["JZ"],
+        "jn": ["JLZ"],
+        "ret": ["EndSub"],
+        "end": ["EndProg"],
+        "printc": ["PrintChar"],
+        "printi": ["PrintNumber"],
+        "readc": ["ReadChar"],
+        "readi": ["ReadNumber"]
+      }
+    },
+    "commands": [
+      {
+        "bin": "wsc.exe",
+        "build": "make",
+        "usage": "mono $0 [-o <output_file>] <file>",
+        "output": "<output_file> or ` .exe` if empty",
+        "options": [{ "short": "o", "desc": "output file" }],
+        "option_parse": "manual",
+        "notes": "Run output file with `mono <output_file>`"
+      }
+    ],
+    "notes": "Assembly mnemonics only used internally for enums"
   },
   {
     "name": "wspace",

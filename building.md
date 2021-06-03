@@ -50,6 +50,7 @@ Build errors are included.
 - crystal/collidedscope-spiceweight/spwt: `make`
 - ❌ csharp/denislabrecque
 - csharp/littlebughunter-assembler/WhitespaceAssembler
+- csharp/nicolasff-spacesharp/wsc.exe: `make`
 - ❌ csharp/north-projectone
 - ❌ csharp/reflash
 - ❌ csharp/rolisoft-esoteric
@@ -127,8 +128,10 @@ Build errors are included.
 - ❌ python/drafear-converter
 - ❌ python/dwayne
 - python/eizoassik-pyws/pyws.py
+- python/ffanzhang/ws.py
 - python/francoisrozet-whitespacy/whitespacy.py
 - ❌ python/freyamade-hohoho
+- python/ganeshsankaran/interpreter.py
 - ❌ python/hearnderek
 - ❌ python/ilikepython256-whitespace-unc
 - python/kareeeeem-abyad:
@@ -176,6 +179,7 @@ Build errors are included.
 - ❌ scheme/athos-white-scheme
 - ❌ scheme/niyarin
 - ❌ textmate/veniversum
+- ⚠️ typescript/fy0u11/dist/Whitespace.js: `npm install && npm run build`
 - ❌ vim/rolf-ws-vim
 - whitespace/andrewarchi-wslib/assemble.sh
 - ❌ whitespace/eah-hello-world

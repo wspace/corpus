@@ -50,7 +50,9 @@ func getLicense(p *tools.Project) (string, error) {
 	if len(p.Source) > 0 && ghRepo.MatchString(p.Source[0]) {
 		fmt.Fprintf(os.Stderr, "Getting license for %s from GitHub\n", p.Path)
 		repo := strings.TrimPrefix(p.Source[0], "https://github.com/")
-		return getGitHubLicense(repo)
+		if l, err := getGitHubLicense(repo); l != "" || err != nil {
+			return l, err
+		}
 	}
 	if p.Path != "" {
 		if l := getLicenseFromFile(p.Path, "package.json", getPackageJSONLicense); l != "" {
