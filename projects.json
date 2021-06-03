@@ -3702,7 +3702,7 @@
     "authors": ["Stephen Chappell"],
     "license": "MIT",
     "languages": ["Python"],
-    "tags": ["interpreter", "assembler", "programs"],
+    "tags": ["interpreter", "assembler", "text to Whitespace", "programs"],
     "date": "2010-03-14 15:35:04 +0000",
     "spec_version": "0.3",
     "source": [
@@ -3710,7 +3710,70 @@
       "https://code.activestate.com/recipes/sets/12/",
       "https://github.com/ActiveState/code",
       "https://stackoverflow.com/questions/2901274/do-you-have-suggestions-for-these-assembly-mnemonics"
-    ]
+    ],
+    "assembly": {
+      "instructions": {
+        "push": ["push"],
+        "dup": ["copy"],
+        "copy": ["copy"],
+        "swap": ["swap"],
+        "drop": ["away"],
+        "slide": ["away"],
+        "add": ["add"],
+        "sub": ["sub"],
+        "mul": ["mul"],
+        "div": ["div"],
+        "mod": ["mod"],
+        "store": ["set"],
+        "retrieve": ["get"],
+        "label": ["part"],
+        "call": ["call"],
+        "jmp": ["goto"],
+        "jz": ["zero"],
+        "jn": ["less"],
+        "ret": ["back"],
+        "end": ["exit"],
+        "printc": ["ochr"],
+        "printi": ["oint"],
+        "readc": ["ichr"],
+        "readi": ["iint"]
+      },
+      "case_sensitive_instructions": true,
+      "line_comment_prefix": "#",
+      "label_def_format": "\"[A-Za-z0-9_]+\"",
+      "label_ref_format": "\"[A-Za-z0-9_]+\"",
+      "number_format": "[+-]?[0-9]+",
+      "indentation": "     ",
+      "extension": "wsa"
+    },
+    "commands": [
+      {
+        "type": "interpreter",
+        "bin": "Interpreter.py",
+        "build_errors": "msvcrt module only exists on Windows",
+        "usage": "python3.1 $0 <basename_no_ext>",
+        "input": "Programs/<basename_no_ext>.(ws|wso)",
+        "output": "stdout",
+        "notes": "A .wso file is generated after parsing the program and subsequent calls use it when the .ws file has not changed"
+      },
+      {
+        "type": "assembler",
+        "bin": "Assembler.py",
+        "build_errors": "msvcrt module only exists on Windows",
+        "usage": "python3.1 $0 <basename_no_ext> [ASM]",
+        "input": "Assembly/<basename_no_ext>.wsa",
+        "output": "Programs/<basename_no_ext>.ws",
+        "options": [{ "bare": "ASM", "desc": "dump program assembly" }],
+        "option_parse": "manual"
+      },
+      {
+        "type": "text to Whitespace",
+        "bin": "Helpers.py",
+        "usage": "python3.1 -c 'from Helpers import encode_string; encode_string(\"<text>\", <address>)'",
+        "notes": "Generates a sequence of stores, starting at the given address"
+      }
+    ],
+    "notes": ".wso files are gzip-compressed serializations of the Python structures of parsed programs"
   },
   {
     "name": "Whitespace Interpreter in C++",

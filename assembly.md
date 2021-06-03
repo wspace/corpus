@@ -5,30 +5,30 @@
 These are the names used by known Whitespace assembly dialects for
 instructions, ranked by popularity.
 
-- `push` (31), `psh` (2), `mod.push`, `push <address>`, `push <number>`, `stack push`, `ws_push(<number>);`
-- `dup` (27), `copy` (3), `doub`, `dupe`, `dupl`, `duplicate`, `mod.dupe`, `stack dup`, `ws_dup();`
-- `copy` (21), `copynth` (2), `copy_n`, `copyn`, `mod.copy`, `pick`, `pull`, `ref`, `stack copy`, `take`, `ws_pick(<number>);`
-- `swap` (29), `swp` (3), `exchange`, `mod.swap`, `stack swap`, `swa`, `swicth`, `ws_swap();`, `xchg`
-- `discard` (14), `drop` (10), `pop` (10), `disc`, `dsc`, `mod.pop`, `stack discard`, `ws_drop();`
-- `slide` (24), `mod.slde`, `skip`, `slideoff`, `stack slide`, `ws_slide(<number>);`
-- `add` (32), `add <address>`, `add <address> <address>`, `add <address> <number>`, `add <number>`, `add <number> <address>`, `arith add`, `math.add`, `plus`, `ws_add();`
-- `sub` (31), `arith sub`, `math.sub`, `minus`, `sub <address>`, `sub <address> <address>`, `sub <address> <number>`, `sub <number>`, `sub <number> <address>`, `subtract`, `ws_sub();`
-- `mul` (28), `mult` (3), `arith mul`, `math.mult`, `mul <address>`, `mul <address> <address>`, `mul <address> <number>`, `mul <number>`, `mul <number> <address>`, `multiply`, `times`, `ws_mul();`
-- `div` (31), `divide` (2), `arith div`, `div <address>`, `div <address> <address>`, `div <address> <number>`, `div <number>`, `div <number> <address>`, `math.div`, `ws_div();`
-- `mod` (31), `modulo` (2), `arith mod`, `math.mod`, `mod <address>`, `mod <address> <address>`, `mod <address> <number>`, `mod <number>`, `mod <number> <address>`, `rem`, `ws_mod();`
-- `store` (29), `sto` (2), `heap store`, `heap.stor`, `set`, `stor`, `store <number>`, `store <number> <number>`, `ws_store();`
-- `retrieve` (23), `retr` (3), `get` (2), `fetch`, `heap retrieve`, `heap.ret`, `load`, `lod`, `rcl`, `read`, `retreive`, `retrieve <number>`, `retrive`, `retrv`, `ws_fetch();`, `ws_retrieve();`
-- `label` (17), `mark` (8), `<label>:` (5), `label_<number>:` (2), `.<label>:`, `<number>:`, `@<label>`, `@l<number>`, `flow label`, `flow.labl`, `lbl .<label>`, `lbl <label>`, `mrk`, `setlabel`, `ws_label(<label>);`
-- `call` (29), `gosub` (2), `call .<label>`, `call_subroutine`, `cll`, `flow call`, `flow.sub`, `jsr`, `ws_call(<label>);`
-- `jump` (18), `jmp` (16), `b`, `flow jump`, `flow.jump`, `goto`, `j`, `jmp .<label>`, `ws_jump(<label>);`
-- `jz` (16), `jumpz` (6), `jez` (3), `jumpzero` (3), `bz`, `bzero`, `flow jz`, `flow.jmpz`, `jeq`, `jmp_if0`, `jpz .<label>`, `jumpnull`, `jze`, `jzero`, `ws_jz(<label>);`
-- `jn` (13), `jumpn` (5), `jlz` (3), `jneg` (2), `jumpneg` (2), `bltz`, `bneg`, `flow jneg`, `flow.jmpn`, `jlt`, `jltz`, `jmp_neg`, `jne`, `jpn .<label>`, `js`, `jumpde`, `jumplz`, `jumpnegative`, `ws_jn(<label>);`
-- `ret` (21), `return` (8), `end_sub`, `endfunc`, `endofsubroutine`, `ends`, `endsub`, `flow return`, `flow.ret`, `ws_return();`
-- `end` (16), `exit` (13), `quit` (2), `endle`, `endofprogram`, `endp`, `endprog`, `finish`, `flow end`, `flow.halt`, `ws_exit();`
-- `outchar` (7), `printc` (7), `putc` (5), `putchar` (3), `outc` (2), `pchr` (2), `io outchar`, `io.out`, `ochar`, `out`, `output`, `outputchar`, `print_c`, `print_char`, `write_char`, `writec`, `writechar`, `ws_outc();`, `wtc`
-- `outnum` (7), `printi` (7), `putn` (5), `putnum` (3), `outn` (2), `outputnum` (2), `pnum` (2), `io outnumber`, `io.nout`, `onum`, `out_n`, `print_i`, `print_number`, `write_num`, `writeint`, `writen`, `ws_outn();`, `wtn`
-- `readchar` (10), `readc` (8), `getc` (5), `getchar` (2), `read_char` (2), `ichar`, `ichr`, `in`, `inc`, `inchar`, `inpc`, `io readchar`, `io.in`, `rchr`, `rdc`, `read_c`, `ws_readc();`
-- `readnum` (9), `readi` (7), `getn` (5), `getnum` (2), `inum` (2), `readn` (2), `in_n`, `inn`, `innum`, `inpn`, `io readnumber`, `io.nin`, `rdn`, `read_i`, `read_num`, `read_number`, `readint`, `rnum`, `ws_readn();`
+- `push` (32), `psh` (2), `mod.push`, `push <address>`, `push <number>`, `stack push`, `ws_push(<number>);`
+- `dup` (27), `copy` (4), `doub`, `dupe`, `dupl`, `duplicate`, `mod.dupe`, `stack dup`, `ws_dup();`
+- `copy` (22), `copynth` (2), `copy_n`, `copyn`, `mod.copy`, `pick`, `pull`, `ref`, `stack copy`, `take`, `ws_pick(<number>);`
+- `swap` (30), `swp` (3), `exchange`, `mod.swap`, `stack swap`, `swa`, `swicth`, `ws_swap();`, `xchg`
+- `discard` (14), `drop` (10), `pop` (10), `away`, `disc`, `dsc`, `mod.pop`, `stack discard`, `ws_drop();`
+- `slide` (24), `away`, `mod.slde`, `skip`, `slideoff`, `stack slide`, `ws_slide(<number>);`
+- `add` (33), `add <address>`, `add <address> <address>`, `add <address> <number>`, `add <number>`, `add <number> <address>`, `arith add`, `math.add`, `plus`, `ws_add();`
+- `sub` (32), `arith sub`, `math.sub`, `minus`, `sub <address>`, `sub <address> <address>`, `sub <address> <number>`, `sub <number>`, `sub <number> <address>`, `subtract`, `ws_sub();`
+- `mul` (29), `mult` (3), `arith mul`, `math.mult`, `mul <address>`, `mul <address> <address>`, `mul <address> <number>`, `mul <number>`, `mul <number> <address>`, `multiply`, `times`, `ws_mul();`
+- `div` (32), `divide` (2), `arith div`, `div <address>`, `div <address> <address>`, `div <address> <number>`, `div <number>`, `div <number> <address>`, `math.div`, `ws_div();`
+- `mod` (32), `modulo` (2), `arith mod`, `math.mod`, `mod <address>`, `mod <address> <address>`, `mod <address> <number>`, `mod <number>`, `mod <number> <address>`, `rem`, `ws_mod();`
+- `store` (29), `set` (2), `sto` (2), `heap store`, `heap.stor`, `stor`, `store <number>`, `store <number> <number>`, `ws_store();`
+- `retrieve` (23), `get` (3), `retr` (3), `fetch`, `heap retrieve`, `heap.ret`, `load`, `lod`, `rcl`, `read`, `retreive`, `retrieve <number>`, `retrive`, `retrv`, `ws_fetch();`, `ws_retrieve();`
+- `label` (17), `mark` (8), `<label>:` (5), `label_<number>:` (2), `.<label>:`, `<number>:`, `@<label>`, `@l<number>`, `flow label`, `flow.labl`, `lbl .<label>`, `lbl <label>`, `mrk`, `part`, `setlabel`, `ws_label(<label>);`
+- `call` (30), `gosub` (2), `call .<label>`, `call_subroutine`, `cll`, `flow call`, `flow.sub`, `jsr`, `ws_call(<label>);`
+- `jump` (18), `jmp` (16), `goto` (2), `b`, `flow jump`, `flow.jump`, `j`, `jmp .<label>`, `ws_jump(<label>);`
+- `jz` (16), `jumpz` (6), `jez` (3), `jumpzero` (3), `bz`, `bzero`, `flow jz`, `flow.jmpz`, `jeq`, `jmp_if0`, `jpz .<label>`, `jumpnull`, `jze`, `jzero`, `ws_jz(<label>);`, `zero`
+- `jn` (13), `jumpn` (5), `jlz` (3), `jneg` (2), `jumpneg` (2), `bltz`, `bneg`, `flow jneg`, `flow.jmpn`, `jlt`, `jltz`, `jmp_neg`, `jne`, `jpn .<label>`, `js`, `jumpde`, `jumplz`, `jumpnegative`, `less`, `ws_jn(<label>);`
+- `ret` (21), `return` (8), `back`, `end_sub`, `endfunc`, `endofsubroutine`, `ends`, `endsub`, `flow return`, `flow.ret`, `ws_return();`
+- `end` (16), `exit` (14), `quit` (2), `endle`, `endofprogram`, `endp`, `endprog`, `finish`, `flow end`, `flow.halt`, `ws_exit();`
+- `outchar` (7), `printc` (7), `putc` (5), `putchar` (3), `outc` (2), `pchr` (2), `io outchar`, `io.out`, `ochar`, `ochr`, `out`, `output`, `outputchar`, `print_c`, `print_char`, `write_char`, `writec`, `writechar`, `ws_outc();`, `wtc`
+- `outnum` (7), `printi` (7), `putn` (5), `putnum` (3), `outn` (2), `outputnum` (2), `pnum` (2), `io outnumber`, `io.nout`, `oint`, `onum`, `out_n`, `print_i`, `print_number`, `write_num`, `writeint`, `writen`, `ws_outn();`, `wtn`
+- `readchar` (10), `readc` (8), `getc` (5), `getchar` (2), `ichr` (2), `read_char` (2), `ichar`, `in`, `inc`, `inchar`, `inpc`, `io readchar`, `io.in`, `rchr`, `rdc`, `read_c`, `ws_readc();`
+- `readnum` (9), `readi` (7), `getn` (5), `getnum` (2), `inum` (2), `readn` (2), `iint`, `in_n`, `inn`, `innum`, `inpn`, `io readnumber`, `io.nin`, `rdn`, `read_i`, `read_num`, `read_number`, `readint`, `rnum`, `ws_readn();`
 - `shuffle`
 - `debug_printstack`, `debug_printstack();`, `dumpstack`
 - `debug_printheap`, `debug_printheap();`, `dumpheap`
@@ -42,7 +42,6 @@ instructions, ranked by popularity.
 - java/vyo-kairos
 - javascript/wdalmut
 - kotlin/ze-space
-- python/stephenchappell
 - ruby/alesiong
 - ruby/collidedscope-spitewaste
 - ruby/pocke-akaza

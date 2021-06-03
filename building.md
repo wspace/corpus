@@ -142,7 +142,10 @@ Build errors are included.
 - ❌ python/qwhxm-baudelaire
 - ❌ python/rumaxwell
 - ❌ python/smithers-bluespace
-- ❌ python/stephenchappell
+- ⚠️ python/stephenchappell:
+  - ⚠️ Assembler.py: msvcrt module only exists on Windows
+  - Helpers.py
+  - ⚠️ Interpreter.py: msvcrt module only exists on Windows
 - ❌ python/yasn-whitepy
 - r/bmazoure/R/whitespace.R
 - rebol/hostilefork/whitespace.reb

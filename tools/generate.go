@@ -79,6 +79,9 @@ type Project struct {
 		LineCommentPrefix         string `json:"line_comment_prefix,omitempty"`
 		LabelDefFormat            string `json:"label_def_format,omitempty"`
 		LabelRefFormat            string `json:"label_ref_format,omitempty"`
+		NumberFormat              string `json:"number_format,omitempty"`
+		Indentation               string `json:"indentation,omitempty"`
+		LabelIndentation          string `json:"label_indentation,omitempty"`
 		DebugOnly                 *bool  `json:"debug_only,omitempty"`
 		Extension                 string `json:"extension,omitempty"`
 	} `json:"assembly,omitempty"`
@@ -103,10 +106,12 @@ type Command struct {
 	Build               string   `json:"build,omitempty"`
 	BuildErrors         string   `json:"build_errors,omitempty"`
 	Usage               string   `json:"usage,omitempty"`
+	Input               string   `json:"input,omitempty"`
 	Output              string   `json:"output,omitempty"`
 	Options             []struct {
 		Short       interface{} `json:"short,omitempty"` // -s
 		Long        string      `json:"long,omitempty"`  // --long
+		Bare        string      `json:"bare,omitempty"`  // bare
 		Arg         string      `json:"arg,omitempty"`
 		ArgRequired *bool       `json:"arg_required,omitempty"`
 		Type        string      `json:"type,omitempty"`
