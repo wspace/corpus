@@ -46,30 +46,30 @@ type Project struct {
 	} `json:"whitespace,omitempty"`
 	Assembly *struct {
 		Instructions *struct {
-			Push      []string `json:"push"`
-			Dup       []string `json:"dup"`
+			Push      []string `json:"push,omitempty"`
+			Dup       []string `json:"dup,omitempty"`
 			Copy      []string `json:"copy,omitempty"`
-			Swap      []string `json:"swap"`
-			Drop      []string `json:"drop"`
+			Swap      []string `json:"swap,omitempty"`
+			Drop      []string `json:"drop,omitempty"`
 			Slide     []string `json:"slide,omitempty"`
-			Add       []string `json:"add"`
-			Sub       []string `json:"sub"`
-			Mul       []string `json:"mul"`
-			Div       []string `json:"div"`
-			Mod       []string `json:"mod"`
-			Store     []string `json:"store"`
-			Retrieve  []string `json:"retrieve"`
-			Label     []string `json:"label"`
-			Call      []string `json:"call"`
-			Jmp       []string `json:"jmp"`
-			Jz        []string `json:"jz"`
-			Jn        []string `json:"jn"`
-			Ret       []string `json:"ret"`
-			End       []string `json:"end"`
-			Printc    []string `json:"printc"`
-			Printi    []string `json:"printi"`
-			Readc     []string `json:"readc"`
-			Readi     []string `json:"readi"`
+			Add       []string `json:"add,omitempty"`
+			Sub       []string `json:"sub,omitempty"`
+			Mul       []string `json:"mul,omitempty"`
+			Div       []string `json:"div,omitempty"`
+			Mod       []string `json:"mod,omitempty"`
+			Store     []string `json:"store,omitempty"`
+			Retrieve  []string `json:"retrieve,omitempty"`
+			Label     []string `json:"label,omitempty"`
+			Call      []string `json:"call,omitempty"`
+			Jmp       []string `json:"jmp,omitempty"`
+			Jz        []string `json:"jz,omitempty"`
+			Jn        []string `json:"jn,omitempty"`
+			Ret       []string `json:"ret,omitempty"`
+			End       []string `json:"end,omitempty"`
+			Printc    []string `json:"printc,omitempty"`
+			Printi    []string `json:"printi,omitempty"`
+			Readc     []string `json:"readc,omitempty"`
+			Readi     []string `json:"readi,omitempty"`
 			Shuffle   []string `json:"shuffle,omitempty"`
 			DumpStack []string `json:"dumpstack,omitempty"`
 			DumpHeap  []string `json:"dumpheap,omitempty"`
@@ -104,6 +104,7 @@ type Command struct {
 	Build               string   `json:"build,omitempty"`
 	BuildErrors         string   `json:"build_errors,omitempty"`
 	Usage               string   `json:"usage,omitempty"`
+	RunErrors           string   `json:"run_errors,omitempty"`
 	Input               string   `json:"input,omitempty"`
 	Output              string   `json:"output,omitempty"`
 	Options             []struct {

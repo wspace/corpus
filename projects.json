@@ -618,7 +618,31 @@
     "tags": ["interpreter"],
     "date": "2020-03-26 22:16:49 -0500",
     "spec_version": "0.2 incomplete",
-    "source": ["https://github.com/DenisLabrecque/Whitespace-Interpreter"]
+    "source": ["https://github.com/DenisLabrecque/Whitespace-Interpreter"],
+    "assembly": {
+      "instructions": {
+        "push": ["Push"],
+        "dup": ["Duplicate"],
+        "swap": ["Swap"],
+        "drop": ["Discard"],
+        "add": ["Add"],
+        "sub": ["Subtract"],
+        "mul": ["Multiply"],
+        "store": ["Store"],
+        "retrieve": ["Retrieve"],
+        "end": ["Halt"],
+        "printc": ["OutputCharacter"],
+        "printi": ["OutputNumber"]
+      },
+      "usage": ["enums"]
+    },
+    "commands": [
+      {
+        "type": "interpreter",
+        "build": "msbuild /p:Configuration=Debug /t:build /restore WhitespaceInterpreter/WhitespaceInterpreter.csproj"
+      }
+    ],
+    "notes": "Only implements push, dup, swap, drop, add, sub, mul, store, retrieve, end, printc, and printi"
   },
   {
     "name": "EvanescoJS",
@@ -753,13 +777,16 @@
         "variable": "[^ \t]+"
       },
       "case_sensitive_instructions": false,
-      "line_comment_prefix": "//"
+      "line_comment_prefix": "//",
+      "extension": "txt"
     },
     "commands": [
       {
         "type": "assembler",
-        "bin": "WhitespaceAssembler",
-        "usage": "$0 <file> <output_file>",
+        "bin": "bin/Debug/WhitespaceAssembler.exe",
+        "dependencies": ["Mono"],
+        "build": "msbuild /p:Configuration=Debug WhitespaceAssembler.csproj",
+        "usage": "mono $0 <file> <output_file>",
         "output": "<output_file>"
       }
     ],
@@ -1188,8 +1215,6 @@
         "mul": ["mult"],
         "div": ["div"],
         "mod": ["mod"],
-        "store": [ ],
-        "retrieve": [ ],
         "label": ["mark"],
         "call": ["call"],
         "jmp": ["jump"],
@@ -1380,7 +1405,16 @@
     "date": "2018-04-11 01:33:40 -0400",
     "spec_version": "-",
     "source": ["https://github.com/North15/projectOne"],
-    "mappings": [{ "space": "S", "tab": "T", "lf": "L", "extension": "txt" }]
+    "mappings": [{ "space": "S", "tab": "T", "lf": "L", "extension": "txt" }],
+    "commands": [
+      {
+        "type": "ide",
+        "bin": "The-Code/WhitespaceInterpreter/bin/Debug/WhitespaceInterpreter.exe",
+        "build": "msbuild /p:Configuration=Debug The-Code/WhitespaceInterpreter/WhitespaceInterpreter.csproj",
+        "usage": "mono $0",
+        "run_errors": "The Carbon driver has not been ported to 64-bit, so very few parts of Windows.Forms work properly"
+      }
+    ]
   },
   {
     "name": "whitespace_interpreter",
@@ -2662,7 +2696,15 @@
     "tags": ["interpreter"],
     "date": "2014-11-21 13:18:03 +0300",
     "spec_version": "0.3",
-    "source": ["https://github.com/reflash-blog/WhiteSpaceInterpreter"]
+    "source": ["https://github.com/reflash-blog/WhiteSpaceInterpreter"],
+    "commands": [
+      {
+        "type": "interpreter",
+        "bin": "WhiteSpaceInterpretator/bin/Debug/WhiteSpaceInterpretator.exe",
+        "build": "msbuild /p:Configuration=Debug WhiteSpaceInterpretator/WhiteSpaceInterpretator.csproj",
+        "build_errors": "Could not locate the assemblies `PresentationCore` or `PresentationFramework`"
+      }
+    ]
   },
   {
     "name": "Whitespace",
@@ -3271,9 +3313,7 @@
       "case_sensitive_instructions": false,
       "extension": "bs"
     },
-    "commands": [
-      { "dependencies": ["Grunt"], "build": "npm install && grunt", "build_errors": "Unclear how to run" }
-    ]
+    "commands": [{ "dependencies": ["Grunt"], "build": "npm install && grunt", "run_errors": "Unclear how to run" }]
   },
   {
     "name": "WS2JS",
@@ -3801,6 +3841,23 @@
         "readi": ["readnum"]
       }
     },
+    "commands": [
+      {
+        "type": "interactive",
+        "bin": "bin/Debug/ConsoleApplication1.exe",
+        "build": "msbuild /p:Configuration=Debug EsotericCodeInterpreter.csproj",
+        "usage": "mono $0",
+        "subcommands": [
+          { "name": "start", "desc": "interpret program written in CLI" },
+          { "name": "load", "desc": "interpret program from a file" },
+          { "name": "disasm", "desc": "disassemble into a more understandable assembly-like language" },
+          { "name": "help", "desc": "display help" },
+          { "name": "clear", "desc": "clear console" },
+          { "name": "exit", "desc": "exit CLI" }
+        ],
+        "notes": "Subcommands are entered interactively"
+      }
+    ],
     "notes": "Disassembles program trace, including escaped output. Also interprets Brainfuck (and Ook! and Spoon variants), Byter, and Befunge93 programs"
   },
   {
