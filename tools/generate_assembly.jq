@@ -18,7 +18,7 @@
          ($keys; .[$inst.key] += $inst.value)
   | to_entries[].value
   | map(ascii_downcase
-      | gsub("^ws_(?<inst>[a-z_]+)\\(.*\\);$"; .inst)
+      | gsub("^(ws_)?(?<inst>[a-z_]+)\\(.*\\);$"; .inst)
       | gsub("^(stack|arith|math|heap|flow|io)[ \\.]"; "")
       | gsub("^mod\\."; "")
       | gsub(" ([.%lf]?<[a-z_]+>|_)"; ""))

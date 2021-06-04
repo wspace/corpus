@@ -30,8 +30,8 @@ instructions, ranked by popularity.
 - `readchar` (13), `readc` (10), `getc` (5), `getchar` (3), `ichr` (2), `in` (2), `rdc` (2), `read_char` (2), `ichar`, `inc`, `inchar`, `inpc`, `rchr`, `read_c`
 - `readnum` (10), `readi` (8), `getn` (5), `readn` (3), `getnum` (2), `inum` (2), `rdn` (2), `readnumber` (2), `getint`, `iint`, `in_n`, `inn`, `innum`, `inpn`, `nin`, `read_i`, `read_num`, `read_number`, `readint`, `rnum`
 - `shuffle`
-- `debug_printstack`, `debug_printstack();`, `dumpstack`
-- `debug_printheap`, `debug_printheap();`, `dumpheap`
+- `debug_printstack` (2), `dumpstack`
+- `debug_printheap` (2), `dumpheap`
 - `trace`
 
 ## Need documentation
