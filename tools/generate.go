@@ -80,6 +80,7 @@ type Project struct {
 		LineCommentPrefix         string            `json:"line_comment_prefix,omitempty"`
 		Indentation               string            `json:"indentation,omitempty"`
 		LabelIndentation          string            `json:"label_indentation,omitempty"`
+		BinaryNumbers             *bool             `json:"binary_numbers,omitempty"`
 		Usage                     []string          `json:"usage,omitempty"`
 		Extension                 string            `json:"extension,omitempty"`
 	} `json:"assembly,omitempty"`

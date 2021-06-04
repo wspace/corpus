@@ -1502,7 +1502,7 @@
         "bin": "white",
         "build": "gcc -O3 -Wall -o white y.tab.c lex.yy.c",
         "usage": "$0",
-        "notes": "Filename is hardcoded to ./basic.ws"
+        "input": "basic.ws"
       }
     ],
     "notes": "Has git conflict markers remaining in source"
@@ -2975,7 +2975,7 @@
         "dependencies": ["LLVM"],
         "build_errors": "Requires LLVM",
         "usage": "$0",
-        "notes": "Filename is hardcoded to ./count.ws"
+        "input": "count.ws"
       }
     ]
   },
@@ -3059,7 +3059,7 @@
         "bin": "wsint",
         "build_errors": "Requires Visual Studio",
         "usage": "$0",
-        "notes": "Filename is hardcoded to ./script.ws"
+        "input": "script.ws"
       }
     ]
   },
@@ -3486,7 +3486,7 @@
         "bin": "whitespace",
         "build": "make",
         "usage": "$0",
-        "notes": "Filename is hardcoded to ./hello_worldvanwiki.ws"
+        "input": "hello_worldvanwiki.ws"
       }
     ]
   },
@@ -3550,10 +3550,10 @@
     "authors": ["Daniel O'Hanlon"],
     "license": "none",
     "languages": ["C++"],
-    "tags": ["interpreter", "disassembler"],
+    "tags": ["interpreter", "disassembler", "mapping"],
     "date": "2012-12-02 06:45:50 -0800",
     "spec_version": "0.2",
-    "source": ["https://github.com/dpohanlon/wsInt", "https://github.com/wspace-lang/dpohanlon-wsint-cpp"],
+    "source": ["https://github.com/wspace-lang/dpohanlon-wsint-cpp", "https://github.com/dpohanlon/wsInt"],
     "assembly": {
       "instructions": {
         "push": ["Push"],
@@ -3578,15 +3578,18 @@
         "printi": ["WriteInt"],
         "readc": ["ReadChar"],
         "readi": ["ReadInt"]
-      }
+      },
+      "binary_numbers": true,
+      "usage": ["disassembler"]
     },
+    "mappings": [{ "space": "A", "tab": "B", "lf": "C", "spaces_between": false }],
     "commands": [
       {
         "type": "interpreter",
         "bin": "bin/wsInt",
         "build": "make",
-        "usage": "$0",
-        "notes": "Filename is hardcoded to ./count.ws"
+        "usage": "$0 <file>",
+        "notes": "Prints mapping and disassembled program before executing"
       }
     ]
   },

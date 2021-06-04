@@ -143,7 +143,7 @@ the Whitespace programming language.
 | [whitespace-interpreter](cpp/timvandermeij)    | Tim van der Meij, Willem Obbens, Simon Klaver | C++ | interpreter, assembler, disassembler, mapping, programs | 2013-02-06 | 0.3 | [GitHub](https://github.com/timvandermeij/whitespace-interpreter), [GitHub](https://github.com/wspace-lang/timvandermeij-cpp) |
 | [ws](cpp/knmorgan)                             | Kyle Morgan      | C++        | interpreter  | 2012-12-29 | 0.3 | [GitHub](https://github.com/knmorgan/ws) |
 | [Whitespace-Interpreter](cpp/noia)             | Tucker Noia      | C++        | interpreter, programs | 2012-12-15 | 0.2 incomplete | [GitHub](https://github.com/noia1/Whitespace-Interpreter) |
-| [wsInt](cpp/dpohanlon-wsint)                   | Daniel O'Hanlon  | C++        | interpreter, disassembler | 2012-12-02 | 0.2 | [GitHub](https://github.com/dpohanlon/wsInt), [GitHub](https://github.com/wspace-lang/dpohanlon-wsint-cpp) |
+| [wsInt](cpp/dpohanlon-wsint)                   | Daniel O'Hanlon  | C++        | interpreter, disassembler, mapping | 2012-12-02 | 0.2 | [GitHub](https://github.com/wspace-lang/dpohanlon-wsint-cpp), [GitHub](https://github.com/dpohanlon/wsInt) |
 | [WS-idr](idris/edwinb-ws-idr)                  | Edwin Brady      | Idris      | interpreter  | 2012-11-25 | 0.3 | [GitHub](https://github.com/edwinb/WS-idr) |
 | [Whitespace4j](java/brumbeere-whitespace4j)    | Philipp Speck    | Java       | interpreter  | 2012-11-04 | 0.3 | [GitHub](https://github.com/Brumbeere/Whitespace4j) |
 | [whitespace](cpp/abcsharp)                     | abcsharp         | C++        | interpreter  | 2012-10-29 | 0.3 | [GitHub](https://github.com/abcsharp/Whitespace) |
