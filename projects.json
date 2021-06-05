@@ -332,7 +332,8 @@
           { "name": "docs", "desc": "Search for matching terms in the documentation of the standard library." },
           { "name": "exec", "desc": "Execute a Whitespace program using the specified interpreter." },
           { "name": "help", "desc": "Describe available commands or one specific command." },
-          { "name": "image", "desc": "Generate a PNG file of syntax-highlighted Whitespace." }
+          { "name": "image", "desc": "Generate a PNG file of syntax-highlighted Whitespace." },
+          { "name": "version", "desc": "Display the current version of Spitewaste and exit." }
         ],
         "notes": "TODO document options"
       }
