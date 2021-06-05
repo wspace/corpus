@@ -11,7 +11,7 @@ licenses: projects.json tools/licenses/licenses.go
 	@echo 'Getting licenses'
 	@go run tools/licenses/licenses.go | underscore print | tools/sponge projects.json
 
-README.md: projects.json README.md.tmpl tools/generate/generate.go
+README.md: projects.json README.md.tmpl tools/generate.go tools/generate/generate.go
 	@echo 'Generating README.md'
 	@go run tools/generate/generate.go
 

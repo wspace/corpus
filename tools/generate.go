@@ -317,6 +317,10 @@ func (p *Project) formatColumns() ([]string, error) {
 	date := p.Date
 	if t, err := time.Parse("2006-01-02 15:04:05 -0700", date); err == nil {
 		date = t.Format("2006-01-02")
+	} else if t, err := time.Parse("2006-01-02 15:04:05", date); err == nil {
+		date = t.Format("2006-01-02")
+	} else if t, err := time.Parse("2006-01-02 15:04", date); err == nil {
+		date = t.Format("2006-01-02")
 	}
 	links := make([]string, 0, len(p.Source))
 	for _, s := range p.Source {
