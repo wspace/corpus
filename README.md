@@ -150,7 +150,7 @@ the Whitespace programming language.
 | [whitespace](ruby/bossiernesto)                | Ernesto Bossi    | Ruby       | interpreter  | 2012-10-15 | 0.2 | [GitHub](https://github.com/bossiernesto/whitespace) |
 | [Whitespace](java/yawkat)                      | Jonas Konrad     | Java       | interpreter  | 2012-10-06 | 0.3 | [GitHub](https://github.com/yawkat/Whitespace) |
 | trans32.py                                     | r.e.s.           | Python     | Binary Whitespace | 2012-05-30 | unknown | [res0001 (archive)](https://web.archive.org/web/20130510111931/https://sites.google.com/site/res0001/whitespace/programs), [Code Golf](https://codegolf.stackexchange.com/questions/6025/remove-vowels-without-using-too-many-different-characters/6100#6100) |
-| [SignificantWhitespace](javascript/pvdz-significant-whitespace) | Peter van der Zee | JavaScript | interpreter | 2012-02-16 | 0.3 | [GitHub](https://github.com/pvdz/SignificantWhitespace) |
+| [SignificantWhitespace](javascript/pvdz-significant-whitespace) | Peter van der Zee | JavaScript | interpreter | 2012-02-16 | 0.3 | [GitHub](https://github.com/pvdz/SignificantWhitespace), [pvdz.ee](https://pvdz.ee/weblog/246), [js1k.com](https://js1k.com/2012-love/demo/1130) |
 | [whitespace-0.4](haskell/haroldl-wspace-0.4)   | Harold Lee, Edwin Brady | Haskell | interpreter | 2011-03-10 | 0.3 | [GitHub](https://github.com/haroldl/whitespace-nd), [Mailing list (archive)](https://web.archive.org/web/20141011193201/http://compsoc.dur.ac.uk/archives/whitespace/2011-March/000080.html), [harold.hotelling.net](https://harold.hotelling.net/shuffle.html), [Hackage](https://hackage.haskell.org/package/whitespace-0.4) |
 | [white-scheme](scheme/athos-white-scheme)      | Ohta Shogo       | Scheme     | interpreter  | 2010-12-23 | 0.3 | [GitHub](https://github.com/athos/white-scheme) |
 | [Colorspace](python/dos1-colorspace)           | Sebastian Krzyszkowiak | Python | image steganography | 2010-11-22 | - | [GitHub](https://github.com/dos1/colorspace) |
@@ -162,7 +162,7 @@ the Whitespace programming language.
 | [Whitespace Interpreter v1.0](c/meth0dz)       | MeTh0Dz          | C          | interpreter  | 2010-02-01 | 0.3 | [GitHub](https://github.com/wspace-lang/meth0dz-c), [rohitab.com](http://www.rohitab.com/discuss/topic/35639-c-whitespace-interpreter/) |
 | [%whitespace.reb](rebol/hostilefork)           | Brian Dickens (Hostile Fork) | Rebol | interpreter | 2009-10-08 | 0.3 | [GitHub](https://github.com/wspace-lang/hostilefork-rebol), [GitHub](https://github.com/hostilefork/whitespacers/tree/master/rebol) |
 | HaPyLi                                         | Huf Lungdung (Cybis) | Python | language, interpreter, standard library, programs | 2009-03-03 | 0.3 | [hapyli.webs.com (archive)](https://web.archive.org/web/20110212015726/http://hapyli.webs.com/), [Mailing list (archive)](https://web.archive.org/web/20141011193154/http://compsoc.dur.ac.uk/archives/whitespace/2010-May/000075.html), [GitHub](https://github.com/helvm/hapyli), [stackoverflow.com](https://stackoverflow.com/questions/607830/use-of-haskell-state-monad-a-code-smell) |
-| [Spacesharp](csharp/nicolasff-spacesharp)      | Nicolas Favre-Felix | C#, C, Yacc, Lex | compiler, programs | 2008-08-25 | 0.3 | [GitHub](https://github.com/nicolasff/spacesharp) |
+| [Spacesharp](csharp/nicolasff-spacesharp)      | Nicolas Favre-Felix | C#, C, Yacc, Lex | compiler, programs | 2008-08-25 | 0.3 | [GitHub](https://github.com/nicolasff/spacesharp), [spacesharp.batard.info](https://spacesharp.batard.info/) |
 | wspace                                         | hogelog          | C++        | interpreter  | 2008-05-02 | 0.3 | [GitHub](https://github.com/hogelog/hogel.org-old/tree/master/content/lib/c/ws) |
 | [wspace](cpp/pavelshub)                        | Pavel Shub       | C++        | interpreter, debugger, disassembler, mapping | 2007-05-26 | 0.3 | [GitHub](https://github.com/pavel987/wspace), [Mailing list (archive)](https://web.archive.org/web/20141011193149/http://compsoc.dur.ac.uk/archives/whitespace/2008-April/000068.html), [pavelshub.com](http://pavelshub.com/blog/2010/10/wspace/), [GitHub](https://github.com/wspace-lang/pavelshub-cpp) |
 | [pywhitespace](python/phlip-pywhitespace)      | Phillip Bradbury | Python     | interpreter  | 2004-08-03 | 0.3 | [GitHub](https://github.com/wspace-lang/phlip-pywhitespace), [Mailing list (archive)](https://web.archive.org/web/20141011193201/http://compsoc.dur.ac.uk/archives/whitespace/2004-August/000048.html), [Mailing list (archive)](https://web.archive.org/web/20161111081914/http://compsoc.dur.ac.uk/archives/whitespace/2007-December/000065.html), [Newcastle (archive)](https://web.archive.org/web/20061209092911/http://www.cs.newcastle.edu.au/~c3018900/pywhitespace.tar.bz2), [mrphlip.com](https://www.mrphlip.com/pywhitespace.tar.bz2) |
@@ -281,17 +281,23 @@ archived.
 
 ## TODO
 
-- [CompSoc](compsoc)
-- [Whitespace mailing list](https://web.archive.org/web/20141011193126/http://compsoc.dur.ac.uk/archives/whitespace/)
-- [HaPyLi and Sudoku program](https://web.archive.org/web/20110212015726/http://hapyli.webs.com/)
-- [Code Golf](https://codegolf.stackexchange.com/)
-- [Rosetta Code](https://rosettacode.org/wiki/Category:Whitespace)
-- [Codewars](https://www.codewars.com/kata/whitespace-interpreter)
-- [Wikipedia](https://en.wikipedia.org/wiki/Whitespace_(programming_language)) (English and other languages)
-- [Esolang](https://esolangs.org/wiki/Whitespace) (Whitespace page and [others](https://esolangs.org/wiki/Deadfish#Whitespace))
-- [Progopedia](http://progopedia.com/language/whitespace/)
-- [Sphere Online Judge](https://www.spoj.com/), e.g. [SBSTR1](https://www.spoj.com/problems/SBSTR1/) ([SO](https://stackoverflow.com/questions/26521780/how-to-check-whether-a-string-is-substring-of-another-in-whitespace))
-- Stack Overflow, e.g. [#whitespace-language](https://stackoverflow.com/questions/tagged/whitespace-language) and [#whitespace #esoteric-languages](https://stackoverflow.com/questions/tagged/whitespace+esoteric-languages)
+- Defunct
+  - [CompSoc](compsoc)
+  - [Whitespace mailing list](https://web.archive.org/web/20141011193126/http://compsoc.dur.ac.uk/archives/whitespace/)
+  - [HaPyLi and Sudoku program](https://web.archive.org/web/20110212015726/http://hapyli.webs.com/)
+- Wikis
+  - MediaWiki
+    - [Rosetta Code](https://rosettacode.org/wiki/Category:Whitespace)
+    - [Wikipedia](https://en.wikipedia.org/wiki/Whitespace_(programming_language)) (English and other languages)
+    - [Esolang](https://esolangs.org/wiki/Whitespace) (Whitespace page and [others](https://esolangs.org/wiki/Deadfish#Whitespace))
+  - Custom
+    - [Progopedia](http://progopedia.com/language/whitespace/)
+- Code challenges
+  - [Codewars](https://www.codewars.com/kata/whitespace-interpreter)
+  - [Sphere Online Judge](https://www.spoj.com/), e.g. [SBSTR1](https://www.spoj.com/problems/SBSTR1/) ([SO](https://stackoverflow.com/questions/26521780/how-to-check-whether-a-string-is-substring-of-another-in-whitespace))
+- Stack Exchange
+  - [Code Golf](https://codegolf.stackexchange.com/)
+  - Stack Overflow, e.g. [#whitespace-language](https://stackoverflow.com/questions/tagged/whitespace-language) and [#whitespace #esoteric-languages](https://stackoverflow.com/questions/tagged/whitespace+esoteric-languages)
 
 ## License
 

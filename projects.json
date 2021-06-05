@@ -3722,7 +3722,11 @@
     "tags": ["interpreter"],
     "date": "2012-02-16 23:15:56 +0100",
     "spec_version": "0.3",
-    "source": ["https://github.com/pvdz/SignificantWhitespace"],
+    "source": [
+      "https://github.com/pvdz/SignificantWhitespace",
+      "https://pvdz.ee/weblog/246",
+      "https://js1k.com/2012-love/demo/1130"
+    ],
     "notes": "JS1k competition submission"
   },
   {
@@ -4089,7 +4093,7 @@
     "tags": ["compiler", "programs"],
     "date": "2008-08-25 08:55:11 +0000",
     "spec_version": "0.3",
-    "source": ["https://github.com/nicolasff/spacesharp"],
+    "source": ["https://github.com/nicolasff/spacesharp", "https://spacesharp.batard.info/"],
     "assembly": {
       "instructions": {
         "push": ["Push"],
