@@ -20,6 +20,7 @@ func TestGetURLLabel(t *testing.T) {
 		{"https://web.archive.org/web/20100807004910/http://whitespace.pastebin.com/f761fc4b5", "Pastebin (archive)"},
 		{"https://hackage.haskell.org/package/whitespace-0.4", "Hackage"},
 		{"https://www.dcode.fr/whitespace-language", "dCode"},
+		{"https://web.archive.org/web/20130510111931/https://sites.google.com/site/res0001/whitespace/programs", "res0001 (archive)"},
 	}
 	for i, tt := range tests {
 		label, err := getURLLabel(tt.URL)

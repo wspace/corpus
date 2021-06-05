@@ -402,7 +402,8 @@ var subSites = map[string]struct{}{
 }
 
 var pathPatterns = map[string]*regexp.Regexp{
-	"reddit.com": regexp.MustCompile("/(r/[^/]+).*"),
+	"reddit.com":       regexp.MustCompile("^/(r/[^/]+)"),
+	"sites.google.com": regexp.MustCompile("^/site/([^/]+)"),
 }
 
 func getURLLabel(rawURL string) (string, error) {
@@ -430,8 +431,8 @@ func getURLLabel(rawURL string) (string, error) {
 		}
 	}
 	if pattern, ok := pathPatterns[host]; ok {
-		if label := pattern.ReplaceAllString(u.Path, "$1"); label != "" {
-			return label, nil
+		if match := pattern.FindStringSubmatch(u.Path); len(match) > 1 {
+			return match[1], nil
 		}
 	}
 	if label, ok := domainLabels[host]; ok {

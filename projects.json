@@ -948,7 +948,7 @@
     "authors": ["Andrew Archibald"],
     "license": "MIT",
     "languages": ["Go", "LLVM", "Whitespace"],
-    "tags": ["compiler", "optimizer", "disassembler", "bit packer", "programs"],
+    "tags": ["compiler", "optimizer", "disassembler", "bit packer", "Binary Whitespace", "programs"],
     "date": "2019-06-05 23:59:44 -0700",
     "spec_version": "0.3",
     "source": ["https://github.com/andrewarchi/nebula"],
@@ -1356,7 +1356,7 @@
     "authors": ["Andrew Archibald"],
     "license": "MIT",
     "languages": ["C++"],
-    "tags": ["interpreter", "disassembler", "bit packer", "programs"],
+    "tags": ["interpreter", "disassembler", "bit packer", "Binary Whitespace", "programs"],
     "date": "2018-04-15 21:35:34 -0600",
     "spec_version": "0.3",
     "source": ["https://github.com/andrewarchi/respace"],
@@ -2424,7 +2424,8 @@
     "source": [
       "https://stackoverflow.com/questions/29427419/ifeq-ifne-jvm-opcode-always-branches",
       "https://drive.google.com/drive/folders/0B8vCNP4j9pRKfmpOT2dGeWRTN0lrbFlPS0xMRENlSWJPMW44TVZDM0hWMVJJUGZQZC1NcGM"
-    ]
+    ],
+    "notes": "Source unavailable"
   },
   {
     "name": "I C Whitespace",
@@ -3695,6 +3696,21 @@
     "spec_version": "0.3",
     "source": ["https://github.com/yawkat/Whitespace"],
     "notes": "Program is hardcoded to the source of fibonacci.ws"
+  },
+  {
+    "name": "trans32.py",
+    "description": "Two-way translator for an arbitrary 3-symbol language and a binary prefix-code version",
+    "authors": ["r.e.s."],
+    "license": "unknown",
+    "languages": ["Python"],
+    "tags": ["Binary Whitespace"],
+    "date": "2012-05-30 15:12",
+    "spec_version": "unknown",
+    "source": [
+      "https://web.archive.org/web/20130510111931/https://sites.google.com/site/res0001/whitespace/programs",
+      "https://codegolf.stackexchange.com/questions/6025/remove-vowels-without-using-too-many-different-characters/6100#6100"
+    ],
+    "notes": "Source unavailable"
   },
   {
     "name": "SignificantWhitespace",

@@ -189,6 +189,7 @@ Build and run errors are included.
 - ❌ “Whitespace Interpreter in JavaScript” by Arnauld
 - ❌ “Whitespace Language - Online Translator/Interpreter” by dCode
 - ❌ “Whitespace compiler targeting JVM bytecode” by Bruno Kim Medeiros Cesar
+- ❌ “trans32.py” by r.e.s.
 - ❌ “whitespace-asm” by Wayne E. Conrad
 - ❌ “whitespace-disassem” by Wayne E. Conrad
 - ❌ “whitespace-ruby” by Wayne E. Conrad
