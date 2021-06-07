@@ -8,8 +8,8 @@ ensure comprehensive, accurate information on the Whitespace language.
 ### Documenting new projects
 
 Do you know of any Whitespace projects that are not listed? If so,
-[file an issue](https://github.com/wspace-lang/ws-corpus/issues) and
-I'll make sure to add it.
+[file an issue](https://github.com/wspace/corpus/issues) and I'll make
+sure to add it.
 
 ### Docker
 

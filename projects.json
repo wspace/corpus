@@ -221,7 +221,7 @@
     "date": "2021-01-31 08:01:42 -0500",
     "spec_version": "0.3",
     "source": [
-      "https://github.com/wspace-lang/hostilefork-ren-c",
+      "https://github.com/wspace/hostilefork-ren-c",
       "https://github.com/hostilefork/whitespacers/tree/master/ren-c"
     ],
     "commands": [
@@ -1244,7 +1244,7 @@
     "date": "2018-10-06 00:23:08 -0500",
     "spec_version": "0.2",
     "source": [
-      "https://github.com/wspace-lang/eah-hello-world-whitespace",
+      "https://github.com/wspace/eah-hello-world",
       "https://github.com/Aniket965/Hello-world/tree/master/Whitespace"
     ]
   },
@@ -1442,7 +1442,7 @@
     "tags": ["interpreter"],
     "date": "2018-02-24 19:28:32 -0500",
     "spec_version": "0.2",
-    "source": ["https://github.com/jmesyou/erasure", "https://github.com/wspace-lang/jmesyou-erasure-clojure"],
+    "source": ["https://github.com/jmesyou/erasure", "https://github.com/wspace/jmesyou-erasure"],
     "commands": [
       {
         "type": "interpreter",
@@ -1700,7 +1700,7 @@
     "date": "2016-11-21 01:10:33 -0500",
     "spec_version": "0.3",
     "source": [
-      "https://github.com/wspace-lang/akers-lolcode",
+      "https://github.com/wspace/akers-lolcode",
       "https://github.com/hostilefork/whitespacers/tree/master/lolcode"
     ],
     "commands": [
@@ -1799,7 +1799,7 @@
     "date": "2016-07-27 17:01:11 +0200",
     "spec_version": "0.2",
     "source": [
-      "https://github.com/wspace-lang/marcellippmann-whitepp",
+      "https://github.com/wspace/marcellippmann-whitepp",
       "https://web.archive.org/web/20200906224652/https://github.com/marcellippmann/Whitepp/"
     ],
     "commands": [{ "type": "interpreter", "bin": "bin/White++", "build": "make", "usage": "$0 <file>" }]
@@ -3449,7 +3449,7 @@
     "spec_version": "0.3",
     "source": [
       "https://github.com/timvandermeij/whitespace-interpreter",
-      "https://github.com/wspace-lang/timvandermeij-cpp"
+      "https://github.com/wspace/timvandermeij-cpp"
     ],
     "bounds": { "precision": "fixed", "heap_min": 0 },
     "assembly": {
@@ -3555,7 +3555,7 @@
     "tags": ["interpreter", "disassembler", "mapping"],
     "date": "2012-12-02 06:45:50 -0800",
     "spec_version": "0.2",
-    "source": ["https://github.com/wspace-lang/dpohanlon-wsint-cpp", "https://github.com/dpohanlon/wsInt"],
+    "source": ["https://github.com/wspace/dpohanlon-wsint", "https://github.com/dpohanlon/wsInt"],
     "assembly": {
       "instructions": {
         "push": ["Push"],
@@ -3897,7 +3897,7 @@
     "tags": ["interpreter"],
     "date": "2010-10-08 03:12:01 +0900",
     "spec_version": "0.3",
-    "source": ["https://github.com/technohippy/go-whitespace", "https://github.com/wspace-lang/go-whitespace"],
+    "source": ["https://github.com/technohippy/go-whitespace", "https://github.com/wspace/technohippy-go"],
     "bounds": {
       "precision": "Go int",
       "stack_cap": 30000,
@@ -3933,7 +3933,7 @@
     "date": "2010-03-14 15:35:04 +0000",
     "spec_version": "0.3",
     "source": [
-      "https://github.com/wspace-lang/stephenchappell-python",
+      "https://github.com/wspace/stephenchappell-python",
       "https://code.activestate.com/recipes/sets/12/",
       "https://github.com/ActiveState/code",
       "https://stackoverflow.com/questions/2901274/do-you-have-suggestions-for-these-assembly-mnemonics"
@@ -4010,7 +4010,7 @@
     "date": "2010-02-05 08:24:04 +0000",
     "spec_version": "0.3",
     "source": [
-      "https://github.com/wspace-lang/peasley-cpp",
+      "https://github.com/wspace/peasley-cpp",
       "http://www.rohitab.com/discuss/topic/35639-c-whitespace-interpreter/?p=10074137"
     ],
     "commands": [
@@ -4032,7 +4032,7 @@
     "date": "2010-02-01 01:56:47 +0000",
     "spec_version": "0.3",
     "source": [
-      "https://github.com/wspace-lang/meth0dz-c",
+      "https://github.com/wspace/meth0dz-c",
       "http://www.rohitab.com/discuss/topic/35639-c-whitespace-interpreter/"
     ],
     "commands": [
@@ -4054,7 +4054,7 @@
     "date": "2009-10-08",
     "spec_version": "0.3",
     "source": [
-      "https://github.com/wspace-lang/hostilefork-rebol",
+      "https://github.com/wspace/hostilefork-rebol",
       "https://github.com/hostilefork/whitespacers/tree/master/rebol"
     ],
     "commands": [
@@ -4158,7 +4158,7 @@
       "https://github.com/pavel987/wspace",
       "https://web.archive.org/web/20141011193149/http://compsoc.dur.ac.uk/archives/whitespace/2008-April/000068.html",
       "http://pavelshub.com/blog/2010/10/wspace/",
-      "https://github.com/wspace-lang/pavelshub-cpp"
+      "https://github.com/wspace/pavelshub-cpp"
     ],
     "assembly": {
       "instructions": {
@@ -4223,7 +4223,7 @@
     "date": "2004-08-03 07:32:50 +0000",
     "spec_version": "0.3",
     "source": [
-      "https://github.com/wspace-lang/phlip-pywhitespace",
+      "https://github.com/wspace/phlip-pywhitespace",
       "https://web.archive.org/web/20141011193201/http://compsoc.dur.ac.uk/archives/whitespace/2004-August/000048.html",
       "https://web.archive.org/web/20161111081914/http://compsoc.dur.ac.uk/archives/whitespace/2007-December/000065.html",
       "https://web.archive.org/web/20061209092911/http://www.cs.newcastle.edu.au/~c3018900/pywhitespace.tar.bz2",

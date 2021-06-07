@@ -9,7 +9,7 @@
 	url = https://github.com/kspalaiologos/asm2ws
 [submodule "c/meth0dz"]
 	path = c/meth0dz
-	url = https://github.com/wspace-lang/meth0dz-c
+	url = https://github.com/wspace/meth0dz-c
 [submodule "c/rdebath"]
 	path = c/rdebath
 	url = https://github.com/rdebath/whitespace
@@ -36,7 +36,7 @@
 	url = https://github.com/adotout/whitespace-js
 [submodule "collections/andrewarchi-ws-archive"]
 	path = collections/andrewarchi-ws-archive
-	url = https://github.com/wspace-lang/ws-archive
+	url = https://github.com/wspace/ws-archive
 [submodule "collections/hostilefork-whitespacers"]
 	path = collections/hostilefork-whitespacers
 	url = https://github.com/hostilefork/whitespacers
@@ -57,7 +57,7 @@
 	url = https://github.com/buyoh/nospace
 [submodule "cpp/dpohanlon-wsint"]
 	path = cpp/dpohanlon-wsint
-	url = https://github.com/wspace-lang/dpohanlon-wsint-cpp
+	url = https://github.com/wspace/dpohanlon-wsint
 [submodule "cpp/frmsaul-cupertino"]
 	path = cpp/frmsaul-cupertino
 	url = https://github.com/frmsaul/Cupertino-WhiteSpace-Interperter
@@ -72,16 +72,16 @@
 	url = https://github.com/malkiewiczm/whitespace_compiler
 [submodule "cpp/marcellippmann-whitepp"]
 	path = cpp/marcellippmann-whitepp
-	url = https://github.com/wspace-lang/marcellippmann-whitepp
+	url = https://github.com/wspace/marcellippmann-whitepp
 [submodule "cpp/noia"]
 	path = cpp/noia
 	url = https://github.com/noia1/Whitespace-Interpreter
 [submodule "cpp/pavelshub"]
 	path = cpp/pavelshub
-	url = https://github.com/wspace-lang/pavelshub-cpp
+	url = https://github.com/wspace/pavelshub-cpp
 [submodule "cpp/peasley"]
 	path = cpp/peasley
-	url = https://github.com/wspace-lang/peasley-cpp
+	url = https://github.com/wspace/peasley-cpp
 [submodule "cpp/ricardoluis"]
 	path = cpp/ricardoluis
 	url = https://github.com/RicardoLuis0/whitespace
@@ -264,7 +264,7 @@
 	url = https://github.com/ze/space
 [submodule "lolcode/akers"]
 	path = lolcode/akers
-	url = https://github.com/wspace-lang/akers-lolcode
+	url = https://github.com/wspace/akers-lolcode
 [submodule "lua/vyo-callisto"]
 	path = lua/vyo-callisto
 	url = https://github.com/vyo/callisto
@@ -363,7 +363,7 @@
 	url = https://github.com/mikecat/python-whitespace
 [submodule "python/phlip-pywhitespace"]
 	path = python/phlip-pywhitespace
-	url = https://github.com/wspace-lang/phlip-pywhitespace
+	url = https://github.com/wspace/phlip-pywhitespace
 [submodule "python/qwhxm-baudelaire"]
 	path = python/qwhxm-baudelaire
 	url = https://github.com/qwhxm/baudelaire-whitespace
@@ -375,7 +375,7 @@
 	url = https://github.com/Smithers888/BlueSpace
 [submodule "python/stephenchappell"]
 	path = python/stephenchappell
-	url = https://github.com/wspace-lang/stephenchappell-python
+	url = https://github.com/wspace/stephenchappell-python
 [submodule "python/yasn-whitepy"]
 	path = python/yasn-whitepy
 	url = https://github.com/yasn77/whitepy
@@ -384,10 +384,10 @@
 	url = https://github.com/bmazoure/whitespace
 [submodule "rebol/hostilefork"]
 	path = rebol/hostilefork
-	url = https://github.com/wspace-lang/hostilefork-rebol
+	url = https://github.com/wspace/hostilefork-rebol
 [submodule "ren-c/hostilefork"]
 	path = ren-c/hostilefork
-	url = https://github.com/wspace-lang/hostilefork-ren-c
+	url = https://github.com/wspace/hostilefork-ren-c
 [submodule "ruby/alesiong"]
 	path = ruby/alesiong
 	url = https://github.com/alesiong/whitespace-ruby
@@ -456,13 +456,13 @@
 	url = https://github.com/andrewarchi/wslib
 [submodule "whitespace/eah-hello-world"]
 	path = whitespace/eah-hello-world
-	url = https://github.com/wspace-lang/eah-hello-world-whitespace
+	url = https://github.com/wspace/eah-hello-world
 [submodule "whitespace/keens-whitelie"]
 	path = whitespace/keens-whitelie
 	url = https://github.com/KeenS/whitelie
 [submodule "whitespace/pdewacht-tetris"]
 	path = whitespace/pdewacht-tetris
-	url = https://github.com/wspace-lang/pdewacht-tetris
+	url = https://github.com/wspace/pdewacht-tetris
 [submodule "whitespace/tewort-hello-whitespace"]
 	path = whitespace/tewort-hello-whitespace
 	url = https://github.com/Tewort/Hello-Whitespace
