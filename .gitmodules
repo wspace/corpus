@@ -124,6 +124,9 @@
 [submodule "csharp/rolisoft-esoteric"]
 	path = csharp/rolisoft-esoteric
 	url = https://github.com/RoliSoft/Esoteric-Code-Interpreter
+[submodule "docker/bensuperpc"]
+	path = docker/bensuperpc
+	url = https://github.com/bensuperpc/docker-whitespace
 [submodule "elixir/quinnwilton"]
 	path = elixir/quinnwilton
 	url = https://github.com/QuinnWilton/elixir-whitespace

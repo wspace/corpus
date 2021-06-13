@@ -54,6 +54,7 @@ Build and run errors are included.
 - ⚠️ csharp/north-projectone/The-Code/WhitespaceInterpreter/bin/Debug/WhitespaceInterpreter.exe: `msbuild /p:Configuration=Debug The-Code/WhitespaceInterpreter/WhitespaceInterpreter.csproj` The Carbon driver has not been ported to 64-bit, so very few parts of Windows.Forms work properly
 - ⚠️ csharp/reflash/WhiteSpaceInterpretator/bin/Debug/WhiteSpaceInterpretator.exe: `msbuild /p:Configuration=Debug WhiteSpaceInterpretator/WhiteSpaceInterpretator.csproj` Mono does not implement WPF APIs
 - csharp/rolisoft-esoteric/bin/Debug/EsotericCodeInterpreter.exe: `msbuild /p:Configuration=Debug\;AssemblyName=EsotericCodeInterpreter EsotericCodeInterpreter.csproj`
+- ❌ docker/bensuperpc
 - ❌ elixir/quinnwilton
 - ⚠️ erlang/derek-mrwhite/*unspecified*: `make` Unclear how to run
 - ⚠️ go/andrewarchi-nebula:
