@@ -86,6 +86,7 @@ Build and run errors are included.
 - ❌ java/yuukiaria-wseditor
 - ❌ javascript/briantran-generator
 - ❌ javascript/damle-evanescojs
+- ❌ javascript/ignovak
 - ❌ javascript/kanra1412
 - ❌ javascript/kmyk-translater
 - ❌ javascript/kosei
@@ -93,6 +94,7 @@ Build and run errors are included.
 - ❌ javascript/loklaan-zerowidth-lang
 - ❌ javascript/luilak-ws2js
 - ❌ javascript/macocha-whitespacer
+- ❌ javascript/naokikp-wsi
 - ❌ javascript/pvdz-significant-whitespace
 - ❌ javascript/rumpl
 - ❌ javascript/susisu
@@ -138,9 +140,10 @@ Build and run errors are included.
   - generate\_programs
   - src/\_\_main\_\_.py
 - ❌ python/maximegoyette
-- ❌ python/mcolom
+- python/mcolom/whitespace.py
 - ❌ python/meand
 - python/mikecat/whitespace.py
+- python/mildsunrise/whitespace.py
 - ❌ python/phlip-pywhitespace
 - ❌ python/qwhxm-baudelaire
 - ❌ python/rumaxwell

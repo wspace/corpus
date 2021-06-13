@@ -1488,6 +1488,19 @@
     "notes": "Fork of vii5ard/whitespace"
   },
   {
+    "name": "whitespace.py",
+    "path": "python/mildsunrise",
+    "authors": ["Alba Mendez"],
+    "license": "none",
+    "languages": ["Python"],
+    "tags": ["interpreter"],
+    "date": "2018-01-14 16:05:13 +0100",
+    "spec_version": "0.2",
+    "source": ["https://gist.github.com/mildsunrise/d948fe1334f36c9a0f6516e58271f936"],
+    "bounds": { "heap_min": "unbounded", "heap_max": "unbounded" },
+    "commands": [{ "type": "interpreter", "bin": "whitespace.py", "usage": "python3 $0 <file>" }]
+  },
+  {
     "name": "Whitespace",
     "path": "c/sandeep",
     "authors": ["Sandeep Varma"],
@@ -1677,7 +1690,7 @@
     "tags": ["interpreter"],
     "date": "2017-01-31 16:21:48 +0000",
     "spec_version": "0.2",
-    "source": ["https://github.com/yasn77/whitepy"]
+    "source": ["https://github.com/yasn77/whitepy", "https://opensourcelibs.com/lib/whitepy"]
   },
   {
     "name": "WhitespaceGenerator",
@@ -1744,7 +1757,7 @@
     "tags": ["interpreter"],
     "date": "2016-08-31 05:09:16 -0400",
     "spec_version": "0.2",
-    "source": ["https://github.com/dwayne/whitespace-python"]
+    "source": ["https://github.com/dwayne/whitespace-python", "https://pypi.org/project/whitespace/"]
   },
   {
     "name": "ws-frontend",
@@ -1814,6 +1827,18 @@
     "date": "2016-07-11 15:39:42 -0400",
     "spec_version": "0.2",
     "source": ["https://github.com/dwayne/whitespace-ruby"]
+  },
+  {
+    "name": "whitespace.js",
+    "path": "javascript/ignovak",
+    "authors": ["Igor"],
+    "license": "none",
+    "languages": ["JavaScript"],
+    "tags": ["interpreter"],
+    "date": "2016-06-21 01:43:55 +0200",
+    "spec_version": "0.3",
+    "source": ["https://gist.github.com/ignovak/c6173c31207fd6fcbec606411460c73c"],
+    "notes": "Codewars solution"
   },
   {
     "name": "Whitespacers",
@@ -2391,17 +2416,6 @@
         "usage": "$0 <file>"
       }
     ]
-  },
-  {
-    "name": "whitespace",
-    "path": "python/mcolom",
-    "authors": ["Miguel Colom"],
-    "license": "GPL-3.0-or-later",
-    "languages": ["Python"],
-    "tags": ["interpreter"],
-    "date": "2015-05-18 18:10:03 +0200",
-    "spec_version": "0.3",
-    "source": ["https://github.com/mcolom/whitespace"]
   },
   {
     "name": "ws_interpreter",
@@ -3046,6 +3060,19 @@
     "commands": [{ "type": "interpreter", "bin": "bin/interpreter", "usage": "php $0 <file>" }]
   },
   {
+    "name": "wsi",
+    "path": "javascript/naokikp-wsi",
+    "authors": ["naoki kageyama"],
+    "license": "MIT",
+    "languages": ["JavaScript"],
+    "tags": ["IDE", "interpreter", "mapping"],
+    "date": "2014-06-01 22:27:15 +0900",
+    "spec_version": "0.3",
+    "source": ["https://github.com/naokikp/naokikp.github.io", "https://naokikp.github.io/wsi/whitespace.html"],
+    "mappings": [{ "space": "S", "tab": "T", "lf": "L" }, { "space": "S", "tab": "T", "lf": "N" }],
+    "notes": "When mapping to visible characters, STL is canonical over STN"
+  },
+  {
     "name": "wsint",
     "path": "masm/jarsp-wsint",
     "authors": ["jarsp"],
@@ -3254,6 +3281,31 @@
     "date": "2013-11-21 22:29:13 -0800",
     "spec_version": "-",
     "source": ["https://github.com/YuukiARIA/wseditor"]
+  },
+  {
+    "name": "Whitespace tool",
+    "path": "python/mcolom",
+    "authors": ["Miguel Colom"],
+    "license": "GPL-3.0-or-later",
+    "languages": ["Python"],
+    "tags": ["interpreter"],
+    "date": "2013-09-25 14:10:25 +0200",
+    "spec_version": "0.3",
+    "source": ["https://github.com/mcolom/whitespace", "https://sourceforge.net/projects/whitespacetool/"],
+    "commands": [
+      {
+        "type": "interpreter",
+        "bin": "whitespace.py",
+        "usage": "python2 $0 [-h | --help] [-v | --verbose] [-s | --stack] [-p | --pause] <file>",
+        "options": [
+          { "short": "h", "long": "help", "desc": "show this help message and exit" },
+          { "short": "v", "long": "verbose", "desc": "Activate verbose mode" },
+          { "short": "s", "long": "stack", "desc": "Show the stack after each intruction execution" },
+          { "short": "p", "long": "pause", "desc": "Pause the execution after each instruction" }
+        ],
+        "option_parse": "Python optparse"
+      }
+    ]
   },
   {
     "name": "whitespace-llvm",

@@ -214,6 +214,9 @@
 [submodule "javascript/damle-evanescojs"]
 	path = javascript/damle-evanescojs
 	url = https://github.com/AD9000/EvanescoJS
+[submodule "javascript/ignovak"]
+	path = javascript/ignovak
+	url = https://gist.github.com/ignovak/c6173c31207fd6fcbec606411460c73c
 [submodule "javascript/kanra1412"]
 	path = javascript/kanra1412
 	url = https://github.com/kanra1412/whitespace-interpreter
@@ -235,6 +238,9 @@
 [submodule "javascript/macocha-whitespacer"]
 	path = javascript/macocha-whitespacer
 	url = https://github.com/macocha/whitespacer
+[submodule "javascript/naokikp-wsi"]
+	path = javascript/naokikp-wsi
+	url = https://github.com/naokikp/naokikp.github.io
 [submodule "javascript/pvdz-significant-whitespace"]
 	path = javascript/pvdz-significant-whitespace
 	url = https://github.com/pvdz/SignificantWhitespace
@@ -361,6 +367,9 @@
 [submodule "python/mikecat"]
 	path = python/mikecat
 	url = https://github.com/mikecat/python-whitespace
+[submodule "python/mildsunrise"]
+	path = python/mildsunrise
+	url = https://gist.github.com/mildsunrise/d948fe1334f36c9a0f6516e58271f936
 [submodule "python/phlip-pywhitespace"]
 	path = python/phlip-pywhitespace
 	url = https://github.com/wspace/phlip-pywhitespace
