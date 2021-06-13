@@ -1202,7 +1202,7 @@
     "authors": ["wysang"],
     "license": "none",
     "languages": ["Java", "ANTLR4"],
-    "tags": ["grammar", "incomplete"],
+    "tags": ["grammar"],
     "date": "2018-10-21 19:31:04 -0700",
     "spec_version": "0.3 incomplete",
     "source": ["https://github.com/wysang/Whitespace-Compiler"],
@@ -1611,6 +1611,57 @@
     "date": "2017-05-15 17:41:44 +0000",
     "spec_version": "0.3",
     "source": ["https://github.com/rolf007/ws.vim"]
+  },
+  {
+    "name": "whitespaceasm.py",
+    "path": "python/jrialland",
+    "authors": ["Julien Rialland"],
+    "license": "none",
+    "languages": ["Python"],
+    "tags": ["assembler"],
+    "date": "2017-04-28 14:56:30 +0200",
+    "spec_version": "0.3",
+    "source": ["https://gist.github.com/jrialland/e0d370034da9c7b1b76a8afccbea7424"],
+    "assembly": {
+      "instructions": {
+        "push": ["push"],
+        "dup": ["dup"],
+        "copy": ["copy"],
+        "swap": ["swap"],
+        "drop": ["pop"],
+        "add": ["add"],
+        "sub": ["sub"],
+        "mul": ["mul"],
+        "div": ["div"],
+        "mod": ["mod"],
+        "store": ["store"],
+        "retrieve": ["load"],
+        "label": ["label"],
+        "call": ["call"],
+        "jmp": ["jump"],
+        "jz": ["jz"],
+        "jn": ["jn"],
+        "ret": ["ret"],
+        "end": ["exit"],
+        "printc": ["outchar"],
+        "printi": ["outnum"],
+        "readc": ["readchar"],
+        "readi": ["readnum"]
+      },
+      "case_sensitive_instructions": true,
+      "line_comment_prefix": "#",
+      "usage": ["assembler"]
+    },
+    "commands": [
+      {
+        "type": "assembler",
+        "bin": "whitespaceasm.py",
+        "usage": "python2 $0 [<file>...] <last_file>",
+        "output": "<last_file_replace:/\\.wsa$/.ws/>",
+        "notes": "Multiple files are concatenated. If the last file does not end with .wsa, it will be overwritten."
+      }
+    ],
+    "notes": "slide is not supported"
   },
   {
     "name": "Mr. White",
@@ -2397,6 +2448,61 @@
     },
     "mappings": [{ "space": "s", "tab": "t", "lf": "n", "extension": "wsp" }],
     "notes": "Mapping has spaces between opcode and param and each instruction is on a separate line. Assembly string parameters are written with s/t/l"
+  },
+  {
+    "name": "Whitespace Parser",
+    "path": "python/katc",
+    "authors": ["友利奈緒 (Tomori Nao)"],
+    "license": "none",
+    "languages": ["Python"],
+    "tags": ["disassembler"],
+    "date": "2015-07-08 09:52:33 -0700",
+    "spec_version": "0.3",
+    "source": ["https://gist.github.com/K-atc/02b402e9812e066afb78"],
+    "assembly": {
+      "instructions": {
+        "push": ["PUSH"],
+        "dup": ["SDUPLI"],
+        "copy": ["SCOPY"],
+        "swap": ["SSWAP"],
+        "drop": ["SDISCARD"],
+        "slide": ["SSLIDE"],
+        "add": ["ADD"],
+        "sub": ["SUB"],
+        "mul": ["MUL"],
+        "div": ["DIV"],
+        "mod": ["MOD"],
+        "store": ["STORE"],
+        "retrieve": ["RETRIEVE"],
+        "label": ["LABEL"],
+        "call": ["CALL"],
+        "jmp": ["JUMP"],
+        "jz": ["JUMP-ZERO"],
+        "jn": ["JUMP-NEG"],
+        "ret": ["RETURN"],
+        "end": ["END"],
+        "printc": ["OUT-CHAR"],
+        "printi": ["OUT-NUM"],
+        "readc": ["IN-CHAR"],
+        "readi": ["IN-NUM"]
+      },
+      "line_comment_prefix": ";",
+      "usage": ["disassembler"]
+    },
+    "commands": [
+      {
+        "type": "disassembler",
+        "bin": "whitespace.py",
+        "usage": "python2 $0 [-h | --help] [-v | --verbose] [-p | --parse] <file>",
+        "options": [
+          { "short": "h", "long": "help", "desc": "show this help message and exit" },
+          { "short": "v", "long": "verbose", "desc": "Activate verbose mode" },
+          { "short": "p", "long": "parse", "desc": "Pause the execution after each instruction" }
+        ],
+        "option_parse": "Python optparse",
+        "notes": "Interpreter and -v/--verbose are not implemented. Disassemble with --parse."
+      }
+    ]
   },
   {
     "name": "Cupertino-WhiteSpace-Interperter",
@@ -3858,6 +3964,19 @@
     "date": "2010-11-22 15:54:53 +0100",
     "spec_version": "-",
     "source": ["https://github.com/dos1/colorspace"]
+  },
+  {
+    "name": "Whitespace.py",
+    "path": "python/wasabili",
+    "authors": ["Yuichi Nishiwaki"],
+    "license": "none",
+    "languages": ["Python"],
+    "tags": ["interpreter"],
+    "date": "2010-11-21 06:30:32 -0800",
+    "spec_version": "0.3 incomplete",
+    "source": ["https://gist.github.com/wasabili/708773"],
+    "commands": [{ "type": "interpreter", "bin": "Whitespace.py", "usage": "python2 $0 < <file>" }],
+    "notes": "store, retrieve, call, and ret are not implemented"
   },
   {
     "name": "hws",

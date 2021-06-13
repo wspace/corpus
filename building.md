@@ -136,9 +136,11 @@ Build and run errors are included.
 - python/ganeshsankaran/interpreter.py
 - ❌ python/hearnderek
 - ❌ python/ilikepython256-whitespace-unc
+- python/jrialland/whitespaceasm.py
 - python/kareeeeem-abyad:
   - generate\_programs
   - src/\_\_main\_\_.py
+- python/katc/whitespace.py
 - ❌ python/maximegoyette
 - python/mcolom/whitespace.py
 - ❌ python/meand
@@ -152,6 +154,7 @@ Build and run errors are included.
   - ⚠️ Assembler.py: msvcrt module only exists on Windows
   - Helpers.py
   - ⚠️ Interpreter.py: msvcrt module only exists on Windows
+- python/wasabili/Whitespace.py
 - ❌ python/yasn-whitepy
 - r/bmazoure/R/whitespace.R
 - rebol/hostilefork/whitespace.reb

@@ -352,9 +352,15 @@
 [submodule "python/ilikepython256-whitespace-unc"]
 	path = python/ilikepython256-whitespace-unc
 	url = https://github.com/ILikePython256/Whitespace_UnC
+[submodule "python/jrialland"]
+	path = python/jrialland
+	url = https://gist.github.com/jrialland/e0d370034da9c7b1b76a8afccbea7424
 [submodule "python/kareem-abyad"]
 	path = python/kareeeeem-abyad
 	url = https://github.com/Kareeeeem/abyad
+[submodule "python/katc"]
+	path = python/katc
+	url = https://gist.github.com/K-atc/02b402e9812e066afb78
 [submodule "python/maximegoyette"]
 	path = python/maximegoyette
 	url = https://github.com/MaximeGoyette/whitespace_interpreter
@@ -385,6 +391,9 @@
 [submodule "python/stephenchappell"]
 	path = python/stephenchappell
 	url = https://github.com/wspace/stephenchappell-python
+[submodule "python/wasabili"]
+	path = python/wasabili
+	url = https://gist.github.com/wasabili/708773
 [submodule "python/yasn-whitepy"]
 	path = python/yasn-whitepy
 	url = https://github.com/yasn77/whitepy
