@@ -147,7 +147,7 @@ Build and run errors are included.
 - ❌ python/meand
 - python/mikecat/whitespace.py
 - python/mildsunrise/whitespace.py
-- ❌ python/phlip-pywhitespace
+- python/phlip-pywhitespace/main.py
 - ❌ python/qwhxm-baudelaire
 - ❌ python/rumaxwell
 - ❌ python/smithers-bluespace

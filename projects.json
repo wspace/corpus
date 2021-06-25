@@ -3907,7 +3907,7 @@
     "license": "GPL-2.0-or-later",
     "languages": ["Haskell"],
     "tags": ["interpreter"],
-    "date": "2011-03-10",
+    "date": "2011-03-10 11:26:53 -0800",
     "spec_version": "0.3",
     "source": [
       "https://github.com/haroldl/whitespace-nd",
@@ -4413,7 +4413,15 @@
       "https://web.archive.org/web/20061209092911/http://www.cs.newcastle.edu.au/~c3018900/pywhitespace.tar.bz2",
       "https://www.mrphlip.com/pywhitespace.tar.bz2"
     ],
-    "whitespace": { "nonstandard": [{ "name": "trace", "seq": "LLT" }] }
+    "whitespace": { "nonstandard": [{ "name": "trace", "seq": "LLT" }] },
+    "commands": [
+      {
+        "type": "interpreter",
+        "bin": "main.py",
+        "dependencies": ["Python 3"],
+        "usage": "python3 $0 <file>"
+      }
+    ]
   },
   {
     "name": "wspace 0.3",
