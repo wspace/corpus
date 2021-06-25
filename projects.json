@@ -329,7 +329,7 @@
     "authors": ["Collided Scope"],
     "license": "WTFPL",
     "languages": ["Ruby"],
-    "tags": ["language compiler", "assembler", "disassembler", "programs", "stdlib"],
+    "tags": ["language", "assembler", "disassembler", "programs", "stdlib"],
     "date": "2020-12-11 23:54:53 -0500",
     "spec_version": "0.3",
     "source": ["https://github.com/collidedscope/spitewaste"],
@@ -621,7 +621,8 @@
       "case_sensitive_instructions": true,
       "line_comment_prefix": "#",
       "extension": "wsa"
-    }
+    },
+    "notes": "TODO mirror GitHub Gist"
   },
   {
     "name": "WhitespaceInterpreter",
@@ -2459,7 +2460,7 @@
       "extension": "wsa"
     },
     "mappings": [{ "space": "s", "tab": "t", "lf": "n", "extension": "wsp" }],
-    "notes": "Mapping has spaces between opcode and param and each instruction is on a separate line. Assembly string parameters are written with s/t/l"
+    "notes": "Mapping has spaces between opcode and param and each instruction is on a separate line. Assembly string parameters are written with s/t/l. TODO mirror programs on https://cpjsmith.uk/whitespace."
   },
   {
     "name": "Whitespace Parser",

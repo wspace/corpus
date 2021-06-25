@@ -16,7 +16,7 @@ the Whitespace programming language.
 | [%whitespace.reb](ren-c/hostilefork)           | Brian Dickens (Hostile Fork) | Ren-C | interpreter | 2021-01-31 | 0.3 | [GitHub](https://github.com/wspace/hostilefork-ren-c), [GitHub](https://github.com/hostilefork/whitespacers/tree/master/ren-c) |
 | [Whitespace exotic programming language interpreter](typescript/fy0u11) | Sergey Strigin | TypeScript | interpreter | 2021-01-12 | 0.3 | [GitHub](https://github.com/FY0u11/whitespace-interpreter) |
 | [asm2ws](c/kspalaiologos-asm2ws)               | Kamila Szewczyk (Palaiologos) | C, Yacc, Lex | interpreter, JIT, assembler, disassembler, optimizer, programs | 2020-12-31 | 0.3 | [GitHub](https://github.com/kspalaiologos/asm2ws) |
-| [Spitewaste](ruby/collidedscope-spitewaste)    | Collided Scope   | Ruby       | language compiler, assembler, disassembler, programs, stdlib | 2020-12-11 | 0.3 | [GitHub](https://github.com/collidedscope/spitewaste) |
+| [Spitewaste](ruby/collidedscope-spitewaste)    | Collided Scope   | Ruby       | language, assembler, disassembler, programs, stdlib | 2020-12-11 | 0.3 | [GitHub](https://github.com/collidedscope/spitewaste) |
 | [Spiceweight](crystal/collidedscope-spiceweight) | Collided Scope | Crystal    | interpreter, benchmarking, programs | 2020-12-11 | 0.3 | [GitHub](https://github.com/collidedscope/spiceweight) |
 | [Whitespacy](python/francoisrozet-whitespacy)  | François Rozet   | Python     | polyglot formatter | 2020-12-08 | - | [GitHub](https://github.com/francois-rozet/whitespacy) |
 | Whitespace Language - Online Translator/Interpreter | dCode       | JavaScript, PHP | interpreter, text to Whitespace, mapping | 2020-09-23 | 0.2 | [dCode](https://www.dcode.fr/whitespace-language) |
