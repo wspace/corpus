@@ -3803,7 +3803,7 @@
         "readc": ["READCHAR"],
         "readi": ["READNUM"]
       },
-      "usage": ["debug"]
+      "usage": ["enum"]
     },
     "commands": [
       {
@@ -4421,7 +4421,7 @@
     "license": "GPL-2.0-or-later",
     "languages": ["Haskell", "Emacs Lisp"],
     "tags": ["interpreter", "syntax highlighting", "programs"],
-    "date": "2004-05-04",
+    "date": "2004-05-04 16:34:32 +0000",
     "spec_version": "0.3",
     "source": [
       "https://web.archive.org/web/20150717140342/http://compsoc.dur.ac.uk:80/whitespace/download.php",
@@ -4584,12 +4584,13 @@
     "license": "GPL-2.0-or-later",
     "languages": ["Haskell"],
     "tags": ["interpreter", "programs"],
-    "date": "2002",
+    "date": "2003-03-30 23:12:22 +0000",
     "spec_version": "0.2",
     "source": [
       "https://web.archive.org/web/20150717140342/http://compsoc.dur.ac.uk:80/whitespace/download.php",
       "https://slashdot.org/story/03/04/01/0332202/new-whitespace-only-programming-language"
     ],
-    "bounds": { "precision": "arbitrary" }
+    "bounds": { "precision": "arbitrary" },
+    "notes": "Idea from late 2002"
   }
 ]
