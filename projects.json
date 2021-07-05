@@ -242,7 +242,7 @@
         "bin": "whitespace.reb",
         "dependencies": ["Ren-C"],
         "usage": "r3 $0",
-        "notes": "Program is hardcoded to one that counts from 1 to 10. Prints instructions while executing."
+        "notes": "Program is hardcoded to the tutorial annotated example. Prints instructions while executing."
       }
     ]
   },
@@ -4274,7 +4274,7 @@
         "bin": "whitespace.reb",
         "dependencies": ["Rebol 3"],
         "usage": "r3 $0",
-        "notes": "Program is hardcoded to one that counts from 1 to 10. Prints instructions while executing."
+        "notes": "Program is hardcoded to the tutorial annotated example. Prints instructions while executing."
       }
     ]
   },

@@ -239,7 +239,7 @@ the Whitespace programming language.
 | Hello World                              | Petri Heikkonen  | -        | 2003-07-29 18:29:36 +0000 | 0.2 | [Hello World Collection](http://helloworldcollection.de/#Whitespace), [roesler-ac.de (archive)](https://web.archive.org/web/20030811004421/http://www.roesler-ac.de:80/wolfram/hello.htm#Whitespace), [GitLab](https://gitlab.com/wolframroesler/helloworld/-/blob/master/files/Whitespace.txt) |
 | loctest.ws                               | Edwin Brady      | -        | 2003       | 0.3 | [CompSoc (archive)][compsoc] |
 | tutorial.html                            | Edwin Brady      | HTML     | 2003       | 0.2 | [CompSoc (archive)][compsoc] |
-| calc.ws<br>count.ws<br>fact.ws<br>hanoi.ws<br>hworld.ws<br>name.ws | Edwin Brady | - | 2003 | 0.2 | [CompSoc (archive)][compsoc] |
+| calc.ws<br>count.ws<br>fact.ws<br>hanoi.ws<br>hworld.ws<br>name.ws<br>annotated example | Edwin Brady | - | 2003 | 0.2 | [CompSoc (archive)][compsoc] |
 
 ## Reference interpreter mirrors
 
