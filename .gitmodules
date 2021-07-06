@@ -405,10 +405,7 @@
 	url = https://github.com/bmazoure/whitespace
 [submodule "rebol/hostilefork"]
 	path = rebol/hostilefork
-	url = https://github.com/wspace/hostilefork-rebol
-[submodule "ren-c/hostilefork"]
-	path = ren-c/hostilefork
-	url = https://github.com/wspace/hostilefork-ren-c
+	url = https://github.com/hostilefork/rebol-whitespacers
 [submodule "ruby/alesiong"]
 	path = ruby/alesiong
 	url = https://github.com/alesiong/whitespace-ruby

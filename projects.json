@@ -224,29 +224,6 @@
     ]
   },
   {
-    "name": "%whitespace.reb",
-    "path": "ren-c/hostilefork",
-    "authors": ["Brian Dickens (Hostile Fork)"],
-    "license": "MIT",
-    "languages": ["Ren-C"],
-    "tags": ["interpreter"],
-    "date": "2021-01-31 08:01:42 -0500",
-    "spec_version": "0.3",
-    "source": [
-      "https://github.com/wspace/hostilefork-ren-c",
-      "https://github.com/hostilefork/whitespacers/tree/master/ren-c"
-    ],
-    "commands": [
-      {
-        "type": "interpreter",
-        "bin": "whitespace.reb",
-        "dependencies": ["Ren-C"],
-        "usage": "r3 $0",
-        "notes": "Program is hardcoded to the tutorial annotated example. Prints instructions while executing."
-      }
-    ]
-  },
-  {
     "name": "Whitespace exotic programming language interpreter",
     "path": "typescript/fy0u11",
     "authors": ["Sergey Strigin"],
@@ -4260,18 +4237,22 @@
     "path": "rebol/hostilefork",
     "authors": ["Brian Dickens (Hostile Fork)"],
     "license": "MIT",
-    "languages": ["Rebol"],
+    "languages": ["Rebol", "Ren-C"],
     "tags": ["interpreter"],
     "date": "2009-10-08",
     "spec_version": "0.3",
-    "source": [
-      "https://github.com/wspace/hostilefork-rebol",
-      "https://github.com/hostilefork/whitespacers/tree/master/rebol"
-    ],
+    "source": ["https://github.com/hostilefork/rebol-whitespacers", "https://github.com/hostilefork/whitespacers"],
     "commands": [
       {
         "type": "interpreter",
         "bin": "whitespace.reb",
+        "dependencies": ["Ren-C"],
+        "usage": "r3 $0 <file>",
+        "notes": "Prints instructions while executing."
+      },
+      {
+        "type": "interpreter",
+        "bin": "historical/whitespace-old.reb",
         "dependencies": ["Rebol 3"],
         "usage": "r3 $0",
         "notes": "Program is hardcoded to the tutorial annotated example. Prints instructions while executing."
