@@ -125,7 +125,7 @@ Build and run errors are included.
 - python/alecgraves-whitespac3/interpreter.py
 - python/apua-wvm/wvm.py
 - python/bornlex/main.py
-- ⚠️ python/dalleng/whitespace.py
+- ⚠️ python/dalleng/whitespace.py: Needs Codewars entrypoint
 - python/damle-evanesco/src/textToWhitespace.py
 - python/dos1-colorspace:
   - colorspace
@@ -138,16 +138,16 @@ Build and run errors are included.
 - python/francoisrozet-whitespacy/whitespacy.py
 - python/freyamade-hohoho/hohoho
 - python/ganeshsankaran/interpreter.py
-- ❌ python/hearnderek
-- ❌ python/ilikepython256-whitespace-unc
+- ⚠️ python/hearnderek/whitespace.py: Needs Codewars entrypoint
+- python/ilikepython256-whitespace-unc/WhitespaceCompiler.py
 - python/jrialland/whitespaceasm.py
 - python/kareeeeem-abyad:
   - generate\_programs
   - src
 - python/katc/whitespace.py
-- ❌ python/maximegoyette
+- ⚠️ python/maximegoyette/whitespace.py: Needs Codewars entrypoint
 - python/mcolom/whitespace.py
-- ❌ python/meand
+- python/meand/compile.py
 - python/mikecat/whitespace.py
 - python/mildsunrise/whitespace.py
 - python/phlip-pywhitespace/main.py

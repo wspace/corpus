@@ -681,7 +681,16 @@
     "tags": ["interpreter"],
     "date": "2020-02-09 09:22:36 +0900",
     "spec_version": "0.3",
-    "source": ["https://github.com/hearnderek/WhiteSpaceInterpreter"]
+    "source": ["https://github.com/hearnderek/WhiteSpaceInterpreter"],
+    "commands": [
+      {
+        "type": "interpreter",
+        "bin": "whitespace.py",
+        "dependencies": ["Python 3"],
+        "build_errors": "Needs Codewars entrypoint"
+      }
+    ],
+    "notes": "Appears to be Codewars solution"
   },
   {
     "name": "Whitespace Interpreter in JavaScript",
@@ -864,6 +873,21 @@
       },
       "case_sensitive_instructions": false
     },
+    "commands": [
+      {
+        "type": "assembler",
+        "bin": "WhitespaceCompiler.py",
+        "dependencies": ["Python 3"],
+        "usage": "python3 $0 [-h | --help | --man | --docs] <file>",
+        "output": "stdout",
+        "options": [
+          { "short": "h", "long": "help", "desc": "Print assembly mnemonics" },
+          { "long": "man", "desc": "Print assembly mnemonics" },
+          { "long": "docs", "desc": "Print assembly mnemonics" }
+        ],
+        "option_parse": "manual"
+      }
+    ],
     "notes": "Web client and test programs are on web branch"
   },
   {
@@ -1497,6 +1521,14 @@
     "date": "2018-03-09 16:19:48 -0500",
     "spec_version": "incomplete",
     "source": ["https://github.com/MaximeGoyette/whitespace_interpreter"],
+    "commands": [
+      {
+        "type": "interpreter",
+        "bin": "whitespace.py",
+        "dependencies": ["Python 3"],
+        "build_errors": "Needs Codewars entrypoint"
+      }
+    ],
     "notes": "Partial Codewars solution"
   },
   {
@@ -2344,7 +2376,7 @@
         "mod": ["MOD"],
         "store": ["STORE"],
         "retrieve": ["RETRV"],
-        "label": ["LABEL"],
+        "label": ["LABEL", "<label>:"],
         "call": ["GOSUB"],
         "jmp": ["JMP"],
         "jz": ["JEZ"],
@@ -2355,8 +2387,23 @@
         "printi": ["PUTN"],
         "readc": ["GETC"],
         "readi": ["GETN"]
+      },
+      "line_comment_prefix": "#",
+      "usage": ["assembler"]
+    },
+    "commands": [
+      {
+        "type": "assembler",
+        "bin": "compile.py",
+        "dependencies": ["Python 3"],
+        "usage": "python3 $0 [-h | --help] [-o <output_file>] <file>",
+        "options": [
+          { "short": "h", "long": "help", "desc": "show this help message and exit" },
+          { "short": "o", "arg": "ofile", "type": "file", "desc": "specify output destination" }
+        ],
+        "option_parse": "Python argparse"
       }
-    }
+    ]
   },
   {
     "name": "Whitespace-JS",
@@ -2456,13 +2503,7 @@
     "date": "2015-09-28 12:31:30 -0400",
     "spec_version": "0.3",
     "source": ["https://github.com/dalleng/Whitespace"],
-    "commands": [
-      {
-        "type": "interpreter",
-        "bin": "whitespace.py",
-        "notes": "TODO write entrypoint that calls whitespace.py:whitespace"
-      }
-    ],
+    "commands": [{ "type": "interpreter", "bin": "whitespace.py", "build_errors": "Needs Codewars entrypoint" }],
     "notes": "Codewars solution"
   },
   {
