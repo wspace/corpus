@@ -21,6 +21,7 @@
   "NASM": { "brew": "nasm" },
   "opam": { "brew": "opam", "init": "opam init" },
   "Perl": { "brew": "perl" },
+  "pipenv": { "brew": "pipenv" },
   "R": { "brew": "r" },
   "Rebar3": { "brew": "rebar3" },
   "Rebol 3": {

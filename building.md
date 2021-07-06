@@ -120,27 +120,30 @@ Build and run errors are included.
 - php/nobody1986:
   - whitespace: `gcc -O3 -o whitespace whitespace.c list.c stack.c`
   - whitespace.php
-- ❌ python/adapap
-- ❌ python/ahl27
-- ❌ python/alecgraves-whitespac3
-- ❌ python/apua-wvm
-- ❌ python/bornlex
-- ❌ python/dalleng
-- ❌ python/damle-evanesco
-- ❌ python/dos1-colorspace
-- ❌ python/drafear-converter
-- ❌ python/dwayne
+- python/adapap/whitespace\_interpreter.py
+- python/ahl27/main.py
+- python/alecgraves-whitespac3/interpreter.py
+- python/apua-wvm/wvm.py
+- python/bornlex/main.py
+- ⚠️ python/dalleng/whitespace.py
+- python/damle-evanesco/src/textToWhitespace.py
+- python/dos1-colorspace:
+  - colorspace
+  - colorspace-convert
+  - colorspace-decompile
+- python/drafear-converter/to\_ws.py
+- python/dwayne/whitespace
 - python/eizoassik-pyws/pyws.py
 - python/ffanzhang/ws.py
 - python/francoisrozet-whitespacy/whitespacy.py
-- ❌ python/freyamade-hohoho
+- python/freyamade-hohoho/hohoho
 - python/ganeshsankaran/interpreter.py
 - ❌ python/hearnderek
 - ❌ python/ilikepython256-whitespace-unc
 - python/jrialland/whitespaceasm.py
 - python/kareeeeem-abyad:
   - generate\_programs
-  - src/\_\_main\_\_.py
+  - src
 - python/katc/whitespace.py
 - ❌ python/maximegoyette
 - python/mcolom/whitespace.py
