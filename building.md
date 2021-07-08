@@ -152,15 +152,15 @@ Build and run errors are included.
 - python/mikecat/whitespace.py
 - python/mildsunrise/whitespace.py
 - python/phlip-pywhitespace/main.py
-- ❌ python/qwhxm-baudelaire
-- ❌ python/rumaxwell
-- ❌ python/smithers-bluespace
+- ⚠️ python/qwhxm-baudelaire/backend/baudelaire-whitespace.py: Needs AWS Lambda entrypoint
+- python/rumaxwell/entrance.py
+- python/smithers-bluespace/bspace.py
 - ⚠️ python/stephenchappell:
   - ⚠️ Assembler.py: msvcrt module only exists on Windows
   - Helpers.py
   - ⚠️ Interpreter.py: msvcrt module only exists on Windows
 - python/wasabili/Whitespace.py
-- ❌ python/yasn-whitepy
+- python/yasn-whitepy/whitepycli
 - r/bmazoure/R/whitespace.R
 - rebol/hostilefork:
   - historical/whitespace-old.reb

@@ -62,7 +62,7 @@ the Whitespace programming language.
 | [projectOne](csharp/north-projectone)          | Jacob North      | C#         | mapping, GUI | 2018-04-11 | -   | [GitHub](https://github.com/North15/projectOne) |
 | [whitespace_interpreter](python/maximegoyette) | Maxime Goyette   | Python     | interpreter  | 2018-03-09 | incomplete | [GitHub](https://github.com/MaximeGoyette/whitespace_interpreter) |
 | [erasure](clojure/jmesyou-erasure)             | James You        | Clojure    | interpreter  | 2018-02-24 | 0.2 | [GitHub](https://github.com/jmesyou/erasure), [GitHub](https://github.com/wspace/jmesyou-erasure) |
-| [whitespace-interperter](python/rumaxwell)     | RuMaxwell        | Python     | interpreter  | 2018-02-21 | 0.3 | [GitHub](https://github.com/RuMaxwell/whitespace-interpreter) |
+| [whitespace-interperter](python/rumaxwell)     | RuMaxwell        | Python     | interpreter, programs | 2018-02-21 | 0.3 | [GitHub](https://github.com/RuMaxwell/whitespace-interpreter) |
 | [whitespace-lang](javascript/loklaan-whitespace-lang) | Lochlan Bunn | JavaScript | interpreter | 2018-02-14 | 0.3 | [GitHub](https://github.com/loklaan/whitespace-lang) |
 | [whitespace.py](python/mildsunrise)            | Alba Mendez      | Python     | interpreter  | 2018-01-14 | 0.2 | [GitHub Gist](https://gist.github.com/mildsunrise/d948fe1334f36c9a0f6516e58271f936) |
 | [Whitespace](c/sandeep)                        | Sandeep Varma    | C, Yacc, Lex | interpreter, programs | 2017-11-11 | 0.3 incomplete | [GitHub](https://github.com/Sandeep023/Whitespace) |

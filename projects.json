@@ -958,7 +958,7 @@
   },
   {
     "name": "baudelaire-whitespace",
-    "description": "Web service that executes baudelaire.ws with the given word using the EsCo interpreter",
+    "description": "AWS Lambda handler that executes baudelaire.ws with the given word using the EsCo interpreter",
     "path": "python/qwhxm-baudelaire",
     "authors": ["Marek Tomáštík"],
     "license": "MIT",
@@ -966,7 +966,14 @@
     "tags": ["web service", "programs"],
     "date": "2019-06-08 23:22:47 +0200",
     "spec_version": "0.3",
-    "source": ["https://github.com/qwhxm/baudelaire-whitespace"]
+    "source": ["https://github.com/qwhxm/baudelaire-whitespace"],
+    "commands": [
+      {
+        "type": "web service",
+        "bin": "backend/baudelaire-whitespace.py",
+        "build_errors": "Needs AWS Lambda entrypoint"
+      }
+    ]
   },
   {
     "name": "Nebula",
@@ -1567,11 +1574,29 @@
     "authors": ["RuMaxwell"],
     "license": "none",
     "languages": ["Python"],
-    "tags": ["interpreter"],
+    "tags": ["interpreter", "programs"],
     "date": "2018-02-21 22:02:54 +0800",
     "spec_version": "0.3",
     "source": ["https://github.com/RuMaxwell/whitespace-interpreter"],
-    "whitespace": { "extension": "whitespace" }
+    "whitespace": { "extension": "whitespace" },
+    "commands": [
+      {
+        "type": "interpreter",
+        "bin": "entrance.py",
+        "dependencies": ["Python 3"],
+        "usage": "python3 $0 [-r | --run] [-s | --show-steps] [-p | --step] [-d | --debug] [-v | --version] [-t | --tutorial] [-h | --help] <file>",
+        "options": [
+          { "short": "r", "long": "run", "desc": "run" },
+          { "short": "s", "long": "show-steps", "desc": "show steps" },
+          { "short": "p", "long": "step", "desc": "step" },
+          { "short": "d", "long": "debug", "desc": "debug" },
+          { "short": "v", "long": "version", "desc": "version" },
+          { "short": "t", "long": "tutorial", "desc": "tutorial" },
+          { "short": "h", "long": "help", "desc": "help" }
+        ],
+        "option_parse": "manual"
+      }
+    ]
   },
   {
     "name": "whitespace-lang",
@@ -1888,7 +1913,23 @@
     "tags": ["interpreter"],
     "date": "2017-01-31 16:21:48 +0000",
     "spec_version": "0.2",
-    "source": ["https://github.com/yasn77/whitepy", "https://opensourcelibs.com/lib/whitepy"]
+    "source": ["https://github.com/yasn77/whitepy", "https://opensourcelibs.com/lib/whitepy"],
+    "commands": [
+      {
+        "type": "interpreter",
+        "bin": "whitepycli",
+        "dependencies": ["Python 3"],
+        "install_dependencies": ["pip install -r requirements.txt"],
+        "usage": "python3 $0 [--debug] [--no-debug] [--help] <file>",
+        "options": [
+          { "long": "debug", "desc": "Enable debug" },
+          { "long": "no-debug", "desc": "Disable debug" },
+          { "long": "help", "desc": "Show this message and exit" }
+        ],
+        "option_parse": "Python click"
+      }
+    ],
+    "notes": "Published on pip as `whitepy`"
   },
   {
     "name": "WhitespaceGenerator",
@@ -2336,7 +2377,7 @@
         "build": "cargo build --release",
         "usage": "$0 [list] <file>",
         "subcommands": [
-          { "name": "run", "desc": "(default) run the program" },
+          { "name": "run", "desc": "run the program (default)" },
           { "name": "list", "desc": "list the commands that the file contains" }
         ]
       }
@@ -2700,6 +2741,58 @@
       "extension": "wsa"
     },
     "mappings": [{ "space": "s", "tab": "t", "lf": "n", "extension": "wsp" }],
+    "commands": [
+      {
+        "type": "interpreter",
+        "bin": "bspace.py",
+        "dependencies": ["Python 3"],
+        "usage": "python3 $0 <file>",
+        "options": [
+          { "short": "h", "long": "help", "desc": "show this help message and exit" },
+          { "short": "v", "long": "version", "desc": "print version information and exit" },
+          {
+            "short": "i",
+            "long": "input",
+            "arg": "SYNTAX",
+            "type": "enum",
+            "desc": "choose the input syntax",
+            "values": [
+              { "values": ["whitespace"], "desc": "Whitespace syntax (default)" },
+              { "values": ["printable"], "desc": "printable syntax" },
+              { "values": ["assembly"], "desc": "Whitespace assembly syntax" }
+            ]
+          },
+          {
+            "short": "c",
+            "long": "convertto",
+            "arg": "TARGET",
+            "type": "enum",
+            "desc": "choose the target format",
+            "values": [
+              { "values": ["whitespace"], "desc": "convert to Whitespace syntax" },
+              { "values": ["printable"], "desc": "convert to printable syntax" },
+              { "values": ["assembly"], "desc": "convert to Whitespace assembly syntax" },
+              { "values": ["python"], "desc": "compile to Python 3 source" },
+              { "values": ["optimised"], "desc": "compile to Python 3 source with optimizations" }
+            ]
+          },
+          {
+            "short": "r",
+            "long": "run",
+            "arg": "MODE",
+            "type": "enum",
+            "desc": "interpret program",
+            "values": [
+              { "values": ["interpret"], "desc": "interpret Whitespace code directly (default)" },
+              { "values": ["python"], "desc": "compile to Python 3 source and evaluate" },
+              { "values": ["optimised"], "desc": "compile to Python 3 source with optimizations and evaluate" }
+            ]
+          }
+        ],
+        "option_parse": "Python argparse",
+        "notes": "Reads program from stdin if <file> is -"
+      }
+    ],
     "notes": "Mapping has spaces between opcode and param and each instruction is on a separate line. Assembly string parameters are written with s/t/l. TODO mirror programs on https://cpjsmith.uk/whitespace."
   },
   {
