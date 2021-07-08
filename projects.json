@@ -307,7 +307,7 @@
     "authors": ["Collided Scope"],
     "license": "WTFPL",
     "languages": ["Ruby"],
-    "tags": ["language", "assembler", "disassembler", "programs", "stdlib"],
+    "tags": ["language", "assembler", "disassembler", "syntax highlighter", "programs", "stdlib"],
     "date": "2020-12-11 23:54:53 -0500",
     "spec_version": "0.3",
     "source": ["https://github.com/collidedscope/spitewaste"],
@@ -1039,7 +1039,7 @@
         "type": "interpreter",
         "bin": "whitespace.py",
         "dependencies": ["Python 3"],
-        "build_errors": "Needs Codewars entrypoint"
+        "run_errors": "Needs Codewars entrypoint"
       }
     ],
     "notes": "Appears to be Codewars solution"
@@ -1323,7 +1323,7 @@
       {
         "type": "web service",
         "bin": "backend/baudelaire-whitespace.py",
-        "build_errors": "Needs AWS Lambda entrypoint"
+        "run_errors": "Needs AWS Lambda entrypoint"
       }
     ]
   },
@@ -1420,10 +1420,30 @@
     "authors": ["Masataka Pocke Kuwabara"],
     "license": "CC0-1.0",
     "languages": ["Ruby"],
-    "tags": ["interpreter", "assembler"],
+    "tags": ["language", "interpreter", "text to Whitespace", "programs"],
     "date": "2019-04-28 11:26:08 +0900",
     "spec_version": "0.2",
     "source": ["https://github.com/pocke/akaza"],
+    "commands": [
+      {
+        "bin": "exe/akaza",
+        "dependencies": ["Ruby 3"],
+        "install_dependencies": ["bundle install"],
+        "usage": "ruby $0 [exec | wsrb | exec_wsrb] <file>",
+        "run_errors": "uninitialized constant Akaza::Parser::StringIO",
+        "subcommands": [
+          { "name": "exec", "desc": "Execute Whitespace program" },
+          { "name": "wsrb", "desc": "Convert Ruby-like script to Whitespace" },
+          { "name": "exec_wsrb", "desc": "Convert Ruby-like script to Whitespace and execute" }
+        ]
+      },
+      {
+        "type": "text to Whitespace",
+        "bin": "bin/str_to_ws.rb",
+        "usage": "ruby $0 <text>",
+        "output": "stdout"
+      }
+    ],
     "notes": "Published as `akaza` Ruby gem"
   },
   {
@@ -1886,7 +1906,7 @@
         "type": "interpreter",
         "bin": "whitespace.py",
         "dependencies": ["Python 3"],
-        "build_errors": "Needs Codewars entrypoint"
+        "run_errors": "Needs Codewars entrypoint"
       }
     ],
     "notes": "Partial Codewars solution"
@@ -2198,7 +2218,7 @@
     "date": "2017-03-23 09:48:51 -0700",
     "spec_version": "0.3",
     "source": ["https://github.com/derek121/mrwhite"],
-    "commands": [{ "dependencies": ["Erlang", "Rebar3"], "build": "make", "build_errors": "Unclear how to run" }]
+    "commands": [{ "dependencies": ["Erlang", "Rebar3"], "build": "make", "run_errors": "Unclear how to run" }]
   },
   {
     "name": "Whitespace Esolang Compiler",
@@ -2502,6 +2522,20 @@
     "date": "2016-07-11 15:39:42 -0400",
     "spec_version": "0.2",
     "source": ["https://github.com/dwayne/whitespace-ruby"],
+    "commands": [
+      {
+        "type": "interpreter",
+        "bin": "bin/whitespace",
+        "install_dependencies": ["bundle install"],
+        "build_errors": "Old dependencies",
+        "usage": "ruby $0 [-v | --version] [-h | --help] <file>",
+        "options": [
+          { "short": "v", "long": "version", "desc": "Show version information, then exit" },
+          { "short": "h", "long": "help", "desc": "Show this help, then exit" }
+        ],
+        "option_parse": "Ruby optparse"
+      }
+    ],
     "notes": "Published as `whitespace-ruby` Ruby gem"
   },
   {
@@ -2817,10 +2851,17 @@
     "authors": ["alesiong"],
     "license": "GPL-2.0-or-later",
     "languages": ["Ruby"],
-    "tags": ["interpreter", "disassembler", "programs"],
+    "tags": ["program builder", "programs"],
     "date": "2016-03-05 16:39:05 +0800",
     "spec_version": "0.3",
     "source": ["https://github.com/alesiong/whitespace-ruby"],
+    "commands": [
+      {
+        "type": "program builder",
+        "bin": "wsv.rb",
+        "notes": "Import into Ruby program to translate to Whitespace"
+      }
+    ],
     "notes": "Forked from Wayne Conrad's Ruby programs"
   },
   {
@@ -2898,7 +2939,7 @@
     "date": "2015-09-28 12:31:30 -0400",
     "spec_version": "0.3",
     "source": ["https://github.com/dalleng/Whitespace"],
-    "commands": [{ "type": "interpreter", "bin": "whitespace.py", "build_errors": "Needs Codewars entrypoint" }],
+    "commands": [{ "type": "interpreter", "bin": "whitespace.py", "run_errors": "Needs Codewars entrypoint" }],
     "notes": "Codewars solution"
   },
   {
@@ -4592,10 +4633,40 @@
     "authors": ["Ernesto Bossi"],
     "license": "GPL-3.0-or-later",
     "languages": ["Ruby"],
-    "tags": ["interpreter"],
+    "tags": ["assembler"],
     "date": "2012-10-15 09:37:19 -0300",
     "spec_version": "0.2",
-    "source": ["https://github.com/bossiernesto/whitespace"]
+    "source": ["https://github.com/bossiernesto/whitespace"],
+    "assembly": {
+      "instructions": {
+        "push": ["push"],
+        "dup": ["dup"],
+        "swap": ["swap"],
+        "drop": ["discard"],
+        "add": ["add"],
+        "sub": ["sub"],
+        "mul": ["mul"],
+        "div": ["div"],
+        "mod": ["mod"],
+        "store": ["store"],
+        "retrieve": ["retrieve"],
+        "label": ["<label>:", "label"],
+        "call": ["call"],
+        "jmp": ["jump"],
+        "jz": ["jz"],
+        "jn": ["jn"],
+        "ret": ["ret"],
+        "end": ["exit"],
+        "printc": ["outchar"],
+        "printi": ["outnum"],
+        "readc": ["readchar"],
+        "readi": ["readnum"]
+      },
+      "line_comment_prefix": "#",
+      "usage": ["disassembler"],
+      "extension": "wsa"
+    },
+    "commands": [{ "type": "assembler", "run_errors": "No entrypoint" }]
   },
   {
     "name": "Whitespace",

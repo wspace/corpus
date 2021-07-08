@@ -165,12 +165,14 @@ Build and run errors are included.
 - rebol/hostilefork:
   - historical/whitespace-old.reb
   - whitespace.reb
-- ❌ ruby/alesiong
-- ❌ ruby/bossiernesto
+- ⚠️ ruby/alesiong/wsv.rb
+- ⚠️ ruby/bossiernesto/*unspecified*: No entrypoint
 - ruby/collidedscope-spitewaste/bin/spw
-- ❌ ruby/dwayne
+- ⚠️ ruby/dwayne/bin/whitespace: Old dependencies
 - ruby/nishiwakki/whitespace.rb
-- ❌ ruby/pocke-akaza
+- ⚠️ ruby/pocke-akaza:
+  - bin/str\_to\_ws.rb
+  - ⚠️ exe/akaza: uninitialized constant Akaza::Parser::StringIO
 - rust/censoredusername-whitespace-rs/target/release/wsc: `cargo build --release`
 - rust/collidedscope-albus/target/release/albus: `cargo build --release`
 - ⚠️ rust/faultier-albino:

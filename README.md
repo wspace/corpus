@@ -15,7 +15,7 @@ the Whitespace programming language.
 | [Albus](rust/collidedscope-albus)              | Collided Scope   | Rust       | interpreter  | 2021-02-12 | 0.3 | [GitHub](https://github.com/collidedscope/albus) |
 | [Whitespace exotic programming language interpreter](typescript/fy0u11) | Sergey Strigin | TypeScript | interpreter | 2021-01-12 | 0.3 | [GitHub](https://github.com/FY0u11/whitespace-interpreter) |
 | [asm2ws](c/kspalaiologos-asm2ws)               | Kamila Szewczyk (Palaiologos) | C, Yacc, Lex | interpreter, JIT, assembler, disassembler, optimizer, programs | 2020-12-31 | 0.3 | [GitHub](https://github.com/kspalaiologos/asm2ws) |
-| [Spitewaste](ruby/collidedscope-spitewaste)    | Collided Scope   | Ruby       | language, assembler, disassembler, programs, stdlib | 2020-12-11 | 0.3 | [GitHub](https://github.com/collidedscope/spitewaste) |
+| [Spitewaste](ruby/collidedscope-spitewaste)    | Collided Scope   | Ruby       | language, assembler, disassembler, syntax highlighter, programs, stdlib | 2020-12-11 | 0.3 | [GitHub](https://github.com/collidedscope/spitewaste) |
 | [Spiceweight](crystal/collidedscope-spiceweight) | Collided Scope | Crystal    | interpreter, benchmarking, programs | 2020-12-11 | 0.3 | [GitHub](https://github.com/collidedscope/spiceweight) |
 | [Whitespacy](python/francoisrozet-whitespacy)  | François Rozet   | Python     | polyglot formatter | 2020-12-08 | - | [GitHub](https://github.com/francois-rozet/whitespacy) |
 | Whitespace Language - Online Translator/Interpreter | dCode       | JavaScript, PHP | interpreter, text to Whitespace, mapping | 2020-09-23 | 0.2 | [dCode](https://www.dcode.fr/whitespace-language) |
@@ -43,7 +43,7 @@ the Whitespace programming language.
 | [baudelaire-whitespace](python/qwhxm-baudelaire) | Marek Tomáštík | Python     | web service, programs | 2019-06-08 | 0.3 | [GitHub](https://github.com/qwhxm/baudelaire-whitespace) |
 | [Nebula](go/andrewarchi-nebula)                | Andrew Archibald | Go, LLVM, Whitespace | compiler, optimizer, disassembler, bit packer, Binary Whitespace, programs | 2019-06-05 | 0.3 | [GitHub](https://github.com/andrewarchi/nebula) |
 | [Whitespace VM](rust/nareshganduri)            | Naresh Ganduri   | Rust       | interpreter  | 2019-05-13 | 0.3 | [GitHub](https://github.com/nareshganduri/WhitespaceVM) |
-| [Akaza](ruby/pocke-akaza)                      | Masataka Pocke Kuwabara | Ruby | interpreter, assembler | 2019-04-28 | 0.2 | [GitHub](https://github.com/pocke/akaza) |
+| [Akaza](ruby/pocke-akaza)                      | Masataka Pocke Kuwabara | Ruby | language, interpreter, text to Whitespace, programs | 2019-04-28 | 0.2 | [GitHub](https://github.com/pocke/akaza) |
 | [whitespace-language-converter](python/drafear-converter) | Takeshi Nishikawa | Python | assembler, programs | 2019-03-30 | 0.3 | [GitHub](https://github.com/drafear/whitespace-language-converter) |
 | [go-wspace](go/tempxla-go-wspace)              | tempxla          | Go         | interpreter  | 2019-02-24 | 0.2 | [GitHub](https://github.com/tempxla/go-wspace) |
 | [Hello-Whitespace](whitespace/tewort-hello-whitespace) | David (Tewort) | Whitespace | programs | 2019-01-28 | 0.2 | [GitHub](https://github.com/Tewort/Hello-Whitespace) |
@@ -92,7 +92,7 @@ the Whitespace programming language.
 | [whitespace-interpreter](javascript/kanra1412) | kanra1412        | JavaScript | interpreter  | 2016-04-29 | 0.3 | [GitHub](https://github.com/kanra1412/whitespace-interpreter) |
 | [whitespace-compiler](python/meand)            | Adam Dinwoodie   | Python     | assembler    | 2016-04-13 | 0.2 | [GitHub](https://github.com/me-and/whitespace-compiler) |
 | [Whitespace-JS](javascript/susisu)             | Susisu           | JavaScript | interpreter  | 2016-04-12 | 0.3 | [GitHub](https://github.com/susisu/Whitespace-JS) |
-| [whitespace-ruby](ruby/alesiong)               | alesiong         | Ruby       | interpreter, disassembler, programs | 2016-03-05 | 0.3 | [GitHub](https://github.com/alesiong/whitespace-ruby) |
+| [whitespace-ruby](ruby/alesiong)               | alesiong         | Ruby       | program builder, programs | 2016-03-05 | 0.3 | [GitHub](https://github.com/alesiong/whitespace-ruby) |
 | [Whitespace support in Atom](textmate/veniversum) | Qingzhuo      | TextMate   | syntax highlighting | 2016-02-20 | - | [GitHub](https://github.com/veniversum/language-whitespace) |
 | [whitespace-interpreter](javascript/uraza)     | Uraza            | JavaScript | interpreter  | 2016-02-08 | 0.2 | [GitHub](https://github.com/uraza/whitespace-interpreter) |
 | [WHINT](cpp/abac-whint)                        | Adam Bac         | C++        | interpreter  | 2015-12-31 | 0.2 | [GitHub](https://github.com/abac00s/WHINT) |
@@ -152,7 +152,7 @@ the Whitespace programming language.
 | [WS-idr](idris/edwinb-ws-idr)                  | Edwin Brady      | Idris      | interpreter  | 2012-11-25 | 0.3 | [GitHub](https://github.com/edwinb/WS-idr) |
 | [Whitespace4j](java/brumbeere-whitespace4j)    | Philipp Speck    | Java       | interpreter  | 2012-11-04 | 0.3 | [GitHub](https://github.com/Brumbeere/Whitespace4j) |
 | [whitespace](cpp/abcsharp)                     | abcsharp         | C++        | interpreter  | 2012-10-29 | 0.3 | [GitHub](https://github.com/abcsharp/Whitespace) |
-| [whitespace](ruby/bossiernesto)                | Ernesto Bossi    | Ruby       | interpreter  | 2012-10-15 | 0.2 | [GitHub](https://github.com/bossiernesto/whitespace) |
+| [whitespace](ruby/bossiernesto)                | Ernesto Bossi    | Ruby       | assembler    | 2012-10-15 | 0.2 | [GitHub](https://github.com/bossiernesto/whitespace) |
 | [Whitespace](java/yawkat)                      | Jonas Konrad     | Java       | interpreter  | 2012-10-06 | 0.3 | [GitHub](https://github.com/yawkat/Whitespace) |
 | trans32.py                                     | r.e.s.           | Python     | Binary Whitespace | 2012-05-30 | unknown | [res0001 (archive)](https://web.archive.org/web/20130510111931/https://sites.google.com/site/res0001/whitespace/programs), [Code Golf](https://codegolf.stackexchange.com/questions/6025/remove-vowels-without-using-too-many-different-characters/6100#6100) |
 | [SignificantWhitespace](javascript/pvdz-significant-whitespace) | Peter van der Zee | JavaScript | interpreter | 2012-02-16 | 0.3 | [GitHub](https://github.com/pvdz/SignificantWhitespace), [pvdz.ee](https://pvdz.ee/weblog/246), [js1k.com](https://js1k.com/2012-love/demo/1130) |
