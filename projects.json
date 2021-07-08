@@ -312,22 +312,374 @@
     "spec_version": "0.3",
     "source": ["https://github.com/collidedscope/spitewaste"],
     "whitespace": { "nonstandard": [{ "name": "shell", "seq": "TLL" }, { "name": "eval", "seq": "LLT" }] },
+    "assembly": {
+      "instructions": {
+        "push": ["push"],
+        "dup": ["dup"],
+        "copy": ["copy"],
+        "swap": ["swap"],
+        "drop": ["pop"],
+        "slide": ["slide"],
+        "add": ["add"],
+        "sub": ["sub"],
+        "mul": ["mul"],
+        "div": ["div"],
+        "mod": ["mod"],
+        "store": ["store"],
+        "retrieve": ["load"],
+        "label": ["label"],
+        "call": ["call"],
+        "jmp": ["jump"],
+        "jz": ["jz"],
+        "jn": ["jn"],
+        "ret": ["ret"],
+        "end": ["exit"],
+        "printc": ["ochr"],
+        "printi": ["onum"],
+        "readc": ["ichr"],
+        "readi": ["inum"]
+      },
+      "extension": "wsa"
+    },
     "commands": [
       {
+        "type": "multiple",
+        "bin": "bin/spw",
         "dependencies": ["Ruby 3"],
+        "install_dependencies": ["bundle install"],
+        "usage": "ruby -Ilib $0 <subcommand>",
+        "option_parse": "Ruby Thor",
         "subcommands": [
-          { "name": "asm", "desc": "Generate plain Whitespace assembly from INPUT and write it to OUTPUT." },
-          { "name": "compile", "desc": "Compile a Whitespace program to native machine instructions." },
-          { "name": "convert", "desc": "Convert a Whitespace program from one format to another." },
-          { "name": "docs", "desc": "Search for matching terms in the documentation of the standard library." },
-          { "name": "exec", "desc": "Execute a Whitespace program using the specified interpreter." },
-          { "name": "help", "desc": "Describe available commands or one specific command." },
-          { "name": "image", "desc": "Generate a PNG file of syntax-highlighted Whitespace." },
+          {
+            "name": "asm",
+            "desc": "Generate plain Whitespace assembly from INPUT and write it to OUTPUT.",
+            "usage": "[-f <format> | --format=<format>] [-a <aliases> | --aliases=<aliases>] [-x | --coexist] [--no-coexist] <file> [<output_file>]",
+            "options": [
+              {
+                "short": "f",
+                "long": "format",
+                "arg": "FORMAT",
+                "type": "enum",
+                "desc": "input format (in case auto-detection misguesses)",
+                "values": [
+                  { "values": ["spw", "spitewaste"], "desc": "Spitewaste (.spw extension)" },
+                  { "values": ["ws", "whitespace"], "desc": "Whitespace (.ws extension)" },
+                  {
+                    "values": ["wsa", "wsassembly"],
+                    "desc": "Whitespace assembly, i.e. preprocessed Spitewaste (.wsa extension)"
+                  },
+                  { "values": ["asm", "assembly"], "desc": "straight-line Whitespace opcodes (.asm extension)" }
+                ]
+              },
+              {
+                "short": "a",
+                "long": "aliases",
+                "arg": "ALIASES",
+                "type": "array",
+                "desc": "augment or override one or more of the default instruction mnemonics (e.g. pop:drop...)"
+              },
+              {
+                "short": "x",
+                "long": "coexist",
+                "desc": "allow multiple mnemonics to refer to the same instruction where possible"
+              },
+              {
+                "long": "no-coexist",
+                "desc": "aliases take precedence and render the original mnemonics invalid (default)"
+              }
+            ],
+            "notes": "Mostly just a convenience wrapper around `spw convert in -o asm out`"
+          },
+          {
+            "name": "compile",
+            "desc": "Compile a Whitespace program to native machine instructions.",
+            "usage": "[-c <compiler> | --compiler=<compiler>] [-o <output_file | --output=<output_file>] [-v <CXXFLAGS> | --argv=<CXXFLAGS>] [-r | --run] [--no-run] [-k | --keep] [--no-keep] [-f <format> | --format=<format>] [-a <aliases> | --aliases=<aliases>] [-x | --coexist] [--no-coexist] <file>",
+            "options": [
+              {
+                "short": "c",
+                "long": "compiler",
+                "arg": "PROG",
+                "type": "string",
+                "default": "c++",
+                "desc": "the C++ compiler to use (e.g. g++)"
+              },
+              {
+                "short": "o",
+                "long": "output",
+                "arg": "FILE",
+                "desc": "the name of the executable to produce (defaults to input without extension, or a.out if input is from stdin)"
+              },
+              {
+                "short": "v",
+                "long": "argv",
+                "arg": "ARGV",
+                "type": "string",
+                "default": "-O3 -lgmp -lgmpxx",
+                "desc": "additional flags to provide to the C++ compiler"
+              },
+              { "short": "r", "long": "run", "desc": "immediately invoke the resultant executable, then remove it" },
+              { "long": "no-run", "desc": "produce an executable, without running it" },
+              { "short": "k", "long": "keep", "desc": "with --run, don't remove the executable" },
+              { "long": "no-keep", "desc": "remove the executable" },
+              {
+                "short": "f",
+                "long": "format",
+                "arg": "FORMAT",
+                "type": "enum",
+                "desc": "input format (in case auto-detection misguesses)",
+                "values": [
+                  { "values": ["spw", "spitewaste"], "desc": "for Spitewaste (.spw extension)" },
+                  { "values": ["ws", "whitespace"], "desc": "for Whitespace (.ws extension)" },
+                  {
+                    "values": ["wsa", "wsassembly"],
+                    "desc": "for Whitespace assembly (preprocessed Spitewaste) (.wsa extension)"
+                  },
+                  { "values": ["asm", "assembly"], "desc": "for straight-line Whitespace opcodes (.asm extension)" }
+                ]
+              },
+              {
+                "short": "a",
+                "long": "aliases",
+                "arg": "ALIASES",
+                "type": "array",
+                "desc": "augment or override one or more of the default instruction mnemonics (e.g. pop:drop...)"
+              },
+              {
+                "short": "x",
+                "long": "coexist",
+                "desc": "allow multiple mnemonics to refer to the same instruction where possible"
+              },
+              {
+                "long": "no-coexist",
+                "desc": "aliases take precedence and render the original mnemonics invalid (default)"
+              }
+            ]
+          },
+          {
+            "name": "convert",
+            "desc": "Convert a Whitespace program from one format to another.",
+            "usage": "[-o <format> | --output-format=<format>] [-s <symbol_file> | --symbol-file=<symbol_file>] [-f <format> | --format=<format>] [-a <aliases> | --aliases=<aliases>] [-x | --coexist] [--no-coexist] <file> <output_file>",
+            "options": [
+              {
+                "short": "o",
+                "long": "output-format",
+                "arg": "OUTFMT",
+                "type": "enum",
+                "desc": "the format to convert the input to (defaults to the extension of <output_file>",
+                "values": [
+                  { "values": ["ws", "whitespace"], "desc": "for Whitespace" },
+                  { "values": ["wsa", "wsassembly"], "desc": "for Whitespace assembly (preprocessed Spitewaste)" },
+                  { "values": ["asm", "assembly"], "desc": "for straight-line Whitespace opcodes" },
+                  { "values": ["cpp", "codegen"], "desc": "for C++ (no compilation)" }
+                ]
+              },
+              {
+                "short": "s",
+                "long": "symbol-file",
+                "arg": "FILE",
+                "type": "file",
+                "desc": "a file to write the symbol table to (intended for use by other tools, namely Spiceweight). use % to write to $HOME/.cache/spitewaste directory, where Spiceweight knows to look."
+              },
+              {
+                "short": "f",
+                "long": "format",
+                "arg": "FORMAT",
+                "type": "enum",
+                "desc": "input format (in case auto-detection misguesses)",
+                "values": [
+                  { "values": ["spw", "spitewaste"], "desc": "for Spitewaste (.spw extension)" },
+                  { "values": ["ws", "whitespace"], "desc": "for Whitespace (.ws extension)" },
+                  {
+                    "values": ["wsa", "wsassembly"],
+                    "desc": "for Whitespace assembly (preprocessed Spitewaste) (.wsa extension)"
+                  },
+                  { "values": ["asm", "assembly"], "desc": "for straight-line Whitespace opcodes (.asm extension)" }
+                ]
+              },
+              {
+                "short": "a",
+                "long": "aliases",
+                "arg": "ALIASES",
+                "type": "array",
+                "desc": "augment or override one or more of the default instruction mnemonics (e.g. pop:drop...)"
+              },
+              {
+                "short": "x",
+                "long": "coexist",
+                "desc": "allow multiple mnemonics to refer to the same instruction where possible"
+              },
+              {
+                "long": "no-coexist",
+                "desc": "aliases take precedence and render the original mnemonics invalid (default)"
+              }
+            ]
+          },
+          {
+            "name": "docs",
+            "desc": "Search for matching terms in the documentation of the standard library.",
+            "usage": "[-s | --show-specs] [--no-show-specs] [-m | --match-all] [--no-match-all] [terms...]",
+            "options": [
+              {
+                "short": "s",
+                "long": "show-specs",
+                "desc": "display the in-situ specs showing correct outputs for given inputs"
+              },
+              { "long": "no-show-specs", "desc": "hide the in-situ specs" },
+              { "short": "m", "long": "match-all", "desc": "require that all provided search terms match" },
+              { "long": "no-match-all", "desc": "require that at least one provided search term matches" }
+            ]
+          },
+          {
+            "name": "exec",
+            "desc": "Execute a Whitespace program using the specified interpreter.",
+            "usage": "[-i <command> | --interpreter=<command>] [-s <symbol_file> | --symbol-file=<symbol_file>] [-f <format> | --format=<format>] [-a <aliases> | --aliases=<aliases>] [-x | --coexist] [--no-coexist] <file>",
+            "options": [
+              {
+                "short": "i",
+                "long": "interpreter",
+                "arg": "COMMAND",
+                "type": "string",
+                "default": "ws %",
+                "desc": "the command to execute for interpretation, with % in place of the filename"
+              },
+              {
+                "short": "s",
+                "long": "symbol-file",
+                "arg": "FILE",
+                "type": "file",
+                "desc": "a file to write the symbol table to (intended for use by other tools, namely Spiceweight). use % to write to $HOME/.cache/spitewaste directory, where Spiceweight knows to look."
+              },
+              {
+                "short": "f",
+                "long": "format",
+                "arg": "FORMAT",
+                "type": "enum",
+                "desc": "input format (in case auto-detection misguesses)",
+                "values": [
+                  { "values": ["spw", "spitewaste"], "desc": "for Spitewaste (.spw extension)" },
+                  { "values": ["ws", "whitespace"], "desc": "for Whitespace (.ws extension)" },
+                  {
+                    "values": ["wsa", "wsassembly"],
+                    "desc": "for Whitespace assembly (preprocessed Spitewaste) (.wsa extension)"
+                  },
+                  { "values": ["asm", "assembly"], "desc": "for straight-line Whitespace opcodes (.asm extension)" }
+                ]
+              },
+              {
+                "short": "a",
+                "long": "aliases",
+                "arg": "ALIASES",
+                "type": "array",
+                "desc": "augment or override one or more of the default instruction mnemonics (e.g. pop:drop...)"
+              },
+              {
+                "short": "x",
+                "long": "coexist",
+                "desc": "allow multiple mnemonics to refer to the same instruction where possible"
+              },
+              {
+                "long": "no-coexist",
+                "desc": "aliases take precedence and render the original mnemonics invalid (default)"
+              }
+            ]
+          },
+          {
+            "name": "help",
+            "desc": "Describe available commands or one specific command.",
+            "usage": "[<command>]",
+            "notes": "options: asm, compile, convert, docs, exec, help, image, version. TODO handle values not bound to flags."
+          },
+          {
+            "name": "image",
+            "desc": "Generate a PNG file of syntax-highlighted Whitespace.",
+            "usage": "[-c <scheme> | --colors=<scheme>] [-t <spaces> | --tab-width=<spaces>] [-m <pixels> | --margin=<pixels>] [-p <pixels> | --padding=<pixels>] [-s <pixels> | --cell-size=<pixels>] [-l <pixels> | --line-height=<pixels>] [-f <format> | --format=<format>] [-a <aliases> | --aliases=<aliases>] [-x | --coexist] [--no-coexist] <file> <output_file>",
+            "options": [
+              {
+                "short": "c",
+                "long": "colors",
+                "arg": "scheme|FILE",
+                "desc": "colors to use to highlight instructions \"semantically\""
+              },
+              {
+                "short": "t",
+                "long": "tab-width",
+                "arg": "SPACES",
+                "type": "int",
+                "default": 4,
+                "desc": "number of spaces that tabs should be displayed as"
+              },
+              {
+                "short": "m",
+                "long": "margin",
+                "arg": "PIXELS",
+                "type": "int",
+                "default": 20,
+                "desc": "amount of whitespace (😉) around the edge of the program"
+              },
+              {
+                "short": "p",
+                "long": "padding",
+                "arg": "PIXELS",
+                "type": "int",
+                "default": 1,
+                "desc": "amount of padding between individual elements of syntax"
+              },
+              {
+                "short": "s",
+                "long": "cell-size",
+                "arg": "PIXELS",
+                "type": "int",
+                "default": 24,
+                "desc": "height of individual cells; width will be half of this value"
+              },
+              {
+                "short": "l",
+                "long": "line-height",
+                "arg": "PIXELS",
+                "type": "int",
+                "default": 28,
+                "desc": "height of individual lines to influence vertical spacing"
+              },
+              {
+                "short": "f",
+                "long": "format",
+                "arg": "FORMAT",
+                "type": "enum",
+                "desc": "input format (in case auto-detection misguesses)",
+                "values": [
+                  { "values": ["spw", "spitewaste"], "desc": "for Spitewaste (.spw extension)" },
+                  { "values": ["ws", "whitespace"], "desc": "for Whitespace (.ws extension)" },
+                  {
+                    "values": ["wsa", "wsassembly"],
+                    "desc": "for Whitespace assembly (preprocessed Spitewaste) (.wsa extension)"
+                  },
+                  { "values": ["asm", "assembly"], "desc": "for straight-line Whitespace opcodes (.asm extension)" }
+                ]
+              },
+              {
+                "short": "a",
+                "long": "aliases",
+                "arg": "ALIASES",
+                "type": "array",
+                "desc": "augment or override one or more of the default instruction mnemonics (e.g. pop:drop...)"
+              },
+              {
+                "short": "x",
+                "long": "coexist",
+                "desc": "allow multiple mnemonics to refer to the same instruction where possible"
+              },
+              {
+                "long": "no-coexist",
+                "desc": "aliases take precedence and render the original mnemonics invalid (default)"
+              }
+            ]
+          },
           { "name": "version", "desc": "Display the current version of Spitewaste and exit." }
         ],
-        "notes": "TODO document options"
+        "notes": "TODO refactor shared options (--format, --aliases, and --coexist)"
       }
-    ]
+    ],
+    "notes": "Published as `spitewaste` Ruby gem"
   },
   {
     "name": "Spiceweight",
@@ -1071,7 +1423,8 @@
     "tags": ["interpreter", "assembler"],
     "date": "2019-04-28 11:26:08 +0900",
     "spec_version": "0.2",
-    "source": ["https://github.com/pocke/akaza"]
+    "source": ["https://github.com/pocke/akaza"],
+    "notes": "Published as `akaza` Ruby gem"
   },
   {
     "name": "whitespace-language-converter",
@@ -1119,7 +1472,7 @@
         "type": "assembler",
         "bin": "to_ws.py",
         "dependencies": ["Python 3"],
-        "usage": "python3 $0 [-h | --help] [-o <output_file> | --output <output_file>] <file>",
+        "usage": "python3 $0 [-h | --help] [-o <output_file> | --output=<output_file>] <file>",
         "output": "<output_file> or <file_no_ext>.ws",
         "options": [
           { "short": "h", "long": "help", "desc": "show this help message and exit" },
@@ -2148,7 +2501,8 @@
     "tags": ["interpreter"],
     "date": "2016-07-11 15:39:42 -0400",
     "spec_version": "0.2",
-    "source": ["https://github.com/dwayne/whitespace-ruby"]
+    "source": ["https://github.com/dwayne/whitespace-ruby"],
+    "notes": "Published as `whitespace-ruby` Ruby gem"
   },
   {
     "name": "whitespace.js",
@@ -3317,7 +3671,7 @@
       {
         "bin": "pyws.py",
         "dependencies": ["Python 3"],
-        "usage": "python3 $0 [-h | --help] [-A] [--IR] [--strict] [--style <style>] [--sep <sep>] [--arg-sep <arg_sep>] [--debug] [--traceall] $0 <file>",
+        "usage": "python3 $0 [-h | --help] [-A] [--IR] [--strict] [--style=<style>] [--sep=<sep>] [--arg-sep=<arg_sep>] [--debug] [--traceall] $0 <file>",
         "options": [
           { "short": "h", "long": "help", "desc": "show this help message and exit" },
           { "short": "A", "desc": "use assembler instead of compiler" },
@@ -4771,7 +5125,7 @@
         "bin": "src/esco",
         "dependencies": ["GMP"],
         "build": "./configure && make",
-        "usage": "$0 [-h | --help] [-t <machine_type> | --type <machine_type>] [-i <input_file> | --input <input_file>] [-o <output_file> | --output <output_file>] [-d | --debug] [-q | --quiet] <file>",
+        "usage": "$0 [-h | --help] [-t <machine_type> | --type=<machine_type>] [-i <input_file> | --input=<input_file>] [-o <output_file> | --output=<output_file>] [-d | --debug] [-q | --quiet] <file>",
         "options": [
           { "short": "h", "long": "help", "desc": "to read this" },
           {

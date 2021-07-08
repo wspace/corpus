@@ -167,7 +167,7 @@ Build and run errors are included.
   - whitespace.reb
 - ❌ ruby/alesiong
 - ❌ ruby/bossiernesto
-- ⚠️ ruby/collidedscope-spitewaste/*unspecified*
+- ruby/collidedscope-spitewaste/bin/spw
 - ❌ ruby/dwayne
 - ruby/nishiwakki/whitespace.rb
 - ❌ ruby/pocke-akaza

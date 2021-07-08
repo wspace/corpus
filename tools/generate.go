@@ -98,37 +98,42 @@ type Project struct {
 }
 
 type Command struct {
-	Type                string   `json:"type,omitempty"`
-	Bin                 string   `json:"bin,omitempty"`
-	Dependencies        []string `json:"dependencies,omitempty"`
-	InstallDependencies []string `json:"install_dependencies,omitempty"`
-	Build               string   `json:"build,omitempty"`
-	BuildErrors         string   `json:"build_errors,omitempty"`
-	Usage               string   `json:"usage,omitempty"`
-	RunErrors           string   `json:"run_errors,omitempty"`
-	Input               string   `json:"input,omitempty"`
-	Output              string   `json:"output,omitempty"`
-	Options             []struct {
-		Short       interface{} `json:"short,omitempty"` // -s
-		Long        string      `json:"long,omitempty"`  // --long
-		Bare        string      `json:"bare,omitempty"`  // bare
-		Arg         string      `json:"arg,omitempty"`
-		ArgRequired *bool       `json:"arg_required,omitempty"`
-		Type        string      `json:"type,omitempty"`
-		Default     interface{} `json:"default,omitempty"`
-		Min         interface{} `json:"min,omitempty"`
-		Desc        string      `json:"desc,omitempty"`
-		Values      []struct {
-			Values []string `json:"values,omitempty"`
-			Desc   string   `json:"desc,omitempty"`
-		} `json:"values,omitempty"`
-	} `json:"options,omitempty"`
-	OptionParse string `json:"option_parse,omitempty"`
-	Subcommands []struct {
-		Name string `json:"name"`
-		Desc string `json:"desc,omitempty"`
+	Type                string          `json:"type,omitempty"`
+	Bin                 string          `json:"bin,omitempty"`
+	Dependencies        []string        `json:"dependencies,omitempty"`
+	InstallDependencies []string        `json:"install_dependencies,omitempty"`
+	Build               string          `json:"build,omitempty"`
+	BuildErrors         string          `json:"build_errors,omitempty"`
+	Usage               string          `json:"usage,omitempty"`
+	RunErrors           string          `json:"run_errors,omitempty"`
+	Input               string          `json:"input,omitempty"`
+	Output              string          `json:"output,omitempty"`
+	Options             []CommandOption `json:"options,omitempty"`
+	OptionParse         string          `json:"option_parse,omitempty"`
+	Subcommands         []struct {
+		Name    string          `json:"name"`
+		Desc    string          `json:"desc,omitempty"`
+		Usage   string          `json:"usage,omitempty"`
+		Options []CommandOption `json:"options,omitempty"`
+		Notes   string          `json:"notes,omitempty"`
 	} `json:"subcommands,omitempty"`
 	Notes string `json:"notes,omitempty"`
+}
+
+type CommandOption struct {
+	Short       interface{} `json:"short,omitempty"` // -s
+	Long        string      `json:"long,omitempty"`  // --long
+	Bare        string      `json:"bare,omitempty"`  // bare
+	Arg         string      `json:"arg,omitempty"`
+	ArgRequired *bool       `json:"arg_required,omitempty"`
+	Type        string      `json:"type,omitempty"`
+	Default     interface{} `json:"default,omitempty"`
+	Min         interface{} `json:"min,omitempty"`
+	Desc        string      `json:"desc,omitempty"`
+	Values      []struct {
+		Values []string `json:"values,omitempty"`
+		Desc   string   `json:"desc,omitempty"`
+	} `json:"values,omitempty"`
 }
 
 type Instruction uint8
