@@ -58,6 +58,9 @@
 [submodule "cpp/dpohanlon-wsint"]
 	path = cpp/dpohanlon-wsint
 	url = https://github.com/wspace/dpohanlon-wsint
+[submodule "cpp/esco"]
+	path = cpp/esco
+	url = https://git.code.sf.net/p/esco/code
 [submodule "cpp/frmsaul-cupertino"]
 	path = cpp/frmsaul-cupertino
 	url = https://github.com/frmsaul/Cupertino-WhiteSpace-Interperter

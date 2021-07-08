@@ -32,6 +32,7 @@ Build and run errors are included.
   - test.rb
   - vm/run.rb
 - cpp/dpohanlon-wsint/bin/wsInt: `make`
+- cpp/esco/src/esco: `./configure && make`
 - cpp/frmsaul-cupertino/whitespace: `g++ -O3 -o whitespace src/*.cpp`
 - cpp/keirua-white/white: `g++ -O3 -Wall -o white main.cpp`
 - cpp/knmorgan/ws: `make CXXFLAGS='-Wall -pedantic -O3'`
