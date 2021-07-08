@@ -382,8 +382,10 @@ func formatLink(label, url string) string {
 
 var domainLabels = map[string]string{
 	"github.com":                 "GitHub",
-	"gitlab.com":                 "GitLab",
 	"gist.github.com":            "GitHub Gist",
+	"gitlab.com":                 "GitLab",
+	"sourceforge.net":            "SourceForge",
+	"git.code.sf.net":            "SourceForge",
 	"hackage.haskell.org":        "Hackage",
 	"en.wikipedia.org":           "Wikipedia",
 	"progopedia.com":             "Progopedia",
@@ -402,7 +404,7 @@ var domainLabels = map[string]string{
 }
 
 var subSites = map[string]struct{}{
-	"blogspot.com": {},
+	// "blogspot.com": {},
 }
 
 var pathPatterns = map[string]*regexp.Regexp{

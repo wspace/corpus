@@ -9,8 +9,8 @@ import (
 	"strings"
 
 	"github.com/andrewarchi/browser/jsonutil"
-	"github.com/andrewarchi/ws-corpus/tools"
 	"github.com/pelletier/go-toml"
+	"github.com/wspace/corpus/tools"
 )
 
 // Uses SPDX license IDs

@@ -24,9 +24,9 @@ building.md: projects.json tools/generate_building.jq
 	@jq -rf tools/generate_building.jq projects.json > building.md
 
 .PHONY: tidy_submodules
-tidy_submodules: projects.json tools/add_submodules.jq tools/format_gitmodules.sh
+tidy_submodules: projects.json tools/submodules/submodules.go tools/format_gitmodules.sh
 	@echo 'Tidying Git submodules'
-	@jq -rf tools/add_submodules.jq projects.json | sh
+	@go run tools/submodules/submodules.go
 	@tools/format_gitmodules.sh
 	@git add .gitmodules
 

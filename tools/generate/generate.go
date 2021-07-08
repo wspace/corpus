@@ -7,7 +7,7 @@ import (
 	"text/template"
 
 	"github.com/andrewarchi/browser/jsonutil"
-	"github.com/andrewarchi/ws-corpus/tools"
+	"github.com/wspace/corpus/tools"
 )
 
 func main() {

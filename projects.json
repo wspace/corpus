@@ -3671,11 +3671,7 @@
     "tags": ["interpreter"],
     "date": "2013-09-25 14:10:25 +0200",
     "spec_version": "0.3",
-    "source": [
-      "https://github.com/mcolom/whitespace",
-      "https://sourceforge.net/projects/whitespacetool/",
-      "https://git.code.sf.net/p/whitespacetool/code"
-    ],
+    "source": ["https://github.com/mcolom/whitespace", "https://sourceforge.net/projects/whitespacetool/"],
     "assembly": {
       "instructions": {
         "push": ["PUSH"],

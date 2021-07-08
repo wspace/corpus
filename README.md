@@ -137,7 +137,7 @@ the Whitespace programming language.
 | [wspacego](go/yshr-wspacego)                   | Yosihiro Isago   | Go         | interpreter, disassembler, mapping | 2013-12-27 | 0.3 | [GitHub](https://github.com/135yshr/wspacego), [GitLab](https://gitlab.com/yshr135/wspacego) |
 | [wvm](python/apua-wvm)                         | Apua             | Python     | interpreter, mapping, programs | 2013-11-24 | 0.3 | [GitHub](https://github.com/apua/whitespace) |
 | [wseditor](java/yuukiaria-wseditor)            | YuukiARIA        | Java       | IDE          | 2013-11-21 | -   | [GitHub](https://github.com/YuukiARIA/wseditor) |
-| [Whitespace tool](python/mcolom)               | Miguel Colom     | Python     | interpreter  | 2013-09-25 | 0.3 | [GitHub](https://github.com/mcolom/whitespace), [sourceforge.net](https://sourceforge.net/projects/whitespacetool/), [git.code.sf.net](https://git.code.sf.net/p/whitespacetool/code) |
+| [Whitespace tool](python/mcolom)               | Miguel Colom     | Python     | interpreter  | 2013-09-25 | 0.3 | [GitHub](https://github.com/mcolom/whitespace), [SourceForge](https://sourceforge.net/projects/whitespacetool/) |
 | [whitespace-llvm](cpp/tycho-whitespace-llvm)   | Tycho Bickerstaff | C++, LLVM | compiler, JIT, optimizer, programs | 2013-08-31 | 0.3 | [GitHub](https://github.com/worktycho/whitespace-llvm) |
 | [Whitespace-JS](coffeescript/ehrlichbryan)     | Bryan Ehrlich    | CoffeeScript | interpreter, assembler | 2013-08-14 | 0.3 | [GitHub](https://github.com/adotout/whitespace-js) |
 | [WS2JS](javascript/luilak-ws2js)               | Luilak           | JavaScript | transpiler   | 2013-06-03 | 0.3 | [GitHub](https://github.com/Luilak/WS2JS) |
