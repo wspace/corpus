@@ -4387,7 +4387,7 @@
         "readi": ["readi"]
       }
     },
-    "notes": "TODO document macros"
+    "notes": "TODO document macros. Local labels start with `.`."
   },
   {
     "name": "whitespace-interpreter",
@@ -5081,16 +5081,34 @@
     "authors": ["Brian Dickens (Hostile Fork)"],
     "license": "MIT",
     "languages": ["Rebol", "Ren-C"],
-    "tags": ["interpreter"],
+    "tags": ["interpreter", "mapping"],
     "date": "2009-10-08",
     "spec_version": "0.3",
     "source": ["https://github.com/hostilefork/rebol-whitespacers", "https://github.com/hostilefork/whitespacers"],
+    "mappings": [{ "space": "space", "tab": "tab", "lf": "lf", "spaces_between": true, "extension": "wsw" }],
     "commands": [
       {
         "type": "interpreter",
         "bin": "whitespace.reb",
         "dependencies": ["Ren-C"],
         "usage": "r3 $0 <file>",
+        "options": [
+          {
+            "short": "v",
+            "long": "verbose",
+            "arg": "level",
+            "type": "enum",
+            "desc": "Verbosity level for debug output",
+            "values": [
+              { "values": ["0"], "desc": "(default)" },
+              { "values": ["1"] },
+              { "values": ["2"] },
+              { "values": ["3"] }
+            ]
+          },
+          { "long": "strict", "desc": "Only allow `.ws`, `.wsa`, and `.wsw` formats" }
+        ],
+        "option_parse": "manual",
         "notes": "Prints instructions while executing"
       },
       {
