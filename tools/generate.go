@@ -85,13 +85,14 @@ type Project struct {
 		Extension                 string            `json:"extension,omitempty"`
 	} `json:"assembly,omitempty"`
 	Mappings []struct {
-		Space         string `json:"space"`
-		Tab           string `json:"tab"`
-		LF            string `json:"lf"`
-		SpacesBetween *bool  `json:"spaces_between,omitempty"`
-		BeforeSTL     *bool  `json:"before_stl,omitempty"`
-		IgnoreCase    *bool  `json:"ignore_case,omitempty"`
-		Extension     string `json:"extension,omitempty"`
+		Space             string `json:"space"`
+		Tab               string `json:"tab"`
+		LF                string `json:"lf"`
+		SpacesBetween     *bool  `json:"spaces_between,omitempty"`
+		LineCommentPrefix string `json:"line_comment_prefix,omitempty"`
+		BeforeSTL         *bool  `json:"before_stl,omitempty"`
+		IgnoreCase        *bool  `json:"ignore_case,omitempty"`
+		Extension         string `json:"extension,omitempty"`
 	} `json:"mappings,omitempty"`
 	Commands []Command `json:"commands,omitempty"`
 	Notes    string    `json:"notes,omitempty"`

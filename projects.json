@@ -5085,7 +5085,16 @@
     "date": "2009-10-08",
     "spec_version": "0.3",
     "source": ["https://github.com/hostilefork/rebol-whitespacers", "https://github.com/hostilefork/whitespacers"],
-    "mappings": [{ "space": "space", "tab": "tab", "lf": "lf", "spaces_between": true, "extension": "wsw" }],
+    "mappings": [
+      {
+        "space": "space",
+        "tab": "tab",
+        "lf": "lf",
+        "spaces_between": true,
+        "line_comment_prefix": ";",
+        "extension": "wsw"
+      }
+    ],
     "commands": [
       {
         "type": "interpreter",
@@ -5109,7 +5118,7 @@
           { "long": "strict", "desc": "Only allow `.ws`, `.wsa`, and `.wsw` formats" }
         ],
         "option_parse": "manual",
-        "notes": "Prints instructions while executing"
+        "notes": "File path is relative to whitespace.reb, not PWD"
       },
       {
         "type": "interpreter",
