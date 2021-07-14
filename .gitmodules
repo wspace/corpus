@@ -403,6 +403,9 @@
 [submodule "python/stephenchappell"]
 	path = python/stephenchappell
 	url = https://github.com/wspace/stephenchappell-python
+[submodule "python/umutoztunc-whitesymex"]
+	path = python/umutoztunc-whitesymex
+	url = https://github.com/umutoztunc/whitesymex
 [submodule "python/wasabili"]
 	path = python/wasabili
 	url = https://gist.github.com/wasabili/708773

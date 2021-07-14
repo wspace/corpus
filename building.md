@@ -52,10 +52,12 @@ Build and run errors are included.
 - ⚠️ cpp/tycho-whitespace-llvm/wspace-jit: `make` Requires LLVM
 - cpp/yuukiaria/bin/ws: `mkdir -p bin && make TARGET=../bin/ws -C src`
 - crystal/collidedscope-spiceweight/spwt: `make`
+- ❌ csharp/colchicus
 - csharp/denislabrecque/WhitespaceInterpreter.exe: `mcs -debug -out:WhitespaceInterpreter.exe WhitespaceInterpreter/*.cs`
 - csharp/littlebughunter-assembler/bin/Debug/WhitespaceAssembler.exe: `msbuild /p:Configuration=Debug WhitespaceAssembler.csproj`
 - csharp/nicolasff-spacesharp/wsc.exe: `make`
 - ⚠️ csharp/north-projectone/The-Code/WhitespaceInterpreter/bin/Debug/WhitespaceInterpreter.exe: `msbuild /p:Configuration=Debug The-Code/WhitespaceInterpreter/WhitespaceInterpreter.csproj` The Carbon driver has not been ported to 64-bit, so very few parts of Windows.Forms work properly
+- ❌ csharp/nutcrack-whiteplanes
 - ⚠️ csharp/reflash/WhiteSpaceInterpretator/bin/Debug/WhiteSpaceInterpretator.exe: `msbuild /p:Configuration=Debug WhiteSpaceInterpretator/WhiteSpaceInterpretator.csproj` Mono does not implement WPF APIs
 - csharp/rolisoft-esoteric/bin/Debug/EsotericCodeInterpreter.exe: `msbuild /p:Configuration=Debug\;AssemblyName=EsotericCodeInterpreter EsotericCodeInterpreter.csproj`
 - ❌ docker/bensuperpc
@@ -158,6 +160,7 @@ Build and run errors are included.
 - python/meand/compile.py
 - python/mikecat/whitespace.py
 - python/mildsunrise/whitespace.py
+- ⚠️ python/nutcrack-whiteplanes/*unspecified*: No entrypoint
 - python/phlip-pywhitespace/main.py
 - ⚠️ python/qwhxm-baudelaire/backend/baudelaire-whitespace.py: Needs AWS Lambda entrypoint
 - python/rumaxwell/entrance.py
@@ -166,6 +169,7 @@ Build and run errors are included.
   - ⚠️ Assembler.py: msvcrt module only exists on Windows
   - Helpers.py
   - ⚠️ Interpreter.py: msvcrt module only exists on Windows
+- ⚠️ python/umutoztunc-whitesymex/whitesymex/cli.py: No module named whitesymex
 - python/wasabili/Whitespace.py
 - python/yasn-whitepy/whitepycli
 - r/bmazoure/R/whitespace.R

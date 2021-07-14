@@ -12,6 +12,30 @@
     "relations": [{ "type": "library", "id": "c/rdebath" }]
   },
   {
+    "name": "whitesymex",
+    "path": "python/umutoztunc-whitesymex",
+    "authors": ["Umut Barış Öztunç"],
+    "license": "MIT",
+    "languages": ["Python"],
+    "tags": ["symbolic executor", "programs"],
+    "date": "2021-05-30 11:23:21 +0000",
+    "spec_version": "0.3",
+    "source": ["https://github.com/umutoztunc/whitesymex"],
+    "package": { "name": "whitesymex", "manager": "PyPI", "url": "https://pypi.org/project/whitesymex/" },
+    "commands": [
+      {
+        "type": "symbolic executor",
+        "bin": "whitesymex/cli.py",
+        "dependencies": ["Python 3", "Z3"],
+        "install_dependencies": ["pip3 install z3-solver"],
+        "run_errors": "No module named whitesymex",
+        "option_parse": "Python argparse",
+        "notes": "TODO document options"
+      }
+    ],
+    "notes": "Uses Z3"
+  },
+  {
     "name": "Interpreter",
     "path": "python/ganeshsankaran",
     "authors": ["Ganesh Sankaran"],
@@ -311,6 +335,7 @@
     "date": "2020-12-11 23:54:53 -0500",
     "spec_version": "0.3",
     "source": ["https://github.com/collidedscope/spitewaste"],
+    "package": { "name": "spitewaste", "manager": "RubyGems", "url": "https://rubygems.org/gems/spitewaste" },
     "whitespace": { "nonstandard": [{ "name": "shell", "seq": "TLL" }, { "name": "eval", "seq": "LLT" }] },
     "assembly": {
       "instructions": {
@@ -678,8 +703,7 @@
         ],
         "notes": "TODO refactor shared options (--format, --aliases, and --coexist)"
       }
-    ],
-    "notes": "Published as `spitewaste` Ruby gem"
+    ]
   },
   {
     "name": "Spiceweight",
@@ -743,6 +767,7 @@
         "dependencies": ["Python 3"],
         "usage": "python3 $0 [-o <output_file> | --output=<output_file>] [-v | --verbose] <c_file> <whitespace_file>",
         "options": [
+          { "short": "h", "long": "help", "desc": "show this help message and exit" },
           { "short": "o", "long": "output", "desc": "output file" },
           { "short": "v", "long": "verbose", "desc": "print minified version on std" }
         ],
@@ -1445,6 +1470,7 @@
     "date": "2019-04-28 11:26:08 +0900",
     "spec_version": "0.2",
     "source": ["https://github.com/pocke/akaza"],
+    "package": { "name": "akaza", "manager": "RubyGems", "url": "https://rubygems.org/gems/akaza" },
     "commands": [
       {
         "bin": "exe/akaza",
@@ -1464,8 +1490,7 @@
         "usage": "ruby $0 <text>",
         "output": "stdout"
       }
-    ],
-    "notes": "Published as `akaza` Ruby gem"
+    ]
   },
   {
     "name": "whitespace-language-converter",
@@ -1614,6 +1639,7 @@
     "date": "2018-11-22 18:48:52 +0000",
     "spec_version": "-",
     "source": ["https://github.com/freyamade/hohoho"],
+    "package": { "name": "hohoho", "manager": "PyPI", "url": "https://pypi.org/project/hohoho/" },
     "relations": [{ "type": "library", "id": "python/dwayne" }],
     "mappings": [{ "space": "snow", "tab": "hohoho", "lf": "\n", "spaces_between": true, "extension": "ho" }],
     "commands": [
@@ -2310,6 +2336,7 @@
     "date": "2017-01-31 16:21:48 +0000",
     "spec_version": "0.2",
     "source": ["https://github.com/yasn77/whitepy", "https://opensourcelibs.com/lib/whitepy"],
+    "package": { "name": "whitepy", "manager": "PyPI", "url": "https://pypi.org/project/whitepy/" },
     "commands": [
       {
         "type": "interpreter",
@@ -2325,7 +2352,7 @@
         "option_parse": "Python click"
       }
     ],
-    "notes": "Published on pip as `whitepy`"
+    "notes": "Written for final Open University project (TM470)"
   },
   {
     "name": "WhitespaceGenerator",
@@ -2438,6 +2465,7 @@
     "date": "2016-08-31 05:09:16 -0400",
     "spec_version": "0.2",
     "source": ["https://github.com/dwayne/whitespace-python", "https://pypi.org/project/whitespace/"],
+    "package": { "name": "whitespace", "manager": "PyPI", "url": "https://pypi.org/project/whitespace/" },
     "commands": [
       {
         "bin": "whitespace",
@@ -2447,8 +2475,7 @@
         "options": [{ "short": "h", "long": "help", "desc": "show this help message and exit" }],
         "option_parse": "Python argparse"
       }
-    ],
-    "notes": "Published on pip as `whitespace`"
+    ]
   },
   {
     "name": "ws-frontend",
@@ -2545,6 +2572,11 @@
     "date": "2016-07-11 15:39:42 -0400",
     "spec_version": "0.2",
     "source": ["https://github.com/dwayne/whitespace-ruby"],
+    "package": {
+      "name": "whitespace-ruby",
+      "manager": "RubyGems",
+      "url": "https://rubygems.org/gems/whitespace-ruby"
+    },
     "commands": [
       {
         "type": "interpreter",
@@ -2558,8 +2590,7 @@
         ],
         "option_parse": "Ruby optparse"
       }
-    ],
-    "notes": "Published as `whitespace-ruby` Ruby gem"
+    ]
   },
   {
     "name": "whitespace.js",
@@ -2746,6 +2777,20 @@
     ]
   },
   {
+    "name": "whiteplanes",
+    "path": "python/nutcrack-whiteplanes",
+    "authors": ["Takuya Katsurada"],
+    "license": "MIT",
+    "languages": ["Python"],
+    "tags": ["interpreter"],
+    "date": "2016-05-13 17:21:20 +0000",
+    "spec_version": "0.3",
+    "source": ["https://pypi.org/project/whiteplanes/", "https://whiteplanes.github.io/"],
+    "package": { "name": "whiteplanes", "manager": "PyPI", "url": "https://pypi.org/project/whiteplanes/" },
+    "commands": [{ "type": "interpreter", "dependencies": ["Python 3"], "run_errors": "No entrypoint" }],
+    "notes": "GitHub repo and GitHub Pages site are offline. Date from earliest file in archive."
+  },
+  {
     "name": "Abyad",
     "path": "python/kareeeeem-abyad",
     "authors": ["Mohammed Kareem"],
@@ -2804,6 +2849,19 @@
     "date": "2016-04-29 21:05:24 +0800",
     "spec_version": "0.3",
     "source": ["https://github.com/kanra1412/whitespace-interpreter"]
+  },
+  {
+    "name": "whiteplanes.cs",
+    "path": "csharp/nutcrack-whiteplanes",
+    "authors": ["Takuya Katsurada"],
+    "license": "unknown",
+    "languages": ["C#"],
+    "tags": ["interperter"],
+    "date": "2016-04-15 08:28:35 +0000",
+    "spec_version": "unknown",
+    "source": ["https://www.nuget.org/packages/whiteplanes/", "https://github.com/whiteplanes/whiteplanes.cs"],
+    "package": { "name": "whiteplanes", "manager": "NuGet", "url": "https://www.nuget.org/packages/whiteplanes/" },
+    "notes": "GitHub repo is offline. Date is package last update date."
   },
   {
     "name": "whitespace-compiler",
@@ -2940,6 +2998,19 @@
     "date": "2015-12-11 15:56:06 +0000",
     "spec_version": "0.2",
     "source": ["https://github.com/polyglotpiglet/Whitespacing"]
+  },
+  {
+    "name": "whitespace",
+    "path": "csharp/colchicus",
+    "authors": ["Colchicus"],
+    "license": "unknown",
+    "languages": ["C#"],
+    "tags": ["interpreter"],
+    "date": "2015-11-19 10:01:53 +0000",
+    "spec_version": "unknown",
+    "source": ["https://www.nuget.org/packages/whitespace/", "https://github.com/colchicus/whitespace"],
+    "package": { "name": "whitespace", "manager": "NuGet", "url": "https://www.nuget.org/packages/whitespace/" },
+    "notes": "GitHub repo is offline. Date is package last update date."
   },
   {
     "name": "callisto",
@@ -4748,9 +4819,13 @@
     "source": [
       "https://github.com/haroldl/whitespace-nd",
       "https://web.archive.org/web/20141011193201/http://compsoc.dur.ac.uk/archives/whitespace/2011-March/000080.html",
-      "https://harold.hotelling.net/shuffle.html",
-      "https://hackage.haskell.org/package/whitespace-0.4"
+      "https://harold.hotelling.net/shuffle.html"
     ],
+    "package": {
+      "name": "whitespace",
+      "manager": "Hackage",
+      "url": "https://hackage.haskell.org/package/whitespace-0.4"
+    },
     "relations": [{ "type": "fork", "id": "haskell/edwinb-wspace-0.3" }],
     "whitespace": { "nonstandard": [{ "name": "shuffle", "seq": "STTS" }] },
     "commands": [

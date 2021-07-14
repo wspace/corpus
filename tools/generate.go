@@ -20,7 +20,12 @@ type Project struct {
 	Date        string   `json:"date"`
 	SpecVersion string   `json:"spec_version"`
 	Source      []string `json:"source"`
-	Relations   []struct {
+	Package     *struct {
+		Name    string `json:"name"`
+		Manager string `json:"manager"`
+		URL     string `json:"url"`
+	} `json:"package,omitempty"`
+	Relations []struct {
 		Type string `json:"type"`
 		ID   string `json:"id"`
 	} `json:"relations,omitempty"`
