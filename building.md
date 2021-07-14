@@ -169,7 +169,7 @@ Build and run errors are included.
   - ⚠️ Assembler.py: msvcrt module only exists on Windows
   - Helpers.py
   - ⚠️ Interpreter.py: msvcrt module only exists on Windows
-- ⚠️ python/umutoztunc-whitesymex/whitesymex/cli.py: No module named whitesymex
+- python/umutoztunc-whitesymex/whitesymex/cli.py
 - python/wasabili/Whitespace.py
 - python/yasn-whitepy/whitepycli
 - r/bmazoure/R/whitespace.R

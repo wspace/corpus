@@ -8,7 +8,7 @@ the Whitespace programming language.
 | Name                                           | Authors          | Languages  | Tags         | Date       | Spec | Source |
 | ---------------------------------------------- | ---------------- | ---------- | ------------ | ---------- | ---- | ------ |
 | [docker-whitespace](docker/bensuperpc)         | Bensuperpc       | Docker     | builder      | 2021-06-10 | 0.3 | [GitHub](https://github.com/bensuperpc/docker-whitespace) |
-| [whitesymex](python/umutoztunc-whitesymex)     | Umut Barış Öztunç | Python    | symbolic executor, programs | 2021-05-30 | 0.3 | [GitHub](https://github.com/umutoztunc/whitesymex) |
+| [whitesymex](python/umutoztunc-whitesymex)     | Umut Barış Öztunç | Python    | symbolic executor, programs | 2021-05-30 | 0.3 | [GitHub](https://github.com/umutoztunc/whitesymex), [whitesymex.readthedocs.io](https://whitesymex.readthedocs.io/) |
 | [Interpreter](python/ganeshsankaran)           | Ganesh Sankaran  | Python     | wsa interpreter, programs | 2021-05-29 | 0.2 | [GitHub](https://github.com/ganeshsankaran/interpreter) |
 | [wslib](whitespace/andrewarchi-wslib)          | Andrew Archibald | Whitespace | standard library, programs, assembler | 2021-05-24 | 0.3 | [GitHub](https://github.com/andrewarchi/wslib) |
 | [wsjq](jq/andrewarchi-wsjq)                    | Andrew Archibald | jq         | interpreter, debugger, disassembler | 2021-05-02 | 0.3 | [GitHub](https://github.com/andrewarchi/wsjq) |
