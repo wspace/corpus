@@ -6,6 +6,7 @@ This is a list of executables that have building and running documented.
 Build and run errors are included.
 
 - c/bvisness/whitespace: `make`
+- c/cedricschwyter/interpreter: `cmake . && make`
 - c/koturn/whitespace.out: `make`
 - c/kspalaiologos-asm2ws/wsi: `./configure --with-target=release && make -j4 wsi`
 - c/meth0dz/whitespace: `gcc -O3 -Wall -o whitespace whitespace.c`

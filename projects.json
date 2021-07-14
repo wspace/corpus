@@ -202,7 +202,7 @@
       },
       "usage": ["enum"]
     },
-    "commands": [{ "bin": "ws.py", "dependencies": ["Python 3"], "usage": "python3 $0 < <file>" }],
+    "commands": [{ "bin": "ws.py", "dependencies": ["Python 3"], "usage": "python3 $0 < <file>", "input": "stdin" }],
     "notes": "Only implements push, print, printi, and end"
   },
   {
@@ -752,6 +752,26 @@
     "notes": "Polyglot formatter for C and Whitespace"
   },
   {
+    "name": "whitespace-interpreter",
+    "path": "c/cedricschwyter",
+    "authors": ["Cedric Schwyter"],
+    "license": "GPL-3.0",
+    "languages": ["C"],
+    "tags": ["interpreter", "programs"],
+    "date": "2020-10-09 14:27:42 +0200",
+    "spec_version": "0.2",
+    "source": ["https://github.com/D3PSI/whitespace-interpreter"],
+    "commands": [
+      {
+        "type": "interpreter",
+        "bin": "interpreter",
+        "build": "cmake . && make",
+        "usage": "$0 < <file>",
+        "input": "stdin"
+      }
+    ]
+  },
+  {
     "name": "Whitespace Language - Online Translator/Interpreter",
     "authors": ["dCode"],
     "license": "MIT (JavaScript) and proprietary (PHP)",
@@ -1020,6 +1040,7 @@
         "bin": "src/textToWhitespace.py",
         "dependencies": ["Python 3"],
         "usage": "python3 $0 < <file>",
+        "input": "stdin",
         "notes": "Only converts first line of input"
       }
     ]
@@ -1765,6 +1786,7 @@
         "bin": "wsInterpreter",
         "build": "gcc -O3 -Wall -o wsInterpreter wsInterpreter.c",
         "usage": "$0 < <file>",
+        "input": "stdin",
         "notes": "Only implements push, dup, printc, and printi"
       }
     ],
@@ -2262,7 +2284,8 @@
         "bin": "flex-bison/262_267_256/ws",
         "dependencies": ["make", "Flex", "Bison"],
         "build": "make",
-        "usage": "$0 < <file>"
+        "usage": "$0 < <file>",
+        "input": "stdin"
       }
     ]
   },
@@ -3552,7 +3575,8 @@
         "type": "interpreter",
         "bin": "space",
         "build": "g++ -O3 -o space space.cpp",
-        "usage": "$0 < <file>"
+        "usage": "$0 < <file>",
+        "input": "stdin"
       }
     ]
   },
@@ -4830,7 +4854,8 @@
         "type": "interpreter",
         "bin": "Whitespace.py",
         "dependencies": ["Python 2"],
-        "usage": "python2 $0 < <file>"
+        "usage": "python2 $0 < <file>",
+        "input": "stdin"
       }
     ],
     "notes": "store, retrieve, call, and ret are not implemented"

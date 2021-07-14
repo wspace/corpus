@@ -1,6 +1,9 @@
 [submodule "c/bvisness"]
 	path = c/bvisness
 	url = https://github.com/bvisness/whitespace
+[submodule "c/cedricschwyter"]
+	path = c/cedricschwyter
+	url = https://github.com/D3PSI/whitespace-interpreter
 [submodule "c/koturn"]
 	path = c/koturn
 	url = https://github.com/koturn/Whitespace

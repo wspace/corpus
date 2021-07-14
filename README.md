@@ -18,6 +18,7 @@ the Whitespace programming language.
 | [Spitewaste](ruby/collidedscope-spitewaste)    | Collided Scope   | Ruby       | language, assembler, disassembler, syntax highlighter, programs, stdlib | 2020-12-11 | 0.3 | [GitHub](https://github.com/collidedscope/spitewaste) |
 | [Spiceweight](crystal/collidedscope-spiceweight) | Collided Scope | Crystal    | interpreter, benchmarking, programs | 2020-12-11 | 0.3 | [GitHub](https://github.com/collidedscope/spiceweight) |
 | [Whitespacy](python/francoisrozet-whitespacy)  | François Rozet   | Python     | polyglot formatter | 2020-12-08 | - | [GitHub](https://github.com/francois-rozet/whitespacy) |
+| [whitespace-interpreter](c/cedricschwyter)     | Cedric Schwyter  | C          | interpreter, programs | 2020-10-09 | 0.2 | [GitHub](https://github.com/D3PSI/whitespace-interpreter) |
 | Whitespace Language - Online Translator/Interpreter | dCode       | JavaScript, PHP | interpreter, text to Whitespace, mapping | 2020-09-23 | 0.2 | [dCode](https://www.dcode.fr/whitespace-language) |
 | [rustws](rust/luminight)                       | Luminight        | Rust       | library, mapping | 2020-08-04 | 0.2 | [GitHub](https://github.com/Luminighty/rustws) |
 | [Whitespace](javascript/kosei)                 | kosei28          | JavaScript | interpreter  | 2020-08-03 | 0.2 | [GitHub](https://github.com/kosei28/Whitespace) |
