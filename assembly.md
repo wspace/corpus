@@ -37,10 +37,10 @@ instructions, ranked by popularity.
 ## Need documentation
 
 - go/yshr-wspacego
+- haskell/burghard-wsa
 - haskell/helvm-helpa
 - haskell/helvm-wsa
 - java/vyo-kairos
 - javascript/wdalmut
 - kotlin/ze-space
 - scala/dashlambda-eso
-- “wsa” by Oliver Burghard

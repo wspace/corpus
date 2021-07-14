@@ -9,7 +9,7 @@
     "date": "2021-06-10 00:32:32 +0200",
     "spec_version": "0.3",
     "source": ["https://github.com/bensuperpc/docker-whitespace"],
-    "notes": "Builds c/rdebath"
+    "relations": [{ "type": "library", "id": "c/rdebath" }]
   },
   {
     "name": "Interpreter",
@@ -774,14 +774,14 @@
   {
     "name": "Whitespace Language - Online Translator/Interpreter",
     "authors": ["dCode"],
-    "license": "MIT (JavaScript) and proprietary (PHP)",
+    "license": "proprietary",
     "languages": ["JavaScript", "PHP"],
     "tags": ["interpreter", "text to Whitespace", "mapping"],
     "date": "2020-09-23",
     "spec_version": "0.2",
     "source": ["https://www.dcode.fr/whitespace-language"],
-    "mappings": [{ "space": "S", "tab": "T", "lf": "L", "before_stl": true }],
-    "notes": "Interpreter uses javascript/luilak-ws2js, text to Whitespace converter is proprietary PHP"
+    "relations": [{ "type": "library", "id": "javascript/luilak-ws2js" }],
+    "mappings": [{ "space": "S", "tab": "T", "lf": "L", "before_stl": true }]
   },
   {
     "name": "rustws",
@@ -1273,8 +1273,8 @@
     "date": "2019-07-25 16:02:44 +1000",
     "spec_version": "0.3",
     "source": ["https://github.com/loklaan/zerowidth-lang"],
-    "mappings": [{ "space": "&#8203;", "tab": "&#8204;", "lf": "\n", "extension": "zw" }],
-    "notes": "Fork of vii5ard/whitespace"
+    "relations": [{ "type": "fork", "id": "javascript/vii5ard-whitelips-ide" }],
+    "mappings": [{ "space": "&#8203;", "tab": "&#8204;", "lf": "\n", "extension": "zw" }]
   },
   {
     "name": "WSC",
@@ -1614,6 +1614,7 @@
     "date": "2018-11-22 18:48:52 +0000",
     "spec_version": "-",
     "source": ["https://github.com/freyamade/hohoho"],
+    "relations": [{ "type": "library", "id": "python/dwayne" }],
     "mappings": [{ "space": "snow", "tab": "hohoho", "lf": "\n", "spaces_between": true, "extension": "ho" }],
     "commands": [
       {
@@ -1629,8 +1630,7 @@
         "option_parse": "Python argparse",
         "notes": "Interprets program when --from-ws not given. On --from-ws, writes output to <file_no_ext>.ho"
       }
-    ],
-    "notes": "Uses whitespace-python (python/dwayne)"
+    ]
   },
   {
     "name": "whitespace-interpreter",
@@ -2003,7 +2003,7 @@
     "date": "2018-02-14 07:32:38 +1000",
     "spec_version": "0.3",
     "source": ["https://github.com/loklaan/whitespace-lang"],
-    "notes": "Fork of vii5ard/whitespace"
+    "relations": [{ "type": "fork", "id": "javascript/vii5ard-whitelips-ide" }]
   },
   {
     "name": "whitespace.py",
@@ -2371,6 +2371,7 @@
     "date": "2016-11-17 18:52:26 -0500",
     "spec_version": "0.3",
     "source": ["https://github.com/alecGraves/whitespac3"],
+    "relations": [{ "type": "fork", "id": "python/mcolom" }],
     "assembly": {
       "instructions": {
         "push": ["PUSH"],
@@ -2414,8 +2415,7 @@
         ],
         "option_parse": "Python optparse"
       }
-    ],
-    "notes": "Based on python/mcolom"
+    ]
   },
   {
     "name": "WhiteSpaceInterpreter",
@@ -2878,14 +2878,14 @@
     "date": "2016-03-05 16:39:05 +0800",
     "spec_version": "0.3",
     "source": ["https://github.com/alesiong/whitespace-ruby"],
+    "relations": [{ "type": "base", "id": "ruby/conrad" }],
     "commands": [
       {
         "type": "program builder",
         "bin": "wsv.rb",
         "notes": "Import into Ruby program to translate to Whitespace"
       }
-    ],
-    "notes": "Forked from Wayne Conrad's Ruby programs"
+    ]
   },
   {
     "name": "Whitespace support in Atom",
@@ -3785,6 +3785,7 @@
     "date": "2014-07-18 09:13:55 +0900",
     "spec_version": "0.3",
     "source": ["https://github.com/faultier/albino"],
+    "relations": [{ "type": "library", "id": "rust/faultier-whitebase" }],
     "assembly": {
       "instructions": {
         "push": ["PUSH"],
@@ -3845,7 +3846,7 @@
         "option_parse": "manual"
       }
     ],
-    "notes": "Uses faultier/whitebase. TODO document options."
+    "notes": "TODO document options"
   },
   {
     "name": "Whitespace-LLVM",
@@ -4750,6 +4751,7 @@
       "https://harold.hotelling.net/shuffle.html",
       "https://hackage.haskell.org/package/whitespace-0.4"
     ],
+    "relations": [{ "type": "fork", "id": "haskell/edwinb-wspace-0.3" }],
     "whitespace": { "nonstandard": [{ "name": "shuffle", "seq": "STTS" }] },
     "commands": [
       {
@@ -4759,8 +4761,7 @@
         "build_errors": "Needs changes for latest Haskell",
         "usage": "$0 <file>"
       }
-    ],
-    "notes": "Fork of reference interpreter"
+    ]
   },
   {
     "name": "white-scheme",
@@ -5380,6 +5381,7 @@
   },
   {
     "name": "wspace 0.3",
+    "path": "haskell/edwinb-wspace-0.3",
     "authors": ["Edwin Brady"],
     "license": "GPL-2.0-or-later",
     "languages": ["Haskell", "Emacs Lisp"],
@@ -5394,6 +5396,7 @@
   },
   {
     "name": "wsinterws",
+    "path": "whitespace/burghard-wsinterws",
     "authors": ["Oliver Burghard"],
     "license": "none",
     "languages": ["Whitespace"],
@@ -5408,6 +5411,7 @@
   },
   {
     "name": "whitespace-ruby",
+    "path": "ruby/conrad",
     "authors": ["Wayne E. Conrad"],
     "license": "GPL-2.0-or-later",
     "languages": ["Ruby"],
@@ -5421,6 +5425,7 @@
   },
   {
     "name": "whitespace.pl",
+    "path": "perl/koebl",
     "authors": ["Mike Kölbl"],
     "license": "GPL-2.0-or-later",
     "languages": ["Perl"],
@@ -5434,6 +5439,7 @@
   },
   {
     "name": "whitespace-asm",
+    "path": "ruby/conrad-asm",
     "authors": ["Wayne E. Conrad"],
     "license": "GPL-2.0-or-later",
     "languages": ["Ruby"],
@@ -5474,6 +5480,7 @@
   },
   {
     "name": "whitespace-disassem",
+    "path": "ruby/conrad-disassem",
     "authors": ["Wayne E. Conrad"],
     "license": "GPL-2.0-or-later",
     "languages": ["Ruby"],
@@ -5513,6 +5520,7 @@
   },
   {
     "name": "wsa",
+    "path": "haskell/burghard-wsa",
     "authors": ["Oliver Burghard"],
     "license": "none",
     "languages": ["Haskell"],
@@ -5528,6 +5536,7 @@
   },
   {
     "name": "wsintercpp",
+    "path": "cpp/burghard-wsintercpp",
     "authors": ["Oliver Burghard"],
     "license": "none",
     "languages": ["C++"],
@@ -5546,6 +5555,7 @@
   },
   {
     "name": "wspace 0.2",
+    "path": "haskell/edwinb-wspace-0.2",
     "authors": ["Edwin Brady"],
     "license": "GPL-2.0-or-later",
     "languages": ["Haskell"],

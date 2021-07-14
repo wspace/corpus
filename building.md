@@ -29,6 +29,7 @@ Build and run errors are included.
   - ⚠️ programs/ws/interpreter.wsa
   - respace: `make`
 - cpp/benajmin/WhitespaceInterpreter.out: `make`
+- ❌ cpp/burghard-wsintercpp
 - cpp/buyoh-nospace:
   - maicomp: `make release`
   - test.rb
@@ -68,6 +69,9 @@ Build and run errors are included.
 - go/tempxla-go-wspace/bin/go-wspace: `make`
 - go/yshr-wspacego/wspacego: `go mod init github.com/135yshr/wspacego && go mod tidy && go build`
 - ⚠️ haskell/brainbrush-tomato/wspace: `make` Needs changes for latest Haskell
+- ❌ haskell/burghard-wsa
+- ❌ haskell/edwinb-wspace-0.2
+- ❌ haskell/edwinb-wspace-0.3
 - ⚠️ haskell/ft-spaceman/*unspecified*: `cabal build`
 - ⚠️ haskell/haroldl-wspace-0.4/wspace: `make` Needs changes for latest Haskell
 - ⚠️ haskell/helvm-helma/helma: `cabal build` -XMonadFailDesugaring is deprecated
@@ -116,6 +120,7 @@ Build and run errors are included.
   - wsInterpreter: `gcc -O3 -Wall -o wsInterpreter wsInterpreter.c`
 - ocaml/jgkaplan-wsc/main.byte: `make`
 - perl/ephphatha-wsm2ws/wsm2ws.pl
+- ❌ perl/koebl
 - php/igorw/bin/interpreter
 - php/igorw-wsm/bin/wsm
 - php/johankj/whitespace.php
@@ -170,6 +175,9 @@ Build and run errors are included.
 - ⚠️ ruby/alesiong/wsv.rb
 - ⚠️ ruby/bossiernesto/*unspecified*: No entrypoint
 - ruby/collidedscope-spitewaste/bin/spw
+- ❌ ruby/conrad
+- ❌ ruby/conrad-asm
+- ❌ ruby/conrad-disassem
 - ⚠️ ruby/dwayne/bin/whitespace: Old dependencies
 - ruby/nishiwakki/whitespace.rb
 - ⚠️ ruby/pocke-akaza:
@@ -198,6 +206,7 @@ Build and run errors are included.
 - ⚠️ typescript/fy0u11/dist/Whitespace.js: `npm install && npm run build`
 - ❌ vim/rolf-ws-vim
 - whitespace/andrewarchi-wslib/assemble.sh
+- ❌ whitespace/burghard-wsinterws
 - ❌ whitespace/eah-hello-world
 - ❌ whitespace/keens-whitelie
 - ❌ whitespace/tewort-hello-whitespace
@@ -206,12 +215,3 @@ Build and run errors are included.
 - ❌ “Whitespace Language - Online Translator/Interpreter” by dCode
 - ❌ “Whitespace compiler targeting JVM bytecode” by Bruno Kim Medeiros Cesar
 - ❌ “trans32.py” by r.e.s.
-- ❌ “whitespace-asm” by Wayne E. Conrad
-- ❌ “whitespace-disassem” by Wayne E. Conrad
-- ❌ “whitespace-ruby” by Wayne E. Conrad
-- ❌ “whitespace.pl” by Mike Kölbl
-- ❌ “wsa” by Oliver Burghard
-- ❌ “wsintercpp” by Oliver Burghard
-- ❌ “wsinterws” by Oliver Burghard
-- ❌ “wspace 0.2” by Edwin Brady
-- ❌ “wspace 0.3” by Edwin Brady

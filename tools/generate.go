@@ -20,7 +20,11 @@ type Project struct {
 	Date        string   `json:"date"`
 	SpecVersion string   `json:"spec_version"`
 	Source      []string `json:"source"`
-	Bounds      *struct {
+	Relations   []struct {
+		Type string `json:"type"`
+		ID   string `json:"id"`
+	} `json:"relations,omitempty"`
+	Bounds *struct {
 		Precision      string      `json:"precision,omitempty"`
 		ArgPrecision   string      `json:"arg_precision,omitempty"`   // usually the same as precision
 		LabelPrecision string      `json:"label_precision,omitempty"` // usually the same as precision
