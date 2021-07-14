@@ -5224,13 +5224,18 @@
   },
   {
     "name": "wspace",
+    "path": "c/hogelog",
     "authors": ["hogelog"],
     "license": "none",
-    "languages": ["C++"],
+    "languages": ["C", "Perl"],
     "tags": ["interpreter"],
     "date": "2008-05-02",
     "spec_version": "0.3",
-    "source": ["https://github.com/hogelog/hogel.org-old/tree/master/content/lib/c/ws"]
+    "source": [
+      "https://github.com/wspace/hogelog-c",
+      "https://github.com/hogelog/hogel.org-old/tree/master/content/lib/c/ws"
+    ],
+    "commands": [{ "type": "interpreter", "bin": "wspace", "build": "make gencode.c all", "usage": "$0 <file>" }]
   },
   {
     "name": "EsCo (Esoteric Combine)",

@@ -29,7 +29,7 @@ func main() {
 		src := p.Source[0]
 		repo := getGitURL(src)
 		if repo == "" {
-			fmt.Printf("%s: first source not a recognized repo: %s", p.Path, src)
+			fmt.Printf("%s: first source not a recognized repo: %s\n", p.Path, src)
 			continue
 		}
 

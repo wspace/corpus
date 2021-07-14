@@ -4,6 +4,9 @@
 [submodule "c/cedricschwyter"]
 	path = c/cedricschwyter
 	url = https://github.com/D3PSI/whitespace-interpreter
+[submodule "c/hogelog"]
+	path = c/hogelog
+	url = https://github.com/wspace/hogelog-c
 [submodule "c/koturn"]
 	path = c/koturn
 	url = https://github.com/koturn/Whitespace

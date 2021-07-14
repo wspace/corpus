@@ -7,6 +7,7 @@ Build and run errors are included.
 
 - c/bvisness/whitespace: `make`
 - c/cedricschwyter/interpreter: `cmake . && make`
+- c/hogelog/wspace: `make gencode.c all`
 - c/koturn/whitespace.out: `make`
 - c/kspalaiologos-asm2ws/wsi: `./configure --with-target=release && make -j4 wsi`
 - c/meth0dz/whitespace: `gcc -O3 -Wall -o whitespace whitespace.c`
@@ -214,4 +215,3 @@ Build and run errors are included.
 - ❌ “wsinterws” by Oliver Burghard
 - ❌ “wspace 0.2” by Edwin Brady
 - ❌ “wspace 0.3” by Edwin Brady
-- ❌ “wspace” by hogelog
