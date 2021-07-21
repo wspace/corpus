@@ -466,6 +466,9 @@
 [submodule "scala/ojha-whitespacing"]
 	path = scala/ojha-whitespacing
 	url = https://github.com/polyglotpiglet/Whitespacing
+[submodule "scala/patrickstephen"]
+	path = scala/patrickstephen
+	url = https://bitbucket.org/StephenPatrick/whitespace-interpreter
 [submodule "scheme/athos-white-scheme"]
 	path = scheme/athos-white-scheme
 	url = https://github.com/athos/white-scheme

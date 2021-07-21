@@ -204,6 +204,7 @@ Build and run errors are included.
 - rust/nareshganduri/target/release/whitespace-vm: `cargo build --release`
 - ❌ scala/dashlambda-eso
 - ❌ scala/ojha-whitespacing
+- ⚠️ scala/patrickstephen/whitespace.jar: `sbt package` Should set whitespace.jar as package instead of arget/scala-2.11/whitespace-interpreter\_2.11-1.0.jar A JNI error has occurred, please check your installation and try again
 - ❌ scheme/athos-white-scheme
 - ❌ scheme/niyarin
 - ❌ textmate/veniversum

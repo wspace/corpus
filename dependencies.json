@@ -51,5 +51,6 @@
       "bin": "build/r3"
     }
   },
-  "Ruby 3": { "brew": "ruby" }
+  "Ruby 3": { "brew": "ruby" },
+  "sbt": { "brew": "sbt" }
 }

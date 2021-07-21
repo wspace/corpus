@@ -99,6 +99,7 @@ the Whitespace programming language.
 | [whitespace-ruby](ruby/alesiong)               | alesiong         | Ruby       | program builder, programs | 2016-03-05 | 0.3 | [GitHub](https://github.com/alesiong/whitespace-ruby) |
 | [Whitespace support in Atom](textmate/veniversum) | Qingzhuo      | TextMate   | syntax highlighting | 2016-02-20 | - | [GitHub](https://github.com/veniversum/language-whitespace) |
 | [whitespace-interpreter](javascript/uraza)     | Uraza            | JavaScript | interpreter  | 2016-02-08 | 0.2 | [GitHub](https://github.com/uraza/whitespace-interpreter) |
+| [Whitespace Interpreter](scala/patrickstephen) | Patrick Stephen  | Scala      | interpreter, programs | 2016-01-28 | 0.2 | [Bitbucket](https://bitbucket.org/StephenPatrick/whitespace-interpreter) |
 | [WHINT](cpp/abac-whint)                        | Adam Bac         | C++        | interpreter  | 2015-12-31 | 0.2 | [GitHub](https://github.com/abac00s/WHINT) |
 | [Whitespacing](scala/ojha-whitespacing)        | Alexandra Ojha   | Scala      | interpreter  | 2015-12-11 | 0.2 | [GitHub](https://github.com/polyglotpiglet/Whitespacing) |
 | [whitespace](csharp/colchicus)                 | Colchicus        | C#         | interpreter  | 2015-11-19 | unknown | [nuget.org](https://www.nuget.org/packages/whitespace/), [GitHub](https://github.com/colchicus/whitespace) |

@@ -44,11 +44,12 @@ func main() {
 var (
 	github      = regexp.MustCompile(`^https://(?:gist\.)?github\.com/[^/]+/[^/]+$`)
 	gitlab      = regexp.MustCompile(`^https://gitlab\.com/[^/]+/[^/]+$`)
+	bitbucket   = regexp.MustCompile(`^https://bitbucket\.org/[^/]+/[^/]+$`)
 	sourceforge = regexp.MustCompile(`^https://sourceforge\.net/projects/([^/]+)/`)
 )
 
 func getGitURL(url string) string {
-	if github.MatchString(url) {
+	if github.MatchString(url) || bitbucket.MatchString(url) {
 		return url
 	} else if gitlab.MatchString(url) {
 		return url + ".git"

@@ -2983,6 +2983,38 @@
     "notes": "Codewars solution"
   },
   {
+    "name": "Whitespace Interpreter",
+    "path": "scala/patrickstephen",
+    "authors": ["Patrick Stephen"],
+    "license": "none",
+    "languages": ["Scala"],
+    "tags": ["interpreter", "programs"],
+    "date": "2016-01-28 16:53:06 -0600",
+    "spec_version": "0.2",
+    "source": ["https://bitbucket.org/StephenPatrick/whitespace-interpreter"],
+    "commands": [
+      {
+        "type": "interpreter",
+        "bin": "whitespace.jar",
+        "build": "sbt package",
+        "build_errors": "Should set whitespace.jar as package instead of arget/scala-2.11/whitespace-interpreter_2.11-1.0.jar",
+        "usage": "java -jar $0 [<file>]",
+        "run_errors": "A JNI error has occurred, please check your installation and try again",
+        "input": "<file> or conf/count.ws",
+        "options": [
+          { "short": "nh", "desc": "Print no header" },
+          { "short": "d", "desc": "Debug mode" },
+          { "short": "unsafe", "desc": "Use real heap structure" },
+          { "short": "int", "desc": "(Default) Use 32-bit numbers" },
+          { "short": "long", "desc": "Use 64-bit numbers" },
+          { "short": "bigint", "desc": "Use unlimited-bit numbers" }
+        ],
+        "option_parse": "manual",
+        "notes": "TODO are options before or after filename"
+      }
+    ]
+  },
+  {
     "name": "WHINT",
     "path": "cpp/abac-whint",
     "authors": ["Adam Bac"],

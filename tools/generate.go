@@ -399,6 +399,7 @@ var domainLabels = map[string]string{
 	"github.com":                 "GitHub",
 	"gist.github.com":            "GitHub Gist",
 	"gitlab.com":                 "GitLab",
+	"bitbucket.org":              "Bitbucket",
 	"sourceforge.net":            "SourceForge",
 	"git.code.sf.net":            "SourceForge",
 	"hackage.haskell.org":        "Hackage",
