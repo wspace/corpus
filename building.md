@@ -215,7 +215,7 @@ Build and run errors are included.
 - ❌ vim/rolf-ws-vim
 - whitespace/andrewarchi-wslib/assemble.sh
 - ❌ whitespace/burghard-wsinterws
-- ❌ whitespace/eah-hello-world
+- ❌ whitespace/hacktoberfest-hello-world
 - ❌ whitespace/keens-whitelie
 - ❌ whitespace/tewort-hello-whitespace
 - ❌ “HaPyLi” by Huf Lungdung (Cybis)

@@ -490,9 +490,9 @@
 [submodule "whitespace/andrewarchi-wslib"]
 	path = whitespace/andrewarchi-wslib
 	url = https://github.com/andrewarchi/wslib
-[submodule "whitespace/eah-hello-world"]
-	path = whitespace/eah-hello-world
-	url = https://github.com/wspace/eah-hello-world
+[submodule "whitespace/hacktoberfest-hello-world"]
+	path = whitespace/hacktoberfest-hello-world
+	url = https://github.com/wspace/hacktoberfest-hello-world
 [submodule "whitespace/keens-whitelie"]
 	path = whitespace/keens-whitelie
 	url = https://github.com/KeenS/whitelie
