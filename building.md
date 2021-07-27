@@ -42,7 +42,9 @@ Build and run errors are included.
 - cpp/malkiewiczm/compile: `make`
 - cpp/marcellippmann-whitepp/bin/White++: `make`
 - cpp/noia/ws: `g++ -O3 -Wall -Werror -o ws Lexer.cc Parser.cc`
-- cpp/pavelshub/wspace: `g++ -O3 -Wall -o wspace wspace.cpp`
+- cpp/pavelshub:
+  - assembler: `make assembler`
+  - wspace: `make wspace`
 - cpp/peasley/whitespace: `g++ -O3 -Wall -o whitespace whitespace.cpp`
 - ⚠️ cpp/ricardoluis/whitespace: `g++ -O3 -Wall -std=c++11 -o whitespace whitespace.cpp` `#include <conio.h>` not found, `floor` cannot be used in a constant expression
 - ⚠️ cpp/sonicyang-ws-frontend/wsjit: Requires LLVM

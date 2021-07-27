@@ -18,7 +18,7 @@ instructions, ranked by popularity.
 - `mod` (53), `modulo` (3), `%`, `rem`
 - `store` (48), `set` (2), `sto` (2), `stor` (2), `put`
 - `retrieve` (35), `get` (4), `load` (4), `retr` (3), `fetch` (2), `lod`, `rcl`, `read`, `ret`, `retreive`, `retri`, `retrive`, `retrv`
-- `label` (25), `mark` (11), `<label>:` (9), `label_<number>:` (2), `lbl` (2), `%<number>:`, `.<label>:`, `<number>:`, `@<label>`, `l<number>:`, `labl`, `mrk`, `part`, `setlabel`
+- `label` (25), `mark` (11), `<label>:` (9), `<number>:` (2), `label_<number>:` (2), `lbl` (2), `%<number>:`, `.<label>:`, `@<label>`, `l<number>:`, `labl`, `mrk`, `part`, `setlabel`
 - `call` (44), `gosub` (2), `call_subroutine`, `callsub`, `cll`, `jsr`, `sub`
 - `jump` (29), `jmp` (19), `goto` (3), `b`, `j`, `jp`
 - `jz` (23), `jumpz` (6), `jez` (3), `jump-zero` (3), `jumpzero` (3), `jmpz` (2), `bz`, `bzero`, `gotoiz`, `jeof`, `jeq`, `jmp_if0`, `jnil`, `jpz`, `jumpnull`, `jze`, `jzer`, `jzero`, `zero`

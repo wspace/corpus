@@ -5431,16 +5431,16 @@
     "name": "wspace",
     "path": "cpp/pavelshub",
     "authors": ["Pavel Shub"],
-    "license": "GPL-2.0-or-later",
+    "license": "GPL-3.0-or-later",
     "languages": ["C++"],
-    "tags": ["interpreter", "debugger", "disassembler", "mapping"],
+    "tags": ["interpreter", "debugger", "assembler", "disassembler", "mapping"],
     "date": "2007-05-26 17:19:24",
     "spec_version": "0.3",
     "source": [
+      "https://github.com/wspace/pavelshub-cpp",
       "https://github.com/pavel987/wspace",
       "https://web.archive.org/web/20141011193149/http://compsoc.dur.ac.uk/archives/whitespace/2008-April/000068.html",
-      "http://pavelshub.com/blog/2010/10/wspace/",
-      "https://github.com/wspace/pavelshub-cpp"
+      "https://pavelshub.com/blog/2010/10/wspace/"
     ],
     "assembly": {
       "instructions": {
@@ -5457,7 +5457,7 @@
         "mod": ["mod"],
         "store": ["store"],
         "retrieve": ["retrieve"],
-        "label": ["label"],
+        "label": ["label", "<number>:"],
         "call": ["call"],
         "jmp": ["jump"],
         "jz": ["jz"],
@@ -5468,14 +5468,16 @@
         "printi": ["outnum"],
         "readc": ["readchar"],
         "readi": ["readnum"]
-      }
+      },
+      "line_comment_prefix": "#",
+      "extension": "wsa"
     },
     "mappings": [{ "space": "A", "tab": "B", "lf": "C\n", "spaces_between": false }],
     "commands": [
       {
         "type": "interpreter",
         "bin": "wspace",
-        "build": "g++ -O3 -Wall -o wspace wspace.cpp",
+        "build": "make wspace",
         "usage": "$0 [algdh] <file>",
         "options": [
           { "short": "a", "desc": "print whitespace assembly language instead of program execution" },
@@ -5492,7 +5494,8 @@
         ],
         "option_parse": "manual",
         "notes": "Flags combine similar to `tar`, without dash required"
-      }
+      },
+      { "type": "assembler", "bin": "assembler", "build": "make assembler", "usage": "$0 <file>" }
     ]
   },
   {
