@@ -4415,6 +4415,27 @@
     "commands": [{ "dependencies": ["Grunt"], "build": "npm install && grunt", "run_errors": "Unclear how to run" }]
   },
   {
+    "name": "Quine Relay",
+    "path": "ruby/mame-quine-relay",
+    "authors": ["Yusuke Endoh"],
+    "license": "MIT",
+    "languages": ["Ruby"],
+    "tags": ["quine", "polyglot", "interpreter", "programs"],
+    "date": "2013-07-15 22:28:53 +0900",
+    "spec_version": "0.3",
+    "source": ["https://github.com/mame/quine-relay"],
+    "commands": [
+      {
+        "type": "interpreter",
+        "bin": "vendor/whitespace.rb",
+        "usage": "ruby $0 <file>",
+        "output": "stdout",
+        "notes": "readi does not support sign"
+      }
+    ],
+    "notes": "Automated with Docker"
+  },
+  {
     "name": "WS2JS",
     "path": "javascript/luilak-ws2js",
     "authors": ["Luilak"],

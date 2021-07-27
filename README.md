@@ -146,6 +146,7 @@ the Whitespace programming language.
 | [Whitespace tool](python/mcolom)               | Miguel Colom     | Python     | interpreter  | 2013-09-25 | 0.3 | [GitHub](https://github.com/mcolom/whitespace), [SourceForge](https://sourceforge.net/projects/whitespacetool/) |
 | [whitespace-llvm](cpp/tycho-whitespace-llvm)   | Tycho Bickerstaff | C++, LLVM | compiler, JIT, optimizer, programs | 2013-08-31 | 0.3 | [GitHub](https://github.com/worktycho/whitespace-llvm) |
 | [Whitespace-JS](coffeescript/ehrlichbryan)     | Bryan Ehrlich    | CoffeeScript | interpreter, assembler | 2013-08-14 | 0.3 | [GitHub](https://github.com/adotout/whitespace-js) |
+| [Quine Relay](ruby/mame-quine-relay)           | Yusuke Endoh     | Ruby       | quine, polyglot, interpreter, programs | 2013-07-15 | 0.3 | [GitHub](https://github.com/mame/quine-relay) |
 | [WS2JS](javascript/luilak-ws2js)               | Luilak           | JavaScript | transpiler   | 2013-06-03 | 0.3 | [GitHub](https://github.com/Luilak/WS2JS) |
 | [ws-interpreter](cpp/yuukiaria)                | YuukiARIA        | C++        | interpreter, programs | 2013-05-05 | 0.3 | [GitHub](https://github.com/YuukiARIA/ws-interpreter) |
 | [whitespace](java/abhijitsharma)               | Abhijit Sharma   | Java       | interpreter  | 2013-04-05 | 0.2 incomplete | [GitHub](https://github.com/abhijitsharma/whitespace) |

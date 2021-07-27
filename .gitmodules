@@ -430,6 +430,9 @@
 [submodule "ruby/dwayne"]
 	path = ruby/dwayne
 	url = https://github.com/dwayne/whitespace-ruby
+[submodule "ruby/mame-quine-relay"]
+	path = ruby/mame-quine-relay
+	url = https://github.com/mame/quine-relay
 [submodule "ruby/nishiwakki"]
 	path = ruby/nishiwakki
 	url = https://github.com/nishiwakki/whitespace
