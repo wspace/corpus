@@ -391,6 +391,9 @@
 [submodule "python/phlip-pywhitespace"]
 	path = python/phlip-pywhitespace
 	url = https://github.com/wspace/phlip-pywhitespace
+[submodule "python/prajwalanand"]
+	path = python/prajwalanand
+	url = https://github.com/prajwalanand/whitespace-compiler
 [submodule "python/qwhxm-baudelaire"]
 	path = python/qwhxm-baudelaire
 	url = https://github.com/qwhxm/baudelaire-whitespace

@@ -1,5 +1,27 @@
 [
   {
+    "name": "whitespace-compiler",
+    "path": "python/prajwalanand",
+    "authors": ["Prajwal Anand"],
+    "license": "none",
+    "languages": ["Python"],
+    "tags": ["transpiler", "mapping", "programs"],
+    "date": "2021-07-01 00:19:42 -0700",
+    "spec_version": "0.2",
+    "source": ["https://github.com/prajwalanand/whitespace-compiler"],
+    "mappings": [{ "space": "1", "tab": "2", "lf": "3", "spaces_between": false, "extension": "ws" }],
+    "commands": [
+      {
+        "type": "transpiler",
+        "bin": "whitespace",
+        "dependencies": ["Python 3"],
+        "usage": "python3 $0 <file>",
+        "input": "stdin",
+        "output": "stdout"
+      }
+    ]
+  },
+  {
     "name": "docker-whitespace",
     "path": "docker/bensuperpc",
     "authors": ["Bensuperpc"],
@@ -1110,7 +1132,7 @@
     "license": "CC-BY-SA-4.0",
     "languages": ["JavaScript"],
     "tags": ["interpreter"],
-    "date": "2020-02-01",
+    "date": "2020-02-01 16:44:56 +0000",
     "spec_version": "0.3",
     "source": ["https://codegolf.stackexchange.com/questions/198694/write-a-whitespace-interpreter/198770#198770"]
   },

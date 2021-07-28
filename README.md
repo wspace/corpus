@@ -7,6 +7,7 @@ the Whitespace programming language.
 
 | Name                                           | Authors          | Languages  | Tags         | Date       | Spec | Source |
 | ---------------------------------------------- | ---------------- | ---------- | ------------ | ---------- | ---- | ------ |
+| [whitespace-compiler](python/prajwalanand)     | Prajwal Anand    | Python     | transpiler, mapping, programs | 2021-07-01 | 0.2 | [GitHub](https://github.com/prajwalanand/whitespace-compiler) |
 | [docker-whitespace](docker/bensuperpc)         | Bensuperpc       | Docker     | builder      | 2021-06-10 | 0.3 | [GitHub](https://github.com/bensuperpc/docker-whitespace) |
 | [whitesymex](python/umutoztunc-whitesymex)     | Umut Barış Öztunç | Python    | symbolic executor, programs | 2021-05-30 | 0.3 | [GitHub](https://github.com/umutoztunc/whitesymex), [whitesymex.readthedocs.io](https://whitesymex.readthedocs.io/) |
 | [Interpreter](python/ganeshsankaran)           | Ganesh Sankaran  | Python     | wsa interpreter, programs | 2021-05-29 | 0.2 | [GitHub](https://github.com/ganeshsankaran/interpreter) |

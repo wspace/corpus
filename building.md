@@ -164,6 +164,7 @@ Build and run errors are included.
 - python/mildsunrise/whitespace.py
 - ⚠️ python/nutcrack-whiteplanes/*unspecified*: No entrypoint
 - python/phlip-pywhitespace/main.py
+- python/prajwalanand/whitespace
 - ⚠️ python/qwhxm-baudelaire/backend/baudelaire-whitespace.py: Needs AWS Lambda entrypoint
 - python/rumaxwell/entrance.py
 - python/smithers-bluespace/bspace.py
