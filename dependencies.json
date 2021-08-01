@@ -46,7 +46,7 @@
   "Ren-C": {
     "git": {
       "repo": "https://github.com/metaeducation/ren-c",
-      "branch": "9995bdca2",
+      "branch": "50c8e1e84",
       "build": ["./make.sh", "mv build/r3 build/r3-make", "build/r3-make make.r"],
       "bin": "build/r3"
     }
