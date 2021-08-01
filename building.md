@@ -84,7 +84,7 @@ Build and run errors are included.
 - ⚠️ haskell/jhmcstanton-marginal/*unspecified*: `stack build` `stack setup` fails with link error
 - ⚠️ haskell/takatoh-hws/hws: `make` Needs changes for latest Haskell
 - ⚠️ idris/edwinb-ws-idr/wspace: `idris --build wspace.ipkg` Needs changes for latest Idris
-- ❌ java/abhijitsharma
+- java/abhijitsharma/target/whitespace-1.0.jar: `sed -i '' 's/>1.6</>1.7</' pom.xml && mvn package`
 - ❌ java/azige
 - ❌ java/brumbeere-whitespace4j
 - ❌ java/eia

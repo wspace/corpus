@@ -46,10 +46,12 @@ type Project struct {
 		EOF            string `json:"eof,omitempty"`
 	} `json:"behavior,omitempty"`
 	Whitespace *struct {
-		NonStandard []struct {
+		Unimplemented []string `json:"unimplemented,omitempty"`
+		NonStandard   []struct {
 			Name string   `json:"name,omitempty"`
 			Seq  string   `json:"seq,omitempty"`
 			Args []string `json:"args,omitempty"`
+			Desc string   `json:"desc,omitempty"`
 		} `json:"nonstandard,omitempty"`
 		Extension string `json:"extension,omitempty"`
 	} `json:"whitespace,omitempty"`
@@ -127,7 +129,8 @@ type Command struct {
 		Options []CommandOption `json:"options,omitempty"`
 		Notes   string          `json:"notes,omitempty"`
 	} `json:"subcommands,omitempty"`
-	Notes string `json:"notes,omitempty"`
+	Unimplemented []string `json:"unimplemented,omitempty"`
+	Notes         string   `json:"notes,omitempty"`
 }
 
 type CommandOption struct {

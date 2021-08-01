@@ -235,6 +235,28 @@
     "date": "2021-03-06 22:34:15 -0800",
     "spec_version": "0.2",
     "source": ["https://github.com/ffanzhang/ws"],
+    "whitespace": {
+      "unimplemented": [
+        "dup",
+        "swap",
+        "drop",
+        "add",
+        "sub",
+        "mul",
+        "div",
+        "mod",
+        "store",
+        "retrieve",
+        "label",
+        "call",
+        "jmp",
+        "jz",
+        "jn",
+        "ret",
+        "readc",
+        "readi"
+      ]
+    },
     "assembly": {
       "instructions": {
         "push": ["PUSH"],
@@ -262,8 +284,7 @@
       },
       "usage": ["enum"]
     },
-    "commands": [{ "bin": "ws.py", "dependencies": ["Python 3"], "usage": "python3 $0 < <file>", "input": "stdin" }],
-    "notes": "Only implements push, print, printi, and end"
+    "commands": [{ "bin": "ws.py", "dependencies": ["Python 3"], "usage": "python3 $0 < <file>", "input": "stdin" }]
   },
   {
     "name": "Albus",
@@ -1044,8 +1065,9 @@
     "languages": ["C#"],
     "tags": ["interpreter"],
     "date": "2020-03-26 22:16:49 -0500",
-    "spec_version": "0.2 incomplete",
+    "spec_version": "0.2",
     "source": ["https://github.com/DenisLabrecque/Whitespace-Interpreter"],
+    "whitespace": { "unimplemented": ["div", "mod", "label", "call", "jmp", "jz", "jn", "ret", "readc", "readi"] },
     "assembly": {
       "instructions": {
         "push": ["Push"],
@@ -1071,8 +1093,7 @@
         "usage": "mono $0",
         "notes": "Program is hardcoded to a test program. Prints instructions while executing."
       }
-    ],
-    "notes": "Only implements push, dup, swap, drop, add, sub, mul, store, retrieve, end, printc, and printi"
+    ]
   },
   {
     "name": "EvanescoJS",
@@ -1757,9 +1778,9 @@
     "languages": ["Java", "ANTLR4"],
     "tags": ["grammar"],
     "date": "2018-10-21 19:31:04 -0700",
-    "spec_version": "0.3 incomplete",
+    "spec_version": "0.3",
     "source": ["https://github.com/wysang/Whitespace-Compiler"],
-    "whitespace": { "extension": "whitespace" },
+    "whitespace": { "unimplemented": ["store", "retrieve"], "extension": "whitespace" },
     "assembly": {
       "instructions": {
         "push": ["push"],
@@ -1849,7 +1870,28 @@
         "build": "gcc -O3 -Wall -o wsInterpreter wsInterpreter.c",
         "usage": "$0 < <file>",
         "input": "stdin",
-        "notes": "Only implements push, dup, printc, and printi"
+        "unimplemented": [
+          "copy",
+          "swap",
+          "drop",
+          "slide",
+          "add",
+          "sub",
+          "mul",
+          "div",
+          "mod",
+          "store",
+          "retrieve",
+          "label",
+          "call",
+          "jmp",
+          "jz",
+          "jn",
+          "ret",
+          "end",
+          "readc",
+          "readi"
+        ]
       }
     ],
     "notes": "FF and CR also grouped with LF in mapping"
@@ -1983,8 +2025,36 @@
     "languages": ["Python"],
     "tags": ["interpreter"],
     "date": "2018-03-09 16:19:48 -0500",
-    "spec_version": "incomplete",
+    "spec_version": "0.3",
     "source": ["https://github.com/MaximeGoyette/whitespace_interpreter"],
+    "whitespace": {
+      "unimplemented": [
+        "push",
+        "dup",
+        "copy",
+        "swap",
+        "drop",
+        "slide",
+        "add",
+        "sub",
+        "mul",
+        "div",
+        "mod",
+        "store",
+        "retrieve",
+        "label",
+        "call",
+        "jmp",
+        "jz",
+        "jn",
+        "ret",
+        "end",
+        "printc",
+        "printi",
+        "readc",
+        "readi"
+      ]
+    },
     "commands": [
       {
         "type": "interpreter",
@@ -2095,8 +2165,16 @@
     "languages": ["C", "Yacc", "Lex"],
     "tags": ["interpreter", "programs"],
     "date": "2017-11-11 05:17:01 +0000",
-    "spec_version": "0.3 incomplete",
+    "spec_version": "0.3",
     "source": ["https://github.com/Sandeep023/Whitespace"],
+    "whitespace": {
+      "unimplemented": ["slide", "store", "retrieve", "label", "call", "jmp", "jz", "jn", "ret", "end"],
+      "nonstandard": [
+        { "seq": "STT", "args": ["number"], "desc": "Print stack in order" },
+        { "seq": "STL", "args": ["number"], "desc": "Print stack in reverse" }
+      ],
+      "extension": "ws"
+    },
     "commands": [
       {
         "type": "interpreter",
@@ -2488,8 +2566,34 @@
     "languages": ["Java"],
     "tags": ["interpreter"],
     "date": "2016-10-27 09:58:09 -0500",
-    "spec_version": "incomplete",
-    "source": ["https://github.com/EIA-University/WhiteSpaceInterpreter"]
+    "spec_version": "-",
+    "source": ["https://github.com/EIA-University/WhiteSpaceInterpreter"],
+    "whitespace": {
+      "unimplemented": [
+        "push",
+        "dup",
+        "swap",
+        "drop",
+        "add",
+        "sub",
+        "mul",
+        "div",
+        "mod",
+        "store",
+        "retrieve",
+        "label",
+        "call",
+        "jmp",
+        "jz",
+        "jn",
+        "ret",
+        "end",
+        "printc",
+        "printi",
+        "readc",
+        "readi"
+      ]
+    }
   },
   {
     "name": "whitespace-python",
@@ -2521,8 +2625,9 @@
     "languages": ["C++", "LLVM"],
     "tags": ["compiler"],
     "date": "2016-08-20 08:45:25 +0800",
-    "spec_version": "0.2 incomplete",
+    "spec_version": "0.2",
     "source": ["https://github.com/sonicyang/ws-frontend"],
+    "whitespace": { "unimplemented": ["store", "retrieve", "label", "call", "jmp", "jz", "jn", "ret", "end"] },
     "commands": [
       {
         "type": "compiler",
@@ -4516,8 +4621,37 @@
     "languages": ["Java"],
     "tags": ["interpreter"],
     "date": "2013-04-05 10:21:09 -0700",
-    "spec_version": "0.2 incomplete",
-    "source": ["https://github.com/abhijitsharma/whitespace"]
+    "spec_version": "0.2",
+    "source": ["https://github.com/abhijitsharma/whitespace"],
+    "whitespace": {
+      "unimplemented": [
+        "dup",
+        "swap",
+        "drop",
+        "mod",
+        "store",
+        "retrieve",
+        "label",
+        "call",
+        "jmp",
+        "jz",
+        "jn",
+        "ret",
+        "end",
+        "printc",
+        "readc",
+        "readi"
+      ]
+    },
+    "commands": [
+      {
+        "type": "interpreter",
+        "bin": "target/whitespace-1.0.jar",
+        "build": "sed -i '' 's/>1.6</>1.7</' pom.xml && mvn package",
+        "usage": "java -jar $0 -f <file>",
+        "notes": "source and target versions need to be changed to 1.7 or leter in pom.xml"
+      }
+    ]
   },
   {
     "name": "whitespace",
@@ -4670,8 +4804,9 @@
     "languages": ["C++"],
     "tags": ["interpreter", "programs"],
     "date": "2012-12-15 11:48:38 -0800",
-    "spec_version": "0.2 incomplete",
+    "spec_version": "0.2",
     "source": ["https://github.com/noia1/Whitespace-Interpreter"],
+    "whitespace": { "unimplemented": ["dup", "swap", "label", "call", "jmp", "jz", "jn", "ret", "end"] },
     "commands": [
       {
         "type": "interpreter",
@@ -4680,8 +4815,7 @@
         "usage": "$0 <file>",
         "notes": "Makefile is broken"
       }
-    ],
-    "notes": "Only has instructions: push drop add sub mul div mod store retrieve printc printi readc readi"
+    ]
   },
   {
     "name": "wsInt",
@@ -5012,8 +5146,9 @@
     "languages": ["Python"],
     "tags": ["interpreter"],
     "date": "2010-11-21 06:30:32 -0800",
-    "spec_version": "0.3 incomplete",
+    "spec_version": "0.3",
     "source": ["https://gist.github.com/wasabili/708773"],
+    "whitespace": { "unimplemented": ["store", "retrieve", "call", "ret"] },
     "commands": [
       {
         "type": "interpreter",
@@ -5022,8 +5157,7 @@
         "usage": "python2 $0 < <file>",
         "input": "stdin"
       }
-    ],
-    "notes": "store, retrieve, call, and ret are not implemented"
+    ]
   },
   {
     "name": "hws",
