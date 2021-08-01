@@ -1906,6 +1906,14 @@
     "date": "2018-05-21 13:44:13 +0200",
     "spec_version": "0.3",
     "source": ["https://github.com/wrotycz/whitespace-interpreter"],
+    "commands": [
+      {
+        "type": "interpreter",
+        "bin": "target/whitespace-interpreter-1.0-SNAPSHOT.jar",
+        "build": "mvn -Dmaven.compiler.source=1.8 -Dmaven.compiler.target=1.8 package",
+        "run_errors": "No main method entrypoint"
+      }
+    ],
     "notes": "Codewars solution"
   },
   {
@@ -4163,7 +4171,16 @@
     "tags": ["language", "interpreter"],
     "date": "2014-06-18 23:38:41 +0800",
     "spec_version": "0.3",
-    "source": ["https://github.com/azige/whitespace-interpreter"]
+    "source": ["https://github.com/azige/whitespace-interpreter"],
+    "commands": [
+      {
+        "bin": "target/whitespace-interpreter-0.4.jar",
+        "build": "mvn package",
+        "build_errors": "org.apache.commons.cli is not packaged in jar",
+        "option_parse": "Java org.apache.commons.cli",
+        "notes": "TODO document options"
+      }
+    ]
   },
   {
     "name": "whitespace-php",
@@ -4286,10 +4303,19 @@
     "authors": ["Praveen Reddy Vaka"],
     "license": "none",
     "languages": ["Java"],
-    "tags": ["program builder"],
+    "tags": ["program builder", "programs"],
     "date": "2014-03-07 05:39:21 -0800",
     "spec_version": "0.2",
-    "source": ["https://github.com/praveenvaka/whitespace-coder"]
+    "source": ["https://github.com/praveenvaka/whitespace-coder"],
+    "commands": [
+      {
+        "type": "program builder",
+        "bin": "target/whitespace-coder-1.0-SNAPSHOT.jar",
+        "build": "mvn -Dmaven.compiler.source=1.8 -Dmaven.compiler.target=1.8 package",
+        "usage": "java -cp $0 <class>",
+        "notes": "<class> is the java class entrypoint, e.g. HelloWorld, Factorial, or FCTRIZE"
+      }
+    ]
   },
   {
     "name": "SaTaN",

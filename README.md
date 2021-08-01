@@ -137,7 +137,7 @@ the Whitespace programming language.
 | [white](cpp/keirua-white)                      | Keirua           | C++        | interpreter, disassembler | 2014-05-30 | 0.3 | [GitHub](https://github.com/Keirua/whitespace) |
 | [Kairos](java/vyo-kairos)                      | Manu Weidmann    | Java       | interpreter, assembler, arbitrary precision, programs | 2014-05-10 | 0.3 | [GitHub](https://github.com/vyo/kairos) |
 | [elixir-whitespace](elixir/quinnwilton)        | Quinn Wilton     | Elixir     | interpreter  | 2014-03-07 | 0.3 | [GitHub](https://github.com/QuinnWilton/elixir-whitespace) |
-| [whitespace-coder](java/praveenvaka-coder)     | Praveen Reddy Vaka | Java     | program builder | 2014-03-07 | 0.2 | [GitHub](https://github.com/praveenvaka/whitespace-coder) |
+| [whitespace-coder](java/praveenvaka-coder)     | Praveen Reddy Vaka | Java     | program builder, programs | 2014-03-07 | 0.2 | [GitHub](https://github.com/praveenvaka/whitespace-coder) |
 | [SaTaN](c/threeifbywhiskey-satan)              | Dorien Snake     | C          | interpreter  | 2014-03-03 | 0.3 | [GitHub](https://github.com/threeifbywhiskey/satan) |
 | [Whitespace Covert Channel](php/jseidl-wcc)    | Jan Seidl        | PHP        | text to Whitespace, web service | 2014-02-18 | 0.2 | [GitHub](https://github.com/jseidl/whitespace) |
 | [python-whitespace](python/mikecat)            | みけCAT (MikeCAT)  | Python     | interpreter  | 2014-02-16 | 0.3 | [GitHub](https://github.com/mikecat/python-whitespace) |

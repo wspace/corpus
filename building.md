@@ -85,14 +85,14 @@ Build and run errors are included.
 - ⚠️ haskell/takatoh-hws/hws: `make` Needs changes for latest Haskell
 - ⚠️ idris/edwinb-ws-idr/wspace: `idris --build wspace.ipkg` Needs changes for latest Idris
 - java/abhijitsharma/target/whitespace-1.0.jar: `sed -i '' 's/>1.6</>1.7</' pom.xml && mvn package`
-- ❌ java/azige
+- ⚠️ java/azige/target/whitespace-interpreter-0.4.jar: `mvn package` org.apache.commons.cli is not packaged in jar
 - ❌ java/brumbeere-whitespace4j
 - ❌ java/eia
 - ❌ java/faurehu
 - ❌ java/kmizu
-- ❌ java/praveenvaka-coder
+- java/praveenvaka-coder/target/whitespace-coder-1.0-SNAPSHOT.jar: `mvn -Dmaven.compiler.source=1.8 -Dmaven.compiler.target=1.8 package`
 - ❌ java/vyo-kairos
-- ❌ java/wrotycz
+- ⚠️ java/wrotycz/target/whitespace-interpreter-1.0-SNAPSHOT.jar: `mvn -Dmaven.compiler.source=1.8 -Dmaven.compiler.target=1.8 package` No main method entrypoint
 - ❌ java/wysang
 - ❌ java/yawkat
 - ❌ java/yuukiaria-wseditor
