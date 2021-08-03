@@ -880,7 +880,7 @@
     "name": "whitespace-interpreter",
     "path": "c/cedricschwyter",
     "authors": ["Cedric Schwyter"],
-    "license": "GPL-3.0",
+    "license": "GPL-3.0-or-later",
     "languages": ["C"],
     "tags": ["interpreter", "programs"],
     "date": "2020-10-09 14:27:42 +0200",
@@ -1477,6 +1477,7 @@
     "date": "2019-06-08 23:22:47 +0200",
     "spec_version": "0.3",
     "source": ["https://github.com/qwhxm/baudelaire-whitespace"],
+    "programs": [{ "path": "backend/baudelaire.ws", "spec_version": "0.2" }],
     "commands": [
       {
         "type": "web service",
@@ -1532,6 +1533,22 @@
       "usage": ["disassembler"],
       "extension": "wsa"
     },
+    "programs": [
+      { "path": "hello_world.ws", "spec_version": "0.2" },
+      { "path": "99_bottles.wsa", "compiled": "99_bottles.out.ws", "spec_version": "0.2" },
+      { "path": "ascii.wsa", "compiled": "ascii.out.ws", "spec_version": "0.3" },
+      { "path": "ascii4.wsa", "compiled": "ascii4.out.ws", "spec_version": "0.3" },
+      { "path": "caesar.wsa", "compiled": "caesar.out.ws", "spec_version": "0.3" },
+      { "path": "collatz.wsa", "compiled": "collatz.out.ws", "spec_version": "0.2" },
+      { "path": "factorial.wsa", "compiled": "factorial.out.ws", "spec_version": "0.2" },
+      { "path": "fib.wsa", "compiled": "fib.out.ws", "spec_version": "0.3" },
+      { "path": "fizz_buzz.wsa", "compiled": "fizz_buzz.out.ws", "spec_version": "0.2" },
+      { "path": "interpret.wsa", "compiled": "interpret.out.ws", "spec_version": "0.3" },
+      { "path": "math.wsa", "compiled": "math.out.ws", "spec_version": "0.3" },
+      { "path": "pi.wsa", "compiled": "pi.out.ws", "spec_version": "0.3" },
+      { "path": "postfix.wsa", "compiled": "postfix.out.ws", "spec_version": "0.3" },
+      { "path": "test_ret_underflow.wsa", "compiled": "test_ret_underflow.out.ws", "spec_version": "0.2" }
+    ],
     "commands": [
       {
         "type": "compiler",
@@ -1724,6 +1741,18 @@
     "programs": [{ "path": "helloworld.ws", "spec_version": "0.2" }]
   },
   {
+    "name": "Whitespace and Brainfuck",
+    "path": "whitespace/wsdt-kevinloveswhitespace",
+    "authors": ["Riedl Kevin"],
+    "license": "GPL-3.0-or-later",
+    "languages": ["Whitespace"],
+    "tags": ["programs"],
+    "date": "2018-12-01 23:36:15 +0100",
+    "spec_version": "0.2",
+    "source": ["https://github.com/wsdt/WhiteSpace_Brainfuck"],
+    "programs": [{ "path": "KevinLovesWhitespace.ws", "spec_version": "0.2" }]
+  },
+  {
     "name": "Whitespace Interpreter",
     "path": "rust/kaisugi",
     "authors": ["Kaito Sugimoto"],
@@ -1802,6 +1831,10 @@
     "spec_version": "0.3",
     "source": ["https://github.com/ahl27/whitespace"],
     "whitespace": { "extension": "wsp" },
+    "programs": [
+      { "path": "hello_world.wsp", "spec_version": "0.2" },
+      { "path": "test.wsp", "spec_version": "0.2" }
+    ],
     "commands": [
       {
         "type": "interpreter",
@@ -1879,6 +1912,21 @@
     ]
   },
   {
+    "name": "whitespace-stack-flood",
+    "path": "whitespace/trevorbennett-stack-flood",
+    "authors": ["Trevor Bennett"],
+    "license": "none",
+    "languages": ["Whitespace"],
+    "tags": ["programs"],
+    "date": "2018-09-07 23:46:52 -0400",
+    "spec_version": "0.2",
+    "source": [
+      "https://github.com/trevorbennett/whitespace-stack-flood",
+      "https://www.reddit.com/r/ProgrammerHumor/comments/9dvwhn/java_java/e5kg126/"
+    ],
+    "programs": [{ "path": "goto.ws", "spec_version": "0.2" }]
+  },
+  {
     "name": "nospace",
     "path": "cpp/buyoh-nospace",
     "authors": ["舞葉 (Mai Buyoh)"],
@@ -1951,6 +1999,18 @@
       }
     ],
     "notes": "FF and CR also grouped with LF in mapping"
+  },
+  {
+    "name": "HelloWhitespace",
+    "path": "whitespace/bbvch-hello",
+    "authors": ["Heo Kyungyoung"],
+    "license": "MIT",
+    "languages": ["Whitespace"],
+    "tags": ["programs"],
+    "date": "2018-08-09 16:36:11 +0900",
+    "spec_version": "0.2",
+    "source": ["https://github.com/bbvch13531/HelloWhitespace"],
+    "programs": [{ "path": "helloWhitespace.ws", "spec_version": "0.2" }]
   },
   {
     "name": "whitespace-interpreter",
@@ -2494,6 +2554,18 @@
     ]
   },
   {
+    "name": "Catch the Chicken",
+    "path": "whitespace/ccns-chicken",
+    "authors": ["Daniel Chen"],
+    "license": "none",
+    "languages": ["Whitespace"],
+    "tags": ["programs"],
+    "date": "2017-02-23 01:41:32 +0800",
+    "spec_version": "0.2",
+    "source": ["https://github.com/ccns/105-club-fair-game-problems"],
+    "programs": [{ "path": "2/2/Did you see anything?", "spec_version": "0.2" }]
+  },
+  {
     "name": "whitespace-scheme",
     "path": "scheme/niyarin",
     "authors": ["Akira Inoue"],
@@ -2661,6 +2733,24 @@
     "programs": [{ "path": "src/fichero.bin", "spec_version": "0.2" }]
   },
   {
+    "name": "EsoPoly",
+    "path": "whitespace/kenrube-esopoly",
+    "authors": ["Ivan Zolotarev"],
+    "license": "MIT",
+    "languages": ["Whitespace"],
+    "tags": ["programs"],
+    "date": "2016-09-13 12:08:23 +0600",
+    "spec_version": "0.2",
+    "source": ["https://github.com/kenrube/Esopoly"],
+    "programs": [
+      {
+        "path": "source",
+        "polyglot": ["Malbolge", "Brainfuck", "Spoon", "asdf", "123", "EXCON"],
+        "spec_version": "0.2"
+      }
+    ]
+  },
+  {
     "name": "whitespace-python",
     "path": "python/dwayne",
     "authors": ["Dwayne R. Crooks"],
@@ -2796,6 +2886,25 @@
         ],
         "option_parse": "Ruby optparse"
       }
+    ]
+  },
+  {
+    "name": "steganographic-polyglots",
+    "path": "whitespace/chrisnguyen-steganographic-polyglots",
+    "authors": ["Chris Nguyen"],
+    "license": "MIT",
+    "languages": ["Whitespace"],
+    "tags": ["programs"],
+    "date": "2016-06-26 11:41:53 -0400",
+    "spec_version": "0.2",
+    "source": [
+      "https://github.com/uncompiled/steganographic-polyglots",
+      "https://uncompiled.github.io/steganographic-polyglots/"
+    ],
+    "programs": [
+      { "path": "golang/hello.go", "polyglot": ["Go"], "spec_version": "0.2" },
+      { "path": "html/index.html", "polyglot": ["HTML"], "spec_version": "0.2" },
+      { "path": "nodejs/figlet.js", "polyglot": ["JavaScript"], "spec_version": "0.2" }
     ]
   },
   {
@@ -3859,6 +3968,18 @@
     ]
   },
   {
+    "name": "FizzBuzz AIT8",
+    "path": "whitespace/yokoyama-fizzbuzz",
+    "authors": ["Kengo Yokoyama"],
+    "license": "none",
+    "languages": ["Whitespace"],
+    "tags": ["programs"],
+    "date": "2015-01-29 02:21:34 +0900",
+    "spec_version": "0.2",
+    "source": ["https://github.com/ait8/fizzbuzz"],
+    "programs": [{ "path": "yokoyama.ws", "spec_version": "0.2" }]
+  },
+  {
     "name": "whiteSpaceInterpreter",
     "path": "java/faurehu",
     "authors": ["Matias Faure"],
@@ -4589,6 +4710,22 @@
       }
     ],
     "notes": "Shares instruction definitions in interpreter.py with python/katc; relationship unclear"
+  },
+  {
+    "name": "Project Euler Language Challenge",
+    "path": "whitespace/samdonow-pelc",
+    "authors": ["Sam Donow"],
+    "license": "none",
+    "languages": ["Whitespace"],
+    "tags": ["programs"],
+    "date": "2013-09-03 00:29:00 -04:00",
+    "spec_version": "0.3",
+    "source": [
+      "https://github.com/drsam94/PELC",
+      "http://pelangchallenge.blogspot.com/2013/09/problem-36-done-in-whitespace.html",
+      "https://web.archive.org/web/20141011193202/http://compsoc.dur.ac.uk/archives/whitespace/2013-September/000084.html"
+    ],
+    "programs": [{ "path": "e36Comments.ws" }]
   },
   {
     "name": "whitespace-llvm",

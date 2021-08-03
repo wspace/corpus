@@ -496,12 +496,24 @@
 [submodule "whitespace/andrewarchi-wslib"]
 	path = whitespace/andrewarchi-wslib
 	url = https://github.com/andrewarchi/wslib
+[submodule "whitespace/bbvch-hello"]
+	path = whitespace/bbvch-hello
+	url = https://github.com/bbvch13531/HelloWhitespace
+[submodule "whitespace/ccns-chicken"]
+	path = whitespace/ccns-chicken
+	url = https://github.com/ccns/105-club-fair-game-problems
+[submodule "whitespace/chrisnguyen-steganographic-polyglots"]
+	path = whitespace/chrisnguyen-steganographic-polyglots
+	url = https://github.com/uncompiled/steganographic-polyglots
 [submodule "whitespace/hacktoberfest-hello-world"]
 	path = whitespace/hacktoberfest-hello-world
 	url = https://github.com/wspace/hacktoberfest-hello-world
 [submodule "whitespace/keens-whitelie"]
 	path = whitespace/keens-whitelie
 	url = https://github.com/KeenS/whitelie
+[submodule "whitespace/kenrube-esopoly"]
+	path = whitespace/kenrube-esopoly
+	url = https://github.com/kenrube/Esopoly
 [submodule "whitespace/paradoxv5-program-java-rb"]
 	path = whitespace/paradoxv5-program-java-rb
 	url = https://github.com/ParadoxV5/Program-java-rb-ws-txt
@@ -511,9 +523,21 @@
 [submodule "whitespace/petek-hello"]
 	path = whitespace/petek-hello
 	url = https://github.com/petek222/whitespace
+[submodule "whitespace/samdonow-pelc"]
+	path = whitespace/samdonow-pelc
+	url = https://github.com/drsam94/PELC
 [submodule "whitespace/tewort-hello"]
 	path = whitespace/tewort-hello
 	url = https://github.com/Tewort/Hello-Whitespace
+[submodule "whitespace/trevorbennett-stack-flood"]
+	path = whitespace/trevorbennett-stack-flood
+	url = https://github.com/trevorbennett/whitespace-stack-flood
 [submodule "whitespace/vii5ard-brainfuck"]
 	path = whitespace/vii5ard-brainfuck
 	url = https://github.com/vii5ard/brainfuck-whitespace
+[submodule "whitespace/wsdt-kevinloveswhitespace"]
+	path = whitespace/wsdt-kevinloveswhitespace
+	url = https://github.com/wsdt/WhiteSpace_Brainfuck
+[submodule "whitespace/yokoyama-fizzbuzz"]
+	path = whitespace/yokoyama-fizzbuzz
+	url = https://github.com/ait8/fizzbuzz

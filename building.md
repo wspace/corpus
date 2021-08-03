@@ -216,14 +216,22 @@ Build and run errors are included.
 - ⚠️ typescript/fy0u11/dist/Whitespace.js: `npm install && npm run build`
 - ❌ vim/rolf-ws-vim
 - whitespace/andrewarchi-wslib/assemble.sh
+- ❌ whitespace/bbvch-hello
 - ❌ whitespace/burghard-wsinterws
+- ❌ whitespace/ccns-chicken
+- ❌ whitespace/chrisnguyen-steganographic-polyglots
 - ❌ whitespace/hacktoberfest-hello-world
 - ❌ whitespace/keens-whitelie
+- ❌ whitespace/kenrube-esopoly
 - ❌ whitespace/paradoxv5-program-java-rb
 - ❌ whitespace/pdewacht-tetris
 - ❌ whitespace/petek-hello
+- ❌ whitespace/samdonow-pelc
 - ❌ whitespace/tewort-hello
+- ❌ whitespace/trevorbennett-stack-flood
 - ❌ whitespace/vii5ard-brainfuck
+- ❌ whitespace/wsdt-kevinloveswhitespace
+- ❌ whitespace/yokoyama-fizzbuzz
 - ❌ “HaPyLi” by Huf Lungdung (Cybis)
 - ❌ “Whitespace Interpreter in JavaScript” by Arnauld
 - ❌ “Whitespace Language - Online Translator/Interpreter” by dCode
