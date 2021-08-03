@@ -502,9 +502,18 @@
 [submodule "whitespace/keens-whitelie"]
 	path = whitespace/keens-whitelie
 	url = https://github.com/KeenS/whitelie
+[submodule "whitespace/paradoxv5-program-java-rb"]
+	path = whitespace/paradoxv5-program-java-rb
+	url = https://github.com/ParadoxV5/Program-java-rb-ws-txt
 [submodule "whitespace/pdewacht-tetris"]
 	path = whitespace/pdewacht-tetris
 	url = https://github.com/wspace/pdewacht-tetris
-[submodule "whitespace/tewort-hello-whitespace"]
-	path = whitespace/tewort-hello-whitespace
+[submodule "whitespace/petek-hello"]
+	path = whitespace/petek-hello
+	url = https://github.com/petek222/whitespace
+[submodule "whitespace/tewort-hello"]
+	path = whitespace/tewort-hello
 	url = https://github.com/Tewort/Hello-Whitespace
+[submodule "whitespace/vii5ard-brainfuck"]
+	path = whitespace/vii5ard-brainfuck
+	url = https://github.com/vii5ard/brainfuck-whitespace

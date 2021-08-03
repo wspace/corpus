@@ -306,6 +306,24 @@
     ]
   },
   {
+    "name": "Program.java.rb.ws.txt",
+    "path": "whitespace/paradoxv5-program-java-rb",
+    "authors": ["ParadoxV5"],
+    "license": "Apache-2.0",
+    "languages": ["Whitespace", "Java", "Ruby"],
+    "tags": ["programs", "polyglot"],
+    "date": "2021-01-29 22:59:24 -0700",
+    "spec_version": "0.2",
+    "source": ["https://github.com/ParadoxV5/Program-java-rb-ws-txt"],
+    "programs": [
+      {
+        "path": "Program.java.rb.ws.txt",
+        "polyglot": ["Java", "Ruby"],
+        "desc": "Prints the name of the programming language in Java, Ruby, and Whitespace"
+      }
+    ]
+  },
+  {
     "name": "Whitespace exotic programming language interpreter",
     "path": "typescript/fy0u11",
     "authors": ["Sergey Strigin"],
@@ -1288,6 +1306,18 @@
     "notes": "<number> is a number literal or the value of a variable (formats: <int>, #<hex>, '<char>', and &<variable>).\n<address> is the value on the heap at the variable value (format: *<variable>), i.e. `push <variable> retrieve`.\n<int> is a base 10 integer, i.e. /[+-]?[0-9]+/.\n<hex> is a base 16 integer, i.e. /[0-9A-Fa-f]+/.\n<char> is one UTF-16 character, escape sequences aren't supported.\n<label> and <variable> values increment (with separate counters), starting at 0."
   },
   {
+    "name": "hello.ws",
+    "path": "whitespace/petek-hello",
+    "authors": ["Peter Koncelik"],
+    "license": "none",
+    "languages": ["Whitespace"],
+    "tags": ["programs"],
+    "date": "2019-11-22 00:28:00 -0600",
+    "spec_version": "0.2",
+    "source": ["https://github.com/petek222/whitespace"],
+    "programs": [{ "path": "hello.ws" }]
+  },
+  {
     "name": "whitespace_compiler",
     "path": "cpp/malkiewiczm",
     "authors": ["Michael Malkiewicz"],
@@ -1683,14 +1713,15 @@
   },
   {
     "name": "Hello-Whitespace",
-    "path": "whitespace/tewort-hello-whitespace",
+    "path": "whitespace/tewort-hello",
     "authors": ["David (Tewort)"],
     "license": "none",
     "languages": ["Whitespace"],
     "tags": ["programs"],
     "date": "2019-01-28 17:17:14 +0300",
     "spec_version": "0.2",
-    "source": ["https://github.com/Tewort/Hello-Whitespace"]
+    "source": ["https://github.com/Tewort/Hello-Whitespace"],
+    "programs": [{ "path": "helloworld.ws", "spec_version": "0.2" }]
   },
   {
     "name": "Whitespace Interpreter",
@@ -2597,7 +2628,7 @@
     "authors": ["Zuleimi Esteffanny González Muñoz"],
     "license": "MIT",
     "languages": ["Java"],
-    "tags": ["interpreter"],
+    "tags": ["interpreter", "programs"],
     "date": "2016-10-27 09:58:09 -0500",
     "spec_version": "-",
     "source": ["https://github.com/EIA-University/WhiteSpaceInterpreter"],
@@ -2626,7 +2657,8 @@
         "readc",
         "readi"
       ]
-    }
+    },
+    "programs": [{ "path": "src/fichero.bin", "spec_version": "0.2" }]
   },
   {
     "name": "whitespace-python",
@@ -4193,10 +4225,41 @@
     "authors": ["Azige"],
     "license": "Apache-2.0",
     "languages": ["Java"],
-    "tags": ["language", "interpreter"],
+    "tags": ["language", "interpreter", "programs"],
     "date": "2014-06-18 23:38:41 +0800",
     "spec_version": "0.3",
     "source": ["https://github.com/azige/whitespace-interpreter"],
+    "whitespace": { "extension": "ws" },
+    "assembly": {
+      "instructions": {
+        "push": ["PUSH"],
+        "dup": ["DUP"],
+        "copy": ["DUP2"],
+        "swap": ["SWAP"],
+        "drop": ["DISCARD"],
+        "slide": ["REMOVE"],
+        "add": ["ADD"],
+        "sub": ["SUB"],
+        "mul": ["MUL"],
+        "div": ["DIV"],
+        "mod": ["MOD"],
+        "store": ["STORE"],
+        "retrieve": ["RETRIEVE"],
+        "label": ["MARK"],
+        "call": ["CALL"],
+        "jmp": ["JUMP"],
+        "jz": ["JUMPZ"],
+        "jn": ["JUMPN"],
+        "ret": ["RETURN"],
+        "end": ["EXIT"],
+        "printc": ["PCHAR"],
+        "printi": ["PNUM"],
+        "readc": ["RCHAR"],
+        "readi": ["RNUM"]
+      },
+      "usage": ["enum"]
+    },
+    "programs": [{ "path": "src/main/pack/example/helloworld_cn.ws", "spec_version": "0.2" }],
     "commands": [
       {
         "bin": "target/whitespace-interpreter-0.4.jar",
@@ -4205,7 +4268,8 @@
         "option_parse": "Java org.apache.commons.cli",
         "notes": "TODO document options"
       }
-    ]
+    ],
+    "notes": "szm language opcodes are specified as 4 ternary trits using the alphabet 水 沝 淼. szm has additional operators not in Whitespace. TODO: unclear whether szm can be compiled to Whitespace."
   },
   {
     "name": "whitespace-php",
@@ -4593,6 +4657,19 @@
     "commands": [{ "dependencies": ["Grunt"], "build": "npm install && grunt", "run_errors": "Unclear how to run" }]
   },
   {
+    "name": "Brainfuck Whitespace",
+    "path": "whitespace/vii5ard-brainfuck",
+    "authors": ["Henri Lakk (Vii5ard)"],
+    "license": "none",
+    "languages": ["Whitespace"],
+    "tags": ["programs"],
+    "date": "2013-07-22 16:02:45 +0300",
+    "spec_version": "0.3",
+    "source": ["https://github.com/vii5ard/brainfuck-whitespace"],
+    "programs": [{ "path": "src/bf.wsa", "compiled": "src/bf.ws" }],
+    "notes": "bf.wsa derived from javascript/vii5ard-whitelips-ide version, but differs somewhat"
+  },
+  {
     "name": "Quine Relay",
     "path": "ruby/mame-quine-relay",
     "authors": ["Yusuke Endoh"],
@@ -4602,6 +4679,7 @@
     "date": "2013-07-15 22:28:53 +0900",
     "spec_version": "0.3",
     "source": ["https://github.com/mame/quine-relay"],
+    "programs": [{ "path": "QR.ws" }],
     "commands": [
       {
         "type": "interpreter",
@@ -4718,7 +4796,7 @@
   {
     "name": "Whitelips IDE",
     "path": "javascript/vii5ard-whitelips-ide",
-    "authors": ["Henri Lakk"],
+    "authors": ["Henri Lakk (Vii5ard)"],
     "license": "none",
     "languages": ["JavaScript"],
     "tags": ["IDE", "interpreter", "optimizer", "assembler", "programs"],
@@ -4729,6 +4807,7 @@
       "https://vii5ard.github.io/whitespace/",
       "https://web.archive.org/web/20141011193149/http://compsoc.dur.ac.uk/archives/whitespace/2013-April/000082.html"
     ],
+    "whitespace": { "extension": "ws" },
     "assembly": {
       "instructions": {
         "push": ["push"],
@@ -4755,8 +4834,22 @@
         "printi": ["printi"],
         "readc": ["readc"],
         "readi": ["readi"]
-      }
+      },
+      "extension": "wsa"
     },
+    "programs": [
+      { "path": "example/nerd.wsa", "compiled": "example/nerd.ws" },
+      { "path": "example/hmacro.wsa" },
+      { "path": "example/bf.wsa", "compiled": "example/bf.ws" },
+      { "path": "example/collatz.wsa" },
+      { "path": "example/lib/math.wsa" },
+      { "path": "example/lib/string.wsa" },
+      { "path": "example/lib/alias.wsa" },
+      { "path": "example/lib/rot13.wsa" },
+      { "path": "example/lib/std.wsa" },
+      { "path": "example/vm/bf.wsa", "compiled": "example/vm/bf.ws" },
+      { "path": "example/wc/bf2wsa.wsa", "compiled": "example/wc/bf2wsa.ws" }
+    ],
     "notes": "TODO document macros. Local labels start with `.`."
   },
   {
@@ -5588,6 +5681,22 @@
     "commands": [{ "type": "interpreter", "bin": "wspace", "build": "make gencode.c all", "usage": "$0 <file>" }]
   },
   {
+    "name": "tetris.ws",
+    "path": "whitespace/pdewacht-tetris",
+    "authors": ["Peter De Wachter", "Andrew Archibald"],
+    "license": "none",
+    "languages": ["Whitespace"],
+    "tags": ["programs"],
+    "date": "2008-01-02 23:14:16 +0000",
+    "spec_version": "0.3",
+    "source": [
+      "https://github.com/wspace/pdewacht-tetris",
+      "https://web.archive.org/web/20141011193149/http://compsoc.dur.ac.uk/archives/whitespace/2008-January/000067.html",
+      "https://www.reddit.com/r/programming/comments/9nw1e/most_unreadable_programming_language_ever/c0dkzzw/"
+    ],
+    "programs": [{ "path": "tetris.ws", "spec_version": "0.3" }]
+  },
+  {
     "name": "EsCo (Esoteric Combine)",
     "path": "cpp/esco",
     "authors": ["Zasenko Sergey", "Matthias Boehm", "Justin Mutter"],
@@ -5721,7 +5830,8 @@
       "https://web.archive.org/web/20061209092911/http://www.cs.newcastle.edu.au/~c3018900/pywhitespace.tar.bz2",
       "https://www.mrphlip.com/pywhitespace.tar.bz2"
     ],
-    "whitespace": { "nonstandard": [{ "name": "trace", "seq": "LLT" }] },
+    "whitespace": { "nonstandard": [{ "name": "trace", "seq": "LLT" }], "extension": "ws" },
+    "programs": [{ "path": "examples/chr.ws" }, { "path": "examples/ord.ws" }],
     "commands": [
       {
         "type": "interpreter",

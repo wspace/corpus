@@ -105,6 +105,13 @@ type Project struct {
 		IgnoreCase        *bool  `json:"ignore_case,omitempty"`
 		Extension         string `json:"extension,omitempty"`
 	} `json:"mappings,omitempty"`
+	Programs []struct {
+		Path        string   `json:"path"`
+		Compiled    string   `json:"compiled,omitempty"`
+		Polyglot    []string `json:"polyglot,omitempty"`
+		SpecVersion string   `json:"spec_version,omitempty"`
+		Desc        string   `json:"desc,omitempty"`
+	} `json:"programs,omitempty"`
 	Commands []Command `json:"commands,omitempty"`
 	Notes    string    `json:"notes,omitempty"`
 }

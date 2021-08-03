@@ -219,7 +219,11 @@ Build and run errors are included.
 - ❌ whitespace/burghard-wsinterws
 - ❌ whitespace/hacktoberfest-hello-world
 - ❌ whitespace/keens-whitelie
-- ❌ whitespace/tewort-hello-whitespace
+- ❌ whitespace/paradoxv5-program-java-rb
+- ❌ whitespace/pdewacht-tetris
+- ❌ whitespace/petek-hello
+- ❌ whitespace/tewort-hello
+- ❌ whitespace/vii5ard-brainfuck
 - ❌ “HaPyLi” by Huf Lungdung (Cybis)
 - ❌ “Whitespace Interpreter in JavaScript” by Arnauld
 - ❌ “Whitespace Language - Online Translator/Interpreter” by dCode
