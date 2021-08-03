@@ -319,6 +319,31 @@
     "notes": "Codewars solution"
   },
   {
+    "name": "Whitespace Interpreter",
+    "path": "python/lachlancourt",
+    "authors": ["Lachlan Court"],
+    "license": "none",
+    "languages": ["Python"],
+    "tags": ["transpiler"],
+    "date": "2021-01-02 11:42:27 +1100",
+    "spec_version": "0.2",
+    "source": ["https://github.com/LachlanCourt/whitespace_interpreter"],
+    "whitespace": {
+      "unimplemented": ["label", "call", "jmp", "jz", "jn", "ret", "end", "printc", "printi", "readc", "readi"],
+      "extension": "txt"
+    },
+    "commands": [
+      {
+        "type": "transpiler",
+        "bin": "Interpreter.py",
+        "usage": "python3 $0",
+        "input": "code.txt",
+        "output": "stdout",
+        "notes": "Transpiles to Python"
+      }
+    ]
+  },
+  {
     "name": "asm2ws",
     "path": "c/kspalaiologos-asm2ws",
     "authors": ["Kamila Szewczyk (Palaiologos)"],
