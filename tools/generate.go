@@ -56,7 +56,7 @@ type Project struct {
 		Extension string `json:"extension,omitempty"`
 	} `json:"whitespace,omitempty"`
 	Assembly *struct {
-		Instructions *struct {
+		Mnemonics *struct {
 			Push      []string `json:"push,omitempty"`
 			Dup       []string `json:"dup,omitempty"`
 			Copy      []string `json:"copy,omitempty"`
@@ -85,7 +85,7 @@ type Project struct {
 			DumpStack []string `json:"dumpstack,omitempty"`
 			DumpHeap  []string `json:"dumpheap,omitempty"`
 			DumpTrace []string `json:"dumptrace,omitempty"`
-		} `json:"instructions,omitempty"`
+		} `json:"mnemonics,omitempty"`
 		Patterns                  map[string]string `json:"patterns,omitempty"`
 		CaseSensitiveInstructions *bool             `json:"case_sensitive_instructions,omitempty"`
 		LineCommentPrefix         string            `json:"line_comment_prefix,omitempty"`
