@@ -20,7 +20,8 @@ func main() {
 	var b strings.Builder
 	try(tools.RenderProjectTable(&b, projects))
 	try(t.Execute(f, map[string]interface{}{
-		"projects": b.String(),
+		"projects":      projects,
+		"projectsTable": b.String(),
 	}))
 }
 

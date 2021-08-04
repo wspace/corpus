@@ -1,7 +1,7 @@
 # The Whitespace Corpus
 
-The definitive collection of interpreters, compilers, and programs for
-the Whitespace programming language.
+The definitive collection of 199 projects for the Whitespace programming
+language, including interpreters, compilers, and programs.
 
 ## Projects
 
