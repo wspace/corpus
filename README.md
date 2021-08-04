@@ -59,7 +59,7 @@ the Whitespace programming language.
 | [whitespace-interpreter](python/adapap)        | Adam Papenhausen | Python     | interpreter  | 2018-11-16 | 0.3 | [GitHub](https://github.com/adapap/whitespace-interpreter) |
 | [whitespace](python/ahl27)                     | Aidan Lakshman   | Python     | interpreter, text to Whitespace, programs | 2018-11-08 | 0.3 | [GitHub](https://github.com/ahl27/whitespace) |
 | [Whitespace-Compiler](java/wysang)             | wysang           | Java, ANTLR4 | grammar    | 2018-10-21 | 0.3 | [GitHub](https://github.com/wysang/Whitespace-Compiler) |
-| [Hacktoberfest 2018 Hello-world](whitespace/hacktoberfest-hello-world) | Ethan Hall, Unnikrishnan A G | Whitespace | programs | 2018-10-06 | 0.2 | [GitHub](https://github.com/wspace/hacktoberfest-hello-world), [GitHub](https://github.com/Aniket965/Hello-world/tree/master/Whitespace) |
+| [Hacktoberfest 2018 Hello-world](whitespace/aniket-hacktoberfest-2018) | Ethan Hall, Unnikrishnan A G | Whitespace | programs | 2018-10-06 | 0.2 | [GitHub](https://github.com/wspace/aniket-hacktoberfest-2018), [GitHub](https://github.com/Aniket965/Hello-world/tree/master/Whitespace) |
 | [whitespace-stack-flood](whitespace/trevorbennett-stack-flood) | Trevor Bennett | Whitespace | programs | 2018-09-07 | 0.2 | [GitHub](https://github.com/trevorbennett/whitespace-stack-flood), [r/ProgrammerHumor](https://www.reddit.com/r/ProgrammerHumor/comments/9dvwhn/java_java/e5kg126/) |
 | [nospace](cpp/buyoh-nospace)                   | 舞葉 (Mai Buyoh)   | C++, Ruby  | language, interpreter, programs | 2018-09-05 | 0.3 | [GitHub](https://github.com/buyoh/nospace) |
 | [Whitespace compiler for 64-bit macOS](nasm/ryzheboka) | Elena Mokeeva | NASM, Python, C | interpreter, mapping | 2018-09-04 | 0.2 | [GitHub](https://github.com/ryzheboka/Whitespace) |
@@ -75,6 +75,8 @@ the Whitespace programming language.
 | [whitespace-lang](javascript/loklaan-whitespace-lang) | Lochlan Bunn | JavaScript | interpreter | 2018-02-14 | 0.3 | [GitHub](https://github.com/loklaan/whitespace-lang) |
 | [whitespace.py](python/mildsunrise)            | Alba Mendez      | Python     | interpreter  | 2018-01-14 | 0.2 | [GitHub Gist](https://gist.github.com/mildsunrise/d948fe1334f36c9a0f6516e58271f936) |
 | [Whitespace](c/sandeep)                        | Sandeep Varma    | C, Yacc, Lex | interpreter, programs | 2017-11-11 | 0.3 | [GitHub](https://github.com/Sandeep023/Whitespace) |
+| [hello-worlds](whitespace/knightking-hacktoberfest-2017) | Jackie Chen | Whitespace | programs | 2017-10-11 | 0.2 | [GitHub](https://github.com/knightking100/hello-worlds) |
+| [HacktoberFest Starter Project](whitespace/alicewonderland-hacktoberfest-2017) | Chashmeet Singh | Whitespace | programs | 2017-10-11 | 0.2 | [GitHub](https://github.com/AliceWonderland/hacktoberfest) |
 | [Whitespace-interpreter](python/bornlex)       | Bornlex          | Python     | interpreter, programs | 2017-08-09 | 0.3 | [GitHub](https://github.com/Bornlex/Whitespace-interpreter) |
 | [whitespace-interpreter](cpp/benajmin)         | Benjamin Wilkins | C++        | interpreter, programs | 2017-06-05 | 0.2 | [GitHub](https://github.com/benajmin/whitespace-interpreter) |
 | [wsm2ws](perl/ephphatha-wsm2ws)                | Andrew James     | Perl       | assembler, programs | 2017-05-28 | 0.3 | [GitHub](https://github.com/ephphatha/wsm2ws) |
@@ -89,6 +91,7 @@ the Whitespace programming language.
 | [whitespace.lol](lolcode/akers)                | D.E. Akers       | LOLCODE    | interpreter  | 2016-11-21 | 0.3 | [GitHub](https://github.com/wspace/akers-lolcode), [GitHub](https://github.com/hostilefork/whitespacers/tree/master/lolcode) |
 | [whitespac3](python/alecgraves-whitespac3)     | Alec Graves      | Python     | interpreter  | 2016-11-17 | 0.3 | [GitHub](https://github.com/alecGraves/whitespac3) |
 | [WhiteSpaceInterpreter](java/eia)              | Zuleimi Esteffanny González Muñoz | Java | interpreter, programs | 2016-10-27 | - | [GitHub](https://github.com/EIA-University/WhiteSpaceInterpreter) |
+| [hacktoberfest-dcoy](whitespace/dcoy-hacktoberfest-2016) | Noah Tranbarger | Whitespace | programs | 2016-10-10 | 0.2 | [GitHub](https://github.com/dcoy/hacktoberfest-dcoy) |
 | [EsoPoly](whitespace/kenrube-esopoly)          | Ivan Zolotarev   | Whitespace | programs     | 2016-09-13 | 0.2 | [GitHub](https://github.com/kenrube/Esopoly) |
 | [whitespace-python](python/dwayne)             | Dwayne R. Crooks | Python     | interpreter  | 2016-08-31 | 0.2 | [GitHub](https://github.com/dwayne/whitespace-python), [pypi.org](https://pypi.org/project/whitespace/) |
 | [ws-frontend](cpp/sonicyang-ws-frontend)       | Yang Chung-Fan   | C++, LLVM  | compiler     | 2016-08-20 | 0.2 | [GitHub](https://github.com/sonicyang/ws-frontend) |
@@ -140,7 +143,7 @@ the Whitespace programming language.
 | [Albino](rust/faultier-albino)                 | Taro Sako        | Rust       | interpreter, assembler, disassembler, bytecode, Brainfuck to Whitespace | 2014-07-18 | 0.3 | [GitHub](https://github.com/faultier/albino) |
 | [Whitespace-LLVM](cpp/subv-whitespace-llvm)    | Sebastian Valle  | C++, LLVM  | interpreter  | 2014-07-16 | 0.3 | [GitHub](https://github.com/Subv/Whitespace-LLVM) |
 | [Whitebase](rust/faultier-whitebase)           | Taro Sako        | Rust       | interpreter, assembler, disassembler, bytecode, Brainfuck to Whitespace, library | 2014-07-15 | 0.3 | [GitHub](https://github.com/faultier/whitebase) |
-| [whitespace-interpreter](java/azige)           | Azige            | Java       | language, interpreter, programs | 2014-06-18 | 0.3 | [GitHub](https://github.com/azige/whitespace-interpreter) |
+| [whitespace-interpreter](java/azige)           | Azige            | Java       | language, interpreter, programs | 2014-06-18 | 0.3 | [GitHub](https://github.com/azige/whitespace-interpreter), [tieba.baidu.com](https://tieba.baidu.com/p/3173314405), [pan.baidu.com](https://pan.baidu.com/s/1hqoWgxI) |
 | [whitespace-php](php/igorw)                    | Igor Wiedler     | PHP        | interpreter  | 2014-06-10 | 0.3 | [GitHub](https://github.com/igorw/whitespace-php) |
 | [wsi](javascript/naokikp-wsi)                  | naoki kageyama   | JavaScript | IDE, interpreter, mapping | 2014-06-01 | 0.3 | [GitHub](https://github.com/naokikp/naokikp.github.io), [naokikp.github.io](https://naokikp.github.io/wsi/whitespace.html) |
 | [wsint](masm/jarsp-wsint)                      | jarsp            | MASM       | interpreter  | 2014-06-01 | 0.3 | [GitHub](https://github.com/jarsp/wsint) |
@@ -268,12 +271,6 @@ To clone all submodules, run:
 
 ```sh
 git submodule update --init
-```
-
-To update all submodules to latest remote head, run:
-
-```sh
-git submodule update --remote
 ```
 
 ## Contributing

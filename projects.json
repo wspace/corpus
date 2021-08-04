@@ -1899,7 +1899,7 @@
   },
   {
     "name": "Hacktoberfest 2018 Hello-world",
-    "path": "whitespace/hacktoberfest-hello-world",
+    "path": "whitespace/aniket-hacktoberfest-2018",
     "authors": ["Ethan Hall", "Unnikrishnan A G"],
     "license": "MIT",
     "languages": ["Whitespace"],
@@ -1907,9 +1907,10 @@
     "date": "2018-10-06 00:23:08 -0500",
     "spec_version": "0.2",
     "source": [
-      "https://github.com/wspace/hacktoberfest-hello-world",
+      "https://github.com/wspace/aniket-hacktoberfest-2018",
       "https://github.com/Aniket965/Hello-world/tree/master/Whitespace"
-    ]
+    ],
+    "programs": [{ "path": "Hello World.txt" }, { "path": "hello-world.ws" }]
   },
   {
     "name": "whitespace-stack-flood",
@@ -2309,6 +2310,30 @@
       }
     ],
     "notes": "Has git conflict markers remaining in source"
+  },
+  {
+    "name": "hello-worlds",
+    "path": "whitespace/knightking-hacktoberfest-2017",
+    "authors": ["Jackie Chen"],
+    "license": "Unlicense",
+    "languages": ["Whitespace"],
+    "tags": ["programs"],
+    "date": "2017-10-11 23:01:33 -0400",
+    "spec_version": "0.2",
+    "source": ["https://github.com/knightking100/hello-worlds"],
+    "programs": [{ "path": "examples/w/Whitespace.ws" }]
+  },
+  {
+    "name": "HacktoberFest Starter Project",
+    "path": "whitespace/alicewonderland-hacktoberfest-2017",
+    "authors": ["Chashmeet Singh"],
+    "license": "GPL-3.0-or-later",
+    "languages": ["Whitespace"],
+    "tags": ["programs"],
+    "date": "2017-10-11 03:18:03 +0530",
+    "spec_version": "0.2",
+    "source": ["https://github.com/AliceWonderland/hacktoberfest"],
+    "programs": [{ "path": "scripts/hello_world_chashmeetsingh.ws" }]
   },
   {
     "name": "Whitespace-interpreter",
@@ -2731,6 +2756,18 @@
       ]
     },
     "programs": [{ "path": "src/fichero.bin", "spec_version": "0.2" }]
+  },
+  {
+    "name": "hacktoberfest-dcoy",
+    "path": "whitespace/dcoy-hacktoberfest-2016",
+    "authors": ["Noah Tranbarger"],
+    "license": "none",
+    "languages": ["Whitespace"],
+    "tags": ["programs"],
+    "date": "2016-10-10 19:18:18 -0400",
+    "spec_version": "0.2",
+    "source": ["https://github.com/dcoy/hacktoberfest-dcoy"],
+    "programs": [{ "path": "hello_world.ws " }]
   },
   {
     "name": "EsoPoly",
@@ -4349,7 +4386,11 @@
     "tags": ["language", "interpreter", "programs"],
     "date": "2014-06-18 23:38:41 +0800",
     "spec_version": "0.3",
-    "source": ["https://github.com/azige/whitespace-interpreter"],
+    "source": [
+      "https://github.com/azige/whitespace-interpreter",
+      "https://tieba.baidu.com/p/3173314405",
+      "https://pan.baidu.com/s/1hqoWgxI"
+    ],
     "whitespace": { "extension": "ws" },
     "assembly": {
       "mnemonics": {

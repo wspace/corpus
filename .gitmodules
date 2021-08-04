@@ -493,9 +493,15 @@
 [submodule "vim/rolf-ws-vim"]
 	path = vim/rolf-ws-vim
 	url = https://github.com/rolf007/ws.vim
+[submodule "whitespace/alicewonderland-hacktoberfest-2017"]
+	path = whitespace/alicewonderland-hacktoberfest-2017
+	url = https://github.com/AliceWonderland/hacktoberfest
 [submodule "whitespace/andrewarchi-wslib"]
 	path = whitespace/andrewarchi-wslib
 	url = https://github.com/andrewarchi/wslib
+[submodule "whitespace/aniket-hacktoberfest-2018"]
+	path = whitespace/aniket-hacktoberfest-2018
+	url = https://github.com/wspace/aniket-hacktoberfest-2018
 [submodule "whitespace/bbvch-hello"]
 	path = whitespace/bbvch-hello
 	url = https://github.com/bbvch13531/HelloWhitespace
@@ -505,15 +511,18 @@
 [submodule "whitespace/chrisnguyen-steganographic-polyglots"]
 	path = whitespace/chrisnguyen-steganographic-polyglots
 	url = https://github.com/uncompiled/steganographic-polyglots
-[submodule "whitespace/hacktoberfest-hello-world"]
-	path = whitespace/hacktoberfest-hello-world
-	url = https://github.com/wspace/hacktoberfest-hello-world
+[submodule "whitespace/dcoy-hacktoberfest-2016"]
+	path = whitespace/dcoy-hacktoberfest-2016
+	url = https://github.com/dcoy/hacktoberfest-dcoy
 [submodule "whitespace/keens-whitelie"]
 	path = whitespace/keens-whitelie
 	url = https://github.com/KeenS/whitelie
 [submodule "whitespace/kenrube-esopoly"]
 	path = whitespace/kenrube-esopoly
 	url = https://github.com/kenrube/Esopoly
+[submodule "whitespace/knightking-hacktoberfest-2017"]
+	path = whitespace/knightking-hacktoberfest-2017
+	url = https://github.com/knightking100/hello-worlds
 [submodule "whitespace/paradoxv5-program-java-rb"]
 	path = whitespace/paradoxv5-program-java-rb
 	url = https://github.com/ParadoxV5/Program-java-rb-ws-txt

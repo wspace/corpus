@@ -30,10 +30,12 @@ tidy_submodules: projects.json tools/submodules/submodules.go tools/format_gitmo
 	@tools/format_gitmodules.sh
 	@git add .gitmodules
 
+# Clone all submodules
 .PHONY: init_submodules
 init_submodules:
 	git submodule update --init
 
+# Update all submodules to latest remote head
 .PHONY: update_submodules
 update_submodules:
 	git submodule update --remote
