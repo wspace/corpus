@@ -183,15 +183,15 @@ Build and run errors are included.
 - ⚠️ ruby/alesiong/wsv.rb
 - ⚠️ ruby/bossiernesto/*unspecified*: No entrypoint
 - ruby/collidedscope-spitewaste/bin/spw
-- ❌ ruby/conrad
-- ❌ ruby/conrad-asm
-- ❌ ruby/conrad-disassem
 - ⚠️ ruby/dwayne/bin/whitespace: Old dependencies
 - ruby/mame-quine-relay/vendor/whitespace.rb
 - ruby/nishiwakki/whitespace.rb
 - ⚠️ ruby/pocke-akaza:
   - bin/str\_to\_ws.rb
   - ⚠️ exe/akaza: uninitialized constant Akaza::Parser::StringIO
+- ❌ ruby/wconrad
+- ❌ ruby/wconrad-asm
+- ❌ ruby/wconrad-disassem
 - rust/censoredusername-whitespace-rs/target/release/wsc: `cargo build --release`
 - rust/collidedscope-albus/target/release/albus: `cargo build --release`
 - ⚠️ rust/faultier-albino:

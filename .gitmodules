@@ -367,7 +367,7 @@
 [submodule "python/jrialland"]
 	path = python/jrialland
 	url = https://gist.github.com/jrialland/e0d370034da9c7b1b76a8afccbea7424
-[submodule "python/kareem-abyad"]
+[submodule "python/kareeeeem-abyad"]
 	path = python/kareeeeem-abyad
 	url = https://github.com/Kareeeeem/abyad
 [submodule "python/katc"]

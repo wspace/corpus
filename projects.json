@@ -2610,7 +2610,7 @@
     "tags": ["interpreter"],
     "date": "2017-01-31 16:21:48 +0000",
     "spec_version": "0.2",
-    "source": ["https://github.com/yasn77/whitepy", "https://opensourcelibs.com/lib/whitepy"],
+    "source": ["https://github.com/yasn77/whitepy"],
     "package": { "name": "whitepy", "manager": "PyPI", "url": "https://pypi.org/project/whitepy/" },
     "commands": [
       {
@@ -2796,7 +2796,7 @@
     "tags": ["interpreter"],
     "date": "2016-08-31 05:09:16 -0400",
     "spec_version": "0.2",
-    "source": ["https://github.com/dwayne/whitespace-python", "https://pypi.org/project/whitespace/"],
+    "source": ["https://github.com/dwayne/whitespace-python"],
     "package": { "name": "whitespace", "manager": "PyPI", "url": "https://pypi.org/project/whitespace/" },
     "commands": [
       {
@@ -3288,7 +3288,7 @@
     "date": "2016-03-05 16:39:05 +0800",
     "spec_version": "0.3",
     "source": ["https://github.com/alesiong/whitespace-ruby"],
-    "relations": [{ "type": "base", "id": "ruby/conrad" }],
+    "relations": [{ "type": "base", "id": "ruby/wconrad" }],
     "commands": [
       {
         "type": "program builder",
@@ -3760,7 +3760,7 @@
     "authors": ["Bruno Kim Medeiros Cesar"],
     "license": "unknown",
     "languages": ["JVM"],
-    "tags": ["compiler"],
+    "tags": ["compiler", "programs"],
     "date": "2015-04-03 06:30:42 +0000",
     "spec_version": "unknown",
     "source": [
@@ -6051,7 +6051,7 @@
   },
   {
     "name": "whitespace-ruby",
-    "path": "ruby/conrad",
+    "path": "ruby/wconrad",
     "authors": ["Wayne E. Conrad"],
     "license": "GPL-2.0-or-later",
     "languages": ["Ruby"],
@@ -6079,7 +6079,7 @@
   },
   {
     "name": "whitespace-asm",
-    "path": "ruby/conrad-asm",
+    "path": "ruby/wconrad-asm",
     "authors": ["Wayne E. Conrad"],
     "license": "GPL-2.0-or-later",
     "languages": ["Ruby"],
@@ -6120,7 +6120,7 @@
   },
   {
     "name": "whitespace-disassem",
-    "path": "ruby/conrad-disassem",
+    "path": "ruby/wconrad-disassem",
     "authors": ["Wayne E. Conrad"],
     "license": "GPL-2.0-or-later",
     "languages": ["Ruby"],
