@@ -232,7 +232,6 @@ Build and run errors are included.
 - ❌ whitespace/samdonow-pelc
 - ❌ whitespace/tewort-hello
 - ❌ whitespace/trevorbennett-stack-flood
-- ❌ whitespace/vii5ard-brainfuck
 - ❌ whitespace/wsdt-kevinloveswhitespace
 - ❌ whitespace/yokoyama-fizzbuzz
 - ❌ “HaPyLi” by Huf Lungdung (Cybis)

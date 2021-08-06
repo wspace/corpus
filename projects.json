@@ -4835,19 +4835,6 @@
     "commands": [{ "dependencies": ["Grunt"], "build": "npm install && grunt", "run_errors": "Unclear how to run" }]
   },
   {
-    "name": "Brainfuck Whitespace",
-    "path": "whitespace/vii5ard-brainfuck",
-    "authors": ["Henri Lakk (Vii5ard)"],
-    "license": "none",
-    "languages": ["Whitespace"],
-    "tags": ["programs"],
-    "date": "2013-07-22 16:02:45 +0300",
-    "spec_version": "0.3",
-    "source": ["https://github.com/vii5ard/brainfuck-whitespace"],
-    "programs": [{ "path": "src/bf.wsa", "compiled": "src/bf.ws" }],
-    "notes": "bf.wsa derived from javascript/vii5ard-whitelips-ide version, but differs somewhat"
-  },
-  {
     "name": "Quine Relay",
     "path": "ruby/mame-quine-relay",
     "authors": ["Yusuke Endoh"],
@@ -4983,7 +4970,8 @@
     "source": [
       "https://github.com/vii5ard/whitespace",
       "https://vii5ard.github.io/whitespace/",
-      "https://web.archive.org/web/20141011193149/http://compsoc.dur.ac.uk/archives/whitespace/2013-April/000082.html"
+      "https://web.archive.org/web/20141011193149/http://compsoc.dur.ac.uk/archives/whitespace/2013-April/000082.html",
+      "https://github.com/vii5ard/brainfuck-whitespace"
     ],
     "whitespace": { "extension": "ws" },
     "assembly": {
@@ -5028,7 +5016,7 @@
       { "path": "example/vm/bf.wsa", "compiled": "example/vm/bf.ws" },
       { "path": "example/wc/bf2wsa.wsa", "compiled": "example/wc/bf2wsa.ws" }
     ],
-    "notes": "TODO document macros. Local labels start with `.`."
+    "notes": "TODO document macros. Local labels start with `.`. The brainfuck-whitespace repo is derived from example/bf.wsa, but it stops reading the program at !, in addition to \\n."
   },
   {
     "name": "whitespace-interpreter",

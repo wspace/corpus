@@ -1,6 +1,6 @@
 # The Whitespace Corpus
 
-The definitive collection of 199 projects for the Whitespace programming
+The definitive collection of 198 projects for the Whitespace programming
 language, including interpreters, compilers, and programs.
 
 ## Projects
@@ -161,13 +161,12 @@ language, including interpreters, compilers, and programs.
 | [Project Euler Language Challenge](whitespace/samdonow-pelc) | Sam Donow | Whitespace | programs | 2013-09-03 00:29:00 -04:00 | 0.3 | [GitHub](https://github.com/drsam94/PELC), [pelangchallenge.blogspot.com](http://pelangchallenge.blogspot.com/2013/09/problem-36-done-in-whitespace.html), [Mailing list (archive)](https://web.archive.org/web/20141011193202/http://compsoc.dur.ac.uk/archives/whitespace/2013-September/000084.html) |
 | [whitespace-llvm](cpp/tycho-whitespace-llvm)   | Tycho Bickerstaff | C++, LLVM | compiler, JIT, optimizer, programs | 2013-08-31 | 0.3 | [GitHub](https://github.com/worktycho/whitespace-llvm) |
 | [Whitespace-JS](coffeescript/ehrlichbryan)     | Bryan Ehrlich    | CoffeeScript | interpreter, assembler | 2013-08-14 | 0.3 | [GitHub](https://github.com/adotout/whitespace-js) |
-| [Brainfuck Whitespace](whitespace/vii5ard-brainfuck) | Henri Lakk (Vii5ard) | Whitespace | programs | 2013-07-22 | 0.3 | [GitHub](https://github.com/vii5ard/brainfuck-whitespace) |
 | [Quine Relay](ruby/mame-quine-relay)           | Yusuke Endoh     | Ruby       | quine, polyglot, interpreter, programs | 2013-07-15 | 0.3 | [GitHub](https://github.com/mame/quine-relay) |
 | [WS2JS](javascript/luilak-ws2js)               | Luilak           | JavaScript | transpiler   | 2013-06-03 | 0.3 | [GitHub](https://github.com/Luilak/WS2JS) |
 | [ws-interpreter](cpp/yuukiaria)                | YuukiARIA        | C++        | interpreter, programs | 2013-05-05 | 0.3 | [GitHub](https://github.com/YuukiARIA/ws-interpreter) |
 | [whitespace](java/abhijitsharma)               | Abhijit Sharma   | Java       | interpreter  | 2013-04-05 | 0.2 | [GitHub](https://github.com/abhijitsharma/whitespace) |
 | [whitespace](javascript/rumpl)                 | Djordje Lukic    | JavaScript | interpreter  | 2013-03-27 | 0.3 | [GitHub](https://github.com/rumpl/whitespace) |
-| [Whitelips IDE](javascript/vii5ard-whitelips-ide) | Henri Lakk (Vii5ard) | JavaScript | IDE, interpreter, optimizer, assembler, programs | 2013-03-20 | 0.3 | [GitHub](https://github.com/vii5ard/whitespace), [vii5ard.github.io](https://vii5ard.github.io/whitespace/), [Mailing list (archive)](https://web.archive.org/web/20141011193149/http://compsoc.dur.ac.uk/archives/whitespace/2013-April/000082.html) |
+| [Whitelips IDE](javascript/vii5ard-whitelips-ide) | Henri Lakk (Vii5ard) | JavaScript | IDE, interpreter, optimizer, assembler, programs | 2013-03-20 | 0.3 | [GitHub](https://github.com/vii5ard/whitespace), [vii5ard.github.io](https://vii5ard.github.io/whitespace/), [Mailing list (archive)](https://web.archive.org/web/20141011193149/http://compsoc.dur.ac.uk/archives/whitespace/2013-April/000082.html), [GitHub](https://github.com/vii5ard/brainfuck-whitespace) |
 | [whitespace-interpreter](cpp/timvandermeij)    | Tim van der Meij, Willem Obbens, Simon Klaver | C++ | interpreter, assembler, disassembler, mapping, programs | 2013-02-06 | 0.3 | [GitHub](https://github.com/timvandermeij/whitespace-interpreter), [GitHub](https://github.com/wspace/timvandermeij-cpp) |
 | [ws](cpp/knmorgan)                             | Kyle Morgan      | C++        | interpreter  | 2012-12-29 | 0.3 | [GitHub](https://github.com/knmorgan/ws) |
 | [Whitespace-Interpreter](cpp/noia)             | Tucker Noia      | C++        | interpreter, programs | 2012-12-15 | 0.2 | [GitHub](https://github.com/noia1/Whitespace-Interpreter) |

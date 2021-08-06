@@ -541,9 +541,6 @@
 [submodule "whitespace/trevorbennett-stack-flood"]
 	path = whitespace/trevorbennett-stack-flood
 	url = https://github.com/trevorbennett/whitespace-stack-flood
-[submodule "whitespace/vii5ard-brainfuck"]
-	path = whitespace/vii5ard-brainfuck
-	url = https://github.com/vii5ard/brainfuck-whitespace
 [submodule "whitespace/wsdt-kevinloveswhitespace"]
 	path = whitespace/wsdt-kevinloveswhitespace
 	url = https://github.com/wsdt/WhiteSpace_Brainfuck
