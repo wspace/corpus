@@ -124,7 +124,7 @@ Build and run errors are included.
   - wsInterpreter: `gcc -O3 -Wall -o wsInterpreter wsInterpreter.c`
 - ocaml/jgkaplan-wsc/main.byte: `make`
 - perl/ephphatha-wsm2ws/wsm2ws.pl
-- ❌ perl/koebl
+- perl/mkoelbl/whitespace.pl
 - php/igorw/bin/interpreter
 - php/igorw-wsm/bin/wsm
 - php/johankj/whitespace.php
