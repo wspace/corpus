@@ -451,6 +451,9 @@
 [submodule "ruby/pocke-akaza"]
 	path = ruby/pocke-akaza
 	url = https://github.com/pocke/akaza
+[submodule "ruby/wconrad"]
+	path = ruby/wconrad
+	url = https://github.com/wspace/wconrad-ruby
 [submodule "rust/censoredusername-whitespace-rs"]
 	path = rust/censoredusername-whitespace-rs
 	url = https://github.com/CensoredUsername/whitespace-rs
