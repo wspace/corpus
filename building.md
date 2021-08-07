@@ -20,7 +20,7 @@ Build and run errors are included.
 - c/strangepan-i-c-whitespace/whitespace: `make`
 - c/tejaskasetty/flex-bison/262\_267\_256/ws: `make`
 - c/threeifbywhiskey-satan/satan: `make`
-- ⚠️ clojure/jmesyou-erasure/target/uberjar/erasure-2.0-standalone.jar: `lein uberjar` Parser namespace is clj-whitespace, not erasure
+- clojure/jmesyou-erasure/target/uberjar/erasure-2.0-standalone.jar: `lein uberjar`
 - clojure/tsuyusato/target/whitespace-clj-0.1.0-SNAPSHOT-standalone.jar: `lein uberjar`
 - ⚠️ coffeescript/ehrlichbryan/*unspecified*: `npm install && grunt` Unclear how to run
 - cpp/abac-whint/whint: `g++ -O3 -Wall -o whint whint.cpp`
@@ -69,7 +69,7 @@ Build and run errors are included.
   - ⚠️ nebula: `go mod init github.com/andrewarchi/nebula && go mod tidy && go build` Requires LLVM
   - ⚠️ programs/interpret.wsa
 - go/kinu/whitespace: `go mod init github.com/kinu/whitespace && go build`
-- ⚠️ go/technohippy/go-whitespace: Go version is pre-go1
+- go/technohippy/go-whitespace: `go build -o go-whitespace ./src`
 - go/tempxla-go-wspace/bin/go-wspace: `make`
 - go/yshr-wspacego/wspacego: `go mod init github.com/135yshr/wspacego && go mod tidy && go build`
 - ⚠️ haskell/brainbrush-tomato/wspace: `make` Needs changes for latest Haskell

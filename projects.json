@@ -2210,14 +2210,13 @@
     "tags": ["interpreter"],
     "date": "2018-02-24 19:28:32 -0500",
     "spec_version": "0.2",
-    "source": ["https://github.com/jmesyou/erasure", "https://github.com/wspace/jmesyou-erasure"],
+    "source": ["https://github.com/wspace/jmesyou-erasure", "https://github.com/jmesyou/erasure"],
     "commands": [
       {
         "type": "interpreter",
         "bin": "target/uberjar/erasure-2.0-standalone.jar",
         "dependencies": ["Leiningen"],
         "build": "lein uberjar",
-        "build_errors": "Parser namespace is clj-whitespace, not erasure",
         "usage": "java -jar $0 [-i | --intermediate] [-h | --help] <file>",
         "options": [
           {
@@ -5639,7 +5638,7 @@
     "tags": ["interpreter"],
     "date": "2010-10-08 03:12:01 +0900",
     "spec_version": "0.3",
-    "source": ["https://github.com/technohippy/go-whitespace", "https://github.com/wspace/technohippy-go"],
+    "source": ["https://github.com/wspace/technohippy-go", "https://github.com/technohippy/go-whitespace"],
     "bounds": {
       "precision": "Go int",
       "stack_cap": 30000,
@@ -5654,7 +5653,7 @@
       {
         "type": "interpreter",
         "bin": "go-whitespace",
-        "build_errors": "Go version is pre-go1",
+        "build": "go build -o go-whitespace ./src",
         "usage": "$0 [-d] [-h | --help] <file>",
         "options": [
           { "short": "d", "long": "d", "desc": "debug mode" },

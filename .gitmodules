@@ -33,7 +33,7 @@
 	url = https://github.com/threeifbywhiskey/satan
 [submodule "clojure/jmesyou-erasure"]
 	path = clojure/jmesyou-erasure
-	url = https://github.com/jmesyou/erasure
+	url = https://github.com/wspace/jmesyou-erasure
 [submodule "clojure/tsuyusato"]
 	path = clojure/tsuyusato
 	url = https://github.com/MakeNowJust/whitespace-clj
@@ -150,7 +150,7 @@
 	url = https://github.com/kinu/whitespace
 [submodule "go/technohippy"]
 	path = go/technohippy
-	url = https://github.com/technohippy/go-whitespace
+	url = https://github.com/wspace/technohippy-go
 [submodule "go/tempxla-go-wspace"]
 	path = go/tempxla-go-wspace
 	url = https://github.com/tempxla/go-wspace
