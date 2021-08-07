@@ -48,10 +48,11 @@ type Project struct {
 	Whitespace *struct {
 		Unimplemented []string `json:"unimplemented,omitempty"`
 		NonStandard   []struct {
-			Name string   `json:"name,omitempty"`
-			Seq  string   `json:"seq,omitempty"`
-			Args []string `json:"args,omitempty"`
-			Desc string   `json:"desc,omitempty"`
+			Name    string   `json:"name,omitempty"`
+			Aliases []string `json:"aliases,omitempty"`
+			Seq     string   `json:"seq,omitempty"`
+			Args    []string `json:"args,omitempty"`
+			Desc    string   `json:"desc,omitempty"`
 		} `json:"nonstandard,omitempty"`
 		Extension string `json:"extension,omitempty"`
 	} `json:"whitespace,omitempty"`
@@ -86,24 +87,34 @@ type Project struct {
 			DumpHeap  []string `json:"dumpheap,omitempty"`
 			DumpTrace []string `json:"dumptrace,omitempty"`
 		} `json:"mnemonics,omitempty"`
+		Macros []struct {
+			Name    string `json:"name"`
+			Replace string `json:"replace"`
+			Notes   string `json:"notes,omitempty"`
+		} `json:"macros,omitempty"`
 		Patterns                  map[string]string `json:"patterns,omitempty"`
 		CaseSensitiveInstructions *bool             `json:"case_sensitive_instructions,omitempty"`
-		LineCommentPrefix         string            `json:"line_comment_prefix,omitempty"`
-		Indentation               string            `json:"indentation,omitempty"`
-		LabelIndentation          string            `json:"label_indentation,omitempty"`
-		BinaryNumbers             *bool             `json:"binary_numbers,omitempty"`
-		Usage                     []string          `json:"usage,omitempty"`
-		Extension                 string            `json:"extension,omitempty"`
+		LineComments              []string          `json:"line_comments,omitempty"`
+		BlockComments             []struct {
+			Start  string `json:"start"`
+			End    string `json:"end"`
+			Nested bool   `json:"nested"`
+		} `json:"block_comments,omitempty"`
+		Indentation      string   `json:"indentation,omitempty"`
+		LabelIndentation string   `json:"label_indentation,omitempty"`
+		BinaryNumbers    *bool    `json:"binary_numbers,omitempty"`
+		Usage            []string `json:"usage,omitempty"`
+		Extension        string   `json:"extension,omitempty"`
 	} `json:"assembly,omitempty"`
 	Mappings []struct {
-		Space             string `json:"space"`
-		Tab               string `json:"tab"`
-		LF                string `json:"lf"`
-		SpacesBetween     *bool  `json:"spaces_between,omitempty"`
-		LineCommentPrefix string `json:"line_comment_prefix,omitempty"`
-		BeforeSTL         *bool  `json:"before_stl,omitempty"`
-		IgnoreCase        *bool  `json:"ignore_case,omitempty"`
-		Extension         string `json:"extension,omitempty"`
+		Space         string `json:"space"`
+		Tab           string `json:"tab"`
+		LF            string `json:"lf"`
+		SpacesBetween *bool  `json:"spaces_between,omitempty"`
+		LineComment   string `json:"line_comment,omitempty"`
+		BeforeSTL     *bool  `json:"before_stl,omitempty"`
+		IgnoreCase    *bool  `json:"ignore_case,omitempty"`
+		Extension     string `json:"extension,omitempty"`
 	} `json:"mappings,omitempty"`
 	Programs []struct {
 		Path        string   `json:"path"`

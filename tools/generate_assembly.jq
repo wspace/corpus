@@ -14,14 +14,19 @@
   "shuffle", "dumpstack", "dumpheap", "dumptrace" | {key:., value:[]}]
   | from_entries) as $keys |
 (
-  reduce (.[].assembly.mnemonics | select(. != null) | to_entries[]) as $inst
-         ($keys; .[$inst.key] += $inst.value)
+  [
+    .[].assembly.mnemonics | select(. != null)
+    | to_entries[]
+    | .value |= (
+      map(ascii_downcase
+        | gsub("^(stack|arith|math|heap|flow|io)[ \\.]"; "")
+        | gsub("^mod\\."; "")
+        | gsub(" ([.%lf]?<[a-z_]+>|_)"; ""))
+      | unique
+    )
+  ]
+  | reduce .[] as $inst ($keys; .[$inst.key] += $inst.value)
   | to_entries[].value
-  | map(ascii_downcase
-      | gsub("^(ws_)?(?<inst>[a-z_]+)\\(.*\\);$"; .inst)
-      | gsub("^(stack|arith|math|heap|flow|io)[ \\.]"; "")
-      | gsub("^mod\\."; "")
-      | gsub(" ([.%lf]?<[a-z_]+>|_)"; ""))
   | group_by(.) | sort_by(-length)
   | map("`\(.[0])`" + if length != 1 then " (\(length | tostring))" else "" end)
   | "- " + join(", ")

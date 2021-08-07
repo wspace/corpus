@@ -401,7 +401,7 @@
       },
       "patterns": { "label": "@([A-Za-z_][A-Za-z0-9_]*|L<number>)" },
       "case_sensitive_instructions": false,
-      "line_comment_prefix": ";",
+      "line_comments": [";"],
       "usage": ["assembler", "disassembler", "programs"],
       "extension": "asm"
     },
@@ -1097,7 +1097,7 @@
         "readi": ["IO readnumber"]
       },
       "case_sensitive_instructions": true,
-      "line_comment_prefix": "#",
+      "line_comments": ["#"],
       "extension": "wsa"
     },
     "notes": "TODO mirror GitHub Gist"
@@ -1292,7 +1292,7 @@
         "variable": "[^ \t]+"
       },
       "case_sensitive_instructions": false,
-      "line_comment_prefix": "//",
+      "line_comments": ["//"],
       "extension": "txt"
     },
     "commands": [
@@ -1661,7 +1661,7 @@
         "readi": ["readi"]
       },
       "case_sensitive_instructions": true,
-      "line_comment_prefix": "#",
+      "line_comments": ["#"],
       "extension": "hws"
     },
     "commands": [
@@ -2441,7 +2441,7 @@
         "readc": ["ichar", "getchar"],
         "readi": ["inum", "getnum"]
       },
-      "line_comment_prefix": ";",
+      "line_comments": [";"],
       "extension": "wsm"
     },
     "commands": [
@@ -2506,7 +2506,7 @@
         "readi": ["readnum"]
       },
       "case_sensitive_instructions": true,
-      "line_comment_prefix": "#",
+      "line_comments": ["#"],
       "usage": ["assembler"]
     },
     "commands": [
@@ -3285,7 +3285,7 @@
         "readc": ["GETC"],
         "readi": ["GETN"]
       },
-      "line_comment_prefix": "#",
+      "line_comments": ["#"],
       "usage": ["assembler"]
     },
     "commands": [
@@ -3520,46 +3520,69 @@
     "source": ["https://github.com/rdebath/whitespace"],
     "whitespace": {
       "nonstandard": [
-        { "name": "jzp", "args": ["label"] },
-        { "name": "jzn", "args": ["label"] },
-        { "name": "jp", "args": ["label"] },
-        { "name": "jnz", "args": ["label"] },
-        { "name": "ifoption" },
-        { "name": "endoption" },
-        { "name": "include" }
+        { "name": "jzp", "aliases": ["jumppz"], "args": ["label"] },
+        { "name": "jzn", "aliases": ["jumpnz"], "args": ["label"] },
+        { "name": "jp", "aliases": ["jumpp"], "args": ["label"] },
+        { "name": "jnz", "aliases": ["jumppn", "jumpnp"], "args": ["label"] }
       ]
     },
     "assembly": {
       "mnemonics": {
-        "push": ["ws_push(<number>);", "push"],
-        "dup": ["ws_dup();", "dup", "doub"],
-        "copy": ["ws_pick(<number>);", "copy", "pick"],
-        "swap": ["ws_swap();", "swap"],
-        "drop": ["ws_drop();", "drop", "discard", "pop"],
-        "slide": ["ws_slide(<number>);", "slide"],
-        "add": ["ws_add();", "add"],
-        "sub": ["ws_sub();", "sub"],
-        "mul": ["ws_mul();", "mul"],
-        "div": ["ws_div();", "div"],
-        "mod": ["ws_mod();", "mod"],
-        "store": ["ws_store();", "store"],
-        "retrieve": ["ws_fetch();", "ws_retrieve();", "fetch", "retrieve", "retrive", "retreive"],
-        "label": ["ws_label(<label>);", "<number>:", ".<label>:", "<label>:", "label"],
-        "call": ["ws_call(<label>);", "call"],
-        "jmp": ["ws_jump(<label>);", "jmp", "jump"],
-        "jz": ["ws_jz(<label>);", "jz", "jumpz"],
-        "jn": ["ws_jn(<label>);", "jn", "jumpn"],
-        "ret": ["ws_return();", "ret", "return"],
-        "end": ["ws_exit();", "quit", "exit", "end"],
-        "printc": ["ws_outc();", "outc", "outchar", "printc"],
-        "printi": ["ws_outn();", "outn", "outnum", "printi"],
-        "readc": ["ws_readc();", "readc", "readchar", "inc"],
-        "readi": ["ws_readn();", "readn", "readnum", "readi", "inn"],
-        "dumpstack": ["debug_printstack();"],
-        "dumpheap": ["debug_printheap();"]
+        "push": ["push"],
+        "dup": ["dup", "doub"],
+        "copy": ["pick", "copy"],
+        "swap": ["swap"],
+        "drop": ["drop", "discard", "pop"],
+        "slide": ["slide"],
+        "add": ["add", "add <rhs>"],
+        "sub": ["sub", "sub <rhs>"],
+        "mul": ["mul"],
+        "div": ["div"],
+        "mod": ["mod"],
+        "store": ["store", "store <lhs>"],
+        "retrieve": ["fetch", "retrieve", "retrive", "retrive <number>", "retreive"],
+        "label": ["<label>:", "label"],
+        "call": ["call"],
+        "jmp": ["jump", "jmp"],
+        "jz": ["jz", "jumpz"],
+        "jn": ["jn", "jumpn"],
+        "ret": ["return", "ret"],
+        "end": ["exit", "quit", "end"],
+        "printc": ["outc", "outchar", "printc"],
+        "printi": ["outn", "outnum", "printi"],
+        "readc": ["readc", "readchar", "inc"],
+        "readi": ["readn", "readnum", "readi", "inn"],
+        "dumpstack": ["debug_printstack"],
+        "dumpheap": ["debug_printheap"]
       },
-      "case_sensitive_instructions": false
+      "macros": [
+        {
+          "name": "pushs <s>",
+          "replace": "push 0 push <sn> ... push <s1> push <s0>",
+          "notes": "Uses dup for matching consecutive characters"
+        },
+        { "name": "test <n>", "replace": "dup push <n> sub" },
+        { "name": "ifoption <x>", "replace": "#ifdef <x>" },
+        { "name": "endoption", "replace": "#endif" },
+        { "name": "include <file>", "replace": "#include \"<file>.h\"" }
+      ],
+      "patterns": {
+        "label": "\\.?[A-Za-z_][A-Za-z0-9_]*|[0-9]+",
+        "number": "-?[0-9]+",
+        "number_char": "'[^\\]'|'\\[abtn']'",
+        "string": "\"[^\"]*\""
+      },
+      "case_sensitive_instructions": false,
+      "line_comments": [";", "#", "--"],
+      "block_comments": [{ "start": "{-", "end": "-}", "nested": false }],
+      "usage": ["transpiler", "assembler", "enum"]
     },
+    "programs": [
+      { "path": "gen-99bottles.c" },
+      { "path": "gen-prime.c" },
+      { "path": "gen-wsinterws.c" },
+      { "path": "gencode-deadfish-in-ws.c" }
+    ],
     "commands": [
       {
         "type": "transpiler",
@@ -3605,7 +3628,7 @@
         "notes": "Assembles Oliver Burghard's Whitespace assembly dialect, including shorthand instructions"
       }
     ],
-    "notes": "Transpiles to C. The input assembly dialects of wsa and wsa.sed, as well as the output C function calls, are combined in .assembly.instructions. Has tests directory contains Whitespace programs from many authors."
+    "notes": "Transpiles to C. The input assembly dialects of wsa and wsa.sed, as well as the output C function calls, are combined in .assembly.mnemonics. Has tests directory that contains Whitespace programs from many authors."
   },
   {
     "name": "BlueSpace",
@@ -3645,7 +3668,7 @@
         "readi": ["ReadNum"]
       },
       "case_sensitive_instructions": false,
-      "line_comment_prefix": "#",
+      "line_comments": ["#"],
       "extension": "wsa"
     },
     "mappings": [{ "space": "s", "tab": "t", "lf": "n", "extension": "wsp" }],
@@ -3740,7 +3763,7 @@
         "readc": ["IN-CHAR"],
         "readi": ["IN-NUM"]
       },
-      "line_comment_prefix": ";",
+      "line_comments": [";"],
       "usage": ["disassembler"]
     },
     "commands": [
@@ -3867,7 +3890,7 @@
         "readi": ["GETNUM"]
       },
       "case_sensitive_instructions": true,
-      "line_comment_prefix": "#"
+      "line_comments": ["#"]
     },
     "mappings": [{ "space": "S", "tab": "T", "lf": "\n" }]
   },
@@ -4228,7 +4251,7 @@
         "readc": ["RCHR"],
         "readi": ["RNUM"]
       },
-      "line_comment_prefix": "#"
+      "line_comments": ["#"]
     },
     "mappings": [
       { "space": "S", "tab": "T", "lf": "L", "spaces_between": false },
@@ -5326,7 +5349,7 @@
         "readc": ["readchar"],
         "readi": ["readnum"]
       },
-      "line_comment_prefix": "#",
+      "line_comments": ["#"],
       "usage": ["disassembler"],
       "extension": "wsa"
     },
@@ -5664,7 +5687,7 @@
       },
       "patterns": { "label": "\"[A-Za-z0-9_]+\"", "number": "[+-]?[0-9]+" },
       "case_sensitive_instructions": true,
-      "line_comment_prefix": "#",
+      "line_comments": ["#"],
       "indentation": "     ",
       "extension": "wsa"
     },
@@ -5761,7 +5784,7 @@
         "tab": "tab",
         "lf": "lf",
         "spaces_between": true,
-        "line_comment_prefix": ";",
+        "line_comment": ";",
         "extension": "wsw"
       }
     ],
@@ -6016,7 +6039,7 @@
         "readc": ["readchar"],
         "readi": ["readnum"]
       },
-      "line_comment_prefix": "#",
+      "line_comments": ["#"],
       "extension": "wsa"
     },
     "mappings": [{ "space": "A", "tab": "B", "lf": "C\n", "spaces_between": false }],
@@ -6142,7 +6165,7 @@
         "readc": ["readchar"],
         "readi": ["readnum"]
       },
-      "line_comment_prefix": "#",
+      "line_comments": ["#"],
       "indentation": "        ",
       "usage": ["assembler", "disassembler"],
       "extension": "wsa"
