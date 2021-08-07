@@ -394,6 +394,9 @@
 [submodule "python/mildsunrise"]
 	path = python/mildsunrise
 	url = https://gist.github.com/mildsunrise/d948fe1334f36c9a0f6516e58271f936
+[submodule "python/nutcrack-whiteplanes"]
+	path = python/nutcrack-whiteplanes
+	url = https://github.com/wspace/nutcrack-whiteplanes-python
 [submodule "python/phlip-pywhitespace"]
 	path = python/phlip-pywhitespace
 	url = https://github.com/wspace/phlip-pywhitespace
