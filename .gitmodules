@@ -105,7 +105,7 @@
 	url = https://github.com/sudheesh4/Whitespace-Interpreter-C-
 [submodule "cpp/timvandermeij"]
 	path = cpp/timvandermeij
-	url = https://github.com/timvandermeij/whitespace-interpreter
+	url = https://github.com/wspace/timvandermeij-cpp
 [submodule "cpp/tycho-whitespace-llvm"]
 	path = cpp/tycho-whitespace-llvm
 	url = https://github.com/worktycho/whitespace-llvm

@@ -1100,6 +1100,15 @@
       "line_comments": ["#"],
       "extension": "wsa"
     },
+    "programs": [{ "path": "whitelie.ws" }],
+    "commands": [
+      {
+        "type": "compiler",
+        "bin": "whitelie",
+        "usage": "$0 < <file>",
+        "notes": "Only runs on 64-bit Linux"
+      }
+    ],
     "notes": "TODO mirror GitHub Gist"
   },
   {
@@ -2567,7 +2576,8 @@
         "printi": ["printnum"],
         "readc": ["readchar"],
         "readi": ["readnum"]
-      }
+      },
+      "usage": ["disassembler"]
     },
     "commands": [
       {
@@ -3514,7 +3524,7 @@
     "authors": ["Robert de Bath"],
     "license": "none",
     "languages": ["C", "Lex"],
-    "tags": ["transpiler", "interpreter", "assembler", "programs"],
+    "tags": ["transpiler", "interpreter", "assembler", "program builder", "programs"],
     "date": "2015-08-18 14:25:03 +0100",
     "spec_version": "0.3",
     "source": ["https://github.com/rdebath/whitespace"],
@@ -3669,6 +3679,7 @@
       },
       "case_sensitive_instructions": false,
       "line_comments": ["#"],
+      "usage": ["assembler"],
       "extension": "wsa"
     },
     "mappings": [{ "space": "s", "tab": "t", "lf": "n", "extension": "wsp" }],
@@ -3961,7 +3972,8 @@
         "printi": ["PUTNUM"],
         "readc": ["READCHAR"],
         "readi": ["READNUM"]
-      }
+      },
+      "usage": ["dump", "enum"]
     },
     "commands": [
       {
@@ -4572,7 +4584,8 @@
         "printi": ["print_i"],
         "readc": ["read_c"],
         "readi": ["read_i"]
-      }
+      },
+      "usage": ["disassembler", "enum"]
     },
     "commands": [
       {
@@ -4856,7 +4869,7 @@
     "authors": ["Bryan Ehrlich"],
     "license": "none",
     "languages": ["CoffeeScript"],
-    "tags": ["interpreter", "assembler"],
+    "tags": ["interpreter", "assembler", "disassembler", "programs"],
     "date": "2013-08-14 18:12:35 -0400",
     "spec_version": "0.3",
     "source": ["https://github.com/adotout/whitespace-js"],
@@ -4888,8 +4901,17 @@
         "readi": ["IN_N"]
       },
       "case_sensitive_instructions": false,
+      "usage": ["assembler", "disassembler"],
       "extension": "bs"
     },
+    "programs": [
+      { "path": "example programs/blackspace/hello.bs", "compiled": "example programs/whitespace/hello.ws" },
+      {
+        "path": "example programs/blackspace/say_hi.bs",
+        "compiled": "example programs/whitespace/say_hi.ws"
+      },
+      { "path": "example programs/blackspace/prompt.bs" }
+    ],
     "commands": [{ "dependencies": ["Grunt"], "build": "npm install && grunt", "run_errors": "Unclear how to run" }]
   },
   {
@@ -5086,8 +5108,8 @@
     "date": "2013-02-06 06:24:15 -0800",
     "spec_version": "0.3",
     "source": [
-      "https://github.com/timvandermeij/whitespace-interpreter",
-      "https://github.com/wspace/timvandermeij-cpp"
+      "https://github.com/wspace/timvandermeij-cpp",
+      "https://github.com/timvandermeij/whitespace-interpreter"
     ],
     "bounds": { "precision": "fixed", "heap_min": 0 },
     "assembly": {
@@ -6040,6 +6062,7 @@
         "readi": ["readnum"]
       },
       "line_comments": ["#"],
+      "usage": ["assembler", "disassembler", "debugger"],
       "extension": "wsa"
     },
     "mappings": [{ "space": "A", "tab": "B", "lf": "C\n", "spaces_between": false }],
