@@ -224,7 +224,9 @@ Build and run errors are included.
 - ❌ whitespace/ccns-chicken
 - ❌ whitespace/chrisnguyen-steganographic-polyglots
 - ❌ whitespace/dcoy-hacktoberfest-2016
-- whitespace/keens-whitelie/whitelie
+- whitespace/keen-whitelie:
+  - asm.rb
+  - whitelie
 - ❌ whitespace/kenrube-esopoly
 - ❌ whitespace/knightking-hacktoberfest-2017
 - ❌ whitespace/paradoxv5-program-java-rb

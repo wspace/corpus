@@ -31,7 +31,7 @@ language, including interpreters, compilers, and programs.
 | [WhiteSpace Assembler](haskell/helvm-wsa)      | Kamil Adam       | Haskell    | assembler    | 2020-05-18 | 0.2 | [GitHub](https://github.com/helvm/wsa) |
 | [HelPA](haskell/helvm-helpa)                   | Kamil Adam       | Haskell/Eta | assembler   | 2020-05-09 | 0.2 | [GitHub](https://github.com/helvm/helpa) |
 | [HelMA](haskell/helvm-helma)                   | Kamil Adam       | Haskell/Eta | interpreter | 2020-05-08 | 0.3 | [GitHub](https://github.com/helvm/helma) |
-| [Whitelie](whitespace/keens-whitelie)          | κeen             | Whitespace, Ruby | compiler, assembler, programs | 2020-03-31 | 0.3 | [GitHub](https://github.com/KeenS/whitelie), [GitHub Gist](https://gist.github.com/KeenS/6081b0c802a4e575ddbacb1930680870) |
+| [Whitelie](whitespace/keen-whitelie)           | κeen             | Whitespace, Ruby | compiler, assembler, programs | 2020-03-31 | 0.3 | [GitHub](https://github.com/wspace/keen-whitelie-whitespace), [GitHub](https://github.com/KeenS/whitelie), [GitHub Gist](https://gist.github.com/KeenS/6081b0c802a4e575ddbacb1930680870) |
 | [WhitespaceInterpreter](csharp/denislabrecque) | Denis G. Labrecque | C#       | interpreter  | 2020-03-26 | 0.2 | [GitHub](https://github.com/DenisLabrecque/Whitespace-Interpreter) |
 | [EvanescoJS](javascript/damle-evanescojs)      | Atharv Damle     | JavaScript | text to Whitespace, web app | 2020-03-14 | - | [GitHub](https://github.com/AD9000/EvanescoJS) |
 | [Evanesco](python/damle-evanesco)              | Atharv Damle     | Python     | text to Whitespace | 2020-02-20 | - | [GitHub](https://github.com/AD9000/Evanesco) |

@@ -523,9 +523,9 @@
 [submodule "whitespace/dcoy-hacktoberfest-2016"]
 	path = whitespace/dcoy-hacktoberfest-2016
 	url = https://github.com/dcoy/hacktoberfest-dcoy
-[submodule "whitespace/keens-whitelie"]
-	path = whitespace/keens-whitelie
-	url = https://github.com/KeenS/whitelie
+[submodule "whitespace/keen-whitelie"]
+	path = whitespace/keen-whitelie
+	url = https://github.com/wspace/keen-whitelie-whitespace
 [submodule "whitespace/kenrube-esopoly"]
 	path = whitespace/kenrube-esopoly
 	url = https://github.com/kenrube/Esopoly

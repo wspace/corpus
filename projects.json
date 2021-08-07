@@ -1058,7 +1058,7 @@
   {
     "name": "Whitelie",
     "description": "Self-hosted Whitespace compiler for 64-bit Linux",
-    "path": "whitespace/keens-whitelie",
+    "path": "whitespace/keen-whitelie",
     "authors": ["κeen"],
     "license": "GPL-2.0-or-later",
     "languages": ["Whitespace", "Ruby"],
@@ -1066,6 +1066,7 @@
     "date": "2020-03-31 23:46:45 +0900",
     "spec_version": "0.3",
     "source": [
+      "https://github.com/wspace/keen-whitelie-whitespace",
       "https://github.com/KeenS/whitelie",
       "https://gist.github.com/KeenS/6081b0c802a4e575ddbacb1930680870"
     ],
@@ -1098,18 +1099,26 @@
       },
       "case_sensitive_instructions": true,
       "line_comments": ["#"],
+      "usage": ["assembler", "programs"],
       "extension": "wsa"
     },
-    "programs": [{ "path": "whitelie.ws" }],
+    "programs": [{ "path": "whitelie.wsa", "compiled": "whitelie.ws" }],
     "commands": [
       {
         "type": "compiler",
         "bin": "whitelie",
         "usage": "$0 < <file>",
         "notes": "Only runs on 64-bit Linux"
+      },
+      {
+        "type": "assembler",
+        "bin": "asm.rb",
+        "dependencies": ["Ruby"],
+        "usage": "ruby $0 <file>",
+        "input": "<file>",
+        "output": "stdout"
       }
-    ],
-    "notes": "TODO mirror GitHub Gist"
+    ]
   },
   {
     "name": "WhitespaceInterpreter",
