@@ -18,7 +18,9 @@ func main() {
 		return projects[i].Path < projects[j].Path
 	})
 
-	for _, p := range projects {
+	var badURLs []*tools.Project
+	for i := range projects {
+		p := &projects[i]
 		if p.Path == "" || len(p.Source) == 0 {
 			continue
 		}
@@ -26,10 +28,9 @@ func main() {
 			continue
 		}
 
-		src := p.Source[0]
-		repo := getGitURL(src)
+		repo := getGitURL(p.Source[0])
 		if repo == "" {
-			fmt.Printf("%s: first source not a recognized repo: %s\n", p.Path, src)
+			badURLs = append(badURLs, p)
 			continue
 		}
 
@@ -38,6 +39,13 @@ func main() {
 		cmd.Stdout = os.Stdout
 		cmd.Stderr = os.Stderr
 		try(cmd.Run())
+	}
+
+	if len(badURLs) != 0 {
+		fmt.Println("First source not a recognized repo for:")
+		for _, p := range badURLs {
+			fmt.Printf("- %s: %s\n", p.Path, p.Source[0])
+		}
 	}
 }
 
