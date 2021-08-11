@@ -372,6 +372,7 @@
     "date": "2020-12-31 22:37:25 +0100",
     "spec_version": "0.3",
     "source": ["https://github.com/kspalaiologos/asm2ws"],
+    "whitespace": { "extension": "ws" },
     "assembly": {
       "mnemonics": {
         "push": ["PSH", "PUSH"],
@@ -405,6 +406,45 @@
       "usage": ["assembler", "disassembler", "programs"],
       "extension": "asm"
     },
+    "programs": [
+      { "path": "tests/ws-run/cellsize.ws", "outputs": ["tests/ws-run/cellsize.ws.out"] },
+      { "path": "tests/ws-run/count.ws", "outputs": ["tests/ws-run/count.ws.out"] },
+      { "path": "tests/ws-run/duplabel.ws", "outputs": ["tests/ws-run/duplabel.ws.out"] },
+      {
+        "path": "tests/ws-run/fact.ws",
+        "inputs": ["tests/ws-run/fact.ws.in"],
+        "outputs": ["tests/ws-run/fact.ws.out"]
+      },
+      { "path": "tests/ws-run/nerd.ws", "outputs": ["tests/ws-run/nerd.ws.out"] },
+      { "path": "tests/ws-run/spec_zero.ws", "outputs": ["tests/ws-run/spec_zero.ws.out"] },
+      {
+        "path": "binary.bak",
+        "compiled": "binary.ws",
+        "inputs": ["binary.ws.asm.ws.in", "binary.ws.in"],
+        "outputs": ["binary.ws.asm.ws.out", "binary.ws.out"]
+      },
+      { "path": "copy.bak", "compiled": "copy.ws", "outputs": ["copy.ws.asm.ws.out", "copy.ws.out"] },
+      {
+        "path": "doubler.ws",
+        "inputs": ["doubler.ws.asm.ws.in", "doubler.ws.in"],
+        "outputs": ["doubler.ws.asm.ws.out", "doubler.ws.out"]
+      },
+      {
+        "path": "halve.bak",
+        "compiled": "halve.ws",
+        "inputs": ["halve.ws.asm.ws.in", "halve.ws.in"],
+        "outputs": ["halve.ws.asm.ws.out", "halve.ws.out"]
+      },
+      {
+        "path": "hanoi.ws",
+        "inputs": ["hanoi.ws.asm.ws.in", "hanoi.ws.in"],
+        "outputs": ["hanoi.ws.asm.ws.out", "hanoi.ws.out"]
+      },
+      { "path": "slide.bak", "compiled": "slide.ws", "outputs": ["slide.ws.asm.ws.out", "slide.ws.out"] },
+      { "path": "divc.asm", "inputs": ["divc.asm.ws.in"], "outputs": ["divc.asm.ws.out"] },
+      { "path": "mmltz.asm", "inputs": ["mmltz.asm.ws.in"], "outputs": ["mmltz.asm.ws.out"] },
+      { "path": "rep_putn.asm", "outputs": ["rep_putn.asm.ws.out"] }
+    ],
     "commands": [
       {
         "bin": "wsi",
@@ -889,6 +929,12 @@
     "date": "2020-10-09 14:27:42 +0200",
     "spec_version": "0.2",
     "source": ["https://github.com/D3PSI/whitespace-interpreter"],
+    "whitespace": { "extension": "ws" },
+    "programs": [
+      { "path": "ws/cat.ws", "spec_version": "0.2" },
+      { "path": "ws/hello_world.ws", "spec_version": "0.2" },
+      { "path": "ws/truth_machine.ws", "spec_version": "0.2" }
+    ],
     "commands": [
       {
         "type": "interpreter",
@@ -897,10 +943,12 @@
         "usage": "$0 < <file>",
         "input": "stdin"
       }
-    ]
+    ],
+    "notes": "TODO programs are likely derived from the Esolang example programs"
   },
   {
     "name": "Whitespace Language - Online Translator/Interpreter",
+    "path": "php/dcode",
     "authors": ["dCode"],
     "license": "proprietary",
     "languages": ["JavaScript", "PHP"],
@@ -1071,6 +1119,7 @@
       "https://github.com/KeenS/whitelie",
       "https://gist.github.com/KeenS/6081b0c802a4e575ddbacb1930680870"
     ],
+    "whitespace": { "extension": "ws" },
     "assembly": {
       "mnemonics": {
         "push": ["Stack push"],
@@ -1107,6 +1156,8 @@
       {
         "path": "whitelie.wsa",
         "compiled": "whitelie.ws",
+        "inputs": ["whitelie.ws"],
+        "outputs": ["whitelie"],
         "generate": "ruby asm.rb whitelie.wsa > whitelie.ws"
       }
     ],
@@ -1219,6 +1270,7 @@
   },
   {
     "name": "Whitespace Interpreter in JavaScript",
+    "path": "javascript/arnauld",
     "authors": ["Arnauld"],
     "license": "CC-BY-SA-4.0",
     "languages": ["JavaScript"],
@@ -1504,6 +1556,7 @@
     "date": "2019-06-08 23:22:47 +0200",
     "spec_version": "0.3",
     "source": ["https://github.com/qwhxm/baudelaire-whitespace"],
+    "relations": [{ "type": "binary", "id": "cpp/esco" }],
     "programs": [{ "path": "backend/baudelaire.ws", "spec_version": "0.2" }],
     "commands": [
       {
@@ -3780,6 +3833,7 @@
   },
   {
     "name": "Whitespace compiler targeting JVM bytecode",
+    "path": "java/brunokim",
     "authors": ["Bruno Kim Medeiros Cesar"],
     "license": "unknown",
     "languages": ["JVM"],
@@ -3790,6 +3844,8 @@
       "https://stackoverflow.com/questions/29427419/ifeq-ifne-jvm-opcode-always-branches",
       "https://drive.google.com/drive/folders/0B8vCNP4j9pRKfmpOT2dGeWRTN0lrbFlPS0xMRENlSWJPMW44TVZDM0hWMVJJUGZQZC1NcGM"
     ],
+    "whitespace": { "extension": "ws" },
+    "programs": [{ "path": "call.ws", "spec_version": "0.2" }],
     "notes": "Source unavailable"
   },
   {
@@ -4096,7 +4152,7 @@
     "authors": ["koturn"],
     "license": "MIT",
     "languages": ["C"],
-    "tags": ["interpreter", "translator", "programs"],
+    "tags": ["interpreter", "translator"],
     "date": "2014-11-08 22:30:57 +0900",
     "spec_version": "0.3",
     "source": ["https://github.com/koturn/Whitespace"],
@@ -5476,6 +5532,7 @@
   {
     "name": "trans32.py",
     "description": "Two-way translator for an arbitrary 3-symbol language and a binary prefix-code version",
+    "path": "python/res-trans32",
     "authors": ["r.e.s."],
     "license": "unknown",
     "languages": ["Python"],

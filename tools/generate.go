@@ -119,6 +119,8 @@ type Project struct {
 	Programs []struct {
 		Path        string   `json:"path"`
 		Compiled    string   `json:"compiled,omitempty"`
+		Inputs      []string `json:"inputs,omitempty"`
+		Outputs     []string `json:"outputs,omitempty"`
 		Polyglot    []string `json:"polyglot,omitempty"`
 		SpecVersion string   `json:"spec_version,omitempty"`
 		Generate    string   `json:"generate,omitempty"`

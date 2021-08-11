@@ -87,6 +87,7 @@ Build and run errors are included.
 - java/abhijitsharma/target/whitespace-1.0.jar: `sed -i '' 's/>1.6</>1.7</' pom.xml && mvn package`
 - ⚠️ java/azige/target/whitespace-interpreter-0.4.jar: `mvn package` org.apache.commons.cli is not packaged in jar
 - ❌ java/brumbeere-whitespace4j
+- ❌ java/brunokim
 - ❌ java/eia
 - ❌ java/faurehu
 - ❌ java/kmizu
@@ -96,6 +97,7 @@ Build and run errors are included.
 - ❌ java/wysang
 - ❌ java/yawkat
 - ❌ java/yuukiaria-wseditor
+- ❌ javascript/arnauld
 - ❌ javascript/briantran-generator
 - ❌ javascript/damle-evanescojs
 - ❌ javascript/ignovak
@@ -125,6 +127,7 @@ Build and run errors are included.
 - ocaml/jgkaplan-wsc/main.byte: `make`
 - perl/ephphatha-wsm2ws/wsm2ws.pl
 - perl/mkoelbl/whitespace.pl
+- ❌ php/dcode
 - php/igorw/bin/interpreter
 - php/igorw-wsm/bin/wsm
 - php/johankj/whitespace.php
@@ -168,6 +171,7 @@ Build and run errors are included.
 - python/phlip-pywhitespace/main.py
 - python/prajwalanand/whitespace
 - ⚠️ python/qwhxm-baudelaire/backend/baudelaire-whitespace.py: Needs AWS Lambda entrypoint
+- ❌ python/res-trans32
 - python/rumaxwell/entrance.py
 - python/smithers-bluespace/bspace.py
 - ⚠️ python/stephenchappell:
@@ -239,7 +243,3 @@ Build and run errors are included.
 - ❌ whitespace/trevorbennett-stack-flood
 - ❌ whitespace/wsdt-kevinloveswhitespace
 - ❌ whitespace/yokoyama-fizzbuzz
-- ❌ “Whitespace Interpreter in JavaScript” by Arnauld
-- ❌ “Whitespace Language - Online Translator/Interpreter” by dCode
-- ❌ “Whitespace compiler targeting JVM bytecode” by Bruno Kim Medeiros Cesar
-- ❌ “trans32.py” by r.e.s.
