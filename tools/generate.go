@@ -4,6 +4,7 @@ import (
 	"fmt"
 	"net/url"
 	"regexp"
+	"sort"
 	"strings"
 	"time"
 	"unicode/utf8"
@@ -204,6 +205,32 @@ const (
 	DumpTrace
 )
 
+func SortProjectsByTime(projects []*Project) {
+	sort.Slice(projects, func(i, j int) bool {
+		ti, tj := projects[i].Time(), projects[j].Time()
+		return ti.After(tj) || (ti.Equal(tj) && projects[i].ID < projects[j].Name)
+	})
+}
+
+func SortProjectsByID(projects []*Project) {
+	sort.Slice(projects, func(i, j int) bool { return projects[i].ID < projects[j].Name })
+}
+
+func (p *Project) Time() time.Time {
+	if t, err := time.ParseInLocation("2006-01-02 15:04:05 -0700", p.Date, time.UTC); err == nil {
+		return t
+	} else if t, err := time.ParseInLocation("2006-01-02 15:04:05", p.Date, time.UTC); err == nil {
+		return t
+	} else if t, err := time.ParseInLocation("2006-01-02 15:04", p.Date, time.UTC); err == nil {
+		return t
+	} else if t, err := time.ParseInLocation("2006-01-02", p.Date, time.UTC); err == nil {
+		return t
+	} else if t, err := time.ParseInLocation("2006", p.Date, time.UTC); err == nil {
+		return t
+	}
+	return time.Time{}
+}
+
 func (inst *Instruction) UnmarshalText(text []byte) error {
 	switch string(text) {
 	case "push":
@@ -331,7 +358,7 @@ func (inst Instruction) String() string {
 	}
 }
 
-func RenderProjectTable(b *strings.Builder, projects []Project) error {
+func RenderProjectTable(b *strings.Builder, projects []*Project) error {
 	padding := []int{46, 16, 10, 12, 10, 3, 0}
 	head := []string{"Name", "Authors", "Languages", "Tags", "Date", "Spec", "Source"}
 	renderRow(b, padding, head, false)
@@ -353,14 +380,7 @@ func (p *Project) formatColumns() ([]string, error) {
 	if p.ID != "" {
 		name = formatLink(p.Name, p.ID)
 	}
-	date := p.Date
-	if t, err := time.Parse("2006-01-02 15:04:05 -0700", date); err == nil {
-		date = t.Format("2006-01-02")
-	} else if t, err := time.Parse("2006-01-02 15:04:05", date); err == nil {
-		date = t.Format("2006-01-02")
-	} else if t, err := time.Parse("2006-01-02 15:04", date); err == nil {
-		date = t.Format("2006-01-02")
-	}
+	date := p.Time().UTC().Format("2006-01-02")
 	links := make([]string, 0, len(p.Source))
 	for _, s := range p.Source {
 		label, err := getURLLabel(s)

@@ -11,8 +11,9 @@ import (
 )
 
 func main() {
-	var projects []tools.Project
+	var projects []*tools.Project
 	try(jsonutil.DecodeFile("projects.json", &projects))
+	tools.SortProjectsByTime(projects)
 	t, err := template.ParseFiles("README.md.tmpl")
 	try(err)
 	f, err := os.Create("README.md")

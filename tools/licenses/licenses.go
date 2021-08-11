@@ -26,10 +26,9 @@ var ghRepo = regexp.MustCompile("^https://github.com/[^/]+/[^/]+$")
 var ghToken = os.Getenv("GITHUB_ACCESS_TOKEN")
 
 func main() {
-	var projects []tools.Project
+	var projects []*tools.Project
 	try(jsonutil.DecodeFile("projects.json", &projects))
-	for i := range projects {
-		p := &projects[i]
+	for _, p := range projects {
 		if p.License == "" {
 			if l, err := getLicense(p); err != nil {
 				fmt.Fprintln(os.Stderr, err)
