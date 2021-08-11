@@ -10,9 +10,9 @@ import (
 )
 
 type Project struct {
+	ID          string   `json:"id,omitempty"`
 	Name        string   `json:"name"`
 	Description string   `json:"description,omitempty"`
-	Path        string   `json:"path,omitempty"`
 	Authors     []string `json:"authors"`
 	License     string   `json:"license,omitempty"`
 	Languages   []string `json:"languages"`
@@ -350,8 +350,8 @@ func RenderProjectTable(b *strings.Builder, projects []Project) error {
 
 func (p *Project) formatColumns() ([]string, error) {
 	name := p.Name
-	if p.Path != "" {
-		name = formatLink(p.Name, p.Path)
+	if p.ID != "" {
+		name = formatLink(p.Name, p.ID)
 	}
 	date := p.Date
 	if t, err := time.Parse("2006-01-02 15:04:05 -0700", date); err == nil {

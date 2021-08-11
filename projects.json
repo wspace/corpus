@@ -1,7 +1,7 @@
 [
   {
+    "id": "python/prajwalanand",
     "name": "whitespace-compiler",
-    "path": "python/prajwalanand",
     "authors": ["Prajwal Anand"],
     "license": "none",
     "languages": ["Python"],
@@ -22,8 +22,8 @@
     ]
   },
   {
+    "id": "docker/bensuperpc",
     "name": "docker-whitespace",
-    "path": "docker/bensuperpc",
     "authors": ["Bensuperpc"],
     "license": "MIT",
     "languages": ["Docker"],
@@ -34,8 +34,8 @@
     "relations": [{ "type": "library", "id": "c/rdebath" }]
   },
   {
+    "id": "python/umutoztunc-whitesymex",
     "name": "whitesymex",
-    "path": "python/umutoztunc-whitesymex",
     "authors": ["Umut Barış Öztunç"],
     "license": "MIT",
     "languages": ["Python"],
@@ -72,8 +72,8 @@
     "notes": "Inspired by angr (https://angr.io/)"
   },
   {
+    "id": "python/ganeshsankaran",
     "name": "Interpreter",
-    "path": "python/ganeshsankaran",
     "authors": ["Ganesh Sankaran"],
     "license": "none",
     "languages": ["Python"],
@@ -120,8 +120,8 @@
     ]
   },
   {
+    "id": "whitespace/andrewarchi-wslib",
     "name": "wslib",
-    "path": "whitespace/andrewarchi-wslib",
     "authors": ["Andrew Archibald"],
     "license": "MPL-2.0",
     "languages": ["Whitespace"],
@@ -168,8 +168,8 @@
     "commands": [{ "type": "assembler", "bin": "assemble.sh", "usage": "$0 <file> [<file>...]" }]
   },
   {
+    "id": "jq/andrewarchi-wsjq",
     "name": "wsjq",
-    "path": "jq/andrewarchi-wsjq",
     "authors": ["Andrew Archibald"],
     "license": "MPL-2.0",
     "languages": ["jq"],
@@ -227,8 +227,8 @@
     ]
   },
   {
+    "id": "python/ffanzhang",
     "name": "ws",
-    "path": "python/ffanzhang",
     "authors": ["ffanzhang"],
     "license": "MIT",
     "languages": ["Python"],
@@ -288,8 +288,8 @@
     "commands": [{ "bin": "ws.py", "dependencies": ["Python 3"], "usage": "python3 $0 < <file>", "input": "stdin" }]
   },
   {
+    "id": "rust/collidedscope-albus",
     "name": "Albus",
-    "path": "rust/collidedscope-albus",
     "authors": ["Collided Scope"],
     "license": "none",
     "languages": ["Rust"],
@@ -307,8 +307,8 @@
     ]
   },
   {
+    "id": "whitespace/paradoxv5-program-java-rb",
     "name": "Program.java.rb.ws.txt",
-    "path": "whitespace/paradoxv5-program-java-rb",
     "authors": ["ParadoxV5"],
     "license": "Apache-2.0",
     "languages": ["Whitespace", "Java", "Ruby"],
@@ -325,8 +325,8 @@
     ]
   },
   {
+    "id": "typescript/fy0u11",
     "name": "Whitespace exotic programming language interpreter",
-    "path": "typescript/fy0u11",
     "authors": ["Sergey Strigin"],
     "license": "ISC",
     "languages": ["TypeScript"],
@@ -338,8 +338,8 @@
     "notes": "Codewars solution"
   },
   {
+    "id": "python/lachlancourt",
     "name": "Whitespace Interpreter",
-    "path": "python/lachlancourt",
     "authors": ["Lachlan Court"],
     "license": "none",
     "languages": ["Python"],
@@ -363,8 +363,8 @@
     ]
   },
   {
+    "id": "c/kspalaiologos-asm2ws",
     "name": "asm2ws",
-    "path": "c/kspalaiologos-asm2ws",
     "authors": ["Kamila Szewczyk (Palaiologos)"],
     "license": "GPL-3.0-or-later",
     "languages": ["C", "Yacc", "Lex"],
@@ -468,8 +468,8 @@
     "notes": "Has various number formats and REP instruction"
   },
   {
+    "id": "ruby/collidedscope-spitewaste",
     "name": "Spitewaste",
-    "path": "ruby/collidedscope-spitewaste",
     "authors": ["Collided Scope"],
     "license": "WTFPL",
     "languages": ["Ruby"],
@@ -848,8 +848,8 @@
     ]
   },
   {
+    "id": "crystal/collidedscope-spiceweight",
     "name": "Spiceweight",
-    "path": "crystal/collidedscope-spiceweight",
     "authors": ["Collided Scope"],
     "license": "Unlicense",
     "languages": ["Crystal"],
@@ -893,8 +893,8 @@
     ]
   },
   {
+    "id": "python/francoisrozet-whitespacy",
     "name": "Whitespacy",
-    "path": "python/francoisrozet-whitespacy",
     "authors": ["François Rozet"],
     "license": "none",
     "languages": ["Python"],
@@ -920,8 +920,8 @@
     "notes": "Polyglot formatter for C and Whitespace"
   },
   {
+    "id": "c/cedricschwyter",
     "name": "whitespace-interpreter",
-    "path": "c/cedricschwyter",
     "authors": ["Cedric Schwyter"],
     "license": "GPL-3.0-or-later",
     "languages": ["C"],
@@ -947,8 +947,8 @@
     "notes": "TODO programs are likely derived from the Esolang example programs"
   },
   {
+    "id": "php/dcode",
     "name": "Whitespace Language - Online Translator/Interpreter",
-    "path": "php/dcode",
     "authors": ["dCode"],
     "license": "proprietary",
     "languages": ["JavaScript", "PHP"],
@@ -960,8 +960,8 @@
     "mappings": [{ "space": "S", "tab": "T", "lf": "L", "before_stl": true }]
   },
   {
+    "id": "rust/luminight",
     "name": "rustws",
-    "path": "rust/luminight",
     "authors": ["Luminight"],
     "license": "MIT",
     "languages": ["Rust"],
@@ -987,8 +987,8 @@
     ]
   },
   {
+    "id": "javascript/kosei",
     "name": "Whitespace",
-    "path": "javascript/kosei",
     "authors": ["kosei28"],
     "license": "MIT",
     "languages": ["JavaScript"],
@@ -998,8 +998,8 @@
     "source": ["https://github.com/kosei28/Whitespace"]
   },
   {
+    "id": "haskell/ft-spaceman",
     "name": "SpaceMan",
-    "path": "haskell/ft-spaceman",
     "authors": ["Frank Terbeck"],
     "license": "BSD-2-Clause",
     "languages": ["Haskell"],
@@ -1029,8 +1029,8 @@
     ]
   },
   {
+    "id": "cpp/ricardoluis",
     "name": "whitespace",
-    "path": "cpp/ricardoluis",
     "authors": ["Ricardo Luís Vaz Silva"],
     "license": "Unlicense",
     "languages": ["C++"],
@@ -1049,8 +1049,8 @@
     ]
   },
   {
+    "id": "haskell/helvm-wsa",
     "name": "WhiteSpace Assembler",
-    "path": "haskell/helvm-wsa",
     "authors": ["Kamil Adam"],
     "license": "none",
     "languages": ["Haskell"],
@@ -1060,8 +1060,8 @@
     "source": ["https://github.com/helvm/wsa"]
   },
   {
+    "id": "haskell/helvm-helpa",
     "name": "HelPA",
-    "path": "haskell/helvm-helpa",
     "authors": ["Kamil Adam"],
     "license": "Apache-2.0 or MIT",
     "languages": ["Haskell/Eta"],
@@ -1093,8 +1093,8 @@
     "commands": [{ "bin": "helpa", "build": "cabal build", "build_errors": "-XMonadFailDesugaring is deprecated" }]
   },
   {
+    "id": "haskell/helvm-helma",
     "name": "HelMA",
-    "path": "haskell/helvm-helma",
     "authors": ["Kamil Adam"],
     "license": "Apache-2.0 or MIT",
     "languages": ["Haskell/Eta"],
@@ -1105,9 +1105,9 @@
     "commands": [{ "bin": "helma", "build": "cabal build", "build_errors": "-XMonadFailDesugaring is deprecated" }]
   },
   {
+    "id": "whitespace/keen-whitelie",
     "name": "Whitelie",
     "description": "Self-hosted Whitespace compiler for 64-bit Linux",
-    "path": "whitespace/keen-whitelie",
     "authors": ["κeen"],
     "license": "GPL-2.0-or-later",
     "languages": ["Whitespace", "Ruby"],
@@ -1179,8 +1179,8 @@
     ]
   },
   {
+    "id": "csharp/denislabrecque",
     "name": "WhitespaceInterpreter",
-    "path": "csharp/denislabrecque",
     "authors": ["Denis G. Labrecque"],
     "license": "none",
     "languages": ["C#"],
@@ -1217,8 +1217,8 @@
     ]
   },
   {
+    "id": "javascript/damle-evanescojs",
     "name": "EvanescoJS",
-    "path": "javascript/damle-evanescojs",
     "authors": ["Atharv Damle"],
     "license": "GPL-3.0-or-later",
     "languages": ["JavaScript"],
@@ -1228,8 +1228,8 @@
     "source": ["https://github.com/AD9000/EvanescoJS"]
   },
   {
+    "id": "python/damle-evanesco",
     "name": "Evanesco",
-    "path": "python/damle-evanesco",
     "authors": ["Atharv Damle"],
     "license": "none",
     "languages": ["Python"],
@@ -1249,8 +1249,8 @@
     ]
   },
   {
+    "id": "python/hearnderek",
     "name": "WhiteSpaceInterpreter",
-    "path": "python/hearnderek",
     "authors": ["Derek Hearn"],
     "license": "none",
     "languages": ["Python"],
@@ -1269,8 +1269,8 @@
     "notes": "Appears to be Codewars solution"
   },
   {
+    "id": "javascript/arnauld",
     "name": "Whitespace Interpreter in JavaScript",
-    "path": "javascript/arnauld",
     "authors": ["Arnauld"],
     "license": "CC-BY-SA-4.0",
     "languages": ["JavaScript"],
@@ -1280,8 +1280,8 @@
     "source": ["https://codegolf.stackexchange.com/questions/198694/write-a-whitespace-interpreter/198770#198770"]
   },
   {
+    "id": "javascript/wdalmut",
     "name": "Whitespace Lang Compiler",
-    "path": "javascript/wdalmut",
     "authors": ["Walter Dal Mut"],
     "license": "ISC",
     "languages": ["JavaScript"],
@@ -1291,8 +1291,8 @@
     "source": ["https://github.com/wdalmut/whitespace-lang-compiler"]
   },
   {
+    "id": "csharp/littlebughunter-assembler",
     "name": "WhitespaceAssembler",
-    "path": "csharp/littlebughunter-assembler",
     "authors": ["Paul (littleBugHunter)"],
     "license": "MIT",
     "languages": ["C#"],
@@ -1385,8 +1385,8 @@
     "notes": "<number> is a number literal or the value of a variable (formats: <int>, #<hex>, '<char>', and &<variable>).\n<address> is the value on the heap at the variable value (format: *<variable>), i.e. `push <variable> retrieve`.\n<int> is a base 10 integer, i.e. /[+-]?[0-9]+/.\n<hex> is a base 16 integer, i.e. /[0-9A-Fa-f]+/.\n<char> is one UTF-16 character, escape sequences aren't supported.\n<label> and <variable> values increment (with separate counters), starting at 0."
   },
   {
+    "id": "whitespace/petek-hello",
     "name": "hello.ws",
-    "path": "whitespace/petek-hello",
     "authors": ["Peter Koncelik"],
     "license": "none",
     "languages": ["Whitespace"],
@@ -1397,8 +1397,8 @@
     "programs": [{ "path": "hello.ws" }]
   },
   {
+    "id": "cpp/malkiewiczm",
     "name": "whitespace_compiler",
-    "path": "cpp/malkiewiczm",
     "authors": ["Michael Malkiewicz"],
     "license": "none",
     "languages": ["C++", "Yacc", "Lex"],
@@ -1424,8 +1424,8 @@
     "notes": "Creation date mentioned in README"
   },
   {
+    "id": "python/ilikepython256-whitespace-unc",
     "name": "Whitespace UnC",
-    "path": "python/ilikepython256-whitespace-unc",
     "authors": ["Python Whiz 256"],
     "license": "GPL-3.0-or-later",
     "languages": ["Python"],
@@ -1480,8 +1480,8 @@
     "notes": "Web client and test programs are on web branch"
   },
   {
+    "id": "javascript/loklaan-zerowidth-lang",
     "name": "zerospace-lang",
-    "path": "javascript/loklaan-zerowidth-lang",
     "authors": ["Lochlan Bunn"],
     "license": "MIT",
     "languages": ["JavaScript"],
@@ -1493,8 +1493,8 @@
     "mappings": [{ "space": "&#8203;", "tab": "&#8204;", "lf": "\n", "extension": "zw" }]
   },
   {
+    "id": "ocaml/jgkaplan-wsc",
     "name": "WSC",
-    "path": "ocaml/jgkaplan-wsc",
     "authors": ["Joshua Kaplan"],
     "license": "MIT",
     "languages": ["OCaml"],
@@ -1517,8 +1517,8 @@
     ]
   },
   {
+    "id": "haskell/jhmcstanton-marginal",
     "name": "Marginal",
-    "path": "haskell/jhmcstanton-marginal",
     "authors": ["Jim McStanton"],
     "license": "BSD-3-Clause",
     "languages": ["Haskell", "Yacc"],
@@ -1535,8 +1535,8 @@
     ]
   },
   {
+    "id": "scala/dashlambda-eso",
     "name": "Eso",
-    "path": "scala/dashlambda-eso",
     "authors": ["Dash-Lambda"],
     "license": "none",
     "languages": ["Scala"],
@@ -1546,9 +1546,9 @@
     "source": ["https://github.com/Dash-Lambda/Eso"]
   },
   {
+    "id": "python/qwhxm-baudelaire",
     "name": "baudelaire-whitespace",
     "description": "AWS Lambda handler that executes baudelaire.ws with the given word using the EsCo interpreter",
-    "path": "python/qwhxm-baudelaire",
     "authors": ["Marek Tomáštík"],
     "license": "MIT",
     "languages": ["Python"],
@@ -1567,8 +1567,8 @@
     ]
   },
   {
+    "id": "go/andrewarchi-nebula",
     "name": "Nebula",
-    "path": "go/andrewarchi-nebula",
     "authors": ["Andrew Archibald"],
     "license": "MIT",
     "languages": ["Go", "LLVM", "Whitespace"],
@@ -1651,8 +1651,8 @@
     ]
   },
   {
+    "id": "rust/nareshganduri",
     "name": "Whitespace VM",
-    "path": "rust/nareshganduri",
     "authors": ["Naresh Ganduri"],
     "license": "none",
     "languages": ["Rust"],
@@ -1670,8 +1670,8 @@
     ]
   },
   {
+    "id": "ruby/pocke-akaza",
     "name": "Akaza",
-    "path": "ruby/pocke-akaza",
     "authors": ["Masataka Pocke Kuwabara"],
     "license": "CC0-1.0",
     "languages": ["Ruby"],
@@ -1702,8 +1702,8 @@
     ]
   },
   {
+    "id": "python/drafear-converter",
     "name": "whitespace-language-converter",
-    "path": "python/drafear-converter",
     "authors": ["Takeshi Nishikawa"],
     "license": "none",
     "languages": ["Python"],
@@ -1759,8 +1759,8 @@
     "notes": "Programs found in README.md"
   },
   {
+    "id": "go/tempxla-go-wspace",
     "name": "go-wspace",
-    "path": "go/tempxla-go-wspace",
     "authors": ["tempxla"],
     "license": "MIT",
     "languages": ["Go"],
@@ -1809,8 +1809,8 @@
     "commands": [{ "type": "interpreter", "bin": "bin/go-wspace", "build": "make", "usage": "$0 <file>" }]
   },
   {
+    "id": "whitespace/tewort-hello",
     "name": "Hello-Whitespace",
-    "path": "whitespace/tewort-hello",
     "authors": ["David (Tewort)"],
     "license": "none",
     "languages": ["Whitespace"],
@@ -1821,8 +1821,8 @@
     "programs": [{ "path": "helloworld.ws", "spec_version": "0.2" }]
   },
   {
+    "id": "whitespace/wsdt-kevinloveswhitespace",
     "name": "Whitespace and Brainfuck",
-    "path": "whitespace/wsdt-kevinloveswhitespace",
     "authors": ["Riedl Kevin"],
     "license": "GPL-3.0-or-later",
     "languages": ["Whitespace"],
@@ -1833,8 +1833,8 @@
     "programs": [{ "path": "KevinLovesWhitespace.ws", "spec_version": "0.2" }]
   },
   {
+    "id": "rust/kaisugi",
     "name": "Whitespace Interpreter",
-    "path": "rust/kaisugi",
     "authors": ["Kaito Sugimoto"],
     "license": "none",
     "languages": ["Rust"],
@@ -1852,8 +1852,8 @@
     ]
   },
   {
+    "id": "python/freyamade-hohoho",
     "name": "HoHoHo",
-    "path": "python/freyamade-hohoho",
     "authors": ["Freya Madeline Broderick", "Omar Sallam"],
     "license": "MIT",
     "languages": ["Python"],
@@ -1881,8 +1881,8 @@
     ]
   },
   {
+    "id": "python/adapap",
     "name": "whitespace-interpreter",
-    "path": "python/adapap",
     "authors": ["Adam Papenhausen"],
     "license": "MIT",
     "languages": ["Python"],
@@ -1901,8 +1901,8 @@
     ]
   },
   {
+    "id": "python/ahl27",
     "name": "whitespace",
-    "path": "python/ahl27",
     "authors": ["Aidan Lakshman"],
     "license": "none",
     "languages": ["Python"],
@@ -1940,8 +1940,8 @@
     "notes": "TODO split commands for encrypt and decrypt"
   },
   {
+    "id": "java/wysang",
     "name": "Whitespace-Compiler",
-    "path": "java/wysang",
     "authors": ["wysang"],
     "license": "none",
     "languages": ["Java", "ANTLR4"],
@@ -1978,8 +1978,8 @@
     }
   },
   {
+    "id": "whitespace/aniket-hacktoberfest-2018",
     "name": "Hacktoberfest 2018 Hello-world",
-    "path": "whitespace/aniket-hacktoberfest-2018",
     "authors": ["Ethan Hall", "Unnikrishnan A G"],
     "license": "MIT",
     "languages": ["Whitespace"],
@@ -1996,8 +1996,8 @@
     ]
   },
   {
+    "id": "whitespace/trevorbennett-stack-flood",
     "name": "whitespace-stack-flood",
-    "path": "whitespace/trevorbennett-stack-flood",
     "authors": ["Trevor Bennett"],
     "license": "none",
     "languages": ["Whitespace"],
@@ -2011,8 +2011,8 @@
     "programs": [{ "path": "goto.ws", "spec_version": "0.2" }]
   },
   {
+    "id": "cpp/buyoh-nospace",
     "name": "nospace",
-    "path": "cpp/buyoh-nospace",
     "authors": ["舞葉 (Mai Buyoh)"],
     "license": "Unlicense",
     "languages": ["C++", "Ruby"],
@@ -2034,8 +2034,8 @@
     ]
   },
   {
+    "id": "nasm/ryzheboka",
     "name": "Whitespace compiler for 64-bit macOS",
-    "path": "nasm/ryzheboka",
     "authors": ["Elena Mokeeva"],
     "license": "none",
     "languages": ["NASM", "Python", "C"],
@@ -2085,8 +2085,8 @@
     "notes": "FF and CR also grouped with LF in mapping"
   },
   {
+    "id": "whitespace/bbvch-hello",
     "name": "HelloWhitespace",
-    "path": "whitespace/bbvch-hello",
     "authors": ["Heo Kyungyoung"],
     "license": "MIT",
     "languages": ["Whitespace"],
@@ -2097,8 +2097,8 @@
     "programs": [{ "path": "helloWhitespace.ws", "spec_version": "0.2" }]
   },
   {
+    "id": "java/wrotycz",
     "name": "whitespace-interpreter",
-    "path": "java/wrotycz",
     "authors": ["Kamil Węglarz"],
     "license": "MIT",
     "languages": ["Java"],
@@ -2117,8 +2117,8 @@
     "notes": "Codewars solution"
   },
   {
+    "id": "ruby/nishiwakki",
     "name": "whitespace",
-    "path": "ruby/nishiwakki",
     "authors": ["nishiwakki"],
     "license": "none",
     "languages": ["Ruby"],
@@ -2136,8 +2136,8 @@
     ]
   },
   {
+    "id": "kotlin/ze-space",
     "name": "space",
-    "path": "kotlin/ze-space",
     "authors": ["Zakaria Elkatani"],
     "license": "none",
     "languages": ["Kotlin"],
@@ -2156,8 +2156,8 @@
     ]
   },
   {
+    "id": "cpp/andrewarchi-respace",
     "name": "Respace",
-    "path": "cpp/andrewarchi-respace",
     "authors": ["Andrew Archibald"],
     "license": "MIT",
     "languages": ["C++"],
@@ -2204,9 +2204,9 @@
     "notes": "Disassembler and bit packer are only available via code modification"
   },
   {
+    "id": "csharp/north-projectone",
     "name": "projectOne",
     "description": "GUI to convert between Whitespace syntax and S/T/L",
-    "path": "csharp/north-projectone",
     "authors": ["Jacob North"],
     "license": "none",
     "languages": ["C#"],
@@ -2226,8 +2226,8 @@
     ]
   },
   {
+    "id": "python/maximegoyette",
     "name": "whitespace_interpreter",
-    "path": "python/maximegoyette",
     "authors": ["Maxime Goyette"],
     "license": "MIT",
     "languages": ["Python"],
@@ -2274,8 +2274,8 @@
     "notes": "Partial Codewars solution"
   },
   {
+    "id": "clojure/jmesyou-erasure",
     "name": "erasure",
-    "path": "clojure/jmesyou-erasure",
     "authors": ["James You"],
     "license": "MIT",
     "languages": ["Clojure"],
@@ -2303,8 +2303,8 @@
     ]
   },
   {
+    "id": "python/rumaxwell",
     "name": "whitespace-interperter",
-    "path": "python/rumaxwell",
     "authors": ["RuMaxwell"],
     "license": "none",
     "languages": ["Python"],
@@ -2333,8 +2333,8 @@
     ]
   },
   {
+    "id": "javascript/loklaan-whitespace-lang",
     "name": "whitespace-lang",
-    "path": "javascript/loklaan-whitespace-lang",
     "authors": ["Lochlan Bunn"],
     "license": "MIT",
     "languages": ["JavaScript"],
@@ -2345,8 +2345,8 @@
     "relations": [{ "type": "fork", "id": "javascript/vii5ard-whitelips-ide" }]
   },
   {
+    "id": "python/mildsunrise",
     "name": "whitespace.py",
-    "path": "python/mildsunrise",
     "authors": ["Alba Mendez"],
     "license": "none",
     "languages": ["Python"],
@@ -2365,8 +2365,8 @@
     ]
   },
   {
+    "id": "c/sandeep",
     "name": "Whitespace",
-    "path": "c/sandeep",
     "authors": ["Sandeep Varma"],
     "license": "none",
     "languages": ["C", "Yacc", "Lex"],
@@ -2394,8 +2394,8 @@
     "notes": "Has git conflict markers remaining in source"
   },
   {
+    "id": "whitespace/knightking-hacktoberfest-2017",
     "name": "hello-worlds",
-    "path": "whitespace/knightking-hacktoberfest-2017",
     "authors": ["Jackie Chen"],
     "license": "Unlicense",
     "languages": ["Whitespace"],
@@ -2406,8 +2406,8 @@
     "programs": [{ "path": "examples/w/Whitespace.ws", "spec_version": "0.2" }]
   },
   {
+    "id": "whitespace/alicewonderland-hacktoberfest-2017",
     "name": "HacktoberFest Starter Project",
-    "path": "whitespace/alicewonderland-hacktoberfest-2017",
     "authors": ["Chashmeet Singh"],
     "license": "GPL-3.0-or-later",
     "languages": ["Whitespace"],
@@ -2418,8 +2418,8 @@
     "programs": [{ "path": "scripts/hello_world_chashmeetsingh.ws", "spec_version": "0.2" }]
   },
   {
+    "id": "python/bornlex",
     "name": "Whitespace-interpreter",
-    "path": "python/bornlex",
     "authors": ["Bornlex"],
     "license": "MIT",
     "languages": ["Python"],
@@ -2470,8 +2470,8 @@
     ]
   },
   {
+    "id": "cpp/benajmin",
     "name": "whitespace-interpreter",
-    "path": "cpp/benajmin",
     "authors": ["Benjamin Wilkins"],
     "license": "none",
     "languages": ["C++"],
@@ -2485,8 +2485,8 @@
     ]
   },
   {
+    "id": "perl/ephphatha-wsm2ws",
     "name": "wsm2ws",
-    "path": "perl/ephphatha-wsm2ws",
     "authors": ["Andrew James"],
     "license": "MIT",
     "languages": ["Perl"],
@@ -2539,8 +2539,8 @@
     "notes": "Has optional assembly arguments"
   },
   {
+    "id": "vim/rolf-ws-vim",
     "name": "ws.vim",
-    "path": "vim/rolf-ws-vim",
     "authors": ["Rolf Asmund"],
     "license": "none",
     "languages": ["Vim script"],
@@ -2550,8 +2550,8 @@
     "source": ["https://github.com/rolf007/ws.vim"]
   },
   {
+    "id": "python/jrialland",
     "name": "whitespaceasm.py",
-    "path": "python/jrialland",
     "authors": ["Julien Rialland"],
     "license": "none",
     "languages": ["Python"],
@@ -2602,8 +2602,8 @@
     "notes": "slide is not supported"
   },
   {
+    "id": "erlang/derek-mrwhite",
     "name": "Mr. White",
-    "path": "erlang/derek-mrwhite",
     "authors": ["Derek Brown"],
     "license": "BSD-3-Clause",
     "languages": ["Erlang"],
@@ -2614,8 +2614,8 @@
     "commands": [{ "dependencies": ["Erlang", "Rebar3"], "build": "make", "run_errors": "Unclear how to run" }]
   },
   {
+    "id": "c/tejaskasetty",
     "name": "Whitespace Esolang Compiler",
-    "path": "c/tejaskasetty",
     "authors": ["Sushrith Arkal", "Tejas Kasetty", "Suhas Sumukh"],
     "license": "none",
     "languages": ["C", "Yacc", "Lex"],
@@ -2662,8 +2662,8 @@
     ]
   },
   {
+    "id": "whitespace/ccns-chicken",
     "name": "Catch the Chicken",
-    "path": "whitespace/ccns-chicken",
     "authors": ["Daniel Chen"],
     "license": "none",
     "languages": ["Whitespace"],
@@ -2674,8 +2674,8 @@
     "programs": [{ "path": "2/2/Did you see anything?", "spec_version": "0.2" }]
   },
   {
+    "id": "scheme/niyarin",
     "name": "whitespace-scheme",
-    "path": "scheme/niyarin",
     "authors": ["Akira Inoue"],
     "license": "MIT",
     "languages": ["Scheme"],
@@ -2685,8 +2685,8 @@
     "source": ["https://github.com/niyarin/whitespace-scheme"]
   },
   {
+    "id": "python/yasn-whitepy",
     "name": "whitepy",
-    "path": "python/yasn-whitepy",
     "authors": ["Yasser Saleemi"],
     "license": "Apache-2.0",
     "languages": ["Python"],
@@ -2713,8 +2713,8 @@
     "notes": "Written for final Open University project (TM470)"
   },
   {
+    "id": "javascript/briantran-generator",
     "name": "WhitespaceGenerator",
-    "path": "javascript/briantran-generator",
     "authors": ["Brian Tran"],
     "license": "none",
     "languages": ["JavaScript"],
@@ -2724,8 +2724,8 @@
     "source": ["https://github.com/TranBrian10/WhitespaceGenerator"]
   },
   {
+    "id": "lolcode/akers",
     "name": "whitespace.lol",
-    "path": "lolcode/akers",
     "authors": ["D.E. Akers"],
     "license": "WTFPL",
     "languages": ["LOLCODE"],
@@ -2747,8 +2747,8 @@
     ]
   },
   {
+    "id": "python/alecgraves-whitespac3",
     "name": "whitespac3",
-    "path": "python/alecgraves-whitespac3",
     "authors": ["Alec Graves"],
     "license": "GPL-3.0-or-later",
     "languages": ["Python"],
@@ -2803,8 +2803,8 @@
     ]
   },
   {
+    "id": "java/eia",
     "name": "WhiteSpaceInterpreter",
-    "path": "java/eia",
     "authors": ["Zuleimi Esteffanny González Muñoz"],
     "license": "MIT",
     "languages": ["Java"],
@@ -2841,8 +2841,8 @@
     "programs": [{ "path": "src/fichero.bin", "spec_version": "0.2" }]
   },
   {
+    "id": "whitespace/dcoy-hacktoberfest-2016",
     "name": "hacktoberfest-dcoy",
-    "path": "whitespace/dcoy-hacktoberfest-2016",
     "authors": ["Noah Tranbarger"],
     "license": "none",
     "languages": ["Whitespace"],
@@ -2853,8 +2853,8 @@
     "programs": [{ "path": "hello_world.ws", "spec_version": "0.2" }]
   },
   {
+    "id": "whitespace/kenrube-esopoly",
     "name": "EsoPoly",
-    "path": "whitespace/kenrube-esopoly",
     "authors": ["Ivan Zolotarev"],
     "license": "MIT",
     "languages": ["Whitespace"],
@@ -2871,8 +2871,8 @@
     ]
   },
   {
+    "id": "python/dwayne",
     "name": "whitespace-python",
-    "path": "python/dwayne",
     "authors": ["Dwayne R. Crooks"],
     "license": "MIT",
     "languages": ["Python"],
@@ -2893,8 +2893,8 @@
     ]
   },
   {
+    "id": "cpp/sonicyang-ws-frontend",
     "name": "ws-frontend",
-    "path": "cpp/sonicyang-ws-frontend",
     "authors": ["Yang Chung-Fan"],
     "license": "MIT",
     "languages": ["C++", "LLVM"],
@@ -2914,8 +2914,8 @@
     ]
   },
   {
+    "id": "r/bmazoure",
     "name": "Whitespace",
-    "path": "r/bmazoure",
     "authors": ["Bogdan Mazoure"],
     "license": "none",
     "languages": ["R"],
@@ -2964,8 +2964,8 @@
     "notes": "Comments are not allowed. <number> is a binary string with optional `-` sign. <label> is a binary string."
   },
   {
+    "id": "cpp/marcellippmann-whitepp",
     "name": "White++",
-    "path": "cpp/marcellippmann-whitepp",
     "authors": ["Marcel Lippmann"],
     "license": "GPL-3.0-or-later",
     "languages": ["C++"],
@@ -2979,8 +2979,8 @@
     "commands": [{ "type": "interpreter", "bin": "bin/White++", "build": "make", "usage": "$0 <file>" }]
   },
   {
+    "id": "ruby/dwayne",
     "name": "whitespace-ruby",
-    "path": "ruby/dwayne",
     "authors": ["Dwayne R. Crooks"],
     "license": "MIT",
     "languages": ["Python"],
@@ -3009,8 +3009,8 @@
     ]
   },
   {
+    "id": "whitespace/chrisnguyen-steganographic-polyglots",
     "name": "steganographic-polyglots",
-    "path": "whitespace/chrisnguyen-steganographic-polyglots",
     "authors": ["Chris Nguyen"],
     "license": "MIT",
     "languages": ["Whitespace"],
@@ -3028,8 +3028,8 @@
     ]
   },
   {
+    "id": "javascript/ignovak",
     "name": "whitespace.js",
-    "path": "javascript/ignovak",
     "authors": ["Igor"],
     "license": "none",
     "languages": ["JavaScript"],
@@ -3040,8 +3040,8 @@
     "notes": "Codewars solution"
   },
   {
+    "id": "rust/censoredusername-whitespace-rs",
     "name": "Whitespacers",
-    "path": "rust/censoredusername-whitespace-rs",
     "authors": ["CensoredUsername"],
     "license": "MPL-2.0",
     "languages": ["Rust"],
@@ -3192,8 +3192,8 @@
     ]
   },
   {
+    "id": "c/bvisness",
     "name": "whitespace",
-    "path": "c/bvisness",
     "authors": ["Ben Visness"],
     "license": "none",
     "languages": ["C", "Yacc", "TextMate"],
@@ -3212,8 +3212,8 @@
     ]
   },
   {
+    "id": "python/nutcrack-whiteplanes",
     "name": "whiteplanes",
-    "path": "python/nutcrack-whiteplanes",
     "authors": ["Takuya Katsurada"],
     "license": "MIT",
     "languages": ["Python"],
@@ -3259,8 +3259,8 @@
     "notes": "GitHub repo and GitHub Pages site are offline. Date from earliest file in archive."
   },
   {
+    "id": "python/kareeeeem-abyad",
     "name": "Abyad",
-    "path": "python/kareeeeem-abyad",
     "authors": ["Mohammed Kareem"],
     "license": "Unlicense",
     "languages": ["Python"],
@@ -3285,8 +3285,8 @@
     ]
   },
   {
+    "id": "rust/jayshua",
     "name": "Rust-Whitespace",
-    "path": "rust/jayshua",
     "authors": ["Jayshua Nelson"],
     "license": "none",
     "languages": ["Rust"],
@@ -3308,8 +3308,8 @@
     ]
   },
   {
+    "id": "javascript/kanra1412",
     "name": "whitespace-interpreter",
-    "path": "javascript/kanra1412",
     "authors": ["kanra1412"],
     "license": "none",
     "languages": ["JavaScript"],
@@ -3319,8 +3319,8 @@
     "source": ["https://github.com/kanra1412/whitespace-interpreter"]
   },
   {
+    "id": "csharp/nutcrack-whiteplanes",
     "name": "whiteplanes.cs",
-    "path": "csharp/nutcrack-whiteplanes",
     "authors": ["Takuya Katsurada"],
     "license": "unknown",
     "languages": ["C#"],
@@ -3332,8 +3332,8 @@
     "notes": "GitHub repo is offline. Date is package last update date."
   },
   {
+    "id": "python/meand",
     "name": "whitespace-compiler",
-    "path": "python/meand",
     "authors": ["Adam Dinwoodie"],
     "license": "none",
     "languages": ["Python"],
@@ -3384,8 +3384,8 @@
     ]
   },
   {
+    "id": "javascript/susisu",
     "name": "Whitespace-JS",
-    "path": "javascript/susisu",
     "authors": ["Susisu"],
     "license": "MIT",
     "languages": ["JavaScript"],
@@ -3395,8 +3395,8 @@
     "source": ["https://github.com/susisu/Whitespace-JS"]
   },
   {
+    "id": "ruby/alesiong",
     "name": "whitespace-ruby",
-    "path": "ruby/alesiong",
     "authors": ["alesiong"],
     "license": "GPL-2.0-or-later",
     "languages": ["Ruby"],
@@ -3414,8 +3414,8 @@
     ]
   },
   {
+    "id": "textmate/veniversum",
     "name": "Whitespace support in Atom",
-    "path": "textmate/veniversum",
     "authors": ["Qingzhuo"],
     "license": "MIT",
     "languages": ["TextMate"],
@@ -3425,8 +3425,8 @@
     "source": ["https://github.com/veniversum/language-whitespace"]
   },
   {
+    "id": "javascript/uraza",
     "name": "whitespace-interpreter",
-    "path": "javascript/uraza",
     "authors": ["Uraza"],
     "license": "none",
     "languages": ["JavaScript"],
@@ -3437,8 +3437,8 @@
     "notes": "Codewars solution"
   },
   {
+    "id": "scala/patrickstephen",
     "name": "Whitespace Interpreter",
-    "path": "scala/patrickstephen",
     "authors": ["Patrick Stephen"],
     "license": "none",
     "languages": ["Scala"],
@@ -3470,8 +3470,8 @@
     ]
   },
   {
+    "id": "cpp/abac-whint",
     "name": "WHINT",
-    "path": "cpp/abac-whint",
     "authors": ["Adam Bac"],
     "license": "GPL-2.0-or-later",
     "languages": ["C++"],
@@ -3490,8 +3490,8 @@
     ]
   },
   {
+    "id": "scala/ojha-whitespacing",
     "name": "Whitespacing",
-    "path": "scala/ojha-whitespacing",
     "authors": ["Alexandra Ojha"],
     "license": "none",
     "languages": ["Scala"],
@@ -3501,8 +3501,8 @@
     "source": ["https://github.com/polyglotpiglet/Whitespacing"]
   },
   {
+    "id": "csharp/colchicus",
     "name": "whitespace",
-    "path": "csharp/colchicus",
     "authors": ["Colchicus"],
     "license": "unknown",
     "languages": ["C#"],
@@ -3514,8 +3514,8 @@
     "notes": "GitHub repo is offline. Date is package last update date."
   },
   {
+    "id": "lua/vyo-callisto",
     "name": "callisto",
-    "path": "lua/vyo-callisto",
     "authors": ["Manu Weidmann"],
     "license": "none",
     "languages": ["Lua"],
@@ -3525,8 +3525,8 @@
     "source": ["https://github.com/vyo/callisto"]
   },
   {
+    "id": "python/dalleng",
     "name": "Whitespace",
-    "path": "python/dalleng",
     "authors": ["Diego Allen"],
     "license": "none",
     "languages": ["Python"],
@@ -3538,8 +3538,8 @@
     "notes": "Codewars solution"
   },
   {
+    "id": "javascript/therebelrobot",
     "name": "Whitespace",
-    "path": "javascript/therebelrobot",
     "authors": ["Aster Haven"],
     "license": "ISC",
     "languages": ["JavaScript"],
@@ -3551,8 +3551,8 @@
     "notes": "Identical to Codewars template"
   },
   {
+    "id": "javascript/macocha-whitespacer",
     "name": "whitespacer",
-    "path": "javascript/macocha-whitespacer",
     "authors": ["Maciej Siwek"],
     "license": "MIT",
     "languages": ["JavaScript/React"],
@@ -3591,8 +3591,8 @@
     "notes": "Assembly is only displayed, not disassembled"
   },
   {
+    "id": "c/rdebath",
     "name": "Whitespace",
-    "path": "c/rdebath",
     "authors": ["Robert de Bath"],
     "license": "none",
     "languages": ["C", "Lex"],
@@ -3733,8 +3733,8 @@
     "notes": "Transpiles to C. The input assembly dialects of wsa and wsa.sed, as well as the output C function calls, are combined in .assembly.mnemonics. Has tests directory that contains Whitespace programs from many authors."
   },
   {
+    "id": "whitespace/mikedonaghy-hello",
     "name": "Hello World",
-    "path": "whitespace/mikedonaghy-hello",
     "authors": ["D.E. Akers"],
     "license": "MIT",
     "languages": ["Whitespace"],
@@ -3745,8 +3745,8 @@
     "programs": [{ "path": "w/Whitespace.ws", "polyglot": ["Whitespace assembly"], "spec_version": "0.3" }]
   },
   {
+    "id": "python/katc",
     "name": "Whitespace Parser",
-    "path": "python/katc",
     "authors": ["友利奈緒 (Tomori Nao)"],
     "license": "none",
     "languages": ["Python"],
@@ -3802,8 +3802,8 @@
     "notes": "Shares instruction definitions in whitespace.py with python/alecgraves-whitespac3; relationship unclear"
   },
   {
+    "id": "cpp/frmsaul-cupertino",
     "name": "Cupertino-WhiteSpace-Interperter",
-    "path": "cpp/frmsaul-cupertino",
     "authors": ["Saul Fuhrmann"],
     "license": "none",
     "languages": ["C++"],
@@ -3821,8 +3821,8 @@
     ]
   },
   {
+    "id": "java/kmizu",
     "name": "ws_interpreter",
-    "path": "java/kmizu",
     "authors": ["Kota Mizushima"],
     "license": "MIT",
     "languages": ["Java"],
@@ -3832,8 +3832,8 @@
     "source": ["https://github.com/kmizu/ws_interpreter"]
   },
   {
+    "id": "java/brunokim",
     "name": "Whitespace compiler targeting JVM bytecode",
-    "path": "java/brunokim",
     "authors": ["Bruno Kim Medeiros Cesar"],
     "license": "unknown",
     "languages": ["JVM"],
@@ -3849,8 +3849,8 @@
     "notes": "Source unavailable"
   },
   {
+    "id": "c/strangepan-i-c-whitespace",
     "name": "I C Whitespace",
-    "path": "c/strangepan-i-c-whitespace",
     "authors": ["Dan Andrus"],
     "license": "GPL-2.0-or-later",
     "languages": ["C"],
@@ -3871,8 +3871,8 @@
     "commands": [{ "type": "interpreter", "bin": "whitespace", "build": "make", "usage": "$0 <file>" }]
   },
   {
+    "id": "javascript/kmyk-translater",
     "name": "whitespace-translater",
-    "path": "javascript/kmyk-translater",
     "authors": ["Kimiyuki Onaka"],
     "license": "MIT",
     "languages": ["JavaScript"],
@@ -3916,8 +3916,8 @@
     "mappings": [{ "space": "S", "tab": "T", "lf": "\n" }]
   },
   {
+    "id": "haskell/brainbrush-tomato",
     "name": "Tomato Programming Language",
-    "path": "haskell/brainbrush-tomato",
     "authors": ["brainbrush"],
     "license": "GPL-2.0-or-later",
     "languages": ["Haskell"],
@@ -3937,8 +3937,8 @@
     ]
   },
   {
+    "id": "go/kinu",
     "name": "whitespace",
-    "path": "go/kinu",
     "authors": ["Kinuko Yasuda"],
     "license": "none",
     "languages": ["Go"],
@@ -4002,8 +4002,8 @@
     ]
   },
   {
+    "id": "clojure/tsuyusato",
     "name": "whitespace-clj",
-    "path": "clojure/tsuyusato",
     "authors": ["TSUYUSATO Kitsune"],
     "license": "EPL-1.0",
     "languages": ["Clojure"],
@@ -4032,8 +4032,8 @@
     ]
   },
   {
+    "id": "php/nobody1986",
     "name": "whitespace-php",
-    "path": "php/nobody1986",
     "authors": ["nobody1986"],
     "license": "none",
     "languages": ["PHP", "C"],
@@ -4085,8 +4085,8 @@
     ]
   },
   {
+    "id": "whitespace/yokoyama-fizzbuzz",
     "name": "FizzBuzz AIT8",
-    "path": "whitespace/yokoyama-fizzbuzz",
     "authors": ["Kengo Yokoyama"],
     "license": "none",
     "languages": ["Whitespace"],
@@ -4097,8 +4097,8 @@
     "programs": [{ "path": "yokoyama.ws", "spec_version": "0.2" }]
   },
   {
+    "id": "java/faurehu",
     "name": "whiteSpaceInterpreter",
-    "path": "java/faurehu",
     "authors": ["Matias Faure"],
     "license": "none",
     "languages": ["Java"],
@@ -4108,8 +4108,8 @@
     "source": ["https://github.com/faurehu/whiteSpaceInterpreter"]
   },
   {
+    "id": "cpp/sudheesh",
     "name": "Whitespace-Interpreter--C-",
-    "path": "cpp/sudheesh",
     "authors": ["sudheesh4"],
     "license": "none",
     "languages": ["C++"],
@@ -4128,8 +4128,8 @@
     ]
   },
   {
+    "id": "csharp/reflash",
     "name": "WhiteSpaceInterpreter",
-    "path": "csharp/reflash",
     "authors": ["reflash"],
     "license": "none",
     "languages": ["C#"],
@@ -4147,8 +4147,8 @@
     ]
   },
   {
+    "id": "c/koturn",
     "name": "Whitespace",
-    "path": "c/koturn",
     "authors": ["koturn"],
     "license": "MIT",
     "languages": ["C"],
@@ -4181,8 +4181,8 @@
     ]
   },
   {
+    "id": "php/johankj",
     "name": "whitespace.php",
-    "path": "php/johankj",
     "authors": ["Johan K. Jensen"],
     "license": "MIT",
     "languages": ["PHP"],
@@ -4193,8 +4193,8 @@
     "commands": [{ "type": "interpreter", "bin": "whitespace.php", "usage": "php whitespace.php <file>" }]
   },
   {
+    "id": "php/igorw-wsm",
     "name": "wsm",
-    "path": "php/igorw-wsm",
     "authors": ["Igor Wiedler"],
     "license": "none",
     "languages": ["PHP"],
@@ -4234,8 +4234,8 @@
     "commands": [{ "type": "assembler", "bin": "bin/wsm", "usage": "php $0 <file>" }]
   },
   {
+    "id": "python/eizoassik-pyws",
     "name": "PYWS",
-    "path": "python/eizoassik-pyws",
     "authors": ["Eizo Assik"],
     "license": "none",
     "languages": ["Python"],
@@ -4323,8 +4323,8 @@
     ]
   },
   {
+    "id": "rust/faultier-albino",
     "name": "Albino",
-    "path": "rust/faultier-albino",
     "authors": ["Taro Sako"],
     "license": "MIT",
     "languages": ["Rust"],
@@ -4396,8 +4396,8 @@
     "notes": "TODO document options"
   },
   {
+    "id": "cpp/subv-whitespace-llvm",
     "name": "Whitespace-LLVM",
-    "path": "cpp/subv-whitespace-llvm",
     "authors": ["Sebastian Valle"],
     "license": "GPL-3.0-or-later",
     "languages": ["C++", "LLVM"],
@@ -4417,8 +4417,8 @@
     ]
   },
   {
+    "id": "rust/faultier-whitebase",
     "name": "Whitebase",
-    "path": "rust/faultier-whitebase",
     "authors": ["Taro Sako"],
     "license": "MIT",
     "languages": ["Rust"],
@@ -4458,8 +4458,8 @@
     "commands": [{ "build": "cargo build --release", "build_errors": "Needs many changes for latest Rust" }]
   },
   {
+    "id": "python/smithers-bluespace",
     "name": "BlueSpace",
-    "path": "python/smithers-bluespace",
     "authors": ["Christopher Smith"],
     "license": "X11",
     "languages": ["Python"],
@@ -4559,8 +4559,8 @@
     "notes": "Mapping has spaces between opcode and param and each instruction is on a separate line. Assembly string parameters are written with s/t/l. Date is from quine-cs.ws Last-Modified, in BST to match commits."
   },
   {
+    "id": "java/azige",
     "name": "whitespace-interpreter",
-    "path": "java/azige",
     "authors": ["Azige"],
     "license": "Apache-2.0",
     "languages": ["Java"],
@@ -4615,8 +4615,8 @@
     "notes": "szm language opcodes are specified as 4 ternary trits using the alphabet 水 沝 淼. szm has additional operators not in Whitespace. TODO: unclear whether szm can be compiled to Whitespace."
   },
   {
+    "id": "php/igorw",
     "name": "whitespace-php",
-    "path": "php/igorw",
     "authors": ["Igor Wiedler"],
     "license": "MIT",
     "languages": ["PHP"],
@@ -4627,8 +4627,8 @@
     "commands": [{ "type": "interpreter", "bin": "bin/interpreter", "usage": "php $0 <file>" }]
   },
   {
+    "id": "javascript/naokikp-wsi",
     "name": "wsi",
-    "path": "javascript/naokikp-wsi",
     "authors": ["naoki kageyama"],
     "license": "MIT",
     "languages": ["JavaScript"],
@@ -4640,8 +4640,8 @@
     "notes": "When mapping to visible characters, STL is canonical over STN"
   },
   {
+    "id": "masm/jarsp-wsint",
     "name": "wsint",
-    "path": "masm/jarsp-wsint",
     "authors": ["jarsp"],
     "license": "none",
     "languages": ["MASM"],
@@ -4660,8 +4660,8 @@
     ]
   },
   {
+    "id": "cpp/keirua-white",
     "name": "white",
-    "path": "cpp/keirua-white",
     "authors": ["Keirua"],
     "license": "none",
     "languages": ["C++"],
@@ -4708,8 +4708,8 @@
     ]
   },
   {
+    "id": "java/vyo-kairos",
     "name": "Kairos",
-    "path": "java/vyo-kairos",
     "authors": ["Manu Weidmann"],
     "license": "MIT",
     "languages": ["Java"],
@@ -4720,8 +4720,8 @@
     "notes": "Has ElGamal encryption and decryption written Whitespace assembly"
   },
   {
+    "id": "elixir/quinnwilton",
     "name": "elixir-whitespace",
-    "path": "elixir/quinnwilton",
     "authors": ["Quinn Wilton"],
     "license": "none",
     "languages": ["Elixir"],
@@ -4731,8 +4731,8 @@
     "source": ["https://github.com/QuinnWilton/elixir-whitespace"]
   },
   {
+    "id": "java/praveenvaka-coder",
     "name": "whitespace-coder",
-    "path": "java/praveenvaka-coder",
     "authors": ["Praveen Reddy Vaka"],
     "license": "none",
     "languages": ["Java"],
@@ -4751,8 +4751,8 @@
     ]
   },
   {
+    "id": "c/threeifbywhiskey-satan",
     "name": "SaTaN",
-    "path": "c/threeifbywhiskey-satan",
     "authors": ["Dorien Snake"],
     "license": "none",
     "languages": ["C"],
@@ -4773,8 +4773,8 @@
     "commands": [{ "type": "interpreter", "bin": "satan", "build": "make", "usage": "$0 <file>" }]
   },
   {
+    "id": "php/jseidl-wcc",
     "name": "Whitespace Covert Channel",
-    "path": "php/jseidl-wcc",
     "authors": ["Jan Seidl"],
     "license": "none",
     "languages": ["PHP"],
@@ -4785,8 +4785,8 @@
     "notes": "HTTP service that converts text to a sequence of push and printc instructions that produce the same text"
   },
   {
+    "id": "python/mikecat",
     "name": "python-whitespace",
-    "path": "python/mikecat",
     "authors": ["みけCAT (MikeCAT)"],
     "license": "Zlib",
     "languages": ["Python"],
@@ -4805,8 +4805,8 @@
     ]
   },
   {
+    "id": "go/yshr-wspacego",
     "name": "wspacego",
-    "path": "go/yshr-wspacego",
     "authors": ["Yosihiro Isago"],
     "license": "Apache-2.0",
     "languages": ["Go"],
@@ -4846,8 +4846,8 @@
     "notes": "copy uses top of stack, not argument"
   },
   {
+    "id": "python/apua-wvm",
     "name": "wvm",
-    "path": "python/apua-wvm",
     "authors": ["Apua"],
     "license": "none",
     "languages": ["Python"],
@@ -4868,8 +4868,8 @@
     ]
   },
   {
+    "id": "java/yuukiaria-wseditor",
     "name": "wseditor",
-    "path": "java/yuukiaria-wseditor",
     "authors": ["YuukiARIA"],
     "license": "none",
     "languages": ["Java"],
@@ -4879,8 +4879,8 @@
     "source": ["https://github.com/YuukiARIA/wseditor"]
   },
   {
+    "id": "python/mcolom",
     "name": "Whitespace tool",
-    "path": "python/mcolom",
     "authors": ["Miguel Colom"],
     "license": "GPL-3.0-or-later",
     "languages": ["Python"],
@@ -4935,8 +4935,8 @@
     "notes": "Shares instruction definitions in interpreter.py with python/katc; relationship unclear"
   },
   {
+    "id": "whitespace/samdonow-pelc",
     "name": "Project Euler Language Challenge",
-    "path": "whitespace/samdonow-pelc",
     "authors": ["Sam Donow"],
     "license": "none",
     "languages": ["Whitespace"],
@@ -4951,8 +4951,8 @@
     "programs": [{ "path": "e36Comments.ws" }]
   },
   {
+    "id": "cpp/tycho-whitespace-llvm",
     "name": "whitespace-llvm",
-    "path": "cpp/tycho-whitespace-llvm",
     "authors": ["Tycho Bickerstaff"],
     "license": "GPL-2.0-or-later",
     "languages": ["C++", "LLVM"],
@@ -4975,8 +4975,8 @@
     ]
   },
   {
+    "id": "coffeescript/ehrlichbryan",
     "name": "Whitespace-JS",
-    "path": "coffeescript/ehrlichbryan",
     "authors": ["Bryan Ehrlich"],
     "license": "none",
     "languages": ["CoffeeScript"],
@@ -5026,8 +5026,8 @@
     "commands": [{ "dependencies": ["Grunt"], "build": "npm install && grunt", "run_errors": "Unclear how to run" }]
   },
   {
+    "id": "ruby/mame-quine-relay",
     "name": "Quine Relay",
-    "path": "ruby/mame-quine-relay",
     "authors": ["Yusuke Endoh"],
     "license": "MIT",
     "languages": ["Ruby"],
@@ -5077,8 +5077,8 @@
     "notes": "Automated with Docker. Programs available without building on spoiler branch."
   },
   {
+    "id": "javascript/luilak-ws2js",
     "name": "WS2JS",
-    "path": "javascript/luilak-ws2js",
     "authors": ["Luilak"],
     "license": "MIT",
     "languages": ["JavaScript"],
@@ -5088,8 +5088,8 @@
     "source": ["https://github.com/Luilak/WS2JS"]
   },
   {
+    "id": "cpp/yuukiaria",
     "name": "ws-interpreter",
-    "path": "cpp/yuukiaria",
     "authors": ["YuukiARIA"],
     "license": "none",
     "languages": ["C++"],
@@ -5128,8 +5128,8 @@
     ]
   },
   {
+    "id": "java/abhijitsharma",
     "name": "whitespace",
-    "path": "java/abhijitsharma",
     "authors": ["Abhijit Sharma"],
     "license": "none",
     "languages": ["Java"],
@@ -5168,8 +5168,8 @@
     ]
   },
   {
+    "id": "javascript/rumpl",
     "name": "whitespace",
-    "path": "javascript/rumpl",
     "authors": ["Djordje Lukic"],
     "license": "MIT",
     "languages": ["JavaScript"],
@@ -5179,8 +5179,8 @@
     "source": ["https://github.com/rumpl/whitespace"]
   },
   {
+    "id": "javascript/vii5ard-whitelips-ide",
     "name": "Whitelips IDE",
-    "path": "javascript/vii5ard-whitelips-ide",
     "authors": ["Henri Lakk (Vii5ard)"],
     "license": "none",
     "languages": ["JavaScript"],
@@ -5239,8 +5239,8 @@
     "notes": "TODO document macros. Local labels start with `.`. The brainfuck-whitespace repo is derived from example/bf.wsa, but it stops reading the program at !, in addition to \\n."
   },
   {
+    "id": "cpp/timvandermeij",
     "name": "whitespace-interpreter",
-    "path": "cpp/timvandermeij",
     "authors": ["Tim van der Meij", "Willem Obbens", "Simon Klaver"],
     "license": "none",
     "languages": ["C++"],
@@ -5293,8 +5293,8 @@
     ]
   },
   {
+    "id": "cpp/knmorgan",
     "name": "ws",
-    "path": "cpp/knmorgan",
     "authors": ["Kyle Morgan"],
     "license": "GPL-3.0-or-later",
     "languages": ["C++"],
@@ -5327,8 +5327,8 @@
     ]
   },
   {
+    "id": "cpp/noia",
     "name": "Whitespace-Interpreter",
-    "path": "cpp/noia",
     "authors": ["Tucker Noia"],
     "license": "none",
     "languages": ["C++"],
@@ -5348,8 +5348,8 @@
     ]
   },
   {
+    "id": "cpp/dpohanlon-wsint",
     "name": "wsInt",
-    "path": "cpp/dpohanlon-wsint",
     "authors": ["Daniel O'Hanlon"],
     "license": "none",
     "languages": ["C++"],
@@ -5397,8 +5397,8 @@
     ]
   },
   {
+    "id": "idris/edwinb-ws-idr",
     "name": "WS-idr",
-    "path": "idris/edwinb-ws-idr",
     "authors": ["Edwin Brady"],
     "license": "none",
     "languages": ["Idris"],
@@ -5446,8 +5446,8 @@
     ]
   },
   {
+    "id": "java/brumbeere-whitespace4j",
     "name": "Whitespace4j",
-    "path": "java/brumbeere-whitespace4j",
     "authors": ["Philipp Speck"],
     "license": "none",
     "languages": ["Java"],
@@ -5457,8 +5457,8 @@
     "source": ["https://github.com/Brumbeere/Whitespace4j"]
   },
   {
+    "id": "cpp/abcsharp",
     "name": "whitespace",
-    "path": "cpp/abcsharp",
     "authors": ["abcsharp"],
     "license": "none",
     "languages": ["C++"],
@@ -5477,8 +5477,8 @@
     ]
   },
   {
+    "id": "ruby/bossiernesto",
     "name": "whitespace",
-    "path": "ruby/bossiernesto",
     "authors": ["Ernesto Bossi"],
     "license": "GPL-3.0-or-later",
     "languages": ["Ruby"],
@@ -5518,8 +5518,8 @@
     "commands": [{ "type": "assembler", "run_errors": "No entrypoint" }]
   },
   {
+    "id": "java/yawkat",
     "name": "Whitespace",
-    "path": "java/yawkat",
     "authors": ["Jonas Konrad"],
     "license": "none",
     "languages": ["Java"],
@@ -5530,9 +5530,9 @@
     "notes": "Program is hardcoded to the source of fibonacci.ws"
   },
   {
+    "id": "python/res-trans32",
     "name": "trans32.py",
     "description": "Two-way translator for an arbitrary 3-symbol language and a binary prefix-code version",
-    "path": "python/res-trans32",
     "authors": ["r.e.s."],
     "license": "unknown",
     "languages": ["Python"],
@@ -5546,8 +5546,8 @@
     "notes": "Source unavailable"
   },
   {
+    "id": "javascript/pvdz-significant-whitespace",
     "name": "SignificantWhitespace",
-    "path": "javascript/pvdz-significant-whitespace",
     "authors": ["Peter van der Zee"],
     "license": "none",
     "languages": ["JavaScript"],
@@ -5562,8 +5562,8 @@
     "notes": "JS1k competition submission"
   },
   {
+    "id": "haskell/haroldl-wspace-0.4",
     "name": "whitespace-0.4",
-    "path": "haskell/haroldl-wspace-0.4",
     "authors": ["Harold Lee", "Edwin Brady"],
     "license": "GPL-2.0-or-later",
     "languages": ["Haskell"],
@@ -5593,8 +5593,8 @@
     ]
   },
   {
+    "id": "scheme/athos-white-scheme",
     "name": "white-scheme",
-    "path": "scheme/athos-white-scheme",
     "authors": ["Ohta Shogo"],
     "license": "MIT",
     "languages": ["Scheme"],
@@ -5633,8 +5633,8 @@
     }
   },
   {
+    "id": "python/dos1-colorspace",
     "name": "Colorspace",
-    "path": "python/dos1-colorspace",
     "authors": ["Sebastian Krzyszkowiak", "Agata Kurczewska"],
     "license": "GPL-2.0-or-later",
     "languages": ["Python"],
@@ -5670,8 +5670,8 @@
     ]
   },
   {
+    "id": "python/wasabili",
     "name": "Whitespace.py",
-    "path": "python/wasabili",
     "authors": ["Yuichi Nishiwaki"],
     "license": "none",
     "languages": ["Python"],
@@ -5691,8 +5691,8 @@
     ]
   },
   {
+    "id": "haskell/takatoh-hws",
     "name": "hws",
-    "path": "haskell/takatoh-hws",
     "authors": ["takatoh"],
     "license": "none",
     "languages": ["Haskell"],
@@ -5717,8 +5717,8 @@
     ]
   },
   {
+    "id": "csharp/rolisoft-esoteric",
     "name": "Esoteric Code Interpreter",
-    "path": "csharp/rolisoft-esoteric",
     "authors": ["Roland Bogosi"],
     "license": "GPL-3.0-or-later",
     "languages": ["C#"],
@@ -5772,8 +5772,8 @@
     "notes": "Disassembles program trace, including escaped output. Also interprets Brainfuck (and Ook! and Spoon variants), Byter, and Befunge93 programs"
   },
   {
+    "id": "go/technohippy",
     "name": "whitespace-go",
-    "path": "go/technohippy",
     "authors": ["ANDO Yasushi"],
     "license": "none",
     "languages": ["Go"],
@@ -5807,8 +5807,8 @@
     ]
   },
   {
+    "id": "python/stephenchappell",
     "name": "Whitespace Interpreter and Assembler",
-    "path": "python/stephenchappell",
     "authors": ["Stephen Chappell"],
     "license": "MIT",
     "languages": ["Python"],
@@ -5887,8 +5887,8 @@
     "notes": ".wso files are gzip-compressed serializations of the Python structures of parsed programs"
   },
   {
+    "id": "cpp/peasley",
     "name": "Whitespace Interpreter in C++",
-    "path": "cpp/peasley",
     "authors": ["Peasley"],
     "license": "none",
     "languages": ["C++"],
@@ -5909,8 +5909,8 @@
     ]
   },
   {
+    "id": "c/meth0dz",
     "name": "Whitespace Interpreter v1.0",
-    "path": "c/meth0dz",
     "authors": ["MeTh0Dz"],
     "license": "CC-BY-SA-3.0-US",
     "languages": ["C"],
@@ -5932,8 +5932,8 @@
     ]
   },
   {
+    "id": "rebol/hostilefork",
     "name": "%whitespace.reb",
-    "path": "rebol/hostilefork",
     "authors": ["Brian Dickens (Hostile Fork)"],
     "license": "MIT",
     "languages": ["Rebol", "Ren-C"],
@@ -5986,8 +5986,8 @@
     ]
   },
   {
+    "id": "python/cybis-hapyli",
     "name": "HaPyLi",
-    "path": "python/cybis-hapyli",
     "authors": ["Huf Lungdung (Cybis)"],
     "license": "unknown",
     "languages": ["Python"],
@@ -6005,9 +6005,9 @@
     "notes": "A Sudoku solver was written in HaPyLi"
   },
   {
+    "id": "csharp/nicolasff-spacesharp",
     "name": "Spacesharp",
     "description": "Compiles to MSIL executable using the .NET System.Reflection.Emit API",
-    "path": "csharp/nicolasff-spacesharp",
     "authors": ["Nicolas Favre-Felix"],
     "license": "GPL-2.0-or-later",
     "languages": ["C#", "C", "Yacc", "Lex"],
@@ -6057,8 +6057,8 @@
     "notes": "Assembly mnemonics only used internally for enums"
   },
   {
+    "id": "c/hogelog",
     "name": "wspace",
-    "path": "c/hogelog",
     "authors": ["hogelog"],
     "license": "none",
     "languages": ["C", "Perl"],
@@ -6101,8 +6101,8 @@
     "commands": [{ "type": "interpreter", "bin": "wspace", "build": "make gencode.c all", "usage": "$0 <file>" }]
   },
   {
+    "id": "whitespace/pdewacht-tetris",
     "name": "tetris.ws",
-    "path": "whitespace/pdewacht-tetris",
     "authors": ["Peter De Wachter", "Andrew Archibald"],
     "license": "none",
     "languages": ["Whitespace"],
@@ -6117,8 +6117,8 @@
     "programs": [{ "path": "tetris.ws", "spec_version": "0.3" }]
   },
   {
+    "id": "cpp/esco",
     "name": "EsCo (Esoteric Combine)",
-    "path": "cpp/esco",
     "authors": ["Zasenko Sergey", "Matthias Boehm", "Justin Mutter"],
     "license": "GPL-2.0-or-later",
     "languages": ["C++"],
@@ -6164,8 +6164,8 @@
     "notes": "Supports Brainfuck, Ook!, Spoon, Hodor, HQ9+, Whitespace, Befunge-93, Byter"
   },
   {
+    "id": "cpp/pavelshub",
     "name": "wspace",
-    "path": "cpp/pavelshub",
     "authors": ["Pavel Shub"],
     "license": "GPL-3.0-or-later",
     "languages": ["C++"],
@@ -6236,8 +6236,8 @@
     ]
   },
   {
+    "id": "python/phlip-pywhitespace",
     "name": "pywhitespace",
-    "path": "python/phlip-pywhitespace",
     "authors": ["Phillip Bradbury"],
     "license": "GPL-2.0-or-later",
     "languages": ["Python"],
@@ -6263,8 +6263,8 @@
     ]
   },
   {
+    "id": "haskell/edwinb-wspace-0.3",
     "name": "wspace 0.3",
-    "path": "haskell/edwinb-wspace-0.3",
     "authors": ["Edwin Brady"],
     "license": "GPL-2.0-or-later",
     "languages": ["Haskell", "Emacs Lisp"],
@@ -6278,8 +6278,8 @@
     "bounds": { "precision": "arbitrary" }
   },
   {
+    "id": "whitespace/burghard-wsinterws",
     "name": "wsinterws",
-    "path": "whitespace/burghard-wsinterws",
     "authors": ["Oliver Burghard"],
     "license": "none",
     "languages": ["Whitespace"],
@@ -6293,8 +6293,8 @@
     ]
   },
   {
+    "id": "ruby/wconrad",
     "name": "whitespace-ruby",
-    "path": "ruby/wconrad",
     "authors": ["Wayne E. Conrad"],
     "license": "GPL-2.0-or-later",
     "languages": ["Ruby"],
@@ -6367,8 +6367,8 @@
     ]
   },
   {
+    "id": "perl/mkoelbl",
     "name": "whitespace.pl",
-    "path": "perl/mkoelbl",
     "authors": ["Mike Kölbl"],
     "license": "GPL-2.0-or-later",
     "languages": ["Perl"],
@@ -6395,8 +6395,8 @@
     ]
   },
   {
+    "id": "haskell/burghard-wsa",
     "name": "wsa",
-    "path": "haskell/burghard-wsa",
     "authors": ["Oliver Burghard"],
     "license": "none",
     "languages": ["Haskell"],
@@ -6411,8 +6411,8 @@
     "notes": "Supports non-standard instructions"
   },
   {
+    "id": "cpp/burghard-wsintercpp",
     "name": "wsintercpp",
-    "path": "cpp/burghard-wsintercpp",
     "authors": ["Oliver Burghard"],
     "license": "none",
     "languages": ["C++"],
@@ -6430,8 +6430,8 @@
     "notes": "Supports non-standard instructions"
   },
   {
+    "id": "haskell/edwinb-wspace-0.2",
     "name": "wspace 0.2",
-    "path": "haskell/edwinb-wspace-0.2",
     "authors": ["Edwin Brady"],
     "license": "GPL-2.0-or-later",
     "languages": ["Haskell"],

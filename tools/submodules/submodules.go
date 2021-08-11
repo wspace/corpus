@@ -15,16 +15,16 @@ func main() {
 	var projects []tools.Project
 	try(jsonutil.DecodeFile("projects.json", &projects))
 	sort.Slice(projects, func(i, j int) bool {
-		return projects[i].Path < projects[j].Path
+		return projects[i].ID < projects[j].ID
 	})
 
 	var badURLs []*tools.Project
 	for i := range projects {
 		p := &projects[i]
-		if p.Path == "" || len(p.Source) == 0 {
+		if p.ID == "" || len(p.Source) == 0 {
 			continue
 		}
-		if _, err := os.Stat(p.Path); err == nil {
+		if _, err := os.Stat(p.ID); err == nil {
 			continue
 		}
 
@@ -34,8 +34,8 @@ func main() {
 			continue
 		}
 
-		fmt.Printf("git submodule add %s %s\n", repo, p.Path)
-		cmd := execabs.Command("git", "submodule", "add", repo, p.Path)
+		fmt.Printf("git submodule add %s %s\n", repo, p.ID)
+		cmd := execabs.Command("git", "submodule", "add", repo, p.ID)
 		cmd.Stdout = os.Stdout
 		cmd.Stderr = os.Stderr
 		try(cmd.Run())
@@ -44,7 +44,7 @@ func main() {
 	if len(badURLs) != 0 {
 		fmt.Println("First source not a recognized repo for:")
 		for _, p := range badURLs {
-			fmt.Printf("- %s: %s\n", p.Path, p.Source[0])
+			fmt.Printf("- %s: %s\n", p.ID, p.Source[0])
 		}
 	}
 }

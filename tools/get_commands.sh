@@ -6,12 +6,12 @@
 file="${1:-\$FILE}"
 
 jq --arg file "$file" -r '
-sort_by(.path)
+sort_by(.id)
 | .[]
 | (.run | .["interpret", "compile", "assemble"]) as $cmd
 | select($cmd != null)
 | [
-    "cd \(.path)",
+    "cd \(.id)",
     .run.build // empty,
     ($cmd.usage
       | sub("\\$0"; "./" + $cmd.bin)

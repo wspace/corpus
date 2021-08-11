@@ -36,7 +36,7 @@
     .[]
     | select(.tags | contains(["assembler"]) or contains(["disassembler"]))
     | select(.assembly.mnemonics == null)
-    | "- " + (.path // "“\(.name)” by " + (.authors|join(", ")))
+    | "- " + (.id // "“\(.name)” by " + (.authors|join(", ")))
   ]
   | sort
   | if length == 0 then empty

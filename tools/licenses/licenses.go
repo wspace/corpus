@@ -48,16 +48,16 @@ func main() {
 
 func getLicense(p *tools.Project) (string, error) {
 	if len(p.Source) > 0 && ghRepo.MatchString(p.Source[0]) {
-		fmt.Fprintf(os.Stderr, "Getting license for %s from GitHub\n", p.Path)
+		fmt.Fprintf(os.Stderr, "Getting license for %s from GitHub\n", p.ID)
 		repo := strings.TrimPrefix(p.Source[0], "https://github.com/")
 		if l, err := getGitHubLicense(repo); l != "" || err != nil {
 			return l, err
 		}
 	}
-	if p.Path != "" {
-		if l := getLicenseFromFile(p.Path, "package.json", getPackageJSONLicense); l != "" {
+	if p.ID != "" {
+		if l := getLicenseFromFile(p.ID, "package.json", getPackageJSONLicense); l != "" {
 			return l, nil
-		} else if l := getLicenseFromFile(p.Path, "Cargo.toml", getCargoTOMLLicense); l != "" {
+		} else if l := getLicenseFromFile(p.ID, "Cargo.toml", getCargoTOMLLicense); l != "" {
 			return l, nil
 		}
 	}
