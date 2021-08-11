@@ -331,6 +331,9 @@
 [submodule "python/bornlex"]
 	path = python/bornlex
 	url = https://github.com/Bornlex/Whitespace-interpreter
+[submodule "python/cybis-hapyli"]
+	path = python/cybis-hapyli
+	url = https://github.com/wspace/hapyli
 [submodule "python/dalleng"]
 	path = python/dalleng
 	url = https://github.com/dalleng/Whitespace

@@ -858,10 +858,11 @@
     "authors": ["François Rozet"],
     "license": "none",
     "languages": ["Python"],
-    "tags": ["polyglot formatter"],
+    "tags": ["polyglot formatter", "programs"],
     "date": "2020-12-08 16:33:12 +0100",
     "spec_version": "-",
     "source": ["https://github.com/francois-rozet/whitespacy"],
+    "programs": [{ "path": "polyglot.c", "polyglot": ["C"] }],
     "commands": [
       {
         "type": "polyglot formatter",
@@ -1102,7 +1103,13 @@
       "usage": ["assembler", "programs"],
       "extension": "wsa"
     },
-    "programs": [{ "path": "whitelie.wsa", "compiled": "whitelie.ws" }],
+    "programs": [
+      {
+        "path": "whitelie.wsa",
+        "compiled": "whitelie.ws",
+        "generate": "ruby asm.rb whitelie.wsa > whitelie.ws"
+      }
+    ],
     "commands": [
       {
         "type": "compiler",
@@ -1930,7 +1937,10 @@
       "https://github.com/wspace/aniket-hacktoberfest-2018",
       "https://github.com/Aniket965/Hello-world/tree/master/Whitespace"
     ],
-    "programs": [{ "path": "Hello World.txt" }, { "path": "hello-world.ws" }]
+    "programs": [
+      { "path": "Hello World.txt", "spec_version": "0.2" },
+      { "path": "hello-world.ws", "spec_version": "0.2" }
+    ]
   },
   {
     "name": "whitespace-stack-flood",
@@ -2340,7 +2350,7 @@
     "date": "2017-10-11 23:01:33 -0400",
     "spec_version": "0.2",
     "source": ["https://github.com/knightking100/hello-worlds"],
-    "programs": [{ "path": "examples/w/Whitespace.ws" }]
+    "programs": [{ "path": "examples/w/Whitespace.ws", "spec_version": "0.2" }]
   },
   {
     "name": "HacktoberFest Starter Project",
@@ -2352,7 +2362,7 @@
     "date": "2017-10-11 03:18:03 +0530",
     "spec_version": "0.2",
     "source": ["https://github.com/AliceWonderland/hacktoberfest"],
-    "programs": [{ "path": "scripts/hello_world_chashmeetsingh.ws" }]
+    "programs": [{ "path": "scripts/hello_world_chashmeetsingh.ws", "spec_version": "0.2" }]
   },
   {
     "name": "Whitespace-interpreter",
@@ -2787,7 +2797,7 @@
     "date": "2016-10-10 19:18:18 -0400",
     "spec_version": "0.2",
     "source": ["https://github.com/dcoy/hacktoberfest-dcoy"],
-    "programs": [{ "path": "hello_world.ws " }]
+    "programs": [{ "path": "hello_world.ws", "spec_version": "0.2" }]
   },
   {
     "name": "EsoPoly",
@@ -3383,6 +3393,7 @@
     "date": "2016-01-28 16:53:06 -0600",
     "spec_version": "0.2",
     "source": ["https://bitbucket.org/StephenPatrick/whitespace-interpreter"],
+    "programs": [{ "path": "conf/predict-superbowl.ws", "spec_version": "0.2" }],
     "commands": [
       {
         "type": "interpreter",
@@ -3596,10 +3607,30 @@
       "usage": ["transpiler", "assembler", "enum"]
     },
     "programs": [
-      { "path": "gen-99bottles.c" },
-      { "path": "gen-prime.c" },
-      { "path": "gen-wsinterws.c" },
-      { "path": "gencode-deadfish-in-ws.c" }
+      {
+        "path": "gencode-deadfish-in-ws.c",
+        "compiled": "deadfish.ws",
+        "spec_version": "0.2",
+        "generate": "gcc -o gencode-deadfish-in-ws gencode-deadfish-in-ws.c && ./gencode-deadfish-in-ws > deadfish.ws"
+      },
+      {
+        "path": "gen-99bottles.c",
+        "compiled": "99bottles.ws",
+        "spec_version": "0.2",
+        "generate": "gcc -o gen-99bottles gen-99bottles.c && ./gen-99bottles > 99bottles.ws"
+      },
+      {
+        "path": "gen-prime.c",
+        "compiled": "prime.ws",
+        "spec_version": "0.2",
+        "generate": "gcc -o gen-prime gen-prime.c && ./gen-prime > prime.ws"
+      },
+      {
+        "path": "gen-wsinterws.c",
+        "compiled": "wsinterws.ws",
+        "spec_version": "0.2",
+        "generate": "gcc -o gen-wsinterws gen-wsinterws.c && ./gen-wsinterws > wsinterws.ws"
+      }
     ],
     "commands": [
       {
@@ -4936,7 +4967,36 @@
     "date": "2013-07-15 22:28:53 +0900",
     "spec_version": "0.3",
     "source": ["https://github.com/mame/quine-relay"],
-    "programs": [{ "path": "QR.ws" }],
+    "assembly": {
+      "mnemonics": {
+        "push": ["push"],
+        "dup": ["dup"],
+        "copy": ["copy"],
+        "swap": ["swap"],
+        "drop": ["pop"],
+        "slide": ["slide"],
+        "add": ["add"],
+        "sub": ["sub"],
+        "mul": ["mul"],
+        "div": ["div"],
+        "mod": ["mod"],
+        "store": ["set"],
+        "retrieve": ["get"],
+        "label": ["mark"],
+        "call": ["call"],
+        "jmp": ["jump"],
+        "jz": ["jz"],
+        "jn": ["jn"],
+        "ret": ["ret"],
+        "end": ["end"],
+        "printc": ["outc"],
+        "printi": ["outn"],
+        "readc": ["readc"],
+        "readi": ["readn"]
+      },
+      "usage": ["enum"]
+    },
+    "programs": [{ "path": "QR.ws", "generate": "git restore --source spoiler QR.ws" }],
     "commands": [
       {
         "type": "interpreter",
@@ -4946,7 +5006,7 @@
         "notes": "readi does not support sign"
       }
     ],
-    "notes": "Automated with Docker"
+    "notes": "Automated with Docker. Programs available without building on spoiler branch."
   },
   {
     "name": "WS2JS",
@@ -5858,6 +5918,7 @@
   },
   {
     "name": "HaPyLi",
+    "path": "python/cybis-hapyli",
     "authors": ["Huf Lungdung (Cybis)"],
     "license": "unknown",
     "languages": ["Python"],
@@ -5865,11 +5926,13 @@
     "date": "2009-03-03 19:44:31 +0000",
     "spec_version": "0.3",
     "source": [
+      "https://github.com/wspace/hapyli",
       "https://web.archive.org/web/20110212015726/http://hapyli.webs.com/",
       "https://web.archive.org/web/20141011193154/http://compsoc.dur.ac.uk/archives/whitespace/2010-May/000075.html",
       "https://github.com/helvm/hapyli",
       "https://stackoverflow.com/questions/607830/use-of-haskell-state-monad-a-code-smell"
     ],
+    "programs": [{ "path": "sudoku.ws" }, { "path": "99bottles.hpl" }, { "path": "brainfuck.hpl" }],
     "notes": "A Sudoku solver was written in HaPyLi"
   },
   {

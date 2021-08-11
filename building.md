@@ -137,6 +137,7 @@ Build and run errors are included.
 - python/alecgraves-whitespac3/interpreter.py
 - python/apua-wvm/wvm.py
 - python/bornlex/main.py
+- ❌ python/cybis-hapyli
 - ⚠️ python/dalleng/whitespace.py: Needs Codewars entrypoint
 - python/damle-evanesco/src/textToWhitespace.py
 - python/dos1-colorspace:
@@ -237,7 +238,6 @@ Build and run errors are included.
 - ❌ whitespace/trevorbennett-stack-flood
 - ❌ whitespace/wsdt-kevinloveswhitespace
 - ❌ whitespace/yokoyama-fizzbuzz
-- ❌ “HaPyLi” by Huf Lungdung (Cybis)
 - ❌ “Whitespace Interpreter in JavaScript” by Arnauld
 - ❌ “Whitespace Language - Online Translator/Interpreter” by dCode
 - ❌ “Whitespace compiler targeting JVM bytecode” by Bruno Kim Medeiros Cesar
