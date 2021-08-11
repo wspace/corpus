@@ -3546,7 +3546,7 @@
     "tags": ["transpiler", "interpreter", "assembler", "program builder", "programs"],
     "date": "2015-08-18 14:25:03 +0100",
     "spec_version": "0.3",
-    "source": ["https://github.com/rdebath/whitespace"],
+    "source": ["https://github.com/rdebath/whitespace", "https://github.com/wspace/rdebath-c"],
     "whitespace": {
       "nonstandard": [
         { "name": "jzp", "aliases": ["jumppz"], "args": ["label"] },
@@ -3596,7 +3596,7 @@
         { "name": "include <file>", "replace": "#include \"<file>.h\"" }
       ],
       "patterns": {
-        "label": "\\.?[A-Za-z_][A-Za-z0-9_]*|[0-9]+",
+        "label": "\\.?[A-Za-z_$][A-Za-z0-9_$]*|[0-9]+",
         "number": "-?[0-9]+",
         "number_char": "'[^\\]'|'\\[abtn']'",
         "string": "\"[^\"]*\""
@@ -3678,6 +3678,18 @@
       }
     ],
     "notes": "Transpiles to C. The input assembly dialects of wsa and wsa.sed, as well as the output C function calls, are combined in .assembly.mnemonics. Has tests directory that contains Whitespace programs from many authors."
+  },
+  {
+    "name": "Hello World",
+    "path": "whitespace/mikedonaghy-hello",
+    "authors": ["D.E. Akers"],
+    "license": "MIT",
+    "languages": ["Whitespace"],
+    "tags": ["programs"],
+    "date": "2015-08-16 21:42:38 -0400",
+    "spec_version": "0.3",
+    "source": ["https://github.com/leachim6/hello-world"],
+    "programs": [{ "path": "w/Whitespace.ws", "polyglot": ["Whitespace assembly"], "spec_version": "0.3" }]
   },
   {
     "name": "Whitespace Parser",

@@ -230,6 +230,7 @@ Build and run errors are included.
   - whitelie
 - ❌ whitespace/kenrube-esopoly
 - ❌ whitespace/knightking-hacktoberfest-2017
+- ❌ whitespace/mikedonaghy-hello
 - ❌ whitespace/paradoxv5-program-java-rb
 - ❌ whitespace/pdewacht-tetris
 - ❌ whitespace/petek-hello

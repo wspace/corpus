@@ -535,6 +535,9 @@
 [submodule "whitespace/knightking-hacktoberfest-2017"]
 	path = whitespace/knightking-hacktoberfest-2017
 	url = https://github.com/knightking100/hello-worlds
+[submodule "whitespace/mikedonaghy-hello"]
+	path = whitespace/mikedonaghy-hello
+	url = https://github.com/leachim6/hello-world
 [submodule "whitespace/paradoxv5-program-java-rb"]
 	path = whitespace/paradoxv5-program-java-rb
 	url = https://github.com/ParadoxV5/Program-java-rb-ws-txt
