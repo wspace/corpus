@@ -1,0 +1,11 @@
+{
+  "id": "vim/rolf-ws-vim",
+  "name": "ws.vim",
+  "authors": ["Rolf Asmund"],
+  "license": "none",
+  "languages": ["Vim script"],
+  "tags": ["syntax highlighting", "programs"],
+  "date": "2017-05-15 17:41:44 +0000",
+  "spec_version": "0.3",
+  "source": ["https://github.com/rolf007/ws.vim"]
+}

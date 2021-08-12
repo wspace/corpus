@@ -1,0 +1,19 @@
+{
+  "id": "ruby/nishiwakki",
+  "name": "whitespace",
+  "authors": ["nishiwakki"],
+  "license": "none",
+  "languages": ["Ruby"],
+  "tags": ["interpreter"],
+  "date": "2018-05-17 02:29:29 +0900",
+  "spec_version": "0.2",
+  "source": ["https://github.com/nishiwakki/whitespace"],
+  "commands": [
+    {
+      "type": "interpreter",
+      "bin": "whitespace.rb",
+      "usage": "ruby $0 <file>",
+      "notes": "Fails on Whitespace programs with comments"
+    }
+  ]
+}

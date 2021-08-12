@@ -1,0 +1,38 @@
+{
+  "id": "python/umutoztunc-whitesymex",
+  "name": "whitesymex",
+  "authors": ["Umut Barış Öztunç"],
+  "license": "MIT",
+  "languages": ["Python"],
+  "tags": ["symbolic executor", "programs"],
+  "date": "2021-05-30 11:23:21 +0000",
+  "spec_version": "0.3",
+  "source": ["https://github.com/umutoztunc/whitesymex", "https://whitesymex.readthedocs.io/"],
+  "package": { "name": "whitesymex", "manager": "PyPI", "url": "https://pypi.org/project/whitesymex/" },
+  "commands": [
+    {
+      "type": "symbolic executor",
+      "bin": "whitesymex/cli.py",
+      "dependencies": ["Python 3", "Z3"],
+      "install_dependencies": ["pip3 install z3-solver"],
+      "usage": "python3 -m whitesymex.cli [-h | --help] [--version] [--find <find>] [--avoid <avoid>] [--strategy {bfs,dfs,random}] [--loop-limit <limit>] <file>",
+      "options": [
+        { "short": "h", "long": "help", "desc": "show this help message and exit" },
+        { "long": "version", "desc": "show program's version number and exit" },
+        { "long": "find", "arg": "FIND", "desc": "string to find" },
+        { "long": "avoid", "arg": "AVOID", "desc": "string to avoid" },
+        {
+          "long": "strategy",
+          "arg": "STRATEGY",
+          "type": "enum",
+          "default": "bfs",
+          "desc": "path exploration strategy",
+          "values": [{ "values": ["bfs"] }, { "values": ["dfs"] }, { "values": ["random"] }]
+        },
+        { "long": "loop-limit", "arg": "LIMIT", "desc": "maximum number of iterations for symbolic loops" }
+      ],
+      "option_parse": "Python argparse"
+    }
+  ],
+  "notes": "Inspired by angr (https://angr.io/)"
+}

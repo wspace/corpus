@@ -1,0 +1,12 @@
+{
+  "id": "php/igorw",
+  "name": "whitespace-php",
+  "authors": ["Igor Wiedler"],
+  "license": "MIT",
+  "languages": ["PHP"],
+  "tags": ["interpreter"],
+  "date": "2014-06-10 00:59:21 +0200",
+  "spec_version": "0.3",
+  "source": ["https://github.com/igorw/whitespace-php"],
+  "commands": [{ "type": "interpreter", "bin": "bin/interpreter", "usage": "php $0 <file>" }]
+}

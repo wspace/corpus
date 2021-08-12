@@ -1,0 +1,65 @@
+{
+  "id": "go/kinu",
+  "name": "whitespace",
+  "authors": ["Kinuko Yasuda"],
+  "license": "none",
+  "languages": ["Go"],
+  "tags": ["interpreter", "disassembler"],
+  "date": "2015-02-19 00:54:08 +0900",
+  "spec_version": "0.3",
+  "source": ["https://github.com/kinu/whitespace"],
+  "bounds": {
+    "precision": "Go int",
+    "stack_cap": 20,
+    "call_stack_cap": 20,
+    "heap_min": 0,
+    "heap_max": "unbounded",
+    "heap_cap": "unbounded",
+    "label_cap": "unbounded",
+    "instruction_cap": "unbounded"
+  },
+  "assembly": {
+    "mnemonics": {
+      "push": ["PUSH"],
+      "dup": ["DUP"],
+      "copy": ["COPY"],
+      "swap": ["SWAP"],
+      "drop": ["DISCARD"],
+      "slide": ["SLIDE"],
+      "add": ["ADD"],
+      "sub": ["SUB"],
+      "mul": ["MUL"],
+      "div": ["DIV"],
+      "mod": ["MOD"],
+      "store": ["STORE"],
+      "retrieve": ["RETRIEVE"],
+      "label": ["MARK"],
+      "call": ["CALL"],
+      "jmp": ["JMP"],
+      "jz": ["JMP_IF0"],
+      "jn": ["JMP_NEG"],
+      "ret": ["RET"],
+      "end": ["FINISH"],
+      "printc": ["PUTCHAR"],
+      "printi": ["PUTNUM"],
+      "readc": ["READCHAR"],
+      "readi": ["READNUM"]
+    },
+    "usage": ["dump", "enum"]
+  },
+  "commands": [
+    {
+      "type": "interpreter",
+      "bin": "whitespace",
+      "build": "go mod init github.com/kinu/whitespace && go build",
+      "usage": "$0 [-v] [--dry_run] [-h | --help] <file>",
+      "options": [
+        { "short": "v", "long": "v", "desc": "verbose" },
+        { "short": "dry_run", "long": "dry_run", "desc": "dry run" },
+        { "short": "h", "long": "h" },
+        { "short": "help", "long": "help" }
+      ],
+      "option_parse": "Go flag"
+    }
+  ]
+}

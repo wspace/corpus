@@ -1,0 +1,48 @@
+{
+  "id": "cpp/andrewarchi-respace",
+  "name": "Respace",
+  "authors": ["Andrew Archibald"],
+  "license": "MIT",
+  "languages": ["C++"],
+  "tags": ["interpreter", "disassembler", "bit packer", "Binary Whitespace", "programs"],
+  "date": "2018-04-15 21:35:34 -0600",
+  "spec_version": "0.3",
+  "source": ["https://github.com/andrewarchi/respace"],
+  "bounds": { "precision": "fixed" },
+  "assembly": {
+    "mnemonics": {
+      "push": ["push"],
+      "dup": ["dup"],
+      "copy": ["copy"],
+      "swap": ["swap"],
+      "drop": ["drop"],
+      "slide": ["slide"],
+      "add": ["add"],
+      "sub": ["sub"],
+      "mul": ["mul"],
+      "div": ["div"],
+      "mod": ["mod"],
+      "store": ["store"],
+      "retrieve": ["retrieve"],
+      "label": ["label_<number>:"],
+      "call": ["call"],
+      "jmp": ["jmp"],
+      "jz": ["jz"],
+      "jn": ["jn"],
+      "ret": ["ret"],
+      "end": ["end"],
+      "printc": ["printc"],
+      "printi": ["printi"],
+      "readc": ["readc"],
+      "readi": ["readi"],
+      "dumpstack": ["debug_printstack"],
+      "dumpheap": ["debug_printheap"]
+    },
+    "extension": "wsa"
+  },
+  "commands": [
+    { "type": "interpreter", "bin": "respace", "build": "make", "usage": "$0 <file>" },
+    { "type": "interpreter", "bin": "programs/ws/interpreter.wsa" }
+  ],
+  "notes": "Disassembler and bit packer are only available via code modification"
+}

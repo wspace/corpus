@@ -1,0 +1,26 @@
+{
+  "id": "python/kareeeeem-abyad",
+  "name": "Abyad",
+  "authors": ["Mohammed Kareem"],
+  "license": "Unlicense",
+  "languages": ["Python"],
+  "tags": ["interpreter", "program builder", "programs"],
+  "date": "2016-05-13 12:50:00 +0200",
+  "spec_version": "0.2",
+  "source": ["https://github.com/Kareeeeem/abyad"],
+  "commands": [
+    {
+      "type": "interpreter",
+      "bin": "src",
+      "dependencies": ["Python 2.7"],
+      "usage": "python2.7 -m $0 <file>"
+    },
+    {
+      "type": "program builder",
+      "bin": "generate_programs",
+      "dependencies": ["Python 2.7"],
+      "usage": "python2.7 $0",
+      "notes": "Generates programs in tests/ from definitions in tests/programs.py"
+    }
+  ]
+}

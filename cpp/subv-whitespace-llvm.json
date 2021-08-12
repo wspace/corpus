@@ -1,0 +1,21 @@
+{
+  "id": "cpp/subv-whitespace-llvm",
+  "name": "Whitespace-LLVM",
+  "authors": ["Sebastian Valle"],
+  "license": "GPL-3.0-or-later",
+  "languages": ["C++", "LLVM"],
+  "tags": ["interpreter"],
+  "date": "2014-07-16 08:48:25 -0500",
+  "spec_version": "0.3",
+  "source": ["https://github.com/Subv/Whitespace-LLVM"],
+  "commands": [
+    {
+      "type": "compiler",
+      "bin": "bin/Whitespace-LLVM",
+      "dependencies": ["LLVM"],
+      "build_errors": "Requires LLVM",
+      "usage": "$0",
+      "input": "count.ws"
+    }
+  ]
+}

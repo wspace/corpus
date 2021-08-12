@@ -1,0 +1,11 @@
+{
+  "id": "javascript/kanra1412",
+  "name": "whitespace-interpreter",
+  "authors": ["kanra1412"],
+  "license": "none",
+  "languages": ["JavaScript"],
+  "tags": ["interpreter"],
+  "date": "2016-04-29 21:05:24 +0800",
+  "spec_version": "0.3",
+  "source": ["https://github.com/kanra1412/whitespace-interpreter"]
+}

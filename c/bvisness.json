@@ -1,0 +1,20 @@
+{
+  "id": "c/bvisness",
+  "name": "whitespace",
+  "authors": ["Ben Visness"],
+  "license": "none",
+  "languages": ["C", "Yacc", "TextMate"],
+  "tags": ["interpreter", "syntax highlighting"],
+  "date": "2016-05-20 22:49:38 -0500",
+  "spec_version": "0.3",
+  "source": ["https://github.com/bvisness/whitespace"],
+  "commands": [
+    {
+      "type": "interpreter",
+      "bin": "whitespace",
+      "build": "make",
+      "usage": "$0 [<file>]",
+      "notes": "Reads from stdin, if no file is given"
+    }
+  ]
+}

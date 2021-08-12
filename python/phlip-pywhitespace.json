@@ -1,0 +1,27 @@
+{
+  "id": "python/phlip-pywhitespace",
+  "name": "pywhitespace",
+  "authors": ["Phillip Bradbury"],
+  "license": "GPL-2.0-or-later",
+  "languages": ["Python"],
+  "tags": ["interpreter"],
+  "date": "2004-08-03 07:32:50 +0000",
+  "spec_version": "0.3",
+  "source": [
+    "https://github.com/wspace/phlip-pywhitespace",
+    "https://web.archive.org/web/20141011193201/http://compsoc.dur.ac.uk/archives/whitespace/2004-August/000048.html",
+    "https://web.archive.org/web/20161111081914/http://compsoc.dur.ac.uk/archives/whitespace/2007-December/000065.html",
+    "https://web.archive.org/web/20061209092911/http://www.cs.newcastle.edu.au/~c3018900/pywhitespace.tar.bz2",
+    "https://www.mrphlip.com/pywhitespace.tar.bz2"
+  ],
+  "whitespace": { "nonstandard": [{ "name": "trace", "seq": "LLT" }], "extension": "ws" },
+  "programs": [{ "path": "examples/chr.ws" }, { "path": "examples/ord.ws" }],
+  "commands": [
+    {
+      "type": "interpreter",
+      "bin": "main.py",
+      "dependencies": ["Python 3"],
+      "usage": "python3 $0 <file>"
+    }
+  ]
+}

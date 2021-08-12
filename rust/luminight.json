@@ -1,0 +1,27 @@
+{
+  "id": "rust/luminight",
+  "name": "rustws",
+  "authors": ["Luminight"],
+  "license": "MIT",
+  "languages": ["Rust"],
+  "tags": ["library", "mapping"],
+  "date": "2020-08-04 15:04:18 +0200",
+  "spec_version": "0.2",
+  "source": ["https://github.com/Luminighty/rustws"],
+  "mappings": [{ "space": "S", "tab": "T", "lf": "L", "spaces_between": false, "ignore_case": true }],
+  "commands": [
+    {
+      "type": "library",
+      "bin": "librustws.rlib",
+      "build": "cargo build --release",
+      "notes": "No main() entry point"
+    },
+    {
+      "type": "mapping",
+      "bin": "wsconvert.py",
+      "usage": "$0 <file>",
+      "output": "<file_no_ext>.ws",
+      "notes": "Converts from mapping to Whitespace. Ignores lines prefixed with `--`."
+    }
+  ]
+}

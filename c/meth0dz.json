@@ -1,0 +1,23 @@
+{
+  "id": "c/meth0dz",
+  "name": "Whitespace Interpreter v1.0",
+  "authors": ["MeTh0Dz"],
+  "license": "CC-BY-SA-3.0-US",
+  "languages": ["C"],
+  "tags": ["interpreter"],
+  "date": "2010-02-01 01:56:47 +0000",
+  "spec_version": "0.3",
+  "source": [
+    "https://github.com/wspace/meth0dz-c",
+    "http://www.rohitab.com/discuss/topic/35639-c-whitespace-interpreter/",
+    "https://github.com/hostilefork/whitespacers/tree/master/c"
+  ],
+  "commands": [
+    {
+      "type": "interpreter",
+      "bin": "whitespace",
+      "build": "gcc -O3 -Wall -o whitespace whitespace.c",
+      "usage": "$0 <file>"
+    }
+  ]
+}

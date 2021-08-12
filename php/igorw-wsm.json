@@ -1,0 +1,41 @@
+{
+  "id": "php/igorw-wsm",
+  "name": "wsm",
+  "authors": ["Igor Wiedler"],
+  "license": "none",
+  "languages": ["PHP"],
+  "tags": ["assembler", "programs"],
+  "date": "2014-09-27 22:24:38 +0200",
+  "spec_version": "0.2",
+  "source": ["https://github.com/igorw/wsm"],
+  "assembly": {
+    "mnemonics": {
+      "push": ["push"],
+      "dup": ["dup"],
+      "copy": ["ref"],
+      "swap": ["swap"],
+      "drop": ["discard"],
+      "slide": ["slide"],
+      "add": ["add"],
+      "sub": ["sub"],
+      "mul": ["mul"],
+      "div": ["div"],
+      "mod": ["mod"],
+      "store": ["store"],
+      "retrieve": ["retrieve"],
+      "label": ["label"],
+      "call": ["call"],
+      "jmp": ["jump"],
+      "jz": ["jumpz"],
+      "jn": ["jumplz"],
+      "ret": ["ret"],
+      "end": ["exit"],
+      "printc": ["write_char"],
+      "printi": ["write_num"],
+      "readc": ["read_char"],
+      "readi": ["read_num"]
+    },
+    "extension": "wsm"
+  },
+  "commands": [{ "type": "assembler", "bin": "bin/wsm", "usage": "php $0 <file>" }]
+}

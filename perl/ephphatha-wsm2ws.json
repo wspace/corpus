@@ -1,0 +1,54 @@
+{
+  "id": "perl/ephphatha-wsm2ws",
+  "name": "wsm2ws",
+  "authors": ["Andrew James"],
+  "license": "MIT",
+  "languages": ["Perl"],
+  "tags": ["assembler", "programs"],
+  "date": "2017-05-28 19:40:26 +1000",
+  "spec_version": "0.3",
+  "source": ["https://github.com/ephphatha/wsm2ws"],
+  "assembly": {
+    "mnemonics": {
+      "push": ["push"],
+      "dup": ["dup"],
+      "copy": ["copy"],
+      "swap": ["swap", "swa"],
+      "drop": ["pop"],
+      "slide": ["slide"],
+      "add": ["add"],
+      "sub": ["sub"],
+      "mul": ["mul"],
+      "div": ["div"],
+      "mod": ["mod", "rem"],
+      "store": ["store", "stor"],
+      "retrieve": ["retrieve", "retr"],
+      "label": ["<label>:", "label"],
+      "call": ["call"],
+      "jmp": ["jmp", "jump", "goto"],
+      "jz": ["jez", "jz"],
+      "jn": ["jlz", "jn"],
+      "ret": ["ret"],
+      "end": ["end", "exit"],
+      "printc": ["ochar", "putchar"],
+      "printi": ["onum", "putnum"],
+      "readc": ["ichar", "getchar"],
+      "readi": ["inum", "getnum"]
+    },
+    "line_comments": [";"],
+    "extension": "wsm"
+  },
+  "commands": [
+    {
+      "type": "assembler",
+      "bin": "wsm2ws.pl",
+      "dependencies": ["Perl"],
+      "install_dependencies": [
+        "perl -MCPAN -e 'install Algorithm::Combinatorics, File::Basename, Parse::Token::Lite, String::Unescape, Tie::RegexpHash'"
+      ],
+      "usage": "perl $0 <file>",
+      "output": "<file_no_suffix:.wsm>.ws"
+    }
+  ],
+  "notes": "Has optional assembly arguments"
+}

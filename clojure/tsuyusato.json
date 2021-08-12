@@ -1,0 +1,30 @@
+{
+  "id": "clojure/tsuyusato",
+  "name": "whitespace-clj",
+  "authors": ["TSUYUSATO Kitsune"],
+  "license": "EPL-1.0",
+  "languages": ["Clojure"],
+  "tags": ["interpreter"],
+  "date": "2015-02-11 15:15:52 +0900",
+  "spec_version": "0.2",
+  "source": ["https://github.com/MakeNowJust/whitespace-clj"],
+  "commands": [
+    {
+      "type": "interpreter",
+      "bin": "target/whitespace-clj-0.1.0-SNAPSHOT-standalone.jar",
+      "dependencies": ["Leiningen"],
+      "build": "lein uberjar",
+      "usage": "java -jar $0 [-h | --help] [-v | --version] [-c | --chars] [-t | --text] [-l | --lisp] [-s | --sexp] [--time] <file>",
+      "options": [
+        { "short": "h", "long": "help", "desc": "show this help" },
+        { "short": "v", "long": "version", "desc": "show version" },
+        { "short": "c", "long": "chars", "desc": "show source code as visible characters" },
+        { "short": "t", "long": "text", "desc": "show source code as assembled text" },
+        { "short": "l", "long": "lisp", "desc": "compile to Clojure code and run" },
+        { "short": "s", "long": "sexp", "desc": "compile to Clojure code and show" },
+        { "long": "time", "desc": "show executing time" }
+      ],
+      "option_parse": "clojure.tools.cli"
+    }
+  ]
+}

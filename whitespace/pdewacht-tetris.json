@@ -1,0 +1,16 @@
+{
+  "id": "whitespace/pdewacht-tetris",
+  "name": "tetris.ws",
+  "authors": ["Peter De Wachter", "Andrew Archibald"],
+  "license": "none",
+  "languages": ["Whitespace"],
+  "tags": ["programs"],
+  "date": "2008-01-02 23:14:16 +0000",
+  "spec_version": "0.3",
+  "source": [
+    "https://github.com/wspace/pdewacht-tetris",
+    "https://web.archive.org/web/20141011193149/http://compsoc.dur.ac.uk/archives/whitespace/2008-January/000067.html",
+    "https://www.reddit.com/r/programming/comments/9nw1e/most_unreadable_programming_language_ever/c0dkzzw/"
+  ],
+  "programs": [{ "path": "tetris.ws", "spec_version": "0.3" }]
+}

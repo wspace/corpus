@@ -1,0 +1,40 @@
+{
+  "id": "javascript/macocha-whitespacer",
+  "name": "whitespacer",
+  "authors": ["Maciej Siwek"],
+  "license": "MIT",
+  "languages": ["JavaScript/React"],
+  "tags": ["IDE", "interpreter", "disassembler"],
+  "date": "2015-09-04 14:22:57 +0200",
+  "spec_version": "0.3",
+  "source": ["https://github.com/macocha/whitespacer"],
+  "assembly": {
+    "mnemonics": {
+      "push": ["PUSH"],
+      "dup": ["DUPL"],
+      "copy": ["COPY"],
+      "swap": ["SWP"],
+      "drop": ["DISC"],
+      "slide": ["SLIDE"],
+      "add": ["ADD"],
+      "sub": ["SUB"],
+      "mul": ["MUL"],
+      "div": ["DIV"],
+      "mod": ["MOD"],
+      "store": ["STORE"],
+      "retrieve": ["GET"],
+      "label": ["LABEL"],
+      "call": ["CALL"],
+      "jmp": ["JMP"],
+      "jz": ["JEZ"],
+      "jn": ["JLZ"],
+      "ret": ["RET"],
+      "end": ["EXIT"],
+      "printc": ["OUTC"],
+      "printi": ["OUTN"],
+      "readc": ["INPC"],
+      "readi": ["INPN"]
+    }
+  },
+  "notes": "Assembly is only displayed, not disassembled"
+}

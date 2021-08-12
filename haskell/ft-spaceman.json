@@ -1,0 +1,31 @@
+{
+  "id": "haskell/ft-spaceman",
+  "name": "SpaceMan",
+  "authors": ["Frank Terbeck"],
+  "license": "BSD-2-Clause",
+  "languages": ["Haskell"],
+  "tags": ["interpreter"],
+  "date": "2020-07-09 22:05:36 +0200",
+  "spec_version": "0.3",
+  "source": [
+    "https://gitlab.com/ft/spaceman",
+    "https://github.com/ft/spaceman",
+    "http://bewatermyfriend.org/p/2020/000/",
+    "https://news.ycombinator.com/item?id=24763312"
+  ],
+  "commands": [
+    {
+      "build": "cabal build",
+      "usage": "cabal run spaceman -- [-d | --dump-ast] [-t | --transform-labels] [-h | --help] [-V | --version] [--numeric-version] <file>",
+      "options": [
+        { "short": "d", "long": "dump-ast", "desc": "Dump Program AST instead of executing" },
+        { "short": "t", "long": "transform-labels", "desc": "Transform Label Names to ASCII" },
+        { "short": "h", "long": "help", "desc": "Display help message" },
+        { "short": "V", "long": "version", "desc": "Print version information" },
+        { "long": "numeric-version", "desc": "Print just the version number" }
+      ],
+      "option_parse": "Haskell System.Console.CmdArgs",
+      "notes": "TODO figure out how to run without `cabal run`"
+    }
+  ]
+}

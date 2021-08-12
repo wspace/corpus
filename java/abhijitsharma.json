@@ -1,0 +1,40 @@
+{
+  "id": "java/abhijitsharma",
+  "name": "whitespace",
+  "authors": ["Abhijit Sharma"],
+  "license": "none",
+  "languages": ["Java"],
+  "tags": ["interpreter"],
+  "date": "2013-04-05 10:21:09 -0700",
+  "spec_version": "0.2",
+  "source": ["https://github.com/abhijitsharma/whitespace"],
+  "whitespace": {
+    "unimplemented": [
+      "dup",
+      "swap",
+      "drop",
+      "mod",
+      "store",
+      "retrieve",
+      "label",
+      "call",
+      "jmp",
+      "jz",
+      "jn",
+      "ret",
+      "end",
+      "printc",
+      "readc",
+      "readi"
+    ]
+  },
+  "commands": [
+    {
+      "type": "interpreter",
+      "bin": "target/whitespace-1.0.jar",
+      "build": "sed -i '' 's/>1.6</>1.7</' pom.xml && mvn package",
+      "usage": "java -jar $0 -f <file>",
+      "notes": "source and target versions need to be changed to 1.7 or leter in pom.xml"
+    }
+  ]
+}

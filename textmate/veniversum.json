@@ -1,0 +1,11 @@
+{
+  "id": "textmate/veniversum",
+  "name": "Whitespace support in Atom",
+  "authors": ["Qingzhuo"],
+  "license": "MIT",
+  "languages": ["TextMate"],
+  "tags": ["syntax highlighting"],
+  "date": "2016-02-20 16:31:58 +0000",
+  "spec_version": "-",
+  "source": ["https://github.com/veniversum/language-whitespace"]
+}

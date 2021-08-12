@@ -1,0 +1,12 @@
+{
+  "id": "whitespace/dcoy-hacktoberfest-2016",
+  "name": "hacktoberfest-dcoy",
+  "authors": ["Noah Tranbarger"],
+  "license": "none",
+  "languages": ["Whitespace"],
+  "tags": ["programs"],
+  "date": "2016-10-10 19:18:18 -0400",
+  "spec_version": "0.2",
+  "source": ["https://github.com/dcoy/hacktoberfest-dcoy"],
+  "programs": [{ "path": "hello_world.ws", "spec_version": "0.2" }]
+}

@@ -1,0 +1,22 @@
+{
+  "id": "c/strangepan-i-c-whitespace",
+  "name": "I C Whitespace",
+  "authors": ["Dan Andrus"],
+  "license": "GPL-2.0-or-later",
+  "languages": ["C"],
+  "tags": ["interpreter"],
+  "date": "2015-03-10 01:25:16 -0600",
+  "spec_version": "0.3",
+  "source": ["https://github.com/StrangePan/I_C_Whitespace"],
+  "bounds": {
+    "precision": "C int",
+    "stack_cap": 1028,
+    "call_stack_cap": 512,
+    "heap_min": 0,
+    "heap_max": "unbounded",
+    "heap_cap": 1024,
+    "label_cap": 512,
+    "instruction_cap": "unbounded"
+  },
+  "commands": [{ "type": "interpreter", "bin": "whitespace", "build": "make", "usage": "$0 <file>" }]
+}

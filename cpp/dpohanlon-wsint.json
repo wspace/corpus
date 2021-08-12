@@ -1,0 +1,49 @@
+{
+  "id": "cpp/dpohanlon-wsint",
+  "name": "wsInt",
+  "authors": ["Daniel O'Hanlon"],
+  "license": "none",
+  "languages": ["C++"],
+  "tags": ["interpreter", "disassembler", "mapping"],
+  "date": "2012-12-02 06:45:50 -0800",
+  "spec_version": "0.2",
+  "source": ["https://github.com/wspace/dpohanlon-wsint", "https://github.com/dpohanlon/wsInt"],
+  "assembly": {
+    "mnemonics": {
+      "push": ["Push"],
+      "dup": ["Dup"],
+      "swap": ["Swap"],
+      "drop": ["Discard"],
+      "add": ["Plus"],
+      "sub": ["Minus"],
+      "mul": ["Times"],
+      "div": ["Divide"],
+      "mod": ["Modulo"],
+      "store": ["Store"],
+      "retrieve": ["Retrieve"],
+      "label": ["Mark"],
+      "call": ["Call"],
+      "jmp": ["Jump"],
+      "jz": ["JumpZ"],
+      "jn": ["JumpN"],
+      "ret": ["Return"],
+      "end": ["End"],
+      "printc": ["WriteChar"],
+      "printi": ["WriteInt"],
+      "readc": ["ReadChar"],
+      "readi": ["ReadInt"]
+    },
+    "binary_numbers": true,
+    "usage": ["disassembler"]
+  },
+  "mappings": [{ "space": "A", "tab": "B", "lf": "C", "spaces_between": false }],
+  "commands": [
+    {
+      "type": "interpreter",
+      "bin": "bin/wsInt",
+      "build": "make",
+      "usage": "$0 <file>",
+      "notes": "Prints mapping and disassembled program before executing"
+    }
+  ]
+}

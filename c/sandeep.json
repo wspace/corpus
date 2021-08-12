@@ -1,0 +1,29 @@
+{
+  "id": "c/sandeep",
+  "name": "Whitespace",
+  "authors": ["Sandeep Varma"],
+  "license": "none",
+  "languages": ["C", "Yacc", "Lex"],
+  "tags": ["interpreter", "programs"],
+  "date": "2017-11-11 05:17:01 +0000",
+  "spec_version": "0.3",
+  "source": ["https://github.com/Sandeep023/Whitespace"],
+  "whitespace": {
+    "unimplemented": ["slide", "store", "retrieve", "label", "call", "jmp", "jz", "jn", "ret", "end"],
+    "nonstandard": [
+      { "seq": "STT", "args": ["number"], "desc": "Print stack in order" },
+      { "seq": "STL", "args": ["number"], "desc": "Print stack in reverse" }
+    ],
+    "extension": "ws"
+  },
+  "commands": [
+    {
+      "type": "interpreter",
+      "bin": "white",
+      "build": "gcc -O3 -Wall -o white y.tab.c lex.yy.c",
+      "usage": "$0",
+      "input": "basic.ws"
+    }
+  ],
+  "notes": "Has git conflict markers remaining in source"
+}

@@ -1,0 +1,40 @@
+{
+  "id": "scheme/athos-white-scheme",
+  "name": "white-scheme",
+  "authors": ["Ohta Shogo"],
+  "license": "MIT",
+  "languages": ["Scheme"],
+  "tags": ["interpreter"],
+  "date": "2010-12-23 08:35:18 +0900",
+  "spec_version": "0.3",
+  "source": ["https://github.com/athos/white-scheme"],
+  "assembly": {
+    "mnemonics": {
+      "push": ["PUSH"],
+      "dup": ["DUP"],
+      "copy": ["COPY"],
+      "swap": ["SWAP"],
+      "drop": ["POP"],
+      "slide": ["SLIDE"],
+      "add": ["ADD"],
+      "sub": ["SUB"],
+      "mul": ["MUL"],
+      "div": ["DIV"],
+      "mod": ["MOD"],
+      "store": ["STORE"],
+      "retrieve": ["RETR"],
+      "label": ["LABEL"],
+      "call": ["CALL"],
+      "jmp": ["JUMP"],
+      "jz": ["BZERO"],
+      "jn": ["BNEG"],
+      "ret": ["RET"],
+      "end": ["QUIT"],
+      "printc": ["PUTC"],
+      "printi": ["PUTN"],
+      "readc": ["GETC"],
+      "readi": ["GETN"]
+    },
+    "usage": ["enum"]
+  }
+}

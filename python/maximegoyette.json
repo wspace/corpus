@@ -1,0 +1,48 @@
+{
+  "id": "python/maximegoyette",
+  "name": "whitespace_interpreter",
+  "authors": ["Maxime Goyette"],
+  "license": "MIT",
+  "languages": ["Python"],
+  "tags": ["interpreter"],
+  "date": "2018-03-09 16:19:48 -0500",
+  "spec_version": "0.3",
+  "source": ["https://github.com/MaximeGoyette/whitespace_interpreter"],
+  "whitespace": {
+    "unimplemented": [
+      "push",
+      "dup",
+      "copy",
+      "swap",
+      "drop",
+      "slide",
+      "add",
+      "sub",
+      "mul",
+      "div",
+      "mod",
+      "store",
+      "retrieve",
+      "label",
+      "call",
+      "jmp",
+      "jz",
+      "jn",
+      "ret",
+      "end",
+      "printc",
+      "printi",
+      "readc",
+      "readi"
+    ]
+  },
+  "commands": [
+    {
+      "type": "interpreter",
+      "bin": "whitespace.py",
+      "dependencies": ["Python 3"],
+      "run_errors": "Needs Codewars entrypoint"
+    }
+  ],
+  "notes": "Partial Codewars solution"
+}

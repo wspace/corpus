@@ -1,0 +1,61 @@
+{
+  "id": "python/ffanzhang",
+  "name": "ws",
+  "authors": ["ffanzhang"],
+  "license": "MIT",
+  "languages": ["Python"],
+  "tags": ["interpreter"],
+  "date": "2021-03-06 22:34:15 -0800",
+  "spec_version": "0.2",
+  "source": ["https://github.com/ffanzhang/ws"],
+  "whitespace": {
+    "unimplemented": [
+      "dup",
+      "swap",
+      "drop",
+      "add",
+      "sub",
+      "mul",
+      "div",
+      "mod",
+      "store",
+      "retrieve",
+      "label",
+      "call",
+      "jmp",
+      "jz",
+      "jn",
+      "ret",
+      "readc",
+      "readi"
+    ]
+  },
+  "assembly": {
+    "mnemonics": {
+      "push": ["PUSH"],
+      "dup": ["DUPL"],
+      "swap": ["SWAP"],
+      "drop": ["DISC"],
+      "add": ["ADD"],
+      "sub": ["SUB"],
+      "mul": ["MUL"],
+      "div": ["DIV"],
+      "mod": ["MOD"],
+      "store": ["PUT"],
+      "retrieve": ["GET"],
+      "label": ["MARK"],
+      "call": ["CALL"],
+      "jmp": ["JUMP"],
+      "jz": ["JZER"],
+      "jn": ["JNEG"],
+      "ret": ["ENDS"],
+      "end": ["ENDP"],
+      "printc": ["OTC"],
+      "printi": ["OTN"],
+      "readc": ["RDC"],
+      "readi": ["RDN"]
+    },
+    "usage": ["enum"]
+  },
+  "commands": [{ "bin": "ws.py", "dependencies": ["Python 3"], "usage": "python3 $0 < <file>", "input": "stdin" }]
+}

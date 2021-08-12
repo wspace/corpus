@@ -1,0 +1,50 @@
+{
+  "id": "go/tempxla-go-wspace",
+  "name": "go-wspace",
+  "authors": ["tempxla"],
+  "license": "MIT",
+  "languages": ["Go"],
+  "tags": ["interpreter"],
+  "date": "2019-02-24 18:51:26 +0900",
+  "spec_version": "0.2",
+  "source": ["https://github.com/tempxla/go-wspace"],
+  "bounds": {
+    "precision": "Go int",
+    "label_precision": "arbitrary",
+    "stack_cap": "unbounded",
+    "call_stack_cap": "unbounded",
+    "heap_min": "unbounded",
+    "heap_max": "unbounded",
+    "heap_cap": "unbounded",
+    "label_cap": "unbounded",
+    "instruction_cap": "unbounded"
+  },
+  "assembly": {
+    "mnemonics": {
+      "push": ["psh"],
+      "dup": ["dup"],
+      "swap": ["swp"],
+      "drop": ["pop"],
+      "add": ["add"],
+      "sub": ["sub"],
+      "mul": ["mul"],
+      "div": ["div"],
+      "mod": ["mod"],
+      "store": ["sto"],
+      "retrieve": ["lod"],
+      "label": ["mrk"],
+      "call": ["cll"],
+      "jmp": ["jmp"],
+      "jz": ["jze"],
+      "jn": ["jne"],
+      "ret": ["ret"],
+      "end": ["end"],
+      "printc": ["wtc"],
+      "printi": ["wtn"],
+      "readc": ["rdc"],
+      "readi": ["rdn"]
+    },
+    "usage": ["debug"]
+  },
+  "commands": [{ "type": "interpreter", "bin": "bin/go-wspace", "build": "make", "usage": "$0 <file>" }]
+}

@@ -1,0 +1,22 @@
+{
+  "id": "python/dwayne",
+  "name": "whitespace-python",
+  "authors": ["Dwayne R. Crooks"],
+  "license": "MIT",
+  "languages": ["Python"],
+  "tags": ["interpreter"],
+  "date": "2016-08-31 05:09:16 -0400",
+  "spec_version": "0.2",
+  "source": ["https://github.com/dwayne/whitespace-python"],
+  "package": { "name": "whitespace", "manager": "PyPI", "url": "https://pypi.org/project/whitespace/" },
+  "commands": [
+    {
+      "bin": "whitespace",
+      "dependencies": ["Python 3.7", "pipenv"],
+      "install_dependencies": ["pipenv install --dev"],
+      "usage": "pipenv run python3 -m $0 [-h | --help] <file>",
+      "options": [{ "short": "h", "long": "help", "desc": "show this help message and exit" }],
+      "option_parse": "Python argparse"
+    }
+  ]
+}

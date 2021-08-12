@@ -1,0 +1,12 @@
+{
+  "id": "javascript/loklaan-whitespace-lang",
+  "name": "whitespace-lang",
+  "authors": ["Lochlan Bunn"],
+  "license": "MIT",
+  "languages": ["JavaScript"],
+  "tags": ["interpreter"],
+  "date": "2018-02-14 07:32:38 +1000",
+  "spec_version": "0.3",
+  "source": ["https://github.com/loklaan/whitespace-lang"],
+  "relations": [{ "type": "fork", "id": "javascript/vii5ard-whitelips-ide" }]
+}

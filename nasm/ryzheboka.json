@@ -1,0 +1,51 @@
+{
+  "id": "nasm/ryzheboka",
+  "name": "Whitespace compiler for 64-bit macOS",
+  "authors": ["Elena Mokeeva"],
+  "license": "none",
+  "languages": ["NASM", "Python", "C"],
+  "tags": ["interpreter", "mapping"],
+  "date": "2018-09-04 11:25:14 +0200",
+  "spec_version": "0.2",
+  "source": ["https://github.com/ryzheboka/Whitespace"],
+  "mappings": [{ "space": "A", "tab": "B", "lf": "C", "spaces_between": false }],
+  "commands": [
+    {
+      "type": "compiler",
+      "bin": "wsCompiler.py",
+      "dependencies": ["NASM", "Python 3"],
+      "usage": "python3 wsCompiler.py <file> && nasm -fmacho64 <file_no_ext>.asm && ld -o <file_no_ext> <file_no_ext>.o && ./<file_no_ext>",
+      "output": "<file_no_ext>.asm"
+    },
+    {
+      "type": "interpreter",
+      "bin": "wsInterpreter",
+      "build": "gcc -O3 -Wall -o wsInterpreter wsInterpreter.c",
+      "usage": "$0 < <file>",
+      "input": "stdin",
+      "unimplemented": [
+        "copy",
+        "swap",
+        "drop",
+        "slide",
+        "add",
+        "sub",
+        "mul",
+        "div",
+        "mod",
+        "store",
+        "retrieve",
+        "label",
+        "call",
+        "jmp",
+        "jz",
+        "jn",
+        "ret",
+        "end",
+        "readc",
+        "readi"
+      ]
+    }
+  ],
+  "notes": "FF and CR also grouped with LF in mapping"
+}

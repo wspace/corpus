@@ -1,0 +1,16 @@
+{
+  "id": "haskell/edwinb-wspace-0.2",
+  "name": "wspace 0.2",
+  "authors": ["Edwin Brady"],
+  "license": "GPL-2.0-or-later",
+  "languages": ["Haskell"],
+  "tags": ["interpreter", "programs"],
+  "date": "2003-03-30 23:12:22 +0000",
+  "spec_version": "0.2",
+  "source": [
+    "https://web.archive.org/web/20150717140342/http://compsoc.dur.ac.uk:80/whitespace/download.php",
+    "https://slashdot.org/story/03/04/01/0332202/new-whitespace-only-programming-language"
+  ],
+  "bounds": { "precision": "arbitrary" },
+  "notes": "Idea from late 2002"
+}

@@ -1,0 +1,11 @@
+{
+  "id": "scheme/niyarin",
+  "name": "whitespace-scheme",
+  "authors": ["Akira Inoue"],
+  "license": "MIT",
+  "languages": ["Scheme"],
+  "tags": ["interpreter"],
+  "date": "2017-02-15 21:24:19 +0900",
+  "spec_version": "0.2",
+  "source": ["https://github.com/niyarin/whitespace-scheme"]
+}

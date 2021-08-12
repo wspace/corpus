@@ -1,0 +1,34 @@
+{
+  "id": "c/koturn",
+  "name": "Whitespace",
+  "authors": ["koturn"],
+  "license": "MIT",
+  "languages": ["C"],
+  "tags": ["interpreter", "translator"],
+  "date": "2014-11-08 22:30:57 +0900",
+  "spec_version": "0.3",
+  "source": ["https://github.com/koturn/Whitespace"],
+  "commands": [
+    {
+      "bin": "whitespace.out",
+      "build": "make",
+      "usage": "$0 [-b | --bytecode] [-f | --filter] [-h | --help] [-m | --mnemonic] [-o <file> | --output=<file>] [-t | --translate] <file>",
+      "options": [
+        { "short": "b", "long": "bytecode", "desc": "Show code in hexadecimal" },
+        { "short": "f", "long": "filter", "desc": "Visualize whitespace source code" },
+        { "short": "h", "long": "help", "desc": "Show help and exit" },
+        { "short": "m", "long": "mnemonic", "desc": "Show byte code in mnemonic format" },
+        {
+          "short": "o",
+          "long": "output",
+          "arg": "file",
+          "arg_required": true,
+          "type": "file",
+          "desc": "Specify output filename"
+        },
+        { "short": "t", "long": "translate", "desc": "Translate Whitespace to C source code" }
+      ],
+      "option_parse": "C getopt"
+    }
+  ]
+}

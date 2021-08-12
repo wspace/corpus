@@ -1,0 +1,15 @@
+{
+  "id": "whitespace/burghard-wsinterws",
+  "name": "wsinterws",
+  "authors": ["Oliver Burghard"],
+  "license": "none",
+  "languages": ["Whitespace"],
+  "tags": ["interpreter"],
+  "date": "2003-04-24",
+  "spec_version": "0.2",
+  "source": [
+    "https://web.archive.org/web/20030608024503/http://www.burghard.info/code/whitespace/wsinterws/index.html",
+    "https://web.archive.org/web/20150803032955/http://www.burghard.info/Code/Whitespace/wsinterws.zip",
+    "https://web.archive.org/web/20110911114338/http://www.burghard.info/Code/Whitespace/"
+  ]
+}

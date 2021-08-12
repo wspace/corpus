@@ -1,0 +1,27 @@
+{
+  "id": "cpp/malkiewiczm",
+  "name": "whitespace_compiler",
+  "authors": ["Michael Malkiewicz"],
+  "license": "none",
+  "languages": ["C++", "Yacc", "Lex"],
+  "tags": ["language", "programs"],
+  "date": "2019-10-20",
+  "spec_version": "0.2",
+  "source": ["https://github.com/malkiewiczm/whitespace_compiler"],
+  "commands": [
+    {
+      "type": "language compiler",
+      "bin": "compile",
+      "dependencies": ["Flex", "Bison"],
+      "build": "make",
+      "usage": "$0 [-h] [-a] [-i] <file>",
+      "options": [
+        { "short": "h", "desc": "show this help" },
+        { "short": "a", "desc": "include annotations in compiler output" },
+        { "short": "i", "desc": "include debug instructions in compiler output" }
+      ],
+      "option_parse": "manual"
+    }
+  ],
+  "notes": "Creation date mentioned in README"
+}

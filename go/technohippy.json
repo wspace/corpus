@@ -1,0 +1,35 @@
+{
+  "id": "go/technohippy",
+  "name": "whitespace-go",
+  "authors": ["ANDO Yasushi"],
+  "license": "none",
+  "languages": ["Go"],
+  "tags": ["interpreter"],
+  "date": "2010-10-08 03:12:01 +0900",
+  "spec_version": "0.3",
+  "source": ["https://github.com/wspace/technohippy-go", "https://github.com/technohippy/go-whitespace"],
+  "bounds": {
+    "precision": "Go int",
+    "stack_cap": 30000,
+    "call_stack_cap": 30000,
+    "heap_min": "unbounded",
+    "heap_max": "unbounded",
+    "heap_cap": "unbounded",
+    "label_cap": "unbounded",
+    "instruction_cap": 30000
+  },
+  "commands": [
+    {
+      "type": "interpreter",
+      "bin": "go-whitespace",
+      "build": "go build -o go-whitespace ./src",
+      "usage": "$0 [-d] [-h | --help] <file>",
+      "options": [
+        { "short": "d", "long": "d", "desc": "debug mode" },
+        { "short": "h", "long": "h" },
+        { "short": "help", "long": "help" }
+      ],
+      "option_parse": "Go flag"
+    }
+  ]
+}

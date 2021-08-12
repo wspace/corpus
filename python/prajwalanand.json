@@ -1,0 +1,22 @@
+{
+  "id": "python/prajwalanand",
+  "name": "whitespace-compiler",
+  "authors": ["Prajwal Anand"],
+  "license": "none",
+  "languages": ["Python"],
+  "tags": ["transpiler", "mapping", "programs"],
+  "date": "2021-07-01 00:19:42 -0700",
+  "spec_version": "0.2",
+  "source": ["https://github.com/prajwalanand/whitespace-compiler"],
+  "mappings": [{ "space": "1", "tab": "2", "lf": "3", "spaces_between": false, "extension": "ws" }],
+  "commands": [
+    {
+      "type": "transpiler",
+      "bin": "whitespace",
+      "dependencies": ["Python 3"],
+      "usage": "python3 $0 <file>",
+      "input": "stdin",
+      "output": "stdout"
+    }
+  ]
+}

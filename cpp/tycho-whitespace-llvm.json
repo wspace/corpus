@@ -1,0 +1,24 @@
+{
+  "id": "cpp/tycho-whitespace-llvm",
+  "name": "whitespace-llvm",
+  "authors": ["Tycho Bickerstaff"],
+  "license": "GPL-2.0-or-later",
+  "languages": ["C++", "LLVM"],
+  "tags": ["compiler", "JIT", "optimizer", "programs"],
+  "date": "2013-08-31 19:34:35 +0100",
+  "spec_version": "0.3",
+  "source": ["https://github.com/worktycho/whitespace-llvm"],
+  "bounds": { "precision": "arbitrary" },
+  "commands": [
+    {
+      "type": "compiler",
+      "bin": "wspace-jit",
+      "dependencies": ["LLVM"],
+      "build": "make",
+      "build_errors": "Requires LLVM",
+      "usage": "$0 [--list-instructions] <file>",
+      "options": [{ "long": "list-instructions" }],
+      "option_parse": "manual"
+    }
+  ]
+}

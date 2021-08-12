@@ -1,0 +1,12 @@
+{
+  "id": "php/johankj",
+  "name": "whitespace.php",
+  "authors": ["Johan K. Jensen"],
+  "license": "MIT",
+  "languages": ["PHP"],
+  "tags": ["interpreter", "programs"],
+  "date": "2014-11-01 16:50:34 +0100",
+  "spec_version": "0.2",
+  "source": ["https://github.com/johankj/whitespace-interpreter-php"],
+  "commands": [{ "type": "interpreter", "bin": "whitespace.php", "usage": "php whitespace.php <file>" }]
+}

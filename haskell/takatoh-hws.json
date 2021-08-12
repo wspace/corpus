@@ -1,0 +1,26 @@
+{
+  "id": "haskell/takatoh-hws",
+  "name": "hws",
+  "authors": ["takatoh"],
+  "license": "none",
+  "languages": ["Haskell"],
+  "tags": ["interpreter", "programs"],
+  "date": "2010-10-29 10:48:21 +0900",
+  "spec_version": "0.3",
+  "source": ["https://github.com/takatoh/hws"],
+  "commands": [
+    {
+      "type": "interpreter",
+      "bin": "hws",
+      "build": "make",
+      "build_errors": "Needs changes for latest Haskell",
+      "usage": "$0 <file>",
+      "options": [
+        { "short": "i", "long": "instruction", "desc": "show instructions" },
+        { "short": "v", "long": "version", "desc": "show version" },
+        { "short": ["h", "?"], "long": "help", "desc": "show this message" }
+      ],
+      "option_parse": "manual"
+    }
+  ]
+}

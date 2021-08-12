@@ -1,0 +1,11 @@
+{
+  "id": "elixir/quinnwilton",
+  "name": "elixir-whitespace",
+  "authors": ["Quinn Wilton"],
+  "license": "none",
+  "languages": ["Elixir"],
+  "tags": ["interpreter"],
+  "date": "2014-03-07 17:08:19 -0500",
+  "spec_version": "0.3",
+  "source": ["https://github.com/QuinnWilton/elixir-whitespace"]
+}

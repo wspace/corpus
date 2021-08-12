@@ -1,0 +1,15 @@
+{
+  "id": "cpp/marcellippmann-whitepp",
+  "name": "White++",
+  "authors": ["Marcel Lippmann"],
+  "license": "GPL-3.0-or-later",
+  "languages": ["C++"],
+  "tags": ["interpreter"],
+  "date": "2016-07-27 17:01:11 +0200",
+  "spec_version": "0.2",
+  "source": [
+    "https://github.com/wspace/marcellippmann-whitepp",
+    "https://web.archive.org/web/20200906224652/https://github.com/marcellippmann/Whitepp/"
+  ],
+  "commands": [{ "type": "interpreter", "bin": "bin/White++", "build": "make", "usage": "$0 <file>" }]
+}

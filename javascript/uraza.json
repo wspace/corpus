@@ -1,0 +1,12 @@
+{
+  "id": "javascript/uraza",
+  "name": "whitespace-interpreter",
+  "authors": ["Uraza"],
+  "license": "none",
+  "languages": ["JavaScript"],
+  "tags": ["interpreter"],
+  "date": "2016-02-08 10:12:54 +0100",
+  "spec_version": "0.2",
+  "source": ["https://github.com/uraza/whitespace-interpreter"],
+  "notes": "Codewars solution"
+}

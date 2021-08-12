@@ -1,0 +1,40 @@
+{
+  "id": "cpp/yuukiaria",
+  "name": "ws-interpreter",
+  "authors": ["YuukiARIA"],
+  "license": "none",
+  "languages": ["C++"],
+  "tags": ["interpreter", "programs"],
+  "date": "2013-05-05 04:06:36 -0700",
+  "spec_version": "0.3",
+  "source": ["https://github.com/YuukiARIA/ws-interpreter"],
+  "bounds": { "precision": "fixed", "heap_min": 0 },
+  "commands": [
+    {
+      "type": "interpreter",
+      "bin": "bin/ws",
+      "build": "mkdir -p bin && make TARGET=../bin/ws -C src",
+      "usage": "$0 [-v <size>] [-c <size>] [-h <size>] <file>",
+      "options": [
+        {
+          "short": "v",
+          "arg": "size",
+          "type": "C++ int",
+          "default": 256,
+          "min": 1,
+          "desc": "value stack size"
+        },
+        {
+          "short": "c",
+          "arg": "size",
+          "type": "C++ int",
+          "default": 256,
+          "min": 1,
+          "desc": "call stack size"
+        },
+        { "short": "h", "arg": "size", "type": "C++ int", "default": 2048, "min": 1, "desc": "heap size" }
+      ],
+      "option_parse": "manual"
+    }
+  ]
+}

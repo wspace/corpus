@@ -1,0 +1,32 @@
+{
+  "id": "ruby/pocke-akaza",
+  "name": "Akaza",
+  "authors": ["Masataka Pocke Kuwabara"],
+  "license": "CC0-1.0",
+  "languages": ["Ruby"],
+  "tags": ["language", "interpreter", "text to Whitespace", "programs"],
+  "date": "2019-04-28 11:26:08 +0900",
+  "spec_version": "0.2",
+  "source": ["https://github.com/pocke/akaza"],
+  "package": { "name": "akaza", "manager": "RubyGems", "url": "https://rubygems.org/gems/akaza" },
+  "commands": [
+    {
+      "bin": "exe/akaza",
+      "dependencies": ["Ruby 3"],
+      "install_dependencies": ["bundle install"],
+      "usage": "ruby $0 [exec | wsrb | exec_wsrb] <file>",
+      "run_errors": "uninitialized constant Akaza::Parser::StringIO",
+      "subcommands": [
+        { "name": "exec", "desc": "Execute Whitespace program" },
+        { "name": "wsrb", "desc": "Convert Ruby-like script to Whitespace" },
+        { "name": "exec_wsrb", "desc": "Convert Ruby-like script to Whitespace and execute" }
+      ]
+    },
+    {
+      "type": "text to Whitespace",
+      "bin": "bin/str_to_ws.rb",
+      "usage": "ruby $0 <text>",
+      "output": "stdout"
+    }
+  ]
+}

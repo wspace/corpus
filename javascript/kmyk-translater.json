@@ -1,0 +1,45 @@
+{
+  "id": "javascript/kmyk-translater",
+  "name": "whitespace-translater",
+  "authors": ["Kimiyuki Onaka"],
+  "license": "MIT",
+  "languages": ["JavaScript"],
+  "tags": ["assembler", "disassembler", "mapping"],
+  "date": "2015-03-01 21:07:23 +0900",
+  "spec_version": "0.3",
+  "source": [
+    "https://github.com/kmyk/whitespace-translater",
+    "https://web.archive.org/web/20160307155202/http://solorab.net/works/whitespace-translater/"
+  ],
+  "assembly": {
+    "mnemonics": {
+      "push": ["PUSH"],
+      "dup": ["DUP"],
+      "copy": ["COPYNTH"],
+      "swap": ["SWAP"],
+      "drop": ["DISCARD"],
+      "slide": ["SLIDE"],
+      "add": ["ADD"],
+      "sub": ["SUB"],
+      "mul": ["MULT"],
+      "div": ["DIV"],
+      "mod": ["MOD"],
+      "store": ["STORE"],
+      "retrieve": ["RETRIEVE"],
+      "label": ["LABEL"],
+      "call": ["CALL"],
+      "jmp": ["JUMP"],
+      "jz": ["JUMPZERO"],
+      "jn": ["JUMPNEG"],
+      "ret": ["RETURN"],
+      "end": ["EXIT"],
+      "printc": ["PUTCHAR"],
+      "printi": ["PUTNUM"],
+      "readc": ["GETCHAR"],
+      "readi": ["GETNUM"]
+    },
+    "case_sensitive_instructions": true,
+    "line_comments": ["#"]
+  },
+  "mappings": [{ "space": "S", "tab": "T", "lf": "\n" }]
+}

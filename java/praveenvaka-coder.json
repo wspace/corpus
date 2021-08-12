@@ -1,0 +1,20 @@
+{
+  "id": "java/praveenvaka-coder",
+  "name": "whitespace-coder",
+  "authors": ["Praveen Reddy Vaka"],
+  "license": "none",
+  "languages": ["Java"],
+  "tags": ["program builder", "programs"],
+  "date": "2014-03-07 05:39:21 -0800",
+  "spec_version": "0.2",
+  "source": ["https://github.com/praveenvaka/whitespace-coder"],
+  "commands": [
+    {
+      "type": "program builder",
+      "bin": "target/whitespace-coder-1.0-SNAPSHOT.jar",
+      "build": "mvn -Dmaven.compiler.source=1.8 -Dmaven.compiler.target=1.8 package",
+      "usage": "java -cp $0 <class>",
+      "notes": "<class> is the java class entrypoint, e.g. HelloWorld, Factorial, or FCTRIZE"
+    }
+  ]
+}

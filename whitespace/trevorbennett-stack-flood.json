@@ -1,0 +1,15 @@
+{
+  "id": "whitespace/trevorbennett-stack-flood",
+  "name": "whitespace-stack-flood",
+  "authors": ["Trevor Bennett"],
+  "license": "none",
+  "languages": ["Whitespace"],
+  "tags": ["programs"],
+  "date": "2018-09-07 23:46:52 -0400",
+  "spec_version": "0.2",
+  "source": [
+    "https://github.com/trevorbennett/whitespace-stack-flood",
+    "https://www.reddit.com/r/ProgrammerHumor/comments/9dvwhn/java_java/e5kg126/"
+  ],
+  "programs": [{ "path": "goto.ws", "spec_version": "0.2" }]
+}

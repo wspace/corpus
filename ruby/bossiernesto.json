@@ -1,0 +1,41 @@
+{
+  "id": "ruby/bossiernesto",
+  "name": "whitespace",
+  "authors": ["Ernesto Bossi"],
+  "license": "GPL-3.0-or-later",
+  "languages": ["Ruby"],
+  "tags": ["assembler"],
+  "date": "2012-10-15 09:37:19 -0300",
+  "spec_version": "0.2",
+  "source": ["https://github.com/bossiernesto/whitespace"],
+  "assembly": {
+    "mnemonics": {
+      "push": ["push"],
+      "dup": ["dup"],
+      "swap": ["swap"],
+      "drop": ["discard"],
+      "add": ["add"],
+      "sub": ["sub"],
+      "mul": ["mul"],
+      "div": ["div"],
+      "mod": ["mod"],
+      "store": ["store"],
+      "retrieve": ["retrieve"],
+      "label": ["<label>:", "label"],
+      "call": ["call"],
+      "jmp": ["jump"],
+      "jz": ["jz"],
+      "jn": ["jn"],
+      "ret": ["ret"],
+      "end": ["exit"],
+      "printc": ["outchar"],
+      "printi": ["outnum"],
+      "readc": ["readchar"],
+      "readi": ["readnum"]
+    },
+    "line_comments": ["#"],
+    "usage": ["disassembler"],
+    "extension": "wsa"
+  },
+  "commands": [{ "type": "assembler", "run_errors": "No entrypoint" }]
+}

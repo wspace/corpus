@@ -1,0 +1,60 @@
+{
+  "id": "javascript/vii5ard-whitelips-ide",
+  "name": "Whitelips IDE",
+  "authors": ["Henri Lakk (Vii5ard)"],
+  "license": "none",
+  "languages": ["JavaScript"],
+  "tags": ["IDE", "interpreter", "optimizer", "assembler", "programs"],
+  "date": "2013-03-20 23:47:24 +0200",
+  "spec_version": "0.3",
+  "source": [
+    "https://github.com/vii5ard/whitespace",
+    "https://vii5ard.github.io/whitespace/",
+    "https://web.archive.org/web/20141011193149/http://compsoc.dur.ac.uk/archives/whitespace/2013-April/000082.html",
+    "https://github.com/vii5ard/brainfuck-whitespace"
+  ],
+  "whitespace": { "extension": "ws" },
+  "assembly": {
+    "mnemonics": {
+      "push": ["push"],
+      "dup": ["dup"],
+      "copy": ["copy"],
+      "swap": ["swap"],
+      "drop": ["drop"],
+      "slide": ["slide"],
+      "add": ["add"],
+      "sub": ["sub"],
+      "mul": ["mul"],
+      "div": ["div"],
+      "mod": ["mod"],
+      "store": ["store"],
+      "retrieve": ["retrieve"],
+      "label": ["label"],
+      "call": ["call"],
+      "jmp": ["jmp"],
+      "jz": ["jz"],
+      "jn": ["jn"],
+      "ret": ["ret"],
+      "end": ["end"],
+      "printc": ["printc"],
+      "printi": ["printi"],
+      "readc": ["readc"],
+      "readi": ["readi"]
+    },
+    "extension": "wsa"
+  },
+  "programs": [
+    { "path": "example/nerd.wsa", "compiled": "example/nerd.ws" },
+    { "path": "example/hmacro.wsa" },
+    { "path": "example/bf.wsa", "compiled": "example/bf.ws" },
+    { "path": "example/collatz.wsa" },
+    { "path": "example/lib/math.wsa" },
+    { "path": "example/lib/string.wsa" },
+    { "path": "example/lib/alias.wsa" },
+    { "path": "example/lib/rot13.wsa" },
+    { "path": "example/lib/std.wsa" },
+    { "path": "example/vm/bf.wsa", "compiled": "example/vm/bf.ws" },
+    { "path": "example/wc/bf2wsa.wsa", "compiled": "example/wc/bf2wsa.ws" }
+  ],
+  "notes": "TODO document macros. Local labels start with `.`. The brainfuck-whitespace repo is derived from example/bf.wsa, but it stops reading the program at !, in addition to \\n."
+}

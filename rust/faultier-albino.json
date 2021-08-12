@@ -1,0 +1,73 @@
+{
+  "id": "rust/faultier-albino",
+  "name": "Albino",
+  "authors": ["Taro Sako"],
+  "license": "MIT",
+  "languages": ["Rust"],
+  "tags": ["interpreter", "assembler", "disassembler", "bytecode", "Brainfuck to Whitespace"],
+  "date": "2014-07-18 09:13:55 +0900",
+  "spec_version": "0.3",
+  "source": ["https://github.com/faultier/albino"],
+  "relations": [{ "type": "library", "id": "rust/faultier-whitebase" }],
+  "assembly": {
+    "mnemonics": {
+      "push": ["PUSH"],
+      "dup": ["DUP"],
+      "copy": ["COPY"],
+      "swap": ["SWAP"],
+      "drop": ["DISCARD"],
+      "slide": ["SLIDE"],
+      "add": ["ADD"],
+      "sub": ["SUB"],
+      "mul": ["MUL"],
+      "div": ["DIV"],
+      "mod": ["MOD"],
+      "store": ["STORE"],
+      "retrieve": ["RETRIEVE"],
+      "label": ["MARK"],
+      "call": ["CALL"],
+      "jmp": ["JUMP"],
+      "jz": ["JUMPZ"],
+      "jn": ["JUMPN"],
+      "ret": ["RETURN"],
+      "end": ["EXIT"],
+      "printc": ["PUTC"],
+      "printi": ["PUTN"],
+      "readc": ["GETC"],
+      "readi": ["GETN"]
+    }
+  },
+  "commands": [
+    {
+      "bin": "albino",
+      "build": "cargo build --release",
+      "build_errors": "Needs many changes for latest Rust",
+      "option_parse": "manual"
+    },
+    {
+      "bin": "albino-run",
+      "build": "cargo build --release",
+      "build_errors": "Needs many changes for latest Rust",
+      "option_parse": "manual"
+    },
+    {
+      "bin": "albino-build",
+      "build": "cargo build --release",
+      "build_errors": "Needs many changes for latest Rust",
+      "option_parse": "manual"
+    },
+    {
+      "bin": "albino-exec",
+      "build": "cargo build --release",
+      "build_errors": "Needs many changes for latest Rust",
+      "option_parse": "manual"
+    },
+    {
+      "bin": "albino-gen",
+      "build": "cargo build --release",
+      "build_errors": "Needs many changes for latest Rust",
+      "option_parse": "manual"
+    }
+  ],
+  "notes": "TODO document options"
+}

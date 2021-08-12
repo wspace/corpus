@@ -1,0 +1,44 @@
+{
+  "id": "c/hogelog",
+  "name": "wspace",
+  "authors": ["hogelog"],
+  "license": "none",
+  "languages": ["C", "Perl"],
+  "tags": ["interpreter"],
+  "date": "2008-04-24 08:21:01 +0000",
+  "spec_version": "0.3",
+  "source": [
+    "https://github.com/wspace/hogelog-c",
+    "https://github.com/hogelog/hogel.org-old/tree/master/content/lib/c"
+  ],
+  "assembly": {
+    "mnemonics": {
+      "push": ["PUSH"],
+      "dup": ["DUP"],
+      "copy": ["REF"],
+      "swap": ["SWAP"],
+      "drop": ["DISCARD"],
+      "slide": ["SLIDE"],
+      "add": ["PLUS"],
+      "sub": ["MINUS"],
+      "mul": ["TIMES"],
+      "div": ["DIVIDE"],
+      "mod": ["MODULO"],
+      "store": ["STORE"],
+      "retrieve": ["RETRIEVE"],
+      "label": ["LABEL"],
+      "call": ["CALL"],
+      "jmp": ["JUMP"],
+      "jz": ["IZ_JUMP"],
+      "jn": ["IN_JUMP"],
+      "ret": ["RETURN"],
+      "end": ["END"],
+      "printc": ["OUTPUTC"],
+      "printi": ["OUTPUTN"],
+      "readc": ["READC"],
+      "readi": ["READN"]
+    },
+    "usage": ["enum"]
+  },
+  "commands": [{ "type": "interpreter", "bin": "wspace", "build": "make gencode.c all", "usage": "$0 <file>" }]
+}

@@ -1,0 +1,29 @@
+{
+  "id": "python/freyamade-hohoho",
+  "name": "HoHoHo",
+  "authors": ["Freya Madeline Broderick", "Omar Sallam"],
+  "license": "MIT",
+  "languages": ["Python"],
+  "tags": ["mapping", "programs"],
+  "date": "2018-11-22 18:48:52 +0000",
+  "spec_version": "-",
+  "source": ["https://github.com/freyamade/hohoho"],
+  "package": { "name": "hohoho", "manager": "PyPI", "url": "https://pypi.org/project/hohoho/" },
+  "relations": [{ "type": "library", "id": "python/dwayne" }],
+  "mappings": [{ "space": "snow", "tab": "hohoho", "lf": "\n", "spaces_between": true, "extension": "ho" }],
+  "commands": [
+    {
+      "type": "mapping",
+      "bin": "hohoho",
+      "dependencies": ["Python 3.6"],
+      "install_dependencies": ["pip3 install whitespace"],
+      "usage": "python3 -m $0 [-h | --help] [-t | --from-ws] <file>",
+      "options": [
+        { "short": "h", "long": "help", "desc": "show this help message and exit" },
+        { "short": "t", "long": "from-ws", "desc": "Translate an input whitespace file into a hohoho file" }
+      ],
+      "option_parse": "Python argparse",
+      "notes": "Interprets program when --from-ws not given. On --from-ws, writes output to <file_no_ext>.ho"
+    }
+  ]
+}

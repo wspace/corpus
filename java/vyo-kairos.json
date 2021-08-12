@@ -1,0 +1,12 @@
+{
+  "id": "java/vyo-kairos",
+  "name": "Kairos",
+  "authors": ["Manu Weidmann"],
+  "license": "MIT",
+  "languages": ["Java"],
+  "tags": ["interpreter", "assembler", "arbitrary precision", "programs"],
+  "date": "2014-05-10 06:51:25 -0700",
+  "spec_version": "0.3",
+  "source": ["https://github.com/vyo/kairos"],
+  "notes": "Has ElGamal encryption and decryption written Whitespace assembly"
+}

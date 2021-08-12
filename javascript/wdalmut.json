@@ -1,0 +1,11 @@
+{
+  "id": "javascript/wdalmut",
+  "name": "Whitespace Lang Compiler",
+  "authors": ["Walter Dal Mut"],
+  "license": "ISC",
+  "languages": ["JavaScript"],
+  "tags": ["disassembler"],
+  "date": "2019-12-28 16:28:47 +0100",
+  "spec_version": "0.2",
+  "source": ["https://github.com/wdalmut/whitespace-lang-compiler"]
+}

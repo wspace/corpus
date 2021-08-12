@@ -1,0 +1,18 @@
+{
+  "id": "whitespace/kenrube-esopoly",
+  "name": "EsoPoly",
+  "authors": ["Ivan Zolotarev"],
+  "license": "MIT",
+  "languages": ["Whitespace"],
+  "tags": ["programs"],
+  "date": "2016-09-13 12:08:23 +0600",
+  "spec_version": "0.2",
+  "source": ["https://github.com/kenrube/Esopoly"],
+  "programs": [
+    {
+      "path": "source",
+      "polyglot": ["Malbolge", "Brainfuck", "Spoon", "asdf", "123", "EXCON"],
+      "spec_version": "0.2"
+    }
+  ]
+}

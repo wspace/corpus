@@ -1,0 +1,13 @@
+{
+  "id": "javascript/therebelrobot",
+  "name": "Whitespace",
+  "authors": ["Aster Haven"],
+  "license": "ISC",
+  "languages": ["JavaScript"],
+  "tags": ["mapping"],
+  "date": "2015-09-09 08:16:43 -0700",
+  "spec_version": "-",
+  "source": ["https://github.com/therebelrobot/whitespace"],
+  "mappings": [{ "space": "s", "tab": "t", "lf": "n", "spaces_between": false }],
+  "notes": "Identical to Codewars template"
+}

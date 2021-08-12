@@ -1,0 +1,15 @@
+{
+  "id": "cpp/benajmin",
+  "name": "whitespace-interpreter",
+  "authors": ["Benjamin Wilkins"],
+  "license": "none",
+  "languages": ["C++"],
+  "tags": ["interpreter", "programs"],
+  "date": "2017-06-05 09:34:24 -0400",
+  "spec_version": "0.2",
+  "source": ["https://github.com/benajmin/whitespace-interpreter"],
+  "bounds": { "precision": "fixed" },
+  "commands": [
+    { "type": "interpreter", "bin": "WhitespaceInterpreter.out", "build": "make", "usage": "$0 <file>" }
+  ]
+}

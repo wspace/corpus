@@ -1,0 +1,19 @@
+{
+  "id": "ruby/alesiong",
+  "name": "whitespace-ruby",
+  "authors": ["alesiong"],
+  "license": "GPL-2.0-or-later",
+  "languages": ["Ruby"],
+  "tags": ["program builder", "programs"],
+  "date": "2016-03-05 16:39:05 +0800",
+  "spec_version": "0.3",
+  "source": ["https://github.com/alesiong/whitespace-ruby"],
+  "relations": [{ "type": "base", "id": "ruby/wconrad" }],
+  "commands": [
+    {
+      "type": "program builder",
+      "bin": "wsv.rb",
+      "notes": "Import into Ruby program to translate to Whitespace"
+    }
+  ]
+}

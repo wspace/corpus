@@ -1,0 +1,33 @@
+{
+  "id": "haskell/helvm-helpa",
+  "name": "HelPA",
+  "authors": ["Kamil Adam"],
+  "license": "Apache-2.0 or MIT",
+  "languages": ["Haskell/Eta"],
+  "tags": ["assembler"],
+  "date": "2020-05-09 17:49:43 +0200",
+  "spec_version": "0.2",
+  "source": ["https://github.com/helvm/helpa"],
+  "whitespace": {
+    "nonstandard": [
+      { "name": "PushS", "args": ["string"] },
+      { "name": "BranchP", "args": ["label"] },
+      { "name": "BranchNZ", "args": ["label"] },
+      { "name": "BranchPZ", "args": ["label"] },
+      { "name": "BranchPN", "args": ["label"] },
+      { "name": "BranchNP", "args": ["label"] },
+      { "name": "Noop" },
+      { "name": "DebugPrintStack" },
+      { "name": "DebugPrintHeap" },
+      { "name": "Include", "args": ["ident"] },
+      { "name": "Test", "args": ["int"] },
+      { "name": "ValueString", "args": ["ident", "string"] },
+      { "name": "ValueInteger", "args": ["ident", "uint"] },
+      { "name": "IfOption", "args": ["ident"] },
+      { "name": "ElseOption" },
+      { "name": "EndOption" },
+      { "name": "ElseIfOption", "args": ["ident"] }
+    ]
+  },
+  "commands": [{ "bin": "helpa", "build": "cabal build", "build_errors": "-XMonadFailDesugaring is deprecated" }]
+}

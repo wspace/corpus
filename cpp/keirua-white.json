@@ -1,0 +1,48 @@
+{
+  "id": "cpp/keirua-white",
+  "name": "white",
+  "authors": ["Keirua"],
+  "license": "none",
+  "languages": ["C++"],
+  "tags": ["interpreter", "disassembler"],
+  "date": "2014-05-30 23:51:59 +0200",
+  "spec_version": "0.3",
+  "source": ["https://github.com/Keirua/whitespace"],
+  "assembly": {
+    "mnemonics": {
+      "push": ["push"],
+      "dup": ["dup"],
+      "copy": ["copy"],
+      "swap": ["swap"],
+      "drop": ["discard"],
+      "slide": ["slide"],
+      "add": ["add"],
+      "sub": ["sub"],
+      "mul": ["mul"],
+      "div": ["div"],
+      "mod": ["mod"],
+      "store": ["store"],
+      "retrieve": ["retrieve"],
+      "label": ["setlabel"],
+      "call": ["call_subroutine"],
+      "jmp": ["jump"],
+      "jz": ["jzero"],
+      "jn": ["jneg"],
+      "ret": ["endofsubroutine"],
+      "end": ["endofprogram"],
+      "printc": ["print_c"],
+      "printi": ["print_i"],
+      "readc": ["read_c"],
+      "readi": ["read_i"]
+    },
+    "usage": ["disassembler", "enum"]
+  },
+  "commands": [
+    {
+      "type": "interpreter",
+      "bin": "white",
+      "build": "g++ -O3 -Wall -o white main.cpp",
+      "usage": "$0 <file>"
+    }
+  ]
+}

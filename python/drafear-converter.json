@@ -1,0 +1,57 @@
+{
+  "id": "python/drafear-converter",
+  "name": "whitespace-language-converter",
+  "authors": ["Takeshi Nishikawa"],
+  "license": "none",
+  "languages": ["Python"],
+  "tags": ["assembler", "programs"],
+  "date": "2019-03-30 02:52:41 +0900",
+  "spec_version": "0.3",
+  "source": ["https://github.com/drafear/whitespace-language-converter"],
+  "assembly": {
+    "mnemonics": {
+      "push": ["push"],
+      "dup": ["dup"],
+      "copy": ["copy"],
+      "swap": ["swap"],
+      "drop": ["drop"],
+      "slide": ["slide"],
+      "add": ["add"],
+      "sub": ["sub"],
+      "mul": ["mul"],
+      "div": ["div"],
+      "mod": ["mod"],
+      "store": ["store"],
+      "retrieve": ["retrieve"],
+      "label": ["<label>:"],
+      "call": ["call"],
+      "jmp": ["jmp"],
+      "jz": ["jz"],
+      "jn": ["jn"],
+      "ret": ["ret"],
+      "end": ["end"],
+      "printc": ["printc"],
+      "printi": ["printi"],
+      "readc": ["readc"],
+      "readi": ["readi"]
+    },
+    "case_sensitive_instructions": true,
+    "line_comments": ["#"],
+    "extension": "hws"
+  },
+  "commands": [
+    {
+      "type": "assembler",
+      "bin": "to_ws.py",
+      "dependencies": ["Python 3"],
+      "usage": "python3 $0 [-h | --help] [-o <output_file> | --output=<output_file>] <file>",
+      "output": "<output_file> or <file_no_ext>.ws",
+      "options": [
+        { "short": "h", "long": "help", "desc": "show this help message and exit" },
+        { "short": "o", "long": "output", "arg": "OUTPUT", "desc": "output whitespace file name" }
+      ],
+      "option_parse": "Python argparse"
+    }
+  ],
+  "notes": "Programs found in README.md"
+}

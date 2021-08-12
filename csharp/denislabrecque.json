@@ -1,0 +1,38 @@
+{
+  "id": "csharp/denislabrecque",
+  "name": "WhitespaceInterpreter",
+  "authors": ["Denis G. Labrecque"],
+  "license": "none",
+  "languages": ["C#"],
+  "tags": ["interpreter"],
+  "date": "2020-03-26 22:16:49 -0500",
+  "spec_version": "0.2",
+  "source": ["https://github.com/DenisLabrecque/Whitespace-Interpreter"],
+  "whitespace": { "unimplemented": ["div", "mod", "label", "call", "jmp", "jz", "jn", "ret", "readc", "readi"] },
+  "assembly": {
+    "mnemonics": {
+      "push": ["Push"],
+      "dup": ["Duplicate"],
+      "swap": ["Swap"],
+      "drop": ["Discard"],
+      "add": ["Add"],
+      "sub": ["Subtract"],
+      "mul": ["Multiply"],
+      "store": ["Store"],
+      "retrieve": ["Retrieve"],
+      "end": ["Halt"],
+      "printc": ["OutputCharacter"],
+      "printi": ["OutputNumber"]
+    },
+    "usage": ["enum"]
+  },
+  "commands": [
+    {
+      "type": "interpreter",
+      "bin": "WhitespaceInterpreter.exe",
+      "build": "mcs -debug -out:WhitespaceInterpreter.exe WhitespaceInterpreter/*.cs",
+      "usage": "mono $0",
+      "notes": "Program is hardcoded to a test program. Prints instructions while executing."
+    }
+  ]
+}

@@ -1,0 +1,47 @@
+{
+  "id": "python/nutcrack-whiteplanes",
+  "name": "whiteplanes",
+  "authors": ["Takuya Katsurada"],
+  "license": "MIT",
+  "languages": ["Python"],
+  "tags": ["interpreter"],
+  "date": "2016-05-13 17:21:20 +0000",
+  "spec_version": "0.3",
+  "source": [
+    "https://github.com/wspace/nutcrack-whiteplanes-python",
+    "https://pypi.org/project/whiteplanes/",
+    "https://whiteplanes.github.io/"
+  ],
+  "package": { "name": "whiteplanes", "manager": "PyPI", "url": "https://pypi.org/project/whiteplanes/" },
+  "assembly": {
+    "mnemonics": {
+      "push": ["push"],
+      "dup": ["duplicate"],
+      "copy": ["copy"],
+      "swap": ["swap"],
+      "drop": ["discard"],
+      "slide": ["slide"],
+      "add": ["add"],
+      "sub": ["sub"],
+      "mul": ["mul"],
+      "div": ["div"],
+      "mod": ["mod"],
+      "store": ["store"],
+      "retrieve": ["retrieve"],
+      "label": ["register"],
+      "call": ["call"],
+      "jmp": ["jump"],
+      "jz": ["equal"],
+      "jn": ["less"],
+      "ret": ["return"],
+      "end": ["end"],
+      "printc": ["cout"],
+      "printi": ["iout"],
+      "readc": ["cin"],
+      "readi": ["iin"]
+    },
+    "usage": ["enum"]
+  },
+  "commands": [{ "type": "interpreter", "dependencies": ["Python 3"], "run_errors": "No entrypoint" }],
+  "notes": "GitHub repo and GitHub Pages site are offline. Date from earliest file in archive."
+}

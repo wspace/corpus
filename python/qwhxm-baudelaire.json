@@ -1,0 +1,21 @@
+{
+  "id": "python/qwhxm-baudelaire",
+  "name": "baudelaire-whitespace",
+  "description": "AWS Lambda handler that executes baudelaire.ws with the given word using the EsCo interpreter",
+  "authors": ["Marek Tomáštík"],
+  "license": "MIT",
+  "languages": ["Python"],
+  "tags": ["web service", "programs"],
+  "date": "2019-06-08 23:22:47 +0200",
+  "spec_version": "0.3",
+  "source": ["https://github.com/qwhxm/baudelaire-whitespace"],
+  "relations": [{ "type": "binary", "id": "cpp/esco" }],
+  "programs": [{ "path": "backend/baudelaire.ws", "spec_version": "0.2" }],
+  "commands": [
+    {
+      "type": "web service",
+      "bin": "backend/baudelaire-whitespace.py",
+      "run_errors": "Needs AWS Lambda entrypoint"
+    }
+  ]
+}

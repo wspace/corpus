@@ -1,0 +1,38 @@
+{
+  "id": "java/wysang",
+  "name": "Whitespace-Compiler",
+  "authors": ["wysang"],
+  "license": "none",
+  "languages": ["Java", "ANTLR4"],
+  "tags": ["grammar"],
+  "date": "2018-10-21 19:31:04 -0700",
+  "spec_version": "0.3",
+  "source": ["https://github.com/wysang/Whitespace-Compiler"],
+  "whitespace": { "unimplemented": ["store", "retrieve"], "extension": "whitespace" },
+  "assembly": {
+    "mnemonics": {
+      "push": ["push"],
+      "dup": ["copy"],
+      "copy": ["copynth"],
+      "swap": ["swicth"],
+      "drop": ["pop"],
+      "slide": ["slide"],
+      "add": ["add"],
+      "sub": ["sub"],
+      "mul": ["mult"],
+      "div": ["div"],
+      "mod": ["mod"],
+      "label": ["mark"],
+      "call": ["call"],
+      "jmp": ["jump"],
+      "jz": ["jumpz"],
+      "jn": ["jumpn"],
+      "ret": ["ends"],
+      "end": ["endp"],
+      "printc": ["outchar"],
+      "printi": ["outnum"],
+      "readc": ["readchar"],
+      "readi": ["readnum"]
+    }
+  }
+}

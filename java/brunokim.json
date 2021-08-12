@@ -1,0 +1,17 @@
+{
+  "id": "java/brunokim",
+  "name": "Whitespace compiler targeting JVM bytecode",
+  "authors": ["Bruno Kim Medeiros Cesar"],
+  "license": "unknown",
+  "languages": ["JVM"],
+  "tags": ["compiler", "programs"],
+  "date": "2015-04-03 06:30:42 +0000",
+  "spec_version": "unknown",
+  "source": [
+    "https://stackoverflow.com/questions/29427419/ifeq-ifne-jvm-opcode-always-branches",
+    "https://drive.google.com/drive/folders/0B8vCNP4j9pRKfmpOT2dGeWRTN0lrbFlPS0xMRENlSWJPMW44TVZDM0hWMVJJUGZQZC1NcGM"
+  ],
+  "whitespace": { "extension": "ws" },
+  "programs": [{ "path": "call.ws", "spec_version": "0.2" }],
+  "notes": "Source unavailable"
+}

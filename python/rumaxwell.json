@@ -1,0 +1,30 @@
+{
+  "id": "python/rumaxwell",
+  "name": "whitespace-interperter",
+  "authors": ["RuMaxwell"],
+  "license": "none",
+  "languages": ["Python"],
+  "tags": ["interpreter", "programs"],
+  "date": "2018-02-21 22:02:54 +0800",
+  "spec_version": "0.3",
+  "source": ["https://github.com/RuMaxwell/whitespace-interpreter"],
+  "whitespace": { "extension": "whitespace" },
+  "commands": [
+    {
+      "type": "interpreter",
+      "bin": "entrance.py",
+      "dependencies": ["Python 3"],
+      "usage": "python3 $0 [-r | --run] [-s | --show-steps] [-p | --step] [-d | --debug] [-v | --version] [-t | --tutorial] [-h | --help] <file>",
+      "options": [
+        { "short": "r", "long": "run", "desc": "run" },
+        { "short": "s", "long": "show-steps", "desc": "show steps" },
+        { "short": "p", "long": "step", "desc": "step" },
+        { "short": "d", "long": "debug", "desc": "debug" },
+        { "short": "v", "long": "version", "desc": "version" },
+        { "short": "t", "long": "tutorial", "desc": "tutorial" },
+        { "short": "h", "long": "help", "desc": "help" }
+      ],
+      "option_parse": "manual"
+    }
+  ]
+}

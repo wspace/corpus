@@ -1,0 +1,23 @@
+{
+  "id": "rust/jayshua",
+  "name": "Rust-Whitespace",
+  "authors": ["Jayshua Nelson"],
+  "license": "none",
+  "languages": ["Rust"],
+  "tags": ["interpreter"],
+  "date": "2016-05-08 16:05:03 -0700",
+  "spec_version": "0.2",
+  "source": ["https://github.com/Jayshua/rust-whitespace"],
+  "commands": [
+    {
+      "type": "interpreter",
+      "bin": "target/release/whitespace",
+      "build": "cargo build --release",
+      "usage": "$0 [list] <file>",
+      "subcommands": [
+        { "name": "run", "desc": "run the program (default)" },
+        { "name": "list", "desc": "list the commands that the file contains" }
+      ]
+    }
+  ]
+}

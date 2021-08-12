@@ -1,0 +1,41 @@
+{
+  "id": "go/yshr-wspacego",
+  "name": "wspacego",
+  "authors": ["Yosihiro Isago"],
+  "license": "Apache-2.0",
+  "languages": ["Go"],
+  "tags": ["interpreter", "disassembler", "mapping"],
+  "date": "2013-12-27 19:29:40 -0800",
+  "spec_version": "0.3",
+  "source": ["https://github.com/135yshr/wspacego", "https://gitlab.com/yshr135/wspacego"],
+  "bounds": {
+    "precision": "fixed",
+    "stack_cap": "unbounded",
+    "call_stack_cap": "unbounded",
+    "heap_min": "unbounded",
+    "heap_max": "unbounded",
+    "heap_cap": "unbounded",
+    "label_cap": "unbounded",
+    "instruction_cap": "unbounded"
+  },
+  "mappings": [{ "space": "S", "tab": "T", "lf": "\n", "spaces_between": false }],
+  "commands": [
+    {
+      "type": "interpreter",
+      "bin": "wspacego",
+      "build": "go mod init github.com/135yshr/wspacego && go mod tidy && go build",
+      "usage": "$0 [-h | --help] [run | disasm | char] <file>",
+      "options": [
+        { "short": "h", "long": "h", "desc": "display this help and exit" },
+        { "short": "help", "long": "help", "desc": "display this help and exit" }
+      ],
+      "option_parse": "Go flag",
+      "subcommands": [
+        { "name": "run", "desc": "run the program" },
+        { "name": "disasm", "desc": "disassemble the program" },
+        { "name": "char", "desc": "convert the program (space -> S, Tab -> T)" }
+      ]
+    }
+  ],
+  "notes": "copy uses top of stack, not argument"
+}

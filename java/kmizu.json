@@ -1,0 +1,11 @@
+{
+  "id": "java/kmizu",
+  "name": "ws_interpreter",
+  "authors": ["Kota Mizushima"],
+  "license": "MIT",
+  "languages": ["Java"],
+  "tags": ["interpreter"],
+  "date": "2015-05-13 02:13:01 +0900",
+  "spec_version": "0.3",
+  "source": ["https://github.com/kmizu/ws_interpreter"]
+}

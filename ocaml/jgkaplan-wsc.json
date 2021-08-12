@@ -1,0 +1,24 @@
+{
+  "id": "ocaml/jgkaplan-wsc",
+  "name": "WSC",
+  "authors": ["Joshua Kaplan"],
+  "license": "MIT",
+  "languages": ["OCaml"],
+  "tags": ["language", "programs"],
+  "date": "2019-07-04 02:09:08 -0400",
+  "spec_version": "0.3",
+  "source": ["https://github.com/jgkaplan/whitespaceTranspiler"],
+  "commands": [
+    {
+      "type": "language compiler",
+      "bin": "main.byte",
+      "dependencies": ["opam"],
+      "install_dependencies": ["opam install ocamlbuild memhir"],
+      "build": "make",
+      "usage": "$0 [--help] <file>",
+      "output": "<file_no_ext>.ws",
+      "options": [{ "short": "help", "long": "help", "desc": "Display this list of options" }],
+      "option_parse": "OCaml Arg"
+    }
+  ]
+}

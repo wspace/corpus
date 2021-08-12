@@ -1,0 +1,51 @@
+{
+  "id": "ruby/mame-quine-relay",
+  "name": "Quine Relay",
+  "authors": ["Yusuke Endoh"],
+  "license": "MIT",
+  "languages": ["Ruby"],
+  "tags": ["quine", "polyglot", "interpreter", "programs"],
+  "date": "2013-07-15 22:28:53 +0900",
+  "spec_version": "0.3",
+  "source": ["https://github.com/mame/quine-relay"],
+  "assembly": {
+    "mnemonics": {
+      "push": ["push"],
+      "dup": ["dup"],
+      "copy": ["copy"],
+      "swap": ["swap"],
+      "drop": ["pop"],
+      "slide": ["slide"],
+      "add": ["add"],
+      "sub": ["sub"],
+      "mul": ["mul"],
+      "div": ["div"],
+      "mod": ["mod"],
+      "store": ["set"],
+      "retrieve": ["get"],
+      "label": ["mark"],
+      "call": ["call"],
+      "jmp": ["jump"],
+      "jz": ["jz"],
+      "jn": ["jn"],
+      "ret": ["ret"],
+      "end": ["end"],
+      "printc": ["outc"],
+      "printi": ["outn"],
+      "readc": ["readc"],
+      "readi": ["readn"]
+    },
+    "usage": ["enum"]
+  },
+  "programs": [{ "path": "QR.ws", "generate": "git restore --source spoiler QR.ws" }],
+  "commands": [
+    {
+      "type": "interpreter",
+      "bin": "vendor/whitespace.rb",
+      "usage": "ruby $0 <file>",
+      "output": "stdout",
+      "notes": "readi does not support sign"
+    }
+  ],
+  "notes": "Automated with Docker. Programs available without building on spoiler branch."
+}

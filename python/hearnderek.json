@@ -1,0 +1,20 @@
+{
+  "id": "python/hearnderek",
+  "name": "WhiteSpaceInterpreter",
+  "authors": ["Derek Hearn"],
+  "license": "none",
+  "languages": ["Python"],
+  "tags": ["interpreter"],
+  "date": "2020-02-09 09:22:36 +0900",
+  "spec_version": "0.3",
+  "source": ["https://github.com/hearnderek/WhiteSpaceInterpreter"],
+  "commands": [
+    {
+      "type": "interpreter",
+      "bin": "whitespace.py",
+      "dependencies": ["Python 3"],
+      "run_errors": "Needs Codewars entrypoint"
+    }
+  ],
+  "notes": "Appears to be Codewars solution"
+}

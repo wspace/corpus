@@ -1,0 +1,11 @@
+{
+  "id": "java/brumbeere-whitespace4j",
+  "name": "Whitespace4j",
+  "authors": ["Philipp Speck"],
+  "license": "none",
+  "languages": ["Java"],
+  "tags": ["interpreter"],
+  "date": "2012-11-04 21:47:04 +0100",
+  "spec_version": "0.3",
+  "source": ["https://github.com/Brumbeere/Whitespace4j"]
+}

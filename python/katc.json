@@ -1,0 +1,57 @@
+{
+  "id": "python/katc",
+  "name": "Whitespace Parser",
+  "authors": ["友利奈緒 (Tomori Nao)"],
+  "license": "none",
+  "languages": ["Python"],
+  "tags": ["disassembler"],
+  "date": "2015-07-08 09:52:33 -0700",
+  "spec_version": "0.3",
+  "source": ["https://gist.github.com/K-atc/02b402e9812e066afb78"],
+  "assembly": {
+    "mnemonics": {
+      "push": ["PUSH"],
+      "dup": ["SDUPLI"],
+      "copy": ["SCOPY"],
+      "swap": ["SSWAP"],
+      "drop": ["SDISCARD"],
+      "slide": ["SSLIDE"],
+      "add": ["ADD"],
+      "sub": ["SUB"],
+      "mul": ["MUL"],
+      "div": ["DIV"],
+      "mod": ["MOD"],
+      "store": ["STORE"],
+      "retrieve": ["RETRIEVE"],
+      "label": ["LABEL"],
+      "call": ["CALL"],
+      "jmp": ["JUMP"],
+      "jz": ["JUMP-ZERO"],
+      "jn": ["JUMP-NEG"],
+      "ret": ["RETURN"],
+      "end": ["END"],
+      "printc": ["OUT-CHAR"],
+      "printi": ["OUT-NUM"],
+      "readc": ["IN-CHAR"],
+      "readi": ["IN-NUM"]
+    },
+    "line_comments": [";"],
+    "usage": ["disassembler"]
+  },
+  "commands": [
+    {
+      "type": "disassembler",
+      "bin": "whitespace.py",
+      "dependencies": ["Python 2"],
+      "usage": "python2 $0 [-h | --help] [-v | --verbose] [-p | --parse] <file>",
+      "options": [
+        { "short": "h", "long": "help", "desc": "show this help message and exit" },
+        { "short": "v", "long": "verbose", "desc": "Activate verbose mode" },
+        { "short": "p", "long": "parse", "desc": "Pause the execution after each instruction" }
+      ],
+      "option_parse": "Python optparse",
+      "notes": "Interpreter and -v/--verbose are not implemented. Disassemble with --parse."
+    }
+  ],
+  "notes": "Shares instruction definitions in whitespace.py with python/alecgraves-whitespac3; relationship unclear"
+}

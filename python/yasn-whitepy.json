@@ -1,0 +1,28 @@
+{
+  "id": "python/yasn-whitepy",
+  "name": "whitepy",
+  "authors": ["Yasser Saleemi"],
+  "license": "Apache-2.0",
+  "languages": ["Python"],
+  "tags": ["interpreter"],
+  "date": "2017-01-31 16:21:48 +0000",
+  "spec_version": "0.2",
+  "source": ["https://github.com/yasn77/whitepy"],
+  "package": { "name": "whitepy", "manager": "PyPI", "url": "https://pypi.org/project/whitepy/" },
+  "commands": [
+    {
+      "type": "interpreter",
+      "bin": "whitepycli",
+      "dependencies": ["Python 3"],
+      "install_dependencies": ["pip install -r requirements.txt"],
+      "usage": "python3 $0 [--debug] [--no-debug] [--help] <file>",
+      "options": [
+        { "long": "debug", "desc": "Enable debug" },
+        { "long": "no-debug", "desc": "Disable debug" },
+        { "long": "help", "desc": "Show this message and exit" }
+      ],
+      "option_parse": "Python click"
+    }
+  ],
+  "notes": "Written for final Open University project (TM470)"
+}

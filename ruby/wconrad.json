@@ -1,0 +1,74 @@
+{
+  "id": "ruby/wconrad",
+  "name": "whitespace-ruby",
+  "authors": ["Wayne E. Conrad"],
+  "license": "GPL-2.0-or-later",
+  "languages": ["Ruby"],
+  "tags": ["interpreter", "assembler", "disassembler"],
+  "date": "2003-04-02 05:28:47 +0000",
+  "spec_version": "0.3",
+  "source": [
+    "https://github.com/wspace/wconrad-ruby",
+    "https://web.archive.org/web/20120417161917/http://yagni.com/whitespace/index.html",
+    "https://web.archive.org/web/20150717140342/http://compsoc.dur.ac.uk:80/whitespace/download.php",
+    "https://github.com/hostilefork/whitespacers/tree/master/ruby"
+  ],
+  "assembly": {
+    "mnemonics": {
+      "push": ["push"],
+      "dup": ["dup"],
+      "swap": ["swap"],
+      "drop": ["discard"],
+      "add": ["add"],
+      "sub": ["sub"],
+      "mul": ["mul"],
+      "div": ["div"],
+      "mod": ["mod"],
+      "store": ["store"],
+      "retrieve": ["retrieve"],
+      "label": ["<number>:", "label"],
+      "call": ["call"],
+      "jmp": ["jump"],
+      "jz": ["jz"],
+      "jn": ["jn"],
+      "ret": ["ret"],
+      "end": ["exit"],
+      "printc": ["outchar"],
+      "printi": ["outnum"],
+      "readc": ["readchar"],
+      "readi": ["readnum"]
+    },
+    "line_comments": ["#"],
+    "indentation": "        ",
+    "usage": ["assembler", "disassembler"],
+    "extension": "wsa"
+  },
+  "commands": [
+    {
+      "type": "interpreter",
+      "bin": "whitespace",
+      "dependencies": ["Ruby"],
+      "usage": "ruby $0 [<file>]",
+      "input": "<file> or stdin",
+      "output": "stdout"
+    },
+    {
+      "type": "assembler",
+      "bin": "whitespace-asm",
+      "dependencies": ["Ruby"],
+      "usage": "ruby $0 [<file>...]",
+      "input": "<file>",
+      "output": "<file_no_suffix:.wsa>.ws",
+      "notes": "Assembles each given file. Skips unrecognized lines without error. Right pads mnemonics with spaces to 8 characters so arguments are at column 17."
+    },
+    {
+      "type": "disassembler",
+      "bin": "whitespace-disassem",
+      "dependencies": ["Ruby"],
+      "usage": "ruby $0 [<file>...]",
+      "input": "<file> or stdin",
+      "output": "stdout",
+      "notes": "Disassembles each given file concatenated or stdin, but not both"
+    }
+  ]
+}

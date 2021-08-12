@@ -1,0 +1,23 @@
+{
+  "id": "lolcode/akers",
+  "name": "whitespace.lol",
+  "authors": ["D.E. Akers"],
+  "license": "WTFPL",
+  "languages": ["LOLCODE"],
+  "tags": ["interpreter"],
+  "date": "2016-11-21 01:10:33 -0500",
+  "spec_version": "0.3",
+  "source": [
+    "https://github.com/wspace/akers-lolcode",
+    "https://github.com/hostilefork/whitespacers/tree/master/lolcode"
+  ],
+  "commands": [
+    {
+      "type": "interpreter",
+      "bin": "whitespace.lol",
+      "dependencies": ["lci"],
+      "usage": "cat <(echo <file>) - | lci $0",
+      "notes": "When the program contains no read instructions, it can be run with `lci $0 <<< <file>`"
+    }
+  ]
+}

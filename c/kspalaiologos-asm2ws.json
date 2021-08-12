@@ -1,0 +1,105 @@
+{
+  "id": "c/kspalaiologos-asm2ws",
+  "name": "asm2ws",
+  "authors": ["Kamila Szewczyk (Palaiologos)"],
+  "license": "GPL-3.0-or-later",
+  "languages": ["C", "Yacc", "Lex"],
+  "tags": ["interpreter", "JIT", "assembler", "disassembler", "optimizer", "programs"],
+  "date": "2020-12-31 22:37:25 +0100",
+  "spec_version": "0.3",
+  "source": ["https://github.com/kspalaiologos/asm2ws"],
+  "whitespace": { "extension": "ws" },
+  "assembly": {
+    "mnemonics": {
+      "push": ["PSH", "PUSH"],
+      "dup": ["DUP"],
+      "copy": ["COPY", "TAKE", "PULL"],
+      "swap": ["XCHG", "SWP", "SWAP"],
+      "drop": ["DROP", "DSC"],
+      "slide": ["SLIDE"],
+      "add": ["ADD"],
+      "sub": ["SUB"],
+      "mul": ["MUL"],
+      "div": ["DIV"],
+      "mod": ["MOD"],
+      "store": ["STO"],
+      "retrieve": ["RCL"],
+      "label": ["@<label>"],
+      "call": ["CALL %<label>", "GOSUB %<label>", "JSR %<label>"],
+      "jmp": ["JMP %<label>", "J %<label>", "B %<label>"],
+      "jz": ["JZ %<label>", "BZ %<label>"],
+      "jn": ["JLTZ %<label>", "BLTZ %<label>"],
+      "ret": ["RET"],
+      "end": ["END"],
+      "printc": ["PUTC"],
+      "printi": ["PUTN"],
+      "readc": ["GETC"],
+      "readi": ["GETN"]
+    },
+    "patterns": { "label": "@([A-Za-z_][A-Za-z0-9_]*|L<number>)" },
+    "case_sensitive_instructions": false,
+    "line_comments": [";"],
+    "usage": ["assembler", "disassembler", "programs"],
+    "extension": "asm"
+  },
+  "programs": [
+    { "path": "tests/ws-run/cellsize.ws", "outputs": ["tests/ws-run/cellsize.ws.out"] },
+    { "path": "tests/ws-run/count.ws", "outputs": ["tests/ws-run/count.ws.out"] },
+    { "path": "tests/ws-run/duplabel.ws", "outputs": ["tests/ws-run/duplabel.ws.out"] },
+    {
+      "path": "tests/ws-run/fact.ws",
+      "inputs": ["tests/ws-run/fact.ws.in"],
+      "outputs": ["tests/ws-run/fact.ws.out"]
+    },
+    { "path": "tests/ws-run/nerd.ws", "outputs": ["tests/ws-run/nerd.ws.out"] },
+    { "path": "tests/ws-run/spec_zero.ws", "outputs": ["tests/ws-run/spec_zero.ws.out"] },
+    {
+      "path": "binary.bak",
+      "compiled": "binary.ws",
+      "inputs": ["binary.ws.asm.ws.in", "binary.ws.in"],
+      "outputs": ["binary.ws.asm.ws.out", "binary.ws.out"]
+    },
+    { "path": "copy.bak", "compiled": "copy.ws", "outputs": ["copy.ws.asm.ws.out", "copy.ws.out"] },
+    {
+      "path": "doubler.ws",
+      "inputs": ["doubler.ws.asm.ws.in", "doubler.ws.in"],
+      "outputs": ["doubler.ws.asm.ws.out", "doubler.ws.out"]
+    },
+    {
+      "path": "halve.bak",
+      "compiled": "halve.ws",
+      "inputs": ["halve.ws.asm.ws.in", "halve.ws.in"],
+      "outputs": ["halve.ws.asm.ws.out", "halve.ws.out"]
+    },
+    {
+      "path": "hanoi.ws",
+      "inputs": ["hanoi.ws.asm.ws.in", "hanoi.ws.in"],
+      "outputs": ["hanoi.ws.asm.ws.out", "hanoi.ws.out"]
+    },
+    { "path": "slide.bak", "compiled": "slide.ws", "outputs": ["slide.ws.asm.ws.out", "slide.ws.out"] },
+    { "path": "divc.asm", "inputs": ["divc.asm.ws.in"], "outputs": ["divc.asm.ws.out"] },
+    { "path": "mmltz.asm", "inputs": ["mmltz.asm.ws.in"], "outputs": ["mmltz.asm.ws.out"] },
+    { "path": "rep_putn.asm", "outputs": ["rep_putn.asm.ws.out"] }
+  ],
+  "commands": [
+    {
+      "bin": "wsi",
+      "dependencies": ["Flex", "Bison"],
+      "build": "./configure --with-target=release && make -j4 wsi",
+      "usage": "$0 [-h | --help] [-d | --disassemble] [-c | --cycles] [-a | --aot] [-j | --jit] [-m | --masm] [-Os] [-Of] <file>",
+      "options": [
+        { "short": "h", "long": "help", "desc": "display this screen." },
+        { "short": "d", "long": "disassemble", "desc": "disassemble the whitespace program." },
+        { "short": "c", "long": "cycles", "desc": "count operations made by the program." },
+        { "short": "a", "long": "aot", "desc": "build a C source file." },
+        { "short": "j", "long": "jit", "desc": "enable the JIT compiler." },
+        { "short": "m", "long": "masm", "desc": "run the macro assembler." },
+        { "short": "Os", "desc": "optimize for size." },
+        { "short": "Of", "desc": "optimize to produce fast code." }
+      ],
+      "option_parse": "manual",
+      "notes": "default operation: run whitespace code."
+    }
+  ],
+  "notes": "Has various number formats and REP instruction"
+}

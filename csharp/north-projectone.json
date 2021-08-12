@@ -1,0 +1,22 @@
+{
+  "id": "csharp/north-projectone",
+  "name": "projectOne",
+  "description": "GUI to convert between Whitespace syntax and S/T/L",
+  "authors": ["Jacob North"],
+  "license": "none",
+  "languages": ["C#"],
+  "tags": ["mapping", "GUI"],
+  "date": "2018-04-11 01:33:40 -0400",
+  "spec_version": "-",
+  "source": ["https://github.com/North15/projectOne"],
+  "mappings": [{ "space": "S", "tab": "T", "lf": "L", "extension": "txt" }],
+  "commands": [
+    {
+      "type": "IDE",
+      "bin": "The-Code/WhitespaceInterpreter/bin/Debug/WhitespaceInterpreter.exe",
+      "build": "msbuild /p:Configuration=Debug The-Code/WhitespaceInterpreter/WhitespaceInterpreter.csproj",
+      "usage": "mono $0",
+      "run_errors": "The Carbon driver has not been ported to 64-bit, so very few parts of Windows.Forms work properly"
+    }
+  ]
+}

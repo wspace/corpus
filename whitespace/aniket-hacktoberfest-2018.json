@@ -1,0 +1,18 @@
+{
+  "id": "whitespace/aniket-hacktoberfest-2018",
+  "name": "Hacktoberfest 2018 Hello-world",
+  "authors": ["Ethan Hall", "Unnikrishnan A G"],
+  "license": "MIT",
+  "languages": ["Whitespace"],
+  "tags": ["programs"],
+  "date": "2018-10-06 00:23:08 -0500",
+  "spec_version": "0.2",
+  "source": [
+    "https://github.com/wspace/aniket-hacktoberfest-2018",
+    "https://github.com/Aniket965/Hello-world/tree/master/Whitespace"
+  ],
+  "programs": [
+    { "path": "Hello World.txt", "spec_version": "0.2" },
+    { "path": "hello-world.ws", "spec_version": "0.2" }
+  ]
+}

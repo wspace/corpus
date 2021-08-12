@@ -1,0 +1,20 @@
+{
+  "id": "kotlin/ze-space",
+  "name": "space",
+  "authors": ["Zakaria Elkatani"],
+  "license": "none",
+  "languages": ["Kotlin"],
+  "tags": ["interpreter", "disassembler"],
+  "date": "2018-04-21 21:02:23 -0400",
+  "spec_version": "0.3",
+  "source": ["https://github.com/ze/space"],
+  "commands": [
+    {
+      "type": "interpreter",
+      "bin": "build/libs/space.jar",
+      "dependencies": ["Java 8"],
+      "build": "./gradlew",
+      "build_errors": "Dependencies not packaged"
+    }
+  ]
+}

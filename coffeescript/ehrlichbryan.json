@@ -1,0 +1,51 @@
+{
+  "id": "coffeescript/ehrlichbryan",
+  "name": "Whitespace-JS",
+  "authors": ["Bryan Ehrlich"],
+  "license": "none",
+  "languages": ["CoffeeScript"],
+  "tags": ["interpreter", "assembler", "disassembler", "programs"],
+  "date": "2013-08-14 18:12:35 -0400",
+  "spec_version": "0.3",
+  "source": ["https://github.com/adotout/whitespace-js"],
+  "assembly": {
+    "mnemonics": {
+      "push": ["PUSH"],
+      "dup": ["COPY"],
+      "copy": ["COPY_N"],
+      "swap": ["SWAP"],
+      "drop": ["POP"],
+      "slide": ["SLIDE"],
+      "add": ["ADD"],
+      "sub": ["SUB"],
+      "mul": ["MULT"],
+      "div": ["DIV"],
+      "mod": ["MOD"],
+      "store": ["STORE"],
+      "retrieve": ["LOAD"],
+      "label": ["LABEL"],
+      "call": ["CALL"],
+      "jmp": ["JMP"],
+      "jz": ["JEQ"],
+      "jn": ["JLT"],
+      "ret": ["END_SUB"],
+      "end": ["END"],
+      "printc": ["OUT"],
+      "printi": ["OUT_N"],
+      "readc": ["IN"],
+      "readi": ["IN_N"]
+    },
+    "case_sensitive_instructions": false,
+    "usage": ["assembler", "disassembler"],
+    "extension": "bs"
+  },
+  "programs": [
+    { "path": "example programs/blackspace/hello.bs", "compiled": "example programs/whitespace/hello.ws" },
+    {
+      "path": "example programs/blackspace/say_hi.bs",
+      "compiled": "example programs/whitespace/say_hi.ws"
+    },
+    { "path": "example programs/blackspace/prompt.bs" }
+  ],
+  "commands": [{ "dependencies": ["Grunt"], "build": "npm install && grunt", "run_errors": "Unclear how to run" }]
+}

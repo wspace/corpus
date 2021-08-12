@@ -1,0 +1,19 @@
+{
+  "id": "cpp/frmsaul-cupertino",
+  "name": "Cupertino-WhiteSpace-Interperter",
+  "authors": ["Saul Fuhrmann"],
+  "license": "none",
+  "languages": ["C++"],
+  "tags": ["interpreter"],
+  "date": "2015-05-22 21:54:51 -0700",
+  "spec_version": "0.3",
+  "source": ["https://github.com/frmsaul/Cupertino-WhiteSpace-Interperter"],
+  "commands": [
+    {
+      "type": "interpreter",
+      "bin": "whitespace",
+      "build": "g++ -O3 -o whitespace src/*.cpp",
+      "usage": "$0 <file>"
+    }
+  ]
+}

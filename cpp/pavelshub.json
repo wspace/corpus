@@ -1,0 +1,72 @@
+{
+  "id": "cpp/pavelshub",
+  "name": "wspace",
+  "authors": ["Pavel Shub"],
+  "license": "GPL-3.0-or-later",
+  "languages": ["C++"],
+  "tags": ["interpreter", "debugger", "assembler", "disassembler", "mapping"],
+  "date": "2007-05-26 17:19:24",
+  "spec_version": "0.3",
+  "source": [
+    "https://github.com/wspace/pavelshub-cpp",
+    "https://github.com/pavel987/wspace",
+    "https://web.archive.org/web/20141011193149/http://compsoc.dur.ac.uk/archives/whitespace/2008-April/000068.html",
+    "https://pavelshub.com/blog/2010/10/wspace/"
+  ],
+  "assembly": {
+    "mnemonics": {
+      "push": ["push"],
+      "dup": ["dup"],
+      "copy": ["copy"],
+      "swap": ["swap"],
+      "drop": ["discard"],
+      "slide": ["slide"],
+      "add": ["add"],
+      "sub": ["sub"],
+      "mul": ["mul"],
+      "div": ["div"],
+      "mod": ["mod"],
+      "store": ["store"],
+      "retrieve": ["retrieve"],
+      "label": ["label", "<number>:"],
+      "call": ["call"],
+      "jmp": ["jump"],
+      "jz": ["jz"],
+      "jn": ["jn"],
+      "ret": ["ret"],
+      "end": ["exit"],
+      "printc": ["outchar"],
+      "printi": ["outnum"],
+      "readc": ["readchar"],
+      "readi": ["readnum"]
+    },
+    "line_comments": ["#"],
+    "usage": ["assembler", "disassembler", "debugger"],
+    "extension": "wsa"
+  },
+  "mappings": [{ "space": "A", "tab": "B", "lf": "C\n", "spaces_between": false }],
+  "commands": [
+    {
+      "type": "interpreter",
+      "bin": "wspace",
+      "build": "make wspace",
+      "usage": "$0 [algdh] <file>",
+      "options": [
+        { "short": "a", "desc": "print whitespace assembly language instead of program execution" },
+        {
+          "short": "l",
+          "desc": "prints the code using ABC instead of space, tab, and new line respectively then exits"
+        },
+        { "short": "g", "desc": "debugging mode, will step through each command of the program manually" },
+        {
+          "short": "d",
+          "desc": "prints stack and heap size after program execution similar to original ws interpreter"
+        },
+        { "short": "h", "long": "help", "desc": "print this menu then exit" }
+      ],
+      "option_parse": "manual",
+      "notes": "Flags combine similar to `tar`, without dash required"
+    },
+    { "type": "assembler", "bin": "assembler", "build": "make assembler", "usage": "$0 <file>" }
+  ]
+}

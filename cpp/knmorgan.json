@@ -1,0 +1,34 @@
+{
+  "id": "cpp/knmorgan",
+  "name": "ws",
+  "authors": ["Kyle Morgan"],
+  "license": "GPL-3.0-or-later",
+  "languages": ["C++"],
+  "tags": ["interpreter"],
+  "date": "2012-12-29 00:19:16 -0500",
+  "spec_version": "0.3",
+  "source": ["https://github.com/knmorgan/ws"],
+  "bounds": { "precision": "arbitrary" },
+  "commands": [
+    {
+      "type": "interpreter",
+      "bin": "ws",
+      "dependencies": ["GMP"],
+      "build": "make CXXFLAGS='-Wall -pedantic -O3'",
+      "usage": "$0 [-v | --version] [-h | --help] [-s <size> | --stack-size <size>] <file>",
+      "options": [
+        { "short": "v", "long": "version", "desc": "Print version and copyright" },
+        { "short": "h", "long": "help", "desc": "Print usage" },
+        {
+          "short": "s",
+          "long": "stack-size",
+          "arg": "size",
+          "type": "C++ unsigned long",
+          "default": 1000000,
+          "desc": "Set stack limit"
+        }
+      ],
+      "option_parse": "manual"
+    }
+  ]
+}

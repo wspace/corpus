@@ -1,0 +1,12 @@
+{
+  "id": "haskell/helvm-helma",
+  "name": "HelMA",
+  "authors": ["Kamil Adam"],
+  "license": "Apache-2.0 or MIT",
+  "languages": ["Haskell/Eta"],
+  "tags": ["interpreter"],
+  "date": "2020-05-08 13:18:50 +0200",
+  "spec_version": "0.3",
+  "source": ["https://github.com/helvm/helma"],
+  "commands": [{ "bin": "helma", "build": "cabal build", "build_errors": "-XMonadFailDesugaring is deprecated" }]
+}

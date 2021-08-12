@@ -1,0 +1,152 @@
+{
+  "id": "rust/censoredusername-whitespace-rs",
+  "name": "Whitespacers",
+  "authors": ["CensoredUsername"],
+  "license": "MPL-2.0",
+  "languages": ["Rust"],
+  "tags": ["JIT", "assembler", "disassembler"],
+  "date": "2016-06-19 01:53:07 +0200",
+  "spec_version": "0.3",
+  "source": ["https://github.com/CensoredUsername/whitespace-rs"],
+  "bounds": { "precision": "arbitrary" },
+  "assembly": {
+    "mnemonics": {
+      "push": ["push"],
+      "dup": ["dup"],
+      "copy": ["copy"],
+      "swap": ["swap"],
+      "drop": ["pop"],
+      "slide": ["slide"],
+      "add": ["add"],
+      "sub": ["sub"],
+      "mul": ["mul"],
+      "div": ["div"],
+      "mod": ["mod"],
+      "store": ["set"],
+      "retrieve": ["get"],
+      "label": ["<label>:", "lbl <label>"],
+      "call": ["call"],
+      "jmp": ["jmp"],
+      "jz": ["jz"],
+      "jn": ["jn"],
+      "ret": ["ret"],
+      "end": ["exit"],
+      "printc": ["pchr"],
+      "printi": ["pnum"],
+      "readc": ["ichr"],
+      "readi": ["inum"]
+    }
+  },
+  "commands": [
+    {
+      "type": "interpreter",
+      "bin": "target/release/wsc",
+      "build": "cargo build --release",
+      "usage": "$0 [options] <file>",
+      "options": [
+        { "short": "h", "long": "help", "desc": "Display this message" },
+        {
+          "short": "f",
+          "long": "format",
+          "arg": "FORMAT",
+          "type": "enum",
+          "desc": "Input file format. The default is plain whitespace. Options are:",
+          "values": [
+            { "values": ["ws", "whitespace"], "desc": "Plain whitespace." },
+            {
+              "values": ["asm", "assembly"],
+              "desc": "A human-readable assembly format. A description can be found below."
+            }
+          ]
+        },
+        {
+          "short": "i",
+          "long": "input",
+          "arg": "INFILE",
+          "type": "file",
+          "desc": "File to read input from (defaults to stdin)"
+        },
+        {
+          "short": "o",
+          "long": "output",
+          "arg": "OUTFILE",
+          "type": "file",
+          "desc": "File to write output to (defaults to stdout)"
+        },
+        {
+          "short": "e",
+          "long": "execute",
+          "arg": "STRATEGY",
+          "type": "enum",
+          "desc": "Execute the file using specific settings. This is the default using the precompiled setting. Options are as following:",
+          "values": [
+            {
+              "values": ["ref", "reference"],
+              "desc": "Use a simple reference interpreter that falls back onto a bignum based interpreter."
+            },
+            {
+              "values": ["opt", "optimized"],
+              "desc": "Use the reference interpreter with optimized data structures."
+            },
+            {
+              "values": ["big", "bigint"],
+              "desc": "Use the bignum based fallback interpreter directly. This is the slowest option."
+            },
+            {
+              "values": ["aot", "precompiled"],
+              "desc": "Compile the program into native code in advance, and then execute it using optimized datastructures. This is the fastest for short programs, or programs that have a long execution time. It falls back to the optimized interpreter and bignum interpreter when the native code encounters errors.},"
+            },
+            {
+              "values": ["sync", "synchronous"],
+              "desc": "Similar to precompiled, but this implementation compiles code it encounters while interpreting. This is faster for large programs that only actually execute a small part of their code."
+            },
+            {
+              "values": ["async", "threaded"],
+              "desc": "Similar to precompiled, but compiles code in a separate thread while already interpreting. It is faster on large programs."
+            }
+          ]
+        },
+        {
+          "short": "c",
+          "long": "count",
+          "desc": "Use the reference interpreter with no bignum fallback to count the amount of instructions executed."
+        },
+        {
+          "short": "t",
+          "long": "translate",
+          "desc": "Instead of executing, translate the file to/from assembly, and write the result to the specified output."
+        },
+        {
+          "short": "m",
+          "long": "minify",
+          "desc": "When translating, minify the resulting code by crushing label size."
+        },
+        {
+          "short": "d",
+          "long": "dump",
+          "arg": "DUMPFILE",
+          "type": "file",
+          "desc": "Just compiles the program into assembly and dumps the result into a file. This is mainly for debugging."
+        },
+        { "short": "p", "long": "perf", "desc": "Prints performance information to stdout." },
+        {
+          "long": "ignore-overflow",
+          "desc": "Use wrapping arithmetic instead of switching to bignum-based interpretation when overflow occurs."
+        },
+        {
+          "long": "unchecked-heap",
+          "desc": "By default the interpreter generates an error when a missing key is requested from the heap. As the behaviour of the reference implementation of this is somewhat inconsistent, this option configures the interpreter to return 0 instead."
+        },
+        {
+          "long": "no-fallback",
+          "desc": "On overflow, generate an error instead of switching to a bignum interpreter."
+        },
+        {
+          "long": "no-implicit-exit",
+          "desc": "By default, the compiler exits cleanly if the end of the program is reached, even when no exit command is present. This flag disables this behaviour."
+        }
+      ],
+      "option_parse": "manual"
+    }
+  ]
+}

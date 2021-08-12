@@ -1,0 +1,23 @@
+{
+  "id": "cpp/buyoh-nospace",
+  "name": "nospace",
+  "authors": ["舞葉 (Mai Buyoh)"],
+  "license": "Unlicense",
+  "languages": ["C++", "Ruby"],
+  "tags": ["language", "interpreter", "programs"],
+  "date": "2018-09-05 15:36:34 +0900",
+  "spec_version": "0.3",
+  "source": ["https://github.com/buyoh/nospace"],
+  "commands": [
+    {
+      "type": "language compiler",
+      "bin": "maicomp",
+      "dependencies": ["make"],
+      "build": "make release",
+      "usage": "$0 [<file>]",
+      "notes": "Reads from stdin, if no file is given"
+    },
+    { "type": "interpreter", "bin": "vm/run.rb", "usage": "ruby $0 <file> [<stdin_file>]" },
+    { "type": "test", "bin": "test.rb", "usage": "ruby $0" }
+  ]
+}

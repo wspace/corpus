@@ -1,0 +1,55 @@
+{
+  "id": "csharp/rolisoft-esoteric",
+  "name": "Esoteric Code Interpreter",
+  "authors": ["Roland Bogosi"],
+  "license": "GPL-3.0-or-later",
+  "languages": ["C#"],
+  "tags": ["interpreter", "disassembler"],
+  "date": "2010-10-11 09:33:25 +0300",
+  "spec_version": "0.2",
+  "source": ["https://github.com/RoliSoft/Esoteric-Code-Interpreter"],
+  "assembly": {
+    "mnemonics": {
+      "push": ["push"],
+      "dup": ["dup"],
+      "swap": ["swap"],
+      "drop": ["pop"],
+      "add": ["add"],
+      "sub": ["sub"],
+      "mul": ["mul"],
+      "div": ["div"],
+      "mod": ["mod"],
+      "store": ["store"],
+      "retrieve": ["retr"],
+      "label": ["label"],
+      "call": ["call"],
+      "jmp": ["jmp"],
+      "jz": ["jz"],
+      "jn": ["jn"],
+      "ret": ["ret"],
+      "end": ["exit"],
+      "printc": ["outchar"],
+      "printi": ["outnum"],
+      "readc": ["readchar"],
+      "readi": ["readnum"]
+    }
+  },
+  "commands": [
+    {
+      "type": "interactive",
+      "bin": "bin/Debug/EsotericCodeInterpreter.exe",
+      "build": "msbuild /p:Configuration=Debug\\;AssemblyName=EsotericCodeInterpreter EsotericCodeInterpreter.csproj",
+      "usage": "mono $0",
+      "subcommands": [
+        { "name": "start", "desc": "interpret program written in CLI" },
+        { "name": "load", "desc": "interpret program from a file" },
+        { "name": "disasm", "desc": "disassemble into a more understandable assembly-like language" },
+        { "name": "help", "desc": "display help" },
+        { "name": "clear", "desc": "clear console" },
+        { "name": "exit", "desc": "exit CLI" }
+      ],
+      "notes": "Subcommands are entered interactively"
+    }
+  ],
+  "notes": "Disassembles program trace, including escaped output. Also interprets Brainfuck (and Ook! and Spoon variants), Byter, and Befunge93 programs"
+}

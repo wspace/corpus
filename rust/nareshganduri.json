@@ -1,0 +1,19 @@
+{
+  "id": "rust/nareshganduri",
+  "name": "Whitespace VM",
+  "authors": ["Naresh Ganduri"],
+  "license": "none",
+  "languages": ["Rust"],
+  "tags": ["interpreter"],
+  "date": "2019-05-13 03:46:04 -0500",
+  "spec_version": "0.3",
+  "source": ["https://github.com/nareshganduri/WhitespaceVM"],
+  "commands": [
+    {
+      "type": "interpreter",
+      "bin": "target/release/whitespace-vm",
+      "build": "cargo build --release",
+      "usage": "$0 <file>"
+    }
+  ]
+}

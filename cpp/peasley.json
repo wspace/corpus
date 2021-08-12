@@ -1,0 +1,22 @@
+{
+  "id": "cpp/peasley",
+  "name": "Whitespace Interpreter in C++",
+  "authors": ["Peasley"],
+  "license": "none",
+  "languages": ["C++"],
+  "tags": ["interpreter"],
+  "date": "2010-02-05 08:24:04 +0000",
+  "spec_version": "0.3",
+  "source": [
+    "https://github.com/wspace/peasley-cpp",
+    "http://www.rohitab.com/discuss/topic/35639-c-whitespace-interpreter/?p=10074137"
+  ],
+  "commands": [
+    {
+      "type": "interpreter",
+      "bin": "whitespace",
+      "build": "g++ -O3 -Wall -o whitespace whitespace.cpp",
+      "usage": "$0 <file>"
+    }
+  ]
+}

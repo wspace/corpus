@@ -1,0 +1,13 @@
+{
+  "id": "javascript/naokikp-wsi",
+  "name": "wsi",
+  "authors": ["naoki kageyama"],
+  "license": "MIT",
+  "languages": ["JavaScript"],
+  "tags": ["IDE", "interpreter", "mapping"],
+  "date": "2014-06-01 22:27:15 +0900",
+  "spec_version": "0.3",
+  "source": ["https://github.com/naokikp/naokikp.github.io", "https://naokikp.github.io/wsi/whitespace.html"],
+  "mappings": [{ "space": "S", "tab": "T", "lf": "L" }, { "space": "S", "tab": "T", "lf": "N" }],
+  "notes": "When mapping to visible characters, STL is canonical over STN"
+}

@@ -1,0 +1,142 @@
+{
+  "id": "c/rdebath",
+  "name": "Whitespace",
+  "authors": ["Robert de Bath"],
+  "license": "none",
+  "languages": ["C", "Lex"],
+  "tags": ["transpiler", "interpreter", "assembler", "program builder", "programs"],
+  "date": "2015-08-18 14:25:03 +0100",
+  "spec_version": "0.3",
+  "source": ["https://github.com/rdebath/whitespace", "https://github.com/wspace/rdebath-c"],
+  "whitespace": {
+    "nonstandard": [
+      { "name": "jzp", "aliases": ["jumppz"], "args": ["label"] },
+      { "name": "jzn", "aliases": ["jumpnz"], "args": ["label"] },
+      { "name": "jp", "aliases": ["jumpp"], "args": ["label"] },
+      { "name": "jnz", "aliases": ["jumppn", "jumpnp"], "args": ["label"] }
+    ]
+  },
+  "assembly": {
+    "mnemonics": {
+      "push": ["push"],
+      "dup": ["dup", "doub"],
+      "copy": ["pick", "copy"],
+      "swap": ["swap"],
+      "drop": ["drop", "discard", "pop"],
+      "slide": ["slide"],
+      "add": ["add", "add <rhs>"],
+      "sub": ["sub", "sub <rhs>"],
+      "mul": ["mul"],
+      "div": ["div"],
+      "mod": ["mod"],
+      "store": ["store", "store <lhs>"],
+      "retrieve": ["fetch", "retrieve", "retrive", "retrive <number>", "retreive"],
+      "label": ["<label>:", "label"],
+      "call": ["call"],
+      "jmp": ["jump", "jmp"],
+      "jz": ["jz", "jumpz"],
+      "jn": ["jn", "jumpn"],
+      "ret": ["return", "ret"],
+      "end": ["exit", "quit", "end"],
+      "printc": ["outc", "outchar", "printc"],
+      "printi": ["outn", "outnum", "printi"],
+      "readc": ["readc", "readchar", "inc"],
+      "readi": ["readn", "readnum", "readi", "inn"],
+      "dumpstack": ["debug_printstack"],
+      "dumpheap": ["debug_printheap"]
+    },
+    "macros": [
+      {
+        "name": "pushs <s>",
+        "replace": "push 0 push <sn> ... push <s1> push <s0>",
+        "notes": "Uses dup for matching consecutive characters"
+      },
+      { "name": "test <n>", "replace": "dup push <n> sub" },
+      { "name": "ifoption <x>", "replace": "#ifdef <x>" },
+      { "name": "endoption", "replace": "#endif" },
+      { "name": "include <file>", "replace": "#include \"<file>.h\"" }
+    ],
+    "patterns": {
+      "label": "\\.?[A-Za-z_$][A-Za-z0-9_$]*|[0-9]+",
+      "number": "-?[0-9]+",
+      "number_char": "'[^\\]'|'\\[abtn']'",
+      "string": "\"[^\"]*\""
+    },
+    "case_sensitive_instructions": false,
+    "line_comments": [";", "#", "--"],
+    "block_comments": [{ "start": "{-", "end": "-}", "nested": false }],
+    "usage": ["transpiler", "assembler", "enum"]
+  },
+  "programs": [
+    {
+      "path": "gencode-deadfish-in-ws.c",
+      "compiled": "deadfish.ws",
+      "spec_version": "0.2",
+      "generate": "gcc -o gencode-deadfish-in-ws gencode-deadfish-in-ws.c && ./gencode-deadfish-in-ws > deadfish.ws"
+    },
+    {
+      "path": "gen-99bottles.c",
+      "compiled": "99bottles.ws",
+      "spec_version": "0.2",
+      "generate": "gcc -o gen-99bottles gen-99bottles.c && ./gen-99bottles > 99bottles.ws"
+    },
+    {
+      "path": "gen-prime.c",
+      "compiled": "prime.ws",
+      "spec_version": "0.2",
+      "generate": "gcc -o gen-prime gen-prime.c && ./gen-prime > prime.ws"
+    },
+    {
+      "path": "gen-wsinterws.c",
+      "compiled": "wsinterws.ws",
+      "spec_version": "0.2",
+      "generate": "gcc -o gen-wsinterws gen-wsinterws.c && ./gen-wsinterws > wsinterws.ws"
+    }
+  ],
+  "commands": [
+    {
+      "type": "transpiler",
+      "bin": "ws2c",
+      "build": "make",
+      "usage": "$0 [-r | -c] [-v...] [-q] [-e | -z | -n] [-d] [-old] [--] [<file>]",
+      "options": [
+        { "short": "r", "desc": "Interpret now" },
+        { "short": "c", "desc": "Compile to C" },
+        { "short": "v", "desc": "Print a single comment line; repeat to print more lines" },
+        { "short": "q", "desc": "Disable warnings" },
+        { "short": "e", "desc": "-1 on EOF (not implemented)" },
+        { "short": "z", "desc": "0 on EOF (not implemented)" },
+        { "short": "n", "desc": "1 on EOF (not implemented)" },
+        { "short": "d", "desc": "Debug mode" },
+        { "short": "old", "desc": "Disable Whitespace 0.3 features" }
+      ],
+      "option_parse": "manual",
+      "notes": "Interprets program when no flags given. Reconstructs ASCII label strings of the form that were of the form [A-Za-z_][A-Za-z0-9_]* from numbers."
+    },
+    {
+      "type": "interpreter",
+      "bin": "wsc.sh",
+      "usage": "$0 <file> [<CFLAGS> [<LDFLAGS>]]",
+      "output": "stdout",
+      "notes": "Compiles and runs program"
+    },
+    {
+      "type": "assembler",
+      "bin": "wsa",
+      "dependencies": ["Flex"],
+      "build": "make",
+      "usage": "$0 [<file>...]",
+      "output": "stdout",
+      "notes": "Assembles other Whitespace assembly dialects"
+    },
+    {
+      "type": "assembler",
+      "bin": "wsa.sed",
+      "dependencies": ["GNU sed"],
+      "usage": "sed -f $0 <file>",
+      "output": "stdout",
+      "notes": "Assembles Oliver Burghard's Whitespace assembly dialect, including shorthand instructions"
+    }
+  ],
+  "notes": "Transpiles to C. The input assembly dialects of wsa and wsa.sed, as well as the output C function calls, are combined in .assembly.mnemonics. Has tests directory that contains Whitespace programs from many authors."
+}

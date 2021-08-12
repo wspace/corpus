@@ -1,0 +1,21 @@
+{
+  "id": "haskell/brainbrush-tomato",
+  "name": "Tomato Programming Language",
+  "authors": ["brainbrush"],
+  "license": "GPL-2.0-or-later",
+  "languages": ["Haskell"],
+  "tags": ["interpreter", "mapping", "programs"],
+  "date": "2015-02-26 20:31:40 +0800",
+  "spec_version": "0.3",
+  "source": ["https://github.com/brainbush/Tomato-Programming-Language"],
+  "mappings": [{ "space": "番", "tab": "茄", "lf": "干" }],
+  "commands": [
+    {
+      "type": "interpreter",
+      "bin": "wspace",
+      "build": "make",
+      "build_errors": "Needs changes for latest Haskell",
+      "usage": "$0 <file>"
+    }
+  ]
+}

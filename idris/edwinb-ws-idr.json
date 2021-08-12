@@ -1,0 +1,49 @@
+{
+  "id": "idris/edwinb-ws-idr",
+  "name": "WS-idr",
+  "authors": ["Edwin Brady"],
+  "license": "none",
+  "languages": ["Idris"],
+  "tags": ["interpreter"],
+  "date": "2012-11-25 16:53:09 +0000",
+  "spec_version": "0.3",
+  "source": ["https://github.com/edwinb/WS-idr"],
+  "assembly": {
+    "mnemonics": {
+      "push": ["PUSH"],
+      "dup": ["DUP"],
+      "copy": ["COPY"],
+      "swap": ["SWAP"],
+      "drop": ["DISCARD"],
+      "slide": ["SLIDE"],
+      "add": ["ADD"],
+      "sub": ["SUB"],
+      "mul": ["MUL"],
+      "div": ["DIV"],
+      "mod": ["MOD"],
+      "store": ["STORE"],
+      "retrieve": ["RETRIEVE"],
+      "label": ["LABEL"],
+      "call": ["CALL"],
+      "jmp": ["JUMP"],
+      "jz": ["JZ"],
+      "jn": ["JNEG"],
+      "ret": ["RETURN"],
+      "end": ["END"],
+      "printc": ["OUTPUT"],
+      "printi": ["OUTPUTNUM"],
+      "readc": ["READCHAR"],
+      "readi": ["READNUM"]
+    },
+    "usage": ["enum"]
+  },
+  "commands": [
+    {
+      "bin": "wspace",
+      "dependencies": ["Idris"],
+      "build": "idris --build wspace.ipkg",
+      "build_errors": "Needs changes for latest Idris",
+      "usage": "$0 <file>"
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "id": "lua/vyo-callisto",
+  "name": "callisto",
+  "authors": ["Manu Weidmann"],
+  "license": "none",
+  "languages": ["Lua"],
+  "tags": ["interpreter"],
+  "date": "2015-10-15 20:40:19 +0200",
+  "spec_version": "0.3",
+  "source": ["https://github.com/vyo/callisto"]
+}

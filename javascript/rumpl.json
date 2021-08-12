@@ -1,0 +1,11 @@
+{
+  "id": "javascript/rumpl",
+  "name": "whitespace",
+  "authors": ["Djordje Lukic"],
+  "license": "MIT",
+  "languages": ["JavaScript"],
+  "tags": ["interpreter"],
+  "date": "2013-03-27 23:32:41 +0100",
+  "spec_version": "0.3",
+  "source": ["https://github.com/rumpl/whitespace"]
+}

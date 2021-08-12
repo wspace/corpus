@@ -1,0 +1,12 @@
+{
+  "id": "javascript/ignovak",
+  "name": "whitespace.js",
+  "authors": ["Igor"],
+  "license": "none",
+  "languages": ["JavaScript"],
+  "tags": ["interpreter"],
+  "date": "2016-06-21 01:43:55 +0200",
+  "spec_version": "0.3",
+  "source": ["https://gist.github.com/ignovak/c6173c31207fd6fcbec606411460c73c"],
+  "notes": "Codewars solution"
+}

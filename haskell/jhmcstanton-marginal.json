@@ -1,0 +1,18 @@
+{
+  "id": "haskell/jhmcstanton-marginal",
+  "name": "Marginal",
+  "authors": ["Jim McStanton"],
+  "license": "BSD-3-Clause",
+  "languages": ["Haskell", "Yacc"],
+  "tags": ["interpreter"],
+  "date": "2019-06-28 20:19:29 -0500",
+  "spec_version": "0.2",
+  "source": ["https://github.com/jhmcstanton/marginal"],
+  "commands": [
+    {
+      "install_dependencies": ["stack setup"],
+      "build": "stack build",
+      "build_errors": "`stack setup` fails with link error"
+    }
+  ]
+}

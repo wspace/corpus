@@ -1,0 +1,11 @@
+{
+  "id": "javascript/kosei",
+  "name": "Whitespace",
+  "authors": ["kosei28"],
+  "license": "MIT",
+  "languages": ["JavaScript"],
+  "tags": ["interpreter"],
+  "date": "2020-08-03 23:19:28 +0900",
+  "spec_version": "0.2",
+  "source": ["https://github.com/kosei28/Whitespace"]
+}

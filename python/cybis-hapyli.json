@@ -1,0 +1,19 @@
+{
+  "id": "python/cybis-hapyli",
+  "name": "HaPyLi",
+  "authors": ["Huf Lungdung (Cybis)"],
+  "license": "unknown",
+  "languages": ["Python"],
+  "tags": ["language", "interpreter", "standard library", "programs"],
+  "date": "2009-03-03 19:44:31 +0000",
+  "spec_version": "0.3",
+  "source": [
+    "https://github.com/wspace/hapyli",
+    "https://web.archive.org/web/20110212015726/http://hapyli.webs.com/",
+    "https://web.archive.org/web/20141011193154/http://compsoc.dur.ac.uk/archives/whitespace/2010-May/000075.html",
+    "https://github.com/helvm/hapyli",
+    "https://stackoverflow.com/questions/607830/use-of-haskell-state-monad-a-code-smell"
+  ],
+  "programs": [{ "path": "sudoku.ws" }, { "path": "99bottles.hpl" }, { "path": "brainfuck.hpl" }],
+  "notes": "A Sudoku solver was written in HaPyLi"
+}

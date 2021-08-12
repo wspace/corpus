@@ -1,0 +1,28 @@
+{
+  "id": "perl/mkoelbl",
+  "name": "whitespace.pl",
+  "authors": ["Mike Kölbl"],
+  "license": "GPL-2.0-or-later",
+  "languages": ["Perl"],
+  "tags": ["interpreter"],
+  "date": "2003-04-01 19:34:12 +0000",
+  "spec_version": "0.3",
+  "source": [
+    "https://github.com/wspace/mkoelbl-perl",
+    "https://web.archive.org/web/20150425000432/http://compsoc.dur.ac.uk/whitespace/whitespace.pl",
+    "https://web.archive.org/web/20150717140342/http://compsoc.dur.ac.uk:80/whitespace/download.php",
+    "https://github.com/hostilefork/whitespacers/tree/master/perl"
+  ],
+  "commands": [
+    {
+      "type": "interpreter",
+      "bin": "whitespace.pl",
+      "dependencies": ["Perl"],
+      "usage": "perl $0 <file>",
+      "input": "stdin",
+      "output": "stdout",
+      "options": [{ "short": "d", "desc": "debug" }],
+      "option_parse": "Perl Getopt"
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "id": "haskell/edwinb-wspace-0.3",
+  "name": "wspace 0.3",
+  "authors": ["Edwin Brady"],
+  "license": "GPL-2.0-or-later",
+  "languages": ["Haskell", "Emacs Lisp"],
+  "tags": ["interpreter", "syntax highlighting", "programs"],
+  "date": "2004-05-04 16:34:32 +0000",
+  "spec_version": "0.3",
+  "source": [
+    "https://web.archive.org/web/20150717140342/http://compsoc.dur.ac.uk:80/whitespace/download.php",
+    "https://web.archive.org/web/20141011193201/http://compsoc.dur.ac.uk/archives/whitespace/2004-May/000047.html"
+  ],
+  "bounds": { "precision": "arbitrary" }
+}

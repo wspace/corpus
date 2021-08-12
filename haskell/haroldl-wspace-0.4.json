@@ -1,0 +1,31 @@
+{
+  "id": "haskell/haroldl-wspace-0.4",
+  "name": "whitespace-0.4",
+  "authors": ["Harold Lee", "Edwin Brady"],
+  "license": "GPL-2.0-or-later",
+  "languages": ["Haskell"],
+  "tags": ["interpreter"],
+  "date": "2011-03-10 11:26:53 -0800",
+  "spec_version": "0.3",
+  "source": [
+    "https://github.com/haroldl/whitespace-nd",
+    "https://web.archive.org/web/20141011193201/http://compsoc.dur.ac.uk/archives/whitespace/2011-March/000080.html",
+    "https://harold.hotelling.net/shuffle.html"
+  ],
+  "package": {
+    "name": "whitespace",
+    "manager": "Hackage",
+    "url": "https://hackage.haskell.org/package/whitespace-0.4"
+  },
+  "relations": [{ "type": "fork", "id": "haskell/edwinb-wspace-0.3" }],
+  "whitespace": { "nonstandard": [{ "name": "shuffle", "seq": "STTS" }] },
+  "commands": [
+    {
+      "type": "interpreter",
+      "bin": "wspace",
+      "build": "make",
+      "build_errors": "Needs changes for latest Haskell",
+      "usage": "$0 <file>"
+    }
+  ]
+}

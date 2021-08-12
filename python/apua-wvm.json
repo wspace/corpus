@@ -1,0 +1,22 @@
+{
+  "id": "python/apua-wvm",
+  "name": "wvm",
+  "authors": ["Apua"],
+  "license": "none",
+  "languages": ["Python"],
+  "tags": ["interpreter", "mapping", "programs"],
+  "date": "2013-11-24 15:06:57 +0800",
+  "spec_version": "0.3",
+  "source": ["https://github.com/apua/whitespace"],
+  "whitespace": { "extension": "ws" },
+  "mappings": [{ "space": "S", "tab": "T", "lf": "L", "extension": "stl" }],
+  "commands": [
+    {
+      "type": "interpreter",
+      "bin": "wvm.py",
+      "dependencies": ["Python 3"],
+      "usage": "python3 $0 <file> [<lexical_tokens>]",
+      "notes": "<lexical_tokens> is a 3-character string that specifies the mapping to use, falling back to \" \t\n\""
+    }
+  ]
+}

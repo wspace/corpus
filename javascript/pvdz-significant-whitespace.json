@@ -1,0 +1,16 @@
+{
+  "id": "javascript/pvdz-significant-whitespace",
+  "name": "SignificantWhitespace",
+  "authors": ["Peter van der Zee"],
+  "license": "none",
+  "languages": ["JavaScript"],
+  "tags": ["interpreter"],
+  "date": "2012-02-16 23:15:56 +0100",
+  "spec_version": "0.3",
+  "source": [
+    "https://github.com/pvdz/SignificantWhitespace",
+    "https://pvdz.ee/weblog/246",
+    "https://js1k.com/2012-love/demo/1130"
+  ],
+  "notes": "JS1k competition submission"
+}

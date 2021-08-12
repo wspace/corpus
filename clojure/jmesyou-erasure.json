@@ -1,0 +1,29 @@
+{
+  "id": "clojure/jmesyou-erasure",
+  "name": "erasure",
+  "authors": ["James You"],
+  "license": "MIT",
+  "languages": ["Clojure"],
+  "tags": ["interpreter"],
+  "date": "2018-02-24 19:28:32 -0500",
+  "spec_version": "0.2",
+  "source": ["https://github.com/wspace/jmesyou-erasure", "https://github.com/jmesyou/erasure"],
+  "commands": [
+    {
+      "type": "interpreter",
+      "bin": "target/uberjar/erasure-2.0-standalone.jar",
+      "dependencies": ["Leiningen"],
+      "build": "lein uberjar",
+      "usage": "java -jar $0 [-i | --intermediate] [-h | --help] <file>",
+      "options": [
+        {
+          "short": "i",
+          "long": "intermediate",
+          "desc": "Generate intermediate Clojure for the Whitespace source"
+        },
+        { "short": "h", "long": "help" }
+      ],
+      "option_parse": "clojure.tools.cli"
+    }
+  ]
+}

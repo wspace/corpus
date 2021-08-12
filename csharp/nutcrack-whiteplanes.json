@@ -1,0 +1,13 @@
+{
+  "id": "csharp/nutcrack-whiteplanes",
+  "name": "whiteplanes.cs",
+  "authors": ["Takuya Katsurada"],
+  "license": "unknown",
+  "languages": ["C#"],
+  "tags": ["interperter"],
+  "date": "2016-04-15 08:28:35 +0000",
+  "spec_version": "unknown",
+  "source": ["https://www.nuget.org/packages/whiteplanes/", "https://github.com/whiteplanes/whiteplanes.cs"],
+  "package": { "name": "whiteplanes", "manager": "NuGet", "url": "https://www.nuget.org/packages/whiteplanes/" },
+  "notes": "GitHub repo is offline. Date is package last update date."
+}

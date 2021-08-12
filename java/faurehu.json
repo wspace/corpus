@@ -1,0 +1,11 @@
+{
+  "id": "java/faurehu",
+  "name": "whiteSpaceInterpreter",
+  "authors": ["Matias Faure"],
+  "license": "none",
+  "languages": ["Java"],
+  "tags": ["interpreter", "programs"],
+  "date": "2015-01-29 00:49:03 +0000",
+  "spec_version": "0.3",
+  "source": ["https://github.com/faurehu/whiteSpaceInterpreter"]
+}

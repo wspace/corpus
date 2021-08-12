@@ -1,0 +1,11 @@
+{
+  "id": "java/yuukiaria-wseditor",
+  "name": "wseditor",
+  "authors": ["YuukiARIA"],
+  "license": "none",
+  "languages": ["Java"],
+  "tags": ["IDE"],
+  "date": "2013-11-21 22:29:13 -0800",
+  "spec_version": "-",
+  "source": ["https://github.com/YuukiARIA/wseditor"]
+}

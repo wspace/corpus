@@ -1,0 +1,89 @@
+{
+  "id": "python/eizoassik-pyws",
+  "name": "PYWS",
+  "authors": ["Eizo Assik"],
+  "license": "none",
+  "languages": ["Python"],
+  "tags": ["interpreter", "assembler", "disassembler", "mapping"],
+  "date": "2014-08-28 10:18:04 +0800",
+  "spec_version": "0.3",
+  "source": ["https://github.com/EizoAssik/pyws"],
+  "whitespace": {
+    "nonstandard": [{ "name": "PYFN", "seq": "LLS", "args": ["label"] }, { "name": "PUSHS", "args": ["string"] }]
+  },
+  "assembly": {
+    "mnemonics": {
+      "push": ["PUSH"],
+      "dup": ["DUP"],
+      "copy": ["COPY"],
+      "swap": ["SWAP"],
+      "drop": ["POP"],
+      "slide": ["SKIP"],
+      "add": ["ADD"],
+      "sub": ["SUB"],
+      "mul": ["MUL"],
+      "div": ["DIV"],
+      "mod": ["MOD"],
+      "store": ["STORE"],
+      "retrieve": ["RETRIEVE"],
+      "label": ["MARK"],
+      "call": ["CALL"],
+      "jmp": ["JUMP"],
+      "jz": ["JZ"],
+      "jn": ["JS"],
+      "ret": ["RET"],
+      "end": ["END"],
+      "printc": ["PCHR"],
+      "printi": ["PNUM"],
+      "readc": ["RCHR"],
+      "readi": ["RNUM"]
+    },
+    "line_comments": ["#"]
+  },
+  "mappings": [
+    { "space": "S", "tab": "T", "lf": "L", "spaces_between": false },
+    { "space": "草", "tab": "泥", "lf": "马", "spaces_between": false }
+  ],
+  "commands": [
+    {
+      "bin": "pyws.py",
+      "dependencies": ["Python 3"],
+      "usage": "python3 $0 [-h | --help] [-A] [--IR] [--strict] [--style=<style>] [--sep=<sep>] [--arg-sep=<arg_sep>] [--debug] [--traceall] $0 <file>",
+      "options": [
+        { "short": "h", "long": "help", "desc": "show this help message and exit" },
+        { "short": "A", "desc": "use assembler instead of compiler" },
+        { "long": "IR", "desc": "compile to WSIR instead of running it" },
+        { "long": "strict", "desc": "use strict mode" },
+        {
+          "long": "style",
+          "arg": "STYLE",
+          "type": "enum",
+          "default": "ORIGIN",
+          "desc": "code style",
+          "values": [
+            { "values": ["ORIGIN"], "desc": "use space/tab/lf" },
+            { "values": ["STL"], "desc": "use S/T/L instead space/tab/lf" },
+            { "values": ["GMH"], "desc": "use 草/泥/马 instead of space/tab/lf" }
+          ]
+        },
+        {
+          "long": "sep",
+          "arg": "SEP",
+          "type": "string",
+          "default": ";",
+          "desc": "separator for assembled code between operators"
+        },
+        {
+          "long": "arg-sep",
+          "arg": "ARG_SEP",
+          "type": "string",
+          "default": ";",
+          "desc": "separator for assembled code between arguments"
+        },
+        { "long": "debug", "desc": "run with debug mode" },
+        { "long": "traceall", "desc": "store heap and stack after EACH operator" }
+      ],
+      "option_parse": "Python argparse"
+    }
+  ]
+}

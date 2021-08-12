@@ -1,0 +1,94 @@
+{
+  "id": "csharp/littlebughunter-assembler",
+  "name": "WhitespaceAssembler",
+  "authors": ["Paul (littleBugHunter)"],
+  "license": "MIT",
+  "languages": ["C#"],
+  "tags": ["assembler", "programs"],
+  "date": "2019-12-27 01:01:55 +0100",
+  "spec_version": "0.2",
+  "source": ["https://github.com/littleBugHunter/WhitespaceAssembler"],
+  "assembly": {
+    "mnemonics": {
+      "push": ["push <number>", "push <address>"],
+      "dup": ["dup"],
+      "swap": ["swap"],
+      "drop": ["pop"],
+      "add": [
+        "add",
+        "add <number>",
+        "add <address>",
+        "add <address> <number>",
+        "add <number> <address>",
+        "add <address> <address>"
+      ],
+      "sub": [
+        "sub",
+        "sub <number>",
+        "sub <address>",
+        "sub <address> <number>",
+        "sub <number> <address>",
+        "sub <address> <address>"
+      ],
+      "mul": [
+        "mul",
+        "mul <number>",
+        "mul <address>",
+        "mul <address> <number>",
+        "mul <number> <address>",
+        "mul <address> <address>"
+      ],
+      "div": [
+        "div",
+        "div <number>",
+        "div <address>",
+        "div <address> <number>",
+        "div <number> <address>",
+        "div <address> <address>"
+      ],
+      "mod": [
+        "mod",
+        "mod <number>",
+        "mod <address>",
+        "mod <address> <number>",
+        "mod <number> <address>",
+        "mod <address> <address>"
+      ],
+      "store": ["store", "store <number>", "store <number> <number>"],
+      "retrieve": ["retrieve", "retrieve <number>"],
+      "label": ["lbl .<label>"],
+      "call": ["call .<label>"],
+      "jmp": ["jmp .<label>"],
+      "jz": ["jpz .<label>"],
+      "jn": ["jpn .<label>"],
+      "ret": ["ret"],
+      "end": ["exit"],
+      "printc": ["print_char"],
+      "printi": ["print_number"],
+      "readc": ["read_char"],
+      "readi": ["read_number"]
+    },
+    "patterns": {
+      "address": "\\*<variable>",
+      "char": "'.'",
+      "hex": "#[0-9A-Fa-f]+",
+      "int": "[+-]?[0-9]+",
+      "number": "<int>|<hex>|<char>|&<variable>",
+      "variable": "[^ \t]+"
+    },
+    "case_sensitive_instructions": false,
+    "line_comments": ["//"],
+    "extension": "txt"
+  },
+  "commands": [
+    {
+      "type": "assembler",
+      "bin": "bin/Debug/WhitespaceAssembler.exe",
+      "dependencies": ["Mono"],
+      "build": "msbuild /p:Configuration=Debug WhitespaceAssembler.csproj",
+      "usage": "mono $0 <file> <output_file>",
+      "output": "<output_file>"
+    }
+  ],
+  "notes": "<number> is a number literal or the value of a variable (formats: <int>, #<hex>, '<char>', and &<variable>).\n<address> is the value on the heap at the variable value (format: *<variable>), i.e. `push <variable> retrieve`.\n<int> is a base 10 integer, i.e. /[+-]?[0-9]+/.\n<hex> is a base 16 integer, i.e. /[0-9A-Fa-f]+/.\n<char> is one UTF-16 character, escape sequences aren't supported.\n<label> and <variable> values increment (with separate counters), starting at 0."
+}

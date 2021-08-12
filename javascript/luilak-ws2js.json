@@ -1,0 +1,11 @@
+{
+  "id": "javascript/luilak-ws2js",
+  "name": "WS2JS",
+  "authors": ["Luilak"],
+  "license": "MIT",
+  "languages": ["JavaScript"],
+  "tags": ["transpiler"],
+  "date": "2013-06-03 16:34:31 +0900",
+  "spec_version": "0.3",
+  "source": ["https://github.com/Luilak/WS2JS"]
+}

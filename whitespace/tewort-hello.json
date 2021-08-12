@@ -1,0 +1,12 @@
+{
+  "id": "whitespace/tewort-hello",
+  "name": "Hello-Whitespace",
+  "authors": ["David (Tewort)"],
+  "license": "none",
+  "languages": ["Whitespace"],
+  "tags": ["programs"],
+  "date": "2019-01-28 17:17:14 +0300",
+  "spec_version": "0.2",
+  "source": ["https://github.com/Tewort/Hello-Whitespace"],
+  "programs": [{ "path": "helloworld.ws", "spec_version": "0.2" }]
+}

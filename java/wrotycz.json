@@ -1,0 +1,20 @@
+{
+  "id": "java/wrotycz",
+  "name": "whitespace-interpreter",
+  "authors": ["Kamil Węglarz"],
+  "license": "MIT",
+  "languages": ["Java"],
+  "tags": ["interpreter"],
+  "date": "2018-05-21 13:44:13 +0200",
+  "spec_version": "0.3",
+  "source": ["https://github.com/wrotycz/whitespace-interpreter"],
+  "commands": [
+    {
+      "type": "interpreter",
+      "bin": "target/whitespace-interpreter-1.0-SNAPSHOT.jar",
+      "build": "mvn -Dmaven.compiler.source=1.8 -Dmaven.compiler.target=1.8 package",
+      "run_errors": "No main method entrypoint"
+    }
+  ],
+  "notes": "Codewars solution"
+}

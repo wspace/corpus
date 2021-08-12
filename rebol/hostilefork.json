@@ -1,0 +1,54 @@
+{
+  "id": "rebol/hostilefork",
+  "name": "%whitespace.reb",
+  "authors": ["Brian Dickens (Hostile Fork)"],
+  "license": "MIT",
+  "languages": ["Rebol", "Ren-C"],
+  "tags": ["interpreter", "mapping"],
+  "date": "2009-10-08",
+  "spec_version": "0.3",
+  "source": ["https://github.com/hostilefork/rebol-whitespacers", "https://github.com/hostilefork/whitespacers"],
+  "mappings": [
+    {
+      "space": "space",
+      "tab": "tab",
+      "lf": "lf",
+      "spaces_between": true,
+      "line_comment": ";",
+      "extension": "wsw"
+    }
+  ],
+  "commands": [
+    {
+      "type": "interpreter",
+      "bin": "whitespace.reb",
+      "dependencies": ["Ren-C"],
+      "usage": "r3 $0 <file>",
+      "options": [
+        {
+          "short": "v",
+          "long": "verbose",
+          "arg": "level",
+          "type": "enum",
+          "desc": "Verbosity level for debug output",
+          "values": [
+            { "values": ["0"], "desc": "(default)" },
+            { "values": ["1"] },
+            { "values": ["2"] },
+            { "values": ["3"] }
+          ]
+        },
+        { "long": "strict", "desc": "Only allow `.ws`, `.wsa`, and `.wsw` formats" }
+      ],
+      "option_parse": "manual",
+      "notes": "File path is relative to whitespace.reb, not PWD"
+    },
+    {
+      "type": "interpreter",
+      "bin": "historical/whitespace-old.reb",
+      "dependencies": ["Rebol 3"],
+      "usage": "r3 $0",
+      "notes": "Program is hardcoded to the tutorial annotated example. Prints instructions while executing."
+    }
+  ]
+}

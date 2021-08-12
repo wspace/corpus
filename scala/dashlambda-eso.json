@@ -1,0 +1,11 @@
+{
+  "id": "scala/dashlambda-eso",
+  "name": "Eso",
+  "authors": ["Dash-Lambda"],
+  "license": "none",
+  "languages": ["Scala"],
+  "tags": ["interpreter", "assembler"],
+  "date": "2019-06-19 03:00:21 -0400",
+  "spec_version": "0.2",
+  "source": ["https://github.com/Dash-Lambda/Eso"]
+}

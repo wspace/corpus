@@ -1,0 +1,13 @@
+{
+  "id": "typescript/fy0u11",
+  "name": "Whitespace exotic programming language interpreter",
+  "authors": ["Sergey Strigin"],
+  "license": "ISC",
+  "languages": ["TypeScript"],
+  "tags": ["interpreter"],
+  "date": "2021-01-12 22:32:44 +0600",
+  "spec_version": "0.3",
+  "source": ["https://github.com/FY0u11/whitespace-interpreter"],
+  "commands": [{ "type": "interpreter", "bin": "dist/Whitespace.js", "build": "npm install && npm run build" }],
+  "notes": "Codewars solution"
+}

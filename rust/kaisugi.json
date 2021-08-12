@@ -1,0 +1,19 @@
+{
+  "id": "rust/kaisugi",
+  "name": "Whitespace Interpreter",
+  "authors": ["Kaito Sugimoto"],
+  "license": "none",
+  "languages": ["Rust"],
+  "tags": ["interpreter", "programs"],
+  "date": "2018-11-23 21:35:24 +0900",
+  "spec_version": "0.2",
+  "source": ["https://github.com/HelloRusk/WhitespaceInterpreter"],
+  "commands": [
+    {
+      "type": "interpreter",
+      "bin": "wi",
+      "build": "rustc -o wi whitespace_interpreter.rs",
+      "usage": "$0 <file>"
+    }
+  ]
+}

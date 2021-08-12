@@ -1,0 +1,30 @@
+{
+  "id": "ruby/dwayne",
+  "name": "whitespace-ruby",
+  "authors": ["Dwayne R. Crooks"],
+  "license": "MIT",
+  "languages": ["Python"],
+  "tags": ["interpreter"],
+  "date": "2016-07-11 15:39:42 -0400",
+  "spec_version": "0.2",
+  "source": ["https://github.com/dwayne/whitespace-ruby"],
+  "package": {
+    "name": "whitespace-ruby",
+    "manager": "RubyGems",
+    "url": "https://rubygems.org/gems/whitespace-ruby"
+  },
+  "commands": [
+    {
+      "type": "interpreter",
+      "bin": "bin/whitespace",
+      "install_dependencies": ["bundle install"],
+      "build_errors": "Old dependencies",
+      "usage": "ruby $0 [-v | --version] [-h | --help] <file>",
+      "options": [
+        { "short": "v", "long": "version", "desc": "Show version information, then exit" },
+        { "short": "h", "long": "help", "desc": "Show this help, then exit" }
+      ],
+      "option_parse": "Ruby optparse"
+    }
+  ]
+}

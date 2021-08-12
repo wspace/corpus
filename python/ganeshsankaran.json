@@ -1,0 +1,48 @@
+{
+  "id": "python/ganeshsankaran",
+  "name": "Interpreter",
+  "authors": ["Ganesh Sankaran"],
+  "license": "none",
+  "languages": ["Python"],
+  "tags": ["wsa interpreter", "programs"],
+  "date": "2021-05-29 10:30:15 -0700",
+  "spec_version": "0.2",
+  "source": ["https://github.com/ganeshsankaran/interpreter"],
+  "assembly": {
+    "mnemonics": {
+      "push": ["push <number>"],
+      "dup": ["dup"],
+      "swap": ["swap"],
+      "drop": ["pop"],
+      "add": ["add"],
+      "sub": ["sub"],
+      "mul": ["mul"],
+      "div": ["div"],
+      "mod": ["mod"],
+      "store": ["store"],
+      "retrieve": ["load"],
+      "label": ["label <label>"],
+      "call": ["call <label>"],
+      "jmp": ["jump <label>"],
+      "jz": ["jnil <label>"],
+      "jn": ["jneg <label>"],
+      "ret": ["ret"],
+      "end": ["halt"],
+      "printc": ["putchar"],
+      "printi": ["putint"],
+      "readc": ["getchar"],
+      "readi": ["getint"]
+    },
+    "usage": ["wsa interpreter"],
+    "extension": "txt"
+  },
+  "commands": [
+    {
+      "type": "wsa interpreter",
+      "bin": "interpreter.py",
+      "dependencies": ["Python 3"],
+      "usage": "python3 $0 <file>",
+      "notes": "Directly executes wsa files, starting at the `main` label. Files must not have any blank or trailing lines"
+    }
+  ]
+}

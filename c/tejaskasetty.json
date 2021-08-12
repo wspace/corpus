@@ -1,0 +1,48 @@
+{
+  "id": "c/tejaskasetty",
+  "name": "Whitespace Esolang Compiler",
+  "authors": ["Sushrith Arkal", "Tejas Kasetty", "Suhas Sumukh"],
+  "license": "none",
+  "languages": ["C", "Yacc", "Lex"],
+  "tags": ["disassembler", "parser"],
+  "date": "2017-03-21 12:42:53 +0530",
+  "spec_version": "0.2",
+  "source": ["https://gitlab.com/tejaskasetty/ws-compiler"],
+  "assembly": {
+    "mnemonics": {
+      "push": ["push <number>"],
+      "dup": ["dup"],
+      "swap": ["swap"],
+      "drop": ["pop"],
+      "add": ["add"],
+      "sub": ["sub"],
+      "mul": ["mul"],
+      "div": ["div"],
+      "mod": ["mod"],
+      "store": ["store"],
+      "retrieve": ["retrieve"],
+      "label": ["L<number>:"],
+      "call": ["call F<number>"],
+      "jmp": ["goto L<number>"],
+      "jz": ["gotoiz L<number>"],
+      "jn": ["gotoin L<number>"],
+      "ret": ["return"],
+      "end": ["end"],
+      "printc": ["printchar"],
+      "printi": ["printnum"],
+      "readc": ["readchar"],
+      "readi": ["readnum"]
+    },
+    "usage": ["disassembler"]
+  },
+  "commands": [
+    {
+      "type": "disassembler",
+      "bin": "flex-bison/262_267_256/ws",
+      "dependencies": ["make", "Flex", "Bison"],
+      "build": "make",
+      "usage": "$0 < <file>",
+      "input": "stdin"
+    }
+  ]
+}

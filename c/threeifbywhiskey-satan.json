@@ -1,0 +1,22 @@
+{
+  "id": "c/threeifbywhiskey-satan",
+  "name": "SaTaN",
+  "authors": ["Dorien Snake"],
+  "license": "none",
+  "languages": ["C"],
+  "tags": ["interpreter"],
+  "date": "2014-03-03 16:03:49 -0500",
+  "spec_version": "0.3",
+  "source": ["https://github.com/threeifbywhiskey/satan"],
+  "bounds": {
+    "precision": "C int",
+    "stack_cap": "unbounded",
+    "call_stack_cap": "unbounded",
+    "heap_min": "unbounded",
+    "heap_max": "unbounded",
+    "heap_cap": "unbounded",
+    "label_cap": "unbounded",
+    "instruction_cap": "unbounded"
+  },
+  "commands": [{ "type": "interpreter", "bin": "satan", "build": "make", "usage": "$0 <file>" }]
+}

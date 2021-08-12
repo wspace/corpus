@@ -1,0 +1,50 @@
+{
+  "id": "r/bmazoure",
+  "name": "Whitespace",
+  "authors": ["Bogdan Mazoure"],
+  "license": "none",
+  "languages": ["R"],
+  "tags": ["interpreter", "grammar DFA"],
+  "date": "2016-07-30 12:44:29 -0400",
+  "spec_version": "0.2",
+  "source": ["https://github.com/bmazoure/whitespace"],
+  "assembly": {
+    "mnemonics": {
+      "push": ["<number>"],
+      "dup": ["dup"],
+      "swap": ["swap"],
+      "drop": ["del"],
+      "add": ["+"],
+      "sub": ["-"],
+      "mul": ["*"],
+      "div": ["/"],
+      "mod": ["%"],
+      "store": ["store"],
+      "retrieve": ["retrieve"],
+      "label": ["mark <label>"],
+      "call": ["call <label>"],
+      "jmp": ["jp <label>"],
+      "jz": ["jz <label>"],
+      "jn": ["jn <label>"],
+      "ret": ["return"],
+      "end": ["end"],
+      "printc": ["printc"],
+      "printi": ["printn"],
+      "readc": ["getc"],
+      "readi": ["getn"]
+    },
+    "usage": ["internal"]
+  },
+  "commands": [
+    {
+      "type": "interpreter",
+      "bin": "R/whitespace.R",
+      "dependencies": ["R"],
+      "install_dependencies": [
+        "Rscript -e 'install.packages(c(\"compositions\", \"readr\"), repos=\"http://cran.us.r-project.org\")'"
+      ],
+      "usage": "Rscript -e 'source(\"R/whitespace.R\"); library(readr); compile(parse(dfa(read_file(\"<file>\"))))'"
+    }
+  ],
+  "notes": "Comments are not allowed. <number> is a binary string with optional `-` sign. <label> is a binary string."
+}

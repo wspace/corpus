@@ -1,0 +1,74 @@
+{
+  "id": "whitespace/keen-whitelie",
+  "name": "Whitelie",
+  "description": "Self-hosted Whitespace compiler for 64-bit Linux",
+  "authors": ["κeen"],
+  "license": "GPL-2.0-or-later",
+  "languages": ["Whitespace", "Ruby"],
+  "tags": ["compiler", "assembler", "programs"],
+  "date": "2020-03-31 23:46:45 +0900",
+  "spec_version": "0.3",
+  "source": [
+    "https://github.com/wspace/keen-whitelie-whitespace",
+    "https://github.com/KeenS/whitelie",
+    "https://gist.github.com/KeenS/6081b0c802a4e575ddbacb1930680870"
+  ],
+  "whitespace": { "extension": "ws" },
+  "assembly": {
+    "mnemonics": {
+      "push": ["Stack push"],
+      "dup": ["Stack dup"],
+      "copy": ["Stack copy"],
+      "swap": ["Stack swap"],
+      "drop": ["Stack discard"],
+      "slide": ["Stack slide"],
+      "add": ["Arith add"],
+      "sub": ["Arith sub"],
+      "mul": ["Arith mul"],
+      "div": ["Arith div"],
+      "mod": ["Arith mod"],
+      "store": ["Heap store"],
+      "retrieve": ["Heap retrieve"],
+      "label": ["Flow label"],
+      "call": ["Flow call"],
+      "jmp": ["Flow jump"],
+      "jz": ["Flow jz"],
+      "jn": ["Flow jneg"],
+      "ret": ["Flow return"],
+      "end": ["Flow end"],
+      "printc": ["IO outchar"],
+      "printi": ["IO outnumber"],
+      "readc": ["IO readchar"],
+      "readi": ["IO readnumber"]
+    },
+    "case_sensitive_instructions": true,
+    "line_comments": ["#"],
+    "usage": ["assembler", "programs"],
+    "extension": "wsa"
+  },
+  "programs": [
+    {
+      "path": "whitelie.wsa",
+      "compiled": "whitelie.ws",
+      "inputs": ["whitelie.ws"],
+      "outputs": ["whitelie"],
+      "generate": "ruby asm.rb whitelie.wsa > whitelie.ws"
+    }
+  ],
+  "commands": [
+    {
+      "type": "compiler",
+      "bin": "whitelie",
+      "usage": "$0 < <file>",
+      "notes": "Only runs on 64-bit Linux"
+    },
+    {
+      "type": "assembler",
+      "bin": "asm.rb",
+      "dependencies": ["Ruby"],
+      "usage": "ruby $0 <file>",
+      "input": "<file>",
+      "output": "stdout"
+    }
+  ]
+}

@@ -1,0 +1,52 @@
+{
+  "id": "python/bornlex",
+  "name": "Whitespace-interpreter",
+  "authors": ["Bornlex"],
+  "license": "MIT",
+  "languages": ["Python"],
+  "tags": ["interpreter", "programs"],
+  "date": "2017-08-09 20:44:04 +0100",
+  "spec_version": "0.3",
+  "source": ["https://github.com/Bornlex/Whitespace-interpreter"],
+  "whitespace": { "extension": "ws" },
+  "assembly": {
+    "mnemonics": {
+      "push": ["push"],
+      "dup": ["dup"],
+      "copy": ["copy"],
+      "swap": ["swap"],
+      "drop": ["pop"],
+      "slide": ["slide"],
+      "add": ["add"],
+      "sub": ["sub"],
+      "mul": ["mul"],
+      "div": ["div"],
+      "mod": ["mod"],
+      "store": ["store"],
+      "retrieve": ["retri"],
+      "label": ["label"],
+      "call": ["call"],
+      "jmp": ["jmp"],
+      "jz": ["jmpz"],
+      "jn": ["jmpneg"],
+      "ret": ["ret"],
+      "end": ["end"],
+      "printc": ["outc"],
+      "printi": ["outi"],
+      "readc": ["inc"],
+      "readi": ["ini"]
+    },
+    "usage": ["enum", "wil files"],
+    "extension": "wil"
+  },
+  "mappings": [{ "space": "S", "tab": "T", "lf": "L", "extension": "txt" }],
+  "commands": [
+    {
+      "type": "interpreter",
+      "bin": "main.py",
+      "dependencies": ["Python 3"],
+      "usage": "python3 $0 <file>",
+      "notes": "Prints instructions before executing"
+    }
+  ]
+}

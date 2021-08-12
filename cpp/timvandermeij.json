@@ -1,0 +1,54 @@
+{
+  "id": "cpp/timvandermeij",
+  "name": "whitespace-interpreter",
+  "authors": ["Tim van der Meij", "Willem Obbens", "Simon Klaver"],
+  "license": "none",
+  "languages": ["C++"],
+  "tags": ["interpreter", "assembler", "disassembler", "mapping", "programs"],
+  "date": "2013-02-06 06:24:15 -0800",
+  "spec_version": "0.3",
+  "source": [
+    "https://github.com/wspace/timvandermeij-cpp",
+    "https://github.com/timvandermeij/whitespace-interpreter"
+  ],
+  "bounds": { "precision": "fixed", "heap_min": 0 },
+  "assembly": {
+    "mnemonics": {
+      "push": ["PUSH"],
+      "dup": ["DUP"],
+      "copy": ["COPY"],
+      "swap": ["SWAP"],
+      "drop": ["DISCARD"],
+      "slide": ["SLIDE"],
+      "add": ["ADD"],
+      "sub": ["SUB"],
+      "mul": ["MUL"],
+      "div": ["DIV"],
+      "mod": ["MOD"],
+      "store": ["STORE"],
+      "retrieve": ["RETRIEVE"],
+      "label": ["MARK"],
+      "call": ["CALL"],
+      "jmp": ["JUMP"],
+      "jz": ["JUMPZERO"],
+      "jn": ["JUMPNEG"],
+      "ret": ["ENDSUB"],
+      "end": ["ENDPROG"],
+      "printc": ["WRITEC"],
+      "printi": ["WRITEN"],
+      "readc": ["READC"],
+      "readi": ["READN"]
+    },
+    "case_sensitive_instructions": true
+  },
+  "mappings": [{ "space": "S ", "tab": "T ", "lf": "LF\n", "spaces_between": false }],
+  "commands": [
+    {
+      "type": "interpreter",
+      "bin": "whitespace",
+      "build": "make",
+      "usage": "$0",
+      "input": "hello_worldvanwiki.ws"
+    }
+  ]
+}

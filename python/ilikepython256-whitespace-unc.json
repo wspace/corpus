@@ -1,0 +1,56 @@
+{
+  "id": "python/ilikepython256-whitespace-unc",
+  "name": "Whitespace UnC",
+  "authors": ["Python Whiz 256"],
+  "license": "GPL-3.0-or-later",
+  "languages": ["Python"],
+  "tags": ["assembler", "web client", "programs"],
+  "date": "2019-09-24 10:11:31 -0600",
+  "spec_version": "0.3",
+  "source": ["https://github.com/ILikePython256/Whitespace_UnC"],
+  "assembly": {
+    "mnemonics": {
+      "push": ["MOD.PUSH"],
+      "dup": ["MOD.DUPE"],
+      "copy": ["MOD.COPY"],
+      "swap": ["MOD.SWAP"],
+      "drop": ["MOD.POP"],
+      "slide": ["MOD.SLDE"],
+      "add": ["MATH.ADD"],
+      "sub": ["MATH.SUB"],
+      "mul": ["MATH.MULT"],
+      "div": ["MATH.DIV"],
+      "mod": ["MATH.MOD"],
+      "store": ["HEAP.STOR"],
+      "retrieve": ["HEAP.RET"],
+      "label": ["FLOW.LABL"],
+      "call": ["FLOW.SUB"],
+      "jmp": ["FLOW.JUMP"],
+      "jz": ["FLOW.JMPZ"],
+      "jn": ["FLOW.JMPN"],
+      "ret": ["FLOW.RET"],
+      "end": ["FLOW.HALT"],
+      "printc": ["IO.OUT"],
+      "printi": ["IO.NOUT"],
+      "readc": ["IO.IN"],
+      "readi": ["IO.NIN"]
+    },
+    "case_sensitive_instructions": false
+  },
+  "commands": [
+    {
+      "type": "assembler",
+      "bin": "WhitespaceCompiler.py",
+      "dependencies": ["Python 3"],
+      "usage": "python3 $0 [-h | --help | --man | --docs] <file>",
+      "output": "stdout",
+      "options": [
+        { "short": "h", "long": "help", "desc": "Print assembly mnemonics" },
+        { "long": "man", "desc": "Print assembly mnemonics" },
+        { "long": "docs", "desc": "Print assembly mnemonics" }
+      ],
+      "option_parse": "manual"
+    }
+  ],
+  "notes": "Web client and test programs are on web branch"
+}
