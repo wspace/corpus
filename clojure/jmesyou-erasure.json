@@ -23,7 +23,7 @@
         },
         { "short": "h", "long": "help" }
       ],
-      "option_parse": "clojure.tools.cli"
+      "option_parse": "Clojure clojure.tools.cli"
     }
   ]
 }

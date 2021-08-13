@@ -12,5 +12,6 @@
     "https://slashdot.org/story/03/04/01/0332202/new-whitespace-only-programming-language"
   ],
   "bounds": { "precision": "arbitrary" },
+  "behavior": { "eof": "error" },
   "notes": "Idea from late 2002"
 }

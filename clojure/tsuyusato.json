@@ -24,7 +24,7 @@
         { "short": "s", "long": "sexp", "desc": "compile to Clojure code and show" },
         { "long": "time", "desc": "show executing time" }
       ],
-      "option_parse": "clojure.tools.cli"
+      "option_parse": "Clojure clojure.tools.cli"
     }
   ]
 }

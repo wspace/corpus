@@ -1,0 +1,322 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Project",
+  "description": "Documentation of a Whitespace-related project",
+  "type": "object",
+  "$defs": {
+    "id": {
+      "type": "string",
+      "pattern": "^[a-z0-9]+(-[a-z0-9]+)*/[a-z0-9]+([-.][a-z0-9]+)*$",
+      "description": "Unique project identifier and submodule path in the form of {language}/{author}-{project} or {language}/{author}"
+    },
+    "spec_version": { "type": "string", "enum": ["0.1", "0.2", "0.3", "unknown", "-"] },
+    "instruction": {
+      "type": "string",
+      "enum": [
+        "push",
+        "dup",
+        "copy",
+        "swap",
+        "drop",
+        "slide",
+        "add",
+        "sub",
+        "mul",
+        "div",
+        "mod",
+        "store",
+        "retrieve",
+        "label",
+        "call",
+        "jmp",
+        "jz",
+        "jn",
+        "ret",
+        "end",
+        "printc",
+        "printi",
+        "readc",
+        "readi",
+        "shuffle",
+        "dumpstack",
+        "dumpheap",
+        "dumptrace"
+      ]
+    },
+    "integer_type": {
+      "type": "string",
+      "enum": ["int64", "int32", "uint64", "uint32", "float64", "float32", "C int", "Go int", "Go uint"]
+    },
+    "precision": {
+      "anyOf": [{ "type": "string", "enum": ["arbitrary", "fixed"] }, { "$ref": "#/$defs/integer_type" }]
+    },
+    "cap": {
+      "oneOf": [{ "type": "integer", "minimum": 0 }, { "const": "unbounded" }, { "$ref": "#/$defs/integer_type" }]
+    },
+    "bound": { "oneOf": [{ "type": "integer" }, { "const": "unbounded" }, { "$ref": "#/$defs/integer_type" }] },
+    "line_comment": { "type": "string", "examples": ["#", ";", "//", "--"] },
+    "indentation": { "type": "string", "pattern": "^( *|\\t*)$", "examples": ["  ", "    ", "        ", "\t", ""] },
+    "command_option": {
+      "type": "object",
+      "properties": {
+        "short": { "anyOf": [{ "type": "string" }, { "type": "array", "items": { "type": "string" } }] },
+        "long": { "type": "string" },
+        "bare": { "type": "string" },
+        "arg": { "type": "string" },
+        "arg_required": { "type": "boolean" },
+        "type": { "type": "string" },
+        "default": { "anyOf": [{ "type": "string" }, { "type": "number" }, { "type": "boolean" }] },
+        "min": { "type": "number" },
+        "desc": { "type": "string" },
+        "values": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": { "values": { "type": "array", "items": { "type": "string" } }, "desc": { "type": "string" } }
+          }
+        }
+      },
+      "additionalProperties": false
+    }
+  },
+  "properties": {
+    "id": { "$ref": "#/$defs/id" },
+    "name": { "type": "string", "description": "The name of the project" },
+    "description": { "type": "string", "description": "Description of the project" },
+    "authors": {
+      "type": "array",
+      "items": { "type": "string" },
+      "minItems": 1,
+      "uniqueItems": true,
+      "description": "Project authors"
+    },
+    "license": {
+      "type": "string",
+      "description": "Project license ID from the SPDX License List (https://spdx.org/licenses/)"
+    },
+    "languages": { "type": "array", "items": { "type": "string" }, "minItems": 1, "uniqueItems": true },
+    "tags": { "type": "array", "items": { "type": "string" }, "minItems": 1, "uniqueItems": true },
+    "date": { "type": "string", "pattern": "^\\d{4}-\\d{2}-\\d{2}( \\d{2}:\\d{2}(:\\d{2})?( [+-]\\d{4})?)?$" },
+    "spec_version": { "$ref": "#/$defs/spec_version" },
+    "source": {
+      "type": "array",
+      "items": { "type": "string", "format": "uri" },
+      "prefixItems": [
+        {
+          "type": "string",
+          "format": "uri",
+          "pattern": "^https://((gist\\.)?github\\.com|gitlab\\.com|bitbucket\\.org)/[^/]+/[^/]+$|^https://sourceforge\\.net/projects/([^/]+)/$"
+        }
+      ],
+      "minItems": 1,
+      "uniqueItems": true
+    },
+    "package": {
+      "type": "object",
+      "properties": {
+        "name": { "type": "string" },
+        "manager": { "type": "string", "enum": ["Hackage", "NuGet", "PyPI", "RubyGems"] },
+        "url": { "type": "string", "format": "uri" }
+      },
+      "required": ["name", "manager", "url"],
+      "additionalProperties": false
+    },
+    "relations": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "type": { "type": "string", "enum": ["fork", "library", "binary"] },
+          "id": { "$ref": "#/$defs/id" }
+        },
+        "required": ["type", "id"],
+        "additionalProperties": false
+      }
+    },
+    "bounds": {
+      "type": "object",
+      "properties": {
+        "precision": { "$ref": "#/$defs/precision" },
+        "arg_precision": { "$ref": "#/$defs/precision" },
+        "label_precision": { "$ref": "#/$defs/precision" },
+        "stack_cap": { "$ref": "#/$defs/cap" },
+        "call_stack_cap": { "$ref": "#/$defs/cap" },
+        "heap_min": { "$ref": "#/$defs/bound" },
+        "heap_max": { "$ref": "#/$defs/bound" },
+        "heap_cap": { "$ref": "#/$defs/cap" },
+        "label_cap": { "$ref": "#/$defs/cap" },
+        "instruction_cap": { "$ref": "#/$defs/cap" }
+      },
+      "additionalProperties": false
+    },
+    "behavior": {
+      "type": "object",
+      "properties": {
+        "buffered_output": { "type": "boolean" },
+        "eof": { "oneOf": [{ "type": "integer", "examples": [0, -1] }, { "const": "error" }] }
+      },
+      "additionalProperties": false
+    },
+    "whitespace": {
+      "type": "object",
+      "properties": {
+        "unimplemented": { "type": "array", "items": { "$ref": "#/$defs/instruction" }, "uniqueItems": true },
+        "nonstandard": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "name": { "type": "string" },
+              "aliases": { "type": "array", "items": { "type": "string" } },
+              "seq": { "type": "string", "pattern": "^[STL]+$" },
+              "args": { "type": "array", "items": { "type": "string" } },
+              "desc": { "type": "string" }
+            },
+            "additionalProperties": false
+          }
+        },
+        "extension": { "type": "string", "examples": ["ws"] }
+      },
+      "additionalProperties": false
+    },
+    "assembly": {
+      "type": "object",
+      "properties": {
+        "mnemonics": {
+          "type": "object",
+          "propertyNames": { "$ref": "#/$defs/instruction" },
+          "patternProperties": { "": { "type": "array", "items": { "type": "string" } } }
+        },
+        "macros": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": { "name": { "type": "string" }, "replace": { "type": "string" }, "notes": { "type": "string" } },
+            "require": ["name", "replace"],
+            "additionalProperties": false
+          }
+        },
+        "patterns": {
+          "type": "object",
+          "propertyNames": { "examples": ["number", "label"] },
+          "patternProperties": { "": { "type": "string" } }
+        },
+        "case_sensitive_instructions": { "type": "boolean" },
+        "line_comments": { "type": "array", "items": { "$ref": "#/$defs/line_comment" } },
+        "block_comments": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": { "start": { "type": "string" }, "end": { "type": "string" }, "nested": { "type": "boolean" } },
+            "required": ["start", "end", "nested"],
+            "additionalProperties": false,
+            "examples": [{ "start": "/*", "end": "*/", "nested": false }, { "start": "{-", "end": "-}", "nested": true }]
+          }
+        },
+        "indentation": { "$ref": "#/$defs/indentation" },
+        "label_indentation": { "$ref": "#/$defs/indentation" },
+        "binary_numbers": { "type": "boolean" },
+        "usage": {
+          "type": "array",
+          "items": { "type": "string", "examples": ["assembler", "disassembler", "programs", "debug", "enum"] }
+        },
+        "extension": { "type": "string", "examples": ["wsa"] }
+      },
+      "additionalProperties": false
+    },
+    "mappings": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "space": { "type": "string", "examples": ["S", "A", "space"] },
+          "tab": { "type": "string", "examples": ["T", "B", "tab"] },
+          "lf": { "type": "string", "examples": ["L", "N", "C", "lf", "\n"] },
+          "spaces_between": { "type": "boolean" },
+          "line_comment": { "$ref": "#/$defs/line_comment" },
+          "before_stl": { "type": "boolean" },
+          "ignore_case": { "type": "boolean" },
+          "extension": { "type": "string" }
+        },
+        "required": ["space", "tab", "lf"],
+        "additionalProperties": false
+      }
+    },
+    "programs": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "path": { "type": "string" },
+          "compiled": { "type": "string" },
+          "inputs": { "type": "array", "items": { "type": "string" } },
+          "outputs": { "type": "array", "items": { "type": "string" } },
+          "polyglot": { "type": "array", "items": { "type": "string" } },
+          "spec_version": { "$ref": "#/$defs/spec_version" },
+          "generate": { "type": "string" },
+          "desc": { "type": "string" }
+        },
+        "additionalProperties": false
+      }
+    },
+    "commands": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "type": { "type": "string" },
+          "bin": { "type": "string" },
+          "dependencies": { "type": "array", "items": { "type": "string" } },
+          "install_dependencies": { "type": "array", "items": { "type": "string" } },
+          "build": { "type": "string" },
+          "build_errors": { "type": "string" },
+          "usage": { "type": "string" },
+          "run_errors": { "type": "string" },
+          "input": { "type": "string" },
+          "output": { "type": "string" },
+          "options": { "type": "array", "items": { "$ref": "#/$defs/command_option" } },
+          "option_parse": {
+            "type": "string",
+            "examples": [
+              "manual",
+              "Go flag",
+              "C getopt",
+              "Python argparse",
+              "Python optparse",
+              "Python click",
+              "Haskell System.Console.CmdArgs",
+              "OCaml Arg",
+              "Ruby optparse",
+              "Ruby Thor",
+              "Crystal option_parser",
+              "Java org.apache.commons.cli",
+              "Clojure clojure.tools.cli",
+              "Perl Getopt"
+            ]
+          },
+          "subcommands": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "name": { "type": "string" },
+                "desc": { "type": "string" },
+                "usage": { "type": "string" },
+                "options": { "type": "array", "item": { "$ref": "#/$defs/command_option" } },
+                "notes": { "type": "string" }
+              },
+              "required": ["name"],
+              "additionalProperties": false
+            }
+          },
+          "unimplemented": { "type": "array", "items": { "$ref": "#/$defs/instruction" } },
+          "notes": { "type": "string" }
+        },
+        "additionalProperties": false
+      }
+    },
+    "notes": { "type": "string" }
+  },
+  "required": ["id", "name", "authors", "license", "languages", "tags", "date", "spec_version", "source"],
+  "additionalProperties": false
+}

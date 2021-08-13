@@ -8,5 +8,5 @@
   "date": "2021-06-10 00:32:32 +0200",
   "spec_version": "0.3",
   "source": ["https://github.com/bensuperpc/docker-whitespace"],
-  "relations": [{ "type": "library", "id": "c/rdebath" }]
+  "relations": [{ "type": "binary", "id": "c/rdebath" }]
 }

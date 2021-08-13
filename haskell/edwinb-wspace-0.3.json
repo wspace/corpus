@@ -11,5 +11,6 @@
     "https://web.archive.org/web/20150717140342/http://compsoc.dur.ac.uk:80/whitespace/download.php",
     "https://web.archive.org/web/20141011193201/http://compsoc.dur.ac.uk/archives/whitespace/2004-May/000047.html"
   ],
-  "bounds": { "precision": "arbitrary" }
+  "bounds": { "precision": "arbitrary" },
+  "behavior": { "eof": "error" }
 }
