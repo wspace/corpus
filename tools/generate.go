@@ -1,13 +1,19 @@
 package tools
 
 import (
+	"bytes"
+	"encoding/json"
 	"fmt"
 	"net/url"
+	"path/filepath"
 	"regexp"
 	"sort"
 	"strings"
 	"time"
 	"unicode/utf8"
+
+	"github.com/andrewarchi/browser/jsonutil"
+	"golang.org/x/sys/execabs"
 )
 
 type Project struct {
@@ -204,6 +210,37 @@ const (
 	DumpHeap
 	DumpTrace
 )
+
+func ReadProjects() ([]*Project, error) {
+	var projects []*Project
+	projectGlob, err := filepath.Glob("*/*.json")
+	if err != nil {
+		return nil, err
+	}
+	for _, project := range projectGlob {
+		if strings.HasPrefix(project, "tools/") || project[0] == '.' {
+			continue
+		}
+		var p Project
+		if err := jsonutil.DecodeFile(project, &p); err != nil {
+			return projects, fmt.Errorf("%s: %w", project, err)
+		}
+		projects = append(projects, &p)
+	}
+	return projects, nil
+}
+
+func WriteProject(p *Project) error {
+	var b bytes.Buffer
+	e := json.NewEncoder(&b)
+	e.SetEscapeHTML(false)
+	if err := e.Encode(p); err != nil {
+		return err
+	}
+	cmd := execabs.Command("underscore", "print", "-o", p.ID+".json")
+	cmd.Stdin = &b
+	return cmd.Run()
+}
 
 func SortProjectsByTime(projects []*Project) {
 	sort.Slice(projects, func(i, j int) bool {

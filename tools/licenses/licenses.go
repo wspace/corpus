@@ -1,7 +1,6 @@
 package main
 
 import (
-	"encoding/json"
 	"fmt"
 	"net/http"
 	"os"
@@ -26,8 +25,8 @@ var ghRepo = regexp.MustCompile("^https://github.com/[^/]+/[^/]+$")
 var ghToken = os.Getenv("GITHUB_ACCESS_TOKEN")
 
 func main() {
-	var projects []*tools.Project
-	try(jsonutil.DecodeFile("projects.json", &projects))
+	projects, err := tools.ReadProjects()
+	try(err)
 	for _, p := range projects {
 		if p.License == "" {
 			if l, err := getLicense(p); err != nil {
@@ -38,11 +37,9 @@ func main() {
 			} else {
 				p.License = "not found"
 			}
+			tools.WriteProject(p)
 		}
 	}
-	e := json.NewEncoder(os.Stdout)
-	e.SetEscapeHTML(false)
-	try(e.Encode(projects))
 }
 
 func getLicense(p *tools.Project) (string, error) {

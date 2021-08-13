@@ -6,13 +6,12 @@ import (
 	"strings"
 	"text/template"
 
-	"github.com/andrewarchi/browser/jsonutil"
 	"github.com/wspace/corpus/tools"
 )
 
 func main() {
-	var projects []*tools.Project
-	try(jsonutil.DecodeFile("projects.json", &projects))
+	projects, err := tools.ReadProjects()
+	try(err)
 	tools.SortProjectsByTime(projects)
 	t, err := template.ParseFiles("README.md.tmpl")
 	try(err)

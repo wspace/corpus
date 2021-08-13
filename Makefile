@@ -1,30 +1,33 @@
-.PHONY: all
-all: format_projects licenses README.md assembly.md building.md tidy_submodules
+PROJECTS = $(wildcard */*.json)
 
-.PHONY: format_projects
-format_projects: projects.json tools/format_projects.sh
-	@echo 'Formatting projects.json'
+.PHONY: all
+all: licenses README.md assembly.md building.md tidy_submodules
+
+# TODO fix
+.PHONY: format
+format: projects.json tools/format_projects.sh
+	@echo 'Formatting projects'
 	@tools/format_projects.sh
 
 .PHONY: licenses
-licenses: projects.json tools/licenses/licenses.go
+licenses: $(PROJECTS) tools/licenses/licenses.go
 	@echo 'Getting licenses'
-	@go run tools/licenses/licenses.go | underscore print | tools/sponge projects.json
+	@go run tools/licenses/licenses.go
 
-README.md: projects.json README.md.tmpl tools/generate.go tools/generate/generate.go
+README.md: $(PROJECTS) README.md.tmpl tools/generate.go tools/generate/generate.go
 	@echo 'Generating README.md'
 	@go run tools/generate/generate.go
 
-assembly.md: projects.json tools/generate_assembly.jq
+assembly.md: $(PROJECTS) tools/generate_assembly.jq
 	@echo 'Generating assembly.md'
-	@jq -rf tools/generate_assembly.jq projects.json > assembly.md
+	@jq -rsf tools/generate_assembly.jq $(PROJECTS) > assembly.md
 
-building.md: projects.json tools/generate_building.jq
+building.md: $(PROJECTS) tools/generate_building.jq
 	@echo 'Generating building.md'
-	@jq -rf tools/generate_building.jq projects.json > building.md
+	@jq -rsf tools/generate_building.jq $(PROJECTS) > building.md
 
 .PHONY: tidy_submodules
-tidy_submodules: projects.json tools/submodules/submodules.go tools/format_gitmodules.sh
+tidy_submodules: $(PROJECTS) tools/submodules/submodules.go tools/format_gitmodules.sh
 	@echo 'Tidying Git submodules'
 	@go run tools/submodules/submodules.go
 	@tools/format_gitmodules.sh

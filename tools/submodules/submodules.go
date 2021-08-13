@@ -4,23 +4,18 @@ import (
 	"fmt"
 	"os"
 	"regexp"
-	"sort"
 
-	"github.com/andrewarchi/browser/jsonutil"
 	"github.com/wspace/corpus/tools"
 	"golang.org/x/sys/execabs"
 )
 
 func main() {
-	var projects []tools.Project
-	try(jsonutil.DecodeFile("projects.json", &projects))
-	sort.Slice(projects, func(i, j int) bool {
-		return projects[i].ID < projects[j].ID
-	})
+	projects, err := tools.ReadProjects()
+	try(err)
+	tools.SortProjectsByID(projects)
 
 	var badURLs []*tools.Project
-	for i := range projects {
-		p := &projects[i]
+	for _, p := range projects {
 		if p.ID == "" || len(p.Source) == 0 {
 			continue
 		}
@@ -53,7 +48,7 @@ var (
 	github      = regexp.MustCompile(`^https://(?:gist\.)?github\.com/[^/]+/[^/]+$`)
 	gitlab      = regexp.MustCompile(`^https://gitlab\.com/[^/]+/[^/]+$`)
 	bitbucket   = regexp.MustCompile(`^https://bitbucket\.org/[^/]+/[^/]+$`)
-	sourceforge = regexp.MustCompile(`^https://sourceforge\.net/projects/([^/]+)/`)
+	sourceforge = regexp.MustCompile(`^https://sourceforge\.net/projects/([^/]+)/$`)
 )
 
 func getGitURL(url string) string {
