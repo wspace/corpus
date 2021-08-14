@@ -502,6 +502,9 @@
 [submodule "scheme/niyarin"]
 	path = scheme/niyarin
 	url = https://github.com/niyarin/whitespace-scheme
+[submodule "textmate/andrewarchi-linguist"]
+	path = textmate/andrewarchi-linguist
+	url = https://github.com/wspace/wspace-linguist
 [submodule "textmate/veniversum"]
 	path = textmate/veniversum
 	url = https://github.com/veniversum/language-whitespace

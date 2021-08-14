@@ -211,13 +211,17 @@ const (
 	DumpTrace
 )
 
-func ReadProjects() ([]*Project, error) {
-	var projects []*Project
-	projectGlob, err := filepath.Glob("*/*.json")
+func ReadAllProjects() ([]*Project, error) {
+	paths, err := filepath.Glob("*/*.json")
 	if err != nil {
 		return nil, err
 	}
-	for _, project := range projectGlob {
+	return ReadProjects(paths)
+}
+
+func ReadProjects(paths []string) ([]*Project, error) {
+	var projects []*Project
+	for _, project := range paths {
 		if strings.HasPrefix(project, "tools/") || project[0] == '.' {
 			continue
 		}

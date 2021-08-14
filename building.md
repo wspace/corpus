@@ -167,6 +167,7 @@ Build and run errors are included.
 - python/meand/compile.py
 - python/mikecat/whitespace.py
 - python/mildsunrise/whitespace.py
+- ❌ python/musflood
 - ⚠️ python/nutcrack-whiteplanes/*unspecified*: No entrypoint
 - python/phlip-pywhitespace/main.py
 - python/prajwalanand/whitespace
@@ -198,6 +199,7 @@ Build and run errors are included.
   - whitespace
   - whitespace-asm
   - whitespace-disassem
+- ❌ rust/andrewarchi-yspace
 - rust/censoredusername-whitespace-rs/target/release/wsc: `cargo build --release`
 - rust/collidedscope-albus/target/release/albus: `cargo build --release`
 - ⚠️ rust/faultier-albino:

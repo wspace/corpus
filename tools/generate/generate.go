@@ -10,7 +10,7 @@ import (
 )
 
 func main() {
-	projects, err := tools.ReadProjects()
+	projects, err := tools.ReadAllProjects()
 	try(err)
 	tools.SortProjectsByTime(projects)
 	t, err := template.ParseFiles("README.md.tmpl")

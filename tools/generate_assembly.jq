@@ -34,6 +34,7 @@
 (
   [
     .[]
+    | select(.tags != null)
     | select(.tags | contains(["assembler"]) or contains(["disassembler"]))
     | select(.assembly.mnemonics == null)
     | "- " + (.id // "“\(.name)” by " + (.authors|join(", ")))

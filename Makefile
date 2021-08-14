@@ -1,7 +1,8 @@
-PROJECTS = $(wildcard */*.json)
+PROJECTS = $(filter-out tools/% .% _%, $(wildcard */*.json))
+SUBMODULES = $(PROJECTS:.json=)
 
 .PHONY: all
-all: licenses README.md assembly.md building.md tidy_submodules
+all: tidy_submodules licenses README.md assembly.md building.md
 
 # TODO fix
 .PHONY: format
@@ -12,7 +13,7 @@ format: projects.json tools/format_projects.sh
 .PHONY: licenses
 licenses: $(PROJECTS) tools/licenses/licenses.go
 	@echo 'Getting licenses'
-	@go run tools/licenses/licenses.go
+	@go run tools/licenses/licenses.go $(PROJECTS)
 
 README.md: $(PROJECTS) README.md.tmpl tools/generate.go tools/generate/generate.go
 	@echo 'Generating README.md'

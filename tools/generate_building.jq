@@ -18,7 +18,7 @@
     if .build_errors!=null then " \(.build_errors | escape)" else "" end +
     if .run_errors!=null then " \(.run_errors | escape)" else "" end;
 
-  map(.name = (.id // "“\(.name)” by " + (.authors|join(", ")))) |
+  map(.name = (.id // "“\(.name)” by " + (.authors|join(", ")?))) |
   sort_by(.name)[] |
   (.name | escape) as $name |
   .commands |
