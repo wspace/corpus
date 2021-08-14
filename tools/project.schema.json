@@ -115,7 +115,7 @@
       "type": "object",
       "properties": {
         "name": { "type": "string" },
-        "manager": { "type": "string", "enum": ["Hackage", "NuGet", "PyPI", "RubyGems"] },
+        "manager": { "type": "string", "enum": ["crates.io", "Hackage", "NuGet", "PyPI", "RubyGems"] },
         "url": { "type": "string", "format": "uri" }
       },
       "required": ["name", "manager", "url"],

@@ -37,6 +37,7 @@
       "readi": ["inum"]
     }
   },
+  "package": { "name": "whitespacers", "manager": "crates.io", "url": "https://crates.io/crates/whitespacers" },
   "commands": [
     {
       "type": "interpreter",

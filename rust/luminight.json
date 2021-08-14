@@ -8,6 +8,7 @@
   "date": "2020-08-04 15:04:18 +0200",
   "spec_version": "0.2",
   "source": ["https://github.com/Luminighty/rustws"],
+  "package": { "name": "rustws", "manager": "crates.io", "url": "https://crates.io/crates/rustws" },
   "mappings": [{ "space": "S", "tab": "T", "lf": "L", "spaces_between": false, "ignore_case": true }],
   "commands": [
     {
