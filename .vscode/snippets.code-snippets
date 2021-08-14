@@ -1,0 +1,20 @@
+{
+	"New project": {
+		"scope": "json,jsonc",
+		"prefix": "new",
+		"body": [
+			"{",
+			"  \"id\": \"$2\",",
+			"  \"name\": \"$3\",",
+			"  \"authors\": [\"$4\"],",
+			"  \"license\": \"\",",
+			"  \"languages\": [\"$5\"],",
+			"  \"tags\": [\"$6\"],",
+			"  \"date\": \"\",",
+			"  \"spec_version\": \"$7\",",
+			"  \"source\": [\"$1\"]",
+			"}",
+		],
+		"description": "Insert a new project in projects.json"
+	}
+}
