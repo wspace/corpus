@@ -1,0 +1,12 @@
+{
+  "id": "rust/andrewarchi-yspace",
+  "name": "yspace",
+  "authors": ["Andrew Archibald"],
+  "license": "MPL-2.0",
+  "languages": ["Rust"],
+  "tags": ["compiler", "programs"],
+  "date": "2021-05-07 04:53:38 -0700",
+  "spec_version": "0.3",
+  "source": ["https://github.com/andrewarchi/yspace"],
+  "whitespace": { "extension": "ws" }
+}

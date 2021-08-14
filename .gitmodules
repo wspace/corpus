@@ -457,6 +457,9 @@
 [submodule "ruby/wconrad"]
 	path = ruby/wconrad
 	url = https://github.com/wspace/wconrad-ruby
+[submodule "rust/andrewarchi-yspace"]
+	path = rust/andrewarchi-yspace
+	url = https://github.com/andrewarchi/yspace
 [submodule "rust/censoredusername-whitespace-rs"]
 	path = rust/censoredusername-whitespace-rs
 	url = https://github.com/CensoredUsername/whitespace-rs

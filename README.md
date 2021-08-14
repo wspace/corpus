@@ -12,6 +12,7 @@ language, including interpreters, compilers, and programs.
 | [whitesymex](python/umutoztunc-whitesymex)     | Umut Barış Öztunç | Python    | symbolic executor, programs | 2021-05-30 | 0.3 | [GitHub](https://github.com/umutoztunc/whitesymex), [whitesymex.readthedocs.io](https://whitesymex.readthedocs.io/) |
 | [Interpreter](python/ganeshsankaran)           | Ganesh Sankaran  | Python     | wsa interpreter, programs | 2021-05-29 | 0.2 | [GitHub](https://github.com/ganeshsankaran/interpreter) |
 | [wslib](whitespace/andrewarchi-wslib)          | Andrew Archibald | Whitespace | standard library, programs, assembler | 2021-05-24 | 0.3 | [GitHub](https://github.com/andrewarchi/wslib) |
+| [yspace](rust/andrewarchi-yspace)              | Andrew Archibald | Rust       | compiler, programs | 2021-05-07 | 0.3 | [GitHub](https://github.com/andrewarchi/yspace) |
 | [wsjq](jq/andrewarchi-wsjq)                    | Andrew Archibald | jq         | interpreter, debugger, disassembler | 2021-05-02 | 0.3 | [GitHub](https://github.com/andrewarchi/wsjq) |
 | [ws](python/ffanzhang)                         | ffanzhang        | Python     | interpreter  | 2021-03-07 | 0.2 | [GitHub](https://github.com/ffanzhang/ws) |
 | [Albus](rust/collidedscope-albus)              | Collided Scope   | Rust       | interpreter  | 2021-02-12 | 0.3 | [GitHub](https://github.com/collidedscope/albus) |
