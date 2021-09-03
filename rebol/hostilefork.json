@@ -41,7 +41,7 @@
         { "long": "strict", "desc": "Only allow `.ws`, `.wsa`, and `.wsw` formats" }
       ],
       "option_parse": "manual",
-      "notes": "File path is relative to whitespace.reb, not PWD"
+      "notes": "Implementation is using a pure usermode PARSE dialect prototype, slowness is to be expected."
     },
     {
       "type": "interpreter",
