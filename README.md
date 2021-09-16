@@ -1,6 +1,6 @@
 # The Whitespace Corpus
 
-The definitive collection of 197 projects for the Whitespace programming
+The definitive collection of 199 projects for the Whitespace programming
 language, including interpreters, compilers, and programs.
 
 ## Projects
@@ -76,6 +76,7 @@ language, including interpreters, compilers, and programs.
 | [whitespace-lang](javascript/loklaan-whitespace-lang) | Lochlan Bunn | JavaScript | interpreter | 2018-02-13 | 0.3 | [GitHub](https://github.com/loklaan/whitespace-lang) |
 | [whitespace.py](python/mildsunrise)            | Alba Mendez      | Python     | interpreter  | 2018-01-14 | 0.2 | [GitHub Gist](https://gist.github.com/mildsunrise/d948fe1334f36c9a0f6516e58271f936) |
 | [Whitespace](c/sandeep)                        | Sandeep Varma    | C, Yacc, Lex | interpreter, programs | 2017-11-11 | 0.3 | [GitHub](https://github.com/Sandeep023/Whitespace) |
+| [CodeWars Kata](python/musflood)               | Megan Flood      | Python     | interpreter  | 2017-10-21 | 0.3 | [GitHub](https://github.com/musflood/code-katas) |
 | [hello-worlds](whitespace/knightking-hacktoberfest-2017) | Jackie Chen | Whitespace | programs | 2017-10-12 | 0.2 | [GitHub](https://github.com/knightking100/hello-worlds) |
 | [HacktoberFest Starter Project](whitespace/alicewonderland-hacktoberfest-2017) | Chashmeet Singh | Whitespace | programs | 2017-10-10 | 0.2 | [GitHub](https://github.com/AliceWonderland/hacktoberfest) |
 | [Whitespace-interpreter](python/bornlex)       | Bornlex          | Python     | interpreter, programs | 2017-08-09 | 0.3 | [GitHub](https://github.com/Bornlex/Whitespace-interpreter) |
@@ -111,7 +112,7 @@ language, including interpreters, compilers, and programs.
 | [whitespace-compiler](python/meand)            | Adam Dinwoodie   | Python     | assembler    | 2016-04-13 | 0.2 | [GitHub](https://github.com/me-and/whitespace-compiler) |
 | [Whitespace-JS](javascript/susisu)             | Susisu           | JavaScript | interpreter  | 2016-04-12 | 0.3 | [GitHub](https://github.com/susisu/Whitespace-JS) |
 | [whitespace-ruby](ruby/alesiong)               | alesiong         | Ruby       | program builder, programs | 2016-03-05 | 0.3 | [GitHub](https://github.com/alesiong/whitespace-ruby) |
-| [Whitespace support in Atom](textmate/veniversum) | Qingzhuo      | TextMate   | syntax highlighting | 2016-02-20 | - | [GitHub](https://github.com/veniversum/language-whitespace) |
+| [Whitespace support in Atom](textmate/veniversum) | Qingzhuo      | TextMate   | syntax highlighting, mapping | 2016-02-20 | - | [GitHub](https://github.com/veniversum/language-whitespace) |
 | [whitespace-interpreter](javascript/uraza)     | Uraza            | JavaScript | interpreter  | 2016-02-08 | 0.2 | [GitHub](https://github.com/uraza/whitespace-interpreter) |
 | [Whitespace Interpreter](scala/patrickstephen) | Patrick Stephen  | Scala      | interpreter, programs | 2016-01-28 | 0.2 | [Bitbucket](https://bitbucket.org/StephenPatrick/whitespace-interpreter) |
 | [WHINT](cpp/abac-whint)                        | Adam Bac         | C++        | interpreter  | 2015-12-31 | 0.2 | [GitHub](https://github.com/abac00s/WHINT) |
@@ -230,12 +231,14 @@ language, including interpreters, compilers, and programs.
 
 | Name                                     | Author           | Polyglot | Date                      | Spec | Source |
 | ---------------------------------------- | ---------------- | -------- | ------------------------- | ---- | ------ |
+| "-rot" transform                         | Andrew Archibald | -        | 2021-09-16 20:09:03 +0200 | 0.2 | [Code Golf](https://codegolf.stackexchange.com/questions/233660/rot-transform/235444#235444) |
 | Print 0 to 100 without 1-9 characters    | aschepler        | -        | 2021-02-26 19:50:13 +0000 | 0.2 | [Code Golf](https://codegolf.stackexchange.com/questions/219576/print-0-to-100-without-1-9-characters/219869#219869) |
 | Am I divisible by double the sum of my digits? | Kevin Cruijssen | -   | 2021-01-19 08:07:24 +0000 | 0.3 | [Code Golf](https://codegolf.stackexchange.com/questions/129596/am-i-divisible-by-double-the-sum-of-my-digits/217735#217735) |
 | Follow a linked list                     | Kevin Cruijssen  | -        | 2020-12-11 15:28:24 +0000 | 0.2 | [Code Golf](https://codegolf.stackexchange.com/questions/216196/follow-a-linked-list/216208#216208) |
 | 55960.ws                                 | Kamila Szewczyk (Palaiologos) | Malbolge | 2019-08-30 10:16:06 +0000 | 0.2 | [Code Golf](https://codegolf.stackexchange.com/questions/55960/im-not-the-language-youre-looking-for/191063#191063), [GitHub](https://github.com/kspalaiologos/codegolf-submissions/blob/master/55960.ws) |
 | Determine your language's version        | Andrew Archibald | -        | 2019-08-28 07:54:17 +0000 | 0.2, 0.3 | [Code Golf](https://codegolf.stackexchange.com/questions/139243/determine-your-languages-version/190980#190980) |
 | The shortest code to invert bit-wise a binary string | Kevin Cruijssen | - | 2019-01-03 13:47:44 +0000 | 0.2 | [Code Golf](https://codegolf.stackexchange.com/questions/30361/the-shortest-code-to-invert-bit-wise-a-binary-string/178316#178316) |
+| Implementing a stack                     | Kevin Cruijssen  | -        | 2018-07-27 12:25:19 +0000 | 0.2 | [Code Golf](https://codegolf.stackexchange.com/questions/169343/implementing-a-stack/169353#169353) |
 | Print a 10 by 10 grid of asterisks       | Kevin Cruijssen  | -        | 2018-05-25 09:35:34 +0000 | 0.2 | [Code Golf](https://codegolf.stackexchange.com/questions/88653/print-a-10-by-10-grid-of-asterisks/165417#165417) |
 | All Your Base Are Belong To Us (Restricted) | Kevin Cruijssen | -      | 2018-04-06 09:10:53 +0000 | 0.3 | [Code Golf](https://codegolf.stackexchange.com/questions/19171/all-your-base-are-belong-to-us-restricted/161445#161445) |
 | 404 - Unique 404 page not found          | Jo King          | 54 languages | 2018-01-22 11:55:35 +0000 | 0.2 | [Code Golf](https://codegolf.stackexchange.com/questions/153717/404-unique-404-page-not-found/153724#153724), [Code Golf](https://codegolf.stackexchange.com/revisions/153724/16) |
@@ -293,7 +296,9 @@ See [CONTRIBUTING.md](./CONTRIBUTING.md).
   - MediaWiki
     - [Rosetta Code](https://rosettacode.org/wiki/Category:Whitespace)
     - [Wikipedia](https://en.wikipedia.org/wiki/Whitespace_(programming_language)) (English and other languages)
-    - [Esolang](https://esolangs.org/wiki/Whitespace) (Whitespace page and [others](https://esolangs.org/wiki/Deadfish#Whitespace))
+    - [Esolang](https://esolangs.org/wiki/Whitespace) (Whitespace page and
+      [others](https://esolangs.org/wiki/Deadfish#Whitespace),
+      [weekly dump](https://esolangs.org/wiki/Esolang:Wiki_dumps))
   - Custom
     - [Progopedia](http://progopedia.com/language/whitespace/)
 - Code challenges

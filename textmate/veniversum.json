@@ -4,8 +4,9 @@
   "authors": ["Qingzhuo"],
   "license": "MIT",
   "languages": ["TextMate"],
-  "tags": ["syntax highlighting"],
+  "tags": ["syntax highlighting", "mapping"],
   "date": "2016-02-20 16:31:58 +0000",
   "spec_version": "-",
-  "source": ["https://github.com/veniversum/language-whitespace"]
+  "source": ["https://github.com/veniversum/language-whitespace"],
+  "mappings": [{ "space": "s", "tab": "t", "lf": "¬" }]
 }

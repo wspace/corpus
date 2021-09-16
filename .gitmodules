@@ -397,6 +397,9 @@
 [submodule "python/mildsunrise"]
 	path = python/mildsunrise
 	url = https://gist.github.com/mildsunrise/d948fe1334f36c9a0f6516e58271f936
+[submodule "python/musflood"]
+	path = python/musflood
+	url = https://github.com/musflood/code-katas
 [submodule "python/nutcrack-whiteplanes"]
 	path = python/nutcrack-whiteplanes
 	url = https://github.com/wspace/nutcrack-whiteplanes-python
