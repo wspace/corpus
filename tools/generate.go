@@ -400,8 +400,8 @@ func (inst Instruction) String() string {
 }
 
 func RenderProjectTable(b *strings.Builder, projects []*Project) error {
-	padding := []int{46, 16, 10, 12, 10, 3, 0}
-	head := []string{"Name", "Authors", "Languages", "Tags", "Date", "Spec", "Source"}
+	padding := []int{50, 16, 10, 12, 10, 0}
+	head := []string{"Name", "Authors", "Languages", "Tags", "Date", "Source"}
 	renderRow(b, padding, head, false)
 	b.WriteByte('\n')
 	renderRow(b, padding, head, true)
@@ -419,7 +419,7 @@ func RenderProjectTable(b *strings.Builder, projects []*Project) error {
 func (p *Project) formatColumns() ([]string, error) {
 	name := p.Name
 	if p.ID != "" {
-		name = formatLink(p.Name, p.ID)
+		name = formatLink(p.Name, p.ID+".json")
 	}
 	date := p.Time().UTC().Format("2006-01-02")
 	links := make([]string, 0, len(p.Source))
@@ -436,7 +436,6 @@ func (p *Project) formatColumns() ([]string, error) {
 		strings.Join(p.Languages, ", "),
 		strings.Join(p.Tags, ", "),
 		date,
-		p.SpecVersion,
 		strings.Join(links, ", ")}, nil
 }
 
