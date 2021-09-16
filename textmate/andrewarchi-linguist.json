@@ -1,0 +1,11 @@
+{
+  "id": "textmate/andrewarchi-linguist",
+  "name": "Whitespace grammar for GitHub",
+  "authors": ["Andrew Archibald"],
+  "license": "MPL-2.0",
+  "languages": ["TextMate"],
+  "tags": ["grammar"],
+  "date": "2021-08-15 06:07:49 +0200",
+  "spec_version": "-",
+  "source": ["https://github.com/wspace/wspace-linguist"]
+}

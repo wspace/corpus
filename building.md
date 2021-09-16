@@ -220,6 +220,7 @@ Build and run errors are included.
 - ⚠️ scala/patrickstephen/whitespace.jar: `sbt package` Should set whitespace.jar as package instead of arget/scala-2.11/whitespace-interpreter\_2.11-1.0.jar A JNI error has occurred, please check your installation and try again
 - ❌ scheme/athos-white-scheme
 - ❌ scheme/niyarin
+- ❌ textmate/andrewarchi-linguist
 - ❌ textmate/veniversum
 - ⚠️ typescript/fy0u11/dist/Whitespace.js: `npm install && npm run build`
 - ❌ vim/rolf-ws-vim

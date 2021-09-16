@@ -1,12 +1,13 @@
 # The Whitespace Corpus
 
-The definitive collection of 199 projects for the Whitespace programming
+The definitive collection of 200 projects for the Whitespace programming
 language, including interpreters, compilers, and programs.
 
 ## Projects
 
 | Name                                           | Authors          | Languages  | Tags         | Date       | Spec | Source |
 | ---------------------------------------------- | ---------------- | ---------- | ------------ | ---------- | ---- | ------ |
+| [Whitespace grammar for GitHub](textmate/andrewarchi-linguist) | Andrew Archibald | TextMate | grammar | 2021-08-15 | - | [GitHub](https://github.com/wspace/wspace-linguist) |
 | [whitespace-compiler](python/prajwalanand)     | Prajwal Anand    | Python     | transpiler, mapping, programs | 2021-07-01 | 0.2 | [GitHub](https://github.com/prajwalanand/whitespace-compiler) |
 | [docker-whitespace](docker/bensuperpc)         | Bensuperpc       | Docker     | builder      | 2021-06-09 | 0.3 | [GitHub](https://github.com/bensuperpc/docker-whitespace) |
 | [whitesymex](python/umutoztunc-whitesymex)     | Umut Barış Öztunç | Python    | symbolic executor, programs | 2021-05-30 | 0.3 | [GitHub](https://github.com/umutoztunc/whitesymex), [whitesymex.readthedocs.io](https://whitesymex.readthedocs.io/) |
