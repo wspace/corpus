@@ -127,7 +127,7 @@ Build and run errors are included.
   - wsCompiler.py
   - wsInterpreter: `gcc -O3 -Wall -o wsInterpreter wsInterpreter.c`
 - ocaml/jgkaplan-wsc/main.byte: `make`
-- ❌ ocaml/matsud-c2ws
+- ocaml/matsud-c2ws/c2ws: `make`
 - perl/ephphatha-wsm2ws/wsm2ws.pl
 - perl/mkoelbl/whitespace.pl
 - ❌ php/dcode
