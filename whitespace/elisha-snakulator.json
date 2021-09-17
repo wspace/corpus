@@ -1,0 +1,13 @@
+{
+  "id": "whitespace/elisha-snakulator",
+  "name": "snakulator",
+  "authors": ["Elisha Hollander"],
+  "license": "none",
+  "languages": ["Whitespace"],
+  "tags": ["programs"],
+  "date": "2020-09-15 15:52:42 +0300",
+  "spec_version": "0.2",
+  "source": ["https://github.com/donno2048/snakulator", "https://donno2048.github.io/snakulator/"],
+  "relations": [{ "type": "fork", "id": "javascript/vii5ard-whitelips-ide" }],
+  "programs": [{ "path": "main.py", "polyglot": ["Python"], "spec_version": "0.2" }]
+}

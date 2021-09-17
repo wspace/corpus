@@ -1,0 +1,11 @@
+{
+  "id": "lua/carsonrueber",
+  "name": "WhitespaceInterpreter",
+  "authors": ["Carson Rueber"],
+  "license": "none",
+  "languages": ["Lua"],
+  "tags": ["interpreter", "programs"],
+  "date": "2021-08-28 21:41:44 -0700",
+  "spec_version": "0.3",
+  "source": ["https://github.com/CJ5518/WhitespaceInterpreter"]
+}

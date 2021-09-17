@@ -17,7 +17,7 @@ import (
 )
 
 type Project struct {
-	ID          string   `json:"id,omitempty"`
+	ID          string   `json:"id"`
 	Name        string   `json:"name"`
 	Description string   `json:"description,omitempty"`
 	Authors     []string `json:"authors"`
@@ -248,13 +248,14 @@ func WriteProject(p *Project) error {
 
 func SortProjectsByTime(projects []*Project) {
 	sort.Slice(projects, func(i, j int) bool {
-		ti, tj := projects[i].Time(), projects[j].Time()
-		return ti.After(tj) || (ti.Equal(tj) && projects[i].ID < projects[j].Name)
+		pi, pj := projects[i], projects[j]
+		ti, tj := pi.Time(), pj.Time()
+		return ti.After(tj) || (ti.Equal(tj) && pi.ID < pj.ID) || pj.ID == "haskell/edwinb-wspace-0.2"
 	})
 }
 
 func SortProjectsByID(projects []*Project) {
-	sort.Slice(projects, func(i, j int) bool { return projects[i].ID < projects[j].Name })
+	sort.Slice(projects, func(i, j int) bool { return projects[i].ID < projects[j].ID })
 }
 
 func (p *Project) Time() time.Time {

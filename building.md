@@ -82,6 +82,7 @@ Build and run errors are included.
 - ⚠️ haskell/helvm-helpa/helpa: `cabal build` -XMonadFailDesugaring is deprecated
 - ❌ haskell/helvm-wsa
 - ⚠️ haskell/jhmcstanton-marginal/*unspecified*: `stack build` `stack setup` fails with link error
+- ❌ haskell/matsubara
 - ⚠️ haskell/takatoh-hws/hws: `make` Needs changes for latest Haskell
 - ⚠️ idris/edwinb-ws-idr/wspace: `idris --build wspace.ipkg` Needs changes for latest Idris
 - java/abhijitsharma/target/whitespace-1.0.jar: `sed -i '' 's/>1.6</>1.7</' pom.xml && mvn package`
@@ -119,12 +120,14 @@ Build and run errors are included.
 - jq/andrewarchi-wsjq/wsjq
 - ⚠️ kotlin/ze-space/build/libs/space.jar: `./gradlew` Dependencies not packaged
 - lolcode/akers/whitespace.lol
+- ❌ lua/carsonrueber
 - ❌ lua/vyo-callisto
 - ⚠️ masm/jarsp-wsint/wsint: Requires Visual Studio
 - nasm/ryzheboka:
   - wsCompiler.py
   - wsInterpreter: `gcc -O3 -Wall -o wsInterpreter wsInterpreter.c`
 - ocaml/jgkaplan-wsc/main.byte: `make`
+- ❌ ocaml/matsud-c2ws
 - perl/ephphatha-wsm2ws/wsm2ws.pl
 - perl/mkoelbl/whitespace.pl
 - ❌ php/dcode
@@ -218,6 +221,7 @@ Build and run errors are included.
 - ❌ scala/dashlambda-eso
 - ❌ scala/ojha-whitespacing
 - ⚠️ scala/patrickstephen/whitespace.jar: `sbt package` Should set whitespace.jar as package instead of arget/scala-2.11/whitespace-interpreter\_2.11-1.0.jar A JNI error has occurred, please check your installation and try again
+- ❌ scala/sderosiaux
 - ❌ scheme/athos-white-scheme
 - ❌ scheme/niyarin
 - ❌ textmate/andrewarchi-linguist
@@ -232,6 +236,7 @@ Build and run errors are included.
 - ❌ whitespace/ccns-chicken
 - ❌ whitespace/chrisnguyen-steganographic-polyglots
 - ❌ whitespace/dcoy-hacktoberfest-2016
+- ❌ whitespace/elisha-snakulator
 - whitespace/keen-whitelie:
   - asm.rb
   - whitelie

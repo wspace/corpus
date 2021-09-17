@@ -1,0 +1,14 @@
+{
+  "id": "scala/sderosiaux",
+  "name": "Whitespace parser",
+  "authors": ["Stéphane Derosiaux"],
+  "license": "none",
+  "languages": ["Scala"],
+  "tags": ["parser"],
+  "date": "2018-06-14 15:19:00 +0200",
+  "spec_version": "0.2",
+  "source": [
+    "https://github.com/sderosiaux/whitespace-parser",
+    "https://www.sderosiaux.com/articles/2018/06/15/a-simple-way-to-write-parsers-using-the-state-monad/"
+  ]
+}

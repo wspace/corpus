@@ -178,6 +178,10 @@
 [submodule "haskell/jhmcstanton-marginal"]
 	path = haskell/jhmcstanton-marginal
 	url = https://github.com/jhmcstanton/marginal
+[submodule "haskell/matsubara"]
+	path = haskell/matsubara
+	url = https://github.com/matsubara0507/whitespace_has
+	branch = develop
 [submodule "haskell/takatoh-hws"]
 	path = haskell/takatoh-hws
 	url = https://github.com/takatoh/hws
@@ -283,6 +287,9 @@
 [submodule "lolcode/akers"]
 	path = lolcode/akers
 	url = https://github.com/wspace/akers-lolcode
+[submodule "lua/carsonrueber"]
+	path = lua/carsonrueber
+	url = https://github.com/CJ5518/WhitespaceInterpreter
 [submodule "lua/vyo-callisto"]
 	path = lua/vyo-callisto
 	url = https://github.com/vyo/callisto
@@ -295,6 +302,9 @@
 [submodule "ocaml/jgkaplan-wsc"]
 	path = ocaml/jgkaplan-wsc
 	url = https://github.com/jgkaplan/whitespaceTranspiler
+[submodule "ocaml/matsud-c2ws"]
+	path = ocaml/matsud-c2ws
+	url = https://github.com/matsud224/c2ws
 [submodule "perl/ephphatha-wsm2ws"]
 	path = perl/ephphatha-wsm2ws
 	url = https://github.com/ephphatha/wsm2ws
@@ -496,6 +506,9 @@
 [submodule "scala/patrickstephen"]
 	path = scala/patrickstephen
 	url = https://bitbucket.org/StephenPatrick/whitespace-interpreter
+[submodule "scala/sderosiaux"]
+	path = scala/sderosiaux
+	url = https://github.com/sderosiaux/whitespace-parser
 [submodule "scheme/athos-white-scheme"]
 	path = scheme/athos-white-scheme
 	url = https://github.com/athos/white-scheme
@@ -535,6 +548,9 @@
 [submodule "whitespace/dcoy-hacktoberfest-2016"]
 	path = whitespace/dcoy-hacktoberfest-2016
 	url = https://github.com/dcoy/hacktoberfest-dcoy
+[submodule "whitespace/elisha-snakulator"]
+	path = whitespace/elisha-snakulator
+	url = https://github.com/donno2048/snakulator
 [submodule "whitespace/keen-whitelie"]
 	path = whitespace/keen-whitelie
 	url = https://github.com/wspace/keen-whitelie-whitespace
