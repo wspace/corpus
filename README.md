@@ -315,13 +315,16 @@ See [CONTRIBUTING.md](./CONTRIBUTING.md).
   - NuGet - [whitespace](https://www.nuget.org/packages?q=whitespace)
   - PyPI - ["whitespace interpreter"](https://pypi.org/search/?q=%22whitespace+interpreter%22)
   - RubyGems - [whitespace](https://rubygems.org/search?query=whitespace)
+- Internet Archive
+  - [burghard.info](https://web.archive.org/web/20110911114338/http://www.burghard.info/Code/Whitespace/)
+  - [hapyli.webs.com](https://web.archive.org/web/20110212015726/http://hapyli.webs.com/)
+  - [yagni.com](https://web.archive.org/web/20120417161917/http://yagni.com/whitespace/index.html)
 
 ### TODO
 
-- Defunct
+- Internet Archive
   - [CompSoc][compsoc]
   - [Whitespace mailing list](https://web.archive.org/web/20141011193126/http://compsoc.dur.ac.uk/archives/whitespace/)
-  - [HaPyLi and Sudoku program](https://web.archive.org/web/20110212015726/http://hapyli.webs.com/)
 - Wikis
   - MediaWiki
     - [Rosetta Code](https://rosettacode.org/wiki/Category:Whitespace)
