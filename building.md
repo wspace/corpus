@@ -164,7 +164,7 @@ Build and run errors are included.
   - generate\_programs
   - src
 - python/katc/whitespace.py
-- python/lachlancourt/Interpreter.py
+- python/lachlancourt/transpiler.py
 - ⚠️ python/maximegoyette/whitespace.py: Needs Codewars entrypoint
 - python/mcolom/whitespace.py
 - python/meand/compile.py

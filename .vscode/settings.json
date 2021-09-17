@@ -3,6 +3,6 @@
   "files.associations": { "*.md.tmpl": "markdown" },
   "git.detectSubmodules": false,
   "git.ignoreSubmodules": true,
-  "json.schemas": [{ "fileMatch": ["*", "!.vscode/*"], "url": "/tools/project.schema.json" }],
+  "json.schemas": [{ "fileMatch": ["*", "!.vscode/*", "!dependencies.json"], "url": "/tools/project.schema.json" }],
   "[markdown]": { "editor.wordWrap": "off" }
 }
