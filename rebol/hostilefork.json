@@ -7,7 +7,11 @@
   "tags": ["interpreter", "mapping"],
   "date": "2009-10-08",
   "spec_version": "0.3",
-  "source": ["https://github.com/hostilefork/rebol-whitespacers", "https://github.com/hostilefork/whitespacers"],
+  "source": [
+    "https://github.com/hostilefork/rebol-whitespacers",
+    "https://github.com/hostilefork/whitespacers",
+    "https://forum.rebol.info/t/whitespace-interpreter-revisited/1482"
+  ],
   "mappings": [
     {
       "space": "space",

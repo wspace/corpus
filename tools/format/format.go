@@ -51,12 +51,14 @@ func main() {
 		}
 	}
 
-	if l, err := p.GetLicense(); err != nil {
-		fmt.Fprintln(os.Stderr, err)
-	} else if l != "" {
-		p.License = l
-	} else {
-		p.License = "not found"
+	if p.License == "" {
+		if l, err := p.GetLicense(); err != nil {
+			fmt.Fprintln(os.Stderr, err)
+		} else if l != "" {
+			p.License = l
+		} else {
+			p.License = "not found"
+		}
 	}
 
 	jsonBuf.Reset()
@@ -64,12 +66,13 @@ func main() {
 	e.SetEscapeHTML(false)
 	try(e.Encode(p))
 
-	f, err := os.Create(filename)
+	f, err := os.Create(filename + "~")
 	try(err)
 	out := execabs.Command("underscore", "print")
 	out.Stdin = &jsonBuf
 	out.Stdout = f
 	try(out.Run())
+	try(os.Rename(filename+"~", filename))
 }
 
 func try(err error) {
