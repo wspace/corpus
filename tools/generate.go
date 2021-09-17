@@ -250,7 +250,8 @@ func SortProjectsByTime(projects []*Project) {
 	sort.Slice(projects, func(i, j int) bool {
 		pi, pj := projects[i], projects[j]
 		ti, tj := pi.Time(), pj.Time()
-		return ti.After(tj) || (ti.Equal(tj) && pi.ID < pj.ID) || pj.ID == "haskell/edwinb-wspace-0.2"
+		return ((ti.After(tj) || (ti.Equal(tj) && pi.ID < pj.ID)) &&
+			pi.ID != "haskell/edwinb-wspace-0.2") || pj.ID == "haskell/edwinb-wspace-0.2"
 	})
 }
 

@@ -1,0 +1,12 @@
+{
+  "id": "whitespace/mildsunrise-brainfuck",
+  "name": "brainfuck.ws",
+  "authors": ["Alba Mendez"],
+  "license": "none",
+  "languages": ["Whitespace"],
+  "tags": ["programs"],
+  "date": "2018-01-25 20:56:42 +0100",
+  "spec_version": "0.2",
+  "source": ["https://gist.github.com/mildsunrise/60a516da83d448ba1363a7deac361515"],
+  "programs": [{ "path": "brainfuck.ws", "spec_version": "0.2" }]
+}

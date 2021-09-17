@@ -174,6 +174,7 @@ Build and run errors are included.
 - ⚠️ python/nutcrack-whiteplanes/*unspecified*: No entrypoint
 - python/phlip-pywhitespace/main.py
 - python/prajwalanand/whitespace
+- ❌ python/q2ven-whitespyce
 - ⚠️ python/qwhxm-baudelaire/backend/baudelaire-whitespace.py: Needs AWS Lambda entrypoint
 - ❌ python/res-trans32
 - python/rumaxwell/entrance.py
@@ -218,6 +219,7 @@ Build and run errors are included.
   - ⚠️ librustws.rlib: `cargo build --release`
   - wsconvert.py
 - rust/nareshganduri/target/release/whitespace-vm: `cargo build --release`
+- ❌ rust/zrneely
 - ❌ scala/dashlambda-eso
 - ❌ scala/ojha-whitespacing
 - ⚠️ scala/patrickstephen/whitespace.jar: `sbt package` Should set whitespace.jar as package instead of arget/scala-2.11/whitespace-interpreter\_2.11-1.0.jar A JNI error has occurred, please check your installation and try again
@@ -243,6 +245,7 @@ Build and run errors are included.
 - ❌ whitespace/kenrube-esopoly
 - ❌ whitespace/knightking-hacktoberfest-2017
 - ❌ whitespace/mikedonaghy-hello
+- ❌ whitespace/mildsunrise-brainfuck
 - ❌ whitespace/paradoxv5-program-java-rb
 - ❌ whitespace/pdewacht-tetris
 - ❌ whitespace/petek-hello

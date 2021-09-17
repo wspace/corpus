@@ -1,6 +1,6 @@
 # The Whitespace Corpus
 
-The definitive collection of 205 projects for the Whitespace programming
+The definitive collection of 208 projects for the Whitespace programming
 language, including interpreters, compilers, and programs.
 
 ## Projects
@@ -70,6 +70,7 @@ language, including interpreters, compilers, and programs.
 | [HelloWhitespace](whitespace/bbvch-hello.json)     | Heo Kyungyoung   | Whitespace | programs     | 2018-08-09 | [GitHub](https://github.com/bbvch13531/HelloWhitespace) |
 | [Whitespace parser](scala/sderosiaux.json)         | Stéphane Derosiaux | Scala    | parser       | 2018-06-14 | [GitHub](https://github.com/sderosiaux/whitespace-parser), [sderosiaux.com](https://www.sderosiaux.com/articles/2018/06/15/a-simple-way-to-write-parsers-using-the-state-monad/) |
 | [whitespace-interpreter](java/wrotycz.json)        | Kamil Węglarz    | Java       | interpreter  | 2018-05-21 | [GitHub](https://github.com/wrotycz/whitespace-interpreter) |
+| [whitespyce](python/q2ven-whitespyce.json)         | q2ven            | Python     | interpreter, text to Whitespace, programs | 2018-05-17 | [GitLab](https://gitlab.com/q2ven/whitespyce) |
 | [whitespace](ruby/nishiwakki.json)                 | nishiwakki       | Ruby       | interpreter  | 2018-05-16 | [GitHub](https://github.com/nishiwakki/whitespace) |
 | [space](kotlin/ze-space.json)                      | Zakaria Elkatani | Kotlin     | interpreter, disassembler | 2018-04-22 | [GitHub](https://github.com/ze/space) |
 | [Respace](cpp/andrewarchi-respace.json)            | Andrew Archibald | C++        | interpreter, disassembler, bit packer, Binary Whitespace, programs | 2018-04-16 | [GitHub](https://github.com/andrewarchi/respace) |
@@ -78,6 +79,7 @@ language, including interpreters, compilers, and programs.
 | [erasure](clojure/jmesyou-erasure.json)            | James You        | Clojure    | interpreter  | 2018-02-25 | [GitHub](https://github.com/wspace/jmesyou-erasure), [GitHub](https://github.com/jmesyou/erasure) |
 | [whitespace-interperter](python/rumaxwell.json)    | RuMaxwell        | Python     | interpreter, programs | 2018-02-21 | [GitHub](https://github.com/RuMaxwell/whitespace-interpreter) |
 | [whitespace-lang](javascript/loklaan-whitespace-lang.json) | Lochlan Bunn | JavaScript | interpreter | 2018-02-13 | [GitHub](https://github.com/loklaan/whitespace-lang) |
+| [brainfuck.ws](whitespace/mildsunrise-brainfuck.json) | Alba Mendez   | Whitespace | programs     | 2018-01-25 | [GitHub Gist](https://gist.github.com/mildsunrise/60a516da83d448ba1363a7deac361515) |
 | [whitespace.py](python/mildsunrise.json)           | Alba Mendez      | Python     | interpreter  | 2018-01-14 | [GitHub Gist](https://gist.github.com/mildsunrise/d948fe1334f36c9a0f6516e58271f936) |
 | [Whitespace](c/sandeep.json)                       | Sandeep Varma    | C, Yacc, Lex | interpreter, programs | 2017-11-11 | [GitHub](https://github.com/Sandeep023/Whitespace) |
 | [CodeWars Kata](python/musflood.json)              | Megan Flood      | Python     | interpreter  | 2017-10-21 | [GitHub](https://github.com/musflood/code-katas) |
@@ -121,6 +123,7 @@ language, including interpreters, compilers, and programs.
 | [whitespace-interpreter](javascript/uraza.json)    | Uraza            | JavaScript | interpreter  | 2016-02-08 | [GitHub](https://github.com/uraza/whitespace-interpreter) |
 | [Whitespace Interpreter](scala/patrickstephen.json) | Patrick Stephen | Scala      | interpreter, programs | 2016-01-28 | [Bitbucket](https://bitbucket.org/StephenPatrick/whitespace-interpreter) |
 | [WHINT](cpp/abac-whint.json)                       | Adam Bac         | C++        | interpreter  | 2015-12-31 | [GitHub](https://github.com/abac00s/WHINT) |
+| [Whitespace](rust/zrneely.json)                    | Zachary Neely    | Rust, x86-64 | JIT, programs | 2015-12-30 | [GitLab](https://gitlab.com/zrneely/whitespace) |
 | [Whitespacing](scala/ojha-whitespacing.json)       | Alexandra Ojha   | Scala      | interpreter  | 2015-12-11 | [GitHub](https://github.com/polyglotpiglet/Whitespacing) |
 | [whitespace](csharp/colchicus.json)                | Colchicus        | C#         | interpreter  | 2015-11-19 | [nuget.org](https://www.nuget.org/packages/whitespace/), [GitHub](https://github.com/colchicus/whitespace) |
 | [c2ws](ocaml/matsud-c2ws.json)                     | Daiki Matsunaga  | OCaml      | language compiler | 2015-11-17 | [GitHub](https://github.com/matsud224/c2ws) |
@@ -306,6 +309,12 @@ See [CONTRIBUTING.md](./CONTRIBUTING.md).
 - Stack Exchange
   - Stack Overflow - [#whitespace-language](https://stackoverflow.com/questions/tagged/whitespace-language),
       [#whitespace #esoteric-languages](https://stackoverflow.com/questions/tagged/whitespace+esoteric-languages)
+- Package managers
+  - crates.io - [whitespace interpreter](https://crates.io/search?q=whitespace%20interpreter&sort=new)
+  - Hackage - [whitespace](https://hackage.haskell.org/packages/search?terms=whitespace)
+  - NuGet - [whitespace](https://www.nuget.org/packages?q=whitespace)
+  - PyPI - ["whitespace interpreter"](https://pypi.org/search/?q=%22whitespace+interpreter%22)
+  - RubyGems - [whitespace](https://rubygems.org/search?query=whitespace)
 
 ### TODO
 

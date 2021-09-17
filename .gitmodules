@@ -419,6 +419,9 @@
 [submodule "python/prajwalanand"]
 	path = python/prajwalanand
 	url = https://github.com/prajwalanand/whitespace-compiler
+[submodule "python/q2ven-whitespyce"]
+	path = python/q2ven-whitespyce
+	url = https://gitlab.com/q2ven/whitespyce.git
 [submodule "python/qwhxm-baudelaire"]
 	path = python/qwhxm-baudelaire
 	url = https://github.com/qwhxm/baudelaire-whitespace
@@ -497,6 +500,9 @@
 [submodule "rust/nareshganduri"]
 	path = rust/nareshganduri
 	url = https://github.com/nareshganduri/WhitespaceVM
+[submodule "rust/zrneely"]
+	path = rust/zrneely
+	url = https://gitlab.com/zrneely/whitespace.git
 [submodule "scala/dashlambda-eso"]
 	path = scala/dashlambda-eso
 	url = https://github.com/Dash-Lambda/Eso
@@ -563,6 +569,9 @@
 [submodule "whitespace/mikedonaghy-hello"]
 	path = whitespace/mikedonaghy-hello
 	url = https://github.com/leachim6/hello-world
+[submodule "whitespace/mildsunrise-brainfuck"]
+	path = whitespace/mildsunrise-brainfuck
+	url = https://gist.github.com/mildsunrise/60a516da83d448ba1363a7deac361515
 [submodule "whitespace/paradoxv5-program-java-rb"]
 	path = whitespace/paradoxv5-program-java-rb
 	url = https://github.com/ParadoxV5/Program-java-rb-ws-txt

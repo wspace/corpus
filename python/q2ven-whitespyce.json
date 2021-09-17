@@ -1,0 +1,11 @@
+{
+  "id": "python/q2ven-whitespyce",
+  "name": "whitespyce",
+  "authors": ["q2ven"],
+  "license": "none",
+  "languages": ["Python"],
+  "tags": ["interpreter", "text to Whitespace", "programs"],
+  "date": "2018-05-17 23:12:05 +0900",
+  "spec_version": "0.2",
+  "source": ["https://gitlab.com/q2ven/whitespyce"]
+}

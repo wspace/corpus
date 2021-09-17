@@ -31,6 +31,7 @@ func main() {
 		submodule := strings.TrimSuffix(filename, ".json")
 		if stat, err := os.Stat(submodule); err == nil && stat.IsDir() {
 			var dateBuf bytes.Buffer
+			// Get the earliest commit date rather than the topologically-first commit
 			cmd := execabs.Command("git", "-C", submodule, "log", "--reverse", "--format=%ai|%ci")
 			cmd.Stdout = &dateBuf
 			if err := cmd.Run(); err != nil {
