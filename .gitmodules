@@ -22,6 +22,12 @@
 [submodule "c/sandeep"]
 	path = c/sandeep
 	url = https://github.com/Sandeep023/Whitespace
+[submodule "c/ssiegl-wsdebug"]
+	path = c/ssiegl-wsdebug
+	url = https://github.com/wspace/ssiegl-wsdebug
+[submodule "c/stellwag-wspacegen"]
+	path = c/stellwag-wspacegen
+	url = https://github.com/wspace/stellwag-wspacegen
 [submodule "c/strangepan-i-c-whitespace"]
 	path = c/strangepan-i-c-whitespace
 	url = https://github.com/StrangePan/I_C_Whitespace

@@ -1,0 +1,28 @@
+{
+  "id": "c/stellwag-wspacegen",
+  "name": "wspacegen",
+  "authors": ["Philippe Stellwag", "Stefan Siegl"],
+  "license": "GPL-2.0-or-later",
+  "languages": ["C"],
+  "tags": ["IDE", "debugger", "interpreter"],
+  "date": "2004-09-09 12:44:40 +0000",
+  "spec_version": "0.3",
+  "source": [
+    "https://github.com/wspace/stellwag-wspacegen",
+    "https://sourceforge.net/projects/wspacegen/",
+    "https://web.archive.org/web/20130501235830/http://wsdebug.berlios.de/wspacegen.php"
+  ],
+  "relations": [{ "type": "fork", "id": "c/ssiegl-wsdebug" }],
+  "mappings": [{ "space": "[SPACE]", "tab": "[TAB]", "lf": "[LF]", "spaces_between": false }],
+  "commands": [
+    {
+      "type": "IDE",
+      "bin": "wspacegen",
+      "build": "make",
+      "usage": "$0",
+      "notes": "Command line interactive program generator"
+    },
+    { "type": "debugger", "bin": "wsdbg", "build": "make", "usage": "$0 [--help] [<file>]" },
+    { "type": "interpreter", "bin": "wsi", "build": "make", "usage": "$0 [--help] <file>" }
+  ]
+}

@@ -1,6 +1,6 @@
 # The Whitespace Corpus
 
-The definitive collection of 208 projects for the Whitespace programming
+The definitive collection of 210 projects for the Whitespace programming
 language, including interpreters, compilers, and programs.
 
 ## Projects
@@ -207,8 +207,10 @@ language, including interpreters, compilers, and programs.
 | [tetris.ws](whitespace/pdewacht-tetris.json)       | Peter De Wachter, Andrew Archibald | Whitespace | programs | 2008-01-02 | [GitHub](https://github.com/wspace/pdewacht-tetris), [Mailing list (archive)](https://web.archive.org/web/20141011193149/http://compsoc.dur.ac.uk/archives/whitespace/2008-January/000067.html), [r/programming](https://www.reddit.com/r/programming/comments/9nw1e/most_unreadable_programming_language_ever/c0dkzzw/) |
 | [EsCo (Esoteric Combine)](cpp/esco.json)           | Zasenko Sergey, Matthias Boehm, Justin Mutter | C++ | interpreter | 2007-12-24 | [SourceForge](https://sourceforge.net/projects/esco/), [esco.sourceforge.net](http://esco.sourceforge.net/) |
 | [wspace](cpp/pavelshub.json)                       | Pavel Shub       | C++        | interpreter, debugger, assembler, disassembler, mapping | 2007-05-26 | [GitHub](https://github.com/wspace/pavelshub-cpp), [GitHub](https://github.com/pavel987/wspace), [Mailing list (archive)](https://web.archive.org/web/20141011193149/http://compsoc.dur.ac.uk/archives/whitespace/2008-April/000068.html), [pavelshub.com](https://pavelshub.com/blog/2010/10/wspace/) |
+| [wspacegen](c/stellwag-wspacegen.json)             | Philippe Stellwag, Stefan Siegl | C | IDE, debugger, interpreter | 2004-09-09 | [GitHub](https://github.com/wspace/stellwag-wspacegen), [SourceForge](https://sourceforge.net/projects/wspacegen/), [wsdebug.berlios.de (archive)](https://web.archive.org/web/20130501235830/http://wsdebug.berlios.de/wspacegen.php) |
 | [pywhitespace](python/phlip-pywhitespace.json)     | Phillip Bradbury | Python     | interpreter  | 2004-08-03 | [GitHub](https://github.com/wspace/phlip-pywhitespace), [Mailing list (archive)](https://web.archive.org/web/20141011193201/http://compsoc.dur.ac.uk/archives/whitespace/2004-August/000048.html), [Mailing list (archive)](https://web.archive.org/web/20161111081914/http://compsoc.dur.ac.uk/archives/whitespace/2007-December/000065.html), [Newcastle (archive)](https://web.archive.org/web/20061209092911/http://www.cs.newcastle.edu.au/~c3018900/pywhitespace.tar.bz2), [mrphlip.com](https://www.mrphlip.com/pywhitespace.tar.bz2) |
 | [wspace 0.3](haskell/edwinb-wspace-0.3.json)       | Edwin Brady      | Haskell, Emacs Lisp | interpreter, syntax highlighting, programs | 2004-05-04 | [CompSoc (archive)](https://web.archive.org/web/20150717140342/http://compsoc.dur.ac.uk:80/whitespace/download.php), [Mailing list (archive)](https://web.archive.org/web/20141011193201/http://compsoc.dur.ac.uk/archives/whitespace/2004-May/000047.html) |
+| [wsdebug](c/ssiegl-wsdebug.json)                   | Stefan Siegl     | C          | debugger, interpreter | 2003-09-27 | [GitHub](https://github.com/wspace/ssiegl-wsdebug), [SourceForge](https://sourceforge.net/projects/wsdebug.berlios/), [wsdebug.berlios.de (archive)](https://web.archive.org/web/20140328022809/http://wsdebug.berlios.de/), [wsdebug.berlios.de (archive)](https://web.archive.org/web/20050206092452/http://wsdebug.berlios.de/wsbfi-1.ws) |
 | [wsinterws](whitespace/burghard-wsinterws.json)    | Oliver Burghard  | Whitespace | interpreter  | 2003-04-24 | [burghard.info (archive)](https://web.archive.org/web/20030608024503/http://www.burghard.info/code/whitespace/wsinterws/index.html), [burghard.info (archive)](https://web.archive.org/web/20150803032955/http://www.burghard.info/Code/Whitespace/wsinterws.zip), [burghard.info (archive)](https://web.archive.org/web/20110911114338/http://www.burghard.info/Code/Whitespace/) |
 | [whitespace-ruby](ruby/wconrad.json)               | Wayne E. Conrad  | Ruby       | interpreter, assembler, disassembler | 2003-04-02 | [GitHub](https://github.com/wspace/wconrad-ruby), [yagni.com (archive)](https://web.archive.org/web/20120417161917/http://yagni.com/whitespace/index.html), [CompSoc (archive)](https://web.archive.org/web/20150717140342/http://compsoc.dur.ac.uk:80/whitespace/download.php), [GitHub](https://github.com/hostilefork/whitespacers/tree/master/ruby) |
 | [whitespace.pl](perl/mkoelbl.json)                 | Mike Kölbl       | Perl       | interpreter  | 2003-04-01 | [GitHub](https://github.com/wspace/mkoelbl-perl), [CompSoc (archive)](https://web.archive.org/web/20150425000432/http://compsoc.dur.ac.uk/whitespace/whitespace.pl), [CompSoc (archive)](https://web.archive.org/web/20150717140342/http://compsoc.dur.ac.uk:80/whitespace/download.php), [GitHub](https://github.com/hostilefork/whitespacers/tree/master/perl) |
@@ -304,7 +306,7 @@ See [CONTRIBUTING.md](./CONTRIBUTING.md).
       [whitespace compiler](https://github.com/search?o=desc&q=whitespace+compiler&s=updated&type=Repositories)
   - [GitHub Gist](https://gist.github.com/)
   - GitLab - [whitespace](https://gitlab.com/explore?name=whitespace&sort=latest_activity_desc)
-  - [SourceForge](https://sourceforge.net/)
+  - SourceForge - [whitespace](https://sourceforge.net/directory/?q=whitespace&sort=update)
   - sourcehut - [whitespace](https://sr.ht/projects?search=whitespace&sort=recently-updated)
 - Stack Exchange
   - Stack Overflow - [#whitespace-language](https://stackoverflow.com/questions/tagged/whitespace-language),
@@ -319,6 +321,7 @@ See [CONTRIBUTING.md](./CONTRIBUTING.md).
   - [burghard.info](https://web.archive.org/web/20110911114338/http://www.burghard.info/Code/Whitespace/)
   - [hapyli.webs.com](https://web.archive.org/web/20110212015726/http://hapyli.webs.com/)
   - [yagni.com](https://web.archive.org/web/20120417161917/http://yagni.com/whitespace/index.html)
+  - [wsdebug.berlios.de](https://web.archive.org/web/20140328022809/http://wsdebug.berlios.de/)
 
 ### TODO
 

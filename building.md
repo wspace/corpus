@@ -17,6 +17,13 @@ Build and run errors are included.
   - wsa.sed
   - wsc.sh
 - c/sandeep/white: `gcc -O3 -Wall -o white y.tab.c lex.yy.c`
+- c/ssiegl-wsdebug:
+  - wsdebug: `./configure && make`
+  - wsi: `./configure && make`
+- c/stellwag-wspacegen:
+  - wsdbg: `make`
+  - wsi: `make`
+  - wspacegen: `make`
 - c/strangepan-i-c-whitespace/whitespace: `make`
 - c/tejaskasetty/flex-bison/262\_267\_256/ws: `make`
 - c/threeifbywhiskey-satan/satan: `make`
