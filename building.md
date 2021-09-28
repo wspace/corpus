@@ -99,6 +99,7 @@ Build and run errors are included.
 - ❌ java/eia
 - ❌ java/faurehu
 - ❌ java/kmizu
+- ❌ java/kreutzer-spacedide
 - java/praveenvaka-coder/target/whitespace-coder-1.0-SNAPSHOT.jar: `mvn -Dmaven.compiler.source=1.8 -Dmaven.compiler.target=1.8 package`
 - ❌ java/vyo-kairos
 - ⚠️ java/wrotycz/target/whitespace-interpreter-1.0-SNAPSHOT.jar: `mvn -Dmaven.compiler.source=1.8 -Dmaven.compiler.target=1.8 package` No main method entrypoint
@@ -172,6 +173,7 @@ Build and run errors are included.
   - src
 - python/katc/whitespace.py
 - python/lachlancourt/transpiler.py
+- ⚠️ python/marktraceur-redlandside/main.py: PyQt version 4 not installed
 - ⚠️ python/maximegoyette/whitespace.py: Needs Codewars entrypoint
 - python/mcolom/whitespace.py
 - python/meand/compile.py

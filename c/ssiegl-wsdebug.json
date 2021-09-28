@@ -4,7 +4,7 @@
   "authors": ["Stefan Siegl"],
   "license": "GPL-2.0-or-later",
   "languages": ["C"],
-  "tags": ["debugger", "interpreter"],
+  "tags": ["debugger", "interpreter", "programs"],
   "date": "2003-09-27 06:57:35 +0000",
   "spec_version": "0.3",
   "source": [

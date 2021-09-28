@@ -1,0 +1,26 @@
+{
+  "id": "python/marktraceur-redlandside",
+  "name": "rIDE (RedlandsIDE)",
+  "authors": ["Mark Holmquist", "Logan May"],
+  "license": "GPL-3.0-or-later",
+  "languages": ["Python"],
+  "tags": ["IDE"],
+  "date": "2010-03-24 06:13:33 +0000",
+  "spec_version": "0.2",
+  "source": [
+    "https://github.com/MarkTraceur/redlandside",
+    "https://sourceforge.net/projects/redlandside/",
+    "http://redlandside.sourceforge.net/"
+  ],
+  "relations": [{ "type": "library", "id": "python/phlip-pywhitespace" }],
+  "commands": [
+    {
+      "type": "IDE",
+      "bin": "main.py",
+      "install_dependencies": ["pip2 install python-qt"],
+      "build_errors": "PyQt version 4 not installed",
+      "usage": "python2 $0"
+    }
+  ],
+  "notes": "SVN repo history was truncated when moving from SourceForge to GitHub. rIDE supports Python, C++, Prolog, Lisp, LOLCODE, and Whitespace."
+}

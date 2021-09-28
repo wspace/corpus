@@ -398,6 +398,9 @@
 [submodule "python/lachlancourt"]
 	path = python/lachlancourt
 	url = https://github.com/LachlanCourt/whitespace_interpreter
+[submodule "python/marktraceur-redlandside"]
+	path = python/marktraceur-redlandside
+	url = https://github.com/MarkTraceur/redlandside
 [submodule "python/maximegoyette"]
 	path = python/maximegoyette
 	url = https://github.com/MaximeGoyette/whitespace_interpreter
