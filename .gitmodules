@@ -421,7 +421,7 @@
 	url = https://github.com/musflood/code-katas
 [submodule "python/nutcrack-whiteplanes"]
 	path = python/nutcrack-whiteplanes
-	url = https://github.com/wspace/nutcrack-whiteplanes-python
+	url = https://github.com/wspace/nutcrack-whiteplanes
 [submodule "python/phlip-pywhitespace"]
 	path = python/phlip-pywhitespace
 	url = https://github.com/wspace/phlip-pywhitespace
@@ -568,7 +568,7 @@
 	url = https://github.com/donno2048/snakulator
 [submodule "whitespace/keen-whitelie"]
 	path = whitespace/keen-whitelie
-	url = https://github.com/wspace/keen-whitelie-whitespace
+	url = https://github.com/wspace/keen-whitelie
 [submodule "whitespace/kenrube-esopoly"]
 	path = whitespace/kenrube-esopoly
 	url = https://github.com/kenrube/Esopoly

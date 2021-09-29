@@ -7,7 +7,7 @@
   "tags": ["interpreter", "assembler", "disassembler", "bytecode", "Brainfuck to Whitespace", "library"],
   "date": "2014-07-15 22:27:17 +0900",
   "spec_version": "0.3",
-  "source": ["https://github.com/faultier/whitebase"],
+  "source": ["https://github.com/faultier/whitebase", "https://github.com/wspace/faultier-whitebase"],
   "assembly": {
     "mnemonics": {
       "push": ["PUSH"],
