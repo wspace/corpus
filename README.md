@@ -207,7 +207,7 @@ language, including interpreters, compilers, and programs.
 | [Spacesharp](csharp/nicolasff-spacesharp.json)     | Nicolas Favre-Felix | C#, C, Yacc, Lex | compiler, programs | 2008-08-25 | [GitHub](https://github.com/nicolasff/spacesharp), [spacesharp.batard.info](https://spacesharp.batard.info/) |
 | [wspace](c/hogelog.json)                           | hogelog          | C, Perl    | interpreter  | 2008-04-24 | [GitHub](https://github.com/wspace/hogelog-c), [GitHub](https://github.com/hogelog/hogel.org-old/tree/master/content/lib/c) |
 | [tetris.ws](whitespace/pdewacht-tetris.json)       | Peter De Wachter, Andrew Archibald | Whitespace | programs | 2008-01-02 | [GitHub](https://github.com/wspace/pdewacht-tetris), [Mailing list (archive)](https://web.archive.org/web/20141011193149/http://compsoc.dur.ac.uk/archives/whitespace/2008-January/000067.html), [r/programming](https://www.reddit.com/r/programming/comments/9nw1e/most_unreadable_programming_language_ever/c0dkzzw/) |
-| [EsCo (Esoteric Combine)](cpp/esco.json)           | Zasenko Sergey, Matthias Boehm, Justin Mutter | C++ | interpreter | 2007-12-24 | [SourceForge](https://sourceforge.net/projects/esco/), [esco.sourceforge.net](http://esco.sourceforge.net/) |
+| [EsCo (Esoteric Combine)](cpp/esco.json)           | Zasenko Sergey, Matthias Boehm, Justin Mutter | C++ | interpreter | 2007-12-24 | [SourceForge](https://git.code.sf.net/p/esco/code), [SourceForge](https://sourceforge.net/projects/esco/), [esco.sourceforge.net](http://esco.sourceforge.net/) |
 | [wspace](cpp/pavelshub.json)                       | Pavel Shub       | C++        | interpreter, debugger, assembler, disassembler, mapping | 2007-05-26 | [GitHub](https://github.com/wspace/pavelshub-cpp), [GitHub](https://github.com/pavel987/wspace), [Mailing list (archive)](https://web.archive.org/web/20141011193149/http://compsoc.dur.ac.uk/archives/whitespace/2008-April/000068.html), [pavelshub.com](https://pavelshub.com/blog/2010/10/wspace/) |
 | [wspacegen](c/stellwag-wspacegen.json)             | Philippe Stellwag, Stefan Siegl | C | IDE, debugger, interpreter | 2004-09-09 | [GitHub](https://github.com/wspace/stellwag-wspacegen), [SourceForge](https://sourceforge.net/projects/wspacegen/), [wsdebug.berlios.de (archive)](https://web.archive.org/web/20130501235830/http://wsdebug.berlios.de/wspacegen.php) |
 | [pywhitespace](python/phlip-pywhitespace.json)     | Phillip Bradbury | Python     | interpreter  | 2004-08-03 | [GitHub](https://github.com/wspace/phlip-pywhitespace), [Mailing list (archive)](https://web.archive.org/web/20141011193201/http://compsoc.dur.ac.uk/archives/whitespace/2004-August/000048.html), [Mailing list (archive)](https://web.archive.org/web/20161111081914/http://compsoc.dur.ac.uk/archives/whitespace/2007-December/000065.html), [Newcastle (archive)](https://web.archive.org/web/20061209092911/http://www.cs.newcastle.edu.au/~c3018900/pywhitespace.tar.bz2), [mrphlip.com](https://www.mrphlip.com/pywhitespace.tar.bz2) |
@@ -256,6 +256,7 @@ language, including interpreters, compilers, and programs.
 | All Your Base Are Belong To Us (Restricted) | Kevin Cruijssen | -      | 2018-04-06 09:10:53 +0000 | 0.3 | [Code Golf](https://codegolf.stackexchange.com/questions/19171/all-your-base-are-belong-to-us-restricted/161445#161445) |
 | 404 - Unique 404 page not found          | Jo King          | 54 languages | 2018-01-22 11:55:35 +0000 | 0.2 | [Code Golf](https://codegolf.stackexchange.com/questions/153717/404-unique-404-page-not-found/153724#153724), [Code Golf](https://codegolf.stackexchange.com/revisions/153724/16) |
 | Shortest code to produce infinite output | Ephphatha        | -        | 2017-05-27 13:05:45 +0000 | 0.2 | [Code Golf](https://codegolf.stackexchange.com/questions/13152/shortest-code-to-produce-infinite-output/123091#123091) |
+| Add a language to a polyglot             | Chance           | 30 languages | 2017-01-06 01:09:43 +0000 | 0.2 | [Code Golf](https://codegolf.stackexchange.com/questions/102370/add-a-language-to-a-polyglot/105826#105826) |
 | Run Length Decoding                      | r.e.s.           | -        | 2013-12-06 20:12:20 +0000 | 0.2 | [Code Golf](https://codegolf.stackexchange.com/questions/12902/run-length-decoding/15665#15665) |
 | Fibonacci function or sequence           | r.e.s.           | -        | 2013-12-02 13:39:06 +0000 | 0.3 | [Code Golf](https://codegolf.stackexchange.com/questions/85/fibonacci-function-or-sequence/15590#15590) |
 | Shortest code to produce infinite output | Doorknob         | -        | 2013-11-09 02:22:45 +0000 | 0.2 | [Code Golf](https://codegolf.stackexchange.com/questions/13152/shortest-code-to-produce-infinite-output/13155#13155) |
@@ -320,7 +321,6 @@ See [CONTRIBUTING.md](./CONTRIBUTING.md).
   - PyPI - ["whitespace interpreter"](https://pypi.org/search/?q=%22whitespace+interpreter%22)
   - RubyGems - [whitespace](https://rubygems.org/search?query=whitespace)
 - Internet Archive
-  - [burghard.info](https://web.archive.org/web/20110911114338/http://www.burghard.info/Code/Whitespace/)
   - [hapyli.webs.com](https://web.archive.org/web/20110212015726/http://hapyli.webs.com/)
   - [yagni.com](https://web.archive.org/web/20120417161917/http://yagni.com/whitespace/index.html)
   - [wsdebug.berlios.de](https://web.archive.org/web/20140328022809/http://wsdebug.berlios.de/)
@@ -330,12 +330,15 @@ See [CONTRIBUTING.md](./CONTRIBUTING.md).
 - Source control
   - GitHub - [whitespace unbleach](https://github.com/search?q=whitespace+unbleach&type=code)
   - [GitHub Gist](https://gist.github.com/)
+  - Sourceforge - [Spaced IDE (SVN)](https://sourceforge.net/projects/spacedide/),
+      [Whitespace IDE (CVS)](https://sourceforge.net/projects/whitespaceide/)
   - Bitbucket
 - Internet Archive
   - CompSoc - [download][compsoc],
       [mailing list](https://web.archive.org/web/20141011193126/http://compsoc.dur.ac.uk/archives/whitespace/)
   - [mirror.ox.ac.uk](https://web.archive.org/web/20030414003351/http://mirror.ox.ac.uk/Mirrors/whitespace/)
   - [dur.ac.uk/d.j.walrond](https://web.archive.org/web/20030608044924/http://www.dur.ac.uk/d.j.walrond/whitespace/)
+  - [burghard.info](https://web.archive.org/web/20110911114338/http://www.burghard.info/Code/Whitespace/)
 - Wikis
   - MediaWiki
     - Rosetta Code - [Category:Whitespace](https://rosettacode.org/wiki/Category:Whitespace),

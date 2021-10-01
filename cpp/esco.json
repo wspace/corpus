@@ -7,7 +7,11 @@
   "tags": ["interpreter"],
   "date": "2007-12-24 21:21:37 +0000",
   "spec_version": "0.3",
-  "source": ["https://sourceforge.net/projects/esco/", "http://esco.sourceforge.net/"],
+  "source": [
+    "https://git.code.sf.net/p/esco/code",
+    "https://sourceforge.net/projects/esco/",
+    "http://esco.sourceforge.net/"
+  ],
   "commands": [
     {
       "type": "interpreter",
