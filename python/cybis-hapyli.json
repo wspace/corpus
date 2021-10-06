@@ -15,6 +15,7 @@
     "https://stackoverflow.com/questions/607830/use-of-haskell-state-monad-a-code-smell",
     "https://esolangs.org/wiki/HaPyLi"
   ],
+  "source_unavailable": true,
   "assembly": {
     "mnemonics": {
       "push": ["push"],
@@ -43,6 +44,9 @@
       "readi": ["rn"]
     }
   },
-  "programs": [{ "path": "sudoku.ws" }, { "path": "99bottles.hpl" }, { "path": "brainfuck.hpl" }],
-  "notes": "A Sudoku solver was written in HaPyLi"
+  "programs": [
+    { "path": "sudoku.ws", "spec_version": "0.3" },
+    { "path": "99bottles.hpl" },
+    { "path": "brainfuck.hpl" }
+  ]
 }

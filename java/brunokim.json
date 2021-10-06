@@ -11,7 +11,7 @@
     "https://stackoverflow.com/questions/29427419/ifeq-ifne-jvm-opcode-always-branches",
     "https://drive.google.com/drive/folders/0B8vCNP4j9pRKfmpOT2dGeWRTN0lrbFlPS0xMRENlSWJPMW44TVZDM0hWMVJJUGZQZC1NcGM"
   ],
+  "source_unavailable": true,
   "whitespace": { "extension": "ws" },
-  "programs": [{ "path": "call.ws", "spec_version": "0.2" }],
-  "notes": "Source unavailable"
+  "programs": [{ "path": "call.ws", "spec_version": "0.2" }]
 }

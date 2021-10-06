@@ -52,5 +52,5 @@
       "notes": "TODO document options"
     }
   ],
-  "notes": "szm language opcodes are specified as 4 ternary trits using the alphabet 水 沝 淼. szm has additional operators not in Whitespace. TODO: unclear whether szm can be compiled to Whitespace."
+  "notes": "szm language opcodes are specified as 4 ternary trits using the alphabet 水 沝 淼. szm has additional operators not in Whitespace. TODO unclear whether szm can be compiled to Whitespace."
 }

@@ -17,17 +17,18 @@ import (
 )
 
 type Project struct {
-	ID          string   `json:"id"`
-	Name        string   `json:"name"`
-	Description string   `json:"description,omitempty"`
-	Authors     []string `json:"authors"`
-	License     string   `json:"license,omitempty"`
-	Languages   []string `json:"languages"`
-	Tags        []string `json:"tags"`
-	Date        string   `json:"date"`
-	SpecVersion string   `json:"spec_version"`
-	Source      []string `json:"source"`
-	Package     *struct {
+	ID                string   `json:"id"`
+	Name              string   `json:"name"`
+	Description       string   `json:"description,omitempty"`
+	Authors           []string `json:"authors"`
+	License           string   `json:"license,omitempty"`
+	Languages         []string `json:"languages"`
+	Tags              []string `json:"tags"`
+	Date              string   `json:"date"`
+	SpecVersion       string   `json:"spec_version"`
+	Source            []string `json:"source"`
+	SourceUnavailable bool     `json:"source_unavailable,omitempty"`
+	Package           *struct {
 		Name    string `json:"name"`
 		Manager string `json:"manager"`
 		URL     string `json:"url"`

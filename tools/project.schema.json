@@ -111,6 +111,7 @@
       "minItems": 1,
       "uniqueItems": true
     },
+    "source_unavailable": { "type": "boolean", "description": "Whether the source code is unavailable" },
     "package": {
       "type": "object",
       "properties": {

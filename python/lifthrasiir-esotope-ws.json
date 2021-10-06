@@ -13,6 +13,7 @@
     "https://github.com/lifthrasiir",
     "https://esolangs.org/wiki/User:Tokigun"
   ],
+  "source_unavailable": true,
   "whitespace": { "extension": "ws" },
   "assembly": {
     "mnemonics": {
@@ -49,7 +50,7 @@
       "type": "interpreter",
       "bin": "esotope-ws",
       "dependencies": ["Python 2"],
-      "build_errors": "Source code offline",
+      "build_errors": "Source code unavailable",
       "usage": "$0 [-c <out_file>] [-d <out_file>] <file>",
       "options": [
         { "short": "c", "arg": "out_file", "arg_required": true, "desc": "assembler mode" },
@@ -57,5 +58,5 @@
       ]
     }
   ],
-  "notes": "TODO source code offline. Date from edit that mentions esolang-ws: https://esolangs.org/w/index.php?title=User:Tokigun&diff=14612&oldid=14578"
+  "notes": "Date is from edit that mentions esolang-ws: https://esolangs.org/w/index.php?title=User:Tokigun&diff=14612&oldid=14578"
 }
