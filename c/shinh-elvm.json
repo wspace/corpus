@@ -1,0 +1,14 @@
+{
+  "id": "c/shinh-elvm",
+  "name": "ELVM",
+  "authors": ["Shinichiro Hamaji"],
+  "license": "MIT",
+  "languages": ["C"],
+  "tags": ["language compiler"],
+  "date": "2016-09-16 14:45:46 +0900",
+  "spec_version": "0.3",
+  "source": ["https://github.com/shinh/elvm", "https://esolangs.org/wiki/ELVM"],
+  "relations": [{ "type": "library", "id": "c/koturn" }],
+  "commands": [{ "build": "make" }],
+  "notes": "TODO document"
+}

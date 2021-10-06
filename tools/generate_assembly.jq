@@ -21,7 +21,7 @@
       map(ascii_downcase
         | gsub("^(stack|arith|math|heap|flow|io)[ \\.]"; "")
         | gsub("^mod\\."; "")
-        | gsub(" ([.%lf]?<[a-z_]+>|_)"; ""))
+        | gsub(" ([.%lf]?<[a-z_]+>|<<[a-z_]+>>|_)"; ""))
       | unique
     )
   ]

@@ -22,6 +22,9 @@
 [submodule "c/sandeep"]
 	path = c/sandeep
 	url = https://github.com/Sandeep023/Whitespace
+[submodule "c/shinh-elvm"]
+	path = c/shinh-elvm
+	url = https://github.com/shinh/elvm
 [submodule "c/ssiegl-wsdebug"]
 	path = c/ssiegl-wsdebug
 	url = https://github.com/wspace/ssiegl-wsdebug
@@ -599,6 +602,9 @@
 [submodule "whitespace/tewort-hello"]
 	path = whitespace/tewort-hello
 	url = https://github.com/Tewort/Hello-Whitespace
+[submodule "whitespace/threeifbywhiskey-brainfuck"]
+	path = whitespace/threeifbywhiskey-brainfuck
+	url = https://gist.github.com/threeifbywhiskey/cf7293006cd4ca0839ff
 [submodule "whitespace/trevorbennett-stack-flood"]
 	path = whitespace/trevorbennett-stack-flood
 	url = https://github.com/trevorbennett/whitespace-stack-flood

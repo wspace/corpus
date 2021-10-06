@@ -17,6 +17,7 @@ Build and run errors are included.
   - wsa.sed
   - wsc.sh
 - c/sandeep/white: `gcc -O3 -Wall -o white y.tab.c lex.yy.c`
+- ⚠️ c/shinh-elvm/*unspecified*: `make`
 - c/ssiegl-wsdebug:
   - wsdebug: `./configure && make`
   - wsi: `./configure && make`
@@ -173,7 +174,7 @@ Build and run errors are included.
   - src
 - python/katc/whitespace.py
 - python/lachlancourt/transpiler.py
-- ⚠️ python/lifthrasiir-esotope-ws/esotope-ws: Source code offline
+- ⚠️ python/lifthrasiir-esotope-ws/esotope-ws: Source code unavailable
 - ⚠️ python/marktraceur-redlandside/main.py: PyQt version 4 not installed
 - ⚠️ python/maximegoyette/whitespace.py: Needs Codewars entrypoint
 - python/mcolom/whitespace.py
@@ -262,6 +263,7 @@ Build and run errors are included.
 - ❌ whitespace/petek-hello
 - ❌ whitespace/samdonow-pelc
 - ❌ whitespace/tewort-hello
+- ❌ whitespace/threeifbywhiskey-brainfuck
 - ❌ whitespace/trevorbennett-stack-flood
 - ❌ whitespace/wsdt-kevinloveswhitespace
 - ❌ whitespace/yokoyama-fizzbuzz

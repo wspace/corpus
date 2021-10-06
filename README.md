@@ -1,6 +1,6 @@
 # The Whitespace Corpus
 
-The definitive collection of 214 projects for the Whitespace programming
+The definitive collection of 216 projects for the Whitespace programming
 language, including interpreters, compilers, and programs.
 
 ## Projects
@@ -100,6 +100,7 @@ language, including interpreters, compilers, and programs.
 | [whitespac3](python/alecgraves-whitespac3.json)    | Alec Graves      | Python     | interpreter  | 2016-11-17 | [GitHub](https://github.com/alecGraves/whitespac3) |
 | [WhiteSpaceInterpreter](java/eia.json)             | Zuleimi Esteffanny González Muñoz | Java | interpreter, programs | 2016-10-27 | [GitHub](https://github.com/EIA-University/WhiteSpaceInterpreter) |
 | [hacktoberfest-dcoy](whitespace/dcoy-hacktoberfest-2016.json) | Noah Tranbarger | Whitespace | programs | 2016-10-10 | [GitHub](https://github.com/dcoy/hacktoberfest-dcoy) |
+| [ELVM](c/shinh-elvm.json)                          | Shinichiro Hamaji | C         | language compiler | 2016-09-16 | [GitHub](https://github.com/shinh/elvm), [Esolang](https://esolangs.org/wiki/ELVM) |
 | [EsoPoly](whitespace/kenrube-esopoly.json)         | Ivan Zolotarev   | Whitespace | programs     | 2016-09-13 | [GitHub](https://github.com/kenrube/Esopoly) |
 | [whitespace-python](python/dwayne.json)            | Dwayne R. Crooks | Python     | interpreter  | 2016-08-31 | [GitHub](https://github.com/dwayne/whitespace-python) |
 | [ws-frontend](cpp/sonicyang-ws-frontend.json)      | Yang Chung-Fan   | C++, LLVM  | compiler     | 2016-08-20 | [GitHub](https://github.com/sonicyang/ws-frontend) |
@@ -151,6 +152,7 @@ language, including interpreters, compilers, and programs.
 | [whitespace.php](php/johankj.json)                 | Johan K. Jensen  | PHP        | interpreter, programs | 2014-11-01 | [GitHub](https://github.com/johankj/whitespace-interpreter-php) |
 | [wsm](php/igorw-wsm.json)                          | Igor Wiedler     | PHP        | assembler, programs | 2014-09-27 | [GitHub](https://github.com/igorw/wsm) |
 | [PYWS](python/eizoassik-pyws.json)                 | Eizo Assik       | Python     | interpreter, assembler, disassembler, mapping | 2014-08-28 | [GitHub](https://github.com/EizoAssik/pyws) |
+| [brainfuck.asm](whitespace/threeifbywhiskey-brainfuck.json) | Dorien Snake | Whitespace | programs | 2014-08-09 | [GitHub Gist](https://gist.github.com/threeifbywhiskey/cf7293006cd4ca0839ff) |
 | [Albino](rust/faultier-albino.json)                | Taro Sako        | Rust       | interpreter, assembler, disassembler, bytecode, Brainfuck to Whitespace | 2014-07-18 | [GitHub](https://github.com/faultier/albino) |
 | [Whitespace-LLVM](cpp/subv-whitespace-llvm.json)   | Sebastian Valle  | C++, LLVM  | interpreter  | 2014-07-16 | [GitHub](https://github.com/Subv/Whitespace-LLVM) |
 | [Whitebase](rust/faultier-whitebase.json)          | Taro Sako        | Rust       | interpreter, assembler, disassembler, bytecode, Brainfuck to Whitespace, library | 2014-07-15 | [GitHub](https://github.com/faultier/whitebase), [GitHub](https://github.com/wspace/faultier-whitebase) |
@@ -233,7 +235,9 @@ language, including interpreters, compilers, and programs.
 
 | Name                                     | Author           | Polyglot | Date       | Spec | Source |
 | ---------------------------------------- | ---------------- | -------- | ---------- | ---- | ------ |
-| Deadfish interpreter                     | Robert de Bath   | -        | 2015-08-16 09:28 | 0.2 | [esolangs.org](https://esolangs.org/wiki/Deadfish#Whitespace), [esolangs.org](https://esolangs.org/w/index.php?title=Deadfish&oldid=43738), [GitHub](https://github.com/rdebath/whitespace/blob/master/gencode-deadfish-in-ws.c) |
+| Truth-machine                            |                  | -        |            |      | [Esolang](https://esolangs.org/wiki/Whitespace#Truth-machine), [Esolang](https://esolangs.org/wiki/Truth-machine#Whitespace) |
+| <3                                       | Willicoder       | -        | 2020-04-20 12:43 | 0.2 | [Esolang](https://esolangs.org/wiki/User:Willicoder#Whitespace), [Esolang](https://esolangs.org/w/index.php?title=User:Willicoder&diff=71266&oldid=71262) |
+| Deadfish interpreter                     | Robert de Bath   | -        | 2015-08-16 09:28 | 0.2 | [Esolang](https://esolangs.org/wiki/Deadfish#Whitespace), [Esolang](https://esolangs.org/w/index.php?title=Deadfish&oldid=43738), [GitHub](https://github.com/rdebath/whitespace/blob/master/gencode-deadfish-in-ws.c) |
 | sudoku.ws                                | Huf Lungdung (Cybis) | -    | 2009-05-19 | 0.3 | [What the Daily WTF?](https://what.thedailywtf.com/topic/5980/stupid-coding-tricks-sudoku-solver-in-whitespace), [Mailing list (archive)](https://web.archive.org/web/20141011193156/http://compsoc.dur.ac.uk/archives/whitespace/2009-November/000072.html), [Pastebin](https://pastebin.com/f761fc4b5) |
 | VirtualDust.txt                          | Raphaël Bois     | C, Brainfuck, Perl | 2008-05-14 20:13:29 +0000 | 0.2 | [Hello World Collection](http://helloworldcollection.de/hellopics/VirtualDust.txt), [helloworldsite.he.funpic.de (archive)](https://web.archive.org/web/20080520072335/http://helloworldsite.he.funpic.de/hellopics/VirtualDust.txt), [GitLab](https://gitlab.com/wolframroesler/helloworld/-/blob/master/hellopics/VirtualDust.txt) |
 | 99 Bottles of Beer                       | Andrew Kemp      | -        | 2005-04-20 | 0.2 | [99-bottles-of-beer.net](https://99-bottles-of-beer.net/language-whitespace-154.html) |
