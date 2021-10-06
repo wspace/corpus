@@ -479,6 +479,9 @@
 [submodule "ruby/pocke-akaza"]
 	path = ruby/pocke-akaza
 	url = https://github.com/pocke/akaza
+[submodule "ruby/technohippy-gorispace"]
+	path = ruby/technohippy-gorispace
+	url = https://github.com/technohippy/gorispace
 [submodule "ruby/wconrad"]
 	path = ruby/wconrad
 	url = https://github.com/wspace/wconrad-ruby

@@ -1,0 +1,32 @@
+{
+  "id": "ruby/technohippy-gorispace",
+  "name": "Gorispace",
+  "authors": ["ANDO Yasushi"],
+  "license": "none",
+  "languages": ["Ruby"],
+  "tags": ["interpreter", "mapping"],
+  "date": "2010-10-13 23:45:06 +0900",
+  "spec_version": "0.3",
+  "source": ["https://github.com/technohippy/gorispace", "https://esolangs.org/wiki/Gorispace"],
+  "whitespace": { "unimplemented": ["slide"], "extension": "ws" },
+  "mappings": [
+    { "space": "ウホ", "tab": "ウッホ", "lf": "ウホーイ", "extension": "gs" },
+    { "space": "hoo", "tab": "hoos", "lf": "wraagh", "extension": "gs" }
+  ],
+  "commands": [
+    {
+      "type": "interpreter",
+      "bin": "bin/gorispace",
+      "usage": "$0 [-w | --whitespace] [-e | --english] [-c | --convert] [-d | --debug] [-h | --help] <file>",
+      "options": [
+        { "short": "w", "long": "whitespace", "desc": "Whitespace mode" },
+        { "short": "e", "long": "english", "desc": "English mode" },
+        { "short": "c", "long": "convert", "desc": "Convert xspace code to Gorispace code" },
+        { "short": "d", "long": "debug", "desc": "Debug mode" },
+        { "short": "h", "long": "help", "desc": "Show this message" }
+      ],
+      "option_parse": "Ruby optparse"
+    }
+  ],
+  "notes": "CR is treated as LF. Repeated ホ, oo, and aa are allowed. Characters not used in mappings are ignored."
+}

@@ -173,6 +173,7 @@ Build and run errors are included.
   - src
 - python/katc/whitespace.py
 - python/lachlancourt/transpiler.py
+- ⚠️ python/lifthrasiir-esotope-ws/esotope-ws: Source code offline
 - ⚠️ python/marktraceur-redlandside/main.py: PyQt version 4 not installed
 - ⚠️ python/maximegoyette/whitespace.py: Needs Codewars entrypoint
 - python/mcolom/whitespace.py
@@ -208,6 +209,7 @@ Build and run errors are included.
 - ⚠️ ruby/pocke-akaza:
   - bin/str\_to\_ws.rb
   - ⚠️ exe/akaza: uninitialized constant Akaza::Parser::StringIO
+- ruby/technohippy-gorispace/bin/gorispace
 - ruby/wconrad:
   - whitespace
   - whitespace-asm
