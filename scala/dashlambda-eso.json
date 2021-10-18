@@ -2,7 +2,7 @@
   "id": "scala/dashlambda-eso",
   "name": "Eso",
   "authors": ["Dash-Lambda"],
-  "license": "none",
+  "license": "MIT",
   "languages": ["Scala"],
   "tags": ["interpreter", "assembler"],
   "date": "2019-06-19 03:00:21 -0400",
