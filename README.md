@@ -98,7 +98,7 @@ language, including interpreters, compilers, and programs.
 | [WhitespaceGenerator](javascript/briantran-generator.json) | Brian Tran | JavaScript | text to Whitespace | 2017-01-22 | [GitHub](https://github.com/TranBrian10/WhitespaceGenerator) |
 | [whitespace.lol](lolcode/akers.json)               | D.E. Akers       | LOLCODE    | interpreter  | 2016-11-21 | [GitHub](https://github.com/wspace/akers-lolcode), [GitHub](https://github.com/hostilefork/whitespacers/tree/master/lolcode) |
 | [whitespac3](python/alecgraves-whitespac3.json)    | Alec Graves      | Python     | interpreter  | 2016-11-17 | [GitHub](https://github.com/alecGraves/whitespac3) |
-| [WhiteSpaceInterpreter](java/eia.json)             | Zuleimi Esteffanny González Muñoz | Java | interpreter, programs | 2016-10-27 | [GitHub](https://github.com/EIA-University/WhiteSpaceInterpreter) |
+| [WhiteSpaceInterpreter](java/eia.json)             | Zuleimi Esteffanny González Muñoz | Java | interpreter, programs | 2016-10-27 | [GitHub](https://github.com/wspace/eia-java), [GitHub](https://github.com/EIA-University/WhiteSpaceInterpreter) |
 | [hacktoberfest-dcoy](whitespace/dcoy-hacktoberfest-2016.json) | Noah Tranbarger | Whitespace | programs | 2016-10-10 | [GitHub](https://github.com/dcoy/hacktoberfest-dcoy) |
 | [ELVM](c/shinh-elvm.json)                          | Shinichiro Hamaji | C         | language compiler | 2016-09-16 | [GitHub](https://github.com/shinh/elvm), [Esolang](https://esolangs.org/wiki/ELVM) |
 | [EsoPoly](whitespace/kenrube-esopoly.json)         | Ivan Zolotarev   | Whitespace | programs     | 2016-09-13 | [GitHub](https://github.com/kenrube/Esopoly) |
@@ -133,7 +133,7 @@ language, including interpreters, compilers, and programs.
 | [Whitespace](javascript/therebelrobot.json)        | Aster Haven      | JavaScript | mapping      | 2015-09-09 | [GitHub](https://github.com/therebelrobot/whitespace) |
 | [whitespacer](javascript/macocha-whitespacer.json) | Maciej Siwek     | JavaScript/React | IDE, interpreter, disassembler | 2015-09-04 | [GitHub](https://github.com/macocha/whitespacer) |
 | [Whitespace](c/rdebath.json)                       | Robert de Bath   | C, Lex     | transpiler, interpreter, assembler, program builder, programs | 2015-08-18 | [GitHub](https://github.com/rdebath/whitespace), [GitHub](https://github.com/wspace/rdebath-c) |
-| [Hello World](whitespace/mikedonaghy-hello.json)   | D.E. Akers       | Whitespace | programs     | 2015-08-17 | [GitHub](https://github.com/leachim6/hello-world) |
+| [Hello World](whitespace/mikedonaghy-hello.json)   | D.E. Akers       | Whitespace | programs     | 2015-08-17 | [GitHub](https://github.com/leachim6/hello-world), [GitHub](https://github.com/leachim6/hello-world/pull/207) |
 | [Whitespace Parser](python/katc.json)              | 友利奈緒 (Tomori Nao) | Python    | disassembler | 2015-07-08 | [GitHub Gist](https://gist.github.com/K-atc/02b402e9812e066afb78) |
 | [Cupertino-WhiteSpace-Interperter](cpp/frmsaul-cupertino.json) | Saul Fuhrmann | C++ | interpreter | 2015-05-23 | [GitHub](https://github.com/frmsaul/Cupertino-WhiteSpace-Interperter) |
 | [ws_interpreter](java/kmizu.json)                  | Kota Mizushima   | Java       | interpreter  | 2015-05-12 | [GitHub](https://github.com/kmizu/ws_interpreter) |
@@ -148,7 +148,7 @@ language, including interpreters, compilers, and programs.
 | [FizzBuzz AIT8](whitespace/yokoyama-fizzbuzz.json) | Kengo Yokoyama   | Whitespace | programs     | 2015-01-28 | [GitHub](https://github.com/ait8/fizzbuzz) |
 | [Whitespace-Interpreter--C-](cpp/sudheesh.json)    | sudheesh4        | C++        | interpreter  | 2014-12-02 | [GitHub](https://github.com/sudheesh4/Whitespace-Interpreter-C-) |
 | [WhiteSpaceInterpreter](csharp/reflash.json)       | reflash          | C#         | IDE, interpreter | 2014-11-21 | [GitHub](https://github.com/reflash-blog/WhiteSpaceInterpreter) |
-| [Whitespace](c/koturn.json)                        | koturn           | C          | interpreter, translator | 2014-11-08 | [GitHub](https://github.com/koturn/Whitespace) |
+| [Whitespace](c/koturn.json)                        | koturn           | C          | interpreter, transpiler | 2014-11-08 | [GitHub](https://github.com/wspace/koturn-c), [GitHub](https://github.com/koturn/Whitespace) |
 | [whitespace.php](php/johankj.json)                 | Johan K. Jensen  | PHP        | interpreter, programs | 2014-11-01 | [GitHub](https://github.com/johankj/whitespace-interpreter-php) |
 | [wsm](php/igorw-wsm.json)                          | Igor Wiedler     | PHP        | assembler, programs | 2014-09-27 | [GitHub](https://github.com/igorw/wsm) |
 | [PYWS](python/eizoassik-pyws.json)                 | Eizo Assik       | Python     | interpreter, assembler, disassembler, mapping | 2014-08-28 | [GitHub](https://github.com/EizoAssik/pyws) |

@@ -36,6 +36,7 @@
     "usage": ["wsa interpreter"],
     "extension": "txt"
   },
+  "programs": [{ "path": "program.txt", "spec_version": "0.2" }],
   "commands": [
     {
       "type": "wsa interpreter",

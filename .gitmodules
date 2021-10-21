@@ -9,7 +9,7 @@
 	url = https://github.com/wspace/hogelog-c
 [submodule "c/koturn"]
 	path = c/koturn
-	url = https://github.com/koturn/Whitespace
+	url = https://github.com/wspace/koturn-c
 [submodule "c/kspalaiologos-asm2ws"]
 	path = c/kspalaiologos-asm2ws
 	url = https://github.com/kspalaiologos/asm2ws
@@ -208,7 +208,7 @@
 	url = https://github.com/Brumbeere/Whitespace4j
 [submodule "java/eia"]
 	path = java/eia
-	url = https://github.com/EIA-University/WhiteSpaceInterpreter
+	url = https://github.com/wspace/eia-java
 [submodule "java/faurehu"]
 	path = java/faurehu
 	url = https://github.com/faurehu/whiteSpaceInterpreter

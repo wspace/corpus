@@ -97,7 +97,7 @@ Build and run errors are included.
 - ⚠️ java/azige/target/whitespace-interpreter-0.4.jar: `mvn package` org.apache.commons.cli is not packaged in jar
 - ❌ java/brumbeere-whitespace4j
 - ❌ java/brunokim
-- ❌ java/eia
+- java/eia/src/whitespace/whitespace.class: `javac whitespace/whitespace.java`
 - ❌ java/faurehu
 - ❌ java/kmizu
 - ❌ java/kreutzer-spacedide
@@ -151,7 +151,9 @@ Build and run errors are included.
 - python/ahl27/main.py
 - python/alecgraves-whitespac3/interpreter.py
 - python/apua-wvm/wvm.py
-- python/bornlex/main.py
+- python/bornlex:
+  - main.py
+  - tests.py
 - ❌ python/cybis-hapyli
 - ⚠️ python/dalleng/whitespace.py: Needs Codewars entrypoint
 - python/damle-evanesco/src/textToWhitespace.py

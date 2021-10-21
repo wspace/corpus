@@ -6,11 +6,10 @@
   "languages": ["Java"],
   "tags": ["interpreter", "programs"],
   "date": "2016-10-27 09:58:09 -0500",
-  "spec_version": "-",
-  "source": ["https://github.com/EIA-University/WhiteSpaceInterpreter"],
+  "spec_version": "0.2",
+  "source": ["https://github.com/wspace/eia-java", "https://github.com/EIA-University/WhiteSpaceInterpreter"],
   "whitespace": {
     "unimplemented": [
-      "push",
       "dup",
       "swap",
       "drop",
@@ -28,11 +27,20 @@
       "jn",
       "ret",
       "end",
-      "printc",
       "printi",
       "readc",
       "readi"
-    ]
+    ],
+    "extension": "bin"
   },
-  "programs": [{ "path": "src/fichero.bin", "spec_version": "0.2" }]
+  "programs": [{ "path": "src/fichero.bin", "spec_version": "0.2" }],
+  "commands": [
+    {
+      "type": "interpreter",
+      "bin": "src/whitespace/whitespace.class",
+      "build": "javac whitespace/whitespace.java",
+      "usage": "cd src && java -cp . whitespace.whitespace",
+      "input": "src/fichero.bin"
+    }
+  ]
 }

@@ -4,10 +4,10 @@
   "authors": ["koturn"],
   "license": "MIT",
   "languages": ["C"],
-  "tags": ["interpreter", "translator"],
+  "tags": ["interpreter", "transpiler"],
   "date": "2014-11-08 22:30:57 +0900",
   "spec_version": "0.3",
-  "source": ["https://github.com/koturn/Whitespace"],
+  "source": ["https://github.com/wspace/koturn-c", "https://github.com/koturn/Whitespace"],
   "commands": [
     {
       "bin": "whitespace.out",
