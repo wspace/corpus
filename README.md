@@ -49,7 +49,7 @@ language, including interpreters, compilers, and programs.
 | [zerospace-lang](javascript/loklaan-zerowidth-lang.json) | Lochlan Bunn | JavaScript | interpreter, mapping | 2019-07-25 | [GitHub](https://github.com/loklaan/zerowidth-lang) |
 | [WSC](ocaml/jgkaplan-wsc.json)                     | Joshua Kaplan    | OCaml      | language, programs | 2019-07-04 | [GitHub](https://github.com/jgkaplan/whitespaceTranspiler) |
 | [Marginal](haskell/jhmcstanton-marginal.json)      | Jim McStanton    | Haskell, Yacc | interpreter | 2019-06-29 | [GitHub](https://github.com/jhmcstanton/marginal) |
-| [Eso](scala/dashlambda-eso.json)                   | Dash-Lambda      | Scala      | interpreter, assembler | 2019-06-19 | [GitHub](https://github.com/Dash-Lambda/Eso) |
+| [Eso](scala/dashlambda-eso.json)                   | Dash-Lambda      | Scala      | interpreter, transpiler, assembler, programs | 2019-06-19 | [GitHub](https://github.com/Dash-Lambda/Eso) |
 | [baudelaire-whitespace](python/qwhxm-baudelaire.json) | Marek Tomáštík | Python    | web service, programs | 2019-06-08 | [GitHub](https://github.com/qwhxm/baudelaire-whitespace) |
 | [Nebula](go/andrewarchi-nebula.json)               | Andrew Archibald | Go, LLVM, Whitespace | compiler, optimizer, disassembler, bit packer, Binary Whitespace, programs | 2019-06-06 | [GitHub](https://github.com/andrewarchi/nebula) |
 | [Whitespace VM](rust/nareshganduri.json)           | Naresh Ganduri   | Rust       | interpreter  | 2019-05-13 | [GitHub](https://github.com/nareshganduri/WhitespaceVM) |

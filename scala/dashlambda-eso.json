@@ -4,8 +4,121 @@
   "authors": ["Dash-Lambda"],
   "license": "MIT",
   "languages": ["Scala"],
-  "tags": ["interpreter", "assembler"],
+  "tags": ["interpreter", "transpiler", "assembler", "programs"],
   "date": "2019-06-19 03:00:21 -0400",
   "spec_version": "0.2",
-  "source": ["https://github.com/Dash-Lambda/Eso"]
+  "source": ["https://github.com/Dash-Lambda/Eso"],
+  "whitespace": { "extension": "ws" },
+  "assembly": {
+    "mnemonics": {
+      "push": ["push"],
+      "dup": ["dup"],
+      "swap": ["swap"],
+      "drop": ["discard"],
+      "add": ["add"],
+      "sub": ["subt"],
+      "mul": ["mult"],
+      "div": ["intDiv"],
+      "mod": ["mod"],
+      "store": ["store"],
+      "retrieve": ["get"],
+      "label": ["label"],
+      "call": ["call"],
+      "jmp": ["jump"],
+      "jz": ["jumpZero"],
+      "jn": ["jumpNeg"],
+      "ret": ["return"],
+      "end": ["endProg"],
+      "printc": ["outChar"],
+      "printi": ["outNum"],
+      "readc": ["readChar"],
+      "readi": ["readNum"]
+    },
+    "line_comments": ["//"],
+    "extension": "wsa"
+  },
+  "programs": [
+    { "path": "testResources/hworld.wsa", "compiled": "testResources/hworld.ws", "spec_version": "0.2" }
+  ],
+  "commands": [
+    {
+      "type": "multiple",
+      "bin": "target/scala-2.13/eso_2.13-2.6.1.jar",
+      "build": "sbt assembly",
+      "usage": "java -jar $0",
+      "option_parse": "manual",
+      "subcommands": [
+        { "name": "" },
+        { "name": "listFileAssociations", "desc": "List all currently recognized file associations" },
+        { "name": "listLangs", "desc": "List all currently available language components" },
+        { "name": "listVars", "desc": "List all runtime parameters with their current values" },
+        {
+          "name": "run",
+          "desc": "Run a program from a source file",
+          "usage": "run -s <file> [-l <language>] [-i <input_file>] [-o <output_file>]",
+          "options": [
+            { "short": "s", "required": true, "arg": "sourceFileName", "arg_required": true, "type": "file" },
+            { "short": "l", "arg": "language", "arg_required": true },
+            { "short": "i", "arg": "inputFileName", "arg_required": true, "type": "file" },
+            { "short": "o", "arg": "outputFileName", "arg_required": true, "type": "file" }
+          ]
+        },
+        {
+          "name": "syntax",
+          "desc": "Show the syntax of a supported BrainFuck derivative",
+          "usage": "syntax [-l <language>]",
+          "options": [{ "short": "l", "arg": "language", "arg_required": true }]
+        },
+        {
+          "name": "translate",
+          "desc": "Translate a program from one language to another",
+          "usage": "translate -s <file> [-tl <target_language> -o <target_file>]+ [-sl <source_language>]",
+          "options": [
+            { "short": "s", "required": true, "arg": "sourceFileName", "arg_required": true, "type": "file" },
+            {
+              "short": "tl",
+              "required": true,
+              "repeat_allowed": true,
+              "arg": "targetLanguage",
+              "arg_required": true
+            },
+            {
+              "short": "o",
+              "required": true,
+              "repeat_allowed": true,
+              "arg": "targetFileName",
+              "arg_required": true,
+              "type": "file"
+            },
+            { "short": "sl", "arg": "sourceLanguage", "arg_required": true }
+          ]
+        },
+        {
+          "name": "transpile",
+          "desc": "Transpile a program from one language to another",
+          "usage": "transpile -s <file> [-tl <target_language> -o <target_file>]+ [-sl <source_language>]",
+          "options": [
+            { "short": "s", "required": true, "arg": "sourceFileName", "arg_required": true, "type": "file" },
+            {
+              "short": "tl",
+              "required": true,
+              "repeat_allowed": true,
+              "arg": "targetLanguage",
+              "arg_required": true
+            },
+            {
+              "short": "o",
+              "required": true,
+              "repeat_allowed": true,
+              "arg": "targetFileName",
+              "arg_required": true,
+              "type": "file"
+            },
+            { "short": "sl", "arg": "sourceLanguage", "arg_required": true }
+          ]
+        },
+        { "name": "help", "usage": "help" }
+      ]
+    }
+  ]
 }

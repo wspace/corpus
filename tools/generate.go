@@ -163,16 +163,18 @@ type Command struct {
 }
 
 type CommandOption struct {
-	Short       interface{} `json:"short,omitempty"` // -s
-	Long        string      `json:"long,omitempty"`  // --long
-	Bare        string      `json:"bare,omitempty"`  // bare
-	Arg         string      `json:"arg,omitempty"`
-	ArgRequired *bool       `json:"arg_required,omitempty"`
-	Type        string      `json:"type,omitempty"`
-	Default     interface{} `json:"default,omitempty"`
-	Min         interface{} `json:"min,omitempty"`
-	Desc        string      `json:"desc,omitempty"`
-	Values      []struct {
+	Short         interface{} `json:"short,omitempty"` // -s
+	Long          string      `json:"long,omitempty"`  // --long
+	Bare          string      `json:"bare,omitempty"`  // bare
+	Required      *bool       `json:"required,omitempty"`
+	RepeatAllowed *bool       `json:"repeat_allowed,omitempty"`
+	Arg           string      `json:"arg,omitempty"`
+	ArgRequired   *bool       `json:"arg_required,omitempty"`
+	Type          string      `json:"type,omitempty"`
+	Default       interface{} `json:"default,omitempty"`
+	Min           interface{} `json:"min,omitempty"`
+	Desc          string      `json:"desc,omitempty"`
+	Values        []struct {
 		Values []string `json:"values,omitempty"`
 		Desc   string   `json:"desc,omitempty"`
 	} `json:"values,omitempty"`

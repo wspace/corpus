@@ -232,7 +232,7 @@ Build and run errors are included.
   - wsconvert.py
 - rust/nareshganduri/target/release/whitespace-vm: `cargo build --release`
 - ❌ rust/zrneely
-- ❌ scala/dashlambda-eso
+- scala/dashlambda-eso/target/scala-2.13/eso\_2.13-2.6.1.jar: `sbt assembly`
 - ❌ scala/ojha-whitespacing
 - ⚠️ scala/patrickstephen/whitespace.jar: `sbt package` Should set whitespace.jar as package instead of arget/scala-2.11/whitespace-interpreter\_2.11-1.0.jar A JNI error has occurred, please check your installation and try again
 - ❌ scala/sderosiaux
