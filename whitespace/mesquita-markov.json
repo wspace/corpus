@@ -1,0 +1,45 @@
+{
+  "id": "whitespace/mesquita-markov",
+  "name": "Markov Algorithm simulator",
+  "authors": ["Leonardo Mesquita"],
+  "license": "Public-Domain",
+  "languages": ["Whitespace"],
+  "tags": ["programs"],
+  "date": "2007-02-24 21:56:00 +0000",
+  "spec_version": "0.2",
+  "source": [
+    "https://github.com/wspace/mesquita-markov",
+    "https://web.archive.org/web/20141011193203/http://compsoc.dur.ac.uk/archives/whitespace/attachments/20070224/2792d9db/markov.zip",
+    "https://web.archive.org/web/20070830102217/http://compsoc.dur.ac.uk/archives/whitespace/2007-February/000054.html",
+    "https://web.archive.org/web/20070831081100/http://compsoc.dur.ac.uk/archives/whitespace/2007-February/000055.html"
+  ],
+  "whitespace": { "extension": "ws" },
+  "assembly": {
+    "mnemonics": {
+      "push": ["push"],
+      "dup": ["dup"],
+      "swap": ["swap"],
+      "drop": ["discard"],
+      "add": ["add"],
+      "sub": ["sub"],
+      "store": ["store"],
+      "retrieve": ["retrieve"],
+      "label": ["<label>:"],
+      "call": ["call"],
+      "jmp": ["jump"],
+      "jz": ["jz"],
+      "jn": ["jn"],
+      "ret": ["ret"],
+      "end": ["exit"],
+      "printc": ["outchar"],
+      "readc": ["readchar"],
+      "readi": ["readnum"]
+    },
+    "patterns": { "label": "[a-zA-Z_]+", "number": "\\d+" },
+    "line_comments": ["#"],
+    "usage": ["programs"],
+    "extension": "wsa"
+  },
+  "programs": [{ "path": "markov.wsa", "compiled": "markov.ws", "inputs": ["input.mkv"], "spec_version": "0.2" }],
+  "notes": "Date from earliest file in archive"
+}

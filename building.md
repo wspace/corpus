@@ -258,6 +258,7 @@ Build and run errors are included.
   - whitelie
 - ❌ whitespace/kenrube-esopoly
 - ❌ whitespace/knightking-hacktoberfest-2017
+- ❌ whitespace/mesquita-markov
 - ❌ whitespace/mikedonaghy-hello
 - ❌ whitespace/mildsunrise-brainfuck
 - ❌ whitespace/paradoxv5-program-java-rb

@@ -581,6 +581,9 @@
 [submodule "whitespace/knightking-hacktoberfest-2017"]
 	path = whitespace/knightking-hacktoberfest-2017
 	url = https://github.com/knightking100/hello-worlds
+[submodule "whitespace/mesquita-markov"]
+	path = whitespace/mesquita-markov
+	url = https://github.com/wspace/mesquita-markov
 [submodule "whitespace/mikedonaghy-hello"]
 	path = whitespace/mikedonaghy-hello
 	url = https://github.com/leachim6/hello-world
