@@ -13,19 +13,40 @@ import (
 )
 
 func main() {
-	if len(os.Args) != 2 {
-		fmt.Fprintf(os.Stderr, "usage: %s <file>", os.Args[0])
+	if len(os.Args) < 2 {
+		fmt.Fprintf(os.Stderr, "usage: %s <file>...", os.Args[0])
 		os.Exit(2)
 	}
-	filename := os.Args[1]
+	hasError := false
+	for _, filename := range os.Args[1:] {
+		if err := formatFile(filename); err != nil {
+			fmt.Fprintln(os.Stderr, err)
+			hasError = true
+		}
+	}
+	if hasError {
+		os.Exit(1)
+	}
+}
+
+func formatFile(filename string) error {
+	unformatted, err := os.ReadFile(filename)
+	if err != nil {
+		return err
+	}
 
 	var jsonBuf bytes.Buffer
-	in := execabs.Command("underscore", "print", "-i", filename)
+	in := execabs.Command("underscore", "print")
+	in.Stdin = bytes.NewReader(unformatted)
 	in.Stdout = &jsonBuf
-	try(in.Run())
+	if err := in.Run(); err != nil {
+		return err
+	}
 
 	var p tools.Project
-	try(jsonutil.Decode(&jsonBuf, &p))
+	if err := jsonutil.Decode(&jsonBuf, &p); err != nil {
+		return err
+	}
 
 	if p.Date == "" {
 		submodule := strings.TrimSuffix(filename, ".json")
@@ -65,20 +86,21 @@ func main() {
 	jsonBuf.Reset()
 	e := json.NewEncoder(&jsonBuf)
 	e.SetEscapeHTML(false)
-	try(e.Encode(p))
+	if err := e.Encode(p); err != nil {
+		return err
+	}
 
-	f, err := os.Create(filename + "~")
-	try(err)
+	var formattedBuf bytes.Buffer
 	out := execabs.Command("underscore", "print")
 	out.Stdin = &jsonBuf
-	out.Stdout = f
-	try(out.Run())
-	try(os.Rename(filename+"~", filename))
-}
-
-func try(err error) {
-	if err != nil {
-		fmt.Fprintln(os.Stderr, err)
-		os.Exit(1)
+	out.Stdout = &formattedBuf
+	if err := out.Run(); err != nil {
+		return err
 	}
+
+	if !bytes.Equal(unformatted, formattedBuf.Bytes()) {
+		fmt.Printf("Formatted %s\n", filename)
+		return os.WriteFile(filename, formattedBuf.Bytes(), 0o644)
+	}
+	return nil
 }

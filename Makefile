@@ -4,11 +4,10 @@ SUBMODULES = $(PROJECTS:.json=)
 .PHONY: all
 all: tidy_submodules licenses README.md assembly.md building.md
 
-# TODO fix
 .PHONY: format
-format: projects.json tools/format_projects.sh
+format: $(PROJECTS) tools/format/format.go
 	@echo 'Formatting projects'
-	@tools/format_projects.sh
+	@go run tools/format/format.go $(PROJECTS)
 
 .PHONY: licenses
 licenses: $(PROJECTS) tools/licenses/licenses.go
@@ -37,12 +36,12 @@ tidy_submodules: $(PROJECTS) tools/submodules/submodules.go tools/format_gitmodu
 # Clone all submodules
 .PHONY: init_submodules
 init_submodules:
-	git submodule update --init
+	git submodule update --init --jobs 5
 
 # Update all submodules to latest remote head
 .PHONY: update_submodules
 update_submodules:
-	git submodule update --remote
+	git submodule update --remote --jobs 5
 
 # Update all manually-enumerated submodules to latest remote head
 .PHONY: update_submodules_force
