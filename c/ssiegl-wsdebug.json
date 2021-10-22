@@ -10,8 +10,8 @@
   "source": [
     "https://github.com/wspace/ssiegl-wsdebug",
     "https://sourceforge.net/projects/wsdebug.berlios/",
-    "https://web.archive.org/web/20140328022809/http://wsdebug.berlios.de/",
-    "https://web.archive.org/web/20050206092452/http://wsdebug.berlios.de/wsbfi-1.ws"
+    "https://web.archive.org/web/20041031040027/http://wsdebug.berlios.de:80/",
+    "https://web.archive.org/web/20041102163053/http://wsdebug.berlios.de:80/wsbfi-1.ws"
   ],
   "programs": [{ "path": "wsbfi-1.ws", "spec_version": "0.2" }],
   "commands": [

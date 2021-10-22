@@ -9,7 +9,7 @@
   "spec_version": "0.3",
   "source": [
     "https://github.com/wspace/wconrad-ruby",
-    "https://web.archive.org/web/20120417161917/http://yagni.com/whitespace/index.html",
+    "https://web.archive.org/web/20120417161917/http://yagni.com:80/whitespace/index.html",
     "https://web.archive.org/web/20150717140342/http://compsoc.dur.ac.uk:80/whitespace/download.php",
     "https://github.com/hostilefork/whitespacers/tree/master/ruby"
   ],

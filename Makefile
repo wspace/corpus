@@ -47,3 +47,8 @@ update_submodules:
 .PHONY: update_submodules_force
 update_submodules_force:
 	git submodule foreach 'git -C $toplevel submodule update --remote $name'
+
+.PHONY: list_project_json
+list_project_json:
+	$(foreach project,$(PROJECTS),$(info $(project)))
+	@:

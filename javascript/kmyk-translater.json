@@ -9,7 +9,8 @@
   "spec_version": "0.3",
   "source": [
     "https://github.com/kmyk/whitespace-translater",
-    "https://web.archive.org/web/20160307155202/http://solorab.net/works/whitespace-translater/"
+    "https://web.archive.org/web/20160205175221/http://solorab.net:80/works/whitespace-translater/",
+    "https://web.archive.org/web/20160206165019/http://solorab.net:80/blog/2015/03/01/made-whitespace-translater/"
   ],
   "assembly": {
     "mnemonics": {

@@ -8,8 +8,8 @@
   "date": "2003",
   "spec_version": "0.3",
   "source": [
-    "https://web.archive.org/web/20030629154300/http://www.burghard.info/code/whitespace/wsa/index.html",
-    "https://web.archive.org/web/20110911114338/http://www.burghard.info/Code/Whitespace/wsa.zip",
+    "https://web.archive.org/web/20030629154300/http://www.burghard.info:80/code/whitespace/wsa/index.html",
+    "https://web.archive.org/web/20140610030912/http://www.burghard.info/Code/Whitespace/wsa.zip",
     "https://web.archive.org/web/20110911114338/http://www.burghard.info/Code/Whitespace/"
   ],
   "notes": "Supports non-standard instructions"

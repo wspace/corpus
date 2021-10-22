@@ -10,7 +10,7 @@
   "source": [
     "https://github.com/drsam94/PELC",
     "http://pelangchallenge.blogspot.com/2013/09/problem-36-done-in-whitespace.html",
-    "https://web.archive.org/web/20141011193202/http://compsoc.dur.ac.uk/archives/whitespace/2013-September/000084.html"
+    "https://web.archive.org/web/20130925035813/http://compsoc.dur.ac.uk:80/archives/whitespace/2013-September/000084.html"
   ],
   "programs": [{ "path": "e36Comments.ws" }]
 }

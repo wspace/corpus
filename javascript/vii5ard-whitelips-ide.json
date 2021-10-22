@@ -10,7 +10,7 @@
   "source": [
     "https://github.com/vii5ard/whitespace",
     "https://vii5ard.github.io/whitespace/",
-    "https://web.archive.org/web/20141011193149/http://compsoc.dur.ac.uk/archives/whitespace/2013-April/000082.html",
+    "https://web.archive.org/web/20130926165520/http://compsoc.dur.ac.uk:80/archives/whitespace/2013-April/000082.html",
     "https://github.com/vii5ard/brainfuck-whitespace"
   ],
   "whitespace": { "extension": "ws" },

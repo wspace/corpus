@@ -9,9 +9,9 @@
   "spec_version": "0.3",
   "source": [
     "https://github.com/wspace/phlip-pywhitespace",
-    "https://web.archive.org/web/20141011193201/http://compsoc.dur.ac.uk/archives/whitespace/2004-August/000048.html",
-    "https://web.archive.org/web/20161111081914/http://compsoc.dur.ac.uk/archives/whitespace/2007-December/000065.html",
-    "https://web.archive.org/web/20061209092911/http://www.cs.newcastle.edu.au/~c3018900/pywhitespace.tar.bz2",
+    "https://web.archive.org/web/20060517072710/http://compsoc.dur.ac.uk:80/archives/whitespace/2004-August/000048.html",
+    "https://web.archive.org/web/20081025231130/http://compsoc.dur.ac.uk:80/archives/whitespace/2007-December/000065.html",
+    "https://web.archive.org/web/20061007203840/http://www.cs.newcastle.edu.au:80/~c3018900/pywhitespace.tar.bz2",
     "https://www.mrphlip.com/pywhitespace.tar.bz2"
   ],
   "whitespace": { "nonstandard": [{ "name": "trace", "seq": "LLT" }], "extension": "ws" },
