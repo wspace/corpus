@@ -7,5 +7,11 @@
   "tags": ["interpreter"],
   "date": "2016-04-12 15:01:22 +0900",
   "spec_version": "0.3",
-  "source": ["https://github.com/susisu/Whitespace-JS"]
+  "source": ["https://github.com/susisu/Whitespace-JS"],
+  "package": {
+    "name": "@susisu/whitespace-js",
+    "manager": "npm",
+    "url": "https://www.npmjs.com/package/@susisu/whitespace-js"
+  },
+  "notes": "Also published identically as https://www.npmjs.com/package/notrun-nocode"
 }

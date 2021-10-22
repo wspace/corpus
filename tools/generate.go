@@ -493,6 +493,7 @@ var domainLabels = map[string]string{
 	"git.code.sf.net":            "SourceForge",
 	"crates.io":                  "crates.io",
 	"hackage.haskell.org":        "Hackage",
+	"npmjs.com":                  "npm",
 	"nuget.org":                  "NuGet",
 	"pypi.org":                   "PyPI",
 	"rubygems.org":               "RubyGems",

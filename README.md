@@ -325,8 +325,11 @@ See [CONTRIBUTING.md](./CONTRIBUTING.md).
   - crates.io - [whitespace interpreter](https://crates.io/search?q=whitespace%20interpreter&sort=new),
       [#whitespace](https://crates.io/keywords/whitespace)
   - Hackage - [whitespace](https://hackage.haskell.org/packages/search?terms=whitespace)
+  - npm - [whitespace language](https://www.npmjs.com/search?q=whitespace%20language),
+      [whitespace interpreter](https://www.npmjs.com/search?q=whitespace%20interpreter)
   - NuGet - [whitespace](https://www.nuget.org/packages?q=whitespace)
-  - PyPI - ["whitespace interpreter"](https://pypi.org/search/?q=%22whitespace+interpreter%22)
+  - PyPI - ["whitespace interpreter"](https://pypi.org/search/?q=%22whitespace+interpreter%22&o=-created),
+      ["whitespace language"](https://pypi.org/search/?q=%22whitespace+language%22&o=-created)
   - RubyGems - [whitespace](https://rubygems.org/search?query=whitespace)
 - Internet Archive
   - [hapyli.webs.com](https://web.archive.org/web/20110212015726/http://hapyli.webs.com/)
