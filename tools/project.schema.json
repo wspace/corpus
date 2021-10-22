@@ -93,8 +93,13 @@
       "description": "Project authors"
     },
     "license": {
-      "type": "string",
-      "description": "Project license ID from the SPDX License List (https://spdx.org/licenses/)"
+      "allOf": [
+        {
+          "type": "string",
+          "description": "Project license ID from the SPDX License List (https://spdx.org/licenses/)"
+        },
+        { "not": { "const": "not found" } }
+      ]
     },
     "languages": { "type": "array", "items": { "type": "string" }, "minItems": 1, "uniqueItems": true },
     "tags": { "type": "array", "items": { "type": "string" }, "minItems": 1, "uniqueItems": true },
@@ -213,7 +218,10 @@
             "properties": { "start": { "type": "string" }, "end": { "type": "string" }, "nestable": { "type": "boolean" } },
             "required": ["start", "end", "nestable"],
             "additionalProperties": false,
-            "examples": [{ "start": "/*", "end": "*/", "nestable": false }, { "start": "{-", "end": "-}", "nestable": true }]
+            "examples": [
+              { "start": "/*", "end": "*/", "nestable": false },
+              { "start": "{-", "end": "-}", "nestable": true }
+            ]
           }
         },
         "indentation": { "$ref": "#/$defs/indentation" },

@@ -218,6 +218,9 @@
 [submodule "java/praveenvaka-coder"]
 	path = java/praveenvaka-coder
 	url = https://github.com/praveenvaka/whitespace-coder
+[submodule "java/pyeroh"]
+	path = java/pyeroh
+	url = https://gist.github.com/Pyeroh/1b2903e53d71e0662d105dc0d6aedbdf
 [submodule "java/vyo-kairos"]
 	path = java/vyo-kairos
 	url = https://github.com/vyo/kairos
