@@ -1,0 +1,19 @@
+{
+  "id": "emacs/lmitchell",
+  "name": "whitespace-mode.el",
+  "authors": ["Lawrence Mitchell"],
+  "license": "GPL-2.0-or-later",
+  "languages": ["Emacs Lisp"],
+  "tags": ["syntax highlighting", "mapping"],
+  "date": "2003-04-26 16:56:54",
+  "spec_version": "-",
+  "source": [
+    "https://web.archive.org/web/20060710093351/http://www.ph.ed.ac.uk:80/~s0198183/",
+    "https://web.archive.org/web/20070817004322/http://www.ph.ed.ac.uk:80/~s0198183/whitespace-mode.el",
+    "https://web.archive.org/web/20160131062749/http://www2.epcc.ed.ac.uk/~lmitche4/",
+    "https://web.archive.org/web/20150922004808/http://www2.epcc.ed.ac.uk:80/~lmitche4/whitespace-mode.el",
+    "https://web.archive.org/web/20040617010431/http://compsoc.dur.ac.uk:80/whitespace/downloads/wspace-0.3.tgz"
+  ],
+  "mappings": [{ "space": "[SPC]", "tab": "[TAB]", "lf": "\n" }],
+  "notes": "Date from revision time noted in whitespace-mode.el"
+}

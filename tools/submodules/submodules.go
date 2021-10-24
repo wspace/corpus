@@ -39,7 +39,11 @@ func main() {
 	if len(badURLs) != 0 {
 		fmt.Println("First source not a recognized repo for:")
 		for _, p := range badURLs {
-			fmt.Printf("- %s: %s\n", p.ID, p.Source[0])
+			url := p.Source[0]
+			if label, err := tools.GetURLLabel(p.Source[0]); err == nil && label != "" {
+				url = label
+			}
+			fmt.Printf("- %s: %s\n", p.ID, url)
 		}
 	}
 }

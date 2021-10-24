@@ -3,14 +3,16 @@
   "name": "wspace 0.3",
   "authors": ["Edwin Brady"],
   "license": "GPL-2.0-or-later",
-  "languages": ["Haskell", "Emacs Lisp"],
-  "tags": ["interpreter", "syntax highlighting", "programs"],
+  "languages": ["Haskell"],
+  "tags": ["interpreter", "programs"],
   "date": "2004-05-04 16:34:32 +0000",
   "spec_version": "0.3",
   "source": [
     "https://web.archive.org/web/20150717140342/http://compsoc.dur.ac.uk:80/whitespace/download.php",
+    "https://web.archive.org/web/20040617010431/http://compsoc.dur.ac.uk:80/whitespace/downloads/wspace-0.3.tgz",
     "https://web.archive.org/web/20060517072734/http://compsoc.dur.ac.uk:80/archives/whitespace/2004-May/000047.html"
   ],
+  "relations": [{ "type": "fork", "id": "emacs/lmitchell" }],
   "bounds": { "precision": "arbitrary" },
   "behavior": { "eof": "error" }
 }

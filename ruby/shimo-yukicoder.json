@@ -1,0 +1,48 @@
+{
+  "id": "ruby/shimo-yukicoder",
+  "name": "shi-mo/yukicoder/whitespace",
+  "authors": ["Yoshifumi Shimono (shi-mo)"],
+  "license": "none",
+  "languages": ["Ruby", "Whitespace"],
+  "tags": ["assembler", "mapping", "programs"],
+  "date": "2016-03-21 16:16:56 +0900",
+  "spec_version": "0.2",
+  "source": ["https://github.com/shi-mo/yukicoder", "https://yukicoder.me/users/1721"],
+  "assembly": {
+    "mnemonics": {
+      "push": ["push <number>", "push <char>"],
+      "sub": ["sub"],
+      "mul": ["mul"],
+      "div": ["div"],
+      "retrieve": ["retrieve"],
+      "end": ["finish"],
+      "printc": ["putchar"],
+      "printi": ["putnum"],
+      "readc": ["readchar"],
+      "readi": ["readnum"]
+    },
+    "patterns": { "char": "\"(.|\\\\n)\"" },
+    "extension": "as"
+  },
+  "mappings": [{ "space": "S", "tab": "T", "lf": "\n", "extension": "st" }],
+  "programs": [
+    { "path": "whitespace/0272.as" },
+    { "path": "whitespace/0244.as" },
+    { "path": "whitespace/0354.as" },
+    { "path": "whitespace/0128.as" },
+    { "path": "whitespace/0169.as" },
+    { "path": "whitespace/9000.as" },
+    { "path": "whitespace/9005.st" }
+  ],
+  "commands": [
+    {
+      "type": "assembler",
+      "bin": "as2st.rb",
+      "usage": "ruby $0",
+      "input": "stdin",
+      "output": "stdin",
+      "notes": "Assembles to mapping"
+    },
+    { "type": "mapping", "bin": "st2ws.rb", "usage": "ruby $0", "input": "stdin", "output": "stdin" }
+  ]
+}

@@ -6,7 +6,6 @@ import (
 	"fmt"
 	"net/url"
 	"path/filepath"
-	"regexp"
 	"sort"
 	"strings"
 	"time"
@@ -115,20 +114,22 @@ type Project struct {
 		Extension        string   `json:"extension,omitempty"`
 	} `json:"assembly,omitempty"`
 	Mappings []struct {
-		Space         string `json:"space"`
-		Tab           string `json:"tab"`
-		LF            string `json:"lf"`
-		SpacesBetween *bool  `json:"spaces_between,omitempty"`
-		LineComment   string `json:"line_comment,omitempty"`
-		BeforeSTL     *bool  `json:"before_stl,omitempty"`
-		IgnoreCase    *bool  `json:"ignore_case,omitempty"`
-		Extension     string `json:"extension,omitempty"`
+		Space          string `json:"space"`
+		Tab            string `json:"tab"`
+		LF             string `json:"lf"`
+		SpacesBetween  *bool  `json:"spaces_between,omitempty"`
+		SpaceBeforeArg *bool  `json:"space_before_arg,omitempty"`
+		LineComment    string `json:"line_comment,omitempty"`
+		BeforeSTL      *bool  `json:"before_stl,omitempty"`
+		IgnoreCase     *bool  `json:"ignore_case,omitempty"`
+		Extension      string `json:"extension,omitempty"`
 	} `json:"mappings,omitempty"`
 	Programs []struct {
 		Path        string   `json:"path"`
 		Compiled    string   `json:"compiled,omitempty"`
 		Inputs      []string `json:"inputs,omitempty"`
 		Outputs     []string `json:"outputs,omitempty"`
+		Aux         []string `json:"aux,omitempty"`
 		Polyglot    []string `json:"polyglot,omitempty"`
 		SpecVersion string   `json:"spec_version,omitempty"`
 		Generate    string   `json:"generate,omitempty"`
@@ -429,7 +430,7 @@ func (p *Project) formatColumns() ([]string, error) {
 	date := p.Time().UTC().Format("2006-01-02")
 	links := make([]string, 0, len(p.Source))
 	for _, s := range p.Source {
-		label, err := getURLLabel(s)
+		label, err := GetURLLabel(s)
 		if err != nil {
 			return nil, err
 		}
@@ -504,6 +505,7 @@ var domainLabels = map[string]string{
 	"codegolf.stackexchange.com": "Code Golf",
 	"rosettacode.org":            "Rosetta Code",
 	"codewars.com":               "Codewars",
+	"yukicoder.me":               "yukicoder",
 	"code.activestate.com":       "ActiveState Code",
 	"pastebin.com":               "Pastebin",
 	"whitespace.pastebin.com":    "Pastebin",
@@ -514,16 +516,7 @@ var domainLabels = map[string]string{
 	"what.thedailywtf.com":       "What the Daily WTF?",
 }
 
-var subSites = map[string]struct{}{
-	// "blogspot.com": {},
-}
-
-var pathPatterns = map[string]*regexp.Regexp{
-	"reddit.com":       regexp.MustCompile("^/(r/[^/]+)"),
-	"sites.google.com": regexp.MustCompile("^/site/([^/]+)"),
-}
-
-func getURLLabel(rawURL string) (string, error) {
+func GetURLLabel(rawURL string) (string, error) {
 	u, err := url.Parse(rawURL)
 	if err != nil {
 		return "", err
@@ -531,7 +524,7 @@ func getURLLabel(rawURL string) (string, error) {
 	if u.Hostname() == "web.archive.org" && strings.HasPrefix(u.Path, "/web/") {
 		path := strings.TrimPrefix(u.Path, "/web/")
 		if i := strings.IndexByte(path, '/'); i != -1 {
-			label, err := getURLLabel(path[i+1:])
+			label, err := GetURLLabel(path[i+1:])
 			if err != nil {
 				return "", err
 			}
@@ -542,18 +535,25 @@ func getURLLabel(rawURL string) (string, error) {
 	if host == "compsoc.dur.ac.uk" && strings.HasPrefix(u.Path, "/archives/whitespace/") {
 		return "Mailing list", nil
 	}
-	if i := strings.IndexByte(host, '.'); i != -1 {
-		if _, ok := subSites[host[i+1:]]; ok {
-			return host[:i], nil
-		}
+	if subreddit, ok := pathTrimPrefix("reddit.com", "/r/", host, u.Path); ok {
+		return "r/" + subreddit, nil
 	}
-	if pattern, ok := pathPatterns[host]; ok {
-		if match := pattern.FindStringSubmatch(u.Path); len(match) > 1 {
-			return match[1], nil
-		}
+	if site, ok := pathTrimPrefix("sites.google.com", "/site/", host, u.Path); ok {
+		return site + " Google Site", nil
 	}
 	if label, ok := domainLabels[host]; ok {
 		return label, nil
 	}
 	return host, nil
+}
+
+func pathTrimPrefix(wantedHost, pathPrefix, host, path string) (string, bool) {
+	if host != wantedHost || !strings.HasPrefix(path, pathPrefix) {
+		return "", false
+	}
+	path = strings.TrimPrefix(path, pathPrefix)
+	if i := strings.IndexByte(path, '/'); i != -1 {
+		path = path[:i]
+	}
+	return path, true
 }

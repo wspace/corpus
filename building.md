@@ -16,6 +16,7 @@ Build and run errors are included.
   - wsa: `make`
   - wsa.sed
   - wsc.sh
+- c/rispoli-txt2ws/txt2ws: `make`
 - c/sandeep/white: `gcc -O3 -Wall -o white y.tab.c lex.yy.c`
 - ⚠️ c/shinh-elvm/*unspecified*: `make`
 - c/ssiegl-wsdebug:
@@ -27,6 +28,7 @@ Build and run errors are included.
   - wspacegen: `make`
 - c/strangepan-i-c-whitespace/whitespace: `make`
 - c/tejaskasetty/flex-bison/262\_267\_256/ws: `make`
+- c/threeifbywhiskey-blacktime/blacktime: `make`
 - c/threeifbywhiskey-satan/satan: `make`
 - clojure/jmesyou-erasure/target/uberjar/erasure-2.0-standalone.jar: `lein uberjar`
 - clojure/tsuyusato/target/whitespace-clj-0.1.0-SNAPSHOT-standalone.jar: `lein uberjar`
@@ -72,6 +74,7 @@ Build and run errors are included.
 - csharp/rolisoft-esoteric/bin/Debug/EsotericCodeInterpreter.exe: `msbuild /p:Configuration=Debug\;AssemblyName=EsotericCodeInterpreter EsotericCodeInterpreter.csproj`
 - ❌ docker/bensuperpc
 - ❌ elixir/quinnwilton
+- ❌ emacs/lmitchell
 - ⚠️ erlang/derek-mrwhite/*unspecified*: `make` Unclear how to run
 - ⚠️ go/andrewarchi-nebula:
   - ⚠️ nebula: `go mod init github.com/andrewarchi/nebula && go mod tidy && go build` Requires LLVM
@@ -148,6 +151,7 @@ Build and run errors are included.
 - php/nobody1986:
   - whitespace: `gcc -O3 -o whitespace whitespace.c list.c stack.c`
   - whitespace.php
+- python/0x55aa/wspace.py
 - python/adapap/whitespace\_interpreter.py
 - python/ahl27/main.py
 - python/alecgraves-whitespac3/interpreter.py
@@ -170,6 +174,7 @@ Build and run errors are included.
 - python/freyamade-hohoho/hohoho
 - python/ganeshsankaran/interpreter.py
 - ⚠️ python/hearnderek/whitespace.py: Needs Codewars entrypoint
+- python/hunminpark/Convert.py
 - python/ilikepython256-whitespace-unc/WhitespaceCompiler.py
 - python/jrialland/whitespaceasm.py
 - python/kareeeeem-abyad:
@@ -213,6 +218,9 @@ Build and run errors are included.
 - ⚠️ ruby/pocke-akaza:
   - bin/str\_to\_ws.rb
   - ⚠️ exe/akaza: uninitialized constant Akaza::Parser::StringIO
+- ruby/shimo-yukicoder:
+  - as2st.rb
+  - st2ws.rb
 - ruby/technohippy-gorispace/bin/gorispace
 - ruby/wconrad:
   - whitespace
@@ -257,6 +265,7 @@ Build and run errors are included.
 - whitespace/keen-whitelie:
   - asm.rb
   - whitelie
+- ❌ whitespace/keithsthompson-fizzbuzz
 - ❌ whitespace/kenrube-esopoly
 - ❌ whitespace/knightking-hacktoberfest-2017
 - ❌ whitespace/mesquita-markov
@@ -267,7 +276,6 @@ Build and run errors are included.
 - ❌ whitespace/petek-hello
 - ❌ whitespace/samdonow-pelc
 - ❌ whitespace/tewort-hello
-- ❌ whitespace/threeifbywhiskey-brainfuck
 - ❌ whitespace/trevorbennett-stack-flood
 - ❌ whitespace/wsdt-kevinloveswhitespace
 - ❌ whitespace/yokoyama-fizzbuzz

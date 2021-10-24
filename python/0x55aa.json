@@ -1,0 +1,30 @@
+{
+  "id": "python/0x55aa",
+  "name": "python-whitespace",
+  "authors": ["0x55aa"],
+  "license": "none",
+  "languages": ["Python"],
+  "tags": ["interpreter", "programs"],
+  "date": "2014-07-22 14:03:10 +0800",
+  "spec_version": "0.3",
+  "source": [
+    "https://github.com/0x55aa/python-whitespace",
+    "http://www.0x55aa.com/%E7%AE%97%E6%B3%95-%E7%BC%96%E7%A8%8B/1244.html"
+  ],
+  "whitespace": { "extension": "ws" },
+  "mappings": [{ "space": "s", "tab": "t", "lf": "l", "before_stl": true }],
+  "programs": [
+    { "path": "examples/hello_world.ws", "spec_version": "0.2" },
+    { "path": "test/heap.ws", "spec_version": "0.2" },
+    { "path": "test/print_1.ws", "spec_version": "0.2" },
+    { "path": "test/stack__arithmetic.ws", "spec_version": "0.3" }
+  ],
+  "commands": [
+    {
+      "type": "interpreter",
+      "bin": "wspace.py",
+      "dependencies": ["Python 2"],
+      "usage": "python2 $0 <file>"
+    }
+  ]
+}

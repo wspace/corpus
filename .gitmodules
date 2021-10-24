@@ -19,6 +19,9 @@
 [submodule "c/rdebath"]
 	path = c/rdebath
 	url = https://github.com/rdebath/whitespace
+[submodule "c/rispoli-txt2ws"]
+	path = c/rispoli-txt2ws
+	url = https://github.com/rispoli/txt2ws
 [submodule "c/sandeep"]
 	path = c/sandeep
 	url = https://github.com/Sandeep023/Whitespace
@@ -37,6 +40,9 @@
 [submodule "c/tejaskasetty"]
 	path = c/tejaskasetty
 	url = https://gitlab.com/tejaskasetty/ws-compiler.git
+[submodule "c/threeifbywhiskey-blacktime"]
+	path = c/threeifbywhiskey-blacktime
+	url = https://github.com/threeifbywhiskey/blacktime
 [submodule "c/threeifbywhiskey-satan"]
 	path = c/threeifbywhiskey-satan
 	url = https://github.com/threeifbywhiskey/satan
@@ -338,6 +344,9 @@
 [submodule "php/nobody1986"]
 	path = php/nobody1986
 	url = https://github.com/nobody1986/whitespace-php
+[submodule "python/0x55aa"]
+	path = python/0x55aa
+	url = https://github.com/0x55aa/python-whitespace
 [submodule "python/adapap"]
 	path = python/adapap
 	url = https://github.com/adapap/whitespace-interpreter
@@ -389,6 +398,9 @@
 [submodule "python/hearnderek"]
 	path = python/hearnderek
 	url = https://github.com/hearnderek/WhiteSpaceInterpreter
+[submodule "python/hunminpark"]
+	path = python/hunminpark
+	url = https://github.com/Avantgarde95/Whitespace
 [submodule "python/ilikepython256-whitespace-unc"]
 	path = python/ilikepython256-whitespace-unc
 	url = https://github.com/ILikePython256/Whitespace_UnC
@@ -485,6 +497,9 @@
 [submodule "ruby/pocke-akaza"]
 	path = ruby/pocke-akaza
 	url = https://github.com/pocke/akaza
+[submodule "ruby/shimo-yukicoder"]
+	path = ruby/shimo-yukicoder
+	url = https://github.com/shi-mo/yukicoder
 [submodule "ruby/technohippy-gorispace"]
 	path = ruby/technohippy-gorispace
 	url = https://github.com/technohippy/gorispace
@@ -578,6 +593,9 @@
 [submodule "whitespace/keen-whitelie"]
 	path = whitespace/keen-whitelie
 	url = https://github.com/wspace/keen-whitelie
+[submodule "whitespace/keithsthompson-fizzbuzz"]
+	path = whitespace/keithsthompson-fizzbuzz
+	url = https://github.com/Keith-S-Thompson/fizzbuzz-polyglot
 [submodule "whitespace/kenrube-esopoly"]
 	path = whitespace/kenrube-esopoly
 	url = https://github.com/kenrube/Esopoly
@@ -608,9 +626,6 @@
 [submodule "whitespace/tewort-hello"]
 	path = whitespace/tewort-hello
 	url = https://github.com/Tewort/Hello-Whitespace
-[submodule "whitespace/threeifbywhiskey-brainfuck"]
-	path = whitespace/threeifbywhiskey-brainfuck
-	url = https://gist.github.com/threeifbywhiskey/cf7293006cd4ca0839ff
 [submodule "whitespace/trevorbennett-stack-flood"]
 	path = whitespace/trevorbennett-stack-flood
 	url = https://github.com/trevorbennett/whitespace-stack-flood

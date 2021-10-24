@@ -1,7 +1,7 @@
 {
   "id": "c/threeifbywhiskey-satan",
   "name": "SaTaN",
-  "authors": ["Dorien Snake"],
+  "authors": ["Dorien Snake (Three If By Whiskey)"],
   "license": "none",
   "languages": ["C"],
   "tags": ["interpreter"],

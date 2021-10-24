@@ -9,6 +9,7 @@
   "spec_version": "0.2",
   "source": [
     "https://web.archive.org/web/20150717140342/http://compsoc.dur.ac.uk:80/whitespace/download.php",
+    "https://web.archive.org/web/20030423000836/http://compsoc.dur.ac.uk:80/whitespace/wspace.tgz",
     "https://slashdot.org/story/03/04/01/0332202/new-whitespace-only-programming-language"
   ],
   "bounds": { "precision": "arbitrary" },
