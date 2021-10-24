@@ -191,7 +191,7 @@ language, including interpreters, compilers, and programs.
 | [ws](cpp/knmorgan.json)                            | Kyle Morgan      | C++        | interpreter  | 2012-12-29 | [GitHub](https://github.com/knmorgan/ws) |
 | [Whitespace-Interpreter](cpp/noia.json)            | Tucker Noia      | C++        | interpreter, programs | 2012-12-15 | [GitHub](https://github.com/noia1/Whitespace-Interpreter) |
 | [wsInt](cpp/dpohanlon-wsint.json)                  | Daniel O'Hanlon  | C++        | interpreter, disassembler, mapping | 2012-12-02 | [GitHub](https://github.com/wspace/dpohanlon-wsint), [GitHub](https://github.com/dpohanlon/wsInt) |
-| [WS-idr](idris/edwinb-ws-idr.json)                 | Edwin Brady      | Idris      | interpreter  | 2012-11-25 | [GitHub](https://github.com/edwinb/WS-idr) |
+| [WS-idr](idris/edwinb-ws-idr.json)                 | Edwin Brady      | Idris      | interpreter  | 2012-11-25 | [GitHub](https://github.com/edwinb/WS-idr), [Twitter](https://twitter.com/edwinbrady/status/689863187546664960) |
 | [Whitespace4j](java/brumbeere-whitespace4j.json)   | Philipp Speck    | Java       | interpreter  | 2012-11-04 | [GitHub](https://github.com/Brumbeere/Whitespace4j) |
 | [txt2ws](c/rispoli-txt2ws.json)                    | Daniele Rispoli  | C          | text to Whitespace | 2012-11-01 | [GitHub](https://github.com/rispoli/txt2ws) |
 | [whitespace](cpp/abcsharp.json)                    | abcsharp         | C++        | interpreter  | 2012-10-28 | [GitHub](https://github.com/abcsharp/Whitespace) |

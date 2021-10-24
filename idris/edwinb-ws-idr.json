@@ -7,7 +7,7 @@
   "tags": ["interpreter"],
   "date": "2012-11-25 16:53:09 +0000",
   "spec_version": "0.3",
-  "source": ["https://github.com/edwinb/WS-idr"],
+  "source": ["https://github.com/edwinb/WS-idr", "https://twitter.com/edwinbrady/status/689863187546664960"],
   "assembly": {
     "mnemonics": {
       "push": ["PUSH"],
