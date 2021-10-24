@@ -248,6 +248,9 @@
 [submodule "javascript/damle-evanescojs"]
 	path = javascript/damle-evanescojs
 	url = https://github.com/AD9000/EvanescoJS
+[submodule "javascript/dexteryy-grassmudmonkey"]
+	path = javascript/dexteryy-grassmudmonkey
+	url = https://github.com/dexteryy/GrassMudMonkey
 [submodule "javascript/ignovak"]
 	path = javascript/ignovak
 	url = https://gist.github.com/ignovak/c6173c31207fd6fcbec606411460c73c
@@ -323,6 +326,9 @@
 [submodule "ocaml/matsud-c2ws"]
 	path = ocaml/matsud-c2ws
 	url = https://github.com/matsud224/c2ws
+[submodule "ocaml/steiner"]
+	path = ocaml/steiner
+	url = https://github.com/steiner26/Whitespace
 [submodule "perl/ephphatha-wsm2ws"]
 	path = perl/ephphatha-wsm2ws
 	url = https://github.com/ephphatha/wsm2ws

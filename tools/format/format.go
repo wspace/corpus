@@ -48,32 +48,33 @@ func formatFile(filename string) error {
 		return err
 	}
 
-	if p.Date == "" {
-		submodule := strings.TrimSuffix(filename, ".json")
-		if stat, err := os.Stat(submodule); err == nil && stat.IsDir() {
-			var dateBuf bytes.Buffer
-			// Get the earliest commit date rather than the topologically-first commit
-			cmd := execabs.Command("git", "-C", submodule, "log", "--reverse", "--format=%ai|%ci")
-			cmd.Stdout = &dateBuf
-			if err := cmd.Run(); err != nil {
-				fmt.Fprintln(os.Stderr, err)
-			} else {
-				log := dateBuf.String()
-				if i := strings.IndexByte(log, '\n'); i != -1 {
-					log := log[:i]
-					if j := strings.IndexByte(log, '|'); j != -1 {
-						authorDate := log[:j]
-						committerDate := log[j+1:]
-						if authorDate == committerDate {
-							p.Date = authorDate
-						}
+	submodule := strings.TrimSuffix(filename, ".json")
+	stat, err := os.Stat(submodule)
+	submoduleCloned := err == nil && stat.IsDir()
+
+	if submoduleCloned && p.Date == "" {
+		var dateBuf bytes.Buffer
+		// Get the earliest commit date rather than the topologically-first commit
+		cmd := execabs.Command("git", "-C", submodule, "log", "--reverse", "--format=%ai|%ci")
+		cmd.Stdout = &dateBuf
+		if err := cmd.Run(); err != nil {
+			fmt.Fprintln(os.Stderr, err)
+		} else {
+			log := dateBuf.String()
+			if i := strings.IndexByte(log, '\n'); i != -1 {
+				log := log[:i]
+				if j := strings.IndexByte(log, '|'); j != -1 {
+					authorDate := log[:j]
+					committerDate := log[j+1:]
+					if authorDate == committerDate {
+						p.Date = authorDate
 					}
 				}
 			}
 		}
 	}
 
-	if p.License == "" {
+	if submoduleCloned && p.License == "" {
 		if l, err := p.GetLicense(); err != nil {
 			fmt.Fprintln(os.Stderr, err)
 		} else if l != "" {

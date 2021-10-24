@@ -20,7 +20,7 @@ type Project struct {
 	Name              string   `json:"name"`
 	Description       string   `json:"description,omitempty"`
 	Authors           []string `json:"authors"`
-	License           string   `json:"license,omitempty"`
+	License           string   `json:"license"`
 	Languages         []string `json:"languages"`
 	Tags              []string `json:"tags"`
 	Date              string   `json:"date"`

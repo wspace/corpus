@@ -3,7 +3,7 @@
   "name": "WSC",
   "authors": ["Joshua Kaplan"],
   "license": "MIT",
-  "languages": ["OCaml"],
+  "languages": ["OCaml", "Yacc", "Lex"],
   "tags": ["language", "programs"],
   "date": "2019-07-04 02:09:08 -0400",
   "spec_version": "0.3",

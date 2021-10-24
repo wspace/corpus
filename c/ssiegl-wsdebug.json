@@ -9,6 +9,7 @@
   "spec_version": "0.3",
   "source": [
     "https://github.com/wspace/ssiegl-wsdebug",
+    "https://github.com/BackupTheBerlios/wsdebug",
     "https://sourceforge.net/projects/wsdebug.berlios/",
     "https://web.archive.org/web/20041031040027/http://wsdebug.berlios.de:80/",
     "https://web.archive.org/web/20041102163053/http://wsdebug.berlios.de:80/wsbfi-1.ws"
@@ -22,5 +23,6 @@
       "usage": "$0 [--help] [<file>]"
     },
     { "type": "interpreter", "bin": "wsi", "build": "./configure && make", "usage": "$0 [--help] <file>" }
-  ]
+  ],
+  "notes": "TODO switch to BackupTheBerlios repo"
 }

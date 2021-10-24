@@ -1,0 +1,13 @@
+{
+  "id": "javascript/dexteryy-grassmudmonkey",
+  "name": "GrassMudMonkey",
+  "authors": ["Dexter Yang"],
+  "license": "GPL-3.0-or-later",
+  "languages": ["JavaScript"],
+  "tags": ["interpreter", "mapping"],
+  "date": "2010-03-21 02:57:58 +0800",
+  "spec_version": "0.3",
+  "source": ["https://github.com/dexteryy/GrassMudMonkey"],
+  "mappings": [{ "space": "草", "tab": "泥", "lf": "马" }],
+  "notes": "Can run in GrassMudHorse or Whitespace mode"
+}

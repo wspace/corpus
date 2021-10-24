@@ -98,7 +98,7 @@
           "type": "string",
           "description": "Project license ID from the SPDX License List (https://spdx.org/licenses/)"
         },
-        { "not": { "const": "not found" } }
+        { "not": { "enum": ["", "not found"] } }
       ]
     },
     "languages": { "type": "array", "items": { "type": "string" }, "minItems": 1, "uniqueItems": true },

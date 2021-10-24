@@ -114,6 +114,7 @@ Build and run errors are included.
 - ❌ javascript/arnauld
 - ❌ javascript/briantran-generator
 - ❌ javascript/damle-evanescojs
+- ❌ javascript/dexteryy-grassmudmonkey
 - ❌ javascript/ignovak
 - ❌ javascript/kanra1412
 - ❌ javascript/kmyk-translater
@@ -141,6 +142,7 @@ Build and run errors are included.
   - wsInterpreter: `gcc -O3 -Wall -o wsInterpreter wsInterpreter.c`
 - ocaml/jgkaplan-wsc/main.byte: `make`
 - ocaml/matsud-c2ws/c2ws: `make`
+- ocaml/steiner/whitespace: `make`
 - perl/ephphatha-wsm2ws/wsm2ws.pl
 - perl/mkoelbl/whitespace.pl
 - ❌ php/dcode
