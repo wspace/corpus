@@ -16,7 +16,7 @@
       "install_dependencies": ["opam install ocamlbuild memhir"],
       "build": "make",
       "usage": "$0 [--help] <file>",
-      "output": "<file_no_ext>.ws",
+      "output": "<file:no_ext>.ws",
       "options": [{ "short": "help", "long": "help", "desc": "Display this list of options" }],
       "option_parse": "OCaml Arg"
     }

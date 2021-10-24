@@ -21,7 +21,7 @@
       "type": "mapping",
       "bin": "wsconvert.py",
       "usage": "$0 <file>",
-      "output": "<file_no_ext>.ws",
+      "output": "<file:no_ext>.ws",
       "notes": "Converts from mapping to Whitespace. Ignores lines prefixed with `--`."
     }
   ]

@@ -23,7 +23,7 @@
         { "short": "t", "long": "from-ws", "desc": "Translate an input whitespace file into a hohoho file" }
       ],
       "option_parse": "Python argparse",
-      "notes": "Interprets program when --from-ws not given. On --from-ws, writes output to <file_no_ext>.ho"
+      "notes": "Interprets program when --from-ws not given. On --from-ws, writes output to <file:no_ext>.ho"
     }
   ]
 }

@@ -106,7 +106,7 @@ Build and run errors are included.
 - ❌ java/kreutzer-spacedide
 - java/praveenvaka-coder/target/whitespace-coder-1.0-SNAPSHOT.jar: `mvn -Dmaven.compiler.source=1.8 -Dmaven.compiler.target=1.8 package`
 - ❌ java/pyeroh
-- ❌ java/vyo-kairos
+- ⚠️ java/vyo-kairos/build/libs/vyo-kairos-1.0.0-all.jar: `./gradlew shadowJar`
 - ⚠️ java/wrotycz/target/whitespace-interpreter-1.0-SNAPSHOT.jar: `mvn -Dmaven.compiler.source=1.8 -Dmaven.compiler.target=1.8 package` No main method entrypoint
 - ❌ java/wysang
 - ❌ java/yawkat

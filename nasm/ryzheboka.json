@@ -14,8 +14,8 @@
       "type": "compiler",
       "bin": "wsCompiler.py",
       "dependencies": ["NASM", "Python 3"],
-      "usage": "python3 wsCompiler.py <file> && nasm -fmacho64 <file_no_ext>.asm && ld -o <file_no_ext> <file_no_ext>.o && ./<file_no_ext>",
-      "output": "<file_no_ext>.asm"
+      "usage": "python3 wsCompiler.py <file> && nasm -fmacho64 <file:no_ext>.asm && ld -o <file:no_ext> <file:no_ext>.o && ./<file:no_ext>",
+      "output": "<file:no_ext>.asm"
     },
     {
       "type": "interpreter",

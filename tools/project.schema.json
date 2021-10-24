@@ -315,6 +315,8 @@
                 "name": { "type": "string" },
                 "desc": { "type": "string" },
                 "usage": { "type": "string" },
+                "input": { "type": "string" },
+                "output": { "type": "string" },
                 "options": { "type": "array", "item": { "$ref": "#/$defs/command_option" } },
                 "notes": { "type": "string" }
               },

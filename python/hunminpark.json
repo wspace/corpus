@@ -71,9 +71,9 @@
   "commands": [
     {
       "bin": "Convert.py",
-      "usage": "python3 $0 <file_basename> <input_dir> <output_dir>",
-      "input": "<input_dir>/<file_basename>",
-      "output": "<output_dir>/<file_basename_no_ext>.ws and <output_dir>/<file_basename_no_ext>.es"
+      "usage": "python3 $0 <file:basename> <file:dirname> <output_dir>",
+      "input": "<file:dirname>/<file:basename>",
+      "output": "<output_dir>/<file:basename:no_ext>.ws and <output_dir>/<file:basename:no_ext>.es"
     }
   ]
 }

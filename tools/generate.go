@@ -96,7 +96,7 @@ type Project struct {
 		} `json:"mnemonics,omitempty"`
 		Macros []struct {
 			Name    string `json:"name"`
-			Replace string `json:"replace"`
+			Replace string `json:"replace,omitempty"`
 			Notes   string `json:"notes,omitempty"`
 		} `json:"macros,omitempty"`
 		Patterns                  map[string]string `json:"patterns,omitempty"`
@@ -156,6 +156,8 @@ type Command struct {
 		Name    string          `json:"name"`
 		Desc    string          `json:"desc,omitempty"`
 		Usage   string          `json:"usage,omitempty"`
+		Input   string          `json:"input,omitempty"`
+		Output  string          `json:"output,omitempty"`
 		Options []CommandOption `json:"options,omitempty"`
 		Notes   string          `json:"notes,omitempty"`
 	} `json:"subcommands,omitempty"`
@@ -513,6 +515,7 @@ var domainLabels = map[string]string{
 	"compsoc.dur.ac.uk":          "CompSoc",
 	"news.ycombinator.com":       "HN",
 	"slashdot.org":               "Slashdot",
+	"twitter.com":                "Twitter",
 	"what.thedailywtf.com":       "What the Daily WTF?",
 }
 

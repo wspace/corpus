@@ -36,7 +36,7 @@ language, including interpreters, compilers, and programs.
 | [WhiteSpace Assembler](haskell/helvm-wsa.json)     | Kamil Adam       | Haskell    | assembler    | 2020-05-18 | [GitHub](https://github.com/helvm/wsa) |
 | [HelPA](haskell/helvm-helpa.json)                  | Kamil Adam       | Haskell/Eta | assembler   | 2020-05-09 | [GitHub](https://github.com/helvm/helpa) |
 | [HelMA](haskell/helvm-helma.json)                  | Kamil Adam       | Haskell/Eta | interpreter | 2020-05-08 | [GitHub](https://github.com/helvm/helma) |
-| [Whitelie](whitespace/keen-whitelie.json)          | κeen             | Whitespace, Ruby | compiler, assembler, programs | 2020-03-31 | [GitHub](https://github.com/wspace/keen-whitelie), [GitHub](https://github.com/KeenS/whitelie), [GitHub Gist](https://gist.github.com/KeenS/6081b0c802a4e575ddbacb1930680870) |
+| [Whitelie](whitespace/keen-whitelie.json)          | κeen             | Whitespace, Ruby | compiler, assembler, programs | 2020-03-31 | [GitHub](https://github.com/wspace/keen-whitelie), [GitHub](https://github.com/KeenS/whitelie), [GitHub Gist](https://gist.github.com/KeenS/6081b0c802a4e575ddbacb1930680870), [keens.github.io](https://keens.github.io/blog/2020/04/01/whitespacenoserufuhosutokonpairatsukuttayo/), [keens.github.io](https://keens.github.io/blog/2020/04/01/taneakirakashi__whitespacekonpairawotsukuttahanashinouragawa/) |
 | [WhitespaceInterpreter](csharp/denislabrecque.json) | Denis G. Labrecque | C#      | interpreter  | 2020-03-27 | [GitHub](https://github.com/DenisLabrecque/Whitespace-Interpreter) |
 | [EvanescoJS](javascript/damle-evanescojs.json)     | Atharv Damle     | JavaScript | text to Whitespace, web app | 2020-03-13 | [GitHub](https://github.com/AD9000/EvanescoJS) |
 | [Evanesco](python/damle-evanesco.json)             | Atharv Damle     | Python     | text to Whitespace | 2020-02-19 | [GitHub](https://github.com/AD9000/Evanesco) |
@@ -166,7 +166,7 @@ language, including interpreters, compilers, and programs.
 | [wsi](javascript/naokikp-wsi.json)                 | naoki kageyama   | JavaScript | IDE, interpreter, mapping | 2014-06-01 | [GitHub](https://github.com/naokikp/naokikp.github.io), [naokikp.github.io](https://naokikp.github.io/wsi/whitespace.html) |
 | [wsint](masm/jarsp-wsint.json)                     | jarsp            | MASM       | interpreter  | 2014-06-01 | [GitHub](https://github.com/jarsp/wsint) |
 | [white](cpp/keirua-white.json)                     | Keirua           | C++        | interpreter, disassembler | 2014-05-30 | [GitHub](https://github.com/Keirua/whitespace) |
-| [Kairos](java/vyo-kairos.json)                     | Manu Weidmann    | Java       | interpreter, assembler, arbitrary precision, programs | 2014-05-10 | [GitHub](https://github.com/vyo/kairos) |
+| [Kairos](java/vyo-kairos.json)                     | Manu Weidmann    | Java       | interpreter, assembler, disassembler, arbitrary precision, programs | 2014-05-10 | [GitHub](https://github.com/vyo/kairos) |
 | [elixir-whitespace](elixir/quinnwilton.json)       | Quinn Wilton     | Elixir     | interpreter  | 2014-03-07 | [GitHub](https://github.com/QuinnWilton/elixir-whitespace) |
 | [whitespace-coder](java/praveenvaka-coder.json)    | Praveen Reddy Vaka | Java     | program builder, programs | 2014-03-07 | [GitHub](https://github.com/praveenvaka/whitespace-coder) |
 | [SaTaN](c/threeifbywhiskey-satan.json)             | Dorien Snake (Three If By Whiskey) | C | interpreter | 2014-03-03 | [GitHub](https://github.com/threeifbywhiskey/satan) |
@@ -439,6 +439,10 @@ See [CONTRIBUTING.md](./CONTRIBUTING.md).
   - [yukicoder](https://yukicoder.me/)
 - Stack Exchange
   - Code Golf - [Tips for golfing in Whitespace](https://codegolf.stackexchange.com/questions/48442/tips-for-golfing-in-whitespace)
+- Twitter - [@edwinbrady](https://twitter.com/edwinbrady),
+    [whitespace (from:edwinbrady)](https://twitter.com/search?q=whitespace%20(from%3Aedwinbrady)),
+    [whitespace (to:edwinbrady)](https://twitter.com/search?q=whitespace%20(to%3Aedwinbrady)),
+    [whitespace @edwinbrady](https://twitter.com/search?q=whitespace%20(%40edwinbrady))
 - Snippets
   - Pastebin
 

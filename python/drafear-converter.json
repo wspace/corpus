@@ -45,7 +45,7 @@
       "bin": "to_ws.py",
       "dependencies": ["Python 3"],
       "usage": "python3 $0 [-h | --help] [-o <output_file> | --output=<output_file>] <file>",
-      "output": "<output_file> or <file_no_ext>.ws",
+      "output": "<output_file> or <file:no_ext>.ws",
       "options": [
         { "short": "h", "long": "help", "desc": "show this help message and exit" },
         { "short": "o", "long": "output", "arg": "OUTPUT", "desc": "output whitespace file name" }
