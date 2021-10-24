@@ -270,6 +270,7 @@ Build and run errors are included.
 - ❌ whitespace/keithsthompson-fizzbuzz
 - ❌ whitespace/kenrube-esopoly
 - ❌ whitespace/knightking-hacktoberfest-2017
+- ❌ whitespace/mercerenies-euler
 - ❌ whitespace/mesquita-markov
 - ❌ whitespace/mikedonaghy-hello
 - ❌ whitespace/mildsunrise-brainfuck

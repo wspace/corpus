@@ -1,6 +1,6 @@
 # The Whitespace Corpus
 
-The definitive collection of 226 projects for the Whitespace programming
+The definitive collection of 227 projects for the Whitespace programming
 language, including interpreters, compilers, and programs.
 
 ## Projects
@@ -110,6 +110,7 @@ language, including interpreters, compilers, and programs.
 | [Whitespace](r/bmazoure.json)                      | Bogdan Mazoure   | R          | interpreter, grammar DFA | 2016-07-30 | [GitHub](https://github.com/bmazoure/whitespace) |
 | [White++](cpp/marcellippmann-whitepp.json)         | Marcel Lippmann  | C++        | interpreter  | 2016-07-27 | [GitHub](https://github.com/wspace/marcellippmann-whitepp), [GitHub (archive)](https://web.archive.org/web/20200906224652/https://github.com/marcellippmann/Whitepp/) |
 | [whitespace-ruby](ruby/dwayne.json)                | Dwayne R. Crooks | Python     | interpreter  | 2016-07-11 | [GitHub](https://github.com/dwayne/whitespace-ruby) |
+| [Euler's Melting Pot](whitespace/mercerenies-euler.json) | Silvio Mayolo (Mercerenies) | Whitespace | programs | 2016-07-05 | [GitHub](https://github.com/Mercerenies/eulers-melting-pot) |
 | [steganographic-polyglots](whitespace/chrisnguyen-steganographic-polyglots.json) | Chris Nguyen | Whitespace | programs | 2016-06-26 | [GitHub](https://github.com/uncompiled/steganographic-polyglots), [uncompiled.github.io](https://uncompiled.github.io/steganographic-polyglots/) |
 | [whitespace.js](javascript/ignovak.json)           | Igor             | JavaScript | interpreter  | 2016-06-20 | [GitHub Gist](https://gist.github.com/ignovak/c6173c31207fd6fcbec606411460c73c) |
 | [Whitespacers](rust/censoredusername-whitespace-rs.json) | CensoredUsername | Rust | JIT, assembler, disassembler | 2016-06-18 | [GitHub](https://github.com/CensoredUsername/whitespace-rs) |
@@ -348,10 +349,10 @@ See [CONTRIBUTING.md](./CONTRIBUTING.md).
 ## Dependencies
 
 - [Go](https://golang.org/)
-- make
 - [jq](https://stedolan.github.io/jq/) for JSON filtering
 - [underscore-cli](https://github.com/ddopson/underscore-cli) for JSON
   formatting: `npm install -g underscore-cli`
+- make
 
 ## Sources
 
@@ -360,7 +361,7 @@ See [CONTRIBUTING.md](./CONTRIBUTING.md).
       [#whitespace](https://github.com/topics/whitespace?o=desc&s=updated),
       [whitespace interpreter](https://github.com/search?o=desc&q=whitespace+interpreter&s=updated&type=Repositories),
       [whitespace compiler](https://github.com/search?o=desc&q=whitespace+compiler&s=updated&type=Repositories),
-      [compsoc.dur.ac.uk whitespace](https://github.com/search?q=compsoc.dur.ac.uk+whitespace&type=code)
+      [compsoc.dur.ac.uk whitespace](https://github.com/search?q=compsoc.dur.ac.uk+whitespace+-pkgname+-portname+-gentoo+-_eclasses_+-prototype+-awesome+-cheatsheet+NOT+language%3Ahtml+NOT+language%3Ajson+NOT+language%3Acsv&type=Code)
   - GitLab - [whitespace](https://gitlab.com/explore?name=whitespace&sort=latest_activity_desc)
   - SourceForge - [whitespace](https://sourceforge.net/directory/?q=whitespace&sort=update)
   - Bitbucket - [whitespace](https://bitbucket.org/repo/all?name=whitespace)
@@ -442,10 +443,12 @@ See [CONTRIBUTING.md](./CONTRIBUTING.md).
   - [yukicoder](https://yukicoder.me/)
 - Stack Exchange
   - Code Golf - [Tips for golfing in Whitespace](https://codegolf.stackexchange.com/questions/48442/tips-for-golfing-in-whitespace)
-- Twitter - [@edwinbrady](https://twitter.com/edwinbrady),
-    [whitespace (from:edwinbrady)](https://twitter.com/search?q=whitespace%20(from%3Aedwinbrady)),
-    [whitespace (to:edwinbrady)](https://twitter.com/search?q=whitespace%20(to%3Aedwinbrady)),
-    [whitespace @edwinbrady](https://twitter.com/search?q=whitespace%20(%40edwinbrady))
+- Social media
+  - Twitter - [@edwinbrady](https://twitter.com/edwinbrady),
+      [whitespace (from:edwinbrady)](https://twitter.com/search?q=whitespace%20(from%3Aedwinbrady)),
+      [whitespace (to:edwinbrady)](https://twitter.com/search?q=whitespace%20(to%3Aedwinbrady)),
+      [whitespace @edwinbrady](https://twitter.com/search?q=whitespace%20(%40edwinbrady))
+  - Hacker News
 - Snippets
   - Pastebin
 

@@ -1,0 +1,12 @@
+{
+  "id": "whitespace/mercerenies-euler",
+  "name": "Euler's Melting Pot",
+  "authors": ["Silvio Mayolo (Mercerenies)"],
+  "license": "none",
+  "languages": ["Whitespace"],
+  "tags": ["programs"],
+  "date": "2016-07-04 19:39:45 -0500",
+  "spec_version": "0.2",
+  "source": ["https://github.com/Mercerenies/eulers-melting-pot"],
+  "programs": [{ "path": "problem7.ws", "spec_version": "0.2" }]
+}
