@@ -177,7 +177,7 @@ language, including interpreters, compilers, and programs.
 | [whitespace-llvm](cpp/tycho-whitespace-llvm.json)  | Tycho Bickerstaff | C++, LLVM | compiler, JIT, optimizer, programs | 2013-08-31 | [GitHub](https://github.com/worktycho/whitespace-llvm) |
 | [Whitespace-JS](coffeescript/ehrlichbryan.json)    | Bryan Ehrlich    | CoffeeScript | interpreter, assembler, disassembler, programs | 2013-08-14 | [GitHub](https://github.com/adotout/whitespace-js) |
 | [Quine Relay](ruby/mame-quine-relay.json)          | Yusuke Endoh     | Ruby       | quine, polyglot, interpreter, programs | 2013-07-15 | [GitHub](https://github.com/mame/quine-relay) |
-| [WS2JS](javascript/luilak-ws2js.json)              | Luilak           | JavaScript | transpiler   | 2013-06-03 | [GitHub](https://github.com/Luilak/WS2JS) |
+| [WS2JS](javascript/luilak-ws2js.json)              | Luilak           | JavaScript | transpiler   | 2013-06-03 | [GitHub](https://github.com/Luilak/WS2JS), [ws2js.luilak.net (archive)](http://web.archive.org/web/20140331170307/http://ws2js.luilak.net:80/interpreter.html) |
 | [ws-interpreter](cpp/yuukiaria.json)               | YuukiARIA        | C++        | interpreter, programs | 2013-05-05 | [GitHub](https://github.com/YuukiARIA/ws-interpreter) |
 | [whitespace](java/abhijitsharma.json)              | Abhijit Sharma   | Java       | interpreter  | 2013-04-05 | [GitHub](https://github.com/abhijitsharma/whitespace) |
 | [whitespace](javascript/rumpl.json)                | Djordje Lukic    | JavaScript | interpreter  | 2013-03-27 | [GitHub](https://github.com/rumpl/whitespace) |
@@ -285,17 +285,53 @@ language, including interpreters, compilers, and programs.
 
 [compsoc]: https://web.archive.org/web/20150717140342/http://compsoc.dur.ac.uk:80/whitespace/download.php
 
+## Comparison to Whitespacers
+
+[Whitespacers](https://github.com/hostilefork/whitespacers) was a
+collection of and the the de facto home for 13 Whitespace interpreters
+until it was superseded by The Whitespace Corpus and archived.
+
+The interpreters that were directly included in Whitespacers have been
+migrated to individual repos under the [wspace](https://github.com/wspace)
+organization, where maintenance is ongoing. This keeps each
+implementation's history separate and and makes ownership clearer.
+Submodules for all of these interpreters have been added to the Corpus.
+
+Interpreters and programs from Whitespacers, with their equivalents in
+the Corpus:
+
+- c              - [c/meth0dz](c/meth0dz.json)
+- cpp            - [cpp/burghard-wsintercpp](cpp/burghard-wsintercpp.json)
+- crystal        - [crystal/collidedscope-spiceweight](crystal/collidedscope-spiceweight.json)
+- erlang         - [erlang/derek-mrwhite](erlang/derek-mrwhite.json)
+- examples
+  - calc.ws      - [Whitespace examples](https://web.archive.org/web/20150717115008/http://compsoc.dur.ac.uk:80/whitespace/examples.php)
+  - count.ws     - [Whitespace tutorial](https://web.archive.org/web/20150618184706/http://compsoc.dur.ac.uk/whitespace/tutorial.php)
+  - fact.ws      - Whitespace examples
+  - fibonacci.ws - Whitespace examples
+  - hanoi.ws     - Whitespace examples
+  - hworld.ws    - Whitespace examples
+  - name.ws      - Whitespace examples
+  - sudoku.ws    - [python/cybis-hapyli/sudoku.ws](python/cybis-hapyli.json)
+- haskell        - [haskell/edwinb-wspace-0.3](haskell/edwinb-wspace-0.3.json)
+- idris          - [idris/edwinb-ws-idr](idris/edwinb-ws-idr.json)
+- lolcode        - [lolcode/akers](lolcode/akers.json)
+- perl           - [perl/mkoelbl](perl/mkoelbl.json)
+- python         - [python/stephenchappell](python/stephenchappell.json)
+- rebol          - [rebol/hostilefork](rebol/hostilefork.json)
+- ren-c          - [rebol/hostilefork](rebol/hostilefork.json)
+- ruby           - [ruby/wconrad](ruby/wconrad.json)
+- whitespace     - [whitespace/burghard-wsinterws](whitespace/burghard-wsinterws.json)
+- [whitespacers#5](https://github.com/hostilefork/whitespacers/issues/5) - [rust/censoredusername-whitespace-rs](rust/censoredusername-whitespace-rs.json)
+- [whitespacers#9](https://github.com/hostilefork/whitespacers/pull/9) - [javascript/luilak-ws2js](javascript/luilak-ws2js.json)
+
 ## Usage
 
 Projects with source hosted on GitHub or GitLab are included as
 submodules. Projects from other locations are reconstructed as git
 repositories.
 
-To clone all submodules, run:
-
-```sh
-git submodule update --init
-```
+To clone all submodules, run `make init_submodules`.
 
 ## Contributing
 
@@ -304,6 +340,7 @@ See [CONTRIBUTING.md](./CONTRIBUTING.md).
 ## Dependencies
 
 - [Go](https://golang.org/)
+- make
 - [jq](https://stedolan.github.io/jq/) for JSON filtering
 - [underscore-cli](https://github.com/ddopson/underscore-cli) for JSON
   formatting: `npm install -g underscore-cli`

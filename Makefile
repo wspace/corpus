@@ -6,29 +6,29 @@ all: tidy_submodules licenses README.md assembly.md building.md
 
 .PHONY: format
 format: $(PROJECTS) tools/format/format.go
-	@echo 'Formatting projects'
+	$(info Formatting projects)
 	@go run tools/format/format.go $(PROJECTS)
 
 .PHONY: licenses
 licenses: $(PROJECTS) tools/licenses/licenses.go
-	@echo 'Getting licenses'
+	$(info Getting licenses)
 	@go run tools/licenses/licenses.go $(PROJECTS)
 
 README.md: $(PROJECTS) README.md.tmpl tools/generate.go tools/generate/generate.go
-	@echo 'Generating README.md'
+	$(info Generating README.md)
 	@go run tools/generate/generate.go
 
 assembly.md: $(PROJECTS) tools/generate_assembly.jq
-	@echo 'Generating assembly.md'
+	$(info Generating assembly.md)
 	@jq -rsf tools/generate_assembly.jq $(PROJECTS) > assembly.md
 
 building.md: $(PROJECTS) tools/generate_building.jq
-	@echo 'Generating building.md'
+	$(info Generating building.md)
 	@jq -rsf tools/generate_building.jq $(PROJECTS) > building.md
 
 .PHONY: tidy_submodules
 tidy_submodules: $(PROJECTS) tools/submodules/submodules.go tools/format_gitmodules.sh
-	@echo 'Tidying Git submodules'
+	$(info Tidying Git submodules)
 	@go run tools/submodules/submodules.go
 	@tools/format_gitmodules.sh
 	@git add .gitmodules

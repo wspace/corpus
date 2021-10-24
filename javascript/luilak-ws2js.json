@@ -7,5 +7,8 @@
   "tags": ["transpiler"],
   "date": "2013-06-03 16:34:31 +0900",
   "spec_version": "0.3",
-  "source": ["https://github.com/Luilak/WS2JS"]
+  "source": [
+    "https://github.com/Luilak/WS2JS",
+    "http://web.archive.org/web/20140331170307/http://ws2js.luilak.net:80/interpreter.html"
+  ]
 }
