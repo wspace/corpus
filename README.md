@@ -86,7 +86,7 @@ language, including interpreters, compilers, and programs.
 | [whitespace.py](python/mildsunrise.json)           | Alba Mendez      | Python     | interpreter  | 2018-01-14 | [GitHub Gist](https://gist.github.com/mildsunrise/d948fe1334f36c9a0f6516e58271f936) |
 | [Whitespace](c/sandeep.json)                       | Sandeep Varma    | C, Yacc, Lex | interpreter, programs | 2017-11-11 | [GitHub](https://github.com/Sandeep023/Whitespace) |
 | [CodeWars Kata](python/musflood.json)              | Megan Flood      | Python     | interpreter  | 2017-10-21 | [GitHub](https://github.com/musflood/code-katas) |
-| [hello-worlds](whitespace/knightking-hacktoberfest-2017.json) | Jackie Chen | Whitespace | programs | 2017-10-12 | [GitHub](https://github.com/knightking100/hello-worlds) |
+| [hello-worlds](whitespace/knightking-hacktoberfest-2017.json) | Jackie Chen | Whitespace | programs | 2017-10-12 | [GitHub](https://github.com/knightking100/hello-worlds), [GitHub](https://github.com/knightking100/hello-worlds/pull/160) |
 | [HacktoberFest Starter Project](whitespace/alicewonderland-hacktoberfest-2017.json) | Chashmeet Singh | Whitespace | programs | 2017-10-10 | [GitHub](https://github.com/AliceWonderland/hacktoberfest) |
 | [Whitespace-interpreter](python/bornlex.json)      | Bornlex          | Python     | interpreter, programs | 2017-08-09 | [GitHub](https://github.com/Bornlex/Whitespace-interpreter) |
 | [whitespace-interpreter](cpp/benajmin.json)        | Benjamin Wilkins | C++        | interpreter, programs | 2017-06-05 | [GitHub](https://github.com/benajmin/whitespace-interpreter) |
@@ -264,7 +264,7 @@ language, including interpreters, compilers, and programs.
 | Implementing a stack                     | Kevin Cruijssen  | -        | 2018-07-27 12:25:19 +0000 | 0.2 | [Code Golf](https://codegolf.stackexchange.com/questions/169343/implementing-a-stack/169353#169353) |
 | Print a 10 by 10 grid of asterisks       | Kevin Cruijssen  | -        | 2018-05-25 09:35:34 +0000 | 0.2 | [Code Golf](https://codegolf.stackexchange.com/questions/88653/print-a-10-by-10-grid-of-asterisks/165417#165417) |
 | All Your Base Are Belong To Us (Restricted) | Kevin Cruijssen | -      | 2018-04-06 09:10:53 +0000 | 0.3 | [Code Golf](https://codegolf.stackexchange.com/questions/19171/all-your-base-are-belong-to-us-restricted/161445#161445) |
-| 404 - Unique 404 page not found          | Jo King          | 54 languages | 2018-01-22 11:55:35 +0000 | 0.2 | [Code Golf](https://codegolf.stackexchange.com/questions/153717/404-unique-404-page-not-found/153724#153724), [Code Golf](https://codegolf.stackexchange.com/revisions/153724/16) |
+| 404 - Unique 404 page not found          | Jo King          | 54 languages | 2018-01-22 11:55:35 +0000 | 0.2 | [Code Golf](https://codegolf.stackexchange.com/questions/153717/404-unique-404-page-not-found/153724#153724), [Code Golf](https://codegolf.stackexchange.com/revisions/153724/16), [GitHub Gist](https://gist.github.com/GrayJoKing/60ab9a603791381171c091bcc3eec189) |
 | Shortest code to produce infinite output | Ephphatha        | -        | 2017-05-27 13:05:45 +0000 | 0.2 | [Code Golf](https://codegolf.stackexchange.com/questions/13152/shortest-code-to-produce-infinite-output/123091#123091) |
 | Add a language to a polyglot             | Chance           | 30 languages | 2017-01-06 01:09:43 +0000 | 0.2 | [Code Golf](https://codegolf.stackexchange.com/questions/102370/add-a-language-to-a-polyglot/105826#105826) |
 | Run Length Decoding                      | r.e.s.           | -        | 2013-12-06 20:12:20 +0000 | 0.2 | [Code Golf](https://codegolf.stackexchange.com/questions/12902/run-length-decoding/15665#15665) |
@@ -369,17 +369,25 @@ See [CONTRIBUTING.md](./CONTRIBUTING.md).
       [whitespace interpreter](https://github.com/search?o=desc&q=whitespace+interpreter&s=updated&type=Repositories),
       [whitespace compiler](https://github.com/search?o=desc&q=whitespace+compiler&s=updated&type=Repositories),
       [compsoc.dur.ac.uk whitespace](https://github.com/search?q=compsoc.dur.ac.uk+whitespace+-pkgname+-portname+-gentoo+-_eclasses_+-prototype+-awesome+-cheatsheet+NOT+language%3Ahtml+NOT+language%3Ajson+NOT+language%3Acsv&type=Code)
+  - GitHub Gist - [compsoc.dur.ac.uk whitespace](https://gist.github.com/search?q=compsoc.dur.ac.uk+whitespace)
   - GitLab - [whitespace](https://gitlab.com/explore?name=whitespace&sort=latest_activity_desc)
   - SourceForge - [whitespace](https://sourceforge.net/directory/?q=whitespace&sort=update)
   - Bitbucket - [whitespace](https://bitbucket.org/repo/all?name=whitespace)
   - sourcehut - [whitespace](https://sr.ht/projects?search=whitespace&sort=recently-updated)
 - Package managers
+  - CPAN - [whitespace interpreter](https://metacpan.org/search?q=whitespace+interpreter)
   - crates.io - [whitespace interpreter](https://crates.io/search?q=whitespace%20interpreter&sort=new),
       [#whitespace](https://crates.io/keywords/whitespace)
+  - Elm Packages - [whitespace](https://package.elm-lang.org/)
   - Hackage - [whitespace](https://hackage.haskell.org/packages/search?terms=whitespace)
+  - Hex - [whitespace](https://hex.pm/packages?search=whitespace)
+  - Maven - [whitespace](https://mvnrepository.com/search?q=whitespace)
   - npm - [whitespace language](https://www.npmjs.com/search?q=whitespace%20language),
       [whitespace interpreter](https://www.npmjs.com/search?q=whitespace%20interpreter)
   - NuGet - [whitespace](https://www.nuget.org/packages?q=whitespace)
+  - opam [whitespace](https://opam.ocaml.org/packages/)
+  - Packagist - [whitespace](https://packagist.org/?query=whitespace)
+  - pkg.go.dev - [whitespace](https://pkg.go.dev/search?q=whitespace)
   - PyPI - ["whitespace interpreter"](https://pypi.org/search/?q=%22whitespace+interpreter%22&o=-created),
       ["whitespace language"](https://pypi.org/search/?q=%22whitespace+language%22&o=-created)
   - RubyGems - [whitespace](https://rubygems.org/search?query=whitespace)
@@ -402,8 +410,6 @@ See [CONTRIBUTING.md](./CONTRIBUTING.md).
   - Sourceforge - [Spaced IDE (SVN)](https://sourceforge.net/projects/spacedide/),
       [Whitespace IDE (CVS)](https://sourceforge.net/projects/whitespaceide/)
   - Google Code - [grass-mud-horse (SVN)](https://code.google.com/archive/p/grass-mud-horse/)
-- Package managers
-  - pkg.go.dev - [whitespace](https://pkg.go.dev/search?q=whitespace)
 - Internet Archive
   - Durham CompSoc - [download][compsoc],
       [mailing list](https://web.archive.org/web/20141011193126/http://compsoc.dur.ac.uk/archives/whitespace/)
