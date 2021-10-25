@@ -133,7 +133,9 @@ type Project struct {
 		Polyglot    []string `json:"polyglot,omitempty"`
 		SpecVersion string   `json:"spec_version,omitempty"`
 		Generate    string   `json:"generate,omitempty"`
+		Authors     []string `json:"authors,omitempty"`
 		Desc        string   `json:"desc,omitempty"`
+		Notes       string   `json:"notes,omitempty"`
 	} `json:"programs,omitempty"`
 	Commands []Command `json:"commands,omitempty"`
 	Notes    string    `json:"notes,omitempty"`

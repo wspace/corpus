@@ -267,7 +267,9 @@
           "polyglot": { "type": "array", "items": { "type": "string" } },
           "spec_version": { "$ref": "#/$defs/spec_version" },
           "generate": { "type": "string" },
-          "desc": { "type": "string" }
+          "authors": { "type": "array", "items": { "type": "string" } },
+          "desc": { "type": "string" },
+          "notes": { "type": "string" }
         },
         "additionalProperties": false
       }

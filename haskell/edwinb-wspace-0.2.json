@@ -14,5 +14,18 @@
   ],
   "bounds": { "precision": "arbitrary" },
   "behavior": { "eof": "error" },
-  "notes": "Idea from late 2002"
+  "programs": [
+    { "path": "calc.ws", "spec_version": "0.2" },
+    { "path": "count.ws", "spec_version": "0.2" },
+    { "path": "fact.ws", "spec_version": "0.2" },
+    { "path": "hworld.ws", "spec_version": "0.2" },
+    { "path": "name.ws", "spec_version": "0.2" },
+    {
+      "path": "docs/tutorial.html",
+      "polyglot": ["HTML"],
+      "spec_version": "0.2",
+      "desc": "Program is also described in HTML text"
+    }
+  ],
+  "notes": "Idea from late 2002 (TODO source). TODO include programs from CompSoc site."
 }

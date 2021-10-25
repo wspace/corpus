@@ -14,5 +14,89 @@
   ],
   "relations": [{ "type": "fork", "id": "emacs/lmitchell" }],
   "bounds": { "precision": "arbitrary" },
-  "behavior": { "eof": "error" }
+  "behavior": { "eof": "error" },
+  "programs": [
+    {
+      "path": "examples/hworld.ws",
+      "aux": ["compsoc.dur.ac.uk/whitespace/hworld.ws"],
+      "spec_version": "0.2",
+      "desc": "Hello, World!"
+    },
+    {
+      "path": "examples/name.ws",
+      "aux": ["compsoc.dur.ac.uk/whitespace/name.ws"],
+      "spec_version": "0.2",
+      "desc": "Hello, user!"
+    },
+    {
+      "path": "examples/calc.ws",
+      "aux": ["compsoc.dur.ac.uk/whitespace/calc.ws"],
+      "spec_version": "0.2",
+      "desc": "Calculator"
+    },
+    {
+      "path": "examples/fact.ws",
+      "aux": ["compsoc.dur.ac.uk/whitespace/fact.ws"],
+      "spec_version": "0.2",
+      "desc": "Factorial"
+    },
+    {
+      "path": "examples/hanoi.ws",
+      "aux": ["compsoc.dur.ac.uk/whitespace/hanoi.ws"],
+      "spec_version": "0.2",
+      "desc": "Towers of Hanoi",
+      "notes": "The CompSoc version is the same, except for including a header comment"
+    },
+    {
+      "path": "compsoc.dur.ac.uk/whitespace/fibonacci.ws",
+      "spec_version": "0.2",
+      "authors": ["Chris Morris"],
+      "desc": "Fibonacci"
+    },
+    {
+      "path": "docs/tutorial.html",
+      "aux": ["compsoc.dur.ac.uk/whitespace/tutorial.html"],
+      "polyglot": ["HTML"],
+      "spec_version": "0.2",
+      "desc": "[Fact|Tut]orial"
+    },
+    {
+      "path": "examples/count.ws",
+      "aux": [
+        "docs/tutorial.html",
+        "compsoc.dur.ac.uk/whitespace/count.ws",
+        "compsoc.dur.ac.uk/whitespace/tutorial.html",
+        "compsoc.dur.ac.uk/whitespace/tutorial.php"
+      ],
+      "spec_version": "0.2",
+      "notes": "count.ws described in the tutorial"
+    },
+    { "path": "examples/loctest.ws", "spec_version": "0.3" },
+    {
+      "path": "compsoc.dur.ac.uk/whitespace/whitespace.ws.c",
+      "polyglot": ["C"],
+      "spec_version": "0.2",
+      "authors": ["Jeremy James"]
+    },
+    {
+      "path": "compsoc.dur.ac.uk/whitespace/rot13.ws",
+      "spec_version": "0.2",
+      "authors": ["Chris Morris"]
+    },
+    {
+      "path": "compsoc.dur.ac.uk/whitespace/quine.ws",
+      "spec_version": "0.2",
+      "authors": ["Benjamin Lerman"]
+    },
+    {
+      "path": "compsoc.dur.ac.uk/whitespace/quine-2.ws",
+      "spec_version": "0.2",
+      "authors": ["Benjamin Lerman"]
+    },
+    {
+      "path": "compsoc.dur.ac.uk/whitespace/quine-copy.ws",
+      "spec_version": "0.2",
+      "authors": ["Benjamin Lerman"]
+    }
+  ]
 }
