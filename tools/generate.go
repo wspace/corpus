@@ -512,7 +512,7 @@ var domainLabels = map[string]string{
 	"pastebin.com":               "Pastebin",
 	"whitespace.pastebin.com":    "Pastebin",
 	"drive.google.com":           "Google Drive",
-	"compsoc.dur.ac.uk":          "CompSoc",
+	"compsoc.dur.ac.uk":          "Durham CompSoc",
 	"news.ycombinator.com":       "HN",
 	"slashdot.org":               "Slashdot",
 	"twitter.com":                "Twitter",
@@ -534,7 +534,13 @@ func GetURLLabel(rawURL string) (string, error) {
 			return label + " (archive)", nil
 		}
 	}
-	host := strings.TrimPrefix(u.Hostname(), "www.")
+	host := u.Hostname()
+	if i := strings.IndexByte(host, '.'); i != -1 {
+		switch host[:i] {
+		case "www", "www2":
+			host = host[i+1:]
+		}
+	}
 	if host == "compsoc.dur.ac.uk" && strings.HasPrefix(u.Path, "/archives/whitespace/") {
 		return "Mailing list", nil
 	}
