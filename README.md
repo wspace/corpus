@@ -32,7 +32,7 @@ language, including interpreters, compilers, and programs.
 | [snakulator](whitespace/elisha-snakulator.json)    | Elisha Hollander | Whitespace | programs     | 2020-09-15 | [GitHub](https://github.com/donno2048/snakulator), [donno2048.github.io](https://donno2048.github.io/snakulator/) |
 | [rustws](rust/luminight.json)                      | Luminight        | Rust       | library, mapping | 2020-08-04 | [GitHub](https://github.com/Luminighty/rustws) |
 | [Whitespace](javascript/kosei.json)                | kosei28          | JavaScript | interpreter  | 2020-08-03 | [GitHub](https://github.com/kosei28/Whitespace) |
-| [SpaceMan](haskell/ft-spaceman.json)               | Frank Terbeck    | Haskell    | interpreter  | 2020-07-09 | [GitLab](https://gitlab.com/ft/spaceman), [GitHub](https://github.com/ft/spaceman), [bewatermyfriend.org](http://bewatermyfriend.org/p/2020/000/), [HN](https://news.ycombinator.com/item?id=24763312) |
+| [SpaceMan](haskell/ft-spaceman.json)               | Frank Terbeck    | Haskell    | interpreter  | 2020-07-09 | [GitLab](https://gitlab.com/ft/spaceman), [GitHub](https://github.com/ft/spaceman), [bewatermyfriend.org](http://bewatermyfriend.org/p/2020/000/), [Hacker News](https://news.ycombinator.com/item?id=24763312) |
 | [whitespace](cpp/ricardoluis.json)                 | Ricardo Luís Vaz Silva | C++  | interpreter  | 2020-06-03 | [GitHub](https://github.com/RicardoLuis0/whitespace) |
 | [WhiteSpace Assembler](haskell/helvm-wsa.json)     | Kamil Adam       | Haskell    | assembler    | 2020-05-18 | [GitHub](https://github.com/helvm/wsa) |
 | [HelPA](haskell/helvm-helpa.json)                  | Kamil Adam       | Haskell/Eta | assembler   | 2020-05-09 | [GitHub](https://github.com/helvm/helpa) |
@@ -239,7 +239,7 @@ language, including interpreters, compilers, and programs.
 
 | Name                                     | Curator(s)       | Languages | Date | Source |
 | ---------------------------------------- | ---------------- | --------- | ---- | ------ |
-| [ws-compilers](collections/andrewarchi-ws-archive) | Andrew Archibald | Haskell, Whitespace, Perl, PHP, Ruby, Emacs Lisp | 2018-06-06 | [GitHub](https://github.com/wspace/ws-archive) |
+| [ws-archive](collections/andrewarchi-ws-archive) | Andrew Archibald | Haskell, Whitespace, Perl, PHP, Ruby, Emacs Lisp | 2018-06-06 | [GitHub](https://github.com/wspace/ws-archive) |
 | [Whitespacers](collections/hostilefork-whitespacers) | Hostile Fork | C, C++, Crystal, Erlang, Haskell, Idris, LOLCODE, Perl, Python, Rebol, Ren-C, Ruby, Whitespace | 2010-07-10 | [GitHub](https://github.com/hostilefork/whitespacers) |
 
 ## Programs
@@ -299,15 +299,19 @@ language, including interpreters, compilers, and programs.
 
 ## Comparison to Whitespacers
 
-[Whitespacers](https://github.com/hostilefork/whitespacers) was a
-collection of and the the de facto home for 13 Whitespace interpreters
-until it was superseded by The Whitespace Corpus and archived.
+[Whitespacers](https://github.com/hostilefork/whitespacers) is a
+collection by Brian Dickens (Hostile Fork) of Whitespace interpreters in
+13 languages. It was the de facto home for maintaining these
+interpreters and received many community contributions, until it was
+superseded by the Whitespace Corpus and archived.
 
-The interpreters that were directly included in Whitespacers have been
-migrated to individual repos under the [wspace](https://github.com/wspace)
+Most interpreters were copied directly into Whitespacers; these have
+been migrated to individual repos under the [wspace](https://github.com/wspace)
 organization, where maintenance is ongoing. This keeps each
-implementation's history separate and and makes ownership clearer.
-Submodules for all of these interpreters have been added to the Corpus.
+implementation's history separate and and makes ownership clearer. The
+interpreters, for which a git repository by the original author already
+exists, remain the authoritative source and are included as submodules
+in the Corpus.
 
 Interpreters and programs from Whitespacers, with their equivalents in
 the Corpus:
@@ -397,7 +401,9 @@ See [CONTRIBUTING.md](./CONTRIBUTING.md).
   - [GitHub Gist](https://gist.github.com/)
   - Sourceforge - [Spaced IDE (SVN)](https://sourceforge.net/projects/spacedide/),
       [Whitespace IDE (CVS)](https://sourceforge.net/projects/whitespaceide/)
-  - Google Code Archive - [grass-mud-horse (SVN)](https://code.google.com/archive/p/grass-mud-horse/)
+  - Google Code - [grass-mud-horse (SVN)](https://code.google.com/archive/p/grass-mud-horse/)
+- Package managers
+  - pkg.go.dev - [whitespace](https://pkg.go.dev/search?q=whitespace)
 - Internet Archive
   - Durham CompSoc - [download][compsoc],
       [mailing list](https://web.archive.org/web/20141011193126/http://compsoc.dur.ac.uk/archives/whitespace/)
@@ -454,6 +460,7 @@ See [CONTRIBUTING.md](./CONTRIBUTING.md).
   - Hacker News
 - Snippets
   - Pastebin
+  - Ideone - [Whitespace IDE](https://www.ideone.com/l/whitespace)
 
 ## License
 
