@@ -74,8 +74,8 @@ Build and run errors are included.
 - ⚠️ csharp/reflash/WhiteSpaceInterpretator/bin/Debug/WhiteSpaceInterpretator.exe: `msbuild /p:Configuration=Debug WhiteSpaceInterpretator/WhiteSpaceInterpretator.csproj` Mono does not implement WPF APIs
 - csharp/rolisoft-esoteric/bin/Debug/EsotericCodeInterpreter.exe: `msbuild /p:Configuration=Debug\;AssemblyName=EsotericCodeInterpreter EsotericCodeInterpreter.csproj`
 - ❌ docker/bensuperpc
+- ❌ elisp/lmitchell
 - ❌ elixir/quinnwilton
-- ❌ emacs/lmitchell
 - ⚠️ erlang/derek-mrwhite/*unspecified*: `make` Unclear how to run
 - ⚠️ go/andrewarchi-nebula:
   - ⚠️ nebula: `go mod init github.com/andrewarchi/nebula && go mod tidy && go build` Requires LLVM

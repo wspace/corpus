@@ -1,5 +1,5 @@
 {
-  "id": "emacs/lmitchell",
+  "id": "elisp/lmitchell",
   "name": "whitespace-mode.el",
   "authors": ["Lawrence Mitchell"],
   "license": "GPL-2.0-or-later",

@@ -237,6 +237,9 @@ func ReadProjects(paths []string) ([]*Project, error) {
 		if err := jsonutil.DecodeFile(project, &p); err != nil {
 			return projects, fmt.Errorf("%s: %w", project, err)
 		}
+		if id := strings.TrimSuffix(project, ".json"); p.ID != id {
+			return projects, fmt.Errorf("%s: ID %q does not match path", project, p.ID)
+		}
 		projects = append(projects, &p)
 	}
 	return projects, nil
