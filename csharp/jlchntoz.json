@@ -1,0 +1,40 @@
+{
+  "id": "csharp/jlchntoz",
+  "name": "Whitespace.Compiler.cs",
+  "description": "Compiles to MSIL executable using the .NET System.Reflection.Emit API",
+  "authors": ["Jeremy Lam (Vistanz)"],
+  "license": "none",
+  "languages": ["C#"],
+  "tags": ["compiler"],
+  "date": "2017-02-14 18:29:47 +0800",
+  "spec_version": "0.2",
+  "source": ["https://gist.github.com/JLChnToZ/42bade0f3d4b9e671bcedaafe1000c86"],
+  "assembly": {
+    "mnemonics": {
+      "push": ["Pus"],
+      "dup": ["Dup"],
+      "swap": ["Swp"],
+      "drop": ["Pop"],
+      "add": ["Add"],
+      "sub": ["Sub"],
+      "mul": ["Mul"],
+      "div": ["Div"],
+      "mod": ["Mod"],
+      "store": ["Sto"],
+      "retrieve": ["Ret"],
+      "label": ["Mrk"],
+      "call": ["Cas"],
+      "jmp": ["Jmp"],
+      "jz": ["Jmz"],
+      "jn": ["Jmn"],
+      "ret": ["Ens"],
+      "end": ["End"],
+      "printc": ["Wrc"],
+      "printi": ["Wrn"],
+      "readc": ["Rec"],
+      "readi": ["Ren"]
+    },
+    "usage": ["enum"]
+  },
+  "notes": "TODO probably need to restructure files in order to build"
+}

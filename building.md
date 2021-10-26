@@ -66,6 +66,7 @@ Build and run errors are included.
 - crystal/collidedscope-spiceweight/spwt: `make`
 - ❌ csharp/colchicus
 - csharp/denislabrecque/WhitespaceInterpreter.exe: `mcs -debug -out:WhitespaceInterpreter.exe WhitespaceInterpreter/*.cs`
+- ❌ csharp/jlchntoz
 - csharp/littlebughunter-assembler/bin/Debug/WhitespaceAssembler.exe: `msbuild /p:Configuration=Debug WhitespaceAssembler.csproj`
 - csharp/nicolasff-spacesharp/wsc.exe: `make`
 - ⚠️ csharp/north-projectone/The-Code/WhitespaceInterpreter/bin/Debug/WhitespaceInterpreter.exe: `msbuild /p:Configuration=Debug The-Code/WhitespaceInterpreter/WhitespaceInterpreter.csproj` The Carbon driver has not been ported to 64-bit, so very few parts of Windows.Forms work properly
@@ -270,6 +271,7 @@ Build and run errors are included.
 - ❌ whitespace/keithsthompson-fizzbuzz
 - ❌ whitespace/kenrube-esopoly
 - ❌ whitespace/knightking-hacktoberfest-2017
+- ❌ whitespace/kunde-hello
 - ❌ whitespace/mercerenies-euler
 - ❌ whitespace/mesquita-markov
 - ❌ whitespace/mikedonaghy-hello
