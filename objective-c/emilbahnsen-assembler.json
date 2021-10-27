@@ -1,0 +1,56 @@
+{
+  "id": "objective-c/emilbahnsen-assembler",
+  "name": "Whitespace assembler",
+  "authors": ["Emil Bahnsen"],
+  "license": "none",
+  "languages": ["Objective-C"],
+  "tags": ["assembler", "transpiler"],
+  "date": "2009-07-14",
+  "spec_version": "0.3",
+  "source": ["https://github.com/wspace/emilbahnsen-assembler", "https://github.com/EmilBahnsen/projects"],
+  "assembly": {
+    "mnemonics": {
+      "push": ["push"],
+      "dup": ["dup"],
+      "copy": ["copy"],
+      "swap": ["exch"],
+      "drop": ["pop"],
+      "slide": ["slid"],
+      "add": ["add"],
+      "sub": ["sub"],
+      "mul": ["mul"],
+      "div": ["div"],
+      "mod": ["mod"],
+      "store": ["stor"],
+      "retrieve": ["reti"],
+      "label": ["mark"],
+      "call": ["call"],
+      "jmp": ["jump"],
+      "jz": ["jumpz"],
+      "jn": ["jumpn"],
+      "ret": ["ret"],
+      "end": ["exit"],
+      "printc": ["prtc"],
+      "printi": ["prtn"],
+      "readc": ["redc"],
+      "readi": ["redn"]
+    },
+    "usage": ["assembler", "transpiler"]
+  },
+  "commands": [
+    {
+      "type": "multiple",
+      "usage": "$0 [-acwmh] <file...>",
+      "options": [
+        { "short": "a", "long": "wssam", "desc": "Compile WS to WSA source code" },
+        { "short": "c", "long": "csource", "desc": "Compile WSA to C source code" },
+        { "short": "w", "long": "ws", "desc": "Compile WSA to WS source code (implicitly assumed)" },
+        { "short": "m", "long": "comm", "desc": "Transferer comments" },
+        { "short": "s", "long": "short", "desc": "Shorten labels" },
+        { "short": "h", "long": "help", "desc": "Show help" }
+      ],
+      "option_parse": "Objective-C getopt"
+    }
+  ],
+  "notes": "Date written in file headers. Repo includes other projects, including many large objects, which are pruned in the wspace fork."
+}

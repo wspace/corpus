@@ -1,0 +1,66 @@
+{
+  "id": "php/mattparker",
+  "name": "PHP to Whitespace",
+  "authors": ["Matt Parker"],
+  "license": "MIT",
+  "languages": ["PHP"],
+  "tags": ["generator", "programs"],
+  "date": "2015-02-04 22:41:02 +0000",
+  "spec_version": "0.3",
+  "source": ["https://github.com/mattparker/phpwhitespace"],
+  "assembly": {
+    "mnemonics": {
+      "push": ["push"],
+      "dup": ["duplicate"],
+      "copy": ["copy"],
+      "swap": ["swap"],
+      "drop": ["discard"],
+      "slide": ["slide"],
+      "add": ["add"],
+      "sub": ["subtract"],
+      "mul": ["multiply"],
+      "div": ["divide"],
+      "mod": ["modulo"],
+      "store": ["store"],
+      "retrieve": ["retrieve"],
+      "label": ["label"],
+      "call": ["call"],
+      "jmp": ["jump"],
+      "jz": ["jumpz"],
+      "jn": ["jumplz"],
+      "ret": ["return"],
+      "end": ["end"],
+      "printc": ["write_character"],
+      "printi": ["write_number"],
+      "readc": ["read_character"],
+      "readi": ["read_number"]
+    },
+    "usage": ["generator"]
+  },
+  "mappings": [{ "space": "s", "tab": "t", "lf": "l" }],
+  "programs": [
+    {
+      "path": "domraffler.php",
+      "compiled": "domraffler.ws",
+      "inputs": ["rafflerlisting"],
+      "spec_version": "0.2",
+      "generate": "cd examples && php domraffler.php"
+    },
+    {
+      "path": "secret-message.php",
+      "compiled": "secret-message.html",
+      "polyglot": ["HTML"],
+      "spec_version": "0.2",
+      "generate": "cd examples && php secret-message.php"
+    }
+  ],
+  "commands": [
+    {
+      "type": "generator",
+      "bin": "src/PHPWhiteSpace.php",
+      "usage": "php <file>",
+      "input": "<file>",
+      "notes": "<file> includes PHPWhiteSpace.php as a library to generate Whitespace code"
+    }
+  ]
+}

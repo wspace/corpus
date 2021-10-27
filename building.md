@@ -95,6 +95,7 @@ Build and run errors are included.
 - ❌ haskell/helvm-wsa
 - ⚠️ haskell/jhmcstanton-marginal/*unspecified*: `stack build` `stack setup` fails with link error
 - ❌ haskell/matsubara
+- ❌ haskell/soimort-grassmudhorse
 - ⚠️ haskell/takatoh-hws/hws: `make` Needs changes for latest Haskell
 - ⚠️ idris/edwinb-ws-idr/wspace: `idris --build wspace.ipkg` Needs changes for latest Idris
 - java/abhijitsharma/target/whitespace-1.0.jar: `sed -i '' 's/>1.6</>1.7</' pom.xml && mvn package`
@@ -141,6 +142,7 @@ Build and run errors are included.
 - nasm/ryzheboka:
   - wsCompiler.py
   - wsInterpreter: `gcc -O3 -Wall -o wsInterpreter wsInterpreter.c`
+- ⚠️ objective-c/emilbahnsen-assembler/*unspecified*
 - ocaml/jgkaplan-wsc/main.byte: `make`
 - ocaml/matsud-c2ws/c2ws: `make`
 - ocaml/steiner/whitespace: `make`
@@ -151,6 +153,7 @@ Build and run errors are included.
 - php/igorw-wsm/bin/wsm
 - php/johankj/whitespace.php
 - ❌ php/jseidl-wcc
+- php/mattparker/src/PHPWhiteSpace.php
 - php/nobody1986:
   - whitespace: `gcc -O3 -o whitespace whitespace.c list.c stack.c`
   - whitespace.php

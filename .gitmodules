@@ -200,6 +200,9 @@
 	path = haskell/matsubara
 	url = https://github.com/matsubara0507/whitespace_has
 	branch = develop
+[submodule "haskell/soimort-grassmudhorse"]
+	path = haskell/soimort-grassmudhorse
+	url = https://github.com/soimort/GrassMudHorse
 [submodule "haskell/takatoh-hws"]
 	path = haskell/takatoh-hws
 	url = https://github.com/takatoh/hws
@@ -323,6 +326,9 @@
 [submodule "nasm/ryzheboka"]
 	path = nasm/ryzheboka
 	url = https://github.com/ryzheboka/Whitespace
+[submodule "objective-c/emilbahnsen-assembler"]
+	path = objective-c/emilbahnsen-assembler
+	url = https://github.com/wspace/emilbahnsen-assembler
 [submodule "ocaml/jgkaplan-wsc"]
 	path = ocaml/jgkaplan-wsc
 	url = https://github.com/jgkaplan/whitespaceTranspiler
@@ -350,6 +356,9 @@
 [submodule "php/jseidl-wcc"]
 	path = php/jseidl-wcc
 	url = https://github.com/jseidl/whitespace
+[submodule "php/mattparker"]
+	path = php/mattparker
+	url = https://github.com/mattparker/phpwhitespace
 [submodule "php/nobody1986"]
 	path = php/nobody1986
 	url = https://github.com/nobody1986/whitespace-php

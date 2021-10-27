@@ -1,0 +1,32 @@
+{
+  "id": "haskell/soimort-grassmudhorse",
+  "name": "GrassMudHorse",
+  "authors": ["Mort Yao"],
+  "license": "GPL-2.0",
+  "languages": ["Haskell"],
+  "tags": ["interpreter", "mapping", "programs"],
+  "date": "2013-04-20 00:20:34 +0200",
+  "spec_version": "0.3",
+  "source": ["https://github.com/soimort/GrassMudHorse"],
+  "relations": [
+    {
+      "type": "fork",
+      "id": "haskell/haroldl-wspace-0.4",
+      "commit": "bdd724393a8626ba67c161aacba8b13f52215400"
+    }
+  ],
+  "whitespace": { "nonstandard": [{ "name": "shuffle", "seq": "STTS" }] },
+  "mappings": [{ "space": "草", "tab": "泥", "lf": "马", "extension": "gmh" }],
+  "programs": [
+    { "path": "99-grass-mud-horses.gmh", "spec_version": "0.3" },
+    { "path": "calc.gmh", "spec_version": "0.2" },
+    { "path": "count.gmh", "spec_version": "0.2" },
+    { "path": "fact.gmh", "spec_version": "0.2" },
+    { "path": "fibonacci.gmh", "spec_version": "0.2" },
+    { "path": "hanoi.gmh", "spec_version": "0.2" },
+    { "path": "hworld.gmh", "spec_version": "0.3" },
+    { "path": "loctest.gmh", "spec_version": "0.3" },
+    { "path": "name.gmh", "spec_version": "0.2" },
+    { "path": "randperm.gmh", "spec_version": "0.2", "notes": "Uses shuffle instruction" }
+  ]
+}

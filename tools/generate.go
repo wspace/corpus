@@ -33,8 +33,9 @@ type Project struct {
 		URL     string `json:"url"`
 	} `json:"package,omitempty"`
 	Relations []struct {
-		Type string `json:"type"`
-		ID   string `json:"id"`
+		Type   string `json:"type"`
+		ID     string `json:"id"`
+		Commit string `json:"commit,omitempty"`
 	} `json:"relations,omitempty"`
 	Bounds *struct {
 		Precision      string      `json:"precision,omitempty"`
@@ -237,7 +238,7 @@ func ReadProjects(paths []string) ([]*Project, error) {
 		if err := jsonutil.DecodeFile(project, &p); err != nil {
 			return projects, fmt.Errorf("%s: %w", project, err)
 		}
-		if id := strings.TrimSuffix(project, ".json"); p.ID != id {
+		if id := strings.TrimSuffix(project, ".json"); p.ID != "" && p.ID != id {
 			return projects, fmt.Errorf("%s: ID %q does not match path", project, p.ID)
 		}
 		projects = append(projects, &p)
