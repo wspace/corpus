@@ -7,7 +7,11 @@
   "tags": ["assembler", "mapping", "programs"],
   "date": "2016-03-21 16:16:56 +0900",
   "spec_version": "0.2",
-  "source": ["https://github.com/shi-mo/yukicoder", "https://yukicoder.me/users/1721"],
+  "source": [
+    "https://github.com/wspace/shimo-yukicoder",
+    "https://github.com/shi-mo/yukicoder",
+    "https://yukicoder.me/users/1721"
+  ],
   "assembly": {
     "mnemonics": {
       "push": ["push <number>", "push <char>"],
@@ -26,13 +30,48 @@
   },
   "mappings": [{ "space": "S", "tab": "T", "lf": "\n", "extension": "st" }],
   "programs": [
-    { "path": "whitespace/0272.as" },
-    { "path": "whitespace/0244.as" },
-    { "path": "whitespace/0354.as" },
-    { "path": "whitespace/0128.as" },
-    { "path": "whitespace/0169.as" },
-    { "path": "whitespace/9000.as" },
-    { "path": "whitespace/9005.st" }
+    {
+      "path": "0272.as",
+      "compiled": "0272.ws",
+      "spec_version": "0.2",
+      "generate": "ruby as2st.rb < 0272.as | ruby st2ws.rb > 0272.ws"
+    },
+    {
+      "path": "0244.as",
+      "compiled": "0244.ws",
+      "spec_version": "0.2",
+      "generate": "ruby as2st.rb < 0244.as | ruby st2ws.rb > 0244.ws"
+    },
+    {
+      "path": "0354.as",
+      "compiled": "0354.ws",
+      "spec_version": "0.2",
+      "generate": "ruby as2st.rb < 0354.as | ruby st2ws.rb > 0354.ws"
+    },
+    {
+      "path": "0128.as",
+      "compiled": "0128.ws",
+      "spec_version": "0.2",
+      "generate": "ruby as2st.rb < 0128.as | ruby st2ws.rb > 0128.ws"
+    },
+    {
+      "path": "0169.as",
+      "compiled": "0169.ws",
+      "spec_version": "0.2",
+      "generate": "ruby as2st.rb < 0169.as | ruby st2ws.rb > 0169.ws"
+    },
+    {
+      "path": "9000.as",
+      "compiled": "9000.ws",
+      "spec_version": "0.2",
+      "generate": "ruby as2st.rb < 9000.as | ruby st2ws.rb > 9000.ws"
+    },
+    {
+      "path": "9005.st",
+      "compiled": "9005.ws",
+      "spec_version": "0.2",
+      "generate": "ruby st2ws.rb < 9005.st > 9005.ws"
+    }
   ],
   "commands": [
     {
@@ -40,9 +79,10 @@
       "bin": "as2st.rb",
       "usage": "ruby $0",
       "input": "stdin",
-      "output": "stdin",
+      "output": "stdout",
       "notes": "Assembles to mapping"
     },
-    { "type": "mapping", "bin": "st2ws.rb", "usage": "ruby $0", "input": "stdin", "output": "stdin" }
-  ]
+    { "type": "mapping", "bin": "st2ws.rb", "usage": "ruby $0", "input": "stdin", "output": "stdout" }
+  ],
+  "notes": "Repo is very large, so wspace fork extracts just the whitespace/ dir"
 }

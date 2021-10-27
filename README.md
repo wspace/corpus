@@ -66,7 +66,7 @@ language, including interpreters, compilers, and programs.
 | [HoHoHo](python/freyamade-hohoho.json)             | Freya Madeline Broderick, Omar Sallam | Python | mapping, programs | 2018-11-22 | [GitHub](https://github.com/freyamade/hohoho) |
 | [whitespace-interpreter](python/adapap.json)       | Adam Papenhausen | Python     | interpreter  | 2018-11-16 | [GitHub](https://github.com/adapap/whitespace-interpreter) |
 | [whitespace](python/ahl27.json)                    | Aidan Lakshman   | Python     | interpreter, text to Whitespace, programs | 2018-11-08 | [GitHub](https://github.com/ahl27/whitespace) |
-| [Whitespace-Compiler](java/wysang.json)            | wysang           | Java, ANTLR4 | grammar    | 2018-10-22 | [GitHub](https://github.com/wysang/Whitespace-Compiler) |
+| [Whitespace-Compiler](java/wysang.json)            | wysang           | Java, ANTLR | grammar     | 2018-10-22 | [GitHub](https://github.com/wysang/Whitespace-Compiler) |
 | [Hacktoberfest 2018 Hello-world](whitespace/aniket-hacktoberfest-2018.json) | Ethan Hall, Unnikrishnan A G | Whitespace | programs | 2018-10-06 | [GitHub](https://github.com/wspace/aniket-hacktoberfest-2018), [GitHub](https://github.com/Aniket965/Hello-world/tree/master/Whitespace) |
 | [whitespace-stack-flood](whitespace/trevorbennett-stack-flood.json) | Trevor Bennett | Whitespace | programs | 2018-09-08 | [GitHub](https://github.com/trevorbennett/whitespace-stack-flood), [r/ProgrammerHumor](https://www.reddit.com/r/ProgrammerHumor/comments/9dvwhn/java_java/e5kg126/) |
 | [nospace](cpp/buyoh-nospace.json)                  | 舞葉 (Mai Buyoh)   | C++, Ruby  | language, interpreter, programs | 2018-09-05 | [GitHub](https://github.com/buyoh/nospace) |
@@ -125,7 +125,7 @@ language, including interpreters, compilers, and programs.
 | [whiteplanes.cs](csharp/nutcrack-whiteplanes.json) | Takuya Katsurada | C#         | interperter  | 2016-04-15 | [NuGet](https://www.nuget.org/packages/whiteplanes/), [GitHub](https://github.com/whiteplanes/whiteplanes.cs) |
 | [whitespace-compiler](python/meand.json)           | Adam Dinwoodie   | Python     | assembler    | 2016-04-13 | [GitHub](https://github.com/me-and/whitespace-compiler) |
 | [Whitespace-JS](javascript/susisu.json)            | Susisu           | JavaScript | interpreter  | 2016-04-12 | [GitHub](https://github.com/susisu/Whitespace-JS) |
-| [shi-mo/yukicoder/whitespace](ruby/shimo-yukicoder.json) | Yoshifumi Shimono (shi-mo) | Ruby, Whitespace | assembler, mapping, programs | 2016-03-21 | [GitHub](https://github.com/shi-mo/yukicoder), [yukicoder](https://yukicoder.me/users/1721) |
+| [shi-mo/yukicoder/whitespace](ruby/shimo-yukicoder.json) | Yoshifumi Shimono (shi-mo) | Ruby, Whitespace | assembler, mapping, programs | 2016-03-21 | [GitHub](https://github.com/wspace/shimo-yukicoder), [GitHub](https://github.com/shi-mo/yukicoder), [yukicoder](https://yukicoder.me/users/1721) |
 | [whitespace-ruby](ruby/alesiong.json)              | alesiong         | Ruby       | program builder, programs | 2016-03-05 | [GitHub](https://github.com/alesiong/whitespace-ruby) |
 | [Whitespace support in Atom](textmate/veniversum.json) | Qingzhuo     | TextMate   | syntax highlighting, mapping | 2016-02-20 | [GitHub](https://github.com/veniversum/language-whitespace) |
 | [whitespace-interpreter](javascript/uraza.json)    | Uraza            | JavaScript | interpreter  | 2016-02-08 | [GitHub](https://github.com/uraza/whitespace-interpreter) |

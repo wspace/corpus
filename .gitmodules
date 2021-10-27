@@ -517,7 +517,7 @@
 	url = https://github.com/pocke/akaza
 [submodule "ruby/shimo-yukicoder"]
 	path = ruby/shimo-yukicoder
-	url = https://github.com/shi-mo/yukicoder
+	url = https://github.com/wspace/shimo-yukicoder
 [submodule "ruby/technohippy-gorispace"]
 	path = ruby/technohippy-gorispace
 	url = https://github.com/technohippy/gorispace
