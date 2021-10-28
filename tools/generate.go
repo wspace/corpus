@@ -141,6 +141,7 @@ type Project struct {
 	} `json:"programs,omitempty"`
 	Commands []Command `json:"commands,omitempty"`
 	Notes    string    `json:"notes,omitempty"`
+	TODO     string    `json:"todo,omitempty"`
 }
 
 type Command struct {

@@ -202,9 +202,9 @@
         { "name": "ast", "desc": "emit Whitespace AST" },
         { "name": "ir", "desc": "emit Nebula IR" },
         { "name": "llvm", "desc": "emit LLVM IR" }
-      ],
-      "notes": "TODO document options"
+      ]
     },
     { "type": "interpreter", "bin": "programs/interpret.wsa" }
-  ]
+  ],
+  "todo": "Document options"
 }

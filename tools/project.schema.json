@@ -335,7 +335,8 @@
         "additionalProperties": false
       }
     },
-    "notes": { "type": "string" }
+    "notes": { "type": "string" },
+    "todo": { "type": "string" }
   },
   "required": ["id", "name", "authors", "license", "languages", "tags", "date", "spec_version", "source"],
   "additionalProperties": false

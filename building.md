@@ -18,7 +18,7 @@ Build and run errors are included.
   - wsc.sh
 - c/rispoli-txt2ws/txt2ws: `make`
 - c/sandeep/white: `gcc -O3 -Wall -o white y.tab.c lex.yy.c`
-- ⚠️ c/shinh-elvm/*unspecified*: `make`
+- ⚠️ c/shinh-elvm/*unspecified*: `make` Building stalls likely due to missing dependencies
 - c/ssiegl-wsdebug:
   - wsdebug: `./configure && make`
   - wsi: `./configure && make`

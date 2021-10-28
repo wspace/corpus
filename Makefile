@@ -52,3 +52,17 @@ update_submodules_force:
 list_project_json:
 	$(foreach project,$(PROJECTS),$(info $(project)))
 	@:
+
+.PHONY: todo
+todo:
+	@echo 'List programs:'
+	@jq -r 'select(.programs==null and (.tags|contains(["programs"]))) | "- \(.id).json"' $(PROJECTS)
+	@echo
+	@echo 'Document assembly dialect:'
+	@jq -r 'select(.assembly.mnemonics == null and (.tags|contains(["assembler"]) or contains(["disassembler"]))) | "- \(.id).json"' $(PROJECTS)
+	@echo
+	@echo 'Refine dates:'
+	@jq -r 'select(.date | test("^\\d{4}$$"; "")) | "- \(.id).json: \(.date)"' $(PROJECTS)
+	@echo
+	@echo 'TODO:'
+	@jq -r 'select(.todo != null) | "- \(.id).json: \(.todo)"' $(PROJECTS)

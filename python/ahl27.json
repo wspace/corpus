@@ -35,5 +35,5 @@
       "notes": "Encrypt writes to <output_file>.wsp or converted.wsp, if --output not given. Decrypt writes to stdout."
     }
   ],
-  "notes": "TODO split commands for encrypt and decrypt"
+  "todo": "Split commands for encrypt and decrypt"
 }

@@ -36,5 +36,5 @@
     },
     "usage": ["enum"]
   },
-  "notes": "TODO probably need to restructure files in order to build"
+  "todo": "Probably need to restructure files in order to build"
 }

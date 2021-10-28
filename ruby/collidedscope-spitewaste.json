@@ -285,7 +285,7 @@
           "name": "help",
           "desc": "Describe available commands or one specific command.",
           "usage": "[<command>]",
-          "notes": "options: asm, compile, convert, docs, exec, help, image, version. TODO handle values not bound to flags."
+          "notes": "options: asm, compile, convert, docs, exec, help, image, version"
         },
         {
           "name": "image",
@@ -373,8 +373,8 @@
           ]
         },
         { "name": "version", "desc": "Display the current version of Spitewaste and exit." }
-      ],
-      "notes": "TODO refactor shared options (--format, --aliases, and --coexist)"
+      ]
     }
-  ]
+  ],
+  "todo": "Handle `help` options in schema. Refactor shared options (--format, --aliases, and --coexist) in schema."
 }

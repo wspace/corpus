@@ -8,5 +8,5 @@
   "date": "2013-02-19 11:13:19 +0000",
   "spec_version": "0.3",
   "source": ["https://sourceforge.net/projects/spacedide/"],
-  "notes": "TODO mirror SVN repo"
+  "todo": "Mirror SVN repo"
 }

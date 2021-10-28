@@ -48,9 +48,9 @@
       "bin": "target/whitespace-interpreter-0.4.jar",
       "build": "mvn package",
       "build_errors": "org.apache.commons.cli is not packaged in jar",
-      "option_parse": "Java org.apache.commons.cli",
-      "notes": "TODO document options"
+      "option_parse": "Java org.apache.commons.cli"
     }
   ],
-  "notes": "szm language opcodes are specified as 4 ternary trits using the alphabet 水 沝 淼. szm has additional operators not in Whitespace. TODO unclear whether szm can be compiled to Whitespace."
+  "notes": "szm language opcodes are specified as 4 ternary trits using the alphabet 水 沝 淼. szm has additional operators not in Whitespace.",
+  "todo": "Document options. Unclear whether szm can be compiled to Whitespace."
 }

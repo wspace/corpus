@@ -56,5 +56,6 @@
     { "path": "example/vm/bf.wsa", "compiled": "example/vm/bf.ws" },
     { "path": "example/wc/bf2wsa.wsa", "compiled": "example/wc/bf2wsa.ws" }
   ],
-  "notes": "TODO document macros. Local labels start with `.`. The brainfuck-whitespace repo is derived from example/bf.wsa, but it stops reading the program at !, in addition to \\n."
+  "notes": "Local labels start with `.`. The brainfuck-whitespace repo is derived from example/bf.wsa, but it stops reading the program at !, in addition to \\n.",
+  "todo": "Document macros"
 }

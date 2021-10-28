@@ -27,5 +27,6 @@
       "desc": "Program is also described in HTML text"
     }
   ],
-  "notes": "Idea from late 2002 (TODO source). TODO include programs from CompSoc site."
+  "notes": "Idea from late 2002",
+  "todo": "Include programs from CompSoc site. Find source for idea being from late 2002."
 }
