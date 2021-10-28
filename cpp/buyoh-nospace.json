@@ -8,6 +8,92 @@
   "date": "2018-09-05 15:36:34 +0900",
   "spec_version": "0.3",
   "source": ["https://github.com/buyoh/nospace"],
+  "programs": [
+    { "path": "001_code.txt", "outputs": ["001_expected.txt"], "spec_version": "0.3" },
+    { "path": "002_code.txt", "outputs": ["002_expected.txt"], "spec_version": "0.3" },
+    { "path": "003_code.txt", "outputs": ["003_expected.txt"], "spec_version": "0.3" },
+    { "path": "004_code.txt", "outputs": ["004_expected.txt"], "spec_version": "0.3" },
+    { "path": "005_code.txt", "outputs": ["005_expected.txt"], "spec_version": "0.3" },
+    { "path": "006_code.txt", "outputs": ["006_expected.txt"], "spec_version": "0.3" },
+    { "path": "007_code.txt", "outputs": ["007_expected.txt"], "spec_version": "0.3" },
+    { "path": "008_code.txt", "outputs": ["008_expected.txt"], "spec_version": "0.3" },
+    { "path": "009_code.txt", "outputs": ["009_expected.txt"], "spec_version": "0.3" },
+    {
+      "path": "010_code.txt",
+      "inputs": ["010_stdin.txt"],
+      "outputs": ["010_expected.txt"],
+      "spec_version": "0.3"
+    },
+    {
+      "path": "011_code.txt",
+      "inputs": ["011_stdin.txt"],
+      "outputs": ["011_expected.txt"],
+      "spec_version": "0.3"
+    },
+    {
+      "path": "012_code.txt",
+      "inputs": ["012_stdin.txt"],
+      "outputs": ["012_expected.txt"],
+      "spec_version": "0.3"
+    },
+    { "path": "013_code.txt", "outputs": ["013_expected.txt"], "spec_version": "0.3" },
+    { "path": "014_code.txt", "outputs": ["014_expected.txt"], "spec_version": "0.3" },
+    { "path": "015_code.txt", "outputs": ["015_expected.txt"], "spec_version": "0.3" },
+    { "path": "016_code.txt", "outputs": ["016_expected.txt"], "spec_version": "0.3" },
+    {
+      "path": "017_code.txt",
+      "inputs": ["017_stdin.txt"],
+      "outputs": ["017_expected.txt"],
+      "spec_version": "0.3"
+    },
+    {
+      "path": "018_code.txt",
+      "inputs": ["018_stdin.txt"],
+      "outputs": ["018_expected.txt"],
+      "spec_version": "0.3"
+    },
+    {
+      "path": "019_code.txt",
+      "inputs": ["019_stdin.txt"],
+      "outputs": ["019_expected.txt"],
+      "spec_version": "0.3"
+    },
+    {
+      "path": "020_code.txt",
+      "inputs": ["020_stdin.txt"],
+      "outputs": ["020_expected.txt"],
+      "spec_version": "0.3"
+    },
+    { "path": "021_code.txt", "outputs": ["021_expected.txt"], "spec_version": "0.3" },
+    { "path": "022_code.txt", "outputs": ["022_expected.txt"], "spec_version": "0.3" },
+    { "path": "023_code.txt", "outputs": ["023_expected.txt"], "spec_version": "0.3" },
+    { "path": "024_code.txt", "outputs": ["024_expected.txt"], "spec_version": "0.3" },
+    {
+      "path": "025_code.txt",
+      "inputs": ["025_stdin.txt"],
+      "outputs": ["025_expected.txt"],
+      "spec_version": "0.3"
+    },
+    { "path": "026_code.txt", "outputs": ["026_expected.txt"], "spec_version": "0.3" },
+    {
+      "path": "027_code.txt",
+      "inputs": ["027_stdin.txt"],
+      "outputs": ["027_expected.txt"],
+      "spec_version": "0.3"
+    },
+    {
+      "path": "yukicoder646_1_code.txt",
+      "inputs": ["yukicoder646_1_stdin.txt"],
+      "outputs": ["yukicoder646_1_expected.txt"],
+      "spec_version": "0.3"
+    },
+    {
+      "path": "yukicoder677_code.txt",
+      "inputs": ["yukicoder677_stdin.txt"],
+      "outputs": ["yukicoder677_expected.txt"],
+      "spec_version": "0.3"
+    }
+  ],
   "commands": [
     {
       "type": "language compiler",

@@ -132,6 +132,7 @@ type Project struct {
 		Outputs     []string `json:"outputs,omitempty"`
 		Aux         []string `json:"aux,omitempty"`
 		Polyglot    []string `json:"polyglot,omitempty"`
+		Equivalent  string   `json:"equivalent,omitempty"`
 		SpecVersion string   `json:"spec_version,omitempty"`
 		Generate    string   `json:"generate,omitempty"`
 		Authors     []string `json:"authors,omitempty"`
@@ -150,6 +151,7 @@ type Command struct {
 	Build               string          `json:"build,omitempty"`
 	BuildErrors         string          `json:"build_errors,omitempty"`
 	Usage               string          `json:"usage,omitempty"`
+	ExampleUsages       []string        `json:"example_usages,omitempty"`
 	RunErrors           string          `json:"run_errors,omitempty"`
 	Input               string          `json:"input,omitempty"`
 	Output              string          `json:"output,omitempty"`

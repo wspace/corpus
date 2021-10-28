@@ -10,6 +10,23 @@
   "source": ["https://github.com/apua/whitespace"],
   "whitespace": { "extension": "ws" },
   "mappings": [{ "space": "S", "tab": "T", "lf": "L", "extension": "stl" }],
+  "programs": [
+    { "path": "STL/factorial.stl", "equivalent": "fact.ws", "spec_version": "0.2" },
+    {
+      "path": "STL/fibnancy.stl",
+      "compiled": "WS/fib.ws",
+      "equivalent": "fibonacci.ws",
+      "spec_version": "0.2"
+    },
+    { "path": "STL/hello_user.stl", "equivalent": "name.ws", "spec_version": "0.2" },
+    { "path": "STL/hello_world.stl", "equivalent": "hworld.ws", "spec_version": "0.2" },
+    {
+      "path": "ghost/ghost.stl",
+      "compiled": "ghost/ghost.ws",
+      "aux": ["ghost/ghost_test.sh"],
+      "spec_version": "0.2"
+    }
+  ],
   "commands": [
     {
       "type": "interpreter",

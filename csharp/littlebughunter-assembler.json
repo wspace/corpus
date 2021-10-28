@@ -80,6 +80,13 @@
     "line_comments": ["//"],
     "extension": "txt"
   },
+  "programs": [
+    {
+      "path": "examples/helloWorld.txt",
+      "compiled": "examples/helloWorldWhitespace.txt",
+      "spec_version": "0.2"
+    }
+  ],
   "commands": [
     {
       "type": "assembler",

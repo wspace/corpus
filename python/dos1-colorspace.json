@@ -8,6 +8,12 @@
   "date": "2010-11-22 15:54:53 +0100",
   "spec_version": "-",
   "source": ["https://github.com/dos1/colorspace"],
+  "programs": [
+    { "path": "fact.ws.png", "equivalent": "fact.ws", "spec_version": "0.2" },
+    { "path": "pirachu.ws.png", "equivalent": "fact.ws", "spec_version": "0.2" },
+    { "path": "hworld.ws.png", "equivalent": "hworld.ws", "spec_version": "0.2" },
+    { "path": "hworld2.ws.png", "equivalent": "hworld.ws", "spec_version": "0.2" }
+  ],
   "commands": [
     {
       "type": "image interpreter",

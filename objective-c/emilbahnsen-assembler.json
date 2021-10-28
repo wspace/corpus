@@ -40,6 +40,8 @@
   "commands": [
     {
       "type": "multiple",
+      "bin": "build/Release/wsa",
+      "build": "xcodebuild",
       "usage": "$0 [-acwmh] <file...>",
       "options": [
         { "short": "a", "long": "wssam", "desc": "Compile WS to WSA source code" },
@@ -49,7 +51,8 @@
         { "short": "s", "long": "short", "desc": "Shorten labels" },
         { "short": "h", "long": "help", "desc": "Show help" }
       ],
-      "option_parse": "Objective-C getopt"
+      "option_parse": "Objective-C getopt",
+      "notes": "Long flags do not work"
     }
   ],
   "notes": "Date written in file headers. Repo includes other projects, including many large objects, which are pruned in the wspace fork."

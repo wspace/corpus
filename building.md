@@ -142,7 +142,7 @@ Build and run errors are included.
 - nasm/ryzheboka:
   - wsCompiler.py
   - wsInterpreter: `gcc -O3 -Wall -o wsInterpreter wsInterpreter.c`
-- ⚠️ objective-c/emilbahnsen-assembler/*unspecified*
+- objective-c/emilbahnsen-assembler/build/Release/wsa: `xcodebuild`
 - ocaml/jgkaplan-wsc/main.byte: `make`
 - ocaml/matsud-c2ws/c2ws: `make`
 - ocaml/steiner/whitespace: `make`

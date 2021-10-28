@@ -9,6 +9,16 @@
   "spec_version": "0.3",
   "source": ["https://github.com/umutoztunc/whitesymex", "https://whitesymex.readthedocs.io/"],
   "package": { "name": "whitesymex", "manager": "PyPI", "url": "https://pypi.org/project/whitesymex/" },
+  "programs": [
+    {
+      "path": "password_checker.c",
+      "compiled": "password_checker.ws",
+      "aux": ["password_checker.eir"],
+      "spec_version": "0.2",
+      "notes": "Compiled using ELVM"
+    },
+    { "path": "xctf-finals-2020-spaceship.ws", "spec_version": "0.2" }
+  ],
   "commands": [
     {
       "type": "symbolic executor",
@@ -16,6 +26,7 @@
       "dependencies": ["Python 3", "Z3"],
       "install_dependencies": ["pip3 install z3-solver"],
       "usage": "python3 -m whitesymex.cli [-h | --help] [--version] [--find <find>] [--avoid <avoid>] [--strategy {bfs,dfs,random}] [--loop-limit <limit>] <file>",
+      "example_usages": ["python3 -m whitesymex.cli --find Correct! --avoid Nope. tests/data/password_checker.ws"],
       "options": [
         { "short": "h", "long": "help", "desc": "show this help message and exit" },
         { "long": "version", "desc": "show program's version number and exit" },
