@@ -13,7 +13,7 @@
       "  \"date\": \"\",",
       "  \"spec_version\": \"$7\",",
       "  \"source\": [\"$1\"]",
-      "}",
+      "}"
     ],
     "description": "Create a new project"
   }

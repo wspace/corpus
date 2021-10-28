@@ -53,6 +53,12 @@ list_project_json:
 	$(foreach project,$(PROJECTS),$(info $(project)))
 	@:
 
+.PHONY: format_tools
+format_tools:
+	@underscore print -i tools/project.schema.json | tools/sponge tools/project.schema.json
+	@underscore print -i .vscode/settings.json | tools/sponge .vscode/settings.json
+	@underscore print -i .vscode/snippets.code-snippets | tools/sponge .vscode/snippets.code-snippets
+
 .PHONY: todo
 todo:
 	@echo 'List programs:'
