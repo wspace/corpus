@@ -15,6 +15,6 @@
       "  \"source\": [\"$1\"]",
       "}",
     ],
-    "description": "Insert a new project in projects.json"
+    "description": "Create a new project"
   }
 }

@@ -4,12 +4,57 @@
   "authors": ["Oliver Burghard"],
   "license": "none",
   "languages": ["Whitespace"],
-  "tags": ["interpreter"],
+  "tags": ["interpreter", "programs"],
   "date": "2003-04-24",
   "spec_version": "0.2",
   "source": [
     "https://web.archive.org/web/20030608024503/http://www.burghard.info:80/code/whitespace/wsinterws/index.html",
     "https://web.archive.org/web/20150803032955/http://www.burghard.info/Code/Whitespace/wsinterws.zip",
     "https://web.archive.org/web/20110911114338/http://www.burghard.info/Code/Whitespace/"
-  ]
+  ],
+  "assembly": {
+    "mnemonics": {
+      "push": ["push <number>"],
+      "dup": ["doub"],
+      "swap": ["swap"],
+      "drop": ["pop"],
+      "add": ["add", "add <number>"],
+      "sub": ["sub", "sub <number>"],
+      "mul": ["mul"],
+      "div": ["div"],
+      "mod": ["mod"],
+      "store": ["store", "store <addr>"],
+      "retrieve": ["retrive", "retrive <addr>"],
+      "label": ["label"],
+      "call": ["call"],
+      "jmp": ["jump"],
+      "jz": ["jumpz"],
+      "jn": ["jumpn"],
+      "ret": ["ret"],
+      "end": ["exit"],
+      "printc": ["outc"],
+      "printi": ["outN"],
+      "readc": ["inC"],
+      "readi": ["inn"],
+      "dumpstack": ["debug_printstack"],
+      "dumpheap": ["debug_printheap"]
+    },
+    "macros": [
+      { "name": "test", "args": ["int"] },
+      { "name": "pushs", "args": ["string"] },
+      { "name": "include", "args": ["ident"] },
+      { "name": "ifoption", "args": ["label"] },
+      { "name": "endoption" },
+      { "name": "jumpnz", "args": ["label"] },
+      { "name": "jumpp", "args": ["label"] },
+      { "name": "jumppz", "args": ["label"] }
+    ],
+    "patterns": { "label": "[a-zA-Z0-9_]+" },
+    "case_sensitive_instructions": false,
+    "line_comments": [";", "--"],
+    "block_comments": [{ "start": "{-", "end": "-}", "nestable": true }],
+    "extension": "wsa"
+  },
+  "programs": [{ "path": "wsinterws.wsa", "compiled": "wsinterws.ws", "aux": ["run.txt"] }],
+  "todo": "Unclear whether block comments are nestable; check haskell/burghard-wsa"
 }

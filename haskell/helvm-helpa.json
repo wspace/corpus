@@ -4,23 +4,23 @@
   "authors": ["Kamil Adam"],
   "license": "Apache-2.0 or MIT",
   "languages": ["Haskell/Eta"],
-  "tags": ["assembler"],
+  "tags": ["language", "assembler", "programs"],
   "date": "2020-05-09 17:49:43 +0200",
   "spec_version": "0.2",
   "source": ["https://github.com/helvm/helpa"],
   "whitespace": {
     "nonstandard": [
-      { "name": "PushS", "args": ["string"] },
-      { "name": "BranchP", "args": ["label"] },
-      { "name": "BranchNZ", "args": ["label"] },
-      { "name": "BranchPZ", "args": ["label"] },
-      { "name": "BranchPN", "args": ["label"] },
-      { "name": "BranchNP", "args": ["label"] },
+      { "name": "pushs", "args": ["string"] },
+      { "name": "test", "args": ["int"] },
+      { "name": "jumpP", "args": ["label"] },
+      { "name": "jumpNZ", "args": ["label"] },
+      { "name": "jumpPZ", "args": ["label"] },
+      { "name": "jumpNP", "args": ["label"] },
+      { "name": "jumpPN", "args": ["label"] },
+      { "name": "include", "args": ["ident"] },
       { "name": "Noop" },
       { "name": "DebugPrintStack" },
       { "name": "DebugPrintHeap" },
-      { "name": "Include", "args": ["ident"] },
-      { "name": "Test", "args": ["int"] },
       { "name": "ValueString", "args": ["ident", "string"] },
       { "name": "ValueInteger", "args": ["ident", "uint"] },
       { "name": "IfOption", "args": ["ident"] },
@@ -29,5 +29,127 @@
       { "name": "ElseIfOption", "args": ["ident"] }
     ]
   },
-  "commands": [{ "bin": "helpa", "build": "cabal build", "build_errors": "-XMonadFailDesugaring is deprecated" }]
+  "assembly": {
+    "mnemonics": {
+      "push": ["push"],
+      "dup": ["doub"],
+      "swap": ["swap"],
+      "drop": ["pop"],
+      "add": ["add"],
+      "sub": ["sub"],
+      "mul": ["mul"],
+      "div": ["div"],
+      "mod": ["mod"],
+      "store": ["store"],
+      "retrieve": ["retrive"],
+      "label": ["label"],
+      "call": ["call"],
+      "jmp": ["jump"],
+      "jz": ["jumpZ"],
+      "jn": ["jumpN"],
+      "ret": ["ret"],
+      "end": ["exit"],
+      "printc": ["outc"],
+      "printi": ["outn"],
+      "readc": ["inc"],
+      "readi": ["inn"]
+    },
+    "patterns": { "char": "'." },
+    "case_sensitive_instructions": false,
+    "line_comments": [";"],
+    "indentation": "",
+    "usage": ["disassembler", "programs"],
+    "extension": "wsa"
+  },
+  "programs": [
+    {
+      "path": "examples/eas/true.eas",
+      "aux": ["examples/wsa/from-eas/true.wsa"],
+      "desc": "A reimplementation of the Unix utility /bin/true"
+    },
+    {
+      "path": "examples/eas/hello.eas",
+      "aux": ["examples/wsa/from-eas/hello.wsa"],
+      "desc": "Print \"Hello, world!\" to stdout"
+    },
+    {
+      "path": "examples/eas/pip.eas",
+      "aux": ["examples/wsa/from-eas/pip.wsa"],
+      "desc": "CP/M's PIP: copy input to output unchanged"
+    },
+    { "path": "examples/eas/pip2.eas", "desc": "Functionally identical to pip.eas, but all on two lines" },
+    { "path": "examples/eas/reverse.eas", "desc": "Copy input to output, reversed" },
+    {
+      "path": "examples/eas/function.eas",
+      "desc": "Function call-and-return, demonstrated using addition"
+    },
+    { "path": "examples/eas/add.eas", "desc": "Test-harness for function.eas: read, add and write" },
+    {
+      "path": "examples/eas/writestr.eas",
+      "desc": "A variadic function to print a NUL-terminated string"
+    },
+    {
+      "path": "examples/eas/hello2.eas",
+      "aux": ["examples/wsa/from-eas/hello2.wsa"],
+      "desc": "A rewrite of \"Hello, world!\" using the string-printer"
+    },
+    {
+      "path": "examples/eas/writenum.eas",
+      "desc": "Function to print the top of stack as a decimal integer"
+    },
+    { "path": "examples/eas/multiply.eas", "desc": "Function to multiply two numbers together" },
+    { "path": "examples/eas/readnum.eas", "desc": "The converse of printnum.eas" },
+    { "path": "examples/eas/fact.eas", "desc": "Recursive factorial function" },
+    {
+      "path": "examples/eas/bottles.eas",
+      "aux": ["examples/wsa/from-eas/bottles.wsa"],
+      "desc": "Print words to \"99 bottes of beer\""
+    },
+    { "path": "examples/eas/euclid.eas", "desc": "Greatest common divisor of two numbers" },
+    { "path": "examples/eas/test.eas", "desc": "Transient stuff to test features: don't rely on this" },
+    {
+      "path": "examples/eas/temperat.c",
+      "desc": "Sample program from K&R second edition, section 1.2 p9"
+    },
+    { "path": "examples/eas/bottles2.eas" },
+    { "path": "examples/eas/bottles3.eas" },
+    { "path": "examples/eas/factN1H.eas" },
+    { "path": "examples/eas/hello3.eas" },
+    { "path": "examples/eas/hello4.eas", "aux": ["examples/wsa/from-eas/hello4.wsa"] },
+    { "path": "examples/wsa/apps/prim.wsa" },
+    { "path": "examples/wsa/libs/io.wsa" },
+    { "path": "examples/wsa/libs/memory.wsa" }
+  ],
+  "commands": [
+    {
+      "bin": "dist-newstyle/build/x86_64-osx/ghc-8.10.7/helpa-0.3.5.0/x/helpa/build/helpa/helpa",
+      "build": "cabal build",
+      "usage": "$0 [-l | --lang <lang>] [-T | --tokenType <token_type>] [-D | --debug]  [-S | --startOfInstruction] [-E | --endOfLine] <file> [<library_dir>]",
+      "input": "<file>",
+      "options": [
+        {
+          "short": "l",
+          "long": "lang",
+          "arg": "LANG",
+          "type": "enum",
+          "default": "HAPAPL",
+          "desc": "Language to exceptTAssembleFile",
+          "values": [{ "values": ["HAPAPL"] }, { "values": ["EAS"] }, { "values": ["WSA"] }]
+        },
+        {
+          "short": "T",
+          "long": "tokenType",
+          "arg": "ARG",
+          "default": "VisibleTokenType",
+          "desc": "Type of Tokens (only for WS)"
+        },
+        { "short": "D", "long": "debug", "desc": "Debug (only for WS)" },
+        { "short": "S", "long": "startOfInstruction", "desc": "StartOfInstruction (only for WS)" },
+        { "short": "E", "long": "endOfLine", "desc": "EndOfLine (only for WS)" },
+        { "short": "h", "long": "help", "desc": "Show this help text" }
+      ],
+      "option_parse": "Haskell Options.Applicative"
+    }
+  ],
+  "todo": "Figure out how to relocate binary when building"
 }

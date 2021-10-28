@@ -4,17 +4,53 @@
   "authors": ["Zakaria Elkatani"],
   "license": "none",
   "languages": ["Kotlin"],
-  "tags": ["interpreter", "disassembler"],
+  "tags": ["interpreter", "disassembler", "generator", "programs"],
   "date": "2018-04-21 21:02:23 -0400",
-  "spec_version": "0.3",
+  "spec_version": "0.2",
   "source": ["https://github.com/ze/space"],
+  "assembly": {
+    "mnemonics": {
+      "push": ["push"],
+      "dup": ["dup"],
+      "swap": ["swap"],
+      "drop": ["discard"],
+      "add": ["add"],
+      "sub": ["sub"],
+      "mul": ["mul"],
+      "div": ["div"],
+      "mod": ["mod"],
+      "store": ["store"],
+      "retrieve": ["retrieve"],
+      "label": ["label <label>:"],
+      "call": ["call"],
+      "jmp": ["jump"],
+      "jz": ["jumpzero"],
+      "jn": ["jumpneg"],
+      "ret": ["return"],
+      "end": ["end"],
+      "printc": ["printchar"],
+      "printi": ["printnum"],
+      "readc": ["readchar"],
+      "readi": ["readnum"]
+    },
+    "indentation": "\t",
+    "usage": ["disassembler"]
+  },
+  "programs": [
+    { "path": "src/test/resources/hworld.ws", "spec_version": "0.2" },
+    { "path": "src/test/resources/numbers.ws", "spec_version": "0.2" }
+  ],
   "commands": [
     {
       "type": "interpreter",
       "bin": "build/libs/space.jar",
       "dependencies": ["Java 8"],
       "build": "./gradlew",
-      "build_errors": "Dependencies not packaged"
+      "build_errors": "Dependencies not packaged",
+      "usage": "java -jar $0 <file>",
+      "input": "<file>",
+      "output": "stdout"
     }
-  ]
+  ],
+  "notes": "Disassembler and program generator do not have an entry point"
 }

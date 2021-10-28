@@ -4,9 +4,158 @@
   "authors": ["Kamil Adam"],
   "license": "Apache-2.0 or MIT",
   "languages": ["Haskell/Eta"],
-  "tags": ["interpreter"],
+  "tags": ["interpreter", "mapping", "programs"],
   "date": "2020-05-08 13:18:50 +0200",
   "spec_version": "0.3",
   "source": ["https://github.com/helvm/helma"],
-  "commands": [{ "bin": "helma", "build": "cabal build", "build_errors": "-XMonadFailDesugaring is deprecated" }]
+  "whitespace": { "extension": "ws" },
+  "mappings": [{ "space": "S", "tab": "T", "lf": "N", "extension": "stn" }],
+  "programs": [
+    {
+      "path": "examples/ws/stn/original/calc.stn",
+      "compiled": "examples/ws/ws/original/calc.ws",
+      "equivalent": "calc.ws",
+      "spec_version": "0.2"
+    },
+    {
+      "path": "examples/ws/stn/original/count.stn",
+      "compiled": "examples/ws/ws/original/count.ws",
+      "equivalent": "count.ws",
+      "spec_version": "0.2"
+    },
+    {
+      "path": "examples/ws/stn/original/fact.stn",
+      "compiled": "examples/ws/ws/original/fact.ws",
+      "equivalent": "fact.ws",
+      "spec_version": "0.2"
+    },
+    {
+      "path": "examples/ws/stn/original/hanoi.stn",
+      "compiled": "examples/ws/ws/original/hanoi.ws",
+      "equivalent": "hanoi.ws",
+      "spec_version": "0.2"
+    },
+    {
+      "path": "examples/ws/stn/original/hWorld.stn",
+      "compiled": "examples/ws/ws/original/hworld.ws",
+      "equivalent": "hworld.ws",
+      "spec_version": "0.2"
+    },
+    {
+      "path": "examples/ws/stn/original/locTest.stn",
+      "compiled": "examples/ws/ws/original/loctest.ws",
+      "equivalent": "loctest.ws",
+      "spec_version": "0.3"
+    },
+    {
+      "path": "examples/ws/stn/original/name.stn",
+      "compiled": "examples/ws/ws/original/name.ws",
+      "equivalent": "name.ws",
+      "spec_version": "0.2"
+    },
+    {
+      "path": "examples/ws/stn/from-wsa/true.stn",
+      "compiled": "examples/ws/ws/original/end.ws",
+      "spec_version": "0.2"
+    },
+    { "path": "examples/ws/stn/from-wsa/bottles.stn", "spec_version": "0.2" },
+    { "path": "examples/ws/stn/from-wsa/hello.stn", "spec_version": "0.2" },
+    { "path": "examples/ws/stn/from-wsa/hello2.stn", "spec_version": "0.2" },
+    { "path": "examples/ws/stn/from-wsa/hello4.stn", "spec_version": "0.2" },
+    { "path": "examples/ws/stn/from-wsa/prim.stn", "spec_version": "0.2" },
+    { "path": "examples/ws/stn/original/cat.stn", "spec_version": "0.2" },
+    { "path": "examples/ws/stn/original/helloWorld.stn", "spec_version": "0.2" },
+    { "path": "examples/ws/stn/original/truthMachine.stn", "spec_version": "0.2" }
+  ],
+  "commands": [
+    {
+      "bin": "dist-newstyle/build/x86_64-osx/ghc-8.10.7/helma-0.6.10.0/x/helma/build/helma/helma",
+      "build": "cabal build",
+      "usage": "$0 [-l | --lang <lang>] [-M | --minification] [-T | --emit-tl] [-I | --emit-il] [-A | --ascii-labels] [-m | --RAMType <ram_type>] [-s | --StackType <stack_type>] [-c | --CellType <cell_type>] [-i | --IntCellType <int_cell_type>] [-e | --exec] <file>",
+      "input": "<file>",
+      "options": [
+        {
+          "short": "l",
+          "long": "lang",
+          "arg": "LANG",
+          "type": "enum",
+          "default": "Cat",
+          "desc": "Language to interpret",
+          "values": [
+            { "values": ["Cat"] },
+            { "values": ["Rev"] },
+            { "values": ["BF"] },
+            { "values": ["ETA"] },
+            { "values": ["SQ"] },
+            { "values": ["STN"] },
+            { "values": ["WS"] }
+          ]
+        },
+        { "short": "M", "long": "minification", "desc": "Emit minified code" },
+        { "short": "T", "long": "emit-tl", "desc": "Emit the lexed tokens" },
+        { "short": "I", "long": "emit-il", "desc": "Emit the parsed instructions" },
+        { "short": "A", "long": "ascii-labels", "desc": "Use ascii labels" },
+        {
+          "short": "m",
+          "long": "RAMType",
+          "arg": "RAMType",
+          "type": "enum",
+          "default": "MapListRAMType",
+          "desc": "Implementation of RAM",
+          "values": [
+            { "values": ["ListRAMType"] },
+            { "values": ["SeqRAMType"] },
+            { "values": ["SListRAMType"] },
+            { "values": ["MapListRAMType"] }
+          ]
+        },
+        {
+          "short": "s",
+          "long": "StackType",
+          "arg": "StackType",
+          "type": "enum",
+          "default": "SeqStackType",
+          "desc": "Implementation of Stack",
+          "values": [{ "values": ["ListStackType"] }, { "values": ["SeqStackType"] }, { "values": ["SListStackType"] }]
+        },
+        {
+          "short": "c",
+          "long": "CellType",
+          "arg": "CellType",
+          "type": "enum",
+          "default": "Word8Type",
+          "desc": "Implementation of Cell",
+          "values": [
+            { "values": ["Int8Type"] },
+            { "values": ["Word8Type"] },
+            { "values": ["Int16Type"] },
+            { "values": ["Word16Type"] },
+            { "values": ["Int32Type"] },
+            { "values": ["Word32Type"] },
+            { "values": ["Int64Type"] },
+            { "values": ["Word64Type"] }
+          ]
+        },
+        {
+          "short": "i",
+          "long": "IntCellType",
+          "arg": "IntCellType",
+          "type": "enum",
+          "default": "IntegerType",
+          "desc": "Implementation of IntCell",
+          "values": [
+            { "values": ["Int8Type"] },
+            { "values": ["Int16Type"] },
+            { "values": ["Int32Type"] },
+            { "values": ["Int64Type"] },
+            { "values": ["IntegerType"] }
+          ]
+        },
+        { "short": "e", "long": "exec", "desc": "Exec" },
+        { "short": "h", "long": "help", "desc": "Show this help text" }
+      ],
+      "option_parse": "Haskell Options.Applicative"
+    }
+  ],
+  "todo": "Figure out how to relocate binary when building"
 }

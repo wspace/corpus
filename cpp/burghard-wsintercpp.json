@@ -5,7 +5,7 @@
   "license": "none",
   "languages": ["C++"],
   "tags": ["interpreter"],
-  "date": "2003",
+  "date": "2003-04-04 17:25:44 +0000",
   "spec_version": "0.2",
   "source": [
     "https://web.archive.org/web/20030629125208/http://www.burghard.info:80/code/whitespace/wsintercpp/index.html",
@@ -15,5 +15,6 @@
   "whitespace": {
     "nonstandard": [{ "name": "debug_printstack", "seq": "LLSSS" }, { "name": "debug_printheap", "seq": "LLSST" }]
   },
-  "notes": "Supports non-standard instructions"
+  "notes": "Date from earliest file in archive",
+  "todo": "Check for earlier date"
 }

@@ -96,19 +96,20 @@ type Project struct {
 			DumpTrace []string `json:"dumptrace,omitempty"`
 		} `json:"mnemonics,omitempty"`
 		Macros []struct {
-			Name    string `json:"name"`
-			Replace string `json:"replace,omitempty"`
-			Notes   string `json:"notes,omitempty"`
+			Name    string   `json:"name"`
+			Args    []string `json:"args,omitempty"`
+			Replace string   `json:"replace,omitempty"`
+			Notes   string   `json:"notes,omitempty"`
 		} `json:"macros,omitempty"`
 		Patterns                  map[string]string `json:"patterns,omitempty"`
 		CaseSensitiveInstructions *bool             `json:"case_sensitive_instructions,omitempty"`
 		LineComments              []string          `json:"line_comments,omitempty"`
 		BlockComments             []struct {
-			Start  string `json:"start"`
-			End    string `json:"end"`
-			Nested bool   `json:"nested"`
+			Start    string `json:"start"`
+			End      string `json:"end"`
+			Nestable bool   `json:"nestable"`
 		} `json:"block_comments,omitempty"`
-		Indentation      string   `json:"indentation,omitempty"`
+		Indentation      *string  `json:"indentation,omitempty"`
 		LabelIndentation string   `json:"label_indentation,omitempty"`
 		BinaryNumbers    *bool    `json:"binary_numbers,omitempty"`
 		Usage            []string `json:"usage,omitempty"`

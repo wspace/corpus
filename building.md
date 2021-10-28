@@ -90,8 +90,8 @@ Build and run errors are included.
 - ❌ haskell/edwinb-wspace-0.3
 - ⚠️ haskell/ft-spaceman/*unspecified*: `cabal build`
 - ⚠️ haskell/haroldl-wspace-0.4/wspace: `make` Needs changes for latest Haskell
-- ⚠️ haskell/helvm-helma/helma: `cabal build` -XMonadFailDesugaring is deprecated
-- ⚠️ haskell/helvm-helpa/helpa: `cabal build` -XMonadFailDesugaring is deprecated
+- haskell/helvm-helma/dist-newstyle/build/x86\_64-osx/ghc-8.10.7/helma-0.6.10.0/x/helma/build/helma/helma: `cabal build`
+- haskell/helvm-helpa/dist-newstyle/build/x86\_64-osx/ghc-8.10.7/helpa-0.3.5.0/x/helpa/build/helpa/helpa: `cabal build`
 - ❌ haskell/helvm-wsa
 - ⚠️ haskell/jhmcstanton-marginal/*unspecified*: `stack build` `stack setup` fails with link error
 - ❌ haskell/matsubara
@@ -132,7 +132,7 @@ Build and run errors are included.
 - ❌ javascript/therebelrobot
 - ❌ javascript/uraza
 - ❌ javascript/vii5ard-whitelips-ide
-- ❌ javascript/wdalmut
+- javascript/wdalmut/whitespacec
 - jq/andrewarchi-wsjq/wsjq
 - ⚠️ kotlin/ze-space/build/libs/space.jar: `./gradlew` Dependencies not packaged
 - lolcode/akers/whitespace.lol

@@ -5,40 +5,36 @@
 These are the mnemonics used by known Whitespace assembly dialects for
 instructions, ranked by popularity.
 
-- `push` (62), `psh` (2), `<number>`, `pus`
-- `dup` (46), `duplicate` (6), `copy` (4), `dupl` (3), `sdupli` (3), `dupe` (2), `doub`
-- `copy` (38), `scopy` (3), `copynth` (2), `ref` (2), `copy_n`, `copyn`, `dup2`, `dupn`, `pick`, `pull`, `take`
-- `swap` (55), `swp` (4), `sswap` (3), `exch`, `exchange`, `swa`, `swicth`, `xchg`
-- `discard` (25), `pop` (24), `drop` (10), `sdiscard` (3), `disc` (2), `away`, `del`, `dsc`
-- `slide` (38), `sslide` (3), `away`, `remove`, `skip`, `slde`, `slid`, `slideoff`
-- `add` (59), `plus` (2), `+`, `addition`, `op+`
-- `sub` (55), `subtract` (4), `minus` (2), `-`, `op-`, `substraction`, `subt`
-- `mul` (50), `mult` (5), `multiply` (4), `times` (2), `*`, `multiplication`, `op*`
-- `div` (54), `divide` (5), `/`, `division`, `intdiv`, `op/`
-- `mod` (54), `modulo` (6), `%`, `rem`
-- `store` (53), `set` (3), `sto` (3), `stor` (3), `put`
-- `retrieve` (40), `get` (7), `load` (6), `retr` (3), `ret` (2), `fetch`, `lod`, `rcl`, `read`, `reti`, `retreive`, `retri`, `retrive`, `retrv`
-- `label` (30), `mark` (15), `<label>:` (11), `<number>:` (3), `label_<number>:` (2), `lbl` (2), `mrk` (2), `%<number>:`, `<<number>>:`, `@<label>`, `l<number>:`, `label#_####`, `labl`, `part`, `register`, `setlabel`
-- `call` (56), `gosub` (2), `call_subroutine`, `callsub`, `cas`, `cll`, `jsr`, `sub`
-- `jump` (41), `jmp` (21), `goto` (3), `b`, `j`, `jp`
-- `jz` (27), `jumpz` (10), `jumpzero` (4), `jez` (3), `jump-zero` (3), `jmpz` (2), `jzero` (2), `bz`, `bzero`, `equal`, `gotoiz`, `iz_jump`, `jeof`, `jeq`, `jmp_if0`, `jmz`, `jnil`, `jpz`, `jump if zero`, `jumpnull`, `jze`, `jzer`, `zero`
-- `jn` (22), `jumpn` (8), `jneg` (6), `jlz` (4), `jump-neg` (3), `jumpneg` (3), `jumplz` (2), `less` (2), `bltz`, `bneg`, `gotoin`, `in_jump`, `jlt`, `jltz`, `jmn`, `jmp_neg`, `jmpn`, `jmpneg`, `jne`, `jpn`, `js`, `jump if negative`, `jumpde`, `jumpnegative`
-- `ret` (33), `return` (20), `ends` (2), `endsub` (2), `back`, `end subroutine`, `end_sub`, `endfunc`, `endofsubroutine`, `ens`
-- `end` (30), `exit` (22), `halt` (4), `endprog` (3), `endp` (2), `finish` (2), `quit` (2), `end program`, `endle`, `endofprogram`
-- `outchar` (12), `printc` (9), `putchar` (6), `putc` (5), `outc` (4), `ochr` (3), `out-char` (3), `out` (2), `pchr` (2), `printchar` (2), `cout`, `ochar`, `otc`, `output`, `output character`, `outputc`, `outputchar`, `outputcharacter`, `pc`, `pchar`, `print`, `print_c`, `print_char`, `prtc`, `wrc`, `write_char`, `write_character`, `writec`, `writechar`, `wtc`
-- `outnum` (9), `printi` (7), `putn` (5), `putnum` (4), `onum` (3), `out-num` (3), `outn` (3), `pnum` (3), `printn` (3), `outputnum` (2), `putint` (2), `iout`, `nout`, `oint`, `otn`, `out_n`, `outi`, `outint`, `outnumber`, `output number`, `outputn`, `outputnumber`, `pn`, `print_i`, `print_number`, `printnum`, `printnumber`, `prtn`, `write_num`, `write_number`, `writeint`, `writen`, `wrn`, `wtn`
-- `readchar` (17), `readc` (11), `getc` (6), `getchar` (4), `ichr` (4), `in-char` (3), `in` (2), `inc` (2), `inchar` (2), `rdc` (2), `read_char` (2), `cin`, `ichar`, `inpc`, `rc`, `rchar`, `rchr`, `read character`, `read_c`, `read_character`, `rec`, `redc`
-- `readnum` (14), `readi` (7), `getn` (6), `readn` (5), `inum` (4), `in-num` (3), `getint` (2), `getnum` (2), `rdn` (2), `read_number` (2), `readnumber` (2), `rnum` (2), `iin`, `iint`, `in_n`, `ini`, `inint`, `inn`, `innum`, `inpn`, `nin`, `read number`, `read_i`, `read_num`, `readint`, `redn`, `ren`, `rn`
+- `push` (66), `psh` (2), `<number>`, `pus`, `push_number_stack_top`
+- `dup` (47), `duplicate` (6), `copy` (5), `doub` (3), `dupl` (3), `sdupli` (3), `dupe` (2), `duplicate_stack_top`
+- `copy` (38), `scopy` (3), `copynth` (2), `ref` (2), `copy_n`, `copyn`, `dup2`, `dupn`, `ncopy`, `pick`, `pull`, `take`
+- `swap` (59), `swp` (4), `sswap` (3), `exch`, `exchange`, `swa`, `swap_two_stack_items`, `swicth`, `xchg`
+- `discard` (26), `pop` (26), `drop` (10), `sdiscard` (3), `disc` (2), `away`, `del`, `discard_stack_top`, `dsc`, `remove`
+- `slide` (38), `sslide` (3), `away`, `move`, `remove`, `skip`, `slde`, `slid`, `slideoff`
+- `add` (64), `plus` (2), `+`, `addition`, `op+`
+- `sub` (60), `subtract` (4), `minus` (2), `-`, `op-`, `substraction`, `subt`
+- `mul` (54), `mult` (6), `multiply` (4), `times` (2), `*`, `multiplication`, `op*`
+- `div` (59), `divide` (5), `/`, `division`, `intdiv`, `op/`
+- `mod` (59), `modulo` (6), `%`, `rem`
+- `store` (57), `set` (3), `sto` (3), `stor` (3), `push`, `put`
+- `retrieve` (41), `get` (7), `load` (6), `retr` (4), `retrive` (3), `ret` (2), `fetch`, `lod`, `pop`, `rcl`, `read`, `reti`, `retreive`, `retri`, `retrv`
+- `label` (33), `mark` (16), `<label>:` (11), `<number>:` (3), `label_<number>:` (2), `lbl` (2), `mrk` (2), `%<number>:`, `<<number>>:`, `@<label>`, `l<number>:`, `label <label>:`, `label#_####`, `labl`, `part`, `register`, `setlabel`
+- `call` (61), `gosub` (2), `call_subroutine`, `callsub`, `cas`, `cll`, `jsr`, `sub`
+- `jump` (44), `jmp` (21), `goto` (4), `jp` (2), `b`, `j`
+- `jz` (27), `jumpz` (12), `jumpzero` (5), `jez` (3), `jump-zero` (3), `jmpz` (2), `jzero` (2), `bz`, `bzero`, `equal`, `gotoiz`, `if stack==0 then goto`, `iz_jump`, `jeof`, `jeq`, `jmp_if0`, `jmz`, `jnil`, `jp0`, `jpz`, `jump if zero`, `jumpnull`, `jze`, `jzer`, `zero`
+- `jn` (22), `jumpn` (10), `jneg` (6), `jlz` (4), `jumpneg` (4), `jump-neg` (3), `jumplz` (2), `less` (2), `bltz`, `bneg`, `gotoin`, `if stack<0 then goto`, `in_jump`, `jlt`, `jltz`, `jmn`, `jmp_neg`, `jmpn`, `jmpneg`, `jne`, `jpl0`, `jpn`, `js`, `jump if negative`, `jumpde`, `jumpnegative`
+- `ret` (36), `return` (22), `ends` (2), `endsub` (2), `back`, `end subroutine`, `end_sub`, `endfunc`, `endofsubroutine`, `ens`
+- `end` (32), `exit` (25), `halt` (4), `endprog` (3), `endp` (2), `finish` (2), `quit` (2), `end program`, `endle`, `endofprogram`
+- `outchar` (12), `printc` (9), `outc` (6), `putc` (6), `putchar` (6), `ochr` (3), `out-char` (3), `printchar` (3), `out` (2), `pchr` (2), `cout`, `ochar`, `otc`, `output`, `output character`, `output_char`, `outputc`, `outputchar`, `outputcharacter`, `pc`, `pchar`, `print`, `print_c`, `print_char`, `prtc`, `wrc`, `write_char`, `write_character`, `writec`, `writechar`, `wtc`
+- `outnum` (9), `printi` (7), `putn` (6), `outn` (5), `putnum` (4), `onum` (3), `out-num` (3), `pnum` (3), `printn` (3), `outputnum` (2), `printnum` (2), `putint` (2), `iout`, `nout`, `oint`, `otn`, `out_n`, `outi`, `outint`, `outnumber`, `output number`, `output_number`, `outputn`, `outputnumber`, `pn`, `print_i`, `print_number`, `printnumber`, `prtn`, `write_num`, `write_number`, `writeint`, `writen`, `wrn`, `wtn`
+- `readchar` (18), `readc` (11), `getc` (7), `getchar` (4), `ichr` (4), `inc` (4), `in-char` (3), `read_char` (3), `in` (2), `inchar` (2), `rdc` (2), `cin`, `ichar`, `inpc`, `rc`, `rchar`, `rchr`, `read character`, `read_c`, `read_character`, `rec`, `redc`
+- `readnum` (15), `getn` (7), `readi` (7), `readn` (5), `inum` (4), `in-num` (3), `inn` (3), `read_number` (3), `getint` (2), `getnum` (2), `rdn` (2), `readnumber` (2), `rnum` (2), `iin`, `iint`, `in_n`, `ini`, `inint`, `innum`, `inpn`, `nin`, `read number`, `read_i`, `read_num`, `readint`, `redn`, `ren`, `rn`
 - `shuffle`
-- `debug_printstack` (2), `dumpstack`
-- `debug_printheap` (2), `dumpheap`
+- `debug_printstack` (3), `dumpstack`
+- `debug_printheap` (3), `dumpheap`
 - `trace`
 
 ## Need documentation
 
-- go/yshr-wspacego
 - haskell/burghard-wsa
-- haskell/helvm-helpa
 - haskell/helvm-wsa
-- javascript/wdalmut
-- kotlin/ze-space

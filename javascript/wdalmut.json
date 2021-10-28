@@ -7,5 +7,43 @@
   "tags": ["disassembler"],
   "date": "2019-12-28 16:28:47 +0100",
   "spec_version": "0.2",
-  "source": ["https://github.com/wdalmut/whitespace-lang-compiler"]
+  "source": ["https://github.com/wdalmut/whitespace-lang-compiler"],
+  "assembly": {
+    "mnemonics": {
+      "push": ["PUSH_NUMBER_STACK_TOP"],
+      "dup": ["DUPLICATE_STACK_TOP"],
+      "swap": ["SWAP_TWO_STACK_ITEMS"],
+      "drop": ["DISCARD_STACK_TOP"],
+      "add": ["ADD"],
+      "sub": ["SUB"],
+      "mul": ["MULT"],
+      "div": ["DIV"],
+      "mod": ["MOD"],
+      "store": ["STORE"],
+      "retrieve": ["RETR"],
+      "label": ["MARK"],
+      "call": ["CALL"],
+      "jmp": ["JP"],
+      "jz": ["JP0"],
+      "jn": ["JPL0"],
+      "ret": ["RET"],
+      "end": ["END"],
+      "printc": ["OUTPUT_CHAR"],
+      "printi": ["OUTPUT_NUMBER"],
+      "readc": ["READ_CHAR"],
+      "readi": ["READ_NUMBER"]
+    },
+    "usage": ["disassembler"]
+  },
+  "commands": [
+    {
+      "type": "disassembler",
+      "bin": "whitespacec",
+      "install_dependencies": ["npm install"],
+      "usage": "$0",
+      "input": "stdin",
+      "output": "stdout",
+      "notes": "Disassembles to JSON"
+    }
+  ]
 }

@@ -200,8 +200,13 @@
           "type": "array",
           "items": {
             "type": "object",
-            "properties": { "name": { "type": "string" }, "replace": { "type": "string" }, "notes": { "type": "string" } },
-            "require": ["name", "replace"],
+            "properties": {
+              "name": { "type": "string" },
+              "args": { "type": "array", "items": { "type": "string" } },
+              "replace": { "type": "string" },
+              "notes": { "type": "string" }
+            },
+            "require": ["name"],
             "additionalProperties": false
           }
         },
@@ -303,13 +308,15 @@
               "Python optparse",
               "Python click",
               "Haskell System.Console.CmdArgs",
+              "Haskell Options.Applicative",
               "OCaml Arg",
               "Ruby optparse",
               "Ruby Thor",
               "Crystal option_parser",
               "Java org.apache.commons.cli",
               "Clojure clojure.tools.cli",
-              "Perl Getopt"
+              "Perl Getopt",
+              "Objective-C getopt"
             ]
           },
           "subcommands": {
