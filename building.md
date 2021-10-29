@@ -282,6 +282,7 @@ Build and run errors are included.
 - ❌ whitespace/paradoxv5-program-java-rb
 - ❌ whitespace/pdewacht-tetris
 - ❌ whitespace/petek-hello
+- ❌ whitespace/pik4ez-ascii
 - ❌ whitespace/samdonow-pelc
 - ❌ whitespace/tewort-hello
 - ❌ whitespace/trevorbennett-stack-flood

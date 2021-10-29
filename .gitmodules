@@ -644,6 +644,9 @@
 [submodule "whitespace/petek-hello"]
 	path = whitespace/petek-hello
 	url = https://github.com/petek222/whitespace
+[submodule "whitespace/pik4ez-ascii"]
+	path = whitespace/pik4ez-ascii
+	url = https://github.com/wspace/pik4ez-ascii
 [submodule "whitespace/samdonow-pelc"]
 	path = whitespace/samdonow-pelc
 	url = https://github.com/drsam94/PELC

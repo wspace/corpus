@@ -2,10 +2,14 @@
   "emeraldwalk.runonsave": {
     "commands": [
       {
-        "match": "^(tools|\\.vscode)/.+\\.json|[^/]+\\.json$",
+        "match": "/(tools|\\.vscode)/.+\\.json$|dependencies\\.json$",
         "cmd": "underscore print -i ${file} -o ${file} && echo >> ${file}"
       },
-      { "match": ".*\\.json$", "cmd": "go run tools/format/format.go ${file}" }
+      {
+        "match": ".+\\.json$",
+        "notMatch": "/(tools|\\.vscode)/.+\\.json$|dependencies\\.json$",
+        "cmd": "go run tools/format/format.go ${file}"
+      }
     ]
   },
   "files.associations": { "*.md.tmpl": "markdown" },
