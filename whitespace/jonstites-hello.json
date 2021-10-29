@@ -1,0 +1,12 @@
+{
+  "id": "whitespace/jonstites-hello",
+  "name": "Hello in Whitespace",
+  "authors": ["Jonathan Stites"],
+  "license": "none",
+  "languages": ["Whitespace"],
+  "tags": ["programs"],
+  "date": "2019-02-26 02:56:55 +0000",
+  "spec_version": "0.2",
+  "source": ["https://gist.github.com/jonstites/16784b5c1fb0c1e580d698bb13d4f50f"],
+  "programs": [{ "path": "hello.ws", "spec_version": "0.2" }]
+}

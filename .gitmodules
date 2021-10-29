@@ -608,6 +608,9 @@
 [submodule "whitespace/elisha-snakulator"]
 	path = whitespace/elisha-snakulator
 	url = https://github.com/donno2048/snakulator
+[submodule "whitespace/jonstites-hello"]
+	path = whitespace/jonstites-hello
+	url = https://gist.github.com/jonstites/16784b5c1fb0c1e580d698bb13d4f50f
 [submodule "whitespace/keen-whitelie"]
 	path = whitespace/keen-whitelie
 	url = https://github.com/wspace/keen-whitelie
@@ -617,12 +620,18 @@
 [submodule "whitespace/kenrube-esopoly"]
 	path = whitespace/kenrube-esopoly
 	url = https://github.com/kenrube/Esopoly
+[submodule "whitespace/kirens-countdown"]
+	path = whitespace/kirens-countdown
+	url = https://gist.github.com/Kirens/9e3c99706773335366fa7bbf3cfd592d
 [submodule "whitespace/knightking-hacktoberfest-2017"]
 	path = whitespace/knightking-hacktoberfest-2017
 	url = https://github.com/knightking100/hello-worlds
 [submodule "whitespace/kunde-hello"]
 	path = whitespace/kunde-hello
 	url = https://gist.github.com/Kunde21/f3e7878c92f3a1db2ea31ea1140153ce
+[submodule "whitespace/lucaspiller-never-gonna"]
+	path = whitespace/lucaspiller-never-gonna
+	url = https://gist.github.com/lucaspiller/2852385
 [submodule "whitespace/mercerenies-euler"]
 	path = whitespace/mercerenies-euler
 	url = https://github.com/Mercerenies/eulers-melting-pot
@@ -635,6 +644,9 @@
 [submodule "whitespace/mildsunrise-brainfuck"]
 	path = whitespace/mildsunrise-brainfuck
 	url = https://gist.github.com/mildsunrise/60a516da83d448ba1363a7deac361515
+[submodule "whitespace/owocean-fizzbuzz"]
+	path = whitespace/owocean-fizzbuzz
+	url = https://gist.github.com/owocean/0433a34dcfb1409bd5528e4821dd0055
 [submodule "whitespace/paradoxv5-program-java-rb"]
 	path = whitespace/paradoxv5-program-java-rb
 	url = https://github.com/ParadoxV5/Program-java-rb-ws-txt
@@ -647,9 +659,18 @@
 [submodule "whitespace/pik4ez-ascii"]
 	path = whitespace/pik4ez-ascii
 	url = https://github.com/wspace/pik4ez-ascii
+[submodule "whitespace/rameshdahiya-merry-christmas"]
+	path = whitespace/rameshdahiya-merry-christmas
+	url = https://gist.github.com/rameshdahiya/c5705032173968999ecd0c3c1cf238c7
 [submodule "whitespace/samdonow-pelc"]
 	path = whitespace/samdonow-pelc
 	url = https://github.com/drsam94/PELC
+[submodule "whitespace/shotastage-hello"]
+	path = whitespace/shotastage-hello
+	url = https://gist.github.com/shotastage/5a991d828e510459488c66a7994df859
+[submodule "whitespace/techvstechie"]
+	path = whitespace/techvstechie
+	url = https://gist.github.com/techVstechie/a1af13232e5c8145ffb770884d32187b
 [submodule "whitespace/tewort-hello"]
 	path = whitespace/tewort-hello
 	url = https://github.com/Tewort/Hello-Whitespace
@@ -662,3 +683,6 @@
 [submodule "whitespace/yokoyama-fizzbuzz"]
 	path = whitespace/yokoyama-fizzbuzz
 	url = https://github.com/ait8/fizzbuzz
+[submodule "whitespace/yumu"]
+	path = whitespace/yumu
+	url = https://gist.github.com/yumu19/7b083c7e764092d5d0a2

@@ -1,0 +1,12 @@
+{
+  "id": "whitespace/techvstechie",
+  "name": "WhiteSpace program",
+  "authors": ["techVstechie"],
+  "license": "none",
+  "languages": ["Whitespace"],
+  "tags": ["programs"],
+  "date": "2021-06-30 14:38:33 +0530",
+  "spec_version": "0.2",
+  "source": ["https://gist.github.com/techVstechie/a1af13232e5c8145ffb770884d32187b"],
+  "programs": [{ "path": "Whitespace_program.ws", "spec_version": "0.2" }]
+}

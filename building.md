@@ -268,23 +268,31 @@ Build and run errors are included.
 - ❌ whitespace/chrisnguyen-steganographic-polyglots
 - ❌ whitespace/dcoy-hacktoberfest-2016
 - ❌ whitespace/elisha-snakulator
+- ❌ whitespace/jonstites-hello
 - whitespace/keen-whitelie:
   - asm.rb
   - whitelie
 - ❌ whitespace/keithsthompson-fizzbuzz
 - ❌ whitespace/kenrube-esopoly
+- ❌ whitespace/kirens-countdown
 - ❌ whitespace/knightking-hacktoberfest-2017
 - ❌ whitespace/kunde-hello
+- ❌ whitespace/lucaspiller-never-gonna
 - ❌ whitespace/mercerenies-euler
 - ❌ whitespace/mesquita-markov
 - ❌ whitespace/mikedonaghy-hello
 - ❌ whitespace/mildsunrise-brainfuck
+- ❌ whitespace/owocean-fizzbuzz
 - ❌ whitespace/paradoxv5-program-java-rb
 - ❌ whitespace/pdewacht-tetris
 - ❌ whitespace/petek-hello
 - ❌ whitespace/pik4ez-ascii
+- ❌ whitespace/rameshdahiya-merry-christmas
 - ❌ whitespace/samdonow-pelc
+- ❌ whitespace/shotastage-hello
+- ❌ whitespace/techvstechie
 - ❌ whitespace/tewort-hello
 - ❌ whitespace/trevorbennett-stack-flood
 - ❌ whitespace/wsdt-kevinloveswhitespace
 - ❌ whitespace/yokoyama-fizzbuzz
+- ❌ whitespace/yumu

@@ -1,0 +1,12 @@
+{
+  "id": "whitespace/rameshdahiya-merry-christmas",
+  "name": "Merry Christmas",
+  "authors": ["Ramesh Kumar"],
+  "license": "none",
+  "languages": ["Whitespace"],
+  "tags": ["programs"],
+  "date": "2020-12-11 00:51:39 +0100",
+  "spec_version": "0.2",
+  "source": ["https://gist.github.com/rameshdahiya/c5705032173968999ecd0c3c1cf238c7"],
+  "programs": [{ "path": "merry-christmas.ws", "spec_version": "0.2" }]
+}

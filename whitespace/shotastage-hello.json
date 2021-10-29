@@ -1,0 +1,12 @@
+{
+  "id": "whitespace/shotastage-hello",
+  "name": "hello.ws",
+  "authors": ["Shota Shimazu"],
+  "license": "none",
+  "languages": ["Whitespace"],
+  "tags": ["programs"],
+  "date": "2016-09-11 00:39:48 +0900",
+  "spec_version": "0.2",
+  "source": ["https://gist.github.com/shotastage/5a991d828e510459488c66a7994df859"],
+  "programs": [{ "path": "hello.ws", "spec_version": "0.2" }]
+}
