@@ -584,6 +584,9 @@
 [submodule "vim/rolf-ws-vim"]
 	path = vim/rolf-ws-vim
 	url = https://github.com/rolf007/ws.vim
+[submodule "whitespace/0qol-prime"]
+	path = whitespace/0qol-prime
+	url = https://github.com/wspace/0qol-prime
 [submodule "whitespace/alicewonderland-hacktoberfest-2017"]
 	path = whitespace/alicewonderland-hacktoberfest-2017
 	url = https://github.com/AliceWonderland/hacktoberfest
@@ -683,6 +686,9 @@
 [submodule "whitespace/yokoyama-fizzbuzz"]
 	path = whitespace/yokoyama-fizzbuzz
 	url = https://github.com/ait8/fizzbuzz
+[submodule "whitespace/ytaka"]
+	path = whitespace/ytaka
+	url = https://github.com/wspace/ytaka-whitespace
 [submodule "whitespace/yumu"]
 	path = whitespace/yumu
 	url = https://gist.github.com/yumu19/7b083c7e764092d5d0a2

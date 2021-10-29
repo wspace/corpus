@@ -1,0 +1,34 @@
+{
+  "id": "whitespace/ytaka",
+  "name": "whitespace_pumpkin.ws, whitespace_fizzbuzz.ws, and whitespace_sieve.ws",
+  "authors": ["Yuto Takahashi"],
+  "license": "none",
+  "languages": ["Whitespace"],
+  "tags": ["programs"],
+  "date": "2013-11-07 04:06:05 -0800",
+  "spec_version": "0.2",
+  "source": [
+    "https://github.com/wspace/ytaka-whitespace",
+    "https://gist.github.com/y-taka-23/7353571",
+    "https://gist.github.com/y-taka-23/7353594",
+    "https://gist.github.com/y-taka-23/7353612"
+  ],
+  "programs": [
+    {
+      "path": "whitespace_pumpkin.ws",
+      "spec_version": "0.2",
+      "desc": "CodeIQ「カボチャの種を数えて！」の Whitespace による解答です。 処理系の仕様により EOF が扱えないため、「標準入力で '?' より前に現れた 'O' の個数」をカウントします。"
+    },
+    {
+      "path": "whitespace_fizzbuzz.ws",
+      "spec_version": "0.2",
+      "desc": "FizzBuzz (up to 100) on Whitespace"
+    },
+    {
+      "path": "whitespace_sieve.ws",
+      "spec_version": "0.2",
+      "desc": "Sieve of Eratosthenes (up to 100) on Whitespace"
+    }
+  ],
+  "notes": "wspace repo is a cleaned up, unified git history"
+}

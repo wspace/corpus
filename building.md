@@ -259,6 +259,7 @@ Build and run errors are included.
 - ❌ textmate/veniversum
 - ⚠️ typescript/fy0u11/dist/Whitespace.js: `npm install && npm run build`
 - ❌ vim/rolf-ws-vim
+- ❌ whitespace/0qol-prime
 - ❌ whitespace/alicewonderland-hacktoberfest-2017
 - whitespace/andrewarchi-wslib/assemble.sh
 - ❌ whitespace/aniket-hacktoberfest-2018
@@ -295,4 +296,5 @@ Build and run errors are included.
 - ❌ whitespace/trevorbennett-stack-flood
 - ❌ whitespace/wsdt-kevinloveswhitespace
 - ❌ whitespace/yokoyama-fizzbuzz
+- ❌ whitespace/ytaka
 - ❌ whitespace/yumu
