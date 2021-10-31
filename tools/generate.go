@@ -571,6 +571,9 @@ func GetURLLabel(rawURL string) (string, error) {
 	if site, ok := pathTrimPrefix("sites.google.com", "/site/", host, u.Path); ok {
 		return site + " Google Site", nil
 	}
+	if host == "docs.google.com" && strings.HasPrefix(u.Path, "/presentation/") {
+		return "Google Slides", nil
+	}
 	if label, ok := domainLabels[host]; ok {
 		return label, nil
 	}

@@ -1,6 +1,6 @@
 # The Whitespace Corpus
 
-The definitive collection of 243 projects for the Whitespace programming
+The definitive collection of 245 projects for the Whitespace programming
 language, including interpreters, compilers, and programs.
 
 ## Projects
@@ -59,7 +59,9 @@ language, including interpreters, compilers, and programs.
 | [baudelaire-whitespace](python/qwhxm-baudelaire.json) | Marek Tomáštík | Python    | web service, programs | 2019-06-08 | [GitHub](https://github.com/qwhxm/baudelaire-whitespace) |
 | [Nebula](go/andrewarchi-nebula.json)               | Andrew Archibald | Go, LLVM, Whitespace | compiler, optimizer, disassembler, bit packer, Binary Whitespace, programs | 2019-06-06 | [GitHub](https://github.com/andrewarchi/nebula) |
 | [Whitespace VM](rust/nareshganduri.json)           | Naresh Ganduri   | Rust       | interpreter  | 2019-05-13 | [GitHub](https://github.com/nareshganduri/WhitespaceVM) |
-| [Akaza](ruby/pocke-akaza.json)                     | Masataka Pocke Kuwabara | Ruby | language, interpreter, text to Whitespace, programs | 2019-04-28 | [GitHub](https://github.com/pocke/akaza) |
+| [gows](go/pocke-gows.json)                         | Masataka Pocke Kuwabara | Go  | interpreter  | 2019-05-11 | [GitHub](https://github.com/pocke/gows) |
+| [Self-hosting Whitespace](ruby/pocke-self-hosted.json) | Masataka Pocke Kuwabara | Ruby, Whitespace | interpreter, program builder, programs | 2019-05-06 | [GitHub](https://github.com/pocke/self-hosting-whitespace), [pocke.hatenablog.com](https://pocke.hatenablog.com/entry/2019/05/24/232217), [Google Slides](https://docs.google.com/presentation/d/1BeNJ_E_KOLjjdM4Bd3u_96tiIGiRdG9J9orhglcxziw/edit), [speakerdeck.com](https://speakerdeck.com/pocke/self-hosting-whitespace), [GitHub Gist](https://gist.github.com/pocke/2847214a87139a0d1babd9338159d667), [pocke.hatenablog.com](https://pocke.hatenablog.com/entry/2019/05/06/213209) |
+| [Akaza](ruby/pocke-akaza.json)                     | Masataka Pocke Kuwabara | Ruby | transpiler, interpreter, text to Whitespace, programs | 2019-04-28 | [GitHub](https://github.com/pocke/akaza), [pocke.hatenablog.com](https://pocke.hatenablog.com/entry/2019/04/28/183509), [GitHub Gist](https://gist.github.com/pocke/0003a0a7c6ef7fe05c856d0f1f437103), [GitHub Gist](https://gist.github.com/pocke/129c6b69a6a39bdebc072ed8b8afa5af), [GitHub Gist](https://gist.github.com/pocke/d94a90f15f5ad854060fcf14ea453e40), [GitHub Gist](https://gist.github.com/pocke/d4c55e22b3fb5c5fcd5a6016889c3a68), [pocke.hatenablog.com](https://pocke.hatenablog.com/entry/2019/05/01/023627) |
 | [whitespace-language-converter](python/drafear-converter.json) | Takeshi Nishikawa | Python | assembler, programs | 2019-03-29 | [GitHub](https://github.com/drafear/whitespace-language-converter) |
 | [Hello in Whitespace](whitespace/jonstites-hello.json) | Jonathan Stites | Whitespace | programs  | 2019-02-26 | [GitHub Gist](https://gist.github.com/jonstites/16784b5c1fb0c1e580d698bb13d4f50f) |
 | [go-wspace](go/tempxla-go-wspace.json)             | tempxla          | Go         | interpreter  | 2019-02-24 | [GitHub](https://github.com/tempxla/go-wspace) |

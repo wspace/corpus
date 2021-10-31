@@ -81,6 +81,7 @@ Build and run errors are included.
   - ⚠️ nebula: `go build` Requires LLVM
   - ⚠️ programs/interpret.wsa
 - go/kinu/whitespace: `go build`
+- go/pocke-gows/gows: `go build`
 - go/technohippy/go-whitespace: `go build -o go-whitespace ./src`
 - go/tempxla-go-wspace/bin/go-wspace: `make`
 - go/yshr-wspacego/wspacego: `go build`
@@ -224,6 +225,9 @@ Build and run errors are included.
 - ⚠️ ruby/pocke-akaza:
   - bin/str\_to\_ws.rb
   - ⚠️ exe/akaza: uninitialized constant Akaza::Parser::StringIO
+- ⚠️ ruby/pocke-self-hosted:
+  - ⚠️ build/whitespace.ws: `akaza wsrb src/whitespace.ws.rb` Ruby installation issue while generating whitespace.ws
+  - ⚠️ test/test\_helper.rb
 - ruby/shimo-yukicoder:
   - as2st.rb
   - st2ws.rb

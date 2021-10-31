@@ -1,0 +1,73 @@
+{
+  "id": "ruby/pocke-self-hosted",
+  "name": "Self-hosting Whitespace",
+  "authors": ["Masataka Pocke Kuwabara"],
+  "license": "none",
+  "languages": ["Ruby", "Whitespace"],
+  "tags": ["interpreter", "program builder", "programs"],
+  "date": "2019-05-06 12:03:09 +0900",
+  "spec_version": "0.2",
+  "source": [
+    "https://github.com/pocke/self-hosting-whitespace",
+    "https://pocke.hatenablog.com/entry/2019/05/24/232217",
+    "https://docs.google.com/presentation/d/1BeNJ_E_KOLjjdM4Bd3u_96tiIGiRdG9J9orhglcxziw/edit",
+    "https://speakerdeck.com/pocke/self-hosting-whitespace",
+    "https://gist.github.com/pocke/2847214a87139a0d1babd9338159d667",
+    "https://pocke.hatenablog.com/entry/2019/05/06/213209"
+  ],
+  "relations": [{ "type": "library", "id": "ruby/pocke-akaza" }],
+  "assembly": {
+    "mnemonics": {
+      "push": ["push_num", "push_ch"],
+      "dup": ["dup"],
+      "swap": ["swap"],
+      "drop": ["pop"],
+      "add": ["add"],
+      "sub": ["sub"],
+      "mul": ["multi"],
+      "div": ["div"],
+      "mod": ["mod"],
+      "store": ["heap_save"],
+      "retrieve": ["heap_load"],
+      "label": ["def"],
+      "call": ["call"],
+      "jmp": ["jump"],
+      "jz": ["jump_if_zero"],
+      "jn": ["jump_if_neg"],
+      "ret": ["end"],
+      "end": ["exit"],
+      "printc": ["write_ch"],
+      "printi": ["write_num"]
+    },
+    "usage": ["program builder"]
+  },
+  "programs": [
+    {
+      "path": "src/whitespace.ws.rb",
+      "compiled": "src/whitespace.ws",
+      "generate": "akaza wsrb src/whitespace.ws.rb"
+    },
+    {
+      "path": "src/fizzbuzz.ws.rb",
+      "compiled": "src/fizzbuzz.ws",
+      "generate": "akaza wsrb src/fizzbuzz.ws.rb"
+    }
+  ],
+  "commands": [
+    {
+      "type": "interpreter",
+      "bin": "build/whitespace.ws",
+      "build": "akaza wsrb src/whitespace.ws.rb",
+      "build_errors": "Ruby installation issue while generating whitespace.ws",
+      "usage": "cat [<file> sep]+ | wspace %0",
+      "example_usages": [
+        "cat build/fizzbuzz.ws sep | gows build/whitespace.ws",
+        "cat build/whitespace.ws sep build/fizzbuzz.ws sep | gows build/whitespace.ws"
+      ],
+      "notes": "Streams are separated with $"
+    },
+    { "type": "program builder", "bin": "test/test_helper.rb" }
+  ],
+  "notes": "Presentation gives implementation details, including type information encoding, arrays, and hashing. Gist is the generated interpreter.",
+  "todo": "Run Rakefile. Can also generate .ws files with `bundle exec compile:all`, which would not require a global akaza installation. Verify that gist is identical to generated whitespace.ws."
+}

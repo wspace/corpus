@@ -11,7 +11,7 @@ func main() {
 	projects, err := tools.ReadProjects(os.Args[1:])
 	try(err)
 	for _, p := range projects {
-		if p.License == "" {
+		if p.License == "" && p.ID != "" {
 			if l, err := p.GetLicense(); err != nil {
 				fmt.Fprintln(os.Stderr, err)
 				break

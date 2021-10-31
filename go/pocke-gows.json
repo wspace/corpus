@@ -1,0 +1,59 @@
+{
+  "id": "go/pocke-gows",
+  "name": "gows",
+  "authors": ["Masataka Pocke Kuwabara"],
+  "license": "none",
+  "languages": ["Go"],
+  "tags": ["interpreter"],
+  "date": "2019-05-11 13:12:54 +0900",
+  "spec_version": "0.2",
+  "source": ["https://github.com/pocke/gows"],
+  "bounds": {
+    "precision": "Go int",
+    "stack_cap": "unbounded",
+    "call_stack_cap": "unbounded",
+    "heap_min": "unbounded",
+    "heap_max": "unbounded",
+    "heap_cap": "unbounded",
+    "label_cap": "unbounded",
+    "instruction_cap": "unbounded"
+  },
+  "assembly": {
+    "mnemonics": {
+      "push": ["STACK_PUSH"],
+      "dup": ["STACK_DUP"],
+      "swap": ["STACK_SWAP"],
+      "drop": ["STACK_POP"],
+      "add": ["CALC_ADD"],
+      "sub": ["CALC_SUB"],
+      "mul": ["CALC_MULTI"],
+      "div": ["CALC_DIV"],
+      "mod": ["CALC_MOD"],
+      "store": ["HEAP_SAVE"],
+      "retrieve": ["HEAP_LOAD"],
+      "label": ["FLOW_DEF"],
+      "call": ["FLOW_CALL"],
+      "jmp": ["FLOW_JUMP"],
+      "jz": ["FLOW_JUMP_IF_ZERO"],
+      "jn": ["FLOW_JUMP_IF_NEG"],
+      "ret": ["FLOW_END"],
+      "end": ["FLOW_EXIT"],
+      "printc": ["IO_WRITE_CH"],
+      "printi": ["IO_WRITE_NUM"],
+      "readc": ["IO_READ_CH"],
+      "readi": ["IO_READ_NUM"]
+    },
+    "usage": ["enum"]
+  },
+  "commands": [
+    {
+      "type": "interpreter",
+      "bin": "gows",
+      "install_dependencies": "go mod init github.com/pocke/gows && go mod tidy",
+      "build": "go build",
+      "usage": "$0 <file>",
+      "input": "<file>",
+      "output": "stdout"
+    }
+  ]
+}

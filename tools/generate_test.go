@@ -24,6 +24,7 @@ func TestGetURLLabel(t *testing.T) {
 		{"https://what.thedailywtf.com/topic/5980/stupid-coding-tricks-sudoku-solver-in-whitespace", "What the Daily WTF?"},
 		{"https://web.archive.org/web/20100807004910/http://whitespace.pastebin.com/f761fc4b5", "Pastebin (archive)"},
 		{"https://web.archive.org/web/20130510111931/https://sites.google.com/site/res0001/whitespace/programs", "res0001 Google Site (archive)"},
+		{"https://docs.google.com/presentation/d/1BeNJ_E_KOLjjdM4Bd3u_96tiIGiRdG9J9orhglcxziw/edit", "Google Slides"},
 	}
 	for i, tt := range tests {
 		label, err := GetURLLabel(tt.URL)

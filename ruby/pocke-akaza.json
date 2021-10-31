@@ -4,11 +4,51 @@
   "authors": ["Masataka Pocke Kuwabara"],
   "license": "CC0-1.0",
   "languages": ["Ruby"],
-  "tags": ["language", "interpreter", "text to Whitespace", "programs"],
+  "tags": ["transpiler", "interpreter", "text to Whitespace", "programs"],
   "date": "2019-04-28 11:26:08 +0900",
   "spec_version": "0.2",
-  "source": ["https://github.com/pocke/akaza"],
+  "source": [
+    "https://github.com/pocke/akaza",
+    "https://pocke.hatenablog.com/entry/2019/04/28/183509",
+    "https://gist.github.com/pocke/0003a0a7c6ef7fe05c856d0f1f437103",
+    "https://gist.github.com/pocke/129c6b69a6a39bdebc072ed8b8afa5af",
+    "https://gist.github.com/pocke/d94a90f15f5ad854060fcf14ea453e40",
+    "https://gist.github.com/pocke/d4c55e22b3fb5c5fcd5a6016889c3a68",
+    "https://pocke.hatenablog.com/entry/2019/05/01/023627"
+  ],
   "package": { "name": "akaza", "manager": "RubyGems", "url": "https://rubygems.org/gems/akaza" },
+  "whitespace": { "extension": "ws" },
+  "assembly": {
+    "mnemonics": {
+      "push": ["stack_push"],
+      "dup": ["stack_dup"],
+      "swap": ["stack_swap"],
+      "drop": ["stack_pop"],
+      "add": ["calc_add"],
+      "sub": ["calc_sub"],
+      "mul": ["calc_multi"],
+      "div": ["calc_div"],
+      "mod": ["calc_mod"],
+      "store": ["heap_save"],
+      "retrieve": ["heap_load"],
+      "label": ["flow_def"],
+      "call": ["flow_call"],
+      "jmp": ["flow_jump"],
+      "jz": ["flow_jump_if_zero"],
+      "jn": ["flow_jump_if_neg"],
+      "ret": ["flow_end"],
+      "end": ["flow_exit"],
+      "printc": ["io_write_char"],
+      "printi": ["io_write_num"],
+      "readc": ["io_read_char"],
+      "readi": ["io_read_num"]
+    },
+    "usage": ["enum"]
+  },
+  "programs": [
+    { "path": "test/fixtures/hello.ws", "spec_version": "0.2" },
+    { "path": "test/fixtures/sum.ws", "spec_version": "0.2" }
+  ],
   "commands": [
     {
       "bin": "exe/akaza",
@@ -20,7 +60,8 @@
         { "name": "exec", "desc": "Execute Whitespace program" },
         { "name": "wsrb", "desc": "Convert Ruby-like script to Whitespace" },
         { "name": "exec_wsrb", "desc": "Convert Ruby-like script to Whitespace and execute" }
-      ]
+      ],
+      "notes": "Requires Ruby 2.7 or later"
     },
     {
       "type": "text to Whitespace",
@@ -28,5 +69,7 @@
       "usage": "ruby $0 <text>",
       "output": "stdout"
     }
-  ]
+  ],
+  "notes": "Gists contain examples for the first blog post, which show the Akaza API for evaluating and embedding Whitespace programmings in Ruby and generate the programs in test/fixtures/. Second blog post explains the transpiler language specification in more detail.",
+  "todo": "Run Rakefile"
 }

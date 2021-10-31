@@ -166,6 +166,9 @@
 [submodule "go/kinu"]
 	path = go/kinu
 	url = https://github.com/kinu/whitespace
+[submodule "go/pocke-gows"]
+	path = go/pocke-gows
+	url = https://github.com/pocke/gows
 [submodule "go/technohippy"]
 	path = go/technohippy
 	url = https://github.com/wspace/technohippy-go
@@ -515,6 +518,9 @@
 [submodule "ruby/pocke-akaza"]
 	path = ruby/pocke-akaza
 	url = https://github.com/pocke/akaza
+[submodule "ruby/pocke-self-hosted"]
+	path = ruby/pocke-self-hosted
+	url = https://github.com/pocke/self-hosting-whitespace
 [submodule "ruby/shimo-yukicoder"]
 	path = ruby/shimo-yukicoder
 	url = https://github.com/wspace/shimo-yukicoder

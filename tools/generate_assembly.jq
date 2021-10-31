@@ -19,7 +19,7 @@
     | to_entries[]
     | .value |= (
       map(ascii_downcase
-        | gsub("^(stack|arith|math|heap|flow|io)[ \\.]"; "")
+        | gsub("^(stack|arith|math|calc|heap|flow|io)[ \\._]"; "")
         | gsub("^mod\\."; "")
         | gsub("( ([.%lf]?<[a-z_]+>|<<[a-z_]+>>|_))+$"; ""))
       | unique
