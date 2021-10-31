@@ -134,9 +134,10 @@
       "items": {
         "type": "object",
         "properties": {
-          "type": { "type": "string", "enum": ["fork", "library", "binary"] },
+          "type": { "type": "string", "enum": ["fork", "submodule", "embedded", "library", "binary"] },
           "id": { "$ref": "#/$defs/id" },
-          "commit": { "type": "string" }
+          "commit": { "type": "string" },
+          "release": { "type": "string" }
         },
         "required": ["type", "id"],
         "additionalProperties": false

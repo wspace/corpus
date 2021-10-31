@@ -4,7 +4,7 @@
   "authors": ["Wayne E. Conrad"],
   "license": "GPL-2.0-or-later",
   "languages": ["Ruby"],
-  "tags": ["interpreter", "assembler", "disassembler"],
+  "tags": ["interpreter", "assembler", "disassembler", "programs"],
   "date": "2003-04-02 05:28:47 +0000",
   "spec_version": "0.3",
   "source": [
@@ -43,6 +43,7 @@
     "usage": ["assembler", "disassembler"],
     "extension": "wsa"
   },
+  "programs": [{ "path": "alphabet.wsa", "compiled": "alphabet.ws", "spec_version": "0.3" }],
   "commands": [
     {
       "type": "interpreter",

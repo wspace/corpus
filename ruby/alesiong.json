@@ -9,6 +9,47 @@
   "spec_version": "0.3",
   "source": ["https://github.com/alesiong/whitespace-ruby"],
   "relations": [{ "type": "fork", "id": "ruby/wconrad" }],
+  "assembly": {
+    "mnemonics": {
+      "push": ["push"],
+      "dup": ["dup"],
+      "swap": ["swap"],
+      "drop": ["discard"],
+      "add": ["add"],
+      "sub": ["sub"],
+      "mul": ["mul"],
+      "div": ["div"],
+      "mod": ["mod"],
+      "store": ["store"],
+      "retrieve": ["load"],
+      "label": ["label"],
+      "call": ["call"],
+      "jmp": ["jump"],
+      "jz": ["jz"],
+      "jn": ["jn"],
+      "ret": ["ret"],
+      "end": ["exit"],
+      "printc": ["printchar"],
+      "printi": ["printnum"],
+      "readc": ["readchar"],
+      "readi": ["readnum"]
+    },
+    "usage": ["program builder"]
+  },
+  "programs": [
+    {
+      "path": "sample/facws.rb",
+      "compiled": "fac.ws",
+      "spec_version": "0.2",
+      "generate": "ruby sample/facws.rb"
+    },
+    {
+      "path": "sample/fibws.rb",
+      "compiled": "fib.ws",
+      "spec_version": "0.2",
+      "generate": "ruby sample/fibws.rb"
+    }
+  ],
   "commands": [
     {
       "type": "program builder",

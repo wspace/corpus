@@ -4,7 +4,7 @@
   "authors": ["Lochlan Bunn"],
   "license": "MIT",
   "languages": ["JavaScript"],
-  "tags": ["interpreter"],
+  "tags": ["interpreter", "programs"],
   "date": "2018-02-14 07:32:38 +1000",
   "spec_version": "0.3",
   "source": ["https://github.com/loklaan/whitespace-lang"],
@@ -13,5 +13,6 @@
     "manager": "npm",
     "url": "https://www.npmjs.com/package/whitespace-lang"
   },
-  "relations": [{ "type": "fork", "id": "javascript/vii5ard-whitelips-ide" }]
+  "relations": [{ "type": "fork", "id": "javascript/vii5ard-whitelips-ide" }],
+  "programs": [{ "path": "tests.ws", "spec_version": "0.2" }]
 }

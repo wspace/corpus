@@ -33,9 +33,10 @@ type Project struct {
 		URL     string `json:"url"`
 	} `json:"package,omitempty"`
 	Relations []struct {
-		Type   string `json:"type"`
-		ID     string `json:"id"`
-		Commit string `json:"commit,omitempty"`
+		Type    string `json:"type"`
+		ID      string `json:"id"`
+		Commit  string `json:"commit,omitempty"`
+		Release string `json:"release,omitempty"`
 	} `json:"relations,omitempty"`
 	Bounds *struct {
 		Precision      string      `json:"precision,omitempty"`

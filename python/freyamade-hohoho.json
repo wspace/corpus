@@ -11,6 +11,7 @@
   "package": { "name": "hohoho", "manager": "PyPI", "url": "https://pypi.org/project/hohoho/" },
   "relations": [{ "type": "library", "id": "python/dwayne" }],
   "mappings": [{ "space": "snow", "tab": "hohoho", "lf": "\n", "spaces_between": true, "extension": "ho" }],
+  "programs": [{ "path": "hello.ho", "compiled": "hello.ws", "equivalent": "hworld.ws", "spec_version": "0.2" }],
   "commands": [
     {
       "type": "mapping",
