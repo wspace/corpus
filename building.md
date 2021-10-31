@@ -162,6 +162,7 @@ Build and run errors are included.
 - python/adapap/whitespace\_interpreter.py
 - python/ahl27/main.py
 - python/alecgraves-whitespac3/interpreter.py
+- python/apua-gen/gen\_ws.py
 - python/apua-wvm/wvm.py
 - python/bornlex:
   - main.py

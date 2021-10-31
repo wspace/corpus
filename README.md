@@ -1,6 +1,6 @@
 # The Whitespace Corpus
 
-The definitive collection of 245 projects for the Whitespace programming
+The definitive collection of 246 projects for the Whitespace programming
 language, including interpreters, compilers, and programs.
 
 ## Projects
@@ -109,6 +109,7 @@ language, including interpreters, compilers, and programs.
 | [素数判定](whitespace/0qol-prime.json)                 | 0qol             | Whitespace | programs     | 2017-02-03 | [GitHub](https://github.com/wspace/0qol-prime), [GitHub Gist](https://gist.github.com/0qol/a57b28d3353cdef08aac34cce8b1d9dc), [GitHub Gist](https://gist.github.com/0qol/55ab44a35c0faba659448f340af8db70), [GitHub Gist](https://gist.github.com/0qol/a317e241860518a79a36c879e710de38) |
 | [whitepy](python/yasn-whitepy.json)                | Yasser Saleemi   | Python     | interpreter  | 2017-01-31 | [GitHub](https://github.com/yasn77/whitepy) |
 | [WhitespaceGenerator](javascript/briantran-generator.json) | Brian Tran | JavaScript | text to Whitespace | 2017-01-22 | [GitHub](https://github.com/TranBrian10/WhitespaceGenerator) |
+| [solve.ws](python/apua-gen.json)                   | Apua             | Python     | mapping, programs | 2016-12-20 | [GitHub Gist](https://gist.github.com/apua/8d565a8a8365a1399b8fae1664b43d65), [ptt.cc](https://www.ptt.cc/bbs/Programming/M.1478792208.A.EFC.html) |
 | [whitespace.lol](lolcode/akers.json)               | D.E. Akers       | LOLCODE    | interpreter  | 2016-11-21 | [GitHub](https://github.com/wspace/akers-lolcode), [GitHub](https://github.com/hostilefork/whitespacers/tree/master/lolcode) |
 | [whitespac3](python/alecgraves-whitespac3.json)    | Alec Graves      | Python     | interpreter  | 2016-11-17 | [GitHub](https://github.com/alecGraves/whitespac3) |
 | [WhiteSpaceInterpreter](java/eia.json)             | Zuleimi Esteffanny González Muñoz | Java | interpreter, programs | 2016-10-27 | [GitHub](https://github.com/wspace/eia-java), [GitHub](https://github.com/EIA-University/WhiteSpaceInterpreter) |

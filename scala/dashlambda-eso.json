@@ -72,7 +72,7 @@
         {
           "name": "translate",
           "desc": "Translate a program from one language to another",
-          "usage": "translate -s <file> [-tl <target_language> -o <target_file>]+ [-sl <source_language>]",
+          "usage": "translate -s <file> (-tl <target_language> -o <target_file>)... [-sl <source_language>]",
           "options": [
             { "short": "s", "required": true, "arg": "sourceFileName", "arg_required": true, "type": "file" },
             {
@@ -96,7 +96,7 @@
         {
           "name": "transpile",
           "desc": "Transpile a program from one language to another",
-          "usage": "transpile -s <file> [-tl <target_language> -o <target_file>]+ [-sl <source_language>]",
+          "usage": "transpile -s <file> (-tl <target_language> -o <target_file>)... [-sl <source_language>]",
           "options": [
             { "short": "s", "required": true, "arg": "sourceFileName", "arg_required": true, "type": "file" },
             {

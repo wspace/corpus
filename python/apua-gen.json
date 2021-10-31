@@ -1,0 +1,50 @@
+{
+  "id": "python/apua-gen",
+  "name": "solve.ws",
+  "authors": ["Apua"],
+  "license": "none",
+  "languages": ["Python"],
+  "tags": ["mapping", "programs"],
+  "date": "2016-12-21 03:42:11 +0800",
+  "spec_version": "-",
+  "source": [
+    "https://gist.github.com/apua/8d565a8a8365a1399b8fae1664b43d65",
+    "https://www.ptt.cc/bbs/Programming/M.1478792208.A.EFC.html"
+  ],
+  "mappings": [
+    { "space": "S", "tab": "T", "lf": "L", "line_comment": "#", "extension": "ws.orig" },
+    {
+      "space": "\u001b[47m \u001b[m",
+      "tab": "\u001b[43m \u001b[m",
+      "lf": "\u001b[44m \u001b[m\n",
+      "line_comment": "#"
+    },
+    { "space": "▇", "tab": "█", "lf": "\n", "line_comment": "#" }
+  ],
+  "programs": [
+    {
+      "path": "solve.ws.orig",
+      "compiled": "solve.ws",
+      "aux": ["algorithm.py", "reduced.py"],
+      "spec_version": "0.2",
+      "generate": "python3 gen_ws.py solve.ws.orig -w"
+    }
+  ],
+  "commands": [
+    {
+      "type": "mapping",
+      "bin": "gen_ws.py",
+      "dependencies": ["Python 3"],
+      "usage": "python3 $0 <file>.ws.orig (-c | -b | -w)",
+      "input": "<file>.ws.orig",
+      "output": "<file>.ws",
+      "options": [
+        { "short": "c", "desc": "color output type" },
+        { "short": "b", "desc": "bbs output type" },
+        { "short": "w", "desc": "whitespace output type" }
+      ],
+      "option_parse": "manual"
+    }
+  ],
+  "notes": "Whitespace solution to challenge, with equivalent Python programs"
+}
