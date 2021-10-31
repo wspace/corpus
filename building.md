@@ -78,12 +78,12 @@ Build and run errors are included.
 - ❌ elixir/quinnwilton
 - ⚠️ erlang/derek-mrwhite/*unspecified*: `make` Unclear how to run
 - ⚠️ go/andrewarchi-nebula:
-  - ⚠️ nebula: `go mod init github.com/andrewarchi/nebula && go mod tidy && go build` Requires LLVM
+  - ⚠️ nebula: `go build` Requires LLVM
   - ⚠️ programs/interpret.wsa
-- go/kinu/whitespace: `go mod init github.com/kinu/whitespace && go build`
+- go/kinu/whitespace: `go build`
 - go/technohippy/go-whitespace: `go build -o go-whitespace ./src`
 - go/tempxla-go-wspace/bin/go-wspace: `make`
-- go/yshr-wspacego/wspacego: `go mod init github.com/135yshr/wspacego && go mod tidy && go build`
+- go/yshr-wspacego/wspacego: `go build`
 - ⚠️ haskell/brainbrush-tomato/wspace: `make` Needs changes for latest Haskell
 - ❌ haskell/burghard-wsa
 - ❌ haskell/edwinb-wspace-0.2

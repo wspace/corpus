@@ -17,7 +17,7 @@
     {
       "type": "interpreter",
       "bin": "bin/whitespace",
-      "install_dependencies": ["bundle install"],
+      "install_dependencies": "bundle install",
       "build_errors": "Old dependencies",
       "usage": "ruby $0 [-v | --version] [-h | --help] <file>",
       "options": [

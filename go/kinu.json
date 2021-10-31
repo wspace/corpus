@@ -51,7 +51,8 @@
     {
       "type": "interpreter",
       "bin": "whitespace",
-      "build": "go mod init github.com/kinu/whitespace && go build",
+      "install_dependencies": "go mod init github.com/kinu/whitespace",
+      "build": "go build",
       "usage": "$0 [-v] [--dry_run] [-h | --help] <file>",
       "options": [
         { "short": "v", "long": "v", "desc": "verbose" },

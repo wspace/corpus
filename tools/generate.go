@@ -149,7 +149,7 @@ type Command struct {
 	Type                string          `json:"type,omitempty"`
 	Bin                 string          `json:"bin,omitempty"`
 	Dependencies        []string        `json:"dependencies,omitempty"`
-	InstallDependencies []string        `json:"install_dependencies,omitempty"`
+	InstallDependencies string          `json:"install_dependencies,omitempty"`
 	Build               string          `json:"build,omitempty"`
 	BuildErrors         string          `json:"build_errors,omitempty"`
 	Usage               string          `json:"usage,omitempty"`

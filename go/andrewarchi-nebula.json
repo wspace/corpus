@@ -192,7 +192,8 @@
       "type": "compiler",
       "bin": "nebula",
       "dependencies": ["LLVM"],
-      "build": "go mod init github.com/andrewarchi/nebula && go mod tidy && go build",
+      "install_dependencies": "go mod init github.com/andrewarchi/nebula && go mod tidy",
+      "build": "go build",
       "build_errors": "Requires LLVM",
       "option_parse": "Go flag",
       "subcommands": [

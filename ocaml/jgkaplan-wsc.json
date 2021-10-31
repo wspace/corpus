@@ -13,7 +13,7 @@
       "type": "language compiler",
       "bin": "main.byte",
       "dependencies": ["opam"],
-      "install_dependencies": ["opam install ocamlbuild memhir"],
+      "install_dependencies": "opam install ocamlbuild memhir",
       "build": "make",
       "usage": "$0 [--help] <file>",
       "output": "<file:no_ext>.ws",

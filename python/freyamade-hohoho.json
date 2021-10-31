@@ -16,7 +16,7 @@
       "type": "mapping",
       "bin": "hohoho",
       "dependencies": ["Python 3.6"],
-      "install_dependencies": ["pip3 install whitespace"],
+      "install_dependencies": "pip3 install whitespace",
       "usage": "python3 -m $0 [-h | --help] [-t | --from-ws] <file>",
       "options": [
         { "short": "h", "long": "help", "desc": "show this help message and exit" },

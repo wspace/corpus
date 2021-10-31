@@ -13,7 +13,7 @@
     {
       "bin": "exe/akaza",
       "dependencies": ["Ruby 3"],
-      "install_dependencies": ["bundle install"],
+      "install_dependencies": "bundle install",
       "usage": "ruby $0 [exec | wsrb | exec_wsrb] <file>",
       "run_errors": "uninitialized constant Akaza::Parser::StringIO",
       "subcommands": [

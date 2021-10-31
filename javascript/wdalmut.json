@@ -39,7 +39,7 @@
     {
       "type": "disassembler",
       "bin": "whitespacec",
-      "install_dependencies": ["npm install"],
+      "install_dependencies": "npm install",
       "usage": "$0",
       "input": "stdin",
       "output": "stdout",

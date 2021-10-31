@@ -10,7 +10,7 @@
   "source": ["https://github.com/jhmcstanton/marginal"],
   "commands": [
     {
-      "install_dependencies": ["stack setup"],
+      "install_dependencies": "stack setup",
       "build": "stack build",
       "build_errors": "`stack setup` fails with link error"
     }

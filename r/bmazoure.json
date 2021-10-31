@@ -40,9 +40,7 @@
       "type": "interpreter",
       "bin": "R/whitespace.R",
       "dependencies": ["R"],
-      "install_dependencies": [
-        "Rscript -e 'install.packages(c(\"compositions\", \"readr\"), repos=\"http://cran.us.r-project.org\")'"
-      ],
+      "install_dependencies": "Rscript -e 'install.packages(c(\"compositions\", \"readr\"), repos=\"http://cran.us.r-project.org\")'",
       "usage": "Rscript -e 'source(\"R/whitespace.R\"); library(readr); compile(parse(dfa(read_file(\"<file>\"))))'"
     }
   ],

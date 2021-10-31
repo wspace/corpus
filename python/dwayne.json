@@ -13,7 +13,7 @@
     {
       "bin": "whitespace",
       "dependencies": ["Python 3.7", "pipenv"],
-      "install_dependencies": ["pipenv install --dev"],
+      "install_dependencies": "pipenv install --dev",
       "usage": "pipenv run python3 -m $0 [-h | --help] <file>",
       "options": [{ "short": "h", "long": "help", "desc": "show this help message and exit" }],
       "option_parse": "Python argparse"

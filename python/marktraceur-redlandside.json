@@ -17,7 +17,7 @@
     {
       "type": "IDE",
       "bin": "main.py",
-      "install_dependencies": ["pip2 install python-qt"],
+      "install_dependencies": "pip2 install python-qt",
       "build_errors": "PyQt version 4 not installed",
       "usage": "python2 $0"
     }

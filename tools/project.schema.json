@@ -289,7 +289,7 @@
           "type": { "type": "string" },
           "bin": { "type": "string" },
           "dependencies": { "type": "array", "items": { "type": "string" } },
-          "install_dependencies": { "type": "array", "items": { "type": "string" } },
+          "install_dependencies": { "type": "string" },
           "build": { "type": "string" },
           "build_errors": { "type": "string" },
           "usage": { "type": "string" },

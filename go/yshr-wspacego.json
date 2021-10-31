@@ -54,7 +54,8 @@
     {
       "type": "interpreter",
       "bin": "wspacego",
-      "build": "go mod init github.com/135yshr/wspacego && go mod tidy && go build",
+      "install_dependencies": "go mod init github.com/135yshr/wspacego && go mod tidy",
+      "build": "go build",
       "usage": "$0 [-h | --help] [run | disasm | char] <file>",
       "options": [
         { "short": "h", "long": "h", "desc": "display this help and exit" },
