@@ -398,6 +398,7 @@ See [CONTRIBUTING.md](./CONTRIBUTING.md).
       [compsoc.dur.ac.uk whitespace](https://gist.github.com/search?o=desc&q=compsoc.dur.ac.uk+whitespace&s=updated)
   - GitLab - [whitespace](https://gitlab.com/explore?name=whitespace&sort=latest_activity_desc)
   - SourceForge - [whitespace](https://sourceforge.net/directory/?q=whitespace&sort=update)
+  - Google Code - [whitespace](https://code.google.com/archive/search?q=whitespace)
   - Bitbucket - [whitespace](https://bitbucket.org/repo/all?name=whitespace)
   - sourcehut - [whitespace](https://sr.ht/projects?search=whitespace&sort=recently-updated)
 - Package managers
@@ -436,7 +437,9 @@ See [CONTRIBUTING.md](./CONTRIBUTING.md).
       [whitespace interpreter stack heap](https://gist.github.com/search?q=whitespace+interpreter+stack+heap)
   - Sourceforge - [Spaced IDE (SVN)](https://sourceforge.net/projects/spacedide/),
       [Whitespace IDE (CVS)](https://sourceforge.net/projects/whitespaceide/)
-  - Google Code - [grass-mud-horse (SVN)](https://code.google.com/archive/p/grass-mud-horse/)
+  - Google Code - [grass-mud-horse (SVN)](https://code.google.com/archive/p/grass-mud-horse/),
+      [whitespacesdk (SVN)](https://code.google.com/archive/p/whitespacesdk/),
+      [whitecoder (hg)](https://code.google.com/archive/p/whitecoder/)
 - Internet Archive
   - Durham CompSoc - [download][compsoc],
       [mailing list](https://web.archive.org/web/20141011193126/http://compsoc.dur.ac.uk/archives/whitespace/)
