@@ -1,0 +1,20 @@
+{
+  "id": "python/ericpwilliamson-codewars",
+  "name": "Codewars-algorithms",
+  "authors": ["Eric P Williamson"],
+  "license": "none",
+  "languages": ["Python"],
+  "tags": ["interpreter"],
+  "date": "2019-06-19 14:32:37 +0800",
+  "spec_version": "0.3",
+  "source": ["https://github.com/EricPWilliamson/Codewars-algorithms"],
+  "commands": [
+    {
+      "type": "interpreter",
+      "bin": "Solutions/whitespace_cw.py",
+      "dependencies": ["Python 3"],
+      "usage": "python3 $0",
+      "run_errors": "Needs Codewars entrypoint"
+    }
+  ]
+}

@@ -126,10 +126,14 @@ Build and run errors are included.
 - ❌ javascript/loklaan-zerowidth-lang
 - ❌ javascript/luilak-ws2js
 - ❌ javascript/macocha-whitespacer
+- ⚠️ javascript/msucorey-codewars:
+  - ⚠️ JavaScript/whitespace-refactor.js: Needs Codewars entrypoint
+  - ⚠️ JavaScript/whitespace.js: Needs Codewars entrypoint
 - ❌ javascript/naokikp-wsi
 - ❌ javascript/pvdz-significant-whitespace
 - ❌ javascript/rumpl
 - ❌ javascript/susisu
+- ⚠️ javascript/syntaqx-puzzles/codewars/js/2/whitespace-interpreter.js: Needs Codewars entrypoint
 - ❌ javascript/therebelrobot
 - ❌ javascript/uraza
 - ❌ javascript/vii5ard-whitelips-ide
@@ -177,6 +181,7 @@ Build and run errors are included.
 - python/drafear-converter/to\_ws.py
 - python/dwayne/whitespace
 - python/eizoassik-pyws/pyws.py
+- ⚠️ python/ericpwilliamson-codewars/Solutions/whitespace\_cw.py: Needs Codewars entrypoint
 - python/ffanzhang/ws.py
 - python/francoisrozet-whitespacy/whitespacy.py
 - python/freyamade-hohoho/hohoho
@@ -211,8 +216,10 @@ Build and run errors are included.
   - ⚠️ Assembler.py: msvcrt module only exists on Windows
   - Helpers.py
   - ⚠️ Interpreter.py: msvcrt module only exists on Windows
+- ⚠️ python/techiehelper-codewars/python/Whitespace.py: Needs Codewars entrypoint
 - python/umutoztunc-whitesymex/whitesymex/cli.py
 - python/wasabili/Whitespace.py
+- ⚠️ python/wawrepo-kata/20170307\_Whitespace\_Interpreter/interpreter.py: Needs Codewars entrypoint
 - python/yasn-whitepy/whitepycli
 - r/bmazoure/R/whitespace.R
 - rebol/hostilefork:

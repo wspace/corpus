@@ -1,0 +1,23 @@
+{
+  "id": "javascript/msucorey-codewars",
+  "name": "codewars",
+  "authors": ["Corey Wofford"],
+  "license": "none",
+  "languages": ["JavaScript"],
+  "tags": ["interpreter"],
+  "date": "2016-09-02 16:45:04 -0400",
+  "spec_version": "0.3",
+  "source": ["https://github.com/msucorey/codewars"],
+  "commands": [
+    {
+      "type": "interpreter",
+      "bin": "JavaScript/whitespace-refactor.js",
+      "run_errors": "Needs Codewars entrypoint"
+    },
+    {
+      "type": "interpreter",
+      "bin": "JavaScript/whitespace.js",
+      "run_errors": "Needs Codewars entrypoint"
+    }
+  ]
+}

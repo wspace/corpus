@@ -1,0 +1,14 @@
+{
+  "id": "python/techiehelper-codewars",
+  "name": "Codewars",
+  "authors": ["TechieHelper"],
+  "license": "MIT",
+  "languages": ["Python"],
+  "tags": ["interpreter"],
+  "date": "2020-12-17 08:53:57 +0000",
+  "spec_version": "0.3",
+  "source": ["https://github.com/TechieHelper/Codewars"],
+  "commands": [
+    { "type": "interpreter", "bin": "python/Whitespace.py", "run_errors": "Needs Codewars entrypoint" }
+  ]
+}

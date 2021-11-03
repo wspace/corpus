@@ -1,6 +1,6 @@
 # The Whitespace Corpus
 
-The definitive collection of 247 projects for the Whitespace programming
+The definitive collection of 252 projects for the Whitespace programming
 language, including interpreters, compilers, and programs.
 
 ## Projects
@@ -26,6 +26,7 @@ language, including interpreters, compilers, and programs.
 | [Whitespace Interpreter](python/lachlancourt.json) | Lachlan Court    | Python     | transpiler   | 2021-01-02 | [GitHub](https://github.com/LachlanCourt/whitespace_interpreter) |
 | [asm2ws](c/kspalaiologos-asm2ws.json)              | Kamila Szewczyk (Palaiologos) | C, Yacc, Lex | interpreter, JIT, assembler, disassembler, optimizer, programs | 2020-12-31 | [GitHub](https://github.com/kspalaiologos/asm2ws) |
 | [Whitespace](python/hunminpark.json)               | Hunmin Park      | Python     | assembler, mapping, programs | 2020-12-18 | [GitHub](https://github.com/Avantgarde95/Whitespace) |
+| [Codewars](python/techiehelper-codewars.json)      | TechieHelper     | Python     | interpreter  | 2020-12-17 | [GitHub](https://github.com/TechieHelper/Codewars) |
 | [Spitewaste](ruby/collidedscope-spitewaste.json)   | Collided Scope   | Ruby       | language, assembler, disassembler, syntax highlighter, programs, stdlib | 2020-12-12 | [GitHub](https://github.com/collidedscope/spitewaste) |
 | [Spiceweight](crystal/collidedscope-spiceweight.json) | Collided Scope | Crystal   | interpreter, benchmarking, programs | 2020-12-12 | [GitHub](https://github.com/collidedscope/spiceweight) |
 | [Merry Christmas](whitespace/rameshdahiya-merry-christmas.json) | Ramesh Kumar | Whitespace | programs | 2020-12-10 | [GitHub Gist](https://gist.github.com/rameshdahiya/c5705032173968999ecd0c3c1cf238c7) |
@@ -56,6 +57,7 @@ language, including interpreters, compilers, and programs.
 | [WSC](ocaml/jgkaplan-wsc.json)                     | Joshua Kaplan    | OCaml, Yacc, Lex | language, programs | 2019-07-04 | [GitHub](https://github.com/jgkaplan/whitespaceTranspiler) |
 | [Marginal](haskell/jhmcstanton-marginal.json)      | Jim McStanton    | Haskell, Yacc | interpreter | 2019-06-29 | [GitHub](https://github.com/jhmcstanton/marginal) |
 | [Eso](scala/dashlambda-eso.json)                   | Dash-Lambda      | Scala      | interpreter, transpiler, assembler, programs | 2019-06-19 | [GitHub](https://github.com/Dash-Lambda/Eso) |
+| [Codewars-algorithms](python/ericpwilliamson-codewars.json) | Eric P Williamson | Python | interpreter | 2019-06-19 | [GitHub](https://github.com/EricPWilliamson/Codewars-algorithms) |
 | [baudelaire-whitespace](python/qwhxm-baudelaire.json) | Marek Tomáštík | Python    | web service, programs | 2019-06-08 | [GitHub](https://github.com/qwhxm/baudelaire-whitespace) |
 | [Nebula](go/andrewarchi-nebula.json)               | Andrew Archibald | Go, LLVM, Whitespace | compiler, optimizer, disassembler, bit packer, Binary Whitespace, programs | 2019-06-06 | [GitHub](https://github.com/andrewarchi/nebula) |
 | [Whitespace VM](rust/nareshganduri.json)           | Naresh Ganduri   | Rust       | interpreter  | 2019-05-13 | [GitHub](https://github.com/nareshganduri/WhitespaceVM) |
@@ -108,6 +110,7 @@ language, including interpreters, compilers, and programs.
 | [Whitespace.Compiler.cs](csharp/jlchntoz.json)     | Jeremy Lam (Vistanz) | C#     | compiler     | 2017-02-14 | [GitHub Gist](https://gist.github.com/JLChnToZ/42bade0f3d4b9e671bcedaafe1000c86) |
 | [素数判定](whitespace/0qol-prime.json)                 | 0qol             | Whitespace | programs     | 2017-02-03 | [GitHub](https://github.com/wspace/0qol-prime), [GitHub Gist](https://gist.github.com/0qol/a57b28d3353cdef08aac34cce8b1d9dc), [GitHub Gist](https://gist.github.com/0qol/55ab44a35c0faba659448f340af8db70), [GitHub Gist](https://gist.github.com/0qol/a317e241860518a79a36c879e710de38) |
 | [whitepy](python/yasn-whitepy.json)                | Yasser Saleemi   | Python     | interpreter  | 2017-01-31 | [GitHub](https://github.com/yasn77/whitepy) |
+| [Kata](python/wawrepo-kata.json)                   | WawRepo          | Python     | interpreter  | 2017-01-28 | [GitHub](https://github.com/WawRepo/Kata) |
 | [WhitespaceGenerator](javascript/briantran-generator.json) | Brian Tran | JavaScript | text to Whitespace | 2017-01-22 | [GitHub](https://github.com/TranBrian10/WhitespaceGenerator) |
 | [solve.ws](python/apua-gen.json)                   | Apua             | Python     | mapping, programs | 2016-12-20 | [GitHub Gist](https://gist.github.com/apua/8d565a8a8365a1399b8fae1664b43d65), [ptt.cc](https://www.ptt.cc/bbs/Programming/M.1478792208.A.EFC.html) |
 | [whitespace.lol](lolcode/akers.json)               | D.E. Akers       | LOLCODE    | interpreter  | 2016-11-21 | [GitHub](https://github.com/wspace/akers-lolcode), [GitHub](https://github.com/hostilefork/whitespacers/tree/master/lolcode) |
@@ -117,10 +120,12 @@ language, including interpreters, compilers, and programs.
 | [ELVM](c/shinh-elvm.json)                          | Shinichiro Hamaji | C         | language compiler | 2016-09-16 | [GitHub](https://github.com/shinh/elvm), [Esolang](https://esolangs.org/wiki/ELVM) |
 | [EsoPoly](whitespace/kenrube-esopoly.json)         | Ivan Zolotarev   | Whitespace | programs     | 2016-09-13 | [GitHub](https://github.com/kenrube/Esopoly) |
 | [hello.ws](whitespace/shotastage-hello.json)       | Shota Shimazu    | Whitespace | programs     | 2016-09-10 | [GitHub Gist](https://gist.github.com/shotastage/5a991d828e510459488c66a7994df859) |
+| [codewars](javascript/msucorey-codewars.json)      | Corey Wofford    | JavaScript | interpreter  | 2016-09-02 | [GitHub](https://github.com/msucorey/codewars) |
 | [whitespace-python](python/dwayne.json)            | Dwayne R. Crooks | Python     | interpreter  | 2016-08-31 | [GitHub](https://github.com/dwayne/whitespace-python) |
 | [ws-frontend](cpp/sonicyang-ws-frontend.json)      | Yang Chung-Fan   | C++, LLVM  | compiler     | 2016-08-20 | [GitHub](https://github.com/sonicyang/ws-frontend) |
 | [Whitespace](r/bmazoure.json)                      | Bogdan Mazoure   | R          | interpreter, grammar DFA | 2016-07-30 | [GitHub](https://github.com/bmazoure/whitespace) |
 | [White++](cpp/marcellippmann-whitepp.json)         | Marcel Lippmann  | C++        | interpreter  | 2016-07-27 | [GitHub](https://github.com/wspace/marcellippmann-whitepp), [GitHub (archive)](https://web.archive.org/web/20200906224652/https://github.com/marcellippmann/Whitepp/) |
+| [Puzzles](javascript/syntaqx-puzzles.json)         | Chase Pierce     | JavaScript | interpreter  | 2016-07-24 | [GitHub](https://github.com/syntaqx/puzzles) |
 | [whitespace-ruby](ruby/dwayne.json)                | Dwayne R. Crooks | Python     | interpreter  | 2016-07-11 | [GitHub](https://github.com/dwayne/whitespace-ruby) |
 | [Euler's Melting Pot](whitespace/mercerenies-euler.json) | Silvio Mayolo (Mercerenies) | Whitespace | programs | 2016-07-05 | [GitHub](https://github.com/Mercerenies/eulers-melting-pot) |
 | [steganographic-polyglots](whitespace/chrisnguyen-steganographic-polyglots.json) | Chris Nguyen | Whitespace | programs | 2016-06-26 | [GitHub](https://github.com/uncompiled/steganographic-polyglots), [uncompiled.github.io](https://uncompiled.github.io/steganographic-polyglots/) |
@@ -391,6 +396,7 @@ See [CONTRIBUTING.md](./CONTRIBUTING.md).
       [#whitespace-compiler](https://github.com/topics/whitespace-compiler?o=desc&s=updated),
       [whitespace interpreter](https://github.com/search?o=desc&q=whitespace+interpreter&s=updated&type=Repositories),
       [whitespace compiler](https://github.com/search?o=desc&q=whitespace+compiler&s=updated&type=Repositories),
+      [whitespace unbleach](https://github.com/search?q=whitespace+unbleach&type=code),
       [compsoc.dur.ac.uk whitespace](https://github.com/search?o=desc&q=compsoc.dur.ac.uk+whitespace+-pkgname+-portname+-gentoo+-_eclasses_+-prototype+-awesome+-cheatsheet+NOT+language%3Ahtml+NOT+language%3Ajson+NOT+language%3Acsv&s=indexed&type=Code)
   - GitHub Gist - [extension:ws](https://gist.github.com/search?o=desc&q=extension%3Aws&s=updated),
       ["whitespace interpreter"](https://gist.github.com/search?o=desc&q=%22whitespace+interpreter%22&s=updated),
@@ -437,7 +443,6 @@ See [CONTRIBUTING.md](./CONTRIBUTING.md).
 
 - Source control
   - GitHub - forks,
-      [whitespace unbleach](https://github.com/search?q=whitespace+unbleach&type=code),
       [github-artifact-exporter](https://github.com/github/github-artifact-exporter)
   - GitHub Gist - [whitespace](https://gist.github.com/search?q=whitespace)
   - Sourceforge - [Spaced IDE (SVN)](https://sourceforge.net/projects/spacedide/),

@@ -1,0 +1,18 @@
+{
+  "id": "python/wawrepo-kata",
+  "name": "Kata",
+  "authors": ["WawRepo"],
+  "license": "none",
+  "languages": ["Python"],
+  "tags": ["interpreter"],
+  "date": "2017-01-28 09:29:02 +0100",
+  "spec_version": "0.3",
+  "source": ["https://github.com/WawRepo/Kata"],
+  "commands": [
+    {
+      "type": "interpreter",
+      "bin": "20170307_Whitespace_Interpreter/interpreter.py",
+      "run_errors": "Needs Codewars entrypoint"
+    }
+  ]
+}

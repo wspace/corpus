@@ -284,6 +284,9 @@
 [submodule "javascript/macocha-whitespacer"]
 	path = javascript/macocha-whitespacer
 	url = https://github.com/macocha/whitespacer
+[submodule "javascript/msucorey-codewars"]
+	path = javascript/msucorey-codewars
+	url = https://github.com/msucorey/codewars
 [submodule "javascript/naokikp-wsi"]
 	path = javascript/naokikp-wsi
 	url = https://github.com/naokikp/naokikp.github.io
@@ -296,6 +299,9 @@
 [submodule "javascript/susisu"]
 	path = javascript/susisu
 	url = https://github.com/susisu/Whitespace-JS
+[submodule "javascript/syntaqx-puzzles"]
+	path = javascript/syntaqx-puzzles
+	url = https://github.com/syntaqx/puzzles
 [submodule "javascript/therebelrobot"]
 	path = javascript/therebelrobot
 	url = https://github.com/therebelrobot/whitespace
@@ -407,6 +413,9 @@
 [submodule "python/eizoassik-pyws"]
 	path = python/eizoassik-pyws
 	url = https://github.com/EizoAssik/pyws
+[submodule "python/ericpwilliamson-codewars"]
+	path = python/ericpwilliamson-codewars
+	url = https://github.com/EricPWilliamson/Codewars-algorithms
 [submodule "python/ffanzhang"]
 	path = python/ffanzhang
 	url = https://github.com/ffanzhang/ws
@@ -488,12 +497,18 @@
 [submodule "python/stephenchappell"]
 	path = python/stephenchappell
 	url = https://github.com/wspace/stephenchappell-python
+[submodule "python/techiehelper-codewars"]
+	path = python/techiehelper-codewars
+	url = https://github.com/TechieHelper/Codewars
 [submodule "python/umutoztunc-whitesymex"]
 	path = python/umutoztunc-whitesymex
 	url = https://github.com/umutoztunc/whitesymex
 [submodule "python/wasabili"]
 	path = python/wasabili
 	url = https://gist.github.com/wasabili/708773
+[submodule "python/wawrepo-kata"]
+	path = python/wawrepo-kata
+	url = https://github.com/WawRepo/Kata
 [submodule "python/yasn-whitepy"]
 	path = python/yasn-whitepy
 	url = https://github.com/yasn77/whitepy

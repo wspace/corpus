@@ -1,0 +1,18 @@
+{
+  "id": "javascript/syntaqx-puzzles",
+  "name": "Puzzles",
+  "authors": ["Chase Pierce"],
+  "license": "none",
+  "languages": ["JavaScript"],
+  "tags": ["interpreter"],
+  "date": "2016-07-24 16:21:22 -0700",
+  "spec_version": "0.3",
+  "source": ["https://github.com/syntaqx/puzzles"],
+  "commands": [
+    {
+      "type": "interpreter",
+      "bin": "codewars/js/2/whitespace-interpreter.js",
+      "run_errors": "Needs Codewars entrypoint"
+    }
+  ]
+}
