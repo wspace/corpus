@@ -1,0 +1,50 @@
+{
+  "id": "python/mikejs-nbspy",
+  "name": "nbspy.py",
+  "authors": ["Michael Stephens"],
+  "license": "none",
+  "languages": ["Python"],
+  "tags": ["interpreter"],
+  "date": "2011-04-13 17:25:01 -0700",
+  "spec_version": "0.2",
+  "source": ["https://gist.github.com/mikejs/918701"],
+  "assembly": {
+    "mnemonics": {
+      "push": ["PUSH"],
+      "dup": ["DUP"],
+      "copy": ["COPY"],
+      "swap": ["SWAP"],
+      "drop": ["DISCARD"],
+      "slide": ["SLIDE"],
+      "add": ["ADD"],
+      "sub": ["SUB"],
+      "mul": ["MUL"],
+      "div": ["DIV"],
+      "mod": ["MOD"],
+      "store": ["STORE"],
+      "retrieve": ["RETR"],
+      "label": ["MARK"],
+      "call": ["CALL"],
+      "jmp": ["JMP"],
+      "jz": ["JMPZ"],
+      "jn": ["JMPN"],
+      "ret": ["END"],
+      "end": ["END_PROG"],
+      "printc": ["OUT_CHAR"],
+      "printi": ["OUT_NUM"],
+      "readc": ["READ_CHAR"],
+      "readi": ["READ_NUM"]
+    },
+    "usage": ["enum"]
+  },
+  "commands": [
+    {
+      "type": "interpreter",
+      "bin": "nbspy.py",
+      "dependencies": ["Python 2"],
+      "usage": "python2 $0 <file>",
+      "input": "<file>",
+      "output": "stdout"
+    }
+  ]
+}

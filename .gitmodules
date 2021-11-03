@@ -455,6 +455,9 @@
 [submodule "python/mikecat"]
 	path = python/mikecat
 	url = https://github.com/mikecat/python-whitespace
+[submodule "python/mikejs-nbspy"]
+	path = python/mikejs-nbspy
+	url = https://gist.github.com/mikejs/918701
 [submodule "python/mildsunrise"]
 	path = python/mildsunrise
 	url = https://gist.github.com/mildsunrise/d948fe1334f36c9a0f6516e58271f936

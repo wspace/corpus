@@ -1,6 +1,6 @@
 # The Whitespace Corpus
 
-The definitive collection of 246 projects for the Whitespace programming
+The definitive collection of 247 projects for the Whitespace programming
 language, including interpreters, compilers, and programs.
 
 ## Projects
@@ -219,6 +219,7 @@ language, including interpreters, compilers, and programs.
 | [Never Gonna Give You Up](whitespace/lucaspiller-never-gonna.json) | Luca Spiller | Whitespace | programs | 2012-06-01 | [GitHub Gist](https://gist.github.com/lucaspiller/2852385) |
 | [trans32.py](python/res-trans32.json)              | r.e.s.           | Python     | Binary Whitespace | 2012-05-30 | [res0001 Google Site (archive)](https://web.archive.org/web/20130510111931/https://sites.google.com/site/res0001/whitespace/programs), [Code Golf](https://codegolf.stackexchange.com/questions/6025/remove-vowels-without-using-too-many-different-characters/6100#6100) |
 | [SignificantWhitespace](javascript/pvdz-significant-whitespace.json) | Peter van der Zee | JavaScript | interpreter | 2012-02-16 | [GitHub](https://github.com/pvdz/SignificantWhitespace), [pvdz.ee](https://pvdz.ee/weblog/246), [js1k.com](https://js1k.com/2012-love/demo/1130) |
+| [nbspy.py](python/mikejs-nbspy.json)               | Michael Stephens | Python     | interpreter  | 2011-04-14 | [GitHub Gist](https://gist.github.com/mikejs/918701) |
 | [whitespace-0.4](haskell/haroldl-wspace-0.4.json)  | Harold Lee, Edwin Brady | Haskell | interpreter | 2011-03-10 | [GitHub](https://github.com/haroldl/whitespace-nd), [Mailing list (archive)](https://web.archive.org/web/20130926165457/http://compsoc.dur.ac.uk:80/archives/whitespace/2011-March/000080.html), [harold.hotelling.net](https://harold.hotelling.net/shuffle.html) |
 | [white-scheme](scheme/athos-white-scheme.json)     | Ohta Shogo       | Scheme     | interpreter  | 2010-12-22 | [GitHub](https://github.com/athos/white-scheme) |
 | [Colorspace](python/dos1-colorspace.json)          | Sebastian Krzyszkowiak, Agata Kurczewska | Python | image steganography, programs | 2010-11-22 | [GitHub](https://github.com/dos1/colorspace) |
@@ -313,6 +314,7 @@ language, including interpreters, compilers, and programs.
 | WSpace             | Kamil Adam       | 2019-11-24 | 0.3  | [GitHub](https://github.com/helvm/WSpace) |
 | whitespace-haskell | Andrew Archibald | 2019-08-07 | 0.2, 0.3 | [GitHub](https://github.com/wspace/whitespace-haskell) |
 | WSpace             | Andrew Savinykh  | 2017-01-30 | 0.3  | [GitHub](https://github.com/TryItOnline/WSpace) |
+| main.patch and VM.patch | yuki2006    | 2015-01-28 | 0.3  | [GitHub Gist](https://gist.github.com/yuki2006/466b7ed89486178c8309) |
 
 [compsoc]: https://web.archive.org/web/20150717140342/http://compsoc.dur.ac.uk:80/whitespace/download.php
 
@@ -394,6 +396,7 @@ See [CONTRIBUTING.md](./CONTRIBUTING.md).
       ["whitespace interpreter"](https://gist.github.com/search?o=desc&q=%22whitespace+interpreter%22&s=updated),
       ["whitespace compiler"](https://gist.github.com/search?o=desc&q=%22whitespace+compiler%22&s=updated),
       ["whitespace programming language"](https://gist.github.com/search?o=desc&q=%22whitespace+programming+language%22&s=updated),
+      [whitespace interpreter stack heap](https://gist.github.com/search?p=1&q=whitespace+interpreter+stack+heap+NOT+cloudSettings),
       [whitespace unbleach](https://gist.github.com/search?o=desc&q=whitespace+unbleach&s=updated),
       [compsoc.dur.ac.uk whitespace](https://gist.github.com/search?o=desc&q=compsoc.dur.ac.uk+whitespace&s=updated)
   - GitLab - [whitespace](https://gitlab.com/explore?name=whitespace&sort=latest_activity_desc)
@@ -401,6 +404,7 @@ See [CONTRIBUTING.md](./CONTRIBUTING.md).
   - Google Code - [whitespace](https://code.google.com/archive/search?q=whitespace)
   - Bitbucket - [whitespace](https://bitbucket.org/repo/all?name=whitespace)
   - sourcehut - [whitespace](https://sr.ht/projects?search=whitespace&sort=recently-updated)
+  - Software Heritage archive - [whitespace interpreter](https://archive.softwareheritage.org/browse/search/?q=whitespace+interpreter&with_visit=true&with_content=true&search_metadata=true)
 - Package managers
   - CPAN - [whitespace interpreter](https://metacpan.org/search?q=whitespace+interpreter)
   - crates.io - [whitespace interpreter](https://crates.io/search?q=whitespace%20interpreter&sort=new),
@@ -432,14 +436,16 @@ See [CONTRIBUTING.md](./CONTRIBUTING.md).
 ### TODO
 
 - Source control
-  - GitHub - [whitespace unbleach](https://github.com/search?q=whitespace+unbleach&type=code)
-  - GitHub Gist - [whitespace](https://gist.github.com/search?q=whitespace),
-      [whitespace interpreter stack heap](https://gist.github.com/search?q=whitespace+interpreter+stack+heap)
+  - GitHub - forks,
+      [whitespace unbleach](https://github.com/search?q=whitespace+unbleach&type=code),
+      [github-artifact-exporter](https://github.com/github/github-artifact-exporter)
+  - GitHub Gist - [whitespace](https://gist.github.com/search?q=whitespace)
   - Sourceforge - [Spaced IDE (SVN)](https://sourceforge.net/projects/spacedide/),
       [Whitespace IDE (CVS)](https://sourceforge.net/projects/whitespaceide/)
   - Google Code - [grass-mud-horse (SVN)](https://code.google.com/archive/p/grass-mud-horse/),
       [whitespacesdk (SVN)](https://code.google.com/archive/p/whitespacesdk/),
       [whitecoder (hg)](https://code.google.com/archive/p/whitecoder/)
+  - [Software Heritage archive](https://archive.softwareheritage.org/)
 - Internet Archive
   - Durham CompSoc - [download][compsoc],
       [mailing list](https://web.archive.org/web/20141011193126/http://compsoc.dur.ac.uk/archives/whitespace/)
@@ -495,7 +501,9 @@ See [CONTRIBUTING.md](./CONTRIBUTING.md).
       [whitespace @edwinbrady](https://twitter.com/search?q=whitespace%20(%40edwinbrady))
   - Hacker News
 - Snippets
-  - Pastebin
+  - Pastebin - [archiveteam_pastebin](https://archive.org/details/archiveteam_pastebin),
+      [pastebinpastes](https://archive.org/details/pastebinpastes),
+      [Archive Team](https://wiki.archiveteam.org/index.php/Pastebin)
   - Ideone - [Whitespace IDE](https://www.ideone.com/l/whitespace)
 
 ## License

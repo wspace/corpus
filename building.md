@@ -196,6 +196,7 @@ Build and run errors are included.
 - python/mcolom/whitespace.py
 - python/meand/compile.py
 - python/mikecat/whitespace.py
+- python/mikejs-nbspy/nbspy.py
 - python/mildsunrise/whitespace.py
 - ❌ python/musflood
 - ⚠️ python/nutcrack-whiteplanes/*unspecified*: No entrypoint
