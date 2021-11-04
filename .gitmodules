@@ -151,9 +151,15 @@
 [submodule "csharp/rolisoft-esoteric"]
 	path = csharp/rolisoft-esoteric
 	url = https://github.com/RoliSoft/Esoteric-Code-Interpreter
+[submodule "docker/baekjoon-onlinejudge"]
+	path = docker/baekjoon-onlinejudge
+	url = https://github.com/Baekjoon/Dockerfiles
 [submodule "docker/bensuperpc"]
 	path = docker/bensuperpc
 	url = https://github.com/bensuperpc/docker-whitespace
+[submodule "docker/hakatashi-esolang-box"]
+	path = docker/hakatashi-esolang-box
+	url = https://github.com/hakatashi/esolang-box
 [submodule "elixir/quinnwilton"]
 	path = elixir/quinnwilton
 	url = https://github.com/QuinnWilton/elixir-whitespace
@@ -287,6 +293,9 @@
 [submodule "javascript/msucorey-codewars"]
 	path = javascript/msucorey-codewars
 	url = https://github.com/msucorey/codewars
+[submodule "javascript/namhle-codewars"]
+	path = javascript/namhle-codewars
+	url = https://github.com/nam-hle/codewars.com
 [submodule "javascript/naokikp-wsi"]
 	path = javascript/naokikp-wsi
 	url = https://github.com/naokikp/naokikp.github.io

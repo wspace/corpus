@@ -7,7 +7,10 @@
   "tags": ["generator", "programs"],
   "date": "2015-02-04 22:41:02 +0000",
   "spec_version": "0.3",
-  "source": ["https://github.com/mattparker/phpwhitespace"],
+  "source": [
+    "https://github.com/mattparker/phpwhitespace",
+    "https://github.com/domcode/rafflers/tree/master/whitespace-mattp"
+  ],
   "assembly": {
     "mnemonics": {
       "push": ["push"],

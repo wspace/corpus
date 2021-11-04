@@ -1,0 +1,20 @@
+{
+  "id": "docker/hakatashi-esolang-box",
+  "name": "esolang-box",
+  "authors": ["Koki Takahashi"],
+  "license": "none",
+  "languages": ["Docker"],
+  "tags": ["builder"],
+  "date": "2017-01-08 10:55:07 +0900",
+  "spec_version": "0.3",
+  "source": ["https://github.com/hakatashi/esolang-box"],
+  "package": {
+    "name": "esolang/whitespace",
+    "manager": "Docker Hub",
+    "url": "https://hub.docker.com/r/esolang/whitespace"
+  },
+  "relations": [
+    { "type": "binary", "id": "haskell/tryitonline" },
+    { "type": "binary", "id": "python/stephenchappell", "release": "hostilefork/whitespacers" }
+  ]
+}

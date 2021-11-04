@@ -73,7 +73,9 @@ Build and run errors are included.
 - ❌ csharp/nutcrack-whiteplanes
 - ⚠️ csharp/reflash/WhiteSpaceInterpretator/bin/Debug/WhiteSpaceInterpretator.exe: `msbuild /p:Configuration=Debug WhiteSpaceInterpretator/WhiteSpaceInterpretator.csproj` Mono does not implement WPF APIs
 - csharp/rolisoft-esoteric/bin/Debug/EsotericCodeInterpreter.exe: `msbuild /p:Configuration=Debug\;AssemblyName=EsotericCodeInterpreter EsotericCodeInterpreter.csproj`
+- ❌ docker/baekjoon-onlinejudge
 - ❌ docker/bensuperpc
+- ❌ docker/hakatashi-esolang-box
 - ❌ elisp/lmitchell
 - ❌ elixir/quinnwilton
 - ⚠️ erlang/derek-mrwhite/*unspecified*: `make` Unclear how to run
@@ -129,6 +131,7 @@ Build and run errors are included.
 - ⚠️ javascript/msucorey-codewars:
   - ⚠️ JavaScript/whitespace-refactor.js: Needs Codewars entrypoint
   - ⚠️ JavaScript/whitespace.js: Needs Codewars entrypoint
+- ⚠️ javascript/namhle-codewars/Whitespace Interpreter/solution.js: Needs Codewars entrypoint
 - ❌ javascript/naokikp-wsi
 - ❌ javascript/pvdz-significant-whitespace
 - ❌ javascript/rumpl

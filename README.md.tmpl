@@ -59,7 +59,7 @@ language, including interpreters, compilers, and programs.
 | Truth-machine                            | JWinslow23       | 2017-08-30 11:42 | 0.2  | [Esolang](https://esolangs.org/wiki/Truth-machine#Whitespace), [Esolang](https://esolangs.org/w/index.php?title=Truth-machine&oldid=52977) |
 | Deadfish interpreter                     | Robert de Bath   | 2015-08-16 09:28 | 0.2  | [Esolang](https://esolangs.org/wiki/Deadfish#Whitespace), [Esolang](https://esolangs.org/w/index.php?title=Deadfish&oldid=43738), [GitHub](https://github.com/rdebath/whitespace/blob/master/gencode-deadfish-in-ws.c) |
 
-## Reference interpreter mirrors
+## Reference interpreter mirrors and patches
 
 | Name               | Maintainer       | Date       | Spec | Source |
 | ------------------ | ---------------- | ---------- | ---- | ------ |
@@ -68,7 +68,8 @@ language, including interpreters, compilers, and programs.
 | WSpace             | Andrew Savinykh  | 2017-01-30 | 0.3  | [GitHub](https://github.com/TryItOnline/WSpace) |
 | main.patch and VM.patch | yuki2006    | 2015-01-28 | 0.3  | [GitHub Gist](https://gist.github.com/yuki2006/466b7ed89486178c8309) |
 
-[compsoc]: https://web.archive.org/web/20150717140342/http://compsoc.dur.ac.uk:80/whitespace/download.php
+- [docker/baekjoon-onlinejudge](docker/baekjoon-onlinejudge.json)
+- [haskell/haroldl-wspace-0.4](haskell/haroldl-wspace-0.4.json)
 
 ## Comparison to Whitespacers
 
@@ -143,7 +144,7 @@ See [CONTRIBUTING.md](./CONTRIBUTING.md).
       [#whitespace-compiler](https://github.com/topics/whitespace-compiler?o=desc&s=updated),
       [whitespace interpreter](https://github.com/search?o=desc&q=whitespace+interpreter&s=updated&type=Repositories),
       [whitespace compiler](https://github.com/search?o=desc&q=whitespace+compiler&s=updated&type=Repositories),
-      [whitespace unbleach](https://github.com/search?q=whitespace+unbleach&type=code),
+      [whitespace unbleach](https://github.com/search?o=desc&q=whitespace+unbleach&s=indexed&type=Code),
       [compsoc.dur.ac.uk whitespace](https://github.com/search?o=desc&q=compsoc.dur.ac.uk+whitespace+-pkgname+-portname+-gentoo+-_eclasses_+-prototype+-awesome+-cheatsheet+NOT+language%3Ahtml+NOT+language%3Ajson+NOT+language%3Acsv&s=indexed&type=Code)
   - GitHub Gist - [extension:ws](https://gist.github.com/search?o=desc&q=extension%3Aws&s=updated),
       ["whitespace interpreter"](https://gist.github.com/search?o=desc&q=%22whitespace+interpreter%22&s=updated),
@@ -162,6 +163,7 @@ See [CONTRIBUTING.md](./CONTRIBUTING.md).
   - CPAN - [whitespace interpreter](https://metacpan.org/search?q=whitespace+interpreter)
   - crates.io - [whitespace interpreter](https://crates.io/search?q=whitespace%20interpreter&sort=new),
       [#whitespace](https://crates.io/keywords/whitespace)
+  - Docker Hub - [whitespace](https://hub.docker.com/search?q=whitespace&type=image&sort=updated_at&order=desc)
   - Elm Packages - [whitespace](https://package.elm-lang.org/)
   - Hackage - [whitespace](https://hackage.haskell.org/packages/search?terms=whitespace)
   - Hex - [whitespace](https://hex.pm/packages?search=whitespace)
@@ -190,6 +192,7 @@ See [CONTRIBUTING.md](./CONTRIBUTING.md).
 
 - Source control
   - GitHub - forks,
+      [extension:ws](https://github.com/search?o=desc&q=extension%3Aws&s=indexed&type=Code),
       [github-artifact-exporter](https://github.com/github/github-artifact-exporter)
   - GitHub Gist - [whitespace](https://gist.github.com/search?q=whitespace)
   - Sourceforge - [Spaced IDE (SVN)](https://sourceforge.net/projects/spacedide/),
@@ -199,7 +202,7 @@ See [CONTRIBUTING.md](./CONTRIBUTING.md).
       [whitecoder (hg)](https://code.google.com/archive/p/whitecoder/)
   - [Software Heritage archive](https://archive.softwareheritage.org/)
 - Internet Archive
-  - Durham CompSoc - [download][compsoc],
+  - Durham CompSoc - [download](https://web.archive.org/web/20150717140342/http://compsoc.dur.ac.uk:80/whitespace/download.php),
       [mailing list](https://web.archive.org/web/20141011193126/http://compsoc.dur.ac.uk/archives/whitespace/)
   - [mirror.ox.ac.uk](https://web.archive.org/web/20030414003351/http://mirror.ox.ac.uk:80/Mirrors/whitespace/)
   - [dur.ac.uk/d.j.walrond](https://web.archive.org/web/20030608044924/http://www.dur.ac.uk:80/d.j.walrond/whitespace/)
@@ -242,8 +245,9 @@ See [CONTRIBUTING.md](./CONTRIBUTING.md).
 - Code challenges
   - Codewars - [Whitespace Interpreter](https://www.codewars.com/kata/whitespace-interpreter),
       [Convert integer to Whitespace format](https://www.codewars.com/kata/55b350026cc02ac1a7000032)
-  - Sphere Online Judge - [SBSTR1](https://www.spoj.com/problems/SBSTR1/) ([SO](https://stackoverflow.com/questions/26521780/how-to-check-whether-a-string-is-substring-of-another-in-whitespace))
   - [yukicoder](https://yukicoder.me/)
+  - Sphere Online Judge - [SBSTR1](https://www.spoj.com/problems/SBSTR1/) ([SO](https://stackoverflow.com/questions/26521780/how-to-check-whether-a-string-is-substring-of-another-in-whitespace))
+  - [Baekjoon Online Judge](https://www.acmicpc.net/)
 - Stack Exchange
   - Code Golf - [Tips for golfing in Whitespace](https://codegolf.stackexchange.com/questions/48442/tips-for-golfing-in-whitespace)
 - Social media

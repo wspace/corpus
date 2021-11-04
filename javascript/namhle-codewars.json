@@ -1,0 +1,18 @@
+{
+  "id": "javascript/namhle-codewars",
+  "name": "codewars.com",
+  "authors": ["Nam Hoang Le"],
+  "license": "none",
+  "languages": ["JavaScript"],
+  "tags": ["interpreter"],
+  "date": "2020-06-09 20:24:58 +0700",
+  "spec_version": "0.3",
+  "source": ["https://github.com/nam-hle/codewars.com"],
+  "commands": [
+    {
+      "type": "interpreter",
+      "bin": "Whitespace Interpreter/solution.js",
+      "run_errors": "Needs Codewars entrypoint"
+    }
+  ]
+}
