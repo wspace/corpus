@@ -1,7 +1,7 @@
 {
-  "id": "clojure/tsuyusato",
+  "id": "clojure/makenowjust",
   "name": "whitespace-clj",
-  "authors": ["TSUYUSATO Kitsune"],
+  "authors": ["TSUYUSATO Kitsune (MakeNowJust)"],
   "license": "EPL-1.0",
   "languages": ["Clojure"],
   "tags": ["interpreter"],

@@ -31,7 +31,7 @@ Build and run errors are included.
 - c/threeifbywhiskey-blacktime/blacktime: `make`
 - c/threeifbywhiskey-satan/satan: `make`
 - clojure/jmesyou-erasure/target/uberjar/erasure-2.0-standalone.jar: `lein uberjar`
-- clojure/tsuyusato/target/whitespace-clj-0.1.0-SNAPSHOT-standalone.jar: `lein uberjar`
+- clojure/makenowjust/target/whitespace-clj-0.1.0-SNAPSHOT-standalone.jar: `lein uberjar`
 - ⚠️ coffeescript/ehrlichbryan/*unspecified*: `npm install && grunt` Unclear how to run
 - cpp/abac-whint/whint: `g++ -O3 -Wall -o whint whint.cpp`
 - cpp/abcsharp/wsi: `g++ -O3 -Wall -std=c++11 -o wsi whitespace/main.cpp`
@@ -295,6 +295,7 @@ Build and run errors are included.
 - ❌ whitespace/knightking-hacktoberfest-2017
 - ❌ whitespace/kunde-hello
 - ❌ whitespace/lucaspiller-never-gonna
+- ❌ whitespace/makenowjust-quine
 - ❌ whitespace/mercerenies-euler
 - ❌ whitespace/mesquita-markov
 - ❌ whitespace/mikedonaghy-hello

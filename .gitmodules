@@ -49,8 +49,8 @@
 [submodule "clojure/jmesyou-erasure"]
 	path = clojure/jmesyou-erasure
 	url = https://github.com/wspace/jmesyou-erasure
-[submodule "clojure/tsuyusato"]
-	path = clojure/tsuyusato
+[submodule "clojure/makenowjust"]
+	path = clojure/makenowjust
 	url = https://github.com/MakeNowJust/whitespace-clj
 [submodule "coffeescript/ehrlichbryan"]
 	path = coffeescript/ehrlichbryan
@@ -671,6 +671,9 @@
 [submodule "whitespace/lucaspiller-never-gonna"]
 	path = whitespace/lucaspiller-never-gonna
 	url = https://gist.github.com/lucaspiller/2852385
+[submodule "whitespace/makenowjust-quine"]
+	path = whitespace/makenowjust-quine
+	url = https://github.com/MakeNowJust/quine
 [submodule "whitespace/mercerenies-euler"]
 	path = whitespace/mercerenies-euler
 	url = https://github.com/Mercerenies/eulers-melting-pot

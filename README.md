@@ -1,6 +1,6 @@
 # The Whitespace Corpus
 
-The definitive collection of 255 projects for the Whitespace programming
+The definitive collection of 256 projects for the Whitespace programming
 language, including interpreters, compilers, and programs.
 
 ## Projects
@@ -169,7 +169,7 @@ language, including interpreters, compilers, and programs.
 | [a140.ws](whitespace/yumu.json)                    | Tsubasa Yumura   | Whitespace | programs     | 2015-02-26 | [GitHub Gist](https://gist.github.com/yumu19/7b083c7e764092d5d0a2) |
 | [Tomato Programming Language](haskell/brainbrush-tomato.json) | brainbrush | Haskell | interpreter, mapping, programs | 2015-02-26 | [GitHub](https://github.com/brainbush/Tomato-Programming-Language) |
 | [whitespace](go/kinu.json)                         | Kinuko Yasuda    | Go         | interpreter, disassembler | 2015-02-18 | [GitHub](https://github.com/kinu/whitespace) |
-| [whitespace-clj](clojure/tsuyusato.json)           | TSUYUSATO Kitsune | Clojure   | interpreter  | 2015-02-11 | [GitHub](https://github.com/MakeNowJust/whitespace-clj) |
+| [whitespace-clj](clojure/makenowjust.json)         | TSUYUSATO Kitsune (MakeNowJust) | Clojure | interpreter | 2015-02-11 | [GitHub](https://github.com/MakeNowJust/whitespace-clj) |
 | [PHP to Whitespace](php/mattparker.json)           | Matt Parker      | PHP        | generator, programs | 2015-02-04 | [GitHub](https://github.com/mattparker/phpwhitespace), [GitHub](https://github.com/domcode/rafflers/tree/master/whitespace-mattp) |
 | [whitespace-php](php/nobody1986.json)              | nobody1986       | PHP, C     | interpreter, disassembler, programs | 2015-02-04 | [GitHub](https://github.com/nobody1986/whitespace-php) |
 | [fizzbuzz-polyglot](whitespace/keithsthompson-fizzbuzz.json) | Keith S Thompson | Whitespace | programs | 2015-02-01 | [GitHub](https://github.com/Keith-S-Thompson/fizzbuzz-polyglot) |
@@ -195,6 +195,7 @@ language, including interpreters, compilers, and programs.
 | [elixir-whitespace](elixir/quinnwilton.json)       | Quinn Wilton     | Elixir     | interpreter  | 2014-03-07 | [GitHub](https://github.com/QuinnWilton/elixir-whitespace) |
 | [whitespace-coder](java/praveenvaka-coder.json)    | Praveen Reddy Vaka | Java     | program builder, programs | 2014-03-07 | [GitHub](https://github.com/praveenvaka/whitespace-coder) |
 | [SaTaN](c/threeifbywhiskey-satan.json)             | Dorien Snake (Three If By Whiskey) | C | interpreter | 2014-03-03 | [GitHub](https://github.com/threeifbywhiskey/satan) |
+| [Quine Museum](whitespace/makenowjust-quine.json)  | TSUYUSATO Kitsune (MakeNowJust) | Whitespace | programs | 2014-03-03 | [GitHub](https://github.com/MakeNowJust/quine) |
 | [Blacktime](c/threeifbywhiskey-blacktime.json)     | Dorien Snake (Three If By Whiskey) | C | assembler, programs | 2014-02-27 | [GitHub](https://github.com/threeifbywhiskey/blacktime), [GitHub Gist](https://gist.github.com/threeifbywhiskey/cf7293006cd4ca0839ff), [threeifbywhiskey.github.io](https://threeifbywhiskey.github.io/2014/03/02/in-defense-of-whitespace/), [GitHub](https://github.com/threeifbywhiskey/threeifbywhiskey.github.io/blob/master/_posts/2014-03-02-in-defense-of-whitespace.md) |
 | [Whitespace Covert Channel](php/jseidl-wcc.json)   | Jan Seidl        | PHP        | text to Whitespace, web service | 2014-02-18 | [GitHub](https://github.com/jseidl/whitespace) |
 | [python-whitespace](python/mikecat.json)           | みけCAT (MikeCAT)  | Python     | interpreter  | 2014-02-16 | [GitHub](https://github.com/mikecat/python-whitespace) |
@@ -406,7 +407,7 @@ See [CONTRIBUTING.md](./CONTRIBUTING.md).
       ["whitespace interpreter"](https://gist.github.com/search?o=desc&q=%22whitespace+interpreter%22&s=updated),
       ["whitespace compiler"](https://gist.github.com/search?o=desc&q=%22whitespace+compiler%22&s=updated),
       ["whitespace programming language"](https://gist.github.com/search?o=desc&q=%22whitespace+programming+language%22&s=updated),
-      [whitespace interpreter stack heap](https://gist.github.com/search?p=1&q=whitespace+interpreter+stack+heap+NOT+cloudSettings),
+      [whitespace interpreter stack heap](https://gist.github.com/search?o=desc&q=whitespace+interpreter+stack+heap+NOT+cloudSettings&s=updated),
       [whitespace unbleach](https://gist.github.com/search?o=desc&q=whitespace+unbleach&s=updated),
       [compsoc.dur.ac.uk whitespace](https://gist.github.com/search?o=desc&q=compsoc.dur.ac.uk+whitespace&s=updated)
   - GitLab - [whitespace](https://gitlab.com/explore?name=whitespace&sort=latest_activity_desc)

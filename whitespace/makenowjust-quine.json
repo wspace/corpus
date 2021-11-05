@@ -1,0 +1,12 @@
+{
+  "id": "whitespace/makenowjust-quine",
+  "name": "Quine Museum",
+  "authors": ["TSUYUSATO Kitsune (MakeNowJust)"],
+  "license": "Sushiware",
+  "languages": ["Whitespace"],
+  "tags": ["programs"],
+  "date": "2014-03-03 23:47:39 +0900",
+  "spec_version": "0.2",
+  "source": ["https://github.com/MakeNowJust/quine"],
+  "programs": [{ "path": "quine.ws", "spec_version": "0.2" }]
+}
