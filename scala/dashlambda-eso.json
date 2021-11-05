@@ -38,7 +38,7 @@
     "extension": "wsa"
   },
   "programs": [
-    { "path": "testResources/hworld.wsa", "compiled": "testResources/hworld.ws", "spec_version": "0.2" }
+    { "path": "testResources/hworld.wsa", "generated": "testResources/hworld.ws", "spec_version": "0.2" }
   ],
   "commands": [
     {

@@ -70,25 +70,25 @@
   "programs": [
     {
       "path": "gencode-deadfish-in-ws.c",
-      "compiled": "deadfish.ws",
+      "generated": "deadfish.ws",
       "spec_version": "0.2",
       "generate": "gcc -o gencode-deadfish-in-ws gencode-deadfish-in-ws.c && ./gencode-deadfish-in-ws > deadfish.ws"
     },
     {
       "path": "gen-99bottles.c",
-      "compiled": "99bottles.ws",
+      "generated": "99bottles.ws",
       "spec_version": "0.2",
       "generate": "gcc -o gen-99bottles gen-99bottles.c && ./gen-99bottles > 99bottles.ws"
     },
     {
       "path": "gen-prime.c",
-      "compiled": "prime.ws",
+      "generated": "prime.ws",
       "spec_version": "0.2",
       "generate": "gcc -o gen-prime gen-prime.c && ./gen-prime > prime.ws"
     },
     {
       "path": "gen-wsinterws.c",
-      "compiled": "wsinterws.ws",
+      "generated": "wsinterws.ws",
       "spec_version": "0.2",
       "generate": "gcc -o gen-wsinterws gen-wsinterws.c && ./gen-wsinterws > wsinterws.ws"
     }

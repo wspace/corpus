@@ -55,6 +55,6 @@
     "block_comments": [{ "start": "{-", "end": "-}", "nestable": true }],
     "extension": "wsa"
   },
-  "programs": [{ "path": "wsinterws.wsa", "compiled": "wsinterws.ws", "aux": ["run.txt"] }],
+  "programs": [{ "path": "wsinterws.wsa", "generated": "wsinterws.ws", "aux": ["run.txt"] }],
   "todo": "Unclear whether block comments are nestable; check haskell/burghard-wsa"
 }

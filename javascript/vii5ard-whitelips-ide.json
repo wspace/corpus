@@ -44,17 +44,17 @@
     "extension": "wsa"
   },
   "programs": [
-    { "path": "example/nerd.wsa", "compiled": "example/nerd.ws" },
+    { "path": "example/nerd.wsa", "generated": "example/nerd.ws" },
     { "path": "example/hmacro.wsa" },
-    { "path": "example/bf.wsa", "compiled": "example/bf.ws" },
+    { "path": "example/bf.wsa", "generated": "example/bf.ws" },
     { "path": "example/collatz.wsa" },
     { "path": "example/lib/math.wsa" },
     { "path": "example/lib/string.wsa" },
     { "path": "example/lib/alias.wsa" },
     { "path": "example/lib/rot13.wsa" },
     { "path": "example/lib/std.wsa" },
-    { "path": "example/vm/bf.wsa", "compiled": "example/vm/bf.ws" },
-    { "path": "example/wc/bf2wsa.wsa", "compiled": "example/wc/bf2wsa.ws" }
+    { "path": "example/vm/bf.wsa", "generated": "example/vm/bf.ws" },
+    { "path": "example/wc/bf2wsa.wsa", "generated": "example/wc/bf2wsa.ws" }
   ],
   "notes": "Local labels start with `.`. The brainfuck-whitespace repo is derived from example/bf.wsa, but it stops reading the program at !, in addition to \\n.",
   "todo": "Document macros"

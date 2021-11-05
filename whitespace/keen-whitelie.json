@@ -53,7 +53,7 @@
   "programs": [
     {
       "path": "whitelie.wsa",
-      "compiled": "whitelie.ws",
+      "generated": "whitelie.ws",
       "inputs": ["whitelie.ws"],
       "outputs": ["whitelie"],
       "generate": "ruby asm.rb whitelie.wsa > whitelie.ws"

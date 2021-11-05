@@ -44,12 +44,12 @@
   "programs": [
     {
       "path": "src/whitespace.ws.rb",
-      "compiled": "src/whitespace.ws",
+      "generated": "src/whitespace.ws",
       "generate": "akaza wsrb src/whitespace.ws.rb"
     },
     {
       "path": "src/fizzbuzz.ws.rb",
-      "compiled": "src/fizzbuzz.ws",
+      "generated": "src/fizzbuzz.ws",
       "generate": "akaza wsrb src/fizzbuzz.ws.rb"
     }
   ],

@@ -40,10 +40,13 @@
     "extension": "bs"
   },
   "programs": [
-    { "path": "example programs/blackspace/hello.bs", "compiled": "example programs/whitespace/hello.ws" },
+    {
+      "path": "example programs/blackspace/hello.bs",
+      "generated": "example programs/whitespace/hello.ws"
+    },
     {
       "path": "example programs/blackspace/say_hi.bs",
-      "compiled": "example programs/whitespace/say_hi.ws"
+      "generated": "example programs/whitespace/say_hi.ws"
     },
     { "path": "example programs/blackspace/prompt.bs" }
   ],

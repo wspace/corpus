@@ -12,7 +12,7 @@
   "programs": [
     {
       "path": "password_checker.c",
-      "compiled": "password_checker.ws",
+      "generated": "password_checker.ws",
       "aux": ["password_checker.eir"],
       "spec_version": "0.2",
       "notes": "Compiled using ELVM"

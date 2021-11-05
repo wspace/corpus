@@ -55,11 +55,11 @@
     { "path": "tests/ws-run/spec_zero.ws", "outputs": ["tests/ws-run/spec_zero.ws.out"] },
     {
       "path": "binary.bak",
-      "compiled": "binary.ws",
+      "generated": "binary.ws",
       "inputs": ["binary.ws.asm.ws.in", "binary.ws.in"],
       "outputs": ["binary.ws.asm.ws.out", "binary.ws.out"]
     },
-    { "path": "copy.bak", "compiled": "copy.ws", "outputs": ["copy.ws.asm.ws.out", "copy.ws.out"] },
+    { "path": "copy.bak", "generated": "copy.ws", "outputs": ["copy.ws.asm.ws.out", "copy.ws.out"] },
     {
       "path": "doubler.ws",
       "inputs": ["doubler.ws.asm.ws.in", "doubler.ws.in"],
@@ -67,7 +67,7 @@
     },
     {
       "path": "halve.bak",
-      "compiled": "halve.ws",
+      "generated": "halve.ws",
       "inputs": ["halve.ws.asm.ws.in", "halve.ws.in"],
       "outputs": ["halve.ws.asm.ws.out", "halve.ws.out"]
     },
@@ -76,7 +76,7 @@
       "inputs": ["hanoi.ws.asm.ws.in", "hanoi.ws.in"],
       "outputs": ["hanoi.ws.asm.ws.out", "hanoi.ws.out"]
     },
-    { "path": "slide.bak", "compiled": "slide.ws", "outputs": ["slide.ws.asm.ws.out", "slide.ws.out"] },
+    { "path": "slide.bak", "generated": "slide.ws", "outputs": ["slide.ws.asm.ws.out", "slide.ws.out"] },
     { "path": "divc.asm", "inputs": ["divc.asm.ws.in"], "outputs": ["divc.asm.ws.out"] },
     { "path": "mmltz.asm", "inputs": ["mmltz.asm.ws.in"], "outputs": ["mmltz.asm.ws.out"] },
     { "path": "rep_putn.asm", "outputs": ["rep_putn.asm.ws.out"] }

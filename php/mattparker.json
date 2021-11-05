@@ -44,14 +44,14 @@
   "programs": [
     {
       "path": "domraffler.php",
-      "compiled": "domraffler.ws",
+      "generated": "domraffler.ws",
       "inputs": ["rafflerlisting"],
       "spec_version": "0.2",
       "generate": "cd examples && php domraffler.php"
     },
     {
       "path": "secret-message.php",
-      "compiled": "secret-message.html",
+      "generated": "secret-message.html",
       "polyglot": ["HTML"],
       "spec_version": "0.2",
       "generate": "cd examples && php secret-message.php"

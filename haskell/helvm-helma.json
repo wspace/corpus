@@ -13,49 +13,49 @@
   "programs": [
     {
       "path": "examples/ws/stn/original/calc.stn",
-      "compiled": "examples/ws/ws/original/calc.ws",
+      "generated": "examples/ws/ws/original/calc.ws",
       "equivalent": "calc.ws",
       "spec_version": "0.2"
     },
     {
       "path": "examples/ws/stn/original/count.stn",
-      "compiled": "examples/ws/ws/original/count.ws",
+      "generated": "examples/ws/ws/original/count.ws",
       "equivalent": "count.ws",
       "spec_version": "0.2"
     },
     {
       "path": "examples/ws/stn/original/fact.stn",
-      "compiled": "examples/ws/ws/original/fact.ws",
+      "generated": "examples/ws/ws/original/fact.ws",
       "equivalent": "fact.ws",
       "spec_version": "0.2"
     },
     {
       "path": "examples/ws/stn/original/hanoi.stn",
-      "compiled": "examples/ws/ws/original/hanoi.ws",
+      "generated": "examples/ws/ws/original/hanoi.ws",
       "equivalent": "hanoi.ws",
       "spec_version": "0.2"
     },
     {
       "path": "examples/ws/stn/original/hWorld.stn",
-      "compiled": "examples/ws/ws/original/hworld.ws",
+      "generated": "examples/ws/ws/original/hworld.ws",
       "equivalent": "hworld.ws",
       "spec_version": "0.2"
     },
     {
       "path": "examples/ws/stn/original/locTest.stn",
-      "compiled": "examples/ws/ws/original/loctest.ws",
+      "generated": "examples/ws/ws/original/loctest.ws",
       "equivalent": "loctest.ws",
       "spec_version": "0.3"
     },
     {
       "path": "examples/ws/stn/original/name.stn",
-      "compiled": "examples/ws/ws/original/name.ws",
+      "generated": "examples/ws/ws/original/name.ws",
       "equivalent": "name.ws",
       "spec_version": "0.2"
     },
     {
       "path": "examples/ws/stn/from-wsa/true.stn",
-      "compiled": "examples/ws/ws/original/end.ws",
+      "generated": "examples/ws/ws/original/end.ws",
       "spec_version": "0.2"
     },
     { "path": "examples/ws/stn/from-wsa/bottles.stn", "spec_version": "0.2" },

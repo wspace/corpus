@@ -32,43 +32,43 @@
   "programs": [
     {
       "path": "0272.as",
-      "compiled": "0272.ws",
+      "generated": "0272.ws",
       "spec_version": "0.2",
       "generate": "ruby as2st.rb < 0272.as | ruby st2ws.rb > 0272.ws"
     },
     {
       "path": "0244.as",
-      "compiled": "0244.ws",
+      "generated": "0244.ws",
       "spec_version": "0.2",
       "generate": "ruby as2st.rb < 0244.as | ruby st2ws.rb > 0244.ws"
     },
     {
       "path": "0354.as",
-      "compiled": "0354.ws",
+      "generated": "0354.ws",
       "spec_version": "0.2",
       "generate": "ruby as2st.rb < 0354.as | ruby st2ws.rb > 0354.ws"
     },
     {
       "path": "0128.as",
-      "compiled": "0128.ws",
+      "generated": "0128.ws",
       "spec_version": "0.2",
       "generate": "ruby as2st.rb < 0128.as | ruby st2ws.rb > 0128.ws"
     },
     {
       "path": "0169.as",
-      "compiled": "0169.ws",
+      "generated": "0169.ws",
       "spec_version": "0.2",
       "generate": "ruby as2st.rb < 0169.as | ruby st2ws.rb > 0169.ws"
     },
     {
       "path": "9000.as",
-      "compiled": "9000.ws",
+      "generated": "9000.ws",
       "spec_version": "0.2",
       "generate": "ruby as2st.rb < 9000.as | ruby st2ws.rb > 9000.ws"
     },
     {
       "path": "9005.st",
-      "compiled": "9005.ws",
+      "generated": "9005.ws",
       "spec_version": "0.2",
       "generate": "ruby st2ws.rb < 9005.st > 9005.ws"
     }

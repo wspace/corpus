@@ -129,7 +129,7 @@ type Project struct {
 	} `json:"mappings,omitempty"`
 	Programs []struct {
 		Path        string   `json:"path"`
-		Compiled    string   `json:"compiled,omitempty"`
+		Generated   string   `json:"generated,omitempty"`
 		Inputs      []string `json:"inputs,omitempty"`
 		Outputs     []string `json:"outputs,omitempty"`
 		Aux         []string `json:"aux,omitempty"`

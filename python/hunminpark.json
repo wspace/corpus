@@ -45,25 +45,25 @@
   "programs": [
     {
       "path": "original/ChristmasTree.txt",
-      "compiled": "converted/ChristmasTree.ws",
+      "generated": "converted/ChristmasTree.ws",
       "aux": ["converted/ChristmasTree.es"],
       "spec_version": "0.3"
     },
     {
       "path": "original/DoubleLoop.txt",
-      "compiled": "converted/DoubleLoop.ws",
+      "generated": "converted/DoubleLoop.ws",
       "aux": ["converted/DoubleLoop.es"],
       "spec_version": "0.2"
     },
     {
       "path": "original/Loop.txt",
-      "compiled": "converted/Loop.ws",
+      "generated": "converted/Loop.ws",
       "aux": ["converted/Loop.es"],
       "spec_version": "0.2"
     },
     {
       "path": "original/Test.txt",
-      "compiled": "converted/Test.ws",
+      "generated": "converted/Test.ws",
       "aux": ["converted/Test.es"],
       "spec_version": "0.2"
     }

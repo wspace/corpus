@@ -43,7 +43,7 @@
     "usage": ["assembler", "disassembler"],
     "extension": "wsa"
   },
-  "programs": [{ "path": "alphabet.wsa", "compiled": "alphabet.ws", "spec_version": "0.3" }],
+  "programs": [{ "path": "alphabet.wsa", "generated": "alphabet.ws", "spec_version": "0.3" }],
   "commands": [
     {
       "type": "interpreter",

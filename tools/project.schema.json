@@ -270,7 +270,7 @@
         "type": "object",
         "properties": {
           "path": { "type": "string" },
-          "compiled": { "type": "string" },
+          "generated": { "type": "string" },
           "inputs": { "type": "array", "items": { "type": "string" } },
           "outputs": { "type": "array", "items": { "type": "string" } },
           "aux": { "type": "array", "items": { "type": "string" } },

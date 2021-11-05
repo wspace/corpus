@@ -39,13 +39,13 @@
   "programs": [
     {
       "path": "sample/facws.rb",
-      "compiled": "fac.ws",
+      "generated": "fac.ws",
       "spec_version": "0.2",
       "generate": "ruby sample/facws.rb"
     },
     {
       "path": "sample/fibws.rb",
-      "compiled": "fib.ws",
+      "generated": "fib.ws",
       "spec_version": "0.2",
       "generate": "ruby sample/fibws.rb"
     }

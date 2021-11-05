@@ -49,141 +49,141 @@
     { "path": "programs/hello_world.ws", "spec_version": "0.2" },
     {
       "path": "programs/99_bottles.wsa",
-      "compiled": "programs/99_bottles.out.ws",
+      "generated": "programs/99_bottles.out.ws",
       "aux": ["programs/99_bottles.out.ws.map"],
       "spec_version": "0.2"
     },
     {
       "path": "programs/ascii.wsa",
-      "compiled": "programs/ascii.out.ws",
+      "generated": "programs/ascii.out.ws",
       "aux": ["programs/ascii.out.ws.map"],
       "spec_version": "0.3"
     },
     {
       "path": "programs/ascii4.wsa",
-      "compiled": "programs/ascii4.out.ws",
+      "generated": "programs/ascii4.out.ws",
       "aux": ["programs/ascii4.out.ws.map"],
       "spec_version": "0.3"
     },
     {
       "path": "programs/caesar.wsa",
-      "compiled": "programs/caesar.out.ws",
+      "generated": "programs/caesar.out.ws",
       "aux": ["programs/caesar.out.ws.map"],
       "spec_version": "0.3"
     },
     {
       "path": "programs/collatz.wsa",
-      "compiled": "programs/collatz.out.ws",
+      "generated": "programs/collatz.out.ws",
       "aux": ["programs/collatz.out.ws.map"],
       "spec_version": "0.2"
     },
     {
       "path": "programs/factorial.wsa",
-      "compiled": "programs/factorial.out.ws",
+      "generated": "programs/factorial.out.ws",
       "aux": ["programs/factorial.out.ws.map"],
       "spec_version": "0.2"
     },
     {
       "path": "programs/fib.wsa",
-      "compiled": "programs/fib.out.ws",
+      "generated": "programs/fib.out.ws",
       "aux": ["programs/fib.out.ws.map"],
       "spec_version": "0.3"
     },
     {
       "path": "programs/fizz_buzz.wsa",
-      "compiled": "programs/fizz_buzz.out.ws",
+      "generated": "programs/fizz_buzz.out.ws",
       "aux": ["programs/fizz_buzz.out.ws.map"],
       "spec_version": "0.2"
     },
     {
       "path": "programs/interpret.wsa",
-      "compiled": "programs/interpret.out.ws",
+      "generated": "programs/interpret.out.ws",
       "aux": ["programs/interpret.out.ws.map"],
       "spec_version": "0.3"
     },
     {
       "path": "programs/math.wsa",
-      "compiled": "programs/math.out.ws",
+      "generated": "programs/math.out.ws",
       "aux": ["programs/math.out.ws.map"],
       "spec_version": "0.3"
     },
     {
       "path": "programs/pi.wsa",
-      "compiled": "programs/pi.out.ws",
+      "generated": "programs/pi.out.ws",
       "aux": ["programs/pi.out.ws.map", "programs/pi.ir"],
       "spec_version": "0.3"
     },
     {
       "path": "programs/postfix.wsa",
-      "compiled": "programs/postfix.out.ws",
+      "generated": "programs/postfix.out.ws",
       "aux": ["programs/postfix.out.ws.map"],
       "spec_version": "0.3"
     },
     {
       "path": "programs/test_ret_underflow.wsa",
-      "compiled": "programs/test_ret_underflow.out.ws",
+      "generated": "programs/test_ret_underflow.out.ws",
       "spec_version": "0.2"
     },
     { "path": "programs/rosetta/add.ws", "spec_version": "0.2" },
     {
       "path": "programs/rosetta/binary.wsa",
-      "compiled": "programs/rosetta/binary.ws",
+      "generated": "programs/rosetta/binary.ws",
       "spec_version": "0.3"
     },
     {
       "path": "programs/rosetta/fib.wsa",
-      "compiled": "programs/rosetta/fib.ws",
+      "generated": "programs/rosetta/fib.ws",
       "outputs": ["programs/rosetta/fib.out"],
       "spec_version": "0.3"
     },
     {
       "path": "programs/rosetta/fibrec.wsa",
-      "compiled": "programs/rosetta/fibrec.ws",
+      "generated": "programs/rosetta/fibrec.ws",
       "outputs": ["programs/rosetta/fibrec.out"],
       "spec_version": "0.2"
     },
     {
       "path": "programs/rosetta/fizz_buzz.wsa",
-      "compiled": "programs/rosetta/fizz_buzz.ws",
+      "generated": "programs/rosetta/fizz_buzz.ws",
       "spec_version": "0.2"
     },
     {
       "path": "programs/rosetta/freq.wsa",
-      "compiled": "programs/rosetta/freq.ws",
+      "generated": "programs/rosetta/freq.ws",
       "outputs": ["programs/rosetta/freq.out"],
       "spec_version": "0.2"
     },
     {
       "path": "programs/rosetta/harshad.wsa",
-      "compiled": "programs/rosetta/harshad.ws",
+      "generated": "programs/rosetta/harshad.ws",
       "outputs": ["programs/rosetta/harshad.out"],
       "spec_version": "0.3"
     },
     {
       "path": "programs/rosetta/langstons_ant.wsa",
-      "compiled": "programs/rosetta/langstons_ant.ws",
+      "generated": "programs/rosetta/langstons_ant.ws",
       "spec_version": "0.3"
     },
     {
       "path": "programs/rosetta/octal.wsa",
-      "compiled": "programs/rosetta/octal.ws",
+      "generated": "programs/rosetta/octal.ws",
       "spec_version": "0.3"
     },
     {
       "path": "programs/rosetta/shell_sort.wsa",
-      "compiled": "programs/rosetta/shell_sort.ws",
+      "generated": "programs/rosetta/shell_sort.ws",
       "inputs": ["programs/rosetta/shell_sort.in"],
       "outputs": ["programs/rosetta/shell_sort.out"],
       "spec_version": "0.3"
     },
     {
       "path": "programs/rosetta/term_cursor.wsa",
-      "compiled": "programs/rosetta/term_cursor.ws",
+      "generated": "programs/rosetta/term_cursor.ws",
       "spec_version": "0.2"
     },
     {
       "path": "programs/rosetta/while.wsa",
-      "compiled": "programs/rosetta/while.ws",
+      "generated": "programs/rosetta/while.ws",
       "spec_version": "0.2"
     }
   ],

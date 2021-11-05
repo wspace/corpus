@@ -43,7 +43,7 @@
   "programs": [
     {
       "path": "programs/bottles.instr",
-      "compiled": "programs/bottles.generated.ws",
+      "generated": "programs/bottles.generated.ws",
       "aux": ["programs/bottles.c", "programs/bottles.wsa"],
       "spec_version": "0.2"
     },
@@ -51,20 +51,20 @@
     { "path": "programs/test.ws", "polyglot": ["Whitespace Assembly"], "spec_version": "0.2" },
     {
       "path": "programs/ws-assemble.wsa",
-      "compiled": "programs/ws-assemble.generated.ws",
+      "generated": "programs/ws-assemble.generated.ws",
       "spec_version": "0.2"
     },
     { "path": "programs/ws-interpret.wsa", "spec_version": "0.2" },
     { "path": "programs/util/print-string.wsa", "spec_version": "0.2" },
     {
       "path": "programs/ws/assembler.wsa",
-      "compiled": "programs/ws/assembler.generated.ws",
+      "generated": "programs/ws/assembler.generated.ws",
       "spec_version": "0.2"
     },
     { "path": "programs/ws/interpret.wsa", "spec_version": "0.3" },
     {
       "path": "programs/ws/interpreter.wsa",
-      "compiled": "programs/ws/interpreter.generated.ws",
+      "generated": "programs/ws/interpreter.generated.ws",
       "spec_version": "0.2"
     },
     { "path": "programs/ws/loader.wsa", "spec_version": "0.3" },

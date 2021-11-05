@@ -40,6 +40,6 @@
     "usage": ["programs"],
     "extension": "wsa"
   },
-  "programs": [{ "path": "markov.wsa", "compiled": "markov.ws", "inputs": ["input.mkv"], "spec_version": "0.2" }],
+  "programs": [{ "path": "markov.wsa", "generated": "markov.ws", "inputs": ["input.mkv"], "spec_version": "0.2" }],
   "notes": "Date from earliest file in archive"
 }
