@@ -68,6 +68,7 @@ Build and run errors are included.
 - csharp/denislabrecque/WhitespaceInterpreter.exe: `mcs -debug -out:WhitespaceInterpreter.exe WhitespaceInterpreter/*.cs`
 - ❌ csharp/jlchntoz
 - csharp/littlebughunter-assembler/bin/Debug/WhitespaceAssembler.exe: `msbuild /p:Configuration=Debug WhitespaceAssembler.csproj`
+- csharp/meeees/bin/Debug/Whitespace.exe: `msbuild /p:Configuration=Debug Whitespace.csproj`
 - csharp/nicolasff-spacesharp/wsc.exe: `make`
 - ⚠️ csharp/north-projectone/The-Code/WhitespaceInterpreter/bin/Debug/WhitespaceInterpreter.exe: `msbuild /p:Configuration=Debug The-Code/WhitespaceInterpreter/WhitespaceInterpreter.csproj` The Carbon driver has not been ported to 64-bit, so very few parts of Windows.Forms work properly
 - ❌ csharp/nutcrack-whiteplanes
@@ -109,6 +110,7 @@ Build and run errors are included.
 - ❌ java/faurehu
 - ❌ java/kmizu
 - ❌ java/kreutzer-spacedide
+- java/matou-whasm/WhAsm.class: `javac WhAsm.java`
 - java/praveenvaka-coder/target/whitespace-coder-1.0-SNAPSHOT.jar: `mvn -Dmaven.compiler.source=1.8 -Dmaven.compiler.target=1.8 package`
 - ❌ java/pyeroh
 - ⚠️ java/vyo-kairos/build/libs/vyo-kairos-1.0.0-all.jar: `./gradlew shadowJar`
@@ -229,6 +231,10 @@ Build and run errors are included.
   - historical/whitespace-old.reb
   - whitespace.reb
 - ⚠️ ruby/alesiong/wsv.rb
+- ruby/angel:
+  - old/wsdisas.pl
+  - old/wssa.pl
+  - whitespace.rb
 - ⚠️ ruby/bossiernesto/*unspecified*: No entrypoint
 - ruby/collidedscope-spitewaste/bin/spw
 - ⚠️ ruby/dwayne/bin/whitespace: Old dependencies

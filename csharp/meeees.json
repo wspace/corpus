@@ -1,0 +1,63 @@
+{
+  "id": "csharp/meeees",
+  "name": "Whitespace Assembler and Runner",
+  "authors": ["Michael Barre"],
+  "license": "none",
+  "languages": ["C#"],
+  "tags": ["interpreter", "disassembler", "programs"],
+  "date": "2019-05-24 17:22:01 -0500",
+  "spec_version": "0.2",
+  "source": ["https://github.com/wspace/meeees-csharp", "https://github.com/meeees/Whitespace"],
+  "bounds": { "precision": "int32" },
+  "whitespace": { "extension": "ws" },
+  "assembly": {
+    "mnemonics": {
+      "push": ["Push"],
+      "copy": ["Copy"],
+      "swap": ["Swap"],
+      "drop": ["Pop"],
+      "add": ["Add"],
+      "sub": ["Sub"],
+      "mul": ["Mult"],
+      "div": ["Div"],
+      "mod": ["Mod"],
+      "store": ["St"],
+      "retrieve": ["Ld"],
+      "label": ["Label"],
+      "call": ["Call"],
+      "jmp": ["Jump"],
+      "jz": ["Jz"],
+      "jn": ["Jn"],
+      "ret": ["Ret"],
+      "end": ["End"],
+      "printc": ["OutC"],
+      "printi": ["OutN"],
+      "readc": ["ReadC"],
+      "readi": ["ReadN"]
+    },
+    "usage": ["disassembler", "programs"],
+    "extension": "asm"
+  },
+  "programs": [
+    {
+      "path": "fib_test.asm",
+      "generated": "fib_test.ws",
+      "equivalent": "fibonacci.ws",
+      "spec_version": "0.2"
+    },
+    { "path": "hello_world.asm", "generated": "hello_world.ws", "spec_version": "0.2" }
+  ],
+  "commands": [
+    {
+      "type": "interpreter",
+      "bin": "bin/Debug/Whitespace.exe",
+      "build": "msbuild /p:Configuration=Debug Whitespace.csproj",
+      "usage": "mono $0",
+      "input": "<file>",
+      "subcommands": [
+        { "name": "run", "usage": "run <file>", "notes": "Interprets assembled program" },
+        { "name": "asm", "usage": "asm <file> <output_file>", "notes": "Disassembles program" }
+      ]
+    }
+  ]
+}

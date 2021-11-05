@@ -1,0 +1,61 @@
+{
+  "id": "java/matou-whasm",
+  "name": "WhAsm",
+  "authors": ["Matthias Matousek"],
+  "license": "ISC",
+  "languages": ["Java"],
+  "tags": ["assembler"],
+  "date": "2011-04-21 12:44:33 +0200",
+  "spec_version": "0.3",
+  "source": ["https://github.com/matou/whasm"],
+  "assembly": {
+    "mnemonics": {
+      "push": ["push <number>", "pushchar <char>"],
+      "dup": ["duplicate"],
+      "copy": ["copyn"],
+      "swap": ["swap"],
+      "drop": ["discard"],
+      "slide": ["sliden"],
+      "add": ["add"],
+      "sub": ["sub"],
+      "mul": ["mult"],
+      "div": ["div"],
+      "mod": ["mod"],
+      "store": ["store"],
+      "retrieve": ["retrieve"],
+      "label": ["mark <number>", "marks <label>"],
+      "call": ["call <number>", "calls <label>"],
+      "jmp": ["jump <number>", "jumps <label>"],
+      "jz": ["branchz <number>", "branchzs <label>"],
+      "jn": ["branchltz <number>", "branchltzs <label>"],
+      "ret": ["return"],
+      "end": ["end"],
+      "printc": ["printchar"],
+      "printi": ["printnum"],
+      "readc": ["readchar"],
+      "readi": ["readnum"]
+    },
+    "macros": [
+      { "name": "print", "args": ["str"], "replace": "push str[0] printc ... push str[n] printc" },
+      {
+        "name": "println",
+        "args": ["str"],
+        "replace": "push str[0] printc ... push str[n] printc push '\\n' printc"
+      }
+    ],
+    "patterns": { "char": ".", "label": ".+", "number": "0b[10]+|0x[0-9A-Fa-f]+|[+-]?[0-9]+" },
+    "line_comments": ["//"],
+    "usage": ["assembler"]
+  },
+  "commands": [
+    {
+      "type": "assembler",
+      "bin": "WhAsm.class",
+      "build": "javac WhAsm.java",
+      "usage": "java -cp . WhAsm",
+      "input": "stdin",
+      "output": "stdout"
+    }
+  ],
+  "notes": "String labels are not zero-padded when converted to binary. UTF-16 encoding."
+}

@@ -22,7 +22,7 @@
       "input": "stdin",
       "output": "stdout",
       "options": [{ "short": "d", "desc": "debug" }],
-      "option_parse": "Perl Getopt"
+      "option_parse": "Perl Getopt::Std"
     }
   ]
 }

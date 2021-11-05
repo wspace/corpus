@@ -1,6 +1,6 @@
 # The Whitespace Corpus
 
-The definitive collection of 256 projects for the Whitespace programming
+The definitive collection of 259 projects for the Whitespace programming
 language, including interpreters, compilers, and programs.
 
 ## Projects
@@ -61,6 +61,7 @@ language, including interpreters, compilers, and programs.
 | [Codewars-algorithms](python/ericpwilliamson-codewars.json) | Eric P Williamson | Python | interpreter | 2019-06-19 | [GitHub](https://github.com/EricPWilliamson/Codewars-algorithms) |
 | [baudelaire-whitespace](python/qwhxm-baudelaire.json) | Marek Tomáštík | Python    | web service, programs | 2019-06-08 | [GitHub](https://github.com/qwhxm/baudelaire-whitespace) |
 | [Nebula](go/andrewarchi-nebula.json)               | Andrew Archibald | Go, LLVM, Whitespace | compiler, optimizer, disassembler, bit packer, Binary Whitespace, programs | 2019-06-06 | [GitHub](https://github.com/andrewarchi/nebula) |
+| [Whitespace Assembler and Runner](csharp/meeees.json) | Michael Barre | C#         | interpreter, disassembler, programs | 2019-05-24 | [GitHub](https://github.com/wspace/meeees-csharp), [GitHub](https://github.com/meeees/Whitespace) |
 | [Whitespace VM](rust/nareshganduri.json)           | Naresh Ganduri   | Rust       | interpreter  | 2019-05-13 | [GitHub](https://github.com/nareshganduri/WhitespaceVM) |
 | [gows](go/pocke-gows.json)                         | Masataka Pocke Kuwabara | Go  | interpreter  | 2019-05-11 | [GitHub](https://github.com/pocke/gows) |
 | [Self-hosting Whitespace](ruby/pocke-self-hosted.json) | Masataka Pocke Kuwabara | Ruby, Whitespace | interpreter, program builder, programs | 2019-05-06 | [GitHub](https://github.com/pocke/self-hosting-whitespace), [pocke.hatenablog.com](https://pocke.hatenablog.com/entry/2019/05/24/232217), [Google Slides](https://docs.google.com/presentation/d/1BeNJ_E_KOLjjdM4Bd3u_96tiIGiRdG9J9orhglcxziw/edit), [speakerdeck.com](https://speakerdeck.com/pocke/self-hosting-whitespace), [GitHub Gist](https://gist.github.com/pocke/2847214a87139a0d1babd9338159d667), [pocke.hatenablog.com](https://pocke.hatenablog.com/entry/2019/05/06/213209) |
@@ -69,6 +70,7 @@ language, including interpreters, compilers, and programs.
 | [Hello in Whitespace](whitespace/jonstites-hello.json) | Jonathan Stites | Whitespace | programs  | 2019-02-26 | [GitHub Gist](https://gist.github.com/jonstites/16784b5c1fb0c1e580d698bb13d4f50f) |
 | [go-wspace](go/tempxla-go-wspace.json)             | tempxla          | Go         | interpreter  | 2019-02-24 | [GitHub](https://github.com/tempxla/go-wspace) |
 | [Hello-Whitespace](whitespace/tewort-hello.json)   | David (Tewort)   | Whitespace | programs     | 2019-01-28 | [GitHub](https://github.com/Tewort/Hello-Whitespace) |
+| [WhiteSpace assembler/disassembler](ruby/angel.json) | angel-p57      | Ruby, Perl | interpreter, assembler, disassembler, programs | 2018-12-16 | [GitHub](https://github.com/angel-p57/whitespace) |
 | [WhitespaceInterpreter](java/pyeroh.json)          | Quentin de Nanteuil | Java    | interpreter  | 2018-12-14 | [GitHub Gist](https://gist.github.com/Pyeroh/1b2903e53d71e0662d105dc0d6aedbdf) |
 | [Whitespace and Brainfuck](whitespace/wsdt-kevinloveswhitespace.json) | Riedl Kevin | Whitespace | programs | 2018-12-01 | [GitHub](https://github.com/wsdt/WhiteSpace_Brainfuck) |
 | [Whitespace Interpreter](rust/kaisugi.json)        | Kaito Sugimoto   | Rust       | interpreter, programs | 2018-11-23 | [GitHub](https://github.com/HelloRusk/WhitespaceInterpreter) |
@@ -228,6 +230,7 @@ language, including interpreters, compilers, and programs.
 | [Never Gonna Give You Up](whitespace/lucaspiller-never-gonna.json) | Luca Spiller | Whitespace | programs | 2012-06-01 | [GitHub Gist](https://gist.github.com/lucaspiller/2852385) |
 | [trans32.py](python/res-trans32.json)              | r.e.s.           | Python     | Binary Whitespace | 2012-05-30 | [res0001 Google Site (archive)](https://web.archive.org/web/20130510111931/https://sites.google.com/site/res0001/whitespace/programs), [Code Golf](https://codegolf.stackexchange.com/questions/6025/remove-vowels-without-using-too-many-different-characters/6100#6100) |
 | [SignificantWhitespace](javascript/pvdz-significant-whitespace.json) | Peter van der Zee | JavaScript | interpreter | 2012-02-16 | [GitHub](https://github.com/pvdz/SignificantWhitespace), [pvdz.ee](https://pvdz.ee/weblog/246), [js1k.com](https://js1k.com/2012-love/demo/1130) |
+| [WhAsm](java/matou-whasm.json)                     | Matthias Matousek | Java      | assembler    | 2011-04-21 | [GitHub](https://github.com/matou/whasm) |
 | [nbspy.py](python/mikejs-nbspy.json)               | Michael Stephens | Python     | interpreter  | 2011-04-14 | [GitHub Gist](https://gist.github.com/mikejs/918701) |
 | [whitespace-0.4](haskell/haroldl-wspace-0.4.json)  | Harold Lee, Edwin Brady | Haskell | interpreter | 2011-03-10 | [GitHub](https://github.com/haroldl/whitespace-nd), [Mailing list (archive)](https://web.archive.org/web/20130926165457/http://compsoc.dur.ac.uk:80/archives/whitespace/2011-March/000080.html), [harold.hotelling.net](https://harold.hotelling.net/shuffle.html) |
 | [white-scheme](scheme/athos-white-scheme.json)     | Ohta Shogo       | Scheme     | interpreter  | 2010-12-22 | [GitHub](https://github.com/athos/white-scheme) |
@@ -401,6 +404,8 @@ See [CONTRIBUTING.md](./CONTRIBUTING.md).
       [#whitespace-compiler](https://github.com/topics/whitespace-compiler?o=desc&s=updated),
       [whitespace interpreter](https://github.com/search?o=desc&q=whitespace+interpreter&s=updated&type=Repositories),
       [whitespace compiler](https://github.com/search?o=desc&q=whitespace+compiler&s=updated&type=Repositories),
+      [whitespace assembler](https://github.com/search?o=desc&q=whitespace+assembler&s=updated&type=Repositories),
+      [whitespace disassembler](https://github.com/search?o=desc&q=whitespace+disassembler&s=updated&type=Repositories),
       [whitespace unbleach](https://github.com/search?o=desc&q=whitespace+unbleach&s=indexed&type=Code),
       [compsoc.dur.ac.uk whitespace](https://github.com/search?o=desc&q=compsoc.dur.ac.uk+whitespace+-pkgname+-portname+-gentoo+-_eclasses_+-prototype+-awesome+-cheatsheet+NOT+language%3Ahtml+NOT+language%3Ajson+NOT+language%3Acsv&s=indexed&type=Code)
   - GitHub Gist - [extension:ws](https://gist.github.com/search?o=desc&q=extension%3Aws&s=updated),
@@ -450,6 +455,7 @@ See [CONTRIBUTING.md](./CONTRIBUTING.md).
 - Source control
   - GitHub - forks,
       [extension:ws](https://github.com/search?o=desc&q=extension%3Aws&s=indexed&type=Code),
+      [whitespace quine](https://github.com/search?q=whitespace+quine&type=code),
       [github-artifact-exporter](https://github.com/github/github-artifact-exporter)
   - GitHub Gist - [whitespace](https://gist.github.com/search?q=whitespace)
   - Sourceforge - [Spaced IDE (SVN)](https://sourceforge.net/projects/spacedide/),

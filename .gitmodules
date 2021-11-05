@@ -139,6 +139,9 @@
 [submodule "csharp/littlebughunter-assembler"]
 	path = csharp/littlebughunter-assembler
 	url = https://github.com/littleBugHunter/WhitespaceAssembler
+[submodule "csharp/meeees"]
+	path = csharp/meeees
+	url = https://github.com/wspace/meeees-csharp
 [submodule "csharp/nicolasff-spacesharp"]
 	path = csharp/nicolasff-spacesharp
 	url = https://github.com/nicolasff/spacesharp
@@ -236,6 +239,9 @@
 [submodule "java/kmizu"]
 	path = java/kmizu
 	url = https://github.com/kmizu/ws_interpreter
+[submodule "java/matou-whasm"]
+	path = java/matou-whasm
+	url = https://github.com/matou/whasm
 [submodule "java/praveenvaka-coder"]
 	path = java/praveenvaka-coder
 	url = https://github.com/praveenvaka/whitespace-coder
@@ -530,6 +536,9 @@
 [submodule "ruby/alesiong"]
 	path = ruby/alesiong
 	url = https://github.com/alesiong/whitespace-ruby
+[submodule "ruby/angel"]
+	path = ruby/angel
+	url = https://github.com/angel-p57/whitespace
 [submodule "ruby/bossiernesto"]
 	path = ruby/bossiernesto
 	url = https://github.com/bossiernesto/whitespace
