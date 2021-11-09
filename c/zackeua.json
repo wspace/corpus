@@ -1,0 +1,58 @@
+{
+  "id": "c/zackeua",
+  "name": "Whitespace",
+  "authors": ["Zackeus Zetterberg"],
+  "license": "none",
+  "languages": ["C", "C++", "Python"],
+  "tags": ["interpreter", "programs"],
+  "date": "2021-01-10 14:34:18 +0100",
+  "spec_version": "0.2",
+  "source": ["https://github.com/zackeua/Whitespace"],
+  "programs": [
+    { "path": "code/bf.ws", "aux": ["bf.ws"], "spec_version": "0.3", "notes": "Has extra trailing LF" },
+    {
+      "path": "code/collaz.ws",
+      "aux": ["collaz.ws"],
+      "spec_version": "0.3",
+      "notes": "Has extra trailing LF"
+    },
+    { "path": "code/count.ws", "aux": ["count.ws"], "spec_version": "0.2" },
+    { "path": "code/example.ws", "aux": ["example.ws"], "spec_version": "0.2" },
+    {
+      "path": "code/fact.ws",
+      "aux": ["fact.ws"],
+      "spec_version": "0.2",
+      "notes": "Prints \"Hello, World!\\n\""
+    },
+    {
+      "path": "code/fib.ws",
+      "aux": ["fib.ws"],
+      "equivalent": "fibonacci.ws",
+      "spec_version": "0.2",
+      "notes": "Has extra trailing LF"
+    },
+    { "path": "code/hello.ws", "aux": ["hello.ws"], "spec_version": "0.2" },
+    {
+      "path": "code/nerd.ws",
+      "aux": ["code/optimNerd.ws", "nerd.ws", "optimNerd.ws"],
+      "spec_version": "0.2",
+      "notes": "Has extra trailing LF"
+    }
+  ],
+  "commands": [
+    {
+      "bin": "wlang",
+      "build": "gcc -g -Wall -Werror -o wlang whitespace.c",
+      "usage": "$0 <file>",
+      "notes": "File extension must be .ws"
+    },
+    {
+      "bin": "whitespacecpp",
+      "build": "g++ -g -Wall -Werror -o whitespacecpp whitespace.cpp",
+      "usage": "$0 <file>",
+      "notes": "File extension must be .ws"
+    },
+    { "bin": "whitespace.py", "usage": "python3 $0 <file>", "notes": "File extension must be .ws" }
+  ],
+  "todo": "Document commands and program spec versions"
+}

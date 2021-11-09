@@ -1,0 +1,12 @@
+{
+  "id": "whitespace/kspalaiologos-cosmopolitan-sk",
+  "name": "cosmopolitan-sk",
+  "authors": ["Kamila Szewczyk (Palaiologos)"],
+  "license": "AGPL-3.0",
+  "languages": ["Whitespace"],
+  "tags": ["programs"],
+  "date": "2021-10-31 15:24:19 +0100",
+  "spec_version": "0.2",
+  "source": ["https://github.com/kspalaiologos/cosmopolitan-sk"],
+  "programs": [{ "path": "sk-whitespace.ws", "spec_version": "0.2" }]
+}

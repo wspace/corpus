@@ -1,0 +1,19 @@
+{
+  "id": "whitespace/meow-tigerhacks",
+  "name": "TigerHacks-2021",
+  "authors": ["meow56"],
+  "license": "none",
+  "languages": ["Whitespace"],
+  "tags": ["programs"],
+  "date": "2021-11-05 18:39:23 -0500",
+  "spec_version": "0.3",
+  "source": ["https://github.com/meow56/tigerhacks-2021"],
+  "programs": [
+    {
+      "path": "game.wsa",
+      "generated": "game.ws",
+      "spec_version": "0.3",
+      "notes": "Generate using javascript/vii5ard-whitelips-ide"
+    }
+  ]
+}

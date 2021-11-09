@@ -46,6 +46,9 @@
 [submodule "c/threeifbywhiskey-satan"]
 	path = c/threeifbywhiskey-satan
 	url = https://github.com/threeifbywhiskey/satan
+[submodule "c/zackeua"]
+	path = c/zackeua
+	url = https://github.com/zackeua/Whitespace
 [submodule "clojure/jmesyou-erasure"]
 	path = clojure/jmesyou-erasure
 	url = https://github.com/wspace/jmesyou-erasure
@@ -656,6 +659,9 @@
 [submodule "whitespace/elisha-snakulator"]
 	path = whitespace/elisha-snakulator
 	url = https://github.com/donno2048/snakulator
+[submodule "whitespace/grantbgreat-hello"]
+	path = whitespace/grantbgreat-hello
+	url = https://github.com/GrantBGreat/hello-world
 [submodule "whitespace/jonstites-hello"]
 	path = whitespace/jonstites-hello
 	url = https://gist.github.com/jonstites/16784b5c1fb0c1e580d698bb13d4f50f
@@ -674,6 +680,9 @@
 [submodule "whitespace/knightking-hacktoberfest-2017"]
 	path = whitespace/knightking-hacktoberfest-2017
 	url = https://github.com/knightking100/hello-worlds
+[submodule "whitespace/kspalaiologos-cosmopolitan-sk"]
+	path = whitespace/kspalaiologos-cosmopolitan-sk
+	url = https://github.com/kspalaiologos/cosmopolitan-sk
 [submodule "whitespace/kunde-hello"]
 	path = whitespace/kunde-hello
 	url = https://gist.github.com/Kunde21/f3e7878c92f3a1db2ea31ea1140153ce
@@ -683,6 +692,9 @@
 [submodule "whitespace/makenowjust-quine"]
 	path = whitespace/makenowjust-quine
 	url = https://github.com/MakeNowJust/quine
+[submodule "whitespace/meow-tigerhacks"]
+	path = whitespace/meow-tigerhacks
+	url = https://github.com/meow56/tigerhacks-2021
 [submodule "whitespace/mercerenies-euler"]
 	path = whitespace/mercerenies-euler
 	url = https://github.com/Mercerenies/eulers-melting-pot

@@ -30,6 +30,10 @@ Build and run errors are included.
 - c/tejaskasetty/flex-bison/262\_267\_256/ws: `make`
 - c/threeifbywhiskey-blacktime/blacktime: `make`
 - c/threeifbywhiskey-satan/satan: `make`
+- c/zackeua:
+  - whitespace.py
+  - whitespacecpp: `g++ -g -Wall -Werror -o whitespacecpp whitespace.cpp`
+  - wlang: `gcc -g -Wall -Werror -o wlang whitespace.c`
 - clojure/jmesyou-erasure/target/uberjar/erasure-2.0-standalone.jar: `lein uberjar`
 - clojure/makenowjust/target/whitespace-clj-0.1.0-SNAPSHOT-standalone.jar: `lein uberjar`
 - ⚠️ coffeescript/ehrlichbryan/*unspecified*: `npm install && grunt` Unclear how to run
@@ -291,6 +295,7 @@ Build and run errors are included.
 - ❌ whitespace/chrisnguyen-steganographic-polyglots
 - ❌ whitespace/dcoy-hacktoberfest-2016
 - ❌ whitespace/elisha-snakulator
+- ❌ whitespace/grantbgreat-hello
 - ❌ whitespace/jonstites-hello
 - whitespace/keen-whitelie:
   - asm.rb
@@ -299,9 +304,11 @@ Build and run errors are included.
 - ❌ whitespace/kenrube-esopoly
 - ❌ whitespace/kirens-countdown
 - ❌ whitespace/knightking-hacktoberfest-2017
+- ❌ whitespace/kspalaiologos-cosmopolitan-sk
 - ❌ whitespace/kunde-hello
 - ❌ whitespace/lucaspiller-never-gonna
 - ❌ whitespace/makenowjust-quine
+- ❌ whitespace/meow-tigerhacks
 - ❌ whitespace/mercerenies-euler
 - ❌ whitespace/mesquita-markov
 - ❌ whitespace/mikedonaghy-hello
