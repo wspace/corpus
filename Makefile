@@ -46,7 +46,7 @@ update_submodules:
 # Update all manually-enumerated submodules to latest remote head
 .PHONY: update_submodules_force
 update_submodules_force:
-	git submodule foreach 'git -C $toplevel submodule update --remote $name'
+	git submodule foreach 'git -C $$toplevel submodule update --remote $$name'
 
 .PHONY: list_project_json
 list_project_json:

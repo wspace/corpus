@@ -11,3 +11,4 @@ echo "gitdir: ../../.git/modules/$dest" > "$dest/.git"
 sed -i '' "s,^\[submodule \"$src\"\]$,[submodule \"$dest\"]," .gitmodules
 tools/format_gitmodules.sh
 git add .gitmodules
+git submodule init "$dest"
