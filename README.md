@@ -1,14 +1,16 @@
 # The Whitespace Corpus
 
-The definitive collection of 263 projects for the Whitespace programming
+The definitive collection of 266 projects for the Whitespace programming
 language, including interpreters, compilers, and programs.
 
 ## Projects
 
 | Name                                               | Authors          | Languages  | Tags         | Date       | Source |
 | -------------------------------------------------- | ---------------- | ---------- | ------------ | ---------- | ------ |
+| [Whitespace interpreter](cpp/shadowmitia.json)     | Dimitri Belopopsky | C++      | interpreter, programs | 2021-11-11 | [GitHub](https://github.com/ShadowMitia/whitespace) |
 | [TigerHacks-2021](whitespace/meow-tigerhacks.json) | meow56           | Whitespace | programs     | 2021-11-05 | [GitHub](https://github.com/meow56/tigerhacks-2021) |
 | [cosmopolitan-sk](whitespace/kspalaiologos-cosmopolitan-sk.json) | Kamila Szewczyk (Palaiologos) | Whitespace | programs | 2021-10-31 | [GitHub](https://github.com/kspalaiologos/cosmopolitan-sk) |
+| [whitespace](c/manarice.json)                      | ManaRice         | C          | interpreter, assembler, programs | 2021-10-28 | [GitHub](https://github.com/ManaRice/whitespace) |
 | [Whitespace Interpreter](ocaml/steiner.json)       | Brandon Stein    | OCaml, Yacc, Lex | interpreter, programs | 2021-10-22 | [GitHub](https://github.com/steiner26/Whitespace) |
 | [WhitespaceInterpreter](lua/carsonrueber.json)     | Carson Rueber    | Lua        | interpreter, programs | 2021-08-29 | [GitHub](https://github.com/CJ5518/WhitespaceInterpreter) |
 | [Whitespace grammar for GitHub](textmate/andrewarchi-linguist.json) | Andrew Archibald | TextMate | grammar | 2021-08-15 | [GitHub](https://github.com/wspace/wspace-linguist) |
@@ -38,6 +40,7 @@ language, including interpreters, compilers, and programs.
 | [whitespace-interpreter](c/cedricschwyter.json)    | Cedric Schwyter  | C          | interpreter, programs | 2020-10-09 | [GitHub](https://github.com/D3PSI/whitespace-interpreter) |
 | [Whitespace Language - Online Translator/Interpreter](php/dcode.json) | dCode | PHP, JavaScript | interpreter, text to Whitespace, mapping | 2020-09-23 | [dcode.fr](https://www.dcode.fr/whitespace-language) |
 | [snakulator](whitespace/elisha-snakulator.json)    | Elisha Hollander | Whitespace | programs     | 2020-09-15 | [GitHub](https://github.com/donno2048/snakulator), [donno2048.github.io](https://donno2048.github.io/snakulator/) |
+| [top-langs-not-to-use](php/codelytv-youtube.json)  | Rafa Gómez       | PHP        | steganography, programs | 2020-08-18 | [GitHub](https://github.com/CodelyTV/youtube-code-examples) |
 | [rustws](rust/luminight.json)                      | Luminight        | Rust       | library, mapping | 2020-08-04 | [GitHub](https://github.com/Luminighty/rustws) |
 | [Whitespace](javascript/kosei.json)                | kosei28          | JavaScript | interpreter  | 2020-08-03 | [GitHub](https://github.com/kosei28/Whitespace) |
 | [SpaceMan](haskell/ft-spaceman.json)               | Frank Terbeck    | Haskell    | interpreter  | 2020-07-09 | [GitLab](https://gitlab.com/ft/spaceman), [GitHub](https://github.com/ft/spaceman), [bewatermyfriend.org](http://bewatermyfriend.org/p/2020/000/), [Hacker News](https://news.ycombinator.com/item?id=24763312) |
@@ -402,52 +405,77 @@ See [CONTRIBUTING.md](./CONTRIBUTING.md).
 ## Sources
 
 - Source control
-  - GitHub - [#whitespace-language](https://github.com/topics/whitespace-language?o=desc&s=updated),
-      [#whitespace](https://github.com/topics/whitespace?o=desc&s=updated),
-      [#whitespace-interpreter](https://github.com/topics/whitespace-interpreter?o=desc&s=updated),
-      [#whitespace-compiler](https://github.com/topics/whitespace-compiler?o=desc&s=updated),
-      [whitespace interpreter](https://github.com/search?o=desc&q=whitespace+interpreter+-org%3Awspace&s=updated&type=Repositories),
-      [whitespace compiler](https://github.com/search?o=desc&q=whitespace+compiler+-org%3Awspace&s=updated&type=Repositories),
-      [whitespace assembler](https://github.com/search?o=desc&q=whitespace+assembler+-org%3Awspace&s=updated&type=Repositories),
-      [whitespace disassembler](https://github.com/search?o=desc&q=whitespace+disassembler+-org%3Awspace&s=updated&type=Repositories),
-      [whitespace unbleach](https://github.com/search?o=desc&q=whitespace+unbleach+-org%3Awspace&s=indexed&type=Code),
-      [compsoc.dur.ac.uk whitespace](https://github.com/search?o=desc&q=compsoc.dur.ac.uk+whitespace+-org%3Awspace+-pkgname+-portname+-gentoo+-_eclasses_+-prototype+-awesome+-cheatsheet+-language%3Ahtml+-language%3Ajson+-language%3Acsv&s=indexed&type=Code)
-  - GitHub Gist - [extension:ws](https://gist.github.com/search?o=desc&q=extension%3Aws&s=updated),
+  - GitHub
+    - by topic:
+        [#whitespace-language](https://github.com/topics/whitespace-language?o=desc&s=updated),
+        [#whitespace](https://github.com/topics/whitespace?o=desc&s=updated),
+        [#whitespace-interpreter](https://github.com/topics/whitespace-interpreter?o=desc&s=updated),
+        [#whitespace-compiler](https://github.com/topics/whitespace-compiler?o=desc&s=updated)
+    - by keywords:
+        [whitespace interpreter](https://github.com/search?o=desc&q=whitespace+interpreter+-org%3Awspace&s=updated&type=Repositories),
+        [whitespace compiler](https://github.com/search?o=desc&q=whitespace+compiler+-org%3Awspace&s=updated&type=Repositories),
+        [whitespace jit](https://github.com/search?o=desc&q=whitespace+jit+-org%3Awspace&s=updated&type=Repositories),
+        [whitespace assembler](https://github.com/search?o=desc&q=whitespace+assembler+-org%3Awspace&s=updated&type=Repositories),
+        [whitespace disassembler](https://github.com/search?o=desc&q=whitespace+disassembler+-org%3Awspace&s=updated&type=Repositories),
+        [whitespace esoteric](https://github.com/search?o=desc&q=whitespace+esoteric+-org%3Awspace&s=updated&type=Repositories)
+    - by file content:
+        [whitespace unbleach](https://github.com/search?o=desc&q=whitespace+unbleach+-org%3Awspace&s=indexed&type=Code),
+        [compsoc.dur.ac.uk whitespace](https://github.com/search?o=desc&q=compsoc.dur.ac.uk+whitespace+-org%3Awspace+-pkgname+-portname+-gentoo+-_eclasses_+-prototype+-awesome+-cheatsheet+-language%3Ahtml+-language%3Ajson+-language%3Acsv&s=indexed&type=Code)
+    - by filename:
+        [calc.ws](https://github.com/search?o=desc&q=filename%3Acalc.ws+extension%3Aws+-org%3Awspace&s=indexed&type=Code),
+        [count.ws](https://github.com/search?o=desc&q=filename%3Acount.ws+extension%3Aws+-org%3Awspace&s=indexed&type=Code),
+        [fact.ws](https://github.com/search?o=desc&q=filename%3Afact.ws+extension%3Aws+-org%3Awspace&s=indexed&type=Code),
+        [fibonacci.ws](https://github.com/search?o=desc&q=filename%3Afibonacci.ws+extension%3Aws+-org%3Awspace&s=indexed&type=Code),
+        [hanoi.ws](https://github.com/search?o=desc&q=filename%3Ahanoi.ws+extension%3Aws+-org%3Awspace&s=indexed&type=Code),
+        [hworld.ws](https://github.com/search?o=desc&q=filename%3Ahworld.ws+extension%3Aws+-org%3Awspace&s=indexed&type=Code),
+        [loctest.ws](https://github.com/search?o=desc&q=filename%3Aloctest.ws+extension%3Aws+-org%3Awspace&s=indexed&type=Code),
+        [name.ws](https://github.com/search?o=desc&q=filename%3Aname.ws+extension%3Aws+-org%3Awspace&s=indexed&type=Code),
+        [quine.ws](https://github.com/search?o=desc&q=filename%3Aquine.ws+extension%3Aws+-org%3Awspace&s=indexed&type=Code),
+        [quine-2.ws](https://github.com/search?o=desc&q=filename%3Aquine-2.ws+extension%3Aws+-org%3Awspace&s=indexed&type=Code),
+        [quine-copy.ws](https://github.com/search?o=desc&q=filename%3Aquine-copy.ws+extension%3Aws+-org%3Awspace&s=indexed&type=Code),
+        [rot13.ws](https://github.com/search?o=desc&q=filename%3Arot13.ws+extension%3Aws+-org%3Awspace&s=indexed&type=Code)
+  - GitHub Gist:
+      [extension:ws](https://gist.github.com/search?o=desc&q=extension%3Aws&s=updated),
       ["whitespace interpreter"](https://gist.github.com/search?o=desc&q=%22whitespace+interpreter%22&s=updated),
       ["whitespace compiler"](https://gist.github.com/search?o=desc&q=%22whitespace+compiler%22&s=updated),
       ["whitespace programming language"](https://gist.github.com/search?o=desc&q=%22whitespace+programming+language%22&s=updated),
       [whitespace interpreter stack heap](https://gist.github.com/search?o=desc&q=whitespace+interpreter+stack+heap+NOT+cloudSettings&s=updated),
       [whitespace unbleach](https://gist.github.com/search?o=desc&q=whitespace+unbleach&s=updated),
       [compsoc.dur.ac.uk whitespace](https://gist.github.com/search?o=desc&q=compsoc.dur.ac.uk+whitespace&s=updated)
-  - GitLab - [whitespace](https://gitlab.com/explore?name=whitespace&sort=latest_activity_desc)
-  - SourceForge - [whitespace](https://sourceforge.net/directory/?q=whitespace&sort=update)
-  - Google Code - [whitespace](https://code.google.com/archive/search?q=whitespace)
-  - Bitbucket - [whitespace](https://bitbucket.org/repo/all?name=whitespace)
-  - sourcehut - [whitespace](https://sr.ht/projects?search=whitespace&sort=recently-updated)
-  - Software Heritage archive - [whitespace interpreter](https://archive.softwareheritage.org/browse/search/?q=whitespace+interpreter&with_visit=true&with_content=true&search_metadata=true)
+  - GitLab: [whitespace](https://gitlab.com/explore?name=whitespace&sort=latest_activity_desc)
+  - SourceForge: [whitespace](https://sourceforge.net/directory/?q=whitespace&sort=update)
+  - Google Code: [whitespace](https://code.google.com/archive/search?q=whitespace)
+  - Bitbucket: [whitespace](https://bitbucket.org/repo/all?name=whitespace)
+  - sourcehut: [whitespace](https://sr.ht/projects?search=whitespace&sort=recently-updated)
+  - Software Heritage archive: [whitespace interpreter](https://archive.softwareheritage.org/browse/search/?q=whitespace+interpreter&with_visit=true&with_content=true&search_metadata=true)
 - Package managers
-  - CPAN - [whitespace interpreter](https://metacpan.org/search?q=whitespace+interpreter)
-  - crates.io - [whitespace interpreter](https://crates.io/search?q=whitespace%20interpreter&sort=new),
+  - CPAN: [whitespace interpreter](https://metacpan.org/search?q=whitespace+interpreter)
+  - crates.io:
+      [whitespace interpreter](https://crates.io/search?q=whitespace%20interpreter&sort=new),
       [#whitespace](https://crates.io/keywords/whitespace)
-  - Docker Hub - [whitespace](https://hub.docker.com/search?q=whitespace&type=image&sort=updated_at&order=desc)
-  - Elm Packages - [whitespace](https://package.elm-lang.org/)
-  - Hackage - [whitespace](https://hackage.haskell.org/packages/search?terms=whitespace)
-  - Hex - [whitespace](https://hex.pm/packages?search=whitespace)
-  - Maven - [whitespace](https://mvnrepository.com/search?q=whitespace)
-  - npm - [whitespace language](https://www.npmjs.com/search?q=whitespace%20language),
+  - Docker Hub: [whitespace](https://hub.docker.com/search?q=whitespace&type=image&sort=updated_at&order=desc)
+  - Elm Packages: [whitespace](https://package.elm-lang.org/)
+  - Hackage: [whitespace](https://hackage.haskell.org/packages/search?terms=whitespace)
+  - Hex: [whitespace](https://hex.pm/packages?search=whitespace)
+  - Maven: [whitespace](https://mvnrepository.com/search?q=whitespace)
+  - npm:
+      [whitespace language](https://www.npmjs.com/search?q=whitespace%20language),
       [whitespace interpreter](https://www.npmjs.com/search?q=whitespace%20interpreter)
-  - NuGet - [whitespace](https://www.nuget.org/packages?q=whitespace)
-  - opam [whitespace](https://opam.ocaml.org/packages/)
-  - Packagist - [whitespace](https://packagist.org/?query=whitespace)
-  - pkg.go.dev - [whitespace](https://pkg.go.dev/search?q=whitespace)
-  - PyPI - ["whitespace interpreter"](https://pypi.org/search/?q=%22whitespace+interpreter%22&o=-created),
+  - NuGet: [whitespace](https://www.nuget.org/packages?q=whitespace)
+  - opam: [whitespace](https://opam.ocaml.org/packages/)
+  - Packagist: [whitespace](https://packagist.org/?query=whitespace)
+  - pkg.go.dev: [whitespace](https://pkg.go.dev/search?q=whitespace)
+  - PyPI:
+      ["whitespace interpreter"](https://pypi.org/search/?q=%22whitespace+interpreter%22&o=-created),
       ["whitespace language"](https://pypi.org/search/?q=%22whitespace+language%22&o=-created)
-  - RubyGems - [whitespace](https://rubygems.org/search?query=whitespace)
+  - RubyGems: [whitespace](https://rubygems.org/search?query=whitespace)
 - Stack Exchange
-  - Stack Overflow - [#whitespace-language](https://stackoverflow.com/questions/tagged/whitespace-language),
+  - Stack Overflow:
+      [#whitespace-language](https://stackoverflow.com/questions/tagged/whitespace-language),
       [#whitespace #esoteric-languages](https://stackoverflow.com/questions/tagged/whitespace+esoteric-languages)
 - Snippets
-  - ActiveState Code - [#whitespace](https://code.activestate.com/recipes/tags/whitespace/),
+  - ActiveState Code:
+      [#whitespace](https://code.activestate.com/recipes/tags/whitespace/),
       [GitHub](https://github.com/ActiveState/code)
 - Internet Archive
   - [hapyli.webs.com](https://web.archive.org/web/20110212015726/http://hapyli.webs.com:80/)
@@ -457,30 +485,37 @@ See [CONTRIBUTING.md](./CONTRIBUTING.md).
 ### TODO
 
 - Source control
-  - GitHub - forks,
+  - GitHub:
+      forks,
       [extension:ws](https://github.com/search?o=desc&q=extension%3Aws+-org%3Awspace+-witcher+-runescape+-function+-var+-class&s=indexed&type=Code),
       [whitespace quine](https://github.com/search?q=whitespace+quine+-org%3Awspace&type=code),
       [github-artifact-exporter](https://github.com/github/github-artifact-exporter)
-  - GitHub Gist - [whitespace](https://gist.github.com/search?q=whitespace)
-  - Sourceforge - [Spaced IDE (SVN)](https://sourceforge.net/projects/spacedide/),
+  - GitHub Gist: [whitespace](https://gist.github.com/search?q=whitespace)
+  - Sourceforge:
+      [Spaced IDE (SVN)](https://sourceforge.net/projects/spacedide/),
       [Whitespace IDE (CVS)](https://sourceforge.net/projects/whitespaceide/)
-  - Google Code - [grass-mud-horse (SVN)](https://code.google.com/archive/p/grass-mud-horse/),
+  - Google Code:
+      [grass-mud-horse (SVN)](https://code.google.com/archive/p/grass-mud-horse/),
       [whitespacesdk (SVN)](https://code.google.com/archive/p/whitespacesdk/),
       [whitecoder (hg)](https://code.google.com/archive/p/whitecoder/)
   - [Software Heritage archive](https://archive.softwareheritage.org/)
 - Internet Archive
-  - Durham CompSoc - [download](https://web.archive.org/web/20150717140342/http://compsoc.dur.ac.uk:80/whitespace/download.php),
+  - Durham CompSoc:
+      [download](https://web.archive.org/web/20150717140342/http://compsoc.dur.ac.uk:80/whitespace/download.php),
       [mailing list](https://web.archive.org/web/20141011193126/http://compsoc.dur.ac.uk/archives/whitespace/)
   - [mirror.ox.ac.uk](https://web.archive.org/web/20030414003351/http://mirror.ox.ac.uk:80/Mirrors/whitespace/)
   - [dur.ac.uk/d.j.walrond](https://web.archive.org/web/20030608044924/http://www.dur.ac.uk:80/d.j.walrond/whitespace/)
   - [burghard.info](https://web.archive.org/web/20110911114338/http://www.burghard.info/Code/Whitespace/)
 - Wikis
-  - MediaWiki - [Help:Export](https://www.mediawiki.org/wiki/Help:Export),
+  - MediaWiki:
+      [Help:Export](https://www.mediawiki.org/wiki/Help:Export),
       [Manual:Parameters to Special:Export](https://www.mediawiki.org/wiki/Manual:Parameters_to_Special:Export)
-    - Rosetta Code - [Category:Whitespace](https://rosettacode.org/wiki/Category:Whitespace),
+    - Rosetta Code:
+        [Category:Whitespace](https://rosettacode.org/wiki/Category:Whitespace),
         [Category:Whitespace User](https://rosettacode.org/wiki/Category:Whitespace_User),
         [Special:Export](https://rosettacode.org/wiki/Special:Export)
-    - Wikipedia - [Whitespace (programming language) [en]](https://en.wikipedia.org/wiki/Whitespace_(programming_language)),
+    - Wikipedia:
+        [Whitespace (programming language) [en]](https://en.wikipedia.org/wiki/Whitespace_(programming_language)),
         [[ar]](https://ar.wikipedia.org/wiki/%D9%88%D8%A7%D9%8A%D8%AA_%D8%B3%D8%A8%D9%8A%D8%B3_(%D9%84%D8%BA%D8%A9_%D8%A8%D8%B1%D9%85%D8%AC%D8%A9)),
         [[ca]](https://ca.wikipedia.org/wiki/Whitespace),
         [[cs]](https://cs.wikipedia.org/wiki/Whitespace),
@@ -502,32 +537,37 @@ See [CONTRIBUTING.md](./CONTRIBUTING.md).
         [[uk]](https://uk.wikipedia.org/wiki/Whitespace),
         [[zh]](https://zh.wikipedia.org/wiki/Whitespace),
         [Special:Export](https://en.wikipedia.org/wiki/Special:Export)
-    - Esolang - [Whitespace](https://esolangs.org/wiki/Whitespace),
+    - Esolang:
+        [Whitespace](https://esolangs.org/wiki/Whitespace),
         [WhatLinksHere/Whitespace](https://esolangs.org/wiki/Special:WhatLinksHere/Whitespace),
         [Deadfish](https://esolangs.org/wiki/Deadfish#Whitespace),
         [Wiki dumps](https://esolangs.org/wiki/Esolang:Wiki_dumps),
         [Special:Export](https://esolangs.org/wiki/Special:Export)
-  - Progopedia - [Whitespace [en]](http://progopedia.com/language/whitespace/),
+  - Progopedia:
+      [Whitespace [en]](http://progopedia.com/language/whitespace/),
       [[ru]](http://progopedia.ru/language/whitespace/)
 - Code challenges
-  - Codewars - [Whitespace Interpreter](https://www.codewars.com/kata/whitespace-interpreter),
+  - Codewars:
+      [Whitespace Interpreter](https://www.codewars.com/kata/whitespace-interpreter),
       [Convert integer to Whitespace format](https://www.codewars.com/kata/55b350026cc02ac1a7000032)
   - [yukicoder](https://yukicoder.me/)
-  - Sphere Online Judge - [SBSTR1](https://www.spoj.com/problems/SBSTR1/) ([SO](https://stackoverflow.com/questions/26521780/how-to-check-whether-a-string-is-substring-of-another-in-whitespace))
+  - Sphere Online Judge: [SBSTR1](https://www.spoj.com/problems/SBSTR1/) ([SO](https://stackoverflow.com/questions/26521780/how-to-check-whether-a-string-is-substring-of-another-in-whitespace))
   - [Baekjoon Online Judge](https://www.acmicpc.net/)
 - Stack Exchange
-  - Code Golf - [Tips for golfing in Whitespace](https://codegolf.stackexchange.com/questions/48442/tips-for-golfing-in-whitespace)
+  - Code Golf: [Tips for golfing in Whitespace](https://codegolf.stackexchange.com/questions/48442/tips-for-golfing-in-whitespace)
 - Social media
-  - Twitter - [@edwinbrady](https://twitter.com/edwinbrady),
+  - Twitter:
+      [@edwinbrady](https://twitter.com/edwinbrady),
       [whitespace (from:edwinbrady)](https://twitter.com/search?q=whitespace%20(from%3Aedwinbrady)),
       [whitespace (to:edwinbrady)](https://twitter.com/search?q=whitespace%20(to%3Aedwinbrady)),
       [whitespace @edwinbrady](https://twitter.com/search?q=whitespace%20(%40edwinbrady))
   - Hacker News
 - Snippets
-  - Pastebin - [archiveteam_pastebin](https://archive.org/details/archiveteam_pastebin),
+  - Pastebin:
+      [archiveteam_pastebin](https://archive.org/details/archiveteam_pastebin),
       [pastebinpastes](https://archive.org/details/pastebinpastes),
       [Archive Team](https://wiki.archiveteam.org/index.php/Pastebin)
-  - Ideone - [Whitespace IDE](https://www.ideone.com/l/whitespace)
+  - Ideone: [Whitespace IDE](https://www.ideone.com/l/whitespace)
 
 ## License
 

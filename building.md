@@ -10,6 +10,9 @@ Build and run errors are included.
 - c/hogelog/wspace: `make gencode.c all`
 - c/koturn/whitespace.out: `make`
 - c/kspalaiologos-asm2ws/wsi: `./configure --with-target=release && make -j4 wsi`
+- c/manarice:
+  - lswvm: `make LIMELIB=utils/limelib.so`
+  - lwsa: `make LIMELIB=utils/limelib.so`
 - c/meth0dz/whitespace: `gcc -O3 -Wall -o whitespace whitespace.c`
 - c/rdebath:
   - ws2c: `make`
@@ -61,6 +64,7 @@ Build and run errors are included.
   - wspace: `make wspace`
 - cpp/peasley/whitespace: `g++ -O3 -Wall -o whitespace whitespace.cpp`
 - ⚠️ cpp/ricardoluis/whitespace: `g++ -O3 -Wall -std=c++11 -o whitespace whitespace.cpp` `#include <conio.h>` not found, `floor` cannot be used in a constant expression
+- ⚠️ cpp/shadowmitia/wspace: `bash build.sh release wspace` Some options unsupported with Clang
 - ⚠️ cpp/sonicyang-ws-frontend/wsjit: Requires LLVM
 - ⚠️ cpp/subv-whitespace-llvm/bin/Whitespace-LLVM: Requires LLVM
 - cpp/sudheesh/space: `g++ -O3 -o space space.cpp`
@@ -162,6 +166,9 @@ Build and run errors are included.
 - ocaml/steiner/whitespace: `make`
 - perl/ephphatha-wsm2ws/wsm2ws.pl
 - perl/mkoelbl/whitespace.pl
+- php/codelytv-youtube:
+  - top-langs-not-to-use/src/decoder.php
+  - top-langs-not-to-use/src/encoder.php
 - ❌ php/dcode
 - php/igorw/bin/interpreter
 - php/igorw-wsm/bin/wsm

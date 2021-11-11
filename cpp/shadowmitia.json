@@ -1,0 +1,61 @@
+{
+  "id": "cpp/shadowmitia",
+  "name": "Whitespace interpreter",
+  "authors": ["Dimitri Belopopsky"],
+  "license": "none",
+  "languages": ["C++"],
+  "tags": ["interpreter", "programs"],
+  "date": "2021-11-11 11:43:57 +0100",
+  "spec_version": "0.3",
+  "source": ["https://github.com/ShadowMitia/whitespace"],
+  "assembly": {
+    "mnemonics": {
+      "push": ["Push"],
+      "dup": ["Dup"],
+      "copy": ["Ref"],
+      "swap": ["Swap"],
+      "drop": ["Discard"],
+      "slide": ["Slide"],
+      "add": ["InfixPlus"],
+      "sub": ["InfixMinus"],
+      "mul": ["InfixTimes"],
+      "div": ["InfixDivide"],
+      "mod": ["InfixModulo"],
+      "store": ["Store"],
+      "retrieve": ["Retrieve"],
+      "label": ["Label"],
+      "call": ["Call"],
+      "jmp": ["Jump"],
+      "jz": ["IfZero"],
+      "jn": ["IfNegative"],
+      "ret": ["Return"],
+      "end": ["End"],
+      "printc": ["OutputChar"],
+      "printi": ["OutputNum"],
+      "readc": ["ReadChar"],
+      "readi": ["ReadNum"]
+    },
+    "usage": ["enum"]
+  },
+  "programs": [
+    { "path": "examples/calc.ws", "equivalent": "calc.ws", "spec_version": "0.2" },
+    { "path": "examples/count.ws", "equivalent": "count.ws", "spec_version": "0.2" },
+    { "path": "examples/fact.ws", "equivalent": "fact.ws", "spec_version": "0.2" },
+    { "path": "examples/fibonacci.ws", "equivalent": "fibonacci.ws", "spec_version": "0.2" },
+    { "path": "examples/hanoi.ws", "equivalent": "hanoi.ws", "spec_version": "0.2" },
+    { "path": "examples/hworld.ws", "equivalent": "hworld.ws", "spec_version": "0.2" },
+    { "path": "examples/loctest.ws", "equivalent": "loctest.ws", "spec_version": "0.3" },
+    { "path": "examples/name.ws", "equivalent": "name.ws", "spec_version": "0.2" },
+    { "path": "examples/wikipedia_example.ws", "spec_version": "0.2" }
+  ],
+  "commands": [
+    {
+      "bin": "wspace",
+      "build": "bash build.sh release wspace",
+      "build_errors": "Some options unsupported with Clang",
+      "usage": "$0 <file>",
+      "input": "<file>",
+      "output": "stdout"
+    }
+  ]
+}

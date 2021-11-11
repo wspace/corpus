@@ -13,6 +13,9 @@
 [submodule "c/kspalaiologos-asm2ws"]
 	path = c/kspalaiologos-asm2ws
 	url = https://github.com/kspalaiologos/asm2ws
+[submodule "c/manarice"]
+	path = c/manarice
+	url = https://github.com/ManaRice/whitespace
 [submodule "c/meth0dz"]
 	path = c/meth0dz
 	url = https://github.com/wspace/meth0dz-c
@@ -112,6 +115,9 @@
 [submodule "cpp/ricardoluis"]
 	path = cpp/ricardoluis
 	url = https://github.com/RicardoLuis0/whitespace
+[submodule "cpp/shadowmitia"]
+	path = cpp/shadowmitia
+	url = https://github.com/ShadowMitia/whitespace
 [submodule "cpp/sonicyang-ws-frontend"]
 	path = cpp/sonicyang-ws-frontend
 	url = https://github.com/sonicyang/ws-frontend
@@ -371,6 +377,9 @@
 [submodule "perl/mkoelbl"]
 	path = perl/mkoelbl
 	url = https://github.com/wspace/mkoelbl-perl
+[submodule "php/codelytv-youtube"]
+	path = php/codelytv-youtube
+	url = https://github.com/CodelyTV/youtube-code-examples
 [submodule "php/igorw"]
 	path = php/igorw
 	url = https://github.com/igorw/whitespace-php

@@ -1,0 +1,43 @@
+{
+  "id": "php/codelytv-youtube",
+  "name": "top-langs-not-to-use",
+  "authors": ["Rafa Gómez"],
+  "license": "MIT",
+  "languages": ["PHP"],
+  "tags": ["steganography", "programs"],
+  "date": "2020-08-18 16:29:41 +0200",
+  "spec_version": "0.3",
+  "source": ["https://github.com/CodelyTV/youtube-code-examples"],
+  "relations": [{ "id": "php/igorw", "type": "library" }],
+  "programs": [
+    {
+      "path": "top-langs-not-to-use/src/output.php",
+      "aux": ["top-langs-not-to-use/src/original.php"],
+      "polyglot": ["PHP"],
+      "equivalent": "hworld.ws",
+      "spec_version": "0.2",
+      "generate": "top-langs-not-to-use/src/virus_code.ws"
+    },
+    {
+      "path": "top-langs-not-to-use/src/fibonacci.ws",
+      "equivalent": "fibonacci.ws",
+      "spec_version": "0.2"
+    }
+  ],
+  "commands": [
+    {
+      "type": "steganography",
+      "bin": "top-langs-not-to-use/src/encoder.php",
+      "usage": "php $0 <decoy_file> <file>",
+      "output": "output.php",
+      "notes": "Concatenates decoy file with Whitespace program, but does not interleave spaces, so it is not executable as Whitespace, without decoding"
+    },
+    {
+      "type": "interpreter",
+      "bin": "top-langs-not-to-use/src/decoder.php",
+      "usage": "php $0",
+      "input": "output.php",
+      "notes": "Removes lines from file that contain non-whitespace characters and executes"
+    }
+  ]
+}
