@@ -281,6 +281,7 @@ Build and run errors are included.
   - ⚠️ librustws.rlib: `cargo build --release`
   - wsconvert.py
 - rust/nareshganduri/target/release/whitespace-vm: `cargo build --release`
+- rust/omurakazuaki/target/release/whitespace: `cargo build --release`
 - ❌ rust/zrneely
 - scala/dashlambda-eso/target/scala-2.13/eso\_2.13-2.6.1.jar: `sbt assembly`
 - ❌ scala/ojha-whitespacing

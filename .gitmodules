@@ -608,6 +608,9 @@
 [submodule "rust/nareshganduri"]
 	path = rust/nareshganduri
 	url = https://github.com/nareshganduri/WhitespaceVM
+[submodule "rust/omurakazuaki"]
+	path = rust/omurakazuaki
+	url = https://github.com/wspace/omurakazuaki-rust
 [submodule "rust/zrneely"]
 	path = rust/zrneely
 	url = https://gitlab.com/zrneely/whitespace.git

@@ -1,6 +1,6 @@
 # The Whitespace Corpus
 
-The definitive collection of 266 projects for the Whitespace programming
+The definitive collection of 267 projects for the Whitespace programming
 language, including interpreters, compilers, and programs.
 
 ## Projects
@@ -22,6 +22,7 @@ language, including interpreters, compilers, and programs.
 | [wslib](whitespace/andrewarchi-wslib.json)         | Andrew Archibald | Whitespace | standard library, programs, assembler | 2021-05-24 | [GitHub](https://github.com/andrewarchi/wslib) |
 | [yspace](rust/andrewarchi-yspace.json)             | Andrew Archibald | Rust       | compiler, programs | 2021-05-07 | [GitHub](https://github.com/andrewarchi/yspace) |
 | [wsjq](jq/andrewarchi-wsjq.json)                   | Andrew Archibald | jq         | interpreter, debugger, disassembler | 2021-05-02 | [GitHub](https://github.com/andrewarchi/wsjq) |
+| [Whitespace interpreter](rust/omurakazuaki.json)   | Kazuaki Omura    | Rust       | interpreter, programs | 2021-03-30 | [GitHub](https://github.com/wspace/omurakazuaki-rust), [GitHub](https://github.com/omurakazuaki/WriteCodeEveryDay/tree/main/rust/whitespace) |
 | [Hello World](whitespace/grantbgreat-hello.json)   | Grant Bourne     | Whitespace | programs     | 2021-03-23 | [GitHub](https://github.com/GrantBGreat/hello-world) |
 | [ws](python/ffanzhang.json)                        | ffanzhang        | Python     | interpreter  | 2021-03-07 | [GitHub](https://github.com/ffanzhang/ws) |
 | [Albus](rust/collidedscope-albus.json)             | Collided Scope   | Rust       | interpreter  | 2021-02-12 | [GitHub](https://github.com/collidedscope/albus) |
