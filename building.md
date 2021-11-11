@@ -212,7 +212,6 @@ Build and run errors are included.
   - src
 - python/katc/whitespace.py
 - python/lachlancourt/transpiler.py
-- ⚠️ python/lifthrasiir-esotope-ws/esotope-ws: Source code unavailable
 - ⚠️ python/marktraceur-redlandside/main.py: PyQt version 4 not installed
 - ⚠️ python/maximegoyette/whitespace.py: Needs Codewars entrypoint
 - python/mcolom/whitespace.py
@@ -234,6 +233,7 @@ Build and run errors are included.
   - Helpers.py
   - ⚠️ Interpreter.py: msvcrt module only exists on Windows
 - ⚠️ python/techiehelper-codewars/python/Whitespace.py: Needs Codewars entrypoint
+- ⚠️ python/tokigun-esotope-ws/esotope-ws: Source code unavailable
 - python/umutoztunc-whitesymex/whitesymex/cli.py
 - python/wasabili/Whitespace.py
 - ⚠️ python/wawrepo-kata/20170307\_Whitespace\_Interpreter/interpreter.py: Needs Codewars entrypoint
