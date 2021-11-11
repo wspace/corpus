@@ -9,6 +9,6 @@
   "spec_version": "0.2",
   "source": ["https://www.dcode.fr/whitespace-language"],
   "source_unavailable": true,
-  "relations": [{ "type": "embedded", "id": "javascript/luilak-ws2js" }],
+  "relations": [{ "id": "javascript/luilak-ws2js", "type": "embedded" }],
   "mappings": [{ "space": "S", "tab": "T", "lf": "L", "before_stl": true }]
 }

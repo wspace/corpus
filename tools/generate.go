@@ -33,8 +33,8 @@ type Project struct {
 		URL     string `json:"url"`
 	} `json:"package,omitempty"`
 	Relations []struct {
-		Type    string `json:"type"`
 		ID      string `json:"id"`
+		Type    string `json:"type"`
 		Commit  string `json:"commit,omitempty"`
 		Release string `json:"release,omitempty"`
 	} `json:"relations,omitempty"`

@@ -13,5 +13,5 @@
     "manager": "Docker Hub",
     "url": "https://hub.docker.com/r/bensuperpc/whitespace"
   },
-  "relations": [{ "type": "binary", "id": "c/rdebath" }]
+  "relations": [{ "id": "c/rdebath", "type": "binary" }]
 }

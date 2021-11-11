@@ -10,8 +10,8 @@
   "source": ["https://github.com/soimort/GrassMudHorse"],
   "relations": [
     {
-      "type": "fork",
       "id": "haskell/haroldl-wspace-0.4",
+      "type": "fork",
       "commit": "bdd724393a8626ba67c161aacba8b13f52215400"
     }
   ],

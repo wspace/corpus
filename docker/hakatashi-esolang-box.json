@@ -14,7 +14,7 @@
     "url": "https://hub.docker.com/r/esolang/whitespace"
   },
   "relations": [
-    { "type": "binary", "id": "haskell/tryitonline" },
-    { "type": "binary", "id": "python/stephenchappell", "release": "hostilefork/whitespacers" }
+    { "id": "haskell/tryitonline", "type": "binary" },
+    { "id": "python/stephenchappell", "type": "binary", "release": "hostilefork/whitespacers" }
   ]
 }

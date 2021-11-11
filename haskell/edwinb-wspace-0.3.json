@@ -12,7 +12,7 @@
     "https://web.archive.org/web/20040617010431/http://compsoc.dur.ac.uk:80/whitespace/downloads/wspace-0.3.tgz",
     "https://web.archive.org/web/20060517072734/http://compsoc.dur.ac.uk:80/archives/whitespace/2004-May/000047.html"
   ],
-  "relations": [{ "type": "embedded", "id": "emacs/lmitchell" }],
+  "relations": [{ "id": "emacs/lmitchell", "type": "embedded" }],
   "bounds": { "precision": "arbitrary" },
   "behavior": { "eof": "error" },
   "programs": [

@@ -9,7 +9,7 @@
   "date": "2019-06-08 23:22:47 +0200",
   "spec_version": "0.3",
   "source": ["https://github.com/qwhxm/baudelaire-whitespace"],
-  "relations": [{ "type": "binary", "id": "cpp/esco" }],
+  "relations": [{ "id": "cpp/esco", "type": "binary" }],
   "programs": [{ "path": "backend/baudelaire.ws", "aux": ["extras/baudelaire_orig.ws"], "spec_version": "0.2" }],
   "commands": [
     {

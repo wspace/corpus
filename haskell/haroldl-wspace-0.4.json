@@ -17,7 +17,7 @@
     "manager": "Hackage",
     "url": "https://hackage.haskell.org/package/whitespace-0.4"
   },
-  "relations": [{ "type": "fork", "id": "haskell/edwinb-wspace-0.3" }],
+  "relations": [{ "id": "haskell/edwinb-wspace-0.3", "type": "fork" }],
   "whitespace": { "nonstandard": [{ "name": "shuffle", "seq": "STTS" }] },
   "commands": [
     {

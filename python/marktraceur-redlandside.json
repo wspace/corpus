@@ -12,7 +12,7 @@
     "https://sourceforge.net/projects/redlandside/",
     "http://redlandside.sourceforge.net/"
   ],
-  "relations": [{ "type": "embedded", "id": "python/phlip-pywhitespace", "release": "pywhitespace2007.tar.bz2" }],
+  "relations": [{ "id": "python/phlip-pywhitespace", "type": "embedded", "release": "pywhitespace2007.tar.bz2" }],
   "commands": [
     {
       "type": "IDE",

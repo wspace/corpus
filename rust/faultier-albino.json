@@ -8,7 +8,7 @@
   "date": "2014-07-18 09:13:55 +0900",
   "spec_version": "0.3",
   "source": ["https://github.com/faultier/albino"],
-  "relations": [{ "type": "library", "id": "rust/faultier-whitebase" }],
+  "relations": [{ "id": "rust/faultier-whitebase", "type": "library" }],
   "assembly": {
     "mnemonics": {
       "push": ["PUSH"],

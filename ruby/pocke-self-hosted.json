@@ -15,7 +15,7 @@
     "https://gist.github.com/pocke/2847214a87139a0d1babd9338159d667",
     "https://pocke.hatenablog.com/entry/2019/05/06/213209"
   ],
-  "relations": [{ "type": "library", "id": "ruby/pocke-akaza" }],
+  "relations": [{ "id": "ruby/pocke-akaza", "type": "library" }],
   "assembly": {
     "mnemonics": {
       "push": ["push_num", "push_ch"],
