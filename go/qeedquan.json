@@ -1,0 +1,67 @@
+{
+  "id": "go/qeedquan",
+  "name": "misc_utilities",
+  "authors": ["Quan Tran"],
+  "license": "MIT",
+  "languages": ["Go"],
+  "tags": ["interpreter", "disassembler", "programs"],
+  "date": "2021-11-10 21:20:39 -0600",
+  "spec_version": "0.2",
+  "source": [
+    "https://github.com/wspace/qeedquan-go",
+    "https://github.com/qeedquan/misc_utilities/tree/master/esolang/whitespace"
+  ],
+  "assembly": {
+    "mnemonics": {
+      "push": ["push"],
+      "dup": ["dup"],
+      "swap": ["swap"],
+      "drop": ["discard"],
+      "add": ["add"],
+      "sub": ["sub"],
+      "mul": ["mul"],
+      "div": ["div"],
+      "mod": ["mod"],
+      "store": ["store"],
+      "retrieve": ["retrieve"],
+      "label": ["label_<number>:"],
+      "call": ["call"],
+      "jmp": ["jmp"],
+      "jz": ["jz"],
+      "jn": ["jn"],
+      "ret": ["ret"],
+      "end": ["hlt"],
+      "printc": ["outc"],
+      "printi": ["outn"],
+      "readc": ["inc"],
+      "readi": ["inn"]
+    },
+    "indentation": "\t",
+    "usage": ["disassembler"]
+  },
+  "programs": [
+    { "path": "count.ws", "equivalent": "count.ws", "spec_version": "0.2" },
+    { "path": "fib.ws", "equivalent": "fibonacci.ws", "spec_version": "0.2" },
+    { "path": "hanoi.ws", "equivalent": "hanoi.ws", "spec_version": "0.2" },
+    { "path": "hello-1.ws", "equivalent": "hworld.ws", "spec_version": "0.2" },
+    { "path": "hello-2.ws", "spec_version": "0.2" },
+    { "path": "neg.ws" },
+    { "path": "nerd.ws", "spec_version": "0.2" },
+    { "path": "quine.ws", "equivalent": "quine.ws", "spec_version": "0.2" }
+  ],
+  "commands": [
+    {
+      "bin": "whitespace",
+      "build": "go build -o whitespace",
+      "usage": "$0 [-d] [-t] <file>",
+      "options": [
+        { "short": "d", "long": "d", "desc": "show disassembly" },
+        { "short": "t", "long": "t", "desc": "trace program" },
+        { "short": "h", "long": "h" },
+        { "short": "help", "long": "help" }
+      ],
+      "option_parse": "Go flag"
+    }
+  ],
+  "notes": "Disassembly includes the argument as a Unicode codepoint. Disassembled labels show the sequential label definition index, not the label value."
+}

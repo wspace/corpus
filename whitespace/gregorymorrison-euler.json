@@ -1,0 +1,15 @@
+{
+  "id": "whitespace/gregorymorrison-euler",
+  "name": "Exploring Program Languages",
+  "authors": ["Gregory Morrison"],
+  "license": "MIT",
+  "languages": ["Whitespace"],
+  "tags": ["programs"],
+  "date": "2016-04-17 15:14:05 -0400",
+  "spec_version": "0.2",
+  "source": ["https://github.com/gregorymorrison/euler1"],
+  "programs": [
+    { "path": "euler1.ws", "spec_version": "0.2" },
+    { "path": "hworld.ws", "equivalent": "hworld.ws", "spec_version": "0.2" }
+  ]
+}

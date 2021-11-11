@@ -1,0 +1,15 @@
+{
+  "id": "whitespace/jarrodparkes-a-z",
+  "name": "a-z-programming",
+  "authors": ["Jarrod Parkes"],
+  "license": "none",
+  "languages": ["Whitespace"],
+  "tags": ["programs"],
+  "date": "2017-04-19 09:42:38 -0500",
+  "spec_version": "0.2",
+  "source": ["https://github.com/jarrodparkes/a-z-programming"],
+  "programs": [
+    { "path": "whitespace/src/hello.ws", "spec_version": "0.2" },
+    { "path": "whitespace/src/name.ws", "spec_version": "0.2" }
+  ]
+}

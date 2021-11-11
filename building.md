@@ -93,6 +93,7 @@ Build and run errors are included.
   - ⚠️ programs/interpret.wsa
 - go/kinu/whitespace: `go build`
 - go/pocke-gows/gows: `go build`
+- go/qeedquan/whitespace: `go build -o whitespace`
 - go/technohippy/go-whitespace: `go build -o go-whitespace ./src`
 - go/tempxla-go-wspace/bin/go-wspace: `make`
 - go/yshr-wspacego/wspacego: `go build`
@@ -297,6 +298,7 @@ Build and run errors are included.
 - ❌ whitespace/alicewonderland-hacktoberfest-2017
 - whitespace/andrewarchi-wslib/assemble.sh
 - ❌ whitespace/aniket-hacktoberfest-2018
+- ❌ whitespace/apartmentlist-obfuscated
 - ❌ whitespace/bbvch-hello
 - ❌ whitespace/burghard-wsinterws
 - ❌ whitespace/ccns-chicken
@@ -304,6 +306,8 @@ Build and run errors are included.
 - ❌ whitespace/dcoy-hacktoberfest-2016
 - ❌ whitespace/elisha-snakulator
 - ❌ whitespace/grantbgreat-hello
+- ❌ whitespace/gregorymorrison-euler
+- ❌ whitespace/jarrodparkes-a-z
 - ❌ whitespace/jonstites-hello
 - whitespace/keen-whitelie:
   - asm.rb

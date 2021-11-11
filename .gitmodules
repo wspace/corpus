@@ -187,6 +187,9 @@
 [submodule "go/pocke-gows"]
 	path = go/pocke-gows
 	url = https://github.com/pocke/gows
+[submodule "go/qeedquan"]
+	path = go/qeedquan
+	url = https://github.com/wspace/qeedquan-go
 [submodule "go/technohippy"]
 	path = go/technohippy
 	url = https://github.com/wspace/technohippy-go
@@ -656,6 +659,9 @@
 [submodule "whitespace/aniket-hacktoberfest-2018"]
 	path = whitespace/aniket-hacktoberfest-2018
 	url = https://github.com/wspace/aniket-hacktoberfest-2018
+[submodule "whitespace/apartmentlist-obfuscated"]
+	path = whitespace/apartmentlist-obfuscated
+	url = https://github.com/apartmentlist/coding-challenges
 [submodule "whitespace/bbvch-hello"]
 	path = whitespace/bbvch-hello
 	url = https://github.com/bbvch13531/HelloWhitespace
@@ -674,6 +680,12 @@
 [submodule "whitespace/grantbgreat-hello"]
 	path = whitespace/grantbgreat-hello
 	url = https://github.com/GrantBGreat/hello-world
+[submodule "whitespace/gregorymorrison-euler"]
+	path = whitespace/gregorymorrison-euler
+	url = https://github.com/gregorymorrison/euler1
+[submodule "whitespace/jarrodparkes-a-z"]
+	path = whitespace/jarrodparkes-a-z
+	url = https://github.com/jarrodparkes/a-z-programming
 [submodule "whitespace/jonstites-hello"]
 	path = whitespace/jonstites-hello
 	url = https://gist.github.com/jonstites/16784b5c1fb0c1e580d698bb13d4f50f
