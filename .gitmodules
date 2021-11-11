@@ -266,9 +266,6 @@
 [submodule "java/yuukiaria-wseditor"]
 	path = java/yuukiaria-wseditor
 	url = https://github.com/YuukiARIA/wseditor
-[submodule "javascript/briantran-generator"]
-	path = javascript/briantran-generator
-	url = https://github.com/TranBrian10/WhitespaceGenerator
 [submodule "javascript/damle-evanescojs"]
 	path = javascript/damle-evanescojs
 	url = https://github.com/AD9000/EvanescoJS
@@ -323,6 +320,9 @@
 [submodule "javascript/therebelrobot"]
 	path = javascript/therebelrobot
 	url = https://github.com/therebelrobot/whitespace
+[submodule "javascript/tranbrian-generator"]
+	path = javascript/tranbrian-generator
+	url = https://github.com/TranBrian10/WhitespaceGenerator
 [submodule "javascript/uraza"]
 	path = javascript/uraza
 	url = https://github.com/uraza/whitespace-interpreter

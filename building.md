@@ -123,7 +123,6 @@ Build and run errors are included.
 - ❌ java/yawkat
 - ❌ java/yuukiaria-wseditor
 - ❌ javascript/arnauld
-- ❌ javascript/briantran-generator
 - ❌ javascript/damle-evanescojs
 - ❌ javascript/dexteryy-grassmudmonkey
 - ❌ javascript/ignovak
@@ -144,6 +143,7 @@ Build and run errors are included.
 - ❌ javascript/susisu
 - ⚠️ javascript/syntaqx-puzzles/codewars/js/2/whitespace-interpreter.js: Needs Codewars entrypoint
 - ❌ javascript/therebelrobot
+- ❌ javascript/tranbrian-generator
 - ❌ javascript/uraza
 - ❌ javascript/vii5ard-whitelips-ide
 - javascript/wdalmut/whitespacec
