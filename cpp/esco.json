@@ -12,6 +12,16 @@
     "https://sourceforge.net/projects/esco/",
     "http://esco.sourceforge.net/"
   ],
+  "whitespace": { "extension": "ws" },
+  "programs": [
+    { "path": "scripts/ws/calc.ws", "equivalent": "calc.ws", "spec_version": "0.2" },
+    { "path": "scripts/ws/count.ws", "equivalent": "count.ws", "spec_version": "0.2" },
+    { "path": "scripts/ws/fact.ws", "equivalent": "fact.ws", "spec_version": "0.2" },
+    { "path": "scripts/ws/hanoi.ws", "equivalent": "hanoi.ws", "spec_version": "0.2" },
+    { "path": "scripts/ws/hworld.ws", "equivalent": "hworld.ws", "spec_version": "0.2" },
+    { "path": "scripts/ws/loctest.ws", "equivalent": "loctest.ws", "spec_version": "0.3" },
+    { "path": "scripts/ws/name.ws", "equivalent": "name.ws", "spec_version": "0.2" }
+  ],
   "commands": [
     {
       "type": "interpreter",

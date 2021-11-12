@@ -4,11 +4,22 @@
   "authors": ["Kyle Morgan"],
   "license": "GPL-3.0-or-later",
   "languages": ["C++"],
-  "tags": ["interpreter"],
+  "tags": ["interpreter", "programs"],
   "date": "2012-12-29 00:19:16 -0500",
   "spec_version": "0.3",
   "source": ["https://github.com/knmorgan/ws"],
   "bounds": { "precision": "arbitrary" },
+  "whitespace": { "extension": "ws" },
+  "programs": [
+    { "path": "examples/calc.ws", "equivalent": "calc.ws", "spec_version": "0.2" },
+    { "path": "examples/count.ws", "equivalent": "count.ws", "spec_version": "0.2" },
+    { "path": "examples/fact.ws", "equivalent": "fact.ws", "spec_version": "0.2" },
+    { "path": "examples/hanoi.ws", "equivalent": "hanoi.ws", "spec_version": "0.2" },
+    { "path": "examples/hworld.ws", "equivalent": "hworld.ws", "spec_version": "0.2" },
+    { "path": "examples/name.ws", "equivalent": "name.ws", "spec_version": "0.2" },
+    { "path": "examples/quine.ws", "equivalent": "quine.ws", "spec_version": "0.2" },
+    { "path": "examples/yaq.ws", "spec_version": "0.2" }
+  ],
   "commands": [
     {
       "type": "interpreter",

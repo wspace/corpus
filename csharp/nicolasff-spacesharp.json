@@ -9,6 +9,7 @@
   "date": "2008-08-25 08:55:11 +0000",
   "spec_version": "0.3",
   "source": ["https://github.com/nicolasff/spacesharp", "https://spacesharp.batard.info/"],
+  "whitespace": { "extension": "ws" },
   "assembly": {
     "mnemonics": {
       "push": ["Push"],
@@ -37,6 +38,25 @@
       "readi": ["ReadNumber"]
     }
   },
+  "programs": [
+    { "path": "tests/ws/calc.ws", "equivalent": "calc.ws", "spec_version": "0.2" },
+    { "path": "tests/ws/copy.ws", "spec_version": "0.3" },
+    { "path": "tests/ws/count.ws", "equivalent": "count.ws", "spec_version": "0.2" },
+    { "path": "tests/ws/fact.ws", "equivalent": "fact.ws", "spec_version": "0.2" },
+    { "path": "tests/ws/fibonacci.ws", "equivalent": "fibonacci.ws", "spec_version": "0.2" },
+    { "path": "tests/ws/hanoi.ws", "equivalent": "hanoi.ws", "spec_version": "0.2" },
+    { "path": "tests/ws/heap-test.ws", "spec_version": "0.2" },
+    { "path": "tests/ws/hw.ws", "spec_version": "0.2" },
+    { "path": "tests/ws/hworld.ws", "equivalent": "hworld.ws", "spec_version": "0.2" },
+    { "path": "tests/ws/life.ws", "spec_version": "0.2" },
+    { "path": "tests/ws/name.ws", "equivalent": "name.ws", "spec_version": "0.2" },
+    { "path": "tests/ws/quine-2.ws", "equivalent": "quine-2.ws", "spec_version": "0.2" },
+    { "path": "tests/ws/quine.ws", "equivalent": "quine.ws", "spec_version": "0.2" },
+    { "path": "tests/ws/rot13.ws", "equivalent": "rot13.ws", "spec_version": "0.2" },
+    { "path": "tests/ws/subprocs.ws", "spec_version": "0.2" },
+    { "path": "tests/ws/test-arith.ws", "spec_version": "0.2" },
+    { "path": "tests/ws/while-true-do-read-number-add-1-print result.ws", "spec_version": "0.2" }
+  ],
   "commands": [
     {
       "bin": "wsc.exe",

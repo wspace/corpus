@@ -9,7 +9,17 @@
   "spec_version": "0.2",
   "source": ["https://bitbucket.org/StephenPatrick/whitespace-interpreter"],
   "whitespace": { "extension": "ws" },
-  "programs": [{ "path": "conf/predict-superbowl.ws", "spec_version": "0.2" }],
+  "programs": [
+    { "path": "conf/predict-superbowl.ws", "spec_version": "0.2" },
+    { "path": "conf/calc.ws", "equivalent": "calc.ws", "spec_version": "0.2" },
+    { "path": "conf/count.ws", "equivalent": "count.ws", "spec_version": "0.2" },
+    { "path": "conf/fact.ws", "equivalent": "fact.ws", "spec_version": "0.2" },
+    { "path": "conf/fibonacci.ws", "equivalent": "fibonacci.ws", "spec_version": "0.2" },
+    { "path": "conf/hanoi.ws", "equivalent": "hanoi.ws", "spec_version": "0.2" },
+    { "path": "conf/hworld.ws", "equivalent": "hworld.ws", "spec_version": "0.2" },
+    { "path": "conf/name.ws", "equivalent": "name.ws", "spec_version": "0.2" },
+    { "path": "conf/sudoku.ws", "equivalent": "sudoku.ws", "spec_version": "0.3" }
+  ],
   "commands": [
     {
       "type": "interpreter",
