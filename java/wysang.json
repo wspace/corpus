@@ -4,10 +4,10 @@
   "authors": ["wysang"],
   "license": "none",
   "languages": ["Java", "ANTLR"],
-  "tags": ["grammar"],
+  "tags": ["parser", "grammar", "programs"],
   "date": "2018-10-21 19:31:04 -0700",
   "spec_version": "0.3",
-  "source": ["https://github.com/wysang/Whitespace-Compiler"],
+  "source": ["https://github.com/wspace/wysang-java", "https://github.com/wysang/Whitespace-Compiler"],
   "whitespace": { "unimplemented": ["store", "retrieve"], "extension": "whitespace" },
   "assembly": {
     "mnemonics": {
@@ -34,5 +34,20 @@
       "readc": ["readchar"],
       "readi": ["readnum"]
     }
-  }
+  },
+  "programs": [
+    { "path": "helloworld.whitespace", "spec_version": "0.2" },
+    { "path": "test.whitespace", "spec_version": "0.2" }
+  ],
+  "commands": [
+    {
+      "type": "parser",
+      "bin": "LoadWhitespace.class",
+      "install_dependencies": "wget https://www.antlr.org/download/antlr-4.5.2-complete.jar",
+      "build": "javac -cp antlr-4.5.2-complete.jar *.java",
+      "usage": "java -cp .:antlr-4.5.2-complete.jar LoadWhitespace [<file>]",
+      "input": "<file> or stdin",
+      "notes": "Visits instructions in parse-order and executes push and printc on visit. whitespaceParser is manually modified, so a freshly-generated ANTLR parser will not work: `java -jar antlr-4.5.2-complete.jar whitespace.g4`."
+    }
+  ]
 }

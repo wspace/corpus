@@ -268,7 +268,7 @@
 	url = https://github.com/wrotycz/whitespace-interpreter
 [submodule "java/wysang"]
 	path = java/wysang
-	url = https://github.com/wysang/Whitespace-Compiler
+	url = https://github.com/wspace/wysang-java
 [submodule "java/yawkat"]
 	path = java/yawkat
 	url = https://github.com/yawkat/Whitespace

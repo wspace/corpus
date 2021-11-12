@@ -124,7 +124,7 @@ Build and run errors are included.
 - ❌ java/pyeroh
 - ⚠️ java/vyo-kairos/build/libs/vyo-kairos-1.0.0-all.jar: `./gradlew shadowJar`
 - ⚠️ java/wrotycz/target/whitespace-interpreter-1.0-SNAPSHOT.jar: `mvn -Dmaven.compiler.source=1.8 -Dmaven.compiler.target=1.8 package` No main method entrypoint
-- ❌ java/wysang
+- java/wysang/LoadWhitespace.class: `javac -cp antlr-4.5.2-complete.jar *.java`
 - ❌ java/yawkat
 - ❌ java/yuukiaria-wseditor
 - ❌ javascript/arnauld
