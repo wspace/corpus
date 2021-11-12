@@ -15,6 +15,7 @@
     "https://gist.github.com/pik4ez/fb76073886531d9b888a5c86e870bccd",
     "https://gist.github.com/pik4ez/e3d776091bae3a41e18ae1404bdccac1"
   ],
+  "whitespace": { "extension": "ws" },
   "programs": [
     { "path": "brooks.ws", "spec_version": "0.2" },
     { "path": "hopper.ws", "spec_version": "0.2" },

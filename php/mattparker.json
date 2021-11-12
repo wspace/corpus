@@ -11,6 +11,7 @@
     "https://github.com/mattparker/phpwhitespace",
     "https://github.com/domcode/rafflers/tree/master/whitespace-mattp"
   ],
+  "whitespace": { "extension": "ws" },
   "assembly": {
     "mnemonics": {
       "push": ["push"],

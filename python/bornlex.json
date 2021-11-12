@@ -36,10 +36,29 @@
       "readc": ["inc"],
       "readi": ["ini"]
     },
-    "usage": ["enum", "wil files"],
+    "usage": ["enum", "programs"],
     "extension": "wil"
   },
   "mappings": [{ "space": "S", "tab": "T", "lf": "L", "extension": "txt" }],
+  "programs": [
+    { "path": "examples/WIL/dup.wil", "generated": "examples/WIL/dup.ws" },
+    { "path": "examples/WIL/pop_add.wil", "generated": "examples/WIL/pop_add.ws", "spec_version": "0.2" },
+    { "path": "examples/WIL/push_1.wil", "generated": "examples/WIL/push_1.ws", "spec_version": "0.2" },
+    {
+      "path": "examples/WIL/push_dup.wil",
+      "generated": "examples/WIL/push_dup.ws",
+      "spec_version": "0.2"
+    },
+    {
+      "path": "examples/WIL/set_label.wil",
+      "generated": "examples/WIL/set_label.ws",
+      "spec_version": "0.2"
+    },
+    { "path": "examples/push_4.ws", "generated": "examples/push_4.txt" },
+    { "path": "examples/wrong_chars_push_4.ws", "generated": "examples/wrong_chars_push_4.txt" },
+    { "path": "tests/push_4.ws" },
+    { "path": "tests/wrong_chars_push_4.ws" }
+  ],
   "commands": [
     {
       "type": "interpreter",
@@ -49,5 +68,6 @@
       "notes": "Prints instructions before executing"
     },
     { "type": "tests", "bin": "tests.py", "dependencies": ["Python 3"], "usage": "python3 $0" }
-  ]
+  ],
+  "todo": "Figure out how to use .wil files and whether there is an assembler"
 }

@@ -9,6 +9,14 @@
   "spec_version": "0.3",
   "source": ["https://github.com/RuMaxwell/whitespace-interpreter"],
   "whitespace": { "extension": "whitespace" },
+  "programs": [
+    {
+      "path": "factorial.whitespace",
+      "aux": ["factorial - 副本.whitespace", "factorial.comment", "factorial.insts", "factorial.string"],
+      "spec_version": "0.2"
+    },
+    { "path": "factorial (with comments).whitespace", "spec_version": "0.2" }
+  ],
   "commands": [
     {
       "type": "interpreter",

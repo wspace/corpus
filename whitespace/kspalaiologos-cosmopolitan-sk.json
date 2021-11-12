@@ -8,5 +8,6 @@
   "date": "2021-10-31 15:24:19 +0100",
   "spec_version": "0.2",
   "source": ["https://github.com/kspalaiologos/cosmopolitan-sk"],
+  "whitespace": { "extension": "ws" },
   "programs": [{ "path": "sk-whitespace.ws", "spec_version": "0.2" }]
 }

@@ -15,6 +15,7 @@
   "relations": [{ "id": "emacs/lmitchell", "type": "embedded" }],
   "bounds": { "precision": "arbitrary" },
   "behavior": { "eof": "error" },
+  "whitespace": { "extension": "ws" },
   "programs": [
     {
       "path": "examples/hworld.ws",

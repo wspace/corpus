@@ -10,6 +10,7 @@
   "spec_version": "0.3",
   "source": ["https://github.com/qwhxm/baudelaire-whitespace"],
   "relations": [{ "id": "cpp/esco", "type": "binary" }],
+  "whitespace": { "extension": "ws" },
   "programs": [{ "path": "backend/baudelaire.ws", "aux": ["extras/baudelaire_orig.ws"], "spec_version": "0.2" }],
   "commands": [
     {

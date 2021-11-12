@@ -31,7 +31,7 @@ language, including interpreters, compilers, and programs.
 | [Program.java.rb.ws.txt](whitespace/paradoxv5-program-java-rb.json) | ParadoxV5 | Whitespace, Java, Ruby | programs, polyglot | 2021-01-30 | [GitHub](https://github.com/ParadoxV5/Program-java-rb-ws-txt) |
 | [Whitespace exotic programming language interpreter](typescript/fy0u11.json) | Sergey Strigin | TypeScript | interpreter | 2021-01-12 | [GitHub](https://github.com/FY0u11/whitespace-interpreter) |
 | [Whitespace](c/zackeua.json)                       | Zackeus Zetterberg | C, C++, Python | interpreter, programs | 2021-01-10 | [GitHub](https://github.com/zackeua/Whitespace) |
-| [Whitespace Interpreter](python/lachlancourt.json) | Lachlan Court    | Python     | transpiler   | 2021-01-02 | [GitHub](https://github.com/LachlanCourt/whitespace_interpreter) |
+| [Whitespace Transpiler](python/lachlancourt.json)  | Lachlan Court    | Python     | transpiler   | 2021-01-02 | [GitHub](https://github.com/LachlanCourt/whitespace_transpiler) |
 | [asm2ws](c/kspalaiologos-asm2ws.json)              | Kamila Szewczyk (Palaiologos) | C, Yacc, Lex | interpreter, JIT, assembler, disassembler, optimizer, programs | 2020-12-31 | [GitHub](https://github.com/kspalaiologos/asm2ws) |
 | [Whitespace](python/hunminpark.json)               | Hunmin Park      | Python     | assembler, mapping, programs | 2020-12-18 | [GitHub](https://github.com/Avantgarde95/Whitespace) |
 | [Codewars](python/techiehelper-codewars.json)      | TechieHelper     | Python     | interpreter  | 2020-12-17 | [GitHub](https://github.com/TechieHelper/Codewars) |
@@ -249,7 +249,7 @@ language, including interpreters, compilers, and programs.
 | [Colorspace](python/dos1-colorspace.json)          | Sebastian Krzyszkowiak, Agata Kurczewska | Python | image steganography, programs | 2010-11-22 | [GitHub](https://github.com/dos1/colorspace) |
 | [Whitespace.py](python/wasabili.json)              | Yuichi Nishiwaki | Python     | interpreter  | 2010-11-21 | [GitHub Gist](https://gist.github.com/wasabili/708773) |
 | [hws](haskell/takatoh-hws.json)                    | takatoh          | Haskell    | interpreter, programs | 2010-10-29 | [GitHub](https://github.com/takatoh/hws) |
-| [Gorispace](ruby/technohippy-gorispace.json)       | ANDO Yasushi     | Ruby       | interpreter, mapping | 2010-10-13 | [GitHub](https://github.com/technohippy/gorispace), [Esolang](https://esolangs.org/wiki/Gorispace) |
+| [Gorispace](ruby/technohippy-gorispace.json)       | ANDO Yasushi     | Ruby       | interpreter, mapping, programs | 2010-10-13 | [GitHub](https://github.com/technohippy/gorispace), [Esolang](https://esolangs.org/wiki/Gorispace) |
 | [Esoteric Code Interpreter](csharp/rolisoft-esoteric.json) | Roland Bogosi | C#    | interpreter, disassembler | 2010-10-11 | [GitHub](https://github.com/RoliSoft/Esoteric-Code-Interpreter) |
 | [whitespace-go](go/technohippy.json)               | ANDO Yasushi     | Go         | interpreter  | 2010-10-07 | [GitHub](https://github.com/wspace/technohippy-go), [GitHub](https://github.com/technohippy/go-whitespace) |
 | [rIDE (RedlandsIDE)](python/marktraceur-redlandside.json) | Mark Holmquist, Logan May | Python | IDE | 2010-03-24 | [GitHub](https://github.com/MarkTraceur/redlandside), [SourceForge](https://sourceforge.net/projects/redlandside/), [redlandside.sourceforge.net](http://redlandside.sourceforge.net/) |

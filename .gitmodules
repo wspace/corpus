@@ -478,7 +478,7 @@
 	url = https://gist.github.com/K-atc/02b402e9812e066afb78
 [submodule "python/lachlancourt"]
 	path = python/lachlancourt
-	url = https://github.com/LachlanCourt/whitespace_interpreter
+	url = https://github.com/LachlanCourt/whitespace_transpiler
 [submodule "python/marktraceur-redlandside"]
 	path = python/marktraceur-redlandside
 	url = https://github.com/MarkTraceur/redlandside

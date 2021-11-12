@@ -8,5 +8,6 @@
   "date": "2018-08-09 16:36:11 +0900",
   "spec_version": "0.2",
   "source": ["https://github.com/bbvch13531/HelloWhitespace"],
+  "whitespace": { "extension": "ws" },
   "programs": [{ "path": "helloWhitespace.ws", "spec_version": "0.2" }]
 }

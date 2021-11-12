@@ -14,7 +14,8 @@
       { "name": "jzn", "aliases": ["jumpnz"], "args": ["label"] },
       { "name": "jp", "aliases": ["jumpp"], "args": ["label"] },
       { "name": "jnz", "aliases": ["jumppn", "jumpnp"], "args": ["label"] }
-    ]
+    ],
+    "extension": "ws"
   },
   "assembly": {
     "mnemonics": {

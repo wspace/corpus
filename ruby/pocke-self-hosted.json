@@ -16,6 +16,7 @@
     "https://pocke.hatenablog.com/entry/2019/05/06/213209"
   ],
   "relations": [{ "id": "ruby/pocke-akaza", "type": "library" }],
+  "whitespace": { "extension": "ws" },
   "assembly": {
     "mnemonics": {
       "push": ["push_num", "push_ch"],

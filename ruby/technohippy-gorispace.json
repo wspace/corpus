@@ -4,7 +4,7 @@
   "authors": ["ANDO Yasushi"],
   "license": "none",
   "languages": ["Ruby"],
-  "tags": ["interpreter", "mapping"],
+  "tags": ["interpreter", "mapping", "programs"],
   "date": "2010-10-13 23:45:06 +0900",
   "spec_version": "0.3",
   "source": ["https://github.com/technohippy/gorispace", "https://esolangs.org/wiki/Gorispace"],
@@ -13,11 +13,28 @@
     { "space": "ウホ", "tab": "ウッホ", "lf": "ウホーイ", "extension": "gs" },
     { "space": "hoo", "tab": "hoos", "lf": "wraagh", "extension": "gs" }
   ],
+  "programs": [
+    { "path": "samples/calc.gs", "generated": "samples/ws/calc.ws", "spec_version": "0.2" },
+    { "path": "samples/fact.gs", "generated": "samples/ws/fact.ws", "spec_version": "0.2" },
+    { "path": "samples/fibonacci.gs", "generated": "samples/ws/fibonacci.ws", "spec_version": "0.2" },
+    { "path": "samples/hanoi.gs", "generated": "samples/ws/hanoi.ws", "spec_version": "0.2" },
+    { "path": "samples/helloworld.gs", "generated": "samples/ws/helloworld.ws", "spec_version": "0.2" },
+    { "path": "samples/hworld.gs", "generated": "samples/ws/hworld.ws", "spec_version": "0.2" },
+    { "path": "samples/name.gs", "generated": "samples/ws/name.ws", "spec_version": "0.2" },
+    { "path": "samples/en/calc.gs", "generated": "samples/ws/calc.ws", "spec_version": "0.2" },
+    { "path": "samples/en/fact.gs", "generated": "samples/ws/fact.ws", "spec_version": "0.2" },
+    { "path": "samples/en/fibonacci.gs", "generated": "samples/ws/fibonacci.ws", "spec_version": "0.2" },
+    { "path": "samples/en/hanoi.gs", "generated": "samples/ws/hanoi.ws", "spec_version": "0.2" },
+    { "path": "samples/en/helloworld.gs", "generated": "samples/ws/helloworld.ws", "spec_version": "0.2" },
+    { "path": "samples/en/hworld.gs", "generated": "samples/ws/hworld.ws", "spec_version": "0.2" },
+    { "path": "samples/en/name.gs", "generated": "samples/ws/name.ws", "spec_version": "0.2" },
+    { "path": "samples/tutorial.gs", "spec_version": "0.2" }
+  ],
   "commands": [
     {
       "type": "interpreter",
       "bin": "bin/gorispace",
-      "usage": "$0 [-w | --whitespace] [-e | --english] [-c | --convert] [-d | --debug] [-h | --help] <file>",
+      "usage": "ruby ./bin/gorispace [-w | --whitespace] [-e | --english] [-c | --convert] [-d | --debug] [-h | --help] <file>",
       "options": [
         { "short": "w", "long": "whitespace", "desc": "Whitespace mode" },
         { "short": "e", "long": "english", "desc": "English mode" },

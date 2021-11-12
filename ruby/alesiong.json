@@ -9,6 +9,7 @@
   "spec_version": "0.3",
   "source": ["https://github.com/alesiong/whitespace-ruby"],
   "relations": [{ "id": "ruby/wconrad", "type": "fork" }],
+  "whitespace": { "extension": "ws" },
   "assembly": {
     "mnemonics": {
       "push": ["push"],

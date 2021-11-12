@@ -15,7 +15,17 @@
     "https://www.mrphlip.com/pywhitespace.tar.bz2"
   ],
   "whitespace": { "nonstandard": [{ "name": "trace", "seq": "LLT" }], "extension": "ws" },
-  "programs": [{ "path": "examples/chr.ws" }, { "path": "examples/ord.ws" }],
+  "programs": [
+    { "path": "examples/chr.ws", "spec_version": "0.2" },
+    { "path": "examples/ord.ws", "spec_version": "0.2" },
+    { "path": "examples/hworld.ws", "equivalent": "hworld.ws", "spec_version": "0.2" },
+    { "path": "examples/count.ws", "equivalent": "count.ws", "spec_version": "0.2" },
+    { "path": "examples/name.ws", "equivalent": "name.ws", "spec_version": "0.2" },
+    { "path": "examples/calc.ws", "equivalent": "calc.ws", "spec_version": "0.2" },
+    { "path": "examples/fact.ws", "equivalent": "fact.ws", "spec_version": "0.2" },
+    { "path": "examples/hanoi.ws", "equivalent": "hanoi.ws", "spec_version": "0.2" },
+    { "path": "examples/loctest.ws", "equivalent": "loctest.ws", "spec_version": "0.3" }
+  ],
   "commands": [
     {
       "type": "interpreter",

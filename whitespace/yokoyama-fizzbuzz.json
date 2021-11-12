@@ -8,5 +8,6 @@
   "date": "2015-01-29 02:21:34 +0900",
   "spec_version": "0.2",
   "source": ["https://github.com/ait8/fizzbuzz"],
+  "whitespace": { "extension": "ws" },
   "programs": [{ "path": "yokoyama.ws", "spec_version": "0.2" }]
 }

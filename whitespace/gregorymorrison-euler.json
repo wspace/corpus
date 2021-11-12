@@ -8,8 +8,9 @@
   "date": "2016-04-17 15:14:05 -0400",
   "spec_version": "0.2",
   "source": ["https://github.com/gregorymorrison/euler1"],
+  "whitespace": { "extension": "ws" },
   "programs": [
-    { "path": "euler1.ws", "spec_version": "0.2" },
-    { "path": "hworld.ws", "equivalent": "hworld.ws", "spec_version": "0.2" }
+    { "path": "whitespace/euler1.ws", "spec_version": "0.2" },
+    { "path": "whitespace/hworld.ws", "equivalent": "hworld.ws", "spec_version": "0.2" }
   ]
 }

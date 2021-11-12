@@ -13,6 +13,7 @@
     "https://gist.github.com/y-taka-23/7353594",
     "https://gist.github.com/y-taka-23/7353612"
   ],
+  "whitespace": { "extension": "ws" },
   "programs": [
     {
       "path": "whitespace_pumpkin.ws",

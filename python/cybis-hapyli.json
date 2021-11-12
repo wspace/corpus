@@ -19,6 +19,7 @@
     "https://pastebin.com/f761fc4b5"
   ],
   "source_unavailable": true,
+  "whitespace": { "extension": "ws" },
   "assembly": {
     "mnemonics": {
       "push": ["push"],

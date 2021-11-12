@@ -13,6 +13,7 @@
     "https://web.archive.org/web/20150717140342/http://compsoc.dur.ac.uk:80/whitespace/download.php",
     "https://github.com/hostilefork/whitespacers/tree/master/ruby"
   ],
+  "whitespace": { "extension": "ws" },
   "assembly": {
     "mnemonics": {
       "push": ["push"],

@@ -13,5 +13,6 @@
     "https://web.archive.org/web/20150817151110/http://compsoc.dur.ac.uk/archives/whitespace/attachments/20080103/20651c47/attachment.zip",
     "https://www.reddit.com/r/programming/comments/9nw1e/most_unreadable_programming_language_ever/c0dkzzw/"
   ],
+  "whitespace": { "extension": "ws" },
   "programs": [{ "path": "tetris.ws", "spec_version": "0.3" }]
 }

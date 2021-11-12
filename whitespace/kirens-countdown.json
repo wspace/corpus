@@ -8,5 +8,6 @@
   "date": "2016-04-10 19:12:20 +0200",
   "spec_version": "0.2",
   "source": ["https://gist.github.com/Kirens/9e3c99706773335366fa7bbf3cfd592d"],
+  "whitespace": { "extension": "ws" },
   "programs": [{ "path": "main.ws", "spec_version": "0.2" }]
 }

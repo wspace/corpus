@@ -9,6 +9,7 @@
   "spec_version": "0.2",
   "source": ["https://github.com/jarrodparkes/a-z-programming"],
   "relations": [{ "id": "python/tokigun-esotope", "type": "embedded" }],
+  "whitespace": { "extension": "ws" },
   "programs": [
     { "path": "whitespace/src/hello.ws", "spec_version": "0.2" },
     { "path": "whitespace/src/name.ws", "spec_version": "0.2" }

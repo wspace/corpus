@@ -42,7 +42,7 @@
       "number_char": "<number>|'\\x[0-9A-Fa-f]{2}'|-?0x[0-9A-Fa-f]{2}|'\\[abtnvfre\\]'|'[ -!(-\\[\\]-~]'"
     },
     "usage": ["assembler", "programs"],
-    "extension": "wsa"
+    "extension": "wsf"
   },
   "commands": [{ "type": "assembler", "bin": "assemble.sh", "usage": "$0 <file> [<file>...]" }]
 }

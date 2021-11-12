@@ -12,6 +12,7 @@
     "https://www.vim.org/scripts/script.php?script_id=5035",
     "https://github.com/vim-scripts/whitespace-syntax-highlight"
   ],
+  "whitespace": { "extension": "ws" },
   "programs": [
     { "path": "examples/all_opcodes.ws", "spec_version": "0.3" },
     { "path": "examples/mandel.ws", "spec_version": "0.2" }

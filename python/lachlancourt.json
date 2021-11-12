@@ -1,17 +1,25 @@
 {
   "id": "python/lachlancourt",
-  "name": "Whitespace Interpreter",
+  "name": "Whitespace Transpiler",
   "authors": ["Lachlan Court"],
   "license": "none",
   "languages": ["Python"],
   "tags": ["transpiler"],
   "date": "2021-01-02 11:42:27 +1100",
   "spec_version": "0.2",
-  "source": ["https://github.com/LachlanCourt/whitespace_interpreter"],
+  "source": ["https://github.com/LachlanCourt/whitespace_transpiler"],
   "whitespace": {
     "unimplemented": ["label", "call", "jmp", "jz", "jn", "ret", "end", "printc", "printi", "readc", "readi"],
     "extension": "txt"
   },
+  "programs": [
+    { "path": "code.txt", "spec_version": "0.2" },
+    {
+      "path": "Sample whitespace code/Whitespace tutorial.html",
+      "equivalent": "tutorial.html",
+      "spec_version": "0.2"
+    }
+  ],
   "commands": [
     {
       "type": "transpiler",

@@ -8,5 +8,6 @@
   "date": "2020-01-29 01:00:07 -0600",
   "spec_version": "0.2",
   "source": ["https://gist.github.com/Kunde21/f3e7878c92f3a1db2ea31ea1140153ce"],
+  "whitespace": { "extension": "ws" },
   "programs": [{ "path": "challenge.ws", "spec_version": "0.2" }]
 }

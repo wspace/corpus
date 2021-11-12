@@ -48,6 +48,10 @@ update_submodules:
 update_submodules_force:
 	git submodule foreach 'git -C $$toplevel submodule update --remote $$name'
 
+.PHONY: list_submodules
+list_submodules:
+	@git submodule--helper list | cut -b51-
+
 .PHONY: list_project_json
 list_project_json:
 	$(foreach project,$(PROJECTS),$(info $(project)))
@@ -63,6 +67,9 @@ format_tools:
 todo:
 	@echo 'List programs:'
 	@jq -r 'select(.programs==null and (.tags|contains(["programs"]))) | "- \(.id).json"' $(PROJECTS)
+	@echo
+	@echo 'Document Whitespace extension:'
+	@jq -r 'select(.programs!=null and .whitespace.extension==null) | "- \(.id).json"' $(PROJECTS)
 	@echo
 	@echo 'Document assembly dialect:'
 	@jq -r 'select(.assembly.mnemonics == null and (.tags|contains(["assembler"]) or contains(["disassembler"]))) | "- \(.id).json"' $(PROJECTS)

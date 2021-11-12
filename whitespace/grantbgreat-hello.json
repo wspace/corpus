@@ -8,5 +8,6 @@
   "date": "2021-03-23 10:00:55 -0400",
   "spec_version": "0.2",
   "source": ["https://github.com/GrantBGreat/hello-world"],
+  "whitespace": { "extension": "ws" },
   "programs": [{ "path": "Hello_World.ws", "spec_version": "0.2" }]
 }

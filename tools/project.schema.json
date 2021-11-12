@@ -138,7 +138,7 @@
         "type": "object",
         "properties": {
           "id": { "$ref": "#/$defs/id" },
-          "type": { "type": "string", "enum": ["fork", "submodule", "embedded", "library", "binary"] },
+          "type": { "type": "string", "enum": ["fork", "submodule", "embedded", "library", "binary", "assembly"] },
           "commit": { "type": "string" },
           "release": { "type": "string" }
         },

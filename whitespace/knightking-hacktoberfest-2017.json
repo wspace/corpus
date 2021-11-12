@@ -11,5 +11,6 @@
     "https://github.com/knightking100/hello-worlds",
     "https://github.com/knightking100/hello-worlds/pull/160"
   ],
+  "whitespace": { "extension": "ws" },
   "programs": [{ "path": "examples/w/Whitespace.ws", "spec_version": "0.2" }]
 }

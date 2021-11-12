@@ -8,5 +8,6 @@
   "date": "2014-03-03 23:47:39 +0900",
   "spec_version": "0.2",
   "source": ["https://github.com/MakeNowJust/quine"],
+  "whitespace": { "extension": "ws" },
   "programs": [{ "path": "quine.ws", "spec_version": "0.2" }]
 }

@@ -13,6 +13,7 @@
     "https://gist.github.com/0qol/55ab44a35c0faba659448f340af8db70",
     "https://gist.github.com/0qol/a317e241860518a79a36c879e710de38"
   ],
+  "whitespace": { "extension": "ws" },
   "programs": [
     { "path": "checkIfPrimeNumber1.ws", "spec_version": "0.3", "desc": "O(n)" },
     { "path": "checkIfPrimeNumber2.ws", "spec_version": "0.3", "desc": "O(n^(1/2))" },

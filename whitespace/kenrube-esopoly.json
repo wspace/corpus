@@ -8,9 +8,19 @@
   "date": "2016-09-13 12:08:23 +0600",
   "spec_version": "0.2",
   "source": ["https://github.com/kenrube/Esopoly"],
+  "whitespace": { "extension": "ws" },
   "programs": [
     {
       "path": "source",
+      "aux": [
+        "sources/Malbolge/source.mb",
+        "sources/Brainfuck/source.bf",
+        "sources/Whitespace/source.ws",
+        "sources/Spoon/source.spoon",
+        "sources/asdf/source.asdf",
+        "sources/123/source.123",
+        "sources/EXCON/source.excon"
+      ],
       "polyglot": ["Malbolge", "Brainfuck", "Spoon", "asdf", "123", "EXCON"],
       "spec_version": "0.2"
     }

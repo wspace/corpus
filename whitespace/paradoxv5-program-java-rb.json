@@ -8,6 +8,7 @@
   "date": "2021-01-29 22:59:24 -0700",
   "spec_version": "0.2",
   "source": ["https://github.com/ParadoxV5/Program-java-rb-ws-txt"],
+  "whitespace": { "extension": "ws" },
   "programs": [
     {
       "path": "Program.java.rb.ws.txt",

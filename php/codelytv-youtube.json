@@ -9,6 +9,7 @@
   "spec_version": "0.3",
   "source": ["https://github.com/CodelyTV/youtube-code-examples"],
   "relations": [{ "id": "php/igorw", "type": "library" }],
+  "whitespace": { "extension": "ws" },
   "programs": [
     {
       "path": "top-langs-not-to-use/src/output.php",

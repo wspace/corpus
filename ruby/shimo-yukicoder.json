@@ -12,6 +12,7 @@
     "https://github.com/shi-mo/yukicoder",
     "https://yukicoder.me/users/1721"
   ],
+  "whitespace": { "extension": "ws" },
   "assembly": {
     "mnemonics": {
       "push": ["push <number>", "push <char>"],
