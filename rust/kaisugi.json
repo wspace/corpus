@@ -4,10 +4,22 @@
   "authors": ["Kaito Sugimoto"],
   "license": "none",
   "languages": ["Rust"],
-  "tags": ["interpreter", "programs"],
+  "tags": ["interpreter"],
   "date": "2018-11-23 21:35:24 +0900",
   "spec_version": "0.2",
   "source": ["https://github.com/HelloRusk/WhitespaceInterpreter"],
+  "programs": [
+    { "path": "examples/c.ws", "equivalent": "count.ws", "spec_version": "0.2" },
+    { "path": "examples/calc.ws", "equivalent": "calc.ws", "spec_version": "0.2" },
+    { "path": "examples/count.ws", "equivalent": "count.ws", "spec_version": "0.2" },
+    { "path": "examples/fibonacci.ws", "equivalent": "fibonacci.ws", "spec_version": "0.2" },
+    { "path": "examples/hanoi.ws", "equivalent": "hanoi.ws", "spec_version": "0.2" },
+    { "path": "examples/hworld.ws", "equivalent": "hworld.ws", "spec_version": "0.2" },
+    { "path": "examples/name.ws", "equivalent": "name.ws", "spec_version": "0.2" },
+    { "path": "examples/nerd.ws", "equivalent": "nerd.ws", "spec_version": "0.2" },
+    { "path": "examples/quine.ws", "equivalent": "quine.ws", "spec_version": "0.2" },
+    { "path": "examples/quine-2.ws", "equivalent": "quine-2.ws", "spec_version": "0.2" }
+  ],
   "commands": [
     {
       "type": "interpreter",

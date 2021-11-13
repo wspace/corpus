@@ -43,7 +43,7 @@ language, including interpreters, compilers, and programs.
 | [Whitespace Language - Online Translator/Interpreter](php/dcode.json) | dCode | PHP, JavaScript | interpreter, text to Whitespace, mapping | 2020-09-23 | [dcode.fr](https://www.dcode.fr/whitespace-language) |
 | [snakulator](whitespace/elisha-snakulator.json)    | Elisha Hollander | Whitespace | programs     | 2020-09-15 | [GitHub](https://github.com/donno2048/snakulator), [donno2048.github.io](https://donno2048.github.io/snakulator/) |
 | [top-langs-not-to-use](php/codelytv-youtube.json)  | Rafa Gómez       | PHP        | steganography, programs | 2020-08-18 | [GitHub](https://github.com/CodelyTV/youtube-code-examples) |
-| [rustws](rust/luminight.json)                      | Luminight        | Rust       | library, mapping | 2020-08-04 | [GitHub](https://github.com/Luminighty/rustws) |
+| [rustws](rust/luminight.json)                      | Luminight        | Rust       | library, mapping, programs | 2020-08-04 | [GitHub](https://github.com/Luminighty/rustws) |
 | [Whitespace](javascript/kosei.json)                | kosei28          | JavaScript | interpreter  | 2020-08-03 | [GitHub](https://github.com/kosei28/Whitespace) |
 | [SpaceMan](haskell/ft-spaceman.json)               | Frank Terbeck    | Haskell    | interpreter  | 2020-07-09 | [GitLab](https://gitlab.com/ft/spaceman), [GitHub](https://github.com/ft/spaceman), [bewatermyfriend.org](http://bewatermyfriend.org/p/2020/000/), [Hacker News](https://news.ycombinator.com/item?id=24763312) |
 | [codewars.com](javascript/namhle-codewars.json)    | Nam Hoang Le     | JavaScript | interpreter  | 2020-06-09 | [GitHub](https://github.com/nam-hle/codewars.com) |
@@ -82,7 +82,7 @@ language, including interpreters, compilers, and programs.
 | [WhiteSpace assembler/disassembler](ruby/angel.json) | angel-p57      | Ruby, Perl | interpreter, assembler, disassembler, programs | 2018-12-16 | [GitHub](https://github.com/angel-p57/whitespace) |
 | [WhitespaceInterpreter](java/pyeroh.json)          | Quentin de Nanteuil | Java    | interpreter  | 2018-12-14 | [GitHub Gist](https://gist.github.com/Pyeroh/1b2903e53d71e0662d105dc0d6aedbdf) |
 | [Whitespace and Brainfuck](whitespace/wsdt-kevinloveswhitespace.json) | Riedl Kevin | Whitespace | programs | 2018-12-01 | [GitHub](https://github.com/wsdt/WhiteSpace_Brainfuck) |
-| [Whitespace Interpreter](rust/kaisugi.json)        | Kaito Sugimoto   | Rust       | interpreter, programs | 2018-11-23 | [GitHub](https://github.com/HelloRusk/WhitespaceInterpreter) |
+| [Whitespace Interpreter](rust/kaisugi.json)        | Kaito Sugimoto   | Rust       | interpreter  | 2018-11-23 | [GitHub](https://github.com/HelloRusk/WhitespaceInterpreter) |
 | [HoHoHo](python/freyamade-hohoho.json)             | Freya Madeline Broderick, Omar Sallam | Python | mapping, programs | 2018-11-22 | [GitHub](https://github.com/freyamade/hohoho) |
 | [whitespace-interpreter](python/adapap.json)       | Adam Papenhausen | Python     | interpreter  | 2018-11-16 | [GitHub](https://github.com/adapap/whitespace-interpreter) |
 | [whitespace](python/ahl27.json)                    | Aidan Lakshman   | Python     | interpreter, text to Whitespace, programs | 2018-11-08 | [GitHub](https://github.com/ahl27/whitespace) |
@@ -149,7 +149,7 @@ language, including interpreters, compilers, and programs.
 | [whitespace](c/bvisness.json)                      | Ben Visness      | C, Yacc, TextMate | interpreter, syntax highlighting | 2016-05-21 | [GitHub](https://github.com/bvisness/whitespace) |
 | [whiteplanes](python/nutcrack-whiteplanes.json)    | Takuya Katsurada | Python     | interpreter  | 2016-05-13 | [GitHub](https://github.com/wspace/nutcrack-whiteplanes), [PyPI](https://pypi.org/project/whiteplanes/), [whiteplanes.github.io](https://whiteplanes.github.io/) |
 | [Abyad](python/kareeeeem-abyad.json)               | Mohammed Kareem  | Python     | interpreter, program builder, programs | 2016-05-13 | [GitHub](https://github.com/Kareeeeem/abyad) |
-| [Rust-Whitespace](rust/jayshua.json)               | Jayshua Nelson   | Rust       | interpreter  | 2016-05-08 | [GitHub](https://github.com/Jayshua/rust-whitespace) |
+| [Rust-Whitespace](rust/jayshua.json)               | Jayshua Nelson   | Rust       | interpreter, programs | 2016-05-08 | [GitHub](https://github.com/Jayshua/rust-whitespace) |
 | [Whitespace](haskell/matsubara.json)               | 松原信忠 (MATSUBARA Nobutada) | Haskell | interpreter | 2016-05-06 | [GitHub](https://github.com/matsubara0507/whitespace_has) |
 | [whitespace-interpreter](javascript/kanra1412.json) | kanra1412       | JavaScript | interpreter  | 2016-04-29 | [GitHub](https://github.com/kanra1412/whitespace-interpreter) |
 | [Exploring Program Languages](whitespace/gregorymorrison-euler.json) | Gregory Morrison | Whitespace | programs | 2016-04-17 | [GitHub](https://github.com/gregorymorrison/euler1) |
@@ -196,7 +196,7 @@ language, including interpreters, compilers, and programs.
 | [wsm](php/igorw-wsm.json)                          | Igor Wiedler     | PHP        | assembler, programs | 2014-09-27 | [GitHub](https://github.com/igorw/wsm) |
 | [PYWS](python/eizoassik-pyws.json)                 | Eizo Assik       | Python     | interpreter, assembler, disassembler, mapping | 2014-08-28 | [GitHub](https://github.com/EizoAssik/pyws) |
 | [python-whitespace](python/0x55aa.json)            | 0x55aa           | Python     | interpreter, programs | 2014-07-22 | [GitHub](https://github.com/0x55aa/python-whitespace), [0x55aa.com](http://www.0x55aa.com/%E7%AE%97%E6%B3%95-%E7%BC%96%E7%A8%8B/1244.html) |
-| [Albino](rust/faultier-albino.json)                | Taro Sako        | Rust       | interpreter, assembler, disassembler, bytecode, Brainfuck to Whitespace | 2014-07-18 | [GitHub](https://github.com/faultier/albino) |
+| [Albino](rust/faultier-albino.json)                | Taro Sako        | Rust       | interpreter, assembler, disassembler, bytecode, Brainfuck to Whitespace, programs | 2014-07-18 | [GitHub](https://github.com/faultier/albino) |
 | [Whitespace-LLVM](cpp/subv-whitespace-llvm.json)   | Sebastian Valle  | C++, LLVM  | interpreter  | 2014-07-16 | [GitHub](https://github.com/Subv/Whitespace-LLVM) |
 | [Whitebase](rust/faultier-whitebase.json)          | Taro Sako        | Rust       | interpreter, assembler, disassembler, bytecode, Brainfuck to Whitespace, library | 2014-07-15 | [GitHub](https://github.com/faultier/whitebase), [GitHub](https://github.com/wspace/faultier-whitebase) |
 | [BlueSpace](python/smithers-bluespace.json)        | Christopher Smith | Python    | interpreter, compiler, assembler, optimizer, mapping, programs | 2014-07-10 | [GitHub](https://github.com/Smithers888/BlueSpace), [cpjsmith.uk](https://cpjsmith.uk/whitespace), [GitHub](https://github.com/wspace/smithers-bluespace) |

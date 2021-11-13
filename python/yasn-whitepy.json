@@ -9,6 +9,14 @@
   "spec_version": "0.2",
   "source": ["https://github.com/yasn77/whitepy"],
   "package": { "name": "whitepy", "manager": "PyPI", "url": "https://pypi.org/project/whitepy/" },
+  "programs": [
+    { "path": "sample_ws/calc.ws", "equivalent": "calc.ws", "spec_version": "0.2" },
+    { "path": "sample_ws/count.ws", "equivalent": "count.ws", "spec_version": "0.2" },
+    { "path": "sample_ws/fact.ws", "equivalent": "fact.ws", "spec_version": "0.2" },
+    { "path": "sample_ws/fibonacci.ws", "equivalent": "fibonacci.ws", "spec_version": "0.2" },
+    { "path": "sample_ws/hanoi.ws", "equivalent": "hanoi.ws", "spec_version": "0.2" },
+    { "path": "sample_ws/helloworld.ws", "spec_version": "0.2" }
+  ],
   "commands": [
     {
       "type": "interpreter",

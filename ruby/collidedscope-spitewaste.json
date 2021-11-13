@@ -39,6 +39,21 @@
     },
     "extension": "wsa"
   },
+  "programs": [
+    {
+      "path": "demo/factorial.wsa",
+      "aux": ["demo/factorial.asm", "demo/factorial.png", "demo/factorial-nicespace.png"],
+      "spec_version": "0.3"
+    },
+    { "path": "test/fixtures/fizzbuzz.ws", "outputs": ["test/fixtures/fizzbuzz"], "spec_version": "0.2" },
+    { "path": "test/fixtures/random.spw" },
+    {
+      "path": "test/fixtures/ws.spw",
+      "generated": "test/fixtures/ws.ws",
+      "aux": ["test/fixtures/ws.wsa", "test/fixtures/ws.asm"],
+      "spec_version": "0.3"
+    }
+  ],
   "commands": [
     {
       "type": "multiple",
@@ -376,5 +391,6 @@
       ]
     }
   ],
+  "notes": "Also has .asm extension for plain, unformatted Whitespace assembly",
   "todo": "Handle `help` options in schema. Refactor shared options (--format, --aliases, and --coexist) in schema."
 }

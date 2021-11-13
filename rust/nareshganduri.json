@@ -8,6 +8,18 @@
   "date": "2019-05-13 03:46:04 -0500",
   "spec_version": "0.3",
   "source": ["https://github.com/nareshganduri/WhitespaceVM"],
+  "whitespace": { "extension": "ws" },
+  "programs": [
+    { "path": "examples/calc.ws", "equivalent": "calc.ws", "spec_version": "0.2" },
+    { "path": "examples/count.ws", "equivalent": "count.ws", "spec_version": "0.2" },
+    { "path": "examples/fact.ws", "equivalent": "fact.ws", "spec_version": "0.2" },
+    { "path": "examples/fibonacci.ws", "equivalent": "fibonacci.ws", "spec_version": "0.2" },
+    { "path": "examples/hanoi.ws", "equivalent": "hanoi.ws", "spec_version": "0.2" },
+    { "path": "examples/hworld.ws", "equivalent": "hworld.ws", "spec_version": "0.2" },
+    { "path": "examples/loctest.ws", "equivalent": "loctest.ws", "spec_version": "0.3" },
+    { "path": "examples/name.ws", "equivalent": "name.ws", "spec_version": "0.2" },
+    { "path": "examples/sudoku.ws", "equivalent": "sudoku.ws", "spec_version": "0.3" }
+  ],
   "commands": [
     {
       "type": "interpreter",

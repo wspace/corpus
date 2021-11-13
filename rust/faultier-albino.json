@@ -4,7 +4,7 @@
   "authors": ["Taro Sako"],
   "license": "MIT",
   "languages": ["Rust"],
-  "tags": ["interpreter", "assembler", "disassembler", "bytecode", "Brainfuck to Whitespace"],
+  "tags": ["interpreter", "assembler", "disassembler", "bytecode", "Brainfuck to Whitespace", "programs"],
   "date": "2014-07-18 09:13:55 +0900",
   "spec_version": "0.3",
   "source": ["https://github.com/faultier/albino"],
@@ -37,6 +37,10 @@
       "readi": ["GETN"]
     }
   },
+  "programs": [
+    { "path": "examples/fib.ws", "spec_version": "0.2" },
+    { "path": "examples/hello.ws", "equivalent": "hworld.ws", "spec_version": "0.2" }
+  ],
   "commands": [
     {
       "bin": "albino",

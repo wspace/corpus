@@ -4,10 +4,20 @@
   "authors": ["Jayshua Nelson"],
   "license": "none",
   "languages": ["Rust"],
-  "tags": ["interpreter"],
+  "tags": ["interpreter", "programs"],
   "date": "2016-05-08 16:05:03 -0700",
   "spec_version": "0.2",
   "source": ["https://github.com/Jayshua/rust-whitespace"],
+  "programs": [
+    { "path": "examples/calculator.ws", "equivalent": "calc.ws", "spec_version": "0.2" },
+    { "path": "examples/factorial.ws", "equivalent": "fact.ws", "spec_version": "0.2" },
+    { "path": "examples/fibonacci.ws", "equivalent": "fibonacci.ws", "spec_version": "0.2" },
+    { "path": "examples/hello_user.ws", "equivalent": "name.ws", "spec_version": "0.2" },
+    { "path": "examples/hello_world.ws", "equivalent": "hworld.ws", "spec_version": "0.2" },
+    { "path": "examples/rot13.ws", "equivalent": "rot13.ws", "spec_version": "0.2" },
+    { "path": "examples/towers_of_hanoi.ws", "equivalent": "hanoi.ws", "spec_version": "0.2" },
+    { "path": "examples/vigenere.ws", "spec_version": "0.2" }
+  ],
   "commands": [
     {
       "type": "interpreter",

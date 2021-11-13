@@ -23,6 +23,16 @@
       "extension": "wsw"
     }
   ],
+  "programs": [
+    { "path": "examples/calc.ws", "equivalent": "calc.ws", "spec_version": "0.2" },
+    { "path": "examples/count.ws", "equivalent": "count.ws", "spec_version": "0.2" },
+    { "path": "examples/count.wsw", "equivalent": "count.ws", "spec_version": "0.2" },
+    { "path": "examples/fact.ws", "equivalent": "fact.ws", "spec_version": "0.2" },
+    { "path": "examples/hanoi.ws", "equivalent": "hanoi.ws", "spec_version": "0.2" },
+    { "path": "examples/hworld.ws", "equivalent": "hworld.ws", "spec_version": "0.2" },
+    { "path": "examples/loctest.ws", "equivalent": "loctest.ws", "spec_version": "0.3" },
+    { "path": "examples/name.ws", "equivalent": "name.ws", "spec_version": "0.2" }
+  ],
   "commands": [
     {
       "type": "interpreter",
