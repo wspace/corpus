@@ -8,5 +8,12 @@
   "date": "2021-11-14 00:10:01 +0100",
   "spec_version": "0.2",
   "source": ["https://github.com/andrewarchi/euler-ws"],
-  "programs": [{ "path": "euler1.wsf", "spec_version": "0.2" }]
+  "programs": [
+    { "path": "euler1.wsf", "inputs": ["euler1.in"], "spec_version": "0.3" },
+    { "path": "euler2.wsf", "inputs": ["euler2.in"], "spec_version": "0.3" },
+    { "path": "euler4.wsf", "spec_version": "0.3" },
+    { "path": "euler6.wsf", "inputs": ["euler6.in"], "spec_version": "0.3" },
+    { "path": "euler8.wsf", "inputs": ["euler8.in"], "spec_version": "0.3" },
+    { "path": "euler36.wsf", "inputs": ["euler36.in"], "spec_version": "0.3" }
+  ]
 }
