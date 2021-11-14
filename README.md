@@ -1,12 +1,14 @@
 # The Whitespace Corpus
 
-The definitive collection of 271 projects for the Whitespace programming
+The definitive collection of 273 projects for the Whitespace programming
 language, including interpreters, compilers, and programs.
 
 ## Projects
 
 | Name                                               | Authors          | Languages  | Tags         | Date       | Source |
 | -------------------------------------------------- | ---------------- | ---------- | ------------ | ---------- | ------ |
+| [wsbf](brainfuck/andrewarchi-wsbf.json)            | Andrew Archibald | Brainfuck  | interpreter  | 2021-11-14 | [GitHub](https://github.com/andrewarchi/wsbf) |
+| [euler-ws](whitespace/andrewarchi-euler.json)      | Andrew Archibald | Whitespace | programs     | 2021-11-13 | [GitHub](https://github.com/andrewarchi/euler-ws) |
 | [Whitespace interpreter](cpp/shadowmitia.json)     | Dimitri Belopopsky | C++      | interpreter, programs | 2021-11-11 | [GitHub](https://github.com/ShadowMitia/whitespace) |
 | [misc_utilities](go/qeedquan.json)                 | Quan Tran        | Go         | interpreter, disassembler, programs | 2021-11-11 | [GitHub](https://github.com/wspace/qeedquan-go), [GitHub](https://github.com/qeedquan/misc_utilities/tree/master/esolang/whitespace) |
 | [TigerHacks-2021](whitespace/meow-tigerhacks.json) | meow56           | Whitespace | programs     | 2021-11-05 | [GitHub](https://github.com/meow56/tigerhacks-2021) |

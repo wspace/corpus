@@ -1,0 +1,12 @@
+{
+  "id": "brainfuck/andrewarchi-wsbf",
+  "name": "wsbf",
+  "authors": ["Andrew Archibald"],
+  "license": "MPL-2.0",
+  "languages": ["Brainfuck"],
+  "tags": ["interpreter"],
+  "date": "2021-11-14 01:51:27 +0100",
+  "spec_version": "0.3",
+  "source": ["https://github.com/andrewarchi/wsbf"],
+  "commands": [{ "type": "interpreter", "bin": "ws.bf" }]
+}

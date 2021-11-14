@@ -1,0 +1,12 @@
+{
+  "id": "whitespace/andrewarchi-euler",
+  "name": "euler-ws",
+  "authors": ["Andrew Archibald"],
+  "license": "GPL-3.0",
+  "languages": ["Whitespace"],
+  "tags": ["programs"],
+  "date": "2021-11-14 00:10:01 +0100",
+  "spec_version": "0.2",
+  "source": ["https://github.com/andrewarchi/euler-ws"],
+  "programs": [{ "path": "euler1.wsf", "spec_version": "0.2" }]
+}
