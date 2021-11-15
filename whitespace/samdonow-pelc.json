@@ -12,6 +12,7 @@
     "http://pelangchallenge.blogspot.com/2013/09/problem-36-done-in-whitespace.html",
     "https://web.archive.org/web/20130925035813/http://compsoc.dur.ac.uk:80/archives/whitespace/2013-September/000084.html"
   ],
+  "challenges": ["Project Euler"],
   "whitespace": { "extension": "ws" },
   "programs": [{ "path": "e36Comments.ws", "aux": ["e36.ws", "e36NoComments.ws"], "spec_version": "0.3" }]
 }

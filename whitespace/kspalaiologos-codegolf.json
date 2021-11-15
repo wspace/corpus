@@ -1,0 +1,17 @@
+{
+  "id": "whitespace/kspalaiologos-codegolf",
+  "name": "codegolf-submissions",
+  "authors": ["Kamila Szewczyk (Palaiologos)"],
+  "license": "GPL-3.0",
+  "languages": ["Whitespace"],
+  "tags": ["programs"],
+  "date": "2019-08-30 12:16:06 +2000",
+  "spec_version": "0.2",
+  "source": [
+    "https://github.com/kspalaiologos/codegolf-submissions",
+    "https://codegolf.stackexchange.com/questions/55960/im-not-the-language-youre-looking-for/191063#191063"
+  ],
+  "challenges": ["Code Golf"],
+  "programs": [{ "path": "55960.ws", "polyglot": ["Malbolge"], "spec_version": "0.2" }],
+  "notes": "Date from submission date, with timezone from git log"
+}

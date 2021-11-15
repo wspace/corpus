@@ -8,6 +8,6 @@
   "date": "2015-09-28 12:31:30 -0400",
   "spec_version": "0.3",
   "source": ["https://github.com/dalleng/Whitespace"],
-  "commands": [{ "type": "interpreter", "bin": "whitespace.py", "run_errors": "Needs Codewars entrypoint" }],
-  "notes": "Codewars solution"
+  "challenges": ["Codewars"],
+  "commands": [{ "type": "interpreter", "bin": "whitespace.py", "run_errors": "Needs Codewars entrypoint" }]
 }

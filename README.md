@@ -1,6 +1,6 @@
 # The Whitespace Corpus
 
-The definitive collection of 273 projects for the Whitespace programming
+The definitive collection of 274 projects for the Whitespace programming
 language, including interpreters, compilers, and programs.
 
 ## Projects
@@ -65,6 +65,7 @@ language, including interpreters, compilers, and programs.
 | [hello.ws](whitespace/petek-hello.json)            | Peter Koncelik   | Whitespace | programs     | 2019-11-22 | [GitHub](https://github.com/petek222/whitespace) |
 | [whitespace_compiler](cpp/malkiewiczm.json)        | Michael Malkiewicz | C++, Yacc, Lex | language, programs | 2019-10-20 | [GitHub](https://github.com/malkiewiczm/whitespace_compiler) |
 | [Whitespace UnC](python/ilikepython256-whitespace-unc.json) | Python Whiz 256 | Python | assembler, web client, programs | 2019-09-24 | [GitHub](https://github.com/ILikePython256/Whitespace_UnC) |
+| [codegolf-submissions](whitespace/kspalaiologos-codegolf.json) | Kamila Szewczyk (Palaiologos) | Whitespace | programs | 2019-08-29 | [GitHub](https://github.com/kspalaiologos/codegolf-submissions), [Code Golf](https://codegolf.stackexchange.com/questions/55960/im-not-the-language-youre-looking-for/191063#191063) |
 | [zerospace-lang](javascript/loklaan-zerowidth-lang.json) | Lochlan Bunn | JavaScript | interpreter, mapping | 2019-07-25 | [GitHub](https://github.com/loklaan/zerowidth-lang) |
 | [WSC](ocaml/jgkaplan-wsc.json)                     | Joshua Kaplan    | OCaml, Yacc, Lex | language, programs | 2019-07-04 | [GitHub](https://github.com/jgkaplan/whitespaceTranspiler) |
 | [Marginal](haskell/jhmcstanton-marginal.json)      | Jim McStanton    | Haskell, Yacc | interpreter | 2019-06-29 | [GitHub](https://github.com/jhmcstanton/marginal) |
@@ -304,7 +305,7 @@ language, including interpreters, compilers, and programs.
 | Print 0 to 100 without 1-9 characters    | aschepler        | -        | 2021-02-26 19:50:13 +0000 | 0.2 | [Code Golf](https://codegolf.stackexchange.com/questions/219576/print-0-to-100-without-1-9-characters/219869#219869) |
 | Am I divisible by double the sum of my digits? | Kevin Cruijssen | -   | 2021-01-19 08:07:24 +0000 | 0.3 | [Code Golf](https://codegolf.stackexchange.com/questions/129596/am-i-divisible-by-double-the-sum-of-my-digits/217735#217735) |
 | Follow a linked list                     | Kevin Cruijssen  | -        | 2020-12-11 15:28:24 +0000 | 0.2 | [Code Golf](https://codegolf.stackexchange.com/questions/216196/follow-a-linked-list/216208#216208) |
-| 55960.ws                                 | Kamila Szewczyk (Palaiologos) | Malbolge | 2019-08-30 10:16:06 +0000 | 0.2 | [Code Golf](https://codegolf.stackexchange.com/questions/55960/im-not-the-language-youre-looking-for/191063#191063), [GitHub](https://github.com/kspalaiologos/codegolf-submissions/blob/master/55960.ws) |
+| 55960.ws                                 | Kamila Szewczyk (Palaiologos) | Malbolge | 2019-08-30 12:16:06 +2000 | 0.2 | [Code Golf](https://codegolf.stackexchange.com/questions/55960/im-not-the-language-youre-looking-for/191063#191063), [GitHub](https://github.com/kspalaiologos/codegolf-submissions/blob/master/55960.ws) |
 | Determine your language's version        | Andrew Archibald | -        | 2019-08-28 07:54:17 +0000 | 0.2, 0.3 | [Code Golf](https://codegolf.stackexchange.com/questions/139243/determine-your-languages-version/190980#190980) |
 | The shortest code to invert bit-wise a binary string | Kevin Cruijssen | - | 2019-01-03 13:47:44 +0000 | 0.2 | [Code Golf](https://codegolf.stackexchange.com/questions/30361/the-shortest-code-to-invert-bit-wise-a-binary-string/178316#178316) |
 | Implementing a stack                     | Kevin Cruijssen  | -        | 2018-07-27 12:25:19 +0000 | 0.2 | [Code Golf](https://codegolf.stackexchange.com/questions/169343/implementing-a-stack/169353#169353) |

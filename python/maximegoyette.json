@@ -8,6 +8,7 @@
   "date": "2018-03-09 16:19:48 -0500",
   "spec_version": "0.3",
   "source": ["https://github.com/MaximeGoyette/whitespace_interpreter"],
+  "challenges": ["Codewars"],
   "whitespace": {
     "unimplemented": [
       "push",
@@ -43,6 +44,5 @@
       "dependencies": ["Python 3"],
       "run_errors": "Needs Codewars entrypoint"
     }
-  ],
-  "notes": "Partial Codewars solution"
+  ]
 }

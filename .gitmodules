@@ -710,6 +710,9 @@
 [submodule "whitespace/knightking-hacktoberfest-2017"]
 	path = whitespace/knightking-hacktoberfest-2017
 	url = https://github.com/knightking100/hello-worlds
+[submodule "whitespace/kspalaiologos-codegolf"]
+	path = whitespace/kspalaiologos-codegolf
+	url = https://github.com/kspalaiologos/codegolf-submissions
 [submodule "whitespace/kspalaiologos-cosmopolitan-sk"]
 	path = whitespace/kspalaiologos-cosmopolitan-sk
 	url = https://github.com/kspalaiologos/cosmopolitan-sk

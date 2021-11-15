@@ -318,6 +318,7 @@ Build and run errors are included.
 - ❌ whitespace/kenrube-esopoly
 - ❌ whitespace/kirens-countdown
 - ❌ whitespace/knightking-hacktoberfest-2017
+- ❌ whitespace/kspalaiologos-codegolf
 - ❌ whitespace/kspalaiologos-cosmopolitan-sk
 - ❌ whitespace/kunde-hello
 - ❌ whitespace/lucaspiller-never-gonna

@@ -8,6 +8,7 @@
   "date": "2018-05-21 13:44:13 +0200",
   "spec_version": "0.3",
   "source": ["https://github.com/wrotycz/whitespace-interpreter"],
+  "challenges": ["Codewars"],
   "commands": [
     {
       "type": "interpreter",
@@ -15,6 +16,5 @@
       "build": "mvn -Dmaven.compiler.source=1.8 -Dmaven.compiler.target=1.8 package",
       "run_errors": "No main method entrypoint"
     }
-  ],
-  "notes": "Codewars solution"
+  ]
 }

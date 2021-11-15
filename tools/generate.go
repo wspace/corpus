@@ -38,7 +38,8 @@ type Project struct {
 		Commit  string `json:"commit,omitempty"`
 		Release string `json:"release,omitempty"`
 	} `json:"relations,omitempty"`
-	Bounds *struct {
+	Challenges []string `json:"challenges,omitempty"`
+	Bounds     *struct {
 		Precision      string      `json:"precision,omitempty"`
 		ArgPrecision   string      `json:"arg_precision,omitempty"`   // usually the same as precision
 		LabelPrecision string      `json:"label_precision,omitempty"` // usually the same as precision

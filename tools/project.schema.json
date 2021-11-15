@@ -146,6 +146,10 @@
         "additionalProperties": false
       }
     },
+    "challenges": {
+      "type": "array",
+      "items": { "type": "string", "enum": ["Code Golf", "Codewars", "Project Euler", "Rosetta Code", "yukicoder"] }
+    },
     "bounds": {
       "type": "object",
       "properties": {

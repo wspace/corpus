@@ -13,6 +13,7 @@
     "https://threeifbywhiskey.github.io/2014/03/02/in-defense-of-whitespace/",
     "https://github.com/threeifbywhiskey/threeifbywhiskey.github.io/blob/master/_posts/2014-03-02-in-defense-of-whitespace.md"
   ],
+  "challenges": ["Project Euler"],
   "whitespace": { "extension": "ws" },
   "assembly": {
     "mnemonics": {

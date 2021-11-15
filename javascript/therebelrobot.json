@@ -8,6 +8,7 @@
   "date": "2015-09-09 08:16:43 -0700",
   "spec_version": "-",
   "source": ["https://github.com/therebelrobot/whitespace"],
+  "challenges": ["Codewars"],
   "mappings": [{ "space": "s", "tab": "t", "lf": "n", "spaces_between": false }],
   "notes": "Identical to Codewars template"
 }

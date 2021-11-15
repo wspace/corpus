@@ -8,6 +8,7 @@
   "date": "2016-07-24 16:21:22 -0700",
   "spec_version": "0.3",
   "source": ["https://github.com/syntaqx/puzzles"],
+  "challenges": ["Codewars"],
   "commands": [
     {
       "type": "interpreter",
