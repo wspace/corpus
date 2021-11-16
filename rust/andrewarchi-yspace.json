@@ -41,6 +41,8 @@
     { "path": "tests/readc_codepoint.ws", "spec_version": "0.2" },
     { "path": "tests/readc_echo.ws", "spec_version": "0.2" },
     { "path": "tests/readi_echo.ws", "spec_version": "0.2" },
+    { "path": "tests/retrieve_negative.ws", "spec_version": "0.2" },
+    { "path": "tests/retrieve_negative_unused.ws", "spec_version": "0.2" },
     { "path": "tests/retrieve_unset.ws", "spec_version": "0.2" },
     { "path": "tests/retrieve_unset_less.ws", "spec_version": "0.2" },
     { "path": "tests/retrieve_unset_unused.ws", "spec_version": "0.2" },
@@ -49,6 +51,7 @@
     { "path": "tests/slide_zero.ws", "spec_version": "0.3" },
     { "path": "tests/slide_zero_empty.ws", "spec_version": "0.3" },
     { "path": "tests/slide_zero_sign_only.ws", "spec_version": "0.3" },
+    { "path": "tests/store_negative.ws", "spec_version": "0.2" },
     { "path": "tests/undefined_label_call.ws", "spec_version": "0.2" },
     { "path": "tests/undefined_label_jmp.ws", "spec_version": "0.2" },
     { "path": "tests/undefined_label_jn.ws", "spec_version": "0.2" },
@@ -90,5 +93,6 @@
     { "path": "tests/unterminated_label.ws", "spec_version": "0.2" },
     { "path": "tests/unterminated_push.ws", "spec_version": "0.2" },
     { "path": "tests/unterminated_slide.ws", "spec_version": "0.3" }
-  ]
+  ],
+  "commands": [{ "type": "test", "bin": "tests/test.sh", "usage": "cd tests && ./test.sh" }]
 }

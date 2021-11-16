@@ -267,7 +267,7 @@ Build and run errors are included.
   - whitespace
   - whitespace-asm
   - whitespace-disassem
-- ❌ rust/andrewarchi-yspace
+- rust/andrewarchi-yspace/tests/test.sh
 - rust/censoredusername-whitespace-rs/target/release/wsc: `cargo build --release`
 - rust/collidedscope-albus/target/release/albus: `cargo build --release`
 - ⚠️ rust/faultier-albino:

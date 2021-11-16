@@ -10,12 +10,15 @@
   "source": ["https://github.com/andrewarchi/euler-ws"],
   "challenges": ["Project Euler"],
   "programs": [
-    { "path": "euler1.wsf", "inputs": ["euler1.in"], "spec_version": "0.3" },
-    { "path": "euler2.wsf", "inputs": ["euler2.in"], "spec_version": "0.3" },
-    { "path": "euler4.wsf", "spec_version": "0.3" },
-    { "path": "euler6.wsf", "inputs": ["euler6.in"], "spec_version": "0.3" },
-    { "path": "euler8.wsf", "inputs": ["euler8.in"], "spec_version": "0.3" },
-    { "path": "euler14.wsf", "inputs": ["euler14.in"], "spec_version": "0.3" },
-    { "path": "euler36.wsf", "inputs": ["euler36.in"], "spec_version": "0.3" }
+    { "path": "euler1.wsf", "inputs": ["euler1.in"], "outputs": ["euler1.out"], "spec_version": "0.3" },
+    { "path": "euler2.wsf", "inputs": ["euler2.in"], "outputs": ["euler2.out"], "spec_version": "0.3" },
+    { "path": "euler4.wsf", "outputs": ["euler4.out"], "spec_version": "0.3" },
+    { "path": "euler6.wsf", "inputs": ["euler6.in"], "outputs": ["euler6.out"], "spec_version": "0.3" },
+    { "path": "euler8.wsf", "inputs": ["euler8.in"], "outputs": ["euler8.out"], "spec_version": "0.3" },
+    { "path": "euler14.wsf", "inputs": ["euler14.in"], "outputs": ["euler14.out"], "spec_version": "0.3" },
+    { "path": "euler16.wsf", "inputs": ["euler16.in"], "outputs": ["euler16.out"], "spec_version": "0.3" },
+    { "path": "euler17.wsf", "spec_version": "0.3" },
+    { "path": "euler34.wsf", "spec_version": "0.3" },
+    { "path": "euler36.wsf", "inputs": ["euler36.in"], "outputs": ["euler36.out"], "spec_version": "0.3" }
   ]
 }
