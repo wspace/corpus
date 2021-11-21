@@ -656,9 +656,9 @@
 [submodule "whitespace/alicewonderland-hacktoberfest-2017"]
 	path = whitespace/alicewonderland-hacktoberfest-2017
 	url = https://github.com/AliceWonderland/hacktoberfest
-[submodule "whitespace/andrewarchi-euler"]
-	path = whitespace/andrewarchi-euler
-	url = https://github.com/andrewarchi/euler-ws
+[submodule "whitespace/andrewarchi-challenges"]
+	path = whitespace/andrewarchi-challenges
+	url = https://github.com/andrewarchi/ws-challenges
 [submodule "whitespace/andrewarchi-wslib"]
 	path = whitespace/andrewarchi-wslib
 	url = https://github.com/andrewarchi/wslib

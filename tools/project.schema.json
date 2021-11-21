@@ -148,7 +148,10 @@
     },
     "challenges": {
       "type": "array",
-      "items": { "type": "string", "enum": ["Code Golf", "Codewars", "Project Euler", "Rosetta Code", "yukicoder"] }
+      "items": {
+        "type": "string",
+        "enum": ["Code Golf", "Codewars", "Project Euler", "Rosetta Code", "Advent of Code", "yukicoder"]
+      }
     },
     "bounds": {
       "type": "object",
@@ -310,6 +313,8 @@
             "type": "string",
             "examples": [
               "manual",
+              "bash getopt",
+              "bash getopts",
               "C getopt",
               "Clojure clojure.tools.cli",
               "Crystal option_parser",

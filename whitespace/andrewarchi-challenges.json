@@ -1,0 +1,128 @@
+{
+  "id": "whitespace/andrewarchi-challenges",
+  "name": "ws-challenges",
+  "authors": ["Andrew Archibald"],
+  "license": "GPL-3.0",
+  "languages": ["Whitespace"],
+  "tags": ["programs"],
+  "date": "2021-11-14 00:10:01 +0100",
+  "spec_version": "0.3",
+  "source": ["https://github.com/andrewarchi/ws-challenges"],
+  "relations": [{ "id": "rust/andrewarchi-wslib", "type": "library" }],
+  "challenges": ["Project Euler", "Advent of Code"],
+  "programs": [
+    {
+      "path": "advent/2020/1.wsf",
+      "generated": "build/advent/2020/1.ws",
+      "inputs": ["build/advent/2020/1.in"],
+      "outputs": ["build/advent/2020/1.out"],
+      "spec_version": "0.3",
+      "generate": "make WSLIB=../../whitespace/andrewarchi-wslib"
+    },
+    {
+      "path": "euler/1.wsf",
+      "generated": "build/euler/1.ws",
+      "inputs": ["euler/1.in"],
+      "outputs": ["euler/1.out"],
+      "spec_version": "0.3",
+      "generate": "make WSLIB=../../whitespace/andrewarchi-wslib"
+    },
+    {
+      "path": "euler/2.wsf",
+      "generated": "build/euler/2.ws",
+      "inputs": ["euler/2.in"],
+      "outputs": ["euler/2.out"],
+      "spec_version": "0.3",
+      "generate": "make WSLIB=../../whitespace/andrewarchi-wslib"
+    },
+    {
+      "path": "euler/4.wsf",
+      "generated": "build/euler/4.ws",
+      "outputs": ["euler/4.out"],
+      "spec_version": "0.3",
+      "generate": "make WSLIB=../../whitespace/andrewarchi-wslib"
+    },
+    {
+      "path": "euler/6.wsf",
+      "generated": "build/euler/6.ws",
+      "inputs": ["euler/6.in"],
+      "outputs": ["euler/6.out"],
+      "spec_version": "0.3",
+      "generate": "make WSLIB=../../whitespace/andrewarchi-wslib"
+    },
+    {
+      "path": "euler/8.wsf",
+      "generated": "build/euler/8.ws",
+      "inputs": ["euler/8.in"],
+      "outputs": ["euler/8.out"],
+      "spec_version": "0.3",
+      "generate": "make WSLIB=../../whitespace/andrewarchi-wslib"
+    },
+    {
+      "path": "euler/11.wsf",
+      "generated": "build/euler/11.ws",
+      "inputs": ["euler/11.in"],
+      "spec_version": "0.3",
+      "generate": "make WSLIB=../../whitespace/andrewarchi-wslib"
+    },
+    {
+      "path": "euler/13.wsf",
+      "generated": "build/euler/13.ws",
+      "inputs": ["euler/13.in"],
+      "outputs": ["euler/13.out"],
+      "spec_version": "0.2",
+      "generate": "make WSLIB=../../whitespace/andrewarchi-wslib"
+    },
+    {
+      "path": "euler/14.wsf",
+      "generated": "build/euler/14.ws",
+      "inputs": ["euler/14.in"],
+      "outputs": ["euler/14.out"],
+      "spec_version": "0.3",
+      "generate": "make WSLIB=../../whitespace/andrewarchi-wslib"
+    },
+    {
+      "path": "euler/16.wsf",
+      "generated": "build/euler/16.ws",
+      "inputs": ["euler/16.in"],
+      "outputs": ["euler/16.out"],
+      "spec_version": "0.3",
+      "generate": "make WSLIB=../../whitespace/andrewarchi-wslib"
+    },
+    {
+      "path": "euler/17.wsf",
+      "generated": "build/euler/17.ws",
+      "spec_version": "0.3",
+      "generate": "make WSLIB=../../whitespace/andrewarchi-wslib"
+    },
+    {
+      "path": "euler/34.wsf",
+      "generated": "build/euler/34.ws",
+      "spec_version": "0.3",
+      "generate": "make WSLIB=../../whitespace/andrewarchi-wslib"
+    },
+    {
+      "path": "euler/36.wsf",
+      "generated": "build/euler/36.ws",
+      "inputs": ["euler/36.in"],
+      "outputs": ["euler/36.out"],
+      "spec_version": "0.3",
+      "generate": "make WSLIB=../../whitespace/andrewarchi-wslib"
+    },
+    {
+      "path": "euler/40.wsf",
+      "generated": "build/euler/40.ws",
+      "outputs": ["euler/40.out"],
+      "spec_version": "0.3",
+      "generate": "make WSLIB=../../whitespace/andrewarchi-wslib"
+    },
+    {
+      "path": "euler/48.wsf",
+      "generated": "build/euler/48.ws",
+      "outputs": ["euler/48.out"],
+      "spec_version": "0.3",
+      "generate": "make WSLIB=../../whitespace/andrewarchi-wslib"
+    }
+  ],
+  "commands": [{ "type": "test", "bin": "test.sh", "build": "make", "usage": "$0" }]
+}

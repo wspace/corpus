@@ -8,7 +8,7 @@ language, including interpreters, compilers, and programs.
 | Name                                               | Authors          | Languages  | Tags         | Date       | Source |
 | -------------------------------------------------- | ---------------- | ---------- | ------------ | ---------- | ------ |
 | [wsbf](brainfuck/andrewarchi-wsbf.json)            | Andrew Archibald | Brainfuck  | interpreter  | 2021-11-14 | [GitHub](https://github.com/andrewarchi/wsbf) |
-| [euler-ws](whitespace/andrewarchi-euler.json)      | Andrew Archibald | Whitespace | programs     | 2021-11-13 | [GitHub](https://github.com/andrewarchi/euler-ws) |
+| [ws-challenges](whitespace/andrewarchi-challenges.json) | Andrew Archibald | Whitespace | programs | 2021-11-13 | [GitHub](https://github.com/andrewarchi/ws-challenges) |
 | [Whitespace interpreter](cpp/shadowmitia.json)     | Dimitri Belopopsky | C++      | interpreter, programs | 2021-11-11 | [GitHub](https://github.com/ShadowMitia/whitespace) |
 | [misc_utilities](go/qeedquan.json)                 | Quan Tran        | Go         | interpreter, disassembler, programs | 2021-11-11 | [GitHub](https://github.com/wspace/qeedquan-go), [GitHub](https://github.com/qeedquan/misc_utilities/tree/master/esolang/whitespace) |
 | [TigerHacks-2021](whitespace/meow-tigerhacks.json) | meow56           | Whitespace | programs     | 2021-11-05 | [GitHub](https://github.com/meow56/tigerhacks-2021) |
@@ -560,11 +560,14 @@ See [CONTRIBUTING.md](./CONTRIBUTING.md).
   - Codewars:
       [Whitespace Interpreter](https://www.codewars.com/kata/whitespace-interpreter),
       [Convert integer to Whitespace format](https://www.codewars.com/kata/55b350026cc02ac1a7000032)
+  - [Advent of Code](https://adventofcode.com/)
   - [yukicoder](https://yukicoder.me/)
   - Sphere Online Judge: [SBSTR1](https://www.spoj.com/problems/SBSTR1/) ([SO](https://stackoverflow.com/questions/26521780/how-to-check-whether-a-string-is-substring-of-another-in-whitespace))
   - [Baekjoon Online Judge](https://www.acmicpc.net/)
 - Stack Exchange
-  - Code Golf: [Tips for golfing in Whitespace](https://codegolf.stackexchange.com/questions/48442/tips-for-golfing-in-whitespace)
+  - Code Golf:
+      [Tips for golfing in Whitespace](https://codegolf.stackexchange.com/questions/48442/tips-for-golfing-in-whitespace),
+      [Sandbox](https://codegolf.meta.stackexchange.com/questions/2140/sandbox-for-proposed-challenges?answertab=active)
 - Social media
   - Twitter:
       [@edwinbrady](https://twitter.com/edwinbrady),

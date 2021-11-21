@@ -45,14 +45,22 @@
       "type": "interpreter",
       "bin": "wsjq",
       "dependencies": ["jq"],
-      "usage": "$0 [<mode>] <file>",
-      "options": [{ "short": "h", "long": "help", "desc": "Show usage" }],
-      "option_parse": "manual",
+      "usage": "$0 [<mode>] [-h | --help] [-e <behavior> | --on-eof=<behavior>] <file>",
+      "options": [
+        {
+          "short": "e",
+          "long": "on-eof",
+          "arg": "behavior",
+          "arg_required": true,
+          "desc": "Set EOF-handling behavior, which can be \"error\" (like wspace) or an integer (e.g. 0 or -1)."
+        },
+        { "short": "h", "long": "help", "desc": "Show usage." }
+      ],
+      "option_parse": "bash getopts",
       "subcommands": [
         { "name": "run", "desc": "Run the program (default)" },
         { "name": "debug", "desc": "Run the program in the debugger" },
-        { "name": "disasm", "desc": "Disassemble the program" },
-        { "name": "help", "desc": "Show usage" }
+        { "name": "disasm", "desc": "Disassemble the program" }
       ]
     }
   ]
