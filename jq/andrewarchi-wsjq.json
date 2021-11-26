@@ -48,11 +48,28 @@
       "usage": "$0 [<mode>] [-h | --help] [-e <behavior> | --on-eof=<behavior>] <file>",
       "options": [
         {
+          "short": "i",
+          "long": "in-file",
+          "arg": "in_file",
+          "arg_required": true,
+          "desc": "Read from <in_file> for the initial input, then from stdin."
+        },
+        {
           "short": "e",
           "long": "on-eof",
           "arg": "behavior",
           "arg_required": true,
           "desc": "Set EOF-handling behavior, which can be \"error\" (like wspace) or an integer (e.g. 0 or -1)."
+        },
+        {
+          "short": "n",
+          "long": "no-prompt",
+          "desc": "Do not prompt for input. If --in-file is specified, then no input will be prompted after the file has been read."
+        },
+        {
+          "short": "c",
+          "long": "check-clean",
+          "desc": "Assert that the stack is empty and that the program explicitly at the end of execution."
         },
         { "short": "h", "long": "help", "desc": "Show usage." }
       ],

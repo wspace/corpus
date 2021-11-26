@@ -297,7 +297,7 @@ Build and run errors are included.
 - ❌ vim/rolf-ws-vim
 - ❌ whitespace/0qol-prime
 - ❌ whitespace/alicewonderland-hacktoberfest-2017
-- whitespace/andrewarchi-challenges/test.sh: `make`
+- whitespace/andrewarchi-challenges/test.bash: `make`
 - whitespace/andrewarchi-wslib/assemble.sh
 - ❌ whitespace/aniket-hacktoberfest-2018
 - ❌ whitespace/apartmentlist-obfuscated

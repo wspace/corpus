@@ -20,6 +20,22 @@
       "generate": "make WSLIB=../../whitespace/andrewarchi-wslib"
     },
     {
+      "path": "advent/2020/2.wsf",
+      "generated": "build/advent/2020/2.ws",
+      "inputs": ["advent/2020/2.in"],
+      "outputs": ["advent/2020/2.out"],
+      "spec_version": "0.3",
+      "generate": "make WSLIB=../../whitespace/andrewarchi-wslib"
+    },
+    {
+      "path": "advent/2020/3.wsf",
+      "generated": "build/advent/2020/3.ws",
+      "inputs": ["advent/2020/3.in"],
+      "outputs": ["advent/2020/3.out"],
+      "spec_version": "0.3",
+      "generate": "make WSLIB=../../whitespace/andrewarchi-wslib"
+    },
+    {
       "path": "euler/1.wsf",
       "generated": "build/euler/1.ws",
       "inputs": ["euler/1.in"],
@@ -96,6 +112,14 @@
       "generate": "make WSLIB=../../whitespace/andrewarchi-wslib"
     },
     {
+      "path": "euler/25.wsf",
+      "generated": "build/euler/25.ws",
+      "inputs": ["euler/25.in"],
+      "outputs": ["euler/25.out"],
+      "spec_version": "0.3",
+      "generate": "make WSLIB=../../whitespace/andrewarchi-wslib"
+    },
+    {
       "path": "euler/34.wsf",
       "generated": "build/euler/34.ws",
       "spec_version": "0.3",
@@ -124,5 +148,5 @@
       "generate": "make WSLIB=../../whitespace/andrewarchi-wslib"
     }
   ],
-  "commands": [{ "type": "test", "bin": "test.sh", "build": "make", "usage": "$0" }]
+  "commands": [{ "type": "test", "bin": "test.bash", "build": "make", "usage": "$0" }]
 }
