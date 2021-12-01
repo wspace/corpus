@@ -695,6 +695,9 @@
 [submodule "whitespace/jarrodparkes-a-z"]
 	path = whitespace/jarrodparkes-a-z
 	url = https://github.com/jarrodparkes/a-z-programming
+[submodule "whitespace/jermenkoo-spoj"]
+	path = whitespace/jermenkoo-spoj
+	url = https://github.com/jermenkoo/spoj.pl_solutions
 [submodule "whitespace/jonstites-hello"]
 	path = whitespace/jonstites-hello
 	url = https://gist.github.com/jonstites/16784b5c1fb0c1e580d698bb13d4f50f
@@ -767,6 +770,9 @@
 [submodule "whitespace/shotastage-hello"]
 	path = whitespace/shotastage-hello
 	url = https://gist.github.com/shotastage/5a991d828e510459488c66a7994df859
+[submodule "whitespace/t3nsor-spoj"]
+	path = whitespace/t3nsor-spoj
+	url = https://github.com/t3nsor/SPOJ
 [submodule "whitespace/techvstechie"]
 	path = whitespace/techvstechie
 	url = https://gist.github.com/techVstechie/a1af13232e5c8145ffb770884d32187b

@@ -48,6 +48,11 @@ case of Codewars, interpreters for Whitespace.
 - [go/andrewarchi-nebula](go/andrewarchi-nebula.json)
 - [whitespace/andrewarchi-challenges](whitespace/andrewarchi-challenges.json)
 
+## Sphere Online Judge
+
+- [whitespace/jermenkoo-spoj](whitespace/jermenkoo-spoj.json)
+- [whitespace/t3nsor-spoj](whitespace/t3nsor-spoj.json)
+
 ## yukicoder
 
 - [cpp/buyoh-nospace](cpp/buyoh-nospace.json)

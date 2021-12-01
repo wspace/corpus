@@ -311,6 +311,7 @@ Build and run errors are included.
 - ❌ whitespace/grantbgreat-hello
 - ❌ whitespace/gregorymorrison-euler
 - ❌ whitespace/jarrodparkes-a-z
+- ❌ whitespace/jermenkoo-spoj
 - ❌ whitespace/jonstites-hello
 - whitespace/keen-whitelie:
   - asm.rb
@@ -337,6 +338,7 @@ Build and run errors are included.
 - ❌ whitespace/rameshdahiya-merry-christmas
 - ❌ whitespace/samdonow-pelc
 - ❌ whitespace/shotastage-hello
+- whitespace/t3nsor-spoj/wstp: `g++ -g -std=c++17 -o $0 wstp.cpp`
 - ❌ whitespace/techvstechie
 - ❌ whitespace/tewort-hello
 - ❌ whitespace/trevorbennett-stack-flood

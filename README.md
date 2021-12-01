@@ -1,6 +1,6 @@
 # The Whitespace Corpus
 
-The definitive collection of 275 projects for the Whitespace programming
+The definitive collection of 277 projects for the Whitespace programming
 language, including interpreters, compilers, and programs.
 
 ## Projects
@@ -18,6 +18,7 @@ language, including interpreters, compilers, and programs.
 | [WhitespaceInterpreter](lua/carsonrueber.json)     | Carson Rueber    | Lua        | interpreter, programs | 2021-08-29 | [GitHub](https://github.com/CJ5518/WhitespaceInterpreter) |
 | [Whitespace grammar for GitHub](textmate/andrewarchi-linguist.json) | Andrew Archibald | TextMate | grammar | 2021-08-15 | [GitHub](https://github.com/wspace/wspace-linguist) |
 | [NovaGrammars](textmate/nixinova.json)             | Nixinova         | TextMate   | syntax highlighting, programs | 2021-08-15 | [GitHub](https://github.com/Nixinova/NovaGrammars), [GitHub](https://github.com/github/linguist/discussions/5519#discussioncomment-1185871) |
+| [SPOJ](whitespace/t3nsor-spoj.json)                | Brian Bi         | Whitespace | assembler, programs | 2021-08-11 | [GitHub](https://github.com/t3nsor/SPOJ) |
 | [whitespace-compiler](python/prajwalanand.json)    | Prajwal Anand    | Python     | transpiler, mapping, programs | 2021-07-01 | [GitHub](https://github.com/prajwalanand/whitespace-compiler) |
 | [WhiteSpace program](whitespace/techvstechie.json) | techVstechie     | Whitespace | programs     | 2021-06-30 | [GitHub Gist](https://gist.github.com/techVstechie/a1af13232e5c8145ffb770884d32187b) |
 | [docker-whitespace](docker/bensuperpc.json)        | Bensuperpc       | Docker     | builder      | 2021-06-09 | [GitHub](https://github.com/bensuperpc/docker-whitespace) |
@@ -243,6 +244,7 @@ language, including interpreters, compilers, and programs.
 | [whitespace](cpp/abcsharp.json)                    | abcsharp         | C++        | interpreter  | 2012-10-28 | [GitHub](https://github.com/abcsharp/Whitespace) |
 | [whitespace](ruby/bossiernesto.json)               | Ernesto Bossi    | Ruby       | assembler    | 2012-10-15 | [GitHub](https://github.com/bossiernesto/whitespace) |
 | [Whitespace](java/yawkat.json)                     | Jonas Konrad     | Java       | interpreter  | 2012-10-06 | [GitHub](https://github.com/yawkat/Whitespace) |
+| [spoj.pl solutions](whitespace/jermenkoo-spoj.json) | Jaromir Latal   | Whitespace | programs     | 2012-06-15 | [GitHub](https://github.com/jermenkoo/spoj.pl_solutions) |
 | [Never Gonna Give You Up](whitespace/lucaspiller-never-gonna.json) | Luca Spiller | Whitespace | programs | 2012-06-01 | [GitHub Gist](https://gist.github.com/lucaspiller/2852385) |
 | [trans32.py](python/res-trans32.json)              | r.e.s.           | Python     | Binary Whitespace | 2012-05-30 | [res0001 Google Site (archive)](https://web.archive.org/web/20130510111931/https://sites.google.com/site/res0001/whitespace/programs), [Code Golf](https://codegolf.stackexchange.com/questions/6025/remove-vowels-without-using-too-many-different-characters/6100#6100) |
 | [SignificantWhitespace](javascript/pvdz-significant-whitespace.json) | Peter van der Zee | JavaScript | interpreter | 2012-02-16 | [GitHub](https://github.com/pvdz/SignificantWhitespace), [pvdz.ee](https://pvdz.ee/weblog/246), [js1k.com](https://js1k.com/2012-love/demo/1130) |
@@ -464,7 +466,8 @@ See [CONTRIBUTING.md](./CONTRIBUTING.md).
         [quine.ws](https://github.com/search?o=desc&q=filename%3Aquine.ws+extension%3Aws+-org%3Awspace&s=indexed&type=Code),
         [quine-2.ws](https://github.com/search?o=desc&q=filename%3Aquine-2.ws+extension%3Aws+-org%3Awspace&s=indexed&type=Code),
         [quine-copy.ws](https://github.com/search?o=desc&q=filename%3Aquine-copy.ws+extension%3Aws+-org%3Awspace&s=indexed&type=Code),
-        [rot13.ws](https://github.com/search?o=desc&q=filename%3Arot13.ws+extension%3Aws+-org%3Awspace&s=indexed&type=Code)
+        [rot13.ws](https://github.com/search?o=desc&q=filename%3Arot13.ws+extension%3Aws+-org%3Awspace&s=indexed&type=Code),
+        [sbstr1](https://github.com/search?o=desc&q=filename%3Asbstr1+extension%3Aws+-org%3Awspace&s=indexed&type=Code)
   - GitHub Gist:
       [extension:ws](https://gist.github.com/search?o=desc&q=extension%3Aws&s=updated),
       ["whitespace interpreter"](https://gist.github.com/search?o=desc&q=%22whitespace+interpreter%22&s=updated),

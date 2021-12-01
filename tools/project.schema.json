@@ -150,7 +150,15 @@
       "type": "array",
       "items": {
         "type": "string",
-        "enum": ["Code Golf", "Codewars", "Project Euler", "Rosetta Code", "Advent of Code", "yukicoder"]
+        "enum": [
+          "Advent of Code",
+          "Code Golf",
+          "Codewars",
+          "Project Euler",
+          "Rosetta Code",
+          "Sphere Online Judge",
+          "yukicoder"
+        ]
       }
     },
     "bounds": {
