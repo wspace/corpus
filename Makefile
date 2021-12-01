@@ -2,7 +2,7 @@ PROJECTS = $(filter-out tools/% .% _%, $(wildcard */*.json))
 SUBMODULES = $(PROJECTS:.json=)
 
 .PHONY: all
-all: tidy_submodules licenses README.md assembly.md building.md
+all: tidy_submodules licenses README.md assembly.md building.md challenges.md
 
 .PHONY: format
 format: $(PROJECTS) tools/format/format.go
@@ -25,6 +25,10 @@ assembly.md: $(PROJECTS) tools/generate_assembly.jq
 building.md: $(PROJECTS) tools/generate_building.jq
 	$(info Generating building.md)
 	@jq -rsf tools/generate_building.jq $(PROJECTS) > building.md
+
+challenges.md: $(PROJECTS) tools/generate_challenges.jq
+	$(info Generating challenges.md)
+	@jq -rsf tools/generate_challenges.jq $(PROJECTS) > challenges.md
 
 .PHONY: tidy_submodules
 tidy_submodules: $(PROJECTS) tools/submodules/submodules.go tools/format_gitmodules.sh
