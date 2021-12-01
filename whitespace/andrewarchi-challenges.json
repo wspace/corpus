@@ -9,13 +9,29 @@
   "spec_version": "0.3",
   "source": ["https://github.com/andrewarchi/ws-challenges"],
   "relations": [{ "id": "rust/andrewarchi-wslib", "type": "library" }],
-  "challenges": ["Project Euler", "Advent of Code"],
+  "challenges": ["Project Euler", "Advent of Code", "Rosetta Code", "Code Golf"],
   "programs": [
+    {
+      "path": "advent/2019/1.wsf",
+      "generated": "build/advent/2019/1.ws",
+      "inputs": ["advent/2019/1.in"],
+      "outputs": ["advent/2019/1.out"],
+      "spec_version": "0.3",
+      "generate": "make WSLIB=../../whitespace/andrewarchi-wslib"
+    },
+    {
+      "path": "advent/2019/2.wsf",
+      "generated": "build/advent/2019/2.ws",
+      "inputs": ["advent/2019/2.in"],
+      "outputs": ["advent/2019/2.out"],
+      "spec_version": "0.3",
+      "generate": "make WSLIB=../../whitespace/andrewarchi-wslib"
+    },
     {
       "path": "advent/2020/1.wsf",
       "generated": "build/advent/2020/1.ws",
-      "inputs": ["build/advent/2020/1.in"],
-      "outputs": ["build/advent/2020/1.out"],
+      "inputs": ["advent/2020/1.in"],
+      "outputs": ["advent/2020/1.out"],
       "spec_version": "0.3",
       "generate": "make WSLIB=../../whitespace/andrewarchi-wslib"
     },
@@ -32,6 +48,28 @@
       "generated": "build/advent/2020/3.ws",
       "inputs": ["advent/2020/3.in"],
       "outputs": ["advent/2020/3.out"],
+      "spec_version": "0.3",
+      "generate": "make WSLIB=../../whitespace/andrewarchi-wslib"
+    },
+    {
+      "path": "advent/2020/5.wsf",
+      "generated": "build/advent/2020/5.ws",
+      "inputs": ["advent/2020/5.in"],
+      "outputs": ["advent/2020/5.out"],
+      "spec_version": "0.3",
+      "generate": "make WSLIB=../../whitespace/andrewarchi-wslib"
+    },
+    {
+      "path": "advent/2021/1.wsf",
+      "generated": "build/advent/2021/1.ws",
+      "inputs": ["advent/2021/1.in"],
+      "outputs": ["advent/2021/1.out"],
+      "spec_version": "0.3",
+      "generate": "make WSLIB=../../whitespace/andrewarchi-wslib"
+    },
+    {
+      "path": "codegolf/cowsay.wsf",
+      "generated": "build/codegolf/cowsay.ws",
       "spec_version": "0.3",
       "generate": "make WSLIB=../../whitespace/andrewarchi-wslib"
     },
@@ -108,6 +146,15 @@
     {
       "path": "euler/17.wsf",
       "generated": "build/euler/17.ws",
+      "outputs": ["euler/17.out"],
+      "spec_version": "0.3",
+      "generate": "make WSLIB=../../whitespace/andrewarchi-wslib"
+    },
+    {
+      "path": "euler/22.wsf",
+      "generated": "build/euler/22.ws",
+      "inputs": ["euler/22.in"],
+      "outputs": ["euler/22.out"],
       "spec_version": "0.3",
       "generate": "make WSLIB=../../whitespace/andrewarchi-wslib"
     },
@@ -144,6 +191,62 @@
       "path": "euler/48.wsf",
       "generated": "build/euler/48.ws",
       "outputs": ["euler/48.out"],
+      "spec_version": "0.3",
+      "generate": "make WSLIB=../../whitespace/andrewarchi-wslib"
+    },
+    {
+      "path": "misc/ascii4.wsf",
+      "generated": "build/misc/ascii4.ws",
+      "outputs": ["misc/ascii4.out"],
+      "spec_version": "0.3",
+      "generate": "make WSLIB=../../whitespace/andrewarchi-wslib"
+    },
+    {
+      "path": "rosetta/99_bottles.wsf",
+      "generated": "build/rosetta/99_bottles.ws",
+      "outputs": ["rosetta/99_bottles.out"],
+      "spec_version": "0.3",
+      "generate": "make WSLIB=../../whitespace/andrewarchi-wslib"
+    },
+    {
+      "path": "rosetta/ascii.wsf",
+      "generated": "build/rosetta/ascii.ws",
+      "outputs": ["rosetta/ascii.out"],
+      "spec_version": "0.3",
+      "generate": "make WSLIB=../../whitespace/andrewarchi-wslib"
+    },
+    {
+      "path": "rosetta/binary_digits.wsf",
+      "generated": "build/rosetta/binary_digits.ws",
+      "inputs": ["rosetta/binary_digits.in"],
+      "outputs": ["rosetta/binary_digits.out"],
+      "spec_version": "0.3",
+      "generate": "make WSLIB=../../whitespace/andrewarchi-wslib"
+    },
+    {
+      "path": "rosetta/count_in_octal.wsf",
+      "generated": "build/rosetta/count_in_octal.ws",
+      "spec_version": "0.3",
+      "generate": "make WSLIB=../../whitespace/andrewarchi-wslib"
+    },
+    {
+      "path": "rosetta/fizzbuzz.wsf",
+      "generated": "build/rosetta/fizzbuzz.ws",
+      "outputs": ["rosetta/fizzbuzz.out"],
+      "spec_version": "0.2",
+      "generate": "make WSLIB=../../whitespace/andrewarchi-wslib"
+    },
+    {
+      "path": "rosetta/integer_sequence.wsf",
+      "generated": "build/rosetta/integer_sequence.ws",
+      "spec_version": "0.2",
+      "generate": "make WSLIB=../../whitespace/andrewarchi-wslib"
+    },
+    {
+      "path": "rosetta/palindrome_2_3.wsf",
+      "generated": "build/rosetta/palindrome_2_3.ws",
+      "inputs": ["rosetta/palindrome_2_3.in"],
+      "outputs": ["rosetta/palindrome_2_3.out"],
       "spec_version": "0.3",
       "generate": "make WSLIB=../../whitespace/andrewarchi-wslib"
     }
