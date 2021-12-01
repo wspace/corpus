@@ -292,6 +292,7 @@ Build and run errors are included.
 - ❌ scheme/athos-white-scheme
 - ❌ scheme/niyarin
 - ❌ textmate/andrewarchi-linguist
+- ⚠️ textmate/nixinova/grammars/whitespace.yaml-tmLanguage
 - ❌ textmate/veniversum
 - ⚠️ typescript/fy0u11/dist/Whitespace.js: `npm install && npm run build`
 - ❌ vim/rolf-ws-vim

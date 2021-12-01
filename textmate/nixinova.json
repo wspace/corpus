@@ -1,0 +1,17 @@
+{
+  "id": "textmate/nixinova",
+  "name": "NovaGrammars",
+  "authors": ["Nixinova"],
+  "license": "ISC",
+  "languages": ["TextMate"],
+  "tags": ["syntax highlighting", "programs"],
+  "date": "2021-08-15 15:31:48 +1200",
+  "spec_version": "-",
+  "source": [
+    "https://github.com/Nixinova/NovaGrammars",
+    "https://github.com/github/linguist/discussions/5519#discussioncomment-1185871"
+  ],
+  "programs": [{ "path": "samples/whitespace.ws" }],
+  "commands": [{ "type": "grammar", "bin": "grammars/whitespace.yaml-tmLanguage" }],
+  "notes": "Date from commit that added Whitespace grammar"
+}

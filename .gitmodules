@@ -641,6 +641,9 @@
 [submodule "textmate/andrewarchi-linguist"]
 	path = textmate/andrewarchi-linguist
 	url = https://github.com/wspace/wspace-linguist
+[submodule "textmate/nixinova"]
+	path = textmate/nixinova
+	url = https://github.com/Nixinova/NovaGrammars
 [submodule "textmate/veniversum"]
 	path = textmate/veniversum
 	url = https://github.com/veniversum/language-whitespace

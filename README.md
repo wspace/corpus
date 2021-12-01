@@ -1,6 +1,6 @@
 # The Whitespace Corpus
 
-The definitive collection of 274 projects for the Whitespace programming
+The definitive collection of 275 projects for the Whitespace programming
 language, including interpreters, compilers, and programs.
 
 ## Projects
@@ -17,6 +17,7 @@ language, including interpreters, compilers, and programs.
 | [Whitespace Interpreter](ocaml/steiner.json)       | Brandon Stein    | OCaml, Yacc, Lex | interpreter, programs | 2021-10-22 | [GitHub](https://github.com/steiner26/Whitespace) |
 | [WhitespaceInterpreter](lua/carsonrueber.json)     | Carson Rueber    | Lua        | interpreter, programs | 2021-08-29 | [GitHub](https://github.com/CJ5518/WhitespaceInterpreter) |
 | [Whitespace grammar for GitHub](textmate/andrewarchi-linguist.json) | Andrew Archibald | TextMate | grammar | 2021-08-15 | [GitHub](https://github.com/wspace/wspace-linguist) |
+| [NovaGrammars](textmate/nixinova.json)             | Nixinova         | TextMate   | syntax highlighting, programs | 2021-08-15 | [GitHub](https://github.com/Nixinova/NovaGrammars), [GitHub](https://github.com/github/linguist/discussions/5519#discussioncomment-1185871) |
 | [whitespace-compiler](python/prajwalanand.json)    | Prajwal Anand    | Python     | transpiler, mapping, programs | 2021-07-01 | [GitHub](https://github.com/prajwalanand/whitespace-compiler) |
 | [WhiteSpace program](whitespace/techvstechie.json) | techVstechie     | Whitespace | programs     | 2021-06-30 | [GitHub Gist](https://gist.github.com/techVstechie/a1af13232e5c8145ffb770884d32187b) |
 | [docker-whitespace](docker/bensuperpc.json)        | Bensuperpc       | Docker     | builder      | 2021-06-09 | [GitHub](https://github.com/bensuperpc/docker-whitespace) |
