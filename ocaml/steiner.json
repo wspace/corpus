@@ -44,7 +44,8 @@
       "aux": ["programs/helloworldannotated.ws"],
       "spec_version": "0.2"
     },
-    { "path": "programs/helloworld2.ws", "spec_version": "0.2" }
+    { "path": "programs/helloworld2.ws", "spec_version": "0.2" },
+    { "path": "programs/factorial.ws", "equivalent": "fact.ws", "spec_version": "0.2" }
   ],
   "commands": [
     {

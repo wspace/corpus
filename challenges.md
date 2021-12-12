@@ -50,6 +50,7 @@ case of Codewars, interpreters for Whitespace.
 
 ## Sphere Online Judge
 
+- [whitespace/andrewarchi-challenges](whitespace/andrewarchi-challenges.json)
 - [whitespace/jermenkoo-spoj](whitespace/jermenkoo-spoj.json)
 - [whitespace/t3nsor-spoj](whitespace/t3nsor-spoj.json)
 
