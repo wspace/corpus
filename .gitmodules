@@ -193,6 +193,9 @@
 [submodule "go/qeedquan"]
 	path = go/qeedquan
 	url = https://github.com/wspace/qeedquan-go
+[submodule "go/sampratt"]
+	path = go/sampratt
+	url = https://github.com/samuel-pratt/whitespace-go
 [submodule "go/technohippy"]
 	path = go/technohippy
 	url = https://github.com/wspace/technohippy-go
@@ -233,6 +236,9 @@
 [submodule "haskell/takatoh-hws"]
 	path = haskell/takatoh-hws
 	url = https://github.com/takatoh/hws
+[submodule "haskell/tomihisa-visual"]
+	path = haskell/tomihisa-visual
+	url = https://github.com/tomihisa244/visualWhiteSpace
 [submodule "idris/edwinb-ws-idr"]
 	path = idris/edwinb-ws-idr
 	url = https://github.com/edwinb/WS-idr
@@ -587,6 +593,9 @@
 [submodule "ruby/wconrad"]
 	path = ruby/wconrad
 	url = https://github.com/wspace/wconrad-ruby
+[submodule "ruby/yuta-textproc"]
+	path = ruby/yuta-textproc
+	url = https://github.com/yuta0023/TextProc
 [submodule "rust/andrewarchi-yspace"]
 	path = rust/andrewarchi-yspace
 	url = https://github.com/andrewarchi/yspace

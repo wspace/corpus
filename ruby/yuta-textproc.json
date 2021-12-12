@@ -1,0 +1,24 @@
+{
+  "id": "ruby/yuta-textproc",
+  "name": "TextProc",
+  "authors": ["YutaYamaguchi"],
+  "license": "none",
+  "languages": ["Ruby"],
+  "tags": ["interpreter", "programs"],
+  "date": "2015-11-16 15:17:05 +0900",
+  "spec_version": "0.2",
+  "source": ["https://github.com/yuta0023/TextProc"],
+  "programs": [
+    { "path": "fibonacci.ws", "equivalent": "fibonacci.ws", "spec_version": "0.2" },
+    { "path": "hanoi.ws", "equivalent": "hanoi.ws", "spec_version": "0.2" }
+  ],
+  "commands": [
+    {
+      "type": "interpreter",
+      "bin": "mywhitespace.rb",
+      "usage": "ruby $0 [<file>...]",
+      "input": "concat:<file>... or stdin",
+      "output": "stdout"
+    }
+  ]
+}

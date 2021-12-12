@@ -1,0 +1,21 @@
+{
+  "id": "go/sampratt",
+  "name": "whitespace-go",
+  "authors": ["Sam Pratt"],
+  "license": "MIT",
+  "languages": ["Go"],
+  "tags": ["interpreter", "programs"],
+  "date": "2021-12-10 17:31:15 -0800",
+  "spec_version": "0.3",
+  "source": ["https://github.com/samuel-pratt/whitespace-go"],
+  "programs": [
+    {
+      "path": "examples/hello_world_polyglot.ws",
+      "aux": ["examples/hello_world.ws"],
+      "polyglot": ["Brainfuck"],
+      "equivalent": "Hello, world! (Wikipedia)",
+      "spec_version": "0.2"
+    }
+  ],
+  "commands": [{ "bin": "whitespace-go", "build": "go build", "usage": "$0 <file>" }]
+}

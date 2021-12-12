@@ -1,12 +1,13 @@
 # The Whitespace Corpus
 
-The definitive collection of 277 projects for the Whitespace programming
+The definitive collection of 280 projects for the Whitespace programming
 language, including interpreters, compilers, and programs.
 
 ## Projects
 
 | Name                                               | Authors          | Languages  | Tags         | Date       | Source |
 | -------------------------------------------------- | ---------------- | ---------- | ------------ | ---------- | ------ |
+| [whitespace-go](go/sampratt.json)                  | Sam Pratt        | Go         | interpreter, programs | 2021-12-11 | [GitHub](https://github.com/samuel-pratt/whitespace-go) |
 | [wsbf](brainfuck/andrewarchi-wsbf.json)            | Andrew Archibald | Brainfuck  | interpreter  | 2021-11-14 | [GitHub](https://github.com/andrewarchi/wsbf) |
 | [ws-challenges](whitespace/andrewarchi-challenges.json) | Andrew Archibald | Whitespace | programs | 2021-11-13 | [GitHub](https://github.com/andrewarchi/ws-challenges) |
 | [Whitespace interpreter](cpp/shadowmitia.json)     | Dimitri Belopopsky | C++      | interpreter, programs | 2021-11-11 | [GitHub](https://github.com/ShadowMitia/whitespace) |
@@ -39,6 +40,7 @@ language, including interpreters, compilers, and programs.
 | [asm2ws](c/kspalaiologos-asm2ws.json)              | Kamila Szewczyk (Palaiologos) | C, Yacc, Lex | interpreter, JIT, assembler, disassembler, optimizer, programs | 2020-12-31 | [GitHub](https://github.com/kspalaiologos/asm2ws) |
 | [Whitespace](python/hunminpark.json)               | Hunmin Park      | Python     | assembler, mapping, programs | 2020-12-18 | [GitHub](https://github.com/Avantgarde95/Whitespace) |
 | [Codewars](python/techiehelper-codewars.json)      | TechieHelper     | Python     | interpreter  | 2020-12-17 | [GitHub](https://github.com/TechieHelper/Codewars) |
+| [visualWhiteSpace](haskell/tomihisa-visual.json)   | Tomihisa         | Haskell    | interpreter, mapping, programs | 2020-12-14 | [GitHub](https://github.com/tomihisa244/visualWhiteSpace) |
 | [Spitewaste](ruby/collidedscope-spitewaste.json)   | Collided Scope   | Ruby       | language, assembler, disassembler, syntax highlighter, programs, stdlib | 2020-12-12 | [GitHub](https://github.com/collidedscope/spitewaste) |
 | [Spiceweight](crystal/collidedscope-spiceweight.json) | Collided Scope | Crystal   | interpreter, benchmarking, programs | 2020-12-12 | [GitHub](https://github.com/collidedscope/spiceweight) |
 | [Merry Christmas](whitespace/rameshdahiya-merry-christmas.json) | Ramesh Kumar | Whitespace | programs | 2020-12-10 | [GitHub Gist](https://gist.github.com/rameshdahiya/c5705032173968999ecd0c3c1cf238c7) |
@@ -172,6 +174,7 @@ language, including interpreters, compilers, and programs.
 | [Whitespacing](scala/ojha-whitespacing.json)       | Alexandra Ojha   | Scala      | interpreter  | 2015-12-11 | [GitHub](https://github.com/polyglotpiglet/Whitespacing) |
 | [whitespace](csharp/colchicus.json)                | Colchicus        | C#         | interpreter  | 2015-11-19 | [NuGet](https://www.nuget.org/packages/whitespace/), [GitHub](https://github.com/colchicus/whitespace) |
 | [c2ws](ocaml/matsud-c2ws.json)                     | Daiki Matsunaga  | OCaml      | language compiler | 2015-11-17 | [GitHub](https://github.com/matsud224/c2ws) |
+| [TextProc](ruby/yuta-textproc.json)                | YutaYamaguchi    | Ruby       | interpreter, programs | 2015-11-16 | [GitHub](https://github.com/yuta0023/TextProc) |
 | [callisto](lua/vyo-callisto.json)                  | Manu Weidmann    | Lua        | interpreter  | 2015-10-15 | [GitHub](https://github.com/vyo/callisto) |
 | [Whitespace](python/dalleng.json)                  | Diego Allen      | Python     | interpreter  | 2015-09-28 | [GitHub](https://github.com/dalleng/Whitespace) |
 | [Whitespace](javascript/therebelrobot.json)        | Aster Haven      | JavaScript | mapping      | 2015-09-09 | [GitHub](https://github.com/therebelrobot/whitespace) |
@@ -601,6 +604,9 @@ See [CONTRIBUTING.md](./CONTRIBUTING.md).
       [whitespace (from:edwinbrady)](https://twitter.com/search?q=whitespace%20(from%3Aedwinbrady)),
       [whitespace (to:edwinbrady)](https://twitter.com/search?q=whitespace%20(to%3Aedwinbrady)),
       [whitespace @edwinbrady](https://twitter.com/search?q=whitespace%20(%40edwinbrady))
+  - Reddit:
+      [r/esolangs](https://www.reddit.com/r/esolangs/),
+      [r/ProgrammingLanguages](https://www.reddit.com/r/ProgrammingLanguages/)
   - Hacker News
 - Snippets
   - Pastebin:

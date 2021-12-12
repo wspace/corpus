@@ -42,6 +42,11 @@
     "case_sensitive_instructions": true
   },
   "mappings": [{ "space": "S ", "tab": "T ", "lf": "LF\n", "spaces_between": false }],
+  "programs": [
+    { "path": "hello_worldvanwiki.ws", "equivalent": "Hello, world! (Wikipedia)", "spec_version": "0.2" },
+    { "path": "hello_world(fout).ws", "spec_version": "0.2" },
+    { "path": "hello_world.ws(fout).txt" }
+  ],
   "commands": [
     {
       "type": "interpreter",

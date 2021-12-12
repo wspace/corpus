@@ -95,6 +95,7 @@ Build and run errors are included.
 - go/kinu/whitespace: `go build`
 - go/pocke-gows/gows: `go build`
 - go/qeedquan/whitespace: `go build -o whitespace`
+- go/sampratt/whitespace-go: `go build`
 - go/technohippy/go-whitespace: `go build -o go-whitespace ./src`
 - go/tempxla-go-wspace/bin/go-wspace: `make`
 - go/yshr-wspacego/wspacego: `go build`
@@ -111,6 +112,7 @@ Build and run errors are included.
 - ❌ haskell/matsubara
 - ❌ haskell/soimort-grassmudhorse
 - ⚠️ haskell/takatoh-hws/hws: `make` Needs changes for latest Haskell
+- ⚠️ haskell/tomihisa-visual/*unspecified*
 - ⚠️ idris/edwinb-ws-idr/wspace: `idris --build wspace.ipkg` Needs changes for latest Idris
 - java/abhijitsharma/target/whitespace-1.0.jar: `sed -i '' 's/>1.6</>1.7</' pom.xml && mvn package`
 - ⚠️ java/azige/target/whitespace-interpreter-0.4.jar: `mvn package` org.apache.commons.cli is not packaged in jar
@@ -267,6 +269,7 @@ Build and run errors are included.
   - whitespace
   - whitespace-asm
   - whitespace-disassem
+- ruby/yuta-textproc/mywhitespace.rb
 - rust/andrewarchi-yspace/tests/test.sh
 - rust/censoredusername-whitespace-rs/target/release/wsc: `cargo build --release`
 - rust/collidedscope-albus/target/release/albus: `cargo build --release`
