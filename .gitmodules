@@ -43,6 +43,9 @@
 [submodule "c/strangepan-i-c-whitespace"]
 	path = c/strangepan-i-c-whitespace
 	url = https://github.com/StrangePan/I_C_Whitespace
+[submodule "c/subgeniuskitty-vvhitespace"]
+	path = c/subgeniuskitty-vvhitespace
+	url = https://github.com/subgeniuskitty/vvhitespace
 [submodule "c/tejaskasetty"]
 	path = c/tejaskasetty
 	url = https://gitlab.com/tejaskasetty/ws-compiler.git

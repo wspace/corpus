@@ -31,6 +31,11 @@ Build and run errors are included.
   - wsi: `make`
   - wspacegen: `make`
 - c/strangepan-i-c-whitespace/whitespace: `make`
+- ⚠️ c/subgeniuskitty-vvhitespace:
+  - ⚠️ syntax\_highlighting/vwhitespace.vim
+  - tests/vv\_test.py
+  - vvc: `make`
+  - vvi: `make`
 - c/tejaskasetty/flex-bison/262\_267\_256/ws: `make`
 - c/threeifbywhiskey-blacktime/blacktime: `make`
 - c/threeifbywhiskey-satan/satan: `make`

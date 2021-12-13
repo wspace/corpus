@@ -127,6 +127,7 @@ type Project struct {
 		BeforeSTL      *bool  `json:"before_stl,omitempty"`
 		IgnoreCase     *bool  `json:"ignore_case,omitempty"`
 		Extension      string `json:"extension,omitempty"`
+		Notes          string `json:"notes,omitempty"`
 	} `json:"mappings,omitempty"`
 	Programs []struct {
 		Path        string   `json:"path"`

@@ -273,7 +273,8 @@
           "line_comment": { "$ref": "#/$defs/line_comment" },
           "before_stl": { "type": "boolean" },
           "ignore_case": { "type": "boolean" },
-          "extension": { "type": "string" }
+          "extension": { "type": "string" },
+          "notes": { "type": "string" }
         },
         "required": ["space", "tab", "lf"],
         "additionalProperties": false

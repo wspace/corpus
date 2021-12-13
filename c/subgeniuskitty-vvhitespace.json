@@ -1,0 +1,186 @@
+{
+  "id": "c/subgeniuskitty-vvhitespace",
+  "name": "VVhitespace",
+  "authors": ["Aaron Taylor"],
+  "license": "MIT",
+  "languages": ["C", "Vim script"],
+  "tags": ["interpreter", "mapping", "standard library", "syntax highlighting", "programs"],
+  "date": "2019-07-02 14:48:23 -0700",
+  "spec_version": "0.2",
+  "source": ["https://github.com/subgeniuskitty/vvhitespace"],
+  "assembly": {
+    "mnemonics": {
+      "push": ["PUSH"],
+      "dup": ["DUP"],
+      "swap": ["SWAP"],
+      "drop": ["DROP"],
+      "add": ["ADD"],
+      "sub": ["SUBTRACT"],
+      "mul": ["MULTIPLY"],
+      "div": ["DIVIDE"],
+      "mod": ["MODULO"],
+      "store": ["STORE"],
+      "retrieve": ["LOAD"],
+      "call": ["JSR"],
+      "jmp": ["JMP"],
+      "jz": ["BRZ"],
+      "jn": ["BMI"],
+      "ret": ["RTS"],
+      "end": ["DIE"],
+      "printc": ["PUTCHAR", "PUTC"],
+      "printi": ["PUTDIGIT"],
+      "readc": ["GETCHAR"]
+    },
+    "usage": ["program comments"]
+  },
+  "mappings": [
+    {
+      "space": "S",
+      "tab": "T",
+      "lf": "N",
+      "line_comment": "[^SsTtNnVvAa].*",
+      "ignore_case": true,
+      "extension": "pvvs",
+      "notes": "A line comment starts at the first character that is not in [STNVA], though @ and # are typically used by convention. Strings are denoted with A\"...\". C Preprocessor directives are used."
+    }
+  ],
+  "programs": [
+    {
+      "path": "examples/basic-user-interaction/hello.pvvs",
+      "spec_version": "0.2",
+      "generate": "make -C basic-examples/user-interaction"
+    },
+    {
+      "path": "examples/hello-world/hello.pvvs",
+      "spec_version": "0.2",
+      "generate": "make -C examples/hello-world"
+    },
+    {
+      "path": "examples/hunt-the-wumpus/wump.pvvs",
+      "aux": [
+        "examples/hunt-the-wumpus/wump_conf.pvvs",
+        "examples/hunt-the-wumpus/wump_game.pvvs",
+        "examples/hunt-the-wumpus/wump_init.pvvs",
+        "examples/hunt-the-wumpus/wump_strings.pvvs"
+      ],
+      "spec_version": "0.2",
+      "generate": "make -C examples/hunt-the-wumpus"
+    },
+    { "path": "stdlib/convert.pvvs", "spec_version": "0.2" },
+    { "path": "stdlib/debug.pvvs", "spec_version": "0.2" },
+    { "path": "stdlib/heap.pvvs", "spec_version": "0.2" },
+    { "path": "stdlib/logic.pvvs", "spec_version": "0.2" },
+    { "path": "stdlib/math.pvvs", "spec_version": "0.2" },
+    { "path": "stdlib/stack.pvvs", "spec_version": "0.2" },
+    { "path": "stdlib/stdio.pvvs", "spec_version": "0.2" },
+    { "path": "stdlib/string.pvvs", "spec_version": "0.2" },
+    { "path": "stdlib_tests/0001_dumpstack.pvvs", "spec_version": "0.2" },
+    { "path": "stdlib_tests/0002_stdlib_version.pvvs", "spec_version": "0.2" },
+    { "path": "stdlib_tests/0003_dumpheap.pvvs", "spec_version": "0.2" },
+    { "path": "stdlib_tests/1001_stackrotate.pvvs", "spec_version": "0.2" },
+    { "path": "stdlib_tests/1002_stackrotatereverse.pvvs", "spec_version": "0.2" },
+    { "path": "stdlib_tests/1003_deepdup.pvvs", "spec_version": "0.2" },
+    { "path": "stdlib_tests/2001_spew.pvvs", "spec_version": "0.2" },
+    { "path": "stdlib_tests/2002_slurp.pvvs", "spec_version": "0.2" },
+    { "path": "stdlib_tests/2003_memset.pvvs", "spec_version": "0.2" },
+    { "path": "stdlib_tests/2004_memcpy.pvvs", "spec_version": "0.2" },
+    { "path": "stdlib_tests/2005_memcmp.pvvs", "spec_version": "0.2" },
+    { "path": "stdlib_tests/2006_memsrch.pvvs", "spec_version": "0.2" },
+    { "path": "stdlib_tests/2007_memrand.pvvs", "spec_version": "0.2" },
+    { "path": "stdlib_tests/3001_not.pvvs", "spec_version": "0.2" },
+    { "path": "stdlib_tests/3002_lshift.pvvs", "spec_version": "0.2" },
+    { "path": "stdlib_tests/3003_rshift.pvvs", "spec_version": "0.2" },
+    { "path": "stdlib_tests/3004_and.pvvs", "spec_version": "0.2" },
+    { "path": "stdlib_tests/3005_or.pvvs", "spec_version": "0.2" },
+    { "path": "stdlib_tests/3006_xor.pvvs", "spec_version": "0.2" },
+    { "path": "stdlib_tests/4001_strlen.pvvs", "spec_version": "0.2" },
+    { "path": "stdlib_tests/4002_isdigit.pvvs", "spec_version": "0.2" },
+    { "path": "stdlib_tests/4003_get_user_string.pvvs", "spec_version": "0.2" },
+    { "path": "stdlib_tests/5001_abs.pvvs", "spec_version": "0.2" },
+    { "path": "stdlib_tests/5002_random.pvvs", "spec_version": "0.2" },
+    { "path": "stdlib_tests/5003_gcd.pvvs", "spec_version": "0.2" },
+    { "path": "stdlib_tests/5004_fastrand.pvvs", "spec_version": "0.2" },
+    { "path": "stdlib_tests/6001_printstackstring.pvvs", "spec_version": "0.2" },
+    { "path": "stdlib_tests/6002_printheapstring.pvvs", "spec_version": "0.2" },
+    { "path": "stdlib_tests/6003_printnumbersign.pvvs", "spec_version": "0.2" },
+    { "path": "stdlib_tests/6004_printnumbermagnitude.pvvs", "spec_version": "0.2" },
+    { "path": "stdlib_tests/6005_printstacknumber.pvvs", "spec_version": "0.2" },
+    { "path": "stdlib_tests/6006_printf_staticstackstring.pvvs", "spec_version": "0.2" },
+    { "path": "stdlib_tests/6007_printf_staticheapstring.pvvs", "spec_version": "0.2" },
+    { "path": "stdlib_tests/6008_printf_escapedstackstring.pvvs", "spec_version": "0.2" },
+    { "path": "stdlib_tests/6009_printf_substitutedstackstring.pvvs", "spec_version": "0.2" },
+    { "path": "stdlib_tests/7001_atoi.pvvs", "spec_version": "0.2" },
+    { "path": "tests/0001_push_printchar_exit.pvvs", "spec_version": "0.2" },
+    { "path": "tests/1001_stack_push.pvvs", "spec_version": "0.2" },
+    { "path": "tests/1002_stack_dup.pvvs", "spec_version": "0.2" },
+    { "path": "tests/1003_stack_swap.pvvs", "spec_version": "0.2" },
+    { "path": "tests/1004_stack_drop.pvvs", "spec_version": "0.2" },
+    { "path": "tests/2001_arithmetic_addition.pvvs", "spec_version": "0.2" },
+    { "path": "tests/2002_arithmetic_subtraction.pvvs", "spec_version": "0.2" },
+    { "path": "tests/2003_arithmetic_multiplication.pvvs", "spec_version": "0.2" },
+    { "path": "tests/2004_arithmetic_division.pvvs", "spec_version": "0.2" },
+    { "path": "tests/2005_arithmetic_remainder.pvvs", "spec_version": "0.2" },
+    { "path": "tests/3001_heap.pvvs", "spec_version": "0.2" },
+    { "path": "tests/4001_flowcontrol_exit.pvvs", "spec_version": "0.2" },
+    { "path": "tests/4002_flowcontrol_unconditional_jump_to_label.pvvs", "spec_version": "0.2" },
+    { "path": "tests/4003_flowcontrol_jump_if_tos_is_zero.pvvs", "spec_version": "0.2" },
+    { "path": "tests/4004_flowcontrol_jump_if_tos_is_negative.pvvs", "spec_version": "0.2" },
+    { "path": "tests/4005_flowcontrol_jump_to_subroutine.pvvs", "spec_version": "0.2" },
+    { "path": "tests/4006_flowcontrol_return_from_subroutine.pvvs", "spec_version": "0.2" },
+    { "path": "tests/4100_flowcontrol_branches_not_taken.pvvs", "spec_version": "0.2" },
+    { "path": "tests/5001_io_output_character.pvvs", "spec_version": "0.2" },
+    { "path": "tests/5002_io_output_digit.pvvs", "spec_version": "0.2" },
+    { "path": "tests/5003_io_input_character.pvvs", "spec_version": "0.2" },
+    { "path": "tests/5004_io_input_digit.pvvs", "spec_version": "0.2" },
+    { "path": "tests/6001_push_intmin.pvvs", "spec_version": "0.2" }
+  ],
+  "commands": [
+    {
+      "type": "mapping",
+      "bin": "vvc",
+      "build": "make",
+      "usage": "$0 -i <file> -o <output_file>",
+      "input": "<file>",
+      "output": "<output_file>",
+      "options": [
+        { "short": "h", "desc": "Help (prints this message)" },
+        {
+          "short": "i",
+          "required": true,
+          "arg": "file",
+          "type": "filename",
+          "desc": "Specify a pseudo-VVhitespace source file as input."
+        },
+        {
+          "short": "o",
+          "required": true,
+          "arg": "file",
+          "type": "filename",
+          "desc": "Specify location for VVhitespace output."
+        }
+      ],
+      "option_parse": "C getopt"
+    },
+    {
+      "type": "interpreter",
+      "bin": "vvi",
+      "build": "make",
+      "usage": "$0 -i <file>",
+      "input": "<file>",
+      "options": [
+        { "short": "h", "desc": "Help (prints this message)" },
+        {
+          "short": "i",
+          "required": true,
+          "arg": "file",
+          "type": "filename",
+          "desc": "Specify a VVhitespace source file to interpret."
+        }
+      ],
+      "option_parse": "C getopt"
+    },
+    { "type": "test", "bin": "tests/vv_test.py", "usage": "cd tests && python3 vv_test.py" },
+    { "type": "syntax highlighting", "bin": "syntax_highlighting/vwhitespace.vim" }
+  ],
+  "notes": "Exploits the different interpretations of a program based on starting character (see rationale.md)"
+}

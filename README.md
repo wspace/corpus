@@ -1,6 +1,6 @@
 # The Whitespace Corpus
 
-The definitive collection of 280 projects for the Whitespace programming
+The definitive collection of 281 projects for the Whitespace programming
 language, including interpreters, compilers, and programs.
 
 ## Projects
@@ -72,6 +72,7 @@ language, including interpreters, compilers, and programs.
 | [codegolf-submissions](whitespace/kspalaiologos-codegolf.json) | Kamila Szewczyk (Palaiologos) | Whitespace | programs | 2019-08-29 | [GitHub](https://github.com/kspalaiologos/codegolf-submissions), [Code Golf](https://codegolf.stackexchange.com/questions/55960/im-not-the-language-youre-looking-for/191063#191063) |
 | [zerospace-lang](javascript/loklaan-zerowidth-lang.json) | Lochlan Bunn | JavaScript | interpreter, mapping | 2019-07-25 | [GitHub](https://github.com/loklaan/zerowidth-lang) |
 | [WSC](ocaml/jgkaplan-wsc.json)                     | Joshua Kaplan    | OCaml, Yacc, Lex | language, programs | 2019-07-04 | [GitHub](https://github.com/jgkaplan/whitespaceTranspiler) |
+| [VVhitespace](c/subgeniuskitty-vvhitespace.json)   | Aaron Taylor     | C, Vim script | interpreter, mapping, standard library, syntax highlighting, programs | 2019-07-02 | [GitHub](https://github.com/subgeniuskitty/vvhitespace) |
 | [Marginal](haskell/jhmcstanton-marginal.json)      | Jim McStanton    | Haskell, Yacc | interpreter | 2019-06-29 | [GitHub](https://github.com/jhmcstanton/marginal) |
 | [Eso](scala/dashlambda-eso.json)                   | Dash-Lambda      | Scala      | interpreter, transpiler, assembler, programs | 2019-06-19 | [GitHub](https://github.com/Dash-Lambda/Eso) |
 | [Codewars-algorithms](python/ericpwilliamson-codewars.json) | Eric P Williamson | Python | interpreter | 2019-06-19 | [GitHub](https://github.com/EricPWilliamson/Codewars-algorithms) |
