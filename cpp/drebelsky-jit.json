@@ -1,0 +1,48 @@
+{
+  "id": "cpp/drebelsky-jit",
+  "name": "whitespace-jit",
+  "authors": ["Daniel Rebelsky"],
+  "license": "none",
+  "languages": ["C++"],
+  "tags": ["JIT"],
+  "date": "2021-12-17 14:43:02 -0600",
+  "spec_version": "0.3",
+  "source": ["https://github.com/drebelsky/whitespace-jit"],
+  "assembly": {
+    "mnemonics": {
+      "push": ["PUSH"],
+      "dup": ["DUP"],
+      "copy": ["COPY"],
+      "swap": ["SWAP"],
+      "drop": ["DISCARD"],
+      "slide": ["SLIDE"],
+      "add": ["ADD"],
+      "sub": ["SUB"],
+      "mul": ["MUL"],
+      "div": ["DIV"],
+      "mod": ["MOD"],
+      "store": ["STORE"],
+      "retrieve": ["RETRIEVE"],
+      "label": ["MARK"],
+      "call": ["CALL"],
+      "jmp": ["JUMP"],
+      "jz": ["JZ"],
+      "jn": ["JN"],
+      "ret": ["RET"],
+      "end": ["END"],
+      "printc": ["WRITEC"],
+      "printi": ["WRITEN"],
+      "readc": ["READC"],
+      "readi": ["READN"]
+    }
+  },
+  "commands": [
+    {
+      "type": "jit",
+      "bin": "compile",
+      "build": "make CXXFLAGS='-O3 -Wall -Wpedantic -std=c++17'",
+      "usage": "$0 <use_jit:t|f> <file>",
+      "option_parse": "manual"
+    }
+  ]
+}

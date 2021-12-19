@@ -91,6 +91,9 @@
 [submodule "cpp/dpohanlon-wsint"]
 	path = cpp/dpohanlon-wsint
 	url = https://github.com/wspace/dpohanlon-wsint
+[submodule "cpp/drebelsky-jit"]
+	path = cpp/drebelsky-jit
+	url = https://github.com/drebelsky/whitespace-jit
 [submodule "cpp/esco"]
 	path = cpp/esco
 	url = https://git.code.sf.net/p/esco/code
