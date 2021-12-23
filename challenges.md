@@ -33,6 +33,7 @@ case of Codewars, interpreters for Whitespace.
 - [python/musflood](python/musflood.json)
 - [python/techiehelper-codewars](python/techiehelper-codewars.json)
 - [python/wawrepo-kata](python/wawrepo-kata.json)
+- [typescript/eduardoborsa-codewars](typescript/eduardoborsa-codewars.json)
 - [typescript/fy0u11](typescript/fy0u11.json)
 
 ## Project Euler

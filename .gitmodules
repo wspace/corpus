@@ -662,6 +662,9 @@
 [submodule "textmate/veniversum"]
 	path = textmate/veniversum
 	url = https://github.com/veniversum/language-whitespace
+[submodule "typescript/eduardoborsa-codewars"]
+	path = typescript/eduardoborsa-codewars
+	url = https://github.com/EduardoBorsa/code_wars_exercises
 [submodule "typescript/fy0u11"]
 	path = typescript/fy0u11
 	url = https://github.com/FY0u11/whitespace-interpreter

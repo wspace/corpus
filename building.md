@@ -303,6 +303,7 @@ Build and run errors are included.
 - ❌ textmate/andrewarchi-linguist
 - ⚠️ textmate/nixinova/grammars/whitespace.yaml-tmLanguage
 - ❌ textmate/veniversum
+- ⚠️ typescript/eduardoborsa-codewars/dummy/2/whitespace\_interpreter.ts: Needs Codewars entrypoint
 - ⚠️ typescript/fy0u11/dist/Whitespace.js: `npm install && npm run build`
 - ❌ vim/rolf-ws-vim
 - ❌ whitespace/0qol-prime

@@ -1,12 +1,13 @@
 # The Whitespace Corpus
 
-The definitive collection of 282 projects for the Whitespace programming
+The definitive collection of 283 projects for the Whitespace programming
 language, including interpreters, compilers, and programs.
 
 ## Projects
 
 | Name                                               | Authors          | Languages  | Tags         | Date       | Source |
 | -------------------------------------------------- | ---------------- | ---------- | ------------ | ---------- | ------ |
+| [code_wars_exercises](typescript/eduardoborsa-codewars.json) | Eduardo Borsa | TypeScript | interpreter | 2021-12-21 | [GitHub](https://github.com/EduardoBorsa/code_wars_exercises) |
 | [whitespace-jit](cpp/drebelsky-jit.json)           | Daniel Rebelsky  | C++        | JIT          | 2021-12-17 | [GitHub](https://github.com/drebelsky/whitespace-jit) |
 | [whitespace-go](go/sampratt.json)                  | Sam Pratt        | Go         | interpreter, programs | 2021-12-11 | [GitHub](https://github.com/samuel-pratt/whitespace-go) |
 | [wsbf](brainfuck/andrewarchi-wsbf.json)            | Andrew Archibald | Brainfuck  | interpreter  | 2021-11-14 | [GitHub](https://github.com/andrewarchi/wsbf) |
