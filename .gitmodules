@@ -680,6 +680,9 @@
 [submodule "whitespace/0qol-prime"]
 	path = whitespace/0qol-prime
 	url = https://github.com/wspace/0qol-prime
+[submodule "whitespace/3f"]
+	path = whitespace/3f
+	url = https://github.com/3F/sandbox
 [submodule "whitespace/alicewonderland-hacktoberfest-2017"]
 	path = whitespace/alicewonderland-hacktoberfest-2017
 	url = https://github.com/AliceWonderland/hacktoberfest

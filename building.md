@@ -309,6 +309,7 @@ Build and run errors are included.
 - ⚠️ typescript/fy0u11/dist/Whitespace.js: `npm install && npm run build`
 - ❌ vim/rolf-ws-vim
 - ❌ whitespace/0qol-prime
+- ❌ whitespace/3f
 - ❌ whitespace/alicewonderland-hacktoberfest-2017
 - whitespace/andrewarchi-challenges/test.bash: `make`
 - whitespace/andrewarchi-wslib/assemble.sh

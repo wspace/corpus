@@ -1,0 +1,12 @@
+{
+  "id": "whitespace/3f",
+  "name": "Whitespace-Example1",
+  "authors": ["Denis Kuzmin"],
+  "license": "MIT",
+  "languages": ["Whitespace"],
+  "tags": ["programs"],
+  "date": "2018-04-19 19:12:34 +0300",
+  "spec_version": "0.2",
+  "source": ["https://github.com/3F/sandbox", "https://ideone.com/G1uKlw"],
+  "programs": [{ "path": "Whitespace/Examples/CodeCpp/CodeCpp.ws", "polyglot": ["C++"], "spec_version": "0.2" }]
+}
