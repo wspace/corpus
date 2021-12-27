@@ -725,6 +725,9 @@
 [submodule "whitespace/gregorymorrison-euler"]
 	path = whitespace/gregorymorrison-euler
 	url = https://github.com/gregorymorrison/euler1
+[submodule "whitespace/helowld"]
+	path = whitespace/helowld
+	url = https://github.com/Helowld/Hello-World
 [submodule "whitespace/jarrodparkes-a-z"]
 	path = whitespace/jarrodparkes-a-z
 	url = https://github.com/jarrodparkes/a-z-programming
@@ -743,6 +746,9 @@
 [submodule "whitespace/kenrube-esopoly"]
 	path = whitespace/kenrube-esopoly
 	url = https://github.com/kenrube/Esopoly
+[submodule "whitespace/kirarinsnow"]
+	path = whitespace/kirarinsnow
+	url = https://github.com/KirarinSnow/Google-Code-Jam
 [submodule "whitespace/kirens-countdown"]
 	path = whitespace/kirens-countdown
 	url = https://gist.github.com/Kirens/9e3c99706773335366fa7bbf3cfd592d

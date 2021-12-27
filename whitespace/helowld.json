@@ -1,0 +1,13 @@
+{
+  "id": "whitespace/helowld",
+  "name": "Hello-World",
+  "authors": ["Sharan (rustiever)"],
+  "license": "CC-BY-SA-4.0",
+  "languages": ["Whitespace"],
+  "tags": ["programs", "mapping"],
+  "date": "2020-12-13 20:05:32 +0530",
+  "spec_version": "0.2",
+  "source": ["https://github.com/Helowld/Hello-World"],
+  "mappings": [{ "space": "[Space]", "tab": "[Tab]", "lf": "[LF]" }],
+  "programs": [{ "path": "hello_world.ws", "mapping_index": 0, "spec_version": "0.2" }]
+}

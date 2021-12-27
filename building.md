@@ -311,6 +311,7 @@ Build and run errors are included.
 - whitespace/andrewarchi-challenges/test.bash: `make`
 - whitespace/andrewarchi-wslib/assemble.sh
 - ❌ whitespace/burghard-wsinterws
+- ❌ whitespace/helowld
 - ❌ whitespace/jarrodparkes-a-z
 - whitespace/keen-whitelie:
   - asm.rb

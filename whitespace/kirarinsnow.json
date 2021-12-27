@@ -1,0 +1,12 @@
+{
+  "id": "whitespace/kirarinsnow",
+  "name": "Google-Code-Jam",
+  "authors": ["KirarinSnow"],
+  "license": "GPL-3.0",
+  "languages": ["Whitespace"],
+  "tags": ["programs"],
+  "date": "2010-06-12 16:23:04 -0500",
+  "spec_version": "0.2",
+  "source": ["https://github.com/KirarinSnow/Google-Code-Jam"],
+  "programs": [{ "path": "Practice Contest/A.ws", "spec_version": "0.2" }]
+}
