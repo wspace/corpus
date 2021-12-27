@@ -1,6 +1,6 @@
 # The Whitespace Corpus
 
-The definitive collection of 287 projects for the Whitespace programming
+The definitive collection of 293 projects for the Whitespace programming
 language, including interpreters, compilers, and programs.
 
 ## Projects
@@ -18,6 +18,8 @@ language, including interpreters, compilers, and programs.
 | [cosmopolitan-sk](whitespace/kspalaiologos-cosmopolitan-sk.json) | Kamila Szewczyk (Palaiologos) | Whitespace | programs | 2021-10-31 | [GitHub](https://github.com/kspalaiologos/cosmopolitan-sk) |
 | [whitespace](c/manarice.json)                      | ManaRice         | C          | interpreter, assembler, programs | 2021-10-28 | [GitHub](https://github.com/ManaRice/whitespace) |
 | [Whitespace Interpreter](ocaml/steiner.json)       | Brandon Stein    | OCaml, Yacc, Lex | interpreter, programs | 2021-10-22 | [GitHub](https://github.com/steiner26/Whitespace) |
+| [cerner_2tothe5th](whitespace/truptibaliga-cerner.json) | Trupti Baliga | Whitespace | programs   | 2021-10-06 | [GitHub](https://github.com/Trupti-Baliga/cerner_2tothe5th) |
+| [cerner_2-5](whitespace/srinandanpai-cerner.json)  | Srinandan Pai    | Whitespace | programs     | 2021-10-01 | [GitHub](https://github.com/SrinandanPai/cerner_2-5) |
 | [WhitespaceInterpreter](lua/carsonrueber.json)     | Carson Rueber    | Lua        | interpreter, programs | 2021-08-29 | [GitHub](https://github.com/CJ5518/WhitespaceInterpreter) |
 | [Whitespace grammar for GitHub](textmate/andrewarchi-linguist.json) | Andrew Archibald | TextMate | grammar | 2021-08-15 | [GitHub](https://github.com/wspace/wspace-linguist) |
 | [NovaGrammars](textmate/nixinova.json)             | Nixinova         | TextMate   | syntax highlighting, programs | 2021-08-15 | [GitHub](https://github.com/Nixinova/NovaGrammars), [GitHub](https://github.com/github/linguist/discussions/5519#discussioncomment-1185871) |
@@ -52,6 +54,8 @@ language, including interpreters, compilers, and programs.
 | [whitespace-interpreter](c/cedricschwyter.json)    | Cedric Schwyter  | C          | interpreter, programs | 2020-10-09 | [GitHub](https://github.com/D3PSI/whitespace-interpreter) |
 | [Whitespace Language - Online Translator/Interpreter](php/dcode.json) | dCode | PHP, JavaScript | interpreter, text to Whitespace, mapping | 2020-09-23 | [dcode.fr](https://www.dcode.fr/whitespace-language) |
 | [snakulator](whitespace/elisha-snakulator.json)    | Elisha Hollander | Whitespace | programs     | 2020-09-15 | [GitHub](https://github.com/donno2048/snakulator), [donno2048.github.io](https://donno2048.github.io/snakulator/) |
+| [Repo for 2^5 Coding Competition - Cerner](whitespace/davidjkling-cerner.json) | David J Kling | Whitespace | programs | 2020-09-14 | [GitHub](https://github.com/davidjkling/cerner_2_5_2020) |
+| [Cerner-2_pow_5-2020](whitespace/bsarthak-cerner.json) | Satadru Datta | Whitespace | programs    | 2020-09-08 | [GitHub](https://github.com/bsarthak1803/Cerner-2_pow_5-2020) |
 | [top-langs-not-to-use](php/codelytv-youtube.json)  | Rafa Gómez       | PHP        | steganography, programs | 2020-08-18 | [GitHub](https://github.com/CodelyTV/youtube-code-examples) |
 | [rustws](rust/luminight.json)                      | Luminight        | Rust       | library, mapping, programs | 2020-08-04 | [GitHub](https://github.com/Luminighty/rustws) |
 | [Whitespace](javascript/kosei.json)                | kosei28          | JavaScript | interpreter  | 2020-08-03 | [GitHub](https://github.com/kosei28/Whitespace) |
@@ -73,6 +77,7 @@ language, including interpreters, compilers, and programs.
 | [hello.ws](whitespace/petek-hello.json)            | Peter Koncelik   | Whitespace | programs     | 2019-11-22 | [GitHub](https://github.com/petek222/whitespace) |
 | [whitespace_compiler](cpp/malkiewiczm.json)        | Michael Malkiewicz | C++, Yacc, Lex | language, programs | 2019-10-20 | [GitHub](https://github.com/malkiewiczm/whitespace_compiler) |
 | [Whitespace UnC](python/ilikepython256-whitespace-unc.json) | Python Whiz 256 | Python | assembler, web client, programs | 2019-09-24 | [GitHub](https://github.com/ILikePython256/Whitespace_UnC) |
+| [cerner_2^5_2019](whitespace/lollasravani-cerner.json) | Lolla Sravani Lalitha | Whitespace | programs | 2019-09-13 | [GitHub](https://github.com/lollasravani/cerner_2-5_2019) |
 | [codegolf-submissions](whitespace/kspalaiologos-codegolf.json) | Kamila Szewczyk (Palaiologos) | Whitespace | programs | 2019-08-29 | [GitHub](https://github.com/kspalaiologos/codegolf-submissions), [Code Golf](https://codegolf.stackexchange.com/questions/55960/im-not-the-language-youre-looking-for/191063#191063) |
 | [zerospace-lang](javascript/loklaan-zerowidth-lang.json) | Lochlan Bunn | JavaScript | interpreter, mapping | 2019-07-25 | [GitHub](https://github.com/loklaan/zerowidth-lang) |
 | [WSC](ocaml/jgkaplan-wsc.json)                     | Joshua Kaplan    | OCaml, Yacc, Lex | language, programs | 2019-07-04 | [GitHub](https://github.com/jgkaplan/whitespaceTranspiler) |
@@ -182,6 +187,7 @@ language, including interpreters, compilers, and programs.
 | [c2ws](ocaml/matsud-c2ws.json)                     | Daiki Matsunaga  | OCaml      | language compiler | 2015-11-17 | [GitHub](https://github.com/matsud224/c2ws) |
 | [TextProc](ruby/yuta-textproc.json)                | YutaYamaguchi    | Ruby       | interpreter, programs | 2015-11-16 | [GitHub](https://github.com/yuta0023/TextProc) |
 | [callisto](lua/vyo-callisto.json)                  | Manu Weidmann    | Lua        | interpreter  | 2015-10-15 | [GitHub](https://github.com/vyo/callisto) |
+| [2_power_5](whitespace/rafimo-cerner.json)         | Mohammad Rafi    | Whitespace | programs     | 2015-10-01 | [GitHub](https://github.com/rafimo/2_power_5) |
 | [Whitespace](python/dalleng.json)                  | Diego Allen      | Python     | interpreter  | 2015-09-28 | [GitHub](https://github.com/dalleng/Whitespace) |
 | [Whitespace](javascript/therebelrobot.json)        | Aster Haven      | JavaScript | mapping      | 2015-09-09 | [GitHub](https://github.com/therebelrobot/whitespace) |
 | [whitespacer](javascript/macocha-whitespacer.json) | Maciej Siwek     | JavaScript/React | IDE, interpreter, disassembler | 2015-09-04 | [GitHub](https://github.com/macocha/whitespacer) |
@@ -477,6 +483,7 @@ See [CONTRIBUTING.md](./CONTRIBUTING.md).
         [quine-2.ws](https://github.com/search?o=desc&q=filename%3Aquine-2.ws+extension%3Aws+-org%3Awspace&s=indexed&type=Code),
         [quine-copy.ws](https://github.com/search?o=desc&q=filename%3Aquine-copy.ws+extension%3Aws+-org%3Awspace&s=indexed&type=Code),
         [rot13.ws](https://github.com/search?o=desc&q=filename%3Arot13.ws+extension%3Aws+-org%3Awspace&s=indexed&type=Code),
+        [cerner](https://github.com/search?o=desc&q=cerner+extension%3Aws+-org%3Awspace&s=indexed&type=Code),
         [sbstr1](https://github.com/search?o=desc&q=filename%3Asbstr1+extension%3Aws+-org%3Awspace&s=indexed&type=Code)
   - GitHub Gist:
       [extension:ws](https://gist.github.com/search?o=desc&q=extension%3Aws&s=updated),

@@ -152,6 +152,7 @@
         "type": "string",
         "enum": [
           "Advent of Code",
+          "Cerner 2^5",
           "Code Golf",
           "Codewars",
           "Project Euler",

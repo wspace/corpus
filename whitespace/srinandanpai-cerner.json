@@ -1,0 +1,13 @@
+{
+  "id": "whitespace/srinandanpai-cerner",
+  "name": "cerner_2-5",
+  "authors": ["Srinandan Pai"],
+  "license": "none",
+  "languages": ["Whitespace"],
+  "tags": ["programs"],
+  "date": "2021-10-02 00:14:44 +0530",
+  "spec_version": "0.2",
+  "source": ["https://github.com/SrinandanPai/cerner_2-5"],
+  "challenges": ["Cerner 2^5"],
+  "programs": [{ "path": "day9/days_left.ws", "spec_version": "0.2" }]
+}

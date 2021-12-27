@@ -1,0 +1,13 @@
+{
+  "id": "whitespace/lollasravani-cerner",
+  "name": "cerner_2^5_2019",
+  "authors": ["Lolla Sravani Lalitha"],
+  "license": "none",
+  "languages": ["Whitespace"],
+  "tags": ["programs"],
+  "date": "2019-09-13 14:54:54 +0530",
+  "spec_version": "0.2",
+  "source": ["https://github.com/lollasravani/cerner_2-5_2019"],
+  "challenges": ["Cerner 2^5"],
+  "programs": [{ "path": "WhiteSpace/Day3.ws", "spec_version": "0.2" }]
+}

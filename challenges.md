@@ -10,6 +10,15 @@ case of Codewars, interpreters for Whitespace.
 
 - [whitespace/andrewarchi-challenges](whitespace/andrewarchi-challenges.json)
 
+## Cerner 2^5
+
+- [whitespace/bsarthak-cerner](whitespace/bsarthak-cerner.json)
+- [whitespace/davidjkling-cerner](whitespace/davidjkling-cerner.json)
+- [whitespace/lollasravani-cerner](whitespace/lollasravani-cerner.json)
+- [whitespace/rafimo-cerner](whitespace/rafimo-cerner.json)
+- [whitespace/srinandanpai-cerner](whitespace/srinandanpai-cerner.json)
+- [whitespace/truptibaliga-cerner](whitespace/truptibaliga-cerner.json)
+
 ## Code Golf
 
 - [javascript/arnauld](javascript/arnauld.json)

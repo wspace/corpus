@@ -1,0 +1,13 @@
+{
+  "id": "whitespace/davidjkling-cerner",
+  "name": "Repo for 2^5 Coding Competition - Cerner",
+  "authors": ["David J Kling"],
+  "license": "GPL-3.0",
+  "languages": ["Whitespace"],
+  "tags": ["programs"],
+  "date": "2020-09-14 12:32:44 -0500",
+  "spec_version": "0.3",
+  "source": ["https://github.com/davidjkling/cerner_2_5_2020"],
+  "challenges": ["Cerner 2^5"],
+  "programs": [{ "path": "cerner.ws", "spec_version": "0.3" }]
+}

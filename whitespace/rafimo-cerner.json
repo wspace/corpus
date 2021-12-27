@@ -1,0 +1,16 @@
+{
+  "id": "whitespace/rafimo-cerner",
+  "name": "2_power_5",
+  "authors": ["Mohammad Rafi"],
+  "license": "Apache-2.0",
+  "languages": ["Whitespace"],
+  "tags": ["programs"],
+  "date": "2015-10-02 02:47:21 +0530",
+  "spec_version": "0.2",
+  "source": ["https://github.com/rafimo/2_power_5"],
+  "challenges": ["Cerner 2^5"],
+  "programs": [
+    { "path": "2021/whitespace/see_nothing.ws", "spec_version": "0.2" },
+    { "path": "whitespace/cerner.ws", "spec_version": "0.2" }
+  ]
+}

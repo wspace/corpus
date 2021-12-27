@@ -316,9 +316,11 @@ Build and run errors are included.
 - ❌ whitespace/aniket-hacktoberfest-2018
 - ❌ whitespace/apartmentlist-obfuscated
 - ❌ whitespace/bbvch-hello
+- ❌ whitespace/bsarthak-cerner
 - ❌ whitespace/burghard-wsinterws
 - ❌ whitespace/ccns-chicken
 - ❌ whitespace/chrisnguyen-steganographic-polyglots
+- ❌ whitespace/davidjkling-cerner
 - ❌ whitespace/dcoy-hacktoberfest-2016
 - ❌ whitespace/elisha-snakulator
 - ❌ whitespace/grantbgreat-hello
@@ -336,6 +338,7 @@ Build and run errors are included.
 - ❌ whitespace/kspalaiologos-codegolf
 - ❌ whitespace/kspalaiologos-cosmopolitan-sk
 - ❌ whitespace/kunde-hello
+- ❌ whitespace/lollasravani-cerner
 - ❌ whitespace/lucaspiller-never-gonna
 - ❌ whitespace/makenowjust-quine
 - ❌ whitespace/meow-tigerhacks
@@ -348,14 +351,17 @@ Build and run errors are included.
 - ❌ whitespace/pdewacht-tetris
 - ❌ whitespace/petek-hello
 - ❌ whitespace/pik4ez-ascii
+- ❌ whitespace/rafimo-cerner
 - ❌ whitespace/rameshdahiya-merry-christmas
 - ❌ whitespace/resten-christmas-tree
 - ❌ whitespace/samdonow-pelc
 - ❌ whitespace/shotastage-hello
+- ❌ whitespace/srinandanpai-cerner
 - whitespace/t3nsor-spoj/wstp: `g++ -g -std=c++17 -o $0 wstp.cpp`
 - ❌ whitespace/techvstechie
 - ❌ whitespace/tewort-hello
 - ❌ whitespace/trevorbennett-stack-flood
+- ❌ whitespace/truptibaliga-cerner
 - ❌ whitespace/wsdt-kevinloveswhitespace
 - ❌ whitespace/yokoyama-fizzbuzz
 - ❌ whitespace/ytaka

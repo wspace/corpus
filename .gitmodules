@@ -701,12 +701,18 @@
 [submodule "whitespace/bbvch-hello"]
 	path = whitespace/bbvch-hello
 	url = https://github.com/bbvch13531/HelloWhitespace
+[submodule "whitespace/bsarthak-cerner"]
+	path = whitespace/bsarthak-cerner
+	url = https://github.com/bsarthak1803/Cerner-2_pow_5-2020
 [submodule "whitespace/ccns-chicken"]
 	path = whitespace/ccns-chicken
 	url = https://github.com/ccns/105-club-fair-game-problems
 [submodule "whitespace/chrisnguyen-steganographic-polyglots"]
 	path = whitespace/chrisnguyen-steganographic-polyglots
 	url = https://github.com/uncompiled/steganographic-polyglots
+[submodule "whitespace/davidjkling-cerner"]
+	path = whitespace/davidjkling-cerner
+	url = https://github.com/davidjkling/cerner_2_5_2020
 [submodule "whitespace/dcoy-hacktoberfest-2016"]
 	path = whitespace/dcoy-hacktoberfest-2016
 	url = https://github.com/dcoy/hacktoberfest-dcoy
@@ -752,6 +758,9 @@
 [submodule "whitespace/kunde-hello"]
 	path = whitespace/kunde-hello
 	url = https://gist.github.com/Kunde21/f3e7878c92f3a1db2ea31ea1140153ce
+[submodule "whitespace/lollasravani-cerner"]
+	path = whitespace/lollasravani-cerner
+	url = https://github.com/lollasravani/cerner_2-5_2019
 [submodule "whitespace/lucaspiller-never-gonna"]
 	path = whitespace/lucaspiller-never-gonna
 	url = https://gist.github.com/lucaspiller/2852385
@@ -788,6 +797,9 @@
 [submodule "whitespace/pik4ez-ascii"]
 	path = whitespace/pik4ez-ascii
 	url = https://github.com/wspace/pik4ez-ascii
+[submodule "whitespace/rafimo-cerner"]
+	path = whitespace/rafimo-cerner
+	url = https://github.com/rafimo/2_power_5
 [submodule "whitespace/rameshdahiya-merry-christmas"]
 	path = whitespace/rameshdahiya-merry-christmas
 	url = https://gist.github.com/rameshdahiya/c5705032173968999ecd0c3c1cf238c7
@@ -800,6 +812,9 @@
 [submodule "whitespace/shotastage-hello"]
 	path = whitespace/shotastage-hello
 	url = https://gist.github.com/shotastage/5a991d828e510459488c66a7994df859
+[submodule "whitespace/srinandanpai-cerner"]
+	path = whitespace/srinandanpai-cerner
+	url = https://github.com/SrinandanPai/cerner_2-5
 [submodule "whitespace/t3nsor-spoj"]
 	path = whitespace/t3nsor-spoj
 	url = https://github.com/t3nsor/SPOJ
@@ -812,6 +827,9 @@
 [submodule "whitespace/trevorbennett-stack-flood"]
 	path = whitespace/trevorbennett-stack-flood
 	url = https://github.com/trevorbennett/whitespace-stack-flood
+[submodule "whitespace/truptibaliga-cerner"]
+	path = whitespace/truptibaliga-cerner
+	url = https://github.com/Trupti-Baliga/cerner_2tothe5th
 [submodule "whitespace/wsdt-kevinloveswhitespace"]
 	path = whitespace/wsdt-kevinloveswhitespace
 	url = https://github.com/wsdt/WhiteSpace_Brainfuck

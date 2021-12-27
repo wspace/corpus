@@ -1,0 +1,13 @@
+{
+  "id": "whitespace/truptibaliga-cerner",
+  "name": "cerner_2tothe5th",
+  "authors": ["Trupti Baliga"],
+  "license": "none",
+  "languages": ["Whitespace"],
+  "tags": ["programs"],
+  "date": "2021-10-06 09:00:57 +0530",
+  "spec_version": "0.2",
+  "source": ["https://github.com/Trupti-Baliga/cerner_2tothe5th"],
+  "challenges": ["Cerner 2^5"],
+  "programs": [{ "path": "2021/secret_text/secret_text.ws", "spec_version": "0.2" }]
+}
