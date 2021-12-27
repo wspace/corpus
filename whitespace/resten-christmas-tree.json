@@ -1,0 +1,15 @@
+{
+  "id": "whitespace/resten-christmas-tree",
+  "name": "christmas_tree",
+  "authors": ["Hunmin Park (Avantgarde95)"],
+  "license": "none",
+  "languages": ["Whitespace"],
+  "tags": ["programs"],
+  "date": "2020-12-18 20:52:09 +0900",
+  "spec_version": "0.2",
+  "source": [
+    "https://github.com/Resten1497/christmas_tree",
+    "https://github.com/Resten1497/christmas_tree/pull/47"
+  ],
+  "programs": [{ "path": "Whitespace/ChristmasTree.ws", "spec_version": "0.2" }]
+}

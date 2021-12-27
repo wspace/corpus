@@ -788,6 +788,9 @@
 [submodule "whitespace/rameshdahiya-merry-christmas"]
 	path = whitespace/rameshdahiya-merry-christmas
 	url = https://gist.github.com/rameshdahiya/c5705032173968999ecd0c3c1cf238c7
+[submodule "whitespace/resten-christmas-tree"]
+	path = whitespace/resten-christmas-tree
+	url = https://github.com/Resten1497/christmas_tree
 [submodule "whitespace/samdonow-pelc"]
 	path = whitespace/samdonow-pelc
 	url = https://github.com/drsam94/PELC

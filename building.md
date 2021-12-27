@@ -348,6 +348,7 @@ Build and run errors are included.
 - ❌ whitespace/petek-hello
 - ❌ whitespace/pik4ez-ascii
 - ❌ whitespace/rameshdahiya-merry-christmas
+- ❌ whitespace/resten-christmas-tree
 - ❌ whitespace/samdonow-pelc
 - ❌ whitespace/shotastage-hello
 - whitespace/t3nsor-spoj/wstp: `g++ -g -std=c++17 -o $0 wstp.cpp`
