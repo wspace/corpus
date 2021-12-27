@@ -38,7 +38,7 @@ language, including interpreters, compilers, and programs.
 | [ws](python/ffanzhang.json)                        | ffanzhang        | Python     | interpreter  | 2021-03-07 | [GitHub](https://github.com/ffanzhang/ws) |
 | [Albus](rust/collidedscope-albus.json)             | Collided Scope   | Rust       | interpreter  | 2021-02-12 | [GitHub](https://github.com/collidedscope/albus) |
 | [Fizzbuzz in whitespace](whitespace/owocean-fizzbuzz.json) | owocean  | Whitespace | programs     | 2021-01-30 | [GitHub Gist](https://gist.github.com/owocean/0433a34dcfb1409bd5528e4821dd0055) |
-| [Program.java.rb.ws.txt](whitespace/paradoxv5-program-java-rb.json) | ParadoxV5 | Whitespace, Java, Ruby | programs, polyglot | 2021-01-30 | [GitHub](https://github.com/ParadoxV5/Program-java-rb-ws-txt) |
+| [Program.java.rb.ws.txt](whitespace/paradoxv5-program-java-rb.json) | ParadoxV5 | Whitespace | programs | 2021-01-30 | [GitHub](https://github.com/ParadoxV5/Program-java-rb-ws-txt) |
 | [Whitespace exotic programming language interpreter](typescript/fy0u11.json) | Sergey Strigin | TypeScript | interpreter | 2021-01-12 | [GitHub](https://github.com/FY0u11/whitespace-interpreter) |
 | [Whitespace](c/zackeua.json)                       | Zackeus Zetterberg | C, C++, Python | interpreter, programs | 2021-01-10 | [GitHub](https://github.com/zackeua/Whitespace) |
 | [Whitespace Transpiler](python/lachlancourt.json)  | Lachlan Court    | Python     | transpiler   | 2021-01-02 | [GitHub](https://github.com/LachlanCourt/whitespace_transpiler) |

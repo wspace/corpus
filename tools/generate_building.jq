@@ -21,12 +21,16 @@ Build and run errors are included.
   map(.name = (.id // "“\(.name)” by " + (.authors|join(", ")?))) |
   sort_by(.name)[] |
   (.name | escape) as $name |
-  .commands |
-  if length == 0 then "- ❌ \($name)"
-  elif length == 1 then
-    .[0] | "- \(ok | status)\($name)/" + fmt
+  if (.commands|length) == 0 and
+     .languages == ["Whitespace"] and .tags == ["programs"] then empty
   else
-    "- \(all(ok) | status)\($name):",
-    (sort_by(.bin)[] | "  - \(ok | status)" + fmt)
+    .commands |
+    if length == 0 then "- ❌ \($name)"
+    elif length == 1 then
+      .[0] | "- \(ok | status)\($name)/" + fmt
+    else
+      "- \(all(ok) | status)\($name):",
+      (sort_by(.bin)[] | "  - \(ok | status)" + fmt)
+    end
   end
 )
