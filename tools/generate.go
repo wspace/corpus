@@ -130,18 +130,19 @@ type Project struct {
 		Notes          string `json:"notes,omitempty"`
 	} `json:"mappings,omitempty"`
 	Programs []struct {
-		Path        string   `json:"path"`
-		Generated   string   `json:"generated,omitempty"`
-		Inputs      []string `json:"inputs,omitempty"`
-		Outputs     []string `json:"outputs,omitempty"`
-		Aux         []string `json:"aux,omitempty"`
-		Polyglot    []string `json:"polyglot,omitempty"`
-		Equivalent  string   `json:"equivalent,omitempty"`
-		SpecVersion string   `json:"spec_version,omitempty"`
-		Generate    string   `json:"generate,omitempty"`
-		Authors     []string `json:"authors,omitempty"`
-		Desc        string   `json:"desc,omitempty"`
-		Notes       string   `json:"notes,omitempty"`
+		Path         string   `json:"path"`
+		Generated    string   `json:"generated,omitempty"`
+		Inputs       []string `json:"inputs,omitempty"`
+		Outputs      []string `json:"outputs,omitempty"`
+		Aux          []string `json:"aux,omitempty"`
+		Polyglot     []string `json:"polyglot,omitempty"`
+		MappingIndex *int     `json:"mapping_index,omitempty"`
+		Equivalent   string   `json:"equivalent,omitempty"`
+		SpecVersion  string   `json:"spec_version,omitempty"`
+		Generate     string   `json:"generate,omitempty"`
+		Authors      []string `json:"authors,omitempty"`
+		Desc         string   `json:"desc,omitempty"`
+		Notes        string   `json:"notes,omitempty"`
 	} `json:"programs,omitempty"`
 	Commands []Command `json:"commands,omitempty"`
 	Notes    string    `json:"notes,omitempty"`

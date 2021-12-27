@@ -275,6 +275,9 @@
 [submodule "java/pyeroh"]
 	path = java/pyeroh
 	url = https://gist.github.com/Pyeroh/1b2903e53d71e0662d105dc0d6aedbdf
+[submodule "java/ralucaa-whitespace4j"]
+	path = java/ralucaa-whitespace4j
+	url = https://github.com/ralucaa/whitespace4j
 [submodule "java/vyo-kairos"]
 	path = java/vyo-kairos
 	url = https://github.com/vyo/kairos
@@ -617,6 +620,9 @@
 [submodule "rust/faultier-whitebase"]
 	path = rust/faultier-whitebase
 	url = https://github.com/faultier/whitebase
+[submodule "rust/guricerin"]
+	path = rust/guricerin
+	url = https://github.com/guricerin/esolangs
 [submodule "rust/jayshua"]
 	path = rust/jayshua
 	url = https://github.com/Jayshua/rust-whitespace

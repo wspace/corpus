@@ -1,0 +1,45 @@
+{
+  "id": "java/ralucaa-whitespace4j",
+  "name": "whitespace4j",
+  "authors": ["Raluca Criste"],
+  "license": "none",
+  "languages": ["Java"],
+  "tags": ["interpreter", "mapping"],
+  "date": "2014-01-20 16:43:08 +0000",
+  "spec_version": "0.3",
+  "source": ["https://github.com/ralucaa/whitespace4j"],
+  "mappings": [{ "space": "W", "tab": "T", "lf": "N", "line_comment": "#" }],
+  "programs": [
+    { "path": "testset/default/calc.ws", "equivalent": "calc.ws", "spec_version": "0.2" },
+    { "path": "testset/default/count.ws", "equivalent": "count.ws", "spec_version": "0.2" },
+    { "path": "testset/default/fact.ws", "equivalent": "fact.ws", "spec_version": "0.2" },
+    { "path": "testset/default/fibonacci.ws", "equivalent": "fibonacci.ws", "spec_version": "0.2" },
+    { "path": "testset/default/hanoi.ws", "equivalent": "hanoi.ws", "spec_version": "0.2" },
+    { "path": "testset/default/helloworld.ws", "equivalent": "hworld.ws", "spec_version": "0.2" },
+    { "path": "testset/default/name.ws", "equivalent": "name.ws", "spec_version": "0.2" },
+    {
+      "path": "testset/visible/count.ws",
+      "mapping_index": 0,
+      "equivalent": "count.ws",
+      "spec_version": "0.2"
+    },
+    {
+      "path": "testset/visible/hanoi.ws",
+      "mapping_index": 0,
+      "equivalent": "hanoi.ws",
+      "spec_version": "0.2"
+    },
+    {
+      "path": "testset/visible/helloworld.ws",
+      "mapping_index": 0,
+      "equivalent": "hworld.ws",
+      "spec_version": "0.2"
+    },
+    {
+      "path": "testset/visible/helloworld-2.ws",
+      "mapping_index": 0,
+      "equivalent": "hworld.ws",
+      "spec_version": "0.2"
+    }
+  ]
+}

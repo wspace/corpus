@@ -131,6 +131,7 @@ Build and run errors are included.
 - java/matou-whasm/WhAsm.class: `javac WhAsm.java`
 - java/praveenvaka-coder/target/whitespace-coder-1.0-SNAPSHOT.jar: `mvn -Dmaven.compiler.source=1.8 -Dmaven.compiler.target=1.8 package`
 - ❌ java/pyeroh
+- ❌ java/ralucaa-whitespace4j
 - ⚠️ java/vyo-kairos/build/libs/vyo-kairos-1.0.0-all.jar: `./gradlew shadowJar`
 - ⚠️ java/wrotycz/target/whitespace-interpreter-1.0-SNAPSHOT.jar: `mvn -Dmaven.compiler.source=1.8 -Dmaven.compiler.target=1.8 package` No main method entrypoint
 - java/wysang/LoadWhitespace.class: `javac -cp antlr-4.5.2-complete.jar *.java`
@@ -286,6 +287,7 @@ Build and run errors are included.
   - ⚠️ albino-gen: `cargo build --release` Needs many changes for latest Rust
   - ⚠️ albino-run: `cargo build --release` Needs many changes for latest Rust
 - ⚠️ rust/faultier-whitebase/*unspecified*: `cargo build --release` Needs many changes for latest Rust
+- rust/guricerin/whitespace-rs/target/debug/whitespace-rs: `cd whitespace-rs && cargo build --release`
 - rust/jayshua/target/release/whitespace: `cargo build --release`
 - rust/kaisugi/wi: `rustc -o wi whitespace_interpreter.rs`
 - ⚠️ rust/luminight:

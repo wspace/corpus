@@ -1,6 +1,6 @@
 # The Whitespace Corpus
 
-The definitive collection of 283 projects for the Whitespace programming
+The definitive collection of 285 projects for the Whitespace programming
 language, including interpreters, compilers, and programs.
 
 ## Projects
@@ -22,6 +22,7 @@ language, including interpreters, compilers, and programs.
 | [Whitespace grammar for GitHub](textmate/andrewarchi-linguist.json) | Andrew Archibald | TextMate | grammar | 2021-08-15 | [GitHub](https://github.com/wspace/wspace-linguist) |
 | [NovaGrammars](textmate/nixinova.json)             | Nixinova         | TextMate   | syntax highlighting, programs | 2021-08-15 | [GitHub](https://github.com/Nixinova/NovaGrammars), [GitHub](https://github.com/github/linguist/discussions/5519#discussioncomment-1185871) |
 | [SPOJ](whitespace/t3nsor-spoj.json)                | Brian Bi         | Whitespace | assembler, programs | 2021-08-11 | [GitHub](https://github.com/t3nsor/SPOJ) |
+| [whitespace-rs](rust/guricerin.json)               | guricerin        | Rust       | interpreter, programs | 2021-07-04 | [GitHub](https://github.com/guricerin/esolangs) |
 | [whitespace-compiler](python/prajwalanand.json)    | Prajwal Anand    | Python     | transpiler, mapping, programs | 2021-07-01 | [GitHub](https://github.com/prajwalanand/whitespace-compiler) |
 | [WhiteSpace program](whitespace/techvstechie.json) | techVstechie     | Whitespace | programs     | 2021-06-30 | [GitHub Gist](https://gist.github.com/techVstechie/a1af13232e5c8145ffb770884d32187b) |
 | [docker-whitespace](docker/bensuperpc.json)        | Bensuperpc       | Docker     | builder      | 2021-06-09 | [GitHub](https://github.com/bensuperpc/docker-whitespace) |
@@ -224,6 +225,7 @@ language, including interpreters, compilers, and programs.
 | [Blacktime](c/threeifbywhiskey-blacktime.json)     | Dorien Snake (Three If By Whiskey) | C | assembler, programs | 2014-02-27 | [GitHub](https://github.com/threeifbywhiskey/blacktime), [GitHub Gist](https://gist.github.com/threeifbywhiskey/cf7293006cd4ca0839ff), [threeifbywhiskey.github.io](https://threeifbywhiskey.github.io/2014/03/02/in-defense-of-whitespace/), [GitHub](https://github.com/threeifbywhiskey/threeifbywhiskey.github.io/blob/master/_posts/2014-03-02-in-defense-of-whitespace.md) |
 | [Whitespace Covert Channel](php/jseidl-wcc.json)   | Jan Seidl        | PHP        | text to Whitespace, web service | 2014-02-18 | [GitHub](https://github.com/jseidl/whitespace) |
 | [python-whitespace](python/mikecat.json)           | みけCAT (MikeCAT)  | Python     | interpreter  | 2014-02-16 | [GitHub](https://github.com/mikecat/python-whitespace) |
+| [whitespace4j](java/ralucaa-whitespace4j.json)     | Raluca Criste    | Java       | interpreter, mapping | 2014-01-20 | [GitHub](https://github.com/ralucaa/whitespace4j) |
 | [wspacego](go/yshr-wspacego.json)                  | Yosihiro Isago   | Go         | interpreter, disassembler, mapping | 2013-12-28 | [GitHub](https://github.com/135yshr/wspacego), [GitLab](https://gitlab.com/yshr135/wspacego) |
 | [wvm](python/apua-wvm.json)                        | Apua             | Python     | interpreter, mapping, programs | 2013-11-24 | [GitHub](https://github.com/apua/whitespace) |
 | [wseditor](java/yuukiaria-wseditor.json)           | YuukiARIA        | Java       | IDE          | 2013-11-22 | [GitHub](https://github.com/YuukiARIA/wseditor) |

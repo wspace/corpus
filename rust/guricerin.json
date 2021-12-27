@@ -1,0 +1,64 @@
+{
+  "id": "rust/guricerin",
+  "name": "whitespace-rs",
+  "authors": ["guricerin"],
+  "license": "MIT",
+  "languages": ["Rust"],
+  "tags": ["interpreter", "programs"],
+  "date": "2021-07-04 14:10:41 +0900",
+  "spec_version": "0.3",
+  "source": ["https://github.com/guricerin/esolangs"],
+  "bounds": { "precision": "int64", "arg_precision": "int64", "label_precision": "arbitrary", "heap_min": 0 },
+  "assembly": {
+    "mnemonics": {
+      "push": ["Push"],
+      "dup": ["Dup"],
+      "copy": ["Copy"],
+      "swap": ["Swap"],
+      "drop": ["Discard"],
+      "slide": ["Slide"],
+      "add": ["Add"],
+      "sub": ["Sub"],
+      "mul": ["Mul"],
+      "div": ["Div"],
+      "mod": ["Mod"],
+      "store": ["HeapWrite"],
+      "retrieve": ["HeapRead"],
+      "label": ["Label"],
+      "call": ["Call"],
+      "jmp": ["Jump"],
+      "jz": ["JumpZero"],
+      "jn": ["JumpNeg"],
+      "ret": ["Return"],
+      "end": ["Exit"],
+      "printc": ["CharOut"],
+      "printi": ["NumOut"],
+      "readc": ["CharIn"],
+      "readi": ["NumIn"]
+    },
+    "usage": ["enum"]
+  },
+  "programs": [
+    { "path": "whitespace-rs/examples/fact.ws", "equivalent": "fact.ws", "spec_version": "0.2" },
+    { "path": "whitespace-rs/examples/fib.ws", "equivalent": "fibonacci.ws", "spec_version": "0.2" },
+    {
+      "path": "whitespace-rs/examples/forever_a.ws",
+      "spec_version": "0.2",
+      "notes": "jmp has no terminating LF"
+    },
+    { "path": "whitespace-rs/examples/hello.ws", "spec_version": "0.2" }
+  ],
+  "commands": [
+    {
+      "type": "interpreter",
+      "bin": "whitespace-rs/target/debug/whitespace-rs",
+      "build": "cd whitespace-rs && cargo build --release",
+      "usage": "$0 <file>",
+      "options": [
+        { "short": "h", "long": "help", "desc": "Prints help information" },
+        { "short": "V", "long": "version", "desc": "Prints version information" }
+      ],
+      "option_parse": "Rust clap"
+    }
+  ]
+}

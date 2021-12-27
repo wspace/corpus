@@ -291,6 +291,7 @@
           "outputs": { "type": "array", "items": { "type": "string" } },
           "aux": { "type": "array", "items": { "type": "string" } },
           "polyglot": { "type": "array", "items": { "type": "string" } },
+          "mapping_index": { "type": "number" },
           "equivalent": { "type": "string" },
           "spec_version": { "$ref": "#/$defs/spec_version" },
           "generate": { "type": "string" },
@@ -338,7 +339,8 @@
               "Python click",
               "Python optparse",
               "Ruby Thor",
-              "Ruby optparse"
+              "Ruby optparse",
+              "Rust clap"
             ]
           },
           "subcommands": {
