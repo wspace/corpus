@@ -539,6 +539,9 @@
 [submodule "python/rumaxwell"]
 	path = python/rumaxwell
 	url = https://github.com/RuMaxwell/whitespace-interpreter
+[submodule "python/ryndvs-aoc"]
+	path = python/ryndvs-aoc
+	url = https://github.com/ryndvs96/aoc
 [submodule "python/smithers-bluespace"]
 	path = python/smithers-bluespace
 	url = https://github.com/Smithers888/BlueSpace
@@ -683,6 +686,9 @@
 [submodule "whitespace/3f"]
 	path = whitespace/3f
 	url = https://github.com/3F/sandbox
+[submodule "whitespace/alchzh-advent-of-code"]
+	path = whitespace/alchzh-advent-of-code
+	url = https://github.com/alchzh/advent-of-code
 [submodule "whitespace/alicewonderland-hacktoberfest-2017"]
 	path = whitespace/alicewonderland-hacktoberfest-2017
 	url = https://github.com/AliceWonderland/hacktoberfest
@@ -773,6 +779,9 @@
 [submodule "whitespace/makenowjust-quine"]
 	path = whitespace/makenowjust-quine
 	url = https://github.com/MakeNowJust/quine
+[submodule "whitespace/melonattacker-ctf"]
+	path = whitespace/melonattacker-ctf
+	url = https://github.com/melonattacker/ctf_writeup
 [submodule "whitespace/meow-tigerhacks"]
 	path = whitespace/meow-tigerhacks
 	url = https://github.com/meow56/tigerhacks-2021
@@ -812,6 +821,12 @@
 [submodule "whitespace/resten-christmas-tree"]
 	path = whitespace/resten-christmas-tree
 	url = https://github.com/Resten1497/christmas_tree
+[submodule "whitespace/rsactf"]
+	path = whitespace/rsactf
+	url = https://github.com/rsa-ctf/write-ups
+[submodule "whitespace/ryndvs-aoc"]
+	path = whitespace/ryndvs-aoc
+	url = https://github.com/ryndvs96/aoc
 [submodule "whitespace/samdonow-pelc"]
 	path = whitespace/samdonow-pelc
 	url = https://github.com/drsam94/PELC
@@ -836,6 +851,9 @@
 [submodule "whitespace/truptibaliga-cerner"]
 	path = whitespace/truptibaliga-cerner
 	url = https://github.com/Trupti-Baliga/cerner_2tothe5th
+[submodule "whitespace/ustclug-hackergame2019"]
+	path = whitespace/ustclug-hackergame2019
+	url = https://github.com/ustclug/hackergame2019-writeups
 [submodule "whitespace/wsdt-kevinloveswhitespace"]
 	path = whitespace/wsdt-kevinloveswhitespace
 	url = https://github.com/wsdt/WhiteSpace_Brainfuck

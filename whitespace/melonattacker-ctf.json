@@ -1,0 +1,21 @@
+{
+  "id": "whitespace/melonattacker-ctf",
+  "name": "ctf_writeup",
+  "authors": ["Junki Yuasa"],
+  "license": "none",
+  "languages": ["Whitespace"],
+  "tags": ["programs"],
+  "date": "2021-07-02 21:34:22 +0900",
+  "spec_version": "0.2",
+  "source": ["https://github.com/melonattacker/ctf_writeup", "https://ksnctf.sweetduet.info/problem/7"],
+  "challenges": ["ksnctf"],
+  "programs": [
+    {
+      "path": "ksnctf/programming/program.cpp",
+      "aux": ["ksnctf/programming/solve"],
+      "polyglot": ["C++"],
+      "spec_version": "0.2",
+      "authors": ["ksnctf"]
+    }
+  ]
+}

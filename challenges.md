@@ -8,6 +8,8 @@ case of Codewars, interpreters for Whitespace.
 
 ## Advent of Code
 
+- [python/ryndvs-aoc](python/ryndvs-aoc.json)
+- [whitespace/alchzh-advent-of-code](whitespace/alchzh-advent-of-code.json)
 - [whitespace/andrewarchi-challenges](whitespace/andrewarchi-challenges.json)
 
 ## Cerner 2^5
@@ -44,6 +46,18 @@ case of Codewars, interpreters for Whitespace.
 - [python/wawrepo-kata](python/wawrepo-kata.json)
 - [typescript/eduardoborsa-codewars](typescript/eduardoborsa-codewars.json)
 - [typescript/fy0u11](typescript/fy0u11.json)
+
+## Hackergame
+
+- [whitespace/ustclug-hackergame2019](whitespace/ustclug-hackergame2019.json)
+
+## ksnctf
+
+- [whitespace/melonattacker-ctf](whitespace/melonattacker-ctf.json)
+
+## noxCTF
+
+- [whitespace/rsactf](whitespace/rsactf.json)
 
 ## Project Euler
 

@@ -237,6 +237,7 @@ Build and run errors are included.
 - ⚠️ python/qwhxm-baudelaire/backend/baudelaire-whitespace.py: Needs AWS Lambda entrypoint
 - ❌ python/res-trans32
 - python/rumaxwell/entrance.py
+- python/ryndvs-aoc/2018/wsa-to-ws.py
 - python/smithers-bluespace/bspace.py
 - ⚠️ python/stephenchappell:
   - ⚠️ Assembler.py: msvcrt module only exists on Windows

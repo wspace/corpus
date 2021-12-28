@@ -1,0 +1,27 @@
+{
+  "id": "whitespace/ustclug-hackergame2019",
+  "name": "hackergame2019-writeups",
+  "authors": ["枸杞蒲蒻 (hkcoldmoon)"],
+  "license": "CC-BY-NC-SA-4.0",
+  "languages": ["Whitespace"],
+  "tags": ["programs"],
+  "date": "2019-10-20 01:42:47 +0800",
+  "spec_version": "0.2",
+  "source": ["https://github.com/ustclug/hackergame2019-writeups", "https://hack2019.lug.ustc.edu.cn/"],
+  "challenges": ["Hackergame"],
+  "assembly": {
+    "mnemonics": {
+      "push": ["push"],
+      "add": ["add <number>"],
+      "sub": ["sub <number>"],
+      "label": ["<label>:"],
+      "call": ["call"],
+      "jmp": ["jmp"],
+      "jz": ["jz"],
+      "end": ["exit"]
+    },
+    "macros": [{ "name": "pushs", "args": ["string"] }, { "name": "include" }],
+    "usage": ["programs"]
+  },
+  "programs": [{ "path": "official/天书残篇/src/天书残篇.wsa", "generated": "official/天书残篇/src/天书残篇.ws" }]
+}

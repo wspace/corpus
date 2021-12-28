@@ -1,6 +1,6 @@
 # The Whitespace Corpus
 
-The definitive collection of 295 projects for the Whitespace programming
+The definitive collection of 300 projects for the Whitespace programming
 language, including interpreters, compilers, and programs.
 
 ## Projects
@@ -10,6 +10,7 @@ language, including interpreters, compilers, and programs.
 | [code_wars_exercises](typescript/eduardoborsa-codewars.json) | Eduardo Borsa | TypeScript | interpreter | 2021-12-21 | [GitHub](https://github.com/EduardoBorsa/code_wars_exercises) |
 | [whitespace-jit](cpp/drebelsky-jit.json)           | Daniel Rebelsky  | C++        | JIT          | 2021-12-17 | [GitHub](https://github.com/drebelsky/whitespace-jit) |
 | [whitespace-go](go/sampratt.json)                  | Sam Pratt        | Go         | interpreter, programs | 2021-12-11 | [GitHub](https://github.com/samuel-pratt/whitespace-go) |
+| [advent-of-code](whitespace/alchzh-advent-of-code.json) | Albert Zhang | Whitespace | programs    | 2021-12-04 | [GitHub](https://github.com/alchzh/advent-of-code) |
 | [wsbf](brainfuck/andrewarchi-wsbf.json)            | Andrew Archibald | Brainfuck  | interpreter  | 2021-11-14 | [GitHub](https://github.com/andrewarchi/wsbf) |
 | [ws-challenges](whitespace/andrewarchi-challenges.json) | Andrew Archibald | Whitespace | programs | 2021-11-13 | [GitHub](https://github.com/andrewarchi/ws-challenges) |
 | [Whitespace interpreter](cpp/shadowmitia.json)     | Dimitri Belopopsky | C++      | interpreter, programs | 2021-11-11 | [GitHub](https://github.com/ShadowMitia/whitespace) |
@@ -25,6 +26,7 @@ language, including interpreters, compilers, and programs.
 | [NovaGrammars](textmate/nixinova.json)             | Nixinova         | TextMate   | syntax highlighting, programs | 2021-08-15 | [GitHub](https://github.com/Nixinova/NovaGrammars), [GitHub](https://github.com/github/linguist/discussions/5519#discussioncomment-1185871) |
 | [SPOJ](whitespace/t3nsor-spoj.json)                | Brian Bi         | Whitespace | assembler, programs | 2021-08-11 | [GitHub](https://github.com/t3nsor/SPOJ) |
 | [whitespace-rs](rust/guricerin.json)               | guricerin        | Rust       | interpreter, programs | 2021-07-04 | [GitHub](https://github.com/guricerin/esolangs) |
+| [ctf_writeup](whitespace/melonattacker-ctf.json)   | Junki Yuasa      | Whitespace | programs     | 2021-07-02 | [GitHub](https://github.com/melonattacker/ctf_writeup), [ksnctf.sweetduet.info](https://ksnctf.sweetduet.info/problem/7) |
 | [whitespace-compiler](python/prajwalanand.json)    | Prajwal Anand    | Python     | transpiler, mapping, programs | 2021-07-01 | [GitHub](https://github.com/prajwalanand/whitespace-compiler) |
 | [WhiteSpace program](whitespace/techvstechie.json) | techVstechie     | Whitespace | programs     | 2021-06-30 | [GitHub Gist](https://gist.github.com/techVstechie/a1af13232e5c8145ffb770884d32187b) |
 | [docker-whitespace](docker/bensuperpc.json)        | Bensuperpc       | Docker     | builder      | 2021-06-09 | [GitHub](https://github.com/bensuperpc/docker-whitespace) |
@@ -43,6 +45,7 @@ language, including interpreters, compilers, and programs.
 | [Whitespace](c/zackeua.json)                       | Zackeus Zetterberg | C, C++, Python | interpreter, programs | 2021-01-10 | [GitHub](https://github.com/zackeua/Whitespace) |
 | [Whitespace Transpiler](python/lachlancourt.json)  | Lachlan Court    | Python     | transpiler   | 2021-01-02 | [GitHub](https://github.com/LachlanCourt/whitespace_transpiler) |
 | [asm2ws](c/kspalaiologos-asm2ws.json)              | Kamila Szewczyk (Palaiologos) | C, Yacc, Lex | interpreter, JIT, assembler, disassembler, optimizer, programs | 2020-12-31 | [GitHub](https://github.com/kspalaiologos/asm2ws) |
+| [aoc](python/ryndvs-aoc.json)                      | Ryan Davis       | Python, Whitespace | assembler, programs | 2020-12-18 | [GitHub](https://github.com/ryndvs96/aoc) |
 | [christmas_tree](whitespace/resten-christmas-tree.json) | Hunmin Park (Avantgarde95) | Whitespace | programs | 2020-12-18 | [GitHub](https://github.com/Resten1497/christmas_tree), [GitHub](https://github.com/Resten1497/christmas_tree/pull/47) |
 | [Whitespace](python/hunminpark.json)               | Hunmin Park (Avantgarde95) | Python | assembler, mapping, programs | 2020-12-18 | [GitHub](https://github.com/Avantgarde95/Whitespace) |
 | [Codewars](python/techiehelper-codewars.json)      | TechieHelper     | Python     | interpreter  | 2020-12-17 | [GitHub](https://github.com/TechieHelper/Codewars) |
@@ -77,6 +80,7 @@ language, including interpreters, compilers, and programs.
 | [WhitespaceAssembler](csharp/littlebughunter-assembler.json) | Paul (littleBugHunter) | C# | assembler, programs | 2019-12-27 | [GitHub](https://github.com/littleBugHunter/WhitespaceAssembler) |
 | [hello.ws](whitespace/petek-hello.json)            | Peter Koncelik   | Whitespace | programs     | 2019-11-22 | [GitHub](https://github.com/petek222/whitespace) |
 | [whitespace_compiler](cpp/malkiewiczm.json)        | Michael Malkiewicz | C++, Yacc, Lex | language, programs | 2019-10-20 | [GitHub](https://github.com/malkiewiczm/whitespace_compiler) |
+| [hackergame2019-writeups](whitespace/ustclug-hackergame2019.json) | 枸杞蒲蒻 (hkcoldmoon) | Whitespace | programs | 2019-10-19 | [GitHub](https://github.com/ustclug/hackergame2019-writeups), [hack2019.lug.ustc.edu.cn](https://hack2019.lug.ustc.edu.cn/) |
 | [Whitespace UnC](python/ilikepython256-whitespace-unc.json) | Python Whiz 256 | Python | assembler, web client, programs | 2019-09-24 | [GitHub](https://github.com/ILikePython256/Whitespace_UnC) |
 | [cerner_2^5_2019](whitespace/lollasravani-cerner.json) | Lolla Sravani Lalitha | Whitespace | programs | 2019-09-13 | [GitHub](https://github.com/lollasravani/cerner_2-5_2019) |
 | [codegolf-submissions](whitespace/kspalaiologos-codegolf.json) | Kamila Szewczyk (Palaiologos) | Whitespace | programs | 2019-08-29 | [GitHub](https://github.com/kspalaiologos/codegolf-submissions), [Code Golf](https://codegolf.stackexchange.com/questions/55960/im-not-the-language-youre-looking-for/191063#191063) |
@@ -107,6 +111,7 @@ language, including interpreters, compilers, and programs.
 | [Whitespace-Compiler](java/wysang.json)            | wysang           | Java, ANTLR | parser, grammar, programs | 2018-10-22 | [GitHub](https://github.com/wspace/wysang-java), [GitHub](https://github.com/wysang/Whitespace-Compiler) |
 | [Obfuscated Name Printer](whitespace/apartmentlist-obfuscated.json) | anoop nimkar | Whitespace | programs | 2018-10-08 | [GitHub](https://github.com/apartmentlist/coding-challenges) |
 | [Hacktoberfest 2018 Hello-world](whitespace/aniket-hacktoberfest-2018.json) | Ethan Hall, Unnikrishnan A G | Whitespace | programs | 2018-10-06 | [GitHub](https://github.com/wspace/aniket-hacktoberfest-2018), [GitHub](https://github.com/Aniket965/Hello-world/tree/master/Whitespace) |
+| [write-ups](whitespace/rsactf.json)                | Kaushik S Kalmady | Whitespace | programs    | 2018-09-11 | [GitHub](https://github.com/rsa-ctf/write-ups), [ctftime.org](https://ctftime.org/event/671) |
 | [whitespace-stack-flood](whitespace/trevorbennett-stack-flood.json) | Trevor Bennett | Whitespace | programs | 2018-09-08 | [GitHub](https://github.com/trevorbennett/whitespace-stack-flood), [r/ProgrammerHumor](https://www.reddit.com/r/ProgrammerHumor/comments/9dvwhn/java_java/e5kg126/) |
 | [nospace](cpp/buyoh-nospace.json)                  | 舞葉 (Mai Buyoh)   | C++, Ruby  | language, interpreter, programs | 2018-09-05 | [GitHub](https://github.com/buyoh/nospace) |
 | [Whitespace compiler for 64-bit macOS](nasm/ryzheboka.json) | Elena Mokeeva | NASM, Python, C | interpreter, mapping | 2018-09-04 | [GitHub](https://github.com/ryzheboka/Whitespace) |
@@ -485,6 +490,7 @@ See [CONTRIBUTING.md](./CONTRIBUTING.md).
         [quine-2.ws](https://github.com/search?o=desc&q=filename%3Aquine-2.ws+extension%3Aws+-org%3Awspace&s=indexed&type=Code),
         [quine-copy.ws](https://github.com/search?o=desc&q=filename%3Aquine-copy.ws+extension%3Aws+-org%3Awspace&s=indexed&type=Code),
         [rot13.ws](https://github.com/search?o=desc&q=filename%3Arot13.ws+extension%3Aws+-org%3Awspace&s=indexed&type=Code),
+        [.wsa](https://github.com/search?o=desc&q=extension%3Awsa+-filename%3Amakefile+-org%3Awspace+-user%3Aandrewarchi&s=indexed&type=Code),
         [whitespace](https://github.com/search?o=desc&q=whitespace+extension%3Aws+-trailing+-org%3Awspace&s=indexed&type=Code),
         [cerner](https://github.com/search?o=desc&q=cerner+extension%3Aws+-org%3Awspace&s=indexed&type=Code),
         [sbstr1](https://github.com/search?o=desc&q=filename%3Asbstr1+extension%3Aws+-org%3Awspace&s=indexed&type=Code)
@@ -542,7 +548,7 @@ See [CONTRIBUTING.md](./CONTRIBUTING.md).
   - GitHub:
       forks,
       [extension:ws](https://github.com/search?o=desc&q=extension%3Aws+-org%3Awspace+-witcher+-runescape+-function+-var+-class+-xml&s=indexed&type=Code),
-      [whitespace quine](https://github.com/search?q=whitespace+quine+-org%3Awspace&type=code),
+      [vii5ard whitespace](https://github.com/search?o=desc&q=vii5ard+whitespace+-org%3Awspace&s=indexed&type=Code),
       [github-artifact-exporter](https://github.com/github/github-artifact-exporter)
   - GitHub Gist: [whitespace](https://gist.github.com/search?q=whitespace)
   - SourceForge:

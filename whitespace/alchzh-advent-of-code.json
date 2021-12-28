@@ -1,0 +1,21 @@
+{
+  "id": "whitespace/alchzh-advent-of-code",
+  "name": "advent-of-code",
+  "authors": ["Albert Zhang"],
+  "license": "MIT",
+  "languages": ["Whitespace"],
+  "tags": ["programs"],
+  "date": "2021-12-03 20:57:45 -0500",
+  "spec_version": "0.2",
+  "source": ["https://github.com/alchzh/advent-of-code"],
+  "relations": [{ "id": "javascript/vii5ard-whitelips-ide", "type": "assembly" }],
+  "challenges": ["Advent of Code"],
+  "programs": [
+    {
+      "path": "2021/day01/1.wsa",
+      "generated": "2021/day01/1.ws",
+      "inputs": ["2021/day01/input.txt"],
+      "spec_version": "0.2"
+    }
+  ]
+}

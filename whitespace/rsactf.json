@@ -1,0 +1,25 @@
+{
+  "id": "whitespace/rsactf",
+  "name": "write-ups",
+  "authors": ["Kaushik S Kalmady"],
+  "license": "none",
+  "languages": ["Whitespace"],
+  "tags": ["programs"],
+  "date": "2018-09-11 15:23:45 +0530",
+  "spec_version": "0.3",
+  "source": ["https://github.com/rsa-ctf/write-ups", "https://ctftime.org/event/671"],
+  "challenges": ["noxCTF"],
+  "programs": [
+    {
+      "path": "2018/noxctf18/Read Between the Lines/message",
+      "aux": [
+        "2018/noxctf18/Read Between the Lines/message.code",
+        "2018/noxctf18/Read Between the Lines/README.md"
+      ],
+      "polyglot": ["JSFuck"],
+      "spec_version": "0.3",
+      "authors": ["noxCTF 2018"],
+      "notes": "message.code is gzip-compressed"
+    }
+  ]
+}
