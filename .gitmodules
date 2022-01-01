@@ -518,6 +518,9 @@
 [submodule "python/mildsunrise"]
 	path = python/mildsunrise
 	url = https://gist.github.com/mildsunrise/d948fe1334f36c9a0f6516e58271f936
+[submodule "python/molfar-codewars"]
+	path = python/molfar-codewars
+	url = https://github.com/MolfarUA/CodeWars_Solutions
 [submodule "python/musflood"]
 	path = python/musflood
 	url = https://github.com/musflood/code-katas
@@ -722,6 +725,9 @@
 [submodule "whitespace/dcoy-hacktoberfest-2016"]
 	path = whitespace/dcoy-hacktoberfest-2016
 	url = https://github.com/dcoy/hacktoberfest-dcoy
+[submodule "whitespace/drebelsky-programs"]
+	path = whitespace/drebelsky-programs
+	url = https://github.com/drebelsky/whitespace-programs
 [submodule "whitespace/elisha-snakulator"]
 	path = whitespace/elisha-snakulator
 	url = https://github.com/donno2048/snakulator

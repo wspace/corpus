@@ -1,12 +1,14 @@
 # The Whitespace Corpus
 
-The definitive collection of 300 projects for the Whitespace programming
+The definitive collection of 302 projects for the Whitespace programming
 language, including interpreters, compilers, and programs.
 
 ## Projects
 
 | Name                                               | Authors          | Languages  | Tags         | Date       | Source |
 | -------------------------------------------------- | ---------------- | ---------- | ------------ | ---------- | ------ |
+| [Whitespace Programs](whitespace/drebelsky-programs.json) | Daniel Rebelsky | Whitespace, Python | programs, assembler | 2021-12-31 | [GitHub](https://github.com/drebelsky/whitespace-programs) |
+| [CodeWars_Solutions](python/molfar-codewars.json)  | Molfar           | Python, CoffeeScript, C++, Java, JavaScript, TypeScript | interpreter | 2021-12-30 | [GitHub](https://github.com/MolfarUA/CodeWars_Solutions) |
 | [code_wars_exercises](typescript/eduardoborsa-codewars.json) | Eduardo Borsa | TypeScript | interpreter | 2021-12-21 | [GitHub](https://github.com/EduardoBorsa/code_wars_exercises) |
 | [whitespace-jit](cpp/drebelsky-jit.json)           | Daniel Rebelsky  | C++        | JIT          | 2021-12-17 | [GitHub](https://github.com/drebelsky/whitespace-jit) |
 | [whitespace-go](go/sampratt.json)                  | Sam Pratt        | Go         | interpreter, programs | 2021-12-11 | [GitHub](https://github.com/samuel-pratt/whitespace-go) |
@@ -615,7 +617,9 @@ See [CONTRIBUTING.md](./CONTRIBUTING.md).
       [Convert integer to Whitespace format](https://www.codewars.com/kata/55b350026cc02ac1a7000032)
   - [Advent of Code](https://adventofcode.com/)
   - [yukicoder](https://yukicoder.me/)
-  - Sphere Online Judge: [SBSTR1](https://www.spoj.com/problems/SBSTR1/) ([SO](https://stackoverflow.com/questions/26521780/how-to-check-whether-a-string-is-substring-of-another-in-whitespace))
+  - Sphere Online Judge:
+      [SBSTR1](https://www.spoj.com/problems/SBSTR1/) ([SO](https://stackoverflow.com/questions/26521780/how-to-check-whether-a-string-is-substring-of-another-in-whitespace)),
+      [Discuss](https://discuss.spoj.com/search?q=whitespace)
   - [Baekjoon Online Judge](https://www.acmicpc.net/)
 - Stack Exchange
   - Code Golf:

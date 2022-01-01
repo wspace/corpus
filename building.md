@@ -229,6 +229,13 @@ Build and run errors are included.
 - python/mikecat/whitespace.py
 - python/mikejs-nbspy/nbspy.py
 - python/mildsunrise/whitespace.py
+- ⚠️ python/molfar-codewars:
+  - ⚠️ 2 kyu/Whitespace Interpreter/solution.coffee: Needs Codewars entrypoint
+  - ⚠️ 2 kyu/Whitespace Interpreter/solution.cpp: Needs Codewars entrypoint
+  - ⚠️ 2 kyu/Whitespace Interpreter/solution.java: Needs Codewars entrypoint
+  - ⚠️ 2 kyu/Whitespace Interpreter/solution.js: Needs Codewars entrypoint
+  - ⚠️ 2 kyu/Whitespace Interpreter/solution.py: Needs Codewars entrypoint
+  - ⚠️ 2 kyu/Whitespace Interpreter/solution.ts: Needs Codewars entrypoint
 - ❌ python/musflood
 - ⚠️ python/nutcrack-whiteplanes/*unspecified*: No entrypoint
 - python/phlip-pywhitespace/main.py
@@ -312,6 +319,7 @@ Build and run errors are included.
 - whitespace/andrewarchi-challenges/test.bash: `make`
 - whitespace/andrewarchi-wslib/assemble.sh
 - ❌ whitespace/burghard-wsinterws
+- whitespace/drebelsky-programs/assemble.py
 - ❌ whitespace/helowld
 - ❌ whitespace/jarrodparkes-a-z
 - whitespace/keen-whitelie:

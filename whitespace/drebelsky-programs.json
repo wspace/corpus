@@ -1,0 +1,86 @@
+{
+  "id": "whitespace/drebelsky-programs",
+  "name": "Whitespace Programs",
+  "authors": ["Daniel Rebelsky"],
+  "license": "none",
+  "languages": ["Whitespace", "Python"],
+  "tags": ["programs", "assembler"],
+  "date": "2021-12-31 01:18:59 -0600",
+  "spec_version": "0.3",
+  "source": ["https://github.com/drebelsky/whitespace-programs"],
+  "whitespace": { "extension": "ws" },
+  "assembly": {
+    "mnemonics": {
+      "push": ["push"],
+      "dup": ["dup"],
+      "copy": ["copy"],
+      "swap": ["swap"],
+      "drop": ["pop"],
+      "slide": ["slide"],
+      "add": ["add"],
+      "sub": ["sub"],
+      "mul": ["mul"],
+      "div": ["div"],
+      "mod": ["mod"],
+      "store": ["store"],
+      "retrieve": ["load"],
+      "label": ["<label>:"],
+      "call": ["call"],
+      "jmp": ["jump"],
+      "jz": ["jz"],
+      "jn": ["jn"],
+      "ret": ["ret"],
+      "end": ["end"],
+      "printc": ["wchar"],
+      "printi": ["wnum"],
+      "readc": ["rchar"],
+      "readi": ["rnum"]
+    },
+    "patterns": { "char": "'(.|\\[ntrb\\])'|\".\"" },
+    "line_comments": [";"],
+    "usage": ["assembler", "programs"],
+    "extension": "wsa"
+  },
+  "programs": [
+    {
+      "path": "asm/fizzbuzz.wsa",
+      "generated": "ws/fizzbuzz.ws",
+      "spec_version": "0.2",
+      "generate": "make"
+    },
+    {
+      "path": "asm/hello_world.wsa",
+      "generated": "ws/hello_world.ws",
+      "spec_version": "0.2",
+      "generate": "make"
+    },
+    {
+      "path": "asm/interpreter.wsa",
+      "generated": "ws/interpreter.ws",
+      "spec_version": "0.2",
+      "generate": "make"
+    },
+    {
+      "path": "asm/print_primes.wsa",
+      "generated": "ws/print_primes.ws",
+      "spec_version": "0.2",
+      "generate": "make"
+    },
+    { "path": "asm/test.wsa", "generated": "ws/test.ws", "spec_version": "0.2", "generate": "make" },
+    {
+      "path": "asm/tictactoe.wsa",
+      "generated": "ws/tictactoe.ws",
+      "spec_version": "0.2",
+      "generate": "make"
+    }
+  ],
+  "commands": [
+    {
+      "type": "assembler",
+      "bin": "assemble.py",
+      "usage": "python3 $0 <file>",
+      "input": "<file>",
+      "output": "stdout"
+    }
+  ]
+}

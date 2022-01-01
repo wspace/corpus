@@ -41,6 +41,7 @@ case of Codewars, interpreters for Whitespace.
 - [python/ericpwilliamson-codewars](python/ericpwilliamson-codewars.json)
 - [python/hearnderek](python/hearnderek.json)
 - [python/maximegoyette](python/maximegoyette.json)
+- [python/molfar-codewars](python/molfar-codewars.json)
 - [python/musflood](python/musflood.json)
 - [python/techiehelper-codewars](python/techiehelper-codewars.json)
 - [python/wawrepo-kata](python/wawrepo-kata.json)

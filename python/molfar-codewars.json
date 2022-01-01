@@ -1,0 +1,44 @@
+{
+  "id": "python/molfar-codewars",
+  "name": "CodeWars_Solutions",
+  "authors": ["Molfar"],
+  "license": "GPL-3.0",
+  "languages": ["Python", "CoffeeScript", "C++", "Java", "JavaScript", "TypeScript"],
+  "tags": ["interpreter"],
+  "date": "2021-12-31 01:14:10 +0200",
+  "spec_version": "0.3",
+  "source": ["https://github.com/MolfarUA/CodeWars_Solutions"],
+  "challenges": ["Codewars"],
+  "commands": [
+    {
+      "type": "interpreter",
+      "bin": "2 kyu/Whitespace Interpreter/solution.py",
+      "run_errors": "Needs Codewars entrypoint"
+    },
+    {
+      "type": "interpreter",
+      "bin": "2 kyu/Whitespace Interpreter/solution.coffee",
+      "run_errors": "Needs Codewars entrypoint"
+    },
+    {
+      "type": "interpreter",
+      "bin": "2 kyu/Whitespace Interpreter/solution.cpp",
+      "run_errors": "Needs Codewars entrypoint"
+    },
+    {
+      "type": "interpreter",
+      "bin": "2 kyu/Whitespace Interpreter/solution.java",
+      "run_errors": "Needs Codewars entrypoint"
+    },
+    {
+      "type": "interpreter",
+      "bin": "2 kyu/Whitespace Interpreter/solution.js",
+      "run_errors": "Needs Codewars entrypoint"
+    },
+    {
+      "type": "interpreter",
+      "bin": "2 kyu/Whitespace Interpreter/solution.ts",
+      "run_errors": "Needs Codewars entrypoint"
+    }
+  ]
+}
