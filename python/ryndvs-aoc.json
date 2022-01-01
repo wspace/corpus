@@ -34,7 +34,8 @@
       "readc": ["readc"],
       "readi": ["readi"]
     },
-    "usage": ["assembler", "programs"]
+    "usage": ["assembler", "programs"],
+    "extension": "wsa"
   },
   "programs": [
     {

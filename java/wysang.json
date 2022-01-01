@@ -33,7 +33,8 @@
       "printi": ["outnum"],
       "readc": ["readchar"],
       "readi": ["readnum"]
-    }
+    },
+    "usage": ["enum"]
   },
   "programs": [
     { "path": "helloworld.whitespace", "spec_version": "0.2" },

@@ -4,7 +4,7 @@
   "authors": ["Henri Lakk (Vii5ard)"],
   "license": "none",
   "languages": ["JavaScript"],
-  "tags": ["IDE", "interpreter", "optimizer", "assembler", "programs"],
+  "tags": ["IDE", "interpreter", "optimizer", "assembler", "disassembler", "programs"],
   "date": "2013-03-20 23:47:24 +0200",
   "spec_version": "0.3",
   "source": [
@@ -41,6 +41,7 @@
       "readc": ["readc"],
       "readi": ["readi"]
     },
+    "usage": ["assembler", "disassembler", "programs"],
     "extension": "wsa"
   },
   "programs": [

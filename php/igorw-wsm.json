@@ -35,7 +35,10 @@
       "readc": ["read_char"],
       "readi": ["read_num"]
     },
+    "line_comments": ["#"],
+    "usage": ["assembler", "programs"],
     "extension": "wsm"
   },
+  "programs": [{ "path": "examples/hworld.wsm" }],
   "commands": [{ "type": "assembler", "bin": "bin/wsm", "usage": "php $0 <file>" }]
 }

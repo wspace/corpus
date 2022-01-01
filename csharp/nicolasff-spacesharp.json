@@ -36,7 +36,8 @@
       "printi": ["PrintNumber"],
       "readc": ["ReadChar"],
       "readi": ["ReadNumber"]
-    }
+    },
+    "usage": ["enum"]
   },
   "programs": [
     { "path": "tests/ws/calc.ws", "equivalent": "calc.ws", "spec_version": "0.2" },

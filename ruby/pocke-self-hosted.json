@@ -40,7 +40,8 @@
       "printc": ["write_ch"],
       "printi": ["write_num"]
     },
-    "usage": ["program builder"]
+    "usage": ["program builder"],
+    "extension": "ws.rb"
   },
   "programs": [
     {

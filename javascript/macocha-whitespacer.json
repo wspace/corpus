@@ -34,7 +34,8 @@
       "printi": ["OUTN"],
       "readc": ["INPC"],
       "readi": ["INPN"]
-    }
+    },
+    "usage": ["disassembler"]
   },
   "notes": "Assembly is only displayed, not disassembled"
 }

@@ -40,7 +40,8 @@
       "readi": ["GETNUM"]
     },
     "case_sensitive_instructions": true,
-    "line_comments": ["#"]
+    "line_comments": ["#"],
+    "usage": ["assembler", "disassembler"]
   },
   "mappings": [{ "space": "S", "tab": "T", "lf": "\n" }]
 }

@@ -28,6 +28,7 @@
       "readi": ["readnum"]
     },
     "patterns": { "char": "\"(.|\\\\n)\"" },
+    "usage": ["assembler", "programs"],
     "extension": "as"
   },
   "mappings": [{ "space": "S", "tab": "T", "lf": "\n", "extension": "st" }],

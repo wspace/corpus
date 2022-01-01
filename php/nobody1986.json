@@ -34,7 +34,8 @@
       "printi": ["OUTNUM"],
       "readc": ["INCHAR"],
       "readi": ["INNUM"]
-    }
+    },
+    "usage": ["disassembler"]
   },
   "commands": [
     {

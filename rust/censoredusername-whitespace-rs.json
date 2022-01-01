@@ -36,7 +36,8 @@
       "printi": ["pnum"],
       "readc": ["ichr"],
       "readi": ["inum"]
-    }
+    },
+    "usage": ["assembler", "disassembler"]
   },
   "commands": [
     {

@@ -38,7 +38,8 @@
       "readc": ["RCHR"],
       "readi": ["RNUM"]
     },
-    "line_comments": ["#"]
+    "line_comments": ["#"],
+    "usage": ["assembler", "disassembler"]
   },
   "mappings": [
     { "space": "S", "tab": "T", "lf": "L", "spaces_between": false },

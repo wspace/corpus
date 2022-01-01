@@ -39,6 +39,7 @@
       "dumpstack": ["debug_printstack"],
       "dumpheap": ["debug_printheap"]
     },
+    "usage": ["disassembler", "programs"],
     "extension": "wsa"
   },
   "programs": [

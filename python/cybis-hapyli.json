@@ -46,7 +46,8 @@
       "printi": ["pn"],
       "readc": ["rc"],
       "readi": ["rn"]
-    }
+    },
+    "usage": ["language"]
   },
   "programs": [
     { "path": "sudoku.ws", "spec_version": "0.3" },

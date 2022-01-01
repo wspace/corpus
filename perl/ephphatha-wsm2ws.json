@@ -36,8 +36,17 @@
       "readi": ["inum", "getnum"]
     },
     "line_comments": [";"],
+    "usage": ["assembler", "programs"],
     "extension": "wsm"
   },
+  "programs": [
+    {
+      "path": "examples/cyclic_rshift.wsm",
+      "generated": "examples/cyclic_rshift.ws",
+      "spec_version": "0.2"
+    },
+    { "path": "examples/reverse.wsm", "generated": "examples/reverse.ws", "spec_version": "0.2" }
+  ],
   "commands": [
     {
       "type": "assembler",

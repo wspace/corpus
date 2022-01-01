@@ -30,6 +30,7 @@
     },
     "patterns": { "char": ".|\\\\[stn]", "number": "-?\\d+" },
     "line_comments": ["#"],
+    "usage": ["assembler", "programs"],
     "extension": "txt"
   },
   "mappings": [

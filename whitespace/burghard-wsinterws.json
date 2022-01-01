@@ -54,6 +54,7 @@
     "case_sensitive_instructions": false,
     "line_comments": [";", "--"],
     "block_comments": [{ "start": "{-", "end": "-}", "nestable": true }],
+    "usage": ["programs"],
     "extension": "wsa"
   },
   "programs": [{ "path": "wsinterws.wsa", "generated": "wsinterws.ws", "aux": ["run.txt"] }],

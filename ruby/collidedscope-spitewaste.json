@@ -37,6 +37,7 @@
       "readc": ["ichr"],
       "readi": ["inum"]
     },
+    "usage": ["assembler", "disassembler", "programs"],
     "extension": "wsa"
   },
   "programs": [

@@ -44,6 +44,7 @@
     "case_sensitive_instructions": true,
     "line_comments": ["#"],
     "indentation": "     ",
+    "usage": ["assembler", "programs"],
     "extension": "wsa"
   },
   "commands": [
