@@ -215,7 +215,10 @@ Build and run errors are included.
 - python/ganeshsankaran/interpreter.py
 - ⚠️ python/hearnderek/whitespace.py: Needs Codewars entrypoint
 - python/hunminpark/Convert.py
-- python/ilikepython256-whitespace-unc/WhitespaceCompiler.py
+- ⚠️ python/ilikepython256-whitespace-unc:
+  - WhitespaceCompiler.py
+  - ⚠️ WhitespaceWeb.py
+  - ⚠️ WhitespaceWebRaw.py
 - python/jrialland/whitespaceasm.py
 - python/kareeeeem-abyad:
   - generate\_programs

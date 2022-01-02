@@ -83,7 +83,7 @@ language, including interpreters, compilers, and programs.
 | [hello.ws](whitespace/petek-hello.json)            | Peter Koncelik   | Whitespace | programs     | 2019-11-22 | [GitHub](https://github.com/petek222/whitespace) |
 | [whitespace_compiler](cpp/malkiewiczm.json)        | Michael Malkiewicz | C++, Yacc, Lex | language, programs | 2019-10-20 | [GitHub](https://github.com/malkiewiczm/whitespace_compiler) |
 | [hackergame2019-writeups](whitespace/ustclug-hackergame2019.json) | 枸杞蒲蒻 (hkcoldmoon) | Whitespace | programs | 2019-10-19 | [GitHub](https://github.com/ustclug/hackergame2019-writeups), [hack2019.lug.ustc.edu.cn](https://hack2019.lug.ustc.edu.cn/) |
-| [Whitespace UnC](python/ilikepython256-whitespace-unc.json) | Python Whiz 256 | Python | assembler, web client, programs | 2019-09-24 | [GitHub](https://github.com/ILikePython256/Whitespace_UnC) |
+| [Whitespace UnC](python/ilikepython256-whitespace-unc.json) | Python Whiz 256 | Python | assembler, web server, programs | 2019-09-24 | [GitHub](https://github.com/wspace/ilikepython256-whitespace-unc), [GitHub](https://github.com/ILikePython256/Whitespace_UnC) |
 | [cerner_2^5_2019](whitespace/lollasravani-cerner.json) | Lolla Sravani Lalitha | Whitespace | programs | 2019-09-13 | [GitHub](https://github.com/lollasravani/cerner_2-5_2019) |
 | [codegolf-submissions](whitespace/kspalaiologos-codegolf.json) | Kamila Szewczyk (Palaiologos) | Whitespace | programs | 2019-08-29 | [GitHub](https://github.com/kspalaiologos/codegolf-submissions), [Code Golf](https://codegolf.stackexchange.com/questions/55960/im-not-the-language-youre-looking-for/191063#191063) |
 | [zerospace-lang](javascript/loklaan-zerowidth-lang.json) | Lochlan Bunn | JavaScript | interpreter, mapping | 2019-07-25 | [GitHub](https://github.com/loklaan/zerowidth-lang) |
@@ -543,6 +543,10 @@ See [CONTRIBUTING.md](./CONTRIBUTING.md).
   - [hapyli.webs.com](https://web.archive.org/web/20110212015726/http://hapyli.webs.com:80/)
   - [yagni.com](https://web.archive.org/web/20120417161917/http://yagni.com:80/whitespace/index.html)
   - [wsdebug.berlios.de](https://web.archive.org/web/20041031040027/http://wsdebug.berlios.de:80/)
+- Social media
+  - Reddit:
+      [r/esolangs](https://www.reddit.com/r/esolangs/search/?q=whitespace),
+      [r/ProgrammingLanguages](https://www.reddit.com/r/ProgrammingLanguages/search/?q=whitespace)
 
 ### TODO
 
@@ -631,9 +635,6 @@ See [CONTRIBUTING.md](./CONTRIBUTING.md).
       [whitespace (from:edwinbrady)](https://twitter.com/search?q=whitespace%20(from%3Aedwinbrady)),
       [whitespace (to:edwinbrady)](https://twitter.com/search?q=whitespace%20(to%3Aedwinbrady)),
       [whitespace @edwinbrady](https://twitter.com/search?q=whitespace%20(%40edwinbrady))
-  - Reddit:
-      [r/esolangs](https://www.reddit.com/r/esolangs/),
-      [r/ProgrammingLanguages](https://www.reddit.com/r/ProgrammingLanguages/)
   - Hacker News
 - Snippets
   - Pastebin:

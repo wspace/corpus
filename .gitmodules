@@ -484,7 +484,7 @@
 	url = https://github.com/Avantgarde95/Whitespace
 [submodule "python/ilikepython256-whitespace-unc"]
 	path = python/ilikepython256-whitespace-unc
-	url = https://github.com/ILikePython256/Whitespace_UnC
+	url = https://github.com/wspace/ilikepython256-whitespace-unc
 [submodule "python/jrialland"]
 	path = python/jrialland
 	url = https://gist.github.com/jrialland/e0d370034da9c7b1b76a8afccbea7424
