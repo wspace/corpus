@@ -121,19 +121,18 @@
       "spec_version": "0.3",
       "generate": "make WSLIB=../../whitespace/andrewarchi-wslib"
     },
-    {
-      "path": "codegolf/luhn.ws",
-      "generated": "build/codegolf/luhn.w",
-      "aux": ["codegolf/luhn.wsf"],
-      "spec_version": "0.3",
-      "generate": "make WSLIB=../../whitespace/andrewarchi-wslib"
-    },
+    { "path": "codegolf/luhn.ws", "aux": ["codegolf/luhn.wsf"], "spec_version": "0.3" },
     {
       "path": "codegolf/luhn_test.wsf",
       "generated": "build/codegolf/luhn_test.ws",
       "outputs": ["codegolf/luhn_test.out"],
       "spec_version": "0.3",
       "generate": "make WSLIB=../../whitespace/andrewarchi-wslib"
+    },
+    {
+      "path": "codegolf/shortest_error.ws",
+      "aux": ["codegolf/shortest_error.wsf"],
+      "spec_version": "0.3"
     },
     {
       "path": "euler/1.wsf",
