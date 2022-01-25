@@ -1,0 +1,64 @@
+{
+  "id": "python/kraterkraken",
+  "name": "Whitespace",
+  "authors": ["kraterkraken"],
+  "license": "GPL-3.0",
+  "languages": ["Python"],
+  "tags": ["interpreter", "disassembler", "debugger", "programs"],
+  "date": "2022-01-23 09:26:43 -0500",
+  "spec_version": "0.3",
+  "source": ["https://github.com/kraterkraken/Whitespace"],
+  "whitespace": { "extension": "ws" },
+  "assembly": {
+    "mnemonics": {
+      "push": ["PUSH"],
+      "dup": ["DUPLICATE"],
+      "copy": ["COPY"],
+      "swap": ["SWAP"],
+      "drop": ["DISCARD"],
+      "slide": ["SLIDE"],
+      "add": ["ADD"],
+      "sub": ["SUBTRACT"],
+      "mul": ["MULTIPLY"],
+      "div": ["DIVIDE"],
+      "mod": ["MODULO"],
+      "store": ["STORE"],
+      "retrieve": ["RETRIEVE"],
+      "label": ["MARK"],
+      "call": ["CALL"],
+      "jmp": ["JUMP"],
+      "jz": ["JUMPZERO"],
+      "jn": ["JUMPNEG"],
+      "ret": ["RETURN"],
+      "end": ["ENDPROGRAM"],
+      "printc": ["OUTCH"],
+      "printi": ["OUTNUM"],
+      "readc": ["INCH"],
+      "readi": ["INNUM"]
+    },
+    "indentation": "",
+    "usage": ["disassembler", "debugger"]
+  },
+  "programs": [
+    { "path": "cat.ws", "spec_version": "0.2" },
+    { "path": "count10.ws", "equivalent": "count.ws", "spec_version": "0.2" },
+    { "path": "greet.ws", "spec_version": "0.2" },
+    { "path": "hworld.ws", "equivalent": "Hello, world! (Wikipedia)", "spec_version": "0.2" },
+    { "path": "truth.ws", "spec_version": "0.2" },
+    { "path": "whitespace.py", "notes": "test_code string" }
+  ],
+  "commands": [
+    {
+      "type": "interpreter",
+      "bin": "whitespace.py",
+      "usage": "python3 $0 ([--debug | --describe] (<file> | --test) | --help)",
+      "options": [
+        { "long": "test", "desc": "Runs unit tests (overrides filename)" },
+        { "long": "debug", "desc": "Turns on verbose debugging" },
+        { "long": "describe", "desc": "Describes the given Whitespace code. Does not execute the program." },
+        { "long": "help", "desc": "Prints this help info" }
+      ],
+      "option_parse": "manual"
+    }
+  ]
+}
