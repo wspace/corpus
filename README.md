@@ -12,7 +12,7 @@ language, including interpreters, compilers, and programs.
 | [CodeWars_Solutions](python/molfar-codewars.json)  | Molfar           | Python, CoffeeScript, C++, Java, JavaScript, TypeScript | interpreter | 2021-12-30 | [GitHub](https://github.com/MolfarUA/CodeWars_Solutions) |
 | [code_wars_exercises](typescript/eduardoborsa-codewars.json) | Eduardo Borsa | TypeScript | interpreter | 2021-12-21 | [GitHub](https://github.com/EduardoBorsa/code_wars_exercises) |
 | [whitespace-jit](cpp/drebelsky-jit.json)           | Daniel Rebelsky  | C++        | JIT, programs | 2021-12-17 | [GitHub](https://github.com/drebelsky/whitespace-jit) |
-| [whitespace-go](go/sampratt.json)                  | Sam Pratt        | Go         | interpreter, programs | 2021-12-11 | [GitHub](https://github.com/samuel-pratt/whitespace-go) |
+| [whitespace-go](go/sampratt.json)                  | Sam Pratt        | Go         | interpreter, programs | 2021-12-11 | [GitHub](https://github.com/samuel-pratt/whitespace-go), [r/golang](https://www.reddit.com/r/golang/comments/recgxc/you_guys_seemed_to_like_my_brainfuck_interpreter/), [r/esolangs](https://www.reddit.com/r/esolangs/comments/recunt/i_made_a_whitespace_interpreter_in_go_and_id_love/) |
 | [advent-of-code](whitespace/alchzh-advent-of-code.json) | Albert Zhang | Whitespace | programs    | 2021-12-04 | [GitHub](https://github.com/alchzh/advent-of-code) |
 | [wsbf](brainfuck/andrewarchi-wsbf.json)            | Andrew Archibald | Brainfuck  | interpreter  | 2021-11-14 | [GitHub](https://github.com/andrewarchi/wsbf) |
 | [ws-challenges](whitespace/andrewarchi-challenges.json) | Andrew Archibald | Whitespace | programs | 2021-11-13 | [GitHub](https://github.com/andrewarchi/ws-challenges) |
