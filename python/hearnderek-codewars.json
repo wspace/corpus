@@ -1,13 +1,13 @@
 {
-  "id": "python/hearnderek",
-  "name": "WhiteSpaceInterpreter",
+  "id": "python/hearnderek-codewars",
+  "name": "WhitespaceInterpreter.py",
   "authors": ["Derek Hearn"],
   "license": "none",
   "languages": ["Python"],
   "tags": ["interpreter"],
-  "date": "2020-02-09 09:22:36 +0900",
+  "date": "2022-02-05 15:55:26 +0900",
   "spec_version": "0.3",
-  "source": ["https://github.com/hearnderek/WhiteSpaceInterpreter"],
+  "source": ["https://github.com/hearnderek/codewars"],
   "challenges": ["Codewars"],
   "assembly": {
     "mnemonics": {
@@ -41,7 +41,7 @@
   "commands": [
     {
       "type": "interpreter",
-      "bin": "whitespace.py",
+      "bin": "Python/WhitespaceInterpreter.py",
       "dependencies": ["Python 3"],
       "run_errors": "Needs Codewars entrypoint"
     }

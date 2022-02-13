@@ -1,12 +1,13 @@
 # The Whitespace Corpus
 
-The definitive collection of 303 projects for the Whitespace programming
+The definitive collection of 304 projects for the Whitespace programming
 language, including interpreters, compilers, and programs.
 
 ## Projects
 
 | Name                                               | Authors          | Languages  | Tags         | Date       | Source |
 | -------------------------------------------------- | ---------------- | ---------- | ------------ | ---------- | ------ |
+| [WhitespaceInterpreter.py](python/hearnderek-codewars.json) | Derek Hearn | Python | interpreter  | 2022-02-05 | [GitHub](https://github.com/hearnderek/codewars) |
 | [Whitespace](python/kraterkraken.json)             | kraterkraken     | Python     | interpreter, disassembler, debugger, programs | 2022-01-23 | [GitHub](https://github.com/kraterkraken/Whitespace) |
 | [Whitespace Programs](whitespace/drebelsky-programs.json) | Daniel Rebelsky | Whitespace, Python | programs, assembler | 2021-12-31 | [GitHub](https://github.com/drebelsky/whitespace-programs) |
 | [CodeWars_Solutions](python/molfar-codewars.json)  | Molfar           | Python, CoffeeScript, C++, Java, JavaScript, TypeScript | interpreter | 2021-12-30 | [GitHub](https://github.com/MolfarUA/CodeWars_Solutions) |

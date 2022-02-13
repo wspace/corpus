@@ -40,6 +40,7 @@ case of Codewars, interpreters for Whitespace.
 - [python/dalleng](python/dalleng.json)
 - [python/ericpwilliamson-codewars](python/ericpwilliamson-codewars.json)
 - [python/hearnderek](python/hearnderek.json)
+- [python/hearnderek-codewars](python/hearnderek-codewars.json)
 - [python/maximegoyette](python/maximegoyette.json)
 - [python/molfar-codewars](python/molfar-codewars.json)
 - [python/musflood](python/musflood.json)

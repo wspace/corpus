@@ -479,6 +479,9 @@
 [submodule "python/hearnderek"]
 	path = python/hearnderek
 	url = https://github.com/hearnderek/WhiteSpaceInterpreter
+[submodule "python/hearnderek-codewars"]
+	path = python/hearnderek-codewars
+	url = https://github.com/hearnderek/codewars
 [submodule "python/hunminpark"]
 	path = python/hunminpark
 	url = https://github.com/Avantgarde95/Whitespace
