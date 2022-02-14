@@ -8,7 +8,7 @@ language, including interpreters, compilers, and programs.
 | Name                                               | Authors          | Languages  | Tags         | Date       | Source |
 | -------------------------------------------------- | ---------------- | ---------- | ------------ | ---------- | ------ |
 | [WhitespaceInterpreter.py](python/hearnderek-codewars.json) | Derek Hearn | Python | interpreter  | 2022-02-05 | [GitHub](https://github.com/hearnderek/codewars) |
-| [Whitespace](python/kraterkraken.json)             | kraterkraken     | Python     | interpreter, disassembler, debugger, programs | 2022-01-23 | [GitHub](https://github.com/kraterkraken/Whitespace) |
+| [Whitespace](python/kraterkraken.json)             | kraterkraken     | Python     | interpreter, assembler, disassembler, debugger, programs | 2022-01-23 | [GitHub](https://github.com/kraterkraken/Whitespace) |
 | [Whitespace Programs](whitespace/drebelsky-programs.json) | Daniel Rebelsky | Whitespace, Python | programs, assembler | 2021-12-31 | [GitHub](https://github.com/drebelsky/whitespace-programs) |
 | [CodeWars_Solutions](python/molfar-codewars.json)  | Molfar           | Python, CoffeeScript, C++, Java, JavaScript, TypeScript | interpreter | 2021-12-30 | [GitHub](https://github.com/MolfarUA/CodeWars_Solutions) |
 | [code_wars_exercises](typescript/eduardoborsa-codewars.json) | Eduardo Borsa | TypeScript | interpreter | 2021-12-21 | [GitHub](https://github.com/EduardoBorsa/code_wars_exercises) |

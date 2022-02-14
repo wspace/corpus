@@ -225,7 +225,9 @@ Build and run errors are included.
   - generate\_programs
   - src
 - python/katc/whitespace.py
-- python/kraterkraken/whitespace.py
+- python/kraterkraken:
+  - mkws.py
+  - whitespace.py
 - python/lachlancourt/transpiler.py
 - ⚠️ python/marktraceur-redlandside/main.py: PyQt version 4 not installed
 - ⚠️ python/maximegoyette/whitespace.py: Needs Codewars entrypoint

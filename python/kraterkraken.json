@@ -4,7 +4,7 @@
   "authors": ["kraterkraken"],
   "license": "GPL-3.0",
   "languages": ["Python"],
-  "tags": ["interpreter", "disassembler", "debugger", "programs"],
+  "tags": ["interpreter", "assembler", "disassembler", "debugger", "programs"],
   "date": "2022-01-23 09:26:43 -0500",
   "spec_version": "0.3",
   "source": ["https://github.com/kraterkraken/Whitespace"],
@@ -36,8 +36,9 @@
       "readc": ["INCH"],
       "readi": ["INNUM"]
     },
+    "case_sensitive_instructions": true,
     "indentation": "",
-    "usage": ["disassembler", "debugger"]
+    "usage": ["assembler", "disassembler", "debugger"]
   },
   "programs": [
     { "path": "cat.ws", "spec_version": "0.2" },
@@ -52,12 +53,21 @@
       "type": "interpreter",
       "bin": "whitespace.py",
       "usage": "python3 $0 ([--debug | --describe] (<file> | --test) | --help)",
+      "input": "<file> or stdin if -",
       "options": [
         { "long": "test", "desc": "Runs unit tests (overrides filename)" },
         { "long": "debug", "desc": "Turns on verbose debugging" },
         { "long": "describe", "desc": "Describes the given Whitespace code. Does not execute the program." },
         { "long": "help", "desc": "Prints this help info" }
       ],
+      "option_parse": "manual"
+    },
+    {
+      "type": "assembler",
+      "bin": "mkws.py",
+      "usage": "$0 <file>",
+      "input": "<file> or stdin if -",
+      "options": [{ "long": "help", "desc": "Prints this help info" }],
       "option_parse": "manual"
     }
   ]
