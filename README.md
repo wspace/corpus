@@ -1,6 +1,6 @@
 # The Whitespace Corpus
 
-The definitive collection of 304 projects for the Whitespace programming
+The definitive collection of 303 projects for the Whitespace programming
 language, including interpreters, compilers, and programs.
 
 ## Projects
@@ -30,7 +30,6 @@ language, including interpreters, compilers, and programs.
 | [NovaGrammars](textmate/nixinova.json)             | Nixinova         | TextMate   | syntax highlighting, programs | 2021-08-15 | [GitHub](https://github.com/Nixinova/NovaGrammars), [GitHub](https://github.com/github/linguist/discussions/5519#discussioncomment-1185871) |
 | [SPOJ](whitespace/t3nsor-spoj.json)                | Brian Bi         | Whitespace | assembler, programs | 2021-08-11 | [GitHub](https://github.com/t3nsor/SPOJ) |
 | [whitespace-rs](rust/guricerin.json)               | guricerin        | Rust       | interpreter, programs | 2021-07-04 | [GitHub](https://github.com/guricerin/esolangs) |
-| [ctf_writeup](whitespace/melonattacker-ctf.json)   | Junki Yuasa      | Whitespace | programs     | 2021-07-02 | [GitHub](https://github.com/melonattacker/ctf_writeup), [ksnctf.sweetduet.info](https://ksnctf.sweetduet.info/problem/7) |
 | [whitespace-compiler](python/prajwalanand.json)    | Prajwal Anand    | Python     | transpiler, mapping, programs | 2021-07-01 | [GitHub](https://github.com/prajwalanand/whitespace-compiler) |
 | [WhiteSpace program](whitespace/techvstechie.json) | techVstechie     | Whitespace | programs     | 2021-06-30 | [GitHub Gist](https://gist.github.com/techVstechie/a1af13232e5c8145ffb770884d32187b) |
 | [docker-whitespace](docker/bensuperpc.json)        | Bensuperpc       | Docker     | builder      | 2021-06-09 | [GitHub](https://github.com/bensuperpc/docker-whitespace) |
@@ -633,6 +632,8 @@ See [CONTRIBUTING.md](./CONTRIBUTING.md).
       [SBSTR1](https://www.spoj.com/problems/SBSTR1/) ([SO](https://stackoverflow.com/questions/26521780/how-to-check-whether-a-string-is-substring-of-another-in-whitespace)),
       [Discuss](https://discuss.spoj.com/search?q=whitespace)
   - [Baekjoon Online Judge](https://www.acmicpc.net/)
+  - knsctf:
+      [#7 Programming](https://ksnctf.sweetduet.info/problem/7) ([on GitHub](https://github.com/search?o=desc&q=0962664770776731080774868826855754386638240000e&s=indexed&type=Code))
 - Stack Exchange
   - Code Golf:
       [Tips for golfing in Whitespace](https://codegolf.stackexchange.com/questions/48442/tips-for-golfing-in-whitespace),

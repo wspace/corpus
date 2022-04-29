@@ -791,9 +791,6 @@
 [submodule "whitespace/makenowjust-quine"]
 	path = whitespace/makenowjust-quine
 	url = https://github.com/MakeNowJust/quine
-[submodule "whitespace/melonattacker-ctf"]
-	path = whitespace/melonattacker-ctf
-	url = https://github.com/melonattacker/ctf_writeup
 [submodule "whitespace/meow-tigerhacks"]
 	path = whitespace/meow-tigerhacks
 	url = https://github.com/meow56/tigerhacks-2021

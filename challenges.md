@@ -53,10 +53,6 @@ case of Codewars, interpreters for Whitespace.
 
 - [whitespace/ustclug-hackergame2019](whitespace/ustclug-hackergame2019.json)
 
-## ksnctf
-
-- [whitespace/melonattacker-ctf](whitespace/melonattacker-ctf.json)
-
 ## noxCTF
 
 - [whitespace/rsactf](whitespace/rsactf.json)
