@@ -100,6 +100,9 @@
 [submodule "cpp/frmsaul-cupertino"]
 	path = cpp/frmsaul-cupertino
 	url = https://github.com/frmsaul/Cupertino-WhiteSpace-Interperter
+[submodule "cpp/kapustaikwas"]
+	path = cpp/kapustaikwas
+	url = https://github.com/kapustaikwas27/Whitespace-compiler
 [submodule "cpp/keirua-white"]
 	path = cpp/keirua-white
 	url = https://github.com/Keirua/whitespace
@@ -389,6 +392,9 @@
 [submodule "ocaml/matsud-c2ws"]
 	path = ocaml/matsud-c2ws
 	url = https://github.com/matsud224/c2ws
+[submodule "ocaml/progbits-blank"]
+	path = ocaml/progbits-blank
+	url = https://github.com/progbits/blank
 [submodule "ocaml/steiner"]
 	path = ocaml/steiner
 	url = https://github.com/steiner26/Whitespace
@@ -725,6 +731,9 @@
 [submodule "whitespace/chrisnguyen-steganographic-polyglots"]
 	path = whitespace/chrisnguyen-steganographic-polyglots
 	url = https://github.com/uncompiled/steganographic-polyglots
+[submodule "whitespace/datomalania-hello"]
+	path = whitespace/datomalania-hello
+	url = https://github.com/datomalania/helloworld
 [submodule "whitespace/davidjkling-cerner"]
 	path = whitespace/davidjkling-cerner
 	url = https://github.com/davidjkling/cerner_2_5_2020

@@ -61,6 +61,9 @@ Build and run errors are included.
 - cpp/drebelsky-jit/compile: `make CXXFLAGS='-O3 -Wall -Wpedantic -std=c++17'`
 - cpp/esco/src/esco: `./configure && make`
 - cpp/frmsaul-cupertino/whitespace: `g++ -O3 -o whitespace src/*.cpp`
+- cpp/kapustaikwas:
+  - pre: `g++ -O3 -Wall -o pre pre.cpp`
+  - wsc.sh
 - cpp/keirua-white/white: `g++ -O3 -Wall -o white main.cpp`
 - cpp/knmorgan/ws: `make CXXFLAGS='-Wall -pedantic -O3'`
 - cpp/malkiewiczm/compile: `make`
@@ -174,6 +177,7 @@ Build and run errors are included.
 - objective-c/emilbahnsen-assembler/build/Release/wsa: `xcodebuild`
 - ocaml/jgkaplan-wsc/main.byte: `make`
 - ocaml/matsud-c2ws/c2ws: `make`
+- ocaml/progbits-blank/\_build/default/blank.exe: `dune build`
 - ocaml/steiner/whitespace: `make`
 - perl/ephphatha-wsm2ws/wsm2ws.pl
 - perl/mkoelbl/whitespace.pl
@@ -326,6 +330,7 @@ Build and run errors are included.
 - whitespace/andrewarchi-challenges/test.bash: `make`
 - whitespace/andrewarchi-wslib/assemble.sh
 - ❌ whitespace/burghard-wsinterws
+- ❌ whitespace/datomalania-hello
 - whitespace/drebelsky-programs/assemble.py
 - ❌ whitespace/helowld
 - ❌ whitespace/jarrodparkes-a-z

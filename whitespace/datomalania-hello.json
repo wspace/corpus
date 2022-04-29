@@ -1,0 +1,13 @@
+{
+  "id": "whitespace/datomalania-hello",
+  "name": "helloworld",
+  "authors": ["დათო (Dato Malania)"],
+  "license": "none",
+  "languages": ["Whitespace"],
+  "tags": ["programs", "mapping"],
+  "date": "2022-03-13 18:05:29 +0400",
+  "spec_version": "0.2",
+  "source": ["https://github.com/datomalania/helloworld"],
+  "mappings": [{ "space": "#", "tab": "*", "lf": "+" }],
+  "programs": [{ "path": "hello_Whitespace.ws", "spec_version": "0.2" }]
+}

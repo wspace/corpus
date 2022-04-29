@@ -1,0 +1,49 @@
+{
+  "id": "ocaml/progbits-blank",
+  "name": "Blank",
+  "authors": ["progbits"],
+  "license": "MIT",
+  "languages": ["OCaml"],
+  "tags": ["interpreter", "programs"],
+  "date": "2021-03-16 22:01:08 +0000",
+  "spec_version": "0.2",
+  "source": ["https://github.com/progbits/blank"],
+  "assembly": {
+    "mnemonics": {
+      "push": ["Push"],
+      "dup": ["Duplicate"],
+      "swap": ["Swap"],
+      "drop": ["Discard"],
+      "add": ["Addtion"],
+      "sub": ["Subtraction"],
+      "mul": ["Multiplication"],
+      "div": ["Division"],
+      "mod": ["Modulo"],
+      "store": ["Store"],
+      "retrieve": ["Retrieve"],
+      "label": ["Mark"],
+      "call": ["Call"],
+      "jmp": ["UnconditionalJump"],
+      "jz": ["JumpZero"],
+      "jn": ["JumpNegative"],
+      "ret": ["EndSubroutine"],
+      "end": ["EndProgram"],
+      "printc": ["OutputCharacter"],
+      "printi": ["OutputNumber"],
+      "readc": ["ReadCharacter"],
+      "readi": ["ReadNumber"]
+    },
+    "usage": ["enum"]
+  },
+  "programs": [{ "path": "examples/fizz-buzz.ws", "spec_version": "0.2" }],
+  "commands": [
+    {
+      "type": "interpreter",
+      "bin": "_build/default/blank.exe",
+      "dependencies": ["opam"],
+      "install_dependencies": "opam install dune core ounit2",
+      "build": "dune build",
+      "usage": "$0 <file>"
+    }
+  ]
+}
