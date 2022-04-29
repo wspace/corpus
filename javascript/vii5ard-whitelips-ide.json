@@ -45,20 +45,6 @@
     "extension": "wsa"
   },
   "programs": [
-    {
-      "path": "example/bf.wsa",
-      "generated": "example/bf.ws",
-      "spec_version": "0.3",
-      "authors": ["Henri Lakk (Vii5ard)"]
-    },
-    { "path": "example/collatz.wsa", "spec_version": "0.2", "authors": ["Henri Lakk (Vii5ard)"] },
-    { "path": "example/hmacro.wsa", "spec_version": "0.3", "authors": ["Henri Lakk (Vii5ard)"] },
-    {
-      "path": "example/nerd.wsa",
-      "generated": "example/nerd.ws",
-      "spec_version": "0.2",
-      "authors": ["Henri Lakk (Vii5ard)"]
-    },
     { "path": "example/c.ws", "equivalent": "count.ws", "spec_version": "0.2" },
     { "path": "example/calc.ws", "equivalent": "calc.ws", "spec_version": "0.2" },
     { "path": "example/count.ws", "equivalent": "count.ws", "spec_version": "0.2" },
@@ -68,22 +54,83 @@
     { "path": "example/name.ws", "equivalent": "name.ws", "spec_version": "0.2" },
     { "path": "example/quine.ws", "equivalent": "quine.ws", "spec_version": "0.2" },
     { "path": "example/quine-2.ws", "equivalent": "quine-2.ws", "spec_version": "0.2" },
-    { "path": "example/lib/alias.wsa", "spec_version": "0.2", "authors": ["Henri Lakk (Vii5ard)"] },
-    { "path": "example/lib/math.wsa", "spec_version": "0.3", "authors": ["Henri Lakk (Vii5ard)"] },
-    { "path": "example/lib/rot13.wsa", "spec_version": "0.3", "authors": ["Henri Lakk (Vii5ard)"] },
-    { "path": "example/lib/std.wsa", "spec_version": "0.3", "authors": ["Henri Lakk (Vii5ard)"] },
-    { "path": "example/lib/string.wsa", "spec_version": "0.3", "authors": ["Henri Lakk (Vii5ard)"] },
+    {
+      "path": "example/bf.wsa",
+      "generated": "example/bf.ws",
+      "spec_version": "0.3",
+      "authors": ["Henri Lakk (Vii5ard)"],
+      "desc": "A Brainfuck interpreter written in Whitespace."
+    },
+    {
+      "path": "example/collatz.wsa",
+      "spec_version": "0.2",
+      "authors": ["Henri Lakk (Vii5ard)"],
+      "desc": "Will output a Collaz sequence starting from a user provided number."
+    },
+    {
+      "path": "example/hmacro.wsa",
+      "spec_version": "0.3",
+      "authors": ["Henri Lakk (Vii5ard)"],
+      "desc": "An example how to use the standard library in the build-in Whitespace assembly language."
+    },
+    { "path": "example/mal.wsa", "spec_version": "0.3", "authors": ["Henri Lakk (Vii5ard)"] },
+    {
+      "path": "example/nerd.wsa",
+      "generated": "example/nerd.ws",
+      "spec_version": "0.2",
+      "authors": ["Henri Lakk (Vii5ard)"],
+      "desc": "A simple example how to use the built-in Whitespace assembly language."
+    },
+    {
+      "path": "example/lib/alias.wsa",
+      "spec_version": "0.2",
+      "authors": ["Henri Lakk (Vii5ard)"],
+      "desc": "Contains aliases for compatibility with other Whitespace assembly languages."
+    },
+    {
+      "path": "example/lib/math.wsa",
+      "spec_version": "0.3",
+      "authors": ["Henri Lakk (Vii5ard)"],
+      "desc": "Whitespace assembly library containing methods such as: pow, abs, max, min, sign, gcd, lcm, sqrt, neg, shr, shl."
+    },
+    {
+      "path": "example/lib/rot13.wsa",
+      "spec_version": "0.3",
+      "authors": ["Henri Lakk (Vii5ard)"],
+      "desc": "Contains the rot13 function."
+    },
+    {
+      "path": "example/lib/std.wsa",
+      "spec_version": "0.3",
+      "authors": ["Henri Lakk (Vii5ard)"],
+      "desc": "The standard library for the built-in Whitespace assembly. This file includes the whole library - do not worry, the optimizer will remove all unused code."
+    },
+    {
+      "path": "example/lib/string.wsa",
+      "spec_version": "0.3",
+      "authors": ["Henri Lakk (Vii5ard)"],
+      "desc": "Whitespace assembly library containing string manipulation functions: <br> * prints - print the string<br> * printMem - prints out a memory area with given length<br> * nl - print a newline character<br> * storeStr - store string at a given address<br> * printHeap - print the contents of the heap<br> * printStack - print the contents of the stack."
+    },
     {
       "path": "example/vm/bf.wsa",
       "generated": "example/vm/bf.ws",
       "spec_version": "0.3",
-      "authors": ["Henri Lakk (Vii5ard)"]
+      "authors": ["Henri Lakk (Vii5ard)"],
+      "desc": "A Brainfuck interpreter written in Whitespace assembly. To run a Brainfuck program open one and hit the run button."
+    },
+    {
+      "path": "example/vm/mal.wsa",
+      "generated": "example/vm/mal.ws",
+      "spec_version": "0.3",
+      "authors": ["Henri Lakk (Vii5ard)"],
+      "desc": "A Malbolge interpreter written in Whitespace assembly. Inorder to run a Malbolge program open one (with .mal extension) in the editor and hit the run button. By default the compiled version is preferred by the IDE - if you want to to run specifically the assembly version then simply delete the compiled file."
     },
     {
       "path": "example/wc/bf2wsa.wsa",
       "generated": "example/wc/bf2wsa.ws",
       "spec_version": "0.2",
-      "authors": ["Henri Lakk (Vii5ard)"]
+      "authors": ["Henri Lakk (Vii5ard)"],
+      "desc": "Brainfuck to Whitespace assembly compiler written in Whitespace assembly. Just open a Brainfuck file and hit the compile button - the assembly is turned into Whitespace automatically."
     }
   ],
   "notes": "Local labels start with `.`. The brainfuck-whitespace repo is derived from example/bf.wsa, but it stops reading the program at !, in addition to \\n.",
