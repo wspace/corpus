@@ -1,0 +1,22 @@
+{
+  "id": "whitespace/reconcyl-wsbf",
+  "name": "wsbf",
+  "authors": ["Reconcyl"],
+  "license": "none",
+  "languages": ["Whitespace"],
+  "tags": ["programs"],
+  "date": "2021-07-22 02:16:42 -0700",
+  "spec_version": "0.2",
+  "source": ["https://github.com/Reconcyl/eso"],
+  "programs": [
+    {
+      "path": "wsbf/bf.wsasm",
+      "generated": "wsbf/bf.ws",
+      "spec_version": "0.2",
+      "generate": "wsc -t -m -f asm wsbf/bf.wsasm > wsbf/bf.ws",
+      "authors": ["Reconcyl"],
+      "desc": "BF interpreter in Whitespace.",
+      "notes": "Uses whitespace-rs assembly language"
+    }
+  ]
+}

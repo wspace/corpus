@@ -836,6 +836,9 @@
 [submodule "whitespace/rameshdahiya-merry-christmas"]
 	path = whitespace/rameshdahiya-merry-christmas
 	url = https://gist.github.com/rameshdahiya/c5705032173968999ecd0c3c1cf238c7
+[submodule "whitespace/reconcyl-wsbf"]
+	path = whitespace/reconcyl-wsbf
+	url = https://github.com/Reconcyl/eso
 [submodule "whitespace/resten-christmas-tree"]
 	path = whitespace/resten-christmas-tree
 	url = https://github.com/Resten1497/christmas_tree
@@ -854,6 +857,9 @@
 [submodule "whitespace/srinandanpai-cerner"]
 	path = whitespace/srinandanpai-cerner
 	url = https://github.com/SrinandanPai/cerner_2-5
+[submodule "whitespace/stevemats-hello"]
+	path = whitespace/stevemats-hello
+	url = https://github.com/stevemats/H3llo_W0rld
 [submodule "whitespace/t3nsor-spoj"]
 	path = whitespace/t3nsor-spoj
 	url = https://github.com/t3nsor/SPOJ

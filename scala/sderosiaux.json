@@ -9,6 +9,7 @@
   "spec_version": "0.2",
   "source": [
     "https://github.com/sderosiaux/whitespace-parser",
-    "https://www.sderosiaux.com/articles/2018/06/15/a-simple-way-to-write-parsers-using-the-state-monad/"
+    "https://www.sderosiaux.com/articles/2018/06/15/a-simple-way-to-write-parsers-using-the-state-monad/",
+    "https://github.com/sderosiaux/golb/blob/master/src/pages/2018-06-15-parser-with-state-monad/index.md"
   ]
 }

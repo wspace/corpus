@@ -1,0 +1,12 @@
+{
+  "id": "whitespace/stevemats-hello",
+  "name": "H3llo, World! in WhiteSpace",
+  "authors": ["Steve Matindi"],
+  "license": "none",
+  "languages": ["Whitespace"],
+  "tags": ["programs"],
+  "date": "2021-12-11 02:23:36 +0300",
+  "spec_version": "0.2",
+  "source": ["https://github.com/stevemats/H3llo_W0rld"],
+  "programs": [{ "path": "hello-world.ws", "equivalent": "hworld.ws", "spec_version": "0.2" }]
+}
