@@ -823,7 +823,7 @@
 	url = https://github.com/ParadoxV5/Program-java-rb-ws-txt
 [submodule "whitespace/pdewacht-tetris"]
 	path = whitespace/pdewacht-tetris
-	url = https://github.com/wspace/pdewacht-tetris
+	url = https://github.com/wspace/tetris
 [submodule "whitespace/petek-hello"]
 	path = whitespace/petek-hello
 	url = https://github.com/petek222/whitespace
