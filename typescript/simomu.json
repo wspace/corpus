@@ -1,0 +1,53 @@
+{
+  "id": "typescript/simomu",
+  "name": "whitespace-ts",
+  "authors": ["simomu"],
+  "license": "ISC",
+  "languages": ["TypeScript"],
+  "tags": ["interpreter", "programs"],
+  "date": "2022-02-20 17:52:25 +0900",
+  "spec_version": "0.2",
+  "source": ["https://github.com/simomu-github/whitespace_ts"],
+  "whitespace": { "extension": "ws" },
+  "assembly": {
+    "mnemonics": {
+      "push": ["Push"],
+      "dup": ["Duplicate"],
+      "swap": ["Swap"],
+      "drop": ["Discard"],
+      "add": ["Addition"],
+      "sub": ["Subtraction"],
+      "mul": ["Multiplication"],
+      "div": ["Division"],
+      "mod": ["Modulo"],
+      "store": ["Store"],
+      "retrieve": ["Retrieve"],
+      "label": ["MarkLabel"],
+      "call": ["CallSubroutine"],
+      "jmp": ["JumpLabel"],
+      "jz": ["JumpLabelWhenZero"],
+      "jn": ["JumpLabelWhenNegative"],
+      "ret": ["EndSubroutine"],
+      "end": ["EndProgram"],
+      "printc": ["Putc"],
+      "printi": ["Putn"],
+      "readc": ["Getc"],
+      "readi": ["Getn"]
+    },
+    "usage": ["enum"]
+  },
+  "programs": [{ "path": "sample/hello.ws", "spec_version": "0.2" }],
+  "commands": [
+    {
+      "type": "interpreter",
+      "bin": "bin/ws.js",
+      "install_dependencies": "npm install",
+      "build": "npm run build",
+      "usage": "node $0 [-v | --version] <file>",
+      "input": "<file>",
+      "output": "stdout",
+      "options": [{ "short": "v", "long": "version", "desc": "display version" }],
+      "option_parse": "manual"
+    }
+  ]
+}

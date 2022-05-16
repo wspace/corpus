@@ -25,6 +25,7 @@
         [fact.ws](https://github.com/search?o=desc&q=filename%3Afact.ws+extension%3Aws+-org%3Awspace&s=indexed&type=Code),
         [fibonacci.ws](https://github.com/search?o=desc&q=filename%3Afibonacci.ws+extension%3Aws+-org%3Awspace&s=indexed&type=Code),
         [hanoi.ws](https://github.com/search?o=desc&q=filename%3Ahanoi.ws+extension%3Aws+-org%3Awspace&s=indexed&type=Code),
+        [hello.ws](https://github.com/search?o=desc&q=filename%3Ahello.ws+extension%3Aws+-org%3Awspace&s=indexed&type=Code),
         [hworld.ws](https://github.com/search?o=desc&q=filename%3Ahworld.ws+extension%3Aws+-org%3Awspace&s=indexed&type=Code),
         [loctest.ws](https://github.com/search?o=desc&q=filename%3Aloctest.ws+extension%3Aws+-org%3Awspace&s=indexed&type=Code),
         [name.ws](https://github.com/search?o=desc&q=filename%3Aname.ws+extension%3Aws+-org%3Awspace&s=indexed&type=Code),

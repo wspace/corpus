@@ -1,0 +1,57 @@
+{
+  "id": "go/simomu",
+  "name": "whitespace-go",
+  "authors": ["simomu"],
+  "license": "none",
+  "languages": ["Go"],
+  "tags": ["interpreter", "programs"],
+  "date": "2020-07-17 16:59:17 +0900",
+  "spec_version": "0.2",
+  "source": ["https://github.com/simomu-github/whitespace_go"],
+  "whitespace": { "extension": "ws" },
+  "assembly": {
+    "mnemonics": {
+      "push": ["Push"],
+      "dup": ["Duplicate"],
+      "swap": ["Swap"],
+      "drop": ["Discard"],
+      "add": ["Addition"],
+      "sub": ["Subtraction"],
+      "mul": ["Multiplication"],
+      "div": ["Division"],
+      "mod": ["Modulo"],
+      "store": ["Store"],
+      "retrieve": ["Retrieve"],
+      "label": ["MarkLabel"],
+      "call": ["CallSubroutine"],
+      "jmp": ["JumpLabel"],
+      "jz": ["JumpLabelWhenZero"],
+      "jn": ["JumpLabelWhenNegative"],
+      "ret": ["EndSubroutine"],
+      "end": ["EndProgram"],
+      "printc": ["Putc"],
+      "printi": ["Putn"],
+      "readc": ["Getc"],
+      "readi": ["Getn"]
+    },
+    "usage": ["enum"]
+  },
+  "programs": [{ "path": "samples/hello.ws", "spec_version": "0.2" }],
+  "commands": [
+    {
+      "type": "interpreter",
+      "bin": "releases/ws",
+      "dependencies": ["Go"],
+      "build": "make",
+      "usage": "$0 [-v] <file>",
+      "input": "<file>",
+      "output": "stdout",
+      "options": [
+        { "short": "v", "desc": "display version information" },
+        { "short": "h", "long": "h" },
+        { "short": "help", "long": "help" }
+      ],
+      "option_parse": "Go flag"
+    }
+  ]
+}

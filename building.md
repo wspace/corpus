@@ -45,7 +45,7 @@ Build and run errors are included.
   - wlang: `gcc -g -Wall -Werror -o wlang whitespace.c`
 - clojure/jmesyou-erasure/target/uberjar/erasure-2.0-standalone.jar: `lein uberjar`
 - clojure/makenowjust/target/whitespace-clj-0.1.0-SNAPSHOT-standalone.jar: `lein uberjar`
-- ⚠️ coffeescript/ehrlichbryan/*unspecified*: `npm install && grunt` Unclear how to run
+- ⚠️ coffeescript/ehrlichbryan/*unspecified*: `grunt` Unclear how to run
 - cpp/abac-whint/whint: `g++ -O3 -Wall -o whint whint.cpp`
 - cpp/abcsharp/wsi: `g++ -O3 -Wall -std=c++11 -o wsi whitespace/main.cpp`
 - ⚠️ cpp/andrewarchi-respace:
@@ -105,6 +105,7 @@ Build and run errors are included.
 - go/pocke-gows/gows: `go build`
 - go/qeedquan/whitespace: `go build -o whitespace`
 - go/sampratt/whitespace-go: `go build`
+- go/simomu/releases/ws: `make`
 - go/technohippy/go-whitespace: `go build -o go-whitespace ./src`
 - go/tempxla-go-wspace/bin/go-wspace: `make`
 - go/yshr-wspacego/wspacego: `go build`
@@ -325,7 +326,8 @@ Build and run errors are included.
 - ⚠️ textmate/nixinova/grammars/whitespace.yaml-tmLanguage
 - ❌ textmate/veniversum
 - ⚠️ typescript/eduardoborsa-codewars/dummy/2/whitespace\_interpreter.ts: Needs Codewars entrypoint
-- ⚠️ typescript/fy0u11/dist/Whitespace.js: `npm install && npm run build`
+- ⚠️ typescript/fy0u11/dist/Whitespace.js: `npm run build`
+- typescript/simomu/bin/ws.js: `npm run build`
 - ❌ vim/rolf-ws-vim
 - whitespace/andrewarchi-challenges/test.bash: `make`
 - whitespace/andrewarchi-wslib/assemble.sh

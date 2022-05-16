@@ -9,5 +9,12 @@
   "spec_version": "0.3",
   "source": ["https://github.com/FY0u11/whitespace-interpreter"],
   "challenges": ["Codewars"],
-  "commands": [{ "type": "interpreter", "bin": "dist/Whitespace.js", "build": "npm install && npm run build" }]
+  "commands": [
+    {
+      "type": "interpreter",
+      "bin": "dist/Whitespace.js",
+      "install_dependencies": "npm install",
+      "build": "npm run build"
+    }
+  ]
 }

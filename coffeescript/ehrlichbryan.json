@@ -51,5 +51,12 @@
     },
     { "path": "example programs/blackspace/prompt.bs" }
   ],
-  "commands": [{ "dependencies": ["Grunt"], "build": "npm install && grunt", "run_errors": "Unclear how to run" }]
+  "commands": [
+    {
+      "dependencies": ["Grunt"],
+      "install_dependencies": "npm install",
+      "build": "grunt",
+      "run_errors": "Unclear how to run"
+    }
+  ]
 }
