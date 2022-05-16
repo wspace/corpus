@@ -9,6 +9,7 @@
   "spec_version": "0.2",
   "source": ["https://github.com/yasn77/whitepy"],
   "package": { "name": "whitepy", "manager": "PyPI", "url": "https://pypi.org/project/whitepy/" },
+  "whitespace": { "extension": "ws" },
   "programs": [
     { "path": "sample_ws/calc.ws", "equivalent": "calc.ws", "spec_version": "0.2" },
     { "path": "sample_ws/count.ws", "equivalent": "count.ws", "spec_version": "0.2" },

@@ -8,5 +8,6 @@
   "date": "2021-12-11 02:23:36 +0300",
   "spec_version": "0.2",
   "source": ["https://github.com/stevemats/H3llo_W0rld"],
+  "whitespace": { "extension": "ws" },
   "programs": [{ "path": "hello-world.ws", "equivalent": "hworld.ws", "spec_version": "0.2" }]
 }

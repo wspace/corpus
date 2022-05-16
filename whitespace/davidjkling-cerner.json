@@ -9,5 +9,6 @@
   "spec_version": "0.3",
   "source": ["https://github.com/davidjkling/cerner_2_5_2020"],
   "challenges": ["Cerner 2^5"],
+  "whitespace": { "extension": "ws" },
   "programs": [{ "path": "cerner.ws", "spec_version": "0.3" }]
 }

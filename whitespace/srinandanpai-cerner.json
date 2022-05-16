@@ -9,5 +9,6 @@
   "spec_version": "0.2",
   "source": ["https://github.com/SrinandanPai/cerner_2-5"],
   "challenges": ["Cerner 2^5"],
+  "whitespace": { "extension": "ws" },
   "programs": [{ "path": "day9/days_left.ws", "spec_version": "0.2" }]
 }

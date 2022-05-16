@@ -201,7 +201,7 @@ language, including interpreters, compilers, and programs.
 | [Whitespacing](scala/ojha-whitespacing.json)       | Alexandra Ojha   | Scala      | interpreter  | 2015-12-11 | [GitHub](https://github.com/polyglotpiglet/Whitespacing) |
 | [whitespace](csharp/colchicus.json)                | Colchicus        | C#         | interpreter  | 2015-11-19 | [NuGet](https://www.nuget.org/packages/whitespace/), [GitHub](https://github.com/colchicus/whitespace) |
 | [c2ws](ocaml/matsud-c2ws.json)                     | Daiki Matsunaga  | OCaml      | language compiler | 2015-11-17 | [GitHub](https://github.com/matsud224/c2ws) |
-| [TextProc](ruby/yuta-textproc.json)                | YutaYamaguchi    | Ruby       | interpreter, programs | 2015-11-16 | [GitHub](https://github.com/yuta0023/TextProc) |
+| [TextProc](ruby/yuta-textproc.json)                | YutaYamaguchi    | Ruby       | interpreter  | 2015-11-16 | [GitHub](https://github.com/yuta0023/TextProc) |
 | [callisto](lua/vyo-callisto.json)                  | Manu Weidmann    | Lua        | interpreter  | 2015-10-15 | [GitHub](https://github.com/vyo/callisto) |
 | [2_power_5](whitespace/rafimo-cerner.json)         | Mohammad Rafi    | Whitespace | programs     | 2015-10-01 | [GitHub](https://github.com/rafimo/2_power_5) |
 | [Whitespace](python/dalleng.json)                  | Diego Allen      | Python     | interpreter  | 2015-09-28 | [GitHub](https://github.com/dalleng/Whitespace) |

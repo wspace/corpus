@@ -12,6 +12,7 @@
     "https://www.reddit.com/r/golang/comments/recgxc/you_guys_seemed_to_like_my_brainfuck_interpreter/",
     "https://www.reddit.com/r/esolangs/comments/recunt/i_made_a_whitespace_interpreter_in_go_and_id_love/"
   ],
+  "whitespace": { "extension": "ws" },
   "programs": [
     {
       "path": "examples/hello_world_polyglot.ws",

@@ -8,6 +8,9 @@
   "date": "2021-07-22 02:16:42 -0700",
   "spec_version": "0.2",
   "source": ["https://github.com/Reconcyl/eso"],
+  "relations": [{ "id": "rust/censoredusername-whitespace-rs", "type": "assembly" }],
+  "whitespace": { "extension": "ws" },
+  "assembly": { "extension": "wsasm" },
   "programs": [
     {
       "path": "wsbf/bf.wsasm",
@@ -15,8 +18,7 @@
       "spec_version": "0.2",
       "generate": "wsc -t -m -f asm wsbf/bf.wsasm > wsbf/bf.ws",
       "authors": ["Reconcyl"],
-      "desc": "BF interpreter in Whitespace.",
-      "notes": "Uses whitespace-rs assembly language"
+      "desc": "BF interpreter in Whitespace."
     }
   ]
 }

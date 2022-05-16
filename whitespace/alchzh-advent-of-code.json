@@ -10,6 +10,8 @@
   "source": ["https://github.com/alchzh/advent-of-code"],
   "relations": [{ "id": "javascript/vii5ard-whitelips-ide", "type": "assembly" }],
   "challenges": ["Advent of Code"],
+  "whitespace": { "extension": "ws" },
+  "assembly": { "extension": "wsa" },
   "programs": [
     {
       "path": "2021/day01/1.wsa",

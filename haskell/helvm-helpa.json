@@ -27,7 +27,8 @@
       { "name": "ElseOption" },
       { "name": "EndOption" },
       { "name": "ElseIfOption", "args": ["ident"] }
-    ]
+    ],
+    "extension": "ws"
   },
   "assembly": {
     "mnemonics": {

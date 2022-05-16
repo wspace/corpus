@@ -9,5 +9,6 @@
   "spec_version": "0.2",
   "source": ["https://github.com/lollasravani/cerner_2-5_2019"],
   "challenges": ["Cerner 2^5"],
+  "whitespace": { "extension": "ws" },
   "programs": [{ "path": "WhiteSpace/Day3.ws", "spec_version": "0.2" }]
 }

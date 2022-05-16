@@ -13,6 +13,7 @@
     "https://forum.rebol.info/t/whitespace-interpreter-revisited/1482",
     "https://gist.github.com/hostilefork/8628820"
   ],
+  "whitespace": { "extension": "ws" },
   "mappings": [
     {
       "space": "space",

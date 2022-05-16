@@ -11,5 +11,6 @@
     "https://github.com/Resten1497/christmas_tree",
     "https://github.com/Resten1497/christmas_tree/pull/47"
   ],
+  "whitespace": { "extension": "ws" },
   "programs": [{ "path": "Whitespace/ChristmasTree.ws", "spec_version": "0.2" }]
 }

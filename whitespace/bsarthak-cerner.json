@@ -9,5 +9,6 @@
   "spec_version": "0.2",
   "source": ["https://github.com/bsarthak1803/Cerner-2_pow_5-2020"],
   "challenges": ["Cerner 2^5"],
+  "whitespace": { "extension": "ws" },
   "programs": [{ "path": "ten.ws", "spec_version": "0.2" }]
 }

@@ -9,6 +9,7 @@
   "spec_version": "0.2",
   "source": ["https://github.com/rafimo/2_power_5"],
   "challenges": ["Cerner 2^5"],
+  "whitespace": { "extension": "ws" },
   "programs": [
     { "path": "2021/whitespace/see_nothing.ws", "spec_version": "0.2" },
     { "path": "whitespace/cerner.ws", "spec_version": "0.2" }

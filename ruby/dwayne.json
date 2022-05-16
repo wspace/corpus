@@ -13,6 +13,7 @@
     "manager": "RubyGems",
     "url": "https://rubygems.org/gems/whitespace-ruby"
   },
+  "whitespace": { "extension": "ws" },
   "programs": [
     { "path": "examples/count.ws", "equivalent": "count.ws", "spec_version": "0.2" },
     { "path": "examples/fact.ws", "equivalent": "fact.ws (0.2)", "spec_version": "0.2" },

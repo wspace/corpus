@@ -9,6 +9,7 @@
   "spec_version": "0.3",
   "source": ["https://github.com/jermenkoo/spoj.pl_solutions"],
   "challenges": ["Sphere Online Judge"],
+  "whitespace": { "extension": "ws" },
   "programs": [{ "path": "SBSTR1.ws", "spec_version": "0.3" }],
   "notes": "Date is of commit adding SBSTR1.ws"
 }

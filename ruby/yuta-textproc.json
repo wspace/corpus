@@ -4,10 +4,11 @@
   "authors": ["YutaYamaguchi"],
   "license": "none",
   "languages": ["Ruby"],
-  "tags": ["interpreter", "programs"],
+  "tags": ["interpreter"],
   "date": "2015-11-16 15:17:05 +0900",
   "spec_version": "0.2",
   "source": ["https://github.com/yuta0023/TextProc"],
+  "whitespace": { "extension": "ws" },
   "programs": [
     { "path": "fibonacci.ws", "equivalent": "fibonacci.ws", "spec_version": "0.2" },
     { "path": "hanoi.ws", "equivalent": "hanoi.ws", "spec_version": "0.2" }
