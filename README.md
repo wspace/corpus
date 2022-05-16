@@ -70,7 +70,7 @@ language, including interpreters, compilers, and programs.
 | [Cerner-2_pow_5-2020](whitespace/bsarthak-cerner.json) | Satadru Datta | Whitespace | programs    | 2020-09-08 | [GitHub](https://github.com/bsarthak1803/Cerner-2_pow_5-2020) |
 | [top-langs-not-to-use](php/codelytv-youtube.json)  | Rafa Gómez       | PHP        | steganography, programs | 2020-08-18 | [GitHub](https://github.com/CodelyTV/youtube-code-examples) |
 | [rustws](rust/luminight.json)                      | Luminight        | Rust       | library, mapping, programs | 2020-08-04 | [GitHub](https://github.com/Luminighty/rustws) |
-| [Whitespace](javascript/kosei.json)                | kosei28          | JavaScript | interpreter  | 2020-08-03 | [GitHub](https://github.com/kosei28/Whitespace) |
+| [Whitespace](javascript/kosei.json)                | kosei28          | JavaScript | interpreter  | 2020-08-03 | [GitHub](https://github.com/wspace/kosei-javascript), [GitHub](https://github.com/kosei28/Whitespace) |
 | [SpaceMan](haskell/ft-spaceman.json)               | Frank Terbeck    | Haskell    | interpreter  | 2020-07-09 | [GitLab](https://gitlab.com/ft/spaceman), [GitHub](https://github.com/ft/spaceman), [bewatermyfriend.org](http://bewatermyfriend.org/p/2020/000/), [Hacker News](https://news.ycombinator.com/item?id=24763312) |
 | [codewars.com](javascript/namhle-codewars.json)    | Nam Hoang Le     | JavaScript | interpreter  | 2020-06-09 | [GitHub](https://github.com/nam-hle/codewars.com) |
 | [whitespace](cpp/ricardoluis.json)                 | Ricardo Luís Vaz Silva | C++  | interpreter  | 2020-06-03 | [GitHub](https://github.com/RicardoLuis0/whitespace) |

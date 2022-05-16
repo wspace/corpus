@@ -313,7 +313,7 @@
 	url = https://github.com/kmyk/whitespace-translater
 [submodule "javascript/kosei"]
 	path = javascript/kosei
-	url = https://github.com/kosei28/Whitespace
+	url = https://github.com/wspace/kosei-javascript
 [submodule "javascript/loklaan-whitespace-lang"]
 	path = javascript/loklaan-whitespace-lang
 	url = https://github.com/loklaan/whitespace-lang
