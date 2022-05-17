@@ -1,0 +1,22 @@
+{
+  "id": "whitespace/p1atdev-hello",
+  "name": "Whitespace-lang example",
+  "authors": ["Plat"],
+  "license": "MIT",
+  "languages": ["Whitespace"],
+  "tags": ["programs"],
+  "date": "2022-05-05 13:20:00 +0900",
+  "spec_version": "0.2",
+  "source": ["https://github.com/p1atdev/hello_world_ws"],
+  "relations": [{ "id": "javascript/susisu", "type": "assembly" }],
+  "whitespace": { "extension": "ws" },
+  "assembly": { "extension": "unws" },
+  "programs": [
+    {
+      "path": "hello.unws",
+      "generated": "output.ws",
+      "aux": ["hello.ws"],
+      "generate": "yarn install && yarn build"
+    }
+  ]
+}

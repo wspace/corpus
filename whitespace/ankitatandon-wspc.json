@@ -1,0 +1,17 @@
+{
+  "id": "whitespace/ankitatandon-wspc",
+  "name": "WSPC",
+  "authors": ["Ankita Tandon"],
+  "license": "none",
+  "languages": ["Whitespace"],
+  "tags": ["programs", "mappings"],
+  "date": "2021-02-26 19:52:14 +0530",
+  "spec_version": "0.2",
+  "source": ["https://github.com/AnkitaTandon/WSPC"],
+  "whitespace": { "extension": "ws" },
+  "mappings": [{ "space": "S", "tab": "T", "lf": "L", "before_stl": true }],
+  "programs": [
+    { "path": "src/hello_world!.ws", "spec_version": "0.2" },
+    { "path": "src/undefined.ws.txt", "spec_version": "0.2" }
+  ]
+}

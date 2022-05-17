@@ -92,6 +92,7 @@ Build and run errors are included.
 - ❌ csharp/nutcrack-whiteplanes
 - ⚠️ csharp/reflash/WhiteSpaceInterpretator/bin/Debug/WhiteSpaceInterpretator.exe: `msbuild /p:Configuration=Debug WhiteSpaceInterpretator/WhiteSpaceInterpretator.csproj` Mono does not implement WPF APIs
 - csharp/rolisoft-esoteric/bin/Debug/EsotericCodeInterpreter.exe: `msbuild /p:Configuration=Debug\;AssemblyName=EsotericCodeInterpreter EsotericCodeInterpreter.csproj`
+- ❌ csharp/ryzngard-dotnot
 - ❌ docker/baekjoon-onlinejudge
 - ❌ docker/bensuperpc
 - ❌ docker/hakatashi-esolang-box
@@ -225,6 +226,7 @@ Build and run errors are included.
   - WhitespaceCompiler.py
   - ⚠️ WhitespaceWeb.py
   - ⚠️ WhitespaceWebRaw.py
+- python/joaquinrossi-esoteric/whitespace.py
 - python/jrialland/whitespaceasm.py
 - python/kareeeeem-abyad:
   - generate\_programs
@@ -331,6 +333,7 @@ Build and run errors are included.
 - ❌ vim/rolf-ws-vim
 - whitespace/andrewarchi-challenges/test.bash: `make`
 - whitespace/andrewarchi-wslib/assemble.sh
+- ❌ whitespace/ankitatandon-wspc
 - ❌ whitespace/burghard-wsinterws
 - ❌ whitespace/datomalania-hello
 - whitespace/drebelsky-programs/assemble.py

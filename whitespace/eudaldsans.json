@@ -1,0 +1,13 @@
+{
+  "id": "whitespace/eudaldsans",
+  "name": "whitespace",
+  "authors": ["Eudald Sans"],
+  "license": "none",
+  "languages": ["Whitespace"],
+  "tags": ["programs"],
+  "date": "2022-05-10 12:22:49 +0200",
+  "spec_version": "0.2",
+  "source": ["https://github.com/EudaldSans/whitespace"],
+  "whitespace": { "extension": "ws" },
+  "programs": [{ "path": "hello_world.ws", "spec_version": "0.2" }, { "path": "sum.ws", "spec_version": "0.2" }]
+}

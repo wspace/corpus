@@ -1,0 +1,12 @@
+{
+  "id": "csharp/ryzngard-dotnot",
+  "name": "DotNot",
+  "authors": ["Andrew Hall"],
+  "license": "none",
+  "languages": ["C#"],
+  "tags": ["parser", "programs"],
+  "date": "2020-05-10 00:45:16 -0700",
+  "spec_version": "0.2",
+  "source": ["https://github.com/ryzngard/DotNot"],
+  "programs": [{ "path": "src/Whitespace.TestProject/HelloWorld.ws", "spec_version": "0.2" }]
+}

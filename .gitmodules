@@ -175,6 +175,9 @@
 [submodule "csharp/rolisoft-esoteric"]
 	path = csharp/rolisoft-esoteric
 	url = https://github.com/RoliSoft/Esoteric-Code-Interpreter
+[submodule "csharp/ryzngard-dotnot"]
+	path = csharp/ryzngard-dotnot
+	url = https://github.com/ryzngard/DotNot
 [submodule "docker/baekjoon-onlinejudge"]
 	path = docker/baekjoon-onlinejudge
 	url = https://github.com/Baekjoon/Dockerfiles
@@ -497,6 +500,9 @@
 [submodule "python/ilikepython256-whitespace-unc"]
 	path = python/ilikepython256-whitespace-unc
 	url = https://github.com/wspace/ilikepython256-whitespace-unc
+[submodule "python/joaquinrossi-esoteric"]
+	path = python/joaquinrossi-esoteric
+	url = https://github.com/joaquin-rossi/esoteric
 [submodule "python/jrialland"]
 	path = python/jrialland
 	url = https://gist.github.com/jrialland/e0d370034da9c7b1b76a8afccbea7424
@@ -722,6 +728,9 @@
 [submodule "whitespace/aniket-hacktoberfest-2018"]
 	path = whitespace/aniket-hacktoberfest-2018
 	url = https://github.com/wspace/aniket-hacktoberfest-2018
+[submodule "whitespace/ankitatandon-wspc"]
+	path = whitespace/ankitatandon-wspc
+	url = https://github.com/AnkitaTandon/WSPC
 [submodule "whitespace/apartmentlist-obfuscated"]
 	path = whitespace/apartmentlist-obfuscated
 	url = https://github.com/apartmentlist/coding-challenges
@@ -752,6 +761,9 @@
 [submodule "whitespace/elisha-snakulator"]
 	path = whitespace/elisha-snakulator
 	url = https://github.com/donno2048/snakulator
+[submodule "whitespace/eudaldsans"]
+	path = whitespace/eudaldsans
+	url = https://github.com/EudaldSans/whitespace
 [submodule "whitespace/grantbgreat-hello"]
 	path = whitespace/grantbgreat-hello
 	url = https://github.com/GrantBGreat/hello-world
@@ -824,6 +836,9 @@
 [submodule "whitespace/owocean-fizzbuzz"]
 	path = whitespace/owocean-fizzbuzz
 	url = https://gist.github.com/owocean/0433a34dcfb1409bd5528e4821dd0055
+[submodule "whitespace/p1atdev-hello"]
+	path = whitespace/p1atdev-hello
+	url = https://github.com/p1atdev/hello_world_ws
 [submodule "whitespace/paradoxv5-program-java-rb"]
 	path = whitespace/paradoxv5-program-java-rb
 	url = https://github.com/ParadoxV5/Program-java-rb-ws-txt

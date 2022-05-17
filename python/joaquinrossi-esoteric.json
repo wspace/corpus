@@ -1,0 +1,22 @@
+{
+  "id": "python/joaquinrossi-esoteric",
+  "name": "esoteric",
+  "authors": ["Joaquín Rossi"],
+  "license": "AGPL-3.0",
+  "languages": ["Python"],
+  "tags": ["interpreter"],
+  "date": "2021-09-29 14:42:29 -0300",
+  "spec_version": "0.3",
+  "source": ["https://github.com/joaquin-rossi/esoteric"],
+  "programs": [{ "path": "tests/hello.ws", "spec_version": "0.2" }],
+  "commands": [
+    {
+      "type": "interpreter",
+      "bin": "whitespace.py",
+      "usage": "python3 $0 run <file>",
+      "input": "<file>",
+      "output": "stdout",
+      "notes": "The only implemented mode is `run`"
+    }
+  ]
+}

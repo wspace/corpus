@@ -4,7 +4,7 @@
   "authors": ["Susisu"],
   "license": "MIT",
   "languages": ["JavaScript"],
-  "tags": ["interpreter"],
+  "tags": ["interpreter", "assembler"],
   "date": "2016-04-12 15:01:22 +0900",
   "spec_version": "0.3",
   "source": ["https://github.com/susisu/Whitespace-JS"],

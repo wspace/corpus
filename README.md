@@ -1,12 +1,14 @@
 # The Whitespace Corpus
 
-The definitive collection of 310 projects for the Whitespace programming
+The definitive collection of 315 projects for the Whitespace programming
 language, including interpreters, compilers, and programs.
 
 ## Projects
 
 | Name                                               | Authors          | Languages  | Tags         | Date       | Source |
 | -------------------------------------------------- | ---------------- | ---------- | ------------ | ---------- | ------ |
+| [whitespace](whitespace/eudaldsans.json)           | Eudald Sans      | Whitespace | programs     | 2022-05-10 | [GitHub](https://github.com/EudaldSans/whitespace) |
+| [Whitespace-lang example](whitespace/p1atdev-hello.json) | Plat       | Whitespace | programs     | 2022-05-05 | [GitHub](https://github.com/p1atdev/hello_world_ws) |
 | [Whitespace-compiler](cpp/kapustaikwas.json)       | Marcin           | C++        | transpiler, assembler, disassembler | 2022-04-05 | [GitHub](https://github.com/kapustaikwas27/Whitespace-compiler) |
 | [helloworld](whitespace/datomalania-hello.json)    | დათო (Dato Malania) | Whitespace | programs, mapping | 2022-03-13 | [GitHub](https://github.com/datomalania/helloworld) |
 | [whitespace-ts](typescript/simomu.json)            | simomu           | TypeScript | interpreter, programs | 2022-02-20 | [GitHub](https://github.com/simomu-github/whitespace_ts) |
@@ -29,6 +31,7 @@ language, including interpreters, compilers, and programs.
 | [Whitespace Interpreter](ocaml/steiner.json)       | Brandon Stein    | OCaml, Yacc, Lex | interpreter, programs | 2021-10-22 | [GitHub](https://github.com/steiner26/Whitespace) |
 | [cerner_2tothe5th](whitespace/truptibaliga-cerner.json) | Trupti Baliga | Whitespace | programs   | 2021-10-06 | [GitHub](https://github.com/Trupti-Baliga/cerner_2tothe5th) |
 | [cerner_2-5](whitespace/srinandanpai-cerner.json)  | Srinandan Pai    | Whitespace | programs     | 2021-10-01 | [GitHub](https://github.com/SrinandanPai/cerner_2-5) |
+| [esoteric](python/joaquinrossi-esoteric.json)      | Joaquín Rossi    | Python     | interpreter  | 2021-09-29 | [GitHub](https://github.com/joaquin-rossi/esoteric) |
 | [WhitespaceInterpreter](lua/carsonrueber.json)     | Carson Rueber    | Lua        | interpreter, programs | 2021-08-29 | [GitHub](https://github.com/CJ5518/WhitespaceInterpreter) |
 | [Whitespace grammar for GitHub](textmate/andrewarchi-linguist.json) | Andrew Archibald | TextMate | grammar | 2021-08-15 | [GitHub](https://github.com/wspace/wspace-linguist) |
 | [NovaGrammars](textmate/nixinova.json)             | Nixinova         | TextMate   | syntax highlighting, programs | 2021-08-15 | [GitHub](https://github.com/Nixinova/NovaGrammars), [GitHub](https://github.com/github/linguist/discussions/5519#discussioncomment-1185871) |
@@ -47,6 +50,7 @@ language, including interpreters, compilers, and programs.
 | [Hello World](whitespace/grantbgreat-hello.json)   | Grant Bourne     | Whitespace | programs     | 2021-03-23 | [GitHub](https://github.com/GrantBGreat/hello-world) |
 | [Blank](ocaml/progbits-blank.json)                 | progbits         | OCaml      | interpreter, programs | 2021-03-16 | [GitHub](https://github.com/progbits/blank) |
 | [ws](python/ffanzhang.json)                        | ffanzhang        | Python     | interpreter  | 2021-03-07 | [GitHub](https://github.com/ffanzhang/ws) |
+| [WSPC](whitespace/ankitatandon-wspc.json)          | Ankita Tandon    | Whitespace | programs, mappings | 2021-02-26 | [GitHub](https://github.com/AnkitaTandon/WSPC) |
 | [Albus](rust/collidedscope-albus.json)             | Collided Scope   | Rust       | interpreter  | 2021-02-12 | [GitHub](https://github.com/collidedscope/albus) |
 | [Fizzbuzz in whitespace](whitespace/owocean-fizzbuzz.json) | owocean  | Whitespace | programs     | 2021-01-30 | [GitHub Gist](https://gist.github.com/owocean/0433a34dcfb1409bd5528e4821dd0055) |
 | [Program.java.rb.ws.txt](whitespace/paradoxv5-program-java-rb.json) | ParadoxV5 | Whitespace | programs | 2021-01-30 | [GitHub](https://github.com/ParadoxV5/Program-java-rb-ws-txt) |
@@ -77,6 +81,7 @@ language, including interpreters, compilers, and programs.
 | [codewars.com](javascript/namhle-codewars.json)    | Nam Hoang Le     | JavaScript | interpreter  | 2020-06-09 | [GitHub](https://github.com/nam-hle/codewars.com) |
 | [whitespace](cpp/ricardoluis.json)                 | Ricardo Luís Vaz Silva | C++  | interpreter  | 2020-06-03 | [GitHub](https://github.com/RicardoLuis0/whitespace) |
 | [WhiteSpace Assembler](haskell/helvm-wsa.json)     | Kamil Adam       | Haskell    | assembler    | 2020-05-18 | [GitHub](https://github.com/helvm/wsa) |
+| [DotNot](csharp/ryzngard-dotnot.json)              | Andrew Hall      | C#         | parser, programs | 2020-05-10 | [GitHub](https://github.com/ryzngard/DotNot) |
 | [HelPA](haskell/helvm-helpa.json)                  | Kamil Adam       | Haskell/Eta | language, assembler, programs | 2020-05-09 | [GitHub](https://github.com/helvm/helpa) |
 | [HelMA](haskell/helvm-helma.json)                  | Kamil Adam       | Haskell/Eta | interpreter, mapping, programs | 2020-05-08 | [GitHub](https://github.com/helvm/helma) |
 | [Whitelie](whitespace/keen-whitelie.json)          | κeen             | Whitespace, Ruby | compiler, assembler, programs | 2020-03-31 | [GitHub](https://github.com/wspace/keen-whitelie), [GitHub](https://github.com/KeenS/whitelie), [GitHub Gist](https://gist.github.com/KeenS/6081b0c802a4e575ddbacb1930680870), [keens.github.io](https://keens.github.io/blog/2020/04/01/whitespacenoserufuhosutokonpairatsukuttayo/), [keens.github.io](https://keens.github.io/blog/2020/04/01/taneakirakashi__whitespacekonpairawotsukuttahanashinouragawa/), [GitHub](https://github.com/KeenS/KeenS.github.io/blob/master/content/post/Whitespacenoserufuhosutokonpairatsukuttayo.md), [GitHub](https://github.com/KeenS/KeenS.github.io/blob/master/content/post/taneakirakashi__Whitespacekonpairawotsukuttahanashinouragawa.md) |
@@ -189,7 +194,7 @@ language, including interpreters, compilers, and programs.
 | [Exploring Program Languages](whitespace/gregorymorrison-euler.json) | Gregory Morrison | Whitespace | programs | 2016-04-17 | [GitHub](https://github.com/gregorymorrison/euler1) |
 | [whiteplanes.cs](csharp/nutcrack-whiteplanes.json) | Takuya Katsurada | C#         | interperter  | 2016-04-15 | [NuGet](https://www.nuget.org/packages/whiteplanes/), [GitHub](https://github.com/whiteplanes/whiteplanes.cs) |
 | [whitespace-compiler](python/meand.json)           | Adam Dinwoodie   | Python     | assembler    | 2016-04-13 | [GitHub](https://github.com/me-and/whitespace-compiler) |
-| [Whitespace-JS](javascript/susisu.json)            | Susisu           | JavaScript | interpreter  | 2016-04-12 | [GitHub](https://github.com/susisu/Whitespace-JS) |
+| [Whitespace-JS](javascript/susisu.json)            | Susisu           | JavaScript | interpreter, assembler | 2016-04-12 | [GitHub](https://github.com/susisu/Whitespace-JS) |
 | [Whitespace countdown 10...0](whitespace/kirens-countdown.json) | Erik Nygren | Whitespace | programs | 2016-04-10 | [GitHub Gist](https://gist.github.com/Kirens/9e3c99706773335366fa7bbf3cfd592d) |
 | [shi-mo/yukicoder/whitespace](ruby/shimo-yukicoder.json) | Yoshifumi Shimono (shi-mo) | Ruby, Whitespace | assembler, mapping, programs | 2016-03-21 | [GitHub](https://github.com/wspace/shimo-yukicoder), [GitHub](https://github.com/shi-mo/yukicoder), [yukicoder](https://yukicoder.me/users/1721) |
 | [whitespace-ruby](ruby/alesiong.json)              | alesiong         | Ruby       | program builder, programs | 2016-03-05 | [GitHub](https://github.com/alesiong/whitespace-ruby) |

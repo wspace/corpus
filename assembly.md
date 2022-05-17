@@ -38,3 +38,4 @@ instructions, ranked by popularity.
 
 - haskell/burghard-wsa
 - haskell/helvm-wsa
+- javascript/susisu
