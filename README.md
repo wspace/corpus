@@ -7,7 +7,7 @@ language, including interpreters, compilers, and programs.
 
 | Name                                               | Authors          | Languages  | Tags         | Date       | Source |
 | -------------------------------------------------- | ---------------- | ---------- | ------------ | ---------- | ------ |
-| [Whitespace-compiler](cpp/kapustaikwas.json)       | Marcin           | C++        | disassembler, assembler | 2022-04-05 | [GitHub](https://github.com/kapustaikwas27/Whitespace-compiler) |
+| [Whitespace-compiler](cpp/kapustaikwas.json)       | Marcin           | C++        | transpiler, assembler, disassembler | 2022-04-05 | [GitHub](https://github.com/kapustaikwas27/Whitespace-compiler) |
 | [helloworld](whitespace/datomalania-hello.json)    | დათო (Dato Malania) | Whitespace | programs, mapping | 2022-03-13 | [GitHub](https://github.com/datomalania/helloworld) |
 | [whitespace-ts](typescript/simomu.json)            | simomu           | TypeScript | interpreter, programs | 2022-02-20 | [GitHub](https://github.com/simomu-github/whitespace_ts) |
 | [WhitespaceInterpreter.py](python/hearnderek-codewars.json) | Derek Hearn | Python | interpreter  | 2022-02-05 | [GitHub](https://github.com/hearnderek/codewars) |

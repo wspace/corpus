@@ -38,7 +38,9 @@
     },
     "patterns": { "label": "@([A-Za-z_][A-Za-z0-9_]*|L<number>)" },
     "case_sensitive_instructions": false,
+    "multiple_per_line": true,
     "line_comments": [";"],
+    "indentation": "    ",
     "usage": ["assembler", "disassembler", "programs"],
     "extension": "asm"
   },
@@ -54,32 +56,48 @@
     { "path": "tests/ws-run/nerd.ws", "outputs": ["tests/ws-run/nerd.ws.out"] },
     { "path": "tests/ws-run/spec_zero.ws", "outputs": ["tests/ws-run/spec_zero.ws.out"] },
     {
-      "path": "binary.bak",
-      "generated": "binary.ws",
-      "inputs": ["binary.ws.asm.ws.in", "binary.ws.in"],
-      "outputs": ["binary.ws.asm.ws.out", "binary.ws.out"]
-    },
-    { "path": "copy.bak", "generated": "copy.ws", "outputs": ["copy.ws.asm.ws.out", "copy.ws.out"] },
-    {
-      "path": "doubler.ws",
-      "inputs": ["doubler.ws.asm.ws.in", "doubler.ws.in"],
-      "outputs": ["doubler.ws.asm.ws.out", "doubler.ws.out"]
+      "path": "tests/ws-rebuild/binary.bak",
+      "generated": "tests/ws-rebuild/binary.ws",
+      "inputs": ["tests/ws-rebuild/binary.ws.asm.ws.in", "tests/ws-rebuild/binary.ws.in"],
+      "outputs": ["tests/ws-rebuild/binary.ws.asm.ws.out", "tests/ws-rebuild/binary.ws.out"]
     },
     {
-      "path": "halve.bak",
-      "generated": "halve.ws",
-      "inputs": ["halve.ws.asm.ws.in", "halve.ws.in"],
-      "outputs": ["halve.ws.asm.ws.out", "halve.ws.out"]
+      "path": "tests/ws-rebuild/copy.bak",
+      "generated": "tests/ws-rebuild/copy.ws",
+      "outputs": ["tests/ws-rebuild/copy.ws.asm.ws.out", "tests/ws-rebuild/copy.ws.out"]
     },
     {
-      "path": "hanoi.ws",
-      "inputs": ["hanoi.ws.asm.ws.in", "hanoi.ws.in"],
-      "outputs": ["hanoi.ws.asm.ws.out", "hanoi.ws.out"]
+      "path": "tests/ws-rebuild/doubler.ws",
+      "inputs": ["tests/ws-rebuild/doubler.ws.asm.ws.in", "tests/ws-rebuild/doubler.ws.in"],
+      "outputs": ["tests/ws-rebuild/doubler.ws.asm.ws.out", "tests/ws-rebuild/doubler.ws.out"]
     },
-    { "path": "slide.bak", "generated": "slide.ws", "outputs": ["slide.ws.asm.ws.out", "slide.ws.out"] },
-    { "path": "divc.asm", "inputs": ["divc.asm.ws.in"], "outputs": ["divc.asm.ws.out"] },
-    { "path": "mmltz.asm", "inputs": ["mmltz.asm.ws.in"], "outputs": ["mmltz.asm.ws.out"] },
-    { "path": "rep_putn.asm", "outputs": ["rep_putn.asm.ws.out"] }
+    {
+      "path": "tests/ws-rebuild/halve.bak",
+      "generated": "tests/ws-rebuild/halve.ws",
+      "inputs": ["tests/ws-rebuild/halve.ws.asm.ws.in", "tests/ws-rebuild/halve.ws.in"],
+      "outputs": ["tests/ws-rebuild/halve.ws.asm.ws.out", "tests/ws-rebuild/halve.ws.out"]
+    },
+    {
+      "path": "tests/ws-rebuild/hanoi.ws",
+      "inputs": ["tests/ws-rebuild/hanoi.ws.asm.ws.in", "tests/ws-rebuild/hanoi.ws.in"],
+      "outputs": ["tests/ws-rebuild/hanoi.ws.asm.ws.out", "tests/ws-rebuild/hanoi.ws.out"]
+    },
+    {
+      "path": "tests/ws-rebuild/slide.bak",
+      "generated": "tests/ws-rebuild/slide.ws",
+      "outputs": ["tests/ws-rebuild/slide.ws.asm.ws.out", "tests/ws-rebuild/slide.ws.out"]
+    },
+    {
+      "path": "tests/ws-build-run/divc.asm",
+      "inputs": ["tests/ws-build-run/divc.asm.ws.in"],
+      "outputs": ["tests/ws-build-run/divc.asm.ws.out"]
+    },
+    {
+      "path": "tests/ws-build-run/mmltz.asm",
+      "inputs": ["tests/ws-build-run/mmltz.asm.ws.in"],
+      "outputs": ["tests/ws-build-run/mmltz.asm.ws.out"]
+    },
+    { "path": "tests/ws-build-run/rep_putn.asm", "outputs": ["tests/ws-build-run/rep_putn.asm.ws.out"] }
   ],
   "commands": [
     {

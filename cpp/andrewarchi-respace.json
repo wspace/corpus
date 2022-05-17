@@ -39,6 +39,7 @@
       "dumpstack": ["debug_printstack"],
       "dumpheap": ["debug_printheap"]
     },
+    "indentation": "    ",
     "usage": ["disassembler", "programs"],
     "extension": "wsa"
   },

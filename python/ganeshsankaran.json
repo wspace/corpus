@@ -34,6 +34,7 @@
       "readc": ["getchar"],
       "readi": ["getint"]
     },
+    "indentation": "",
     "usage": ["wsa interpreter"],
     "extension": "txt"
   },

@@ -39,6 +39,7 @@
     },
     "patterns": { "label": "<number>|[a-zA-Z]\\w*|null", "number": "[-+]?\\d+(\\s*\\(\\s*(\\d+)\\s*b\\s*\\))?" },
     "line_comments": ["#"],
+    "indentation": "",
     "usage": ["assembler", "disassembler", "programs"],
     "extension": "wss"
   },

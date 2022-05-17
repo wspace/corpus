@@ -41,6 +41,7 @@
       "readc": ["readc"],
       "readi": ["readi"]
     },
+    "indentation": "\t",
     "usage": ["assembler", "disassembler", "programs"],
     "extension": "wsa"
   },

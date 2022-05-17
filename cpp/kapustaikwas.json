@@ -4,7 +4,7 @@
   "authors": ["Marcin"],
   "license": "none",
   "languages": ["C++"],
-  "tags": ["disassembler", "assembler"],
+  "tags": ["transpiler", "assembler", "disassembler"],
   "date": "2022-04-05 22:12:25 +0200",
   "spec_version": "0.3",
   "source": ["https://github.com/kapustaikwas27/Whitespace-compiler"],
@@ -36,11 +36,12 @@
       "readi": ["readi"]
     },
     "indentation": "\t  ",
-    "label_indentation": "\t"
+    "label_indentation": "\t",
+    "usage": ["assembler", "disassembler", "transpiler"]
   },
   "commands": [
     {
-      "type": "disassembler and assembler",
+      "type": "assembler and disassembler",
       "bin": "pre",
       "build": "g++ -O3 -Wall -o pre pre.cpp",
       "usage": "$0 [-a | -r]",

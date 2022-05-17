@@ -36,7 +36,9 @@
       "readc": ["ichar", "getchar"],
       "readi": ["inum", "getnum"]
     },
+    "multiple_per_line": true,
     "line_comments": [";"],
+    "indentation": "",
     "usage": ["assembler", "programs"],
     "extension": "wsm"
   },

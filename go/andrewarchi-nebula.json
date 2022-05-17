@@ -42,6 +42,7 @@
       "dumpheap": ["dumpheap"],
       "dumptrace": ["trace"]
     },
+    "multiple_per_line": true,
     "indentation": "    ",
     "usage": ["disassembler"],
     "extension": "wsa"

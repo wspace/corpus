@@ -12,7 +12,7 @@
   "assembly": {
     "mnemonics": {
       "push": ["PUSH", "push"],
-      "dup": ["DUPE", "dupe", "dup", "DUP"],
+      "dup": ["DUPE", "dupe", "DUP", "dup"],
       "copy": ["COPY", "copy"],
       "swap": ["SWAP", "swap"],
       "drop": ["DROP", "drop"],

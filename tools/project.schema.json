@@ -236,6 +236,7 @@
           "patternProperties": { "": { "type": "string" } }
         },
         "case_sensitive_instructions": { "type": "boolean" },
+        "multiple_per_line": { "type": "boolean" },
         "line_comments": { "type": "array", "items": { "$ref": "#/$defs/line_comment" } },
         "block_comments": {
           "type": "array",
@@ -252,6 +253,7 @@
         },
         "indentation": { "$ref": "#/$defs/indentation" },
         "label_indentation": { "$ref": "#/$defs/indentation" },
+        "block_indentation": { "type": "boolean" },
         "binary_numbers": { "type": "boolean" },
         "usage": {
           "type": "array",

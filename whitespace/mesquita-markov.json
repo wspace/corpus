@@ -37,6 +37,7 @@
     },
     "patterns": { "label": "[a-zA-Z_]+", "number": "\\d+" },
     "line_comments": ["#"],
+    "indentation": "   ",
     "usage": ["programs"],
     "extension": "wsa"
   },

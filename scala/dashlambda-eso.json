@@ -35,6 +35,7 @@
       "readi": ["readNum"]
     },
     "line_comments": ["//"],
+    "indentation": "",
     "usage": ["assembler", "programs"],
     "extension": "wsa"
   },

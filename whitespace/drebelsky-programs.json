@@ -36,8 +36,9 @@
       "readc": ["rchar"],
       "readi": ["rnum"]
     },
-    "patterns": { "char": "'(.|\\[ntrb\\])'|\".\"" },
+    "patterns": { "char": "'(.|\\[ntrb\\])'|\".\"", "label": "[^\\s]+" },
     "line_comments": [";"],
+    "indentation": "  ",
     "usage": ["assembler", "programs"],
     "extension": "wsa"
   },

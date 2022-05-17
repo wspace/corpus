@@ -39,6 +39,7 @@
     "macros": [{ "name": "import" }],
     "patterns": { "label": "([ -~]|$\\d+)+", "number": "\\d+|[0O]x[0-9A-Fa-f]+|b[01]+", "string": ".+" },
     "line_comments": ["//"],
+    "indentation": "",
     "usage": ["assembler", "programs"],
     "extension": "wsa"
   },

@@ -5,23 +5,23 @@
 These are the mnemonics used by known Whitespace assembly dialects for
 instructions, ranked by popularity.
 
-- `push` (89), `append` (2), `psh` (2), `<number>`, `pus`, `push_ch`, `push_num`, `push_number_stack_top`, `pushchar`, `setstacktop`
-- `dup` (63), `duplicate` (12), `copy` (5), `dupe` (5), `doub` (3), `dupl` (3), `sdupli` (3), `copystacktop`, `duplicate_stack_top`
-- `copy` (49), `ref` (3), `scopy` (3), `copyn` (2), `copynth` (2), `dup_at` (2), `copy_n`, `dup2`, `dupn`, `ncopy`, `nthcopytosetstacktop`, `pick`, `pull`, `take`
+- `push` (88), `append` (2), `psh` (2), `<number>`, `<number_char>`, `pus`, `push_ch`, `push_num`, `push_number_stack_top`, `pushchar`, `setstacktop`
+- `dup` (63), `duplicate` (12), `copy` (5), `dupe` (5), `doub` (3), `dupl` (3), `sdupli` (3), `^`, `copystacktop`, `duplicate_stack_top`
+- `copy` (48), `ref` (3), `scopy` (3), `copyn` (2), `copynth` (2), `dup_at` (2), `^<unsigned>`, `copy_n`, `dup2`, `dupn`, `ncopy`, `nthcopytosetstacktop`, `pick`, `pull`, `take`
 - `swap` (84), `swp` (4), `sswap` (3), `exch`, `exchange`, `swa`, `swap_two_stack_items`, `swapstacktopsec`, `swicth`, `xchg`
 - `discard` (38), `pop` (35), `drop` (14), `sdiscard` (3), `disc` (2), `away`, `del`, `discard_stack_top`, `dsc`, `remove`, `throwstacktop`
-- `slide` (49), `sslide` (3), `pop_x` (2), `away`, `move`, `remove`, `removenthinstack`, `skip`, `slde`, `slid`, `sliden`, `slideoff`
-- `add` (86), `addition` (4), `plus` (2), `+`, `addtion`, `infixplus`, `op+`
-- `sub` (80), `subtract` (6), `subtraction` (4), `minus` (2), `-`, `infixminus`, `op-`, `substraction`, `subt`
-- `mul` (68), `mult` (8), `multiply` (6), `multiplication` (5), `multi` (3), `times` (2), `*`, `infixtimes`, `op*`
-- `div` (78), `divide` (7), `division` (5), `/`, `infixdivide`, `intdiv`, `op/`
-- `mod` (78), `modulo` (12), `%`, `infixmodulo`, `rem`
+- `slide` (48), `sslide` (3), `pop_x` (2), `<unsigned>slide`, `away`, `move`, `remove`, `removenthinstack`, `skip`, `slde`, `slid`, `sliden`, `slideoff`
+- `add` (85), `addition` (4), `+` (2), `plus` (2), `addtion`, `infixplus`, `op+`
+- `sub` (79), `subtract` (6), `subtraction` (4), `-` (2), `minus` (2), `infixminus`, `op-`, `substraction`, `subt`
+- `mul` (67), `mult` (8), `multiply` (6), `multiplication` (5), `multi` (3), `*` (2), `times` (2), `infixtimes`, `op*`
+- `div` (77), `divide` (7), `division` (5), `/` (2), `infixdivide`, `intdiv`, `op/`
+- `mod` (77), `modulo` (12), `%` (2), `infixmodulo`, `rem`
 - `store` (76), `stor` (4), `save` (3), `set` (3), `sto` (3), `heapwrite`, `push`, `put`, `st`, `valuetoadress`
 - `retrieve` (54), `load` (13), `get` (7), `retr` (6), `retrive` (4), `fetch` (2), `ret` (2), `heapread`, `ld`, `lod`, `pop`, `rcl`, `read`, `reti`, `retreive`, `retri`, `retrv`, `valuetostacktop`
 - `label` (39), `mark` (23), `<label>:` (14), `<number>:` (3), `def` (3), `label_<number>:` (3), `lbl` (2), `mark_sub` (2), `marklabel` (2), `mrk` (2), `%<number>:`, `<<number>>:`, `@<label>`, `deflabel`, `l<number>:`, `label <label>:`, `label#_####`, `label_<number>`, `labl`, `marks`, `part`, `register`, `setlabel`
 - `call` (82), `call_sub` (2), `callsubroutine` (2), `gosub` (2), `jsr` (2), `call_subroutine`, `calls`, `callsub`, `cas`, `cll`, `sub`, `subroutine`
 - `jump` (58), `jmp` (30), `goto` (4), `jumplabel` (3), `jp` (2), `b`, `j`, `jumps`, `unconditionaljump`
-- `jz` (36), `jumpz` (12), `jumpzero` (9), `jzero` (4), `jez` (3), `jmpz` (3), `jump-zero` (3), `jump_if_zero` (3), `jmp_eq` (2), `jumplabelwhenzero` (2), `branchz`, `branchzs`, `brz`, `bz`, `bzero`, `equal`, `gotoiz`, `if stack==0 then goto`, `ifstacktopiszerothenjump`, `ifzero`, `iz_jump`, `jeof`, `jeq`, `jmp_if0`, `jmz`, `jnil`, `jp0`, `jpz`, `jump if zero`, `jumpnull`, `jze`, `jzer`, `zero`
+- `jz` (36), `jumpz` (12), `jumpzero` (9), `jzero` (4), `jez` (3), `jmpz` (3), `jump-zero` (3), `jump_if_zero` (3), `jmp_eq` (2), `jumplabelwhenzero` (2), `branchz`, `branchzs`, `brz`, `bz`, `bzero`, `equal`, `gotoiz`, `if stack==0 then goto`, `ifstacktopiszerothenjump`, `ifzero`, `iz_jump`, `jeq`, `jmp_if0`, `jmz`, `jnil`, `jp0`, `jpz`, `jump if zero`, `jumpnull`, `jze`, `jzer`, `zero`
 - `jn` (30), `jumpn` (10), `jneg` (8), `jumpneg` (6), `jlz` (4), `jump-neg` (3), `jump_if_neg` (3), `jumpnegative` (3), `jmp_lt` (2), `jmpn` (2), `jumplabelwhennegative` (2), `jumplz` (2), `less` (2), `bltz`, `bmi`, `bneg`, `branchltz`, `branchltzs`, `gotoin`, `if stack<0 then goto`, `ifnegative`, `ifstacktopisnegthenjump`, `in_jump`, `jlt`, `jltz`, `jmn`, `jmp_neg`, `jmpneg`, `jne`, `jpl0`, `jpn`, `js`, `jump if negative`, `jumpde`
 - `ret` (46), `return` (27), `end` (4), `endsubroutine` (3), `ends` (2), `endsub` (2), `exit_sub` (2), `back`, `end subroutine`, `end_sub`, `endfunc`, `endofsubroutine`, `ens`, `finishsubroutine`, `rts`
 - `end` (42), `exit` (32), `endprogram` (4), `halt` (4), `endprog` (3), `endp` (2), `finish` (2), `quit` (2), `terminate` (2), `die`, `end program`, `end_prog`, `endle`, `endofprogram`, `finishprogram`, `hlt`

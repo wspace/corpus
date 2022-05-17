@@ -39,8 +39,10 @@
       "readi": ["IO.NIN"]
     },
     "case_sensitive_instructions": false,
+    "indentation": "",
     "usage": ["assembler", "programs"]
   },
+  "programs": [{ "path": "hworld.wsa", "spec_version": "0.2" }, { "path": "count.wsa", "spec_version": "0.2" }],
   "commands": [
     {
       "type": "assembler",

@@ -28,6 +28,7 @@
       "readi": ["readnum"]
     },
     "patterns": { "char": "\"(.|\\\\n)\"" },
+    "indentation": "",
     "usage": ["assembler", "programs"],
     "extension": "as"
   },

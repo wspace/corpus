@@ -54,6 +54,8 @@
     "case_sensitive_instructions": false,
     "line_comments": [";", "--"],
     "block_comments": [{ "start": "{-", "end": "-}", "nestable": true }],
+    "indentation": "  ",
+    "block_indentation": true,
     "usage": ["programs"],
     "extension": "wsa"
   },

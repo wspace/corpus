@@ -30,6 +30,9 @@
     },
     "patterns": { "char": ".|\\\\[stn]", "number": "-?\\d+" },
     "line_comments": ["#"],
+    "indentation": "    ",
+    "label_indentation": "    ",
+    "block_indentation": true,
     "usage": ["assembler", "programs"],
     "extension": "txt"
   },

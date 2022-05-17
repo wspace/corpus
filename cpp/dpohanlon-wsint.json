@@ -33,6 +33,7 @@
       "readc": ["ReadChar"],
       "readi": ["ReadInt"]
     },
+    "indentation": "",
     "binary_numbers": true,
     "usage": ["disassembler"]
   },

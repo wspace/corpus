@@ -41,6 +41,7 @@
       "readi": ["READN"]
     },
     "case_sensitive_instructions": true,
+    "indentation": "",
     "usage": ["assembler", "disassembler"]
   },
   "mappings": [{ "space": "S ", "tab": "T ", "lf": "LF\n", "spaces_between": false }],
@@ -55,7 +56,8 @@
       "bin": "whitespace",
       "build": "make",
       "usage": "$0",
-      "input": "hello_worldvanwiki.ws"
+      "input": "hello_worldvanwiki.ws",
+      "output": "stdout"
     }
   ]
 }

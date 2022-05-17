@@ -35,6 +35,7 @@
       "readc": ["ReadC"],
       "readi": ["ReadN"]
     },
+    "indentation": "",
     "usage": ["disassembler", "programs"],
     "extension": "asm"
   },

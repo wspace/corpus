@@ -43,8 +43,10 @@
       "readi": ["inum"]
     },
     "patterns": { "char": "." },
+    "multiple_per_line": true,
     "line_comments": [";"],
     "indentation": "    ",
+    "block_indentation": true,
     "usage": ["assembler", "programs"],
     "extension": "asm"
   },

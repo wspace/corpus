@@ -37,6 +37,7 @@
       "readi": ["IN_N"]
     },
     "case_sensitive_instructions": false,
+    "indentation": "",
     "usage": ["assembler", "disassembler"],
     "extension": "bs"
   },

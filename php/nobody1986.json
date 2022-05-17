@@ -35,6 +35,7 @@
       "readc": ["INCHAR"],
       "readi": ["INNUM"]
     },
+    "indentation": "",
     "usage": ["disassembler"]
   },
   "commands": [
@@ -42,7 +43,7 @@
       "type": "interpreter",
       "bin": "whitespace.php",
       "usage": "php $0 <file>",
-      "notes": "`compile2File` function, if uncommented, can disassembly to file"
+      "notes": "`compile2File` function, if uncommented, can disassemble to file"
     },
     {
       "type": "interpreter",

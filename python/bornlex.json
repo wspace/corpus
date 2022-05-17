@@ -36,6 +36,7 @@
       "readc": ["inc"],
       "readi": ["ini"]
     },
+    "indentation": "",
     "usage": ["enum", "programs"],
     "extension": "wil"
   },

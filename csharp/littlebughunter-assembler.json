@@ -79,6 +79,7 @@
     },
     "case_sensitive_instructions": false,
     "line_comments": ["//"],
+    "indentation": "",
     "usage": ["assembler", "programs"],
     "extension": "txt"
   },

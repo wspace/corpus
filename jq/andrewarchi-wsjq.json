@@ -36,6 +36,7 @@
       "readc": ["readc"],
       "readi": ["readi"]
     },
+    "multiple_per_line": true,
     "indentation": "    ",
     "usage": ["disassembler", "debugger"],
     "extension": "wsa"

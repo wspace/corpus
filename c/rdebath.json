@@ -66,6 +66,7 @@
     "case_sensitive_instructions": false,
     "line_comments": [";", "#", "--"],
     "block_comments": [{ "start": "{-", "end": "-}", "nestable": false }],
+    "indentation": "    ",
     "usage": ["transpiler", "assembler", "enum"]
   },
   "programs": [

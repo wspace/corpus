@@ -36,9 +36,18 @@
       "readi": ["read_num"]
     },
     "line_comments": ["#"],
+    "indentation": "",
     "usage": ["assembler", "programs"],
     "extension": "wsm"
   },
   "programs": [{ "path": "examples/hworld.wsm" }],
-  "commands": [{ "type": "assembler", "bin": "bin/wsm", "usage": "php $0 <file>" }]
+  "commands": [
+    {
+      "type": "assembler",
+      "bin": "bin/wsm",
+      "usage": "php $0 <file>",
+      "input": "<file>",
+      "output": "stdout"
+    }
+  ]
 }

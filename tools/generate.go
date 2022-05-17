@@ -105,6 +105,7 @@ type Project struct {
 		} `json:"macros,omitempty"`
 		Patterns                  map[string]string `json:"patterns,omitempty"`
 		CaseSensitiveInstructions *bool             `json:"case_sensitive_instructions,omitempty"`
+		MultiplePerLine           *bool             `json:"multiple_per_line,omitempty"`
 		LineComments              []string          `json:"line_comments,omitempty"`
 		BlockComments             []struct {
 			Start    string `json:"start"`
@@ -112,7 +113,8 @@ type Project struct {
 			Nestable bool   `json:"nestable"`
 		} `json:"block_comments,omitempty"`
 		Indentation      *string  `json:"indentation,omitempty"`
-		LabelIndentation string   `json:"label_indentation,omitempty"`
+		LabelIndentation *string  `json:"label_indentation,omitempty"`
+		BlockIndentation *bool    `json:"block_indentation,omitempty"`
 		BinaryNumbers    *bool    `json:"binary_numbers,omitempty"`
 		Usage            []string `json:"usage,omitempty"`
 		Extension        *string  `json:"extension,omitempty"`

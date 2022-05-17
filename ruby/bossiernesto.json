@@ -34,7 +34,7 @@
       "readi": ["readnum"]
     },
     "line_comments": ["#"],
-    "usage": ["disassembler"],
+    "usage": ["assembler"],
     "extension": "wsa"
   },
   "commands": [{ "type": "assembler", "run_errors": "No entrypoint" }]

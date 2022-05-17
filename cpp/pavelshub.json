@@ -41,6 +41,7 @@
       "readi": ["readnum"]
     },
     "line_comments": ["#"],
+    "indentation": "",
     "usage": ["assembler", "disassembler", "debugger"],
     "extension": "wsa"
   },

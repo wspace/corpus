@@ -33,6 +33,7 @@
       "readc": ["readchar"],
       "readi": ["readnum"]
     },
+    "indentation": "",
     "usage": ["disassembler"]
   },
   "commands": [

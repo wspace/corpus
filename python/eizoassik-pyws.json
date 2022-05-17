@@ -39,6 +39,7 @@
       "readi": ["RNUM"]
     },
     "line_comments": ["#"],
+    "indentation": "",
     "usage": ["assembler", "disassembler"]
   },
   "mappings": [

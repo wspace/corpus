@@ -22,6 +22,7 @@
       "end": ["exit"]
     },
     "macros": [{ "name": "pushs", "args": ["string"] }, { "name": "include" }],
+    "indentation": "  ",
     "usage": ["programs"],
     "extension": "wsa"
   },

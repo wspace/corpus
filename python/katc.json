@@ -36,6 +36,7 @@
       "readi": ["IN-NUM"]
     },
     "line_comments": [";"],
+    "indentation": "",
     "usage": ["disassembler"]
   },
   "commands": [

@@ -35,6 +35,7 @@
       "readc": ["read_c"],
       "readi": ["read_i"]
     },
+    "indentation": "",
     "usage": ["disassembler", "enum"]
   },
   "commands": [
