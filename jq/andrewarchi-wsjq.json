@@ -46,7 +46,12 @@
       "type": "interpreter",
       "bin": "wsjq",
       "dependencies": ["jq"],
-      "usage": "$0 [<mode>] [-h | --help] [-e <behavior> | --on-eof=<behavior>] <file>",
+      "usage": "$0 [<mode>] [-h | --help] [-i <in_file> | --in-file=<in_file>] [-e <behavior> | --on-eof=<behavior>] [-n | --no-prompt] [-c | --check-clean] [-r | --check-retrieve] <file>",
+      "example_usages": [
+        "wsjq run hworld.ws",
+        "whoami > name.txt && wsjq debug --in-file=name.txt --no-prompt name.ws",
+        "wsjq disasm fact.ws"
+      ],
       "options": [
         {
           "short": "i",
@@ -60,17 +65,22 @@
           "long": "on-eof",
           "arg": "behavior",
           "arg_required": true,
-          "desc": "Set EOF-handling behavior, which can be \"error\" (like wspace) or an integer (e.g. 0 or -1)."
+          "desc": "Set EOF-handling behavior, which can be \"error\" (default; like wspace) or an integer (e.g., 0 or -1)."
         },
         {
           "short": "n",
           "long": "no-prompt",
-          "desc": "Do not prompt for input. If --in-file is specified, then no input will be prompted after the file has been read."
+          "desc": "Do not prompt for input. If --in-file is also specified, then no input will be prompted after the file has been read."
         },
         {
           "short": "c",
           "long": "check-clean",
-          "desc": "Assert that the stack is empty and that the program explicitly at the end of execution."
+          "desc": "Assert that the stack is empty and that the program explicitly exits, at the end of execution."
+        },
+        {
+          "short": "r",
+          "long": "check-retrieve",
+          "desc": "Assert that retrieved addresses are not above previously-stored addresses."
         },
         { "short": "h", "long": "help", "desc": "Show usage." }
       ],
