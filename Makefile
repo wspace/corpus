@@ -40,6 +40,9 @@ tidy_submodules: $(PROJECTS) tools/submodules/submodules.go tools/format_gitmodu
 # Clone all submodules
 .PHONY: init_submodules
 init_submodules:
+# Ignore submodule worktree changes
+	git config diff.ignoreSubmodules dirty
+	git config submodule.fetchJobs 5
 	git submodule update --init --jobs 5
 
 # Update all submodules to latest remote head
