@@ -34,6 +34,23 @@ instructions, ranked by popularity.
 - `debug_printheap` (3), `dumpheap`
 - `trace`
 
+## Extensions
+
+- `wsa` (24)
+- `asm` (3)
+- `txt` (3)
+- `wsm` (2)
+- ""
+- `as`
+- `bs`
+- `hws`
+- `unws`
+- `wil`
+- `ws.rb`
+- `wsasm`
+- `wsf`
+- `wss`
+
 ## Need documentation
 
 - haskell/burghard-wsa
