@@ -1,20 +1,26 @@
 PROJECTS = $(filter-out tools/% .% _%, $(wildcard */*.json))
 SUBMODULES = $(PROJECTS:.json=)
+GO_TOOLS_PACKAGE = tools/generate.go tools/licenses.go
 
 .PHONY: all
 all: tidy_submodules licenses README.md assembly.md building.md challenges.md
 
 .PHONY: format
-format: $(PROJECTS) tools/format/format.go
+format: $(PROJECTS) tools/format/format.go $(GO_TOOLS_PACKAGE)
 	$(info Formatting projects)
 	@go run tools/format/format.go $(PROJECTS)
 
 .PHONY: licenses
-licenses: $(PROJECTS) tools/licenses/licenses.go
+licenses: $(PROJECTS) tools/licenses/licenses.go $(GO_TOOLS_PACKAGE)
 	$(info Getting licenses)
 	@go run tools/licenses/licenses.go $(PROJECTS)
 
-README.md: $(PROJECTS) README.md.tmpl tools/generate.go tools/generate/generate.go
+.PHONY: dockerfiles
+dockerfiles: $(PROJECTS) tools/docker/docker.go $(GO_TOOLS_PACKAGE)
+	$(info Generating Dockerfiles)
+	@go run tools/docker/docker.go $(PROJECTS)
+
+README.md: $(PROJECTS) README.md.tmpl tools/generate/generate.go $(GO_TOOLS_PACKAGE)
 	$(info Generating README.md)
 	@go run tools/generate/generate.go
 
@@ -31,7 +37,7 @@ challenges.md: $(PROJECTS) tools/generate_challenges.jq
 	@jq -rsf tools/generate_challenges.jq $(PROJECTS) > challenges.md
 
 .PHONY: tidy_submodules
-tidy_submodules: $(PROJECTS) tools/submodules/submodules.go tools/format_gitmodules.sh
+tidy_submodules: $(PROJECTS) tools/submodules/submodules.go $(GO_TOOLS_PACKAGE) tools/format_gitmodules.sh
 	$(info Tidying Git submodules)
 	@go run tools/submodules/submodules.go
 	@tools/format_gitmodules.sh
