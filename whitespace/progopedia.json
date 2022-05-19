@@ -1,0 +1,12 @@
+{
+  "id": "whitespace/progopedia",
+  "name": "Whitespace",
+  "authors": ["Mariia Mykhailova"],
+  "license": "GFDL-1.3-or-later",
+  "languages": ["Whitespace"],
+  "tags": ["programs"],
+  "date": "2010-09-14 18:31:00 +0000",
+  "spec_version": "0.3",
+  "source": ["https://github.com/wspace/progopedia", "http://progopedia.com/language/whitespace/"],
+  "todo": "Add all Whitespace-related pages to repo, convert to Markdown, extract programs, and add site's license"
+}

@@ -8,10 +8,11 @@
   "date": "2014-07-10 19:59:10 +0100",
   "spec_version": "0.3",
   "source": [
-    "https://github.com/Smithers888/BlueSpace",
+    "https://github.com/wspace/smithers-bluespace",
     "https://cpjsmith.uk/whitespace",
-    "https://github.com/wspace/smithers-bluespace"
+    "https://github.com/Smithers888/BlueSpace"
   ],
+  "whitespace": { "extension": "ws" },
   "assembly": {
     "mnemonics": {
       "push": ["Push"],
@@ -41,10 +42,53 @@
     },
     "case_sensitive_instructions": false,
     "line_comments": ["#"],
-    "usage": ["assembler"],
+    "indentation": "",
+    "label_indentation": "",
+    "usage": ["assembler", "programs"],
     "extension": "wsa"
   },
   "mappings": [{ "space": "s", "tab": "t", "lf": "n", "extension": "wsp" }],
+  "programs": [
+    { "path": "programs/99.wsp" },
+    { "path": "programs/quine-cs-3.wsa", "generated": "programs/quine-cs-3.ws", "spec_version": "0.3" },
+    { "path": "programs/quine-cs.wsa", "generated": "programs/quine-cs.ws", "spec_version": "0.2" },
+    { "path": "test/calc.ws", "equivalent": "calc.ws", "spec_version": "0.2" },
+    {
+      "path": "test/count.wsp",
+      "generated": "test/count.ws",
+      "outputs": ["test/count.out"],
+      "equivalent": "count.ws",
+      "spec_version": "0.2"
+    },
+    { "path": "test/fact.ws", "equivalent": "fact.ws", "spec_version": "0.2" },
+    {
+      "path": "test/hanoi.wsa",
+      "generated": "test/hanoi.ws",
+      "outputs": ["test/hanoi.out"],
+      "aux": ["test/hanoi.wsp"],
+      "equivalent": "hanoi.ws",
+      "spec_version": "0.2"
+    },
+    {
+      "path": "test/hworld.ws",
+      "outputs": ["test/hworld.out"],
+      "equivalent": "hworld.ws",
+      "spec_version": "0.2"
+    },
+    {
+      "path": "test/loctest.wsa",
+      "generated": "test/loctest.ws",
+      "outputs": ["test/loctest.out"],
+      "equivalent": "loctest.ws",
+      "spec_version": "0.3"
+    },
+    {
+      "path": "test/name.ws",
+      "outputs": ["test/name.out"],
+      "equivalent": "name.ws",
+      "spec_version": "0.2"
+    }
+  ],
   "commands": [
     {
       "type": "interpreter",

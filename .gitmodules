@@ -24,7 +24,7 @@
 	url = https://github.com/wspace/meth0dz-c
 [submodule "c/rdebath"]
 	path = c/rdebath
-	url = https://github.com/rdebath/whitespace
+	url = https://github.com/wspace/rdebath-c
 [submodule "c/remigascou"]
 	path = c/remigascou
 	url = https://github.com/wspace/remigascou-c
@@ -580,7 +580,7 @@
 	url = https://github.com/ryndvs96/aoc
 [submodule "python/smithers-bluespace"]
 	path = python/smithers-bluespace
-	url = https://github.com/Smithers888/BlueSpace
+	url = https://github.com/wspace/smithers-bluespace
 [submodule "python/stephenchappell"]
 	path = python/stephenchappell
 	url = https://github.com/wspace/stephenchappell-python
@@ -869,6 +869,9 @@
 [submodule "whitespace/pik4ez-ascii"]
 	path = whitespace/pik4ez-ascii
 	url = https://github.com/wspace/pik4ez-ascii
+[submodule "whitespace/progopedia"]
+	path = whitespace/progopedia
+	url = https://github.com/wspace/progopedia
 [submodule "whitespace/rafimo-cerner"]
 	path = whitespace/rafimo-cerner
 	url = https://github.com/rafimo/2_power_5

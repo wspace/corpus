@@ -7,7 +7,7 @@
   "tags": ["transpiler", "interpreter", "assembler", "program builder", "programs"],
   "date": "2015-08-18 14:25:03 +0100",
   "spec_version": "0.3",
-  "source": ["https://github.com/rdebath/whitespace", "https://github.com/wspace/rdebath-c"],
+  "source": ["https://github.com/wspace/rdebath-c", "https://github.com/rdebath/whitespace"],
   "whitespace": {
     "nonstandard": [
       { "name": "jzp", "aliases": ["jumppz"], "args": ["label"] },
