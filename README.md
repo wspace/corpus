@@ -159,7 +159,7 @@ language, including interpreters, compilers, and programs.
 | [Whitespace-interpreter](python/bornlex.json)      | Bornlex          | Python     | interpreter, programs | 2017-08-09 | [GitHub](https://github.com/Bornlex/Whitespace-interpreter) |
 | [whitespace-interpreter](cpp/benajmin.json)        | Benjamin Wilkins | C++        | interpreter, programs | 2017-06-05 | [GitHub](https://github.com/benajmin/whitespace-interpreter) |
 | [wsm2ws](perl/ephphatha-wsm2ws.json)               | Andrew James     | Perl       | assembler, programs | 2017-05-28 | [GitHub](https://github.com/ephphatha/wsm2ws) |
-| [ws.vim](vim/rolf-ws-vim.json)                     | Rolf Asmund      | Vim script | syntax highlighting, programs | 2017-05-15 | [GitHub](https://github.com/rolf007/ws.vim), [vim.org](https://www.vim.org/scripts/script.php?script_id=5035), [GitHub](https://github.com/vim-scripts/whitespace-syntax-highlight) |
+| [ws.vim](vim/rolf.json)                            | Rolf Asmund      | Vim script | syntax highlighting, programs | 2017-05-15 | [GitHub](https://github.com/rolf007/ws.vim), [vim.org](https://www.vim.org/scripts/script.php?script_id=5035), [GitHub](https://github.com/vim-scripts/whitespace-syntax-highlight) |
 | [whitespaceasm.py](python/jrialland.json)          | Julien Rialland  | Python     | assembler    | 2017-04-28 | [GitHub Gist](https://gist.github.com/jrialland/e0d370034da9c7b1b76a8afccbea7424) |
 | [a-z-programming](whitespace/jarrodparkes-a-z.json) | Jarrod Parkes   | Whitespace, Docker | programs | 2017-04-19 | [GitHub](https://github.com/jarrodparkes/a-z-programming) |
 | [Mr. White](erlang/derek-mrwhite.json)             | Derek Brown      | Erlang     | interpreter  | 2017-03-23 | [GitHub](https://github.com/derek121/mrwhite) |
@@ -190,7 +190,7 @@ language, including interpreters, compilers, and programs.
 | [Euler's Melting Pot](whitespace/mercerenies-euler.json) | Silvio Mayolo (Mercerenies) | Whitespace | programs | 2016-07-05 | [GitHub](https://github.com/Mercerenies/eulers-melting-pot) |
 | [steganographic-polyglots](whitespace/chrisnguyen-steganographic-polyglots.json) | Chris Nguyen | Whitespace | programs | 2016-06-26 | [GitHub](https://github.com/uncompiled/steganographic-polyglots), [uncompiled.github.io](https://uncompiled.github.io/steganographic-polyglots/) |
 | [whitespace.js](javascript/ignovak.json)           | Igor             | JavaScript | interpreter  | 2016-06-20 | [GitHub Gist](https://gist.github.com/ignovak/c6173c31207fd6fcbec606411460c73c) |
-| [Whitespacers](rust/censoredusername-whitespace-rs.json) | CensoredUsername | Rust | JIT, assembler, disassembler | 2016-06-18 | [GitHub](https://github.com/CensoredUsername/whitespace-rs) |
+| [Whitespacers](rust/censoredusername-whitespacers.json) | CensoredUsername | Rust  | JIT, assembler, disassembler | 2016-06-18 | [GitHub](https://github.com/CensoredUsername/whitespace-rs) |
 | [whitespace](c/bvisness.json)                      | Ben Visness      | C, Yacc, TextMate | interpreter, syntax highlighting | 2016-05-21 | [GitHub](https://github.com/bvisness/whitespace) |
 | [whiteplanes](python/nutcrack-whiteplanes.json)    | Takuya Katsurada | Python     | interpreter  | 2016-05-13 | [GitHub](https://github.com/wspace/nutcrack-whiteplanes), [PyPI](https://pypi.org/project/whiteplanes/), [whiteplanes.github.io](https://whiteplanes.github.io/) |
 | [Abyad](python/kareeeeem-abyad.json)               | Mohammed Kareem  | Python     | interpreter, program builder, programs | 2016-05-13 | [GitHub](https://github.com/Kareeeeem/abyad) |
@@ -219,7 +219,7 @@ language, including interpreters, compilers, and programs.
 | [Whitespace](javascript/therebelrobot.json)        | Aster Haven      | JavaScript | mapping      | 2015-09-09 | [GitHub](https://github.com/therebelrobot/whitespace) |
 | [whitespacer](javascript/macocha-whitespacer.json) | Maciej Siwek     | JavaScript/React | IDE, interpreter, disassembler | 2015-09-04 | [GitHub](https://github.com/macocha/whitespacer) |
 | [Whitespace](c/rdebath.json)                       | Robert de Bath   | C, Lex     | transpiler, interpreter, assembler, program builder, programs | 2015-08-18 | [GitHub](https://github.com/rdebath/whitespace), [GitHub](https://github.com/wspace/rdebath-c) |
-| [Hello World](whitespace/mikedonaghy-hello.json)   | D.E. Akers       | Whitespace | programs     | 2015-08-17 | [GitHub](https://github.com/leachim6/hello-world), [GitHub](https://github.com/leachim6/hello-world/pull/207) |
+| [Hello World](whitespace/leachim-hello.json)       | D.E. Akers       | Whitespace | programs     | 2015-08-17 | [GitHub](https://github.com/leachim6/hello-world), [GitHub](https://github.com/leachim6/hello-world/pull/207) |
 | [Whitespace Parser](python/katc.json)              | 友利奈緒 (Tomori Nao) | Python    | disassembler | 2015-07-08 | [GitHub Gist](https://gist.github.com/K-atc/02b402e9812e066afb78) |
 | [onlinejudge-ws](docker/baekjoon-onlinejudge.json) | Baekjoon Choi    | Docker     | builder      | 2015-07-03 | [GitHub](https://github.com/Baekjoon/Dockerfiles), [Baekjoon Online Judge](https://help.acmicpc.net/language/info#language-24) |
 | [Cupertino-WhiteSpace-Interperter](cpp/frmsaul-cupertino.json) | Saul Fuhrmann | C++ | interpreter | 2015-05-23 | [GitHub](https://github.com/frmsaul/Cupertino-WhiteSpace-Interperter) |

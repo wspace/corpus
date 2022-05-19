@@ -647,8 +647,8 @@
 [submodule "rust/andrewarchi-yspace"]
 	path = rust/andrewarchi-yspace
 	url = https://github.com/andrewarchi/yspace
-[submodule "rust/censoredusername-whitespace-rs"]
-	path = rust/censoredusername-whitespace-rs
+[submodule "rust/censoredusername-whitespacers"]
+	path = rust/censoredusername-whitespacers
 	url = https://github.com/CensoredUsername/whitespace-rs
 [submodule "rust/collidedscope-albus"]
 	path = rust/collidedscope-albus
@@ -719,8 +719,8 @@
 [submodule "typescript/simomu"]
 	path = typescript/simomu
 	url = https://github.com/simomu-github/whitespace_ts
-[submodule "vim/rolf-ws-vim"]
-	path = vim/rolf-ws-vim
+[submodule "vim/rolf"]
+	path = vim/rolf
 	url = https://github.com/rolf007/ws.vim
 [submodule "whitespace/0qol-prime"]
 	path = whitespace/0qol-prime
@@ -824,6 +824,9 @@
 [submodule "whitespace/kunde-hello"]
 	path = whitespace/kunde-hello
 	url = https://gist.github.com/Kunde21/f3e7878c92f3a1db2ea31ea1140153ce
+[submodule "whitespace/leachim-hello"]
+	path = whitespace/leachim-hello
+	url = https://github.com/leachim6/hello-world
 [submodule "whitespace/lollasravani-cerner"]
 	path = whitespace/lollasravani-cerner
 	url = https://github.com/lollasravani/cerner_2-5_2019
@@ -842,9 +845,6 @@
 [submodule "whitespace/mesquita-markov"]
 	path = whitespace/mesquita-markov
 	url = https://github.com/wspace/mesquita-markov
-[submodule "whitespace/mikedonaghy-hello"]
-	path = whitespace/mikedonaghy-hello
-	url = https://github.com/leachim6/hello-world
 [submodule "whitespace/milankowww-rbtree"]
 	path = whitespace/milankowww-rbtree
 	url = https://github.com/milankowww/rbtree-whitespace

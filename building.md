@@ -309,7 +309,7 @@ Build and run errors are included.
   - whitespace-disassem
 - ruby/yuta-textproc/mywhitespace.rb
 - rust/andrewarchi-yspace/tests/test.sh
-- rust/censoredusername-whitespace-rs/target/release/wsc: `cargo build --release`
+- rust/censoredusername-whitespacers/target/release/wsc: `cargo build --release`
 - rust/collidedscope-albus/target/release/albus: `cargo build --release`
 - ⚠️ rust/faultier-albino:
   - ⚠️ albino: `cargo build --release` Needs many changes for latest Rust
@@ -342,7 +342,7 @@ Build and run errors are included.
 - ⚠️ typescript/eduardoborsa-codewars/dummy/2/whitespace\_interpreter.ts: Needs Codewars entrypoint
 - ⚠️ typescript/fy0u11/dist/Whitespace.js: `npm run build`
 - typescript/simomu/bin/ws.js: `npm run build`
-- ❌ vim/rolf-ws-vim
+- ❌ vim/rolf
 - whitespace/andrewarchi-challenges/test.bash: `make`
 - whitespace/andrewarchi-wslib/assemble.sh
 - ❌ whitespace/ankitatandon-wspc
