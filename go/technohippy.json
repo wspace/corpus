@@ -18,11 +18,11 @@
     "label_cap": "unbounded",
     "instruction_cap": 30000
   },
+  "build": { "base_image": "golang:1.18", "build": ["go build -o go-whitespace ./src"] },
   "commands": [
     {
       "type": "interpreter",
       "bin": "go-whitespace",
-      "build": "go build -o go-whitespace ./src",
       "usage": "$0 [-d] [-h | --help] <file>",
       "options": [
         { "short": "d", "long": "d", "desc": "debug mode" },

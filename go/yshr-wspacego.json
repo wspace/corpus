@@ -50,12 +50,15 @@
     "usage": ["disassembler"]
   },
   "mappings": [{ "space": "S", "tab": "T", "lf": "\n", "spaces_between": false }],
+  "build": {
+    "base_image": "golang:1.18",
+    "setup": ["go mod init github.com/135yshr/wspacego", "go mod tidy"],
+    "build": ["go build"]
+  },
   "commands": [
     {
       "type": "interpreter",
       "bin": "wspacego",
-      "install_dependencies": "go mod init github.com/135yshr/wspacego && go mod tidy",
-      "build": "go build",
       "usage": "$0 [-h | --help] [run | disasm | char] <file>",
       "options": [
         { "short": "h", "long": "h", "desc": "display this help and exit" },

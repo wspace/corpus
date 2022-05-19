@@ -37,12 +37,11 @@
     "usage": ["enum"]
   },
   "programs": [{ "path": "samples/hello.ws", "spec_version": "0.2" }],
+  "build": { "base_image": "golang:1.18", "build": ["go build -o releases/ws cmd/ws.go"] },
   "commands": [
     {
       "type": "interpreter",
       "bin": "releases/ws",
-      "dependencies": ["Go"],
-      "build": "make",
       "usage": "$0 [-v] <file>",
       "input": "<file>",
       "output": "stdout",

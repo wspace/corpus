@@ -58,12 +58,15 @@
     { "path": "data/hworld.ws", "equivalent": "hworld.ws", "spec_version": "0.2" },
     { "path": "data/name.ws", "equivalent": "name.ws", "spec_version": "0.2" }
   ],
+  "build": {
+    "base_image": "golang:1.18",
+    "setup": ["go mod init github.com/kinu/whitespace"],
+    "build": ["go build"]
+  },
   "commands": [
     {
       "type": "interpreter",
       "bin": "whitespace",
-      "install_dependencies": "go mod init github.com/kinu/whitespace",
-      "build": "go build",
       "usage": "$0 [-v] [--dry_run] [-h | --help] <file>",
       "options": [
         { "short": "v", "long": "v", "desc": "verbose" },

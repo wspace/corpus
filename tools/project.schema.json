@@ -6,7 +6,7 @@
   "$defs": {
     "id": {
       "type": "string",
-      "pattern": "^[a-z0-9]+(-[a-z0-9]+)*/[a-z0-9]+([-.][a-z0-9]+)*$",
+      "pattern": "^[a-z0-9]+(-[a-z0-9]+)*/[a-z0-9]+(-[a-z0-9]+([-.][a-z0-9]+)*)?$",
       "description": "Unique project identifier and submodule path in the form of {language}/{author}-{project} or {language}/{author}"
     },
     "spec_version": { "type": "string", "enum": ["0.1", "0.2", "0.3", "unknown", "-"] },
@@ -74,7 +74,8 @@
           "type": "array",
           "items": {
             "type": "object",
-            "properties": { "values": { "type": "array", "items": { "type": "string" } }, "desc": { "type": "string" } }
+            "properties": { "values": { "type": "array", "items": { "type": "string" } }, "desc": { "type": "string" } },
+            "additionalProperties": false
           }
         }
       },
@@ -214,7 +215,8 @@
         "mnemonics": {
           "type": "object",
           "propertyNames": { "$ref": "#/$defs/instruction" },
-          "patternProperties": { "": { "type": "array", "items": { "type": "string" } } }
+          "patternProperties": { "": { "type": "array", "items": { "type": "string" } } },
+          "additionalProperties": false
         },
         "macros": {
           "type": "array",
@@ -226,14 +228,15 @@
               "replace": { "type": "string" },
               "notes": { "type": "string" }
             },
-            "require": ["name"],
+            "required": ["name"],
             "additionalProperties": false
           }
         },
         "patterns": {
           "type": "object",
           "propertyNames": { "examples": ["number", "label"] },
-          "patternProperties": { "": { "type": "string" } }
+          "patternProperties": { "": { "type": "string" } },
+          "additionalProperties": true
         },
         "case_sensitive_instructions": { "type": "boolean" },
         "multiple_per_line": { "type": "boolean" },
@@ -302,8 +305,19 @@
           "desc": { "type": "string" },
           "notes": { "type": "string" }
         },
+        "required": ["path"],
         "additionalProperties": false
       }
+    },
+    "build": {
+      "type": "object",
+      "properties": {
+        "base_image": { "type": "string" },
+        "setup": { "type": "array", "items": { "type": "string" } },
+        "build": { "type": "array", "items": { "type": "string" } }
+      },
+      "required": ["base_image"],
+      "additionalProperties": false
     },
     "commands": {
       "type": "array",

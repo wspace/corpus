@@ -146,6 +146,11 @@ type Project struct {
 		Desc         string   `json:"desc,omitempty"`
 		Notes        string   `json:"notes,omitempty"`
 	} `json:"programs,omitempty"`
+	Build *struct {
+		BaseImage string   `json:"base_image"`
+		Setup     []string `json:"setup,omitempty"`
+		Build     []string `json:"build,omitempty"`
+	} `json:"build,omitempty"`
 	Commands []Command `json:"commands,omitempty"`
 	Notes    string    `json:"notes,omitempty"`
 	TODO     string    `json:"todo,omitempty"`

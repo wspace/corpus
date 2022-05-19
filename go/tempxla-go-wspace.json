@@ -46,5 +46,10 @@
     },
     "usage": ["debug"]
   },
-  "commands": [{ "type": "interpreter", "bin": "bin/go-wspace", "build": "make", "usage": "$0 <file>" }]
+  "build": {
+    "base_image": "golang:1.18",
+    "setup": ["go mod init github.com/tempxla/go-wspace"],
+    "build": ["go build -o bin/go-wspace ./src"]
+  },
+  "commands": [{ "type": "interpreter", "bin": "bin/go-wspace", "usage": "$0 <file>" }]
 }
