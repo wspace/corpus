@@ -1,0 +1,13 @@
+{
+  "id": "java/rahulkp",
+  "name": "WhiteSpace-Interpreter",
+  "authors": ["Rahul K P", "Sumedh Hagaldivte", "Amitash M S"],
+  "license": "none",
+  "languages": ["Java"],
+  "tags": ["interpreter", "programs"],
+  "date": "2022-04-29 21:57:54 +0530",
+  "spec_version": "0.3",
+  "source": ["https://github.com/Rahul-KP/WhiteSpace-Interpreter"],
+  "relations": [{ "id": "vim/rolf-ws-vim", "type": "embedded" }],
+  "programs": [{ "path": "nums.ws", "spec_version": "0.2" }, { "path": "sample.ws", "spec_version": "0.2" }]
+}

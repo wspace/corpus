@@ -1,0 +1,29 @@
+{
+  "id": "whitespace/milankowww-rbtree",
+  "name": "rbtree-whitespace",
+  "authors": ["Milan Pikula"],
+  "license": "BSD-2-Clause",
+  "languages": ["Whitespace"],
+  "tags": ["programs"],
+  "date": "2019-02-01 01:50:01 +0100",
+  "spec_version": "0.3",
+  "source": ["https://github.com/milankowww/rbtree-whitespace"],
+  "relations": [
+    { "id": "c/threeifbywhiskey-blacktime", "type": "assembly" },
+    {
+      "id": "c/threeifbywhiskey-satan",
+      "type": "interpreter",
+      "release": "https://github.com/milankowww/satan"
+    }
+  ],
+  "whitespace": { "extension": "white" },
+  "assembly": { "extension": "asm" },
+  "programs": [
+    {
+      "path": "rbtree.asm",
+      "generated": "rbtree.white",
+      "generate": "blacktime rbtree.asm > rbtree.white"
+    }
+  ],
+  "notes": "Runs with fork of c/threeifbywhiskey-satan"
+}

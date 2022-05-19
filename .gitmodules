@@ -25,6 +25,9 @@
 [submodule "c/rdebath"]
 	path = c/rdebath
 	url = https://github.com/rdebath/whitespace
+[submodule "c/remigascou"]
+	path = c/remigascou
+	url = https://github.com/wspace/remigascou-c
 [submodule "c/rispoli-txt2ws"]
 	path = c/rispoli-txt2ws
 	url = https://github.com/rispoli/txt2ws
@@ -284,6 +287,9 @@
 [submodule "java/pyeroh"]
 	path = java/pyeroh
 	url = https://gist.github.com/Pyeroh/1b2903e53d71e0662d105dc0d6aedbdf
+[submodule "java/rahulkp"]
+	path = java/rahulkp
+	url = https://github.com/Rahul-KP/WhiteSpace-Interpreter
 [submodule "java/ralucaa-whitespace4j"]
 	path = java/ralucaa-whitespace4j
 	url = https://github.com/ralucaa/whitespace4j
@@ -371,6 +377,9 @@
 [submodule "jq/andrewarchi-wsjq"]
 	path = jq/andrewarchi-wsjq
 	url = https://github.com/andrewarchi/wsjq
+[submodule "julia/goropikari-whitespaces"]
+	path = julia/goropikari-whitespaces
+	url = https://github.com/goropikari/Whitespaces.jl
 [submodule "kotlin/ze-space"]
 	path = kotlin/ze-space
 	url = https://github.com/ze/space
@@ -410,6 +419,9 @@
 [submodule "perl/mkoelbl"]
 	path = perl/mkoelbl
 	url = https://github.com/wspace/mkoelbl-perl
+[submodule "perl/skabob-madness"]
+	path = perl/skabob-madness
+	url = https://github.com/SkaBob42/madness
 [submodule "php/codelytv-youtube"]
 	path = php/codelytv-youtube
 	url = https://github.com/CodelyTV/youtube-code-examples
@@ -656,6 +668,9 @@
 [submodule "rust/kaisugi"]
 	path = rust/kaisugi
 	url = https://github.com/HelloRusk/WhitespaceInterpreter
+[submodule "rust/keirua"]
+	path = rust/keirua
+	url = https://github.com/Keirua/whitespace-rs
 [submodule "rust/luminight"]
 	path = rust/luminight
 	url = https://github.com/Luminighty/rustws
@@ -830,6 +845,9 @@
 [submodule "whitespace/mikedonaghy-hello"]
 	path = whitespace/mikedonaghy-hello
 	url = https://github.com/leachim6/hello-world
+[submodule "whitespace/milankowww-rbtree"]
+	path = whitespace/milankowww-rbtree
+	url = https://github.com/milankowww/rbtree-whitespace
 [submodule "whitespace/mildsunrise-brainfuck"]
 	path = whitespace/mildsunrise-brainfuck
 	url = https://gist.github.com/mildsunrise/60a516da83d448ba1363a7deac361515

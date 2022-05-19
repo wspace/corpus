@@ -1,0 +1,57 @@
+{
+  "id": "julia/goropikari-whitespaces",
+  "name": "Whitespaces",
+  "authors": ["goropikari"],
+  "license": "MIT",
+  "languages": ["Julia"],
+  "tags": ["interpreter", "programs"],
+  "date": "2020-04-17 01:23:17 +0900",
+  "spec_version": "0.3",
+  "source": ["https://github.com/goropikari/Whitespaces.jl"],
+  "whitespace": { "extension": "ws" },
+  "assembly": {
+    "mnemonics": {
+      "push": ["push"],
+      "dup": ["dup"],
+      "copy": ["copy"],
+      "swap": ["swap"],
+      "drop": ["discard"],
+      "slide": ["slide"],
+      "add": ["add"],
+      "sub": ["sub"],
+      "mul": ["mul"],
+      "div": ["div"],
+      "mod": ["mod"],
+      "store": ["heap_write"],
+      "retrieve": ["heap_read"],
+      "label": ["label"],
+      "call": ["call"],
+      "jmp": ["jump"],
+      "jz": ["jump_zero"],
+      "jn": ["jump_nega"],
+      "ret": ["return"],
+      "end": ["exit"],
+      "printc": ["char_out"],
+      "printi": ["num_out"],
+      "readc": ["char_in"],
+      "readi": ["num_in"]
+    },
+    "usage": ["enum"]
+  },
+  "programs": [
+    { "path": "example/add.ws", "spec_version": "0.2" },
+    { "path": "example/factorial.ws", "spec_version": "0.2" },
+    { "path": "example/fizzbuzz.ws", "spec_version": "0.2" },
+    { "path": "example/hi.ws", "spec_version": "0.2" }
+  ],
+  "commands": [
+    {
+      "type": "interpreter",
+      "dependencies": ["Julia"],
+      "install_dependencies": "julia -e 'using Pkg; Pkg.instantiate()'",
+      "usage": "julia --project=. -e 'using Whitespaces; prog = Whitespace(read(ARGS[1], String)); compile!(prog); execute!(prog)' <file>",
+      "input": "<file>",
+      "output": "stdout"
+    }
+  ]
+}

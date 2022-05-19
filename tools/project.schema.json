@@ -343,7 +343,8 @@
               "Python optparse",
               "Ruby Thor",
               "Ruby optparse",
-              "Rust clap"
+              "Rust clap",
+              "Rust structopt"
             ]
           },
           "subcommands": {

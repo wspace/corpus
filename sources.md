@@ -14,10 +14,15 @@
         [whitespace assembler](https://github.com/search?o=desc&q=whitespace+assembler+-org%3Awspace&s=updated&type=Repositories),
         [whitespace disassembler](https://github.com/search?o=desc&q=whitespace+disassembler+-org%3Awspace&s=updated&type=Repositories),
         [whitespace esoteric](https://github.com/search?o=desc&q=whitespace+esoteric+-org%3Awspace&s=updated&type=Repositories)
+    - by README content:
+        ["whitespace programming language"](https://github.com/search?o=desc&q=%22whitespace+programing+language%22+in%3Areadme+-org%3Awspace&s=updated&type=Repositories),
+        ["whitespace interpreter"](https://github.com/search?o=desc&q=%22whitespace+interpreter%22+in%3Areadme+-org%3Awspace&s=updated&type=Repositories)
     - by file content:
         [whitespace unbleach](https://github.com/search?o=desc&q=whitespace+unbleach+-org%3Awspace&s=indexed&type=Code),
         [compsoc.dur.ac.uk whitespace](https://github.com/search?o=desc&q=compsoc.dur.ac.uk+whitespace+-org%3Awspace+-pkgname+-portname+-gentoo+-_eclasses_+-prototype+-awesome+-cheatsheet+-language%3Ahtml+-language%3Ajson+-language%3Acsv&s=indexed&type=Code),
-        ["edwin brady" whitespace](https://github.com/search?o=desc&q=%22edwin+brady%22+whitespace+-org%3Awspace&s=indexed&type=Code)
+        ["edwin brady" whitespace](https://github.com/search?o=desc&q=%22edwin+brady%22+whitespace+-org%3Awspace&s=indexed&type=Code),
+        [whitespace (.ws)](https://github.com/search?o=desc&q=whitespace+extension%3Aws+-trailing+-org%3Awspace&s=indexed&type=Code),
+        [cerner (.ws)](https://github.com/search?o=desc&q=cerner+extension%3Aws+-org%3Awspace&s=indexed&type=Code)
     - by filename:
         [bf.ws](https://github.com/search?o=desc&q=filename%3Abf.ws+extension%3Aws+-org%3Awspace&s=indexed&type=Code),
         [calc.ws](https://github.com/search?o=desc&q=filename%3Acalc.ws+extension%3Aws+-org%3Awspace&s=indexed&type=Code),
@@ -34,9 +39,8 @@
         [quine-copy.ws](https://github.com/search?o=desc&q=filename%3Aquine-copy.ws+extension%3Aws+-org%3Awspace&s=indexed&type=Code),
         [rot13.ws](https://github.com/search?o=desc&q=filename%3Arot13.ws+extension%3Aws+-org%3Awspace&s=indexed&type=Code),
         [sbstr1.ws](https://github.com/search?o=desc&q=filename%3Asbstr1.ws+extension%3Aws+-org%3Awspace&s=indexed&type=Code),
-        [whitespace](https://github.com/search?o=desc&q=whitespace+extension%3Aws+-trailing+-org%3Awspace&s=indexed&type=Code),
-        [cerner](https://github.com/search?o=desc&q=cerner+extension%3Aws+-org%3Awspace&s=indexed&type=Code),
-        [*.wsa](https://github.com/search?o=desc&q=extension%3Awsa+-filename%3Amakefile+-org%3Awspace+-user%3Aandrewarchi&s=indexed&type=Code)
+        [*.wsa](https://github.com/search?o=desc&q=extension%3Awsa+-filename%3Amakefile+-org%3Awspace+-user%3Aandrewarchi&s=indexed&type=Code),
+        [*.wsasm](https://github.com/search?o=desc&q=extension%3Awsasm+-org%3Awspace&s=indexed&type=Code)
     - by Wikipedia links:
         [Whitespace (programming language) [en]](https://github.com/search?o=desc&q=en.wikipedia.org%2Fwiki%2FWhitespace_%28programming_language%29+-language%3AHTML+-org%3Awspace&s=indexed&type=Code),
         [[ar]](https://github.com/search?o=desc&q=ar.wikipedia.org%2Fwiki%2F%D9%88%D8%A7%D9%8A%D8%AA_%D8%B3%D8%A8%D9%8A%D8%B3_%28%D9%84%D8%BA%D8%A9_%D8%A8%D8%B1%D9%85%D8%AC%D8%A9%29+-language%3AHTML+-org%3Awspace&s=indexed&type=Code),
@@ -82,6 +86,7 @@
   - Elm Packages: [whitespace](https://package.elm-lang.org/)
   - Hackage: [whitespace](https://hackage.haskell.org/packages/search?terms=whitespace)
   - Hex: [whitespace](https://hex.pm/packages?search=whitespace)
+  - Julia Packages: [whitespace](https://juliapackages.com/packages?search=whitespace)
   - Maven: [whitespace](https://mvnrepository.com/search?q=whitespace)
   - npm:
       [whitespace language](https://www.npmjs.com/search?q=whitespace%20language),

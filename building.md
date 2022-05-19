@@ -20,6 +20,12 @@ Build and run errors are included.
   - wsa: `make`
   - wsa.sed
   - wsc.sh
+- ⚠️ c/remigascou:
+  - dev/beautify\_ws.sh
+  - dev/beautify\_wsasm.sh
+  - ⚠️ dev/bin/compiler: `make -C dev` Yacc syntax errors
+  - ⚠️ dev/bin/decompiler: `make -C dev` Yacc syntax errors
+  - ⚠️ lexxyacc/compiler/compiler: `make -C lexxyacc` Yacc syntax errors
 - c/rispoli-txt2ws/txt2ws: `make`
 - c/sandeep/white: `gcc -O3 -Wall -o white y.tab.c lex.yy.c`
 - ⚠️ c/shinh-elvm/*unspecified*: `make` Building stalls likely due to missing dependencies
@@ -136,6 +142,7 @@ Build and run errors are included.
 - java/matou-whasm/WhAsm.class: `javac WhAsm.java`
 - java/praveenvaka-coder/target/whitespace-coder-1.0-SNAPSHOT.jar: `mvn -Dmaven.compiler.source=1.8 -Dmaven.compiler.target=1.8 package`
 - ❌ java/pyeroh
+- ❌ java/rahulkp
 - ❌ java/ralucaa-whitespace4j
 - ⚠️ java/vyo-kairos/build/libs/vyo-kairos-1.0.0-all.jar: `./gradlew shadowJar`
 - ⚠️ java/wrotycz/target/whitespace-interpreter-1.0-SNAPSHOT.jar: `mvn -Dmaven.compiler.source=1.8 -Dmaven.compiler.target=1.8 package` No main method entrypoint
@@ -168,6 +175,7 @@ Build and run errors are included.
 - ❌ javascript/vii5ard-whitelips-ide
 - javascript/wdalmut/whitespacec
 - jq/andrewarchi-wsjq/wsjq
+- ⚠️ julia/goropikari-whitespaces/*unspecified*
 - ⚠️ kotlin/ze-space/build/libs/space.jar: `./gradlew` Dependencies not packaged
 - lolcode/akers/whitespace.lol
 - ❌ lua/carsonrueber
@@ -183,6 +191,7 @@ Build and run errors are included.
 - ocaml/steiner/whitespace: `make`
 - perl/ephphatha-wsm2ws/wsm2ws.pl
 - perl/mkoelbl/whitespace.pl
+- perl/skabob-madness/whitespace\_bleached.pl
 - php/codelytv-youtube:
   - top-langs-not-to-use/src/decoder.php
   - top-langs-not-to-use/src/encoder.php
@@ -312,6 +321,9 @@ Build and run errors are included.
 - rust/guricerin/whitespace-rs/target/debug/whitespace-rs: `cd whitespace-rs && cargo build --release`
 - rust/jayshua/target/release/whitespace: `cargo build --release`
 - rust/kaisugi/wi: `rustc -o wi whitespace_interpreter.rs`
+- rust/keirua:
+  - target/release/compiler: `cargo build --release`
+  - target/release/interpreter: `cargo build --release`
 - ⚠️ rust/luminight:
   - ⚠️ librustws.rlib: `cargo build --release`
   - wsconvert.py

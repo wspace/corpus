@@ -1,0 +1,82 @@
+{
+  "id": "rust/keirua",
+  "name": "whitespace-rs",
+  "authors": ["Clément Keirua"],
+  "license": "MIT",
+  "languages": ["Rust"],
+  "tags": ["transpiler", "interpreter"],
+  "date": "2019-07-26 10:30:37 +0200",
+  "spec_version": "0.3",
+  "source": ["https://github.com/Keirua/whitespace-rs"],
+  "relations": [{ "id": "haskell/edwinb-wspace-0.3", "type": "embedded" }],
+  "whitespace": { "unimplemented": ["copy", "slide", "readc"], "extension": "ws" },
+  "assembly": {
+    "mnemonics": {
+      "push": ["Push"],
+      "dup": ["Duplicate"],
+      "copy": ["CopyNth"],
+      "swap": ["Swap"],
+      "drop": ["Discard"],
+      "slide": ["Slide"],
+      "add": ["Add"],
+      "sub": ["Sub"],
+      "mul": ["Mul"],
+      "div": ["Div"],
+      "mod": ["Mod"],
+      "store": ["Store"],
+      "retrieve": ["Retrieve"],
+      "label": ["SetLabel"],
+      "call": ["CallSubroutine"],
+      "jmp": ["Jump"],
+      "jz": ["JZero"],
+      "jn": ["JNeg"],
+      "ret": ["EndOfSubroutine"],
+      "end": ["EndOfProgram"],
+      "printc": ["PrintChar"],
+      "printi": ["PrintInt"],
+      "readc": ["ReadChar"],
+      "readi": ["ReadInt"]
+    },
+    "usage": ["enum"]
+  },
+  "programs": [
+    { "path": "examples/calc.ws", "equivalent": "calc.ws", "spec_version": "0.2" },
+    { "path": "examples/count.ws", "spec_version": "0.2" },
+    { "path": "examples/count2.ws", "equivalent": "count.ws", "spec_version": "0.2" },
+    { "path": "examples/fact.ws", "equivalent": "fact.ws", "spec_version": "0.2" },
+    { "path": "examples/hanoi.ws", "equivalent": "hanoi.ws", "spec_version": "0.2" },
+    { "path": "examples/hworld.ws", "equivalent": "hworld.ws", "spec_version": "0.2" },
+    { "path": "examples/hworld2.ws", "equivalent": "hworld.ws", "spec_version": "0.2" },
+    { "path": "examples/loctest.ws", "equivalent": "loctest.ws", "spec_version": "0.3" },
+    { "path": "examples/name.ws", "equivalent": "name.ws", "spec_version": "0.2" }
+  ],
+  "commands": [
+    {
+      "type": "transpiler",
+      "bin": "target/release/compiler",
+      "build": "cargo build --release",
+      "usage": "$0 [-h | --help] [-V | --version] <file> <output_file>",
+      "input": "<file>",
+      "output": "<output_file>",
+      "options": [
+        { "short": "h", "long": "help", "desc": "Prints help information" },
+        { "short": "V", "long": "version", "desc": "Prints version information" }
+      ],
+      "option_parse": "Rust structopt",
+      "notes": "Transpiles a Whitespace program to Rust"
+    },
+    {
+      "type": "interpreter",
+      "bin": "target/release/interpreter",
+      "build": "cargo build --release",
+      "usage": "$0 [-d | --debug] [-i | --instructions] [-h | --help] [-V | --version] <file>",
+      "options": [
+        { "short": "d", "long": "debug" },
+        { "short": "i", "long": "instructions", "desc": "Display the parsed instructions" },
+        { "short": "h", "long": "help", "desc": "Prints help information" },
+        { "short": "V", "long": "version", "desc": "Prints version information" }
+      ],
+      "option_parse": "Rust structopt"
+    }
+  ]
+}
