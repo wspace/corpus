@@ -17,7 +17,7 @@ instructions, ranked by popularity.
 - `div` (80), `divide` (7), `division` (5), `/` (2), `infixdivide`, `intdiv`, `op/`
 - `mod` (80), `modulo` (12), `%` (2), `infixmodulo`, `rem`
 - `store` (78), `stor` (4), `save` (3), `set` (3), `sto` (3), `heapwrite`, `push`, `put`, `st`, `valuetoadress`, `write`
-- `retrieve` (55), `load` (14), `get` (7), `retr` (6), `retrive` (4), `fetch` (2), `read` (2), `ret` (2), `heapread`, `ld`, `lod`, `pop`, `rcl`, `reti`, `retreive`, `retri`, `retrv`, `valuetostacktop`
+- `retrieve` (56), `load` (14), `get` (7), `retr` (6), `retrive` (3), `fetch` (2), `read` (2), `ret` (2), `heapread`, `ld`, `lod`, `pop`, `rcl`, `reti`, `retreive`, `retri`, `retrv`, `valuetostacktop`
 - `label` (40), `mark` (23), `<label>:` (14), `<number>:` (3), `def` (3), `label_<number>:` (3), `lbl` (3), `mark_sub` (2), `marklabel` (2), `mrk` (2), `setlabel` (2), `%<number>:`, `<<number>>:`, `@<label>`, `deflabel`, `l<number>:`, `label <label>:`, `label#_####`, `label_<number>`, `labl`, `marks`, `part`, `register`
 - `call` (84), `callsubroutine` (3), `call_sub` (2), `gosub` (2), `jsr` (2), `call_subroutine`, `calls`, `callsub`, `cas`, `cll`, `sub`, `subroutine`
 - `jump` (60), `jmp` (31), `goto` (4), `jumplabel` (3), `jp` (2), `b`, `j`, `jumps`, `unconditionaljump`

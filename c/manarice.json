@@ -23,7 +23,7 @@
       "div": ["DIV", "div"],
       "mod": ["MOD", "mod"],
       "store": ["STORE", "store"],
-      "retrieve": ["FETCH", "fetch", "RETRIVE", "retrive"],
+      "retrieve": ["FETCH", "fetch", "RETRIEVE", "retrieve"],
       "label": ["<label>:"],
       "call": ["CALL", "call"],
       "jmp": ["JMP", "jmp"],
@@ -50,15 +50,11 @@
   },
   "programs": [
     { "path": "ws/wsa/bf.wsa", "generated": "ws/ws/bf.ws", "spec_version": "0.3" },
-    { "path": "ws/wsa/copytest.wsa", "generated": "ws/ws/copytest.ws", "spec_version": "0.3" },
+    { "path": "ws/wsa/char.wsa", "generated": "ws/ws/char.ws", "spec_version": "0.2" },
     { "path": "ws/wsa/fib.wsa", "generated": "ws/ws/fib.ws", "spec_version": "0.3" },
-    {
-      "path": "ws/wsa/hanoi.wsa",
-      "generated": "ws/ws/hanoi.ws",
-      "spec_version": "0.2",
-      "generate": "./lwsa"
-    },
+    { "path": "ws/wsa/hanoi.wsa", "generated": "ws/ws/hanoi.ws", "spec_version": "0.2" },
     { "path": "ws/ws/hello.ws", "equivalent": "hworld.ws", "spec_version": "0.2" },
+    { "path": "ws/wsa/hextest.wsa", "generated": "ws/ws/hextest.ws", "spec_version": "0.2" },
     { "path": "ws/wsa/problem01.wsa", "generated": "ws/ws/problem01.ws", "spec_version": "0.3" },
     { "path": "ws/wsa/problem01_new.wsa", "generated": "ws/ws/problem01_new.ws", "spec_version": "0.3" },
     { "path": "ws/wsa/problem02.wsa", "generated": "ws/ws/problem02.ws", "spec_version": "0.3" },
@@ -71,7 +67,12 @@
     { "path": "ws/wsa/problem07.wsa", "generated": "ws/ws/problem07.ws", "spec_version": "0.3" },
     { "path": "ws/wsa/problem08.wsa", "generated": "ws/ws/problem08.ws", "spec_version": "0.3" },
     { "path": "ws/wsa/problem08_o.wsa", "generated": "ws/ws/problem08_o.ws", "spec_version": "0.3" },
-    { "path": "ws/wsa/rule110.wsa", "generated": "ws/ws/rule110.ws", "spec_version": "0.3" },
+    {
+      "path": "ws/wsa/rule110.wsa",
+      "generated": "ws/ws/rule110.ws",
+      "spec_version": "0.3",
+      "generate": "./lwsa"
+    },
     { "path": "ws/ws/test.ws", "equivalent": "calc.ws", "spec_version": "0.2" }
   ],
   "commands": [
@@ -80,7 +81,9 @@
       "bin": "lswvm",
       "install_dependencies": "git clone https://github.com/ManaRice/limelib utils/limelib && make -C utils/limelib",
       "build": "make LIMELIB=utils/limelib.so",
-      "usage": "$0 <file>"
+      "usage": "$0 <file>",
+      "input": "<file>",
+      "output": "stdout"
     },
     {
       "type": "assembler",
@@ -88,8 +91,8 @@
       "install_dependencies": "git clone https://github.com/ManaRice/limelib utils/limelib && make -C utils/limelib",
       "build": "make LIMELIB=utils/limelib.so",
       "usage": "$0",
-      "input": "ws/wsa/hanoi.wsa",
-      "output": "ws/ws/hanoi.ws",
+      "input": "ws/wsa/rule110.wsa",
+      "output": "ws/ws/rule110.ws",
       "notes": "Adds #!lwsvm shebang to programs"
     }
   ],
