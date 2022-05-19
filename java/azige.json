@@ -42,7 +42,56 @@
     },
     "usage": ["enum"]
   },
-  "programs": [{ "path": "src/main/pack/example/helloworld_cn.ws", "spec_version": "0.2" }],
+  "programs": [
+    {
+      "path": "src/main/pack/example/0to9.szm",
+      "aux": ["src/test/resources/0to9.szm"],
+      "spec_version": "0.2"
+    },
+    {
+      "path": "src/main/pack/example/1to10.ws",
+      "aux": ["src/test/resources/1to10.ws"],
+      "equivalent": "count.ws",
+      "spec_version": "0.2"
+    },
+    {
+      "path": "src/main/pack/example/calc.ws",
+      "aux": ["src/test/resources/calc.ws"],
+      "equivalent": "calc.ws",
+      "spec_version": "0.2"
+    },
+    {
+      "path": "src/main/pack/example/fact.ws",
+      "aux": ["src/test/resources/fact.ws"],
+      "equivalent": "fact.ws",
+      "spec_version": "0.2"
+    },
+    {
+      "path": "src/main/pack/example/fibonacci.ws",
+      "aux": ["src/test/resources/fibonacci.ws"],
+      "equivalent": "fibonacci.ws",
+      "spec_version": "0.2"
+    },
+    {
+      "path": "src/main/pack/example/hanoi.ws",
+      "aux": ["src/test/resources/hanoi.ws"],
+      "equivalent": "hanoi.ws",
+      "spec_version": "0.2"
+    },
+    { "path": "src/main/pack/example/helloworld_cn.ws", "spec_version": "0.2" },
+    {
+      "path": "src/main/pack/example/hworld.ws",
+      "aux": ["src/test/resources/hworld.ws"],
+      "equivalent": "Hello, world! (Wikipedia)",
+      "spec_version": "0.2"
+    },
+    {
+      "path": "src/main/pack/example/name.ws",
+      "aux": ["src/test/resources/name.ws"],
+      "equivalent": "name.ws",
+      "spec_version": "0.2"
+    }
+  ],
   "commands": [
     {
       "bin": "target/whitespace-interpreter-0.4.jar",
