@@ -53,7 +53,7 @@
   "build": {
     "base_image": "golang:1.18",
     "setup": ["go mod init github.com/wspace/qeedquan-go"],
-    "build": ["go build -o whitespace"]
+    "targets": [{ "binaries": ["whitespace"], "build": "go build -o whitespace" }]
   },
   "commands": [
     {

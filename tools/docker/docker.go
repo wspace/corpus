@@ -37,8 +37,8 @@ func main() {
 			for _, cmd := range p.Build.Setup {
 				fmt.Fprintf(b, "RUN %s\n", cmd)
 			}
-			for _, cmd := range p.Build.Build {
-				fmt.Fprintf(b, "RUN %s\n", cmd)
+			for _, target := range p.Build.Targets {
+				fmt.Fprintf(b, "RUN %s\n", target.Build)
 			}
 			try(writeIfChanged(b, p.ID+".dockerfile"))
 		}

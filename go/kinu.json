@@ -61,7 +61,7 @@
   "build": {
     "base_image": "golang:1.18",
     "setup": ["go mod init github.com/kinu/whitespace"],
-    "build": ["go build"]
+    "targets": [{ "binaries": ["whitespace"], "build": "go build" }]
   },
   "commands": [
     {

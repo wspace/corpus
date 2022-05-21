@@ -12,6 +12,10 @@ Projects that can be built with Docker:
 - go/technohippy
 - go/tempxla-go-wspace
 - go/yshr-wspacego
+- rust/censoredusername-whitespacers
+- rust/collidedscope-albus
+- rust/faultier-albino
+- rust/guricerin
 
 Building status of individual executables:
 
@@ -311,16 +315,7 @@ Building status of individual executables:
   - whitespace-disassem
 - ruby/yuta-textproc/mywhitespace.rb
 - rust/andrewarchi-yspace/tests/test.sh
-- rust/censoredusername-whitespacers/target/release/wsc: `cargo build --release`
-- rust/collidedscope-albus/target/release/albus: `cargo build --release`
-- ⚠️ rust/faultier-albino:
-  - ⚠️ albino: `cargo build --release` Needs many changes for latest Rust
-  - ⚠️ albino-build: `cargo build --release` Needs many changes for latest Rust
-  - ⚠️ albino-exec: `cargo build --release` Needs many changes for latest Rust
-  - ⚠️ albino-gen: `cargo build --release` Needs many changes for latest Rust
-  - ⚠️ albino-run: `cargo build --release` Needs many changes for latest Rust
 - ⚠️ rust/faultier-whitebase/*unspecified*: `cargo build --release` Needs many changes for latest Rust
-- rust/guricerin/whitespace-rs/target/debug/whitespace-rs: `cd whitespace-rs && cargo build --release`
 - rust/jayshua/target/release/whitespace: `cargo build --release`
 - rust/kaisugi/wi: `rustc -o wi whitespace_interpreter.rs`
 - rust/keirua:

@@ -18,7 +18,10 @@
     "label_cap": "unbounded",
     "instruction_cap": 30000
   },
-  "build": { "base_image": "golang:1.18", "build": ["go build -o go-whitespace ./src"] },
+  "build": {
+    "base_image": "golang:1.18",
+    "targets": [{ "binaries": ["go-whitespace"], "build": "go build -o go-whitespace ./src" }]
+  },
   "commands": [
     {
       "type": "interpreter",

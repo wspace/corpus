@@ -53,7 +53,7 @@
   "build": {
     "base_image": "golang:1.18",
     "setup": ["go mod init github.com/135yshr/wspacego", "go mod tidy"],
-    "build": ["go build"]
+    "targets": [{ "binaries": ["wspacego"], "build": "go build" }]
   },
   "commands": [
     {

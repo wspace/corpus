@@ -314,7 +314,14 @@
       "properties": {
         "base_image": { "type": "string" },
         "setup": { "type": "array", "items": { "type": "string" } },
-        "build": { "type": "array", "items": { "type": "string" } }
+        "targets": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": { "binaries": { "type": "array", "items": { "type": "string" } }, "build": { "type": "string" } },
+            "required": ["binaries", "build"]
+          }
+        }
       },
       "required": ["base_image"],
       "additionalProperties": false

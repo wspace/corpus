@@ -149,7 +149,10 @@ type Project struct {
 	Build *struct {
 		BaseImage string   `json:"base_image"`
 		Setup     []string `json:"setup,omitempty"`
-		Build     []string `json:"build,omitempty"`
+		Targets   []struct {
+			Binaries []string `json:"binaries"`
+			Build    string   `json:"build"`
+		} `json:"targets,omitempty"`
 	} `json:"build,omitempty"`
 	Commands []Command `json:"commands,omitempty"`
 	Notes    string    `json:"notes,omitempty"`

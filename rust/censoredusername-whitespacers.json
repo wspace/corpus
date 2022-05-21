@@ -39,11 +39,17 @@
     },
     "usage": ["assembler", "disassembler"]
   },
+  "build": {
+    "base_image": "rust:1.61",
+    "targets": [
+      { "binaries": ["target/release/wsc"], "build": "cargo build --release" },
+      { "binaries": ["target/debug/wsc"], "build": "cargo build" }
+    ]
+  },
   "commands": [
     {
       "type": "interpreter",
       "bin": "target/release/wsc",
-      "build": "cargo build --release",
       "usage": "$0 [options] <file>",
       "options": [
         { "short": "h", "long": "help", "desc": "Display this message" },
