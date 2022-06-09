@@ -9,7 +9,7 @@
   "spec_version": "0.3",
   "source": ["https://github.com/collidedscope/albus"],
   "build": {
-    "base_image": "rust:1.61",
+    "base_image": "wspace-corpus/crates-io",
     "targets": [{ "binaries": ["target/release/albus"], "build": "cargo build --release" }]
   },
   "commands": [{ "type": "interpreter", "bin": "target/release/albus", "usage": "$0 <file>" }]

@@ -1,4 +1,4 @@
-FROM rust:1.61
+FROM wspace-corpus/crates-io
 
 RUN git clone https://github.com/andrewarchi/yspace /andrewarchi-yspace
 WORKDIR /andrewarchi-yspace

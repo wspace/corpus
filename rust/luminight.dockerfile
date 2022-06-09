@@ -1,4 +1,4 @@
-FROM rust:1.61
+FROM wspace-corpus/crates-io
 
 RUN git clone https://github.com/Luminighty/rustws /luminight-rust
 WORKDIR /luminight-rust

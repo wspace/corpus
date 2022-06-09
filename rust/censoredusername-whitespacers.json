@@ -40,7 +40,7 @@
     "usage": ["assembler", "disassembler"]
   },
   "build": {
-    "base_image": "rust:1.61",
+    "base_image": "wspace-corpus/crates-io",
     "targets": [{ "binaries": ["target/release/wsc"], "build": "cargo build --release" }]
   },
   "commands": [

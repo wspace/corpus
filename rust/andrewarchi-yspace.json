@@ -95,7 +95,7 @@
     { "path": "tests/unterminated_slide.ws", "spec_version": "0.3" }
   ],
   "build": {
-    "base_image": "rust:1.61",
+    "base_image": "wspace-corpus/crates-io",
     "targets": [{ "binaries": ["target/release/yspace"], "build": "cargo build --release" }]
   },
   "commands": [

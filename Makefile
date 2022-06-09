@@ -36,6 +36,10 @@ challenges.md: $(PROJECTS) tools/generate_challenges.jq
 	$(info Generating challenges.md)
 	@jq -rsf tools/generate_challenges.jq $(PROJECTS) > challenges.md
 
+.PHONY: docker_build
+docker_build: $(PROJECTS) tools/generate_docker_build.jq
+	@jq -rsf tools/generate_docker_build.jq $(PROJECTS)
+
 .PHONY: tidy_submodules
 tidy_submodules: $(PROJECTS) tools/submodules/submodules.go $(GO_TOOLS_PACKAGE) tools/format_gitmodules.sh
 	$(info Tidying Git submodules)

@@ -51,7 +51,7 @@
     { "path": "examples/name.ws", "equivalent": "name.ws", "spec_version": "0.2" }
   ],
   "build": {
-    "base_image": "rust:1.61",
+    "base_image": "wspace-corpus/crates-io",
     "targets": [
       {
         "binaries": ["target/release/compiler", "target/release/interpreter"],

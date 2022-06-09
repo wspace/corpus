@@ -1,4 +1,4 @@
-FROM rust:1.61
+FROM wspace-corpus/crates-io
 
 RUN git clone https://github.com/CensoredUsername/whitespace-rs /censoredusername-whitespacers
 WORKDIR /censoredusername-whitespacers

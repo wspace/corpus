@@ -1,4 +1,4 @@
-FROM rust:1.61
+FROM wspace-corpus/crates-io
 
 RUN git clone https://gitlab.com/zrneely/whitespace /zrneely-rust
 WORKDIR /zrneely-rust
