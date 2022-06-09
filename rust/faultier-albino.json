@@ -54,46 +54,17 @@
           "target/release/albino-exec",
           "target/release/albino-gen"
         ],
-        "build": "cargo build --release"
-      },
-      {
-        "binaries": [
-          "target/debug/albino",
-          "target/debug/albino-run",
-          "target/debug/albino-build",
-          "target/debug/albino-exec",
-          "target/debug/albino-gen"
-        ],
-        "build": "cargo build"
+        "build": "cargo build --release",
+        "build_errors": "Needs many changes for latest Rust"
       }
     ]
   },
   "commands": [
-    {
-      "bin": "target/release/albino",
-      "build_errors": "Needs many changes for latest Rust",
-      "option_parse": "manual"
-    },
-    {
-      "bin": "target/release/albino-run",
-      "build_errors": "Needs many changes for latest Rust",
-      "option_parse": "manual"
-    },
-    {
-      "bin": "target/release/albino-build",
-      "build_errors": "Needs many changes for latest Rust",
-      "option_parse": "manual"
-    },
-    {
-      "bin": "target/release/albino-exec",
-      "build_errors": "Needs many changes for latest Rust",
-      "option_parse": "manual"
-    },
-    {
-      "bin": "target/release/albino-gen",
-      "build_errors": "Needs many changes for latest Rust",
-      "option_parse": "manual"
-    }
+    { "bin": "target/release/albino", "option_parse": "manual" },
+    { "bin": "target/release/albino-run", "option_parse": "manual" },
+    { "bin": "target/release/albino-build", "option_parse": "manual" },
+    { "bin": "target/release/albino-exec", "option_parse": "manual" },
+    { "bin": "target/release/albino-gen", "option_parse": "manual" }
   ],
   "todo": "Document options"
 }

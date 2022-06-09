@@ -54,11 +54,8 @@
     "targets": [
       {
         "binaries": ["whitespace-rs/target/release/whitespace-rs"],
-        "build": "cargo build --release --manifest-path=whitespace-rs/Cargo.toml"
-      },
-      {
-        "binaries": ["whitespace-rs/target/debug/whitespace-rs"],
-        "build": "cargo build --manifest-path=whitespace-rs/Cargo.toml"
+        "workdir": "whitespace-rs",
+        "build": "cargo build --release"
       }
     ]
   },
@@ -66,7 +63,6 @@
     {
       "type": "interpreter",
       "bin": "whitespace-rs/target/release/whitespace-rs",
-      "build": "cd whitespace-rs && cargo build --release",
       "usage": "$0 <file>",
       "options": [
         { "short": "h", "long": "help", "desc": "Prints help information" },

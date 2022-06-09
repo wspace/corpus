@@ -318,7 +318,12 @@
           "type": "array",
           "items": {
             "type": "object",
-            "properties": { "binaries": { "type": "array", "items": { "type": "string" } }, "build": { "type": "string" } },
+            "properties": {
+              "binaries": { "type": "array", "items": { "type": "string" } },
+              "workdir": { "type": "string" },
+              "build": { "type": "string" },
+              "build_errors": { "type": "string" }
+            },
             "required": ["binaries", "build"]
           }
         }

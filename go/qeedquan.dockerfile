@@ -4,3 +4,4 @@ RUN git clone https://github.com/wspace/qeedquan-go /qeedquan-go
 WORKDIR /qeedquan-go
 RUN go mod init github.com/wspace/qeedquan-go
 RUN go build -o whitespace
+# builds: /qeedquan-go/whitespace

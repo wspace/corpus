@@ -6,6 +6,7 @@ import (
 	"fmt"
 	"io/fs"
 	"os"
+	"path"
 	"strings"
 
 	"github.com/wspace/corpus/tools"
@@ -18,6 +19,7 @@ func main() {
 	}
 	projects, err := tools.ReadProjects(os.Args[1:])
 	try(err)
+	var errs []error
 	for _, p := range projects {
 		if p.Build != nil {
 			slash := strings.IndexByte(p.ID, '/')
@@ -33,15 +35,37 @@ func main() {
 			b := new(bytes.Buffer)
 			fmt.Fprintf(b, "FROM %s\n\n", p.Build.BaseImage)
 			fmt.Fprintf(b, "RUN git clone %s /%s\n", p.Source[0], shortID)
-			fmt.Fprintf(b, "WORKDIR /%s\n", shortID)
+			inWorkdir, workdir := false, ""
+			if len(p.Build.Setup) != 0 {
+				fmt.Fprintf(b, "WORKDIR /%s\n", shortID)
+				inWorkdir = true
+			}
 			for _, cmd := range p.Build.Setup {
 				fmt.Fprintf(b, "RUN %s\n", cmd)
 			}
 			for _, target := range p.Build.Targets {
+				if !inWorkdir || workdir != target.Workdir {
+					fmt.Fprintf(b, "WORKDIR %s\n", path.Join("/", shortID, target.Workdir))
+					inWorkdir, workdir = true, target.Workdir
+				}
 				fmt.Fprintf(b, "RUN %s\n", target.Build)
+				b.WriteString("# builds: ")
+				for i, binary := range target.Binaries {
+					if i != 0 {
+						b.WriteString(", ")
+					}
+					b.WriteString(path.Join("/", shortID, binary))
+				}
+				b.WriteByte('\n')
 			}
 			try(writeIfChanged(b, p.ID+".dockerfile"))
 		}
+	}
+	if len(errs) != 0 {
+		for _, err := range errs {
+			fmt.Fprintln(os.Stderr, err)
+		}
+		os.Exit(1)
 	}
 }
 

@@ -41,10 +41,7 @@
   },
   "build": {
     "base_image": "rust:1.61",
-    "targets": [
-      { "binaries": ["target/release/wsc"], "build": "cargo build --release" },
-      { "binaries": ["target/debug/wsc"], "build": "cargo build" }
-    ]
+    "targets": [{ "binaries": ["target/release/wsc"], "build": "cargo build --release" }]
   },
   "commands": [
     {

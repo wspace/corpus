@@ -18,7 +18,8 @@ Projects that can be built with Docker:
 ",
 (
   map(select(.build != null)) | sort_by(.id)[] |
-  "- \(.id | escape)"
+  "- \(.id | escape)",
+  (.build.targets[].build_errors? | "  - \(escape)")
 ),
 "
 Building status of individual executables:

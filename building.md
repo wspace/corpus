@@ -12,10 +12,20 @@ Projects that can be built with Docker:
 - go/technohippy
 - go/tempxla-go-wspace
 - go/yshr-wspacego
+- rust/andrewarchi-yspace
 - rust/censoredusername-whitespacers
 - rust/collidedscope-albus
 - rust/faultier-albino
+  - Needs many changes for latest Rust
 - rust/guricerin
+- rust/jayshua
+- rust/kaisugi
+- rust/keirua
+- rust/luminight
+- rust/nareshganduri
+- rust/omurakazuaki
+- rust/zrneely
+  - Needs many changes for latest Rust
 
 Building status of individual executables:
 
@@ -314,19 +324,7 @@ Building status of individual executables:
   - whitespace-asm
   - whitespace-disassem
 - ruby/yuta-textproc/mywhitespace.rb
-- rust/andrewarchi-yspace/tests/test.sh
 - ⚠️ rust/faultier-whitebase/*unspecified*: `cargo build --release` Needs many changes for latest Rust
-- rust/jayshua/target/release/whitespace: `cargo build --release`
-- rust/kaisugi/wi: `rustc -o wi whitespace_interpreter.rs`
-- rust/keirua:
-  - target/release/compiler: `cargo build --release`
-  - target/release/interpreter: `cargo build --release`
-- ⚠️ rust/luminight:
-  - ⚠️ librustws.rlib: `cargo build --release`
-  - wsconvert.py
-- rust/nareshganduri/target/release/whitespace-vm: `cargo build --release`
-- rust/omurakazuaki/target/release/whitespace: `cargo build --release`
-- ❌ rust/zrneely
 - scala/dashlambda-eso/target/scala-2.13/eso\_2.13-2.6.1.jar: `sbt assembly`
 - ❌ scala/ojha-whitespacing
 - ⚠️ scala/patrickstephen/whitespace.jar: `sbt package` Should set whitespace.jar as package instead of arget/scala-2.11/whitespace-interpreter\_2.11-1.0.jar A JNI error has occurred, please check your installation and try again

@@ -20,12 +20,9 @@
     { "path": "examples/name.ws", "equivalent": "name.ws", "spec_version": "0.2" },
     { "path": "examples/sudoku.ws", "equivalent": "sudoku.ws", "spec_version": "0.3" }
   ],
-  "commands": [
-    {
-      "type": "interpreter",
-      "bin": "target/release/whitespace-vm",
-      "build": "cargo build --release",
-      "usage": "$0 <file>"
-    }
-  ]
+  "build": {
+    "base_image": "rust:1.61",
+    "targets": [{ "binaries": ["target/release/whitespace-vm"], "build": "cargo build --release" }]
+  },
+  "commands": [{ "type": "interpreter", "bin": "target/release/whitespace-vm", "usage": "$0 <file>" }]
 }

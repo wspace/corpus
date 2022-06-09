@@ -10,10 +10,7 @@
   "source": ["https://github.com/collidedscope/albus"],
   "build": {
     "base_image": "rust:1.61",
-    "targets": [
-      { "binaries": ["target/release/albus"], "build": "cargo build --release" },
-      { "binaries": ["target/debug/albus"], "build": "cargo build" }
-    ]
+    "targets": [{ "binaries": ["target/release/albus"], "build": "cargo build --release" }]
   },
   "commands": [{ "type": "interpreter", "bin": "target/release/albus", "usage": "$0 <file>" }]
 }

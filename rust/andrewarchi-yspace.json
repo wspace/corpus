@@ -94,5 +94,12 @@
     { "path": "tests/unterminated_push.ws", "spec_version": "0.2" },
     { "path": "tests/unterminated_slide.ws", "spec_version": "0.3" }
   ],
-  "commands": [{ "type": "test", "bin": "tests/test.sh", "usage": "cd tests && ./test.sh" }]
+  "build": {
+    "base_image": "rust:1.61",
+    "targets": [{ "binaries": ["target/release/yspace"], "build": "cargo build --release" }]
+  },
+  "commands": [
+    { "bin": "target/release/yspace", "usage": "$0 <file>" },
+    { "type": "test", "bin": "tests/test.sh", "usage": "cd tests && ./test.sh" }
+  ]
 }

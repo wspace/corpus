@@ -50,11 +50,19 @@
     { "path": "examples/loctest.ws", "equivalent": "loctest.ws", "spec_version": "0.3" },
     { "path": "examples/name.ws", "equivalent": "name.ws", "spec_version": "0.2" }
   ],
+  "build": {
+    "base_image": "rust:1.61",
+    "targets": [
+      {
+        "binaries": ["target/release/compiler", "target/release/interpreter"],
+        "build": "cargo build --release"
+      }
+    ]
+  },
   "commands": [
     {
       "type": "transpiler",
       "bin": "target/release/compiler",
-      "build": "cargo build --release",
       "usage": "$0 [-h | --help] [-V | --version] <file> <output_file>",
       "input": "<file>",
       "output": "<output_file>",
@@ -68,7 +76,6 @@
     {
       "type": "interpreter",
       "bin": "target/release/interpreter",
-      "build": "cargo build --release",
       "usage": "$0 [-d | --debug] [-i | --instructions] [-h | --help] [-V | --version] <file>",
       "options": [
         { "short": "d", "long": "debug" },

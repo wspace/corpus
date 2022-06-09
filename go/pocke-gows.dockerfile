@@ -5,3 +5,4 @@ WORKDIR /pocke-gows
 RUN go mod init github.com/pocke/gows
 RUN go mod tidy
 RUN go build
+# builds: /pocke-gows/gows

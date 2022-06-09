@@ -22,13 +22,12 @@
     }
   ],
   "programs": [{ "path": "test.wsv", "generated": "test.ws", "spec_version": "0.2" }],
+  "build": {
+    "base_image": "rust:1.61",
+    "targets": [{ "binaries": ["target/release/librustws.rlib"], "build": "cargo build --release" }]
+  },
   "commands": [
-    {
-      "type": "library",
-      "bin": "librustws.rlib",
-      "build": "cargo build --release",
-      "notes": "No main() entry point"
-    },
+    { "type": "library", "bin": "target/release/librustws.rlib", "run_errors": "No main() entry point" },
     {
       "type": "mapping",
       "bin": "wsconvert.py",
