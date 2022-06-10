@@ -1,6 +1,7 @@
 FROM wspace-corpus/crates-io
 
-RUN git clone https://github.com/CensoredUsername/whitespace-rs /censoredusername-whitespacers
-WORKDIR /censoredusername-whitespacers
+WORKDIR /home
+RUN git clone https://github.com/CensoredUsername/whitespace-rs
+WORKDIR /home/whitespace-rs
 RUN cargo build --release
-# builds: /censoredusername-whitespacers/target/release/wsc
+# builds: /home/whitespace-rs/target/release/wsc

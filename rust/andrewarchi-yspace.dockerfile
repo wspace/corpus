@@ -1,6 +1,7 @@
 FROM wspace-corpus/crates-io
 
-RUN git clone https://github.com/andrewarchi/yspace /andrewarchi-yspace
-WORKDIR /andrewarchi-yspace
+WORKDIR /home
+RUN git clone https://github.com/andrewarchi/yspace
+WORKDIR /home/yspace
 RUN cargo build --release
-# builds: /andrewarchi-yspace/target/release/yspace
+# builds: /home/yspace/target/release/yspace

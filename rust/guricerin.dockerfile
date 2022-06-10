@@ -1,6 +1,7 @@
 FROM wspace-corpus/crates-io
 
-RUN git clone https://github.com/guricerin/esolangs /guricerin-rust
-WORKDIR /guricerin-rust/whitespace-rs
+WORKDIR /home
+RUN git clone https://github.com/guricerin/esolangs
+WORKDIR /home/esolangs/whitespace-rs
 RUN cargo build --release
-# builds: /guricerin-rust/whitespace-rs/target/release/whitespace-rs
+# builds: /home/esolangs/whitespace-rs/target/release/whitespace-rs

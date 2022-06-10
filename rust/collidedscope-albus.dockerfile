@@ -1,6 +1,7 @@
 FROM wspace-corpus/crates-io
 
-RUN git clone https://github.com/collidedscope/albus /collidedscope-albus
-WORKDIR /collidedscope-albus
+WORKDIR /home
+RUN git clone https://github.com/collidedscope/albus
+WORKDIR /home/albus
 RUN cargo build --release
-# builds: /collidedscope-albus/target/release/albus
+# builds: /home/albus/target/release/albus

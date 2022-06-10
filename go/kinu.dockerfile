@@ -1,7 +1,8 @@
 FROM golang:1.18
 
-RUN git clone https://github.com/kinu/whitespace /kinu-go
-WORKDIR /kinu-go
+WORKDIR /home
+RUN git clone https://github.com/kinu/whitespace
+WORKDIR /home/whitespace
 RUN go mod init github.com/kinu/whitespace
 RUN go build
-# builds: /kinu-go/whitespace
+# builds: /home/whitespace/whitespace

@@ -1,6 +1,7 @@
 FROM rust:1.61
 
-RUN git clone https://github.com/wspace/omurakazuaki-rust /omurakazuaki-rust
-WORKDIR /omurakazuaki-rust
+WORKDIR /home
+RUN git clone https://github.com/wspace/omurakazuaki-rust
+WORKDIR /home/omurakazuaki-rust
 RUN cargo build --release
-# builds: /omurakazuaki-rust/target/release/whitespace
+# builds: /home/omurakazuaki-rust/target/release/whitespace

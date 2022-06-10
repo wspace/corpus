@@ -1,6 +1,7 @@
 FROM wspace-corpus/crates-io
 
-RUN git clone https://github.com/faultier/albino /faultier-albino
-WORKDIR /faultier-albino
+WORKDIR /home
+RUN git clone https://github.com/faultier/albino
+WORKDIR /home/albino
 RUN cargo build --release
-# builds: /faultier-albino/target/release/albino, /faultier-albino/target/release/albino-run, /faultier-albino/target/release/albino-build, /faultier-albino/target/release/albino-exec, /faultier-albino/target/release/albino-gen
+# builds: /home/albino/target/release/albino, /home/albino/target/release/albino-run, /home/albino/target/release/albino-build, /home/albino/target/release/albino-exec, /home/albino/target/release/albino-gen

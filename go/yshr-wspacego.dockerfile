@@ -1,8 +1,9 @@
 FROM golang:1.18
 
-RUN git clone https://github.com/135yshr/wspacego /yshr-wspacego
-WORKDIR /yshr-wspacego
+WORKDIR /home
+RUN git clone https://github.com/135yshr/wspacego
+WORKDIR /home/wspacego
 RUN go mod init github.com/135yshr/wspacego
 RUN go mod tidy
 RUN go build
-# builds: /yshr-wspacego/wspacego
+# builds: /home/wspacego/wspacego

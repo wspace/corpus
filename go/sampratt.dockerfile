@@ -1,6 +1,7 @@
 FROM golang:1.18
 
-RUN git clone https://github.com/samuel-pratt/whitespace-go /sampratt-go
-WORKDIR /sampratt-go
+WORKDIR /home
+RUN git clone https://github.com/samuel-pratt/whitespace-go
+WORKDIR /home/whitespace-go
 RUN go build
-# builds: /sampratt-go/whitespace-go
+# builds: /home/whitespace-go/whitespace-go

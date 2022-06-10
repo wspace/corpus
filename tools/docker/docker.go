@@ -24,35 +24,27 @@ func main() {
 	dw := NewDockerfileWriter()
 	for _, p := range projects {
 		if p.Build != nil {
-			slash := strings.IndexByte(p.ID, '/')
-			shortID := p.ID[slash+1:]
-			if strings.IndexByte(shortID, '-') == -1 {
-				shortID += "-" + p.ID[:slash]
-			}
-			if len(p.Source) != 0 && strings.HasPrefix(p.Source[0], "https://github.com/wspace/") {
-				if id := strings.TrimPrefix(p.Source[0], "https://github.com/wspace/"); id != shortID {
-					fmt.Fprintf(os.Stdout, "%s: short ID %s does not match %s\n", p.ID, shortID, p.Source[0])
-				}
-			}
 			dw.Reset()
 			dw.Inst("FROM %s", p.Build.BaseImage)
 			dw.Line("")
-			dw.RunShell(fmt.Sprintf("git clone %s /%s", p.Source[0], shortID))
+			dw.WorkDir("/home")
+			dw.Inst("RUN git clone %s", p.Source[0])
+			dir := "/home" + p.Source[0][strings.LastIndexByte(p.Source[0], '/'):]
 			if len(p.Build.Setup) != 0 {
-				dw.WorkDir(path.Join("/", shortID))
+				dw.WorkDir(dir)
 				for _, cmd := range p.Build.Setup {
 					dw.RunShell(cmd)
 				}
 			}
 			for _, target := range p.Build.Targets {
-				dw.WorkDir(path.Join("/", shortID, target.WorkDir))
+				dw.WorkDir(path.Join(dir, target.WorkDir))
 				dw.RunShell(target.Build)
 				dw.b.WriteString("# builds: ")
 				for i, binary := range target.Binaries {
 					if i != 0 {
 						dw.b.WriteString(", ")
 					}
-					dw.b.WriteString(path.Join("/", shortID, binary))
+					dw.b.WriteString(path.Join(dir, binary))
 				}
 				dw.b.WriteByte('\n')
 			}
@@ -116,6 +108,7 @@ func (dw *DockerfileWriter) Line(line string) {
 
 func (dw *DockerfileWriter) Reset() {
 	dw.b.Reset()
+	dw.workDir = ""
 }
 
 func (dw *DockerfileWriter) SaveIfChanged(filename string) error {
