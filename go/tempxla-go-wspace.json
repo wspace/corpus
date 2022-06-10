@@ -46,5 +46,6 @@
     },
     "usage": ["debug"]
   },
-  "commands": [{ "type": "interpreter", "bin": "bin/go-wspace", "usage": "$0 <file>" }]
+  "commands": [{ "type": "interpreter", "bin": "bin/go-wspace", "usage": "$0 <file>" }],
+  "notes": "Tests fail to run due to vet error"
 }

@@ -5,5 +5,6 @@ RUN git clone https://github.com/135yshr/wspacego
 WORKDIR /home/wspacego
 RUN go mod init github.com/135yshr/wspacego
 RUN go mod tidy
+# RUN go test ./...
 RUN go build
 # builds: /home/wspacego/wspacego

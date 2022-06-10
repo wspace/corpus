@@ -67,5 +67,5 @@
       ]
     }
   ],
-  "notes": "copy and slide use top of stack, not argument"
+  "notes": "copy and slide use top of stack, not argument. Tests fail to run due to vet error."
 }
