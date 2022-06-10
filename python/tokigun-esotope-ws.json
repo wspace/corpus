@@ -53,10 +53,10 @@
       "bin": "esotope-ws",
       "dependencies": ["Python 2"],
       "build_errors": "Source code unavailable",
-      "usage": "$0 [-c <out_file>] [-d <out_file>] <file>",
+      "usage": "$0 [-c <output_file>] [-d <output_file>] <file>",
       "options": [
-        { "short": "c", "arg": "out_file", "arg_required": true, "desc": "assembler mode" },
-        { "short": "d", "arg": "out_file", "arg_required": true, "desc": "disassembler mode" }
+        { "short": "c", "arg": "output_file", "arg_required": true, "desc": "assembler mode" },
+        { "short": "d", "arg": "output_file", "arg_required": true, "desc": "disassembler mode" }
       ]
     }
   ],

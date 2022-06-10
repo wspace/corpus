@@ -9,5 +9,10 @@
   "spec_version": "0.3",
   "source": ["https://github.com/Rahul-KP/WhiteSpace-Interpreter"],
   "relations": [{ "id": "vim/rolf-ws-vim", "type": "embedded" }],
-  "programs": [{ "path": "nums.ws", "spec_version": "0.2" }, { "path": "sample.ws", "spec_version": "0.2" }]
+  "programs": [
+    { "path": "accept_add.ws", "spec_version": "0.2" },
+    { "path": "add.ws", "spec_version": "0.2" },
+    { "path": "nums.ws", "spec_version": "0.2" },
+    { "path": "sample.ws", "spec_version": "0.2" }
+  ]
 }

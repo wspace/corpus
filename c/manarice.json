@@ -72,8 +72,7 @@
       "generated": "ws/ws/rule110.ws",
       "spec_version": "0.3",
       "generate": "./lwsa"
-    },
-    { "path": "ws/ws/test.ws", "equivalent": "calc.ws", "spec_version": "0.2" }
+    }
   ],
   "commands": [
     {
@@ -90,11 +89,11 @@
       "bin": "lwsa",
       "install_dependencies": "git clone https://github.com/ManaRice/limelib utils/limelib && make -C utils/limelib",
       "build": "make LIMELIB=utils/limelib.so",
-      "usage": "$0",
-      "input": "ws/wsa/rule110.wsa",
-      "output": "ws/ws/rule110.ws",
-      "notes": "Adds #!lwsvm shebang to programs"
+      "usage": "$0 <file>",
+      "input": "ws/wsa/<file>",
+      "output": "ws/ws/<file:no_ext>.ws",
+      "notes": "Adds #!lwsvm shebang to programs. Output file really just removes final character."
     }
   ],
-  "todo": "whitespace_vm.c also needs to include inc/linux.h on macOS. wsa.c uses hardcoded input and output files. Hex syntax for numbers is not yet implemented."
+  "todo": "whitespace_vm.c also needs to include inc/linux.h on macOS. Hex syntax for numbers is not yet implemented."
 }
