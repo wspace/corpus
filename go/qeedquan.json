@@ -50,11 +50,6 @@
     { "path": "nerd.ws", "spec_version": "0.2" },
     { "path": "quine.ws", "equivalent": "quine.ws", "spec_version": "0.2" }
   ],
-  "build": {
-    "base_image": "golang:1.18",
-    "setup": ["go mod init github.com/wspace/qeedquan-go"],
-    "targets": [{ "binaries": ["whitespace"], "build": "go build -o whitespace" }]
-  },
   "commands": [
     {
       "bin": "whitespace",

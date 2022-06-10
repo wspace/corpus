@@ -16,7 +16,6 @@ Projects that can be built with Docker:
 - rust/censoredusername-whitespacers
 - rust/collidedscope-albus
 - rust/faultier-albino
-  - Needs many changes for latest Rust
 - rust/guricerin
 - rust/jayshua
 - rust/kaisugi
@@ -25,7 +24,6 @@ Projects that can be built with Docker:
 - rust/nareshganduri
 - rust/omurakazuaki
 - rust/zrneely
-  - Needs many changes for latest Rust
 
 Building status of individual executables:
 

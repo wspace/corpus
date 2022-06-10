@@ -19,10 +19,6 @@
     { "path": "examples/towers_of_hanoi.ws", "equivalent": "hanoi.ws", "spec_version": "0.2" },
     { "path": "examples/vigenere.ws", "spec_version": "0.2" }
   ],
-  "build": {
-    "base_image": "rust:1.61",
-    "targets": [{ "binaries": ["target/release/whitespace"], "build": "cargo build --release" }]
-  },
   "commands": [
     {
       "type": "interpreter",

@@ -37,10 +37,6 @@
     "usage": ["enum"]
   },
   "programs": [{ "path": "samples/hello.ws", "spec_version": "0.2" }],
-  "build": {
-    "base_image": "golang:1.18",
-    "targets": [{ "binaries": ["releases/ws"], "build": "go build -o releases/ws cmd/ws.go" }]
-  },
   "commands": [
     {
       "type": "interpreter",

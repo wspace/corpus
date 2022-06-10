@@ -309,28 +309,6 @@
         "additionalProperties": false
       }
     },
-    "build": {
-      "type": "object",
-      "properties": {
-        "base_image": { "type": "string" },
-        "setup": { "type": "array", "items": { "type": "string" } },
-        "targets": {
-          "type": "array",
-          "items": {
-            "type": "object",
-            "properties": {
-              "binaries": { "type": "array", "items": { "type": "string" } },
-              "workdir": { "type": "string" },
-              "build": { "type": "string" },
-              "build_errors": { "type": "string" }
-            },
-            "required": ["binaries", "build"]
-          }
-        }
-      },
-      "required": ["base_image"],
-      "additionalProperties": false
-    },
     "commands": {
       "type": "array",
       "items": {

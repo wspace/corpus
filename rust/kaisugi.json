@@ -21,9 +21,5 @@
     { "path": "examples/quine.ws", "equivalent": "quine.ws", "spec_version": "0.2" },
     { "path": "examples/quine-2.ws", "equivalent": "quine-2.ws", "spec_version": "0.2" }
   ],
-  "build": {
-    "base_image": "rust:1.61",
-    "targets": [{ "binaries": ["wi"], "build": "rustc -o wi whitespace_interpreter.rs" }]
-  },
   "commands": [{ "type": "interpreter", "bin": "wi", "usage": "$0 <file>" }]
 }

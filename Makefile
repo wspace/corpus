@@ -1,5 +1,6 @@
 PROJECTS = $(filter-out tools/% .% _%, $(wildcard */*.json))
 SUBMODULES = $(PROJECTS:.json=)
+DOCKERFILES = $(wildcard $(PROJECTS:.json=.dockerfile))
 GO_TOOLS_PACKAGE = tools/generate.go tools/licenses.go
 
 .PHONY: all
@@ -15,11 +16,6 @@ licenses: $(PROJECTS) tools/licenses/licenses.go $(GO_TOOLS_PACKAGE)
 	$(info Getting licenses)
 	@go run tools/licenses/licenses.go $(PROJECTS)
 
-.PHONY: dockerfiles
-dockerfiles: $(PROJECTS) tools/docker/docker.go $(GO_TOOLS_PACKAGE)
-	$(info Generating Dockerfiles)
-	@go run tools/docker/docker.go $(PROJECTS)
-
 README.md: $(PROJECTS) README.md.tmpl tools/generate/generate.go $(GO_TOOLS_PACKAGE)
 	$(info Generating README.md)
 	@go run tools/generate/generate.go
@@ -30,15 +26,15 @@ assembly.md: $(PROJECTS) tools/generate_assembly.jq
 
 building.md: $(PROJECTS) tools/generate_building.jq
 	$(info Generating building.md)
-	@jq -rsf tools/generate_building.jq $(PROJECTS) > building.md
+	@jq -rsf --arg dockerfiles "$(DOCKERFILES)" tools/generate_building.jq $(PROJECTS) > building.md
 
 challenges.md: $(PROJECTS) tools/generate_challenges.jq
 	$(info Generating challenges.md)
 	@jq -rsf tools/generate_challenges.jq $(PROJECTS) > challenges.md
 
 .PHONY: docker_build
-docker_build: $(PROJECTS) tools/generate_docker_build.jq
-	@jq -rsf tools/generate_docker_build.jq $(PROJECTS)
+docker_build: tools/generate_docker_build.sh
+	@tools/generate_docker_build.sh
 
 .PHONY: tidy_submodules
 tidy_submodules: $(PROJECTS) tools/submodules/submodules.go $(GO_TOOLS_PACKAGE) tools/format_gitmodules.sh
@@ -72,6 +68,11 @@ list_submodules:
 .PHONY: list_project_json
 list_project_json:
 	$(foreach project,$(PROJECTS),$(info $(project)))
+	@:
+
+.PHONY: list_dockerfiles
+list_dockerfiles:
+	$(foreach dockerfile,$(DOCKERFILES),$(info $(dockerfile)))
 	@:
 
 .PHONY: format_tools

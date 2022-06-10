@@ -45,11 +45,6 @@
     },
     "usage": ["enum"]
   },
-  "build": {
-    "base_image": "golang:1.18",
-    "setup": ["go mod init github.com/pocke/gows", "go mod tidy"],
-    "targets": [{ "binaries": ["gows"], "build": "go build" }]
-  },
   "commands": [
     { "type": "interpreter", "bin": "gows", "usage": "$0 <file>", "input": "<file>", "output": "stdout" }
   ]

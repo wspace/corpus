@@ -43,22 +43,6 @@
     { "path": "examples/fib.ws", "spec_version": "0.2" },
     { "path": "examples/hello.ws", "equivalent": "hworld.ws", "spec_version": "0.2" }
   ],
-  "build": {
-    "base_image": "wspace-corpus/crates-io",
-    "targets": [
-      {
-        "binaries": [
-          "target/release/albino",
-          "target/release/albino-run",
-          "target/release/albino-build",
-          "target/release/albino-exec",
-          "target/release/albino-gen"
-        ],
-        "build": "cargo build --release",
-        "build_errors": "Needs many changes for latest Rust"
-      }
-    ]
-  },
   "commands": [
     { "bin": "target/release/albino", "option_parse": "manual" },
     { "bin": "target/release/albino-run", "option_parse": "manual" },

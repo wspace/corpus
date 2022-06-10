@@ -50,15 +50,6 @@
     { "path": "examples/loctest.ws", "equivalent": "loctest.ws", "spec_version": "0.3" },
     { "path": "examples/name.ws", "equivalent": "name.ws", "spec_version": "0.2" }
   ],
-  "build": {
-    "base_image": "wspace-corpus/crates-io",
-    "targets": [
-      {
-        "binaries": ["target/release/compiler", "target/release/interpreter"],
-        "build": "cargo build --release"
-      }
-    ]
-  },
   "commands": [
     {
       "type": "transpiler",

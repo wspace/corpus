@@ -49,16 +49,6 @@
     },
     { "path": "whitespace-rs/examples/hello.ws", "spec_version": "0.2" }
   ],
-  "build": {
-    "base_image": "wspace-corpus/crates-io",
-    "targets": [
-      {
-        "binaries": ["whitespace-rs/target/release/whitespace-rs"],
-        "workdir": "whitespace-rs",
-        "build": "cargo build --release"
-      }
-    ]
-  },
   "commands": [
     {
       "type": "interpreter",

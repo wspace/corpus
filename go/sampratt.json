@@ -22,6 +22,5 @@
       "spec_version": "0.2"
     }
   ],
-  "build": { "base_image": "golang:1.18", "targets": [{ "binaries": ["whitespace-go"], "build": "go build" }] },
   "commands": [{ "bin": "whitespace-go", "usage": "$0 <file>" }]
 }
