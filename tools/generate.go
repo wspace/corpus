@@ -151,7 +151,7 @@ type Project struct {
 		Setup     []string `json:"setup,omitempty"`
 		Targets   []struct {
 			Binaries    []string `json:"binaries"`
-			Workdir     string   `json:"workdir,omitempty"`
+			WorkDir     string   `json:"workdir,omitempty"`
 			Build       string   `json:"build"`
 			BuildErrors string   `json:"build_errors,omitempty"`
 		} `json:"targets,omitempty"`
