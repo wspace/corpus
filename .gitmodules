@@ -682,7 +682,7 @@
 	url = https://github.com/wspace/omurakazuaki-rust
 [submodule "rust/zrneely"]
 	path = rust/zrneely
-	url = https://gitlab.com/zrneely/whitespace.git
+	url = https://github.com/wspace/zrneely-rust
 [submodule "scala/dashlambda-eso"]
 	path = scala/dashlambda-eso
 	url = https://github.com/Dash-Lambda/Eso

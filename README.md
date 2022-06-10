@@ -208,7 +208,7 @@ language, including interpreters, compilers, and programs.
 | [whitespace-interpreter](javascript/uraza.json)    | Uraza            | JavaScript | interpreter  | 2016-02-08 | [GitHub](https://github.com/uraza/whitespace-interpreter) |
 | [Whitespace Interpreter](scala/patrickstephen.json) | Patrick Stephen | Scala      | interpreter, programs | 2016-01-28 | [Bitbucket](https://bitbucket.org/StephenPatrick/whitespace-interpreter) |
 | [WHINT](cpp/abac-whint.json)                       | Adam Bac         | C++        | interpreter  | 2015-12-31 | [GitHub](https://github.com/abac00s/WHINT) |
-| [Whitespace](rust/zrneely.json)                    | Zachary Neely    | Rust, x86-64 | JIT, programs | 2015-12-30 | [GitLab](https://gitlab.com/zrneely/whitespace) |
+| [Whitespace](rust/zrneely.json)                    | Zachary Neely    | Rust, x86-64 | JIT, programs | 2015-12-30 | [GitHub](https://github.com/wspace/zrneely-rust), [GitLab](https://gitlab.com/zrneely/whitespace) |
 | [Whitespacing](scala/ojha-whitespacing.json)       | Alexandra Ojha   | Scala      | interpreter  | 2015-12-11 | [GitHub](https://github.com/polyglotpiglet/Whitespacing) |
 | [whitespace](csharp/colchicus.json)                | Colchicus        | C#         | interpreter  | 2015-11-19 | [NuGet](https://www.nuget.org/packages/whitespace/), [GitHub](https://github.com/colchicus/whitespace) |
 | [c2ws](ocaml/matsud-c2ws.json)                     | Daiki Matsunaga  | OCaml      | language compiler | 2015-11-17 | [GitHub](https://github.com/matsud224/c2ws) |
