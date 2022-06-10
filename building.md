@@ -12,6 +12,7 @@ Projects that can be built with Docker:
 - go/technohippy
 - go/tempxla-go-wspace
 - go/yshr-wspacego
+- rebol/hostilefork
 - rust/andrewarchi-yspace
 - rust/censoredusername-whitespacers
 - rust/collidedscope-albus
@@ -294,9 +295,6 @@ Building status of individual executables:
 - ⚠️ python/wawrepo-kata/20170307\_Whitespace\_Interpreter/interpreter.py: Needs Codewars entrypoint
 - python/yasn-whitepy/whitepycli
 - r/bmazoure/R/whitespace.R
-- rebol/hostilefork:
-  - historical/whitespace-old.reb
-  - whitespace.reb
 - ⚠️ ruby/alesiong/wsv.rb
 - ruby/angel:
   - old/wsdisas.pl
