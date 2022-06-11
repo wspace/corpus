@@ -23,33 +23,55 @@ func main() {
 	var errs []error
 	dw := NewDockerfileWriter()
 	for _, p := range projects {
-		if p.Build != nil {
-			dw.Reset()
-			dw.Inst("FROM %s", p.Build.BaseImage)
-			dw.Line("")
-			dw.WorkDir("/home")
-			dw.Inst("RUN git clone %s", p.Source[0])
-			dir := "/home" + p.Source[0][strings.LastIndexByte(p.Source[0], '/'):]
-			if len(p.Build.Setup) != 0 {
-				dw.WorkDir(dir)
-				for _, cmd := range p.Build.Setup {
-					dw.RunShell(cmd)
-				}
+		for _, cmd := range p.Commands {
+			if cmd.Build != "" {
+				goto has_build
 			}
-			for _, target := range p.Build.Targets {
-				dw.WorkDir(path.Join(dir, target.WorkDir))
-				dw.RunShell(target.Build)
-				dw.b.WriteString("# builds: ")
-				for i, binary := range target.Binaries {
-					if i != 0 {
-						dw.b.WriteString(", ")
-					}
-					dw.b.WriteString(path.Join(dir, binary))
-				}
-				dw.b.WriteByte('\n')
-			}
-			try(dw.SaveIfChanged(p.ID + ".dockerfile"))
 		}
+		continue
+	has_build:
+
+		dw.Reset()
+		dw.Inst("FROM alpine")
+		dw.Line("")
+		dw.RunShell("apk add git")
+		dw.WorkDir("/home")
+
+		src := p.Source[0]
+		dir := src[strings.LastIndexByte(src, '/')+1:]
+		clone := "git clone " + src
+		if strings.HasPrefix(src, "https://github.com/wspace/") {
+			origDir := "TODO"
+			if len(p.Source) > 1 {
+				origDir = p.Source[1][strings.LastIndexByte(p.Source[1], '/')+1:]
+			}
+			if origDir != dir {
+				clone += " " + origDir
+				dir = origDir
+			}
+		}
+		dw.RunShell(clone)
+
+		dw.WorkDir(path.Join("/home", dir))
+		for _, cmd := range p.Commands {
+			dw.Line("")
+			if len(cmd.Dependencies) != 0 {
+				dw.Inst("# dependencies: %s", strings.Join(cmd.Dependencies, ", "))
+			}
+			if cmd.InstallDependencies != "" {
+				dw.RunShell(cmd.InstallDependencies)
+			}
+			if cmd.BuildErrors != "" {
+				dw.Inst("# %s", cmd.BuildErrors)
+			}
+			if cmd.Build != "" {
+				dw.RunShell(cmd.Build)
+			}
+			if cmd.Bin != "" {
+				dw.Inst("RUN test -f %s", path.Join("/home", dir, cmd.Bin))
+			}
+		}
+		try(dw.SaveIfChanged(p.ID + ".dockerfile"))
 	}
 	if len(errs) != 0 {
 		for _, err := range errs {
