@@ -75,20 +75,10 @@
     }
   ],
   "commands": [
-    {
-      "type": "interpreter",
-      "bin": "lswvm",
-      "install_dependencies": "git clone https://github.com/ManaRice/limelib utils/limelib && make -C utils/limelib",
-      "build": "make LIMELIB=utils/limelib.so",
-      "usage": "$0 <file>",
-      "input": "<file>",
-      "output": "stdout"
-    },
+    { "type": "interpreter", "bin": "lwsvm", "usage": "$0 <file>", "input": "<file>", "output": "stdout" },
     {
       "type": "assembler",
       "bin": "lwsa",
-      "install_dependencies": "git clone https://github.com/ManaRice/limelib utils/limelib && make -C utils/limelib",
-      "build": "make LIMELIB=utils/limelib.so",
       "usage": "$0 <file>",
       "input": "ws/wsa/<file>",
       "output": "ws/ws/<file:no_ext>.ws",

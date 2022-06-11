@@ -17,13 +17,8 @@
   "whitespace": { "extension": "ws" },
   "programs": [{ "path": "wsbfi-1.ws", "spec_version": "0.2" }],
   "commands": [
-    {
-      "type": "debugger",
-      "bin": "wsdebug",
-      "build": "./configure && make",
-      "usage": "$0 [--help] [<file>]"
-    },
-    { "type": "interpreter", "bin": "wsi", "build": "./configure && make", "usage": "$0 [--help] <file>" }
+    { "type": "debugger", "bin": "wsdebug", "usage": "$0 [--help] [<file>]" },
+    { "type": "interpreter", "bin": "wsi", "usage": "$0 [--help] <file>" }
   ],
   "todo": "Switch to BackupTheBerlios repo"
 }

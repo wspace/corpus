@@ -67,27 +67,11 @@
     { "path": "lexxyacc/testcases/good_printf_string.c" },
     { "path": "lexxyacc/testcases/good_var_declaration.c" }
   ],
+  "build_errors": "Yacc syntax errors",
   "commands": [
-    {
-      "type": "assembler",
-      "bin": "dev/bin/compiler",
-      "build": "make -C dev",
-      "build_errors": "Yacc syntax errors",
-      "usage": "$0 < <file>"
-    },
-    {
-      "type": "disassembler",
-      "bin": "dev/bin/decompiler",
-      "build": "make -C dev",
-      "build_errors": "Yacc syntax errors",
-      "usage": "$0 < <file>"
-    },
-    {
-      "type": "language compiler",
-      "bin": "lexxyacc/compiler/compiler",
-      "build": "make -C lexxyacc",
-      "build_errors": "Yacc syntax errors"
-    },
+    { "type": "assembler", "bin": "dev/bin/compiler", "usage": "$0 < <file>" },
+    { "type": "disassembler", "bin": "dev/bin/decompiler", "usage": "$0 < <file>" },
+    { "type": "language compiler", "bin": "lexxyacc/compiler/compiler" },
     { "type": "syntax highlighter", "bin": "dev/beautify_ws.sh", "usage": "$0 <file>" },
     { "type": "syntax highlighter", "bin": "dev/beautify_wsasm.sh", "usage": "$0 <file>" }
   ],

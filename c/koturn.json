@@ -11,7 +11,6 @@
   "commands": [
     {
       "bin": "whitespace.out",
-      "build": "make",
       "usage": "$0 [-b | --bytecode] [-f | --filter] [-h | --help] [-m | --mnemonic] [-o <file> | --output=<file>] [-t | --translate] <file>",
       "options": [
         { "short": "b", "long": "bytecode", "desc": "Show code in hexadecimal" },

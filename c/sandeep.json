@@ -16,14 +16,6 @@
     ],
     "extension": "ws"
   },
-  "commands": [
-    {
-      "type": "interpreter",
-      "bin": "white",
-      "build": "gcc -O3 -Wall -o white y.tab.c lex.yy.c",
-      "usage": "$0",
-      "input": "basic.ws"
-    }
-  ],
+  "commands": [{ "type": "interpreter", "bin": "white", "usage": "$0", "input": "basic.ws" }],
   "notes": "Has git conflict markers remaining in source and all programs are malformed"
 }

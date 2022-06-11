@@ -138,7 +138,6 @@
     {
       "type": "mapping",
       "bin": "vvc",
-      "build": "make",
       "usage": "$0 -i <file> -o <output_file>",
       "input": "<file>",
       "output": "<output_file>",
@@ -164,7 +163,6 @@
     {
       "type": "interpreter",
       "bin": "vvi",
-      "build": "make",
       "usage": "$0 -i <file>",
       "input": "<file>",
       "options": [
@@ -180,7 +178,7 @@
       "option_parse": "C getopt"
     },
     { "type": "test", "bin": "tests/vv_test.py", "usage": "cd tests && python3 vv_test.py" },
-    { "type": "syntax highlighting", "bin": "syntax_highlighting/vwhitespace.vim" }
+    { "type": "syntax highlighting", "bin": "syntax_highlighting/vvhitespace.vim" }
   ],
   "notes": "Exploits the different interpretations of a program based on starting character (see rationale.md)"
 }

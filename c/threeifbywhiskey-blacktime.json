@@ -96,7 +96,6 @@
     {
       "type": "assembler",
       "bin": "blacktime",
-      "build": "make",
       "usage": "$0 <file>",
       "input": "<file>",
       "output": "stdout"

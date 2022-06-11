@@ -4,6 +4,26 @@
 
 Projects that can be built with Docker:
 
+- c/bvisness
+- c/cedricschwyter
+- c/hogelog
+- c/koturn
+- c/kspalaiologos-asm2ws
+- c/manarice
+- c/meth0dz
+- c/rdebath
+- c/remigascou: Yacc syntax errors
+- c/rispoli-txt2ws
+- c/sandeep
+- c/shinh-elvm: -Werror=enum-conversion
+- c/ssiegl-wsdebug
+- c/stellwag-wspacegen
+- c/strangepan-i-c-whitespace
+- c/subgeniuskitty-vvhitespace
+- c/tejaskasetty: symtab.h: multiple definition of `symtable`; ld: cannot find -ll
+- c/threeifbywhiskey-blacktime
+- c/threeifbywhiskey-satan
+- c/zackeua
 - cpp/abac-whint
 - cpp/abcsharp
 - cpp/andrewarchi-respace
@@ -60,49 +80,6 @@ Projects that can be built with Docker:
 Building status of individual executables:
 
 - ⚠️ brainfuck/andrewarchi-wsbf/ws.bf
-- c/bvisness/whitespace: `make`
-- c/cedricschwyter/interpreter: `cmake . && make`
-- c/hogelog/wspace: `make gencode.c all`
-- c/koturn/whitespace.out: `make`
-- c/kspalaiologos-asm2ws/wsi: `./configure --with-target=release && make -j4 wsi`
-- c/manarice:
-  - lswvm: `make LIMELIB=utils/limelib.so`
-  - lwsa: `make LIMELIB=utils/limelib.so`
-- c/meth0dz/whitespace: `gcc -O3 -Wall -o whitespace whitespace.c`
-- c/rdebath:
-  - ws2c: `make`
-  - wsa: `make`
-  - wsa.sed
-  - wsc.sh
-- ⚠️ c/remigascou:
-  - dev/beautify\_ws.sh
-  - dev/beautify\_wsasm.sh
-  - ⚠️ dev/bin/compiler: `make -C dev` Yacc syntax errors
-  - ⚠️ dev/bin/decompiler: `make -C dev` Yacc syntax errors
-  - ⚠️ lexxyacc/compiler/compiler: `make -C lexxyacc` Yacc syntax errors
-- c/rispoli-txt2ws/txt2ws: `make`
-- c/sandeep/white: `gcc -O3 -Wall -o white y.tab.c lex.yy.c`
-- ⚠️ c/shinh-elvm/*unspecified*: `make` Building stalls likely due to missing dependencies
-- c/ssiegl-wsdebug:
-  - wsdebug: `./configure && make`
-  - wsi: `./configure && make`
-- c/stellwag-wspacegen:
-  - wsdbg: `make`
-  - wsi: `make`
-  - wspacegen: `make`
-- c/strangepan-i-c-whitespace/whitespace: `make`
-- ⚠️ c/subgeniuskitty-vvhitespace:
-  - ⚠️ syntax\_highlighting/vwhitespace.vim
-  - tests/vv\_test.py
-  - vvc: `make`
-  - vvi: `make`
-- c/tejaskasetty/flex-bison/262\_267\_256/ws: `make`
-- c/threeifbywhiskey-blacktime/blacktime: `make`
-- c/threeifbywhiskey-satan/satan: `make`
-- c/zackeua:
-  - whitespace.py
-  - whitespacecpp: `g++ -g -Wall -Werror -o whitespacecpp whitespace.cpp`
-  - wlang: `gcc -g -Wall -Werror -o wlang whitespace.c`
 - clojure/jmesyou-erasure/target/uberjar/erasure-2.0-standalone.jar: `lein uberjar`
 - clojure/makenowjust/target/whitespace-clj-0.1.0-SNAPSHOT-standalone.jar: `lein uberjar`
 - ⚠️ coffeescript/ehrlichbryan/*unspecified*: `grunt` Unclear how to run

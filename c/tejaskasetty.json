@@ -36,12 +36,11 @@
     "indentation": "",
     "usage": ["disassembler"]
   },
+  "build_errors": "symtab.h: multiple definition of `symtable`; ld: cannot find -ll",
   "commands": [
     {
       "type": "disassembler",
       "bin": "flex-bison/262_267_256/ws",
-      "dependencies": ["make", "Flex", "Bison"],
-      "build": "make",
       "usage": "$0 < <file>",
       "input": "stdin"
     }

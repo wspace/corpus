@@ -18,11 +18,10 @@
     {
       "type": "IDE",
       "bin": "wspacegen",
-      "build": "make",
       "usage": "$0",
       "notes": "Command line interactive program generator"
     },
-    { "type": "debugger", "bin": "wsdbg", "build": "make", "usage": "$0 [--help] [<file>]" },
-    { "type": "interpreter", "bin": "wsi", "build": "make", "usage": "$0 [--help] <file>" }
+    { "type": "debugger", "bin": "wsdbg", "usage": "$0 [--help] [<file>]" },
+    { "type": "interpreter", "bin": "wsi", "usage": "$0 [--help] <file>" }
   ]
 }

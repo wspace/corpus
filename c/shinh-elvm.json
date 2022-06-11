@@ -9,6 +9,6 @@
   "spec_version": "0.3",
   "source": ["https://github.com/shinh/elvm", "https://esolangs.org/wiki/ELVM"],
   "relations": [{ "id": "c/koturn", "type": "submodule" }],
-  "commands": [{ "build": "make", "build_errors": "Building stalls likely due to missing dependencies" }],
+  "build_errors": "-Werror=enum-conversion",
   "todo": "Document"
 }

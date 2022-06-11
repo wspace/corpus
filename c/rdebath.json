@@ -99,7 +99,6 @@
     {
       "type": "transpiler",
       "bin": "ws2c",
-      "build": "make",
       "usage": "$0 [-r | -c] [-v...] [-q] [-e | -z | -n] [-d] [-old] [--] [<file>]",
       "options": [
         { "short": "r", "desc": "Interpret now" },
@@ -125,8 +124,6 @@
     {
       "type": "assembler",
       "bin": "wsa",
-      "dependencies": ["Flex"],
-      "build": "make",
       "usage": "$0 [<file>...]",
       "output": "stdout",
       "notes": "Assembles other Whitespace assembly dialects"
@@ -134,7 +131,6 @@
     {
       "type": "assembler",
       "bin": "wsa.sed",
-      "dependencies": ["GNU sed"],
       "usage": "sed -f $0 <file>",
       "output": "stdout",
       "notes": "Assembles Oliver Burghard's Whitespace assembly dialect, including shorthand instructions"

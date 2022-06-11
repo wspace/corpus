@@ -12,7 +12,6 @@
     {
       "type": "interpreter",
       "bin": "whitespace",
-      "build": "make",
       "usage": "$0 [<file>]",
       "notes": "Reads from stdin, if no file is given"
     }
