@@ -43,7 +43,6 @@
     {
       "type": "assembler and disassembler",
       "bin": "pre",
-      "build": "g++ -O3 -Wall -o pre pre.cpp",
       "usage": "$0 [-a | -r]",
       "input": "stdin",
       "output": "stdout",

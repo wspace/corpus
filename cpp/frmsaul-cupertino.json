@@ -4,16 +4,12 @@
   "authors": ["Saul Fuhrmann"],
   "license": "none",
   "languages": ["C++"],
-  "tags": ["interpreter"],
+  "tags": ["interpreter", "programs"],
   "date": "2015-05-22 21:54:51 -0700",
   "spec_version": "0.3",
   "source": ["https://github.com/frmsaul/Cupertino-WhiteSpace-Interperter"],
-  "commands": [
-    {
-      "type": "interpreter",
-      "bin": "whitespace",
-      "build": "g++ -O3 -o whitespace src/*.cpp",
-      "usage": "$0 <file>"
-    }
-  ]
+  "whitespace": { "extension": "hs" },
+  "programs": [{ "path": "whitespace_code/hello_world.hs", "spec_version": "0.2" }],
+  "commands": [{ "type": "interpreter", "bin": "whitespace", "usage": "$0 <file>" }],
+  "notes": "Tests have no entrypoint"
 }

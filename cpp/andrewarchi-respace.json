@@ -74,7 +74,7 @@
     { "path": "programs/ws/parse.wsa", "spec_version": "0.2" }
   ],
   "commands": [
-    { "type": "interpreter", "bin": "respace", "build": "make", "usage": "$0 <file>" },
+    { "type": "interpreter", "bin": "respace", "usage": "$0 <file>" },
     { "type": "interpreter", "bin": "programs/ws/interpreter.wsa" }
   ],
   "notes": "Disassembler and bit packer are only available via code modification"

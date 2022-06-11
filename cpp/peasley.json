@@ -11,12 +11,5 @@
     "https://github.com/wspace/peasley-cpp",
     "http://www.rohitab.com/discuss/topic/35639-c-whitespace-interpreter/?p=10074137"
   ],
-  "commands": [
-    {
-      "type": "interpreter",
-      "bin": "whitespace",
-      "build": "g++ -O3 -Wall -o whitespace whitespace.cpp",
-      "usage": "$0 <file>"
-    }
-  ]
+  "commands": [{ "type": "interpreter", "bin": "whitespace", "usage": "$0 <file>" }]
 }

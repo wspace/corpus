@@ -24,7 +24,7 @@ assembly.md: $(PROJECTS) tools/generate_assembly.jq
 	$(info Generating assembly.md)
 	@jq -rsf tools/generate_assembly.jq $(PROJECTS) > assembly.md
 
-building.md: $(PROJECTS) tools/generate_building.jq
+building.md: $(PROJECTS) $(DOCKERFILES) tools/generate_building.jq
 	$(info Generating building.md)
 	@jq -rsf --arg dockerfiles "$(DOCKERFILES)" tools/generate_building.jq $(PROJECTS) > building.md
 

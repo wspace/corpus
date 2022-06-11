@@ -38,12 +38,5 @@
     "indentation": "",
     "usage": ["disassembler", "enum"]
   },
-  "commands": [
-    {
-      "type": "interpreter",
-      "bin": "white",
-      "build": "g++ -O3 -Wall -o white main.cpp",
-      "usage": "$0 <file>"
-    }
-  ]
+  "commands": [{ "type": "interpreter", "bin": "white", "usage": "$0 <file>" }]
 }

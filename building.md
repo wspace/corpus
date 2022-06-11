@@ -4,6 +4,28 @@
 
 Projects that can be built with Docker:
 
+- cpp/abac-whint
+- cpp/abcsharp
+- cpp/andrewarchi-respace
+- cpp/benajmin
+- cpp/buyoh-nospace
+- cpp/dpohanlon-wsint
+- cpp/drebelsky-jit
+- cpp/esco
+- cpp/frmsaul-cupertino
+- cpp/kapustaikwas
+- cpp/keirua-white
+- cpp/knmorgan
+- cpp/malkiewiczm
+- cpp/marcellippmann-whitepp
+- cpp/noia
+- cpp/pavelshub
+- cpp/peasley
+- cpp/ricardoluis
+- cpp/shadowmitia
+- cpp/sudheesh
+- cpp/timvandermeij
+- cpp/yuukiaria
 - go/kinu
 - go/pocke-gows
 - go/qeedquan
@@ -75,41 +97,10 @@ Building status of individual executables:
 - clojure/jmesyou-erasure/target/uberjar/erasure-2.0-standalone.jar: `lein uberjar`
 - clojure/makenowjust/target/whitespace-clj-0.1.0-SNAPSHOT-standalone.jar: `lein uberjar`
 - ⚠️ coffeescript/ehrlichbryan/*unspecified*: `grunt` Unclear how to run
-- cpp/abac-whint/whint: `g++ -O3 -Wall -o whint whint.cpp`
-- cpp/abcsharp/wsi: `g++ -O3 -Wall -std=c++11 -o wsi whitespace/main.cpp`
-- ⚠️ cpp/andrewarchi-respace:
-  - ⚠️ programs/ws/interpreter.wsa
-  - respace: `make`
-- cpp/benajmin/WhitespaceInterpreter.out: `make`
 - ❌ cpp/burghard-wsintercpp
-- cpp/buyoh-nospace:
-  - maicomp: `make release`
-  - test.rb
-  - vm/run.rb
-- cpp/dpohanlon-wsint/bin/wsInt: `make`
-- cpp/drebelsky-jit/compile: `make CXXFLAGS='-O3 -Wall -Wpedantic -std=c++17'`
-- cpp/esco/src/esco: `./configure && make`
-- cpp/frmsaul-cupertino/whitespace: `g++ -O3 -o whitespace src/*.cpp`
-- cpp/kapustaikwas:
-  - pre: `g++ -O3 -Wall -o pre pre.cpp`
-  - wsc.sh
-- cpp/keirua-white/white: `g++ -O3 -Wall -o white main.cpp`
-- cpp/knmorgan/ws: `make CXXFLAGS='-Wall -pedantic -O3'`
-- cpp/malkiewiczm/compile: `make`
-- cpp/marcellippmann-whitepp/bin/White++: `make`
-- cpp/noia/ws: `g++ -O3 -Wall -Werror -o ws Lexer.cc Parser.cc`
-- cpp/pavelshub:
-  - assembler: `make assembler`
-  - wspace: `make wspace`
-- cpp/peasley/whitespace: `g++ -O3 -Wall -o whitespace whitespace.cpp`
-- ⚠️ cpp/ricardoluis/whitespace: `g++ -O3 -Wall -std=c++11 -o whitespace whitespace.cpp` `#include <conio.h>` not found, `floor` cannot be used in a constant expression
-- ⚠️ cpp/shadowmitia/wspace: `bash build.sh release wspace` Some options unsupported with Clang
 - ⚠️ cpp/sonicyang-ws-frontend/wsjit: Requires LLVM
 - ⚠️ cpp/subv-whitespace-llvm/bin/Whitespace-LLVM: Requires LLVM
-- cpp/sudheesh/space: `g++ -O3 -o space space.cpp`
-- cpp/timvandermeij/whitespace: `make`
 - ⚠️ cpp/tycho-whitespace-llvm/wspace-jit: `make` Requires LLVM
-- cpp/yuukiaria/bin/ws: `mkdir -p bin && make TARGET=../bin/ws -C src`
 - crystal/collidedscope-spiceweight/spwt: `make`
 - ❌ csharp/colchicus
 - csharp/denislabrecque/WhitespaceInterpreter.exe: `mcs -debug -out:WhitespaceInterpreter.exe WhitespaceInterpreter/*.cs`

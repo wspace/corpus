@@ -13,7 +13,6 @@
     {
       "type": "interpreter",
       "bin": "bin/ws",
-      "build": "mkdir -p bin && make TARGET=../bin/ws -C src",
       "usage": "$0 [-v <size>] [-c <size>] [-h <size>] <file>",
       "options": [
         {

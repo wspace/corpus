@@ -9,12 +9,5 @@
   "spec_version": "0.3",
   "source": ["https://github.com/abcsharp/Whitespace"],
   "bounds": { "precision": "fixed" },
-  "commands": [
-    {
-      "type": "interpreter",
-      "bin": "wsi",
-      "build": "g++ -O3 -Wall -std=c++11 -o wsi whitespace/main.cpp",
-      "usage": "$0 <file>"
-    }
-  ]
+  "commands": [{ "type": "interpreter", "bin": "wsi", "usage": "$0 <file>" }]
 }

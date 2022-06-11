@@ -11,5 +11,5 @@
     "https://github.com/wspace/marcellippmann-whitepp",
     "https://web.archive.org/web/20200906224652/https://github.com/marcellippmann/Whitepp/"
   ],
-  "commands": [{ "type": "interpreter", "bin": "bin/White++", "build": "make", "usage": "$0 <file>" }]
+  "commands": [{ "type": "interpreter", "bin": "bin/White++", "usage": "$0 <file>" }]
 }

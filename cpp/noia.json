@@ -9,13 +9,5 @@
   "spec_version": "0.2",
   "source": ["https://github.com/noia1/Whitespace-Interpreter"],
   "whitespace": { "unimplemented": ["dup", "swap", "label", "call", "jmp", "jz", "jn", "ret", "end"] },
-  "commands": [
-    {
-      "type": "interpreter",
-      "bin": "ws",
-      "build": "g++ -O3 -Wall -Werror -o ws Lexer.cc Parser.cc",
-      "usage": "$0 <file>",
-      "notes": "Makefile is broken"
-    }
-  ]
+  "commands": [{ "type": "interpreter", "bin": "ws", "usage": "$0 <file>", "notes": "Makefile is broken" }]
 }

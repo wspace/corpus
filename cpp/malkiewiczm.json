@@ -12,8 +12,6 @@
     {
       "type": "language compiler",
       "bin": "compile",
-      "dependencies": ["Flex", "Bison"],
-      "build": "make",
       "usage": "$0 [-h] [-a] [-i] <file>",
       "options": [
         { "short": "h", "desc": "show this help" },

@@ -24,8 +24,6 @@
     {
       "type": "interpreter",
       "bin": "ws",
-      "dependencies": ["GMP"],
-      "build": "make CXXFLAGS='-Wall -pedantic -O3'",
       "usage": "$0 [-v | --version] [-h | --help] [-s <size> | --stack-size <size>] <file>",
       "options": [
         { "short": "v", "long": "version", "desc": "Print version and copyright" },

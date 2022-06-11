@@ -100,8 +100,6 @@
     {
       "type": "language compiler",
       "bin": "maicomp",
-      "dependencies": ["make"],
-      "build": "make release",
       "usage": "$0 [<file>]",
       "notes": "Reads from stdin, if no file is given"
     },
