@@ -37,5 +37,5 @@
     },
     "usage": ["debug"]
   },
-  "commands": [{ "build": "cargo build --release", "build_errors": "Needs many changes for latest Rust" }]
+  "build_errors": "Needs many changes for latest Rust"
 }

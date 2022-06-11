@@ -10,8 +10,9 @@ def fmt:
   if .build_errors!=null then " \(.build_errors | escape)" else "" end +
   if .run_errors!=null then " \(.run_errors | escape)" else "" end;
 
-($dockerfiles | split(" ") | map(sub("\\.dockerfile$"; "")) | sort) as $dockerfiles |
-($dockerfiles | map({key:.}) | from_entries) as $dockerfile_map |
+([(.[] | select(.build_errors!=null).id),
+    ($dockerfiles | split(" ")[] | sub("\\.dockerfile$"; ""))] |
+  map({key:.}) | from_entries) as $dockerfiles |
 
 "# Building projects
 
@@ -19,15 +20,19 @@ def fmt:
 
 Projects that can be built with Docker:
 ",
-($dockerfiles[] | "- \(escape)"),
+(
+  map(select(.id | in($dockerfiles))) | sort_by(.id)[] |
+  "- \(.id | escape)" +
+  if .build_errors!=null then ": \(.build_errors)" else "" end
+),
 "
 Building status of individual executables:
 ",
 (
-  map(select(.id | in($dockerfile_map) | not)) | sort_by(.id)[] |
+  map(select(.id | in($dockerfiles) | not)) | sort_by(.id)[] |
   (.id | escape) as $id |
   if (.commands|length) == 0 and
-     .languages == ["Whitespace"] and .tags == ["programs"] then empty
+      .languages == ["Whitespace"] and .tags == ["programs"] then empty
   else
     .commands |
     if length == 0 then "- ❌ \($id)"

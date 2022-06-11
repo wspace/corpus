@@ -309,6 +309,7 @@
         "additionalProperties": false
       }
     },
+    "build_errors": { "type": "string" },
     "commands": {
       "type": "array",
       "items": {

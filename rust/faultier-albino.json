@@ -43,6 +43,7 @@
     { "path": "examples/fib.ws", "spec_version": "0.2" },
     { "path": "examples/hello.ws", "equivalent": "hworld.ws", "spec_version": "0.2" }
   ],
+  "build_errors": "Needs many changes for latest Rust",
   "commands": [
     { "bin": "target/release/albino", "option_parse": "manual" },
     { "bin": "target/release/albino-run", "option_parse": "manual" },

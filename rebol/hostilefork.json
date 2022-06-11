@@ -34,6 +34,7 @@
     { "path": "examples/loctest.ws", "equivalent": "loctest.ws", "spec_version": "0.3" },
     { "path": "examples/name.ws", "equivalent": "name.ws", "spec_version": "0.2" }
   ],
+  "build_errors": "Bootstrapping issues",
   "commands": [
     {
       "type": "interpreter",

@@ -21,7 +21,7 @@ Projects that can be built with Docker:
 - cpp/noia
 - cpp/pavelshub
 - cpp/peasley
-- cpp/ricardoluis
+- cpp/ricardoluis: `#include <conio.h>` not found; `floor` cannot be used in a constant expression
 - cpp/shadowmitia
 - cpp/sudheesh
 - cpp/timvandermeij
@@ -34,11 +34,12 @@ Projects that can be built with Docker:
 - go/technohippy
 - go/tempxla-go-wspace
 - go/yshr-wspacego
-- rebol/hostilefork
+- rebol/hostilefork: Bootstrapping issues
 - rust/andrewarchi-yspace
 - rust/censoredusername-whitespacers
 - rust/collidedscope-albus
-- rust/faultier-albino
+- rust/faultier-albino: Needs many changes for latest Rust
+- rust/faultier-whitebase: Needs many changes for latest Rust
 - rust/guricerin
 - rust/jayshua
 - rust/kaisugi
@@ -311,7 +312,6 @@ Building status of individual executables:
   - whitespace-asm
   - whitespace-disassem
 - ruby/yuta-textproc/mywhitespace.rb
-- ⚠️ rust/faultier-whitebase/*unspecified*: `cargo build --release` Needs many changes for latest Rust
 - scala/dashlambda-eso/target/scala-2.13/eso\_2.13-2.6.1.jar: `sbt assembly`
 - ❌ scala/ojha-whitespacing
 - ⚠️ scala/patrickstephen/whitespace.jar: `sbt package` Should set whitespace.jar as package instead of arget/scala-2.11/whitespace-interpreter\_2.11-1.0.jar A JNI error has occurred, please check your installation and try again
