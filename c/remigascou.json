@@ -7,7 +7,10 @@
   "tags": ["language", "assembler", "disassembler", "syntax highlighting", "programs"],
   "date": "2020-03-13 12:59:01 +0100",
   "spec_version": "0.2",
-  "source": ["https://github.com/wspace/remigascou-c", "https://github.com/RemiGascou/small-projects"],
+  "source": [
+    "https://github.com/wspace/remigascou-c",
+    "https://github.com/RemiGascou/small-projects/tree/master/C/whitespace"
+  ],
   "whitespace": { "extension": "ws" },
   "assembly": {
     "mnemonics": {

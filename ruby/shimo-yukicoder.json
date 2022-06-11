@@ -9,7 +9,7 @@
   "spec_version": "0.2",
   "source": [
     "https://github.com/wspace/shimo-yukicoder",
-    "https://github.com/shi-mo/yukicoder",
+    "https://github.com/shi-mo/yukicoder/tree/master/whitespace",
     "https://yukicoder.me/users/1721"
   ],
   "challenges": ["yukicoder"],

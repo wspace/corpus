@@ -7,7 +7,10 @@
   "tags": ["assembler", "transpiler"],
   "date": "2009-07-14",
   "spec_version": "0.3",
-  "source": ["https://github.com/wspace/emilbahnsen-assembler", "https://github.com/EmilBahnsen/projects"],
+  "source": [
+    "https://github.com/wspace/emilbahnsen-assembler",
+    "https://github.com/EmilBahnsen/projects/tree/master/Whitespace%20assembler"
+  ],
   "assembly": {
     "mnemonics": {
       "push": ["push"],
