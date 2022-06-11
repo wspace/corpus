@@ -6,4 +6,4 @@ WORKDIR /home/gows
 RUN go mod init github.com/pocke/gows
 RUN go mod tidy
 RUN go build
-# builds: /home/gows/gows
+RUN test -f /home/gows/gows

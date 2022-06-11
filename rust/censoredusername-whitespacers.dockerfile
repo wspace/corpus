@@ -4,4 +4,4 @@ WORKDIR /home
 RUN git clone https://github.com/CensoredUsername/whitespace-rs
 WORKDIR /home/whitespace-rs
 RUN cargo build --release
-# builds: /home/whitespace-rs/target/release/wsc
+RUN test -f /home/whitespace-rs/target/release/wsc

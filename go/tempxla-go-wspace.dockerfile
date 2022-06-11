@@ -6,4 +6,4 @@ WORKDIR /home/go-wspace
 RUN go mod init github.com/tempxla/go-wspace
 # RUN go test ./...
 RUN go build -o bin/go-wspace ./src
-# builds: /home/go-wspace/bin/go-wspace
+RUN test -f /home/go-wspace/bin/go-wspace

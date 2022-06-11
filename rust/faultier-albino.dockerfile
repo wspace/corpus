@@ -4,4 +4,8 @@ WORKDIR /home
 RUN git clone https://github.com/faultier/albino
 WORKDIR /home/albino
 RUN cargo build --release
-# builds: /home/albino/target/release/albino, /home/albino/target/release/albino-run, /home/albino/target/release/albino-build, /home/albino/target/release/albino-exec, /home/albino/target/release/albino-gen
+RUN test -f /home/albino/target/release/albino
+RUN test -f /home/albino/target/release/albino-run
+RUN test -f /home/albino/target/release/albino-build
+RUN test -f /home/albino/target/release/albino-exec
+RUN test -f /home/albino/target/release/albino-gen

@@ -4,4 +4,4 @@ WORKDIR /home
 RUN git clone https://github.com/wspace/omurakazuaki-rust whitespace
 WORKDIR /home/whitespace
 RUN cargo build --release
-# builds: /home/whitespace/target/release/whitespace
+RUN test -f /home/whitespace/target/release/whitespace
