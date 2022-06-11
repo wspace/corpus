@@ -44,14 +44,7 @@
   },
   "programs": [{ "path": "sbstr1", "generated": "sbstr1.ws", "spec_version": "0.2" }],
   "commands": [
-    {
-      "type": "assembler",
-      "bin": "wstp",
-      "build": "g++ -g -std=c++17 -o $0 wstp.cpp",
-      "usage": "$0 < <file>",
-      "input": "stdin",
-      "output": "stdout"
-    }
+    { "type": "assembler", "bin": "wstp", "usage": "$0 < <file>", "input": "stdin", "output": "stdout" }
   ],
   "notes": "Date is of commit adding sbstr1.ws and sbstr1"
 }

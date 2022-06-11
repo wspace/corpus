@@ -23,8 +23,6 @@
     {
       "type": "interpreter",
       "bin": "spwt",
-      "dependencies": ["Crystal"],
-      "build": "make",
       "usage": "$0 [options] <file>",
       "options": [
         {

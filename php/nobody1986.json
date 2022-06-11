@@ -45,11 +45,6 @@
       "usage": "php $0 <file>",
       "notes": "`compile2File` function, if uncommented, can disassemble to file"
     },
-    {
-      "type": "interpreter",
-      "bin": "whitespace",
-      "build": "gcc -O3 -o whitespace whitespace.c list.c stack.c",
-      "usage": "$0 <file>"
-    }
+    { "type": "interpreter", "bin": "whitespace", "usage": "$0 <file>" }
   ]
 }

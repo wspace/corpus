@@ -46,6 +46,7 @@ Projects that can be built with Docker:
 - cpp/sudheesh
 - cpp/timvandermeij
 - cpp/yuukiaria
+- crystal/collidedscope-spiceweight
 - csharp/denislabrecque
 - csharp/littlebughunter-assembler
 - csharp/meeees
@@ -66,6 +67,7 @@ Projects that can be built with Docker:
 - ocaml/matsud-c2ws
 - ocaml/progbits-blank: Module Stdlib.Stream is deprecated and the camlp-streams library should be used instead
 - ocaml/steiner
+- php/nobody1986
 - rebol/hostilefork: Bootstrapping issues
 - rust/andrewarchi-yspace
 - rust/censoredusername-whitespacers
@@ -80,6 +82,7 @@ Projects that can be built with Docker:
 - rust/nareshganduri
 - rust/omurakazuaki
 - rust/zrneely
+- whitespace/t3nsor-spoj
 
 Building status of individual executables:
 
@@ -91,7 +94,6 @@ Building status of individual executables:
 - ⚠️ cpp/sonicyang-ws-frontend/wsjit: Requires LLVM
 - ⚠️ cpp/subv-whitespace-llvm/bin/Whitespace-LLVM: Requires LLVM
 - ⚠️ cpp/tycho-whitespace-llvm/wspace-jit: `make` Requires LLVM
-- crystal/collidedscope-spiceweight/spwt: `make`
 - ❌ csharp/colchicus
 - ❌ csharp/jlchntoz
 - ❌ csharp/nutcrack-whiteplanes
@@ -185,9 +187,6 @@ Building status of individual executables:
 - php/johankj/whitespace.php
 - ❌ php/jseidl-wcc
 - php/mattparker/src/PHPWhiteSpace.php
-- php/nobody1986:
-  - whitespace: `gcc -O3 -o whitespace whitespace.c list.c stack.c`
-  - whitespace.php
 - python/0x55aa/wspace.py
 - python/adapap/whitespace\_interpreter.py
 - python/ahl27/main.py
@@ -313,4 +312,3 @@ Building status of individual executables:
 - whitespace/keen-whitelie:
   - asm.rb
   - whitelie
-- whitespace/t3nsor-spoj/wstp: `g++ -g -std=c++17 -o $0 wstp.cpp`
