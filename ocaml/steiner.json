@@ -50,7 +50,6 @@
   "commands": [
     {
       "bin": "whitespace",
-      "build": "make",
       "usage": "$0 <file> [--debug]",
       "options": [{ "long": "debug", "desc": "Record program trace" }],
       "option_parse": "manual"

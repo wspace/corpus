@@ -37,14 +37,6 @@
     "usage": ["enum"]
   },
   "programs": [{ "path": "examples/fizz-buzz.ws", "spec_version": "0.2" }],
-  "commands": [
-    {
-      "type": "interpreter",
-      "bin": "_build/default/blank.exe",
-      "dependencies": ["opam"],
-      "install_dependencies": "opam install dune core ounit2",
-      "build": "dune build",
-      "usage": "$0 <file>"
-    }
-  ]
+  "build_errors": "Module Stdlib.Stream is deprecated and the camlp-streams library should be used instead",
+  "commands": [{ "type": "interpreter", "bin": "_build/default/blank.exe", "usage": "$0 <file>" }]
 }

@@ -62,6 +62,10 @@ Projects that can be built with Docker:
 - go/technohippy
 - go/tempxla-go-wspace
 - go/yshr-wspacego
+- ocaml/jgkaplan-wsc
+- ocaml/matsud-c2ws
+- ocaml/progbits-blank: Module Stdlib.Stream is deprecated and the camlp-streams library should be used instead
+- ocaml/steiner
 - rebol/hostilefork: Bootstrapping issues
 - rust/andrewarchi-yspace
 - rust/censoredusername-whitespacers
@@ -169,10 +173,6 @@ Building status of individual executables:
   - wsCompiler.py
   - wsInterpreter: `gcc -O3 -Wall -o wsInterpreter wsInterpreter.c`
 - objective-c/emilbahnsen-assembler/build/Release/wsa: `xcodebuild`
-- ocaml/jgkaplan-wsc/main.byte: `make`
-- ocaml/matsud-c2ws/c2ws: `make`
-- ocaml/progbits-blank/\_build/default/blank.exe: `dune build`
-- ocaml/steiner/whitespace: `make`
 - perl/ephphatha-wsm2ws/wsm2ws.pl
 - perl/mkoelbl/whitespace.pl
 - perl/skabob-madness/whitespace\_bleached.pl

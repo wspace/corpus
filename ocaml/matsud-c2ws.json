@@ -42,7 +42,6 @@
     {
       "type": "language compiler",
       "bin": "c2ws",
-      "build": "make",
       "usage": "$0 [-S] < <file>",
       "input": "stdin",
       "output": "stdout",
