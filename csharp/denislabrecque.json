@@ -30,7 +30,6 @@
     {
       "type": "interpreter",
       "bin": "WhitespaceInterpreter.exe",
-      "build": "mcs -debug -out:WhitespaceInterpreter.exe WhitespaceInterpreter/*.cs",
       "usage": "mono $0",
       "notes": "Program is hardcoded to a test program. Prints instructions while executing."
     }

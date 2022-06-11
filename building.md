@@ -26,6 +26,14 @@ Projects that can be built with Docker:
 - cpp/sudheesh
 - cpp/timvandermeij
 - cpp/yuukiaria
+- csharp/denislabrecque
+- csharp/littlebughunter-assembler
+- csharp/meeees
+- csharp/nicolasff-spacesharp
+- csharp/north-projectone
+- csharp/reflash: Mono does not implement WPF APIs
+- csharp/rolisoft-esoteric
+- csharp/ryzngard-dotnot: CSharpGeneratorDriver does not contain a constructor that takes 3 arguments
 - go/kinu
 - go/pocke-gows
 - go/qeedquan
@@ -104,16 +112,8 @@ Building status of individual executables:
 - ⚠️ cpp/tycho-whitespace-llvm/wspace-jit: `make` Requires LLVM
 - crystal/collidedscope-spiceweight/spwt: `make`
 - ❌ csharp/colchicus
-- csharp/denislabrecque/WhitespaceInterpreter.exe: `mcs -debug -out:WhitespaceInterpreter.exe WhitespaceInterpreter/*.cs`
 - ❌ csharp/jlchntoz
-- csharp/littlebughunter-assembler/bin/Debug/WhitespaceAssembler.exe: `msbuild /p:Configuration=Debug WhitespaceAssembler.csproj`
-- csharp/meeees/bin/Debug/Whitespace.exe: `msbuild /p:Configuration=Debug Whitespace.csproj`
-- csharp/nicolasff-spacesharp/wsc.exe: `make`
-- ⚠️ csharp/north-projectone/The-Code/WhitespaceInterpreter/bin/Debug/WhitespaceInterpreter.exe: `msbuild /p:Configuration=Debug The-Code/WhitespaceInterpreter/WhitespaceInterpreter.csproj` The Carbon driver has not been ported to 64-bit, so very few parts of Windows.Forms work properly
 - ❌ csharp/nutcrack-whiteplanes
-- ⚠️ csharp/reflash/WhiteSpaceInterpretator/bin/Debug/WhiteSpaceInterpretator.exe: `msbuild /p:Configuration=Debug WhiteSpaceInterpretator/WhiteSpaceInterpretator.csproj` Mono does not implement WPF APIs
-- csharp/rolisoft-esoteric/bin/Debug/EsotericCodeInterpreter.exe: `msbuild /p:Configuration=Debug\;AssemblyName=EsotericCodeInterpreter EsotericCodeInterpreter.csproj`
-- ❌ csharp/ryzngard-dotnot
 - ❌ docker/baekjoon-onlinejudge
 - ❌ docker/bensuperpc
 - ❌ docker/hakatashi-esolang-box

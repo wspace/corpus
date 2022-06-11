@@ -52,7 +52,6 @@
     {
       "type": "interpreter",
       "bin": "bin/Debug/Whitespace.exe",
-      "build": "msbuild /p:Configuration=Debug Whitespace.csproj",
       "usage": "mono $0",
       "input": "<file>",
       "subcommands": [

@@ -61,13 +61,11 @@
   "commands": [
     {
       "bin": "wsc.exe",
-      "build": "make",
       "usage": "mono $0 [-o <output_file>] <file>",
       "output": "<output_file> or ` .exe` if empty",
       "options": [{ "short": "o", "desc": "output file" }],
       "option_parse": "manual",
       "notes": "Run output file with `mono <output_file>`"
     }
-  ],
-  "notes": "Assembly mnemonics only used internally for enums"
+  ]
 }

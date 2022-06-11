@@ -40,7 +40,6 @@
     {
       "type": "interactive",
       "bin": "bin/Debug/EsotericCodeInterpreter.exe",
-      "build": "msbuild /p:Configuration=Debug\\;AssemblyName=EsotericCodeInterpreter EsotericCodeInterpreter.csproj",
       "usage": "mono $0",
       "subcommands": [
         { "name": "start", "desc": "interpret program written in CLI" },

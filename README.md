@@ -198,7 +198,7 @@ language, including interpreters, compilers, and programs.
 | [Whitespace](haskell/matsubara.json)               | 松原信忠 (MATSUBARA Nobutada) | Haskell | interpreter | 2016-05-06 | [GitHub](https://github.com/matsubara0507/whitespace_has) |
 | [whitespace-interpreter](javascript/kanra1412.json) | kanra1412       | JavaScript | interpreter  | 2016-04-29 | [GitHub](https://github.com/kanra1412/whitespace-interpreter) |
 | [Exploring Program Languages](whitespace/gregorymorrison-euler.json) | Gregory Morrison | Whitespace | programs | 2016-04-17 | [GitHub](https://github.com/gregorymorrison/euler1) |
-| [whiteplanes.cs](csharp/nutcrack-whiteplanes.json) | Takuya Katsurada | C#         | interperter  | 2016-04-15 | [NuGet](https://www.nuget.org/packages/whiteplanes/), [GitHub](https://github.com/whiteplanes/whiteplanes.cs) |
+| [whiteplanes.cs](csharp/nutcrack-whiteplanes.json) | Takuya Katsurada | C#         | interpreter  | 2016-04-15 | [NuGet](https://www.nuget.org/packages/whiteplanes/), [GitHub](https://github.com/whiteplanes/whiteplanes.cs) |
 | [whitespace-compiler](python/meand.json)           | Adam Dinwoodie   | Python     | assembler    | 2016-04-13 | [GitHub](https://github.com/me-and/whitespace-compiler) |
 | [Whitespace-JS](javascript/susisu.json)            | Susisu           | JavaScript | interpreter, assembler | 2016-04-12 | [GitHub](https://github.com/susisu/Whitespace-JS) |
 | [Whitespace countdown 10...0](whitespace/kirens-countdown.json) | Erik Nygren | Whitespace | programs | 2016-04-10 | [GitHub Gist](https://gist.github.com/Kirens/9e3c99706773335366fa7bbf3cfd592d) |

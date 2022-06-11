@@ -94,8 +94,6 @@
     {
       "type": "assembler",
       "bin": "bin/Debug/WhitespaceAssembler.exe",
-      "dependencies": ["Mono"],
-      "build": "msbuild /p:Configuration=Debug WhitespaceAssembler.csproj",
       "usage": "mono $0 <file> <output_file>",
       "output": "<output_file>"
     }
