@@ -9,7 +9,15 @@
   "spec_version": "0.3",
   "source": ["https://github.com/andrewarchi/ws-challenges"],
   "relations": [{ "id": "rust/andrewarchi-wslib", "type": "library" }],
-  "challenges": ["Project Euler", "Advent of Code", "Rosetta Code", "Code Golf", "Sphere Online Judge"],
+  "challenges": [
+    "Project Euler",
+    "Advent of Code 2019",
+    "Advent of Code 2020",
+    "Advent of Code 2021",
+    "Rosetta Code",
+    "Code Golf",
+    "Sphere Online Judge"
+  ],
   "programs": [
     {
       "path": "advent/2019/1.wsf",

@@ -703,7 +703,7 @@
 	url = https://github.com/niyarin/whitespace-scheme
 [submodule "textmate/andrewarchi-linguist"]
 	path = textmate/andrewarchi-linguist
-	url = https://github.com/wspace/wspace-linguist
+	url = https://github.com/andrewarchi/wspace-linguist
 [submodule "textmate/nixinova"]
 	path = textmate/nixinova
 	url = https://github.com/Nixinova/NovaGrammars
@@ -731,8 +731,8 @@
 [submodule "whitespace/alchzh-advent-of-code"]
 	path = whitespace/alchzh-advent-of-code
 	url = https://github.com/alchzh/advent-of-code
-[submodule "whitespace/alicewonderland-hacktoberfest-2017"]
-	path = whitespace/alicewonderland-hacktoberfest-2017
+[submodule "whitespace/alicewonderland-hacktoberfest"]
+	path = whitespace/alicewonderland-hacktoberfest
 	url = https://github.com/AliceWonderland/hacktoberfest
 [submodule "whitespace/andrewarchi-challenges"]
 	path = whitespace/andrewarchi-challenges
@@ -740,8 +740,8 @@
 [submodule "whitespace/andrewarchi-wslib"]
 	path = whitespace/andrewarchi-wslib
 	url = https://github.com/andrewarchi/wslib
-[submodule "whitespace/aniket-hacktoberfest-2018"]
-	path = whitespace/aniket-hacktoberfest-2018
+[submodule "whitespace/aniket-hacktoberfest"]
+	path = whitespace/aniket-hacktoberfest
 	url = https://github.com/wspace/aniket-hacktoberfest-2018
 [submodule "whitespace/ankitatandon-wspc"]
 	path = whitespace/ankitatandon-wspc
@@ -767,8 +767,8 @@
 [submodule "whitespace/davidjkling-cerner"]
 	path = whitespace/davidjkling-cerner
 	url = https://github.com/davidjkling/cerner_2_5_2020
-[submodule "whitespace/dcoy-hacktoberfest-2016"]
-	path = whitespace/dcoy-hacktoberfest-2016
+[submodule "whitespace/dcoy-hacktoberfest"]
+	path = whitespace/dcoy-hacktoberfest
 	url = https://github.com/dcoy/hacktoberfest-dcoy
 [submodule "whitespace/drebelsky-programs"]
 	path = whitespace/drebelsky-programs
@@ -812,8 +812,8 @@
 [submodule "whitespace/kirens-countdown"]
 	path = whitespace/kirens-countdown
 	url = https://gist.github.com/Kirens/9e3c99706773335366fa7bbf3cfd592d
-[submodule "whitespace/knightking-hacktoberfest-2017"]
-	path = whitespace/knightking-hacktoberfest-2017
+[submodule "whitespace/knightking-hacktoberfest"]
+	path = whitespace/knightking-hacktoberfest
 	url = https://github.com/knightking100/hello-worlds
 [submodule "whitespace/kspalaiologos-codegolf"]
 	path = whitespace/kspalaiologos-codegolf

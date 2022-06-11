@@ -9,7 +9,7 @@
   "spec_version": "0.2",
   "source": ["https://github.com/alchzh/advent-of-code"],
   "relations": [{ "id": "javascript/vii5ard-whitelips-ide", "type": "assembly" }],
-  "challenges": ["Advent of Code"],
+  "challenges": ["Advent of Code 2021"],
   "whitespace": { "extension": "ws" },
   "assembly": { "extension": "wsa" },
   "programs": [

@@ -1,5 +1,5 @@
 {
-  "id": "whitespace/alicewonderland-hacktoberfest-2017",
+  "id": "whitespace/alicewonderland-hacktoberfest",
   "name": "HacktoberFest Starter Project",
   "authors": ["Chashmeet Singh"],
   "license": "GPL-3.0-or-later",
@@ -8,6 +8,7 @@
   "date": "2017-10-11 03:18:03 +0530",
   "spec_version": "0.2",
   "source": ["https://github.com/AliceWonderland/hacktoberfest"],
+  "challenges": ["Hacktoberfest 2017"],
   "whitespace": { "extension": "ws" },
   "programs": [{ "path": "scripts/hello_world_chashmeetsingh.ws", "spec_version": "0.2" }]
 }

@@ -34,7 +34,7 @@ language, including interpreters, compilers, and programs.
 | [cerner_2-5](whitespace/srinandanpai-cerner.json)  | Srinandan Pai    | Whitespace | programs     | 2021-10-01 | [GitHub](https://github.com/SrinandanPai/cerner_2-5) |
 | [esoteric](python/joaquinrossi-esoteric.json)      | Joaquín Rossi    | Python     | interpreter  | 2021-09-29 | [GitHub](https://github.com/joaquin-rossi/esoteric) |
 | [WhitespaceInterpreter](lua/carsonrueber.json)     | Carson Rueber    | Lua        | interpreter, programs | 2021-08-29 | [GitHub](https://github.com/CJ5518/WhitespaceInterpreter) |
-| [Whitespace grammar for GitHub](textmate/andrewarchi-linguist.json) | Andrew Archibald | TextMate | grammar | 2021-08-15 | [GitHub](https://github.com/wspace/wspace-linguist) |
+| [Whitespace grammar for GitHub](textmate/andrewarchi-linguist.json) | Andrew Archibald | TextMate | grammar | 2021-08-15 | [GitHub](https://github.com/andrewarchi/wspace-linguist) |
 | [NovaGrammars](textmate/nixinova.json)             | Nixinova         | TextMate   | syntax highlighting, programs | 2021-08-15 | [GitHub](https://github.com/Nixinova/NovaGrammars), [GitHub](https://github.com/github/linguist/discussions/5519#discussioncomment-1185871) |
 | [SPOJ](whitespace/t3nsor-spoj.json)                | Brian Bi         | Whitespace | assembler, programs | 2021-08-11 | [GitHub](https://github.com/t3nsor/SPOJ) |
 | [wsbf](whitespace/reconcyl-wsbf.json)              | Reconcyl         | Whitespace | programs     | 2021-07-22 | [GitHub](https://github.com/Reconcyl/eso) |
@@ -131,7 +131,7 @@ language, including interpreters, compilers, and programs.
 | [whitespace](python/ahl27.json)                    | Aidan Lakshman   | Python     | interpreter, text to Whitespace, programs | 2018-11-08 | [GitHub](https://github.com/ahl27/whitespace) |
 | [Whitespace-Compiler](java/wysang.json)            | wysang           | Java, ANTLR | parser, grammar, programs | 2018-10-22 | [GitHub](https://github.com/wspace/wysang-java), [GitHub](https://github.com/wysang/Whitespace-Compiler) |
 | [Obfuscated Name Printer](whitespace/apartmentlist-obfuscated.json) | anoop nimkar | Whitespace | programs | 2018-10-08 | [GitHub](https://github.com/apartmentlist/coding-challenges) |
-| [Hacktoberfest 2018 Hello-world](whitespace/aniket-hacktoberfest-2018.json) | Ethan Hall, Unnikrishnan A G | Whitespace | programs | 2018-10-06 | [GitHub](https://github.com/wspace/aniket-hacktoberfest-2018), [GitHub](https://github.com/Aniket965/Hello-world/tree/master/Whitespace) |
+| [Hacktoberfest 2018 Hello-world](whitespace/aniket-hacktoberfest.json) | Ethan Hall, Unnikrishnan A G | Whitespace | programs | 2018-10-06 | [GitHub](https://github.com/wspace/aniket-hacktoberfest), [GitHub](https://github.com/Aniket965/Hello-world/tree/master/Whitespace) |
 | [write-ups](whitespace/rsactf.json)                | Kaushik S Kalmady | Whitespace | programs    | 2018-09-11 | [GitHub](https://github.com/rsa-ctf/write-ups), [ctftime.org](https://ctftime.org/event/671) |
 | [whitespace-stack-flood](whitespace/trevorbennett-stack-flood.json) | Trevor Bennett | Whitespace | programs | 2018-09-08 | [GitHub](https://github.com/trevorbennett/whitespace-stack-flood), [r/ProgrammerHumor](https://www.reddit.com/r/ProgrammerHumor/comments/9dvwhn/java_java/e5kg126/) |
 | [nospace](cpp/buyoh-nospace.json)                  | 舞葉 (Mai Buyoh)   | C++, Ruby  | language, interpreter, programs | 2018-09-05 | [GitHub](https://github.com/buyoh/nospace) |
@@ -154,8 +154,8 @@ language, including interpreters, compilers, and programs.
 | [whitespace.py](python/mildsunrise.json)           | Alba Mendez      | Python     | interpreter  | 2018-01-14 | [GitHub Gist](https://gist.github.com/mildsunrise/d948fe1334f36c9a0f6516e58271f936) |
 | [Whitespace](c/sandeep.json)                       | Sandeep Varma    | C, Yacc, Lex | interpreter, programs | 2017-11-11 | [GitHub](https://github.com/Sandeep023/Whitespace) |
 | [CodeWars Kata](python/musflood.json)              | Megan Flood      | Python     | interpreter  | 2017-10-21 | [GitHub](https://github.com/musflood/code-katas) |
-| [hello-worlds](whitespace/knightking-hacktoberfest-2017.json) | Jackie Chen | Whitespace | programs | 2017-10-12 | [GitHub](https://github.com/knightking100/hello-worlds), [GitHub](https://github.com/knightking100/hello-worlds/pull/160) |
-| [HacktoberFest Starter Project](whitespace/alicewonderland-hacktoberfest-2017.json) | Chashmeet Singh | Whitespace | programs | 2017-10-10 | [GitHub](https://github.com/AliceWonderland/hacktoberfest) |
+| [hello-worlds](whitespace/knightking-hacktoberfest.json) | Jackie Chen | Whitespace | programs    | 2017-10-12 | [GitHub](https://github.com/knightking100/hello-worlds), [GitHub](https://github.com/knightking100/hello-worlds/pull/160) |
+| [HacktoberFest Starter Project](whitespace/alicewonderland-hacktoberfest.json) | Chashmeet Singh | Whitespace | programs | 2017-10-10 | [GitHub](https://github.com/AliceWonderland/hacktoberfest) |
 | [Whitespace-interpreter](python/bornlex.json)      | Bornlex          | Python     | interpreter, programs | 2017-08-09 | [GitHub](https://github.com/Bornlex/Whitespace-interpreter) |
 | [whitespace-interpreter](cpp/benajmin.json)        | Benjamin Wilkins | C++        | interpreter, programs | 2017-06-05 | [GitHub](https://github.com/benajmin/whitespace-interpreter) |
 | [wsm2ws](perl/ephphatha-wsm2ws.json)               | Andrew James     | Perl       | assembler, programs | 2017-05-28 | [GitHub](https://github.com/ephphatha/wsm2ws) |
@@ -176,7 +176,7 @@ language, including interpreters, compilers, and programs.
 | [whitespace.lol](lolcode/akers.json)               | D.E. Akers       | LOLCODE    | interpreter  | 2016-11-21 | [GitHub](https://github.com/wspace/akers-lolcode), [GitHub](https://github.com/hostilefork/whitespacers/tree/master/lolcode) |
 | [whitespac3](python/alecgraves-whitespac3.json)    | Alec Graves      | Python     | interpreter  | 2016-11-17 | [GitHub](https://github.com/alecGraves/whitespac3) |
 | [WhiteSpaceInterpreter](java/eia.json)             | Zuleimi Esteffanny González Muñoz | Java | interpreter, programs | 2016-10-27 | [GitHub](https://github.com/wspace/eia-java), [GitHub](https://github.com/EIA-University/WhiteSpaceInterpreter) |
-| [hacktoberfest-dcoy](whitespace/dcoy-hacktoberfest-2016.json) | Noah Tranbarger | Whitespace | programs | 2016-10-10 | [GitHub](https://github.com/dcoy/hacktoberfest-dcoy) |
+| [hacktoberfest-dcoy](whitespace/dcoy-hacktoberfest.json) | Noah Tranbarger | Whitespace | programs | 2016-10-10 | [GitHub](https://github.com/dcoy/hacktoberfest-dcoy) |
 | [ELVM](c/shinh-elvm.json)                          | Shinichiro Hamaji | C         | language compiler | 2016-09-16 | [GitHub](https://github.com/shinh/elvm), [Esolang](https://esolangs.org/wiki/ELVM) |
 | [EsoPoly](whitespace/kenrube-esopoly.json)         | Ivan Zolotarev   | Whitespace | programs     | 2016-09-13 | [GitHub](https://github.com/kenrube/Esopoly) |
 | [hello.ws](whitespace/shotastage-hello.json)       | Shota Shimazu    | Whitespace | programs     | 2016-09-10 | [GitHub Gist](https://gist.github.com/shotastage/5a991d828e510459488c66a7994df859) |

@@ -6,9 +6,20 @@ These are projects that contain solutions for coding challenges related
 to Whitespace. These can be solutions written in Whitespace or, in the
 case of Codewars, interpreters for Whitespace.
 
-## Advent of Code
+## Advent of Code 2018
 
 - [python/ryndvs-aoc](python/ryndvs-aoc.json)
+
+## Advent of Code 2019
+
+- [whitespace/andrewarchi-challenges](whitespace/andrewarchi-challenges.json)
+
+## Advent of Code 2020
+
+- [whitespace/andrewarchi-challenges](whitespace/andrewarchi-challenges.json)
+
+## Advent of Code 2021
+
 - [whitespace/alchzh-advent-of-code](whitespace/alchzh-advent-of-code.json)
 - [whitespace/andrewarchi-challenges](whitespace/andrewarchi-challenges.json)
 
@@ -52,6 +63,19 @@ case of Codewars, interpreters for Whitespace.
 ## Hackergame
 
 - [whitespace/ustclug-hackergame2019](whitespace/ustclug-hackergame2019.json)
+
+## Hacktoberfest 2016
+
+- [whitespace/dcoy-hacktoberfest](whitespace/dcoy-hacktoberfest.json)
+
+## Hacktoberfest 2017
+
+- [whitespace/alicewonderland-hacktoberfest](whitespace/alicewonderland-hacktoberfest.json)
+- [whitespace/knightking-hacktoberfest](whitespace/knightking-hacktoberfest.json)
+
+## Hacktoberfest 2018
+
+- [whitespace/aniket-hacktoberfest](whitespace/aniket-hacktoberfest.json)
 
 ## noxCTF
 

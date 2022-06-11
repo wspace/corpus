@@ -1,5 +1,5 @@
 {
-  "id": "whitespace/knightking-hacktoberfest-2017",
+  "id": "whitespace/knightking-hacktoberfest",
   "name": "hello-worlds",
   "authors": ["Jackie Chen"],
   "license": "Unlicense",
@@ -11,6 +11,7 @@
     "https://github.com/knightking100/hello-worlds",
     "https://github.com/knightking100/hello-worlds/pull/160"
   ],
+  "challenges": ["Hacktoberfest 2017"],
   "whitespace": { "extension": "ws" },
   "programs": [{ "path": "examples/w/Whitespace.ws", "spec_version": "0.2" }]
 }
