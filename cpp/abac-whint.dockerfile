@@ -3,7 +3,7 @@ FROM alpine as builder
 RUN apk add git g++
 RUN git clone https://github.com/abac00s/WHINT
 WORKDIR /WHINT
-RUN g++ -O3 -Wall -o whint whint.cpp
+RUN g++ -O3 -Wall -static -o whint whint.cpp
 
 FROM scratch as runner
 

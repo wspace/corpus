@@ -4,7 +4,7 @@ RUN apk add git make g++
 RUN git clone https://github.com/andrewarchi/respace
 WORKDIR /respace
 RUN make test
-RUN make
+RUN make LDFLAGS=-static
 
 FROM scratch as runner
 

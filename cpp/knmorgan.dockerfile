@@ -3,7 +3,7 @@ FROM alpine as builder
 RUN apk add git make g++ gmp-dev
 RUN git clone https://github.com/knmorgan/ws
 WORKDIR /ws
-RUN make CXXFLAGS='-O3 -Wall -pedantic'
+RUN make CC='g++ -static'
 
 FROM scratch as runner
 
