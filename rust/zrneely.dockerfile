@@ -1,4 +1,4 @@
-FROM wspace-corpus/crates-io as builder
+FROM wspace-corpus/rust as builder
 
 RUN git clone https://github.com/wspace/zrneely-rust whitespace
 WORKDIR /whitespace

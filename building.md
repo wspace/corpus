@@ -64,6 +64,7 @@ Projects that can be built with Docker:
 - go/tempxla-go-wspace
 - go/yshr-wspacego
 - haskell/edwinb-wspace-0.3
+- lolcode/akers
 - ocaml/jgkaplan-wsc
 - ocaml/matsud-c2ws
 - ocaml/progbits-blank: Module Stdlib.Stream is deprecated and the camlp-streams library should be used instead
@@ -167,7 +168,6 @@ Building status of individual executables:
 - jq/andrewarchi-wsjq/wsjq
 - ⚠️ julia/goropikari-whitespaces/*unspecified*
 - ⚠️ kotlin/ze-space/build/libs/space.jar: `./gradlew` Dependencies not packaged
-- lolcode/akers/whitespace.lol
 - ❌ lua/carsonrueber
 - ❌ lua/vyo-callisto
 - ⚠️ masm/jarsp-wsint/wsint: Requires Visual Studio
