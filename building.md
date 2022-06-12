@@ -63,6 +63,7 @@ Projects that can be built with Docker:
 - go/technohippy
 - go/tempxla-go-wspace
 - go/yshr-wspacego
+- haskell/edwinb-wspace-0.3
 - ocaml/jgkaplan-wsc
 - ocaml/matsud-c2ws
 - ocaml/progbits-blank: Module Stdlib.Stream is deprecated and the camlp-streams library should be used instead
@@ -109,7 +110,6 @@ Building status of individual executables:
 - ⚠️ haskell/brainbrush-tomato/wspace: `make` Needs changes for latest Haskell
 - ❌ haskell/burghard-wsa
 - ❌ haskell/edwinb-wspace-0.2
-- ❌ haskell/edwinb-wspace-0.3
 - ⚠️ haskell/ft-spaceman/*unspecified*: `cabal build`
 - ⚠️ haskell/haroldl-wspace-0.4/wspace: `make` Needs changes for latest Haskell
 - haskell/helvm-helma/dist-newstyle/build/x86\_64-osx/ghc-8.10.7/helma-0.6.10.0/x/helma/build/helma/helma: `cabal build`
