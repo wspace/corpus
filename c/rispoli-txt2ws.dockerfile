@@ -1,8 +1,11 @@
-FROM alpine
+FROM alpine as builder
 
 RUN apk add git make gcc musl-dev
-WORKDIR /home
 RUN git clone https://github.com/rispoli/txt2ws
-WORKDIR /home/txt2ws
+WORKDIR /txt2ws
 RUN make
-RUN test -f /home/txt2ws/txt2ws
+
+FROM scratch as runner
+
+COPY --from=builder /txt2ws/txt2ws /
+ENTRYPOINT ["/txt2ws"]

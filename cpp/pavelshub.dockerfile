@@ -1,9 +1,12 @@
-FROM alpine
+FROM alpine as builder
 
 RUN apk add git make g++
-WORKDIR /home
 RUN git clone https://github.com/wspace/pavelshub-cpp wspace
-WORKDIR /home/wspace
+WORKDIR /wspace
 RUN make
-RUN test -f /home/wspace/wspace
-RUN test -f /home/wspace/assembler
+
+FROM scratch as runner
+
+COPY --from=builder /wspace/wspace /
+COPY --from=builder /wspace/assembler /
+ENTRYPOINT ["/wspace"]

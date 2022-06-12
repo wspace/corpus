@@ -1,10 +1,9 @@
-FROM mono
+FROM mono as builder
 
 RUN apt-get update
 RUN apt-get install -y git
-WORKDIR /home
 RUN git clone https://github.com/ryzngard/DotNot
-WORKDIR /home/DotNot
+WORKDIR /DotNot
 RUN nuget restore
-WORKDIR /home/DotNot/src/Whitespace.TestProject
+WORKDIR /DotNot/src/Whitespace.TestProject
 RUN msbuild /p:Configuration=Debug

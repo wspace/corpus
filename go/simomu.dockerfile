@@ -1,8 +1,12 @@
-FROM golang:1.18
+FROM golang:1.18 as builder
 
-WORKDIR /home
+WORKDIR /
 RUN git clone https://github.com/simomu-github/whitespace_go
-WORKDIR /home/whitespace_go
+WORKDIR /whitespace_go
 RUN go test ./...
 RUN go build -o releases/ws cmd/ws.go
-RUN test -f /home/whitespace_go/releases/ws
+
+FROM scratch as runner
+
+COPY --from=builder /whitespace_go/releases/ws /
+ENTRYPOINT ["/ws"]

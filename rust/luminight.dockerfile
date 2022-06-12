@@ -1,6 +1,5 @@
-FROM wspace-corpus/crates-io
+FROM wspace-corpus/crates-io as builder
 
-WORKDIR /home
 RUN git clone https://github.com/Luminighty/rustws
-WORKDIR /home/rustws
+WORKDIR /rustws
 RUN cargo test

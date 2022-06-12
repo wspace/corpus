@@ -1,8 +1,11 @@
-FROM alpine
+FROM alpine as builder
 
 RUN apk add git make gcc musl-dev
-WORKDIR /home
 RUN git clone https://github.com/threeifbywhiskey/blacktime
-WORKDIR /home/blacktime
+WORKDIR /blacktime
 RUN make
-RUN test -f /home/blacktime/blacktime
+
+FROM scratch as runner
+
+COPY --from=builder /blacktime/blacktime /
+ENTRYPOINT ["/blacktime"]

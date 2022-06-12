@@ -1,10 +1,13 @@
-FROM alpine
+FROM alpine as builder
 
 RUN apk add git gcc g++
-WORKDIR /home
 RUN git clone https://github.com/zackeua/Whitespace
-WORKDIR /home/Whitespace
+WORKDIR /Whitespace
 RUN gcc -g -Wall -o wlang whitespace.c
 RUN g++ -g -Wall -o whitespacecpp whitespace.cpp
-RUN test -f /home/Whitespace/wlang
-RUN test -f /home/Whitespace/whitespacecpp
+
+FROM scratch as runner
+
+COPY --from=builder /Whitespace/wlang /
+COPY --from=builder /Whitespace/whitespacecpp /
+ENTRYPOINT ["/wlang"]

@@ -1,7 +1,10 @@
-FROM rust:1.61
+FROM rust:1.61 as builder
 
-WORKDIR /home
 RUN git clone https://github.com/HelloRusk/WhitespaceInterpreter
-WORKDIR /home/WhitespaceInterpreter
+WORKDIR /WhitespaceInterpreter
 RUN rustc -o wi whitespace_interpreter.rs
-RUN test -f /home/WhitespaceInterpreter/wi
+
+FROM scratch as runner
+
+COPY --from=builder /WhitespaceInterpreter/wi /
+ENTRYPOINT ["/wi"]

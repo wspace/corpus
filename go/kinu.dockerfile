@@ -1,8 +1,12 @@
-FROM golang:1.18
+FROM golang:1.18 as builder
 
-WORKDIR /home
+WORKDIR /
 RUN git clone https://github.com/kinu/whitespace
-WORKDIR /home/whitespace
+WORKDIR /whitespace
 RUN go mod init github.com/kinu/whitespace
 RUN go build
-RUN test -f /home/whitespace/whitespace
+
+FROM scratch as runner
+
+COPY --from=builder /whitespace/whitespace /
+ENTRYPOINT ["/whitespace"]

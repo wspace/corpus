@@ -1,7 +1,10 @@
-FROM rust:1.61
+FROM rust:1.61 as builder
 
-WORKDIR /home
 RUN git clone https://github.com/Jayshua/rust-whitespace
-WORKDIR /home/rust-whitespace
+WORKDIR /rust-whitespace
 RUN cargo build --release
-RUN test -f /home/rust-whitespace/target/release/whitespace
+
+FROM scratch as runner
+
+COPY --from=builder /rust-whitespace/target/release/whitespace /
+ENTRYPOINT ["/whitespace"]

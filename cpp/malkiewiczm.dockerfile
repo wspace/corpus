@@ -1,8 +1,11 @@
-FROM alpine
+FROM alpine as builder
 
 RUN apk add git make g++ flex bison
-WORKDIR /home
 RUN git clone https://github.com/malkiewiczm/whitespace_compiler
-WORKDIR /home/whitespace_compiler
+WORKDIR /whitespace_compiler
 RUN make
-RUN test -f /home/whitespace_compiler/compile
+
+FROM scratch as runner
+
+COPY --from=builder /whitespace_compiler/compile /
+ENTRYPOINT ["/compile"]

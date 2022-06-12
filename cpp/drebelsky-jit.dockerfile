@@ -1,8 +1,11 @@
-FROM alpine
+FROM alpine as builder
 
 RUN apk add git make g++
-WORKDIR /home
 RUN git clone https://github.com/drebelsky/whitespace-jit
-WORKDIR /home/whitespace-jit
+WORKDIR /whitespace-jit
 RUN make CXXFLAGS='-O3 -Wall -Wpedantic -std=c++17'
-RUN test -f /home/whitespace-jit/compile
+
+FROM scratch as runner
+
+COPY --from=builder /whitespace-jit/compile /
+ENTRYPOINT ["/compile"]

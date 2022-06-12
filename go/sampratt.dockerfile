@@ -1,7 +1,11 @@
-FROM golang:1.18
+FROM golang:1.18 as builder
 
-WORKDIR /home
+WORKDIR /
 RUN git clone https://github.com/samuel-pratt/whitespace-go
-WORKDIR /home/whitespace-go
+WORKDIR /whitespace-go
 RUN go build
-RUN test -f /home/whitespace-go/whitespace-go
+
+FROM scratch as runner
+
+COPY --from=builder /whitespace-go/whitespace-go /
+ENTRYPOINT ["/whitespace-go"]

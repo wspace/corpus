@@ -1,9 +1,12 @@
-FROM alpine
+FROM alpine as builder
 
 RUN apk add git make g++
-WORKDIR /home
 RUN git clone https://github.com/andrewarchi/respace
-WORKDIR /home/respace
+WORKDIR /respace
 RUN make test
 RUN make
-RUN test -f /home/respace/respace
+
+FROM scratch as runner
+
+COPY --from=builder /respace/respace /
+ENTRYPOINT ["/respace"]

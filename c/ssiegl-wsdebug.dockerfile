@@ -1,10 +1,13 @@
-FROM alpine
+FROM alpine as builder
 
 RUN apk add git make gcc g++
-WORKDIR /home
 RUN git clone https://github.com/wspace/ssiegl-wsdebug wsdebug
-WORKDIR /home/wsdebug
+WORKDIR /wsdebug
 RUN ./configure
 RUN make
-RUN test -f /home/wsdebug/wsdebug
-RUN test -f /home/wsdebug/wsi
+
+FROM scratch as runner
+
+COPY --from=builder /wsdebug/wsdebug /
+COPY --from=builder /wsdebug/wsi /
+ENTRYPOINT ["/wsdebug"]

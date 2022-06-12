@@ -1,8 +1,11 @@
-FROM alpine
+FROM alpine as builder
 
 RUN apk add git g++
-WORKDIR /home
 RUN git clone https://github.com/abac00s/WHINT
-WORKDIR /home/WHINT
+WORKDIR /WHINT
 RUN g++ -O3 -Wall -o whint whint.cpp
-RUN test -f /home/WHINT/whint
+
+FROM scratch as runner
+
+COPY --from=builder /WHINT/whint /
+ENTRYPOINT ["/whint"]

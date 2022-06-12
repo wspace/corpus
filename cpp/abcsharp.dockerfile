@@ -1,8 +1,11 @@
-FROM alpine
+FROM alpine as builder
 
 RUN apk add git g++
-WORKDIR /home
 RUN git clone https://github.com/abcsharp/Whitespace
-WORKDIR /home/Whitespace
+WORKDIR /Whitespace
 RUN g++ -O3 -Wall -std=c++11 -o wsi whitespace/main.cpp
-RUN test -f /home/Whitespace/wsi
+
+FROM scratch as runner
+
+COPY --from=builder /Whitespace/wsi /
+ENTRYPOINT ["/wsi"]

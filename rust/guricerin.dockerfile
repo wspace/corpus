@@ -1,8 +1,11 @@
-FROM wspace-corpus/crates-io
+FROM wspace-corpus/crates-io as builder
 
-WORKDIR /home
 RUN git clone https://github.com/guricerin/esolangs
-WORKDIR /home/esolangs/whitespace-rs
+WORKDIR /esolangs/whitespace-rs
 RUN cargo test
 RUN cargo build --release
-RUN test -f /home/esolangs/whitespace-rs/target/release/whitespace-rs
+
+FROM scratch as runner
+
+COPY --from=builder /esolangs/whitespace-rs/target/release/whitespace-rs /
+ENTRYPOINT ["/whitespace-rs"]

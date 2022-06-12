@@ -1,7 +1,10 @@
-FROM wspace-corpus/crates-io
+FROM wspace-corpus/crates-io as builder
 
-WORKDIR /home
 RUN git clone https://github.com/CensoredUsername/whitespace-rs
-WORKDIR /home/whitespace-rs
+WORKDIR /whitespace-rs
 RUN cargo build --release
-RUN test -f /home/whitespace-rs/target/release/wsc
+
+FROM scratch as runner
+
+COPY --from=builder /whitespace-rs/target/release/wsc /
+ENTRYPOINT ["/wsc"]

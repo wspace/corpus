@@ -1,8 +1,11 @@
-FROM wspace-corpus/crates-io
+FROM wspace-corpus/crates-io as builder
 
-WORKDIR /home
 RUN git clone https://github.com/wspace/zrneely-rust whitespace
-WORKDIR /home/whitespace
+WORKDIR /whitespace
 RUN cargo test
 RUN cargo build --release
-RUN test -f /home/whitespace/target/release/whitespace
+
+FROM scratch as runner
+
+COPY --from=builder /whitespace/target/release/whitespace /
+ENTRYPOINT ["/whitespace"]

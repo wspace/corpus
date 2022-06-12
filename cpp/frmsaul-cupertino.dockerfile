@@ -1,8 +1,11 @@
-FROM alpine
+FROM alpine as builder
 
 RUN apk add git g++
-WORKDIR /home
 RUN git clone https://github.com/frmsaul/Cupertino-WhiteSpace-Interperter
-WORKDIR /home/Cupertino-WhiteSpace-Interperter
+WORKDIR /Cupertino-WhiteSpace-Interperter
 RUN g++ -O3 -o whitespace src/*.cpp
-RUN test -f /home/Cupertino-WhiteSpace-Interperter/whitespace
+
+FROM scratch as runner
+
+COPY --from=builder /Cupertino-WhiteSpace-Interperter/whitespace /
+ENTRYPOINT ["/whitespace"]

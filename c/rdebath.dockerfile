@@ -1,9 +1,12 @@
-FROM alpine
+FROM alpine as builder
 
 RUN apk add git make gcc musl-dev flex
-WORKDIR /home
 RUN git clone https://github.com/wspace/rdebath-c whitespace
-WORKDIR /home/whitespace
+WORKDIR /whitespace
 RUN make
-RUN test -f /home/whitespace/ws2c
-RUN test -f /home/whitespace/wsa
+
+FROM scratch as runner
+
+COPY --from=builder /whitespace/ws2c /
+COPY --from=builder /whitespace/wsa /
+ENTRYPOINT ["/ws2c"]

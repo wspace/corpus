@@ -1,12 +1,15 @@
-FROM alpine
+FROM alpine as builder
 
 RUN apk add git make gcc musl-dev flex bison
-WORKDIR /home
 RUN git clone https://github.com/wspace/remigascou-c whitespace
-WORKDIR /home/whitespace/dev
+WORKDIR /whitespace/dev
 RUN make
-WORKDIR /home/whitespace/lexxyacc
+WORKDIR /whitespace/lexxyacc
 RUN make
-RUN test -f /home/whitespace/dev/bin/compiler
-RUN test -f /home/whitespace/dev/bin/decompiler
-RUN test -f /home/whitespace/lexxyacc/compiler/compiler
+
+FROM scratch as runner
+
+COPY --from=builder /whitespace/dev/bin/compiler /
+COPY --from=builder /whitespace/dev/bin/decompiler /
+COPY --from=builder /whitespace/lexxyacc/compiler/compiler /
+ENTRYPOINT ["/compiler"]

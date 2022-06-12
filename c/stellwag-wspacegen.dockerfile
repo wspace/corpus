@@ -1,10 +1,13 @@
-FROM alpine
+FROM alpine as builder
 
 RUN apk add git make gcc musl-dev
-WORKDIR /home
 RUN git clone https://github.com/wspace/stellwag-wspacegen wspacegen
-WORKDIR /home/wspacegen
+WORKDIR /wspacegen
 RUN make
-RUN test -f /home/wspacegen/wspacegen
-RUN test -f /home/wspacegen/wsdbg
-RUN test -f /home/wspacegen/wsi
+
+FROM scratch as runner
+
+COPY --from=builder /wspacegen/wspacegen /
+COPY --from=builder /wspacegen/wsdbg /
+COPY --from=builder /wspacegen/wsi /
+ENTRYPOINT ["/wspacegen"]

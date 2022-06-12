@@ -1,8 +1,11 @@
-FROM alpine
+FROM alpine as builder
 
 RUN apk add git make gcc musl-dev
-WORKDIR /home
 RUN git clone https://github.com/wspace/koturn-c Whitespace
-WORKDIR /home/Whitespace
+WORKDIR /Whitespace
 RUN make
-RUN test -f /home/Whitespace/whitespace.out
+
+FROM scratch as runner
+
+COPY --from=builder /Whitespace/whitespace.out /
+ENTRYPOINT ["/whitespace.out"]

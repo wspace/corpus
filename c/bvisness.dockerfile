@@ -1,8 +1,11 @@
-FROM alpine
+FROM alpine as builder
 
 RUN apk add git make gcc musl-dev flex bison
-WORKDIR /home
 RUN git clone https://github.com/bvisness/whitespace
-WORKDIR /home/whitespace
+WORKDIR /whitespace
 RUN make
-RUN test -f /home/whitespace/whitespace
+
+FROM scratch as runner
+
+COPY --from=builder /whitespace/whitespace /
+ENTRYPOINT ["/whitespace"]

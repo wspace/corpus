@@ -1,9 +1,12 @@
-FROM mono
+FROM mono as builder
 
 RUN apt-get update
 RUN apt-get install -y git
-WORKDIR /home
 RUN git clone https://github.com/reflash-blog/WhiteSpaceInterpreter
-WORKDIR /home/WhiteSpaceInterpreter/WhiteSpaceInterpretator
+WORKDIR /WhiteSpaceInterpreter/WhiteSpaceInterpretator
 RUN msbuild /p:Configuration=Debug
-RUN test -f /home/WhiteSpaceInterpreter/WhiteSpaceInterpretator/bin/Debug/WhiteSpaceInterpretator.exe
+
+FROM scratch as runner
+
+COPY --from=builder /WhiteSpaceInterpreter/WhiteSpaceInterpretator/bin/Debug/WhiteSpaceInterpretator.exe /
+ENTRYPOINT ["/WhiteSpaceInterpretator.exe"]

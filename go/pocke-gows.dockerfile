@@ -1,9 +1,13 @@
-FROM golang:1.18
+FROM golang:1.18 as builder
 
-WORKDIR /home
+WORKDIR /
 RUN git clone https://github.com/pocke/gows
-WORKDIR /home/gows
+WORKDIR /gows
 RUN go mod init github.com/pocke/gows
 RUN go mod tidy
 RUN go build
-RUN test -f /home/gows/gows
+
+FROM scratch as runner
+
+COPY --from=builder /gows/gows /
+ENTRYPOINT ["/gows"]

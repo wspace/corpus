@@ -1,7 +1,10 @@
-FROM wspace-corpus/crates-io
+FROM wspace-corpus/crates-io as builder
 
-WORKDIR /home
 RUN git clone https://github.com/collidedscope/albus
-WORKDIR /home/albus
+WORKDIR /albus
 RUN cargo build --release
-RUN test -f /home/albus/target/release/albus
+
+FROM scratch as runner
+
+COPY --from=builder /albus/target/release/albus /
+ENTRYPOINT ["/albus"]

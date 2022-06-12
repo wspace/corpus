@@ -1,8 +1,11 @@
-FROM alpine
+FROM alpine as builder
 
 RUN apk add git bash g++
-WORKDIR /home
 RUN git clone https://github.com/ShadowMitia/whitespace
-WORKDIR /home/whitespace
+WORKDIR /whitespace
 RUN bash build.sh release wspace
-RUN test -f /home/whitespace/wspace
+
+FROM scratch as runner
+
+COPY --from=builder /whitespace/wspace /
+ENTRYPOINT ["/wspace"]

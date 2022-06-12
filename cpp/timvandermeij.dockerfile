@@ -1,8 +1,11 @@
-FROM alpine
+FROM alpine as builder
 
 RUN apk add git make g++
-WORKDIR /home
 RUN git clone https://github.com/wspace/timvandermeij-cpp whitespace-interpreter
-WORKDIR /home/whitespace-interpreter
+WORKDIR /whitespace-interpreter
 RUN make
-RUN test -f /home/whitespace-interpreter/whitespace
+
+FROM scratch as runner
+
+COPY --from=builder /whitespace-interpreter/whitespace /
+ENTRYPOINT ["/whitespace"]

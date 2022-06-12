@@ -1,8 +1,11 @@
-FROM alpine
+FROM alpine as builder
 
 RUN apk add git gcc musl-dev
-WORKDIR /home
 RUN git clone https://github.com/Sandeep023/Whitespace
-WORKDIR /home/Whitespace
+WORKDIR /Whitespace
 RUN gcc -O3 -Wall -o white y.tab.c lex.yy.c
-RUN test -f /home/Whitespace/white
+
+FROM scratch as runner
+
+COPY --from=builder /Whitespace/white /
+ENTRYPOINT ["/white"]

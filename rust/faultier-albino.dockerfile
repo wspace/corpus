@@ -1,11 +1,14 @@
-FROM wspace-corpus/crates-io
+FROM wspace-corpus/crates-io as builder
 
-WORKDIR /home
 RUN git clone https://github.com/faultier/albino
-WORKDIR /home/albino
+WORKDIR /albino
 RUN cargo build --release
-RUN test -f /home/albino/target/release/albino
-RUN test -f /home/albino/target/release/albino-run
-RUN test -f /home/albino/target/release/albino-build
-RUN test -f /home/albino/target/release/albino-exec
-RUN test -f /home/albino/target/release/albino-gen
+
+FROM scratch as runner
+
+COPY --from=builder /albino/target/release/albino /
+COPY --from=builder /albino/target/release/albino-run /
+COPY --from=builder /albino/target/release/albino-build /
+COPY --from=builder /albino/target/release/albino-exec /
+COPY --from=builder /albino/target/release/albino-gen /
+ENTRYPOINT ["/albino"]

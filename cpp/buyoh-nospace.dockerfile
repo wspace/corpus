@@ -1,9 +1,12 @@
-FROM alpine
+FROM alpine as builder
 
 RUN apk add git make g++ ruby
-WORKDIR /home
 RUN git clone https://github.com/buyoh/nospace
-WORKDIR /home/nospace
+WORKDIR /nospace
 RUN make release
 RUN ./test.rb
-RUN test -f /home/nospace/maicomp
+
+FROM scratch as runner
+
+COPY --from=builder /nospace/maicomp /
+ENTRYPOINT ["/maicomp"]

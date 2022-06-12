@@ -1,8 +1,11 @@
-FROM wspace-corpus/crates-io
+FROM wspace-corpus/crates-io as builder
 
-WORKDIR /home
 RUN git clone https://github.com/andrewarchi/yspace
-WORKDIR /home/yspace
+WORKDIR /yspace
 RUN cargo test
 RUN cargo build --release
-RUN test -f /home/yspace/target/release/yspace
+
+FROM scratch as runner
+
+COPY --from=builder /yspace/target/release/yspace /
+ENTRYPOINT ["/yspace"]

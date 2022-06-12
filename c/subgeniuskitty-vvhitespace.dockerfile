@@ -1,10 +1,12 @@
-FROM alpine
+FROM alpine as builder
 
 RUN apk add git make gcc musl-dev
-WORKDIR /home
 RUN git clone https://github.com/subgeniuskitty/vvhitespace
-WORKDIR /home/vvhitespace
-RUN test -f /home/vvhitespace/syntax_highlighting/vvhitespace.vim
+WORKDIR /vvhitespace
 RUN make
-RUN test -f /home/vvhitespace/vvc
-RUN test -f /home/vvhitespace/vvi
+
+FROM scratch as runner
+
+COPY --from=builder /vvhitespace/vvc /
+COPY --from=builder /vvhitespace/vvi /
+ENTRYPOINT ["/vvhitespace.vim"]

@@ -1,11 +1,16 @@
-FROM alpine
+FROM alpine as builder
 
 RUN apk add git make gcc musl-dev
-RUN git clone https://github.com/ManaRice/limelib /home/utils/limelib
-WORKDIR /home/utils/limelib
+WORKDIR /utils
+RUN git clone https://github.com/ManaRice/limelib
+RUN git clone https://github.com/ManaRice/whitespace
+WORKDIR /utils/limelib
 RUN make
-RUN git clone https://github.com/ManaRice/whitespace /home/utils/whitespace
-WORKDIR /home/utils/whitespace
+WORKDIR /utils/whitespace
 RUN make
-RUN test -f /home/utils/whitespace/lwsvm
-RUN test -f /home/utils/whitespace/lwsa
+
+FROM scratch as runner
+
+COPY --from=builder /utils/whitespace/lwsvm /
+COPY --from=builder /utils/whitespace/lwsa /
+ENTRYPOINT ["/lwsvm"]

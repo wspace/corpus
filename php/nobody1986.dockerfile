@@ -1,8 +1,11 @@
-FROM alpine
+FROM alpine as builder
 
 RUN apk add git gcc musl-dev
-WORKDIR /home
 RUN git clone https://github.com/nobody1986/whitespace-php
-WORKDIR /home/whitespace-php
+WORKDIR /whitespace-php
 RUN gcc -O3 -o whitespace whitespace.c list.c stack.c
-RUN test -f /home/whitespace-php/whitespace
+
+FROM scratch as runner
+
+COPY --from=builder /whitespace-php/whitespace /
+ENTRYPOINT ["/whitespace"]

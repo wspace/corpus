@@ -1,9 +1,12 @@
-FROM mono
+FROM mono as builder
 
 RUN apt-get update
 RUN apt-get install -y git
-WORKDIR /home
 RUN git clone https://github.com/littleBugHunter/WhitespaceAssembler
-WORKDIR /home/WhitespaceAssembler
+WORKDIR /WhitespaceAssembler
 RUN msbuild /p:Configuration=Debug
-RUN test -f /home/WhitespaceAssembler/bin/Debug/WhitespaceAssembler.exe
+
+FROM scratch as runner
+
+COPY --from=builder /WhitespaceAssembler/bin/Debug/WhitespaceAssembler.exe /
+ENTRYPOINT ["/WhitespaceAssembler.exe"]

@@ -1,8 +1,11 @@
-FROM alpine
+FROM alpine as builder
 
 RUN apk add git make g++
-WORKDIR /home
 RUN git clone https://github.com/wspace/marcellippmann-whitepp Whitepp
-WORKDIR /home/Whitepp
+WORKDIR /Whitepp
 RUN make
-RUN test -f /home/Whitepp/bin/White++
+
+FROM scratch as runner
+
+COPY --from=builder /Whitepp/bin/White++ /
+ENTRYPOINT ["/White++"]

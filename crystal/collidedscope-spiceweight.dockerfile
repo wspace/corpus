@@ -1,8 +1,11 @@
-FROM alpine
+FROM alpine as builder
 
 RUN apk add git make crystal
-WORKDIR /home
 RUN git clone https://github.com/collidedscope/spiceweight
-WORKDIR /home/spiceweight
+WORKDIR /spiceweight
 RUN make
-RUN test -f /home/spiceweight/spwt
+
+FROM scratch as runner
+
+COPY --from=builder /spiceweight/spwt /
+ENTRYPOINT ["/spwt"]
