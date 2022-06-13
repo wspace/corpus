@@ -55,6 +55,7 @@ Projects that can be built with Docker:
 - csharp/reflash: Mono does not implement WPF APIs
 - csharp/rolisoft-esoteric
 - csharp/ryzngard-dotnot: CSharpGeneratorDriver does not contain a constructor that takes 3 arguments
+- go/andrewarchi-nebula: Requires LLVM
 - go/kinu
 - go/pocke-gows
 - go/qeedquan
@@ -105,9 +106,6 @@ Building status of individual executables:
 - ❌ elisp/lmitchell
 - ❌ elixir/quinnwilton
 - ⚠️ erlang/derek-mrwhite/*unspecified*: `make` Unclear how to run
-- ⚠️ go/andrewarchi-nebula:
-  - ⚠️ nebula: `go build` Requires LLVM
-  - ⚠️ programs/interpret.wsa
 - ⚠️ haskell/brainbrush-tomato/wspace: `make` Needs changes for latest Haskell
 - ❌ haskell/burghard-wsa
 - ❌ haskell/edwinb-wspace-0.2

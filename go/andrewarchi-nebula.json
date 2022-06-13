@@ -189,14 +189,11 @@
       "spec_version": "0.2"
     }
   ],
+  "build_errors": "Requires LLVM",
   "commands": [
     {
       "type": "compiler",
       "bin": "nebula",
-      "dependencies": ["LLVM"],
-      "install_dependencies": "go mod init github.com/andrewarchi/nebula && go mod tidy",
-      "build": "go build",
-      "build_errors": "Requires LLVM",
       "option_parse": "Go flag",
       "subcommands": [
         { "name": "pack", "desc": "compress program to bit packed format" },
