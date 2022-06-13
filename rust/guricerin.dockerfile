@@ -3,9 +3,9 @@ FROM wspace-corpus/rust as builder
 RUN git clone https://github.com/guricerin/esolangs
 WORKDIR /esolangs/whitespace-rs
 RUN cargo test
-RUN cargo build --release
+RUN RUSTFLAGS='-C target-feature=+crt-static' cargo build --release --target x86_64-unknown-linux-gnu
 
 FROM scratch as runner
 
-COPY --from=builder /esolangs/whitespace-rs/target/release/whitespace-rs /
+COPY --from=builder /esolangs/whitespace-rs/target/x86_64-unknown-linux-gnu/release/whitespace-rs /
 ENTRYPOINT ["/whitespace-rs"]
