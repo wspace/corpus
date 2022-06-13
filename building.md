@@ -85,6 +85,7 @@ Projects that can be built with Docker:
 - rust/nareshganduri
 - rust/omurakazuaki
 - rust/zrneely
+- whitespace/andrewarchi-challenges
 - whitespace/t3nsor-spoj
 
 Building status of individual executables:
@@ -299,7 +300,6 @@ Building status of individual executables:
 - ⚠️ typescript/fy0u11/dist/Whitespace.js: `npm run build`
 - typescript/simomu/bin/ws.js: `npm run build`
 - ❌ vim/rolf
-- whitespace/andrewarchi-challenges/test.bash: `make`
 - whitespace/andrewarchi-wslib/assemble.sh
 - ❌ whitespace/ankitatandon-wspc
 - ❌ whitespace/burghard-wsinterws
