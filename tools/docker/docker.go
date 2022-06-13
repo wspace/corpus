@@ -7,18 +7,25 @@ import (
 	"io/fs"
 	"os"
 	"path"
+	"regexp"
 	"strconv"
 	"strings"
 
 	"github.com/wspace/corpus/tools"
 )
 
+var dockerfileExtRe = regexp.MustCompile(`\.dockerfile$`)
+
 func main() {
 	if len(os.Args) < 2 {
 		fmt.Fprintf(os.Stderr, "usage: %s <file>...", os.Args[0])
 		os.Exit(2)
 	}
-	projects, err := tools.ReadProjects(os.Args[1:])
+	paths := os.Args[1:]
+	for i, path := range paths {
+		paths[i] = dockerfileExtRe.ReplaceAllLiteralString(path, ".json")
+	}
+	projects, err := tools.ReadProjects(paths)
 	try(err)
 	var errs []error
 	dw := NewDockerfileWriter()
@@ -32,10 +39,9 @@ func main() {
 	has_build:
 
 		dw.Reset()
-		dw.Inst("FROM alpine")
-		dw.Line("")
-		dw.RunShell("apk add git")
-		dw.WorkDir("/home")
+		dw.Write("FROM alpine as builder")
+		dw.Write("")
+		dw.Run("apk add git")
 
 		src := p.Source[0]
 		dir := src[strings.LastIndexByte(src, '/')+1:]
@@ -43,34 +49,51 @@ func main() {
 		if strings.HasPrefix(src, "https://github.com/wspace/") {
 			origDir := "TODO"
 			if len(p.Source) > 1 {
-				origDir = p.Source[1][strings.LastIndexByte(p.Source[1], '/')+1:]
+				src = strings.TrimRight(p.Source[1], "/")
+				origDir = src[strings.LastIndexByte(src, '/')+1:]
 			}
 			if origDir != dir {
 				clone += " " + origDir
 				dir = origDir
 			}
 		}
-		dw.RunShell(clone)
+		dw.Run(clone)
 
-		dw.WorkDir(path.Join("/home", dir))
+		dir = "/" + dir
+		dw.WorkDir(dir)
 		for _, cmd := range p.Commands {
-			dw.Line("")
-			if len(cmd.Dependencies) != 0 {
-				dw.Inst("# dependencies: %s", strings.Join(cmd.Dependencies, ", "))
-			}
-			if cmd.InstallDependencies != "" {
-				dw.RunShell(cmd.InstallDependencies)
-			}
-			if cmd.BuildErrors != "" {
-				dw.Inst("# %s", cmd.BuildErrors)
-			}
-			if cmd.Build != "" {
-				dw.RunShell(cmd.Build)
-			}
+			dw.Write("")
 			if cmd.Bin != "" {
-				dw.Inst("RUN test -f %s", path.Join("/home", dir, cmd.Bin))
+				dw.Write("# Build %s", path.Join(dir, cmd.Bin))
+			}
+			if len(cmd.Dependencies) != 0 {
+				dw.Write("# Dependencies: %s", strings.Join(cmd.Dependencies, ", "))
+			}
+			dw.RunAnd(cmd.InstallDependencies)
+			if cmd.BuildErrors != "" {
+				dw.Write("# Build errors: %s", cmd.BuildErrors)
+			}
+			dw.RunAnd(cmd.Build)
+		}
+
+		if len(p.Commands) != 0 {
+			dw.Write("")
+			dw.Write("FROM scratch as runner")
+			dw.Write("")
+			entrypoint := ""
+			for _, cmd := range p.Commands {
+				if cmd.Bin != "" {
+					dw.Write("COPY --from=builder %s/%s /", dir, cmd.Bin)
+					if entrypoint == "" {
+						entrypoint = cmd.Bin
+					}
+				}
+			}
+			if entrypoint != "" {
+				dw.Write(`ENTRYPOINT ["/%s"]`, path.Base(entrypoint))
 			}
 		}
+
 		try(dw.SaveIfChanged(p.ID + ".dockerfile"))
 	}
 	if len(errs) != 0 {
@@ -90,15 +113,19 @@ func NewDockerfileWriter() *DockerfileWriter {
 	return &DockerfileWriter{b: new(bytes.Buffer)}
 }
 
-func (dw *DockerfileWriter) Inst(format string, args ...any) {
+func (dw *DockerfileWriter) Write(format string, args ...any) {
 	fmt.Fprintf(dw.b, format+"\n", args...)
 }
 
-func (dw *DockerfileWriter) Run(cmd string) {
-	if strings.ContainsAny(cmd, `'"$*?><|&`) {
-		dw.RunShell(cmd)
-	} else {
-		dw.RunExec(strings.Split(cmd, " "))
+func (dw *DockerfileWriter) Run(format string, args ...any) {
+	dw.Write("RUN "+format, args...)
+}
+
+func (dw *DockerfileWriter) RunAnd(cmd string) {
+	if cmd != "" {
+		for _, cmd := range strings.Split(cmd, " && ") {
+			dw.Run(cmd)
+		}
 	}
 }
 
@@ -113,19 +140,11 @@ func (dw *DockerfileWriter) RunExec(cmd []string) {
 	dw.b.WriteString("]\n")
 }
 
-func (dw *DockerfileWriter) RunShell(cmd string) {
-	dw.Inst("RUN %s", cmd)
-}
-
 func (dw *DockerfileWriter) WorkDir(dir string) {
 	if dw.workDir != dir {
-		dw.Inst("WORKDIR %s", dir)
+		dw.Write("WORKDIR %s", dir)
 		dw.workDir = dir
 	}
-}
-
-func (dw *DockerfileWriter) Line(line string) {
-	dw.b.WriteString(line + "\n")
 }
 
 func (dw *DockerfileWriter) Reset() {
