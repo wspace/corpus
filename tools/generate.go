@@ -505,51 +505,54 @@ func formatLink(label, url string) string {
 }
 
 var domainLabels = map[string]string{
-	"github.com":                 "GitHub",
-	"gist.github.com":            "GitHub Gist",
-	"gitlab.com":                 "GitLab",
-	"sourceforge.net":            "SourceForge",
-	"git.code.sf.net":            "SourceForge",
-	"bitbucket.org":              "Bitbucket",
-	"code.google.com":            "Google Code",
-	"sr.ht":                      "sourcehut",
-	"metacpan.org":               "CPAN",
-	"crates.io":                  "crates.io",
-	"hub.docker.com":             "Docker Hub",
-	"package.elm-lang.org":       "Elm Packages",
-	"hackage.haskell.org":        "Hackage",
-	"hex.pm":                     "Hex",
-	"mvnrepository.com":          "Maven",
-	"npmjs.com":                  "npm",
-	"nuget.org":                  "NuGet",
-	"opam.ocaml.org":             "opam",
-	"packagist.org":              "Packagist",
-	"pkg.go.dev":                 "pkg.go.dev",
-	"pypi.org":                   "PyPI",
-	"rubygems.org":               "RubyGems",
-	"en.wikipedia.org":           "Wikipedia",
-	"esolangs.org":               "Esolang",
-	"progopedia.com":             "Progopedia",
-	"stackoverflow.com":          "Stack Overflow",
-	"codegolf.stackexchange.com": "Code Golf",
-	"codewars.com":               "Codewars",
-	"projecteuler.net":           "Project Euler",
-	"rosettacode.org":            "Rosetta Code",
-	"adventofcode.com":           "Advent of Code",
-	"yukicoder.me":               "yukicoder",
-	"spoj.com":                   "Sphere Online Judge",
-	"acmicpc.net":                "Baekjoon Online Judge",
-	"help.acmicpc.net":           "Baekjoon Online Judge",
-	"code.activestate.com":       "ActiveState Code",
-	"pastebin.com":               "Pastebin",
-	"whitespace.pastebin.com":    "Pastebin",
-	"ideone.com":                 "Ideone",
-	"drive.google.com":           "Google Drive",
-	"compsoc.dur.ac.uk":          "Durham CompSoc",
-	"news.ycombinator.com":       "Hacker News",
-	"slashdot.org":               "Slashdot",
-	"twitter.com":                "Twitter",
-	"what.thedailywtf.com":       "What the Daily WTF?",
+	"github.com":                   "GitHub",
+	"gist.github.com":              "GitHub Gist",
+	"gitlab.com":                   "GitLab",
+	"sourceforge.net":              "SourceForge",
+	"git.code.sf.net":              "SourceForge",
+	"bitbucket.org":                "Bitbucket",
+	"code.google.com":              "Google Code",
+	"googlecode.com":               "Google Code",
+	"sr.ht":                        "sourcehut",
+	"softwareheritage.org":         "Software Heritage",
+	"archive.softwareheritage.org": "Software Heritage archive",
+	"metacpan.org":                 "CPAN",
+	"crates.io":                    "crates.io",
+	"hub.docker.com":               "Docker Hub",
+	"package.elm-lang.org":         "Elm Packages",
+	"hackage.haskell.org":          "Hackage",
+	"hex.pm":                       "Hex",
+	"mvnrepository.com":            "Maven",
+	"npmjs.com":                    "npm",
+	"nuget.org":                    "NuGet",
+	"opam.ocaml.org":               "opam",
+	"packagist.org":                "Packagist",
+	"pkg.go.dev":                   "pkg.go.dev",
+	"pypi.org":                     "PyPI",
+	"rubygems.org":                 "RubyGems",
+	"en.wikipedia.org":             "Wikipedia",
+	"esolangs.org":                 "Esolang",
+	"progopedia.com":               "Progopedia",
+	"stackoverflow.com":            "Stack Overflow",
+	"codegolf.stackexchange.com":   "Code Golf",
+	"codewars.com":                 "Codewars",
+	"projecteuler.net":             "Project Euler",
+	"rosettacode.org":              "Rosetta Code",
+	"adventofcode.com":             "Advent of Code",
+	"yukicoder.me":                 "yukicoder",
+	"spoj.com":                     "Sphere Online Judge",
+	"acmicpc.net":                  "Baekjoon Online Judge",
+	"help.acmicpc.net":             "Baekjoon Online Judge",
+	"code.activestate.com":         "ActiveState Code",
+	"pastebin.com":                 "Pastebin",
+	"whitespace.pastebin.com":      "Pastebin",
+	"ideone.com":                   "Ideone",
+	"drive.google.com":             "Google Drive",
+	"compsoc.dur.ac.uk":            "Durham CompSoc",
+	"news.ycombinator.com":         "Hacker News",
+	"slashdot.org":                 "Slashdot",
+	"twitter.com":                  "Twitter",
+	"what.thedailywtf.com":         "What the Daily WTF?",
 }
 
 func GetURLLabel(rawURL string) (string, error) {
@@ -557,7 +560,8 @@ func GetURLLabel(rawURL string) (string, error) {
 	if err != nil {
 		return "", err
 	}
-	if u.Hostname() == "web.archive.org" && strings.HasPrefix(u.Path, "/web/") {
+	host := u.Hostname()
+	if host == "web.archive.org" && strings.HasPrefix(u.Path, "/web/") {
 		path := strings.TrimPrefix(u.Path, "/web/")
 		if i := strings.IndexByte(path, '/'); i != -1 {
 			label, err := GetURLLabel(path[i+1:])
@@ -567,24 +571,37 @@ func GetURLLabel(rawURL string) (string, error) {
 			return label + " (archive)", nil
 		}
 	}
-	host := u.Hostname()
-	if i := strings.IndexByte(host, '.'); i != -1 {
-		switch host[:i] {
-		case "www", "www2":
-			host = host[i+1:]
+	query := u.Query()
+	if host == "archive.softwareheritage.org" && query.Has("origin_url") {
+		label, err := GetURLLabel(query.Get("origin_url"))
+		if err != nil {
+			return "", err
 		}
+		return label + " (Software Heritage archive)", nil
+	}
+	if strings.HasSuffix(host, ".googlecode.com") {
+		return "Google Code", nil
+	}
+	if host == "code.google.com" && strings.HasPrefix(u.Path, "/archive/") {
+		return "Google Code Archive", nil
 	}
 	if host == "compsoc.dur.ac.uk" && strings.HasPrefix(u.Path, "/archives/whitespace/") {
 		return "Mailing list", nil
-	}
-	if subreddit, ok := pathTrimPrefix("reddit.com", "/r/", host, u.Path); ok {
-		return "r/" + subreddit, nil
 	}
 	if site, ok := pathTrimPrefix("sites.google.com", "/site/", host, u.Path); ok {
 		return site + " Google Site", nil
 	}
 	if host == "docs.google.com" && strings.HasPrefix(u.Path, "/presentation/") {
 		return "Google Slides", nil
+	}
+	if i := strings.IndexByte(host, '.'); i != -1 {
+		switch host[:i] {
+		case "www", "www2":
+			host = host[i+1:]
+		}
+	}
+	if subreddit, ok := pathTrimPrefix("reddit.com", "/r/", host, u.Path); ok {
+		return "r/" + subreddit, nil
 	}
 	if label, ok := domainLabels[host]; ok {
 		return label, nil

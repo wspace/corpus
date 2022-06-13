@@ -123,6 +123,7 @@ Building status of individual executables:
 - ⚠️ idris/edwinb-ws-idr/wspace: `idris --build wspace.ipkg` Needs changes for latest Idris
 - java/abhijitsharma/target/whitespace-1.0.jar: `sed -i '' 's/>1.6</>1.7</' pom.xml && mvn package`
 - ⚠️ java/azige/target/whitespace-interpreter-0.4.jar: `mvn package` org.apache.commons.cli is not packaged in jar
+- ❌ java/bearice-grassmudhorse
 - ❌ java/brumbeere-whitespace4j
 - ❌ java/brunokim
 - java/eia/src/whitespace/whitespace.class: `javac whitespace/whitespace.java`

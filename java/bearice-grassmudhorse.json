@@ -1,0 +1,46 @@
+{
+  "id": "java/bearice-grassmudhorse",
+  "name": "GrassMudHorse",
+  "authors": ["Bearice Ren", "jcj1988"],
+  "license": "LGPL-3.0-or-later",
+  "languages": ["Java", "Erlang"],
+  "tags": ["interpreter", "mapping", "programs"],
+  "date": "2009-03-25 18:20:33 +0000",
+  "spec_version": "0.3",
+  "source": [
+    "https://github.com/google-code-export/grass-mud-horse",
+    "https://archive.softwareheritage.org/browse/origin/directory/?origin_url=http://grass-mud-horse.googlecode.com/svn/",
+    "https://web.archive.org/web/20160114185408/https://code.google.com/p/grass-mud-horse/",
+    "https://web.archive.org/web/20210624084916/https://code.google.com/archive/p/grass-mud-horse/"
+  ],
+  "assembly": {
+    "mnemonics": {
+      "push": ["S_PUSH"],
+      "dup": ["S_DUP"],
+      "copy": ["S_COPY"],
+      "swap": ["S_SWAP"],
+      "drop": ["S_POP"],
+      "slide": ["S_SLIDE"],
+      "add": ["A_ADD"],
+      "sub": ["A_SUB"],
+      "mul": ["A_MUL"],
+      "div": ["A_DIV"],
+      "mod": ["A_MOD"],
+      "store": ["H_PUT"],
+      "retrieve": ["H_GET"],
+      "label": ["F_MARK"],
+      "call": ["F_CALL"],
+      "jmp": ["F_JMP"],
+      "jz": ["F_JZ"],
+      "jn": ["F_JNEG"],
+      "ret": ["F_RET"],
+      "end": ["F_END"],
+      "printc": ["O_CHR"],
+      "printi": ["O_INT"],
+      "readc": ["I_CHR"],
+      "readi": ["I_INT"]
+    },
+    "usage": ["enum"]
+  },
+  "todo": "Include wiki from the Software Heritage archive in the repo"
+}
