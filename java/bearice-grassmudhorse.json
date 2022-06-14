@@ -8,39 +8,93 @@
   "date": "2009-03-25 18:20:33 +0000",
   "spec_version": "0.3",
   "source": [
+    "https://github.com/wspace/bearice-grassmudhorse",
     "https://github.com/google-code-export/grass-mud-horse",
     "https://archive.softwareheritage.org/browse/origin/directory/?origin_url=http://grass-mud-horse.googlecode.com/svn/",
     "https://web.archive.org/web/20160114185408/https://code.google.com/p/grass-mud-horse/",
     "https://web.archive.org/web/20210624084916/https://code.google.com/archive/p/grass-mud-horse/"
   ],
+  "whitespace": {
+    "nonstandard": [
+      {
+        "name": "end2",
+        "seq": "河蟹",
+        "desc": "Alternate syntax for `end`. The characters are river and crab."
+      }
+    ],
+    "extension": "ws"
+  },
   "assembly": {
     "mnemonics": {
-      "push": ["S_PUSH"],
-      "dup": ["S_DUP"],
-      "copy": ["S_COPY"],
-      "swap": ["S_SWAP"],
-      "drop": ["S_POP"],
-      "slide": ["S_SLIDE"],
-      "add": ["A_ADD"],
-      "sub": ["A_SUB"],
-      "mul": ["A_MUL"],
-      "div": ["A_DIV"],
-      "mod": ["A_MOD"],
-      "store": ["H_PUT"],
-      "retrieve": ["H_GET"],
-      "label": ["F_MARK"],
-      "call": ["F_CALL"],
-      "jmp": ["F_JMP"],
-      "jz": ["F_JZ"],
-      "jn": ["F_JNEG"],
-      "ret": ["F_RET"],
-      "end": ["F_END"],
-      "printc": ["O_CHR"],
-      "printi": ["O_INT"],
-      "readc": ["I_CHR"],
-      "readi": ["I_INT"]
+      "push": ["S_PUSH", "PUSH", "push"],
+      "dup": ["S_DUP", "DUP", "dup"],
+      "copy": ["S_COPY", "COPY", "copy"],
+      "swap": ["S_SWAP", "SWAP", "swap"],
+      "drop": ["S_POP", "POP", "pop"],
+      "slide": ["S_SLIDE", "SLID", "slide"],
+      "add": ["A_ADD", "ADD", "add"],
+      "sub": ["A_SUB", "SUB", "sub"],
+      "mul": ["A_MUL", "MUL", "mul"],
+      "div": ["A_DIV", "DIV", "div"],
+      "mod": ["A_MOD", "MOD", "mod"],
+      "store": ["H_PUT", "SET", "set"],
+      "retrieve": ["H_GET", "LOAD", "load"],
+      "label": ["F_MARK", "DEF", "defun"],
+      "call": ["F_CALL", "CALL", "call"],
+      "jmp": ["F_JMP", "JMP", "jmp"],
+      "jz": ["F_JZ", "JZ", "jz"],
+      "jn": ["F_JNEG", "JN", "jn"],
+      "ret": ["F_RET", "RET", "ret"],
+      "end": ["F_END", "EXIT", "exit"],
+      "printc": ["O_CHR", "OCHR", "ochr"],
+      "printi": ["O_INT", "OINT", "oint"],
+      "readc": ["I_CHR", "ICHR", "ichr"],
+      "readi": ["I_INT", "IINT", "iint"]
     },
-    "usage": ["enum"]
+    "usage": ["enum"],
+    "notes": "Enum variants in src/cn/icybear/GrassMudHorse/OpCode.java, erlang/grass_mud_horse.hrl, and erlang/grass_mud_horse.erl, respectively"
   },
+  "mappings": [
+    {
+      "space": "草",
+      "tab": "泥",
+      "lf": "马",
+      "extension": "gmh",
+      "notes": "The characters are grass, mud, and horse, respectively"
+    }
+  ],
+  "programs": [
+    { "path": "calc.gmh", "aux": ["calc.ws"] },
+    { "path": "fibonacci.gmh", "aux": ["fibonacci.ws"] },
+    { "path": "hworld.gmh", "aux": ["hworld.ws"] },
+    { "path": "name.gmh", "aux": ["name.ws"] },
+    { "path": "test.gmh" }
+  ],
+  "commands": [
+    {
+      "type": "interpreter",
+      "bin": "bin/cn/icybear/GrassMudHorse/AlpacaVM.class",
+      "usage": "java -cp bin cn.icybear.GrassMudHorse.AlpacaVM <gmh_file>"
+    },
+    {
+      "bin": "bin/cn/icybear/GrassMudHorse/JOTCompiler.class",
+      "usage": "java -cp bin cn.icybear.GrassMudHorse.JOTCompiler <gmh_file> [<output_file>]",
+      "output": "<output_file> or stdout"
+    },
+    {
+      "type": "mapping",
+      "bin": "bin/cn/icybear/GrassMudHorse/WS2GMH.class",
+      "usage": "java -cp bin cn.icybear.GrassMudHorse.WS2GMH <ws_file> [<gmh_file>]",
+      "output": "<gmh_file> or <ws_file:replace(.ws$,.gmh)>"
+    },
+    {
+      "type": "interpreter",
+      "bin": "erlang/grass_mud_horse.beam",
+      "build": "cd erlang && erlc grass_mud_horse.erl",
+      "usage": "cd erlang && erl -noshell -s grass_mud_horse compile_run <file> -s init stop",
+      "input": "<file>",
+      "output": "<stdout>"
+    }
+  ],
   "todo": "Include wiki from the Software Heritage archive in the repo"
 }

@@ -268,7 +268,7 @@
 	url = https://github.com/azige/whitespace-interpreter
 [submodule "java/bearice-grassmudhorse"]
 	path = java/bearice-grassmudhorse
-	url = https://github.com/google-code-export/grass-mud-horse
+	url = https://github.com/wspace/bearice-grassmudhorse
 [submodule "java/brumbeere-whitespace4j"]
 	path = java/brumbeere-whitespace4j
 	url = https://github.com/Brumbeere/Whitespace4j

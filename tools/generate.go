@@ -118,6 +118,7 @@ type Project struct {
 		BinaryNumbers    *bool    `json:"binary_numbers,omitempty"`
 		Usage            []string `json:"usage,omitempty"`
 		Extension        *string  `json:"extension,omitempty"`
+		Notes            string   `json:"notes,omitempty"`
 	} `json:"assembly,omitempty"`
 	Mappings []struct {
 		Space          string `json:"space"`
