@@ -1,4 +1,4 @@
-FROM alpine as builder
+FROM alpine AS builder
 
 RUN apk add git make g++
 RUN git clone https://github.com/andrewarchi/respace
@@ -6,7 +6,7 @@ WORKDIR /respace
 RUN make test
 RUN make LDFLAGS=-static
 
-FROM scratch as runner
+FROM scratch
 
 COPY --from=builder /respace/respace /
 ENTRYPOINT ["/respace"]

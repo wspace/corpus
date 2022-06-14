@@ -1,4 +1,4 @@
-FROM ubuntu as builder
+FROM ubuntu AS builder
 
 RUN apt-get update
 RUN apt-get install -y wget git make gcc

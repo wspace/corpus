@@ -1,4 +1,4 @@
-FROM ocaml/opam as builder
+FROM ocaml/opam AS builder
 
 USER opam
 RUN opam install dune core ounit2
@@ -7,7 +7,7 @@ RUN git clone https://github.com/progbits/blank
 WORKDIR /home/opam/blank
 RUN eval $(opam env) && dune build
 
-FROM scratch as runner
+FROM scratch
 
 COPY --from=builder /home/opam/blank/_build/default/blank.exe /
 ENTRYPOINT ["/blank.exe"]

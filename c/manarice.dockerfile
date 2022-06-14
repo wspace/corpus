@@ -1,4 +1,4 @@
-FROM alpine as builder
+FROM alpine AS builder
 
 RUN apk add git make gcc musl-dev
 WORKDIR /utils
@@ -9,7 +9,7 @@ RUN make
 WORKDIR /utils/whitespace
 RUN make
 
-FROM scratch as runner
+FROM scratch
 
 COPY --from=builder /utils/whitespace/lwsvm /
 COPY --from=builder /utils/whitespace/lwsa /

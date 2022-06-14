@@ -1,4 +1,4 @@
-FROM alpine as builder
+FROM alpine AS builder
 
 RUN apk add git cmake make gcc g++ readline-dev
 RUN git clone https://github.com/wspace/akers-lolcode lolcode
@@ -8,7 +8,7 @@ RUN cmake .
 RUN make
 # RUN ctest
 
-FROM alpine as runner
+FROM alpine
 
 RUN apk add readline-dev
 WORKDIR /lolcode

@@ -1,6 +1,6 @@
-FROM wspace-corpus/rust/censoredusername-whitespacers as whitespacers
+FROM wspace-corpus/rust/censoredusername-whitespacers AS whitespacers
 
-FROM alpine as builder
+FROM alpine AS builder
 
 RUN apk add git make bash coreutils
 COPY --from=whitespacers /wsc /usr/local/bin/

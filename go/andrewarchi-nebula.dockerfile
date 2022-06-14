@@ -1,4 +1,4 @@
-FROM golang:1.18 as builder
+FROM golang:1.18 AS builder
 
 WORKDIR /
 RUN git clone https://github.com/andrewarchi/nebula
@@ -8,7 +8,7 @@ RUN go mod init github.com/andrewarchi/nebula
 RUN go mod tidy
 RUN go build
 
-FROM scratch as runner
+FROM scratch
 
 COPY --from=builder /nebula/nebula /
 ENTRYPOINT ["/nebula"]

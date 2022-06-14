@@ -39,7 +39,7 @@ func main() {
 	has_build:
 
 		dw.Reset()
-		dw.Write("FROM alpine as builder")
+		dw.Write("FROM alpine AS builder")
 		dw.Write("")
 		dw.Run("apk add git")
 
@@ -78,7 +78,7 @@ func main() {
 
 		if len(p.Commands) != 0 {
 			dw.Write("")
-			dw.Write("FROM scratch as runner")
+			dw.Write("FROM scratch")
 			dw.Write("")
 			entrypoint := ""
 			for _, cmd := range p.Commands {

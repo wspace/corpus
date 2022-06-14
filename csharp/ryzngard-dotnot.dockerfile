@@ -1,4 +1,4 @@
-FROM mono as builder
+FROM mono AS builder
 
 RUN apt-get update
 RUN apt-get install -y git

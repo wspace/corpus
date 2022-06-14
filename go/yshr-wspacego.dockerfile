@@ -1,4 +1,4 @@
-FROM golang:1.18 as builder
+FROM golang:1.18 AS builder
 
 WORKDIR /
 RUN git clone https://github.com/135yshr/wspacego
@@ -8,7 +8,7 @@ RUN go mod tidy
 # RUN go test ./...
 RUN go build
 
-FROM scratch as runner
+FROM scratch
 
 COPY --from=builder /wspacego/wspacego /
 ENTRYPOINT ["/wspacego"]
