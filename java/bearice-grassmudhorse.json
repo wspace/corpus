@@ -4,12 +4,13 @@
   "authors": ["Bearice Ren", "jcj1988"],
   "license": "LGPL-3.0-or-later",
   "languages": ["Java", "Erlang"],
-  "tags": ["interpreter", "mapping", "programs"],
+  "tags": ["mapping", "interpreter", "disassembler", "programs"],
   "date": "2009-03-25 18:20:33 +0000",
   "spec_version": "0.3",
   "source": [
     "https://github.com/wspace/bearice-grassmudhorse",
     "https://github.com/google-code-export/grass-mud-horse",
+    "https://github.com/charlestian/grass-mud-horse",
     "https://archive.softwareheritage.org/browse/origin/directory/?origin_url=http://grass-mud-horse.googlecode.com/svn/",
     "https://web.archive.org/web/20160114185408/https://code.google.com/p/grass-mud-horse/",
     "https://web.archive.org/web/20210624084916/https://code.google.com/archive/p/grass-mud-horse/"
@@ -51,8 +52,10 @@
       "readc": ["I_CHR", "ICHR", "ichr"],
       "readi": ["I_INT", "IINT", "iint"]
     },
-    "usage": ["enum"],
-    "notes": "Enum variants in src/cn/icybear/GrassMudHorse/OpCode.java, erlang/grass_mud_horse.hrl, and erlang/grass_mud_horse.erl, respectively"
+    "indentation": "",
+    "label_indentation": "",
+    "usage": ["disassembler", "enum"],
+    "notes": "Enum variants in src/cn/icybear/GrassMudHorse/OpCode.java, erlang/grass_mud_horse.hrl, and erlang/grass_mud_horse.erl, respectively. The OpCode variants are printed by JOTCompiler disassembly."
   },
   "mappings": [
     {
@@ -77,6 +80,7 @@
       "usage": "java -cp bin cn.icybear.GrassMudHorse.AlpacaVM <gmh_file>"
     },
     {
+      "type": "disassembler",
       "bin": "bin/cn/icybear/GrassMudHorse/JOTCompiler.class",
       "usage": "java -cp bin cn.icybear.GrassMudHorse.JOTCompiler <gmh_file> [<output_file>]",
       "output": "<output_file> or stdout"
@@ -90,11 +94,10 @@
     {
       "type": "interpreter",
       "bin": "erlang/grass_mud_horse.beam",
-      "build": "cd erlang && erlc grass_mud_horse.erl",
-      "usage": "cd erlang && erl -noshell -s grass_mud_horse compile_run <file> -s init stop",
+      "usage": "erl -noshell -s grass_mud_horse compile_run <file> -s init stop",
       "input": "<file>",
       "output": "<stdout>"
     }
   ],
-  "todo": "Include wiki from the Software Heritage archive in the repo"
+  "todo": "Include wiki from the Software Heritage archive and commits from the charlestian fork in the repo"
 }
