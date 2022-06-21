@@ -3,6 +3,7 @@ package main
 import (
 	"fmt"
 	"os"
+	"os/exec"
 	"regexp"
 
 	"github.com/wspace/corpus/tools"
@@ -19,18 +20,23 @@ func main() {
 		if p.ID == "" || len(p.Source) == 0 {
 			continue
 		}
-		if _, err := os.Stat(p.ID); err == nil {
-			continue
-		}
-
-		repo := getGitURL(p.Source[0])
+		repo, branch := getGitURL(p.Source[0])
 		if repo == "" {
 			badURLs = append(badURLs, p)
 			continue
 		}
+		if _, err := os.Stat(p.ID); err == nil {
+			continue
+		}
 
-		fmt.Printf("git submodule add %s %s\n", repo, p.ID)
-		cmd := execabs.Command("git", "submodule", "add", repo, p.ID)
+		var cmd *exec.Cmd
+		if branch != "" {
+			fmt.Printf("git submodule add -b %s %s %s\n", branch, repo, p.ID)
+			cmd = execabs.Command("git", "submodule", "add", "-b", branch, repo, p.ID)
+		} else {
+			fmt.Printf("git submodule add %s %s\n", repo, p.ID)
+			cmd = execabs.Command("git", "submodule", "add", repo, p.ID)
+		}
 		cmd.Stdout = os.Stdout
 		cmd.Stderr = os.Stderr
 		try(cmd.Run())
@@ -49,18 +55,30 @@ func main() {
 }
 
 var (
-	github    = regexp.MustCompile(`^https://(?:gist\.)?github\.com/[^/]+/[^/]+$`)
-	gitlab    = regexp.MustCompile(`^https://gitlab\.com/[^/]+/[^/]+$`)
-	bitbucket = regexp.MustCompile(`^https://bitbucket\.org/[^/]+/[^/]+$`)
+	github      = regexp.MustCompile(`^(https://github\.com/[^/]+/[^/]+)(?:/tree/([^/]+))?$`)
+	githubGist  = regexp.MustCompile(`^https://gist\.github\.com/[^/]+/[^/]+$`)
+	gitlab      = regexp.MustCompile(`^(https://gitlab\.com/[^/]+/[^/]+)(?:/-/tree/([^/]+))?$`)
+	bitbucket   = regexp.MustCompile(`^(https://bitbucket\.org/[^/]+/[^/]+)(?:/src/([^/]+))?$`)
+	sourceForge = regexp.MustCompile(`^https://git\.code\.sf\.net/p/[^/]+/code$`)
 )
 
-func getGitURL(url string) string {
-	if github.MatchString(url) || bitbucket.MatchString(url) {
-		return url
-	} else if gitlab.MatchString(url) {
-		return url + ".git"
+func getGitURL(url string) (gitURL, branch string) {
+	if match := github.FindStringSubmatch(url); match != nil {
+		return match[1], match[2]
 	}
-	return ""
+	if githubGist.MatchString(url) {
+		return url, ""
+	}
+	if match := gitlab.FindStringSubmatch(url); match != nil {
+		return match[1] + ".git", match[2]
+	}
+	if match := bitbucket.FindStringSubmatch(url); match != nil {
+		return match[1], match[2]
+	}
+	if sourceForge.MatchString(url) {
+		return url, ""
+	}
+	return "", ""
 }
 
 func try(err error) {

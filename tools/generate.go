@@ -274,8 +274,7 @@ func SortProjectsByTime(projects []*Project) {
 	sort.Slice(projects, func(i, j int) bool {
 		pi, pj := projects[i], projects[j]
 		ti, tj := pi.Time(), pj.Time()
-		return ((ti.After(tj) || (ti.Equal(tj) && pi.ID < pj.ID)) &&
-			pi.ID != "haskell/edwinb-wspace-0.2") || pj.ID == "haskell/edwinb-wspace-0.2"
+		return ti.After(tj) || (ti.Equal(tj) && pi.ID < pj.ID)
 	})
 }
 
@@ -284,16 +283,15 @@ func SortProjectsByID(projects []*Project) {
 }
 
 func (p *Project) Time() time.Time {
-	if t, err := time.ParseInLocation("2006-01-02 15:04:05 -0700", p.Date, time.UTC); err == nil {
-		return t
-	} else if t, err := time.ParseInLocation("2006-01-02 15:04:05", p.Date, time.UTC); err == nil {
-		return t
-	} else if t, err := time.ParseInLocation("2006-01-02 15:04", p.Date, time.UTC); err == nil {
-		return t
-	} else if t, err := time.ParseInLocation("2006-01-02", p.Date, time.UTC); err == nil {
-		return t
-	} else if t, err := time.ParseInLocation("2006", p.Date, time.UTC); err == nil {
-		return t
+	for _, layout := range []string{
+		"2006-01-02 15:04:05 -0700",
+		"2006-01-02 15:04:05",
+		"2006-01-02 15:04",
+		"2006-01-02",
+	} {
+		if t, err := time.ParseInLocation(layout, p.Date, time.UTC); err == nil {
+			return t
+		}
 	}
 	return time.Time{}
 }

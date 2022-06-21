@@ -113,7 +113,7 @@
         {
           "type": "string",
           "format": "uri",
-          "pattern": "^https://((gist\\.)?github\\.com|gitlab\\.com|bitbucket\\.org)/[^/]+/[^/]+$|^https://sourceforge\\.net/projects/([^/]+)/$"
+          "pattern": "^https://github\\.com/[^/]+/[^/]+(?:/tree/[^/]+)?$|^https://gist\\.github\\.com/[^/]+/[^/]+$|^https://gitlab\\.com/[^/]+/[^/]+(?:/-/tree/[^/]+)?$|^https://bitbucket\\.org/[^/]+/[^/]+(?:/src/[^/]+)?$|^https://git\\.code\\.sf\\.net/p/[^/]+/code$"
         }
       ],
       "minItems": 1,

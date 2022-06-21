@@ -195,7 +195,7 @@ language, including interpreters, compilers, and programs.
 | [whiteplanes](python/nutcrack-whiteplanes.json)    | Takuya Katsurada | Python     | interpreter  | 2016-05-13 | [GitHub](https://github.com/wspace/nutcrack-whiteplanes), [PyPI](https://pypi.org/project/whiteplanes/), [whiteplanes.github.io](https://whiteplanes.github.io/) |
 | [Abyad](python/kareeeeem-abyad.json)               | Mohammed Kareem  | Python     | interpreter, program builder, programs | 2016-05-13 | [GitHub](https://github.com/Kareeeeem/abyad) |
 | [Rust-Whitespace](rust/jayshua.json)               | Jayshua Nelson   | Rust       | interpreter, programs | 2016-05-08 | [GitHub](https://github.com/Jayshua/rust-whitespace) |
-| [Whitespace](haskell/matsubara.json)               | 松原信忠 (MATSUBARA Nobutada) | Haskell | interpreter | 2016-05-06 | [GitHub](https://github.com/matsubara0507/whitespace_has) |
+| [Whitespace](haskell/matsubara.json)               | 松原信忠 (MATSUBARA Nobutada) | Haskell | interpreter | 2016-05-06 | [GitHub](https://github.com/matsubara0507/whitespace_has/tree/develop) |
 | [whitespace-interpreter](javascript/kanra1412.json) | kanra1412       | JavaScript | interpreter  | 2016-04-29 | [GitHub](https://github.com/kanra1412/whitespace-interpreter) |
 | [Exploring Program Languages](whitespace/gregorymorrison-euler.json) | Gregory Morrison | Whitespace | programs | 2016-04-17 | [GitHub](https://github.com/gregorymorrison/euler1) |
 | [whiteplanes.cs](csharp/nutcrack-whiteplanes.json) | Takuya Katsurada | C#         | interpreter  | 2016-04-15 | [NuGet](https://www.nuget.org/packages/whiteplanes/), [GitHub](https://github.com/whiteplanes/whiteplanes.cs) |
