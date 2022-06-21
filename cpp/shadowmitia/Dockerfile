@@ -1,8 +1,8 @@
 FROM alpine AS builder
 
-RUN apk add git bash g++
-RUN git clone https://github.com/ShadowMitia/whitespace
+RUN apk add bash g++
 WORKDIR /whitespace
+COPY whitespace .
 RUN bash build.sh release wspace
 
 FROM scratch

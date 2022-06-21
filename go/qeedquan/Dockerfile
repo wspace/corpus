@@ -1,8 +1,8 @@
 FROM golang:1.18 AS builder
 
 WORKDIR /
-RUN git clone https://github.com/wspace/qeedquan-go whitespace
 WORKDIR /whitespace
+COPY whitespace .
 RUN go mod init github.com/wspace/qeedquan-go
 RUN go build -o whitespace
 

@@ -1,8 +1,8 @@
 FROM alpine AS builder
 
-RUN apk add git make gcc musl-dev
-RUN git clone https://github.com/rispoli/txt2ws
+RUN apk add make gcc musl-dev
 WORKDIR /txt2ws
+COPY txt2ws .
 RUN make
 
 FROM scratch

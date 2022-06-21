@@ -1,8 +1,7 @@
 FROM mono AS builder
 
-RUN apt-get update
-RUN apt-get install -y git
-RUN git clone https://github.com/reflash-blog/WhiteSpaceInterpreter
+WORKDIR /WhiteSpaceInterpreter
+COPY WhiteSpaceInterpreter .
 WORKDIR /WhiteSpaceInterpreter/WhiteSpaceInterpretator
 RUN msbuild /p:Configuration=Debug
 

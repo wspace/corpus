@@ -1,8 +1,8 @@
 FROM alpine AS builder
 
-RUN apk add git gcc g++
-RUN git clone https://github.com/zackeua/Whitespace
+RUN apk add gcc g++
 WORKDIR /Whitespace
+COPY Whitespace .
 RUN gcc -g -Wall -static -o wlang whitespace.c
 RUN g++ -g -Wall -static -o whitespacecpp whitespace.cpp
 

@@ -1,8 +1,8 @@
 FROM alpine AS builder
 
-RUN apk add git make g++
-RUN git clone https://github.com/andrewarchi/respace
+RUN apk add make g++
 WORKDIR /respace
+COPY respace .
 RUN make test
 RUN make LDFLAGS=-static
 

@@ -1,8 +1,8 @@
 FROM golang:1.18 AS builder
 
 WORKDIR /
-RUN git clone https://github.com/andrewarchi/nebula
 WORKDIR /nebula
+COPY nebula .
 # Requires LLVM
 RUN go mod init github.com/andrewarchi/nebula
 RUN go mod tidy

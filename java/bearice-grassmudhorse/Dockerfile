@@ -1,10 +1,9 @@
 FROM alpine
 
-RUN apk add git openjdk8 erlang
-RUN git clone https://github.com/wspace/bearice-grassmudhorse grass-mud-horse
+RUN apk add openjdk8 erlang
 WORKDIR /grass-mud-horse
+COPY grass-mud-horse run.sh ./
 RUN javac -d bin src/cn/icybear/GrassMudHorse/*.java
 RUN erlc erlang/grass_mud_horse.erl
 
-COPY bearice-grassmudhorse.sh run.sh
 ENTRYPOINT ["./run.sh"]

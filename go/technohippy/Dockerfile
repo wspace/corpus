@@ -1,8 +1,8 @@
 FROM golang:1.18 AS builder
 
 WORKDIR /
-RUN git clone https://github.com/wspace/technohippy-go go-whitespace
 WORKDIR /go-whitespace
+COPY go-whitespace .
 RUN go build -o go-whitespace ./src
 
 FROM scratch

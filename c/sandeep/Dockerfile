@@ -1,8 +1,8 @@
 FROM alpine AS builder
 
-RUN apk add git gcc musl-dev
-RUN git clone https://github.com/Sandeep023/Whitespace
+RUN apk add gcc musl-dev
 WORKDIR /Whitespace
+COPY Whitespace .
 RUN gcc -O3 -Wall -static -o white y.tab.c lex.yy.c
 
 FROM scratch

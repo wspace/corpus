@@ -1,8 +1,8 @@
 FROM golang:1.18 AS builder
 
 WORKDIR /
-RUN git clone https://github.com/pocke/gows
 WORKDIR /gows
+COPY gows .
 RUN go mod init github.com/pocke/gows
 RUN go mod tidy
 RUN go build

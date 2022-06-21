@@ -1,8 +1,8 @@
 FROM alpine AS builder
 
-RUN apk add git make gcc g++
-RUN git clone https://github.com/wspace/ssiegl-wsdebug wsdebug
+RUN apk add make gcc g++
 WORKDIR /wsdebug
+COPY wsdebug .
 RUN ./configure
 RUN make
 

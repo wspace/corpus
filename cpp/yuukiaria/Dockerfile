@@ -1,10 +1,10 @@
 FROM alpine AS builder
 
-RUN apk add git make g++
-RUN git clone https://github.com/YuukiARIA/ws-interpreter
-WORKDIR /ws-interpreter/src
-RUN mkdir ../bin
-RUN make TARGET=../bin/ws CXX='g++ -static'
+RUN apk add make g++
+WORKDIR /ws-interpreter
+COPY ws-interpreter .
+RUN mkdir bin
+RUN make -C src TARGET=../bin/ws CXX='g++ -static'
 
 FROM scratch
 

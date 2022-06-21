@@ -1,8 +1,8 @@
 FROM alpine AS builder
 
-RUN apk add git make crystal
-RUN git clone https://github.com/collidedscope/spiceweight
+RUN apk add make crystal
 WORKDIR /spiceweight
+COPY spiceweight .
 RUN make
 
 FROM scratch

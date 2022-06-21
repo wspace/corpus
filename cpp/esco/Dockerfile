@@ -1,8 +1,8 @@
 FROM alpine AS builder
 
-RUN apk add git make g++ gmp-dev
-RUN git clone https://git.code.sf.net/p/esco/code esco
+RUN apk add make g++ gmp-dev
 WORKDIR /esco
+COPY esco .
 RUN ./configure && make
 
 FROM scratch

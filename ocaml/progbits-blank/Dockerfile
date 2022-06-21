@@ -2,8 +2,7 @@ FROM ocaml/opam AS builder
 
 USER opam
 RUN opam install dune core ounit2
-WORKDIR /home/opam
-RUN git clone https://github.com/progbits/blank
+COPY --chown=opam blank /home/opam/blank
 WORKDIR /home/opam/blank
 RUN eval $(opam env) && dune build
 

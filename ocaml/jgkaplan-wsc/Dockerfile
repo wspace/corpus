@@ -2,8 +2,7 @@ FROM ocaml/opam AS builder
 
 USER opam
 RUN opam install ocamlbuild ocamlfind menhir
-WORKDIR /home/opam
-RUN git clone https://github.com/jgkaplan/whitespaceTranspiler
+COPY --chown=opam whitespaceTranspiler /home/opam/whitespaceTranspiler
 WORKDIR /home/opam/whitespaceTranspiler
 RUN eval $(opam env) && make
 

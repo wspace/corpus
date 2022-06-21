@@ -1,5 +1,5 @@
 FROM wspace-corpus/rust AS builder
 
-RUN git clone https://github.com/Luminighty/rustws
 WORKDIR /rustws
+COPY rustws .
 RUN cargo test

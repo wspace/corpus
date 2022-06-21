@@ -1,8 +1,8 @@
 FROM alpine AS builder
 
-RUN apk add git make gcc musl-dev flex
-RUN git clone https://github.com/wspace/rdebath-c whitespace
+RUN apk add make gcc musl-dev flex
 WORKDIR /whitespace
+COPY whitespace .
 RUN make
 
 FROM scratch

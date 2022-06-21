@@ -1,8 +1,8 @@
 FROM alpine AS builder
 
-RUN apk add git make gcc musl-dev
-RUN git clone https://github.com/wspace/koturn-c Whitespace
+RUN apk add make gcc musl-dev
 WORKDIR /Whitespace
+COPY Whitespace .
 RUN make
 
 FROM scratch

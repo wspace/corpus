@@ -1,11 +1,10 @@
 FROM alpine AS builder
 
-RUN apk add git make gcc musl-dev flex bison
-RUN git clone https://github.com/wspace/remigascou-c whitespace
-WORKDIR /whitespace/dev
-RUN make
-WORKDIR /whitespace/lexxyacc
-RUN make
+RUN apk add make gcc musl-dev flex bison
+WORKDIR /whitespace
+COPY whitespace .
+RUN make -C dev
+RUN make -C lexxyacc
 
 FROM scratch
 

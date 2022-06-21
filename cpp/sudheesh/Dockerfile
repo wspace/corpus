@@ -1,8 +1,8 @@
 FROM alpine AS builder
 
-RUN apk add git g++
-RUN git clone https://github.com/sudheesh4/Whitespace-Interpreter-C-
+RUN apk add g++
 WORKDIR /Whitespace-Interpreter-C-
+COPY Whitespace-Interpreter-C- .
 RUN g++ -O3 -static -o space space.cpp
 
 FROM scratch

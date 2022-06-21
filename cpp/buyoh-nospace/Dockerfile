@@ -1,8 +1,8 @@
 FROM alpine AS builder
 
-RUN apk add git make g++ ruby
-RUN git clone https://github.com/buyoh/nospace
+RUN apk add make g++ ruby
 WORKDIR /nospace
+COPY nospace .
 RUN make release CXXFLAGS='-O3 -static'
 RUN ./test.rb
 

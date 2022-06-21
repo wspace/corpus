@@ -1,8 +1,7 @@
 FROM ocaml/opam AS builder
 
 USER opam
-WORKDIR /home/opam
-RUN git clone https://github.com/steiner26/Whitespace
+COPY --chown=opam Whitespace /home/opam/Whitespace
 WORKDIR /home/opam/Whitespace
 RUN eval $(opam env) && make
 

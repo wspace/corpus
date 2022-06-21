@@ -34,26 +34,21 @@ func main() {
 		dw.Reset()
 		dw.Write("FROM alpine AS builder")
 		dw.Write("")
-		dw.Run("apk add git")
 
 		src := p.Source[0]
 		dir := src[strings.LastIndexByte(src, '/')+1:]
-		clone := "git clone " + src
 		if strings.HasPrefix(src, "https://github.com/wspace/") {
-			origDir := "TODO"
 			if len(p.Source) > 1 {
 				src = strings.TrimRight(p.Source[1], "/")
-				origDir = src[strings.LastIndexByte(src, '/')+1:]
-			}
-			if origDir != dir {
-				clone += " " + origDir
-				dir = origDir
+				dir = src[strings.LastIndexByte(src, '/')+1:]
+			} else {
+				dir = "TODO"
 			}
 		}
-		dw.Run(clone)
 
+		dw.WorkDir("/" + dir)
+		dw.Write("COPY %s .", dir)
 		dir = "/" + dir
-		dw.WorkDir(dir)
 		for _, cmd := range p.Commands {
 			dw.Write("")
 			if cmd.Bin != "" {

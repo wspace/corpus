@@ -1,9 +1,9 @@
 FROM mono AS builder
 
-RUN apt-get update
-RUN apt-get install -y git make flex bison
-RUN git clone https://github.com/nicolasff/spacesharp
+RUN apt-get update && \
+    apt-get install -y make flex bison
 WORKDIR /spacesharp
+COPY spacesharp .
 RUN make MCS=mcs
 
 FROM scratch

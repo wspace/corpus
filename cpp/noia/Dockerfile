@@ -1,8 +1,8 @@
 FROM alpine AS builder
 
-RUN apk add git g++
-RUN git clone https://github.com/noia1/Whitespace-Interpreter
+RUN apk add g++
 WORKDIR /Whitespace-Interpreter
+COPY Whitespace-Interpreter .
 RUN g++ -O3 -Wall -Werror -static -o ws Lexer.cc Parser.cc
 
 FROM scratch

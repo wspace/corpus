@@ -1,9 +1,7 @@
 FROM mono AS builder
 
-RUN apt-get update
-RUN apt-get install -y git
-RUN git clone https://github.com/RoliSoft/Esoteric-Code-Interpreter
 WORKDIR /Esoteric-Code-Interpreter
+COPY Esoteric-Code-Interpreter .
 RUN msbuild /p:Configuration=Debug\;AssemblyName=EsotericCodeInterpreter
 
 FROM scratch

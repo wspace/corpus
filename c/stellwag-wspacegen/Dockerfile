@@ -1,8 +1,8 @@
 FROM alpine AS builder
 
-RUN apk add git make gcc musl-dev
-RUN git clone https://github.com/wspace/stellwag-wspacegen wspacegen
+RUN apk add make gcc musl-dev
 WORKDIR /wspacegen
+COPY wspacegen .
 RUN make
 
 FROM scratch

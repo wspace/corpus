@@ -1,8 +1,8 @@
 FROM alpine AS builder
 
-RUN apk add git gcc musl-dev
-RUN git clone https://github.com/wspace/meth0dz-c whitespace
+RUN apk add gcc musl-dev
 WORKDIR /whitespace
+COPY whitespace .
 RUN gcc -O3 -Wall -static -o whitespace whitespace.c
 
 FROM scratch

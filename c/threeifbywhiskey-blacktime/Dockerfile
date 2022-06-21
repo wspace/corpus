@@ -1,8 +1,8 @@
 FROM alpine AS builder
 
-RUN apk add git make gcc musl-dev
-RUN git clone https://github.com/threeifbywhiskey/blacktime
+RUN apk add make gcc musl-dev
 WORKDIR /blacktime
+COPY blacktime .
 RUN make
 
 FROM scratch

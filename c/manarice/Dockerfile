@@ -1,12 +1,11 @@
 FROM alpine AS builder
 
-RUN apk add git make gcc musl-dev
-WORKDIR /utils
-RUN git clone https://github.com/ManaRice/limelib
-RUN git clone https://github.com/ManaRice/whitespace
+RUN apk add make gcc musl-dev
 WORKDIR /utils/limelib
+COPY limelib .
 RUN make
 WORKDIR /utils/whitespace
+COPY whitespace .
 RUN make
 
 FROM scratch

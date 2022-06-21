@@ -1,8 +1,8 @@
 FROM alpine AS builder
 
-RUN apk add git make gcc musl-dev perl
-RUN git clone https://github.com/wspace/hogelog-c ws
+RUN apk add make gcc musl-dev perl
 WORKDIR /ws
+COPY ws .
 RUN perl parsegen.pl parse.def > gencode.c
 RUN make
 

@@ -1,8 +1,8 @@
 FROM alpine AS builder
 
-RUN apk add git cmake make gcc g++
-RUN git clone https://github.com/D3PSI/whitespace-interpreter
+RUN apk add cmake make gcc g++
 WORKDIR /whitespace-interpreter
+COPY whitespace-interpreter .
 RUN cmake .
 RUN make
 
