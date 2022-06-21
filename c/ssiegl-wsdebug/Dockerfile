@@ -1,10 +1,9 @@
 FROM alpine AS builder
 
-RUN apk add make gcc g++
+RUN apk add make gcc g++ gmp-dev readline-dev
 WORKDIR /wsdebug
 COPY wsdebug .
-RUN ./configure
-RUN make
+RUN ./configure && make
 
 FROM scratch
 
