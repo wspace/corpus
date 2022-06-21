@@ -1,6 +1,5 @@
-PROJECTS = $(filter-out tools/% .% _%, $(wildcard */*.json))
-SUBMODULES = $(PROJECTS:.json=)
-DOCKERFILES = $(wildcard $(PROJECTS:.json=.dockerfile))
+PROJECTS = $(filter-out tools/% .% _%, $(wildcard */*/project.json))
+DOCKERFILES = $(filter-out tools/% .% _%, $(wildcard */Dockerfile */*/Dockerfile))
 GO_TOOLS_PACKAGE = tools/generate.go tools/licenses.go
 
 .PHONY: all

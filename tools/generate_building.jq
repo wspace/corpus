@@ -11,7 +11,7 @@ def fmt:
   if .run_errors!=null then " \(.run_errors | escape)" else "" end;
 
 ([(.[] | select(.build_errors!=null).id),
-    ($dockerfiles | split(" ")[] | sub("\\.dockerfile$"; ""))] |
+    ($dockerfiles | split(" ")[] | sub("/Dockerfile$"; ""))] |
   map({key:.}) | from_entries) as $dockerfiles |
 
 "# Building projects

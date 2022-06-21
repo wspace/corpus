@@ -7,25 +7,18 @@ import (
 	"io/fs"
 	"os"
 	"path"
-	"regexp"
 	"strconv"
 	"strings"
 
 	"github.com/wspace/corpus/tools"
 )
 
-var dockerfileExtRe = regexp.MustCompile(`\.dockerfile$`)
-
 func main() {
 	if len(os.Args) < 2 {
 		fmt.Fprintf(os.Stderr, "usage: %s <file>...", os.Args[0])
 		os.Exit(2)
 	}
-	paths := os.Args[1:]
-	for i, path := range paths {
-		paths[i] = dockerfileExtRe.ReplaceAllLiteralString(path, ".json")
-	}
-	projects, err := tools.ReadProjects(paths)
+	projects, err := tools.ReadProjects(os.Args[1:])
 	try(err)
 	var errs []error
 	dw := NewDockerfileWriter()
@@ -94,7 +87,7 @@ func main() {
 			}
 		}
 
-		try(dw.SaveIfChanged(p.ID + ".dockerfile"))
+		try(dw.SaveIfChanged(p.ID + "/Dockerfile"))
 	}
 	if len(errs) != 0 {
 		for _, err := range errs {

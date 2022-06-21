@@ -1,23 +1,23 @@
 #!/bin/sh -e
 
-dockerfiles=${*:-*/Dockerfile */*.dockerfile}
+dockerfiles=${*:-*/Dockerfile */*/Dockerfile}
 
-echo 'docker build -t wspace-corpus/haskell/edwinb-wspace-0.3 -f haskell/edwinb-wspace-0.3.dockerfile --platform linux/amd64 /var/empty'
+echo 'docker build -q -t wspace-corpus/haskell/edwinb-wspace-0.3 --platform linux/amd64 haskell/edwinb-wspace-0.3'
 echo 'docker run -i -t --rm wspace-corpus/haskell/edwinb-wspace-0.3 hworld.ws'
-echo 'docker build -q -t wspace-corpus/java/bearice-grassmudhorse -f java/bearice-grassmudhorse.dockerfile java'
-echo 'docker run -i -t --rm wspace-corpus/java/bearice-grassmudhorse'
 echo
 
-get_tag() {
-  t="${1%.dockerfile}"
-  t="${t%/Dockerfile}"
-  echo "wspace-corpus/$t"
+get_id() {
+  id="${1%/Dockerfile}"
+  id="${id%/project.json}"
+  echo "${id%/}"
 }
 
 for f in $dockerfiles; do
-  echo "docker build -q -t $(get_tag "$f") -f $f /var/empty"
+  id="$(get_id "$f")"
+  echo "docker build -q -t wspace-corpus/$id $id"
 done
 echo
 for f in $dockerfiles; do
-  echo "docker run -i -t --rm $(get_tag "$f")"
+  id="$(get_id "$f")"
+  echo "docker run -i -t --rm wspace-corpus/$id"
 done

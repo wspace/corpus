@@ -2,18 +2,15 @@
   "emeraldwalk.runonsave": {
     "commands": [
       {
-        "match": "/(tools|\\.vscode)/.+\\.json$|dependencies\\.json$",
+        "match": "\\.json$",
+        "notMatch": "/project\\.json$",
         "cmd": "underscore print -i ${file} -o ${file} && echo >> ${file}"
       },
-      {
-        "match": ".+\\.json$",
-        "notMatch": "/(tools|\\.vscode)/.+\\.json$|dependencies\\.json$",
-        "cmd": "go run tools/format/format.go ${file}"
-      }
+      { "match": "/project\\.json$", "cmd": "go run tools/format/format.go ${file}" }
     ]
   },
   "files.associations": { "*.md.tmpl": "markdown" },
   "git.detectSubmodules": false,
-  "json.schemas": [{ "fileMatch": ["*", "!.vscode/*", "!dependencies.json"], "url": "/tools/project.schema.json" }],
+  "json.schemas": [{ "fileMatch": ["project.json"], "url": "/tools/project.schema.json" }],
   "[markdown]": { "editor.wordWrap": "off" }
 }

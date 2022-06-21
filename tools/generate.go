@@ -6,6 +6,7 @@ import (
 	"fmt"
 	"net/url"
 	"path/filepath"
+	"regexp"
 	"sort"
 	"strings"
 	"time"
@@ -233,12 +234,14 @@ const (
 )
 
 func ReadAllProjects() ([]*Project, error) {
-	paths, err := filepath.Glob("*/*.json")
+	paths, err := filepath.Glob("*/*/project.json")
 	if err != nil {
 		return nil, err
 	}
 	return ReadProjects(paths)
 }
+
+var projectRe = regexp.MustCompile(`/(?:project\.json|Dockerfile)?$`)
 
 func ReadProjects(paths []string) ([]*Project, error) {
 	var projects []*Project
@@ -246,11 +249,12 @@ func ReadProjects(paths []string) ([]*Project, error) {
 		if strings.HasPrefix(project, "tools/") || project[0] == '.' {
 			continue
 		}
+		id := projectRe.ReplaceAllLiteralString(project, "")
 		var p Project
-		if err := jsonutil.DecodeFile(project, &p); err != nil {
+		if err := jsonutil.DecodeFile(id+"/project.json", &p); err != nil {
 			return projects, fmt.Errorf("%s: %w", project, err)
 		}
-		if id := strings.TrimSuffix(project, ".json"); p.ID != "" && p.ID != id {
+		if p.ID != "" && p.ID != id {
 			return projects, fmt.Errorf("%s: ID %q does not match path", project, p.ID)
 		}
 		projects = append(projects, &p)
@@ -265,7 +269,7 @@ func WriteProject(p *Project) error {
 	if err := e.Encode(p); err != nil {
 		return err
 	}
-	cmd := execabs.Command("underscore", "print", "-o", p.ID+".json")
+	cmd := execabs.Command("underscore", "print", "-o", p.ID+"/project.json")
 	cmd.Stdin = &b
 	return cmd.Run()
 }
@@ -424,7 +428,7 @@ func (inst Instruction) String() string {
 }
 
 func RenderProjectTable(b *strings.Builder, projects []*Project) error {
-	padding := []int{50, 16, 10, 12, 10, 0}
+	padding := []int{45, 16, 10, 12, 10, 0}
 	head := []string{"Name", "Authors", "Languages", "Tags", "Date", "Source"}
 	renderRow(b, padding, head, false)
 	b.WriteByte('\n')
@@ -443,7 +447,7 @@ func RenderProjectTable(b *strings.Builder, projects []*Project) error {
 func (p *Project) formatColumns() ([]string, error) {
 	name := p.Name
 	if p.ID != "" {
-		name = formatLink(p.Name, p.ID+".json")
+		name = formatLink(p.Name, p.ID)
 	}
 	date := p.Time().UTC().Format("2006-01-02")
 	links := make([]string, 0, len(p.Source))

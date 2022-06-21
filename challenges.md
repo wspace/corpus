@@ -8,99 +8,99 @@ case of Codewars, interpreters for Whitespace.
 
 ## Advent of Code 2018
 
-- [python/ryndvs-aoc](python/ryndvs-aoc.json)
+- [python/ryndvs-aoc](python/ryndvs-aoc)
 
 ## Advent of Code 2019
 
-- [whitespace/andrewarchi-challenges](whitespace/andrewarchi-challenges.json)
+- [whitespace/andrewarchi-challenges](whitespace/andrewarchi-challenges)
 
 ## Advent of Code 2020
 
-- [whitespace/andrewarchi-challenges](whitespace/andrewarchi-challenges.json)
+- [whitespace/andrewarchi-challenges](whitespace/andrewarchi-challenges)
 
 ## Advent of Code 2021
 
-- [whitespace/alchzh-advent-of-code](whitespace/alchzh-advent-of-code.json)
-- [whitespace/andrewarchi-challenges](whitespace/andrewarchi-challenges.json)
+- [whitespace/alchzh-advent-of-code](whitespace/alchzh-advent-of-code)
+- [whitespace/andrewarchi-challenges](whitespace/andrewarchi-challenges)
 
 ## Cerner 2^5
 
-- [whitespace/bsarthak-cerner](whitespace/bsarthak-cerner.json)
-- [whitespace/davidjkling-cerner](whitespace/davidjkling-cerner.json)
-- [whitespace/lollasravani-cerner](whitespace/lollasravani-cerner.json)
-- [whitespace/rafimo-cerner](whitespace/rafimo-cerner.json)
-- [whitespace/srinandanpai-cerner](whitespace/srinandanpai-cerner.json)
-- [whitespace/truptibaliga-cerner](whitespace/truptibaliga-cerner.json)
+- [whitespace/bsarthak-cerner](whitespace/bsarthak-cerner)
+- [whitespace/davidjkling-cerner](whitespace/davidjkling-cerner)
+- [whitespace/lollasravani-cerner](whitespace/lollasravani-cerner)
+- [whitespace/rafimo-cerner](whitespace/rafimo-cerner)
+- [whitespace/srinandanpai-cerner](whitespace/srinandanpai-cerner)
+- [whitespace/truptibaliga-cerner](whitespace/truptibaliga-cerner)
 
 ## Code Golf
 
-- [javascript/arnauld](javascript/arnauld.json)
-- [whitespace/andrewarchi-challenges](whitespace/andrewarchi-challenges.json)
-- [whitespace/kspalaiologos-codegolf](whitespace/kspalaiologos-codegolf.json)
+- [javascript/arnauld](javascript/arnauld)
+- [whitespace/andrewarchi-challenges](whitespace/andrewarchi-challenges)
+- [whitespace/kspalaiologos-codegolf](whitespace/kspalaiologos-codegolf)
 
 ## Codewars
 
-- [java/pyeroh](java/pyeroh.json)
-- [java/wrotycz](java/wrotycz.json)
-- [javascript/ignovak](javascript/ignovak.json)
-- [javascript/msucorey-codewars](javascript/msucorey-codewars.json)
-- [javascript/namhle-codewars](javascript/namhle-codewars.json)
-- [javascript/syntaqx-puzzles](javascript/syntaqx-puzzles.json)
-- [javascript/therebelrobot](javascript/therebelrobot.json)
-- [javascript/uraza](javascript/uraza.json)
-- [python/dalleng](python/dalleng.json)
-- [python/ericpwilliamson-codewars](python/ericpwilliamson-codewars.json)
-- [python/hearnderek](python/hearnderek.json)
-- [python/hearnderek-codewars](python/hearnderek-codewars.json)
-- [python/maximegoyette](python/maximegoyette.json)
-- [python/molfar-codewars](python/molfar-codewars.json)
-- [python/musflood](python/musflood.json)
-- [python/techiehelper-codewars](python/techiehelper-codewars.json)
-- [python/wawrepo-kata](python/wawrepo-kata.json)
-- [typescript/eduardoborsa-codewars](typescript/eduardoborsa-codewars.json)
-- [typescript/fy0u11](typescript/fy0u11.json)
+- [java/pyeroh](java/pyeroh)
+- [java/wrotycz](java/wrotycz)
+- [javascript/ignovak](javascript/ignovak)
+- [javascript/msucorey-codewars](javascript/msucorey-codewars)
+- [javascript/namhle-codewars](javascript/namhle-codewars)
+- [javascript/syntaqx-puzzles](javascript/syntaqx-puzzles)
+- [javascript/therebelrobot](javascript/therebelrobot)
+- [javascript/uraza](javascript/uraza)
+- [python/dalleng](python/dalleng)
+- [python/ericpwilliamson-codewars](python/ericpwilliamson-codewars)
+- [python/hearnderek](python/hearnderek)
+- [python/hearnderek-codewars](python/hearnderek-codewars)
+- [python/maximegoyette](python/maximegoyette)
+- [python/molfar-codewars](python/molfar-codewars)
+- [python/musflood](python/musflood)
+- [python/techiehelper-codewars](python/techiehelper-codewars)
+- [python/wawrepo-kata](python/wawrepo-kata)
+- [typescript/eduardoborsa-codewars](typescript/eduardoborsa-codewars)
+- [typescript/fy0u11](typescript/fy0u11)
 
 ## Hackergame
 
-- [whitespace/ustclug-hackergame2019](whitespace/ustclug-hackergame2019.json)
+- [whitespace/ustclug-hackergame2019](whitespace/ustclug-hackergame2019)
 
 ## Hacktoberfest 2016
 
-- [whitespace/dcoy-hacktoberfest](whitespace/dcoy-hacktoberfest.json)
+- [whitespace/dcoy-hacktoberfest](whitespace/dcoy-hacktoberfest)
 
 ## Hacktoberfest 2017
 
-- [whitespace/alicewonderland-hacktoberfest](whitespace/alicewonderland-hacktoberfest.json)
-- [whitespace/knightking-hacktoberfest](whitespace/knightking-hacktoberfest.json)
+- [whitespace/alicewonderland-hacktoberfest](whitespace/alicewonderland-hacktoberfest)
+- [whitespace/knightking-hacktoberfest](whitespace/knightking-hacktoberfest)
 
 ## Hacktoberfest 2018
 
-- [whitespace/aniket-hacktoberfest](whitespace/aniket-hacktoberfest.json)
+- [whitespace/aniket-hacktoberfest](whitespace/aniket-hacktoberfest)
 
 ## noxCTF
 
-- [whitespace/rsactf](whitespace/rsactf.json)
+- [whitespace/rsactf](whitespace/rsactf)
 
 ## Project Euler
 
-- [c/threeifbywhiskey-blacktime](c/threeifbywhiskey-blacktime.json)
-- [whitespace/andrewarchi-challenges](whitespace/andrewarchi-challenges.json)
-- [whitespace/gregorymorrison-euler](whitespace/gregorymorrison-euler.json)
-- [whitespace/mercerenies-euler](whitespace/mercerenies-euler.json)
-- [whitespace/samdonow-pelc](whitespace/samdonow-pelc.json)
+- [c/threeifbywhiskey-blacktime](c/threeifbywhiskey-blacktime)
+- [whitespace/andrewarchi-challenges](whitespace/andrewarchi-challenges)
+- [whitespace/gregorymorrison-euler](whitespace/gregorymorrison-euler)
+- [whitespace/mercerenies-euler](whitespace/mercerenies-euler)
+- [whitespace/samdonow-pelc](whitespace/samdonow-pelc)
 
 ## Rosetta Code
 
-- [go/andrewarchi-nebula](go/andrewarchi-nebula.json)
-- [whitespace/andrewarchi-challenges](whitespace/andrewarchi-challenges.json)
+- [go/andrewarchi-nebula](go/andrewarchi-nebula)
+- [whitespace/andrewarchi-challenges](whitespace/andrewarchi-challenges)
 
 ## Sphere Online Judge
 
-- [whitespace/andrewarchi-challenges](whitespace/andrewarchi-challenges.json)
-- [whitespace/jermenkoo-spoj](whitespace/jermenkoo-spoj.json)
-- [whitespace/t3nsor-spoj](whitespace/t3nsor-spoj.json)
+- [whitespace/andrewarchi-challenges](whitespace/andrewarchi-challenges)
+- [whitespace/jermenkoo-spoj](whitespace/jermenkoo-spoj)
+- [whitespace/t3nsor-spoj](whitespace/t3nsor-spoj)
 
 ## yukicoder
 
-- [cpp/buyoh-nospace](cpp/buyoh-nospace.json)
-- [ruby/shimo-yukicoder](ruby/shimo-yukicoder.json)
+- [cpp/buyoh-nospace](cpp/buyoh-nospace)
+- [ruby/shimo-yukicoder](ruby/shimo-yukicoder)

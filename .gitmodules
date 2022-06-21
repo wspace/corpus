@@ -1,74 +1,74 @@
-[submodule "brainfuck/andrewarchi-wsbf"]
-	path = brainfuck/andrewarchi-wsbf
+[submodule "brainfuck/andrewarchi-wsbf/wsbf"]
+	path = brainfuck/andrewarchi-wsbf/wsbf
 	url = https://github.com/andrewarchi/wsbf
-[submodule "c/bvisness"]
-	path = c/bvisness
+[submodule "c/bvisness/whitespace"]
+	path = c/bvisness/whitespace
 	url = https://github.com/bvisness/whitespace
-[submodule "c/cedricschwyter"]
-	path = c/cedricschwyter
+[submodule "c/cedricschwyter/whitespace-interpreter"]
+	path = c/cedricschwyter/whitespace-interpreter
 	url = https://github.com/D3PSI/whitespace-interpreter
-[submodule "c/hogelog"]
-	path = c/hogelog
+[submodule "c/hogelog/ws"]
+	path = c/hogelog/ws
 	url = https://github.com/wspace/hogelog-c
-[submodule "c/koturn"]
-	path = c/koturn
+[submodule "c/koturn/Whitespace"]
+	path = c/koturn/Whitespace
 	url = https://github.com/wspace/koturn-c
-[submodule "c/kspalaiologos-asm2ws"]
-	path = c/kspalaiologos-asm2ws
+[submodule "c/kspalaiologos-asm2ws/asm2ws"]
+	path = c/kspalaiologos-asm2ws/asm2ws
 	url = https://github.com/kspalaiologos/asm2ws
-[submodule "c/manarice"]
-	path = c/manarice
+[submodule "c/manarice/whitespace"]
+	path = c/manarice/whitespace
 	url = https://github.com/ManaRice/whitespace
-[submodule "c/meth0dz"]
-	path = c/meth0dz
+[submodule "c/meth0dz/whitespace"]
+	path = c/meth0dz/whitespace
 	url = https://github.com/wspace/meth0dz-c
-[submodule "c/rdebath"]
-	path = c/rdebath
+[submodule "c/rdebath/whitespace"]
+	path = c/rdebath/whitespace
 	url = https://github.com/wspace/rdebath-c
-[submodule "c/remigascou"]
-	path = c/remigascou
+[submodule "c/remigascou/whitespace"]
+	path = c/remigascou/whitespace
 	url = https://github.com/wspace/remigascou-c
-[submodule "c/rispoli-txt2ws"]
-	path = c/rispoli-txt2ws
+[submodule "c/rispoli-txt2ws/txt2ws"]
+	path = c/rispoli-txt2ws/txt2ws
 	url = https://github.com/rispoli/txt2ws
-[submodule "c/sandeep"]
-	path = c/sandeep
+[submodule "c/sandeep/Whitespace"]
+	path = c/sandeep/Whitespace
 	url = https://github.com/Sandeep023/Whitespace
-[submodule "c/shinh-elvm"]
-	path = c/shinh-elvm
+[submodule "c/shinh-elvm/elvm"]
+	path = c/shinh-elvm/elvm
 	url = https://github.com/shinh/elvm
-[submodule "c/ssiegl-wsdebug"]
-	path = c/ssiegl-wsdebug
+[submodule "c/ssiegl-wsdebug/wsdebug"]
+	path = c/ssiegl-wsdebug/wsdebug
 	url = https://github.com/wspace/ssiegl-wsdebug
-[submodule "c/stellwag-wspacegen"]
-	path = c/stellwag-wspacegen
+[submodule "c/stellwag-wspacegen/wspacegen"]
+	path = c/stellwag-wspacegen/wspacegen
 	url = https://github.com/wspace/stellwag-wspacegen
-[submodule "c/strangepan-i-c-whitespace"]
-	path = c/strangepan-i-c-whitespace
+[submodule "c/strangepan-i-c-whitespace/I_C_Whitespace"]
+	path = c/strangepan-i-c-whitespace/I_C_Whitespace
 	url = https://github.com/StrangePan/I_C_Whitespace
-[submodule "c/subgeniuskitty-vvhitespace"]
-	path = c/subgeniuskitty-vvhitespace
+[submodule "c/subgeniuskitty-vvhitespace/vvhitespace"]
+	path = c/subgeniuskitty-vvhitespace/vvhitespace
 	url = https://github.com/subgeniuskitty/vvhitespace
-[submodule "c/tejaskasetty"]
-	path = c/tejaskasetty
+[submodule "c/tejaskasetty/ws-compiler"]
+	path = c/tejaskasetty/ws-compiler
 	url = https://gitlab.com/tejaskasetty/ws-compiler.git
-[submodule "c/threeifbywhiskey-blacktime"]
-	path = c/threeifbywhiskey-blacktime
+[submodule "c/threeifbywhiskey-blacktime/blacktime"]
+	path = c/threeifbywhiskey-blacktime/blacktime
 	url = https://github.com/threeifbywhiskey/blacktime
-[submodule "c/threeifbywhiskey-satan"]
-	path = c/threeifbywhiskey-satan
+[submodule "c/threeifbywhiskey-satan/satan"]
+	path = c/threeifbywhiskey-satan/satan
 	url = https://github.com/threeifbywhiskey/satan
-[submodule "c/zackeua"]
-	path = c/zackeua
+[submodule "c/zackeua/Whitespace"]
+	path = c/zackeua/Whitespace
 	url = https://github.com/zackeua/Whitespace
-[submodule "clojure/jmesyou-erasure"]
-	path = clojure/jmesyou-erasure
+[submodule "clojure/jmesyou-erasure/erasure"]
+	path = clojure/jmesyou-erasure/erasure
 	url = https://github.com/wspace/jmesyou-erasure
-[submodule "clojure/makenowjust"]
-	path = clojure/makenowjust
+[submodule "clojure/makenowjust/whitespace-clj"]
+	path = clojure/makenowjust/whitespace-clj
 	url = https://github.com/MakeNowJust/whitespace-clj
-[submodule "coffeescript/ehrlichbryan"]
-	path = coffeescript/ehrlichbryan
+[submodule "coffeescript/ehrlichbryan/whitespace-js"]
+	path = coffeescript/ehrlichbryan/whitespace-js
 	url = https://github.com/adotout/whitespace-js
 [submodule "collections/andrewarchi-ws-archive"]
 	path = collections/andrewarchi-ws-archive
@@ -76,862 +76,862 @@
 [submodule "collections/hostilefork-whitespacers"]
 	path = collections/hostilefork-whitespacers
 	url = https://github.com/hostilefork/whitespacers
-[submodule "cpp/abac-whint"]
-	path = cpp/abac-whint
+[submodule "cpp/abac-whint/WHINT"]
+	path = cpp/abac-whint/WHINT
 	url = https://github.com/abac00s/WHINT
-[submodule "cpp/abcsharp"]
-	path = cpp/abcsharp
+[submodule "cpp/abcsharp/Whitespace"]
+	path = cpp/abcsharp/Whitespace
 	url = https://github.com/abcsharp/Whitespace
-[submodule "cpp/andrewarchi-respace"]
-	path = cpp/andrewarchi-respace
+[submodule "cpp/andrewarchi-respace/respace"]
+	path = cpp/andrewarchi-respace/respace
 	url = https://github.com/andrewarchi/respace
-[submodule "cpp/benajmin"]
-	path = cpp/benajmin
+[submodule "cpp/benajmin/whitespace-interpreter"]
+	path = cpp/benajmin/whitespace-interpreter
 	url = https://github.com/benajmin/whitespace-interpreter
-[submodule "cpp/buyoh-nospace"]
-	path = cpp/buyoh-nospace
+[submodule "cpp/buyoh-nospace/nospace"]
+	path = cpp/buyoh-nospace/nospace
 	url = https://github.com/buyoh/nospace
-[submodule "cpp/dpohanlon-wsint"]
-	path = cpp/dpohanlon-wsint
+[submodule "cpp/dpohanlon-wsint/wsInt"]
+	path = cpp/dpohanlon-wsint/wsInt
 	url = https://github.com/wspace/dpohanlon-wsint
-[submodule "cpp/drebelsky-jit"]
-	path = cpp/drebelsky-jit
+[submodule "cpp/drebelsky-jit/whitespace-jit"]
+	path = cpp/drebelsky-jit/whitespace-jit
 	url = https://github.com/drebelsky/whitespace-jit
-[submodule "cpp/esco"]
-	path = cpp/esco
+[submodule "cpp/esco/esco"]
+	path = cpp/esco/esco
 	url = https://git.code.sf.net/p/esco/code
-[submodule "cpp/frmsaul-cupertino"]
-	path = cpp/frmsaul-cupertino
+[submodule "cpp/frmsaul-cupertino/Cupertino-WhiteSpace-Interperter"]
+	path = cpp/frmsaul-cupertino/Cupertino-WhiteSpace-Interperter
 	url = https://github.com/frmsaul/Cupertino-WhiteSpace-Interperter
-[submodule "cpp/kapustaikwas"]
-	path = cpp/kapustaikwas
+[submodule "cpp/kapustaikwas/Whitespace-compiler"]
+	path = cpp/kapustaikwas/Whitespace-compiler
 	url = https://github.com/kapustaikwas27/Whitespace-compiler
-[submodule "cpp/keirua-white"]
-	path = cpp/keirua-white
+[submodule "cpp/keirua-white/whitespace"]
+	path = cpp/keirua-white/whitespace
 	url = https://github.com/Keirua/whitespace
-[submodule "cpp/knmorgan"]
-	path = cpp/knmorgan
+[submodule "cpp/knmorgan/ws"]
+	path = cpp/knmorgan/ws
 	url = https://github.com/knmorgan/ws
-[submodule "cpp/malkiewiczm"]
-	path = cpp/malkiewiczm
+[submodule "cpp/malkiewiczm/whitespace_compiler"]
+	path = cpp/malkiewiczm/whitespace_compiler
 	url = https://github.com/malkiewiczm/whitespace_compiler
-[submodule "cpp/marcellippmann-whitepp"]
-	path = cpp/marcellippmann-whitepp
+[submodule "cpp/marcellippmann-whitepp/Whitepp"]
+	path = cpp/marcellippmann-whitepp/Whitepp
 	url = https://github.com/wspace/marcellippmann-whitepp
-[submodule "cpp/noia"]
-	path = cpp/noia
+[submodule "cpp/noia/Whitespace-Interpreter"]
+	path = cpp/noia/Whitespace-Interpreter
 	url = https://github.com/noia1/Whitespace-Interpreter
-[submodule "cpp/pavelshub"]
-	path = cpp/pavelshub
+[submodule "cpp/pavelshub/wspace"]
+	path = cpp/pavelshub/wspace
 	url = https://github.com/wspace/pavelshub-cpp
-[submodule "cpp/peasley"]
-	path = cpp/peasley
+[submodule "cpp/peasley/whitespace"]
+	path = cpp/peasley/whitespace
 	url = https://github.com/wspace/peasley-cpp
-[submodule "cpp/ricardoluis"]
-	path = cpp/ricardoluis
+[submodule "cpp/ricardoluis/whitespace"]
+	path = cpp/ricardoluis/whitespace
 	url = https://github.com/RicardoLuis0/whitespace
-[submodule "cpp/shadowmitia"]
-	path = cpp/shadowmitia
+[submodule "cpp/shadowmitia/whitespace"]
+	path = cpp/shadowmitia/whitespace
 	url = https://github.com/ShadowMitia/whitespace
-[submodule "cpp/sonicyang-ws-frontend"]
-	path = cpp/sonicyang-ws-frontend
+[submodule "cpp/sonicyang-ws-frontend/ws-frontend"]
+	path = cpp/sonicyang-ws-frontend/ws-frontend
 	url = https://github.com/sonicyang/ws-frontend
-[submodule "cpp/subv-whitespace-llvm"]
-	path = cpp/subv-whitespace-llvm
+[submodule "cpp/subv-whitespace-llvm/Whitespace-LLVM"]
+	path = cpp/subv-whitespace-llvm/Whitespace-LLVM
 	url = https://github.com/Subv/Whitespace-LLVM
-[submodule "cpp/sudheesh"]
-	path = cpp/sudheesh
+[submodule "cpp/sudheesh/Whitespace-Interpreter-C-"]
+	path = cpp/sudheesh/Whitespace-Interpreter-C-
 	url = https://github.com/sudheesh4/Whitespace-Interpreter-C-
-[submodule "cpp/timvandermeij"]
-	path = cpp/timvandermeij
+[submodule "cpp/timvandermeij/whitespace-interpreter"]
+	path = cpp/timvandermeij/whitespace-interpreter
 	url = https://github.com/wspace/timvandermeij-cpp
-[submodule "cpp/tycho-whitespace-llvm"]
-	path = cpp/tycho-whitespace-llvm
+[submodule "cpp/tycho-whitespace-llvm/whitespace-llvm"]
+	path = cpp/tycho-whitespace-llvm/whitespace-llvm
 	url = https://github.com/worktycho/whitespace-llvm
-[submodule "cpp/yuukiaria"]
-	path = cpp/yuukiaria
+[submodule "cpp/yuukiaria/ws-interpreter"]
+	path = cpp/yuukiaria/ws-interpreter
 	url = https://github.com/YuukiARIA/ws-interpreter
-[submodule "crystal/collidedscope-spiceweight"]
-	path = crystal/collidedscope-spiceweight
+[submodule "crystal/collidedscope-spiceweight/spiceweight"]
+	path = crystal/collidedscope-spiceweight/spiceweight
 	url = https://github.com/collidedscope/spiceweight
-[submodule "csharp/denislabrecque"]
-	path = csharp/denislabrecque
+[submodule "csharp/denislabrecque/Whitespace-Interpreter"]
+	path = csharp/denislabrecque/Whitespace-Interpreter
 	url = https://github.com/DenisLabrecque/Whitespace-Interpreter
-[submodule "csharp/jlchntoz"]
-	path = csharp/jlchntoz
+[submodule "csharp/jlchntoz/Whitespace"]
+	path = csharp/jlchntoz/Whitespace
 	url = https://gist.github.com/JLChnToZ/42bade0f3d4b9e671bcedaafe1000c86
-[submodule "csharp/littlebughunter-assembler"]
-	path = csharp/littlebughunter-assembler
+[submodule "csharp/littlebughunter-assembler/WhitespaceAssembler"]
+	path = csharp/littlebughunter-assembler/WhitespaceAssembler
 	url = https://github.com/littleBugHunter/WhitespaceAssembler
-[submodule "csharp/meeees"]
-	path = csharp/meeees
+[submodule "csharp/meeees/Whitespace"]
+	path = csharp/meeees/Whitespace
 	url = https://github.com/wspace/meeees-csharp
-[submodule "csharp/nicolasff-spacesharp"]
-	path = csharp/nicolasff-spacesharp
+[submodule "csharp/nicolasff-spacesharp/spacesharp"]
+	path = csharp/nicolasff-spacesharp/spacesharp
 	url = https://github.com/nicolasff/spacesharp
-[submodule "csharp/north-projectone"]
-	path = csharp/north-projectone
+[submodule "csharp/north-projectone/projectOne"]
+	path = csharp/north-projectone/projectOne
 	url = https://github.com/North15/projectOne
-[submodule "csharp/reflash"]
-	path = csharp/reflash
+[submodule "csharp/reflash/WhiteSpaceInterpreter"]
+	path = csharp/reflash/WhiteSpaceInterpreter
 	url = https://github.com/reflash-blog/WhiteSpaceInterpreter
-[submodule "csharp/rolisoft-esoteric"]
-	path = csharp/rolisoft-esoteric
+[submodule "csharp/rolisoft-esoteric/Esoteric-Code-Interpreter"]
+	path = csharp/rolisoft-esoteric/Esoteric-Code-Interpreter
 	url = https://github.com/RoliSoft/Esoteric-Code-Interpreter
-[submodule "csharp/ryzngard-dotnot"]
-	path = csharp/ryzngard-dotnot
+[submodule "csharp/ryzngard-dotnot/DotNot"]
+	path = csharp/ryzngard-dotnot/DotNot
 	url = https://github.com/ryzngard/DotNot
-[submodule "docker/baekjoon-onlinejudge"]
-	path = docker/baekjoon-onlinejudge
+[submodule "docker/baekjoon-onlinejudge/Dockerfiles"]
+	path = docker/baekjoon-onlinejudge/Dockerfiles
 	url = https://github.com/Baekjoon/Dockerfiles
-[submodule "docker/bensuperpc"]
-	path = docker/bensuperpc
+[submodule "docker/bensuperpc/docker-whitespace"]
+	path = docker/bensuperpc/docker-whitespace
 	url = https://github.com/bensuperpc/docker-whitespace
-[submodule "docker/hakatashi-esolang-box"]
-	path = docker/hakatashi-esolang-box
+[submodule "docker/hakatashi-esolang-box/esolang-box"]
+	path = docker/hakatashi-esolang-box/esolang-box
 	url = https://github.com/hakatashi/esolang-box
-[submodule "elixir/quinnwilton"]
-	path = elixir/quinnwilton
+[submodule "elixir/quinnwilton/elixir-whitespace"]
+	path = elixir/quinnwilton/elixir-whitespace
 	url = https://github.com/QuinnWilton/elixir-whitespace
-[submodule "erlang/derek-mrwhite"]
-	path = erlang/derek-mrwhite
+[submodule "erlang/derek-mrwhite/mrwhite"]
+	path = erlang/derek-mrwhite/mrwhite
 	url = https://github.com/derek121/mrwhite
-[submodule "go/andrewarchi-nebula"]
-	path = go/andrewarchi-nebula
+[submodule "go/andrewarchi-nebula/nebula"]
+	path = go/andrewarchi-nebula/nebula
 	url = https://github.com/andrewarchi/nebula
-[submodule "go/kinu"]
-	path = go/kinu
+[submodule "go/kinu/whitespace"]
+	path = go/kinu/whitespace
 	url = https://github.com/kinu/whitespace
-[submodule "go/pocke-gows"]
-	path = go/pocke-gows
+[submodule "go/pocke-gows/gows"]
+	path = go/pocke-gows/gows
 	url = https://github.com/pocke/gows
-[submodule "go/qeedquan"]
-	path = go/qeedquan
+[submodule "go/qeedquan/whitespace"]
+	path = go/qeedquan/whitespace
 	url = https://github.com/wspace/qeedquan-go
-[submodule "go/sampratt"]
-	path = go/sampratt
+[submodule "go/sampratt/whitespace-go"]
+	path = go/sampratt/whitespace-go
 	url = https://github.com/samuel-pratt/whitespace-go
-[submodule "go/simomu"]
-	path = go/simomu
+[submodule "go/simomu/whitespace_go"]
+	path = go/simomu/whitespace_go
 	url = https://github.com/simomu-github/whitespace_go
-[submodule "go/technohippy"]
-	path = go/technohippy
+[submodule "go/technohippy/go-whitespace"]
+	path = go/technohippy/go-whitespace
 	url = https://github.com/wspace/technohippy-go
-[submodule "go/tempxla-go-wspace"]
-	path = go/tempxla-go-wspace
+[submodule "go/tempxla-go-wspace/go-wspace"]
+	path = go/tempxla-go-wspace/go-wspace
 	url = https://github.com/tempxla/go-wspace
-[submodule "go/yshr-wspacego"]
-	path = go/yshr-wspacego
+[submodule "go/yshr-wspacego/wspacego"]
+	path = go/yshr-wspacego/wspacego
 	url = https://github.com/135yshr/wspacego
-[submodule "haskell/brainbrush-tomato"]
-	path = haskell/brainbrush-tomato
+[submodule "haskell/brainbrush-tomato/Tomato-Programming-Language"]
+	path = haskell/brainbrush-tomato/Tomato-Programming-Language
 	url = https://github.com/brainbush/Tomato-Programming-Language
-[submodule "haskell/ft-spaceman"]
-	path = haskell/ft-spaceman
+[submodule "haskell/ft-spaceman/spaceman"]
+	path = haskell/ft-spaceman/spaceman
 	url = https://gitlab.com/ft/spaceman.git
-[submodule "haskell/haroldl-wspace-0.4"]
-	path = haskell/haroldl-wspace-0.4
+[submodule "haskell/haroldl-wspace-0.4/whitespace-nd"]
+	path = haskell/haroldl-wspace-0.4/whitespace-nd
 	url = https://github.com/haroldl/whitespace-nd
-[submodule "haskell/helvm-helma"]
-	path = haskell/helvm-helma
+[submodule "haskell/helvm-helma/helma"]
+	path = haskell/helvm-helma/helma
 	url = https://github.com/helvm/helma
-[submodule "haskell/helvm-helpa"]
-	path = haskell/helvm-helpa
+[submodule "haskell/helvm-helpa/helpa"]
+	path = haskell/helvm-helpa/helpa
 	url = https://github.com/helvm/helpa
-[submodule "haskell/helvm-wsa"]
-	path = haskell/helvm-wsa
+[submodule "haskell/helvm-wsa/wsa"]
+	path = haskell/helvm-wsa/wsa
 	url = https://github.com/helvm/wsa
-[submodule "haskell/jhmcstanton-marginal"]
-	path = haskell/jhmcstanton-marginal
+[submodule "haskell/jhmcstanton-marginal/marginal"]
+	path = haskell/jhmcstanton-marginal/marginal
 	url = https://github.com/jhmcstanton/marginal
-[submodule "haskell/matsubara"]
-	path = haskell/matsubara
+[submodule "haskell/matsubara/whitespace_has"]
+	path = haskell/matsubara/whitespace_has
 	url = https://github.com/matsubara0507/whitespace_has
 	branch = develop
-[submodule "haskell/soimort-grassmudhorse"]
-	path = haskell/soimort-grassmudhorse
+[submodule "haskell/soimort-grassmudhorse/GrassMudHorse"]
+	path = haskell/soimort-grassmudhorse/GrassMudHorse
 	url = https://github.com/soimort/GrassMudHorse
-[submodule "haskell/takatoh-hws"]
-	path = haskell/takatoh-hws
+[submodule "haskell/takatoh-hws/hws"]
+	path = haskell/takatoh-hws/hws
 	url = https://github.com/takatoh/hws
-[submodule "haskell/tomihisa-visual"]
-	path = haskell/tomihisa-visual
+[submodule "haskell/tomihisa-visual/visualWhiteSpace"]
+	path = haskell/tomihisa-visual/visualWhiteSpace
 	url = https://github.com/tomihisa244/visualWhiteSpace
-[submodule "idris/edwinb-ws-idr"]
-	path = idris/edwinb-ws-idr
+[submodule "idris/edwinb-ws-idr/WS-idr"]
+	path = idris/edwinb-ws-idr/WS-idr
 	url = https://github.com/edwinb/WS-idr
-[submodule "java/abhijitsharma"]
-	path = java/abhijitsharma
+[submodule "java/abhijitsharma/whitespace"]
+	path = java/abhijitsharma/whitespace
 	url = https://github.com/abhijitsharma/whitespace
-[submodule "java/azige"]
-	path = java/azige
+[submodule "java/azige/whitespace-interpreter"]
+	path = java/azige/whitespace-interpreter
 	url = https://github.com/azige/whitespace-interpreter
-[submodule "java/bearice-grassmudhorse"]
-	path = java/bearice-grassmudhorse
+[submodule "java/bearice-grassmudhorse/grass-mud-horse"]
+	path = java/bearice-grassmudhorse/grass-mud-horse
 	url = https://github.com/wspace/bearice-grassmudhorse
-[submodule "java/brumbeere-whitespace4j"]
-	path = java/brumbeere-whitespace4j
+[submodule "java/brumbeere-whitespace4j/Whitespace4j"]
+	path = java/brumbeere-whitespace4j/Whitespace4j
 	url = https://github.com/Brumbeere/Whitespace4j
-[submodule "java/eia"]
-	path = java/eia
+[submodule "java/eia/WhiteSpaceInterpreter"]
+	path = java/eia/WhiteSpaceInterpreter
 	url = https://github.com/wspace/eia-java
-[submodule "java/faurehu"]
-	path = java/faurehu
+[submodule "java/faurehu/whiteSpaceInterpreter"]
+	path = java/faurehu/whiteSpaceInterpreter
 	url = https://github.com/faurehu/whiteSpaceInterpreter
-[submodule "java/kmizu"]
-	path = java/kmizu
+[submodule "java/kmizu/ws_interpreter"]
+	path = java/kmizu/ws_interpreter
 	url = https://github.com/kmizu/ws_interpreter
-[submodule "java/matou-whasm"]
-	path = java/matou-whasm
+[submodule "java/matou-whasm/whasm"]
+	path = java/matou-whasm/whasm
 	url = https://github.com/matou/whasm
-[submodule "java/praveenvaka-coder"]
-	path = java/praveenvaka-coder
+[submodule "java/praveenvaka-coder/whitespace-coder"]
+	path = java/praveenvaka-coder/whitespace-coder
 	url = https://github.com/praveenvaka/whitespace-coder
-[submodule "java/pyeroh"]
-	path = java/pyeroh
+[submodule "java/pyeroh/WhitespaceInterpreter"]
+	path = java/pyeroh/WhitespaceInterpreter
 	url = https://gist.github.com/Pyeroh/1b2903e53d71e0662d105dc0d6aedbdf
-[submodule "java/rahulkp"]
-	path = java/rahulkp
+[submodule "java/rahulkp/WhiteSpace-Interpreter"]
+	path = java/rahulkp/WhiteSpace-Interpreter
 	url = https://github.com/Rahul-KP/WhiteSpace-Interpreter
-[submodule "java/ralucaa-whitespace4j"]
-	path = java/ralucaa-whitespace4j
+[submodule "java/ralucaa-whitespace4j/whitespace4j"]
+	path = java/ralucaa-whitespace4j/whitespace4j
 	url = https://github.com/ralucaa/whitespace4j
-[submodule "java/vyo-kairos"]
-	path = java/vyo-kairos
+[submodule "java/vyo-kairos/kairos"]
+	path = java/vyo-kairos/kairos
 	url = https://github.com/vyo/kairos
-[submodule "java/wrotycz"]
-	path = java/wrotycz
+[submodule "java/wrotycz/whitespace-interpreter"]
+	path = java/wrotycz/whitespace-interpreter
 	url = https://github.com/wrotycz/whitespace-interpreter
-[submodule "java/wysang"]
-	path = java/wysang
+[submodule "java/wysang/Whitespace-Compiler"]
+	path = java/wysang/Whitespace-Compiler
 	url = https://github.com/wspace/wysang-java
-[submodule "java/yawkat"]
-	path = java/yawkat
+[submodule "java/yawkat/Whitespace"]
+	path = java/yawkat/Whitespace
 	url = https://github.com/yawkat/Whitespace
-[submodule "java/yuukiaria-wseditor"]
-	path = java/yuukiaria-wseditor
+[submodule "java/yuukiaria-wseditor/wseditor"]
+	path = java/yuukiaria-wseditor/wseditor
 	url = https://github.com/YuukiARIA/wseditor
-[submodule "javascript/damle-evanescojs"]
-	path = javascript/damle-evanescojs
+[submodule "javascript/damle-evanescojs/EvanescoJS"]
+	path = javascript/damle-evanescojs/EvanescoJS
 	url = https://github.com/AD9000/EvanescoJS
-[submodule "javascript/dexteryy-grassmudmonkey"]
-	path = javascript/dexteryy-grassmudmonkey
+[submodule "javascript/dexteryy-grassmudmonkey/GrassMudMonkey"]
+	path = javascript/dexteryy-grassmudmonkey/GrassMudMonkey
 	url = https://github.com/dexteryy/GrassMudMonkey
-[submodule "javascript/ignovak"]
-	path = javascript/ignovak
+[submodule "javascript/ignovak/whitespace"]
+	path = javascript/ignovak/whitespace
 	url = https://gist.github.com/ignovak/c6173c31207fd6fcbec606411460c73c
-[submodule "javascript/kanra1412"]
-	path = javascript/kanra1412
+[submodule "javascript/kanra1412/whitespace-interpreter"]
+	path = javascript/kanra1412/whitespace-interpreter
 	url = https://github.com/kanra1412/whitespace-interpreter
-[submodule "javascript/kmyk-translater"]
-	path = javascript/kmyk-translater
+[submodule "javascript/kmyk-translater/whitespace-translater"]
+	path = javascript/kmyk-translater/whitespace-translater
 	url = https://github.com/kmyk/whitespace-translater
-[submodule "javascript/kosei"]
-	path = javascript/kosei
+[submodule "javascript/kosei/Whitespace"]
+	path = javascript/kosei/Whitespace
 	url = https://github.com/wspace/kosei-javascript
-[submodule "javascript/loklaan-whitespace-lang"]
-	path = javascript/loklaan-whitespace-lang
+[submodule "javascript/loklaan-whitespace-lang/whitespace-lang"]
+	path = javascript/loklaan-whitespace-lang/whitespace-lang
 	url = https://github.com/loklaan/whitespace-lang
-[submodule "javascript/loklaan-zerowidth-lang"]
-	path = javascript/loklaan-zerowidth-lang
+[submodule "javascript/loklaan-zerowidth-lang/zerowidth-lang"]
+	path = javascript/loklaan-zerowidth-lang/zerowidth-lang
 	url = https://github.com/loklaan/zerowidth-lang
-[submodule "javascript/luilak-ws2js"]
-	path = javascript/luilak-ws2js
+[submodule "javascript/luilak-ws2js/WS2JS"]
+	path = javascript/luilak-ws2js/WS2JS
 	url = https://github.com/Luilak/WS2JS
-[submodule "javascript/macocha-whitespacer"]
-	path = javascript/macocha-whitespacer
+[submodule "javascript/macocha-whitespacer/whitespacer"]
+	path = javascript/macocha-whitespacer/whitespacer
 	url = https://github.com/macocha/whitespacer
-[submodule "javascript/msucorey-codewars"]
-	path = javascript/msucorey-codewars
+[submodule "javascript/msucorey-codewars/codewars"]
+	path = javascript/msucorey-codewars/codewars
 	url = https://github.com/msucorey/codewars
-[submodule "javascript/namhle-codewars"]
-	path = javascript/namhle-codewars
+[submodule "javascript/namhle-codewars/codewars.com"]
+	path = javascript/namhle-codewars/codewars.com
 	url = https://github.com/nam-hle/codewars.com
-[submodule "javascript/naokikp-wsi"]
-	path = javascript/naokikp-wsi
+[submodule "javascript/naokikp-wsi/naokikp.github.io"]
+	path = javascript/naokikp-wsi/naokikp.github.io
 	url = https://github.com/naokikp/naokikp.github.io
-[submodule "javascript/pvdz-significant-whitespace"]
-	path = javascript/pvdz-significant-whitespace
+[submodule "javascript/pvdz-significant-whitespace/SignificantWhitespace"]
+	path = javascript/pvdz-significant-whitespace/SignificantWhitespace
 	url = https://github.com/pvdz/SignificantWhitespace
-[submodule "javascript/rumpl"]
-	path = javascript/rumpl
+[submodule "javascript/rumpl/whitespace"]
+	path = javascript/rumpl/whitespace
 	url = https://github.com/rumpl/whitespace
-[submodule "javascript/susisu"]
-	path = javascript/susisu
+[submodule "javascript/susisu/Whitespace-JS"]
+	path = javascript/susisu/Whitespace-JS
 	url = https://github.com/susisu/Whitespace-JS
-[submodule "javascript/syntaqx-puzzles"]
-	path = javascript/syntaqx-puzzles
+[submodule "javascript/syntaqx-puzzles/puzzles"]
+	path = javascript/syntaqx-puzzles/puzzles
 	url = https://github.com/syntaqx/puzzles
-[submodule "javascript/therebelrobot"]
-	path = javascript/therebelrobot
+[submodule "javascript/therebelrobot/whitespace"]
+	path = javascript/therebelrobot/whitespace
 	url = https://github.com/therebelrobot/whitespace
-[submodule "javascript/tranbrian-generator"]
-	path = javascript/tranbrian-generator
+[submodule "javascript/tranbrian-generator/WhitespaceGenerator"]
+	path = javascript/tranbrian-generator/WhitespaceGenerator
 	url = https://github.com/TranBrian10/WhitespaceGenerator
-[submodule "javascript/uraza"]
-	path = javascript/uraza
+[submodule "javascript/uraza/whitespace-interpreter"]
+	path = javascript/uraza/whitespace-interpreter
 	url = https://github.com/uraza/whitespace-interpreter
-[submodule "javascript/vii5ard-whitelips-ide"]
-	path = javascript/vii5ard-whitelips-ide
+[submodule "javascript/vii5ard-whitelips-ide/whitespace"]
+	path = javascript/vii5ard-whitelips-ide/whitespace
 	url = https://github.com/vii5ard/whitespace
-[submodule "javascript/wdalmut"]
-	path = javascript/wdalmut
+[submodule "javascript/wdalmut/whitespace-lang-compiler"]
+	path = javascript/wdalmut/whitespace-lang-compiler
 	url = https://github.com/wdalmut/whitespace-lang-compiler
-[submodule "jq/andrewarchi-wsjq"]
-	path = jq/andrewarchi-wsjq
+[submodule "jq/andrewarchi-wsjq/wsjq"]
+	path = jq/andrewarchi-wsjq/wsjq
 	url = https://github.com/andrewarchi/wsjq
-[submodule "julia/goropikari-whitespaces"]
-	path = julia/goropikari-whitespaces
+[submodule "julia/goropikari-whitespaces/Whitespaces.jl"]
+	path = julia/goropikari-whitespaces/Whitespaces.jl
 	url = https://github.com/goropikari/Whitespaces.jl
-[submodule "kotlin/ze-space"]
-	path = kotlin/ze-space
+[submodule "kotlin/ze-space/space"]
+	path = kotlin/ze-space/space
 	url = https://github.com/ze/space
-[submodule "lolcode/akers"]
-	path = lolcode/akers
+[submodule "lolcode/akers/lolcode"]
+	path = lolcode/akers/lolcode
 	url = https://github.com/wspace/akers-lolcode
-[submodule "lua/carsonrueber"]
-	path = lua/carsonrueber
+[submodule "lua/carsonrueber/WhitespaceInterpreter"]
+	path = lua/carsonrueber/WhitespaceInterpreter
 	url = https://github.com/CJ5518/WhitespaceInterpreter
-[submodule "lua/vyo-callisto"]
-	path = lua/vyo-callisto
+[submodule "lua/vyo-callisto/callisto"]
+	path = lua/vyo-callisto/callisto
 	url = https://github.com/vyo/callisto
-[submodule "masm/jarsp-wsint"]
-	path = masm/jarsp-wsint
+[submodule "masm/jarsp-wsint/wsint"]
+	path = masm/jarsp-wsint/wsint
 	url = https://github.com/jarsp/wsint
-[submodule "nasm/ryzheboka"]
-	path = nasm/ryzheboka
+[submodule "nasm/ryzheboka/Whitespace"]
+	path = nasm/ryzheboka/Whitespace
 	url = https://github.com/ryzheboka/Whitespace
 [submodule "objective-c/emilbahnsen-assembler"]
-	path = objective-c/emilbahnsen-assembler
+	path = objective-c/emilbahnsen-assembler/Whitespace assembler
 	url = https://github.com/wspace/emilbahnsen-assembler
-[submodule "ocaml/jgkaplan-wsc"]
-	path = ocaml/jgkaplan-wsc
+[submodule "ocaml/jgkaplan-wsc/whitespaceTranspiler"]
+	path = ocaml/jgkaplan-wsc/whitespaceTranspiler
 	url = https://github.com/jgkaplan/whitespaceTranspiler
-[submodule "ocaml/matsud-c2ws"]
-	path = ocaml/matsud-c2ws
+[submodule "ocaml/matsud-c2ws/c2ws"]
+	path = ocaml/matsud-c2ws/c2ws
 	url = https://github.com/matsud224/c2ws
-[submodule "ocaml/progbits-blank"]
-	path = ocaml/progbits-blank
+[submodule "ocaml/progbits-blank/blank"]
+	path = ocaml/progbits-blank/blank
 	url = https://github.com/progbits/blank
-[submodule "ocaml/steiner"]
-	path = ocaml/steiner
+[submodule "ocaml/steiner/Whitespace"]
+	path = ocaml/steiner/Whitespace
 	url = https://github.com/steiner26/Whitespace
-[submodule "perl/ephphatha-wsm2ws"]
-	path = perl/ephphatha-wsm2ws
+[submodule "perl/ephphatha-wsm2ws/wsm2ws"]
+	path = perl/ephphatha-wsm2ws/wsm2ws
 	url = https://github.com/ephphatha/wsm2ws
-[submodule "perl/mkoelbl"]
-	path = perl/mkoelbl
+[submodule "perl/mkoelbl/whitespace"]
+	path = perl/mkoelbl/whitespace
 	url = https://github.com/wspace/mkoelbl-perl
-[submodule "perl/skabob-madness"]
-	path = perl/skabob-madness
+[submodule "perl/skabob-madness/madness"]
+	path = perl/skabob-madness/madness
 	url = https://github.com/SkaBob42/madness
-[submodule "php/codelytv-youtube"]
-	path = php/codelytv-youtube
+[submodule "php/codelytv-youtube/youtube-code-examples"]
+	path = php/codelytv-youtube/youtube-code-examples
 	url = https://github.com/CodelyTV/youtube-code-examples
-[submodule "php/igorw"]
-	path = php/igorw
-	url = https://github.com/igorw/whitespace-php
-[submodule "php/igorw-wsm"]
-	path = php/igorw-wsm
+[submodule "php/igorw-wsm/wsm"]
+	path = php/igorw-wsm/wsm
 	url = https://github.com/igorw/wsm
-[submodule "php/johankj"]
-	path = php/johankj
+[submodule "php/igorw/whitespace-php"]
+	path = php/igorw/whitespace-php
+	url = https://github.com/igorw/whitespace-php
+[submodule "php/johankj/whitespace-interpreter-php"]
+	path = php/johankj/whitespace-interpreter-php
 	url = https://github.com/johankj/whitespace-interpreter-php
-[submodule "php/jseidl-wcc"]
-	path = php/jseidl-wcc
+[submodule "php/jseidl-wcc/whitespace"]
+	path = php/jseidl-wcc/whitespace
 	url = https://github.com/jseidl/whitespace
-[submodule "php/mattparker"]
-	path = php/mattparker
+[submodule "php/mattparker/phpwhitespace"]
+	path = php/mattparker/phpwhitespace
 	url = https://github.com/mattparker/phpwhitespace
-[submodule "php/nobody1986"]
-	path = php/nobody1986
+[submodule "php/nobody1986/whitespace-php"]
+	path = php/nobody1986/whitespace-php
 	url = https://github.com/nobody1986/whitespace-php
-[submodule "python/0x55aa"]
-	path = python/0x55aa
+[submodule "python/0x55aa/python-whitespace"]
+	path = python/0x55aa/python-whitespace
 	url = https://github.com/0x55aa/python-whitespace
-[submodule "python/adapap"]
-	path = python/adapap
+[submodule "python/adapap/whitespace-interpreter"]
+	path = python/adapap/whitespace-interpreter
 	url = https://github.com/adapap/whitespace-interpreter
-[submodule "python/ahl27"]
-	path = python/ahl27
+[submodule "python/ahl27/whitespace"]
+	path = python/ahl27/whitespace
 	url = https://github.com/ahl27/whitespace
-[submodule "python/alecgraves-whitespac3"]
-	path = python/alecgraves-whitespac3
+[submodule "python/alecgraves-whitespac3/whitespac3"]
+	path = python/alecgraves-whitespac3/whitespac3
 	url = https://github.com/alecGraves/whitespac3
-[submodule "python/apua-gen"]
-	path = python/apua-gen
+[submodule "python/apua-gen/solve"]
+	path = python/apua-gen/solve
 	url = https://gist.github.com/apua/8d565a8a8365a1399b8fae1664b43d65
-[submodule "python/apua-wvm"]
-	path = python/apua-wvm
+[submodule "python/apua-wvm/whitespace"]
+	path = python/apua-wvm/whitespace
 	url = https://github.com/apua/whitespace
-[submodule "python/bornlex"]
-	path = python/bornlex
+[submodule "python/bornlex/Whitespace-interpreter"]
+	path = python/bornlex/Whitespace-interpreter
 	url = https://github.com/Bornlex/Whitespace-interpreter
-[submodule "python/cybis-hapyli"]
-	path = python/cybis-hapyli
+[submodule "python/cybis-hapyli/hapyli"]
+	path = python/cybis-hapyli/hapyli
 	url = https://github.com/wspace/hapyli
-[submodule "python/dalleng"]
-	path = python/dalleng
+[submodule "python/dalleng/Whitespace"]
+	path = python/dalleng/Whitespace
 	url = https://github.com/dalleng/Whitespace
-[submodule "python/damle-evanesco"]
-	path = python/damle-evanesco
+[submodule "python/damle-evanesco/Evanesco"]
+	path = python/damle-evanesco/Evanesco
 	url = https://github.com/AD9000/Evanesco
-[submodule "python/dos1-colorspace"]
-	path = python/dos1-colorspace
+[submodule "python/dos1-colorspace/colorspace"]
+	path = python/dos1-colorspace/colorspace
 	url = https://github.com/dos1/colorspace
-[submodule "python/drafear-converter"]
-	path = python/drafear-converter
+[submodule "python/drafear-converter/whitespace-language-converter"]
+	path = python/drafear-converter/whitespace-language-converter
 	url = https://github.com/drafear/whitespace-language-converter
-[submodule "python/dwayne"]
-	path = python/dwayne
+[submodule "python/dwayne/whitespace-python"]
+	path = python/dwayne/whitespace-python
 	url = https://github.com/dwayne/whitespace-python
-[submodule "python/eizoassik-pyws"]
-	path = python/eizoassik-pyws
+[submodule "python/eizoassik-pyws/pyws"]
+	path = python/eizoassik-pyws/pyws
 	url = https://github.com/EizoAssik/pyws
-[submodule "python/ericpwilliamson-codewars"]
-	path = python/ericpwilliamson-codewars
+[submodule "python/ericpwilliamson-codewars/Codewars-algorithms"]
+	path = python/ericpwilliamson-codewars/Codewars-algorithms
 	url = https://github.com/EricPWilliamson/Codewars-algorithms
-[submodule "python/ffanzhang"]
-	path = python/ffanzhang
+[submodule "python/ffanzhang/ws"]
+	path = python/ffanzhang/ws
 	url = https://github.com/ffanzhang/ws
-[submodule "python/francoisrozet-whitespacy"]
-	path = python/francoisrozet-whitespacy
+[submodule "python/francoisrozet-whitespacy/whitespacy"]
+	path = python/francoisrozet-whitespacy/whitespacy
 	url = https://github.com/francois-rozet/whitespacy
-[submodule "python/freyamade-hohoho"]
-	path = python/freyamade-hohoho
+[submodule "python/freyamade-hohoho/hohoho"]
+	path = python/freyamade-hohoho/hohoho
 	url = https://github.com/freyamade/hohoho
-[submodule "python/ganeshsankaran"]
-	path = python/ganeshsankaran
+[submodule "python/ganeshsankaran/interpreter"]
+	path = python/ganeshsankaran/interpreter
 	url = https://github.com/ganeshsankaran/interpreter
-[submodule "python/hearnderek"]
-	path = python/hearnderek
-	url = https://github.com/hearnderek/WhiteSpaceInterpreter
-[submodule "python/hearnderek-codewars"]
-	path = python/hearnderek-codewars
+[submodule "python/hearnderek-codewars/codewars"]
+	path = python/hearnderek-codewars/codewars
 	url = https://github.com/hearnderek/codewars
-[submodule "python/hunminpark"]
-	path = python/hunminpark
+[submodule "python/hearnderek/WhiteSpaceInterpreter"]
+	path = python/hearnderek/WhiteSpaceInterpreter
+	url = https://github.com/hearnderek/WhiteSpaceInterpreter
+[submodule "python/hunminpark/Whitespace"]
+	path = python/hunminpark/Whitespace
 	url = https://github.com/Avantgarde95/Whitespace
-[submodule "python/ilikepython256-whitespace-unc"]
-	path = python/ilikepython256-whitespace-unc
+[submodule "python/ilikepython256-whitespace-unc/Whitespace_UnC"]
+	path = python/ilikepython256-whitespace-unc/Whitespace_UnC
 	url = https://github.com/wspace/ilikepython256-whitespace-unc
-[submodule "python/joaquinrossi-esoteric"]
-	path = python/joaquinrossi-esoteric
+[submodule "python/joaquinrossi-esoteric/esoteric"]
+	path = python/joaquinrossi-esoteric/esoteric
 	url = https://github.com/joaquin-rossi/esoteric
-[submodule "python/jrialland"]
-	path = python/jrialland
+[submodule "python/jrialland/whitespaceasm"]
+	path = python/jrialland/whitespaceasm
 	url = https://gist.github.com/jrialland/e0d370034da9c7b1b76a8afccbea7424
-[submodule "python/kareeeeem-abyad"]
-	path = python/kareeeeem-abyad
+[submodule "python/kareeeeem-abyad/abyad"]
+	path = python/kareeeeem-abyad/abyad
 	url = https://github.com/Kareeeeem/abyad
-[submodule "python/katc"]
-	path = python/katc
+[submodule "python/katc/whitespace"]
+	path = python/katc/whitespace
 	url = https://gist.github.com/K-atc/02b402e9812e066afb78
-[submodule "python/kraterkraken"]
-	path = python/kraterkraken
+[submodule "python/kraterkraken/Whitespace"]
+	path = python/kraterkraken/Whitespace
 	url = https://github.com/kraterkraken/Whitespace
-[submodule "python/lachlancourt"]
-	path = python/lachlancourt
+[submodule "python/lachlancourt/whitespace_transpiler"]
+	path = python/lachlancourt/whitespace_transpiler
 	url = https://github.com/LachlanCourt/whitespace_transpiler
-[submodule "python/marktraceur-redlandside"]
-	path = python/marktraceur-redlandside
+[submodule "python/marktraceur-redlandside/redlandside"]
+	path = python/marktraceur-redlandside/redlandside
 	url = https://github.com/MarkTraceur/redlandside
-[submodule "python/maximegoyette"]
-	path = python/maximegoyette
+[submodule "python/maximegoyette/whitespace_interpreter"]
+	path = python/maximegoyette/whitespace_interpreter
 	url = https://github.com/MaximeGoyette/whitespace_interpreter
-[submodule "python/mcolom"]
-	path = python/mcolom
+[submodule "python/mcolom/whitespace"]
+	path = python/mcolom/whitespace
 	url = https://github.com/mcolom/whitespace
-[submodule "python/meand"]
-	path = python/meand
+[submodule "python/meand/whitespace-compiler"]
+	path = python/meand/whitespace-compiler
 	url = https://github.com/me-and/whitespace-compiler
-[submodule "python/mikecat"]
-	path = python/mikecat
+[submodule "python/mikecat/python-whitespace"]
+	path = python/mikecat/python-whitespace
 	url = https://github.com/mikecat/python-whitespace
-[submodule "python/mikejs-nbspy"]
-	path = python/mikejs-nbspy
+[submodule "python/mikejs-nbspy/nbspy"]
+	path = python/mikejs-nbspy/nbspy
 	url = https://gist.github.com/mikejs/918701
-[submodule "python/mildsunrise"]
-	path = python/mildsunrise
+[submodule "python/mildsunrise/whitespace"]
+	path = python/mildsunrise/whitespace
 	url = https://gist.github.com/mildsunrise/d948fe1334f36c9a0f6516e58271f936
-[submodule "python/molfar-codewars"]
-	path = python/molfar-codewars
+[submodule "python/molfar-codewars/CodeWars_Solutions"]
+	path = python/molfar-codewars/CodeWars_Solutions
 	url = https://github.com/MolfarUA/CodeWars_Solutions
-[submodule "python/musflood"]
-	path = python/musflood
+[submodule "python/musflood/code-katas"]
+	path = python/musflood/code-katas
 	url = https://github.com/musflood/code-katas
-[submodule "python/nutcrack-whiteplanes"]
-	path = python/nutcrack-whiteplanes
+[submodule "python/nutcrack-whiteplanes/whiteplanes"]
+	path = python/nutcrack-whiteplanes/whiteplanes
 	url = https://github.com/wspace/nutcrack-whiteplanes
-[submodule "python/phlip-pywhitespace"]
-	path = python/phlip-pywhitespace
+[submodule "python/phlip-pywhitespace/pywhitespace"]
+	path = python/phlip-pywhitespace/pywhitespace
 	url = https://github.com/wspace/phlip-pywhitespace
-[submodule "python/prajwalanand"]
-	path = python/prajwalanand
+[submodule "python/prajwalanand/whitespace-compiler"]
+	path = python/prajwalanand/whitespace-compiler
 	url = https://github.com/prajwalanand/whitespace-compiler
-[submodule "python/q2ven-whitespyce"]
-	path = python/q2ven-whitespyce
+[submodule "python/q2ven-whitespyce/whitespyce"]
+	path = python/q2ven-whitespyce/whitespyce
 	url = https://gitlab.com/q2ven/whitespyce.git
-[submodule "python/qwhxm-baudelaire"]
-	path = python/qwhxm-baudelaire
+[submodule "python/qwhxm-baudelaire/baudelaire-whitespace"]
+	path = python/qwhxm-baudelaire/baudelaire-whitespace
 	url = https://github.com/qwhxm/baudelaire-whitespace
-[submodule "python/rumaxwell"]
-	path = python/rumaxwell
+[submodule "python/rumaxwell/whitespace-interpreter"]
+	path = python/rumaxwell/whitespace-interpreter
 	url = https://github.com/RuMaxwell/whitespace-interpreter
-[submodule "python/ryndvs-aoc"]
-	path = python/ryndvs-aoc
+[submodule "python/ryndvs-aoc/aoc"]
+	path = python/ryndvs-aoc/aoc
 	url = https://github.com/ryndvs96/aoc
-[submodule "python/smithers-bluespace"]
-	path = python/smithers-bluespace
+[submodule "python/smithers-bluespace/BlueSpace"]
+	path = python/smithers-bluespace/BlueSpace
 	url = https://github.com/wspace/smithers-bluespace
-[submodule "python/stephenchappell"]
-	path = python/stephenchappell
+[submodule "python/stephenchappell/Whitespace"]
+	path = python/stephenchappell/Whitespace
 	url = https://github.com/wspace/stephenchappell-python
-[submodule "python/techiehelper-codewars"]
-	path = python/techiehelper-codewars
+[submodule "python/techiehelper-codewars/Codewars"]
+	path = python/techiehelper-codewars/Codewars
 	url = https://github.com/TechieHelper/Codewars
-[submodule "python/umutoztunc-whitesymex"]
-	path = python/umutoztunc-whitesymex
+[submodule "python/umutoztunc-whitesymex/whitesymex"]
+	path = python/umutoztunc-whitesymex/whitesymex
 	url = https://github.com/umutoztunc/whitesymex
-[submodule "python/wasabili"]
-	path = python/wasabili
+[submodule "python/wasabili/Whitespace"]
+	path = python/wasabili/Whitespace
 	url = https://gist.github.com/wasabili/708773
-[submodule "python/wawrepo-kata"]
-	path = python/wawrepo-kata
+[submodule "python/wawrepo-kata/Kata"]
+	path = python/wawrepo-kata/Kata
 	url = https://github.com/WawRepo/Kata
-[submodule "python/yasn-whitepy"]
-	path = python/yasn-whitepy
+[submodule "python/yasn-whitepy/whitepy"]
+	path = python/yasn-whitepy/whitepy
 	url = https://github.com/yasn77/whitepy
-[submodule "r/bmazoure"]
-	path = r/bmazoure
+[submodule "r/bmazoure/whitespace"]
+	path = r/bmazoure/whitespace
 	url = https://github.com/bmazoure/whitespace
-[submodule "rebol/hostilefork"]
-	path = rebol/hostilefork
+[submodule "rebol/hostilefork/rebol-whitespacers"]
+	path = rebol/hostilefork/rebol-whitespacers
 	url = https://github.com/hostilefork/rebol-whitespacers
-[submodule "ruby/alesiong"]
-	path = ruby/alesiong
+[submodule "ruby/alesiong/whitespace-ruby"]
+	path = ruby/alesiong/whitespace-ruby
 	url = https://github.com/alesiong/whitespace-ruby
-[submodule "ruby/angel"]
-	path = ruby/angel
+[submodule "ruby/angel/whitespace"]
+	path = ruby/angel/whitespace
 	url = https://github.com/angel-p57/whitespace
-[submodule "ruby/bossiernesto"]
-	path = ruby/bossiernesto
+[submodule "ruby/bossiernesto/whitespace"]
+	path = ruby/bossiernesto/whitespace
 	url = https://github.com/bossiernesto/whitespace
-[submodule "ruby/collidedscope-spitewaste"]
-	path = ruby/collidedscope-spitewaste
+[submodule "ruby/collidedscope-spitewaste/spitewaste"]
+	path = ruby/collidedscope-spitewaste/spitewaste
 	url = https://github.com/collidedscope/spitewaste
-[submodule "ruby/dwayne"]
-	path = ruby/dwayne
+[submodule "ruby/dwayne/whitespace-ruby"]
+	path = ruby/dwayne/whitespace-ruby
 	url = https://github.com/dwayne/whitespace-ruby
-[submodule "ruby/mame-quine-relay"]
-	path = ruby/mame-quine-relay
+[submodule "ruby/mame-quine-relay/quine-relay"]
+	path = ruby/mame-quine-relay/quine-relay
 	url = https://github.com/mame/quine-relay
-[submodule "ruby/nishiwakki"]
-	path = ruby/nishiwakki
+[submodule "ruby/nishiwakki/whitespace"]
+	path = ruby/nishiwakki/whitespace
 	url = https://github.com/nishiwakki/whitespace
-[submodule "ruby/pocke-akaza"]
-	path = ruby/pocke-akaza
+[submodule "ruby/pocke-akaza/akaza"]
+	path = ruby/pocke-akaza/akaza
 	url = https://github.com/pocke/akaza
-[submodule "ruby/pocke-self-hosted"]
-	path = ruby/pocke-self-hosted
+[submodule "ruby/pocke-self-hosted/self-hosting-whitespace"]
+	path = ruby/pocke-self-hosted/self-hosting-whitespace
 	url = https://github.com/pocke/self-hosting-whitespace
-[submodule "ruby/shimo-yukicoder"]
-	path = ruby/shimo-yukicoder
+[submodule "ruby/shimo-yukicoder/whitespace"]
+	path = ruby/shimo-yukicoder/whitespace
 	url = https://github.com/wspace/shimo-yukicoder
-[submodule "ruby/technohippy-gorispace"]
-	path = ruby/technohippy-gorispace
+[submodule "ruby/technohippy-gorispace/gorispace"]
+	path = ruby/technohippy-gorispace/gorispace
 	url = https://github.com/technohippy/gorispace
-[submodule "ruby/wconrad"]
-	path = ruby/wconrad
+[submodule "ruby/wconrad/whitespace"]
+	path = ruby/wconrad/whitespace
 	url = https://github.com/wspace/wconrad-ruby
-[submodule "ruby/yuta-textproc"]
-	path = ruby/yuta-textproc
+[submodule "ruby/yuta-textproc/TextProc"]
+	path = ruby/yuta-textproc/TextProc
 	url = https://github.com/yuta0023/TextProc
-[submodule "rust/andrewarchi-yspace"]
-	path = rust/andrewarchi-yspace
+[submodule "rust/andrewarchi-yspace/yspace"]
+	path = rust/andrewarchi-yspace/yspace
 	url = https://github.com/andrewarchi/yspace
-[submodule "rust/censoredusername-whitespacers"]
-	path = rust/censoredusername-whitespacers
+[submodule "rust/censoredusername-whitespacers/whitespace-rs"]
+	path = rust/censoredusername-whitespacers/whitespace-rs
 	url = https://github.com/CensoredUsername/whitespace-rs
-[submodule "rust/collidedscope-albus"]
-	path = rust/collidedscope-albus
+[submodule "rust/collidedscope-albus/albus"]
+	path = rust/collidedscope-albus/albus
 	url = https://github.com/collidedscope/albus
-[submodule "rust/faultier-albino"]
-	path = rust/faultier-albino
+[submodule "rust/faultier-albino/albino"]
+	path = rust/faultier-albino/albino
 	url = https://github.com/faultier/albino
-[submodule "rust/faultier-whitebase"]
-	path = rust/faultier-whitebase
+[submodule "rust/faultier-whitebase/whitebase"]
+	path = rust/faultier-whitebase/whitebase
 	url = https://github.com/faultier/whitebase
-[submodule "rust/guricerin"]
-	path = rust/guricerin
+[submodule "rust/guricerin/esolangs"]
+	path = rust/guricerin/esolangs
 	url = https://github.com/guricerin/esolangs
-[submodule "rust/jayshua"]
-	path = rust/jayshua
+[submodule "rust/jayshua/rust-whitespace"]
+	path = rust/jayshua/rust-whitespace
 	url = https://github.com/Jayshua/rust-whitespace
-[submodule "rust/kaisugi"]
-	path = rust/kaisugi
+[submodule "rust/kaisugi/WhitespaceInterpreter"]
+	path = rust/kaisugi/WhitespaceInterpreter
 	url = https://github.com/HelloRusk/WhitespaceInterpreter
-[submodule "rust/keirua"]
-	path = rust/keirua
+[submodule "rust/keirua/whitespace-rs"]
+	path = rust/keirua/whitespace-rs
 	url = https://github.com/Keirua/whitespace-rs
-[submodule "rust/luminight"]
-	path = rust/luminight
+[submodule "rust/luminight/rustws"]
+	path = rust/luminight/rustws
 	url = https://github.com/Luminighty/rustws
-[submodule "rust/nareshganduri"]
-	path = rust/nareshganduri
+[submodule "rust/nareshganduri/WhitespaceVM"]
+	path = rust/nareshganduri/WhitespaceVM
 	url = https://github.com/nareshganduri/WhitespaceVM
-[submodule "rust/omurakazuaki"]
-	path = rust/omurakazuaki
+[submodule "rust/omurakazuaki/whitespace"]
+	path = rust/omurakazuaki/whitespace
 	url = https://github.com/wspace/omurakazuaki-rust
-[submodule "rust/zrneely"]
-	path = rust/zrneely
+[submodule "rust/zrneely/whitespace"]
+	path = rust/zrneely/whitespace
 	url = https://github.com/wspace/zrneely-rust
-[submodule "scala/dashlambda-eso"]
-	path = scala/dashlambda-eso
+[submodule "scala/dashlambda-eso/Eso"]
+	path = scala/dashlambda-eso/Eso
 	url = https://github.com/Dash-Lambda/Eso
-[submodule "scala/ojha-whitespacing"]
-	path = scala/ojha-whitespacing
+[submodule "scala/ojha-whitespacing/Whitespacing"]
+	path = scala/ojha-whitespacing/Whitespacing
 	url = https://github.com/polyglotpiglet/Whitespacing
-[submodule "scala/patrickstephen"]
-	path = scala/patrickstephen
+[submodule "scala/patrickstephen/whitespace-interpreter"]
+	path = scala/patrickstephen/whitespace-interpreter
 	url = https://bitbucket.org/StephenPatrick/whitespace-interpreter
-[submodule "scala/sderosiaux"]
-	path = scala/sderosiaux
+[submodule "scala/sderosiaux/whitespace-parser"]
+	path = scala/sderosiaux/whitespace-parser
 	url = https://github.com/sderosiaux/whitespace-parser
-[submodule "scheme/athos-white-scheme"]
-	path = scheme/athos-white-scheme
+[submodule "scheme/athos-white-scheme/white-scheme"]
+	path = scheme/athos-white-scheme/white-scheme
 	url = https://github.com/athos/white-scheme
-[submodule "scheme/niyarin"]
-	path = scheme/niyarin
+[submodule "scheme/niyarin/whitespace-scheme"]
+	path = scheme/niyarin/whitespace-scheme
 	url = https://github.com/niyarin/whitespace-scheme
-[submodule "textmate/andrewarchi-linguist"]
-	path = textmate/andrewarchi-linguist
+[submodule "textmate/andrewarchi-linguist/wspace-linguist"]
+	path = textmate/andrewarchi-linguist/wspace-linguist
 	url = https://github.com/andrewarchi/wspace-linguist
-[submodule "textmate/nixinova"]
-	path = textmate/nixinova
+[submodule "textmate/nixinova/NovaGrammars"]
+	path = textmate/nixinova/NovaGrammars
 	url = https://github.com/Nixinova/NovaGrammars
-[submodule "textmate/veniversum"]
-	path = textmate/veniversum
+[submodule "textmate/veniversum/language-whitespace"]
+	path = textmate/veniversum/language-whitespace
 	url = https://github.com/veniversum/language-whitespace
-[submodule "typescript/eduardoborsa-codewars"]
-	path = typescript/eduardoborsa-codewars
+[submodule "typescript/eduardoborsa-codewars/code_wars_exercises"]
+	path = typescript/eduardoborsa-codewars/code_wars_exercises
 	url = https://github.com/EduardoBorsa/code_wars_exercises
-[submodule "typescript/fy0u11"]
-	path = typescript/fy0u11
+[submodule "typescript/fy0u11/whitespace-interpreter"]
+	path = typescript/fy0u11/whitespace-interpreter
 	url = https://github.com/FY0u11/whitespace-interpreter
-[submodule "typescript/simomu"]
-	path = typescript/simomu
+[submodule "typescript/simomu/whitespace_ts"]
+	path = typescript/simomu/whitespace_ts
 	url = https://github.com/simomu-github/whitespace_ts
-[submodule "vim/rolf"]
-	path = vim/rolf
+[submodule "vim/rolf/ws.vim"]
+	path = vim/rolf/ws.vim
 	url = https://github.com/rolf007/ws.vim
-[submodule "whitespace/0qol-prime"]
-	path = whitespace/0qol-prime
+[submodule "whitespace/0qol-prime/prime"]
+	path = whitespace/0qol-prime/prime
 	url = https://github.com/wspace/0qol-prime
-[submodule "whitespace/3f"]
-	path = whitespace/3f
+[submodule "whitespace/3f/sandbox"]
+	path = whitespace/3f/sandbox
 	url = https://github.com/3F/sandbox
-[submodule "whitespace/alchzh-advent-of-code"]
-	path = whitespace/alchzh-advent-of-code
+[submodule "whitespace/alchzh-advent-of-code/advent-of-code"]
+	path = whitespace/alchzh-advent-of-code/advent-of-code
 	url = https://github.com/alchzh/advent-of-code
-[submodule "whitespace/alicewonderland-hacktoberfest"]
-	path = whitespace/alicewonderland-hacktoberfest
+[submodule "whitespace/alicewonderland-hacktoberfest/hacktoberfest"]
+	path = whitespace/alicewonderland-hacktoberfest/hacktoberfest
 	url = https://github.com/AliceWonderland/hacktoberfest
-[submodule "whitespace/andrewarchi-challenges"]
-	path = whitespace/andrewarchi-challenges
+[submodule "whitespace/andrewarchi-challenges/ws-challenges"]
+	path = whitespace/andrewarchi-challenges/ws-challenges
 	url = https://github.com/andrewarchi/ws-challenges
-[submodule "whitespace/andrewarchi-wslib"]
-	path = whitespace/andrewarchi-wslib
+[submodule "whitespace/andrewarchi-wslib/wslib"]
+	path = whitespace/andrewarchi-wslib/wslib
 	url = https://github.com/andrewarchi/wslib
-[submodule "whitespace/aniket-hacktoberfest"]
-	path = whitespace/aniket-hacktoberfest
+[submodule "whitespace/aniket-hacktoberfest/Whitespace"]
+	path = whitespace/aniket-hacktoberfest/Whitespace
 	url = https://github.com/wspace/aniket-hacktoberfest-2018
-[submodule "whitespace/ankitatandon-wspc"]
-	path = whitespace/ankitatandon-wspc
+[submodule "whitespace/ankitatandon-wspc/WSPC"]
+	path = whitespace/ankitatandon-wspc/WSPC
 	url = https://github.com/AnkitaTandon/WSPC
-[submodule "whitespace/apartmentlist-obfuscated"]
-	path = whitespace/apartmentlist-obfuscated
+[submodule "whitespace/apartmentlist-obfuscated/coding-challenges"]
+	path = whitespace/apartmentlist-obfuscated/coding-challenges
 	url = https://github.com/apartmentlist/coding-challenges
-[submodule "whitespace/bbvch-hello"]
-	path = whitespace/bbvch-hello
+[submodule "whitespace/bbvch-hello/HelloWhitespace"]
+	path = whitespace/bbvch-hello/HelloWhitespace
 	url = https://github.com/bbvch13531/HelloWhitespace
-[submodule "whitespace/bsarthak-cerner"]
-	path = whitespace/bsarthak-cerner
+[submodule "whitespace/bsarthak-cerner/Cerner-2_pow_5-2020"]
+	path = whitespace/bsarthak-cerner/Cerner-2_pow_5-2020
 	url = https://github.com/bsarthak1803/Cerner-2_pow_5-2020
-[submodule "whitespace/ccns-chicken"]
-	path = whitespace/ccns-chicken
+[submodule "whitespace/ccns-chicken/105-club-fair-game-problems"]
+	path = whitespace/ccns-chicken/105-club-fair-game-problems
 	url = https://github.com/ccns/105-club-fair-game-problems
-[submodule "whitespace/chrisnguyen-steganographic-polyglots"]
-	path = whitespace/chrisnguyen-steganographic-polyglots
+[submodule "whitespace/chrisnguyen-steganographic-polyglots/steganographic-polyglots"]
+	path = whitespace/chrisnguyen-steganographic-polyglots/steganographic-polyglots
 	url = https://github.com/uncompiled/steganographic-polyglots
-[submodule "whitespace/datomalania-hello"]
-	path = whitespace/datomalania-hello
+[submodule "whitespace/datomalania-hello/helloworld"]
+	path = whitespace/datomalania-hello/helloworld
 	url = https://github.com/datomalania/helloworld
-[submodule "whitespace/davidjkling-cerner"]
-	path = whitespace/davidjkling-cerner
+[submodule "whitespace/davidjkling-cerner/cerner_2_5_2020"]
+	path = whitespace/davidjkling-cerner/cerner_2_5_2020
 	url = https://github.com/davidjkling/cerner_2_5_2020
-[submodule "whitespace/dcoy-hacktoberfest"]
-	path = whitespace/dcoy-hacktoberfest
+[submodule "whitespace/dcoy-hacktoberfest/hacktoberfest-dcoy"]
+	path = whitespace/dcoy-hacktoberfest/hacktoberfest-dcoy
 	url = https://github.com/dcoy/hacktoberfest-dcoy
-[submodule "whitespace/drebelsky-programs"]
-	path = whitespace/drebelsky-programs
+[submodule "whitespace/drebelsky-programs/whitespace-programs"]
+	path = whitespace/drebelsky-programs/whitespace-programs
 	url = https://github.com/drebelsky/whitespace-programs
-[submodule "whitespace/elisha-snakulator"]
-	path = whitespace/elisha-snakulator
+[submodule "whitespace/elisha-snakulator/snakulator"]
+	path = whitespace/elisha-snakulator/snakulator
 	url = https://github.com/donno2048/snakulator
-[submodule "whitespace/eudaldsans"]
-	path = whitespace/eudaldsans
+[submodule "whitespace/eudaldsans/whitespace"]
+	path = whitespace/eudaldsans/whitespace
 	url = https://github.com/EudaldSans/whitespace
-[submodule "whitespace/grantbgreat-hello"]
-	path = whitespace/grantbgreat-hello
+[submodule "whitespace/grantbgreat-hello/hello-world"]
+	path = whitespace/grantbgreat-hello/hello-world
 	url = https://github.com/GrantBGreat/hello-world
-[submodule "whitespace/gregorymorrison-euler"]
-	path = whitespace/gregorymorrison-euler
+[submodule "whitespace/gregorymorrison-euler/euler1"]
+	path = whitespace/gregorymorrison-euler/euler1
 	url = https://github.com/gregorymorrison/euler1
-[submodule "whitespace/helowld"]
-	path = whitespace/helowld
+[submodule "whitespace/helowld/Hello-World"]
+	path = whitespace/helowld/Hello-World
 	url = https://github.com/Helowld/Hello-World
-[submodule "whitespace/jarrodparkes-a-z"]
-	path = whitespace/jarrodparkes-a-z
+[submodule "whitespace/jarrodparkes-a-z/a-z-programming"]
+	path = whitespace/jarrodparkes-a-z/a-z-programming
 	url = https://github.com/jarrodparkes/a-z-programming
-[submodule "whitespace/jermenkoo-spoj"]
-	path = whitespace/jermenkoo-spoj
+[submodule "whitespace/jermenkoo-spoj/spoj.pl_solutions"]
+	path = whitespace/jermenkoo-spoj/spoj.pl_solutions
 	url = https://github.com/jermenkoo/spoj.pl_solutions
-[submodule "whitespace/jonstites-hello"]
-	path = whitespace/jonstites-hello
+[submodule "whitespace/jonstites-hello/hello"]
+	path = whitespace/jonstites-hello/hello
 	url = https://gist.github.com/jonstites/16784b5c1fb0c1e580d698bb13d4f50f
-[submodule "whitespace/keen-whitelie"]
-	path = whitespace/keen-whitelie
+[submodule "whitespace/keen-whitelie/whitelie"]
+	path = whitespace/keen-whitelie/whitelie
 	url = https://github.com/wspace/keen-whitelie
-[submodule "whitespace/keithsthompson-fizzbuzz"]
-	path = whitespace/keithsthompson-fizzbuzz
+[submodule "whitespace/keithsthompson-fizzbuzz/fizzbuzz-polyglot"]
+	path = whitespace/keithsthompson-fizzbuzz/fizzbuzz-polyglot
 	url = https://github.com/Keith-S-Thompson/fizzbuzz-polyglot
-[submodule "whitespace/kenrube-esopoly"]
-	path = whitespace/kenrube-esopoly
+[submodule "whitespace/kenrube-esopoly/Esopoly"]
+	path = whitespace/kenrube-esopoly/Esopoly
 	url = https://github.com/kenrube/Esopoly
-[submodule "whitespace/kirarinsnow"]
-	path = whitespace/kirarinsnow
+[submodule "whitespace/kirarinsnow/Google-Code-Jam"]
+	path = whitespace/kirarinsnow/Google-Code-Jam
 	url = https://github.com/KirarinSnow/Google-Code-Jam
-[submodule "whitespace/kirens-countdown"]
-	path = whitespace/kirens-countdown
+[submodule "whitespace/kirens-countdown/main"]
+	path = whitespace/kirens-countdown/main
 	url = https://gist.github.com/Kirens/9e3c99706773335366fa7bbf3cfd592d
-[submodule "whitespace/knightking-hacktoberfest"]
-	path = whitespace/knightking-hacktoberfest
+[submodule "whitespace/knightking-hacktoberfest/hello-worlds"]
+	path = whitespace/knightking-hacktoberfest/hello-worlds
 	url = https://github.com/knightking100/hello-worlds
-[submodule "whitespace/kspalaiologos-codegolf"]
-	path = whitespace/kspalaiologos-codegolf
+[submodule "whitespace/kspalaiologos-codegolf/codegolf-submissions"]
+	path = whitespace/kspalaiologos-codegolf/codegolf-submissions
 	url = https://github.com/kspalaiologos/codegolf-submissions
-[submodule "whitespace/kspalaiologos-cosmopolitan-sk"]
-	path = whitespace/kspalaiologos-cosmopolitan-sk
+[submodule "whitespace/kspalaiologos-cosmopolitan-sk/cosmopolitan-sk"]
+	path = whitespace/kspalaiologos-cosmopolitan-sk/cosmopolitan-sk
 	url = https://github.com/kspalaiologos/cosmopolitan-sk
-[submodule "whitespace/kunde-hello"]
-	path = whitespace/kunde-hello
+[submodule "whitespace/kunde-hello/challenge"]
+	path = whitespace/kunde-hello/challenge
 	url = https://gist.github.com/Kunde21/f3e7878c92f3a1db2ea31ea1140153ce
-[submodule "whitespace/leachim-hello"]
-	path = whitespace/leachim-hello
+[submodule "whitespace/leachim-hello/hello-world"]
+	path = whitespace/leachim-hello/hello-world
 	url = https://github.com/leachim6/hello-world
-[submodule "whitespace/lollasravani-cerner"]
-	path = whitespace/lollasravani-cerner
+[submodule "whitespace/lollasravani-cerner/cerner_2-5_2019"]
+	path = whitespace/lollasravani-cerner/cerner_2-5_2019
 	url = https://github.com/lollasravani/cerner_2-5_2019
-[submodule "whitespace/lucaspiller-never-gonna"]
-	path = whitespace/lucaspiller-never-gonna
+[submodule "whitespace/lucaspiller-never-gonna/never_gonna"]
+	path = whitespace/lucaspiller-never-gonna/never_gonna
 	url = https://gist.github.com/lucaspiller/2852385
-[submodule "whitespace/makenowjust-quine"]
-	path = whitespace/makenowjust-quine
+[submodule "whitespace/makenowjust-quine/quine"]
+	path = whitespace/makenowjust-quine/quine
 	url = https://github.com/MakeNowJust/quine
-[submodule "whitespace/meow-tigerhacks"]
-	path = whitespace/meow-tigerhacks
+[submodule "whitespace/meow-tigerhacks/tigerhacks-2021"]
+	path = whitespace/meow-tigerhacks/tigerhacks-2021
 	url = https://github.com/meow56/tigerhacks-2021
-[submodule "whitespace/mercerenies-euler"]
-	path = whitespace/mercerenies-euler
+[submodule "whitespace/mercerenies-euler/eulers-melting-pot"]
+	path = whitespace/mercerenies-euler/eulers-melting-pot
 	url = https://github.com/Mercerenies/eulers-melting-pot
-[submodule "whitespace/mesquita-markov"]
-	path = whitespace/mesquita-markov
+[submodule "whitespace/mesquita-markov/markov"]
+	path = whitespace/mesquita-markov/markov
 	url = https://github.com/wspace/mesquita-markov
-[submodule "whitespace/milankowww-rbtree"]
-	path = whitespace/milankowww-rbtree
+[submodule "whitespace/milankowww-rbtree/rbtree-whitespace"]
+	path = whitespace/milankowww-rbtree/rbtree-whitespace
 	url = https://github.com/milankowww/rbtree-whitespace
-[submodule "whitespace/mildsunrise-brainfuck"]
-	path = whitespace/mildsunrise-brainfuck
+[submodule "whitespace/mildsunrise-brainfuck/brainfuck"]
+	path = whitespace/mildsunrise-brainfuck/brainfuck
 	url = https://gist.github.com/mildsunrise/60a516da83d448ba1363a7deac361515
-[submodule "whitespace/owocean-fizzbuzz"]
-	path = whitespace/owocean-fizzbuzz
+[submodule "whitespace/owocean-fizzbuzz/fizzbuzz"]
+	path = whitespace/owocean-fizzbuzz/fizzbuzz
 	url = https://gist.github.com/owocean/0433a34dcfb1409bd5528e4821dd0055
-[submodule "whitespace/p1atdev-hello"]
-	path = whitespace/p1atdev-hello
+[submodule "whitespace/p1atdev-hello/hello_world_ws"]
+	path = whitespace/p1atdev-hello/hello_world_ws
 	url = https://github.com/p1atdev/hello_world_ws
-[submodule "whitespace/paradoxv5-program-java-rb"]
-	path = whitespace/paradoxv5-program-java-rb
+[submodule "whitespace/paradoxv5-program-java-rb/Program-java-rb-ws-txt"]
+	path = whitespace/paradoxv5-program-java-rb/Program-java-rb-ws-txt
 	url = https://github.com/ParadoxV5/Program-java-rb-ws-txt
-[submodule "whitespace/pdewacht-tetris"]
-	path = whitespace/pdewacht-tetris
+[submodule "whitespace/pdewacht-tetris/tetris"]
+	path = whitespace/pdewacht-tetris/tetris
 	url = https://github.com/wspace/tetris
-[submodule "whitespace/petek-hello"]
-	path = whitespace/petek-hello
+[submodule "whitespace/petek-hello/whitespace"]
+	path = whitespace/petek-hello/whitespace
 	url = https://github.com/petek222/whitespace
-[submodule "whitespace/pik4ez-ascii"]
-	path = whitespace/pik4ez-ascii
+[submodule "whitespace/pik4ez-ascii/ascii"]
+	path = whitespace/pik4ez-ascii/ascii
 	url = https://github.com/wspace/pik4ez-ascii
-[submodule "whitespace/progopedia"]
-	path = whitespace/progopedia
+[submodule "whitespace/progopedia/whitespace"]
+	path = whitespace/progopedia/whitespace
 	url = https://github.com/wspace/progopedia
-[submodule "whitespace/rafimo-cerner"]
-	path = whitespace/rafimo-cerner
+[submodule "whitespace/rafimo-cerner/2_power_5"]
+	path = whitespace/rafimo-cerner/2_power_5
 	url = https://github.com/rafimo/2_power_5
-[submodule "whitespace/rameshdahiya-merry-christmas"]
-	path = whitespace/rameshdahiya-merry-christmas
+[submodule "whitespace/rameshdahiya-merry-christmas/merry-christmas"]
+	path = whitespace/rameshdahiya-merry-christmas/merry-christmas
 	url = https://gist.github.com/rameshdahiya/c5705032173968999ecd0c3c1cf238c7
-[submodule "whitespace/reconcyl-wsbf"]
-	path = whitespace/reconcyl-wsbf
+[submodule "whitespace/reconcyl-wsbf/eso"]
+	path = whitespace/reconcyl-wsbf/eso
 	url = https://github.com/Reconcyl/eso
-[submodule "whitespace/resten-christmas-tree"]
-	path = whitespace/resten-christmas-tree
+[submodule "whitespace/resten-christmas-tree/christmas_tree"]
+	path = whitespace/resten-christmas-tree/christmas_tree
 	url = https://github.com/Resten1497/christmas_tree
-[submodule "whitespace/rsactf"]
-	path = whitespace/rsactf
+[submodule "whitespace/rsactf/write-ups"]
+	path = whitespace/rsactf/write-ups
 	url = https://github.com/rsa-ctf/write-ups
 [submodule "whitespace/ryndvs-aoc"]
 	path = whitespace/ryndvs-aoc
 	url = https://github.com/ryndvs96/aoc
-[submodule "whitespace/samdonow-pelc"]
-	path = whitespace/samdonow-pelc
+[submodule "whitespace/samdonow-pelc/PELC"]
+	path = whitespace/samdonow-pelc/PELC
 	url = https://github.com/drsam94/PELC
-[submodule "whitespace/shotastage-hello"]
-	path = whitespace/shotastage-hello
+[submodule "whitespace/shotastage-hello/hello"]
+	path = whitespace/shotastage-hello/hello
 	url = https://gist.github.com/shotastage/5a991d828e510459488c66a7994df859
-[submodule "whitespace/srinandanpai-cerner"]
-	path = whitespace/srinandanpai-cerner
+[submodule "whitespace/srinandanpai-cerner/cerner_2-5"]
+	path = whitespace/srinandanpai-cerner/cerner_2-5
 	url = https://github.com/SrinandanPai/cerner_2-5
-[submodule "whitespace/stevemats-hello"]
-	path = whitespace/stevemats-hello
+[submodule "whitespace/stevemats-hello/H3llo_W0rld"]
+	path = whitespace/stevemats-hello/H3llo_W0rld
 	url = https://github.com/stevemats/H3llo_W0rld
-[submodule "whitespace/t3nsor-spoj"]
-	path = whitespace/t3nsor-spoj
+[submodule "whitespace/t3nsor-spoj/SPOJ"]
+	path = whitespace/t3nsor-spoj/SPOJ
 	url = https://github.com/t3nsor/SPOJ
-[submodule "whitespace/techvstechie"]
-	path = whitespace/techvstechie
+[submodule "whitespace/techvstechie/Whitespace_program"]
+	path = whitespace/techvstechie/Whitespace_program
 	url = https://gist.github.com/techVstechie/a1af13232e5c8145ffb770884d32187b
-[submodule "whitespace/tewort-hello"]
-	path = whitespace/tewort-hello
+[submodule "whitespace/tewort-hello/Hello-Whitespace"]
+	path = whitespace/tewort-hello/Hello-Whitespace
 	url = https://github.com/Tewort/Hello-Whitespace
-[submodule "whitespace/trevorbennett-stack-flood"]
-	path = whitespace/trevorbennett-stack-flood
+[submodule "whitespace/trevorbennett-stack-flood/whitespace-stack-flood"]
+	path = whitespace/trevorbennett-stack-flood/whitespace-stack-flood
 	url = https://github.com/trevorbennett/whitespace-stack-flood
-[submodule "whitespace/truptibaliga-cerner"]
-	path = whitespace/truptibaliga-cerner
+[submodule "whitespace/truptibaliga-cerner/cerner_2tothe5th"]
+	path = whitespace/truptibaliga-cerner/cerner_2tothe5th
 	url = https://github.com/Trupti-Baliga/cerner_2tothe5th
-[submodule "whitespace/ustclug-hackergame2019"]
-	path = whitespace/ustclug-hackergame2019
+[submodule "whitespace/ustclug-hackergame2019/hackergame2019-writeups"]
+	path = whitespace/ustclug-hackergame2019/hackergame2019-writeups
 	url = https://github.com/ustclug/hackergame2019-writeups
-[submodule "whitespace/wsdt-kevinloveswhitespace"]
-	path = whitespace/wsdt-kevinloveswhitespace
+[submodule "whitespace/wsdt-kevinloveswhitespace/WhiteSpace_Brainfuck"]
+	path = whitespace/wsdt-kevinloveswhitespace/WhiteSpace_Brainfuck
 	url = https://github.com/wsdt/WhiteSpace_Brainfuck
-[submodule "whitespace/yokoyama-fizzbuzz"]
-	path = whitespace/yokoyama-fizzbuzz
+[submodule "whitespace/yokoyama-fizzbuzz/fizzbuzz"]
+	path = whitespace/yokoyama-fizzbuzz/fizzbuzz
 	url = https://github.com/ait8/fizzbuzz
-[submodule "whitespace/ytaka"]
-	path = whitespace/ytaka
+[submodule "whitespace/ytaka/whitespace"]
+	path = whitespace/ytaka/whitespace
 	url = https://github.com/wspace/ytaka-whitespace
-[submodule "whitespace/yumu"]
-	path = whitespace/yumu
+[submodule "whitespace/yumu/a140"]
+	path = whitespace/yumu/a140
 	url = https://gist.github.com/yumu19/7b083c7e764092d5d0a2

@@ -16,6 +16,6 @@ case of Codewars, interpreters for Whitespace.",
     "",
     "## \(.key)",
     "",
-    (.value | sort[] | "- [\(.)](\(.).json)")
+    (.value | sort[] | "- [\(.)](\(.))")
   )
 )
