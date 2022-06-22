@@ -2,9 +2,10 @@ FROM mono AS builder
 
 WORKDIR /WhitespaceInterpreter
 COPY projectOne/The-Code/WhitespaceInterpreter .
-RUN msbuild /p:Configuration=Debug
+RUN msbuild /p:Configuration=Release
 
-FROM scratch
+FROM mono:slim
 
-COPY --from=builder /WhitespaceInterpreter/bin/Debug/WhitespaceInterpreter.exe /
-ENTRYPOINT ["/WhitespaceInterpreter.exe"]
+WORKDIR /WhitespaceInterpreter
+COPY --from=builder /WhitespaceInterpreter/bin/Release/WhitespaceInterpreter.exe .
+ENTRYPOINT ["mono", "WhitespaceInterpreter.exe"]

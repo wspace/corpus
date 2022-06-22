@@ -2,9 +2,10 @@ FROM mono AS builder
 
 WORKDIR /Whitespace-Interpreter
 COPY Whitespace-Interpreter .
-RUN mcs -debug -out:WhitespaceInterpreter.exe WhitespaceInterpreter/*.cs
+RUN mcs -optimize -out:WhitespaceInterpreter.exe WhitespaceInterpreter/*.cs
 
-FROM scratch
+FROM mono:slim
 
-COPY --from=builder /Whitespace-Interpreter/WhitespaceInterpreter.exe /
-ENTRYPOINT ["/WhitespaceInterpreter.exe"]
+WORKDIR /Whitespace-Interpreter
+COPY --from=builder /Whitespace-Interpreter/WhitespaceInterpreter.exe .
+ENTRYPOINT ["mono", "WhitespaceInterpreter.exe"]

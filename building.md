@@ -48,10 +48,11 @@ Projects that can be built with Docker:
 - cpp/yuukiaria
 - crystal/collidedscope-spiceweight
 - csharp/denislabrecque
+- csharp/jlchntoz: Need to restructure files
 - csharp/littlebughunter-assembler
 - csharp/meeees
 - csharp/nicolasff-spacesharp
-- csharp/north-projectone
+- csharp/north-projectone: The Carbon driver has not been ported to 64-bit, so very few parts of Windows.Forms work properly
 - csharp/reflash: Mono does not implement WPF APIs
 - csharp/rolisoft-esoteric
 - csharp/ryzngard-dotnot: CSharpGeneratorDriver does not contain a constructor that takes 3 arguments
@@ -149,7 +150,6 @@ Building status of individual executables:
 - ⚠️ cpp/subv-whitespace-llvm/bin/Whitespace-LLVM: Requires LLVM
 - ⚠️ cpp/tycho-whitespace-llvm/wspace-jit: `make` Requires LLVM
 - ❌ csharp/colchicus
-- ❌ csharp/jlchntoz
 - ❌ csharp/nutcrack-whiteplanes
 - ❌ docker/baekjoon-onlinejudge
 - ❌ docker/bensuperpc

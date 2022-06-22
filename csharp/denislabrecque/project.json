@@ -30,7 +30,7 @@
     {
       "type": "interpreter",
       "bin": "WhitespaceInterpreter.exe",
-      "usage": "mono $0",
+      "usage": "",
       "notes": "Program is hardcoded to a test program. Prints instructions while executing."
     }
   ]

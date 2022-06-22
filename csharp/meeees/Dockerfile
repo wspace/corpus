@@ -2,9 +2,10 @@ FROM mono AS builder
 
 WORKDIR /Whitespace
 COPY Whitespace .
-RUN msbuild /p:Configuration=Debug
+RUN msbuild /p:Configuration=Release
 
-FROM scratch
+FROM mono:slim
 
-COPY --from=builder /Whitespace/bin/Debug/Whitespace.exe /
-ENTRYPOINT ["/Whitespace.exe"]
+WORKDIR /Whitespace
+COPY --from=builder /Whitespace/bin/Release/Whitespace.exe .
+ENTRYPOINT ["mono", "Whitespace.exe"]

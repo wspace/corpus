@@ -36,5 +36,5 @@
     },
     "usage": ["enum"]
   },
-  "todo": "Probably need to restructure files in order to build"
+  "build_errors": "Need to restructure files"
 }

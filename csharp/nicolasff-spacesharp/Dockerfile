@@ -6,7 +6,8 @@ WORKDIR /spacesharp
 COPY spacesharp .
 RUN make MCS=mcs
 
-FROM scratch
+FROM mono:slim
 
-COPY --from=builder /spacesharp/wsc.exe /
-ENTRYPOINT ["/wsc.exe"]
+WORKDIR /spacesharp
+COPY --from=builder /spacesharp/wsc.exe .
+ENTRYPOINT ["mono", "wsc.exe"]

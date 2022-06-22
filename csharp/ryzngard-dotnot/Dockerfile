@@ -4,4 +4,4 @@ WORKDIR /DotNot
 COPY DotNot .
 RUN nuget restore
 WORKDIR /DotNot/src/Whitespace.TestProject
-RUN msbuild /p:Configuration=Debug
+RUN msbuild /p:Configuration=Release

@@ -51,8 +51,8 @@
   "commands": [
     {
       "type": "interpreter",
-      "bin": "bin/Debug/Whitespace.exe",
-      "usage": "mono $0",
+      "bin": "bin/Release/Whitespace.exe",
+      "usage": "[subcommand]",
       "input": "<file>",
       "subcommands": [
         { "name": "run", "usage": "run <file>", "notes": "Interprets assembled program" },

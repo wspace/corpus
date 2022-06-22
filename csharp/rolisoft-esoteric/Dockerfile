@@ -2,9 +2,10 @@ FROM mono AS builder
 
 WORKDIR /Esoteric-Code-Interpreter
 COPY Esoteric-Code-Interpreter .
-RUN msbuild /p:Configuration=Debug\;AssemblyName=EsotericCodeInterpreter
+RUN msbuild /p:Configuration=Release\;AssemblyName=EsotericCodeInterpreter
 
-FROM scratch
+FROM mono:slim
 
-COPY --from=builder /Esoteric-Code-Interpreter/bin/Debug/EsotericCodeInterpreter.exe /
-ENTRYPOINT ["/EsotericCodeInterpreter.exe"]
+WORKDIR /Esoteric-Code-Interpreter
+COPY --from=builder /Esoteric-Code-Interpreter/bin/Release/EsotericCodeInterpreter.exe .
+ENTRYPOINT ["mono", "EsotericCodeInterpreter.exe"]

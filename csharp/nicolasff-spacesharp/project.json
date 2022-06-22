@@ -61,7 +61,7 @@
   "commands": [
     {
       "bin": "wsc.exe",
-      "usage": "mono $0 [-o <output_file>] <file>",
+      "usage": "[-o <output_file>] <file>",
       "output": "<output_file> or ` .exe` if empty",
       "options": [{ "short": "o", "desc": "output file" }],
       "option_parse": "manual",

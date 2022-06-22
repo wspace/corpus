@@ -10,12 +10,12 @@
   "spec_version": "-",
   "source": ["https://github.com/North15/projectOne"],
   "mappings": [{ "space": "S", "tab": "T", "lf": "L", "extension": "txt" }],
+  "run_errors": "The Carbon driver has not been ported to 64-bit, so very few parts of Windows.Forms work properly",
   "commands": [
     {
-      "type": "IDE",
-      "bin": "The-Code/WhitespaceInterpreter/bin/Debug/WhitespaceInterpreter.exe",
-      "usage": "mono $0",
-      "run_errors": "The Carbon driver has not been ported to 64-bit, so very few parts of Windows.Forms work properly"
+      "type": "GUI",
+      "bin": "The-Code/WhitespaceInterpreter/bin/Release/WhitespaceInterpreter.exe",
+      "usage": ""
     }
   ]
 }

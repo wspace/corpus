@@ -9,5 +9,7 @@
   "spec_version": "0.3",
   "source": ["https://github.com/reflash-blog/WhiteSpaceInterpreter"],
   "build_errors": "Mono does not implement WPF APIs",
-  "commands": [{ "type": "interpreter", "bin": "WhiteSpaceInterpretator/bin/Debug/WhiteSpaceInterpretator.exe" }]
+  "commands": [
+    { "type": "interpreter", "bin": "WhiteSpaceInterpretator/bin/Release/WhiteSpaceInterpretator.exe" }
+  ]
 }

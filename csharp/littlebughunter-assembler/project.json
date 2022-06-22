@@ -93,8 +93,8 @@
   "commands": [
     {
       "type": "assembler",
-      "bin": "bin/Debug/WhitespaceAssembler.exe",
-      "usage": "mono $0 <file> <output_file>",
+      "bin": "bin/Release/WhitespaceAssembler.exe",
+      "usage": "<file> <output_file>",
       "output": "<output_file>"
     }
   ],

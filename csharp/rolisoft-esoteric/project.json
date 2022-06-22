@@ -39,8 +39,8 @@
   "commands": [
     {
       "type": "interactive",
-      "bin": "bin/Debug/EsotericCodeInterpreter.exe",
-      "usage": "mono $0",
+      "bin": "bin/Release/EsotericCodeInterpreter.exe",
+      "usage": "",
       "subcommands": [
         { "name": "start", "desc": "interpret program written in CLI" },
         { "name": "load", "desc": "interpret program from a file" },
