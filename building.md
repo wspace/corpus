@@ -24,6 +24,8 @@ Projects that can be built with Docker:
 - c/threeifbywhiskey-blacktime
 - c/threeifbywhiskey-satan
 - c/zackeua
+- clojure/jmesyou-erasure
+- clojure/makenowjust
 - cpp/abac-whint
 - cpp/abcsharp
 - cpp/andrewarchi-respace
@@ -142,8 +144,6 @@ Projects that can be built with Docker:
 Building status of individual executables:
 
 - ⚠️ brainfuck/andrewarchi-wsbf/ws.bf
-- clojure/jmesyou-erasure/target/uberjar/erasure-2.0-standalone.jar: `lein uberjar`
-- clojure/makenowjust/target/whitespace-clj-0.1.0-SNAPSHOT-standalone.jar: `lein uberjar`
 - ⚠️ coffeescript/ehrlichbryan/*unspecified*: `grunt` Unclear how to run
 - ❌ cpp/burghard-wsintercpp
 - ⚠️ cpp/sonicyang-ws-frontend/wsjit: Requires LLVM

@@ -12,9 +12,7 @@
     {
       "type": "interpreter",
       "bin": "target/whitespace-clj-0.1.0-SNAPSHOT-standalone.jar",
-      "dependencies": ["Leiningen"],
-      "build": "lein uberjar",
-      "usage": "java -jar $0 [-h | --help] [-v | --version] [-c | --chars] [-t | --text] [-l | --lisp] [-s | --sexp] [--time] <file>",
+      "usage": "[-h | --help] [-v | --version] [-c | --chars] [-t | --text] [-l | --lisp] [-s | --sexp] [--time] <file>",
       "options": [
         { "short": "h", "long": "help", "desc": "show this help" },
         { "short": "v", "long": "version", "desc": "show version" },

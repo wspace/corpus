@@ -12,9 +12,7 @@
     {
       "type": "interpreter",
       "bin": "target/uberjar/erasure-2.0-standalone.jar",
-      "dependencies": ["Leiningen"],
-      "build": "lein uberjar",
-      "usage": "java -jar $0 [-i | --intermediate] [-h | --help] <file>",
+      "usage": "[-i | --intermediate] [-h | --help] <file>",
       "options": [
         {
           "short": "i",
