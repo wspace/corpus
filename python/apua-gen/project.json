@@ -35,8 +35,7 @@
     {
       "type": "mapping",
       "bin": "gen_ws.py",
-      "dependencies": ["Python 3"],
-      "usage": "python3 $0 <file>.ws.orig (-c | -b | -w)",
+      "usage": "<file>.ws.orig (-c | -b | -w)",
       "input": "<file>.ws.orig",
       "output": "<file>.ws",
       "options": [

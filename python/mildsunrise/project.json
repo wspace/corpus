@@ -9,12 +9,5 @@
   "spec_version": "0.2",
   "source": ["https://gist.github.com/mildsunrise/d948fe1334f36c9a0f6516e58271f936"],
   "bounds": { "heap_min": "unbounded", "heap_max": "unbounded" },
-  "commands": [
-    {
-      "type": "interpreter",
-      "bin": "whitespace.py",
-      "dependencies": ["Python 3"],
-      "usage": "python3 $0 <file>"
-    }
-  ]
+  "commands": [{ "type": "interpreter", "bin": "whitespace.py", "usage": "<file>" }]
 }

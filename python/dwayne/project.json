@@ -9,12 +9,16 @@
   "spec_version": "0.2",
   "source": ["https://github.com/dwayne/whitespace-python"],
   "package": { "name": "whitespace", "manager": "PyPI", "url": "https://pypi.org/project/whitespace/" },
+  "programs": [
+    { "path": "tests/fixtures/count.ws", "equivalent": "count.ws", "spec_version": "0.2" },
+    { "path": "tests/fixtures/fact.ws", "equivalent": "fact.ws", "spec_version": "0.2" },
+    { "path": "tests/fixtures/hello.ws", "equivalent": "hworld.ws", "spec_version": "0.2" },
+    { "path": "tests/fixtures/name.ws", "equivalent": "name.ws", "spec_version": "0.2" }
+  ],
   "commands": [
     {
       "bin": "whitespace",
-      "dependencies": ["Python 3.7", "pipenv"],
-      "install_dependencies": "pipenv install --dev",
-      "usage": "pipenv run python3 -m $0 [-h | --help] <file>",
+      "usage": "[-h | --help] <file>",
       "options": [{ "short": "h", "long": "help", "desc": "show this help message and exit" }],
       "option_parse": "Python argparse"
     }

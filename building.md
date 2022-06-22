@@ -72,6 +72,55 @@ Projects that can be built with Docker:
 - ocaml/progbits-blank: Module Stdlib.Stream is deprecated and the camlp-streams library should be used instead
 - ocaml/steiner
 - php/nobody1986
+- python/0x55aa
+- python/adapap
+- python/ahl27
+- python/alecgraves-whitespac3
+- python/apua-gen
+- python/apua-wvm
+- python/bornlex
+- python/dalleng: Needs Codewars entrypoint
+- python/damle-evanesco
+- python/dos1-colorspace: Requires a wspace executable in PATH
+- python/drafear-converter
+- python/dwayne
+- python/eizoassik-pyws
+- python/ericpwilliamson-codewars: Needs Codewars entrypoint
+- python/ffanzhang
+- python/francoisrozet-whitespacy
+- python/freyamade-hohoho
+- python/ganeshsankaran
+- python/hearnderek: Needs Codewars entrypoint
+- python/hearnderek-codewars: Needs Codewars entrypoint
+- python/hunminpark
+- python/ilikepython256-whitespace-unc
+- python/joaquinrossi-esoteric
+- python/jrialland
+- python/kareeeeem-abyad
+- python/katc
+- python/kraterkraken
+- python/lachlancourt
+- python/maximegoyette: Needs Codewars entrypoint
+- python/mcolom
+- python/meand
+- python/mikecat
+- python/mikejs-nbspy
+- python/mildsunrise
+- python/molfar-codewars: Needs Codewars entrypoints
+- python/musflood: Needs Codewars entrypoint
+- python/nutcrack-whiteplanes: No entrypoint
+- python/phlip-pywhitespace
+- python/prajwalanand
+- python/q2ven-whitespyce
+- python/qwhxm-baudelaire: Needs AWS Lambda entrypoint
+- python/rumaxwell
+- python/ryndvs-aoc
+- python/smithers-bluespace
+- python/techiehelper-codewars: Needs Codewars entrypoint
+- python/umutoztunc-whitesymex
+- python/wasabili
+- python/wawrepo-kata: Needs Codewars entrypoint
+- python/yasn-whitepy
 - rebol/hostilefork: Bootstrapping issues
 - rust/andrewarchi-yspace
 - rust/censoredusername-whitespacers
@@ -187,81 +236,14 @@ Building status of individual executables:
 - php/johankj/whitespace.php
 - ❌ php/jseidl-wcc
 - php/mattparker/src/PHPWhiteSpace.php
-- python/0x55aa/wspace.py
-- python/adapap/whitespace\_interpreter.py
-- python/ahl27/main.py
-- python/alecgraves-whitespac3/interpreter.py
-- python/apua-gen/gen\_ws.py
-- python/apua-wvm/wvm.py
-- python/bornlex:
-  - main.py
-  - tests.py
 - ❌ python/cybis-hapyli
-- ⚠️ python/dalleng/whitespace.py: Needs Codewars entrypoint
-- python/damle-evanesco/src/textToWhitespace.py
-- python/dos1-colorspace:
-  - colorspace
-  - colorspace-convert
-  - colorspace-decompile
-- python/drafear-converter/to\_ws.py
-- python/dwayne/whitespace
-- python/eizoassik-pyws/pyws.py
-- ⚠️ python/ericpwilliamson-codewars/Solutions/whitespace\_cw.py: Needs Codewars entrypoint
-- python/ffanzhang/ws.py
-- python/francoisrozet-whitespacy/whitespacy.py
-- python/freyamade-hohoho/hohoho
-- python/ganeshsankaran/interpreter.py
-- ⚠️ python/hearnderek/whitespace.py: Needs Codewars entrypoint
-- ⚠️ python/hearnderek-codewars/Python/WhitespaceInterpreter.py: Needs Codewars entrypoint
-- python/hunminpark/Convert.py
-- ⚠️ python/ilikepython256-whitespace-unc:
-  - WhitespaceCompiler.py
-  - ⚠️ WhitespaceWeb.py
-  - ⚠️ WhitespaceWebRaw.py
-- python/joaquinrossi-esoteric/whitespace.py
-- python/jrialland/whitespaceasm.py
-- python/kareeeeem-abyad:
-  - generate\_programs
-  - src
-- python/katc/whitespace.py
-- python/kraterkraken:
-  - mkws.py
-  - whitespace.py
-- python/lachlancourt/transpiler.py
 - ⚠️ python/marktraceur-redlandside/main.py: PyQt version 4 not installed
-- ⚠️ python/maximegoyette/whitespace.py: Needs Codewars entrypoint
-- python/mcolom/whitespace.py
-- python/meand/compile.py
-- python/mikecat/whitespace.py
-- python/mikejs-nbspy/nbspy.py
-- python/mildsunrise/whitespace.py
-- ⚠️ python/molfar-codewars:
-  - ⚠️ 2 kyu/Whitespace Interpreter/solution.coffee: Needs Codewars entrypoint
-  - ⚠️ 2 kyu/Whitespace Interpreter/solution.cpp: Needs Codewars entrypoint
-  - ⚠️ 2 kyu/Whitespace Interpreter/solution.java: Needs Codewars entrypoint
-  - ⚠️ 2 kyu/Whitespace Interpreter/solution.js: Needs Codewars entrypoint
-  - ⚠️ 2 kyu/Whitespace Interpreter/solution.py: Needs Codewars entrypoint
-  - ⚠️ 2 kyu/Whitespace Interpreter/solution.ts: Needs Codewars entrypoint
-- ❌ python/musflood
-- ⚠️ python/nutcrack-whiteplanes/*unspecified*: No entrypoint
-- python/phlip-pywhitespace/main.py
-- python/prajwalanand/whitespace
-- ❌ python/q2ven-whitespyce
-- ⚠️ python/qwhxm-baudelaire/backend/baudelaire-whitespace.py: Needs AWS Lambda entrypoint
 - ❌ python/res-trans32
-- python/rumaxwell/entrance.py
-- python/ryndvs-aoc/2018/wsa-to-ws.py
-- python/smithers-bluespace/bspace.py
 - ⚠️ python/stephenchappell:
   - ⚠️ Assembler.py: msvcrt module only exists on Windows
   - Helpers.py
   - ⚠️ Interpreter.py: msvcrt module only exists on Windows
-- ⚠️ python/techiehelper-codewars/python/Whitespace.py: Needs Codewars entrypoint
 - ⚠️ python/tokigun-esotope-ws/esotope-ws: Source code unavailable
-- python/umutoztunc-whitesymex/whitesymex/cli.py
-- python/wasabili/Whitespace.py
-- ⚠️ python/wawrepo-kata/20170307\_Whitespace\_Interpreter/interpreter.py: Needs Codewars entrypoint
-- python/yasn-whitepy/whitepycli
 - r/bmazoure/R/whitespace.R
 - ⚠️ ruby/alesiong/wsv.rb
 - ruby/angel:

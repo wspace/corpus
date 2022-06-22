@@ -24,7 +24,7 @@
     {
       "type": "transpiler",
       "bin": "transpiler.py",
-      "usage": "python3 $0",
+      "usage": "",
       "input": "code.txt",
       "output": "stdout",
       "notes": "Transpiles to Python"

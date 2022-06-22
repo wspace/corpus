@@ -17,7 +17,7 @@
   "programs": [
     { "path": "examples/count.ws", "equivalent": "count.ws", "spec_version": "0.2" },
     { "path": "examples/fact.ws", "equivalent": "fact.ws (0.2)", "spec_version": "0.2" },
-    { "path": "examples/hello.ws", "equivalent": "hello.ws", "spec_version": "0.2" },
+    { "path": "examples/hello.ws", "equivalent": "hworld.ws", "spec_version": "0.2" },
     { "path": "examples/name.ws", "equivalent": "name.ws", "spec_version": "0.2" }
   ],
   "commands": [

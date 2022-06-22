@@ -43,8 +43,7 @@
     {
       "type": "disassembler",
       "bin": "whitespace.py",
-      "dependencies": ["Python 2"],
-      "usage": "python2 $0 [-h | --help] [-v | --verbose] [-p | --parse] <file>",
+      "usage": "[-h | --help] [-v | --verbose] [-p | --parse] <file>",
       "options": [
         { "short": "h", "long": "help", "desc": "show this help message and exit" },
         { "short": "v", "long": "verbose", "desc": "Activate verbose mode" },

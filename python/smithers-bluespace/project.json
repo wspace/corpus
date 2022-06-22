@@ -9,8 +9,8 @@
   "spec_version": "0.3",
   "source": [
     "https://github.com/wspace/smithers-bluespace",
-    "https://cpjsmith.uk/whitespace",
-    "https://github.com/Smithers888/BlueSpace"
+    "https://github.com/Smithers888/BlueSpace",
+    "https://cpjsmith.uk/whitespace"
   ],
   "whitespace": { "extension": "ws" },
   "assembly": {
@@ -93,8 +93,7 @@
     {
       "type": "interpreter",
       "bin": "bspace.py",
-      "dependencies": ["Python 3"],
-      "usage": "python3 $0 <file>",
+      "usage": "<file>",
       "options": [
         { "short": "h", "long": "help", "desc": "show this help message and exit" },
         { "short": "v", "long": "version", "desc": "print version information and exit" },

@@ -13,8 +13,7 @@
     {
       "type": "polyglot formatter",
       "bin": "whitespacy.py",
-      "dependencies": ["Python 3"],
-      "usage": "python3 $0 [-o <output_file> | --output=<output_file>] [-v | --verbose] <c_file> <whitespace_file>",
+      "usage": "[-o <output_file> | --output=<output_file>] [-v | --verbose] <c_file> <whitespace_file>",
       "options": [
         { "short": "h", "long": "help", "desc": "show this help message and exit" },
         { "short": "o", "long": "output", "desc": "output file" },

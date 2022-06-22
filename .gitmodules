@@ -893,9 +893,6 @@
 [submodule "whitespace/rsactf/write-ups"]
 	path = whitespace/rsactf/write-ups
 	url = https://github.com/rsa-ctf/write-ups
-[submodule "whitespace/ryndvs-aoc"]
-	path = whitespace/ryndvs-aoc
-	url = https://github.com/ryndvs96/aoc
 [submodule "whitespace/samdonow-pelc/PELC"]
 	path = whitespace/samdonow-pelc/PELC
 	url = https://github.com/drsam94/PELC

@@ -12,9 +12,9 @@
     {
       "type": "text to Whitespace",
       "bin": "src/textToWhitespace.py",
-      "dependencies": ["Python 3"],
-      "usage": "python3 $0 < <file>",
+      "usage": "< <file>",
       "input": "stdin",
+      "output": "stdout",
       "notes": "Only converts first line of input"
     }
   ]

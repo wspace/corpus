@@ -20,7 +20,7 @@ func main() {
 			} else {
 				p.License = "not found"
 			}
-			tools.WriteProject(p)
+			p.Write()
 		}
 	}
 }

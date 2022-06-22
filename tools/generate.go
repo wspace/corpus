@@ -149,6 +149,7 @@ type Project struct {
 		Notes        string   `json:"notes,omitempty"`
 	} `json:"programs,omitempty"`
 	BuildErrors string    `json:"build_errors,omitempty"`
+	RunErrors   string    `json:"run_errors,omitempty"`
 	Commands    []Command `json:"commands,omitempty"`
 	Notes       string    `json:"notes,omitempty"`
 	TODO        string    `json:"todo,omitempty"`
@@ -161,7 +162,7 @@ type Command struct {
 	InstallDependencies string          `json:"install_dependencies,omitempty"`
 	Build               string          `json:"build,omitempty"`
 	BuildErrors         string          `json:"build_errors,omitempty"`
-	Usage               string          `json:"usage,omitempty"`
+	Usage               *string         `json:"usage,omitempty"`
 	ExampleUsages       []string        `json:"example_usages,omitempty"`
 	RunErrors           string          `json:"run_errors,omitempty"`
 	Input               string          `json:"input,omitempty"`
@@ -262,7 +263,7 @@ func ReadProjects(paths []string) ([]*Project, error) {
 	return projects, nil
 }
 
-func WriteProject(p *Project) error {
+func (p *Project) Write() error {
 	var b bytes.Buffer
 	e := json.NewEncoder(&b)
 	e.SetEscapeHTML(false)

@@ -64,11 +64,9 @@
     {
       "type": "interpreter",
       "bin": "main.py",
-      "dependencies": ["Python 3"],
-      "usage": "python3 $0 <file>",
+      "usage": "<file>",
       "notes": "Prints instructions before executing"
-    },
-    { "type": "tests", "bin": "tests.py", "dependencies": ["Python 3"], "usage": "python3 $0" }
+    }
   ],
   "todo": "Figure out how to use .wil files and whether there is an assembler"
 }

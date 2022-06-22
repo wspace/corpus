@@ -40,8 +40,7 @@
     {
       "type": "assembler",
       "bin": "compile.py",
-      "dependencies": ["Python 3"],
-      "usage": "python3 $0 [-h | --help] [-o <output_file>] <file>",
+      "usage": "[-h | --help] [-o <output_file>] <file>",
       "options": [
         { "short": "h", "long": "help", "desc": "show this help message and exit" },
         { "short": "o", "arg": "ofile", "type": "file", "desc": "specify output destination" }

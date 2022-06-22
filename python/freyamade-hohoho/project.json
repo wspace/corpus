@@ -12,14 +12,15 @@
   "relations": [{ "id": "python/dwayne", "type": "library" }],
   "whitespace": { "extension": "ws" },
   "mappings": [{ "space": "snow", "tab": "hohoho", "lf": "\n", "spaces_between": true, "extension": "ho" }],
-  "programs": [{ "path": "hello.ho", "generated": "hello.ws", "equivalent": "hworld.ws", "spec_version": "0.2" }],
+  "programs": [
+    { "path": "factorial.ws", "equivalent": "fact.ws", "spec_version": "0.2" },
+    { "path": "hello.ho", "generated": "hello.ws", "equivalent": "hworld.ws", "spec_version": "0.2" }
+  ],
   "commands": [
     {
       "type": "mapping",
       "bin": "hohoho",
-      "dependencies": ["Python 3.6"],
-      "install_dependencies": "pip3 install whitespace",
-      "usage": "python3 -m $0 [-h | --help] [-t | --from-ws] <file>",
+      "usage": "[-h | --help] [-t | --from-ws] <file>",
       "options": [
         { "short": "h", "long": "help", "desc": "show this help message and exit" },
         { "short": "t", "long": "from-ws", "desc": "Translate an input whitespace file into a hohoho file" }

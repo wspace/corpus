@@ -8,13 +8,5 @@
   "date": "2014-02-16 11:04:37 +0900",
   "spec_version": "0.3",
   "source": ["https://github.com/mikecat/python-whitespace"],
-  "commands": [
-    {
-      "type": "interpreter",
-      "bin": "whitespace.py",
-      "dependencies": ["Python 3"],
-      "usage": "python3 $0 <file>",
-      "notes": "Runs in both Python 2 and 3"
-    }
-  ]
+  "commands": [{ "type": "interpreter", "bin": "whitespace.py", "usage": "<file>" }]
 }

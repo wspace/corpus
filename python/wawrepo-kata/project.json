@@ -9,11 +9,6 @@
   "spec_version": "0.3",
   "source": ["https://github.com/WawRepo/Kata"],
   "challenges": ["Codewars"],
-  "commands": [
-    {
-      "type": "interpreter",
-      "bin": "20170307_Whitespace_Interpreter/interpreter.py",
-      "run_errors": "Needs Codewars entrypoint"
-    }
-  ]
+  "run_errors": "Needs Codewars entrypoint",
+  "commands": [{ "type": "interpreter", "bin": "20170307_Whitespace_Interpreter/interpreter.py" }]
 }

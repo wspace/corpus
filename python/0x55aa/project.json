@@ -14,17 +14,17 @@
   "whitespace": { "extension": "ws" },
   "mappings": [{ "space": "s", "tab": "t", "lf": "l", "before_stl": true }],
   "programs": [
+    { "path": "examples/calc.ws", "equivalent": "calc.ws", "spec_version": "0.2" },
+    { "path": "examples/count.ws", "equivalent": "count.ws", "spec_version": "0.2" },
+    { "path": "examples/fact.ws", "equivalent": "fact.ws", "spec_version": "0.2" },
+    { "path": "examples/hanoi.ws", "equivalent": "hanoi.ws", "spec_version": "0.2" },
     { "path": "examples/hello_world.ws", "spec_version": "0.2" },
+    { "path": "examples/hworld.ws", "equivalent": "hworld.ws", "spec_version": "0.2" },
+    { "path": "examples/loctest.ws", "equivalent": "loctest.ws", "spec_version": "0.3" },
+    { "path": "examples/name.ws", "equivalent": "name.ws", "spec_version": "0.2" },
     { "path": "test/heap.ws", "spec_version": "0.2" },
     { "path": "test/print_1.ws", "spec_version": "0.2" },
     { "path": "test/stack__arithmetic.ws", "spec_version": "0.3" }
   ],
-  "commands": [
-    {
-      "type": "interpreter",
-      "bin": "wspace.py",
-      "dependencies": ["Python 2"],
-      "usage": "python2 $0 <file>"
-    }
-  ]
+  "commands": [{ "type": "interpreter", "bin": "wspace.py", "usage": "<file>" }]
 }

@@ -9,13 +9,6 @@
   "spec_version": "0.3",
   "source": ["https://github.com/EricPWilliamson/Codewars-algorithms"],
   "challenges": ["Codewars"],
-  "commands": [
-    {
-      "type": "interpreter",
-      "bin": "Solutions/whitespace_cw.py",
-      "dependencies": ["Python 3"],
-      "usage": "python3 $0",
-      "run_errors": "Needs Codewars entrypoint"
-    }
-  ]
+  "run_errors": "Needs Codewars entrypoint",
+  "commands": [{ "type": "interpreter", "bin": "Solutions/whitespace_cw.py" }]
 }

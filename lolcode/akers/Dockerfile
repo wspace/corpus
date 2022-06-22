@@ -13,4 +13,4 @@ RUN apk add readline-dev
 WORKDIR /lolcode
 COPY --from=builder /lci/lci /usr/local/bin/
 COPY lolcode/*.lol lolcode/*.ws lolcode/*.b ./
-ENTRYPOINT ["/usr/local/bin/lci", "whitespace.lol"]
+ENTRYPOINT ["lci", "whitespace.lol"]

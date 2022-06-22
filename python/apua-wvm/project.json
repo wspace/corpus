@@ -31,8 +31,7 @@
     {
       "type": "interpreter",
       "bin": "wvm.py",
-      "dependencies": ["Python 3"],
-      "usage": "python3 $0 <file> [<lexical_tokens>]",
+      "usage": "<file> [<lexical_tokens>]",
       "notes": "<lexical_tokens> is a 3-character string that specifies the mapping to use, falling back to \" \t\n\""
     }
   ]

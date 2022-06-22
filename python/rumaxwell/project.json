@@ -21,8 +21,7 @@
     {
       "type": "interpreter",
       "bin": "entrance.py",
-      "dependencies": ["Python 3"],
-      "usage": "python3 $0 [-r | --run] [-s | --show-steps] [-p | --step] [-d | --debug] [-v | --version] [-t | --tutorial] [-h | --help] <file>",
+      "usage": "[-r | --run] [-s | --show-steps] [-p | --step] [-d | --debug] [-v | --version] [-t | --tutorial] [-h | --help] <file>",
       "options": [
         { "short": "r", "long": "run", "desc": "run" },
         { "short": "s", "long": "show-steps", "desc": "show steps" },

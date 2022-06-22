@@ -12,11 +12,6 @@
   "relations": [{ "id": "cpp/esco", "type": "binary" }],
   "whitespace": { "extension": "ws" },
   "programs": [{ "path": "backend/baudelaire.ws", "aux": ["extras/baudelaire_orig.ws"], "spec_version": "0.2" }],
-  "commands": [
-    {
-      "type": "web service",
-      "bin": "backend/baudelaire-whitespace.py",
-      "run_errors": "Needs AWS Lambda entrypoint"
-    }
-  ]
+  "run_errors": "Needs AWS Lambda entrypoint",
+  "commands": [{ "type": "web service", "bin": "backend/baudelaire-whitespace.py" }]
 }

@@ -9,13 +9,5 @@
   "spec_version": "0.3",
   "source": ["https://gist.github.com/wasabili/708773"],
   "whitespace": { "unimplemented": ["store", "retrieve", "call", "ret"] },
-  "commands": [
-    {
-      "type": "interpreter",
-      "bin": "Whitespace.py",
-      "dependencies": ["Python 2"],
-      "usage": "python2 $0 < <file>",
-      "input": "stdin"
-    }
-  ]
+  "commands": [{ "type": "interpreter", "bin": "Whitespace.py", "usage": "< <file>", "input": "stdin" }]
 }

@@ -42,8 +42,7 @@
     {
       "type": "assembler",
       "bin": "whitespaceasm.py",
-      "dependencies": ["Python 2"],
-      "usage": "python2 $0 [<file>...] <last_file>",
+      "usage": "[<file>...] <last_file>",
       "output": "<last_file_replace:/\\.wsa$/.ws/>",
       "notes": "Multiple files are concatenated. If the last file does not end with .wsa, it will be overwritten."
     }

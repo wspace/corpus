@@ -52,7 +52,7 @@
     {
       "type": "interpreter",
       "bin": "whitespace.py",
-      "usage": "python3 $0 ([--debug | --describe] (<file> | --test) | --help)",
+      "usage": "([--debug | --describe] (<file> | --test) | --help)",
       "input": "<file> or stdin if -",
       "options": [
         { "long": "test", "desc": "Runs unit tests (overrides filename)" },
@@ -65,7 +65,7 @@
     {
       "type": "assembler",
       "bin": "mkws.py",
-      "usage": "$0 <file>",
+      "usage": "<file>",
       "input": "<file> or stdin if -",
       "options": [{ "long": "help", "desc": "Prints this help info" }],
       "option_parse": "manual"

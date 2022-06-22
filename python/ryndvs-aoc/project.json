@@ -58,7 +58,7 @@
     {
       "type": "assembler",
       "bin": "2018/wsa-to-ws.py",
-      "usage": "python3 $0 <file>",
+      "usage": "<file>",
       "input": "<file>",
       "output": "stdout"
     }

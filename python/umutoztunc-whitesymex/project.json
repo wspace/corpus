@@ -24,10 +24,8 @@
     {
       "type": "symbolic executor",
       "bin": "whitesymex/cli.py",
-      "dependencies": ["Python 3", "Z3"],
-      "install_dependencies": "pip3 install z3-solver",
-      "usage": "python3 -m whitesymex.cli [-h | --help] [--version] [--find <find>] [--avoid <avoid>] [--strategy {bfs,dfs,random}] [--loop-limit <limit>] <file>",
-      "example_usages": ["python3 -m whitesymex.cli --find Correct! --avoid Nope. tests/data/password_checker.ws"],
+      "usage": "[-h | --help] [--version] [--find <find>] [--avoid <avoid>] [--strategy {bfs,dfs,random}] [--loop-limit <limit>] <file>",
+      "example_usages": ["--find Correct! --avoid Nope. tests/data/password_checker.ws"],
       "options": [
         { "short": "h", "long": "help", "desc": "show this help message and exit" },
         { "long": "version", "desc": "show program's version number and exit" },

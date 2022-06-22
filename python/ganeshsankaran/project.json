@@ -43,8 +43,7 @@
     {
       "type": "wsa interpreter",
       "bin": "interpreter.py",
-      "dependencies": ["Python 3"],
-      "usage": "python3 $0 <file>",
+      "usage": "<file>",
       "notes": "Directly executes wsa files, starting at the `main` label. Files must not have any blank or trailing lines"
     }
   ]

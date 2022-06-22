@@ -13,7 +13,7 @@
     {
       "type": "interpreter",
       "bin": "whitespace.py",
-      "usage": "python3 $0 run <file>",
+      "usage": "run <file>",
       "input": "<file>",
       "output": "stdout",
       "notes": "The only implemented mode is `run`"

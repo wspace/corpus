@@ -57,5 +57,6 @@
     },
     "usage": ["enum"]
   },
-  "commands": [{ "bin": "ws.py", "dependencies": ["Python 3"], "usage": "python3 $0 < <file>", "input": "stdin" }]
+  "programs": [{ "path": "test/helloworld.ws", "spec_version": "0.2" }],
+  "commands": [{ "bin": "ws.py", "usage": "< <file>", "input": "stdin" }]
 }

@@ -26,12 +26,5 @@
     { "path": "examples/hanoi.ws", "equivalent": "hanoi.ws", "spec_version": "0.2" },
     { "path": "examples/loctest.ws", "equivalent": "loctest.ws", "spec_version": "0.3" }
   ],
-  "commands": [
-    {
-      "type": "interpreter",
-      "bin": "main.py",
-      "dependencies": ["Python 3"],
-      "usage": "python3 $0 <file>"
-    }
-  ]
+  "commands": [{ "type": "interpreter", "bin": "main.py", "usage": "<file>" }]
 }

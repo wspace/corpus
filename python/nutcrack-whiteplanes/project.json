@@ -42,6 +42,7 @@
     },
     "usage": ["enum"]
   },
-  "commands": [{ "type": "interpreter", "dependencies": ["Python 3"], "run_errors": "No entrypoint" }],
+  "run_errors": "No entrypoint",
+  "commands": [{ "type": "interpreter" }],
   "notes": "GitHub repo and GitHub Pages site are offline. Date from earliest file in archive."
 }

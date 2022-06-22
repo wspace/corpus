@@ -10,13 +10,6 @@
   "source": ["https://github.com/prajwalanand/whitespace-compiler"],
   "mappings": [{ "space": "1", "tab": "2", "lf": "3", "spaces_between": false, "extension": "ws" }],
   "commands": [
-    {
-      "type": "transpiler",
-      "bin": "whitespace",
-      "dependencies": ["Python 3"],
-      "usage": "python3 $0 <file>",
-      "input": "stdin",
-      "output": "stdout"
-    }
+    { "type": "transpiler", "bin": "whitespace", "usage": "<file>", "input": "stdin", "output": "stdout" }
   ]
 }

@@ -38,12 +38,6 @@
     },
     "usage": ["enum"]
   },
-  "commands": [
-    {
-      "type": "interpreter",
-      "bin": "Python/WhitespaceInterpreter.py",
-      "dependencies": ["Python 3"],
-      "run_errors": "Needs Codewars entrypoint"
-    }
-  ]
+  "run_errors": "Needs Codewars entrypoint",
+  "commands": [{ "type": "interpreter", "bin": "Python/WhitespaceInterpreter.py" }]
 }

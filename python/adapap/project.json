@@ -12,8 +12,7 @@
     {
       "type": "interpreter",
       "bin": "whitespace_interpreter.py",
-      "dependencies": ["Python 3"],
-      "usage": "python3 $0",
+      "usage": "",
       "notes": "Program is hardcoded to the source of fibonacci.ws"
     }
   ]

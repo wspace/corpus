@@ -38,13 +38,6 @@
     "usage": ["enum"]
   },
   "commands": [
-    {
-      "type": "interpreter",
-      "bin": "nbspy.py",
-      "dependencies": ["Python 2"],
-      "usage": "python2 $0 <file>",
-      "input": "<file>",
-      "output": "stdout"
-    }
+    { "type": "interpreter", "bin": "nbspy.py", "usage": "<file>", "input": "<file>", "output": "stdout" }
   ]
 }

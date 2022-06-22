@@ -9,7 +9,6 @@
   "spec_version": "0.3",
   "source": ["https://github.com/TechieHelper/Codewars"],
   "challenges": ["Codewars"],
-  "commands": [
-    { "type": "interpreter", "bin": "python/Whitespace.py", "run_errors": "Needs Codewars entrypoint" }
-  ]
+  "run_errors": "Needs Codewars entrypoint",
+  "commands": [{ "type": "interpreter", "bin": "python/Whitespace.py" }]
 }

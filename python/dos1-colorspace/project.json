@@ -15,30 +15,25 @@
     { "path": "hworld.ws.png", "equivalent": "hworld.ws", "spec_version": "0.2" },
     { "path": "hworld2.ws.png", "equivalent": "hworld.ws", "spec_version": "0.2" }
   ],
+  "run_errors": "Requires a wspace executable in PATH",
   "commands": [
     {
       "type": "image interpreter",
       "bin": "colorspace",
-      "dependencies": ["Python 2"],
-      "install_dependencies": "pip2 install pillow",
-      "usage": "python2 $0 <image>",
+      "usage": "<image>",
       "notes": "Decodes a program encoded as an image, then executes the program with wspace in PATH"
     },
     {
       "type": "image steganography",
-      "bin": "colorspace-convert",
-      "dependencies": ["Python 2"],
-      "install_dependencies": "pip2 install pillow",
-      "usage": "python2 $0 <file> <source_image> <output_image>",
-      "notes": "Encodes a program as a PNG image, using a source image as a base"
+      "bin": "colorspace-decompile",
+      "usage": "<file> <output_image>",
+      "notes": "Encodes a program as a PNG image"
     },
     {
       "type": "image steganography",
-      "bin": "colorspace-decompile",
-      "dependencies": ["Python 2"],
-      "install_dependencies": "pip2 install pillow",
-      "usage": "python2 $0 <file> <output_image>",
-      "notes": "Encodes a program as a PNG image"
+      "bin": "colorspace-convert",
+      "usage": "<file> <source_image> <output_image>",
+      "notes": "Encodes a program as a PNG image, using a source image as a base"
     }
   ]
 }

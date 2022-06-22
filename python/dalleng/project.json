@@ -9,5 +9,6 @@
   "spec_version": "0.3",
   "source": ["https://github.com/dalleng/Whitespace"],
   "challenges": ["Codewars"],
-  "commands": [{ "type": "interpreter", "bin": "whitespace.py", "run_errors": "Needs Codewars entrypoint" }]
+  "run_errors": "Needs Codewars entrypoint",
+  "commands": [{ "type": "interpreter", "bin": "whitespace.py" }]
 }

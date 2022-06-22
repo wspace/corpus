@@ -22,9 +22,7 @@
     {
       "type": "interpreter",
       "bin": "whitepycli",
-      "dependencies": ["Python 3"],
-      "install_dependencies": "pip install -r requirements.txt",
-      "usage": "python3 $0 [--debug] [--no-debug] [--help] <file>",
+      "usage": "[--debug] [--no-debug] [--help] <file>",
       "options": [
         { "long": "debug", "desc": "Enable debug" },
         { "long": "no-debug", "desc": "Disable debug" },

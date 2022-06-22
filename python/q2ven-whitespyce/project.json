@@ -4,8 +4,52 @@
   "authors": ["q2ven"],
   "license": "none",
   "languages": ["Python"],
-  "tags": ["interpreter", "text to Whitespace", "programs"],
+  "tags": ["interpreter", "debugger", "text to Whitespace", "programs"],
   "date": "2018-05-17 23:12:05 +0900",
   "spec_version": "0.2",
-  "source": ["https://gitlab.com/q2ven/whitespyce"]
+  "source": ["https://gitlab.com/q2ven/whitespyce"],
+  "whitespace": { "extension": "ws" },
+  "assembly": {
+    "mnemonics": {
+      "push": ["push"],
+      "dup": ["duplicate"],
+      "swap": ["swap"],
+      "drop": ["discard"],
+      "add": ["add"],
+      "sub": ["sub"],
+      "mul": ["mul"],
+      "div": ["div"],
+      "mod": ["mod"],
+      "store": ["store"],
+      "retrieve": ["retrieve"],
+      "label": ["mark"],
+      "call": ["call"],
+      "jmp": ["jump"],
+      "jz": ["jump_zero"],
+      "jn": ["jump_negative"],
+      "ret": ["control_back"],
+      "end": ["end"],
+      "printc": ["printc"],
+      "printi": ["printi"],
+      "readc": ["readc"],
+      "readi": ["readi"]
+    },
+    "usage": ["debugger", "enum"]
+  },
+  "mappings": [
+    {
+      "space": "\u001b[6;30;41m ",
+      "tab": "\u001b[6;30;42m        ",
+      "lf": "\u001b[6;30;43m  ",
+      "notes": "Displayed in debugger. Tokens are delimited with \"|\" and instructions are terminated with \"\u001b[0m\"."
+    }
+  ],
+  "programs": [
+    {
+      "path": "samples/gen.py",
+      "generated": "samples/helloworld.ws",
+      "generate": "python3 samples/gen.py > samples/helloworld.ws"
+    }
+  ],
+  "commands": [{ "type": "interpreter", "bin": "interpreter.py", "usage": "<file> [debug]" }]
 }

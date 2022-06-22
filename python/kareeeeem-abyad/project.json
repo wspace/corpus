@@ -8,18 +8,56 @@
   "date": "2016-05-13 12:50:00 +0200",
   "spec_version": "0.2",
   "source": ["https://github.com/Kareeeeem/abyad"],
-  "commands": [
+  "programs": [
     {
-      "type": "interpreter",
-      "bin": "src",
-      "dependencies": ["Python 2.7"],
-      "usage": "python2.7 -m $0 <file>"
+      "path": "tests/programs.py",
+      "generated": "tests/arithmetic.ws",
+      "generate": "python generate_programs"
     },
+    {
+      "path": "tests/programs.py",
+      "generated": "tests/comments_stack_manipulation.ws",
+      "generate": "python generate_programs"
+    },
+    { "path": "tests/programs.py", "generated": "tests/count.ws", "generate": "python generate_programs" },
+    { "path": "tests/programs.py", "generated": "tests/heap.ws", "generate": "python generate_programs" },
+    {
+      "path": "tests/programs.py",
+      "generated": "tests/iocount.ws",
+      "generate": "python generate_programs"
+    },
+    {
+      "path": "tests/programs.py",
+      "generated": "tests/ioread.ws",
+      "generate": "python generate_programs"
+    },
+    {
+      "path": "tests/programs.py",
+      "generated": "tests/iowrite.ws",
+      "generate": "python generate_programs"
+    },
+    {
+      "path": "tests/programs.py",
+      "generated": "tests/stack_manipulation.ws",
+      "generate": "python generate_programs"
+    },
+    {
+      "path": "tests/programs.py",
+      "generated": "tests/subroutine.ws",
+      "generate": "python generate_programs"
+    },
+    {
+      "path": "tests/programs.py",
+      "generated": "tests/terminate.ws",
+      "generate": "python generate_programs"
+    }
+  ],
+  "commands": [
+    { "type": "interpreter", "bin": "src", "usage": "<file>" },
     {
       "type": "program builder",
       "bin": "generate_programs",
-      "dependencies": ["Python 2.7"],
-      "usage": "python2.7 $0",
+      "usage": "",
       "notes": "Generates programs in tests/ from definitions in tests/programs.py"
     }
   ]

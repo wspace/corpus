@@ -308,7 +308,22 @@
           "aux": { "type": "array", "items": { "type": "string" } },
           "polyglot": { "type": "array", "items": { "type": "string" } },
           "mapping_index": { "type": "number" },
-          "equivalent": { "type": "string" },
+          "equivalent": {
+            "type": "string",
+            "examples": [
+              "calc.ws",
+              "count.ws",
+              "fact.ws",
+              "fibonacci.ws",
+              "hanoi.ws",
+              "hworld.ws",
+              "loctest.ws",
+              "name.ws",
+              "quine.ws",
+              "quine-2.ws",
+              "rot13.ws"
+            ]
+          },
           "spec_version": { "$ref": "#/$defs/spec_version" },
           "generate": { "type": "string" },
           "authors": { "type": "array", "items": { "type": "string" } },
@@ -320,6 +335,7 @@
       }
     },
     "build_errors": { "type": "string" },
+    "run_errors": { "type": "string" },
     "commands": {
       "type": "array",
       "items": {
