@@ -68,14 +68,20 @@ func main() {
 			dw.Write("")
 			dw.Write("FROM scratch")
 			dw.Write("")
-			entrypoint := ""
+			entrypoint, usage := "", ""
 			for _, cmd := range p.Commands {
 				if cmd.Bin != "" {
 					dw.Write("COPY --from=builder %s/%s /", dir, cmd.Bin)
 					if entrypoint == "" {
 						entrypoint = cmd.Bin
+						if cmd.Usage != nil {
+							usage = strings.ReplaceAll(*cmd.Usage, "$0", cmd.Bin)
+						}
 					}
 				}
+			}
+			if usage != "" {
+				dw.Write("# Usage: %s", usage)
 			}
 			if entrypoint != "" {
 				dw.Write(`ENTRYPOINT ["/%s"]`, path.Base(entrypoint))

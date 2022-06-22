@@ -44,11 +44,9 @@
     {
       "type": "parser",
       "bin": "LoadWhitespace.class",
-      "install_dependencies": "wget https://www.antlr.org/download/antlr-4.5.2-complete.jar",
-      "build": "javac -cp antlr-4.5.2-complete.jar *.java",
-      "usage": "java -cp .:antlr-4.5.2-complete.jar LoadWhitespace [<file>]",
+      "usage": "[<file>]",
       "input": "<file> or stdin",
-      "notes": "Visits instructions in parse-order and executes push and printc on visit. whitespaceParser is manually modified, so a freshly-generated ANTLR parser will not work: `java -jar antlr-4.5.2-complete.jar whitespace.g4`."
+      "notes": "Visits instructions in parse-order and executes push and printc on visit"
     }
   ]
 }

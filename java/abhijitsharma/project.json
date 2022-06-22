@@ -4,7 +4,7 @@
   "authors": ["Abhijit Sharma"],
   "license": "none",
   "languages": ["Java"],
-  "tags": ["interpreter"],
+  "tags": ["interpreter", "disassembler", "mapping", "programs"],
   "date": "2013-04-05 10:21:09 -0700",
   "spec_version": "0.2",
   "source": ["https://github.com/abhijitsharma/whitespace"],
@@ -26,15 +26,31 @@
       "printc",
       "readc",
       "readi"
-    ]
+    ],
+    "extension": "ws"
   },
-  "commands": [
-    {
-      "type": "interpreter",
-      "bin": "target/whitespace-1.0.jar",
-      "build": "sed -i '' 's/>1.6</>1.7</' pom.xml && mvn package",
-      "usage": "java -jar $0 -f <file>",
-      "notes": "source and target versions need to be changed to 1.7 or leter in pom.xml"
-    }
-  ]
+  "assembly": {
+    "mnemonics": {
+      "push": ["STACK.PUSH"],
+      "add": ["MATH.+"],
+      "sub": ["MATH.-"],
+      "mul": ["MATH.*"],
+      "div": ["MATH./"],
+      "printi": ["IO.OUT"]
+    },
+    "usage": ["disassembler"]
+  },
+  "mappings": [{ "space": "S", "tab": "T", "lf": "L" }],
+  "programs": [
+    { "path": "docs/addOneTwo.txt" },
+    { "path": "docs/calc.ws", "equivalent": "calc.ws", "spec_version": "0.2" },
+    { "path": "docs/count.ws", "equivalent": "count.ws", "spec_version": "0.2" },
+    { "path": "docs/fact.ws", "equivalent": "fact.ws", "spec_version": "0.2" },
+    { "path": "docs/fibonacci.ws", "equivalent": "fibonacci.ws", "spec_version": "0.2" },
+    { "path": "docs/hanoi.ws", "equivalent": "hanoi.ws", "spec_version": "0.2" },
+    { "path": "docs/hworld.ws", "equivalent": "hworld.ws", "spec_version": "0.2" },
+    { "path": "docs/try.ws" },
+    { "path": "docs/try1.ws" }
+  ],
+  "commands": [{ "type": "interpreter", "bin": "target/whitespace-1.0.jar", "usage": "-f <file>" }]
 }

@@ -1,10 +1,10 @@
 {
   "id": "java/azige",
-  "name": "whitespace-interpreter",
+  "name": "水沝淼 (Water Programming Language)",
   "authors": ["Azige"],
   "license": "Apache-2.0",
   "languages": ["Java"],
-  "tags": ["language", "interpreter", "programs"],
+  "tags": ["language", "interpreter", "disassembler", "programs"],
   "date": "2014-06-18 23:38:41 +0800",
   "spec_version": "0.3",
   "source": [
@@ -15,32 +15,34 @@
   "whitespace": { "extension": "ws" },
   "assembly": {
     "mnemonics": {
-      "push": ["PUSH"],
-      "dup": ["DUP"],
-      "copy": ["DUP2"],
-      "swap": ["SWAP"],
-      "drop": ["DISCARD"],
-      "slide": ["REMOVE"],
-      "add": ["ADD"],
-      "sub": ["SUB"],
-      "mul": ["MUL"],
-      "div": ["DIV"],
-      "mod": ["MOD"],
-      "store": ["STORE"],
-      "retrieve": ["RETRIEVE"],
-      "label": ["MARK"],
-      "call": ["CALL"],
-      "jmp": ["JUMP"],
-      "jz": ["JUMPZ"],
-      "jn": ["JUMPN"],
-      "ret": ["RETURN"],
-      "end": ["EXIT"],
-      "printc": ["PCHAR"],
-      "printi": ["PNUM"],
-      "readc": ["RCHAR"],
-      "readi": ["RNUM"]
+      "push": ["S_PUSH"],
+      "dup": ["S_DUP"],
+      "copy": ["S_DUP2"],
+      "swap": ["S_SWAP"],
+      "drop": ["S_DISCARD"],
+      "slide": ["S_REMOVE"],
+      "add": ["A_ADD"],
+      "sub": ["A_SUB"],
+      "mul": ["A_MUL"],
+      "div": ["A_DIV"],
+      "mod": ["A_MOD"],
+      "store": ["H_STORE"],
+      "retrieve": ["H_RETRIEVE"],
+      "label": ["F_MARK"],
+      "call": ["F_CALL"],
+      "jmp": ["F_JUMP"],
+      "jz": ["F_JUMPZ"],
+      "jn": ["F_JUMPN"],
+      "ret": ["F_RETURN"],
+      "end": ["F_EXIT"],
+      "printc": ["I_PCHAR"],
+      "printi": ["I_PNUM"],
+      "readc": ["I_RCHAR"],
+      "readi": ["I_RNUM"]
     },
-    "usage": ["enum"]
+    "indentation": "",
+    "label_indentation": "",
+    "usage": ["disassembler", "enum"]
   },
   "programs": [
     {
@@ -94,12 +96,28 @@
   ],
   "commands": [
     {
-      "bin": "target/whitespace-interpreter-0.4.jar",
-      "build": "mvn package",
-      "build_errors": "org.apache.commons.cli is not packaged in jar",
-      "option_parse": "Java org.apache.commons.cli"
+      "bin": "target/whitespace-interpreter-0.4-jar-with-dependencies.jar",
+      "usage": "[-h | --help] [-p | -c] [-e <encoding> | --encoding <encoding>] <file>",
+      "options": [
+        { "short": "h", "long": "help", "desc": "Print this message" },
+        {
+          "short": "p",
+          "desc": "Translate the source program into readable pseudocode, instead of running it"
+        },
+        { "short": "c", "desc": "Compile the source program into a binary file, instead of running it" },
+        { "long": "szm", "desc": "Interpret the source program using the Water language extension" },
+        {
+          "short": "e",
+          "long": "encoding",
+          "arg": "encoding",
+          "arg_required": true,
+          "default": "UTF-8",
+          "desc": "Specify the source file encoding"
+        }
+      ],
+      "option_parse": "Java org.apache.commons.cli",
+      "notes": "-p and -c options are mutually exclusive. -c serializes the Java objects of the parsed program to a .wso file."
     }
   ],
-  "notes": "szm language opcodes are specified as 4 ternary trits using the alphabet 水 沝 淼. szm has additional operators not in Whitespace.",
-  "todo": "Document options. Unclear whether szm can be compiled to Whitespace."
+  "notes": "szm language opcodes are specified as 4 ternary trits using the alphabet 水 沝 淼. szm has additional operators not in Whitespace."
 }

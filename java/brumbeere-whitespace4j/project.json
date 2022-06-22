@@ -7,5 +7,16 @@
   "tags": ["interpreter"],
   "date": "2012-11-04 21:47:04 +0100",
   "spec_version": "0.3",
-  "source": ["https://github.com/Brumbeere/Whitespace4j"]
+  "source": ["https://github.com/Brumbeere/Whitespace4j"],
+  "commands": [
+    {
+      "type": "interpreter",
+      "bin": "src/spp/Whitespace4j.class",
+      "usage": "[-f <file>]",
+      "input": "<file>",
+      "output": "stdout",
+      "options": [{ "short": "f", "arg": "file", "arg_required": true, "type": "file", "default": "-" }],
+      "option_parse": "manual"
+    }
+  ]
 }

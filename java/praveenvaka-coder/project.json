@@ -9,18 +9,51 @@
   "spec_version": "0.2",
   "source": ["https://github.com/praveenvaka/whitespace-coder"],
   "whitespace": { "extension": "ws" },
+  "assembly": {
+    "mnemonics": {
+      "push": ["push"],
+      "dup": ["duplicate"],
+      "swap": ["swap"],
+      "drop": ["pop"],
+      "add": ["add"],
+      "sub": ["subtract"],
+      "mul": ["multiply"],
+      "div": ["divide"],
+      "mod": ["modulo"],
+      "store": ["addToHeap"],
+      "retrieve": ["getFromHeap"],
+      "label": ["addLabel"],
+      "call": ["callSubRoutine"],
+      "jmp": ["GoTo"],
+      "jz": ["if0goto"],
+      "jn": ["ifIsNegativeGoTo"],
+      "ret": ["endSubRoutine"],
+      "end": ["end"],
+      "printc": ["printAsChar"],
+      "printi": ["printAsInt"],
+      "readc": ["readChar"],
+      "readi": ["readInt"]
+    },
+    "usage": ["program builder"]
+  },
   "programs": [
-    { "path": "src/main/java/Factorial.java", "generated": "factorial.ws", "spec_version": "0.2" },
-    { "path": "src/main/java/FCTRIZE.java", "generated": "factorize.ws", "spec_version": "0.2" },
-    { "path": "src/main/java/HelloWorld.java", "generated": "hello.ws", "spec_version": "0.2" }
-  ],
-  "commands": [
     {
-      "type": "program builder",
-      "bin": "target/whitespace-coder-1.0-SNAPSHOT.jar",
-      "build": "mvn -Dmaven.compiler.source=1.8 -Dmaven.compiler.target=1.8 package",
-      "usage": "java -cp $0 <class>",
-      "notes": "<class> is the java class entrypoint, e.g. HelloWorld, Factorial, or FCTRIZE"
+      "path": "src/main/java/Factorial.java",
+      "generated": "factorial.ws",
+      "spec_version": "0.2",
+      "generate": "java -cp target/whitespace-coder-1.0-SNAPSHOT.jar Factorial"
+    },
+    {
+      "path": "src/main/java/FCTRIZE.java",
+      "generated": "factorize.ws",
+      "spec_version": "0.2",
+      "generate": "java -cp target/whitespace-coder-1.0-SNAPSHOT.jar FCTRIZE"
+    },
+    {
+      "path": "src/main/java/HelloWorld.java",
+      "generated": "hello.ws",
+      "spec_version": "0.2",
+      "generate": "java -cp target/whitespace-coder-1.0-SNAPSHOT.jar HelloWorld"
     }
   ]
 }

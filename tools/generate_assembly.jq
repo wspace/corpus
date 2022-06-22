@@ -26,7 +26,7 @@ instructions, ranked by popularity.
     .value |= (
       map(
         ascii_downcase |
-        gsub("^(stack|arith|math|calc|heap|flow|io)[ \\._]"; "") |
+        gsub("^(stack|arith|math|calc|heap|flow|io|[samchfi])[ \\._]"; "") |
         gsub("^mod\\."; "") |
         gsub("( ([.%lf]?<[a-z_]+>|<<[a-z_]+>>|_))+$"; "")) |
       unique)) |

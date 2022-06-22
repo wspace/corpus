@@ -34,13 +34,5 @@
     "extension": "bin"
   },
   "programs": [{ "path": "src/fichero.bin", "spec_version": "0.2" }],
-  "commands": [
-    {
-      "type": "interpreter",
-      "bin": "src/whitespace/whitespace.class",
-      "build": "javac whitespace/whitespace.java",
-      "usage": "cd src && java -cp . whitespace.whitespace",
-      "input": "src/fichero.bin"
-    }
-  ]
+  "commands": [{ "type": "interpreter", "bin": "src/whitespace/whitespace.class", "input": "src/fichero.bin" }]
 }

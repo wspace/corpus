@@ -47,15 +47,6 @@
     "line_comments": ["//"],
     "usage": ["assembler"]
   },
-  "commands": [
-    {
-      "type": "assembler",
-      "bin": "WhAsm.class",
-      "build": "javac WhAsm.java",
-      "usage": "java -cp . WhAsm",
-      "input": "stdin",
-      "output": "stdout"
-    }
-  ],
+  "commands": [{ "type": "assembler", "bin": "WhAsm.class", "input": "stdin", "output": "stdout" }],
   "notes": "String labels are not zero-padded when converted to binary. UTF-16 encoding."
 }

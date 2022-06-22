@@ -14,7 +14,7 @@
       "type": "interpreter",
       "bin": "target/whitespace-interpreter-1.0-SNAPSHOT.jar",
       "build": "mvn -Dmaven.compiler.source=1.8 -Dmaven.compiler.target=1.8 package",
-      "run_errors": "No main method entrypoint"
+      "run_errors": "Needs Codewars entrypoint"
     }
   ]
 }

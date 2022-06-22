@@ -68,7 +68,15 @@ Projects that can be built with Docker:
 - go/tempxla-go-wspace
 - go/yshr-wspacego
 - haskell/edwinb-wspace-0.3
+- java/abhijitsharma
+- java/azige
 - java/bearice-grassmudhorse
+- java/brumbeere-whitespace4j
+- java/eia
+- java/faurehu
+- java/matou-whasm
+- java/praveenvaka-coder
+- java/wysang
 - lolcode/akers
 - ocaml/jgkaplan-wsc
 - ocaml/matsud-c2ws
@@ -171,22 +179,14 @@ Building status of individual executables:
 - ⚠️ haskell/takatoh-hws/hws: `make` Needs changes for latest Haskell
 - ⚠️ haskell/tomihisa-visual/*unspecified*
 - ⚠️ idris/edwinb-ws-idr/wspace: `idris --build wspace.ipkg` Needs changes for latest Idris
-- java/abhijitsharma/target/whitespace-1.0.jar: `sed -i '' 's/>1.6</>1.7</' pom.xml && mvn package`
-- ⚠️ java/azige/target/whitespace-interpreter-0.4.jar: `mvn package` org.apache.commons.cli is not packaged in jar
-- ❌ java/brumbeere-whitespace4j
 - ❌ java/brunokim
-- java/eia/src/whitespace/whitespace.class: `javac whitespace/whitespace.java`
-- ❌ java/faurehu
 - ❌ java/kmizu
 - ❌ java/kreutzer-spacedide
-- java/matou-whasm/WhAsm.class: `javac WhAsm.java`
-- java/praveenvaka-coder/target/whitespace-coder-1.0-SNAPSHOT.jar: `mvn -Dmaven.compiler.source=1.8 -Dmaven.compiler.target=1.8 package`
 - ❌ java/pyeroh
 - ❌ java/rahulkp
 - ❌ java/ralucaa-whitespace4j
 - ⚠️ java/vyo-kairos/build/libs/vyo-kairos-1.0.0-all.jar: `./gradlew shadowJar`
-- ⚠️ java/wrotycz/target/whitespace-interpreter-1.0-SNAPSHOT.jar: `mvn -Dmaven.compiler.source=1.8 -Dmaven.compiler.target=1.8 package` No main method entrypoint
-- java/wysang/LoadWhitespace.class: `javac -cp antlr-4.5.2-complete.jar *.java`
+- ⚠️ java/wrotycz/target/whitespace-interpreter-1.0-SNAPSHOT.jar: `mvn -Dmaven.compiler.source=1.8 -Dmaven.compiler.target=1.8 package` Needs Codewars entrypoint
 - ❌ java/yawkat
 - ❌ java/yuukiaria-wseditor
 - ❌ javascript/arnauld
