@@ -291,8 +291,10 @@ func (p *Project) Time() time.Time {
 	for _, layout := range []string{
 		"2006-01-02 15:04:05 -0700",
 		"2006-01-02 15:04:05",
+		"2006-01-02 15:04 -0700",
 		"2006-01-02 15:04",
 		"2006-01-02",
+		"2006",
 	} {
 		if t, err := time.ParseInLocation(layout, p.Date, time.UTC); err == nil {
 			return t
@@ -450,7 +452,10 @@ func (p *Project) formatColumns() ([]string, error) {
 	if p.ID != "" {
 		name = formatLink(p.Name, p.ID)
 	}
-	date := p.Time().UTC().Format("2006-01-02")
+	date := p.Date
+	if len(date) != 4 {
+		date = p.Time().UTC().Format("2006-01-02")
+	}
 	links := make([]string, 0, len(p.Source))
 	for _, s := range p.Source {
 		label, err := GetURLLabel(s)

@@ -5,7 +5,36 @@
   "license": "MIT",
   "languages": ["Java"],
   "tags": ["interpreter"],
-  "date": "2015-05-13 02:13:01 +0900",
+  "date": "2005",
   "spec_version": "0.3",
-  "source": ["https://github.com/kmizu/ws_interpreter"]
+  "source": ["https://github.com/kmizu/ws_interpreter"],
+  "assembly": {
+    "mnemonics": {
+      "push": ["PUSH"],
+      "dup": ["DUP"],
+      "copy": ["COPY"],
+      "swap": ["SWAP"],
+      "drop": ["DISCARD"],
+      "slide": ["SLIDE"],
+      "add": ["ADD"],
+      "sub": ["SUB"],
+      "mul": ["MUL"],
+      "div": ["DIV"],
+      "mod": ["MOD"],
+      "store": ["STORE"],
+      "retrieve": ["RETR"],
+      "label": ["LABEL"],
+      "call": ["CALL"],
+      "jmp": ["JUMP"],
+      "jz": ["JUMP_IF_ZERO"],
+      "jn": ["JUMP_IF_NEG"],
+      "ret": ["RETURN"],
+      "end": ["END"],
+      "printc": ["PRINT_CHAR"],
+      "printi": ["PRINT_NUM"],
+      "readc": ["READ_CHAR"],
+      "readi": ["READ_NUM"]
+    },
+    "usage": ["enum"]
+  }
 }
