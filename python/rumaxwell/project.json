@@ -9,6 +9,7 @@
   "spec_version": "0.3",
   "source": ["https://github.com/RuMaxwell/whitespace-interpreter"],
   "whitespace": { "extension": "whitespace" },
+  "mappings": [{ "space": "[s]", "tab": "[t]", "lf": "[n]", "before_stl": true }],
   "programs": [
     {
       "path": "factorial.whitespace",

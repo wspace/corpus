@@ -11,5 +11,5 @@
   "relations": [{ "id": "javascript/vii5ard-whitelips-ide", "type": "assembly" }],
   "whitespace": { "extension": "ws" },
   "assembly": { "extension": "wsa" },
-  "programs": [{ "path": "game.wsa", "generated": "game.ws", "spec_version": "0.3" }]
+  "programs": [{ "path": "game.wsa", "generated": "game.ws", "polyglot": ["C"], "spec_version": "0.3" }]
 }
