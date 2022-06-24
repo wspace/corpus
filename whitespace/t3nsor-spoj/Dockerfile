@@ -2,10 +2,11 @@ FROM alpine AS builder
 
 RUN apk add g++
 WORKDIR /SPOJ
-COPY SPOJ .
-RUN g++ -g -std=c++17 -o $0 wstp.cpp
+COPY SPOJ/wstp.cpp .
+RUN g++ -O3 -static -o wstp wstp.cpp
 
 FROM scratch
 
 COPY --from=builder /SPOJ/wstp /
+COPY SPOJ/sbstr* /
 ENTRYPOINT ["/wstp"]

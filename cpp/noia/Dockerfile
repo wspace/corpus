@@ -3,7 +3,7 @@ FROM alpine AS builder
 RUN apk add g++
 WORKDIR /Whitespace-Interpreter
 COPY Whitespace-Interpreter .
-RUN g++ -O3 -Wall -Werror -static -o ws Lexer.cc Parser.cc
+RUN g++ -O3 -static -o ws Lexer.cc Parser.cc
 
 FROM scratch
 

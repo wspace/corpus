@@ -2,11 +2,11 @@ FROM alpine AS builder
 
 RUN apk add cmake make gcc g++
 WORKDIR /whitespace-interpreter
-COPY whitespace-interpreter .
-RUN cmake .
-RUN make
+COPY whitespace-interpreter/src .
+RUN gcc -O3 -static -o interpreter *.c
 
 FROM scratch
 
 COPY --from=builder /whitespace-interpreter/interpreter /
+COPY whitespace-interpreter/ws/*.ws /
 ENTRYPOINT ["/interpreter"]

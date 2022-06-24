@@ -3,8 +3,8 @@ FROM alpine AS builder
 RUN apk add make clang g++
 WORKDIR /wsInt
 COPY wsInt .
-RUN make CXX='clang++ -static'
-RUN clang++ -g -O2 -o bin/ParserTest tests/ParserTest.cpp src/parser/*.cpp
+RUN make CPPFLAGS='-O3 -static'
+RUN clang++ -O3 -o bin/ParserTest tests/ParserTest.cpp src/parser/*.o
 RUN bin/ParserTest
 
 FROM scratch

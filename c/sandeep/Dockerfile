@@ -3,7 +3,7 @@ FROM alpine AS builder
 RUN apk add gcc musl-dev
 WORKDIR /Whitespace
 COPY Whitespace .
-RUN gcc -O3 -Wall -static -o white y.tab.c lex.yy.c
+RUN gcc -O3 -static -o white y.tab.c lex.yy.c
 
 FROM scratch
 

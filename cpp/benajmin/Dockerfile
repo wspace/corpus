@@ -3,7 +3,7 @@ FROM alpine AS builder
 RUN apk add g++
 WORKDIR /whitespace-interpreter
 COPY whitespace-interpreter .
-RUN g++ -Wall -static -o WhitespaceInterpreter.out *.cpp
+RUN g++ -O3 -static -o WhitespaceInterpreter.out *.cpp
 
 FROM scratch
 

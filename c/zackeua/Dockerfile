@@ -3,8 +3,8 @@ FROM alpine AS builder
 RUN apk add gcc g++
 WORKDIR /Whitespace
 COPY Whitespace .
-RUN gcc -g -Wall -static -o wlang whitespace.c
-RUN g++ -g -Wall -static -o whitespacecpp whitespace.cpp
+RUN gcc -O3 -static -o wlang whitespace.c
+RUN g++ -O3 -static -o whitespacecpp whitespace.cpp
 
 FROM scratch
 
