@@ -137,6 +137,7 @@ Projects that can be built with Docker:
 - python/yasn-whitepy
 - rebol/hostilefork: Bootstrapping issues
 - rust/andrewarchi-yspace
+- rust/cedricschwyter-spacey
 - rust/censoredusername-whitespacers
 - rust/collidedscope-albus
 - rust/faultier-albino: Needs many changes for latest Rust

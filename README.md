@@ -1,12 +1,13 @@
 # The Whitespace Corpus
 
-The definitive collection of 323 projects for the Whitespace programming
+The definitive collection of 324 projects for the Whitespace programming
 language, including interpreters, compilers, and programs.
 
 ## Projects
 
 | Name                                          | Authors          | Languages  | Tags         | Date       | Source |
 | --------------------------------------------- | ---------------- | ---------- | ------------ | ---------- | ------ |
+| [spacey](rust/cedricschwyter-spacey)          | Cedric Schwyter  | Rust       | interpreter, programs | 2022-06-15 | [GitHub](https://github.com/D3PSI/spacey) |
 | [whitespace](whitespace/eudaldsans)           | Eudald Sans      | Whitespace | programs     | 2022-05-10 | [GitHub](https://github.com/EudaldSans/whitespace) |
 | [Whitespace-lang example](whitespace/p1atdev-hello) | Plat       | Whitespace | programs     | 2022-05-05 | [GitHub](https://github.com/p1atdev/hello_world_ws) |
 | [WhiteSpace-Interpreter](java/rahulkp)        | Rahul K P, Sumedh Hagaldivte, Amitash M S | Java | interpreter, programs | 2022-04-29 | [GitHub](https://github.com/Rahul-KP/WhiteSpace-Interpreter) |
