@@ -42,6 +42,7 @@
     "usage": ["assembler", "programs"],
     "extension": "wsm"
   },
+  "mappings": [{ "space": "s", "tab": "t", "lf": "n" }],
   "programs": [
     {
       "path": "examples/cyclic_rshift.wsm",
@@ -51,14 +52,7 @@
     { "path": "examples/reverse.wsm", "generated": "examples/reverse.ws", "spec_version": "0.2" }
   ],
   "commands": [
-    {
-      "type": "assembler",
-      "bin": "wsm2ws.pl",
-      "dependencies": ["Perl"],
-      "install_dependencies": "perl -MCPAN -e 'install Algorithm::Combinatorics, File::Basename, Parse::Token::Lite, String::Unescape, Tie::RegexpHash'",
-      "usage": "perl $0 <file>",
-      "output": "<file_no_suffix:.wsm>.ws"
-    }
+    { "type": "assembler", "bin": "wsm2ws.pl", "usage": "<file>", "output": "<file_no_suffix:.wsm>.ws" }
   ],
   "notes": "Has optional assembly arguments"
 }

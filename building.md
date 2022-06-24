@@ -82,6 +82,9 @@ Projects that can be built with Docker:
 - ocaml/matsud-c2ws
 - ocaml/progbits-blank: Module Stdlib.Stream is deprecated and the camlp-streams library should be used instead
 - ocaml/steiner
+- perl/ephphatha-wsm2ws
+- perl/mkoelbl
+- perl/skabob-madness
 - php/nobody1986
 - python/0x55aa
 - python/adapap
@@ -224,9 +227,6 @@ Building status of individual executables:
   - wsCompiler.py
   - wsInterpreter: `gcc -O3 -Wall -o wsInterpreter wsInterpreter.c`
 - objective-c/emilbahnsen-assembler/build/Release/wsa: `xcodebuild`
-- perl/ephphatha-wsm2ws/wsm2ws.pl
-- perl/mkoelbl/whitespace.pl
-- perl/skabob-madness/whitespace\_bleached.pl
 - php/codelytv-youtube:
   - top-langs-not-to-use/src/decoder.php
   - top-langs-not-to-use/src/encoder.php

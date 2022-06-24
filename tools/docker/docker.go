@@ -24,7 +24,7 @@ func main() {
 	dw := NewDockerfileWriter()
 	for _, p := range projects {
 		for _, cmd := range p.Commands {
-			if cmd.Build != "" {
+			if cmd.Build != "" || len(cmd.Dependencies) != 0 || cmd.InstallDependencies != "" {
 				goto has_build
 			}
 		}
@@ -61,23 +61,22 @@ func main() {
 			dw.Write("")
 			dw.Write("FROM scratch")
 			dw.Write("")
-			entrypoint, usage := "", ""
+			dw.Write("WORKDIR %s", dir)
+			var entrypoint string
 			for _, cmd := range p.Commands {
 				if cmd.Bin != "" {
-					dw.Write("COPY --from=builder %s/%s /", dir, cmd.Bin)
+					dw.Write("COPY --from=builder %s/%s .", dir, cmd.Bin)
 					if entrypoint == "" {
-						entrypoint = cmd.Bin
 						if cmd.Usage != nil {
-							usage = strings.ReplaceAll(*cmd.Usage, "$0", cmd.Bin)
+							entrypoint = `"` + strings.ReplaceAll(strings.ReplaceAll(*cmd.Usage, "$0", cmd.Bin), " ", `", "`) + `"`
+						} else {
+							entrypoint = strconv.Quote(dir + "/" + path.Base(cmd.Bin))
 						}
 					}
 				}
 			}
-			if usage != "" {
-				dw.Write("# Usage: %s", usage)
-			}
 			if entrypoint != "" {
-				dw.Write(`ENTRYPOINT ["/%s"]`, path.Base(entrypoint))
+				dw.Write(`ENTRYPOINT [%s]`, entrypoint)
 			}
 		}
 

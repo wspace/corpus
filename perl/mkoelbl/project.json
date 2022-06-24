@@ -4,7 +4,7 @@
   "authors": ["Mike Kölbl"],
   "license": "GPL-2.0-or-later",
   "languages": ["Perl"],
-  "tags": ["interpreter"],
+  "tags": ["interpreter", "disassembler", "mapping"],
   "date": "2003-04-01 19:34:12 +0000",
   "spec_version": "0.3",
   "source": [
@@ -13,13 +13,42 @@
     "https://web.archive.org/web/20150717140342/http://compsoc.dur.ac.uk:80/whitespace/download.php",
     "https://github.com/hostilefork/whitespacers/tree/master/perl"
   ],
+  "assembly": {
+    "mnemonics": {
+      "push": ["push_number"],
+      "dup": ["duplicate_last"],
+      "copy": ["copy"],
+      "swap": ["swap_last"],
+      "drop": ["pop_number"],
+      "slide": ["slide"],
+      "add": ["add"],
+      "sub": ["subtract"],
+      "mul": ["multiply"],
+      "div": ["div"],
+      "mod": ["mod"],
+      "store": ["store"],
+      "retrieve": ["retrieve"],
+      "label": ["set_label"],
+      "call": ["call_label"],
+      "jmp": ["jump"],
+      "jz": ["jump_ifzero"],
+      "jn": ["jump_negative"],
+      "ret": ["ret"],
+      "end": ["end"],
+      "printc": ["print_char"],
+      "printi": ["print_num"],
+      "readc": ["read_char"],
+      "readi": ["read_num"]
+    },
+    "usage": ["debug"]
+  },
+  "mappings": [{ "space": "A", "tab": "B", "lf": "C" }],
   "commands": [
     {
       "type": "interpreter",
       "bin": "whitespace.pl",
-      "dependencies": ["Perl"],
-      "usage": "perl $0 <file>",
-      "input": "stdin",
+      "usage": "[<file>]",
+      "input": "<file> or stdin",
       "output": "stdout",
       "options": [{ "short": "d", "desc": "debug" }],
       "option_parse": "Perl Getopt::Std"

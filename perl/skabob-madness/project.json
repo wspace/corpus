@@ -14,10 +14,8 @@
     {
       "type": "interpreter",
       "bin": "whitespace_bleached.pl",
-      "dependencies": ["Perl"],
-      "install_dependencies": "perl -MCPAN -e 'install Acme::Bleach'",
-      "usage": "perl $0 <file>",
-      "input": "stdin",
+      "usage": "[<file>]",
+      "input": "<file> or stdin",
       "output": "stdout",
       "options": [{ "short": "d", "desc": "debug" }],
       "option_parse": "Perl Getopt::Std"
