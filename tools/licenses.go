@@ -31,10 +31,11 @@ func (p *Project) GetLicense() (string, error) {
 			return l, err
 		}
 	}
-	if p.ID != "" {
-		if l := getLicenseFromFile(p.ID, "package.json", getPackageJSONLicense); l != "" {
+	if repoName := p.RepoName(); repoName != "" && p.ID != "" {
+		submodule := p.ID + "/" + repoName
+		if l := getLicenseFromFile(submodule, "package.json", getPackageJSONLicense); l != "" {
 			return l, nil
-		} else if l := getLicenseFromFile(p.ID, "Cargo.toml", getCargoTOMLLicense); l != "" {
+		} else if l := getLicenseFromFile(submodule, "Cargo.toml", getCargoTOMLLicense); l != "" {
 			return l, nil
 		}
 	}
@@ -83,12 +84,12 @@ func getLicenseFromFile(path, filename string, f func(string) (string, error)) s
 	if stat, err := os.Stat(filename); err != nil || stat.IsDir() {
 		return ""
 	}
-	l, err := getPackageJSONLicense(filename)
+	l, err := f(filename)
 	if err != nil {
 		fmt.Fprintln(os.Stderr, err)
 	}
 	if l != "" {
-		fmt.Fprintf(os.Stderr, "Got license for %s from package.json\n", path)
+		fmt.Fprintf(os.Stderr, "Got license for %s from %s\n", path, filename)
 	}
 	return l
 }

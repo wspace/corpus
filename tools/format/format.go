@@ -48,9 +48,13 @@ func formatFile(filename string) error {
 		return err
 	}
 
-	submodule := strings.TrimSuffix(filename, ".json")
-	stat, err := os.Stat(submodule)
-	submoduleCloned := err == nil && stat.IsDir()
+	repoName := p.RepoName()
+	submodule, submoduleCloned := "", false
+	if repoName != "" {
+		submodule = strings.TrimSuffix(filename, "/project.json") + "/" + repoName
+		stat, err := os.Stat(submodule)
+		submoduleCloned = err == nil && stat.IsDir()
+	}
 
 	if submoduleCloned && p.Date == "" {
 		var dateBuf bytes.Buffer

@@ -4,81 +4,69 @@ import (
 	"fmt"
 	"os"
 	"os/exec"
-	"regexp"
 
 	"github.com/wspace/corpus/tools"
 	"golang.org/x/sys/execabs"
 )
 
 func main() {
+	verbose := len(os.Args) > 1 && os.Args[1] == "-v"
 	projects, err := tools.ReadAllProjects()
 	try(err)
 	tools.SortProjectsByID(projects)
 
 	var badURLs []*tools.Project
+	var noRepoName []*tools.Project
 	for _, p := range projects {
 		if p.ID == "" || len(p.Source) == 0 {
 			continue
 		}
-		repo, branch := getGitURL(p.Source[0])
+		repo, branch, _ := tools.GetGitURL(p.Source[0])
 		if repo == "" {
 			badURLs = append(badURLs, p)
 			continue
 		}
-		if _, err := os.Stat(p.ID); err == nil {
+		repoName := p.RepoName()
+		if repoName == "" {
+			noRepoName = append(noRepoName, p)
+			continue
+		}
+		submodule := p.ID + "/" + repoName
+		if _, err := os.Stat(submodule); err == nil {
 			continue
 		}
 
 		var cmd *exec.Cmd
 		if branch != "" {
-			fmt.Printf("git submodule add -b %s %s %s\n", branch, repo, p.ID)
-			cmd = execabs.Command("git", "submodule", "add", "-b", branch, repo, p.ID)
+			fmt.Printf("git submodule add -b %s %s %s\n", branch, repo, submodule)
+			cmd = execabs.Command("git", "submodule", "add", "-b", branch, repo, submodule)
 		} else {
-			fmt.Printf("git submodule add %s %s\n", repo, p.ID)
-			cmd = execabs.Command("git", "submodule", "add", repo, p.ID)
+			fmt.Printf("git submodule add %s %s\n", repo, submodule)
+			cmd = execabs.Command("git", "submodule", "add", repo, submodule)
 		}
 		cmd.Stdout = os.Stdout
 		cmd.Stderr = os.Stderr
 		try(cmd.Run())
 	}
 
-	if len(badURLs) != 0 {
-		fmt.Println("First source not a recognized repo for:")
-		for _, p := range badURLs {
-			url := p.Source[0]
-			if label, err := tools.GetURLLabel(p.Source[0]); err == nil && label != "" {
-				url = label
+	listProjects := func(projects []*tools.Project, problem string) {
+		if len(projects) != 0 {
+			if verbose {
+				fmt.Printf("%s for:\n", problem)
+				for _, p := range projects {
+					url := p.Source[0]
+					if label, err := tools.GetURLLabel(p.Source[0]); err == nil && label != "" {
+						url = label
+					}
+					fmt.Printf("- %s: %s\n", p.ID, url)
+				}
+			} else {
+				fmt.Printf("%s for %d projects\n", problem, len(projects))
 			}
-			fmt.Printf("- %s: %s\n", p.ID, url)
 		}
 	}
-}
-
-var (
-	github      = regexp.MustCompile(`^(https://github\.com/[^/]+/[^/]+)(?:/tree/([^/]+))?$`)
-	githubGist  = regexp.MustCompile(`^https://gist\.github\.com/[^/]+/[^/]+$`)
-	gitlab      = regexp.MustCompile(`^(https://gitlab\.com/[^/]+/[^/]+)(?:/-/tree/([^/]+))?$`)
-	bitbucket   = regexp.MustCompile(`^(https://bitbucket\.org/[^/]+/[^/]+)(?:/src/([^/]+))?$`)
-	sourceForge = regexp.MustCompile(`^https://git\.code\.sf\.net/p/[^/]+/code$`)
-)
-
-func getGitURL(url string) (gitURL, branch string) {
-	if match := github.FindStringSubmatch(url); match != nil {
-		return match[1], match[2]
-	}
-	if githubGist.MatchString(url) {
-		return url, ""
-	}
-	if match := gitlab.FindStringSubmatch(url); match != nil {
-		return match[1] + ".git", match[2]
-	}
-	if match := bitbucket.FindStringSubmatch(url); match != nil {
-		return match[1], match[2]
-	}
-	if sourceForge.MatchString(url) {
-		return url, ""
-	}
-	return "", ""
+	listProjects(badURLs, "First source not a recognized repo")
+	listProjects(noRepoName, "Repo name could not be determined")
 }
 
 func try(err error) {

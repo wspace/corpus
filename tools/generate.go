@@ -4,7 +4,7 @@ import (
 	"bytes"
 	"encoding/json"
 	"fmt"
-	"net/url"
+	urlpkg "net/url"
 	"path/filepath"
 	"regexp"
 	"sort"
@@ -564,30 +564,19 @@ var domainLabels = map[string]string{
 	"what.thedailywtf.com":         "What the Daily WTF?",
 }
 
-func GetURLLabel(rawURL string) (string, error) {
-	u, err := url.Parse(rawURL)
+func GetURLLabel(url string) (string, error) {
+	u, err := urlpkg.Parse(url)
 	if err != nil {
 		return "", err
 	}
-	host := u.Hostname()
-	if host == "web.archive.org" && strings.HasPrefix(u.Path, "/web/") {
-		path := strings.TrimPrefix(u.Path, "/web/")
-		if i := strings.IndexByte(path, '/'); i != -1 {
-			label, err := GetURLLabel(path[i+1:])
-			if err != nil {
-				return "", err
-			}
-			return label + " (archive)", nil
-		}
-	}
-	query := u.Query()
-	if host == "archive.softwareheritage.org" && query.Has("origin_url") {
-		label, err := GetURLLabel(query.Get("origin_url"))
+	if archivedURL, archiveLabel := unwrapArchive(u); archivedURL != "" {
+		label, err := GetURLLabel(archivedURL)
 		if err != nil {
 			return "", err
 		}
-		return label + " (Software Heritage archive)", nil
+		return label + " (" + archiveLabel + ")", nil
 	}
+	host := u.Hostname()
 	if strings.HasSuffix(host, ".googlecode.com") {
 		return "Google Code", nil
 	}
@@ -618,6 +607,21 @@ func GetURLLabel(rawURL string) (string, error) {
 	return host, nil
 }
 
+func unwrapArchive(u *urlpkg.URL) (archivedURL, label string) {
+	host := u.Hostname()
+	if host == "web.archive.org" && strings.HasPrefix(u.Path, "/web/") {
+		path := strings.TrimPrefix(u.Path, "/web/")
+		if i := strings.IndexByte(path, '/'); i != -1 {
+			return path[i+1:], "archive"
+		}
+	}
+	query := u.Query()
+	if host == "archive.softwareheritage.org" && query.Has("origin_url") {
+		return query.Get("origin_url"), "Software Heritage archive"
+	}
+	return "", ""
+}
+
 func pathTrimPrefix(wantedHost, pathPrefix, host, path string) (string, bool) {
 	if host != wantedHost || !strings.HasPrefix(path, pathPrefix) {
 		return "", false
@@ -627,4 +631,57 @@ func pathTrimPrefix(wantedHost, pathPrefix, host, path string) (string, bool) {
 		path = path[:i]
 	}
 	return path, true
+}
+
+var (
+	githubPattern      = regexp.MustCompile(`^(https://github\.com/[^/]+/([^/]+))(?:/tree/([^/]+))?$`)
+	githubGistPattern  = regexp.MustCompile(`^https://gist\.github\.com/[^/]+/[^/]+$`)
+	gitlabPattern      = regexp.MustCompile(`^(https://gitlab\.com/[^/]+/([^/]+))(?:/-/tree/([^/]+))?$`)
+	bitbucketPattern   = regexp.MustCompile(`^(https://bitbucket\.org/[^/]+/([^/]+))(?:/src/([^/]+))?$`)
+	sourceForgePattern = regexp.MustCompile(`^https://git\.code\.sf\.net/p/([^/]+)/code$`)
+)
+
+func GetGitURL(url string) (gitURL, branch, repoName string) {
+	if match := githubPattern.FindStringSubmatch(url); match != nil {
+		return match[1], match[3], match[2]
+	}
+	if githubGistPattern.MatchString(url) {
+		return url, "", ""
+	}
+	if match := gitlabPattern.FindStringSubmatch(url); match != nil {
+		return match[1] + ".git", match[3], match[2]
+	}
+	if match := bitbucketPattern.FindStringSubmatch(url); match != nil {
+		return match[1], match[3], match[2]
+	}
+	if match := sourceForgePattern.FindStringSubmatch(url); match != nil {
+		return url, "", match[1]
+	}
+	return "", "", ""
+}
+
+func (p *Project) RepoName() string {
+	if len(p.Source) == 0 {
+		return ""
+	}
+	url := p.Source[0]
+	if strings.HasPrefix(p.Source[0], "https://github.com/wspace/") {
+		if len(p.Source) < 2 {
+			return ""
+		}
+		url = p.Source[1]
+	}
+	return GetRepoName(url)
+}
+
+func GetRepoName(url string) string {
+	u, err := urlpkg.Parse(url)
+	if err != nil {
+		return ""
+	}
+	if archivedURL, _ := unwrapArchive(u); archivedURL != "" {
+		url = strings.TrimSuffix(archivedURL, "/")
+	}
+	_, _, repoName := GetGitURL(url)
+	return repoName
 }

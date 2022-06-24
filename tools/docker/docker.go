@@ -35,17 +35,10 @@ func main() {
 		dw.Write("FROM alpine AS builder")
 		dw.Write("")
 
-		src := p.Source[0]
-		dir := src[strings.LastIndexByte(src, '/')+1:]
-		if strings.HasPrefix(src, "https://github.com/wspace/") {
-			if len(p.Source) > 1 {
-				src = strings.TrimRight(p.Source[1], "/")
-				dir = src[strings.LastIndexByte(src, '/')+1:]
-			} else {
-				dir = "TODO"
-			}
+		dir := p.RepoName()
+		if dir == "" {
+			dir = "TODO"
 		}
-
 		dw.WorkDir("/" + dir)
 		dw.Write("COPY %s .", dir)
 		dir = "/" + dir
