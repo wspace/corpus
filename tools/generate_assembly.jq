@@ -26,8 +26,7 @@ instructions, ranked by popularity.
     .value |= (
       map(
         ascii_downcase |
-        gsub("^(stack|arith|math|calc|heap|flow|io|[samchfi])[ \\._]"; "") |
-        gsub("^mod\\."; "") |
+        gsub("^(stack|arith|math|calc|heap|flow|io)[ ._]|^(mod|[samchfi])[._]"; "") |
         gsub("( ([.%lf]?<[a-z_]+>|<<[a-z_]+>>|_))+$"; "")) |
       unique)) |
   reduce .[] as $inst ($keys; .[$inst.key] += $inst.value) |
