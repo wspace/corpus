@@ -7,7 +7,12 @@
   "tags": ["interpreter"],
   "date": "2012-11-25 16:53:09 +0000",
   "spec_version": "0.3",
-  "source": ["https://github.com/edwinb/WS-idr", "https://twitter.com/edwinbrady/status/689863187546664960"],
+  "source": [
+    "https://github.com/wspace/edwinb-ws-idr",
+    "https://github.com/edwinb/WS-idr",
+    "https://twitter.com/edwinbrady/status/689863187546664960"
+  ],
+  "whitespace": { "extension": "ws" },
   "assembly": {
     "mnemonics": {
       "push": ["PUSH"],
@@ -35,15 +40,13 @@
       "readc": ["READCHAR"],
       "readi": ["READNUM"]
     },
-    "usage": ["enum"]
+    "usage": ["enum", "debug"]
   },
-  "commands": [
-    {
-      "bin": "wspace",
-      "dependencies": ["Idris"],
-      "build": "idris --build wspace.ipkg",
-      "build_errors": "Needs changes for latest Idris",
-      "usage": "$0 <file>"
-    }
-  ]
+  "programs": [
+    { "path": "fact.ws", "equivalent": "fact.ws", "spec_version": "0.2" },
+    { "path": "hanoi.ws", "equivalent": "hanoi.ws", "spec_version": "0.2" },
+    { "path": "hworld.ws", "equivalent": "hworld.ws", "spec_version": "0.2" },
+    { "path": "name.ws", "equivalent": "name.ws", "spec_version": "0.2" }
+  ],
+  "commands": [{ "bin": "wspace", "usage": "<file>" }]
 }

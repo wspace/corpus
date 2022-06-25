@@ -68,6 +68,7 @@ Projects that can be built with Docker:
 - go/tempxla-go-wspace
 - go/yshr-wspacego
 - haskell/edwinb-wspace-0.3
+- idris/edwinb-ws-idr
 - java/abhijitsharma
 - java/azige
 - java/bearice-grassmudhorse
@@ -182,7 +183,6 @@ Building status of individual executables:
 - ❌ haskell/soimort-grassmudhorse
 - ⚠️ haskell/takatoh-hws/hws: `make` Needs changes for latest Haskell
 - ⚠️ haskell/tomihisa-visual/*unspecified*
-- ⚠️ idris/edwinb-ws-idr/wspace: `idris --build wspace.ipkg` Needs changes for latest Idris
 - ❌ java/brunokim
 - ❌ java/kmizu
 - ❌ java/kreutzer-spacedide

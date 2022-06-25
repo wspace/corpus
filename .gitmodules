@@ -262,7 +262,7 @@
 	url = https://github.com/tomihisa244/visualWhiteSpace
 [submodule "idris/edwinb-ws-idr/WS-idr"]
 	path = idris/edwinb-ws-idr/WS-idr
-	url = https://github.com/edwinb/WS-idr
+	url = https://github.com/wspace/edwinb-ws-idr
 [submodule "java/abhijitsharma/whitespace"]
 	path = java/abhijitsharma/whitespace
 	url = https://github.com/abhijitsharma/whitespace
