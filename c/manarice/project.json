@@ -75,11 +75,11 @@
     }
   ],
   "commands": [
-    { "type": "interpreter", "bin": "lwsvm", "usage": "$0 <file>", "input": "<file>", "output": "stdout" },
+    { "type": "interpreter", "bin": "lwsvm", "usage": "<file>", "input": "<file>", "output": "stdout" },
     {
       "type": "assembler",
       "bin": "lwsa",
-      "usage": "$0 <file>",
+      "usage": "<file>",
       "input": "ws/wsa/<file>",
       "output": "ws/ws/<file:no_ext>.ws",
       "notes": "Adds #!lwsvm shebang to programs. Output file really just removes final character."

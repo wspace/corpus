@@ -21,5 +21,5 @@
     { "path": "examples/quine.ws", "equivalent": "quine.ws", "spec_version": "0.2" },
     { "path": "examples/quine-2.ws", "equivalent": "quine-2.ws", "spec_version": "0.2" }
   ],
-  "commands": [{ "type": "interpreter", "bin": "wi", "usage": "$0 <file>" }]
+  "commands": [{ "type": "interpreter", "bin": "wi", "usage": "<file>" }]
 }

@@ -45,7 +45,5 @@
     },
     "usage": ["enum"]
   },
-  "commands": [
-    { "type": "interpreter", "bin": "gows", "usage": "$0 <file>", "input": "<file>", "output": "stdout" }
-  ]
+  "commands": [{ "type": "interpreter", "bin": "gows", "usage": "<file>", "input": "<file>", "output": "stdout" }]
 }

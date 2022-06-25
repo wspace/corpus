@@ -53,7 +53,7 @@
   "commands": [
     {
       "bin": "whitespace",
-      "usage": "$0 [-d] [-t] <file>",
+      "usage": "[-d] [-t] <file>",
       "options": [
         { "short": "d", "long": "d", "desc": "show disassembly" },
         { "short": "t", "long": "t", "desc": "trace program" },

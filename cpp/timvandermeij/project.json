@@ -54,7 +54,7 @@
     {
       "type": "interpreter",
       "bin": "whitespace",
-      "usage": "$0",
+      "usage": "",
       "input": "hello_worldvanwiki.ws",
       "output": "stdout"
     }

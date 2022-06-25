@@ -93,13 +93,7 @@
     { "path": "misc/rot13.asm", "generated": "misc/rot13.ws", "spec_version": "0.2" }
   ],
   "commands": [
-    {
-      "type": "assembler",
-      "bin": "blacktime",
-      "usage": "$0 <file>",
-      "input": "<file>",
-      "output": "stdout"
-    }
+    { "type": "assembler", "bin": "blacktime", "usage": "<file>", "input": "<file>", "output": "stdout" }
   ],
   "notes": "Gist contains a copy of misc/brainfuck.asm, but missing a LF at end of file"
 }

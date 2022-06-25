@@ -43,7 +43,7 @@
     {
       "type": "interpreter",
       "bin": "target/release/wsc",
-      "usage": "$0 [options] <file>",
+      "usage": "[options] <file>",
       "options": [
         { "short": "h", "long": "help", "desc": "Display this message" },
         {

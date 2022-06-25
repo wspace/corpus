@@ -49,5 +49,5 @@
     { "path": "examples/name.ws", "equivalent": "name.ws", "spec_version": "0.2" },
     { "path": "examples/wikipedia_example.ws", "spec_version": "0.2" }
   ],
-  "commands": [{ "bin": "wspace", "usage": "$0 <file>", "input": "<file>", "output": "stdout" }]
+  "commands": [{ "bin": "wspace", "usage": "<file>", "input": "<file>", "output": "stdout" }]
 }

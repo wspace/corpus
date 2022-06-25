@@ -54,7 +54,7 @@
     {
       "type": "transpiler",
       "bin": "target/release/compiler",
-      "usage": "$0 [-h | --help] [-V | --version] <file> <output_file>",
+      "usage": "[-h | --help] [-V | --version] <file> <output_file>",
       "input": "<file>",
       "output": "<output_file>",
       "options": [
@@ -67,7 +67,7 @@
     {
       "type": "interpreter",
       "bin": "target/release/interpreter",
-      "usage": "$0 [-d | --debug] [-i | --instructions] [-h | --help] [-V | --version] <file>",
+      "usage": "[-d | --debug] [-i | --instructions] [-h | --help] [-V | --version] <file>",
       "options": [
         { "short": "d", "long": "debug" },
         { "short": "i", "long": "instructions", "desc": "Display the parsed instructions" },

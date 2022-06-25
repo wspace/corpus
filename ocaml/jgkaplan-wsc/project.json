@@ -12,7 +12,7 @@
     {
       "type": "language compiler",
       "bin": "main.byte",
-      "usage": "$0 [--help] <file>",
+      "usage": "[--help] <file>",
       "output": "<file:no_ext>.ws",
       "options": [{ "short": "help", "long": "help", "desc": "Display this list of options" }],
       "option_parse": "OCaml Arg"

@@ -102,7 +102,7 @@
   "commands": [
     {
       "bin": "wsi",
-      "usage": "$0 [-h | --help] [-d | --disassemble] [-c | --cycles] [-a | --aot] [-j | --jit] [-m | --masm] [-Os] [-Of] <file>",
+      "usage": "[-h | --help] [-d | --disassemble] [-c | --cycles] [-a | --aot] [-j | --jit] [-m | --masm] [-Os] [-Of] <file>",
       "options": [
         { "short": "h", "long": "help", "desc": "display this screen." },
         { "short": "d", "long": "disassemble", "desc": "disassemble the whitespace program." },

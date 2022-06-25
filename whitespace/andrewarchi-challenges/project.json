@@ -348,5 +348,5 @@
       "spec_version": "0.2"
     }
   ],
-  "commands": [{ "type": "test", "bin": "test.bash", "usage": "$0" }]
+  "commands": [{ "type": "test", "bin": "test.bash", "usage": "" }]
 }

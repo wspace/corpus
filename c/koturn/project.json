@@ -11,7 +11,7 @@
   "commands": [
     {
       "bin": "whitespace.out",
-      "usage": "$0 [-b | --bytecode] [-f | --filter] [-h | --help] [-m | --mnemonic] [-o <file> | --output=<file>] [-t | --translate] <file>",
+      "usage": "[-b | --bytecode] [-f | --filter] [-h | --help] [-m | --mnemonic] [-o <file> | --output=<file>] [-t | --translate] <file>",
       "options": [
         { "short": "b", "long": "bytecode", "desc": "Show code in hexadecimal" },
         { "short": "f", "long": "filter", "desc": "Visualize whitespace source code" },

@@ -9,5 +9,5 @@
   "spec_version": "0.2",
   "source": ["https://github.com/benajmin/whitespace-interpreter"],
   "bounds": { "precision": "fixed" },
-  "commands": [{ "type": "interpreter", "bin": "WhitespaceInterpreter.out", "usage": "$0 <file>" }]
+  "commands": [{ "type": "interpreter", "bin": "WhitespaceInterpreter.out", "usage": "<file>" }]
 }

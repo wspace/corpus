@@ -13,7 +13,7 @@
     {
       "type": "interpreter",
       "bin": "bin/ws",
-      "usage": "$0 [-v <size>] [-c <size>] [-h <size>] <file>",
+      "usage": "[-v <size>] [-c <size>] [-h <size>] <file>",
       "options": [
         {
           "short": "v",

@@ -41,7 +41,7 @@
     {
       "type": "interpreter",
       "bin": "releases/ws",
-      "usage": "$0 [-v] <file>",
+      "usage": "[-v] <file>",
       "input": "<file>",
       "output": "stdout",
       "options": [

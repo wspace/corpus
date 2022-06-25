@@ -49,7 +49,7 @@
   "commands": [
     {
       "bin": "pyws.py",
-      "usage": "[-h | --help] [-A] [--IR] [--strict] [--style=<style>] [--sep=<sep>] [--arg-sep=<arg_sep>] [--debug] [--traceall] $0 <file>",
+      "usage": "[-h | --help] [-A] [--IR] [--strict] [--style=<style>] [--sep=<sep>] [--arg-sep=<arg_sep>] [--debug] [--traceall] <file>",
       "options": [
         { "short": "h", "long": "help", "desc": "show this help message and exit" },
         { "short": "A", "desc": "use assembler instead of compiler" },

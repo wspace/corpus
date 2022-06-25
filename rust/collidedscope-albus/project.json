@@ -8,5 +8,5 @@
   "date": "2021-02-12 08:39:06 -0500",
   "spec_version": "0.3",
   "source": ["https://github.com/collidedscope/albus"],
-  "commands": [{ "type": "interpreter", "bin": "target/release/albus", "usage": "$0 <file>" }]
+  "commands": [{ "type": "interpreter", "bin": "target/release/albus", "usage": "<file>" }]
 }

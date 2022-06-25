@@ -50,5 +50,5 @@
     { "path": "examples/loctest.ws", "equivalent": "loctest.ws", "spec_version": "0.3" },
     { "path": "examples/name.ws", "equivalent": "name.ws", "spec_version": "0.2" }
   ],
-  "commands": [{ "type": "interpreter", "bin": "wspace", "usage": "$0 <file>" }]
+  "commands": [{ "type": "interpreter", "bin": "wspace", "usage": "<file>" }]
 }

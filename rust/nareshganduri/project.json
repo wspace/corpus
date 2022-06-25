@@ -20,5 +20,5 @@
     { "path": "examples/name.ws", "equivalent": "name.ws", "spec_version": "0.2" },
     { "path": "examples/sudoku.ws", "equivalent": "sudoku.ws", "spec_version": "0.3" }
   ],
-  "commands": [{ "type": "interpreter", "bin": "target/release/whitespace-vm", "usage": "$0 <file>" }]
+  "commands": [{ "type": "interpreter", "bin": "target/release/whitespace-vm", "usage": "<file>" }]
 }

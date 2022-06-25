@@ -18,5 +18,5 @@
     "label_cap": "unbounded",
     "instruction_cap": "unbounded"
   },
-  "commands": [{ "type": "interpreter", "bin": "satan", "usage": "$0 <file>" }]
+  "commands": [{ "type": "interpreter", "bin": "satan", "usage": "<file>" }]
 }

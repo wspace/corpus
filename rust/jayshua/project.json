@@ -23,7 +23,7 @@
     {
       "type": "interpreter",
       "bin": "target/release/whitespace",
-      "usage": "$0 [list] <file>",
+      "usage": "[list] <file>",
       "subcommands": [
         { "name": "run", "desc": "run the program (default)" },
         { "name": "list", "desc": "list the commands that the file contains" }

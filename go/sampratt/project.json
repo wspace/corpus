@@ -22,5 +22,5 @@
       "spec_version": "0.2"
     }
   ],
-  "commands": [{ "bin": "whitespace-go", "usage": "$0 <file>" }]
+  "commands": [{ "bin": "whitespace-go", "usage": "<file>" }]
 }

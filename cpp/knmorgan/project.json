@@ -24,7 +24,7 @@
     {
       "type": "interpreter",
       "bin": "ws",
-      "usage": "$0 [-v | --version] [-h | --help] [-s <size> | --stack-size <size>] <file>",
+      "usage": "[-v | --version] [-h | --help] [-s <size> | --stack-size <size>] <file>",
       "options": [
         { "short": "v", "long": "version", "desc": "Print version and copyright" },
         { "short": "h", "long": "help", "desc": "Print usage" },

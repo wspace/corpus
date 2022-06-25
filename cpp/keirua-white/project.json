@@ -38,5 +38,5 @@
     "indentation": "",
     "usage": ["disassembler", "enum"]
   },
-  "commands": [{ "type": "interpreter", "bin": "white", "usage": "$0 <file>" }]
+  "commands": [{ "type": "interpreter", "bin": "white", "usage": "<file>" }]
 }

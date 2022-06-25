@@ -54,7 +54,7 @@
     {
       "type": "interpreter",
       "bin": "wspacego",
-      "usage": "$0 [-h | --help] [run | disasm | char] <file>",
+      "usage": "[-h | --help] [run | disasm | char] <file>",
       "options": [
         { "short": "h", "long": "h", "desc": "display this help and exit" },
         { "short": "help", "long": "help", "desc": "display this help and exit" }

@@ -95,7 +95,7 @@
     { "path": "tests/unterminated_slide.ws", "spec_version": "0.3" }
   ],
   "commands": [
-    { "bin": "target/release/yspace", "usage": "$0 <file>" },
+    { "bin": "target/release/yspace", "usage": "<file>" },
     { "type": "test", "bin": "tests/test.sh", "usage": "cd tests && ./test.sh" }
   ]
 }

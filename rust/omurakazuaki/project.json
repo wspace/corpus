@@ -47,5 +47,5 @@
     { "path": "samples/hanoi.ws", "equivalent": "hanoi.ws", "spec_version": "0.2" },
     { "path": "samples/helloworld.ws", "spec_version": "0.2" }
   ],
-  "commands": [{ "bin": "target/release/whitespace", "usage": "$0 <file>" }]
+  "commands": [{ "bin": "target/release/whitespace", "usage": "<file>" }]
 }

@@ -43,8 +43,6 @@
     "extension": ""
   },
   "programs": [{ "path": "sbstr1", "generated": "sbstr1.ws", "spec_version": "0.2" }],
-  "commands": [
-    { "type": "assembler", "bin": "wstp", "usage": "$0 < <file>", "input": "stdin", "output": "stdout" }
-  ],
+  "commands": [{ "type": "assembler", "bin": "wstp", "usage": "< <file>", "input": "stdin", "output": "stdout" }],
   "notes": "Date is of commit adding sbstr1.ws and sbstr1"
 }

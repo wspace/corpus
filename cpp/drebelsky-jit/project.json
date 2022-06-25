@@ -39,5 +39,5 @@
     "usage": ["debug", "enum"]
   },
   "programs": [{ "path": "programs/is_prime.ws", "spec_version": "0.2" }],
-  "commands": [{ "type": "jit", "bin": "compile", "usage": "$0 <use_jit:t|f> <file>", "option_parse": "manual" }]
+  "commands": [{ "type": "jit", "bin": "compile", "usage": "<use_jit:t|f> <file>", "option_parse": "manual" }]
 }

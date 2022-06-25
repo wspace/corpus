@@ -12,7 +12,7 @@
     {
       "type": "language compiler",
       "bin": "compile",
-      "usage": "$0 [-h] [-a] [-i] <file>",
+      "usage": "[-h] [-a] [-i] <file>",
       "options": [
         { "short": "h", "desc": "show this help" },
         { "short": "a", "desc": "include annotations in compiler output" },

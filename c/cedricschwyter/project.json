@@ -14,6 +14,6 @@
     { "path": "ws/hello_world.ws", "spec_version": "0.2" },
     { "path": "ws/truth_machine.ws", "spec_version": "0.2" }
   ],
-  "commands": [{ "type": "interpreter", "bin": "interpreter", "usage": "$0 < <file>", "input": "stdin" }],
+  "commands": [{ "type": "interpreter", "bin": "interpreter", "usage": "< <file>", "input": "stdin" }],
   "todo": "Programs are likely derived from the Esolang example programs"
 }

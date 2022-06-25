@@ -62,7 +62,7 @@
     {
       "type": "interpreter",
       "bin": "whitespace",
-      "usage": "$0 [-v] [--dry_run] [-h | --help] <file>",
+      "usage": "[-v] [--dry_run] [-h | --help] <file>",
       "options": [
         { "short": "v", "long": "v", "desc": "verbose" },
         { "short": "dry_run", "long": "dry_run", "desc": "dry run" },

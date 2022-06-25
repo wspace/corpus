@@ -42,7 +42,7 @@
     {
       "type": "interpreter",
       "bin": "bin/wsInt",
-      "usage": "$0 <file>",
+      "usage": "<file>",
       "notes": "Prints mapping and disassembled program before executing"
     }
   ]

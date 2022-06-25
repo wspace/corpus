@@ -26,7 +26,7 @@
     {
       "type": "interpreter",
       "bin": "src/esco",
-      "usage": "$0 [-h | --help] [-t <machine_type> | --type=<machine_type>] [-i <input_file> | --input=<input_file>] [-o <output_file> | --output=<output_file>] [-d | --debug] [-q | --quiet] <file>",
+      "usage": "[-h | --help] [-t <machine_type> | --type=<machine_type>] [-i <input_file> | --input=<input_file>] [-o <output_file> | --output=<output_file>] [-d | --debug] [-q | --quiet] <file>",
       "options": [
         { "short": "h", "long": "help", "desc": "to read this" },
         {

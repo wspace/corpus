@@ -53,7 +53,7 @@
     {
       "type": "interpreter",
       "bin": "whitespace-rs/target/release/whitespace-rs",
-      "usage": "$0 <file>",
+      "usage": "<file>",
       "options": [
         { "short": "h", "long": "help", "desc": "Prints help information" },
         { "short": "V", "long": "version", "desc": "Prints version information" }

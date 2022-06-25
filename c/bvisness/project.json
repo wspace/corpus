@@ -12,7 +12,7 @@
     {
       "type": "interpreter",
       "bin": "whitespace",
-      "usage": "$0 [<file>]",
+      "usage": "[<file>]",
       "notes": "Reads from stdin, if no file is given"
     }
   ]

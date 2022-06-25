@@ -22,7 +22,7 @@
     {
       "type": "interpreter",
       "bin": "go-whitespace",
-      "usage": "$0 [-d] [-h | --help] <file>",
+      "usage": "[-d] [-h | --help] <file>",
       "options": [
         { "short": "d", "long": "d", "desc": "debug mode" },
         { "short": "h", "long": "h" },

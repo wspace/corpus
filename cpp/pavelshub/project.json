@@ -50,7 +50,7 @@
     {
       "type": "interpreter",
       "bin": "wspace",
-      "usage": "$0 [algdh] <file>",
+      "usage": "[algdh] <file>",
       "options": [
         { "short": "a", "desc": "print whitespace assembly language instead of program execution" },
         {
@@ -67,6 +67,6 @@
       "option_parse": "manual",
       "notes": "Flags combine similar to `tar`, without dash required"
     },
-    { "type": "assembler", "bin": "assembler", "usage": "$0 <file>" }
+    { "type": "assembler", "bin": "assembler", "usage": "<file>" }
   ]
 }

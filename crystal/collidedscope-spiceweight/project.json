@@ -23,7 +23,7 @@
     {
       "type": "interpreter",
       "bin": "spwt",
-      "usage": "$0 [options] <file>",
+      "usage": "[options] <file>",
       "options": [
         {
           "short": "r",

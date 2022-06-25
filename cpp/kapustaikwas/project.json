@@ -43,7 +43,7 @@
     {
       "type": "assembler and disassembler",
       "bin": "pre",
-      "usage": "$0 [-a | -r]",
+      "usage": "[-a | -r]",
       "input": "stdin",
       "output": "stdout",
       "options": [
@@ -56,7 +56,7 @@
     {
       "type": "transpiler",
       "bin": "wsc.sh",
-      "usage": "$0 <file> <out> [-a | -r]",
+      "usage": "<file> <out> [-a | -r]",
       "input": "<file>",
       "output": "<out>",
       "options": [
