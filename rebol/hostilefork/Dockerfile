@@ -1,7 +1,9 @@
 FROM ubuntu AS builder
 
 RUN apt-get update && \
-    apt-get install -y wget git make gcc
+    apt-get install -y --no-install-recommends \
+        wget git make gcc && \
+    rm -rf /var/lib/apt/lists/*
 
 # Pre-built Rebol 3 alpha bf237fc
 RUN wget https://rebolsource.net/downloads/experimental/r3-linux-x64-gbf237fc-static -P /usr/local/bin
