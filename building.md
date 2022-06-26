@@ -78,6 +78,7 @@ Projects that can be built with Docker:
 - java/matou-whasm
 - java/praveenvaka-coder
 - java/wysang
+- jq/andrewarchi-wsjq
 - lolcode/akers
 - ocaml/jgkaplan-wsc
 - ocaml/matsud-c2ws
@@ -218,7 +219,6 @@ Building status of individual executables:
 - ❌ javascript/uraza
 - ❌ javascript/vii5ard-whitelips-ide
 - javascript/wdalmut/whitespacec
-- jq/andrewarchi-wsjq/wsjq
 - ⚠️ julia/goropikari-whitespaces/*unspecified*
 - ⚠️ kotlin/ze-space/build/libs/space.jar: `./gradlew` Dependencies not packaged
 - ❌ lua/carsonrueber

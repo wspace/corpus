@@ -45,8 +45,7 @@
     {
       "type": "interpreter",
       "bin": "wsjq",
-      "dependencies": ["jq"],
-      "usage": "$0 [<mode>] [-h | --help] [-i <in_file> | --in-file=<in_file>] [-e <behavior> | --on-eof=<behavior>] [-n | --no-prompt] [-c | --check-clean] [-r | --check-retrieve] <file>",
+      "usage": "[<mode>] [-h | --help] [-i <in_file> | --in-file=<in_file>] [-e <behavior> | --on-eof=<behavior>] [-n | --no-prompt] [-c | --check-clean] [-r | --check-retrieve] <file>",
       "example_usages": [
         "wsjq run hworld.ws",
         "whoami > name.txt && wsjq debug --in-file=name.txt --no-prompt name.ws",
