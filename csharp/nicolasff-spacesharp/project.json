@@ -6,9 +6,14 @@
   "license": "GPL-2.0-or-later",
   "languages": ["C#", "C", "Yacc", "Lex"],
   "tags": ["compiler", "programs"],
-  "date": "2008-08-25 08:55:11 +0000",
+  "date": "2006-07-28 20:36:29 +0000",
   "spec_version": "0.3",
-  "source": ["https://github.com/nicolasff/spacesharp", "https://spacesharp.batard.info/"],
+  "source": [
+    "https://github.com/nicolasff/spacesharp",
+    "https://spacesharp.batard.info/",
+    "https://archive.softwareheritage.org/browse/origin/directory/?origin_url=http://spacesharp.googlecode.com/svn/",
+    "http://web.archive.org/web/20160528204735/https://code.google.com/p/spacesharp/"
+  ],
   "whitespace": { "extension": "ws" },
   "assembly": {
     "mnemonics": {
@@ -67,5 +72,6 @@
       "option_parse": "manual",
       "notes": "Run output file with `mono <output_file>`"
     }
-  ]
+  ],
+  "todo": "Combine Google Code and GitHub histories"
 }
