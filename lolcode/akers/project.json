@@ -11,13 +11,36 @@
     "https://github.com/wspace/akers-lolcode",
     "https://github.com/hostilefork/whitespacers/tree/master/lolcode"
   ],
+  "assembly": {
+    "mnemonics": {
+      "push": ["push"],
+      "dup": ["dup"],
+      "copy": ["copy"],
+      "swap": ["swap"],
+      "drop": ["pop"],
+      "slide": ["slide"],
+      "add": ["add"],
+      "sub": ["sub"],
+      "mul": ["mul"],
+      "div": ["div"],
+      "mod": ["mod"],
+      "store": ["store"],
+      "retrieve": ["load"],
+      "label": ["label"],
+      "call": ["call"],
+      "jmp": ["jump"],
+      "jz": ["jmpz"],
+      "jn": ["jmpn"],
+      "ret": ["return"],
+      "end": ["exit"],
+      "printc": ["putchar"],
+      "printi": ["putnum"],
+      "readc": ["getchar"],
+      "readi": ["getnum"]
+    },
+    "usage": ["enum"]
+  },
   "commands": [
-    {
-      "type": "interpreter",
-      "bin": "whitespace.lol",
-      "dependencies": ["lci"],
-      "usage": "cat <(echo <file>) - | lci $0",
-      "notes": "When the program contains no read instructions, it can be run with `lci $0 <<< <file>`"
-    }
+    { "type": "interpreter", "bin": "whitespace.lol", "input": "filename from stdin", "output": "stdout" }
   ]
 }

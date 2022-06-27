@@ -9,8 +9,8 @@ RUN make
 
 FROM alpine
 
-RUN apk add readline-dev
+RUN apk add bash readline-dev
 WORKDIR /lolcode
 COPY --from=builder /lci/lci /usr/local/bin/
-COPY lolcode/*.lol lolcode/*.ws lolcode/*.b ./
-ENTRYPOINT ["lci", "whitespace.lol"]
+COPY lolcode/*.lol lolcode/*.ws lolcode/*.b run.bash ./
+ENTRYPOINT ["./run.bash"]
