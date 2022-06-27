@@ -9,12 +9,12 @@
   "spec_version": "0.3",
   "source": ["https://github.com/wrotycz/whitespace-interpreter"],
   "challenges": ["Codewars"],
+  "run_errors": "Needs Codewars entrypoint",
   "commands": [
     {
       "type": "interpreter",
       "bin": "target/whitespace-interpreter-1.0-SNAPSHOT.jar",
-      "build": "mvn -Dmaven.compiler.source=1.8 -Dmaven.compiler.target=1.8 package",
-      "run_errors": "Needs Codewars entrypoint"
+      "build": "mvn -Dmaven.compiler.source=1.8 -Dmaven.compiler.target=1.8 package"
     }
   ]
 }

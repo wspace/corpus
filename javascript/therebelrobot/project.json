@@ -10,5 +10,7 @@
   "source": ["https://github.com/therebelrobot/whitespace"],
   "challenges": ["Codewars"],
   "mappings": [{ "space": "s", "tab": "t", "lf": "n", "spaces_between": false }],
+  "run_errors": "Needs Codewars entrypoint",
+  "commands": [{ "type": "interpreter", "bin": "whitespace.js" }],
   "notes": "Identical to Codewars template"
 }

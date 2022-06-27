@@ -77,7 +77,15 @@ Projects that can be built with Docker:
 - java/faurehu
 - java/matou-whasm
 - java/praveenvaka-coder
+- java/pyeroh: Needs Codewars entrypoint
+- java/wrotycz: Needs Codewars entrypoint
 - java/wysang
+- javascript/ignovak: Needs Codewars entrypoint
+- javascript/msucorey-codewars: Needs Codewars entrypoint
+- javascript/namhle-codewars: Needs Codewars entrypoint
+- javascript/syntaqx-puzzles: Needs Codewars entrypoint
+- javascript/therebelrobot: Needs Codewars entrypoint
+- javascript/uraza: Needs Codewars entrypoint
 - jq/andrewarchi-wsjq
 - lolcode/akers
 - ocaml/jgkaplan-wsc
@@ -152,6 +160,8 @@ Projects that can be built with Docker:
 - rust/nareshganduri
 - rust/omurakazuaki
 - rust/zrneely
+- typescript/eduardoborsa-codewars: Needs Codewars entrypoint
+- typescript/fy0u11: Needs Codewars entrypoint
 - whitespace/andrewarchi-challenges
 - whitespace/t3nsor-spoj
 
@@ -187,17 +197,14 @@ Building status of individual executables:
 - ❌ java/brunokim
 - ❌ java/kmizu
 - ❌ java/kreutzer-spacedide
-- ❌ java/pyeroh
 - ❌ java/rahulkp
 - ❌ java/ralucaa-whitespace4j
 - ⚠️ java/vyo-kairos/build/libs/vyo-kairos-1.0.0-all.jar: `./gradlew shadowJar`
-- ⚠️ java/wrotycz/target/whitespace-interpreter-1.0-SNAPSHOT.jar: `mvn -Dmaven.compiler.source=1.8 -Dmaven.compiler.target=1.8 package` Needs Codewars entrypoint
 - ❌ java/yawkat
 - ❌ java/yuukiaria-wseditor
 - ❌ javascript/arnauld
 - ❌ javascript/damle-evanescojs
 - ❌ javascript/dexteryy-grassmudmonkey
-- ❌ javascript/ignovak
 - ❌ javascript/kanra1412
 - ❌ javascript/kmyk-translater
 - ❌ javascript/kosei
@@ -205,18 +212,11 @@ Building status of individual executables:
 - ❌ javascript/loklaan-zerowidth-lang
 - ❌ javascript/luilak-ws2js
 - ❌ javascript/macocha-whitespacer
-- ⚠️ javascript/msucorey-codewars:
-  - ⚠️ JavaScript/whitespace-refactor.js: Needs Codewars entrypoint
-  - ⚠️ JavaScript/whitespace.js: Needs Codewars entrypoint
-- ⚠️ javascript/namhle-codewars/Whitespace Interpreter/solution.js: Needs Codewars entrypoint
 - ❌ javascript/naokikp-wsi
 - ❌ javascript/pvdz-significant-whitespace
 - ❌ javascript/rumpl
 - ❌ javascript/susisu
-- ⚠️ javascript/syntaqx-puzzles/codewars/js/2/whitespace-interpreter.js: Needs Codewars entrypoint
-- ❌ javascript/therebelrobot
 - ❌ javascript/tranbrian-generator
-- ❌ javascript/uraza
 - ❌ javascript/vii5ard-whitelips-ide
 - javascript/wdalmut/whitespacec
 - ⚠️ julia/goropikari-whitespaces/*unspecified*
@@ -280,8 +280,6 @@ Building status of individual executables:
 - ❌ textmate/andrewarchi-linguist
 - ⚠️ textmate/nixinova/grammars/whitespace.yaml-tmLanguage
 - ❌ textmate/veniversum
-- ⚠️ typescript/eduardoborsa-codewars/dummy/2/whitespace\_interpreter.ts: Needs Codewars entrypoint
-- ⚠️ typescript/fy0u11/dist/Whitespace.js: `npm run build`
 - typescript/simomu/bin/ws.js: `npm run build`
 - ❌ vim/rolf
 - whitespace/andrewarchi-wslib/assemble.sh

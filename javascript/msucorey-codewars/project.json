@@ -9,16 +9,9 @@
   "spec_version": "0.3",
   "source": ["https://github.com/msucorey/codewars"],
   "challenges": ["Codewars"],
+  "run_errors": "Needs Codewars entrypoint",
   "commands": [
-    {
-      "type": "interpreter",
-      "bin": "JavaScript/whitespace-refactor.js",
-      "run_errors": "Needs Codewars entrypoint"
-    },
-    {
-      "type": "interpreter",
-      "bin": "JavaScript/whitespace.js",
-      "run_errors": "Needs Codewars entrypoint"
-    }
+    { "type": "interpreter", "bin": "JavaScript/whitespace-refactor.js" },
+    { "type": "interpreter", "bin": "JavaScript/whitespace.js" }
   ]
 }

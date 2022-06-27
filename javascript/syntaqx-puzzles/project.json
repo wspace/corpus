@@ -9,11 +9,6 @@
   "spec_version": "0.3",
   "source": ["https://github.com/syntaqx/puzzles"],
   "challenges": ["Codewars"],
-  "commands": [
-    {
-      "type": "interpreter",
-      "bin": "codewars/js/2/whitespace-interpreter.js",
-      "run_errors": "Needs Codewars entrypoint"
-    }
-  ]
+  "run_errors": "Needs Codewars entrypoint",
+  "commands": [{ "type": "interpreter", "bin": "codewars/js/2/whitespace-interpreter.js" }]
 }

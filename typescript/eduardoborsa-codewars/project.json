@@ -9,11 +9,6 @@
   "spec_version": "0.3",
   "source": ["https://github.com/EduardoBorsa/code_wars_exercises"],
   "challenges": ["Codewars"],
-  "commands": [
-    {
-      "type": "interpreter",
-      "bin": "dummy/2/whitespace_interpreter.ts",
-      "run_errors": "Needs Codewars entrypoint"
-    }
-  ]
+  "run_errors": "Needs Codewars entrypoint",
+  "commands": [{ "type": "interpreter", "bin": "dummy/2/whitespace_interpreter.ts" }]
 }

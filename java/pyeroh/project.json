@@ -8,5 +8,6 @@
   "date": "2018-12-14 16:46:18 +1100",
   "spec_version": "0.3",
   "source": ["https://gist.github.com/Pyeroh/1b2903e53d71e0662d105dc0d6aedbdf"],
-  "challenges": ["Codewars"]
+  "challenges": ["Codewars"],
+  "run_errors": "Needs Codewars entrypoint"
 }
