@@ -416,6 +416,9 @@
 [submodule "ocaml/progbits-blank/blank"]
 	path = ocaml/progbits-blank/blank
 	url = https://github.com/progbits/blank
+[submodule "ocaml/progbits-spacebar/spacebar"]
+	path = ocaml/progbits-spacebar/spacebar
+	url = https://github.com/progbits/spacebar
 [submodule "ocaml/steiner/Whitespace"]
 	path = ocaml/steiner/Whitespace
 	url = https://github.com/steiner26/Whitespace
@@ -596,6 +599,9 @@
 [submodule "python/umutoztunc-whitesymex/whitesymex"]
 	path = python/umutoztunc-whitesymex/whitesymex
 	url = https://github.com/umutoztunc/whitesymex
+[submodule "python/victornuzhniy/w_space"]
+	path = python/victornuzhniy/w_space
+	url = https://github.com/victor-nuzhniy/w_space
 [submodule "python/wasabili/Whitespace"]
 	path = python/wasabili/Whitespace
 	url = https://gist.github.com/wasabili/708773

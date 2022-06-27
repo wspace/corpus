@@ -8,6 +8,19 @@
   "date": "2019-07-04 02:09:08 -0400",
   "spec_version": "0.3",
   "source": ["https://github.com/jgkaplan/whitespaceTranspiler"],
+  "whitespace": { "extension": "ws" },
+  "programs": [
+    { "path": "lib/math.wsl" },
+    { "path": "test/conditionalTest.wsr", "generated": "test/conditionalTest.ws", "spec_version": "0.2" },
+    { "path": "test/countToTen.wsr", "generated": "test/countToTen.ws", "spec_version": "0.2" },
+    { "path": "test/factorial.wsr", "generated": "test/factorial.ws", "spec_version": "0.3" },
+    { "path": "test/functionTest.wsr", "generated": "test/functionTest.ws", "spec_version": "0.3" },
+    { "path": "test/inputTest.wsr", "generated": "test/inputTest.ws", "spec_version": "0.3" },
+    { "path": "test/printTest.wsr", "generated": "test/printTest.ws", "spec_version": "0.2" },
+    { "path": "test/recursionTest.wsr", "generated": "test/recursionTest.ws", "spec_version": "0.3" },
+    { "path": "test/varTest.wsr", "generated": "test/varTest.ws", "spec_version": "0.2" },
+    { "path": "test/whileTest.wsr", "generated": "test/whileTest.ws", "spec_version": "0.2" }
+  ],
   "commands": [
     {
       "type": "language compiler",

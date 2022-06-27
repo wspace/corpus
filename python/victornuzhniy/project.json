@@ -1,0 +1,43 @@
+{
+  "id": "python/victornuzhniy",
+  "name": "w_space",
+  "authors": ["Victor Nuzhniy"],
+  "license": "none",
+  "languages": ["Python"],
+  "tags": ["interpreter"],
+  "date": "2022-05-21 20:38:36 +0300",
+  "spec_version": "0.3",
+  "source": ["https://github.com/victor-nuzhniy/w_space"],
+  "challenges": ["Codewars"],
+  "assembly": {
+    "mnemonics": {
+      "push": ["push_to_stack"],
+      "dup": ["duplicate_top"],
+      "copy": ["duplicate_value"],
+      "swap": ["swap"],
+      "drop": ["discard_top"],
+      "slide": ["discard_value"],
+      "add": ["adding"],
+      "sub": ["subtract"],
+      "mul": ["multiple"],
+      "div": ["division"],
+      "mod": ["division_part"],
+      "store": ["heap_store"],
+      "retrieve": ["heap_pop"],
+      "label": ["mark_location"],
+      "call": ["call_subroutine"],
+      "jmp": ["jump"],
+      "jz": ["jump_stack"],
+      "jn": ["jump_stack_bzero"],
+      "ret": ["subroutine_end"],
+      "end": ["end"],
+      "printc": ["output_character"],
+      "printi": ["output_number"],
+      "readc": ["read_char"],
+      "readi": ["read_number"]
+    },
+    "usage": ["enum"]
+  },
+  "run_errors": "Needs Codewars entrypoint",
+  "commands": [{ "type": "interpreter", "bin": "interpreter.py" }]
+}

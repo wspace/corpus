@@ -91,6 +91,7 @@ Projects that can be built with Docker:
 - ocaml/jgkaplan-wsc
 - ocaml/matsud-c2ws
 - ocaml/progbits-blank: Module Stdlib.Stream is deprecated and the camlp-streams library should be used instead
+- ocaml/progbits-spacebar
 - ocaml/steiner
 - perl/ephphatha-wsm2ws
 - perl/mkoelbl
@@ -142,6 +143,7 @@ Projects that can be built with Docker:
 - python/smithers-bluespace
 - python/techiehelper-codewars: Needs Codewars entrypoint
 - python/umutoztunc-whitesymex
+- python/victornuzhniy: Needs Codewars entrypoint
 - python/wasabili
 - python/wawrepo-kata: Needs Codewars entrypoint
 - python/yasn-whitepy
