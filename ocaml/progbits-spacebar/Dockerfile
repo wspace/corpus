@@ -9,8 +9,9 @@ USER opam
 RUN opam install dune menhir ounit2
 COPY --chown=opam spacebar /home/opam/spacebar
 WORKDIR /home/opam/spacebar
-RUN eval $(opam env) && dune runtest
-RUN eval $(opam env) && dune build
+RUN eval $(opam env) && \
+    dune runtest && \
+    dune build --profile release
 
 RUN sed -i'' 's,$(git rev-parse --show-toplevel),.,' test/functional.sh
 # TODO: Needs wspace binary:
