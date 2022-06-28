@@ -12,4 +12,5 @@ FROM debian
 
 WORKDIR /blank
 COPY --from=builder /home/opam/blank/_build/default/blank.exe ./
+COPY blank/examples .
 ENTRYPOINT ["./blank.exe"]
