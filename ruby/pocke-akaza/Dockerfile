@@ -1,0 +1,10 @@
+FROM ruby:3-alpine
+
+WORKDIR /akaza
+COPY akaza .
+# Remove `git ls-files` call:
+RUN sed -i 's|`git ls-files -z`\.split("\\x0")|Dir["**/*"]|' akaza.gemspec
+RUN bundle install
+RUN rake test
+ENTRYPOINT ["ruby", "-Ilib", "exe/akaza"]
+# TODO: Handle bin/str_to_ws.rb entrypoint

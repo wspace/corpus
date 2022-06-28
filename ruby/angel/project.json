@@ -68,7 +68,7 @@
     {
       "type": "multiple",
       "bin": "whitespace.rb",
-      "usage": "ruby $0 [-n | --noexec] [-D | --disassemble] [-t | --itype <itype>] [-T | --otype <otype>] [-S | --assemble] [-r | --report-exec] [-R | --report-code] [-q | --quiet] [-o | --outfile <output>] [--strict] [--stdin <stdin_file>] [--stdout <stdout_file>] [-u | --unlimit] [-v | --version <version>] [-d | --debug] <file>",
+      "usage": "[-n | --noexec] [-D | --disassemble] [-t | --itype <itype>] [-T | --otype <otype>] [-S | --assemble] [-r | --report-exec] [-R | --report-code] [-q | --quiet] [-o | --outfile <output>] [--strict] [--stdin <stdin_file>] [--stdout <stdout_file>] [-u | --unlimit] [-v | --version <version>] [-d | --debug] <file>",
       "options": [
         { "short": "n", "long": "noexec", "desc": "Don't execute" },
         { "short": "D", "long": "disassemble", "desc": "Disassemble source" },

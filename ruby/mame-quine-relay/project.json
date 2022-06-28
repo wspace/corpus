@@ -43,10 +43,10 @@
     {
       "type": "interpreter",
       "bin": "vendor/whitespace.rb",
-      "usage": "ruby $0 <file>",
+      "usage": "<file>",
       "output": "stdout",
       "notes": "readi does not support sign"
     }
   ],
-  "notes": "Automated with Docker. Programs available without building on spoiler branch."
+  "notes": "Automated with Docker. Programs available on spoiler branch without building."
 }

@@ -4,7 +4,7 @@
   "authors": ["alesiong"],
   "license": "GPL-2.0-or-later",
   "languages": ["Ruby"],
-  "tags": ["program builder", "programs"],
+  "tags": ["program builder", "interpreter", "programs"],
   "date": "2016-03-05 16:39:05 +0800",
   "spec_version": "0.3",
   "source": ["https://github.com/alesiong/whitespace-ruby"],
@@ -12,30 +12,33 @@
   "whitespace": { "extension": "ws" },
   "assembly": {
     "mnemonics": {
-      "push": ["push"],
-      "dup": ["dup"],
-      "swap": ["swap"],
-      "drop": ["discard"],
-      "add": ["add"],
-      "sub": ["sub"],
-      "mul": ["mul"],
-      "div": ["div"],
-      "mod": ["mod"],
-      "store": ["store"],
-      "retrieve": ["load"],
-      "label": ["label"],
-      "call": ["call"],
-      "jmp": ["jump"],
-      "jz": ["jz"],
-      "jn": ["jn"],
-      "ret": ["ret"],
-      "end": ["exit"],
-      "printc": ["printchar"],
-      "printi": ["printnum"],
-      "readc": ["readchar"],
-      "readi": ["readnum"]
+      "push": ["push", "push"],
+      "dup": ["dup", "dup"],
+      "copy": ["", "dupnum"],
+      "swap": ["swap", "swap"],
+      "drop": ["discard", "discard"],
+      "slide": ["", "discardnum"],
+      "add": ["add", "add"],
+      "sub": ["sub", "sub"],
+      "mul": ["mul", "mul"],
+      "div": ["div", "div"],
+      "mod": ["mod", "mod"],
+      "store": ["store", "store"],
+      "retrieve": ["load", "retrieve"],
+      "label": ["label", "label"],
+      "call": ["call", "call"],
+      "jmp": ["jump", "jump"],
+      "jz": ["jz", "jz"],
+      "jn": ["jn", "jn"],
+      "ret": ["ret", "ret"],
+      "end": ["exit", "exit"],
+      "printc": ["printchar", "outchar"],
+      "printi": ["printnum", "outnum"],
+      "readc": ["readchar", "readchar"],
+      "readi": ["readnum", "readnum"]
     },
-    "usage": ["program builder"]
+    "usage": ["program builder", "interpreter"],
+    "notes": "Mnemonics from wsv.rb and whitespace.rb, respectively"
   },
   "programs": [
     {
@@ -56,6 +59,7 @@
       "type": "program builder",
       "bin": "wsv.rb",
       "notes": "Import into Ruby program to translate to Whitespace"
-    }
+    },
+    { "type": "interpreter", "bin": "whitespace.rb" }
   ]
 }

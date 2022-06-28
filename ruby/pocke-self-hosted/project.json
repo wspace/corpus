@@ -59,8 +59,6 @@
     {
       "type": "interpreter",
       "bin": "build/whitespace.ws",
-      "build": "akaza wsrb src/whitespace.ws.rb",
-      "build_errors": "Ruby installation issue while generating whitespace.ws",
       "usage": "cat (<file> sep)... | wspace %0",
       "example_usages": [
         "cat build/fizzbuzz.ws sep | gows build/whitespace.ws",
@@ -71,5 +69,5 @@
     { "type": "program builder", "bin": "test/test_helper.rb" }
   ],
   "notes": "Presentation gives implementation details, including type information encoding, arrays, and hashing. Gist is the generated interpreter.",
-  "todo": "Run Rakefile. Can also generate .ws files with `bundle exec compile:all`, which would not require a global akaza installation. Verify that gist is identical to generated whitespace.ws."
+  "todo": "Can also generate .ws files with `bundle exec compile:all`, which would not require a global akaza installation. Verify that gist is identical to generated whitespace.ws."
 }

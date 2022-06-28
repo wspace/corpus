@@ -8,11 +8,38 @@
   "date": "2018-05-17 02:29:29 +0900",
   "spec_version": "0.2",
   "source": ["https://github.com/nishiwakki/whitespace"],
+  "assembly": {
+    "mnemonics": {
+      "push": ["Push"],
+      "dup": ["Duplicate"],
+      "swap": ["Swap"],
+      "drop": ["Discard"],
+      "add": ["Add"],
+      "sub": ["Subt"],
+      "mul": ["Multi"],
+      "div": ["IntDiv"],
+      "mod": ["Mod"],
+      "store": ["Store"],
+      "retrieve": ["Retrieve"],
+      "label": ["Mark"],
+      "call": ["CallSrtn"],
+      "jmp": ["Jump"],
+      "jz": ["JumpZero"],
+      "jn": ["JumpNega"],
+      "ret": ["EndSrtn"],
+      "end": ["End"],
+      "printc": ["OutCha"],
+      "printi": ["OutNum"],
+      "readc": ["InCha"],
+      "readi": ["InNum"]
+    },
+    "usage": ["enum"]
+  },
   "commands": [
     {
       "type": "interpreter",
       "bin": "whitespace.rb",
-      "usage": "ruby $0 <file>",
+      "usage": "<file>",
       "notes": "Fails on Whitespace programs with comments"
     }
   ]

@@ -148,6 +148,19 @@ Projects that can be built with Docker:
 - python/wawrepo-kata: Needs Codewars entrypoint
 - python/yasn-whitepy
 - rebol/hostilefork: Bootstrapping issues
+- ruby/alesiong
+- ruby/angel
+- ruby/bossiernesto: No entrypoint
+- ruby/collidedscope-spitewaste
+- ruby/dwayne
+- ruby/mame-quine-relay
+- ruby/nishiwakki
+- ruby/pocke-akaza
+- ruby/pocke-self-hosted
+- ruby/shimo-yukicoder
+- ruby/technohippy-gorispace
+- ruby/wconrad
+- ruby/yuta-textproc
 - rust/andrewarchi-yspace
 - rust/cedricschwyter-spacey
 - rust/censoredusername-whitespacers
@@ -248,31 +261,6 @@ Building status of individual executables:
   - ⚠️ Interpreter.py: msvcrt module only exists on Windows
 - ⚠️ python/tokigun-esotope-ws/esotope-ws: Source code unavailable
 - r/bmazoure/R/whitespace.R
-- ⚠️ ruby/alesiong/wsv.rb
-- ruby/angel:
-  - old/wsdisas.pl
-  - old/wssa.pl
-  - whitespace.rb
-- ⚠️ ruby/bossiernesto/*unspecified*: No entrypoint
-- ruby/collidedscope-spitewaste/bin/spw
-- ⚠️ ruby/dwayne/bin/whitespace: Old dependencies
-- ruby/mame-quine-relay/vendor/whitespace.rb
-- ruby/nishiwakki/whitespace.rb
-- ⚠️ ruby/pocke-akaza:
-  - bin/str\_to\_ws.rb
-  - ⚠️ exe/akaza: uninitialized constant Akaza::Parser::StringIO
-- ⚠️ ruby/pocke-self-hosted:
-  - ⚠️ build/whitespace.ws: `akaza wsrb src/whitespace.ws.rb` Ruby installation issue while generating whitespace.ws
-  - ⚠️ test/test\_helper.rb
-- ruby/shimo-yukicoder:
-  - as2st.rb
-  - st2ws.rb
-- ruby/technohippy-gorispace/bin/gorispace
-- ruby/wconrad:
-  - whitespace
-  - whitespace-asm
-  - whitespace-disassem
-- ruby/yuta-textproc/mywhitespace.rb
 - scala/dashlambda-eso/target/scala-2.13/eso\_2.13-2.6.1.jar: `sbt assembly`
 - ❌ scala/ojha-whitespacing
 - ⚠️ scala/patrickstephen/whitespace.jar: `sbt package` Should set whitespace.jar as package instead of arget/scala-2.11/whitespace-interpreter\_2.11-1.0.jar A JNI error has occurred, please check your installation and try again

@@ -206,7 +206,7 @@ language, including interpreters, compilers, and programs.
 | [Whitespace-JS](javascript/susisu)            | Susisu           | JavaScript | interpreter, assembler | 2016-04-12 | [GitHub](https://github.com/susisu/Whitespace-JS) |
 | [Whitespace countdown 10...0](whitespace/kirens-countdown) | Erik Nygren | Whitespace | programs | 2016-04-10 | [GitHub Gist](https://gist.github.com/Kirens/9e3c99706773335366fa7bbf3cfd592d) |
 | [shi-mo/yukicoder/whitespace](ruby/shimo-yukicoder) | Yoshifumi Shimono (shi-mo) | Ruby, Whitespace | assembler, mapping, programs | 2016-03-21 | [GitHub](https://github.com/wspace/shimo-yukicoder), [GitHub](https://github.com/shi-mo/yukicoder/tree/master/whitespace), [yukicoder](https://yukicoder.me/users/1721) |
-| [whitespace-ruby](ruby/alesiong)              | alesiong         | Ruby       | program builder, programs | 2016-03-05 | [GitHub](https://github.com/alesiong/whitespace-ruby) |
+| [whitespace-ruby](ruby/alesiong)              | alesiong         | Ruby       | program builder, interpreter, programs | 2016-03-05 | [GitHub](https://github.com/alesiong/whitespace-ruby) |
 | [Whitespace support in Atom](textmate/veniversum) | Qingzhuo     | TextMate   | syntax highlighting, mapping | 2016-02-20 | [GitHub](https://github.com/veniversum/language-whitespace) |
 | [whitespace-interpreter](javascript/uraza)    | Uraza            | JavaScript | interpreter  | 2016-02-08 | [GitHub](https://github.com/uraza/whitespace-interpreter) |
 | [Whitespace Interpreter](scala/patrickstephen) | Patrick Stephen | Scala      | interpreter, programs | 2016-01-28 | [Bitbucket](https://bitbucket.org/StephenPatrick/whitespace-interpreter) |

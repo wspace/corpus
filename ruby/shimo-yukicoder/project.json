@@ -81,12 +81,12 @@
     {
       "type": "assembler",
       "bin": "as2st.rb",
-      "usage": "ruby $0",
+      "usage": "",
       "input": "stdin",
       "output": "stdout",
       "notes": "Assembles to mapping"
     },
-    { "type": "mapping", "bin": "st2ws.rb", "usage": "ruby $0", "input": "stdin", "output": "stdout" }
+    { "type": "mapping", "bin": "st2ws.rb", "usage": "", "input": "stdin", "output": "stdout" }
   ],
   "notes": "Repo is very large, so wspace fork extracts just the whitespace/ dir"
 }

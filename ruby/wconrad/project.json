@@ -49,16 +49,14 @@
     {
       "type": "interpreter",
       "bin": "whitespace",
-      "dependencies": ["Ruby"],
-      "usage": "ruby $0 [<file>]",
+      "usage": "[<file>]",
       "input": "<file> or stdin",
       "output": "stdout"
     },
     {
       "type": "assembler",
       "bin": "whitespace-asm",
-      "dependencies": ["Ruby"],
-      "usage": "ruby $0 [<file>...]",
+      "usage": "[<file>...]",
       "input": "<file>",
       "output": "<file_no_suffix:.wsa>.ws",
       "notes": "Assembles each given file. Skips unrecognized lines without error. Right pads mnemonics with spaces to 8 characters so arguments are at column 17."
@@ -66,8 +64,7 @@
     {
       "type": "disassembler",
       "bin": "whitespace-disassem",
-      "dependencies": ["Ruby"],
-      "usage": "ruby $0 [<file>...]",
+      "usage": "[<file>...]",
       "input": "<file> or stdin",
       "output": "stdout",
       "notes": "Disassembles each given file concatenated or stdin, but not both"

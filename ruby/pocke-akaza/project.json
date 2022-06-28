@@ -52,24 +52,14 @@
   "commands": [
     {
       "bin": "exe/akaza",
-      "dependencies": ["Ruby 3"],
-      "install_dependencies": "bundle install",
-      "usage": "ruby $0 [exec | wsrb | exec_wsrb] <file>",
-      "run_errors": "uninitialized constant Akaza::Parser::StringIO",
+      "usage": "[exec | wsrb | exec_wsrb] <file>",
       "subcommands": [
         { "name": "exec", "desc": "Execute Whitespace program" },
         { "name": "wsrb", "desc": "Convert Ruby-like script to Whitespace" },
         { "name": "exec_wsrb", "desc": "Convert Ruby-like script to Whitespace and execute" }
-      ],
-      "notes": "Requires Ruby 2.7 or later"
+      ]
     },
-    {
-      "type": "text to Whitespace",
-      "bin": "bin/str_to_ws.rb",
-      "usage": "ruby $0 <text>",
-      "output": "stdout"
-    }
+    { "type": "text to Whitespace", "bin": "bin/str_to_ws.rb", "usage": "<text>", "output": "stdout" }
   ],
-  "notes": "Gists contain examples for the first blog post, which show the Akaza API for evaluating and embedding Whitespace programmings in Ruby and generate the programs in test/fixtures/. Second blog post explains the transpiler language specification in more detail.",
-  "todo": "Run Rakefile"
+  "notes": "Gists contain examples for the first blog post, which show the Akaza API for evaluating and embedding Whitespace programmings in Ruby and generate the programs in test/fixtures/. Second blog post explains the transpiler language specification in more detail."
 }

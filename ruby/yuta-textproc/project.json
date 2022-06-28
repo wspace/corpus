@@ -9,6 +9,33 @@
   "spec_version": "0.2",
   "source": ["https://github.com/yuta0023/TextProc"],
   "whitespace": { "extension": "ws" },
+  "assembly": {
+    "mnemonics": {
+      "push": ["push"],
+      "dup": ["dup"],
+      "swap": ["swap"],
+      "drop": ["discard"],
+      "add": ["add"],
+      "sub": ["sub"],
+      "mul": ["mul"],
+      "div": ["div"],
+      "mod": ["mod"],
+      "store": ["store"],
+      "retrieve": ["retrive"],
+      "label": ["label"],
+      "call": ["call"],
+      "jmp": ["jump"],
+      "jz": ["jz"],
+      "jn": ["jn"],
+      "ret": ["ret"],
+      "end": ["exit"],
+      "printc": ["outchar"],
+      "printi": ["outnum"],
+      "readc": ["readchar"],
+      "readi": ["readnum"]
+    },
+    "usage": ["enum"]
+  },
   "programs": [
     { "path": "fibonacci.ws", "equivalent": "fibonacci.ws", "spec_version": "0.2" },
     { "path": "hanoi.ws", "equivalent": "hanoi.ws", "spec_version": "0.2" }
@@ -17,7 +44,7 @@
     {
       "type": "interpreter",
       "bin": "mywhitespace.rb",
-      "usage": "ruby $0 [<file>...]",
+      "usage": "[<file>...]",
       "input": "concat:<file>... or stdin",
       "output": "stdout"
     }

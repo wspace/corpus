@@ -34,7 +34,7 @@
     {
       "type": "interpreter",
       "bin": "bin/gorispace",
-      "usage": "ruby ./bin/gorispace [-w | --whitespace] [-e | --english] [-c | --convert] [-d | --debug] [-h | --help] <file>",
+      "usage": "[-w | --whitespace] [-e | --english] [-c | --convert] [-d | --debug] [-h | --help] <file>",
       "options": [
         { "short": "w", "long": "whitespace", "desc": "Whitespace mode" },
         { "short": "e", "long": "english", "desc": "English mode" },

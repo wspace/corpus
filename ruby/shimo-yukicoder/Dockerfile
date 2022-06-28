@@ -1,0 +1,13 @@
+FROM ruby:3-alpine
+
+WORKDIR /whitespace
+COPY whitespace .
+RUN ruby as2st.rb < 0272.as > 0272.st && ruby st2ws.rb < 0272.st > 0272.ws && \
+    ruby as2st.rb < 0244.as > 0244.st && ruby st2ws.rb < 0244.st > 0244.ws && \
+    ruby as2st.rb < 0354.as > 0354.st && ruby st2ws.rb < 0354.st > 0354.ws && \
+    ruby as2st.rb < 0128.as > 0128.st && ruby st2ws.rb < 0128.st > 0128.ws && \
+    ruby as2st.rb < 0169.as > 0169.st && ruby st2ws.rb < 0169.st > 0169.ws && \
+    ruby as2st.rb < 9000.as > 9000.st && ruby st2ws.rb < 9000.st > 9000.ws && \
+                                         ruby st2ws.rb < 9005.st > 9005.ws
+# TODO: Handle as2st.rb and st2ws.rb entrypoints
+ENTRYPOINT ["sh"]

@@ -64,9 +64,7 @@
     {
       "type": "multiple",
       "bin": "bin/spw",
-      "dependencies": ["Ruby 3"],
-      "install_dependencies": "bundle install",
-      "usage": "ruby -Ilib $0 <subcommand>",
+      "usage": "<subcommand>",
       "option_parse": "Ruby Thor",
       "subcommands": [
         {
