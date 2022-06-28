@@ -3,9 +3,10 @@ FROM golang:1.18 AS builder
 WORKDIR /
 WORKDIR /nebula
 COPY nebula .
-# Requires LLVM
-RUN go mod init github.com/andrewarchi/nebula
-RUN go mod tidy
+# TODO: Requires LLVM
+RUN go mod init github.com/andrewarchi/nebula && \
+    go mod tidy
+RUN go test ./...
 RUN go build
 
 FROM scratch
