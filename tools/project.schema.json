@@ -272,7 +272,7 @@
           "items": { "type": "string", "examples": ["assembler", "disassembler", "programs", "debug", "enum"] }
         },
         "extension": { "type": "string", "examples": ["wsa"] },
-        "notes": { "type": "string", "examples": ["wsa"] }
+        "notes": { "type": "string" }
       },
       "additionalProperties": false
     },

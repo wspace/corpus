@@ -1,4 +1,4 @@
-FROM clojure:temurin-18-lein-focal as builder
+FROM clojure:temurin-18-lein-focal AS builder
 
 WORKDIR /erasure
 COPY erasure .

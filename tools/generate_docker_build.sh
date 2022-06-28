@@ -3,7 +3,7 @@
 dockerfiles=${*:-*/Dockerfile */*/Dockerfile}
 
 echo 'docker build -q -t wspace-corpus/haskell/edwinb-wspace-0.3 --platform linux/amd64 haskell/edwinb-wspace-0.3'
-echo 'docker run -i -t --rm wspace-corpus/haskell/edwinb-wspace-0.3 hworld.ws'
+echo 'docker run -it --rm wspace-corpus/haskell/edwinb-wspace-0.3 hworld.ws'
 echo
 
 get_id() {
@@ -19,5 +19,5 @@ done
 echo
 for f in $dockerfiles; do
   id="$(get_id "$f")"
-  echo "docker run -i -t --rm wspace-corpus/$id"
+  echo "docker run -it --rm wspace-corpus/$id"
 done
