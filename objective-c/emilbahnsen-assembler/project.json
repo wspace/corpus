@@ -5,7 +5,7 @@
   "license": "none",
   "languages": ["Objective-C"],
   "tags": ["assembler", "transpiler"],
-  "date": "2009-07-14",
+  "date": "2014-07-09",
   "spec_version": "0.3",
   "source": [
     "https://github.com/wspace/emilbahnsen-assembler",
@@ -58,5 +58,5 @@
       "notes": "Long flags do not work"
     }
   ],
-  "notes": "Date written in file headers. Repo includes other projects, including many large objects, which are pruned in the wspace fork."
+  "notes": "Date written in file headers: \"Created by Emil Bahnsen on 14-07-09\" and \"14-07-10\". Repo includes other projects, including many large objects, which are pruned in the wspace fork."
 }
