@@ -48,12 +48,11 @@
     "usage": ["assembler", "disassembler"],
     "extension": "wsa"
   },
+  "build_errors": "Source code unavailable",
   "commands": [
     {
       "type": "interpreter",
       "bin": "esotope-ws",
-      "dependencies": ["Python 2"],
-      "build_errors": "Source code unavailable",
       "usage": "[-c <output_file>] [-d <output_file>] <file>",
       "options": [
         { "short": "c", "arg": "output_file", "arg_required": true, "desc": "assembler mode" },

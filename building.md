@@ -45,8 +45,11 @@ Projects that can be built with Docker:
 - cpp/peasley
 - cpp/ricardoluis: `#include <conio.h>` not found; `floor` cannot be used in a constant expression
 - cpp/shadowmitia
+- cpp/sonicyang-ws-frontend: Requires LLVM
+- cpp/subv-whitespace-llvm: Requires LLVM
 - cpp/sudheesh
 - cpp/timvandermeij
+- cpp/tycho-whitespace-llvm: Requires LLVM
 - cpp/yuukiaria
 - crystal/collidedscope-spiceweight
 - csharp/denislabrecque
@@ -125,6 +128,7 @@ Projects that can be built with Docker:
 - python/katc
 - python/kraterkraken
 - python/lachlancourt
+- python/marktraceur-redlandside: PyQt version 4 not installed
 - python/maximegoyette: Needs Codewars entrypoint
 - python/mcolom
 - python/meand
@@ -141,7 +145,9 @@ Projects that can be built with Docker:
 - python/rumaxwell
 - python/ryndvs-aoc
 - python/smithers-bluespace
+- python/stephenchappell: msvcrt module only exists on Windows
 - python/techiehelper-codewars: Needs Codewars entrypoint
+- python/tokigun-esotope-ws: Source code unavailable
 - python/umutoztunc-whitesymex
 - python/victornuzhniy: Needs Codewars entrypoint
 - python/wasabili
@@ -171,7 +177,7 @@ Projects that can be built with Docker:
 - rust/jayshua
 - rust/kaisugi
 - rust/keirua
-- rust/luminight
+- rust/luminight: No entrypoint
 - rust/nareshganduri
 - rust/omurakazuaki
 - rust/zrneely
@@ -185,9 +191,6 @@ Building status of individual executables:
 - ⚠️ brainfuck/andrewarchi-wsbf/ws.bf
 - ⚠️ coffeescript/ehrlichbryan/*unspecified*: `grunt` Unclear how to run
 - ❌ cpp/burghard-wsintercpp
-- ⚠️ cpp/sonicyang-ws-frontend/wsjit: Requires LLVM
-- ⚠️ cpp/subv-whitespace-llvm/bin/Whitespace-LLVM: Requires LLVM
-- ⚠️ cpp/tycho-whitespace-llvm/wspace-jit: `make` Requires LLVM
 - ❌ csharp/colchicus
 - ❌ csharp/nutcrack-whiteplanes
 - ❌ docker/baekjoon-onlinejudge
@@ -253,13 +256,7 @@ Building status of individual executables:
 - ❌ php/jseidl-wcc
 - php/mattparker/src/PHPWhiteSpace.php
 - ❌ python/cybis-hapyli
-- ⚠️ python/marktraceur-redlandside/main.py: PyQt version 4 not installed
 - ❌ python/res-trans32
-- ⚠️ python/stephenchappell:
-  - ⚠️ Assembler.py: msvcrt module only exists on Windows
-  - Helpers.py
-  - ⚠️ Interpreter.py: msvcrt module only exists on Windows
-- ⚠️ python/tokigun-esotope-ws/esotope-ws: Source code unavailable
 - r/bmazoure/R/whitespace.R
 - scala/dashlambda-eso/target/scala-2.13/eso\_2.13-2.6.1.jar: `sbt assembly`
 - ❌ scala/ojha-whitespacing

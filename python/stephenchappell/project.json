@@ -47,12 +47,11 @@
     "usage": ["assembler", "programs"],
     "extension": "wsa"
   },
+  "build_errors": "msvcrt module only exists on Windows",
   "commands": [
     {
       "type": "interpreter",
       "bin": "Interpreter.py",
-      "dependencies": ["Python 3.1"],
-      "build_errors": "msvcrt module only exists on Windows",
       "usage": "python3.1 $0 <basename:no_ext>",
       "input": "Programs/<basename:no_ext>.(ws|wso)",
       "output": "stdout",
@@ -61,8 +60,6 @@
     {
       "type": "assembler",
       "bin": "Assembler.py",
-      "dependencies": ["Python 3.1"],
-      "build_errors": "msvcrt module only exists on Windows",
       "usage": "python3.1 $0 <basename:no_ext> [ASM]",
       "input": "Assembly/<basename:no_ext>.wsa",
       "output": "Programs/<basename:no_ext>.ws",
@@ -72,7 +69,6 @@
     {
       "type": "text to Whitespace",
       "bin": "Helpers.py",
-      "dependencies": ["Python 3.1"],
       "usage": "python3.1 -c 'from Helpers import encode_string; encode_string(\"<text>\", <address>)'",
       "notes": "Generates a sequence of stores, starting at the given address"
     }

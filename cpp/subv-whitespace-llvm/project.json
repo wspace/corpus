@@ -8,14 +8,6 @@
   "date": "2014-07-16 08:48:25 -0500",
   "spec_version": "0.3",
   "source": ["https://github.com/Subv/Whitespace-LLVM"],
-  "commands": [
-    {
-      "type": "compiler",
-      "bin": "bin/Whitespace-LLVM",
-      "dependencies": ["LLVM"],
-      "build_errors": "Requires LLVM",
-      "usage": "$0",
-      "input": "count.ws"
-    }
-  ]
+  "build_errors": "Requires LLVM",
+  "commands": [{ "type": "compiler", "bin": "bin/Whitespace-LLVM", "usage": "", "input": "count.ws" }]
 }

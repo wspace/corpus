@@ -13,14 +13,7 @@
     "http://redlandside.sourceforge.net/"
   ],
   "relations": [{ "id": "python/phlip-pywhitespace", "type": "embedded", "release": "pywhitespace2007.tar.bz2" }],
-  "commands": [
-    {
-      "type": "IDE",
-      "bin": "main.py",
-      "install_dependencies": "pip2 install python-qt",
-      "build_errors": "PyQt version 4 not installed",
-      "usage": "python2 $0"
-    }
-  ],
+  "build_errors": "PyQt version 4 not installed",
+  "commands": [{ "type": "IDE", "bin": "main.py" }],
   "notes": "SVN repo history was truncated when moving from SourceForge to GitHub. rIDE supports Python, C++, Prolog, Lisp, LOLCODE, and Whitespace."
 }
