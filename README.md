@@ -1,17 +1,24 @@
 # The Whitespace Corpus
 
-The definitive collection of 326 projects for the Whitespace programming
+The definitive collection of 333 projects for the Whitespace programming
 language, including interpreters, compilers, and programs.
 
 ## Projects
 
 | Name                                          | Authors          | Languages  | Tags         | Date       | Source |
 | --------------------------------------------- | ---------------- | ---------- | ------------ | ---------- | ------ |
+| [pywhitespace](python/fvogels)                | Frederic Vogels  | Python     | interpreter  | 2022-07-28 | [GitHub](https://github.com/fvogels/pywhitespace) |
+| [codewars-typescript](typescript/davramenko-codewars) | Dmitry Avramenko | TypeScript | interpreter | 2022-07-26 | [GitHub](https://github.com/davramenko/codewars-typescript) |
+| [Whitespace interpreter](python/squancy)      | Mark Frankli     | Python     | interpreter  | 2022-07-12 | [GitHub](https://github.com/squancy/whitespace-interpreter) |
+| [whitespace-experiments](whitespace/sammifs)  | sammifs          | Whitespace | programs     | 2022-07-10 | [GitHub](https://github.com/sammifs/whitespace-experiments) |
+| [ws](rust/hamidrezakp)                        | Hamid R. K. Pisghadam | Rust  | parser, programs | 2022-07-08 | [GitHub](https://github.com/hamidrezakp/ws) |
+| [whitenote](go/makiuchid-whitenote)           | MakKi            | Go         | Jupyter kernel, interpreter | 2022-07-06 | [GitHub](https://github.com/makiuchi-d/whitenote) |
 | [spacey](rust/cedricschwyter-spacey)          | Cedric Schwyter  | Rust       | interpreter, programs | 2022-06-15 | [GitHub](https://github.com/D3PSI/spacey) |
 | [w_space](python/victornuzhniy)               | Victor Nuzhniy   | Python     | interpreter  | 2022-05-21 | [GitHub](https://github.com/victor-nuzhniy/w_space) |
 | [whitespace](whitespace/eudaldsans)           | Eudald Sans      | Whitespace | programs     | 2022-05-10 | [GitHub](https://github.com/EudaldSans/whitespace) |
 | [Whitespace-lang example](whitespace/p1atdev-hello) | Plat       | Whitespace | programs     | 2022-05-05 | [GitHub](https://github.com/p1atdev/hello_world_ws) |
 | [WhiteSpace-Interpreter](java/rahulkp)        | Rahul K P, Sumedh Hagaldivte, Amitash M S | Java | interpreter, programs | 2022-04-29 | [GitHub](https://github.com/Rahul-KP/WhiteSpace-Interpreter) |
+| [misc-proj](java/thatguy977)                  | That_Guy977      | Java       | interpreter, programs | 2022-04-28 | [GitHub](https://github.com/That-Guy977/misc-proj) |
 | [Whitespace-compiler](cpp/kapustaikwas)       | Marcin           | C++        | transpiler, assembler, disassembler | 2022-04-05 | [GitHub](https://github.com/kapustaikwas27/Whitespace-compiler) |
 | [helloworld](whitespace/datomalania-hello)    | დათო (Dato Malania) | Whitespace | programs, mapping | 2022-03-13 | [GitHub](https://github.com/datomalania/helloworld) |
 | [whitespace-ts](typescript/simomu)            | simomu           | TypeScript | interpreter, programs | 2022-02-20 | [GitHub](https://github.com/simomu-github/whitespace_ts) |

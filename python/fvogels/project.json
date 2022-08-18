@@ -1,0 +1,13 @@
+{
+  "id": "python/fvogels",
+  "name": "pywhitespace",
+  "authors": ["Frederic Vogels"],
+  "license": "none",
+  "languages": ["Python"],
+  "tags": ["interpreter"],
+  "date": "2022-07-28 21:01:34 +0200",
+  "spec_version": "0.3",
+  "source": ["https://github.com/fvogels/pywhitespace"],
+  "commands": [{ "type": "interpreter", "bin": "whitespace.py", "usage": "", "input": "<constant>" }],
+  "notes": "Possibly a Codewars solution"
+}

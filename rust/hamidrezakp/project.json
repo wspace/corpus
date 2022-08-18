@@ -1,0 +1,43 @@
+{
+  "id": "rust/hamidrezakp",
+  "name": "ws",
+  "authors": ["Hamid R. K. Pisghadam"],
+  "license": "none",
+  "languages": ["Rust"],
+  "tags": ["parser", "programs"],
+  "date": "2022-07-09 02:08:17 +0430",
+  "spec_version": "0.3",
+  "source": ["https://github.com/hamidrezakp/ws"],
+  "assembly": {
+    "mnemonics": {
+      "push": ["Push"],
+      "dup": ["Duplicate"],
+      "copy": ["DuplicateNth"],
+      "swap": ["Swap"],
+      "drop": ["Discard"],
+      "slide": ["DiscardTopN"],
+      "add": ["Sum"],
+      "sub": ["Sub"],
+      "mul": ["Mul"],
+      "div": ["Div"],
+      "mod": ["Rem"],
+      "store": ["StoreAt"],
+      "retrieve": ["StoreAtStack"],
+      "label": ["Mark"],
+      "call": ["Call"],
+      "jmp": ["Jump"],
+      "jz": ["BranchZero"],
+      "jn": ["BranchLt"],
+      "ret": ["Return"],
+      "end": ["Exit"],
+      "printc": ["PrintChar"],
+      "printi": ["PrintNum"],
+      "readc": ["ReadChar"],
+      "readi": ["ReadNum"]
+    },
+    "usage": ["enum", "debug"]
+  },
+  "mappings": [{ "space": "S", "tab": "T", "lf": "L", "before_stl": true }],
+  "programs": [{ "path": "examples/main.ws", "spec_version": "0.2" }],
+  "commands": [{ "type": "parser", "bin": "target/release/ws", "usage": "<program>", "input": "<program>" }]
+}

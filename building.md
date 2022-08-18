@@ -63,6 +63,7 @@ Projects that can be built with Docker:
 - csharp/ryzngard-dotnot: CSharpGeneratorDriver does not contain a constructor that takes 3 arguments
 - go/andrewarchi-nebula: Requires LLVM
 - go/kinu
+- go/makiuchid-whitenote
 - go/pocke-gows
 - go/qeedquan
 - go/sampratt
@@ -82,6 +83,7 @@ Projects that can be built with Docker:
 - java/praveenvaka-coder
 - java/pyeroh: Needs Codewars entrypoint
 - java/rahulkp
+- java/thatguy977
 - java/wrotycz: Needs Codewars entrypoint
 - java/wysang
 - javascript/ignovak: Needs Codewars entrypoint
@@ -118,6 +120,7 @@ Projects that can be built with Docker:
 - python/ffanzhang
 - python/francoisrozet-whitespacy
 - python/freyamade-hohoho
+- python/fvogels
 - python/ganeshsankaran
 - python/hearnderek: Needs Codewars entrypoint
 - python/hearnderek-codewars: Needs Codewars entrypoint
@@ -146,6 +149,7 @@ Projects that can be built with Docker:
 - python/rumaxwell
 - python/ryndvs-aoc
 - python/smithers-bluespace
+- python/squancy: Needs Codewars entrypoint
 - python/stephenchappell: msvcrt module only exists on Windows
 - python/techiehelper-codewars: Needs Codewars entrypoint
 - python/tokigun-esotope-ws: Source code unavailable
@@ -175,6 +179,7 @@ Projects that can be built with Docker:
 - rust/faultier-albino: Needs many changes for latest Rust
 - rust/faultier-whitebase: Needs many changes for latest Rust
 - rust/guricerin
+- rust/hamidrezakp
 - rust/jayshua
 - rust/kaisugi
 - rust/keirua
@@ -182,6 +187,7 @@ Projects that can be built with Docker:
 - rust/nareshganduri
 - rust/omurakazuaki
 - rust/zrneely
+- typescript/davramenko-codewars: Needs Codewars entrypoint
 - typescript/eduardoborsa-codewars: Needs Codewars entrypoint
 - typescript/fy0u11: Needs Codewars entrypoint
 - whitespace/andrewarchi-challenges

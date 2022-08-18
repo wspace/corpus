@@ -1,0 +1,51 @@
+{
+  "id": "java/thatguy977",
+  "name": "misc-proj",
+  "authors": ["That_Guy977"],
+  "license": "none",
+  "languages": ["Java"],
+  "tags": ["interpreter", "programs"],
+  "date": "2022-04-28 22:59:12 +0700",
+  "spec_version": "0.3",
+  "source": ["https://github.com/That-Guy977/misc-proj"],
+  "assembly": {
+    "mnemonics": {
+      "push": ["PUSH"],
+      "dup": ["DUP"],
+      "copy": ["COPY"],
+      "swap": ["SWAP"],
+      "drop": ["DROP"],
+      "slide": ["SLIDE"],
+      "add": ["ADD"],
+      "sub": ["SUB"],
+      "mul": ["MUL"],
+      "div": ["DIV"],
+      "mod": ["MOD"],
+      "store": ["STORE"],
+      "retrieve": ["RETRIEVE"],
+      "label": ["LABEL"],
+      "call": ["CALL"],
+      "jmp": ["JMP"],
+      "jz": ["JZ"],
+      "jn": ["JN"],
+      "ret": ["RET"],
+      "end": ["END"],
+      "printc": ["PRINTC"],
+      "printi": ["PRINTI"],
+      "readc": ["READC"],
+      "readi": ["READI"]
+    },
+    "usage": ["enum"]
+  },
+  "programs": [
+    { "path": "java/whitespace-polyglot/HelloWorld.java", "polyglot": ["Java"], "spec_version": "0.2" }
+  ],
+  "commands": [
+    {
+      "type": "interpreter",
+      "bin": "java/whitespace-interpreter/Whitespace.class",
+      "usage": "[<input_file>]",
+      "input": "<input_file> or stdin"
+    }
+  ]
+}

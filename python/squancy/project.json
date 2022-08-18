@@ -1,0 +1,14 @@
+{
+  "id": "python/squancy",
+  "name": "Whitespace interpreter",
+  "authors": ["Mark Frankli"],
+  "license": "none",
+  "languages": ["Python"],
+  "tags": ["interpreter"],
+  "date": "2022-07-12 19:22:00 +0200",
+  "spec_version": "0.3",
+  "source": ["https://github.com/squancy/whitespace-interpreter"],
+  "challenges": ["Codewars"],
+  "run_errors": "Needs Codewars entrypoint",
+  "commands": [{ "type": "interpreter", "bin": "whitespace.py" }]
+}

@@ -7,6 +7,5 @@ RUN RUSTFLAGS='-C target-feature=+crt-static' cargo build --release --target x86
 
 FROM scratch
 
-COPY --from=builder /spacey/target/x86_64-unknown-linux-gnu/release/spacey /
-COPY --from=builder /spacey/ws/*.ws ./
+COPY --from=builder /spacey/target/x86_64-unknown-linux-gnu/release/spacey /spacey/ws/*.ws ./
 ENTRYPOINT ["/spacey"]

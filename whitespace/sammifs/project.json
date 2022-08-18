@@ -1,0 +1,17 @@
+{
+  "id": "whitespace/sammifs",
+  "name": "whitespace-experiments",
+  "authors": ["sammifs"],
+  "license": "none",
+  "languages": ["Whitespace"],
+  "tags": ["programs"],
+  "date": "2022-07-10 17:02:08 +0200",
+  "spec_version": "0.2",
+  "source": ["https://github.com/sammifs/whitespace-experiments"],
+  "whitespace": { "extension": "txt" },
+  "mappings": [{ "space": "S", "tab": "T", "lf": "L", "before_stl": true }],
+  "programs": [
+    { "path": "countingdown15.txt", "spec_version": "0.2" },
+    { "path": "fizzbuzz.txt", "spec_version": "0.2" }
+  ]
+}

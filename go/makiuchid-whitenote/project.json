@@ -1,0 +1,48 @@
+{
+  "id": "go/makiuchid-whitenote",
+  "name": "whitenote",
+  "authors": ["MakKi"],
+  "license": "MIT",
+  "languages": ["Go"],
+  "tags": ["Jupyter kernel", "interpreter"],
+  "date": "2022-07-06 22:34:18 +0900",
+  "spec_version": "0.3",
+  "source": ["https://github.com/makiuchi-d/whitenote"],
+  "assembly": {
+    "mnemonics": {
+      "push": ["Push"],
+      "dup": ["Dup"],
+      "copy": ["Copy"],
+      "swap": ["Swap"],
+      "drop": ["Discard"],
+      "slide": ["Slide"],
+      "add": ["Add"],
+      "sub": ["Sub"],
+      "mul": ["Mul"],
+      "div": ["Div"],
+      "mod": ["Mod"],
+      "store": ["Store"],
+      "retrieve": ["Retrieve"],
+      "label": ["Mark"],
+      "call": ["Call"],
+      "jmp": ["Jump"],
+      "jz": ["JZero"],
+      "jn": ["JNeg"],
+      "ret": ["Ret"],
+      "end": ["End"],
+      "printc": ["WriteChar"],
+      "printi": ["WriteNum"],
+      "readc": ["ReadChar"],
+      "readi": ["ReadNum"]
+    },
+    "usage": ["enum"]
+  },
+  "commands": [
+    { "type": "Jupyter kernel" },
+    {
+      "type": "interpreter",
+      "usage": "[<program>]",
+      "notes": "When <program> is omitted, it runs an interactive interpreter"
+    }
+  ]
+}

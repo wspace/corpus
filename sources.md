@@ -195,6 +195,7 @@
       [SBSTR1](https://www.spoj.com/problems/SBSTR1/) ([SO](https://stackoverflow.com/questions/26521780/how-to-check-whether-a-string-is-substring-of-another-in-whitespace)),
       [Discuss](https://discuss.spoj.com/search?q=whitespace)
   - [Baekjoon Online Judge](https://www.acmicpc.net/)
+  - [Esolang Battler](https://esolang.hakatashi.com/)
   - knsctf:
       [#7 Programming](https://ksnctf.sweetduet.info/problem/7) ([on GitHub](https://github.com/search?o=desc&q=0962664770776731080774868826855754386638240000e&s=indexed&type=Code))
 - Stack Exchange
@@ -214,3 +215,6 @@
       [pastebinpastes](https://archive.org/details/pastebinpastes),
       [Archive Team](https://wiki.archiveteam.org/index.php/Pastebin)
   - Ideone: [Whitespace IDE](https://www.ideone.com/l/whitespace)
+- Sandboxes
+  - [Try It Online](https://tio.run/#whitespace)
+  - [Attempt This Online](https://ato.pxeger.com/)
