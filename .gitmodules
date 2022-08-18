@@ -523,7 +523,7 @@
 	url = https://github.com/wspace/ilikepython256-whitespace-unc
 [submodule "python/joaquinrossi-esoteric/esoteric"]
 	path = python/joaquinrossi-esoteric/esoteric
-	url = https://github.com/joaquin-rossi/esoteric
+	url = https://github.com/wspace/joaquinrossi-esoteric
 [submodule "python/jrialland/whitespaceasm"]
 	path = python/jrialland/whitespaceasm
 	url = https://gist.github.com/jrialland/e0d370034da9c7b1b76a8afccbea7424

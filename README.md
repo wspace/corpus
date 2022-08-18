@@ -34,7 +34,7 @@ language, including interpreters, compilers, and programs.
 | [Whitespace Interpreter](ocaml/steiner)       | Brandon Stein    | OCaml, Yacc, Lex | interpreter, programs | 2021-10-22 | [GitHub](https://github.com/steiner26/Whitespace) |
 | [cerner_2tothe5th](whitespace/truptibaliga-cerner) | Trupti Baliga | Whitespace | programs   | 2021-10-06 | [GitHub](https://github.com/Trupti-Baliga/cerner_2tothe5th) |
 | [cerner_2-5](whitespace/srinandanpai-cerner)  | Srinandan Pai    | Whitespace | programs     | 2021-10-01 | [GitHub](https://github.com/SrinandanPai/cerner_2-5) |
-| [esoteric](python/joaquinrossi-esoteric)      | Joaquín Rossi    | Python     | interpreter  | 2021-09-29 | [GitHub](https://github.com/joaquin-rossi/esoteric) |
+| [esoteric](python/joaquinrossi-esoteric)      | Joaquín Rossi    | Python     | interpreter  | 2021-09-29 | [GitHub](https://github.com/wspace/joaquinrossi-esoteric), [GitHub](https://github.com/joaquin-rossi/esoteric) |
 | [WhitespaceInterpreter](lua/carsonrueber)     | Carson Rueber    | Lua        | interpreter, programs | 2021-08-29 | [GitHub](https://github.com/CJ5518/WhitespaceInterpreter) |
 | [Whitespace grammar for GitHub](textmate/andrewarchi-linguist) | Andrew Archibald | TextMate | grammar | 2021-08-15 | [GitHub](https://github.com/andrewarchi/wspace-linguist) |
 | [NovaGrammars](textmate/nixinova)             | Nixinova         | TextMate   | syntax highlighting, programs | 2021-08-15 | [GitHub](https://github.com/Nixinova/NovaGrammars), [GitHub](https://github.com/github/linguist/discussions/5519#discussioncomment-1185871) |
