@@ -12,7 +12,11 @@
   "programs": [
     { "path": "accept_add.ws", "spec_version": "0.2" },
     { "path": "add.ws", "spec_version": "0.2" },
+    { "path": "add2.ws", "spec_version": "0.2" },
+    { "path": "hello.ws", "spec_version": "0.2" },
     { "path": "nums.ws", "spec_version": "0.2" },
+    { "path": "print2.ws", "spec_version": "0.2" },
     { "path": "sample.ws", "spec_version": "0.2" }
-  ]
+  ],
+  "commands": [{ "type": "interpreter", "bin": "Test.class", "usage": "<program>" }]
 }

@@ -81,6 +81,7 @@ Projects that can be built with Docker:
 - java/matou-whasm
 - java/praveenvaka-coder
 - java/pyeroh: Needs Codewars entrypoint
+- java/rahulkp
 - java/wrotycz: Needs Codewars entrypoint
 - java/wysang
 - javascript/ignovak: Needs Codewars entrypoint
@@ -215,7 +216,6 @@ Building status of individual executables:
 - ❌ java/brunokim
 - ❌ java/kmizu
 - ❌ java/kreutzer-spacedide
-- ❌ java/rahulkp
 - ❌ java/ralucaa-whitespace4j
 - ⚠️ java/vyo-kairos/build/libs/vyo-kairos-1.0.0-all.jar: `./gradlew shadowJar`
 - ❌ java/yawkat
