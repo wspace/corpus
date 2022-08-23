@@ -812,6 +812,9 @@
 [submodule "whitespace/eudaldsans/whitespace"]
 	path = whitespace/eudaldsans/whitespace
 	url = https://github.com/EudaldSans/whitespace
+[submodule "whitespace/femifacia-hello/Hello_World"]
+	path = whitespace/femifacia-hello/Hello_World
+	url = https://github.com/femifacia/Hello_World
 [submodule "whitespace/grantbgreat-hello/hello-world"]
 	path = whitespace/grantbgreat-hello/hello-world
 	url = https://github.com/GrantBGreat/hello-world
@@ -827,6 +830,9 @@
 [submodule "whitespace/jermenkoo-spoj/spoj.pl_solutions"]
 	path = whitespace/jermenkoo-spoj/spoj.pl_solutions
 	url = https://github.com/jermenkoo/spoj.pl_solutions
+[submodule "whitespace/joekir/joekir.github.io"]
+	path = whitespace/joekir/joekir.github.io
+	url = https://github.com/joekir/joekir.github.io
 [submodule "whitespace/jonstites-hello/hello"]
 	path = whitespace/jonstites-hello/hello
 	url = https://gist.github.com/jonstites/16784b5c1fb0c1e580d698bb13d4f50f

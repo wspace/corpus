@@ -1,0 +1,16 @@
+{
+  "id": "whitespace/joekir",
+  "name": "joekir.github.io",
+  "authors": ["Joe Kirwin"],
+  "license": "none",
+  "languages": ["Whitespace"],
+  "tags": ["programs"],
+  "date": "2017-08-12 21:38:26 -0700",
+  "spec_version": "0.2",
+  "source": [
+    "https://github.com/joekir/joekir.github.io",
+    "https://www.josephkirwin.com/2017/08/12/javascript-polyglot/",
+    "https://www.josephkirwin.com/polyglot1.html"
+  ],
+  "programs": [{ "path": "polyglot1.html", "polyglot": ["HTML"], "spec_version": "0.2" }]
+}
