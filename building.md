@@ -71,6 +71,7 @@ Projects that can be built with Docker:
 - go/technohippy
 - go/tempxla-go-wspace
 - go/yshr-wspacego
+- go/zorchenhimer: No entrypoint
 - haskell/edwinb-wspace-0.3
 - idris/edwinb-ws-idr
 - java/abhijitsharma
@@ -277,6 +278,7 @@ Building status of individual executables:
 - ❌ vim/rolf
 - whitespace/andrewarchi-wslib/assemble.sh
 - ❌ whitespace/ankitatandon-wspc
+- ❌ whitespace/arthurmtth
 - ❌ whitespace/burghard-wsinterws
 - ❌ whitespace/datomalania-hello
 - whitespace/drebelsky-programs/assemble.py

@@ -1,0 +1,12 @@
+{
+  "id": "whitespace/arthurmtth",
+  "name": "useless-codes",
+  "authors": ["Arthur Monteiro"],
+  "license": "none",
+  "languages": ["whitespace"],
+  "tags": ["programs"],
+  "date": "2022-06-24 14:19:17 -0300",
+  "spec_version": "0.2",
+  "source": ["https://github.com/ArthurMtTh/useless-codes"],
+  "programs": [{ "path": "helloWorlds/helloWolrd.ws", "spec_version": "0.2" }]
+}

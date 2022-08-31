@@ -1,0 +1,41 @@
+{
+  "id": "go/zorchenhimer",
+  "name": "whitespace",
+  "authors": ["Zorchenhimer"],
+  "license": "none",
+  "languages": ["Go"],
+  "tags": ["interpreter"],
+  "date": "2022-08-26 21:48:16 -0400",
+  "spec_version": "0.3",
+  "source": ["https://github.com/zorchenhimer/whitespace"],
+  "assembly": {
+    "mnemonics": {
+      "push": ["Push"],
+      "dup": ["Duplicate"],
+      "copy": ["Copy"],
+      "swap": ["Swap"],
+      "drop": ["Discard"],
+      "slide": ["Slide"],
+      "add": ["Add"],
+      "sub": ["Subtract"],
+      "mul": ["Multiply"],
+      "div": ["Divide"],
+      "mod": ["Modulo"],
+      "store": ["Store"],
+      "retrieve": ["Load"],
+      "label": ["Label"],
+      "call": ["Call"],
+      "jmp": ["Jump"],
+      "jz": ["JumpZero"],
+      "jn": ["JumpMinus"],
+      "ret": ["Return"],
+      "end": ["Stop"],
+      "printc": ["PrintChar"],
+      "printi": ["PrintNumber"],
+      "readc": ["ReadChar"],
+      "readi": ["ReadNumber"]
+    },
+    "usage": ["enum"]
+  },
+  "run_errors": "No entrypoint"
+}

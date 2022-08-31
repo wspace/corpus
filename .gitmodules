@@ -229,6 +229,9 @@
 [submodule "go/yshr-wspacego/wspacego"]
 	path = go/yshr-wspacego/wspacego
 	url = https://github.com/135yshr/wspacego
+[submodule "go/zorchenhimer/whitespace"]
+	path = go/zorchenhimer/whitespace
+	url = https://github.com/zorchenhimer/whitespace
 [submodule "haskell/brainbrush-tomato/Tomato-Programming-Language"]
 	path = haskell/brainbrush-tomato/Tomato-Programming-Language
 	url = https://github.com/brainbush/Tomato-Programming-Language
@@ -782,6 +785,9 @@
 [submodule "whitespace/apartmentlist-obfuscated/coding-challenges"]
 	path = whitespace/apartmentlist-obfuscated/coding-challenges
 	url = https://github.com/apartmentlist/coding-challenges
+[submodule "whitespace/arthurmtth/useless-codes"]
+	path = whitespace/arthurmtth/useless-codes
+	url = https://github.com/ArthurMtTh/useless-codes
 [submodule "whitespace/bbvch-hello/HelloWhitespace"]
 	path = whitespace/bbvch-hello/HelloWhitespace
 	url = https://github.com/bbvch13531/HelloWhitespace
