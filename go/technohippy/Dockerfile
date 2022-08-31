@@ -1,9 +1,8 @@
-FROM golang:1.18 AS builder
+FROM golang:1.19 AS builder
 
-WORKDIR /
 WORKDIR /go-whitespace
 COPY go-whitespace .
-RUN go build -o go-whitespace ./src
+RUN go build -buildvcs=false -o go-whitespace ./src
 
 FROM scratch
 

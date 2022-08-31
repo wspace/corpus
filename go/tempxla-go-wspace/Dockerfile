@@ -1,11 +1,10 @@
-FROM golang:1.18 AS builder
+FROM golang:1.19 AS builder
 
-WORKDIR /
 WORKDIR /go-wspace
 COPY go-wspace .
 RUN go mod init github.com/tempxla/go-wspace
 # RUN go test ./...
-RUN go build -o bin/go-wspace ./src
+RUN go build -buildvcs=false -o bin/go-wspace ./src
 
 FROM scratch
 

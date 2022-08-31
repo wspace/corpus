@@ -1,13 +1,12 @@
-FROM golang:1.18 AS builder
+FROM golang:1.19 AS builder
 
-WORKDIR /
 WORKDIR /nebula
 COPY nebula .
 # TODO: Requires LLVM
 RUN go mod init github.com/andrewarchi/nebula && \
     go mod tidy
 RUN go test ./...
-RUN go build
+RUN go build -buildvcs=false
 
 FROM scratch
 
