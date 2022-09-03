@@ -791,6 +791,9 @@
 [submodule "whitespace/bbvch-hello/HelloWhitespace"]
 	path = whitespace/bbvch-hello/HelloWhitespace
 	url = https://github.com/bbvch13531/HelloWhitespace
+[submodule "whitespace/benricheson-aaa/aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"]
+	path = whitespace/benricheson-aaa/aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+	url = https://github.com/Benricheson101/aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
 [submodule "whitespace/bsarthak-cerner/Cerner-2_pow_5-2020"]
 	path = whitespace/bsarthak-cerner/Cerner-2_pow_5-2020
 	url = https://github.com/bsarthak1803/Cerner-2_pow_5-2020

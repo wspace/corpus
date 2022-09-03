@@ -1,0 +1,14 @@
+{
+  "id": "whitespace/benricheson-aaa",
+  "name": "aaa…",
+  "authors": ["Ben Richeson", "Samsamson33"],
+  "license": "MIT",
+  "languages": ["Whitespace"],
+  "tags": ["programs"],
+  "date": "2020-06-29 11:25:18 -0400",
+  "spec_version": "0.2",
+  "source": [
+    "https://github.com/Benricheson101/aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+  ],
+  "programs": [{ "path": "aaa.ws", "spec_version": "0.2", "authors": ["Samsamson33"] }]
+}
