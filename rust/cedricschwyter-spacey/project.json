@@ -39,29 +39,30 @@
     "usage": ["enum"]
   },
   "programs": [
-    { "path": "ws/cat.ws", "spec_version": "0.2" },
-    { "path": "ws/count.ws", "spec_version": "0.2" },
-    { "path": "ws/fibonacci.ws", "spec_version": "0.2" },
-    { "path": "ws/hello_world.ws", "spec_version": "0.2" },
-    { "path": "ws/hello_world_of_spaces.ws", "equivalent": "hworld.ws", "spec_version": "0.2" },
-    { "path": "ws/interpret_arithmetic.ws", "spec_version": "0.2" },
-    { "path": "ws/interpret_flow.ws", "spec_version": "0.2" },
-    { "path": "ws/interpret_heap.ws", "spec_version": "0.2" },
-    { "path": "ws/interpret_io.ws", "spec_version": "0.2" },
-    { "path": "ws/interpret_stack.ws", "spec_version": "0.3" },
-    { "path": "ws/name.ws", "equivalent": "name.ws", "spec_version": "0.2" },
-    { "path": "ws/parse_arithmetic.ws", "spec_version": "0.2" },
-    { "path": "ws/parse_flow.ws", "spec_version": "0.2" },
-    { "path": "ws/parse_heap.ws", "spec_version": "0.2" },
-    { "path": "ws/parse_io.ws", "spec_version": "0.2" },
-    { "path": "ws/parse_stack.ws", "spec_version": "0.3" },
-    { "path": "ws/primes.ws", "spec_version": "0.3" },
-    { "path": "ws/push_stack.ws", "spec_version": "0.2" },
-    { "path": "ws/quine.ws", "equivalent": "quine.ws", "spec_version": "0.2" },
-    { "path": "ws/sieve.ws", "spec_version": "0.2" },
-    { "path": "ws/sum.ws", "equivalent": "calc.ws", "spec_version": "0.2" },
-    { "path": "ws/towers_of_hanoi.ws", "equivalent": "hanoi.ws", "spec_version": "0.2" },
-    { "path": "ws/truth_machine.ws", "spec_version": "0.2" }
+    { "path": "resources/ws/cat.ws", "spec_version": "0.2" },
+    { "path": "resources/ws/count.ws", "spec_version": "0.2" },
+    { "path": "resources/ws/fibonacci.ws", "spec_version": "0.2" },
+    { "path": "resources/ws/hello_world.ws", "spec_version": "0.2" },
+    { "path": "resources/ws/hello_world_of_spaces.ws", "equivalent": "hworld.ws", "spec_version": "0.2" },
+    { "path": "resources/ws/interpret_arithmetic.ws", "spec_version": "0.2" },
+    { "path": "resources/ws/interpret_flow.ws", "spec_version": "0.2" },
+    { "path": "resources/ws/interpret_heap.ws", "spec_version": "0.2" },
+    { "path": "resources/ws/interpret_io.ws", "spec_version": "0.2" },
+    { "path": "resources/ws/interpret_stack.ws", "spec_version": "0.3" },
+    { "path": "resources/ws/knots.ws", "spec_version": "0.3" },
+    { "path": "resources/ws/name.ws", "equivalent": "name.ws", "spec_version": "0.2" },
+    { "path": "resources/ws/parse_arithmetic.ws", "spec_version": "0.2" },
+    { "path": "resources/ws/parse_flow.ws", "spec_version": "0.2" },
+    { "path": "resources/ws/parse_heap.ws", "spec_version": "0.2" },
+    { "path": "resources/ws/parse_io.ws", "spec_version": "0.2" },
+    { "path": "resources/ws/parse_stack.ws", "spec_version": "0.3" },
+    { "path": "resources/ws/primes.ws", "spec_version": "0.3" },
+    { "path": "resources/ws/push_stack.ws", "spec_version": "0.2" },
+    { "path": "resources/ws/quine.ws", "equivalent": "quine.ws", "spec_version": "0.2" },
+    { "path": "resources/ws/sieve.ws", "spec_version": "0.2" },
+    { "path": "resources/ws/sum.ws", "equivalent": "calc.ws", "spec_version": "0.2" },
+    { "path": "resources/ws/towers_of_hanoi.ws", "equivalent": "hanoi.ws", "spec_version": "0.2" },
+    { "path": "resources/ws/truth_machine.ws", "spec_version": "0.2" }
   ],
   "commands": [
     {
@@ -75,7 +76,20 @@
           "required": true,
           "arg": "file",
           "arg_required": true,
-          "desc": "whitespace source file to interpret"
+          "desc": "source file to interpret"
+        },
+        {
+          "short": "t",
+          "long": "source-type",
+          "required": true,
+          "arg": "source-type",
+          "arg_required": true,
+          "desc": "type of source file",
+          "values": [
+            { "values": ["whitespace"], "desc": "Whitespace (case-insensitive)" },
+            { "values": ["malbolge"], "desc": "Malbolge (case-insensitive)" },
+            { "values": ["brainfuck"], "desc": "Brainfuck (case-insensitive)" }
+          ]
         },
         {
           "short": "s",
@@ -86,9 +100,9 @@
           "default": 524288,
           "desc": "the size of the heap address space (each heap address stores one i32)"
         },
-        { "short": "i", "long": "ir", "desc": "prints intermediate representation of instructions" },
+        { "short": "i", "long": "raw", "desc": "prints raw, parsed representation of instructions" },
         { "short": "d", "long": "debug", "desc": "prints debug information after each executed instruction" },
-        { "short": "m", "long": "debug-heap", "desc": "prints a heap dump after each executed instruction" },
+        { "short": "m", "long": "debug-file", "desc": "prints a heap dump after each executed instruction" },
         {
           "short": "q",
           "long": "quiet",

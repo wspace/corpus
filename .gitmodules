@@ -818,9 +818,6 @@
 [submodule "whitespace/elisha-snakulator/snakulator"]
 	path = whitespace/elisha-snakulator/snakulator
 	url = https://github.com/donno2048/snakulator
-[submodule "whitespace/eudaldsans/whitespace"]
-	path = whitespace/eudaldsans/whitespace
-	url = https://github.com/EudaldSans/whitespace
 [submodule "whitespace/femifacia-hello/Hello_World"]
 	path = whitespace/femifacia-hello/Hello_World
 	url = https://github.com/femifacia/Hello_World

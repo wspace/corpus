@@ -58,6 +58,12 @@
       "generate": "ruby whitespace.rb -Sn sample/quine.wss"
     },
     {
+      "path": "sample/quine406.wss",
+      "generated": "sample/quine406.ws",
+      "spec_version": "0.3",
+      "generate": "ruby whitespace.rb -Sn sample/quine406.wss"
+    },
+    {
       "path": "sample/sum_cnum_seq.wss",
       "generated": "sample/sum_cnum_seq.ws",
       "spec_version": "0.3",

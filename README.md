@@ -1,6 +1,6 @@
 # The Whitespace Corpus
 
-The definitive collection of 338 projects for the Whitespace programming
+The definitive collection of 337 projects for the Whitespace programming
 language, including interpreters, compilers, and programs.
 
 ## Projects
@@ -18,7 +18,6 @@ language, including interpreters, compilers, and programs.
 | [Hello_World](whitespace/femifacia-hello)     | Facia Femi       | Whitespace | programs     | 2022-06-15 | [GitHub](https://github.com/femifacia/Hello_World) |
 | [spacey](rust/cedricschwyter-spacey)          | Cedric Schwyter  | Rust       | interpreter, programs | 2022-06-15 | [GitHub](https://github.com/D3PSI/spacey) |
 | [w_space](python/victornuzhniy)               | Victor Nuzhniy   | Python     | interpreter  | 2022-05-21 | [GitHub](https://github.com/victor-nuzhniy/w_space) |
-| [whitespace](whitespace/eudaldsans)           | Eudald Sans      | Whitespace | programs     | 2022-05-10 | [GitHub](https://github.com/EudaldSans/whitespace) |
 | [Whitespace-lang example](whitespace/p1atdev-hello) | Plat       | Whitespace | programs     | 2022-05-05 | [GitHub](https://github.com/p1atdev/hello_world_ws) |
 | [WhiteSpace-Interpreter](java/rahulkp)        | Rahul K P, Sumedh Hagaldivte, Amitash M S | Java | interpreter, programs | 2022-04-29 | [GitHub](https://github.com/Rahul-KP/WhiteSpace-Interpreter) |
 | [misc-proj](java/thatguy977)                  | That_Guy977      | Java       | interpreter, programs | 2022-04-28 | [GitHub](https://github.com/That-Guy977/misc-proj) |
