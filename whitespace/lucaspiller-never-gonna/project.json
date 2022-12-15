@@ -7,7 +7,10 @@
   "tags": ["programs"],
   "date": "2012-06-01 07:04:13 -0700",
   "spec_version": "0.2",
-  "source": ["https://gist.github.com/lucaspiller/2852385"],
+  "source": [
+    "https://gist.github.com/lucaspiller/2852385",
+    "https://codegolf.stackexchange.com/questions/6043/were-no-strangers-to-code-golf-you-know-the-rules-and-so-do-i/6130#6130"
+  ],
   "whitespace": { "extension": "ws" },
   "programs": [{ "path": "never_gonna.ws", "spec_version": "0.2" }]
 }
