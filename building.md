@@ -71,7 +71,7 @@ Projects that can be built with Docker:
 - go/technohippy
 - go/tempxla-go-wspace
 - go/yshr-wspacego
-- go/zorchenhimer: No entrypoint
+- go/zorchenhimer
 - haskell/edwinb-wspace-0.3
 - idris/edwinb-ws-idr
 - java/abhijitsharma

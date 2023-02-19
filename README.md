@@ -7,7 +7,7 @@ language, including interpreters, compilers, and programs.
 
 | Name                                          | Authors          | Languages  | Tags         | Date       | Source |
 | --------------------------------------------- | ---------------- | ---------- | ------------ | ---------- | ------ |
-| [whitespace](go/zorchenhimer)                 | Zorchenhimer     | Go         | interpreter  | 2022-08-27 | [GitHub](https://github.com/zorchenhimer/whitespace) |
+| [whitespace](go/zorchenhimer)                 | Zorchenhimer     | Go         | interpreter, assembler, disassembler, programs | 2022-08-27 | [GitHub](https://github.com/zorchenhimer/whitespace) |
 | [pywhitespace](python/fvogels)                | Frederic Vogels  | Python     | interpreter  | 2022-07-28 | [GitHub](https://github.com/fvogels/pywhitespace) |
 | [codewars-typescript](typescript/davramenko-codewars) | Dmitry Avramenko | TypeScript | interpreter | 2022-07-26 | [GitHub](https://github.com/davramenko/codewars-typescript) |
 | [Whitespace interpreter](python/squancy)      | Mark Frankli     | Python     | interpreter  | 2022-07-12 | [GitHub](https://github.com/squancy/whitespace-interpreter) |

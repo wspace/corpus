@@ -1,9 +1,0 @@
-*.tar.gz
-*.zip
-*.out
-
-# Nebula
-*.ll
-*.nir
-*.o
-*.s

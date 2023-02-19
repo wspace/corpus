@@ -2,40 +2,77 @@
   "id": "go/zorchenhimer",
   "name": "whitespace",
   "authors": ["Zorchenhimer"],
-  "license": "none",
+  "license": "MIT",
   "languages": ["Go"],
-  "tags": ["interpreter"],
+  "tags": ["interpreter", "assembler", "disassembler", "programs"],
   "date": "2022-08-26 21:48:16 -0400",
   "spec_version": "0.3",
   "source": ["https://github.com/zorchenhimer/whitespace"],
+  "whitespace": { "extension": "wsp" },
   "assembly": {
     "mnemonics": {
-      "push": ["Push"],
-      "dup": ["Duplicate"],
-      "copy": ["Copy"],
-      "swap": ["Swap"],
-      "drop": ["Discard"],
-      "slide": ["Slide"],
-      "add": ["Add"],
-      "sub": ["Subtract"],
-      "mul": ["Multiply"],
-      "div": ["Divide"],
-      "mod": ["Modulo"],
-      "store": ["Store"],
-      "retrieve": ["Load"],
-      "label": ["Label"],
-      "call": ["Call"],
-      "jmp": ["Jump"],
-      "jz": ["JumpZero"],
-      "jn": ["JumpMinus"],
-      "ret": ["Return"],
-      "end": ["Stop"],
-      "printc": ["PrintChar"],
-      "printi": ["PrintNumber"],
-      "readc": ["ReadChar"],
-      "readi": ["ReadNumber"]
+      "push": ["push"],
+      "dup": ["duplicate"],
+      "copy": ["copy"],
+      "swap": ["swap"],
+      "drop": ["discard"],
+      "slide": ["slide"],
+      "add": ["add"],
+      "sub": ["subtract"],
+      "mul": ["multiply"],
+      "div": ["divide"],
+      "mod": ["modulo"],
+      "store": ["store"],
+      "retrieve": ["load"],
+      "label": ["label"],
+      "call": ["call"],
+      "jmp": ["jump"],
+      "jz": ["jumpzero"],
+      "jn": ["jumpminus"],
+      "ret": ["return"],
+      "end": ["stop"],
+      "printc": ["printchar"],
+      "printi": ["printnumber"],
+      "readc": ["readchar"],
+      "readi": ["readnumber"]
     },
-    "usage": ["enum"]
+    "case_sensitive_instructions": false,
+    "line_comments": ["#"],
+    "indentation": "",
+    "usage": ["enum", "programs"],
+    "extension": "wsa"
   },
-  "run_errors": "No entrypoint"
+  "mappings": [{ "space": "S", "tab": "T", "lf": "L", "before_stl": true, "extension": "wsp" }],
+  "programs": [
+    { "path": "code-examples/hello-world.wsa", "generated": "code-examples/hello-world.wsp" },
+    { "path": "code-examples/numbers.wsa", "generated": "code-examples/numbers.wsp" },
+    { "path": "code-examples/simple.wsa", "generated": "code-examples/simple.wsp" }
+  ],
+  "commands": [
+    {
+      "type": "assembler",
+      "bin": "bin/wt",
+      "usage": "[--help | -h] [--to-asm | -a] [--to-wsp | -w] [<input> [<output>]]",
+      "input": "<input> or stdin",
+      "output": "<output> or stdout",
+      "options": [
+        { "short": "a", "long": "to-asm", "desc": "Translate to assembly" },
+        { "short": "w", "long": "to-wsp", "desc": "Translate to whitespace" },
+        { "short": "h", "long": "help", "desc": "display this help and exit" }
+      ],
+      "option_parse": "Go github.com/alexflint/go-arg"
+    },
+    {
+      "type": "interpreter",
+      "bin": "bin/wi",
+      "usage": "[--help | -h] [--debug | -d] [<input> [<output>]]",
+      "input": "<input> or stdin",
+      "output": "<output> or stdout",
+      "options": [
+        { "short": "d", "long": "debug" },
+        { "short": "h", "long": "help", "desc": "display this help and exit" }
+      ],
+      "option_parse": "Go github.com/alexflint/go-arg"
+    }
+  ]
 }

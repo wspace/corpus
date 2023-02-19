@@ -1,4 +1,4 @@
-FROM golang:1.19 AS builder
+FROM golang:1.20 AS builder
 
 WORKDIR /nebula
 COPY nebula .
@@ -6,7 +6,7 @@ COPY nebula .
 RUN go mod init github.com/andrewarchi/nebula && \
     go mod tidy
 RUN go test ./...
-RUN go build -buildvcs=false
+RUN go build
 
 FROM scratch
 

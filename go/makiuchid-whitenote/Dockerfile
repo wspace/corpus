@@ -1,9 +1,9 @@
-FROM golang:1.19 AS builder
+FROM golang:1.20 AS builder
 
 WORKDIR /
 COPY whitenote /whitenote
 WORKDIR /whitenote/wspace/cmd/wspace
-RUN go build -buildvcs=false
+RUN CGO_ENABLED=0 go build
 
 FROM scratch
 

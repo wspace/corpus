@@ -36,7 +36,7 @@ instructions, ranked by popularity.
 
 ## Extensions
 
-- `wsa` (24)
+- `wsa` (25)
 - `asm` (5)
 - `txt` (3)
 - `wsm` (2)
