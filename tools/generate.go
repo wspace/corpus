@@ -12,7 +12,7 @@ import (
 	"time"
 	"unicode/utf8"
 
-	"github.com/andrewarchi/browser/jsonutil"
+	"github.com/thaliaarchi/browser/jsonutil"
 	"golang.org/x/sys/execabs"
 )
 

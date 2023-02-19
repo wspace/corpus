@@ -12,16 +12,16 @@ case of Codewars, interpreters for Whitespace.
 
 ## Advent of Code 2019
 
-- [whitespace/andrewarchi-challenges](whitespace/andrewarchi-challenges)
+- [whitespace/thaliaarchi-challenges](whitespace/thaliaarchi-challenges)
 
 ## Advent of Code 2020
 
-- [whitespace/andrewarchi-challenges](whitespace/andrewarchi-challenges)
+- [whitespace/thaliaarchi-challenges](whitespace/thaliaarchi-challenges)
 
 ## Advent of Code 2021
 
 - [whitespace/alchzh-advent-of-code](whitespace/alchzh-advent-of-code)
-- [whitespace/andrewarchi-challenges](whitespace/andrewarchi-challenges)
+- [whitespace/thaliaarchi-challenges](whitespace/thaliaarchi-challenges)
 
 ## Cerner 2^5
 
@@ -35,8 +35,8 @@ case of Codewars, interpreters for Whitespace.
 ## Code Golf
 
 - [javascript/arnauld](javascript/arnauld)
-- [whitespace/andrewarchi-challenges](whitespace/andrewarchi-challenges)
 - [whitespace/kspalaiologos-codegolf](whitespace/kspalaiologos-codegolf)
+- [whitespace/thaliaarchi-challenges](whitespace/thaliaarchi-challenges)
 
 ## Codewars
 
@@ -86,21 +86,21 @@ case of Codewars, interpreters for Whitespace.
 ## Project Euler
 
 - [c/threeifbywhiskey-blacktime](c/threeifbywhiskey-blacktime)
-- [whitespace/andrewarchi-challenges](whitespace/andrewarchi-challenges)
 - [whitespace/gregorymorrison-euler](whitespace/gregorymorrison-euler)
 - [whitespace/mercerenies-euler](whitespace/mercerenies-euler)
 - [whitespace/samdonow-pelc](whitespace/samdonow-pelc)
+- [whitespace/thaliaarchi-challenges](whitespace/thaliaarchi-challenges)
 
 ## Rosetta Code
 
-- [go/andrewarchi-nebula](go/andrewarchi-nebula)
-- [whitespace/andrewarchi-challenges](whitespace/andrewarchi-challenges)
+- [go/thaliaarchi-nebula](go/thaliaarchi-nebula)
+- [whitespace/thaliaarchi-challenges](whitespace/thaliaarchi-challenges)
 
 ## Sphere Online Judge
 
-- [whitespace/andrewarchi-challenges](whitespace/andrewarchi-challenges)
 - [whitespace/jermenkoo-spoj](whitespace/jermenkoo-spoj)
 - [whitespace/t3nsor-spoj](whitespace/t3nsor-spoj)
+- [whitespace/thaliaarchi-challenges](whitespace/thaliaarchi-challenges)
 
 ## yukicoder
 

@@ -28,7 +28,6 @@ Projects that can be built with Docker:
 - clojure/makenowjust
 - cpp/abac-whint
 - cpp/abcsharp
-- cpp/andrewarchi-respace
 - cpp/benajmin
 - cpp/buyoh-nospace
 - cpp/dpohanlon-wsint
@@ -48,6 +47,7 @@ Projects that can be built with Docker:
 - cpp/sonicyang-ws-frontend: Requires LLVM
 - cpp/subv-whitespace-llvm: Requires LLVM
 - cpp/sudheesh
+- cpp/thaliaarchi-respace
 - cpp/timvandermeij
 - cpp/tycho-whitespace-llvm: Requires LLVM
 - cpp/yuukiaria
@@ -61,7 +61,6 @@ Projects that can be built with Docker:
 - csharp/reflash: Mono does not implement WPF APIs
 - csharp/rolisoft-esoteric
 - csharp/ryzngard-dotnot: CSharpGeneratorDriver does not contain a constructor that takes 3 arguments
-- go/andrewarchi-nebula: Requires LLVM
 - go/kinu
 - go/makiuchid-whitenote
 - go/pocke-gows
@@ -70,6 +69,7 @@ Projects that can be built with Docker:
 - go/simomu
 - go/technohippy
 - go/tempxla-go-wspace
+- go/thaliaarchi-nebula: Requires LLVM
 - go/yshr-wspacego
 - go/zorchenhimer
 - haskell/edwinb-wspace-0.3
@@ -93,7 +93,7 @@ Projects that can be built with Docker:
 - javascript/syntaqx-puzzles: Needs Codewars entrypoint
 - javascript/therebelrobot: Needs Codewars entrypoint
 - javascript/uraza: Needs Codewars entrypoint
-- jq/andrewarchi-wsjq
+- jq/thaliaarchi-wsjq
 - lolcode/akers
 - ocaml/jgkaplan-wsc
 - ocaml/matsud-c2ws
@@ -172,7 +172,6 @@ Projects that can be built with Docker:
 - ruby/technohippy-gorispace
 - ruby/wconrad
 - ruby/yuta-textproc
-- rust/andrewarchi-yspace
 - rust/cedricschwyter-spacey
 - rust/censoredusername-whitespacers
 - rust/collidedscope-albus
@@ -186,16 +185,17 @@ Projects that can be built with Docker:
 - rust/luminight: No entrypoint
 - rust/nareshganduri
 - rust/omurakazuaki
+- rust/thaliaarchi-yspace
 - rust/zrneely
 - typescript/davramenko-codewars: Needs Codewars entrypoint
 - typescript/eduardoborsa-codewars: Needs Codewars entrypoint
 - typescript/fy0u11: Needs Codewars entrypoint
-- whitespace/andrewarchi-challenges
 - whitespace/t3nsor-spoj
+- whitespace/thaliaarchi-challenges
 
 Building status of individual executables:
 
-- ⚠️ brainfuck/andrewarchi-wsbf/ws.bf
+- ⚠️ brainfuck/thaliaarchi-wsbf/ws.bf
 - ⚠️ coffeescript/ehrlichbryan/*unspecified*: `grunt` Unclear how to run
 - ❌ cpp/burghard-wsintercpp
 - ❌ csharp/colchicus
@@ -270,12 +270,11 @@ Building status of individual executables:
 - ❌ scala/sderosiaux
 - ❌ scheme/athos-white-scheme
 - ❌ scheme/niyarin
-- ❌ textmate/andrewarchi-linguist
 - ⚠️ textmate/nixinova/grammars/whitespace.yaml-tmLanguage
+- ❌ textmate/thaliaarchi-linguist
 - ❌ textmate/veniversum
 - typescript/simomu/bin/ws.js: `npm run build`
 - ❌ vim/rolf
-- whitespace/andrewarchi-wslib/assemble.sh
 - ❌ whitespace/ankitatandon-wspc
 - ❌ whitespace/arthurmtth
 - ❌ whitespace/burghard-wsinterws
@@ -286,3 +285,4 @@ Building status of individual executables:
 - whitespace/keen-whitelie:
   - asm.rb
   - whitelie
+- whitespace/thaliaarchi-wslib/assemble.sh

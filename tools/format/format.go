@@ -7,7 +7,7 @@ import (
 	"os"
 	"strings"
 
-	"github.com/andrewarchi/browser/jsonutil"
+	"github.com/thaliaarchi/browser/jsonutil"
 	"github.com/wspace/corpus/tools"
 	"golang.org/x/sys/execabs"
 )

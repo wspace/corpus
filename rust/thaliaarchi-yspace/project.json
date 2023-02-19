@@ -1,13 +1,13 @@
 {
-  "id": "rust/andrewarchi-yspace",
+  "id": "rust/thaliaarchi-yspace",
   "name": "yspace",
-  "authors": ["Andrew Archibald"],
+  "authors": ["Thalia Archibald"],
   "license": "MPL-2.0",
   "languages": ["Rust"],
   "tags": ["compiler", "programs"],
   "date": "2021-05-07 04:53:38 -0700",
   "spec_version": "0.3",
-  "source": ["https://github.com/andrewarchi/yspace"],
+  "source": ["https://github.com/thaliaarchi/yspace"],
   "whitespace": { "extension": "ws" },
   "programs": [
     { "path": "tests/copy_error.ws", "spec_version": "0.3" },

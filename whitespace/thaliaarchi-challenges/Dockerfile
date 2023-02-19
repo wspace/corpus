@@ -4,7 +4,7 @@ FROM alpine AS builder
 
 RUN apk add git make bash coreutils
 COPY --from=whitespacers /wsc /usr/local/bin/
-RUN git clone https://github.com/andrewarchi/wslib
+RUN git clone https://github.com/thaliaarchi/wslib
 WORKDIR /ws-challenges
 COPY ws-challenges .
 RUN make -k COMPILED_PROGRAMS= all run_tests || :

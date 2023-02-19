@@ -1,14 +1,14 @@
 {
-  "id": "whitespace/andrewarchi-challenges",
+  "id": "whitespace/thaliaarchi-challenges",
   "name": "ws-challenges",
-  "authors": ["Andrew Archibald"],
+  "authors": ["Thalia Archibald"],
   "license": "GPL-3.0",
   "languages": ["Whitespace"],
   "tags": ["programs"],
   "date": "2021-11-14 00:10:01 +0100",
   "spec_version": "0.3",
-  "source": ["https://github.com/andrewarchi/ws-challenges"],
-  "relations": [{ "id": "rust/andrewarchi-wslib", "type": "library" }],
+  "source": ["https://github.com/thaliaarchi/ws-challenges"],
+  "relations": [{ "id": "rust/thaliaarchi-wslib", "type": "library" }],
   "challenges": [
     "Project Euler",
     "Advent of Code 2019",

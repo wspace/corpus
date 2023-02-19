@@ -39,7 +39,7 @@
         [quine-copy.ws](https://github.com/search?o=desc&q=filename%3Aquine-copy.ws+extension%3Aws+-org%3Awspace&s=indexed&type=Code),
         [rot13.ws](https://github.com/search?o=desc&q=filename%3Arot13.ws+extension%3Aws+-org%3Awspace&s=indexed&type=Code),
         [sbstr1.ws](https://github.com/search?o=desc&q=filename%3Asbstr1.ws+extension%3Aws+-org%3Awspace&s=indexed&type=Code),
-        [*.wsa](https://github.com/search?o=desc&q=extension%3Awsa+-filename%3Amakefile+-org%3Awspace+-user%3Aandrewarchi&s=indexed&type=Code),
+        [*.wsa](https://github.com/search?o=desc&q=extension%3Awsa+-filename%3Amakefile+-org%3Awspace&s=indexed&type=Code),
         [*.wsasm](https://github.com/search?o=desc&q=extension%3Awsasm+-org%3Awspace&s=indexed&type=Code)
     - by Wikipedia links:
         [Whitespace (programming language) [en]](https://github.com/search?o=desc&q=en.wikipedia.org%2Fwiki%2FWhitespace_%28programming_language%29+-language%3AHTML+-org%3Awspace&s=indexed&type=Code),

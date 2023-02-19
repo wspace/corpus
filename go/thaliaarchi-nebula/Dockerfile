@@ -3,7 +3,7 @@ FROM golang:1.20 AS builder
 WORKDIR /nebula
 COPY nebula .
 # TODO: Requires LLVM
-RUN go mod init github.com/andrewarchi/nebula && \
+RUN go mod init github.com/thaliaarchi/nebula && \
     go mod tidy
 RUN go test ./...
 RUN go build

@@ -33,8 +33,8 @@ language, including interpreters, compilers, and programs.
 | [whitespace-go](go/sampratt)                  | Sam Pratt        | Go         | interpreter, programs | 2021-12-11 | [GitHub](https://github.com/samuel-pratt/whitespace-go), [r/golang](https://www.reddit.com/r/golang/comments/recgxc/you_guys_seemed_to_like_my_brainfuck_interpreter/), [r/esolangs](https://www.reddit.com/r/esolangs/comments/recunt/i_made_a_whitespace_interpreter_in_go_and_id_love/) |
 | [H3llo, World! in WhiteSpace](whitespace/stevemats-hello) | Steve Matindi | Whitespace | programs | 2021-12-10 | [GitHub](https://github.com/stevemats/H3llo_W0rld) |
 | [advent-of-code](whitespace/alchzh-advent-of-code) | Albert Zhang | Whitespace | programs    | 2021-12-04 | [GitHub](https://github.com/alchzh/advent-of-code) |
-| [wsbf](brainfuck/andrewarchi-wsbf)            | Andrew Archibald | Brainfuck  | interpreter  | 2021-11-14 | [GitHub](https://github.com/andrewarchi/wsbf) |
-| [ws-challenges](whitespace/andrewarchi-challenges) | Andrew Archibald | Whitespace | programs | 2021-11-13 | [GitHub](https://github.com/andrewarchi/ws-challenges) |
+| [wsbf](brainfuck/thaliaarchi-wsbf)            | Thalia Archibald | Brainfuck  | interpreter  | 2021-11-14 | [GitHub](https://github.com/thaliaarchi/wsbf) |
+| [ws-challenges](whitespace/thaliaarchi-challenges) | Thalia Archibald | Whitespace | programs | 2021-11-13 | [GitHub](https://github.com/thaliaarchi/ws-challenges) |
 | [Whitespace interpreter](cpp/shadowmitia)     | Dimitri Belopopsky | C++      | interpreter, programs | 2021-11-11 | [GitHub](https://github.com/ShadowMitia/whitespace) |
 | [misc_utilities](go/qeedquan)                 | Quan Tran        | Go         | interpreter, disassembler, programs | 2021-11-11 | [GitHub](https://github.com/wspace/qeedquan-go), [GitHub](https://github.com/qeedquan/misc_utilities/tree/master/esolang/whitespace) |
 | [TigerHacks-2021](whitespace/meow-tigerhacks) | meow56           | Whitespace | programs     | 2021-11-05 | [GitHub](https://github.com/meow56/tigerhacks-2021) |
@@ -45,7 +45,7 @@ language, including interpreters, compilers, and programs.
 | [cerner_2-5](whitespace/srinandanpai-cerner)  | Srinandan Pai    | Whitespace | programs     | 2021-10-01 | [GitHub](https://github.com/SrinandanPai/cerner_2-5) |
 | [esoteric](python/joaquinrossi-esoteric)      | Joaquín Rossi    | Python     | interpreter  | 2021-09-29 | [GitHub](https://github.com/wspace/joaquinrossi-esoteric), [GitHub](https://github.com/joaquin-rossi/esoteric) |
 | [WhitespaceInterpreter](lua/carsonrueber)     | Carson Rueber    | Lua        | interpreter, programs | 2021-08-29 | [GitHub](https://github.com/CJ5518/WhitespaceInterpreter) |
-| [Whitespace grammar for GitHub](textmate/andrewarchi-linguist) | Andrew Archibald | TextMate | grammar | 2021-08-15 | [GitHub](https://github.com/andrewarchi/wspace-linguist) |
+| [Whitespace grammar for GitHub](textmate/thaliaarchi-linguist) | Thalia Archibald | TextMate | grammar | 2021-08-15 | [GitHub](https://github.com/thaliaarchi/wspace-linguist) |
 | [NovaGrammars](textmate/nixinova)             | Nixinova         | TextMate   | syntax highlighting, programs | 2021-08-15 | [GitHub](https://github.com/Nixinova/NovaGrammars), [GitHub](https://github.com/github/linguist/discussions/5519#discussioncomment-1185871) |
 | [SPOJ](whitespace/t3nsor-spoj)                | Brian Bi         | Whitespace | assembler, programs | 2021-08-11 | [GitHub](https://github.com/t3nsor/SPOJ) |
 | [wsbf](whitespace/reconcyl-wsbf)              | Reconcyl         | Whitespace | programs     | 2021-07-22 | [GitHub](https://github.com/Reconcyl/eso) |
@@ -55,9 +55,9 @@ language, including interpreters, compilers, and programs.
 | [docker-whitespace](docker/bensuperpc)        | Bensuperpc       | Docker     | builder      | 2021-06-09 | [GitHub](https://github.com/bensuperpc/docker-whitespace) |
 | [whitesymex](python/umutoztunc-whitesymex)    | Umut Barış Öztunç | Python    | symbolic executor, programs | 2021-05-30 | [GitHub](https://github.com/umutoztunc/whitesymex), [whitesymex.readthedocs.io](https://whitesymex.readthedocs.io/) |
 | [Interpreter](python/ganeshsankaran)          | Ganesh Sankaran  | Python     | wsa interpreter, programs | 2021-05-29 | [GitHub](https://github.com/ganeshsankaran/interpreter) |
-| [wslib](whitespace/andrewarchi-wslib)         | Andrew Archibald | Whitespace | standard library, programs, assembler | 2021-05-24 | [GitHub](https://github.com/andrewarchi/wslib) |
-| [yspace](rust/andrewarchi-yspace)             | Andrew Archibald | Rust       | compiler, programs | 2021-05-07 | [GitHub](https://github.com/andrewarchi/yspace) |
-| [wsjq](jq/andrewarchi-wsjq)                   | Andrew Archibald | jq         | interpreter, debugger, disassembler | 2021-05-02 | [GitHub](https://github.com/andrewarchi/wsjq) |
+| [wslib](whitespace/thaliaarchi-wslib)         | Thalia Archibald | Whitespace | standard library, programs, assembler | 2021-05-24 | [GitHub](https://github.com/thaliaarchi/wslib) |
+| [yspace](rust/thaliaarchi-yspace)             | Thalia Archibald | Rust       | compiler, programs | 2021-05-07 | [GitHub](https://github.com/thaliaarchi/yspace) |
+| [wsjq](jq/thaliaarchi-wsjq)                   | Thalia Archibald | jq         | interpreter, debugger, disassembler | 2021-05-02 | [GitHub](https://github.com/thaliaarchi/wsjq) |
 | [Whitespace interpreter](rust/omurakazuaki)   | Kazuaki Omura    | Rust       | interpreter, programs | 2021-03-30 | [GitHub](https://github.com/wspace/omurakazuaki-rust), [GitHub](https://github.com/omurakazuaki/WriteCodeEveryDay/tree/main/rust/whitespace) |
 | [Spacebar](ocaml/progbits-spacebar)           | progbits         | OCaml, Yacc, Lex | language compiler, programs | 2021-03-27 | [GitHub](https://github.com/progbits/spacebar) |
 | [Hello World](whitespace/grantbgreat-hello)   | Grant Bourne     | Whitespace | programs     | 2021-03-23 | [GitHub](https://github.com/GrantBGreat/hello-world) |
@@ -123,7 +123,7 @@ language, including interpreters, compilers, and programs.
 | [Eso](scala/dashlambda-eso)                   | Dash-Lambda      | Scala      | interpreter, transpiler, assembler, programs | 2019-06-19 | [GitHub](https://github.com/Dash-Lambda/Eso) |
 | [Codewars-algorithms](python/ericpwilliamson-codewars) | Eric P Williamson | Python | interpreter | 2019-06-19 | [GitHub](https://github.com/EricPWilliamson/Codewars-algorithms) |
 | [baudelaire-whitespace](python/qwhxm-baudelaire) | Marek Tomáštík | Python    | web service, programs | 2019-06-08 | [GitHub](https://github.com/qwhxm/baudelaire-whitespace) |
-| [Nebula](go/andrewarchi-nebula)               | Andrew Archibald | Go, LLVM, Whitespace | compiler, optimizer, disassembler, bit packer, Binary Whitespace, programs | 2019-06-06 | [GitHub](https://github.com/andrewarchi/nebula) |
+| [Nebula](go/thaliaarchi-nebula)               | Thalia Archibald | Go, LLVM, Whitespace | compiler, optimizer, disassembler, bit packer, Binary Whitespace, programs | 2019-06-06 | [GitHub](https://github.com/thaliaarchi/nebula) |
 | [Whitespace Assembler and Runner](csharp/meeees) | Michael Barre | C#         | interpreter, disassembler, programs | 2019-05-24 | [GitHub](https://github.com/wspace/meeees-csharp), [GitHub](https://github.com/meeees/Whitespace) |
 | [Whitespace VM](rust/nareshganduri)           | Naresh Ganduri   | Rust       | interpreter  | 2019-05-13 | [GitHub](https://github.com/nareshganduri/WhitespaceVM) |
 | [gows](go/pocke-gows)                         | Masataka Pocke Kuwabara | Go  | interpreter  | 2019-05-11 | [GitHub](https://github.com/pocke/gows) |
@@ -157,7 +157,7 @@ language, including interpreters, compilers, and programs.
 | [whitespace](ruby/nishiwakki)                 | nishiwakki       | Ruby       | interpreter  | 2018-05-16 | [GitHub](https://github.com/nishiwakki/whitespace) |
 | [space](kotlin/ze-space)                      | Zakaria Elkatani | Kotlin     | interpreter, disassembler, generator, programs | 2018-04-22 | [GitHub](https://github.com/ze/space) |
 | [Whitespace-Example1](whitespace/3f)          | Denis Kuzmin     | Whitespace | programs     | 2018-04-19 | [GitHub](https://github.com/3F/sandbox), [Ideone](https://ideone.com/G1uKlw) |
-| [Respace](cpp/andrewarchi-respace)            | Andrew Archibald | C++        | interpreter, disassembler, bit packer, Binary Whitespace, programs | 2018-04-16 | [GitHub](https://github.com/andrewarchi/respace) |
+| [Respace](cpp/thaliaarchi-respace)            | Thalia Archibald | C++        | interpreter, disassembler, bit packer, Binary Whitespace, programs | 2018-04-16 | [GitHub](https://github.com/thaliaarchi/respace) |
 | [projectOne](csharp/north-projectone)         | Jacob North      | C#         | mapping, GUI | 2018-04-11 | [GitHub](https://github.com/North15/projectOne) |
 | [whitespace_interpreter](python/maximegoyette) | Maxime Goyette  | Python     | interpreter  | 2018-03-09 | [GitHub](https://github.com/MaximeGoyette/whitespace_interpreter) |
 | [erasure](clojure/jmesyou-erasure)            | James You        | Clojure    | interpreter  | 2018-02-25 | [GitHub](https://github.com/wspace/jmesyou-erasure), [GitHub](https://github.com/jmesyou/erasure) |
@@ -326,7 +326,7 @@ language, including interpreters, compilers, and programs.
 | [GrassMudHorse](java/bearice-grassmudhorse)   | Bearice Ren, jcj1988 | Java, Erlang | mapping, interpreter, disassembler, programs | 2009-03-25 | [GitHub](https://github.com/wspace/bearice-grassmudhorse), [GitHub](https://github.com/google-code-export/grass-mud-horse), [GitHub](https://github.com/charlestian/grass-mud-horse), [Google Code (Software Heritage archive)](https://archive.softwareheritage.org/browse/origin/directory/?origin_url=http://grass-mud-horse.googlecode.com/svn/), [Google Code (archive)](https://web.archive.org/web/20160114185408/https://code.google.com/p/grass-mud-horse/), [Google Code Archive (archive)](https://web.archive.org/web/20210624084916/https://code.google.com/archive/p/grass-mud-horse/) |
 | [HaPyLi](python/cybis-hapyli)                 | Huf Lungdung (Cybis) | Python | language, interpreter, standard library, programs | 2009-03-03 | [GitHub](https://github.com/wspace/hapyli), [hapyli.webs.com (archive)](https://web.archive.org/web/20110212015726/http://hapyli.webs.com:80/), [Mailing list (archive)](https://web.archive.org/web/20130926170259/http://compsoc.dur.ac.uk:80/archives/whitespace/2010-May/000075.html), [GitHub](https://github.com/helvm/hapyli), [Stack Overflow](https://stackoverflow.com/questions/607830/use-of-haskell-state-monad-a-code-smell), [Esolang](https://esolangs.org/wiki/HaPyLi), [What the Daily WTF?](https://what.thedailywtf.com/topic/5980/stupid-coding-tricks-sudoku-solver-in-whitespace), [Mailing list (archive)](https://web.archive.org/web/20131109103417/http://compsoc.dur.ac.uk:80/archives/whitespace/2009-November/000072.html), [Pastebin](https://pastebin.com/f761fc4b5) |
 | [wspace](c/hogelog)                           | hogelog          | C, Perl    | interpreter  | 2008-04-24 | [GitHub](https://github.com/wspace/hogelog-c), [GitHub](https://github.com/hogelog/hogel.org-old/tree/master/content/lib/c) |
-| [tetris.ws](whitespace/pdewacht-tetris)       | Peter De Wachter, Andrew Archibald | Whitespace | programs | 2008-01-02 | [GitHub](https://github.com/wspace/tetris), [Mailing list (archive)](https://web.archive.org/web/20141011193149/http://compsoc.dur.ac.uk/archives/whitespace/2008-January/000067.html), [Mailing list (archive)](https://web.archive.org/web/20150817151110/http://compsoc.dur.ac.uk/archives/whitespace/attachments/20080103/20651c47/attachment.zip), [r/programming](https://www.reddit.com/r/programming/comments/9nw1e/most_unreadable_programming_language_ever/c0dkzzw/) |
+| [tetris.ws](whitespace/pdewacht-tetris)       | Peter De Wachter, Thalia Archibald | Whitespace | programs | 2008-01-02 | [GitHub](https://github.com/wspace/tetris), [Mailing list (archive)](https://web.archive.org/web/20141011193149/http://compsoc.dur.ac.uk/archives/whitespace/2008-January/000067.html), [Mailing list (archive)](https://web.archive.org/web/20150817151110/http://compsoc.dur.ac.uk/archives/whitespace/attachments/20080103/20651c47/attachment.zip), [r/programming](https://www.reddit.com/r/programming/comments/9nw1e/most_unreadable_programming_language_ever/c0dkzzw/) |
 | [EsCo (Esoteric Combine)](cpp/esco)           | Zasenko Sergey, Matthias Boehm, Justin Mutter | C++ | interpreter | 2007-12-24 | [SourceForge](https://git.code.sf.net/p/esco/code), [SourceForge](https://sourceforge.net/projects/esco/), [esco.sourceforge.net](http://esco.sourceforge.net/) |
 | [wspace](cpp/pavelshub)                       | Pavel Shub       | C++        | interpreter, debugger, assembler, disassembler, mapping | 2007-05-26 | [GitHub](https://github.com/wspace/pavelshub-cpp), [GitHub](https://github.com/pavel987/wspace), [Mailing list (archive)](https://web.archive.org/web/20080917031716/http://compsoc.dur.ac.uk:80/archives/whitespace/2008-April/000068.html), [pavelshub.com](https://pavelshub.com/blog/2010/10/wspace/) |
 | [Markov Algorithm simulator](whitespace/mesquita-markov) | Leonardo Mesquita | Whitespace | programs | 2007-02-24 | [GitHub](https://github.com/wspace/mesquita-markov), [Mailing list (archive)](https://web.archive.org/web/20141011193203/http://compsoc.dur.ac.uk/archives/whitespace/attachments/20070224/2792d9db/markov.zip), [Mailing list (archive)](https://web.archive.org/web/20070830102217/http://compsoc.dur.ac.uk:80/archives/whitespace/2007-February/000054.html), [Mailing list (archive)](https://web.archive.org/web/20070831081100/http://compsoc.dur.ac.uk:80/archives/whitespace/2007-February/000055.html) |
@@ -348,7 +348,7 @@ language, including interpreters, compilers, and programs.
 
 | Name                                     | Curator(s)       | Languages | Date | Source |
 | ---------------------------------------- | ---------------- | --------- | ---- | ------ |
-| [ws-archive](collections/andrewarchi-ws-archive) | Andrew Archibald | Haskell, Whitespace, Perl, PHP, Ruby, Emacs Lisp | 2018-06-06 | [GitHub](https://github.com/wspace/ws-archive) |
+| [ws-archive](collections/thaliaarchi-ws-archive) | Thalia Archibald | Haskell, Whitespace, Perl, PHP, Ruby, Emacs Lisp | 2018-06-06 | [GitHub](https://github.com/wspace/ws-archive) |
 | [Whitespacers](collections/hostilefork-whitespacers) | Hostile Fork | C, C++, Crystal, Erlang, Haskell, Idris, LOLCODE, Perl, Python, Rebol, Ren-C, Ruby, Whitespace | 2010-07-10 | [GitHub](https://github.com/hostilefork/whitespacers) |
 
 ## Programs
@@ -363,13 +363,13 @@ language, including interpreters, compilers, and programs.
 
 | Name                                     | Author           | Polyglot | Date                      | Spec | Source |
 | ---------------------------------------- | ---------------- | -------- | ------------------------- | ---- | ------ |
-| Shortest Error Message                   | Andrew Archibald | -        | 2022-01-03 23:10:50 -0700 | 0.2 | [Code Golf](https://codegolf.stackexchange.com/questions/133840/shortest-error-message/240525#240525), [GitHub](https://github.com/andrewarchi/ws-challenges/blob/main/codegolf/shortest_error.ws) |
-| "-rot" transform                         | Andrew Archibald | -        | 2021-09-16 22:00:08 +0200 | 0.2 | [Code Golf](https://codegolf.stackexchange.com/questions/233660/rot-transform/235444#235444) |
+| Shortest Error Message                   | Thalia Archibald | -        | 2022-01-03 23:10:50 -0700 | 0.2 | [Code Golf](https://codegolf.stackexchange.com/questions/133840/shortest-error-message/240525#240525), [GitHub](https://github.com/thaliaarchi/ws-challenges/blob/main/codegolf/shortest_error.ws) |
+| "-rot" transform                         | Thalia Archibald | -        | 2021-09-16 22:00:08 +0200 | 0.2 | [Code Golf](https://codegolf.stackexchange.com/questions/233660/rot-transform/235444#235444) |
 | Print 0 to 100 without 1-9 characters    | aschepler        | -        | 2021-02-26 19:50:13 +0000 | 0.2 | [Code Golf](https://codegolf.stackexchange.com/questions/219576/print-0-to-100-without-1-9-characters/219869#219869) |
 | Am I divisible by double the sum of my digits? | Kevin Cruijssen | -   | 2021-01-19 08:07:24 +0000 | 0.3 | [Code Golf](https://codegolf.stackexchange.com/questions/129596/am-i-divisible-by-double-the-sum-of-my-digits/217735#217735) |
 | Follow a linked list                     | Kevin Cruijssen  | -        | 2020-12-11 15:28:24 +0000 | 0.2 | [Code Golf](https://codegolf.stackexchange.com/questions/216196/follow-a-linked-list/216208#216208) |
 | 55960.ws                                 | Kamila Szewczyk (Palaiologos) | Malbolge | 2019-08-30 12:16:06 +2000 | 0.2 | [Code Golf](https://codegolf.stackexchange.com/questions/55960/im-not-the-language-youre-looking-for/191063#191063), [GitHub](https://github.com/kspalaiologos/codegolf-submissions/blob/master/55960.ws) |
-| Determine your language's version        | Andrew Archibald | -        | 2019-08-28 07:54:17 +0000 | 0.2, 0.3 | [Code Golf](https://codegolf.stackexchange.com/questions/139243/determine-your-languages-version/190980#190980) |
+| Determine your language's version        | Thalia Archibald | -        | 2019-08-28 07:54:17 +0000 | 0.2, 0.3 | [Code Golf](https://codegolf.stackexchange.com/questions/139243/determine-your-languages-version/190980#190980) |
 | The shortest code to invert bit-wise a binary string | Kevin Cruijssen | - | 2019-01-03 13:47:44 +0000 | 0.2 | [Code Golf](https://codegolf.stackexchange.com/questions/30361/the-shortest-code-to-invert-bit-wise-a-binary-string/178316#178316) |
 | Implementing a stack                     | Kevin Cruijssen  | -        | 2018-07-27 12:25:19 +0000 | 0.2 | [Code Golf](https://codegolf.stackexchange.com/questions/169343/implementing-a-stack/169353#169353) |
 | Shortest Error Message                   | Kevin Cruijssen  | -        | 2018-06-27 12:57:14 +0000 | 0.2 | [GitHub](https://codegolf.stackexchange.com/questions/133840/shortest-error-message/167509#167509) |
@@ -426,7 +426,7 @@ language, including interpreters, compilers, and programs.
 | Name               | Maintainer       | Date       | Spec | Source |
 | ------------------ | ---------------- | ---------- | ---- | ------ |
 | WSpace             | Kamil Adam       | 2019-11-24 | 0.3  | [GitHub](https://github.com/helvm/WSpace) |
-| whitespace-haskell | Andrew Archibald | 2019-08-07 | 0.2, 0.3 | [GitHub](https://github.com/wspace/whitespace-haskell) |
+| whitespace-haskell | Thalia Archibald | 2019-08-07 | 0.2, 0.3 | [GitHub](https://github.com/wspace/whitespace-haskell) |
 | WSpace             | Andrew Savinykh  | 2017-01-30 | 0.3  | [GitHub](https://github.com/TryItOnline/WSpace) |
 | main.patch and VM.patch | yuki2006    | 2015-01-28 | 0.3  | [GitHub Gist](https://gist.github.com/yuki2006/466b7ed89486178c8309) |
 
@@ -500,4 +500,4 @@ See [CONTRIBUTING.md](./CONTRIBUTING.md).
 ## License
 
 This collection is licensed under the [MIT License](LICENSE.md) by
-Andrew Archibald. Submodules are licensed by their respective owners.
+Thalia Archibald. Submodules are licensed by their respective owners.

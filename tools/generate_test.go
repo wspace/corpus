@@ -7,7 +7,7 @@ func TestGetURLLabel(t *testing.T) {
 		URL   string
 		Label string
 	}{
-		{"https://github.com/andrewarchi/nebula", "GitHub"},
+		{"https://github.com/thaliaarchi/nebula", "GitHub"},
 		{"https://web.archive.org/web/20200906224652/https://github.com/marcellippmann/Whitepp/", "GitHub (archive)"},
 		{"https://gist.github.com/KeenS/6081b0c802a4e575ddbacb1930680870", "GitHub Gist"},
 		{"https://gitlab.com/ft/spaceman", "GitLab"},

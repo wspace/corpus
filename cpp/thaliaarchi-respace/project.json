@@ -1,13 +1,13 @@
 {
-  "id": "cpp/andrewarchi-respace",
+  "id": "cpp/thaliaarchi-respace",
   "name": "Respace",
-  "authors": ["Andrew Archibald"],
+  "authors": ["Thalia Archibald"],
   "license": "MIT",
   "languages": ["C++"],
   "tags": ["interpreter", "disassembler", "bit packer", "Binary Whitespace", "programs"],
   "date": "2018-04-15 21:35:34 -0600",
   "spec_version": "0.3",
-  "source": ["https://github.com/andrewarchi/respace"],
+  "source": ["https://github.com/thaliaarchi/respace"],
   "bounds": { "precision": "fixed" },
   "whitespace": { "extension": "ws" },
   "assembly": {

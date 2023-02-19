@@ -1,13 +1,13 @@
 {
-  "id": "whitespace/andrewarchi-wslib",
+  "id": "whitespace/thaliaarchi-wslib",
   "name": "wslib",
-  "authors": ["Andrew Archibald"],
+  "authors": ["Thalia Archibald"],
   "license": "MPL-2.0",
   "languages": ["Whitespace"],
   "tags": ["standard library", "programs", "assembler"],
   "date": "2021-05-24 15:38:17 -0700",
   "spec_version": "0.3",
-  "source": ["https://github.com/andrewarchi/wslib"],
+  "source": ["https://github.com/thaliaarchi/wslib"],
   "assembly": {
     "mnemonics": {
       "push": ["<number_char>"],

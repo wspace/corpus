@@ -7,8 +7,8 @@ import (
 	"regexp"
 	"strings"
 
-	"github.com/andrewarchi/browser/jsonutil"
 	"github.com/pelletier/go-toml"
+	"github.com/thaliaarchi/browser/jsonutil"
 )
 
 // Uses SPDX license IDs

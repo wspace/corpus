@@ -1,13 +1,13 @@
 {
-  "id": "jq/andrewarchi-wsjq",
+  "id": "jq/thaliaarchi-wsjq",
   "name": "wsjq",
-  "authors": ["Andrew Archibald"],
+  "authors": ["Thalia Archibald"],
   "license": "MPL-2.0",
   "languages": ["jq"],
   "tags": ["interpreter", "debugger", "disassembler"],
   "date": "2021-05-02 07:26:45 -0700",
   "spec_version": "0.3",
-  "source": ["https://github.com/andrewarchi/wsjq"],
+  "source": ["https://github.com/thaliaarchi/wsjq"],
   "bounds": { "precision": "float64" },
   "assembly": {
     "mnemonics": {

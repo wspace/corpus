@@ -1,7 +1,7 @@
 {
   "id": "whitespace/pdewacht-tetris",
   "name": "tetris.ws",
-  "authors": ["Peter De Wachter", "Andrew Archibald"],
+  "authors": ["Peter De Wachter", "Thalia Archibald"],
   "license": "none",
   "languages": ["Whitespace"],
   "tags": ["programs"],
@@ -16,11 +16,11 @@
   "whitespace": { "extension": "ws" },
   "programs": [
     { "path": "tetris.ws", "spec_version": "0.3", "authors": ["Peter De Wachter"] },
-    { "path": "tetris.wsf", "spec_version": "0.3", "authors": ["Peter De Wachter", "Andrew Archibald"] },
+    { "path": "tetris.wsf", "spec_version": "0.3", "authors": ["Peter De Wachter", "Thalia Archibald"] },
     {
       "path": "tetris_extended.wsf",
       "spec_version": "0.3",
-      "authors": ["Andrew Archibald", "Peter De Wachter"]
+      "authors": ["Thalia Archibald", "Peter De Wachter"]
     }
   ]
 }
