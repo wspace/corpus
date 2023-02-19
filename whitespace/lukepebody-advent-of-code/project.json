@@ -1,0 +1,109 @@
+{
+  "id": "whitespace/lukepebody-advent-of-code",
+  "name": "AdventOfCode2022.ws",
+  "authors": ["Luke Pebody"],
+  "license": "none",
+  "languages": ["Whitespace", "Python"],
+  "tags": ["programs", "interpreter", "assembler"],
+  "date": "2022-12-14 01:31:07 +0000",
+  "spec_version": "0.3",
+  "source": ["https://github.com/LukePebody/AdventOfCode2022.ws"],
+  "challenges": ["Advent of Code 2022"],
+  "whitespace": { "nonstandard": [{ "name": "SPLURGE", "desc": "Dump stack and memory" }], "extension": "ws" },
+  "assembly": {
+    "mnemonics": {
+      "push": ["PUSH"],
+      "dup": ["DUP"],
+      "copy": ["GRAB"],
+      "swap": ["SWAP"],
+      "drop": ["DROP"],
+      "add": ["ADD"],
+      "sub": ["SUB"],
+      "mul": ["MUL"],
+      "div": ["DIV"],
+      "mod": ["MOD"],
+      "store": ["STORE"],
+      "retrieve": ["RETRIEVE"],
+      "label": ["LABEL"],
+      "call": ["GOSUB"],
+      "jmp": ["GOTO"],
+      "jz": ["GOTOIFZERO"],
+      "jn": ["GOTOIFNEG"],
+      "ret": ["RETURN"],
+      "end": ["END"],
+      "printc": ["PRINTC"],
+      "printi": ["PRINTN"],
+      "readc": ["READC"],
+      "readi": ["READN"]
+    },
+    "line_comments": ["#"],
+    "usage": ["assembler", "programs"],
+    "extension": "wsc"
+  },
+  "programs": [
+    {
+      "path": "Uncompiled/2022/day1_1.wsc",
+      "generated": "Compiled/2022/day1_1.ws",
+      "inputs": ["Input/2022/day1.in", "Input/2022/day1_test.in"]
+    },
+    {
+      "path": "Uncompiled/2022/day1_2.wsc",
+      "generated": "Compiled/2022/day1_2.ws",
+      "inputs": ["Input/2022/day1.in", "Input/2022/day1_test.in"]
+    },
+    {
+      "path": "Uncompiled/2022/day2_1.wsc",
+      "generated": "Compiled/2022/day2_1.ws",
+      "inputs": ["Input/2022/day2.in", "Input/2022/day2_test.in"]
+    },
+    {
+      "path": "Uncompiled/2022/day2_2.wsc",
+      "generated": "Compiled/2022/day2_2.ws",
+      "inputs": ["Input/2022/day2.in", "Input/2022/day2_test.in"]
+    },
+    {
+      "path": "Uncompiled/2022/day3_1.wsc",
+      "generated": "Compiled/2022/day3_1.ws",
+      "inputs": ["Input/2022/day3.in", "Input/2022/day3_test.in"]
+    },
+    {
+      "path": "Uncompiled/2022/day3_2.wsc",
+      "generated": "Compiled/2022/day3_2.ws",
+      "inputs": ["Input/2022/day3.in", "Input/2022/day3_test.in"]
+    },
+    {
+      "path": "Uncompiled/2022/day4_1.wsc",
+      "generated": "Compiled/2022/day4_1.ws",
+      "inputs": ["Input/2022/day4.in", "Input/2022/day4_test.in"]
+    },
+    {
+      "path": "Uncompiled/2022/day4_2.wsc",
+      "generated": "Compiled/2022/day4_2.ws",
+      "inputs": ["Input/2022/day4.in", "Input/2022/day4_test.in"]
+    },
+    {
+      "path": "Uncompiled/2022/day5_1.wsc",
+      "generated": "Compiled/2022/day5_1.ws",
+      "inputs": ["Input/2022/day5.in", "Input/2022/day5_test.in"]
+    },
+    {
+      "path": "Uncompiled/2022/day5_2.wsc",
+      "generated": "Compiled/2022/day5_2.ws",
+      "inputs": ["Input/2022/day5.in", "Input/2022/day5_test.in"]
+    },
+    { "path": "", "inputs": ["Input/2022/day6.in", "Input/2022/day6_test.in"] },
+    {
+      "path": "Uncompiled/2022/day14_1.wsc",
+      "generated": "Compiled/2022/day14_1.ws",
+      "inputs": ["Input/2022/day14.in", "Input/2022/day14_test.in"]
+    },
+    {
+      "path": "Uncompiled/2022/day14_2.wsc",
+      "generated": "Compiled/2022/day14_2.ws",
+      "inputs": ["Input/2022/day14.in", "Input/2022/day14_test.in"]
+    }
+  ],
+  "commands": [
+    { "type": "interpreter and assembler", "bin": "main.py", "notes": "Hardcoded input and output paths" }
+  ]
+}

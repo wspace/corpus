@@ -10,12 +10,14 @@
   "source": ["https://github.com/thaliaarchi/ws-challenges"],
   "relations": [{ "id": "rust/thaliaarchi-wslib", "type": "library" }],
   "challenges": [
-    "Project Euler",
     "Advent of Code 2019",
     "Advent of Code 2020",
     "Advent of Code 2021",
-    "Rosetta Code",
+    "Advent of Code 2022",
     "Code Golf",
+    "Kattis",
+    "Project Euler",
+    "Rosetta Code",
     "Sphere Online Judge"
   ],
   "programs": [

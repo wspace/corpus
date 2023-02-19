@@ -94,6 +94,9 @@
 [submodule "cpp/buyoh-nospace/nospace"]
 	path = cpp/buyoh-nospace/nospace
 	url = https://github.com/buyoh/nospace
+[submodule "cpp/codesiiita-spoj/SPOJ"]
+	path = cpp/codesiiita-spoj/SPOJ
+	url = https://github.com/Codes-iiita/SPOJ
 [submodule "cpp/dpohanlon-wsint/wsInt"]
 	path = cpp/dpohanlon-wsint/wsInt
 	url = https://github.com/wspace/dpohanlon-wsint
@@ -238,6 +241,9 @@
 [submodule "haskell/brainbrush-tomato/Tomato-Programming-Language"]
 	path = haskell/brainbrush-tomato/Tomato-Programming-Language
 	url = https://github.com/brainbush/Tomato-Programming-Language
+[submodule "haskell/cedricschwyter-spacey/haskell-spacey"]
+	path = haskell/cedricschwyter-spacey/haskell-spacey
+	url = https://github.com/D3PSI/haskell-spacey
 [submodule "haskell/ft-spaceman/spaceman"]
 	path = haskell/ft-spaceman/spaceman
 	url = https://gitlab.com/ft/spaceman.git
@@ -764,6 +770,9 @@
 [submodule "whitespace/3f/sandbox"]
 	path = whitespace/3f/sandbox
 	url = https://github.com/3F/sandbox
+[submodule "whitespace/aflag-spoj/spoj"]
+	path = whitespace/aflag-spoj/spoj
+	url = https://github.com/aflag/spoj
 [submodule "whitespace/alchzh-advent-of-code/advent-of-code"]
 	path = whitespace/alchzh-advent-of-code/advent-of-code
 	url = https://github.com/alchzh/advent-of-code
@@ -797,6 +806,9 @@
 [submodule "whitespace/chrisnguyen-steganographic-polyglots/steganographic-polyglots"]
 	path = whitespace/chrisnguyen-steganographic-polyglots/steganographic-polyglots
 	url = https://github.com/uncompiled/steganographic-polyglots
+[submodule "whitespace/danstarns-neo4j/neo4j-whitespace-driver"]
+	path = whitespace/danstarns-neo4j/neo4j-whitespace-driver
+	url = https://github.com/danstarns/neo4j-whitespace-driver
 [submodule "whitespace/datomalania-hello/helloworld"]
 	path = whitespace/datomalania-hello/helloworld
 	url = https://github.com/datomalania/helloworld
@@ -872,6 +884,9 @@
 [submodule "whitespace/lucaspiller-never-gonna/never_gonna"]
 	path = whitespace/lucaspiller-never-gonna/never_gonna
 	url = https://gist.github.com/lucaspiller/2852385
+[submodule "whitespace/lukepebody-advent-of-code/AdventOfCode2022.ws"]
+	path = whitespace/lukepebody-advent-of-code/AdventOfCode2022.ws
+	url = https://github.com/LukePebody/AdventOfCode2022.ws
 [submodule "whitespace/makenowjust-quine/quine"]
 	path = whitespace/makenowjust-quine/quine
 	url = https://github.com/MakeNowJust/quine
@@ -890,6 +905,9 @@
 [submodule "whitespace/mildsunrise-brainfuck/brainfuck"]
 	path = whitespace/mildsunrise-brainfuck/brainfuck
 	url = https://gist.github.com/mildsunrise/60a516da83d448ba1363a7deac361515
+[submodule "whitespace/nepetaiscute-prime/prime-whitespace"]
+	path = whitespace/nepetaiscute-prime/prime-whitespace
+	url = https://github.com/NEPETAISCUTE/prime-whitespace
 [submodule "whitespace/owocean-fizzbuzz/fizzbuzz"]
 	path = whitespace/owocean-fizzbuzz/fizzbuzz
 	url = https://gist.github.com/owocean/0433a34dcfb1409bd5528e4821dd0055
@@ -935,6 +953,9 @@
 [submodule "whitespace/shotastage-hello/hello"]
 	path = whitespace/shotastage-hello/hello
 	url = https://gist.github.com/shotastage/5a991d828e510459488c66a7994df859
+[submodule "whitespace/spicedsage-knots-n-crosses/Whitespace-Knots-N-Crosses"]
+	path = whitespace/spicedsage-knots-n-crosses/Whitespace-Knots-N-Crosses
+	url = https://github.com/SpicedSage/Whitespace-Knots-N-Crosses
 [submodule "whitespace/srinandanpai-cerner/cerner_2-5"]
 	path = whitespace/srinandanpai-cerner/cerner_2-5
 	url = https://github.com/SrinandanPai/cerner_2-5
@@ -962,6 +983,9 @@
 [submodule "whitespace/truptibaliga-cerner/cerner_2tothe5th"]
 	path = whitespace/truptibaliga-cerner/cerner_2tothe5th
 	url = https://github.com/Trupti-Baliga/cerner_2tothe5th
+[submodule "whitespace/tshoang-examples/WhiteSpace-Examples"]
+	path = whitespace/tshoang-examples/WhiteSpace-Examples
+	url = https://github.com/tshoang/WhiteSpace-Examples
 [submodule "whitespace/ustclug-hackergame2019/hackergame2019-writeups"]
 	path = whitespace/ustclug-hackergame2019/hackergame2019-writeups
 	url = https://github.com/ustclug/hackergame2019-writeups

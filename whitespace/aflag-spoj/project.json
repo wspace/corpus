@@ -1,0 +1,13 @@
+{
+  "id": "whitespace/aflag-spoj",
+  "name": "spoj",
+  "authors": ["Rafael Cunha de Almeida"],
+  "license": "none",
+  "languages": ["Whitespace"],
+  "tags": ["programs"],
+  "date": "2014-11-17 23:01:43 -0200",
+  "spec_version": "0.2",
+  "source": ["https://github.com/aflag/spoj"],
+  "challenges": ["Sphere Online Judge"],
+  "programs": [{ "path": "sbstr1.ws", "aux": ["sbstr1.test"] }]
+}

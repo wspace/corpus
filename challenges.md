@@ -23,6 +23,11 @@ case of Codewars, interpreters for Whitespace.
 - [whitespace/alchzh-advent-of-code](whitespace/alchzh-advent-of-code)
 - [whitespace/thaliaarchi-challenges](whitespace/thaliaarchi-challenges)
 
+## Advent of Code 2022
+
+- [whitespace/lukepebody-advent-of-code](whitespace/lukepebody-advent-of-code)
+- [whitespace/thaliaarchi-challenges](whitespace/thaliaarchi-challenges)
+
 ## Cerner 2^5
 
 - [whitespace/bsarthak-cerner](whitespace/bsarthak-cerner)
@@ -79,6 +84,10 @@ case of Codewars, interpreters for Whitespace.
 
 - [whitespace/aniket-hacktoberfest](whitespace/aniket-hacktoberfest)
 
+## Kattis
+
+- [whitespace/thaliaarchi-challenges](whitespace/thaliaarchi-challenges)
+
 ## noxCTF
 
 - [whitespace/rsactf](whitespace/rsactf)
@@ -98,6 +107,8 @@ case of Codewars, interpreters for Whitespace.
 
 ## Sphere Online Judge
 
+- [cpp/codesiiita-spoj](cpp/codesiiita-spoj)
+- [whitespace/aflag-spoj](whitespace/aflag-spoj)
 - [whitespace/jermenkoo-spoj](whitespace/jermenkoo-spoj)
 - [whitespace/t3nsor-spoj](whitespace/t3nsor-spoj)
 - [whitespace/thaliaarchi-challenges](whitespace/thaliaarchi-challenges)

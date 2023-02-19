@@ -1,0 +1,12 @@
+{
+  "id": "whitespace/nepetaiscute-prime",
+  "name": "prime-whitespace",
+  "authors": ["nepeta"],
+  "license": "none",
+  "languages": ["Whitespace"],
+  "tags": ["programs"],
+  "date": "2022-12-15 22:34:30 +0100",
+  "spec_version": "0.3",
+  "source": ["https://github.com/NEPETAISCUTE/prime-whitespace"],
+  "programs": [{ "path": "prime.ws", "spec_version": "0.3" }]
+}

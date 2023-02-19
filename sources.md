@@ -14,6 +14,8 @@
         [whitespace assembler](https://github.com/search?o=desc&q=whitespace+assembler+-org%3Awspace&s=updated&type=Repositories),
         [whitespace disassembler](https://github.com/search?o=desc&q=whitespace+disassembler+-org%3Awspace&s=updated&type=Repositories),
         [whitespace esoteric](https://github.com/search?o=desc&q=whitespace+esoteric+-org%3Awspace&s=updated&type=Repositories)
+    - by language:
+        [whitespace language:"Witcher Script"](https://github.com/search?q=whitespace+language%3A%22Witcher+Script%22+-org%3Awspace&s=updated&type=Repositories)
     - by README content:
         ["whitespace programming language"](https://github.com/search?o=desc&q=%22whitespace+programing+language%22+in%3Areadme+-org%3Awspace&s=updated&type=Repositories),
         ["whitespace interpreter"](https://github.com/search?o=desc&q=%22whitespace+interpreter%22+in%3Areadme+-org%3Awspace&s=updated&type=Repositories)

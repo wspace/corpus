@@ -1,0 +1,12 @@
+{
+  "id": "whitespace/danstarns-neo4j",
+  "name": "Whitespace Neo4j Driver",
+  "authors": ["Florent Biville", "Gerrit Meier", "Daniel Starns"],
+  "license": "Apache-2.0",
+  "languages": ["Whitespace"],
+  "tags": ["programs"],
+  "date": "2022-04-01 11:30:54 +0200",
+  "spec_version": "0.2",
+  "source": ["https://github.com/danstarns/neo4j-whitespace-driver"],
+  "programs": [{ "path": "driver.ws", "spec_version": "0.2" }]
+}

@@ -31,6 +31,7 @@ Projects that can be built with Docker:
 - cpp/abcsharp
 - cpp/benajmin
 - cpp/buyoh-nospace
+- cpp/codesiiita-spoj
 - cpp/dpohanlon-wsint
 - cpp/drebelsky-jit
 - cpp/esco
@@ -191,6 +192,8 @@ Projects that can be built with Docker:
 - typescript/davramenko-codewars: Needs Codewars entrypoint
 - typescript/eduardoborsa-codewars: Needs Codewars entrypoint
 - typescript/fy0u11: Needs Codewars entrypoint
+- whitespace/drebelsky-programs
+- whitespace/lukepebody-advent-of-code
 - whitespace/t3nsor-spoj
 - whitespace/thaliaarchi-challenges
 
@@ -209,6 +212,7 @@ Building status of individual executables:
 - ⚠️ erlang/derek-mrwhite/*unspecified*: `make` Unclear how to run
 - ⚠️ haskell/brainbrush-tomato/wspace: `make` Needs changes for latest Haskell
 - ❌ haskell/burghard-wsa
+- ❌ haskell/cedricschwyter-spacey
 - ❌ haskell/edwinb-wspace-0.2
 - ⚠️ haskell/ft-spaceman/*unspecified*: `cabal build`
 - ⚠️ haskell/haroldl-wspace-0.4/wspace: `make` Needs changes for latest Haskell
@@ -280,7 +284,6 @@ Building status of individual executables:
 - ❌ whitespace/arthurmtth
 - ❌ whitespace/burghard-wsinterws
 - ❌ whitespace/datomalania-hello
-- whitespace/drebelsky-programs/assemble.py
 - ❌ whitespace/helowld
 - ❌ whitespace/jarrodparkes-a-z
 - whitespace/keen-whitelie:
