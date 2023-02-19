@@ -1,12 +1,13 @@
 # The Whitespace Corpus
 
-The definitive collection of 336 projects for the Whitespace programming
+The definitive collection of 337 projects for the Whitespace programming
 language, including interpreters, compilers, and programs.
 
 ## Projects
 
 | Name                                          | Authors          | Languages  | Tags         | Date       | Source |
 | --------------------------------------------- | ---------------- | ---------- | ------------ | ---------- | ------ |
+| [wspace-coq](coq/thaliaarchi-wscoq)           | Thalia Archibald | Coq        | interpreter, formalism | 2022-12-14 | [GitHub](https://github.com/thaliaarchi/wscoq) |
 | [whitespace](go/zorchenhimer)                 | Zorchenhimer     | Go         | interpreter, assembler, disassembler, programs | 2022-08-27 | [GitHub](https://github.com/zorchenhimer/whitespace) |
 | [pywhitespace](python/fvogels)                | Frederic Vogels  | Python     | interpreter  | 2022-07-28 | [GitHub](https://github.com/fvogels/pywhitespace) |
 | [codewars-typescript](typescript/davramenko-codewars) | Dmitry Avramenko | TypeScript | interpreter | 2022-07-26 | [GitHub](https://github.com/davramenko/codewars-typescript) |

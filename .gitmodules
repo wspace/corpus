@@ -79,6 +79,9 @@
 [submodule "collections/thaliaarchi-ws-archive"]
 	path = collections/thaliaarchi-ws-archive
 	url = https://github.com/wspace/ws-archive
+[submodule "coq/thaliaarchi-wscoq/wscoq"]
+	path = coq/thaliaarchi-wscoq/wscoq
+	url = https://github.com/thaliaarchi/wscoq
 [submodule "cpp/abac-whint/WHINT"]
 	path = cpp/abac-whint/WHINT
 	url = https://github.com/abac00s/WHINT

@@ -1,0 +1,40 @@
+{
+  "id": "coq/thaliaarchi-wscoq",
+  "name": "wspace-coq",
+  "authors": ["Thalia Archibald"],
+  "license": "GPL-3.0-or-later",
+  "languages": ["Coq"],
+  "tags": ["interpreter", "formalism"],
+  "date": "2022-12-14 03:05:10 -0700",
+  "spec_version": "0.3",
+  "source": ["https://github.com/thaliaarchi/wscoq"],
+  "assembly": {
+    "mnemonics": {
+      "push": ["Push"],
+      "dup": ["Dup"],
+      "copy": ["Copy"],
+      "swap": ["Swap"],
+      "drop": ["Drop"],
+      "slide": ["Slide"],
+      "add": ["Add"],
+      "sub": ["Sub"],
+      "mul": ["Mul"],
+      "div": ["Div"],
+      "mod": ["Mod"],
+      "store": ["Store"],
+      "retrieve": ["Retrieve"],
+      "label": ["Label"],
+      "call": ["Call"],
+      "jmp": ["Jmp"],
+      "jz": ["Jz"],
+      "jn": ["Jn"],
+      "ret": ["Ret"],
+      "end": ["End"],
+      "printc": ["Printc"],
+      "printi": ["Printi"],
+      "readc": ["Readc"],
+      "readi": ["Readi"]
+    },
+    "usage": ["enum"]
+  }
+}

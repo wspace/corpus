@@ -26,6 +26,7 @@ Projects that can be built with Docker:
 - c/zackeua
 - clojure/jmesyou-erasure
 - clojure/makenowjust
+- coq/thaliaarchi-wscoq
 - cpp/abac-whint
 - cpp/abcsharp
 - cpp/benajmin
