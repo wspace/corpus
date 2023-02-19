@@ -58,7 +58,6 @@ case of Codewars, interpreters for Whitespace.
 - [python/squancy](python/squancy)
 - [python/techiehelper-codewars](python/techiehelper-codewars)
 - [python/victornuzhniy](python/victornuzhniy)
-- [python/wawrepo-kata](python/wawrepo-kata)
 - [typescript/davramenko-codewars](typescript/davramenko-codewars)
 - [typescript/eduardoborsa-codewars](typescript/eduardoborsa-codewars)
 - [typescript/fy0u11](typescript/fy0u11)

@@ -157,7 +157,6 @@ Projects that can be built with Docker:
 - python/umutoztunc-whitesymex
 - python/victornuzhniy: Needs Codewars entrypoint
 - python/wasabili
-- python/wawrepo-kata: Needs Codewars entrypoint
 - python/yasn-whitepy
 - rebol/hostilefork: Bootstrapping issues
 - ruby/alesiong

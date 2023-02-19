@@ -620,9 +620,6 @@
 [submodule "python/wasabili/Whitespace"]
 	path = python/wasabili/Whitespace
 	url = https://gist.github.com/wasabili/708773
-[submodule "python/wawrepo-kata/Kata"]
-	path = python/wawrepo-kata/Kata
-	url = https://github.com/WawRepo/Kata
 [submodule "python/yasn-whitepy/whitepy"]
 	path = python/yasn-whitepy/whitepy
 	url = https://github.com/yasn77/whitepy

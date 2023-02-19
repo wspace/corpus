@@ -10,5 +10,8 @@
   "source": ["https://github.com/Trupti-Baliga/cerner_2tothe5th"],
   "challenges": ["Cerner 2^5"],
   "whitespace": { "extension": "ws" },
-  "programs": [{ "path": "2021/secret_text/secret_text.ws", "spec_version": "0.2" }]
+  "programs": [
+    { "path": "2021/secret_text/secret_text.ws", "spec_version": "0.2" },
+    { "path": "2022/whitespace/sge_india.ws", "spec_version": "0.2" }
+  ]
 }
