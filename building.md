@@ -30,6 +30,7 @@ Projects that can be built with Docker:
 - cpp/abac-whint
 - cpp/abcsharp
 - cpp/benajmin
+- cpp/burghard-wsintercpp
 - cpp/buyoh-nospace
 - cpp/codesiiita-spoj
 - cpp/dpohanlon-wsint
@@ -201,7 +202,6 @@ Building status of individual executables:
 
 - ⚠️ brainfuck/thaliaarchi-wsbf/ws.bf
 - ⚠️ coffeescript/ehrlichbryan/*unspecified*: `grunt` Unclear how to run
-- ❌ cpp/burghard-wsintercpp
 - ❌ csharp/colchicus
 - ❌ csharp/nutcrack-whiteplanes
 - ❌ docker/baekjoon-onlinejudge
