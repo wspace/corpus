@@ -91,6 +91,9 @@
 [submodule "cpp/benajmin/whitespace-interpreter"]
 	path = cpp/benajmin/whitespace-interpreter
 	url = https://github.com/benajmin/whitespace-interpreter
+[submodule "cpp/burghard-wsintercpp/wsintercpp"]
+	path = cpp/burghard-wsintercpp/wsintercpp
+	url = https://github.com/wspace/burghard-wsintercpp
 [submodule "cpp/buyoh-nospace/nospace"]
 	path = cpp/buyoh-nospace/nospace
 	url = https://github.com/buyoh/nospace
@@ -241,6 +244,9 @@
 [submodule "haskell/brainbrush-tomato/Tomato-Programming-Language"]
 	path = haskell/brainbrush-tomato/Tomato-Programming-Language
 	url = https://github.com/brainbush/Tomato-Programming-Language
+[submodule "haskell/burghard-wsa/wsa"]
+	path = haskell/burghard-wsa/wsa
+	url = https://github.com/wspace/burghard-wsa
 [submodule "haskell/cedricschwyter-spacey/haskell-spacey"]
 	path = haskell/cedricschwyter-spacey/haskell-spacey
 	url = https://github.com/D3PSI/haskell-spacey
@@ -800,6 +806,9 @@
 [submodule "whitespace/bsarthak-cerner/Cerner-2_pow_5-2020"]
 	path = whitespace/bsarthak-cerner/Cerner-2_pow_5-2020
 	url = https://github.com/bsarthak1803/Cerner-2_pow_5-2020
+[submodule "whitespace/burghard-wsinterws/wsinterws"]
+	path = whitespace/burghard-wsinterws/wsinterws
+	url = https://github.com/wspace/burghard-wsinterws
 [submodule "whitespace/ccns-chicken/105-club-fair-game-problems"]
 	path = whitespace/ccns-chicken/105-club-fair-game-problems
 	url = https://github.com/ccns/105-club-fair-game-problems

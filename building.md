@@ -211,7 +211,7 @@ Building status of individual executables:
 - ❌ elixir/quinnwilton
 - ⚠️ erlang/derek-mrwhite/*unspecified*: `make` Unclear how to run
 - ⚠️ haskell/brainbrush-tomato/wspace: `make` Needs changes for latest Haskell
-- ❌ haskell/burghard-wsa
+- ⚠️ haskell/burghard-wsa/trans
 - ❌ haskell/cedricschwyter-spacey
 - ❌ haskell/edwinb-wspace-0.2
 - ⚠️ haskell/ft-spaceman/*unspecified*: `cabal build`

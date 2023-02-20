@@ -2,22 +2,32 @@
   "id": "haskell/burghard-wsa",
   "name": "wsa",
   "authors": ["Oliver Burghard"],
-  "license": "none",
+  "license": "GPL",
   "languages": ["Haskell"],
   "tags": ["assembler", "programs"],
-  "date": "2003-09-16 20:40:16 +0000",
+  "date": "2003-04-24 18:52:03 +0000",
   "spec_version": "0.3",
   "source": [
+    "https://github.com/wspace/burghard-wsa",
     "https://web.archive.org/web/20030629154300/http://www.burghard.info:80/code/whitespace/wsa/index.html",
     "https://web.archive.org/web/20140610030912/http://www.burghard.info/Code/Whitespace/wsa.zip",
     "https://web.archive.org/web/20110911114338/http://www.burghard.info/Code/Whitespace/"
   ],
   "assembly": { "extension": "wsa" },
-  "programs": [
-    { "path": "libs/memory.wsa", "spec_version": "0.2" },
-    { "path": "libs/io.wsa", "spec_version": "0.2" },
-    { "path": "examples/prim.wsa", "spec_version": "0.2" }
+  "mappings": [
+    {
+      "space": "a",
+      "tab": "b",
+      "lf": "c",
+      "extension": "pws",
+      "notes": "Opcode and argument separated with space; each instruction followed by LF"
+    }
   ],
-  "notes": "Date from earliest file in archive",
-  "todo": "Check for earlier date. Determine what .pws files are for."
+  "programs": [
+    { "path": "examples/prim.wsa", "spec_version": "0.2" },
+    { "path": "libs/memory.wsa", "spec_version": "0.2" },
+    { "path": "libs/io.wsa", "spec_version": "0.2" }
+  ],
+  "commands": [{ "bin": "trans", "input": "<file>.wsa", "output": "<file>.pws and <file>.ws" }],
+  "notes": "Released under the GPL (https://web.archive.org/web/20090123074209/http://burghard.info:80/Code/index.html)"
 }
