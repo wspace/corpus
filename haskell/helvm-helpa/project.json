@@ -149,7 +149,7 @@
         { "short": "E", "long": "endOfLine", "desc": "EndOfLine (only for WS)" },
         { "short": "h", "long": "help", "desc": "Show this help text" }
       ],
-      "option_parse": "Haskell Options.Applicative"
+      "option_parse": "Haskell optparse-applicative"
     }
   ],
   "todo": "Figure out how to relocate binary when building"

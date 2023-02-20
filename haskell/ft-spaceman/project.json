@@ -24,7 +24,7 @@
         { "short": "V", "long": "version", "desc": "Print version information" },
         { "long": "numeric-version", "desc": "Print just the version number" }
       ],
-      "option_parse": "Haskell System.Console.CmdArgs"
+      "option_parse": "Haskell cmdargs"
     }
   ],
   "todo": "Figure out how to run without `cabal run`"
