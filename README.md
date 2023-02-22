@@ -1,6 +1,6 @@
 # The Whitespace Corpus
 
-The definitive collection of 345 projects for the Whitespace programming
+The definitive collection of 346 projects for the Whitespace programming
 language, including interpreters, compilers, and programs.
 
 ## Projects
@@ -204,6 +204,7 @@ language, including interpreters, compilers, and programs.
 | [codewars](javascript/msucorey-codewars)      | Corey Wofford    | JavaScript | interpreter  | 2016-09-02 | [GitHub](https://github.com/msucorey/codewars) |
 | [whitespace-python](python/dwayne)            | Dwayne R. Crooks | Python     | interpreter  | 2016-08-31 | [GitHub](https://github.com/dwayne/whitespace-python) |
 | [ws-frontend](cpp/sonicyang-ws-frontend)      | Yang Chung-Fan   | C++, LLVM  | compiler     | 2016-08-20 | [GitHub](https://github.com/sonicyang/ws-frontend) |
+| [LALRPOP: Writing a custom lexer](rust/lalrpop) | Mako           | Rust       | parser       | 2016-08-17 | [GitHub](https://github.com/lalrpop/lalrpop), [GitHub](https://github.com/lalrpop/lalrpop/tree/master/doc/whitespace/src), [lalrpop.github.io](https://lalrpop.github.io/lalrpop/lexer_tutorial/002_writing_custom_lexer.html), [GitHub](https://github.com/lalrpop/lalrpop/blob/master/doc/src/lexer_tutorial/002_writing_custom_lexer.md) |
 | [Whitespace](r/bmazoure)                      | Bogdan Mazoure   | R          | interpreter, grammar DFA | 2016-07-30 | [GitHub](https://github.com/bmazoure/whitespace) |
 | [White++](cpp/marcellippmann-whitepp)         | Marcel Lippmann  | C++        | interpreter  | 2016-07-27 | [GitHub](https://github.com/wspace/marcellippmann-whitepp), [GitHub (archive)](https://web.archive.org/web/20200906224652/https://github.com/marcellippmann/Whitepp/) |
 | [Puzzles](javascript/syntaqx-puzzles)         | Chase Pierce     | JavaScript | interpreter  | 2016-07-24 | [GitHub](https://github.com/syntaqx/puzzles) |

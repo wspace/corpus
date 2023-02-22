@@ -713,6 +713,9 @@
 [submodule "rust/keirua/whitespace-rs"]
 	path = rust/keirua/whitespace-rs
 	url = https://github.com/Keirua/whitespace-rs
+[submodule "rust/lalrpop/lalrpop"]
+	path = rust/lalrpop/lalrpop
+	url = https://github.com/lalrpop/lalrpop
 [submodule "rust/luminight/rustws"]
 	path = rust/luminight/rustws
 	url = https://github.com/Luminighty/rustws

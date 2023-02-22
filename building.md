@@ -185,6 +185,7 @@ Projects that can be built with Docker:
 - rust/jayshua
 - rust/kaisugi
 - rust/keirua
+- rust/lalrpop
 - rust/luminight: No entrypoint
 - rust/nareshganduri
 - rust/omurakazuaki
