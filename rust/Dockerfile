@@ -1,4 +1,4 @@
-FROM rust:1.61
+FROM rust:1.67
 
 # Cache crates.io index
 WORKDIR /stub
