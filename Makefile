@@ -62,7 +62,9 @@ update_submodules_force:
 
 .PHONY: list_submodules
 list_submodules:
-	@git submodule--helper list | cut -b51-
+	@git ls-files --stage | grep ^160000 | cut -b51-
+# Alternatively:
+# git submodule foreach --quiet 'echo $name'
 
 .PHONY: list_project_json
 list_project_json:
