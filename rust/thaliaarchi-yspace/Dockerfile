@@ -1,5 +1,7 @@
-FROM wspace-corpus/rust AS builder
+FROM rust:1.67 AS builder
 
+ENV CARGO_REGISTRIES_CRATES_IO_PROTOCOL sparse
+RUN rustup override set nightly
 WORKDIR /yspace
 COPY yspace .
 RUN cargo test
