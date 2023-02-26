@@ -1,6 +1,6 @@
 FROM alpine AS builder
 
-RUN apk add make g++ flex bison
+RUN apk add --no-cache make g++ flex bison
 WORKDIR /whitespace_compiler
 COPY whitespace_compiler .
 RUN make

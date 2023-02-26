@@ -1,6 +1,6 @@
 FROM alpine AS builder
 
-RUN apk add g++
+RUN apk add --no-cache g++
 WORKDIR /Whitespace-compiler
 COPY Whitespace-compiler .
 RUN g++ -O3 -static -o pre pre.cpp

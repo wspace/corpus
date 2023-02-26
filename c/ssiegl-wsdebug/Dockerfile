@@ -1,6 +1,6 @@
 FROM alpine AS builder
 
-RUN apk add make gcc g++ gmp-dev readline-dev
+RUN apk add --no-cache make gcc g++ gmp-dev readline-dev
 WORKDIR /wsdebug
 COPY wsdebug .
 RUN ./configure && make

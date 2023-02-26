@@ -1,6 +1,6 @@
 FROM alpine AS builder
 
-RUN apk add make crystal
+RUN apk add --no-cache make crystal
 WORKDIR /spiceweight
 COPY spiceweight .
 RUN make

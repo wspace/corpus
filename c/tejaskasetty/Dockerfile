@@ -1,6 +1,6 @@
 FROM alpine AS builder
 
-RUN apk add make gcc musl-dev flex bison
+RUN apk add --no-cache make gcc musl-dev flex bison
 WORKDIR /ws-compiler
 COPY ws-compiler/flex-bison/262_267_256 .
 RUN make

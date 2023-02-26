@@ -1,6 +1,6 @@
 FROM alpine AS builder
 
-RUN apk add make gcc musl-dev perl
+RUN apk add --no-cache make gcc musl-dev perl
 WORKDIR /ws
 COPY ws .
 RUN perl parsegen.pl parse.def > gencode.c

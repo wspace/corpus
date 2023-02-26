@@ -1,6 +1,6 @@
 FROM alpine AS builder
 
-RUN apk add g++
+RUN apk add --no-cache g++
 WORKDIR /Whitespace-Interpreter
 COPY Whitespace-Interpreter .
 RUN g++ -O3 -static -o ws Lexer.cc Parser.cc

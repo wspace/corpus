@@ -1,6 +1,6 @@
 FROM alpine AS builder
 
-RUN apk add make gcc musl-dev
+RUN apk add --no-cache make gcc musl-dev
 WORKDIR /blacktime
 COPY blacktime .
 RUN make

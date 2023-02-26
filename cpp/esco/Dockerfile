@@ -1,6 +1,6 @@
 FROM alpine AS builder
 
-RUN apk add make g++ gmp-dev
+RUN apk add --no-cache make g++ gmp-dev
 WORKDIR /esco
 COPY esco .
 RUN ./configure && make

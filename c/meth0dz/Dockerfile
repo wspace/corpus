@@ -1,6 +1,6 @@
 FROM alpine AS builder
 
-RUN apk add gcc musl-dev
+RUN apk add --no-cache gcc musl-dev
 WORKDIR /whitespace
 COPY whitespace .
 RUN gcc -O3 -static -o whitespace whitespace.c

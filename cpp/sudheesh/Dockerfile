@@ -1,6 +1,6 @@
 FROM alpine AS builder
 
-RUN apk add g++
+RUN apk add --no-cache g++
 WORKDIR /Whitespace-Interpreter-C-
 COPY Whitespace-Interpreter-C- .
 RUN g++ -O3 -static -o space space.cpp

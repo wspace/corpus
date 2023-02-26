@@ -1,6 +1,6 @@
 FROM alpine AS builder
 
-RUN apk add g++
+RUN apk add --no-cache g++
 WORKDIR /Cupertino-WhiteSpace-Interperter
 COPY Cupertino-WhiteSpace-Interperter .
 RUN g++ -O3 -static -o whitespace src/*.cpp

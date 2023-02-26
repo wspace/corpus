@@ -1,6 +1,6 @@
 FROM alpine AS builder
 
-RUN apk add cmake make gcc g++
+RUN apk add --no-cache cmake make gcc g++
 WORKDIR /whitespace-interpreter
 COPY whitespace-interpreter/src .
 RUN gcc -O3 -static -o interpreter *.c

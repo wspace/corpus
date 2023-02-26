@@ -1,6 +1,6 @@
 FROM alpine AS builder
 
-RUN apk add bash g++
+RUN apk add --no-cache bash g++
 WORKDIR /whitespace
 COPY whitespace .
 RUN bash build.sh release wspace

@@ -1,6 +1,6 @@
 FROM alpine AS builder
 
-RUN apk add make g++
+RUN apk add --no-cache make g++
 WORKDIR /wspace
 COPY wspace .
 RUN make

@@ -1,6 +1,6 @@
 FROM alpine AS builder
 
-RUN apk add make gcc musl-dev
+RUN apk add --no-cache make gcc musl-dev
 WORKDIR /utils/limelib
 COPY limelib .
 RUN make

@@ -2,7 +2,7 @@ FROM wspace-corpus/go/pocke-gows AS gows
 
 FROM wspace-corpus/ruby/pocke-akaza
 
-RUN apk add bash
+RUN apk add --no-cache bash
 COPY --from=gows /gows /usr/local/bin
 WORKDIR /self-hosting-whitespace
 COPY self-hosting-whitespace run.bash ./

@@ -1,6 +1,6 @@
 FROM alpine AS builder
 
-RUN apk add make clang g++
+RUN apk add --no-cache make clang g++
 WORKDIR /wsInt
 COPY wsInt .
 RUN make CPPFLAGS='-O3 -static'

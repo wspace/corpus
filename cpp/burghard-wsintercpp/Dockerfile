@@ -1,6 +1,6 @@
 FROM alpine AS builder
 
-RUN apk add g++
+RUN apk add --no-cache g++
 WORKDIR /wsintercpp
 COPY wsintercpp .
 RUN g++ -O3 -static -o inter inter.cpp

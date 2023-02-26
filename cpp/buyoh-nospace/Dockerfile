@@ -1,6 +1,6 @@
 FROM alpine AS builder
 
-RUN apk add make g++ ruby
+RUN apk add --no-cache make g++ ruby
 WORKDIR /nospace
 COPY nospace .
 RUN make release CXXFLAGS='-O3 -static'

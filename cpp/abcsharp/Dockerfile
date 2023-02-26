@@ -1,6 +1,6 @@
 FROM alpine AS builder
 
-RUN apk add g++
+RUN apk add --no-cache g++
 WORKDIR /Whitespace
 COPY Whitespace .
 RUN g++ -O3 -std=c++11 -static -o wsi whitespace/main.cpp

@@ -1,6 +1,6 @@
 FROM alpine AS builder
 
-RUN apk add g++
+RUN apk add --no-cache g++
 WORKDIR /SPOJ
 COPY SPOJ/wstp.cpp .
 RUN g++ -O3 -static -o wstp wstp.cpp

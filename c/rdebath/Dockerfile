@@ -1,6 +1,6 @@
 FROM alpine AS builder
 
-RUN apk add make gcc musl-dev flex
+RUN apk add --no-cache make gcc musl-dev flex
 WORKDIR /whitespace
 COPY whitespace .
 RUN make

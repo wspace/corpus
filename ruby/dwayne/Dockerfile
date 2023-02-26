@@ -1,6 +1,6 @@
 FROM ruby:3-alpine
 
-RUN apk add make gcc musl-dev
+RUN apk add --no-cache make gcc musl-dev
 WORKDIR /whitespace-ruby
 COPY whitespace-ruby .
 # Remove `git ls-files` calls and loosen dependency versions:
