@@ -74,6 +74,7 @@
       [whitespace unbleach](https://gist.github.com/search?o=desc&q=whitespace+unbleach&s=updated),
       [compsoc.dur.ac.uk whitespace](https://gist.github.com/search?o=desc&q=compsoc.dur.ac.uk+whitespace&s=updated)
   - GitLab: [whitespace](https://gitlab.com/explore?name=whitespace&sort=latest_activity_desc)
+  - Launchpad: [whitespace](https://launchpad.net/projects?text=whitespace)
   - SourceForge: [whitespace](https://sourceforge.net/directory/?q=whitespace&sort=update)
   - Google Code: [whitespace](https://code.google.com/archive/search?q=whitespace)
   - Bitbucket: [whitespace](https://bitbucket.org/repo/all?name=whitespace)
