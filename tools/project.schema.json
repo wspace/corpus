@@ -368,6 +368,7 @@
               "Haskell cmdargs",
               "Haskell optparse-applicative",
               "Java org.apache.commons.cli",
+              "JavaScript Commander.js",
               "OCaml Arg",
               "Objective-C getopt",
               "Perl Getopt::Std",

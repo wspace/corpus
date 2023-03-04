@@ -10,5 +10,6 @@
   "source": ["https://github.com/loklaan/zerowidth-lang"],
   "package": { "name": "zerospace-lang", "manager": "npm", "url": "https://www.npmjs.com/package/zerospace-lang" },
   "relations": [{ "id": "javascript/vii5ard-whitelips-ide", "type": "fork" }],
-  "mappings": [{ "space": "&#8203;", "tab": "&#8204;", "lf": "\n", "extension": "zw" }]
+  "mappings": [{ "space": "&#8203;", "tab": "&#8204;", "lf": "\n", "extension": "zw" }],
+  "commands": [{ "bin": "index.js", "usage": "[<file>]", "input": "<file> or stdin" }]
 }

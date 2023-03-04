@@ -39,8 +39,7 @@
     {
       "type": "disassembler",
       "bin": "whitespacec",
-      "install_dependencies": "npm install",
-      "usage": "$0",
+      "usage": "",
       "input": "stdin",
       "output": "stdout",
       "notes": "Disassembles to JSON"

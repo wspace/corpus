@@ -15,5 +15,6 @@
   },
   "relations": [{ "id": "javascript/vii5ard-whitelips-ide", "type": "fork" }],
   "whitespace": { "extension": "ws" },
-  "programs": [{ "path": "tests.ws", "spec_version": "0.2" }]
+  "programs": [{ "path": "tests.ws", "spec_version": "0.2" }],
+  "commands": [{ "bin": "index.js", "usage": "[<file>]", "input": "<file> or stdin" }]
 }

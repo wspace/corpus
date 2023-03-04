@@ -4,7 +4,7 @@
   "authors": ["Susisu"],
   "license": "MIT",
   "languages": ["JavaScript"],
-  "tags": ["interpreter", "assembler"],
+  "tags": ["interpreter", "assembler", "disassembler"],
   "date": "2016-04-12 15:01:22 +0900",
   "spec_version": "0.3",
   "source": ["https://github.com/susisu/Whitespace-JS"],
@@ -13,5 +13,88 @@
     "manager": "npm",
     "url": "https://www.npmjs.com/package/@susisu/whitespace-js"
   },
+  "assembly": {
+    "mnemonics": {
+      "push": ["push <number>"],
+      "dup": ["duplicate"],
+      "copy": ["refer <number>"],
+      "swap": ["swap"],
+      "drop": ["discard"],
+      "slide": ["slide <number>"],
+      "add": ["add"],
+      "sub": ["subtract"],
+      "mul": ["multiple"],
+      "div": ["divide"],
+      "mod": ["modulo"],
+      "store": ["store"],
+      "retrieve": ["retrieve"],
+      "label": ["mark <label>"],
+      "call": ["call <label>"],
+      "jmp": ["jump <label>"],
+      "jz": ["ifzero <label>"],
+      "jn": ["ifnegative <label>"],
+      "ret": ["return"],
+      "end": ["end"],
+      "printc": ["putchar"],
+      "printi": ["print"],
+      "readc": ["getchar"],
+      "readi": ["read"]
+    },
+    "patterns": {
+      "ascii_name": "BS|HT|LF|VT|FF|CR|SO|SI|EM|FS|GS|RS|US|SP|NUL|SOH|STX|ETX|EOT|ENQ|ACK|BEL|DLE|DC1|DC2|DC3|DC4|NAK|SYN|ETB|CAN|SUB|ESC|DEL",
+      "char_literal": "'([^'\\\\\\u0000-\\u001a]|<escape_code>)'",
+      "char_num": "[0-9]+|o[0-7]+|x[0-9a-fA-F]+",
+      "escape_code": "\\\\([abfnrtv\\\\\\\"']|<char_num>|<ascii_name>|^[A-Z])",
+      "integer": "[+-]?([0-9]+|0[Xx][0-9a-fA-F]+|0[Oo][0-7]+)",
+      "label": "<string>",
+      "number": "<integer>|<char_literal>",
+      "string_escape_empty": "\\\\&",
+      "string_gap": "\\\\[ \\f\\n\\r\\t\\v]+\\\\",
+      "string_literal": "\"([^\"\\\\\\u0000-\\u001a]|<string_gap>|<string_escape_empty>|<escape_code>)*\""
+    },
+    "case_sensitive_instructions": true,
+    "line_comments": ["#"],
+    "indentation": "",
+    "notes": "<char_num> greedily consumes digits for the appropriate base and converts it to the UTF-8 encoding for it as an integer using String.fromCharCode (surrogate halves are allowed and values above U+FFFF are truncated). <string_gap> and <string_escape_empty> both parse to the empty string. The combinator for character literals is at https://github.com/susisu/loquat/blob/master/packages/token/lib/token.js#L245-L339. Quirks: x and o are lowercase-only for escapes and case-insensitive for integers, only 26 control characters can be escaped with the \\^ form, and string and char literals disallow a strange range of literal control characters."
+  },
+  "commands": [
+    {
+      "type": "interpreter",
+      "bin": "bin/wspace",
+      "usage": "[options] <file>",
+      "input": "<file>",
+      "options": [
+        { "short": "v", "long": "version", "desc": "output the version number" },
+        { "short": "d", "long": "debug", "desc": "dump instruction, stack and heap after each instruction" },
+        { "short": "e", "long": "eval", "arg": "program", "arg_required": true, "desc": "evaluate program" },
+        { "short": "n", "long": "nullterm", "desc": "terminate input with a NULL character" },
+        { "short": "u", "long": "unwspace", "desc": "parse program as UnWhitespace" },
+        { "short": "w", "long": "no-warnings", "desc": "suppress warnings" },
+        { "short": "h", "long": "help", "desc": "output usage information" }
+      ],
+      "option_parse": "JavaScript Commander.js"
+    },
+    {
+      "type": "assembler",
+      "bin": "bin/unws2ws",
+      "usage": "[options] <file>",
+      "options": [
+        { "short": "v", "long": "version", "desc": "output the version number" },
+        { "short": "h", "long": "help", "desc": "output usage information" }
+      ],
+      "option_parse": "JavaScript Commander.js"
+    },
+    {
+      "type": "disassembler",
+      "bin": "bin/ws2unws",
+      "usage": "[options] <file>",
+      "options": [
+        { "short": "v", "long": "version", "desc": "output the version number" },
+        { "short": "h", "long": "help", "desc": "output usage information" }
+      ],
+      "option_parse": "JavaScript Commander.js",
+      "notes": "Formats labels as strings of sequences of ' ', '\t', and '\n', which will not parse back to the same label."
+    }
+  ],
   "notes": "Also published identically as https://www.npmjs.com/package/notrun-nocode"
 }

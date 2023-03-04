@@ -90,12 +90,19 @@ Projects that can be built with Docker:
 - java/thatguy977
 - java/wrotycz: Needs Codewars entrypoint
 - java/wysang
+- javascript/dexteryy-grassmudmonkey
 - javascript/ignovak: Needs Codewars entrypoint
+- javascript/kanra1412
+- javascript/loklaan-whitespace-lang
+- javascript/loklaan-zerowidth-lang
 - javascript/msucorey-codewars: Needs Codewars entrypoint
 - javascript/namhle-codewars: Needs Codewars entrypoint
+- javascript/rumpl
+- javascript/susisu
 - javascript/syntaqx-puzzles: Needs Codewars entrypoint
 - javascript/therebelrobot: Needs Codewars entrypoint
 - javascript/uraza: Needs Codewars entrypoint
+- javascript/wdalmut
 - jq/thaliaarchi-wsjq
 - lolcode/akers
 - ocaml/jgkaplan-wsc
@@ -234,21 +241,14 @@ Building status of individual executables:
 - ❌ java/yuukiaria-wseditor
 - ❌ javascript/arnauld
 - ❌ javascript/damle-evanescojs
-- ❌ javascript/dexteryy-grassmudmonkey
-- ❌ javascript/kanra1412
 - ❌ javascript/kmyk-translater
 - ❌ javascript/kosei
-- ❌ javascript/loklaan-whitespace-lang
-- ❌ javascript/loklaan-zerowidth-lang
 - ❌ javascript/luilak-ws2js
 - ❌ javascript/macocha-whitespacer
 - ❌ javascript/naokikp-wsi
 - ❌ javascript/pvdz-significant-whitespace
-- ❌ javascript/rumpl
-- ❌ javascript/susisu
 - ❌ javascript/tranbrian-generator
 - ❌ javascript/vii5ard-whitelips-ide
-- javascript/wdalmut/whitespacec
 - ⚠️ julia/goropikari-whitespaces/*unspecified*
 - ⚠️ kotlin/ze-space/build/libs/space.jar: `./gradlew` Dependencies not packaged
 - ❌ lua/carsonrueber

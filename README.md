@@ -222,7 +222,7 @@ language, including interpreters, compilers, and programs.
 | [Exploring Program Languages](whitespace/gregorymorrison-euler) | Gregory Morrison | Whitespace | programs | 2016-04-17 | [GitHub](https://github.com/gregorymorrison/euler1) |
 | [whiteplanes.cs](csharp/nutcrack-whiteplanes) | Takuya Katsurada | C#         | interpreter  | 2016-04-15 | [NuGet](https://www.nuget.org/packages/whiteplanes/), [GitHub](https://github.com/whiteplanes/whiteplanes.cs) |
 | [whitespace-compiler](python/meand)           | Adam Dinwoodie   | Python     | assembler    | 2016-04-13 | [GitHub](https://github.com/me-and/whitespace-compiler) |
-| [Whitespace-JS](javascript/susisu)            | Susisu           | JavaScript | interpreter, assembler | 2016-04-12 | [GitHub](https://github.com/susisu/Whitespace-JS) |
+| [Whitespace-JS](javascript/susisu)            | Susisu           | JavaScript | interpreter, assembler, disassembler | 2016-04-12 | [GitHub](https://github.com/susisu/Whitespace-JS) |
 | [Whitespace countdown 10...0](whitespace/kirens-countdown) | Erik Nygren | Whitespace | programs | 2016-04-10 | [GitHub Gist](https://gist.github.com/Kirens/9e3c99706773335366fa7bbf3cfd592d) |
 | [shi-mo/yukicoder/whitespace](ruby/shimo-yukicoder) | Yoshifumi Shimono (shi-mo) | Ruby, Whitespace | assembler, mapping, programs | 2016-03-21 | [GitHub](https://github.com/wspace/shimo-yukicoder), [GitHub](https://github.com/shi-mo/yukicoder/tree/master/whitespace), [yukicoder](https://yukicoder.me/users/1721) |
 | [whitespace-ruby](ruby/alesiong)              | alesiong         | Ruby       | program builder, interpreter, programs | 2016-03-05 | [GitHub](https://github.com/alesiong/whitespace-ruby) |

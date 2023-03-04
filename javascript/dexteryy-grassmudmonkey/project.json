@@ -9,5 +9,19 @@
   "spec_version": "0.3",
   "source": ["https://github.com/dexteryy/GrassMudMonkey"],
   "mappings": [{ "space": "草", "tab": "泥", "lf": "马" }],
-  "notes": "Can run in GrassMudHorse or Whitespace mode"
+  "commands": [
+    {
+      "bin": "grassmudmonkey.js",
+      "usage": "[-w | --whitespace] <file>",
+      "options": [
+        {
+          "short": "w",
+          "long": "whitespace",
+          "desc": "Use Whitespace syntax instead of GrassMudMonkey syntax"
+        }
+      ],
+      "option_parse": "manual",
+      "notes": "Augmented with cli.js"
+    }
+  ]
 }
