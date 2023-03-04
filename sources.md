@@ -135,7 +135,6 @@
   - Google Code:
       [grass-mud-horse (SVN)](https://code.google.com/archive/p/grass-mud-horse/),
       [whitespacesdk (SVN)](https://code.google.com/archive/p/whitespacesdk/),
-      [whitecoder (hg)](https://code.google.com/archive/p/whitecoder/),
       [google-code-export](https://github.com/google-code-export)
   - berliOS: [BackupTheBerlios](https://github.com/BackupTheBerlios)
   - [Software Heritage archive](https://archive.softwareheritage.org/)
