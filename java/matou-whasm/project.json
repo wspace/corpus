@@ -36,11 +36,15 @@
       "readi": ["readnum"]
     },
     "macros": [
-      { "name": "print", "args": ["str"], "replace": "push str[0] printc ... push str[n] printc" },
+      {
+        "name": "print",
+        "args": ["str"],
+        "replace": ["push str[0]", "printc", "…", "push str[n]", "printc"]
+      },
       {
         "name": "println",
         "args": ["str"],
-        "replace": "push str[0] printc ... push str[n] printc push '\\n' printc"
+        "replace": ["push str[0]", "printc", "…", "push str[n]", "printc", "push '\\n'", "printc"]
       }
     ],
     "patterns": { "char": ".", "label": ".+", "number": "0b[10]+|0x[0-9A-Fa-f]+|[+-]?[0-9]+" },

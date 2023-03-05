@@ -13,14 +13,131 @@
     "https://web.archive.org/web/20140610030912/http://www.burghard.info/Code/Whitespace/wsa.zip",
     "https://web.archive.org/web/20110911114338/http://www.burghard.info/Code/Whitespace/"
   ],
-  "assembly": { "extension": "wsa" },
+  "whitespace": { "extension": "ws" },
+  "assembly": {
+    "mnemonics": {
+      "push": ["Push <integer>"],
+      "dup": ["Doub"],
+      "swap": ["Swap"],
+      "drop": ["Pop"],
+      "add": ["Add"],
+      "sub": ["Sub"],
+      "mul": ["Mul"],
+      "div": ["Div"],
+      "mod": ["Mod"],
+      "store": ["Store"],
+      "retrieve": ["Retrive"],
+      "label": ["Label <label>"],
+      "call": ["Call <label>"],
+      "jmp": ["Jump <label>"],
+      "jz": ["JumpZ <label>"],
+      "jn": ["JumpN <label>"],
+      "ret": ["Ret"],
+      "end": ["Exit"],
+      "printc": ["OutC"],
+      "printi": ["OutN"],
+      "readc": ["InC"],
+      "readi": ["InN"],
+      "dumpstack": ["Debug_PrintStack"],
+      "dumpheap": ["Debug_PrintHeap"]
+    },
+    "macros": [
+      { "name": "Noop", "replace": [ ] },
+      { "name": "Include", "args": ["<file>"] },
+      { "name": "Option", "args": ["<option>"], "notes": "Declare <option> to be true" },
+      { "name": "IfOption", "args": ["<option>"], "notes": "Evaluate section <option> is true" },
+      { "name": "ElseIfOption", "args": ["<option>"], "notes": "Evaluate section <option> is true" },
+      { "name": "EndOption", "args": ["<option>"], "notes": "Close section" },
+      {
+        "name": "PushS",
+        "args": ["<string>"],
+        "replace": ["push 0", "push <sn>", "…", "push <s1>", "push <s0>"]
+      },
+      { "name": "Add", "args": ["<integer>"], "replace": ["push <integer>", "add"] },
+      { "name": "Sub", "args": ["<integer>"], "replace": ["push <integer>", "sub"] },
+      { "name": "Mul", "args": ["<integer>"], "replace": ["push <integer>", "mul"] },
+      { "name": "Div", "args": ["<integer>"], "replace": ["push <integer>", "div"] },
+      { "name": "Mod", "args": ["<integer>"], "replace": ["push <integer>", "mod"] },
+      { "name": "Store", "args": ["<integer>"], "replace": ["push <integer>", "store"] },
+      { "name": "Retrive", "args": ["<integer>"], "replace": ["push <integer>", "retrieve"] },
+      { "name": "Test", "args": ["<integer>"], "replace": ["dup", "push <integer>", "sub"] },
+      {
+        "name": "JumpP",
+        "args": ["<label>"],
+        "replace": [
+          "dup",
+          "jn __trans__<next>__0__",
+          "dup",
+          "jz __trans__<next>__0__",
+          "drop",
+          "jmp <label>",
+          "__trans__<next>__0__:",
+          "drop"
+        ],
+        "notes": "Jump if positive. <next> is the index of the next instruction."
+      },
+      {
+        "name": "JumpNP",
+        "args": ["<label>"],
+        "replace": ["jz __trans__<next>__1__", "jmp <label>", "__trans__<next>__1__:"],
+        "notes": "Jump if negative or positive. <next> is the index of the next instruction."
+      },
+      { "name": "JumpPN", "notes": "Same as JumpNP" },
+      {
+        "name": "JumpNZ",
+        "args": ["<label>"],
+        "replace": [
+          "dup",
+          "jn __trans__<next>__2__",
+          "dup",
+          "jz __trans__<next>__2__",
+          "jmp __trans__<next>__3__",
+          "__trans__<next>__2__:",
+          "drop",
+          "jmp <label>",
+          "__trans__<next>__3__:",
+          "drop"
+        ],
+        "notes": "Jump if negative or zero. <next> is the index of the next instruction."
+      },
+      {
+        "name": "JumpPZ",
+        "args": ["<label>"],
+        "replace": ["jn __trans__<next>__4__", "jmp <label>", "__trans__<next>__4__:"],
+        "notes": "Jump if positive or zero. <next> is the index of the next instruction."
+      },
+      {
+        "name": "ValueInteger",
+        "args": ["_<variable> <integer>"],
+        "replace": [ ],
+        "notes": "Integer constant definition"
+      },
+      {
+        "name": "ValueString",
+        "args": ["_<variable> <string>"],
+        "replace": [ ],
+        "notes": "String constant definition "
+      }
+    ],
+    "patterns": {
+      "integer": "<integer_literal>|_<variable>",
+      "string": "\"[^\"]*\"|_<variable>",
+      "whitespace_between_tokens": "[ \\t]"
+    },
+    "case_sensitive_instructions": false,
+    "line_comments": [";", "--"],
+    "block_comments": [{ "start": "{-", "end": "-}", "nestable": true }],
+    "usage": ["assembler"],
+    "extension": "wsa",
+    "notes": "<integer_literal> is parsed with `(read s) :: Integer`. Assembler appends \"\\n\\n\\nquit\\n\\n\\n\" to the end of the .ws file."
+  },
   "mappings": [
     {
       "space": "a",
       "tab": "b",
       "lf": "c",
       "extension": "pws",
-      "notes": "Opcode and argument separated with space; each instruction followed by LF"
+      "notes": "Opcode and argument are separated with a space. Each instruction is followed by LF. Assembler appends \"\\n\\n\\n\" to the end of the .pws file."
     }
   ],
   "programs": [

@@ -13,6 +13,7 @@
     "https://web.archive.org/web/20150803032955/http://www.burghard.info/Code/Whitespace/wsinterws.zip",
     "https://web.archive.org/web/20110911114338/http://www.burghard.info/Code/Whitespace/"
   ],
+  "relations": [{ "id": "haskell/burghard-wsa", "type": "assembly" }],
   "whitespace": { "extension": "ws" },
   "assembly": {
     "mnemonics": {

@@ -99,10 +99,10 @@ type Project struct {
 			DumpTrace []string `json:"dumptrace,omitempty"`
 		} `json:"mnemonics,omitempty"`
 		Macros []struct {
-			Name    string   `json:"name"`
-			Args    []string `json:"args,omitempty"`
-			Replace string   `json:"replace,omitempty"`
-			Notes   string   `json:"notes,omitempty"`
+			Name    string    `json:"name"`
+			Args    []string  `json:"args,omitempty"`
+			Replace *[]string `json:"replace,omitempty"`
+			Notes   string    `json:"notes,omitempty"`
 		} `json:"macros,omitempty"`
 		Patterns                  map[string]string `json:"patterns,omitempty"`
 		CaseSensitiveInstructions *bool             `json:"case_sensitive_instructions,omitempty"`

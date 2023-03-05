@@ -49,13 +49,13 @@
     "macros": [
       {
         "name": "pushs <s>",
-        "replace": "push 0 push <sn> ... push <s1> push <s0>",
+        "replace": ["push 0", "push <sn>", "…", "push <s1>", "push <s0>"],
         "notes": "Uses dup for matching consecutive characters"
       },
-      { "name": "test <n>", "replace": "dup push <n> sub" },
-      { "name": "ifoption <x>", "replace": "#ifdef <x>" },
-      { "name": "endoption", "replace": "#endif" },
-      { "name": "include <file>", "replace": "#include \"<file>.h\"" }
+      { "name": "test <n>", "replace": ["dup", "push <n>", "sub"] },
+      { "name": "ifoption <x>", "replace": ["#ifdef <x>"] },
+      { "name": "endoption", "replace": ["#endif"] },
+      { "name": "include <file>", "replace": ["#include \"<file>.h\""] }
     ],
     "patterns": {
       "label": "\\.?[A-Za-z_$][A-Za-z0-9_$]*|[0-9]+",

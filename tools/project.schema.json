@@ -236,7 +236,7 @@
             "properties": {
               "name": { "type": "string" },
               "args": { "type": "array", "items": { "type": "string" } },
-              "replace": { "type": "string" },
+              "replace": { "type": "array", "items": { "type": "string" } },
               "notes": { "type": "string" }
             },
             "required": ["name"],
