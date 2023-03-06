@@ -201,8 +201,11 @@
   - knsctf:
       [#7 Programming](https://ksnctf.sweetduet.info/problem/7) ([on GitHub](https://github.com/search?o=desc&q=0962664770776731080774868826855754386638240000e&s=indexed&type=Code))
 - Stack Exchange
+  - Data dumps:
+      [Where are the Stack Exchange data dumps?](https://meta.stackexchange.com/questions/19579/where-are-the-stack-exchange-data-dumps),
+      [Data dumps on the Internet Archive](https://archive.org/details/stackexchange) (updated quarterly),
+      [Stack Exchange Data Explorer](https://data.stackexchange.com/codegolf/query/1717592/search-for-whitespace-in-post-bodies) (updated weekly)
   - Code Golf:
-      [Tips for golfing in Whitespace](https://codegolf.stackexchange.com/questions/48442/tips-for-golfing-in-whitespace),
       [Sandbox](https://codegolf.meta.stackexchange.com/questions/2140/sandbox-for-proposed-challenges?answertab=active)
 - Social media
   - Twitter:
