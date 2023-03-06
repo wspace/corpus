@@ -373,6 +373,7 @@ language, including interpreters, compilers, and programs.
 
 | Name                                     | Author           | Polyglot | Date                      | Spec | Source |
 | ---------------------------------------- | ---------------- | -------- | ------------------------- | ---- | ------ |
+| Significant Whitespace: Robbers          | Thalia Archibald | -        | 2023-03-06 17:54:20 -0700 | 0.2 | [Code Golf](https://codegolf.stackexchange.com/questions/103183/significant-whitespace-robbers/258852#258852), [GitHub](https://github.com/thaliaarchi/ws-challenges/blob/main/codegolf/significant_whitespace.md) |
 | Shortest Error Message                   | Thalia Archibald | -        | 2022-01-03 23:10:50 -0700 | 0.2 | [Code Golf](https://codegolf.stackexchange.com/questions/133840/shortest-error-message/240525#240525), [GitHub](https://github.com/thaliaarchi/ws-challenges/blob/main/codegolf/shortest_error.ws) |
 | "-rot" transform                         | Thalia Archibald | -        | 2021-09-16 22:00:08 +0200 | 0.2 | [Code Golf](https://codegolf.stackexchange.com/questions/233660/rot-transform/235444#235444) |
 | Print 0 to 100 without 1-9 characters    | aschepler        | -        | 2021-02-26 19:50:13 +0000 | 0.2 | [Code Golf](https://codegolf.stackexchange.com/questions/219576/print-0-to-100-without-1-9-characters/219869#219869) |
@@ -386,6 +387,7 @@ language, including interpreters, compilers, and programs.
 | Print a 10 by 10 grid of asterisks       | Kevin Cruijssen  | -        | 2018-05-25 09:35:34 +0000 | 0.2 | [Code Golf](https://codegolf.stackexchange.com/questions/88653/print-a-10-by-10-grid-of-asterisks/165417#165417) |
 | All Your Base Are Belong To Us (Restricted) | Kevin Cruijssen | -      | 2018-04-06 09:10:53 +0000 | 0.3 | [Code Golf](https://codegolf.stackexchange.com/questions/19171/all-your-base-are-belong-to-us-restricted/161445#161445) |
 | 404 - Unique 404 page not found          | Jo King          | 54 languages | 2018-01-22 11:55:35 +0000 | 0.2 | [Code Golf](https://codegolf.stackexchange.com/questions/153717/404-unique-404-page-not-found/153724#153724), [Code Golf](https://codegolf.stackexchange.com/revisions/153724/16), [GitHub Gist](https://gist.github.com/GrayJoKing/60ab9a603791381171c091bcc3eec189) |
+| Significant Whitespace: Cops             | Ephphatha        | -        | 2017-05-29 13:08:22 +0000 | 0.2 | [Code Golf](https://codegolf.stackexchange.com/questions/103182/significant-whitespace-cops/123333#123333) |
 | Shortest code to produce infinite output | Ephphatha        | -        | 2017-05-27 13:05:45 +0000 | 0.2 | [Code Golf](https://codegolf.stackexchange.com/questions/13152/shortest-code-to-produce-infinite-output/123091#123091) |
 | Add a language to a polyglot             | Chance           | 30 languages | 2017-01-06 01:09:43 +0000 | 0.2 | [Code Golf](https://codegolf.stackexchange.com/questions/102370/add-a-language-to-a-polyglot/105826#105826) |
 | The Letter A without A                   | SnoringFrog      | -        | 2016-08-23 15:16:50 +0000 | 0.2 | [Code Golf](https://codegolf.stackexchange.com/questions/90349/the-letter-a-without-a/90809#90809) |
