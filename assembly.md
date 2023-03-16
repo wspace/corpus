@@ -7,10 +7,10 @@ instructions, ranked by popularity.
 
 - `push` (110), `append` (2), `psh` (2), `push_num` (2), `<number>`, `<number_char>`, `pus`, `push_ch`, `push_number`, `push_number_stack_top`, `push_to_stack`, `pushchar`, `pushstack`, `setstacktop`
 - `dup` (75), `duplicate` (21), `copy` (5), `dupe` (5), `doub` (4), `dupl` (3), `sdupli` (3), `^`, `copystacktop`, `duplicate_last`, `duplicate_stack_top`, `duplicate_top`, `duplicatestack`
-- `copy` (58), `copynth` (3), `ref` (3), `scopy` (3), `copyn` (2), `dup_at` (2), "", `^<unsigned>`, `copy_n`, `copynthstack`, `dup2`, `duplicate_num`, `duplicate_value`, `duplicatenth`, `dupn`, `dupnum`, `grab`, `ncopy`, `nthcopytosetstacktop`, `pick`, `pull`, `refer`, `take`
+- `copy` (59), `copynth` (3), `ref` (3), `scopy` (3), `copyn` (2), `dup_at` (2), "", `^<unsigned>`, `copy_n`, `copynthstack`, `dup2`, `duplicate_num`, `duplicate_value`, `duplicatenth`, `dupn`, `dupnum`, `grab`, `ncopy`, `nthcopytosetstacktop`, `pick`, `pull`, `refer`, `take`
 - `swap` (107), `swp` (4), `sswap` (3), `exch`, `exchange`, `swa`, `swap_last`, `swap_two_stack_items`, `swapstack`, `swapstacktopsec`, `swicth`, `xchg`
 - `discard` (51), `pop` (41), `drop` (17), `sdiscard` (3), `disc` (2), `away`, `del`, `discard_stack_top`, `discard_top`, `discardstack`, `dsc`, `pop_number`, `remove`, `throwstacktop`
-- `slide` (61), `sslide` (3), `pop_x` (2), `slid` (2), "", `<unsigned>slide`, `away`, `discard_value`, `discardnum`, `discardtopn`, `move`, `remove`, `removenthinstack`, `skip`, `slde`, `sliden`, `slidenstack`, `slideoff`
+- `slide` (62), `sslide` (3), `pop_x` (2), `slid` (2), "", `<unsigned>slide`, `away`, `discard_value`, `discardnum`, `discardtopn`, `move`, `remove`, `removenthinstack`, `skip`, `slde`, `sliden`, `slidenstack`, `slideoff`
 - `add` (107), `addition` (4), `+` (3), `addtion` (2), `plus` (2), `adding`, `infixplus`, `op+`, `sum`
 - `sub` (95), `subtract` (13), `subtraction` (5), `-` (3), `minus` (2), `subt` (2), `infixminus`, `op-`, `substraction`
 - `mul` (83), `multiply` (11), `mult` (8), `multiplication` (6), `multi` (4), `*` (3), `multiple` (2), `times` (2), `infixtimes`, `op*`

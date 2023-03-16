@@ -112,6 +112,27 @@
       "outputs": ["advent/2021/7.out"],
       "spec_version": "0.3"
     },
+    {
+      "path": "advent/2022/1.wsf",
+      "generated": "advent/2022/1.ws",
+      "inputs": ["advent/2022/1.in"],
+      "outputs": ["advent/2022/1.out"],
+      "spec_version": "0.3"
+    },
+    {
+      "path": "advent/2022/2.wsf",
+      "generated": "advent/2022/2.ws",
+      "inputs": ["advent/2022/2.in"],
+      "outputs": ["advent/2022/2.out"],
+      "spec_version": "0.3"
+    },
+    {
+      "path": "advent/2022/3.wsf",
+      "generated": "advent/2022/3.ws",
+      "inputs": ["advent/2022/3.in"],
+      "outputs": ["advent/2022/3.out"],
+      "spec_version": "0.3"
+    },
     { "path": "codegolf/cowsay.wsf", "generated": "build/codegolf/cowsay.ws", "spec_version": "0.3" },
     { "path": "codegolf/luhn.ws", "aux": ["codegolf/luhn.wsf"], "spec_version": "0.3" },
     {
@@ -123,6 +144,26 @@
     {
       "path": "codegolf/shortest_error.ws",
       "aux": ["codegolf/shortest_error.wsf"],
+      "spec_version": "0.3"
+    },
+    {
+      "path": "codegolf/significant_whitespace_65_15.ws",
+      "aux": ["codegolf/significant_whitespace_65_15.wsf"],
+      "spec_version": "0.3"
+    },
+    {
+      "path": "codegolf/significant_whitespace_68_21.ws",
+      "aux": ["codegolf/significant_whitespace_68_21.wsf"],
+      "spec_version": "0.3"
+    },
+    {
+      "path": "codegolf/significant_whitespace_71_21.ws",
+      "aux": ["codegolf/significant_whitespace_71_21.wsf"],
+      "spec_version": "0.3"
+    },
+    {
+      "path": "codegolf/significant_whitespace_72_21.ws",
+      "aux": ["codegolf/significant_whitespace_72_21.wsf"],
       "spec_version": "0.3"
     },
     {
@@ -226,6 +267,7 @@
       "outputs": ["euler/8.out"],
       "spec_version": "0.3"
     },
+    { "path": "kattis/jumbojavelin.wsf", "generated": "kattis/jumbojavelin.ws", "spec_version": "0.2" },
     {
       "path": "misc/ascii4.wsf",
       "generated": "build/misc/ascii4.ws",
