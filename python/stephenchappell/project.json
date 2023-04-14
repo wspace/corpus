@@ -47,6 +47,14 @@
     "usage": ["assembler", "programs"],
     "extension": "wsa"
   },
+  "programs": [
+    {
+      "path": "Assembly/memory_manager.wsa",
+      "generated": "Programs/memory_manager.ws",
+      "spec_version": "0.3"
+    },
+    { "path": "Assembly/stack_calc.wsa", "generated": "Programs/stack_calc.ws", "spec_version": "0.3" }
+  ],
   "build_errors": "msvcrt module only exists on Windows",
   "commands": [
     {
