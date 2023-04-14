@@ -51,7 +51,3 @@ instructions, ranked by popularity.
 - `wsc`
 - `wsf`
 - `wss`
-
-## Need documentation
-
-- haskell/helvm-wsa

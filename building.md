@@ -226,7 +226,6 @@ Building status of individual executables:
 - ⚠️ haskell/haroldl-wspace-0.4/wspace: `make` Needs changes for latest Haskell
 - haskell/helvm-helma/dist-newstyle/build/x86\_64-osx/ghc-8.10.7/helma-0.6.10.0/x/helma/build/helma/helma: `cabal build`
 - haskell/helvm-helpa/dist-newstyle/build/x86\_64-osx/ghc-8.10.7/helpa-0.3.5.0/x/helpa/build/helpa/helpa: `cabal build`
-- ❌ haskell/helvm-wsa
 - ⚠️ haskell/jhmcstanton-marginal/*unspecified*: `stack build` `stack setup` fails with link error
 - ❌ haskell/matsubara
 - ❌ haskell/soimort-grassmudhorse

@@ -262,9 +262,6 @@
 [submodule "haskell/helvm-helpa/helpa"]
 	path = haskell/helvm-helpa/helpa
 	url = https://github.com/helvm/helpa
-[submodule "haskell/helvm-wsa/wsa"]
-	path = haskell/helvm-wsa/wsa
-	url = https://github.com/helvm/wsa
 [submodule "haskell/jhmcstanton-marginal/marginal"]
 	path = haskell/jhmcstanton-marginal/marginal
 	url = https://github.com/jhmcstanton/marginal

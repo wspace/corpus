@@ -62,6 +62,5 @@
     "extension": "wsa"
   },
   "programs": [{ "path": "wsinterws.wsa", "generated": "wsinterws.ws", "aux": ["run.txt"] }],
-  "notes": "Released under the GPL (https://web.archive.org/web/20090123074209/http://burghard.info:80/Code/index.html)",
   "todo": "Unclear whether block comments are nestable; check haskell/burghard-wsa"
 }

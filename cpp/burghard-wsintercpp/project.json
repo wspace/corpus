@@ -15,6 +15,5 @@
   ],
   "whitespace": {
     "nonstandard": [{ "name": "debug_printstack", "seq": "LLSSS" }, { "name": "debug_printheap", "seq": "LLSST" }]
-  },
-  "notes": "Released under the GPL (https://web.archive.org/web/20090123074209/http://burghard.info:80/Code/index.html)"
+  }
 }
