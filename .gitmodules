@@ -495,8 +495,8 @@
 	path = python/bornlex/Whitespace-interpreter
 	url = https://github.com/Bornlex/Whitespace-interpreter
 [submodule "python/cybis-hapyli/hapyli"]
-	path = python/cybis-hapyli/hapyli
-	url = https://github.com/wspace/hapyli
+	path = python/cybis-hapyli/HaPyLi
+	url = https://github.com/wspace/cybis-hapyli
 [submodule "python/dalleng/Whitespace"]
 	path = python/dalleng/Whitespace
 	url = https://github.com/dalleng/Whitespace
