@@ -10,6 +10,7 @@
     ]
   },
   "files.associations": { "*.md.tmpl": "markdown" },
+  "git.autoRepositoryDetection": false,
   "git.detectSubmodules": false,
   "json.schemas": [{ "fileMatch": ["project.json"], "url": "/tools/project.schema.json" }],
   "[markdown]": { "editor.wordWrap": "off" }
