@@ -1,11 +1,11 @@
 {
   "id": "python/cybis-hapyli",
   "name": "HaPyLi",
-  "authors": ["Kevin Gundlach (Cybis)"],
+  "authors": ["Kevin (Cybis)"],
   "license": "none",
   "languages": ["Python"],
   "tags": ["language", "interpreter", "standard library", "programs"],
-  "date": "2009-03-03 19:44:31 +0000",
+  "date": "2009-01-25 05:35:53 +0000",
   "spec_version": "0.3",
   "source": [
     "https://github.com/wspace/cybis-hapyli",
@@ -73,6 +73,5 @@
     { "path": "tutorial/power1.hpl", "generated": "tutorial/power1.ws", "spec_version": "0.3" },
     { "path": "tutorial/power2.hpl", "generated": "tutorial/power2.ws", "spec_version": "0.3" },
     { "path": "tutorial/prompt.hpl", "generated": "tutorial/prompt.ws", "spec_version": "0.3" }
-  ],
-  "notes": "Date from Stack Overflow question rather than earliest known revision (2009-04-12 08:08:49.078 +0000)"
+  ]
 }
