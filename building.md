@@ -143,7 +143,6 @@ Projects that can be built with Docker:
 - python/katc
 - python/kraterkraken
 - python/lachlancourt
-- python/marktraceur-redlandside: PyQt version 4 not installed
 - python/maximegoyette: Needs Codewars entrypoint
 - python/mcolom
 - python/meand
@@ -267,6 +266,7 @@ Building status of individual executables:
 - ❌ php/jseidl-wcc
 - php/mattparker/src/PHPWhiteSpace.php
 - ❌ python/cybis-hapyli
+- ⚠️ python/marktraceur-redlandside/main.py
 - ❌ python/res-trans32
 - r/bmazoure/R/whitespace.R
 - scala/dashlambda-eso/target/scala-2.13/eso\_2.13-2.6.1.jar: `sbt assembly`

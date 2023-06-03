@@ -565,7 +565,7 @@
 	url = https://github.com/LachlanCourt/whitespace_transpiler
 [submodule "python/marktraceur-redlandside/redlandside"]
 	path = python/marktraceur-redlandside/redlandside
-	url = https://github.com/MarkTraceur/redlandside
+	url = https://github.com/wspace/marktraceur-redlandside
 [submodule "python/maximegoyette/whitespace_interpreter"]
 	path = python/maximegoyette/whitespace_interpreter
 	url = https://github.com/MaximeGoyette/whitespace_interpreter
