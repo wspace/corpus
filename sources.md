@@ -131,7 +131,6 @@
       [github-artifact-exporter](https://github.com/github/github-artifact-exporter)
   - GitHub Gist: [whitespace](https://gist.github.com/search?q=whitespace)
   - SourceForge:
-      [Spaced IDE (SVN)](https://sourceforge.net/projects/spacedide/),
       [Whitespace IDE (CVS)](https://sourceforge.net/projects/whitespaceide/)
   - Google Code:
       [grass-mud-horse (SVN)](https://code.google.com/archive/p/grass-mud-horse/),

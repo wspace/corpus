@@ -302,6 +302,9 @@
 [submodule "java/kmizu/ws_interpreter"]
 	path = java/kmizu/ws_interpreter
 	url = https://github.com/kmizu/ws_interpreter
+[submodule "java/kreutzer-spacedide/spacedide"]
+	path = java/kreutzer-spacedide/spacedide
+	url = https://github.com/wspace/kreutzer-spacedide
 [submodule "java/matou-whasm/whasm"]
 	path = java/matou-whasm/whasm
 	url = https://github.com/matou/whasm
