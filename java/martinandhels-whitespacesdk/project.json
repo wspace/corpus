@@ -1,0 +1,89 @@
+{
+  "id": "java/martinandhels-whitespacesdk",
+  "name": "whitespacesdk",
+  "authors": ["MArtin SHerratt"],
+  "license": "GPL-3.0-or-later",
+  "languages": ["Java"],
+  "tags": ["interpreter", "assembler", "programs"],
+  "date": "2010-04-22 15:21:24 +0100",
+  "spec_version": "0.3",
+  "source": [
+    "https://github.com/wspace/martinandhels-whitespacesdk",
+    "https://code.google.com/archive/p/whitespacesdk/"
+  ],
+  "whitespace": {
+    "nonstandard": [
+      { "name": "Invert", "seq": "STT", "desc": "Invert the stack" },
+      { "name": "OutputStack", "seq": "TLSSS", "desc": "Output entire stack as character" }
+    ],
+    "extension": "wss"
+  },
+  "assembly": {
+    "mnemonics": {
+      "push": ["Push"],
+      "dup": ["Duplicate"],
+      "copy": ["Copy"],
+      "swap": ["Swap"],
+      "drop": ["Discard"],
+      "slide": ["Slide"],
+      "add": ["Add"],
+      "sub": ["Subtract"],
+      "mul": ["Multiply"],
+      "div": ["Divide"],
+      "mod": ["Mod"],
+      "store": ["Store"],
+      "retrieve": ["Retrieve"],
+      "label": ["Label"],
+      "call": ["Gosub"],
+      "jmp": ["Goto"],
+      "jz": ["GotoIfZero"],
+      "jn": ["GotoIfNegative"],
+      "ret": ["EndSub"],
+      "end": ["End"],
+      "printc": ["OutputChar"],
+      "printi": ["OutputNumber"],
+      "readc": ["InputChar"],
+      "readi": ["InputNumber"]
+    },
+    "macros": [{ "name": "NullOp", "replace": [ ] }],
+    "patterns": { "number": "-?[0-9]+|char ." },
+    "case_sensitive_instructions": false,
+    "multiple_per_line": false,
+    "line_comments": ["#"],
+    "indentation": "",
+    "extension": "txt"
+  },
+  "programs": [
+    {
+      "path": "src/uk/co/mash/whitespace/example/raw_source/add_2_numbers.wss",
+      "aux": [
+        "src/uk/co/mash/whitespace/example/editor/add_2_numbers.txt",
+        "src/uk/co/mash/whitespace/example/listing/add_2_numbers_listing.txt"
+      ]
+    },
+    {
+      "path": "src/uk/co/mash/whitespace/example/raw_source/count_to_10.wss",
+      "aux": ["src/uk/co/mash/whitespace/example/listing/count_to_10_listing.txt"]
+    },
+    { "path": "src/uk/co/mash/whitespace/example/raw_source/email.wss" },
+    {
+      "path": "src/uk/co/mash/whitespace/example/raw_source/enter_number.wss",
+      "aux": [
+        "src/uk/co/mash/whitespace/example/editor/enter_number.txt",
+        "src/uk/co/mash/whitespace/example/listing/enter_number_listing.txt"
+      ]
+    },
+    {
+      "path": "src/uk/co/mash/whitespace/example/raw_source/factorial.wss",
+      "aux": [
+        "src/uk/co/mash/whitespace/example/editor/factorial.txt",
+        "src/uk/co/mash/whitespace/example/listing/factorial_listing.txt"
+      ]
+    },
+    { "path": "src/uk/co/mash/whitespace/example/raw_source/hello_whitespace.wss" },
+    {
+      "path": "src/uk/co/mash/whitespace/example/raw_source/you_are_a_twat.wss",
+      "aux": ["src/uk/co/mash/whitespace/example/listing/you_are_a_twat_listing.txt"]
+    }
+  ]
+}

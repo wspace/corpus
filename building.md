@@ -233,6 +233,7 @@ Building status of individual executables:
 - ❌ java/brunokim
 - ❌ java/kmizu
 - ❌ java/kreutzer-spacedide
+- ❌ java/martinandhels-whitespacesdk
 - ❌ java/ralucaa-whitespace4j
 - ⚠️ java/vyo-kairos/build/libs/vyo-kairos-1.0.0-all.jar: `./gradlew shadowJar`
 - ❌ java/yawkat

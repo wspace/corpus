@@ -76,7 +76,10 @@
   - GitLab: [whitespace](https://gitlab.com/explore?name=whitespace&sort=latest_activity_desc)
   - Launchpad: [whitespace](https://launchpad.net/projects?text=whitespace)
   - SourceForge: [whitespace](https://sourceforge.net/directory/?q=whitespace&sort=update)
-  - Google Code: [whitespace](https://code.google.com/archive/search?q=whitespace)
+  - Google Code:
+      [whitespace](https://code.google.com/archive/search?q=whitespace),
+      [Schema](https://code.google.com/archive/schema),
+      [google-code-export](https://github.com/google-code-export)
   - Bitbucket: [whitespace](https://bitbucket.org/repo/all?name=whitespace)
   - sourcehut: [whitespace](https://sr.ht/projects?search=whitespace&sort=recently-updated)
   - berliOS: [BackupTheBerlios](https://github.com/BackupTheBerlios)
@@ -132,11 +135,10 @@
       [github-artifact-exporter](https://github.com/github/github-artifact-exporter)
   - GitHub Gist: [whitespace](https://gist.github.com/search?q=whitespace)
   - SourceForge:
-      [Whitespace IDE (CVS)](https://sourceforge.net/projects/whitespaceide/)
+      [Whitespace IDE (CVS)](https://sourceforge.net/projects/whitespaceide/),
+      [rsvndump](https://rsvndump.sourceforge.io/)
   - Google Code:
-      [grass-mud-horse (SVN)](https://code.google.com/archive/p/grass-mud-horse/),
-      [whitespacesdk (SVN)](https://code.google.com/archive/p/whitespacesdk/),
-      [google-code-export](https://github.com/google-code-export)
+      [grass-mud-horse (SVN)](https://code.google.com/archive/p/grass-mud-horse/)
   - [Software Heritage archive](https://archive.softwareheritage.org/)
 - Internet Archive
   - Durham CompSoc:
