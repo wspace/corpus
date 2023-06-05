@@ -79,6 +79,7 @@
   - Google Code: [whitespace](https://code.google.com/archive/search?q=whitespace)
   - Bitbucket: [whitespace](https://bitbucket.org/repo/all?name=whitespace)
   - sourcehut: [whitespace](https://sr.ht/projects?search=whitespace&sort=recently-updated)
+  - berliOS: [BackupTheBerlios](https://github.com/BackupTheBerlios)
   - Software Heritage archive: [whitespace interpreter](https://archive.softwareheritage.org/browse/search/?q=whitespace+interpreter&with_visit=true&with_content=true&search_metadata=true)
 - Package managers
   - CPAN: [whitespace interpreter](https://metacpan.org/search?q=whitespace+interpreter)
@@ -136,7 +137,6 @@
       [grass-mud-horse (SVN)](https://code.google.com/archive/p/grass-mud-horse/),
       [whitespacesdk (SVN)](https://code.google.com/archive/p/whitespacesdk/),
       [google-code-export](https://github.com/google-code-export)
-  - berliOS: [BackupTheBerlios](https://github.com/BackupTheBerlios)
   - [Software Heritage archive](https://archive.softwareheritage.org/)
 - Internet Archive
   - Durham CompSoc:

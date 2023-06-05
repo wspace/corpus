@@ -10,9 +10,11 @@
   "source": [
     "https://github.com/wspace/ssiegl-wsdebug",
     "https://wspace.github.io/ssiegl-wsdebug/",
-    "https://github.com/BackupTheBerlios/wsdebug",
     "https://sourceforge.net/projects/wsdebug.berlios/",
-    "https://web.archive.org/web/20041031040027/http://wsdebug.berlios.de:80/"
+    "https://web.archive.org/web/20041031040027/http://wsdebug.berlios.de:80/",
+    "https://github.com/BackupTheBerlios/wsdebug",
+    "https://github.com/BackupTheBerlios/wsdebug-devel-maillist",
+    "https://github.com/BackupTheBerlios/wsdebug-users-maillist"
   ],
   "whitespace": { "extension": "ws" },
   "programs": [{ "path": "htdocs/wsbfi-1.ws", "spec_version": "0.2" }],
