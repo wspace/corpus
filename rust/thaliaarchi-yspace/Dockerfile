@@ -1,6 +1,5 @@
-FROM rust:1.68 AS builder
+FROM rust:1.70 AS builder
 
-ENV CARGO_REGISTRIES_CRATES_IO_PROTOCOL sparse
 RUN rustup override set nightly
 WORKDIR /yspace
 COPY yspace .

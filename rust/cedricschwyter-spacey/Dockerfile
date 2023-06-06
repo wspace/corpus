@@ -1,6 +1,5 @@
-FROM rust:1.68 AS builder
+FROM rust:1.70 AS builder
 
-ENV CARGO_REGISTRIES_CRATES_IO_PROTOCOL sparse
 RUN rustup update nightly
 WORKDIR /spacey
 COPY spacey .

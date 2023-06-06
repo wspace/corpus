@@ -1,6 +1,5 @@
-FROM rust:1.68 AS builder
+FROM rust:1.70 AS builder
 
-ENV CARGO_REGISTRIES_CRATES_IO_PROTOCOL sparse
 WORKDIR /whitespace-rs
 COPY whitespace-rs .
 RUN cargo test

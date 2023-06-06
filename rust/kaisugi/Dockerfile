@@ -1,6 +1,5 @@
-FROM rust:1.68 AS builder
+FROM rust:1.70 AS builder
 
-ENV CARGO_REGISTRIES_CRATES_IO_PROTOCOL sparse
 WORKDIR /WhitespaceInterpreter
 COPY WhitespaceInterpreter .
 RUN rustc -C target-feature=+crt-static -o wi whitespace_interpreter.rs
