@@ -9,9 +9,9 @@
   "spec_version": "0.3",
   "source": [
     "https://github.com/lalrpop/lalrpop",
-    "https://github.com/lalrpop/lalrpop/tree/master/doc/whitespace/src",
-    "https://lalrpop.github.io/lalrpop/lexer_tutorial/002_writing_custom_lexer.html",
-    "https://github.com/lalrpop/lalrpop/blob/master/doc/src/lexer_tutorial/002_writing_custom_lexer.md"
+    "https://github.com/lalrpop/lalrpop/tree/master/doc/whitespace",
+    "https://lalrpop.github.io/lalrpop/lexer_tutorial/003_writing_custom_lexer.html",
+    "https://github.com/lalrpop/lalrpop/blob/master/doc/src/lexer_tutorial/003_writing_custom_lexer.md"
   ],
   "whitespace": { "extension": "ws" },
   "assembly": {
