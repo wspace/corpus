@@ -1,0 +1,48 @@
+{
+  "id": "c/siritori",
+  "name": "whitespace",
+  "authors": ["Eric Sartre"],
+  "license": "GPL-3.0",
+  "languages": ["C"],
+  "tags": ["interpreter", "disassembler", "mapping"],
+  "date": "2011-07-02 17:36:46 +0900",
+  "spec_version": "0.3",
+  "source": ["https://github.com/siritori/whitespace"],
+  "assembly": {
+    "mnemonics": {
+      "push": ["psh"],
+      "dup": ["dup"],
+      "copy": ["cpy"],
+      "swap": ["swp"],
+      "drop": ["dsc"],
+      "slide": ["sld"],
+      "add": ["add"],
+      "sub": ["sub"],
+      "mul": ["mul"],
+      "div": ["div"],
+      "mod": ["mod"],
+      "store": ["put"],
+      "retrieve": ["get"],
+      "label": ["lbl"],
+      "call": ["jal"],
+      "jmp": ["jmp"],
+      "jz": ["jsz"],
+      "jn": ["jsn"],
+      "ret": ["ret"],
+      "end": ["end"],
+      "printc": ["pch"],
+      "printi": ["pnm"],
+      "readc": ["gch"],
+      "readi": ["gnm"]
+    },
+    "usage": ["enum"]
+  },
+  "mappings": [{ "space": "S", "tab": "T", "lf": "N" }],
+  "commands": [
+    { "type": "interpreter", "bin": "bin/wsvm", "usage": "<file>" },
+    { "bin": "bin/wscc", "usage": "<output>", "input": "stdin", "output": "<output> or a.wb" },
+    { "type": "interactive assembler", "bin": "bin/wsas", "input": "stdin", "output": "a.wb" },
+    { "type": "mapping", "bin": "bin/ws_trans", "usage": "[<file>]", "input": "<file> or stdin" },
+    { "type": "disassembler", "bin": "bin/wb_dump.c", "usage": "<file>", "input": "<file>" }
+  ]
+}

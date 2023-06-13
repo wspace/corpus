@@ -1,6 +1,6 @@
 # The Whitespace Corpus
 
-The definitive collection of 346 projects for the Whitespace programming
+The definitive collection of 352 projects for the Whitespace programming
 language, including interpreters, compilers, and programs.
 
 ## Projects
@@ -10,6 +10,7 @@ language, including interpreters, compilers, and programs.
 | [prime-whitespace](whitespace/nepetaiscute-prime) | nepeta       | Whitespace | programs     | 2022-12-15 | [GitHub](https://github.com/NEPETAISCUTE/prime-whitespace) |
 | [wspace-coq](coq/thaliaarchi-wscoq)           | Thalia Archibald | Coq        | interpreter, formalism | 2022-12-14 | [GitHub](https://github.com/thaliaarchi/wscoq) |
 | [AdventOfCode2022.ws](whitespace/lukepebody-advent-of-code) | Luke Pebody | Whitespace, Python | programs, interpreter, assembler | 2022-12-14 | [GitHub](https://github.com/LukePebody/AdventOfCode2022.ws) |
+| [whitespace-interpreter](ruby/shimpeisaito)   | Shimpei Saito    | Ruby       | interpreter, programs | 2022-11-13 | [GitHub](https://github.com/ShimpeiSaito/whitespace-interpreter) |
 | [Whitespace-Knots-N-Crosses](whitespace/spicedsage-knots-n-crosses) | Sage | Whitespace | programs | 2022-10-28 | [GitHub](https://github.com/SpicedSage/Whitespace-Knots-N-Crosses) |
 | [WhiteSpace-Examples](whitespace/tshoang-examples) | Thái Sơn Hoàng | Whitespace | programs  | 2022-10-23 | [GitHub](https://github.com/tshoang/WhiteSpace-Examples) |
 | [haskell-spacey](haskell/cedricschwyter-spacey) | Cedric Schwyter | Haskell   | programs     | 2022-09-13 | [GitHub](https://github.com/D3PSI/haskell-spacey) |
@@ -48,6 +49,7 @@ language, including interpreters, compilers, and programs.
 | [cosmopolitan-sk](whitespace/kspalaiologos-cosmopolitan-sk) | Kamila Szewczyk (Palaiologos) | Whitespace | programs | 2021-10-31 | [GitHub](https://github.com/kspalaiologos/cosmopolitan-sk) |
 | [whitespace](c/manarice)                      | ManaRice         | C          | interpreter, assembler, programs | 2021-10-28 | [GitHub](https://github.com/ManaRice/whitespace) |
 | [Whitespace Interpreter](ocaml/steiner)       | Brandon Stein    | OCaml, Yacc, Lex | interpreter, programs | 2021-10-22 | [GitHub](https://github.com/steiner26/Whitespace) |
+| [Hello World!](whitespace/knightron-hello)    | Sarthak Mangla, ritulkrsingh | Whitespace | programs | 2021-10-15 | [GitHub](https://github.com/knightron0/helloworld), [GitHub](https://github.com/knightron0/helloworld/pull/20) |
 | [cerner_2tothe5th](whitespace/truptibaliga-cerner) | Trupti Baliga | Whitespace | programs   | 2021-10-06 | [GitHub](https://github.com/Trupti-Baliga/cerner_2tothe5th) |
 | [cerner_2-5](whitespace/srinandanpai-cerner)  | Srinandan Pai    | Whitespace | programs     | 2021-10-01 | [GitHub](https://github.com/SrinandanPai/cerner_2-5) |
 | [esoteric](python/joaquinrossi-esoteric)      | Joaquín Rossi    | Python     | interpreter  | 2021-09-29 | [GitHub](https://github.com/wspace/joaquinrossi-esoteric), [GitHub](https://github.com/joaquin-rossi/esoteric) |
@@ -71,7 +73,7 @@ language, including interpreters, compilers, and programs.
 | [Hello World](whitespace/grantbgreat-hello)   | Grant Bourne     | Whitespace | programs     | 2021-03-23 | [GitHub](https://github.com/GrantBGreat/hello-world) |
 | [Blank](ocaml/progbits-blank)                 | progbits         | OCaml      | interpreter, programs | 2021-03-16 | [GitHub](https://github.com/progbits/blank) |
 | [ws](python/ffanzhang)                        | ffanzhang        | Python     | interpreter  | 2021-03-07 | [GitHub](https://github.com/ffanzhang/ws) |
-| [WSPC](whitespace/ankitatandon-wspc)          | Ankita Tandon    | Whitespace | programs, mappings | 2021-02-26 | [GitHub](https://github.com/AnkitaTandon/WSPC) |
+| [WSPC](whitespace/ankitatandon-wspc)          | Ankita Tandon    | Whitespace | programs, mapping | 2021-02-26 | [GitHub](https://github.com/AnkitaTandon/WSPC) |
 | [Albus](rust/collidedscope-albus)             | Collided Scope   | Rust       | interpreter  | 2021-02-12 | [GitHub](https://github.com/collidedscope/albus) |
 | [Fizzbuzz in whitespace](whitespace/owocean-fizzbuzz) | owocean  | Whitespace | programs     | 2021-01-30 | [GitHub Gist](https://gist.github.com/owocean/0433a34dcfb1409bd5528e4821dd0055) |
 | [Program.java.rb.ws.txt](whitespace/paradoxv5-program-java-rb) | ParadoxV5 | Whitespace | programs | 2021-01-30 | [GitHub](https://github.com/ParadoxV5/Program-java-rb-ws-txt) |
@@ -145,6 +147,7 @@ language, including interpreters, compilers, and programs.
 | [WhiteSpace assembler/disassembler](ruby/angel) | angel-p57      | Ruby, Perl | interpreter, assembler, disassembler, programs | 2018-12-16 | [GitHub](https://github.com/angel-p57/whitespace) |
 | [WhitespaceInterpreter](java/pyeroh)          | Quentin de Nanteuil | Java    | interpreter  | 2018-12-14 | [GitHub Gist](https://gist.github.com/Pyeroh/1b2903e53d71e0662d105dc0d6aedbdf) |
 | [Whitespace and Brainfuck](whitespace/wsdt-kevinloveswhitespace) | Riedl Kevin | Whitespace | programs | 2018-12-01 | [GitHub](https://github.com/wsdt/WhiteSpace_Brainfuck) |
+| [Advent of Code 2018](whitespace/judofyr-aoc2018) | Magnus Holm  | Whitespace | programs     | 2018-11-30 | [GitHub](https://github.com/judofyr/aoc2018) |
 | [Whitespace Interpreter](rust/kaisugi)        | Kaito Sugimoto   | Rust       | interpreter  | 2018-11-23 | [GitHub](https://github.com/HelloRusk/WhitespaceInterpreter) |
 | [HoHoHo](python/freyamade-hohoho)             | Freya Madeline Broderick, Omar Sallam | Python | mapping, programs | 2018-11-22 | [GitHub](https://github.com/freyamade/hohoho) |
 | [whitespace-interpreter](python/adapap)       | Adam Papenhausen | Python     | interpreter  | 2018-11-16 | [GitHub](https://github.com/adapap/whitespace-interpreter) |
@@ -174,7 +177,7 @@ language, including interpreters, compilers, and programs.
 | [whitespace.py](python/mildsunrise)           | Alba Mendez      | Python     | interpreter  | 2018-01-14 | [GitHub Gist](https://gist.github.com/mildsunrise/d948fe1334f36c9a0f6516e58271f936) |
 | [Whitespace](c/sandeep)                       | Sandeep Varma    | C, Yacc, Lex | interpreter, programs | 2017-11-11 | [GitHub](https://github.com/Sandeep023/Whitespace) |
 | [CodeWars Kata](python/musflood)              | Megan Flood      | Python     | interpreter  | 2017-10-21 | [GitHub](https://github.com/musflood/code-katas) |
-| [hello-worlds](whitespace/knightking-hacktoberfest) | Jackie Chen | Whitespace | programs    | 2017-10-12 | [GitHub](https://github.com/knightking100/hello-worlds), [GitHub](https://github.com/knightking100/hello-worlds/pull/160) |
+| [hello-worlds](whitespace/knightking-hacktoberfest) | knightking100, Jackie Chen | Whitespace | programs | 2017-10-12 | [GitHub](https://github.com/knightking100/hello-worlds), [GitHub](https://github.com/knightking100/hello-worlds/pull/160) |
 | [HacktoberFest Starter Project](whitespace/alicewonderland-hacktoberfest) | Chashmeet Singh | Whitespace | programs | 2017-10-10 | [GitHub](https://github.com/AliceWonderland/hacktoberfest) |
 | [joekir.github.io](whitespace/joekir)         | Joe Kirwin       | Whitespace | programs     | 2017-08-13 | [GitHub](https://github.com/joekir/joekir.github.io), [josephkirwin.com](https://www.josephkirwin.com/2017/08/12/javascript-polyglot/), [josephkirwin.com](https://www.josephkirwin.com/polyglot1.html) |
 | [Whitespace-interpreter](python/bornlex)      | Bornlex          | Python     | interpreter, programs | 2017-08-09 | [GitHub](https://github.com/Bornlex/Whitespace-interpreter) |
@@ -183,6 +186,7 @@ language, including interpreters, compilers, and programs.
 | [ws.vim](vim/rolf)                            | Rolf Asmund      | Vim script | syntax highlighting, programs | 2017-05-15 | [GitHub](https://github.com/rolf007/ws.vim), [vim.org](https://www.vim.org/scripts/script.php?script_id=5035), [GitHub](https://github.com/vim-scripts/whitespace-syntax-highlight) |
 | [whitespaceasm.py](python/jrialland)          | Julien Rialland  | Python     | assembler    | 2017-04-28 | [GitHub Gist](https://gist.github.com/jrialland/e0d370034da9c7b1b76a8afccbea7424) |
 | [a-z-programming](whitespace/jarrodparkes-a-z) | Jarrod Parkes   | Whitespace, Docker | programs | 2017-04-19 | [GitHub](https://github.com/jarrodparkes/a-z-programming) |
+| [hello.ws](whitespace/kokoax-hello)           | kokoax           | Whitespace | programs     | 2017-03-24 | [GitHub](https://github.com/kokoax/hello) |
 | [Mr. White](erlang/derek-mrwhite)             | Derek Brown      | Erlang     | interpreter  | 2017-03-23 | [GitHub](https://github.com/derek121/mrwhite) |
 | [Whitespace Esolang Compiler](c/tejaskasetty) | Sushrith Arkal, Tejas Kasetty, Suhas Sumukh | C, Yacc, Lex | disassembler, parser | 2017-03-21 | [GitLab](https://gitlab.com/tejaskasetty/ws-compiler) |
 | [Catch the Chicken](whitespace/ccns-chicken)  | Daniel Chen      | Whitespace | programs     | 2017-02-22 | [GitHub](https://github.com/ccns/105-club-fair-game-problems) |
@@ -240,7 +244,7 @@ language, including interpreters, compilers, and programs.
 | [Whitespace](javascript/therebelrobot)        | Aster Haven      | JavaScript | mapping      | 2015-09-09 | [GitHub](https://github.com/therebelrobot/whitespace) |
 | [whitespacer](javascript/macocha-whitespacer) | Maciej Siwek     | JavaScript/React | IDE, interpreter, disassembler | 2015-09-04 | [GitHub](https://github.com/macocha/whitespacer) |
 | [Whitespace](c/rdebath)                       | Robert de Bath   | C, Lex     | transpiler, interpreter, assembler, program builder, programs | 2015-08-18 | [GitHub](https://github.com/wspace/rdebath-c), [GitHub](https://github.com/rdebath/whitespace) |
-| [Hello World](whitespace/leachim-hello)       | D.E. Akers       | Whitespace | programs     | 2015-08-17 | [GitHub](https://github.com/leachim6/hello-world), [GitHub](https://github.com/leachim6/hello-world/pull/207) |
+| [Hello World](whitespace/leachim-hello)       | Mike Donaghy, D.E. Akers | Whitespace | programs | 2015-08-17 | [GitHub](https://github.com/leachim6/hello-world), [GitHub](https://github.com/leachim6/hello-world/pull/207) |
 | [Whitespace Parser](python/katc)              | 友利奈緒 (Tomori Nao) | Python    | disassembler | 2015-07-08 | [GitHub Gist](https://gist.github.com/K-atc/02b402e9812e066afb78) |
 | [onlinejudge-ws](docker/baekjoon-onlinejudge) | Baekjoon Choi    | Docker     | builder      | 2015-07-03 | [GitHub](https://github.com/Baekjoon/Dockerfiles), [Baekjoon Online Judge](https://help.acmicpc.net/language/info#language-24) |
 | [Cupertino-WhiteSpace-Interperter](cpp/frmsaul-cupertino) | Saul Fuhrmann | C++ | interpreter, programs | 2015-05-23 | [GitHub](https://github.com/frmsaul/Cupertino-WhiteSpace-Interperter) |
@@ -292,6 +296,7 @@ language, including interpreters, compilers, and programs.
 | [whitespace-llvm](cpp/tycho-whitespace-llvm)  | Tycho Bickerstaff | C++, LLVM | compiler, JIT, optimizer, programs | 2013-08-31 | [GitHub](https://github.com/worktycho/whitespace-llvm) |
 | [Whitespace-JS](coffeescript/ehrlichbryan)    | Bryan Ehrlich    | CoffeeScript | interpreter, assembler, disassembler, programs | 2013-08-14 | [GitHub](https://github.com/adotout/whitespace-js) |
 | [Quine Relay](ruby/mame-quine-relay)          | Yusuke Endoh     | Ruby       | quine, polyglot, interpreter, programs | 2013-07-15 | [GitHub](https://github.com/mame/quine-relay) |
+| [Rubyで作る奇妙なプログラミング言語 (Making Esoteric Languages in Ruby)](ruby/yhara-esolang-book) | 原 悠 (Yutaka HARA) | Ruby | book, interpreter, programs | 2013-07-14 | [GitHub](https://github.com/yhara/esolang-book-sources), [esolang-book.route477.net](https://esolang-book.route477.net/), [GitHub](https://github.com/yhara/esolang-book-website), [amazon.com](https://www.amazon.com/dp/4839927847) |
 | [WS2JS](javascript/luilak-ws2js)              | Luilak           | JavaScript | transpiler   | 2013-06-03 | [GitHub](https://github.com/Luilak/WS2JS), [ws2js.luilak.net (archive)](http://web.archive.org/web/20140331170307/http://ws2js.luilak.net:80/interpreter.html) |
 | [ws-interpreter](cpp/yuukiaria)               | YuukiARIA        | C++        | interpreter, programs | 2013-05-05 | [GitHub](https://github.com/YuukiARIA/ws-interpreter) |
 | [GrassMudHorse](haskell/soimort-grassmudhorse) | Mort Yao        | Haskell    | interpreter, mapping, programs | 2013-04-19 | [GitHub](https://github.com/soimort/GrassMudHorse) |
@@ -313,6 +318,7 @@ language, including interpreters, compilers, and programs.
 | [Never Gonna Give You Up](whitespace/lucaspiller-never-gonna) | Luca Spiller | Whitespace | programs | 2012-06-01 | [GitHub Gist](https://gist.github.com/lucaspiller/2852385), [Code Golf](https://codegolf.stackexchange.com/questions/6043/were-no-strangers-to-code-golf-you-know-the-rules-and-so-do-i/6130#6130) |
 | [trans32.py](python/res-trans32)              | r.e.s.           | Python     | Binary Whitespace | 2012-05-30 | [res0001 Google Site (archive)](https://web.archive.org/web/20130510111931/https://sites.google.com/site/res0001/whitespace/programs), [Code Golf](https://codegolf.stackexchange.com/questions/6025/remove-vowels-without-using-too-many-different-characters/6100#6100) |
 | [SignificantWhitespace](javascript/pvdz-significant-whitespace) | Peter van der Zee | JavaScript | interpreter | 2012-02-16 | [GitHub](https://github.com/pvdz/SignificantWhitespace), [pvdz.ee](https://pvdz.ee/weblog/246), [js1k.com](https://js1k.com/2012-love/demo/1130) |
+| [whitespace](c/siritori)                      | Eric Sartre      | C          | interpreter, disassembler, mapping | 2011-07-02 | [GitHub](https://github.com/siritori/whitespace) |
 | [WhAsm](java/matou-whasm)                     | Matthias Matousek | Java      | assembler    | 2011-04-21 | [GitHub](https://github.com/matou/whasm) |
 | [nbspy.py](python/mikejs-nbspy)               | Michael Stephens | Python     | interpreter  | 2011-04-14 | [GitHub Gist](https://gist.github.com/mikejs/918701) |
 | [whitespace-0.4](haskell/haroldl-wspace-0.4)  | Harold Lee, Edwin Brady | Haskell | interpreter | 2011-03-10 | [GitHub](https://github.com/haroldl/whitespace-nd), [Mailing list (archive)](https://web.archive.org/web/20130926165457/http://compsoc.dur.ac.uk:80/archives/whitespace/2011-March/000080.html), [harold.hotelling.net](https://harold.hotelling.net/shuffle.html) |

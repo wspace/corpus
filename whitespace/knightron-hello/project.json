@@ -1,0 +1,12 @@
+{
+  "id": "whitespace/knightron-hello",
+  "name": "Hello World!",
+  "authors": ["Sarthak Mangla", "ritulkrsingh"],
+  "license": "none",
+  "languages": ["Whitespace"],
+  "tags": ["programs"],
+  "date": "2021-10-15 22:00:12 +0530",
+  "spec_version": "0.2",
+  "source": ["https://github.com/knightron0/helloworld", "https://github.com/knightron0/helloworld/pull/20"],
+  "programs": [{ "path": "hello.ws", "spec_version": "0.2", "authors": ["ritulkrsingh"] }]
+}

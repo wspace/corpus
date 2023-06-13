@@ -9,6 +9,7 @@ case of Codewars, interpreters for Whitespace.
 ## Advent of Code 2018
 
 - [python/ryndvs-aoc](python/ryndvs-aoc)
+- [whitespace/judofyr-aoc2018](whitespace/judofyr-aoc2018)
 
 ## Advent of Code 2019
 

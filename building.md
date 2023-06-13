@@ -16,6 +16,7 @@ Projects that can be built with Docker:
 - c/rispoli-txt2ws
 - c/sandeep
 - c/shinh-elvm: -Werror=enum-conversion
+- c/siritori
 - c/ssiegl-wsdebug
 - c/stellwag-wspacegen
 - c/strangepan-i-c-whitespace
@@ -178,8 +179,10 @@ Projects that can be built with Docker:
 - ruby/pocke-akaza
 - ruby/pocke-self-hosted
 - ruby/shimo-yukicoder
+- ruby/shimpeisaito
 - ruby/technohippy-gorispace
 - ruby/wconrad
+- ruby/yhara-esolang-book
 - ruby/yuta-textproc
 - rust/cedricschwyter-spacey
 - rust/censoredusername-whitespacers

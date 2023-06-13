@@ -40,6 +40,9 @@
 [submodule "c/shinh-elvm/elvm"]
 	path = c/shinh-elvm/elvm
 	url = https://github.com/shinh/elvm
+[submodule "c/siritori/whitespace"]
+	path = c/siritori/whitespace
+	url = https://github.com/siritori/whitespace
 [submodule "c/ssiegl-wsdebug/wsdebug"]
 	path = c/ssiegl-wsdebug/wsdebug
 	url = https://github.com/wspace/ssiegl-wsdebug
@@ -677,12 +680,18 @@
 [submodule "ruby/shimo-yukicoder/whitespace"]
 	path = ruby/shimo-yukicoder/whitespace
 	url = https://github.com/wspace/shimo-yukicoder
+[submodule "ruby/shimpeisaito/whitespace-interpreter"]
+	path = ruby/shimpeisaito/whitespace-interpreter
+	url = https://github.com/ShimpeiSaito/whitespace-interpreter
 [submodule "ruby/technohippy-gorispace/gorispace"]
 	path = ruby/technohippy-gorispace/gorispace
 	url = https://github.com/technohippy/gorispace
 [submodule "ruby/wconrad/whitespace"]
 	path = ruby/wconrad/whitespace
 	url = https://github.com/wspace/wconrad-ruby
+[submodule "ruby/yhara-esolang-book/esolang-book-sources"]
+	path = ruby/yhara-esolang-book/esolang-book-sources
+	url = https://github.com/yhara/esolang-book-sources
 [submodule "ruby/yuta-textproc/TextProc"]
 	path = ruby/yuta-textproc/TextProc
 	url = https://github.com/yuta0023/TextProc
@@ -863,6 +872,9 @@
 [submodule "whitespace/jonstites-hello/hello"]
 	path = whitespace/jonstites-hello/hello
 	url = https://gist.github.com/jonstites/16784b5c1fb0c1e580d698bb13d4f50f
+[submodule "whitespace/judofyr-aoc2018/aoc2018"]
+	path = whitespace/judofyr-aoc2018/aoc2018
+	url = https://github.com/judofyr/aoc2018
 [submodule "whitespace/keen-whitelie/whitelie"]
 	path = whitespace/keen-whitelie/whitelie
 	url = https://github.com/wspace/keen-whitelie
@@ -881,6 +893,12 @@
 [submodule "whitespace/knightking-hacktoberfest/hello-worlds"]
 	path = whitespace/knightking-hacktoberfest/hello-worlds
 	url = https://github.com/knightking100/hello-worlds
+[submodule "whitespace/knightron-hello/helloworld"]
+	path = whitespace/knightron-hello/helloworld
+	url = https://github.com/knightron0/helloworld
+[submodule "whitespace/kokoax-hello/hello"]
+	path = whitespace/kokoax-hello/hello
+	url = https://github.com/kokoax/hello
 [submodule "whitespace/kspalaiologos-codegolf/codegolf-submissions"]
 	path = whitespace/kspalaiologos-codegolf/codegolf-submissions
 	url = https://github.com/kspalaiologos/codegolf-submissions

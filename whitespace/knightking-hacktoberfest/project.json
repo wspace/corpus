@@ -1,7 +1,7 @@
 {
   "id": "whitespace/knightking-hacktoberfest",
   "name": "hello-worlds",
-  "authors": ["Jackie Chen"],
+  "authors": ["knightking100", "Jackie Chen"],
   "license": "Unlicense",
   "languages": ["Whitespace"],
   "tags": ["programs"],

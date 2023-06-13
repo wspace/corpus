@@ -1,7 +1,7 @@
 {
   "id": "whitespace/leachim-hello",
   "name": "Hello World",
-  "authors": ["D.E. Akers"],
+  "authors": ["Mike Donaghy", "D.E. Akers"],
   "license": "MIT",
   "languages": ["Whitespace"],
   "tags": ["programs"],
@@ -9,5 +9,12 @@
   "spec_version": "0.3",
   "source": ["https://github.com/leachim6/hello-world", "https://github.com/leachim6/hello-world/pull/207"],
   "whitespace": { "extension": "ws" },
-  "programs": [{ "path": "w/Whitespace.ws", "polyglot": ["Whitespace assembly"], "spec_version": "0.3" }]
+  "programs": [
+    {
+      "path": "w/Whitespace.ws",
+      "polyglot": ["Whitespace assembly"],
+      "spec_version": "0.3",
+      "authors": ["D.E. Akers"]
+    }
+  ]
 }

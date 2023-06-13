@@ -1,0 +1,58 @@
+{
+  "id": "ruby/yhara-esolang-book",
+  "name": "Rubyで作る奇妙なプログラミング言語 (Making Esoteric Languages in Ruby)",
+  "authors": ["原 悠 (Yutaka HARA)"],
+  "license": "none",
+  "languages": ["Ruby"],
+  "tags": ["book", "interpreter", "programs"],
+  "date": "2013-07-14 18:21:34 +0900",
+  "spec_version": "0.3",
+  "source": [
+    "https://github.com/yhara/esolang-book-sources",
+    "https://esolang-book.route477.net/",
+    "https://github.com/yhara/esolang-book-website",
+    "https://www.amazon.com/dp/4839927847"
+  ],
+  "whitespace": { "extension": "ws" },
+  "assembly": {
+    "mnemonics": {
+      "push": ["push"],
+      "dup": ["dup"],
+      "copy": ["copy"],
+      "swap": ["swap"],
+      "drop": ["discard"],
+      "slide": ["slide"],
+      "add": ["add"],
+      "sub": ["sub"],
+      "mul": ["mul"],
+      "div": ["div"],
+      "mod": ["mod"],
+      "store": ["heap_write"],
+      "retrieve": ["heap_read"],
+      "label": ["label"],
+      "call": ["call"],
+      "jmp": ["jump"],
+      "jz": ["jump_zero"],
+      "jn": ["jump_negative"],
+      "ret": ["return"],
+      "end": ["exit"],
+      "printc": ["char_out"],
+      "printi": ["num_out"],
+      "readc": ["char_in"],
+      "readi": ["num_in"]
+    },
+    "usage": ["enum"]
+  },
+  "mappings": [{ "space": "[Space]", "tab": "[Tab]", "lf": "[LF]", "extension": "txt" }],
+  "programs": [
+    {
+      "path": "whitespace/hello.ws",
+      "aux": ["1-4/02.txt", "1-4/01.ws"],
+      "mapping_index": 0,
+      "spec_version": "0.2",
+      "authors": ["Yutaka HARA"]
+    },
+    { "path": "whitespace/hi.ws", "spec_version": "0.2", "authors": ["Yutaka HARA"] },
+    { "path": "_practices/forever_a.ws", "spec_version": "0.2", "authors": ["Yutaka HARA"] }
+  ]
+}

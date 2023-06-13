@@ -1,0 +1,49 @@
+{
+  "id": "ruby/shimpeisaito",
+  "name": "whitespace-interpreter",
+  "authors": ["Shimpei Saito"],
+  "license": "none",
+  "languages": ["Ruby"],
+  "tags": ["interpreter", "programs"],
+  "date": "2022-11-13 20:00:23 +0900",
+  "spec_version": "0.3",
+  "source": ["https://github.com/ShimpeiSaito/whitespace-interpreter"],
+  "assembly": {
+    "mnemonics": {
+      "push": ["push"],
+      "dup": ["duplicate"],
+      "copy": ["n_duplicate"],
+      "swap": ["switch"],
+      "drop": ["discard"],
+      "slide": ["n_discard"],
+      "add": ["add"],
+      "sub": ["sub"],
+      "mul": ["mul"],
+      "div": ["div"],
+      "mod": ["rem"],
+      "store": ["h_push"],
+      "retrieve": ["h_pop"],
+      "label": ["label_mark"],
+      "call": ["sub_start"],
+      "jmp": ["jump"],
+      "jz": ["jump_zero"],
+      "jn": ["jump_negative"],
+      "ret": ["sub_end"],
+      "end": ["end"],
+      "printc": ["output_char"],
+      "printi": ["output_num"],
+      "readc": ["input_char"],
+      "readi": ["input_num"]
+    },
+    "usage": ["enum"]
+  },
+  "programs": [
+    { "path": "samples/calculator.ws", "spec_version": "0.2" },
+    { "path": "samples/count.ws", "spec_version": "0.2" },
+    { "path": "samples/fact.ws", "spec_version": "0.2" },
+    { "path": "samples/fibonacci.ws", "spec_version": "0.2" },
+    { "path": "samples/hanoi.ws", "spec_version": "0.2" },
+    { "path": "samples/hello.ws", "spec_version": "0.2" },
+    { "path": "samples/name.ws", "spec_version": "0.2" }
+  ]
+}
