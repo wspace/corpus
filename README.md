@@ -47,7 +47,7 @@ language, including interpreters, compilers, and programs.
 | [misc_utilities](go/qeedquan)                 | Quan Tran        | Go         | interpreter, disassembler, programs | 2021-11-11 | [GitHub](https://github.com/wspace/qeedquan-go), [GitHub](https://github.com/qeedquan/misc_utilities/tree/master/esolang/whitespace) |
 | [TigerHacks-2021](whitespace/meow-tigerhacks) | meow56           | Whitespace | programs     | 2021-11-05 | [GitHub](https://github.com/meow56/tigerhacks-2021) |
 | [cosmopolitan-sk](whitespace/kspalaiologos-cosmopolitan-sk) | Kamila Szewczyk (Palaiologos) | Whitespace | programs | 2021-10-31 | [GitHub](https://github.com/kspalaiologos/cosmopolitan-sk) |
-| [whitespace](c/manarice)                      | ManaRice         | C          | interpreter, assembler, programs | 2021-10-28 | [GitHub](https://github.com/ManaRice/whitespace) |
+| [Lime Whitespace](c/manarice)                 | ManaRice         | C          | interpreter, assembler, programs | 2021-10-28 | [GitHub](https://github.com/ManaRice/whitespace) |
 | [Whitespace Interpreter](ocaml/steiner)       | Brandon Stein    | OCaml, Yacc, Lex | interpreter, programs | 2021-10-22 | [GitHub](https://github.com/steiner26/Whitespace) |
 | [Hello World!](whitespace/knightron-hello)    | Sarthak Mangla, ritulkrsingh | Whitespace | programs | 2021-10-15 | [GitHub](https://github.com/knightron0/helloworld), [GitHub](https://github.com/knightron0/helloworld/pull/20) |
 | [cerner_2tothe5th](whitespace/truptibaliga-cerner) | Trupti Baliga | Whitespace | programs   | 2021-10-06 | [GitHub](https://github.com/Trupti-Baliga/cerner_2tothe5th) |
