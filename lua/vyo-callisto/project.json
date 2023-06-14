@@ -7,5 +7,7 @@
   "tags": ["interpreter"],
   "date": "2015-10-15 20:40:19 +0200",
   "spec_version": "0.3",
-  "source": ["https://github.com/vyo/callisto"]
+  "source": ["https://github.com/vyo/callisto"],
+  "commands": [{ "type": "interpreter", "bin": "callisto.lua", "notes": "Does nothing" }],
+  "notes": "Unfinished. It has no parser and does not execute a program."
 }
