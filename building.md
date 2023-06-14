@@ -9,7 +9,7 @@ Projects that can be built with Docker:
 - c/hogelog
 - c/koturn
 - c/kspalaiologos-asm2ws
-- c/manarice
+- c/manarice-lime
 - c/meth0dz
 - c/rdebath
 - c/remigascou: Yacc syntax errors

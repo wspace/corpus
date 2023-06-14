@@ -16,11 +16,11 @@
 [submodule "c/kspalaiologos-asm2ws/asm2ws"]
 	path = c/kspalaiologos-asm2ws/asm2ws
 	url = https://github.com/kspalaiologos/asm2ws
-[submodule "c/manarice/limelib"]
-	path = c/manarice/limelib
+[submodule "c/manarice-lime/limelib"]
+	path = c/manarice-lime/limelib
 	url = https://github.com/ManaRice/limelib
-[submodule "c/manarice/whitespace"]
-	path = c/manarice/whitespace
+[submodule "c/manarice-lime/whitespace"]
+	path = c/manarice-lime/whitespace
 	url = https://github.com/ManaRice/whitespace
 [submodule "c/meth0dz/whitespace"]
 	path = c/meth0dz/whitespace
