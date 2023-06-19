@@ -308,9 +308,9 @@
 [submodule "java/kreutzer-spacedide/spacedide"]
 	path = java/kreutzer-spacedide/spacedide
 	url = https://github.com/wspace/kreutzer-spacedide
-[submodule "java/martinandhels-whitespacesdk/whitespacesdk"]
-	path = java/martinandhels-whitespacesdk/whitespacesdk
-	url = https://github.com/wspace/martinandhels-whitespacesdk
+[submodule "java/mash-whitespacesdk/whitespacesdk"]
+	path = java/mash-whitespacesdk/whitespacesdk
+	url = https://github.com/wspace/mash-whitespacesdk
 [submodule "java/matou-whasm/whasm"]
 	path = java/matou-whasm/whasm
 	url = https://github.com/matou/whasm

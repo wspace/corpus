@@ -1,16 +1,13 @@
 {
-  "id": "java/martinandhels-whitespacesdk",
+  "id": "java/mash-whitespacesdk",
   "name": "whitespacesdk",
   "authors": ["MArtin SHerratt"],
   "license": "GPL-3.0-or-later",
   "languages": ["Java"],
-  "tags": ["interpreter", "assembler", "programs"],
+  "tags": ["interpreter", "assembler", "text to Whitespace", "programs"],
   "date": "2010-04-22 15:21:24 +0100",
   "spec_version": "0.3",
-  "source": [
-    "https://github.com/wspace/martinandhels-whitespacesdk",
-    "https://code.google.com/archive/p/whitespacesdk/"
-  ],
+  "source": ["https://github.com/wspace/mash-whitespacesdk", "https://code.google.com/archive/p/whitespacesdk/"],
   "whitespace": {
     "nonstandard": [
       { "name": "Invert", "seq": "STT", "desc": "Invert the stack" },
@@ -53,6 +50,7 @@
     "indentation": "",
     "extension": "txt"
   },
+  "mappings": [{ "space": "[Space]", "tab": "[Tab]", "lf": "[LF]" }],
   "programs": [
     {
       "path": "src/uk/co/mash/whitespace/example/raw_source/add_2_numbers.wss",
@@ -82,8 +80,47 @@
     },
     { "path": "src/uk/co/mash/whitespace/example/raw_source/hello_whitespace.wss" },
     {
+      "path": "src/uk/co/mash/whitespace/example/raw_source/invert.wss",
+      "aux": ["src/uk/co/mash/whitespace/example/listing/invert_listing.txt"],
+      "authors": ["Thalia Archibald"]
+    },
+    {
       "path": "src/uk/co/mash/whitespace/example/raw_source/you_are_a_twat.wss",
       "aux": ["src/uk/co/mash/whitespace/example/listing/you_are_a_twat_listing.txt"]
+    }
+  ],
+  "commands": [
+    {
+      "type": "interpreter",
+      "bin": "bin/uk/co/mash/whitespace/executable/WhitespaceProgramRunner.class",
+      "usage": "<file> [list]",
+      "options": [{ "bare": "list", "desc": "Dump the disassembled program" }],
+      "option_parse": "manual"
+    },
+    {
+      "type": "interpreter and assembler",
+      "bin": "bin/uk/co/mash/whitespace/executable/ListingFileProgramRunner.class",
+      "usage": "<file>",
+      "option_parse": "manual",
+      "notes": "Interprets a \"listing\"-style program"
+    },
+    {
+      "type": "assembler",
+      "bin": "bin/uk/co/mash/whitespace/executable/WhitespaceCompilerDebugger.class",
+      "usage": "<file> ((write | <not_write>) (run | <not_run>)?)?",
+      "output": "stdout and <file:no_ext>.wss if write",
+      "options": [
+        { "bare": "write", "desc": "Write to a corresponding .wss file" },
+        { "bare": "run", "desc": "Interpret the program" }
+      ],
+      "option_parse": "manual"
+    },
+    {
+      "type": "text to Whitespace",
+      "bin": "bin/uk/co/mash/whitespace/executable/CreateSimpleOutputFromString.class",
+      "usage": "[<output_readable>]",
+      "option_parse": "manual",
+      "notes": "When any argument is passed, it also prints [Space], [Tab], and [LF]"
     }
   ]
 }

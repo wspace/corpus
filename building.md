@@ -84,6 +84,7 @@ Projects that can be built with Docker:
 - java/brumbeere-whitespace4j
 - java/eia
 - java/faurehu
+- java/mash-whitespacesdk
 - java/matou-whasm
 - java/praveenvaka-coder
 - java/pyeroh: Needs Codewars entrypoint
@@ -238,7 +239,6 @@ Building status of individual executables:
 - ❌ java/brunokim
 - ❌ java/kmizu
 - ❌ java/kreutzer-spacedide
-- ❌ java/martinandhels-whitespacesdk
 - ❌ java/ralucaa-whitespace4j
 - ⚠️ java/vyo-kairos/build/libs/vyo-kairos-1.0.0-all.jar: `./gradlew shadowJar`
 - ❌ java/yawkat
