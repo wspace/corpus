@@ -1,10 +1,10 @@
-FROM eclipse-temurin:18-jdk-jammy AS builder
+FROM eclipse-temurin:20-jdk-jammy AS builder
 
 WORKDIR /whiteSpaceInterpreter
 COPY whiteSpaceInterpreter/src .
 RUN javac whitespaceinterpreter/*.java
 
-FROM eclipse-temurin:18-jre-jammy
+FROM eclipse-temurin:20-jre-jammy
 
 WORKDIR /whiteSpaceInterpreter
 COPY --from=builder /whiteSpaceInterpreter/whitespaceinterpreter/*.class whitespaceinterpreter/

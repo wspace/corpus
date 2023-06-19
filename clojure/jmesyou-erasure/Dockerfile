@@ -1,10 +1,10 @@
-FROM clojure:temurin-18-lein-focal AS builder
+FROM clojure:temurin-20-lein-jammy AS builder
 
 WORKDIR /erasure
 COPY erasure .
 RUN lein uberjar
 
-FROM eclipse-temurin:18-jre-focal
+FROM eclipse-temurin:20-jre-jammy
 
 WORKDIR /erasure
 COPY --from=builder /erasure/target/uberjar/erasure-2.0-standalone.jar .

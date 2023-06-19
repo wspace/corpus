@@ -1,4 +1,4 @@
-FROM eclipse-temurin:18-jdk-jammy AS builder
+FROM eclipse-temurin:20-jdk-jammy AS builder
 
 WORKDIR /Whitespace-Compiler
 COPY Whitespace-Compiler .
@@ -8,7 +8,7 @@ RUN curl -O https://www.antlr.org/download/antlr-4.5.2-complete.jar
 # RUN java -jar antlr-4.5.2-complete.jar whitespace.g4
 RUN javac -cp antlr-4.5.2-complete.jar *.java
 
-FROM eclipse-temurin:18-jre-jammy
+FROM eclipse-temurin:20-jre-jammy
 
 WORKDIR /Whitespace-Compiler
 COPY --from=builder /Whitespace-Compiler/*.class ./
