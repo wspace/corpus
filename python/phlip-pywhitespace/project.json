@@ -24,7 +24,8 @@
     { "path": "examples/calc.ws", "equivalent": "calc.ws", "spec_version": "0.2" },
     { "path": "examples/fact.ws", "equivalent": "fact.ws", "spec_version": "0.2" },
     { "path": "examples/hanoi.ws", "equivalent": "hanoi.ws", "spec_version": "0.2" },
-    { "path": "examples/loctest.ws", "equivalent": "loctest.ws", "spec_version": "0.3" }
+    { "path": "examples/loctest.ws", "equivalent": "loctest.ws", "spec_version": "0.3" },
+    { "path": "examples/trace.ws", "spec_version": "0.2", "authors": ["Thalia Archibald"] }
   ],
   "commands": [{ "type": "interpreter", "bin": "main.py", "usage": "<file>" }]
 }
