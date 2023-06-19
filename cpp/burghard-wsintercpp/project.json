@@ -14,6 +14,45 @@
     "https://web.archive.org/web/20110911114338/http://www.burghard.info/Code/Whitespace/"
   ],
   "whitespace": {
-    "nonstandard": [{ "name": "debug_printstack", "seq": "LLSSS" }, { "name": "debug_printheap", "seq": "LLSST" }]
-  }
+    "nonstandard": [{ "name": "debugprintstack", "seq": "LLSSS" }, { "name": "debugprintheap", "seq": "LLSST" }]
+  },
+  "assembly": {
+    "mnemonics": {
+      "push": ["push"],
+      "dup": ["doub"],
+      "swap": ["swap"],
+      "drop": ["pop"],
+      "add": ["add"],
+      "sub": ["sub"],
+      "mul": ["mul"],
+      "div": ["div"],
+      "mod": ["mod"],
+      "store": ["store"],
+      "retrieve": ["retrive"],
+      "label": ["label"],
+      "call": ["call"],
+      "jmp": ["jump"],
+      "jz": ["jumpz"],
+      "jn": ["jumpn"],
+      "ret": ["ret"],
+      "end": ["exit"],
+      "printc": ["outc"],
+      "printi": ["outn"],
+      "readc": ["inc"],
+      "readi": ["inn"],
+      "dumpstack": ["debugprintstack"],
+      "dumpheap": ["debugprintheap"]
+    },
+    "usage": ["debug"],
+    "notes": "Printed when -d is passed"
+  },
+  "commands": [
+    {
+      "type": "interpreter",
+      "bin": "wsinter",
+      "usage": "<file> [-d]",
+      "options": [{ "short": "d", "desc": "Dump current instruction at every step" }],
+      "option_parse": "manual"
+    }
+  ]
 }

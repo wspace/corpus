@@ -7,33 +7,33 @@
 These are the mnemonics used by known Whitespace assembly dialects for
 instructions, ranked by popularity.
 
-- `push` (113), `psh` (3), `append` (2), `push_num` (2), `<number>`, `<number_char>`, `pus`, `push_ch`, `push_number`, `push_number_stack_top`, `push_to_stack`, `pushchar`, `pushstack`, `setstacktop`
-- `dup` (77), `duplicate` (23), `copy` (5), `dupe` (5), `doub` (4), `dupl` (3), `sdupli` (3), `^`, `copystacktop`, `duplicate_last`, `duplicate_stack_top`, `duplicate_top`, `duplicatestack`
+- `push` (114), `psh` (3), `append` (2), `push_num` (2), `<number>`, `<number_char>`, `pus`, `push_ch`, `push_number`, `push_number_stack_top`, `push_to_stack`, `pushchar`, `pushstack`, `setstacktop`
+- `dup` (77), `duplicate` (23), `copy` (5), `doub` (5), `dupe` (5), `dupl` (3), `sdupli` (3), `^`, `copystacktop`, `duplicate_last`, `duplicate_stack_top`, `duplicate_top`, `duplicatestack`
 - `copy` (61), `copynth` (3), `ref` (3), `scopy` (3), `copyn` (2), `dup_at` (2), "", `^<unsigned>`, `copy_n`, `copynthstack`, `cpy`, `dup2`, `duplicate_num`, `duplicate_value`, `duplicatenth`, `dupn`, `dupnum`, `grab`, `n_duplicate`, `ncopy`, `nthcopytosetstacktop`, `pick`, `pull`, `refer`, `take`
-- `swap` (109), `swp` (5), `sswap` (3), `exch`, `exchange`, `swa`, `swap_last`, `swap_two_stack_items`, `swapstack`, `swapstacktopsec`, `swicth`, `switch`, `xchg`
-- `discard` (54), `pop` (41), `drop` (17), `sdiscard` (3), `disc` (2), `dsc` (2), `away`, `del`, `discard_stack_top`, `discard_top`, `discardstack`, `pop_number`, `remove`, `throwstacktop`
+- `swap` (110), `swp` (5), `sswap` (3), `exch`, `exchange`, `swa`, `swap_last`, `swap_two_stack_items`, `swapstack`, `swapstacktopsec`, `swicth`, `switch`, `xchg`
+- `discard` (54), `pop` (42), `drop` (17), `sdiscard` (3), `disc` (2), `dsc` (2), `away`, `del`, `discard_stack_top`, `discard_top`, `discardstack`, `pop_number`, `remove`, `throwstacktop`
 - `slide` (64), `sslide` (3), `pop_x` (2), `slid` (2), "", `<unsigned>slide`, `away`, `discard_value`, `discardnum`, `discardtopn`, `move`, `n_discard`, `remove`, `removenthinstack`, `skip`, `sld`, `slde`, `sliden`, `slidenstack`, `slideoff`
-- `add` (111), `addition` (4), `+` (3), `addtion` (2), `plus` (2), `adding`, `infixplus`, `op+`, `sum`
-- `sub` (98), `subtract` (14), `subtraction` (5), `-` (3), `minus` (2), `subt` (2), `infixminus`, `op-`, `substraction`
-- `mul` (86), `multiply` (12), `mult` (8), `multiplication` (6), `multi` (4), `*` (3), `multiple` (2), `times` (2), `infixtimes`, `op*`
-- `div` (97), `divide` (12), `division` (7), `/` (3), `intdiv` (2), `infixdivide`, `integerdivision`, `op/`
-- `mod` (98), `modulo` (17), `rem` (3), `%` (2), `division_part`, `infixmodulo`
-- `store` (96), `set` (4), `stor` (4), `put` (3), `save` (3), `sto` (3), `push` (2), `write` (2), `addtoheap`, `heapwrite`, `push_heap`, `st`, `storeat`, `storeheap`, `valuetoadress`
-- `retrieve` (67), `load` (19), `get` (9), `retr` (7), `retrive` (5), `pop` (3), `read` (3), `fetch` (2), `ret` (2), `getfromheap`, `heapread`, `ld`, `lod`, `pop_heap`, `rcl`, `reti`, `retreive`, `retri`, `retrieveheap`, `retrv`, `storeatstack`, `valuetostacktop`
-- `label` (52), `mark` (32), `<label>:` (14), `def` (4), `lbl` (4), `<number>:` (3), `label_<number>:` (3), `mark_sub` (2), `marklabel` (2), `mrk` (2), `setlabel` (2), `%<number>:`, `<<number>>:`, `@<label>`, `addlabel`, `deflabel`, `defun`, `l<number>:`, `label <label>:`, `label#_####`, `label_<number>`, `label_mark`, `labl`, `mark_location`, `marks`, `part`, `register`, `set_label`
-- `call` (101), `callsubroutine` (4), `gosub` (4), `call_sub` (3), `call_subroutine` (2), `jsr` (2), `call_label`, `calls`, `callsrtn`, `callsub`, `cas`, `cll`, `jal`, `sub`, `sub_start`, `subroutine`
-- `jump` (78), `jmp` (35), `goto` (7), `jumplabel` (3), `jp` (2), `unconditionaljump` (2), `b`, `j`, `jumps`
-- `jz` (41), `jumpz` (13), `jumpzero` (13), `jzero` (7), `jmpz` (5), `jump_if_zero` (5), `jump_zero` (4), `jez` (3), `jump-zero` (3), `gotoifzero` (2), `ifzero` (2), `jmp_eq` (2), `jumplabelwhenzero` (2), `branchz`, `branchzero`, `branchzs`, `brz`, `bz`, `bzero`, `equal`, `gotoiz`, `if stack==0 then goto`, `if0goto`, `ifstacktopiszerothenjump`, `iz_jump`, `jeq`, `jmp_if0`, `jmz`, `jnil`, `jp0`, `jpz`, `jsz`, `jump if zero`, `jump_ifzero`, `jump_stack`, `jumpnull`, `jze`, `jzer`, `zero`
-- `jn` (34), `jneg` (12), `jumpn` (11), `jumpneg` (6), `jumpnegative` (5), `jlz` (4), `jmpn` (4), `jump_if_neg` (4), `jump_negative` (4), `jump-neg` (3), `ifnegative` (2), `jmp_lt` (2), `js` (2), `jumplabelwhennegative` (2), `jumplz` (2), `less` (2), `bltz`, `bmi`, `bneg`, `branchlt`, `branchltz`, `branchltzs`, `gotoifneg`, `gotoifnegative`, `gotoin`, `if stack<0 then goto`, `ifisnegativegoto`, `ifstacktopisnegthenjump`, `in_jump`, `jlt`, `jltz`, `jmn`, `jmp_neg`, `jmpneg`, `jne`, `jpl0`, `jpn`, `jsn`, `jump if negative`, `jump_if_negative`, `jump_nega`, `jump_stack_bzero`, `jumpde`, `jumpminus`, `jumpnega`
-- `ret` (55), `return` (37), `endsubroutine` (5), `end` (4), `endsub` (3), `exit_sub` (3), `endofsubroutine` (2), `ends` (2), `back`, `control_back`, `end subroutine`, `end_sub`, `endfunc`, `endsrtn`, `ens`, `finishsubroutine`, `leave`, `rts`, `sub_end`, `subroutine_end`
-- `end` (58), `exit` (42), `endprogram` (5), `halt` (4), `endprog` (3), `endofprogram` (2), `endp` (2), `finish` (2), `quit` (2), `terminate` (2), `die`, `end program`, `end_prog`, `endle`, `eof`, `finishprogram`, `hlt`, `stop`
-- `printc` (17), `outchar` (14), `putc` (10), `outc` (9), `printchar` (9), `putchar` (9), `ochr` (4), `output_char` (4), `outputchar` (4), `writec` (4), `out-char` (3), `outputcharacter` (3), `print_char` (3), `char_out` (2), `out` (2), `pchr` (2), `write_ch` (2), `write_char` (2), `writechar` (2), `charout`, `cout`, `o_chr`, `ochar`, `otc`, `out_char`, `outch`, `outcha`, `outcharacter`, `output`, `output character`, `output_character`, `outputc`, `pc`, `pch`, `pchar`, `pop_char`, `print`, `print_c`, `printaschar`, `prtc`, `stacktopoutchar`, `wchar`, `wrc`, `write_character`, `wtc`
-- `outnum` (13), `printi` (13), `outn` (8), `putn` (8), `printnum` (6), `outputnumber` (5), `printn` (5), `putnum` (5), `output_number` (4), `write_num` (4), `writen` (4), `onum` (3), `out-num` (3), `outputnum` (3), `pnum` (3), `num_out` (2), `oint` (2), `print_num` (2), `printnumber` (2), `putint` (2), `iout`, `nout`, `numout`, `o_int`, `otn`, `out`, `out_n`, `out_num`, `outi`, `outint`, `outinteger`, `outnumber`, `output number`, `output_num`, `outputn`, `pn`, `pnm`, `pop_num`, `print`, `print_i`, `print_number`, `printasint`, `printint`, `prtn`, `putdigit`, `puti`, `stacktopoutint`, `wnum`, `write_number`, `writeint`, `writenum`, `wrn`, `wtn`
-- `readchar` (29), `readc` (23), `getc` (10), `read_char` (8), `getchar` (7), `inc` (6), `ichr` (5), `in-char` (3), `readcharacter` (3), `char_in` (2), `in` (2), `inchar` (2), `rchar` (2), `rdc` (2), `read_chr` (2), `charin`, `chr`, `cin`, `gch`, `ichar`, `inch`, `incha`, `inpc`, `input_char`, `inputchar`, `rc`, `rchr`, `read character`, `read_c`, `read_ch`, `read_character`, `readchartoadress`, `rec`, `redc`
-- `readnum` (22), `readi` (13), `readn` (11), `getn` (9), `read_num` (8), `readnumber` (6), `inn` (5), `inum` (4), `read_number` (4), `getnum` (3), `in-num` (3), `innum` (3), `readint` (3), `rnum` (3), `getint` (2), `iint` (2), `num_in` (2), `rdn` (2), `read` (2), `geti`, `gnm`, `iin`, `in_n`, `ini`, `inint`, `inpn`, `input_num`, `inputnumber`, `int`, `nin`, `numin`, `read number`, `read_i`, `readinteger`, `readinttoadress`, `redn`, `ren`, `rn`
+- `add` (112), `addition` (4), `+` (3), `addtion` (2), `plus` (2), `adding`, `infixplus`, `op+`, `sum`
+- `sub` (99), `subtract` (14), `subtraction` (5), `-` (3), `minus` (2), `subt` (2), `infixminus`, `op-`, `substraction`
+- `mul` (87), `multiply` (12), `mult` (8), `multiplication` (6), `multi` (4), `*` (3), `multiple` (2), `times` (2), `infixtimes`, `op*`
+- `div` (98), `divide` (12), `division` (7), `/` (3), `intdiv` (2), `infixdivide`, `integerdivision`, `op/`
+- `mod` (99), `modulo` (17), `rem` (3), `%` (2), `division_part`, `infixmodulo`
+- `store` (97), `set` (4), `stor` (4), `put` (3), `save` (3), `sto` (3), `push` (2), `write` (2), `addtoheap`, `heapwrite`, `push_heap`, `st`, `storeat`, `storeheap`, `valuetoadress`
+- `retrieve` (67), `load` (19), `get` (9), `retr` (7), `retrive` (6), `pop` (3), `read` (3), `fetch` (2), `ret` (2), `getfromheap`, `heapread`, `ld`, `lod`, `pop_heap`, `rcl`, `reti`, `retreive`, `retri`, `retrieveheap`, `retrv`, `storeatstack`, `valuetostacktop`
+- `label` (53), `mark` (32), `<label>:` (14), `def` (4), `lbl` (4), `<number>:` (3), `label_<number>:` (3), `mark_sub` (2), `marklabel` (2), `mrk` (2), `setlabel` (2), `%<number>:`, `<<number>>:`, `@<label>`, `addlabel`, `deflabel`, `defun`, `l<number>:`, `label <label>:`, `label#_####`, `label_<number>`, `label_mark`, `labl`, `mark_location`, `marks`, `part`, `register`, `set_label`
+- `call` (102), `callsubroutine` (4), `gosub` (4), `call_sub` (3), `call_subroutine` (2), `jsr` (2), `call_label`, `calls`, `callsrtn`, `callsub`, `cas`, `cll`, `jal`, `sub`, `sub_start`, `subroutine`
+- `jump` (79), `jmp` (35), `goto` (7), `jumplabel` (3), `jp` (2), `unconditionaljump` (2), `b`, `j`, `jumps`
+- `jz` (41), `jumpz` (14), `jumpzero` (13), `jzero` (7), `jmpz` (5), `jump_if_zero` (5), `jump_zero` (4), `jez` (3), `jump-zero` (3), `gotoifzero` (2), `ifzero` (2), `jmp_eq` (2), `jumplabelwhenzero` (2), `branchz`, `branchzero`, `branchzs`, `brz`, `bz`, `bzero`, `equal`, `gotoiz`, `if stack==0 then goto`, `if0goto`, `ifstacktopiszerothenjump`, `iz_jump`, `jeq`, `jmp_if0`, `jmz`, `jnil`, `jp0`, `jpz`, `jsz`, `jump if zero`, `jump_ifzero`, `jump_stack`, `jumpnull`, `jze`, `jzer`, `zero`
+- `jn` (34), `jneg` (12), `jumpn` (12), `jumpneg` (6), `jumpnegative` (5), `jlz` (4), `jmpn` (4), `jump_if_neg` (4), `jump_negative` (4), `jump-neg` (3), `ifnegative` (2), `jmp_lt` (2), `js` (2), `jumplabelwhennegative` (2), `jumplz` (2), `less` (2), `bltz`, `bmi`, `bneg`, `branchlt`, `branchltz`, `branchltzs`, `gotoifneg`, `gotoifnegative`, `gotoin`, `if stack<0 then goto`, `ifisnegativegoto`, `ifstacktopisnegthenjump`, `in_jump`, `jlt`, `jltz`, `jmn`, `jmp_neg`, `jmpneg`, `jne`, `jpl0`, `jpn`, `jsn`, `jump if negative`, `jump_if_negative`, `jump_nega`, `jump_stack_bzero`, `jumpde`, `jumpminus`, `jumpnega`
+- `ret` (56), `return` (37), `endsubroutine` (5), `end` (4), `endsub` (3), `exit_sub` (3), `endofsubroutine` (2), `ends` (2), `back`, `control_back`, `end subroutine`, `end_sub`, `endfunc`, `endsrtn`, `ens`, `finishsubroutine`, `leave`, `rts`, `sub_end`, `subroutine_end`
+- `end` (58), `exit` (43), `endprogram` (5), `halt` (4), `endprog` (3), `endofprogram` (2), `endp` (2), `finish` (2), `quit` (2), `terminate` (2), `die`, `end program`, `end_prog`, `endle`, `eof`, `finishprogram`, `hlt`, `stop`
+- `printc` (17), `outchar` (14), `outc` (10), `putc` (10), `printchar` (9), `putchar` (9), `ochr` (4), `output_char` (4), `outputchar` (4), `writec` (4), `out-char` (3), `outputcharacter` (3), `print_char` (3), `char_out` (2), `out` (2), `pchr` (2), `write_ch` (2), `write_char` (2), `writechar` (2), `charout`, `cout`, `o_chr`, `ochar`, `otc`, `out_char`, `outch`, `outcha`, `outcharacter`, `output`, `output character`, `output_character`, `outputc`, `pc`, `pch`, `pchar`, `pop_char`, `print`, `print_c`, `printaschar`, `prtc`, `stacktopoutchar`, `wchar`, `wrc`, `write_character`, `wtc`
+- `outnum` (13), `printi` (13), `outn` (9), `putn` (8), `printnum` (6), `outputnumber` (5), `printn` (5), `putnum` (5), `output_number` (4), `write_num` (4), `writen` (4), `onum` (3), `out-num` (3), `outputnum` (3), `pnum` (3), `num_out` (2), `oint` (2), `print_num` (2), `printnumber` (2), `putint` (2), `iout`, `nout`, `numout`, `o_int`, `otn`, `out`, `out_n`, `out_num`, `outi`, `outint`, `outinteger`, `outnumber`, `output number`, `output_num`, `outputn`, `pn`, `pnm`, `pop_num`, `print`, `print_i`, `print_number`, `printasint`, `printint`, `prtn`, `putdigit`, `puti`, `stacktopoutint`, `wnum`, `write_number`, `writeint`, `writenum`, `wrn`, `wtn`
+- `readchar` (29), `readc` (23), `getc` (10), `read_char` (8), `getchar` (7), `inc` (7), `ichr` (5), `in-char` (3), `readcharacter` (3), `char_in` (2), `in` (2), `inchar` (2), `rchar` (2), `rdc` (2), `read_chr` (2), `charin`, `chr`, `cin`, `gch`, `ichar`, `inch`, `incha`, `inpc`, `input_char`, `inputchar`, `rc`, `rchr`, `read character`, `read_c`, `read_ch`, `read_character`, `readchartoadress`, `rec`, `redc`
+- `readnum` (22), `readi` (13), `readn` (11), `getn` (9), `read_num` (8), `inn` (6), `readnumber` (6), `inum` (4), `read_number` (4), `getnum` (3), `in-num` (3), `innum` (3), `readint` (3), `rnum` (3), `getint` (2), `iint` (2), `num_in` (2), `rdn` (2), `read` (2), `geti`, `gnm`, `iin`, `in_n`, `ini`, `inint`, `inpn`, `input_num`, `inputnumber`, `int`, `nin`, `numin`, `read number`, `read_i`, `readinteger`, `readinttoadress`, `redn`, `ren`, `rn`
 - `permr`, `shuffle`
-- `debug_printstack` (4), `dumpstack`
-- `debug_printheap` (4), `dumpheap`
+- `debug_printstack` (4), `debugprintstack`, `dumpstack`
+- `debug_printheap` (4), `debugprintheap`, `dumpheap`
 - `trace`
 
 ## Conflicting mnemonics
@@ -43,13 +43,13 @@ instructions, ranked by popularity.
 - `copy`: `copy` (61), `dup` (5)
 - `end`: `end` (58), `ret` (4)
 - `out`: `printc` (2), `printi`
-- `pop`: `drop` (41), `retrieve` (3)
+- `pop`: `drop` (42), `retrieve` (3)
 - `print`: `printc`, `printi`
-- `push`: `push` (113), `store` (2)
+- `push`: `push` (114), `store` (2)
 - `read`: `retrieve` (3), `readi` (2)
 - `remove`: `drop`, `slide`
-- `ret`: `ret` (55), `retrieve` (2)
-- `sub`: `sub` (98), `call`
+- `ret`: `ret` (56), `retrieve` (2)
+- `sub`: `sub` (99), `call`
 
 ## File extensions
 
