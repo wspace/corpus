@@ -28,11 +28,11 @@ type Project struct {
 	SpecVersion       string   `json:"spec_version"`
 	Source            []string `json:"source"`
 	SourceUnavailable bool     `json:"source_unavailable,omitempty"`
-	Package           *struct {
+	Packages          []struct {
 		Name    string `json:"name"`
 		Manager string `json:"manager"`
 		URL     string `json:"url"`
-	} `json:"package,omitempty"`
+	} `json:"packages,omitempty"`
 	Relations []struct {
 		ID      string `json:"id"`
 		Type    string `json:"type"`

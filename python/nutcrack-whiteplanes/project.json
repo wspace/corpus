@@ -12,7 +12,7 @@
     "https://pypi.org/project/whiteplanes/",
     "https://whiteplanes.github.io/"
   ],
-  "package": { "name": "whiteplanes", "manager": "PyPI", "url": "https://pypi.org/project/whiteplanes/" },
+  "packages": [{ "name": "whiteplanes", "manager": "PyPI", "url": "https://pypi.org/project/whiteplanes/" }],
   "assembly": {
     "mnemonics": {
       "push": ["push"],

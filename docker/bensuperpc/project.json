@@ -8,10 +8,12 @@
   "date": "2021-06-10 00:32:32 +0200",
   "spec_version": "0.3",
   "source": ["https://github.com/bensuperpc/docker-whitespace"],
-  "package": {
-    "name": "bensuperpc/whitespace",
-    "manager": "Docker Hub",
-    "url": "https://hub.docker.com/r/bensuperpc/whitespace"
-  },
+  "packages": [
+    {
+      "name": "bensuperpc/whitespace",
+      "manager": "Docker Hub",
+      "url": "https://hub.docker.com/r/bensuperpc/whitespace"
+    }
+  ],
   "relations": [{ "id": "c/rdebath", "type": "binary" }]
 }

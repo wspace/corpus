@@ -8,11 +8,13 @@
   "date": "2016-07-11 15:39:42 -0400",
   "spec_version": "0.2",
   "source": ["https://github.com/dwayne/whitespace-ruby"],
-  "package": {
-    "name": "whitespace-ruby",
-    "manager": "RubyGems",
-    "url": "https://rubygems.org/gems/whitespace-ruby"
-  },
+  "packages": [
+    {
+      "name": "whitespace-ruby",
+      "manager": "RubyGems",
+      "url": "https://rubygems.org/gems/whitespace-ruby"
+    }
+  ],
   "whitespace": { "extension": "ws" },
   "programs": [
     { "path": "examples/count.ws", "equivalent": "count.ws", "spec_version": "0.2" },

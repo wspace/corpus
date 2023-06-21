@@ -8,11 +8,13 @@
   "date": "2017-01-08 10:55:07 +0900",
   "spec_version": "0.3",
   "source": ["https://github.com/hakatashi/esolang-box"],
-  "package": {
-    "name": "esolang/whitespace",
-    "manager": "Docker Hub",
-    "url": "https://hub.docker.com/r/esolang/whitespace"
-  },
+  "packages": [
+    {
+      "name": "esolang/whitespace",
+      "manager": "Docker Hub",
+      "url": "https://hub.docker.com/r/esolang/whitespace"
+    }
+  ],
   "relations": [
     { "id": "haskell/tryitonline", "type": "binary" },
     { "id": "python/stephenchappell", "type": "binary", "release": "hostilefork/whitespacers" }

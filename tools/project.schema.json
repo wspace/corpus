@@ -120,18 +120,21 @@
       "uniqueItems": true
     },
     "source_unavailable": { "type": "boolean", "description": "Whether the source code is unavailable" },
-    "package": {
-      "type": "object",
-      "properties": {
-        "name": { "type": "string" },
-        "manager": {
-          "type": "string",
-          "enum": ["crates.io", "Docker Hub", "Hackage", "npm", "NuGet", "PyPI", "RubyGems"]
+    "packages": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "name": { "type": "string" },
+          "manager": {
+            "type": "string",
+            "enum": ["crates.io", "Docker Hub", "Hackage", "npm", "NuGet", "PyPI", "RubyGems"]
+          },
+          "url": { "type": "string", "format": "uri" }
         },
-        "url": { "type": "string", "format": "uri" }
-      },
-      "required": ["name", "manager", "url"],
-      "additionalProperties": false
+        "required": ["name", "manager", "url"],
+        "additionalProperties": false
+      }
     },
     "relations": {
       "type": "array",

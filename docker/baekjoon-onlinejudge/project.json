@@ -8,10 +8,12 @@
   "date": "2015-07-03 09:45:36 +0000",
   "spec_version": "0.2",
   "source": ["https://github.com/Baekjoon/Dockerfiles", "https://help.acmicpc.net/language/info#language-24"],
-  "package": {
-    "name": "baekjoon/onlinejudge-ws",
-    "manager": "Docker Hub",
-    "url": "https://hub.docker.com/r/baekjoon/onlinejudge-ws"
-  },
+  "packages": [
+    {
+      "name": "baekjoon/onlinejudge-ws",
+      "manager": "Docker Hub",
+      "url": "https://hub.docker.com/r/baekjoon/onlinejudge-ws"
+    }
+  ],
   "relations": [{ "id": "haskell/edwinb-wspace-0.2", "type": "binary", "release": "wspace.tgz" }]
 }

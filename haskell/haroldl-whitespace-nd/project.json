@@ -12,11 +12,13 @@
     "https://web.archive.org/web/20130926165457/http://compsoc.dur.ac.uk:80/archives/whitespace/2011-March/000080.html",
     "https://harold.hotelling.net/shuffle.html"
   ],
-  "package": {
-    "name": "whitespace",
-    "manager": "Hackage",
-    "url": "https://hackage.haskell.org/package/whitespace"
-  },
+  "packages": [
+    {
+      "name": "whitespace",
+      "manager": "Hackage",
+      "url": "https://hackage.haskell.org/package/whitespace"
+    }
+  ],
   "relations": [{ "id": "haskell/edwinb-wspace-0.3", "type": "fork" }],
   "whitespace": { "nonstandard": [{ "name": "shuffle", "seq": "STTS" }] },
   "commands": [

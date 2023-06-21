@@ -8,11 +8,13 @@
   "date": "2018-02-14 07:32:38 +1000",
   "spec_version": "0.3",
   "source": ["https://github.com/loklaan/whitespace-lang"],
-  "package": {
-    "name": "whitespace-lang",
-    "manager": "npm",
-    "url": "https://www.npmjs.com/package/whitespace-lang"
-  },
+  "packages": [
+    {
+      "name": "whitespace-lang",
+      "manager": "npm",
+      "url": "https://www.npmjs.com/package/whitespace-lang"
+    }
+  ],
   "relations": [{ "id": "javascript/vii5ard-whitelips-ide", "type": "fork" }],
   "whitespace": { "extension": "ws" },
   "programs": [{ "path": "tests.ws", "spec_version": "0.2" }],
