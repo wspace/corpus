@@ -321,7 +321,7 @@ language, including interpreters, compilers, and programs.
 | [whitespace](c/siritori)                      | Eric Sartre      | C          | interpreter, disassembler, mapping | 2011-07-02 | [GitHub](https://github.com/siritori/whitespace) |
 | [WhAsm](java/matou-whasm)                     | Matthias Matousek | Java      | assembler    | 2011-04-21 | [GitHub](https://github.com/matou/whasm) |
 | [nbspy.py](python/mikejs-nbspy)               | Michael Stephens | Python     | interpreter  | 2011-04-14 | [GitHub Gist](https://gist.github.com/mikejs/918701) |
-| [whitespace-0.4](haskell/haroldl-wspace-0.4)  | Harold Lee, Edwin Brady | Haskell | interpreter | 2011-03-10 | [GitHub](https://github.com/haroldl/whitespace-nd), [Mailing list (archive)](https://web.archive.org/web/20130926165457/http://compsoc.dur.ac.uk:80/archives/whitespace/2011-March/000080.html), [harold.hotelling.net](https://harold.hotelling.net/shuffle.html) |
+| [whitespace-nd](haskell/haroldl-whitespace-nd) | Harold Lee, Edwin Brady | Haskell | interpreter | 2011-03-10 | [GitHub](https://github.com/haroldl/whitespace-nd), [Mailing list (archive)](https://web.archive.org/web/20130926165457/http://compsoc.dur.ac.uk:80/archives/whitespace/2011-March/000080.html), [harold.hotelling.net](https://harold.hotelling.net/shuffle.html) |
 | [white-scheme](scheme/athos-white-scheme)     | Ohta Shogo       | Scheme     | interpreter  | 2010-12-22 | [GitHub](https://github.com/athos/white-scheme) |
 | [Colorspace](python/dos1-colorspace)          | Sebastian Krzyszkowiak, Agata Kurczewska | Python | image steganography, programs | 2010-11-22 | [GitHub](https://github.com/dos1/colorspace) |
 | [Whitespace.py](python/wasabili)              | Yuichi Nishiwaki | Python     | interpreter  | 2010-11-21 | [GitHub Gist](https://gist.github.com/wasabili/708773) |
@@ -469,7 +469,7 @@ language, including interpreters, compilers, and programs.
 | main.patch and VM.patch | yuki2006    | 2015-01-28 | 0.3  | [GitHub Gist](https://gist.github.com/yuki2006/466b7ed89486178c8309) |
 
 - [docker/baekjoon-onlinejudge](docker/baekjoon-onlinejudge)
-- [haskell/haroldl-wspace-0.4](haskell/haroldl-wspace-0.4)
+- [haskell/haroldl-whitespace-nd](haskell/haroldl-whitespace-nd)
 
 ## Comparison to Whitespacers
 

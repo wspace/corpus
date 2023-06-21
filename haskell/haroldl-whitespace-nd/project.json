@@ -1,6 +1,6 @@
 {
-  "id": "haskell/haroldl-wspace-0.4",
-  "name": "whitespace-0.4",
+  "id": "haskell/haroldl-whitespace-nd",
+  "name": "whitespace-nd",
   "authors": ["Harold Lee", "Edwin Brady"],
   "license": "GPL-2.0-or-later",
   "languages": ["Haskell"],
@@ -15,7 +15,7 @@
   "package": {
     "name": "whitespace",
     "manager": "Hackage",
-    "url": "https://hackage.haskell.org/package/whitespace-0.4"
+    "url": "https://hackage.haskell.org/package/whitespace"
   },
   "relations": [{ "id": "haskell/edwinb-wspace-0.3", "type": "fork" }],
   "whitespace": { "nonstandard": [{ "name": "shuffle", "seq": "STTS" }] },
