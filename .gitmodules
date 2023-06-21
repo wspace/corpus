@@ -217,6 +217,9 @@
 [submodule "go/makiuchid-whitenote/whitenote"]
 	path = go/makiuchid-whitenote/whitenote
 	url = https://github.com/makiuchi-d/whitenote
+[submodule "go/petercxy-gogmh/gogmh"]
+	path = go/petercxy-gogmh/gogmh
+	url = https://github.com/PeterCxy/gogmh
 [submodule "go/pocke-gows/gows"]
 	path = go/pocke-gows/gows
 	url = https://github.com/pocke/gows

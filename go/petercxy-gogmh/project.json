@@ -1,0 +1,43 @@
+{
+  "id": "go/petercxy-gogmh",
+  "name": "gogmh",
+  "authors": ["Peter Cai"],
+  "license": "none",
+  "languages": ["Go"],
+  "tags": ["interpreter", "mapping"],
+  "date": "2015-10-06 13:38:36 +0000",
+  "spec_version": "0.3",
+  "source": ["https://github.com/PeterCxy/gogmh"],
+  "whitespace": { "nonstandard": [{ "name": "END2", "seq": "河蟹" }] },
+  "assembly": {
+    "mnemonics": {
+      "push": ["PUSH"],
+      "dup": ["DUPLICATE"],
+      "copy": ["COPY"],
+      "swap": ["SWAP"],
+      "drop": ["DISCARD"],
+      "slide": ["SLIDE"],
+      "add": ["ADD"],
+      "sub": ["SUB"],
+      "mul": ["MUL"],
+      "div": ["DIV"],
+      "mod": ["MOD"],
+      "store": ["STORE"],
+      "retrieve": ["RETRIEVE"],
+      "label": ["MARK"],
+      "call": ["CALL"],
+      "jmp": ["JUMP"],
+      "jz": ["JUMP_ZERO"],
+      "jn": ["JUMP_SUBZERO"],
+      "ret": ["RETURN"],
+      "end": ["END1", "END2"],
+      "printc": ["PRINT_CHAR"],
+      "printi": ["PRINT_NUM"],
+      "readc": ["SCAN_CHAR"],
+      "readi": ["SCAN_NUM"]
+    },
+    "usage": ["enum"]
+  },
+  "mappings": [{ "space": "草", "tab": "泥", "lf": "马" }],
+  "build_errors": "No entrypoint"
+}

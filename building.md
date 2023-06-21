@@ -67,6 +67,7 @@ Projects that can be built with Docker:
 - csharp/ryzngard-dotnot: CSharpGeneratorDriver does not contain a constructor that takes 3 arguments
 - go/kinu
 - go/makiuchid-whitenote
+- go/petercxy-gogmh: No entrypoint
 - go/pocke-gows
 - go/qeedquan
 - go/sampratt

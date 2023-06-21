@@ -1,6 +1,6 @@
 # The Whitespace Corpus
 
-The definitive collection of 352 projects for the Whitespace programming
+The definitive collection of 353 projects for the Whitespace programming
 language, including interpreters, compilers, and programs.
 
 ## Projects
@@ -239,6 +239,7 @@ language, including interpreters, compilers, and programs.
 | [c2ws](ocaml/matsud-c2ws)                     | Daiki Matsunaga  | OCaml      | language compiler | 2015-11-17 | [GitHub](https://github.com/matsud224/c2ws) |
 | [TextProc](ruby/yuta-textproc)                | YutaYamaguchi    | Ruby       | interpreter  | 2015-11-16 | [GitHub](https://github.com/yuta0023/TextProc) |
 | [callisto](lua/vyo-callisto)                  | Manu Weidmann    | Lua        | interpreter  | 2015-10-15 | [GitHub](https://github.com/vyo/callisto) |
+| [gogmh](go/petercxy-gogmh)                    | Peter Cai        | Go         | interpreter, mapping | 2015-10-06 | [GitHub](https://github.com/PeterCxy/gogmh) |
 | [2_power_5](whitespace/rafimo-cerner)         | Mohammad Rafi    | Whitespace | programs     | 2015-10-01 | [GitHub](https://github.com/rafimo/2_power_5) |
 | [Whitespace](python/dalleng)                  | Diego Allen      | Python     | interpreter  | 2015-09-28 | [GitHub](https://github.com/dalleng/Whitespace) |
 | [Whitespace](javascript/therebelrobot)        | Aster Haven      | JavaScript | mapping      | 2015-09-09 | [GitHub](https://github.com/therebelrobot/whitespace) |
