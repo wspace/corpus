@@ -8,7 +8,7 @@
   "date": "2017-04-19 09:42:38 -0500",
   "spec_version": "0.2",
   "source": ["https://github.com/jarrodparkes/a-z-programming"],
-  "relations": [{ "id": "python/tokigun-esotope", "type": "embedded" }],
+  "relations": [{ "id": "python/lifthrasiir-esotope", "type": "embedded" }],
   "whitespace": { "extension": "ws" },
   "programs": [
     { "path": "whitespace/src/hello.ws", "spec_version": "0.2" },

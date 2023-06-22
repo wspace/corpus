@@ -1,0 +1,11 @@
+{
+  "id": "scala/polyglotpiglet-whitespacing",
+  "name": "Whitespacing",
+  "authors": ["Alexandra Ojha"],
+  "license": "none",
+  "languages": ["Scala"],
+  "tags": ["interpreter"],
+  "date": "2015-12-11 15:56:06 +0000",
+  "spec_version": "0.2",
+  "source": ["https://github.com/polyglotpiglet/Whitespacing"]
+}

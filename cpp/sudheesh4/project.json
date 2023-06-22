@@ -1,0 +1,12 @@
+{
+  "id": "cpp/sudheesh4",
+  "name": "Whitespace-Interpreter--C-",
+  "authors": ["sudheesh4"],
+  "license": "none",
+  "languages": ["C++"],
+  "tags": ["interpreter"],
+  "date": "2014-12-02 05:59:27 +0530",
+  "spec_version": "0.2",
+  "source": ["https://github.com/sudheesh4/Whitespace-Interpreter-C-"],
+  "commands": [{ "type": "interpreter", "bin": "space", "usage": "< <file>", "input": "stdin" }]
+}

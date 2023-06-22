@@ -1,0 +1,13 @@
+{
+  "id": "whitespace/ait8-fizzbuzz",
+  "name": "FizzBuzz AIT8",
+  "authors": ["Kengo Yokoyama"],
+  "license": "none",
+  "languages": ["Whitespace"],
+  "tags": ["programs"],
+  "date": "2015-01-29 02:21:34 +0900",
+  "spec_version": "0.2",
+  "source": ["https://github.com/ait8/fizzbuzz"],
+  "whitespace": { "extension": "ws" },
+  "programs": [{ "path": "yokoyama.ws", "spec_version": "0.2", "authors": ["Kengo Yokoyama"] }]
+}

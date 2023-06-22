@@ -5,7 +5,7 @@
 Projects that can be built with Docker:
 
 - c/bvisness
-- c/cedricschwyter
+- c/d3psi
 - c/hogelog
 - c/koturn
 - c/kspalaiologos-asm2ws
@@ -14,7 +14,7 @@ Projects that can be built with Docker:
 - c/rdebath
 - c/remigascou: Yacc syntax errors
 - c/rispoli-txt2ws
-- c/sandeep
+- c/sandeep023
 - c/shinh-elvm: -Werror=enum-conversion
 - c/siritori
 - c/ssiegl-wsdebug
@@ -28,7 +28,6 @@ Projects that can be built with Docker:
 - clojure/jmesyou-erasure
 - clojure/makenowjust
 - coq/thaliaarchi-wscoq
-- cpp/abac-whint
 - cpp/abcsharp
 - cpp/benajmin
 - cpp/burghard-wsintercpp
@@ -38,22 +37,23 @@ Projects that can be built with Docker:
 - cpp/drebelsky-jit
 - cpp/esco
 - cpp/frmsaul-cupertino
-- cpp/kapustaikwas
+- cpp/kapustaikwas27
 - cpp/keirua-white
 - cpp/knmorgan
 - cpp/malkiewiczm
 - cpp/marcellippmann-whitepp
-- cpp/noia
+- cpp/noia1
+- cpp/nullflagblues-whint
 - cpp/pavelshub
 - cpp/peasley
-- cpp/ricardoluis: `#include <conio.h>` not found; `floor` cannot be used in a constant expression
+- cpp/ricardoluis0: `#include <conio.h>` not found; `floor` cannot be used in a constant expression
 - cpp/shadowmitia
 - cpp/sonicyang-ws-frontend: Requires LLVM
 - cpp/subv-whitespace-llvm: Requires LLVM
-- cpp/sudheesh
+- cpp/sudheesh4
 - cpp/thaliaarchi-respace
 - cpp/timvandermeij
-- cpp/tycho-whitespace-llvm: Requires LLVM
+- cpp/worktycho-whitespace-llvm: Requires LLVM
 - cpp/yuukiaria
 - crystal/collidedscope-spiceweight
 - csharp/denislabrecque
@@ -61,21 +61,21 @@ Projects that can be built with Docker:
 - csharp/littlebughunter-assembler
 - csharp/meeees
 - csharp/nicolasff-spacesharp
-- csharp/north-projectone: The Carbon driver has not been ported to 64-bit, so very few parts of Windows.Forms work properly
+- csharp/north15-projectone: The Carbon driver has not been ported to 64-bit, so very few parts of Windows.Forms work properly
 - csharp/reflash: Mono does not implement WPF APIs
 - csharp/rolisoft-esoteric
 - csharp/ryzngard-dotnot: CSharpGeneratorDriver does not contain a constructor that takes 3 arguments
+- go/135yshr-wspacego
 - go/kinu
 - go/makiuchid-whitenote
 - go/petercxy-gogmh: No entrypoint
 - go/pocke-gows
 - go/qeedquan
-- go/sampratt
+- go/samuelpratt
 - go/simomu
 - go/technohippy
 - go/tempxla-go-wspace
 - go/thaliaarchi-nebula: Requires LLVM
-- go/yshr-wspacego
 - go/zorchenhimer
 - haskell/edwinb-wspace-0.3
 - idris/edwinb-ws-idr
@@ -107,27 +107,28 @@ Projects that can be built with Docker:
 - javascript/uraza: Needs Codewars entrypoint
 - javascript/wdalmut
 - jq/thaliaarchi-wsjq
-- lolcode/akers
-- lua/carsonrueber
+- lolcode/0x0dea
+- lua/cj5518
 - lua/vyo-callisto
 - ocaml/jgkaplan-wsc
-- ocaml/matsud-c2ws
+- ocaml/matsud224-c2ws
 - ocaml/progbits-blank: Module Stdlib.Stream is deprecated and the camlp-streams library should be used instead
 - ocaml/progbits-spacebar
-- ocaml/steiner
+- ocaml/steiner26
 - perl/ephphatha-wsm2ws
 - perl/mkoelbl
-- perl/skabob-madness
+- perl/skabob42-madness
 - php/nobody1986
 - python/0x55aa
+- python/ad9000-evanesco
 - python/adapap
 - python/ahl27
 - python/alecgraves-whitespac3
 - python/apua-gen
 - python/apua-wvm
+- python/avantgarde95
 - python/bornlex
 - python/dalleng: Needs Codewars entrypoint
-- python/damle-evanesco
 - python/dos1-colorspace: Requires a wspace executable in PATH
 - python/drafear-converter
 - python/dwayne
@@ -140,7 +141,6 @@ Projects that can be built with Docker:
 - python/ganeshsankaran
 - python/hearnderek: Needs Codewars entrypoint
 - python/hearnderek-codewars: Needs Codewars entrypoint
-- python/hunminpark
 - python/ilikepython256-whitespace-unc
 - python/joaquinrossi-esoteric
 - python/jrialland
@@ -148,13 +148,14 @@ Projects that can be built with Docker:
 - python/katc
 - python/kraterkraken
 - python/lachlancourt
+- python/lifthrasiir-esotope-ws: Source code unavailable
 - python/maximegoyette: Needs Codewars entrypoint
 - python/mcolom
 - python/meand
 - python/mikecat
 - python/mikejs-nbspy
 - python/mildsunrise
-- python/molfar-codewars: Needs Codewars entrypoints
+- python/molfarua-codewars: Needs Codewars entrypoints
 - python/musflood: Needs Codewars entrypoint
 - python/nutcrack-whiteplanes: No entrypoint
 - python/phlip-pywhitespace
@@ -162,19 +163,18 @@ Projects that can be built with Docker:
 - python/q2ven-whitespyce
 - python/qwhxm-baudelaire: Needs AWS Lambda entrypoint
 - python/rumaxwell
-- python/ryndvs-aoc
+- python/ryndvs96-aoc
 - python/smithers-bluespace
 - python/squancy: Needs Codewars entrypoint
 - python/stephenchappell: msvcrt module only exists on Windows
 - python/techiehelper-codewars: Needs Codewars entrypoint
-- python/tokigun-esotope-ws: Source code unavailable
 - python/umutoztunc-whitesymex
 - python/victornuzhniy: Needs Codewars entrypoint
 - python/wasabili
-- python/yasn-whitepy
+- python/yasn77-whitepy
 - rebol/hostilefork: Bootstrapping issues
 - ruby/alesiong
-- ruby/angel
+- ruby/angelp57
 - ruby/bossiernesto: No entrypoint
 - ruby/collidedscope-spitewaste
 - ruby/dwayne
@@ -187,10 +187,10 @@ Projects that can be built with Docker:
 - ruby/technohippy-gorispace
 - ruby/wconrad
 - ruby/yhara-esolang-book
-- ruby/yuta-textproc
-- rust/cedricschwyter-spacey
+- ruby/yuta0023-textproc
 - rust/censoredusername-whitespacers
 - rust/collidedscope-albus
+- rust/d3psi-spacey
 - rust/faultier-albino: Needs many changes for latest Rust
 - rust/faultier-whitebase: Needs many changes for latest Rust
 - rust/guricerin
@@ -199,7 +199,7 @@ Projects that can be built with Docker:
 - rust/kaisugi
 - rust/keirua
 - rust/lalrpop
-- rust/luminight: No entrypoint
+- rust/luminighty: No entrypoint
 - rust/nareshganduri
 - rust/omurakazuaki
 - rust/thaliaarchi-yspace
@@ -215,7 +215,7 @@ Projects that can be built with Docker:
 Building status of individual executables:
 
 - ⚠️ brainfuck/thaliaarchi-wsbf/ws.bf
-- ⚠️ coffeescript/ehrlichbryan/*unspecified*: `grunt` Unclear how to run
+- ⚠️ coffeescript/ehrlichb/*unspecified*: `grunt` Unclear how to run
 - ❌ csharp/colchicus
 - ❌ csharp/nutcrack-whiteplanes
 - ❌ docker/baekjoon-onlinejudge
@@ -223,20 +223,20 @@ Building status of individual executables:
 - ❌ docker/hakatashi-esolang-box
 - ❌ elisp/lmitchell
 - ❌ elixir/quinnwilton
-- ⚠️ erlang/derek-mrwhite/*unspecified*: `make` Unclear how to run
-- ⚠️ haskell/brainbrush-tomato/wspace: `make` Needs changes for latest Haskell
+- ⚠️ erlang/derek121-mrwhite/*unspecified*: `make` Unclear how to run
+- ⚠️ haskell/brainbush-tomato/wspace: `make` Needs changes for latest Haskell
 - ⚠️ haskell/burghard-wsa/trans
-- ❌ haskell/cedricschwyter-spacey
+- ❌ haskell/d3psi-spacey
 - ❌ haskell/edwinb-wspace-0.2
 - ⚠️ haskell/ft-spaceman/*unspecified*: `cabal build`
 - ⚠️ haskell/haroldl-whitespace-nd/wspace: `make` Needs changes for latest Haskell
 - haskell/helvm-helma/dist-newstyle/build/x86\_64-osx/ghc-8.10.7/helma-0.6.10.0/x/helma/build/helma/helma: `cabal build`
 - haskell/helvm-helpa/dist-newstyle/build/x86\_64-osx/ghc-8.10.7/helpa-0.3.5.0/x/helpa/build/helpa/helpa: `cabal build`
 - ⚠️ haskell/jhmcstanton-marginal/*unspecified*: `stack build` `stack setup` fails with link error
-- ❌ haskell/matsubara
+- ❌ haskell/matsubara0507
 - ❌ haskell/soimort-grassmudhorse
 - ⚠️ haskell/takatoh-hws/hws: `make` Needs changes for latest Haskell
-- ⚠️ haskell/tomihisa-visual/*unspecified*
+- ⚠️ haskell/tomihisa244-visual/*unspecified*
 - ❌ java/brunokim
 - ❌ java/kmizu
 - ❌ java/kreutzer-spacedide
@@ -244,15 +244,15 @@ Building status of individual executables:
 - ⚠️ java/vyo-kairos/build/libs/vyo-kairos-1.0.0-all.jar: `./gradlew shadowJar`
 - ❌ java/yawkat
 - ❌ java/yuukiaria-wseditor
+- ❌ javascript/ad9000-evanescojs
 - ❌ javascript/arnauld
-- ❌ javascript/damle-evanescojs
 - ❌ javascript/kmyk-translater
 - ❌ javascript/kosei
 - ❌ javascript/luilak-ws2js
 - ❌ javascript/macocha-whitespacer
 - ❌ javascript/naokikp-wsi
 - ❌ javascript/pvdz-significant-whitespace
-- ❌ javascript/tranbrian-generator
+- ❌ javascript/tranbrian10-generator
 - ❌ javascript/vii5ard-whitelips-ide
 - ⚠️ julia/goropikari-whitespaces/*unspecified*
 - ⚠️ kotlin/ze-space/build/libs/space.jar: `./gradlew` Dependencies not packaged
@@ -272,19 +272,19 @@ Building status of individual executables:
 - php/mattparker/src/PHPWhiteSpace.php
 - ❌ python/cybis-hapyli
 - ⚠️ python/marktraceur-redlandside/main.py
-- ❌ python/res-trans32
+- ❌ python/res0001-trans32
 - r/bmazoure/R/whitespace.R
 - scala/dashlambda-eso/target/scala-2.13/eso\_2.13-2.6.1.jar: `sbt assembly`
-- ❌ scala/ojha-whitespacing
-- ⚠️ scala/patrickstephen/whitespace.jar: `sbt package` Should set whitespace.jar as package instead of arget/scala-2.11/whitespace-interpreter\_2.11-1.0.jar A JNI error has occurred, please check your installation and try again
+- ❌ scala/polyglotpiglet-whitespacing
 - ❌ scala/sderosiaux
+- ⚠️ scala/stephenpatrick/whitespace.jar: `sbt package` Should set whitespace.jar as package instead of arget/scala-2.11/whitespace-interpreter\_2.11-1.0.jar A JNI error has occurred, please check your installation and try again
 - ❌ scheme/athos-white-scheme
 - ❌ scheme/niyarin
 - ⚠️ textmate/nixinova/grammars/whitespace.yaml-tmLanguage
 - ❌ textmate/thaliaarchi-linguist
 - ❌ textmate/veniversum
 - typescript/simomu/bin/ws.js: `npm run build`
-- ❌ vim/rolf
+- ❌ vim/rolf007
 - ❌ whitespace/ankitatandon-wspc
 - ❌ whitespace/arthurmtth
 - ❌ whitespace/burghard-wsinterws

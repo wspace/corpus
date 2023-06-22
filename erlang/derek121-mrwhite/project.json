@@ -1,0 +1,12 @@
+{
+  "id": "erlang/derek121-mrwhite",
+  "name": "Mr. White",
+  "authors": ["Derek Brown"],
+  "license": "BSD-3-Clause",
+  "languages": ["Erlang"],
+  "tags": ["interpreter"],
+  "date": "2017-03-23 09:48:51 -0700",
+  "spec_version": "0.3",
+  "source": ["https://github.com/derek121/mrwhite"],
+  "commands": [{ "dependencies": ["Erlang", "Rebar3"], "build": "make", "run_errors": "Unclear how to run" }]
+}

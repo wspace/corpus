@@ -1,0 +1,13 @@
+{
+  "id": "whitespace/yumu19",
+  "name": "a140.ws",
+  "authors": ["Tsubasa Yumura"],
+  "license": "none",
+  "languages": ["Whitespace"],
+  "tags": ["programs"],
+  "date": "2015-02-26 08:37:09 -0800",
+  "spec_version": "0.2",
+  "source": ["https://gist.github.com/yumu19/7b083c7e764092d5d0a2"],
+  "whitespace": { "extension": "ws" },
+  "programs": [{ "path": "a140.ws", "spec_version": "0.2", "desc": "Whitespace script that outputs 亞 140 times" }]
+}

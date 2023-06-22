@@ -1,0 +1,70 @@
+{
+  "id": "cpp/kapustaikwas27",
+  "name": "Whitespace-compiler",
+  "authors": ["Marcin"],
+  "license": "none",
+  "languages": ["C++"],
+  "tags": ["transpiler", "assembler", "disassembler"],
+  "date": "2022-04-05 22:12:25 +0200",
+  "spec_version": "0.3",
+  "source": ["https://github.com/kapustaikwas27/Whitespace-compiler"],
+  "assembly": {
+    "mnemonics": {
+      "push": ["push"],
+      "dup": ["dup"],
+      "copy": ["copy"],
+      "swap": ["swap"],
+      "drop": ["drop"],
+      "slide": ["slide"],
+      "add": ["add"],
+      "sub": ["sub"],
+      "mul": ["mul"],
+      "div": ["div"],
+      "mod": ["mod"],
+      "store": ["store"],
+      "retrieve": ["retrieve"],
+      "label": ["label_<number>"],
+      "call": ["call"],
+      "jmp": ["jmp"],
+      "jz": ["jz"],
+      "jn": ["jn"],
+      "ret": ["ret"],
+      "end": ["end"],
+      "printc": ["printc"],
+      "printi": ["printi"],
+      "readc": ["readc"],
+      "readi": ["readi"]
+    },
+    "indentation": "\t  ",
+    "label_indentation": "\t",
+    "usage": ["assembler", "disassembler", "transpiler"]
+  },
+  "commands": [
+    {
+      "type": "assembler and disassembler",
+      "bin": "pre",
+      "usage": "[-a | -r]",
+      "input": "stdin",
+      "output": "stdout",
+      "options": [
+        { "short": "a", "desc": "translates from Whitespace Assembler to C" },
+        { "short": "r", "desc": "translates from Whitespace Assembler to Whitespace" }
+      ],
+      "option_parse": "manual",
+      "notes": "Without a flag, it translates from Whitespace to Whitespace Assembler"
+    },
+    {
+      "type": "transpiler",
+      "bin": "wsc.sh",
+      "usage": "<file> <out> [-a | -r]",
+      "input": "<file>",
+      "output": "<out>",
+      "options": [
+        { "short": "a", "desc": "translates from Whitespace Assembler to C" },
+        { "short": "r", "desc": "translates from Whitespace Assembler to Whitespace" }
+      ],
+      "option_parse": "manual",
+      "notes": "Transpiles a Whitespace program to C, then compiles the C program"
+    }
+  ]
+}

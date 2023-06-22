@@ -1,0 +1,26 @@
+{
+  "id": "go/samuelpratt",
+  "name": "whitespace-go",
+  "authors": ["Sam Pratt"],
+  "license": "MIT",
+  "languages": ["Go"],
+  "tags": ["interpreter", "programs"],
+  "date": "2021-12-10 17:31:15 -0800",
+  "spec_version": "0.3",
+  "source": [
+    "https://github.com/samuel-pratt/whitespace-go",
+    "https://www.reddit.com/r/golang/comments/recgxc/you_guys_seemed_to_like_my_brainfuck_interpreter/",
+    "https://www.reddit.com/r/esolangs/comments/recunt/i_made_a_whitespace_interpreter_in_go_and_id_love/"
+  ],
+  "whitespace": { "extension": "ws" },
+  "programs": [
+    {
+      "path": "examples/hello_world_polyglot.ws",
+      "aux": ["examples/hello_world.ws"],
+      "polyglot": ["Brainfuck"],
+      "equivalent": "Hello, world! (Wikipedia)",
+      "spec_version": "0.2"
+    }
+  ],
+  "commands": [{ "bin": "whitespace-go", "usage": "<file>" }]
+}

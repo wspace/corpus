@@ -8,7 +8,7 @@ case of Codewars, interpreters for Whitespace.
 
 ## Advent of Code 2018
 
-- [python/ryndvs-aoc](python/ryndvs-aoc)
+- [python/ryndvs96-aoc](python/ryndvs96-aoc)
 - [whitespace/judofyr-aoc2018](whitespace/judofyr-aoc2018)
 
 ## Advent of Code 2019
@@ -31,7 +31,7 @@ case of Codewars, interpreters for Whitespace.
 
 ## Cerner 2^5
 
-- [whitespace/bsarthak-cerner](whitespace/bsarthak-cerner)
+- [whitespace/bsarthak1803-cerner](whitespace/bsarthak1803-cerner)
 - [whitespace/davidjkling-cerner](whitespace/davidjkling-cerner)
 - [whitespace/lollasravani-cerner](whitespace/lollasravani-cerner)
 - [whitespace/rafimo-cerner](whitespace/rafimo-cerner)
@@ -59,7 +59,7 @@ case of Codewars, interpreters for Whitespace.
 - [python/hearnderek](python/hearnderek)
 - [python/hearnderek-codewars](python/hearnderek-codewars)
 - [python/maximegoyette](python/maximegoyette)
-- [python/molfar-codewars](python/molfar-codewars)
+- [python/molfarua-codewars](python/molfarua-codewars)
 - [python/musflood](python/musflood)
 - [python/squancy](python/squancy)
 - [python/techiehelper-codewars](python/techiehelper-codewars)
@@ -79,7 +79,7 @@ case of Codewars, interpreters for Whitespace.
 ## Hacktoberfest 2017
 
 - [whitespace/alicewonderland-hacktoberfest](whitespace/alicewonderland-hacktoberfest)
-- [whitespace/knightking-hacktoberfest](whitespace/knightking-hacktoberfest)
+- [whitespace/knightking100-hacktoberfest](whitespace/knightking100-hacktoberfest)
 
 ## Hacktoberfest 2018
 
@@ -96,9 +96,9 @@ case of Codewars, interpreters for Whitespace.
 ## Project Euler
 
 - [c/threeifbywhiskey-blacktime](c/threeifbywhiskey-blacktime)
+- [whitespace/drsam94-pelc](whitespace/drsam94-pelc)
 - [whitespace/gregorymorrison-euler](whitespace/gregorymorrison-euler)
 - [whitespace/mercerenies-euler](whitespace/mercerenies-euler)
-- [whitespace/samdonow-pelc](whitespace/samdonow-pelc)
 - [whitespace/thaliaarchi-challenges](whitespace/thaliaarchi-challenges)
 
 ## Rosetta Code

@@ -1,0 +1,18 @@
+{
+  "id": "whitespace/drsam94-pelc",
+  "name": "Project Euler Language Challenge",
+  "authors": ["Sam Donow"],
+  "license": "none",
+  "languages": ["Whitespace"],
+  "tags": ["programs"],
+  "date": "2013-09-03 00:29:00 -0400",
+  "spec_version": "0.3",
+  "source": [
+    "https://github.com/drsam94/PELC",
+    "http://pelangchallenge.blogspot.com/2013/09/problem-36-done-in-whitespace.html",
+    "https://web.archive.org/web/20130925035813/http://compsoc.dur.ac.uk:80/archives/whitespace/2013-September/000084.html"
+  ],
+  "challenges": ["Project Euler"],
+  "whitespace": { "extension": "ws" },
+  "programs": [{ "path": "e36Comments.ws", "aux": ["e36.ws", "e36NoComments.ws"], "spec_version": "0.3" }]
+}

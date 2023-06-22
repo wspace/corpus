@@ -1,0 +1,19 @@
+{
+  "id": "whitespace/uncompiled-steganographic-polyglots",
+  "name": "steganographic-polyglots",
+  "authors": ["Chris Nguyen"],
+  "license": "MIT",
+  "languages": ["Whitespace"],
+  "tags": ["programs"],
+  "date": "2016-06-26 11:41:53 -0400",
+  "spec_version": "0.2",
+  "source": [
+    "https://github.com/uncompiled/steganographic-polyglots",
+    "https://uncompiled.github.io/steganographic-polyglots/"
+  ],
+  "programs": [
+    { "path": "golang/hello.go", "polyglot": ["Go"], "spec_version": "0.2" },
+    { "path": "html/index.html", "polyglot": ["HTML"], "spec_version": "0.2" },
+    { "path": "nodejs/figlet.js", "polyglot": ["JavaScript"], "spec_version": "0.2" }
+  ]
+}

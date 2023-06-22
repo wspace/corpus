@@ -1,0 +1,68 @@
+{
+  "id": "haskell/tomihisa244-visual",
+  "name": "visualWhiteSpace",
+  "authors": ["Tomihisa"],
+  "license": "BSD-3-Clause",
+  "languages": ["Haskell"],
+  "tags": ["interpreter", "mapping", "programs"],
+  "date": "2020-12-14 21:42:38 +0900",
+  "spec_version": "0.3",
+  "source": ["https://github.com/tomihisa244/visualWhiteSpace"],
+  "whitespace": { "extension": "ws" },
+  "assembly": {
+    "mnemonics": {
+      "push": ["SetStackTop"],
+      "dup": ["CopyStackTop"],
+      "copy": ["NthCopytoSetStackTop"],
+      "swap": ["SwapStackTopSec"],
+      "drop": ["ThrowStackTop"],
+      "slide": ["RemoveNthInStack"],
+      "add": ["Add"],
+      "sub": ["Sub"],
+      "mul": ["Mul"],
+      "div": ["Div"],
+      "mod": ["Mod"],
+      "store": ["ValueToAdress"],
+      "retrieve": ["ValueToStackTop"],
+      "label": ["DefLabel"],
+      "call": ["Subroutine"],
+      "jmp": ["JumpLabel"],
+      "jz": ["IfStackTopisZeroThenJump"],
+      "jn": ["IfStackTopisNegThenJump"],
+      "ret": ["FinishSubroutine"],
+      "end": ["FinishProgram"],
+      "printc": ["StackTopOutChar"],
+      "printi": ["StackTopOutInt"],
+      "readc": ["ReadCharToAdress"],
+      "readi": ["ReadIntToAdress"]
+    },
+    "usage": ["enum"]
+  },
+  "mappings": [{ "space": "S", "tab": "T", "lf": "LF", "spaces_between": false, "extension": "wss" }],
+  "programs": [
+    { "path": "examples/calc.ws", "equivalent": "calc.ws", "spec_version": "0.3" },
+    { "path": "examples/count.ws", "equivalent": "count.ws", "spec_version": "0.3" },
+    { "path": "examples/fact.ws", "equivalent": "fact.ws", "spec_version": "0.3" },
+    { "path": "examples/hanoi.ws", "equivalent": "hanoi.ws", "spec_version": "0.3" },
+    { "path": "examples/hworld.ws", "equivalent": "hworld.ws", "spec_version": "0.3" },
+    { "path": "examples/loctest.ws", "equivalent": "loctest.ws", "spec_version": "0.3" },
+    { "path": "examples/name.ws", "equivalent": "name.ws", "spec_version": "0.3" },
+    { "path": "hworld.ws", "equivalent": "hworld.ws", "spec_version": "0.3" },
+    { "path": "test.ws", "aux": ["test.wss"], "spec_version": "0.3", "desc": "FizzBuzz" }
+  ],
+  "commands": [
+    {
+      "type": "interpreter",
+      "usage": "$0 <file> [-help | -show | -simple-show | -simple | -vis | -trace]",
+      "options": [
+        { "short": "help" },
+        { "short": "show" },
+        { "short": "simple-show" },
+        { "short": "simple" },
+        { "short": "vis" },
+        { "short": "trace" }
+      ],
+      "option_parse": "manual"
+    }
+  ]
+}

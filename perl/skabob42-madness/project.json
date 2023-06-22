@@ -1,0 +1,24 @@
+{
+  "id": "perl/skabob42-madness",
+  "name": "madness",
+  "description": "Mike Kölbl's interpreter processed with Acme::Bleach",
+  "authors": ["SkaBob42"],
+  "license": "GPL-3.0",
+  "languages": ["Perl"],
+  "tags": ["interpreter"],
+  "date": "2019-04-24 14:54:48 -0400",
+  "spec_version": "0.3",
+  "source": ["https://github.com/SkaBob42/madness"],
+  "relations": [{ "id": "perl/mkoelbl", "type": "fork" }],
+  "commands": [
+    {
+      "type": "interpreter",
+      "bin": "whitespace_bleached.pl",
+      "usage": "[<file>]",
+      "input": "<file> or stdin",
+      "output": "stdout",
+      "options": [{ "short": "d", "desc": "debug" }],
+      "option_parse": "Perl Getopt::Std"
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "id": "haskell/matsubara0507",
+  "name": "Whitespace",
+  "authors": ["松原信忠 (MATSUBARA Nobutada)"],
+  "license": "BSD-3-Clause",
+  "languages": ["Haskell"],
+  "tags": ["interpreter"],
+  "date": "2016-05-06 12:05:44 +0900",
+  "spec_version": "0.3",
+  "source": ["https://github.com/matsubara0507/whitespace_has/tree/develop"]
+}

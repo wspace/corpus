@@ -1,0 +1,71 @@
+{
+  "id": "go/135yshr-wspacego",
+  "name": "wspacego",
+  "authors": ["Yosihiro Isago"],
+  "license": "Apache-2.0",
+  "languages": ["Go"],
+  "tags": ["interpreter", "disassembler", "mapping"],
+  "date": "2013-12-27 19:29:40 -0800",
+  "spec_version": "0.3",
+  "source": ["https://github.com/135yshr/wspacego", "https://gitlab.com/yshr135/wspacego"],
+  "bounds": {
+    "precision": "fixed",
+    "stack_cap": "unbounded",
+    "call_stack_cap": "unbounded",
+    "heap_min": "unbounded",
+    "heap_max": "unbounded",
+    "heap_cap": "unbounded",
+    "label_cap": "unbounded",
+    "instruction_cap": "unbounded"
+  },
+  "assembly": {
+    "mnemonics": {
+      "push": ["stack push"],
+      "dup": ["stack copy"],
+      "copy": ["stack ncopy"],
+      "swap": ["stack swap"],
+      "drop": ["stack remove"],
+      "slide": ["stack move"],
+      "add": ["add"],
+      "sub": ["sub"],
+      "mul": ["mul"],
+      "div": ["div"],
+      "mod": ["mod"],
+      "store": ["heap push"],
+      "retrieve": ["heap pop"],
+      "label": ["label"],
+      "call": ["call"],
+      "jmp": ["goto"],
+      "jz": ["if stack==0 then goto"],
+      "jn": ["if stack<0 then goto"],
+      "ret": ["return"],
+      "end": ["exit"],
+      "printc": ["putc"],
+      "printi": ["putn"],
+      "readc": ["getc"],
+      "readi": ["getn"]
+    },
+    "indentation": "",
+    "binary_numbers": true,
+    "usage": ["disassembler"]
+  },
+  "mappings": [{ "space": "S", "tab": "T", "lf": "\n", "spaces_between": false }],
+  "commands": [
+    {
+      "type": "interpreter",
+      "bin": "wspacego",
+      "usage": "[-h | --help] [run | disasm | char] <file>",
+      "options": [
+        { "short": "h", "long": "h", "desc": "display this help and exit" },
+        { "short": "help", "long": "help", "desc": "display this help and exit" }
+      ],
+      "option_parse": "Go flag",
+      "subcommands": [
+        { "name": "run", "desc": "run the program" },
+        { "name": "disasm", "desc": "disassemble the program" },
+        { "name": "char", "desc": "convert the program (space -> S, Tab -> T)" }
+      ]
+    }
+  ],
+  "notes": "copy and slide use top of stack, not argument. Tests fail to run due to vet error."
+}

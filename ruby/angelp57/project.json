@@ -1,0 +1,149 @@
+{
+  "id": "ruby/angelp57",
+  "name": "WhiteSpace assembler/disassembler",
+  "authors": ["angel-p57"],
+  "license": "none",
+  "languages": ["Ruby", "Perl"],
+  "tags": ["interpreter", "assembler", "disassembler", "programs"],
+  "date": "2018-12-16 18:38:14 +0900",
+  "spec_version": "0.3",
+  "source": ["https://github.com/angel-p57/whitespace"],
+  "whitespace": { "extension": "ws" },
+  "assembly": {
+    "mnemonics": {
+      "push": ["push"],
+      "dup": ["dup"],
+      "copy": ["copy"],
+      "swap": ["swap"],
+      "drop": ["pop"],
+      "slide": ["slide"],
+      "add": ["add"],
+      "sub": ["sub"],
+      "mul": ["mul"],
+      "div": ["div"],
+      "mod": ["mod"],
+      "store": ["stor"],
+      "retrieve": ["retr"],
+      "label": ["mark"],
+      "call": ["call"],
+      "jmp": ["jump"],
+      "jz": ["jzero"],
+      "jn": ["jneg"],
+      "ret": ["ret"],
+      "end": ["end"],
+      "printc": ["putc"],
+      "printi": ["puti"],
+      "readc": ["getc"],
+      "readi": ["geti"],
+      "shuffle": ["permr"]
+    },
+    "patterns": { "label": "<number>|[a-zA-Z]\\w*|null", "number": "[-+]?\\d+(\\s*\\(\\s*(\\d+)\\s*b\\s*\\))?" },
+    "line_comments": ["#"],
+    "indentation": "",
+    "usage": ["assembler", "disassembler", "programs"],
+    "extension": "wss"
+  },
+  "mappings": [{ "space": "s", "tab": "t", "lf": "n" }],
+  "programs": [
+    {
+      "path": "sample/hello.wss",
+      "generated": "sample/hello.ws",
+      "spec_version": "0.2",
+      "generate": "ruby whitespace.rb -Sn sample/hello.wss"
+    },
+    {
+      "path": "sample/quine.wss",
+      "generated": "sample/quine.ws",
+      "spec_version": "0.3",
+      "generate": "ruby whitespace.rb -Sn sample/quine.wss"
+    },
+    {
+      "path": "sample/quine406.wss",
+      "generated": "sample/quine406.ws",
+      "spec_version": "0.3",
+      "generate": "ruby whitespace.rb -Sn sample/quine406.wss"
+    },
+    {
+      "path": "sample/sum_cnum_seq.wss",
+      "generated": "sample/sum_cnum_seq.ws",
+      "spec_version": "0.3",
+      "generate": "ruby whitespace.rb -Sn sample/sum_cnum_seq.wss"
+    }
+  ],
+  "commands": [
+    {
+      "type": "multiple",
+      "bin": "whitespace.rb",
+      "usage": "[-n | --noexec] [-D | --disassemble] [-t | --itype <itype>] [-T | --otype <otype>] [-S | --assemble] [-r | --report-exec] [-R | --report-code] [-q | --quiet] [-o | --outfile <output>] [--strict] [--stdin <stdin_file>] [--stdout <stdout_file>] [-u | --unlimit] [-v | --version <version>] [-d | --debug] <file>",
+      "options": [
+        { "short": "n", "long": "noexec", "desc": "Don't execute" },
+        { "short": "D", "long": "disassemble", "desc": "Disassemble source" },
+        {
+          "short": "t",
+          "long": "itype",
+          "arg": "TYPE",
+          "default": "auto",
+          "desc": "Source code type",
+          "values": [{ "values": ["auto"] }, { "values": ["raw"] }, { "values": ["stn"] }, { "values": ["wss"] }]
+        },
+        {
+          "short": "T",
+          "long": "otype",
+          "arg": "TYPE",
+          "default": "raw",
+          "desc": "Disassembled source code type",
+          "values": [{ "values": ["raw"] }, { "values": ["stn"] }]
+        },
+        { "short": "S", "long": "assemble", "desc": "Assemble source" },
+        { "short": "r", "long": "report-exec", "desc": "Report execution details" },
+        { "short": "R", "long": "report-code", "desc": "Report code details" },
+        { "short": "q", "long": "quiet", "desc": "Do not output warnings" },
+        {
+          "short": "o",
+          "long": "outfile",
+          "arg": "FILENAME",
+          "type": "file",
+          "desc": "File to save assembled/disassembled source"
+        },
+        { "long": "strict", "desc": "Abort immediately on warnings" },
+        { "long": "stdin", "arg": "FILE", "type": "file", "desc": "Input file for STDIN" },
+        { "long": "stdout", "arg": "FILE", "type": "file", "desc": "Output file for STDOUT" },
+        { "short": "u", "long": "unlimit", "desc": "Unlimit all resource limits" },
+        {
+          "short": "v",
+          "long": "version VERSION",
+          "default": "0.3",
+          "desc": "Which version to use",
+          "values": [{ "values": ["0.2"] }, { "values": ["0.3"] }, { "values": ["0.4"] }]
+        },
+        { "short": "d", "long": "debug", "desc": "Enable debug operations" },
+        { "short": "h", "long": "help" }
+      ],
+      "option_parse": "Ruby optparse",
+      "notes": "Supports shuffle"
+    },
+    {
+      "type": "assembler",
+      "bin": "old/wssa.pl",
+      "usage": "perl $0 [<file>]",
+      "input": "<file> or stdin",
+      "output": "stdout",
+      "notes": "Does not support shuffle"
+    },
+    {
+      "type": "disassembler",
+      "bin": "old/wsdisas.pl",
+      "usage": "perl $0 [-h] [-u | -l <maxsteps>] [-c <code_level>] {[<merged_file>] | -s <file> [<input_file>]}",
+      "options": [
+        { "short": "h" },
+        { "short": "u" },
+        { "short": "s", "arg": "srcfile", "type": "file" },
+        { "short": "l", "arg": "maxsteps", "default": 10000 },
+        { "short": "c", "arg": "code-level", "default": 3 }
+      ],
+      "option_parse": "Perl Getopt::Std",
+      "notes": "Does not support shuffle. Interprets program after disassembling. Space is not required between options and their arguments."
+    }
+  ],
+  "todo": "Unsure what <merged_file> is for wsdisas.pl"
+}

@@ -8,7 +8,7 @@
   "date": "2022-04-29 21:57:54 +0530",
   "spec_version": "0.3",
   "source": ["https://github.com/Rahul-KP/WhiteSpace-Interpreter"],
-  "relations": [{ "id": "vim/rolf-ws-vim", "type": "embedded" }],
+  "relations": [{ "id": "vim/rolf007-ws-vim", "type": "embedded" }],
   "programs": [
     { "path": "add2.ws", "spec_version": "0.2" },
     { "path": "hello.ws", "spec_version": "0.2" },

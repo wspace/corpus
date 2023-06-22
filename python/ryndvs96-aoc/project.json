@@ -1,0 +1,66 @@
+{
+  "id": "python/ryndvs96-aoc",
+  "name": "aoc",
+  "authors": ["Ryan Davis"],
+  "license": "none",
+  "languages": ["Python", "Whitespace"],
+  "tags": ["assembler", "programs"],
+  "date": "2020-12-18 13:36:13 -0500",
+  "spec_version": "0.2",
+  "source": ["https://github.com/ryndvs96/aoc"],
+  "challenges": ["Advent of Code 2018"],
+  "whitespace": { "extension": "ws" },
+  "assembly": {
+    "mnemonics": {
+      "push": ["push"],
+      "dup": ["dup"],
+      "swap": ["swap"],
+      "drop": ["drop"],
+      "add": ["add"],
+      "sub": ["sub"],
+      "mul": ["mul"],
+      "div": ["div"],
+      "mod": ["mod"],
+      "store": ["store"],
+      "retrieve": ["retrieve"],
+      "label": ["label"],
+      "call": ["call"],
+      "jmp": ["jmp"],
+      "jz": ["jz"],
+      "jn": ["jn"],
+      "ret": ["ret"],
+      "end": ["end"],
+      "printc": ["printc"],
+      "printi": ["printi"],
+      "readc": ["readc"],
+      "readi": ["readi"]
+    },
+    "indentation": "\t",
+    "usage": ["assembler", "programs"],
+    "extension": "wsa"
+  },
+  "programs": [
+    {
+      "path": "2018/day1/day1.wsa",
+      "generated": "2018/day1/day1.ws",
+      "inputs": ["2018/day1/freq.txt"],
+      "spec_version": "0.2"
+    },
+    {
+      "path": "2018/day1/test.wsa",
+      "generated": "2018/day1/test.ws",
+      "inputs": ["2018/day1/test.txt"],
+      "spec_version": "0.2"
+    },
+    { "path": "2018/day1/whitespace.ws", "spec_version": "0.2" }
+  ],
+  "commands": [
+    {
+      "type": "assembler",
+      "bin": "2018/wsa-to-ws.py",
+      "usage": "<file>",
+      "input": "<file>",
+      "output": "stdout"
+    }
+  ]
+}
