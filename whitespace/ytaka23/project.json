@@ -1,5 +1,5 @@
 {
-  "id": "whitespace/ytaka",
+  "id": "whitespace/ytaka23",
   "name": "whitespace_pumpkin.ws, whitespace_fizzbuzz.ws, and whitespace_sieve.ws",
   "authors": ["Yuto Takahashi"],
   "license": "none",
@@ -8,7 +8,7 @@
   "date": "2013-11-07 04:06:05 -0800",
   "spec_version": "0.2",
   "source": [
-    "https://github.com/wspace/ytaka-whitespace",
+    "https://github.com/wspace/ytaka23-whitespace",
     "https://gist.github.com/y-taka-23/7353571",
     "https://gist.github.com/y-taka-23/7353594",
     "https://gist.github.com/y-taka-23/7353612"

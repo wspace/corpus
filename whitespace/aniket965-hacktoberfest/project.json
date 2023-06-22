@@ -1,5 +1,5 @@
 {
-  "id": "whitespace/aniket-hacktoberfest",
+  "id": "whitespace/aniket965-hacktoberfest",
   "name": "Hacktoberfest 2018 Hello-world",
   "authors": ["Ethan Hall", "Unnikrishnan A G"],
   "license": "MIT",
@@ -8,7 +8,7 @@
   "date": "2018-10-06 00:23:08 -0500",
   "spec_version": "0.2",
   "source": [
-    "https://github.com/wspace/aniket-hacktoberfest",
+    "https://github.com/wspace/aniket965-hacktoberfest",
     "https://github.com/Aniket965/Hello-world/tree/master/Whitespace"
   ],
   "challenges": ["Hacktoberfest 2018"],

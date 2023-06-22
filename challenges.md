@@ -83,7 +83,7 @@ case of Codewars, interpreters for Whitespace.
 
 ## Hacktoberfest 2018
 
-- [whitespace/aniket-hacktoberfest](whitespace/aniket-hacktoberfest)
+- [whitespace/aniket965-hacktoberfest](whitespace/aniket965-hacktoberfest)
 
 ## Kattis
 

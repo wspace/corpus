@@ -44,7 +44,7 @@ Projects that can be built with Docker:
 - cpp/marcellippmann-whitepp
 - cpp/noia1
 - cpp/nullflagblues-whint
-- cpp/pavelshub
+- cpp/pavel987
 - cpp/peasley
 - cpp/ricardoluis0: `#include <conio.h>` not found; `floor` cannot be used in a constant expression
 - cpp/shadowmitia
@@ -83,7 +83,7 @@ Projects that can be built with Docker:
 - java/azige
 - java/bearice-grassmudhorse
 - java/brumbeere-whitespace4j
-- java/eia
+- java/eiauniversity
 - java/faurehu
 - java/mash-whitespacesdk
 - java/matou-whasm
@@ -164,7 +164,7 @@ Projects that can be built with Docker:
 - python/qwhxm-baudelaire: Needs AWS Lambda entrypoint
 - python/rumaxwell
 - python/ryndvs96-aoc
-- python/smithers-bluespace
+- python/smithers888-bluespace
 - python/squancy: Needs Codewars entrypoint
 - python/stephenchappell: msvcrt module only exists on Windows
 - python/techiehelper-codewars: Needs Codewars entrypoint
@@ -247,7 +247,7 @@ Building status of individual executables:
 - ❌ javascript/ad9000-evanescojs
 - ❌ javascript/arnauld
 - ❌ javascript/kmyk-translater
-- ❌ javascript/kosei
+- ❌ javascript/kosei28
 - ❌ javascript/luilak-ws2js
 - ❌ javascript/macocha-whitespacer
 - ❌ javascript/naokikp-wsi
@@ -291,7 +291,7 @@ Building status of individual executables:
 - ❌ whitespace/datomalania-hello
 - ❌ whitespace/helowld
 - ❌ whitespace/jarrodparkes-a-z
-- whitespace/keen-whitelie:
+- whitespace/keens-whitelie:
   - asm.rb
   - whitelie
 - whitespace/thaliaarchi-wslib/assemble.sh

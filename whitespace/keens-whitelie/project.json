@@ -1,5 +1,5 @@
 {
-  "id": "whitespace/keen-whitelie",
+  "id": "whitespace/keens-whitelie",
   "name": "Whitelie",
   "description": "Self-hosted Whitespace compiler for 64-bit Linux",
   "authors": ["κeen"],
@@ -9,7 +9,7 @@
   "date": "2020-03-31 23:46:45 +0900",
   "spec_version": "0.3",
   "source": [
-    "https://github.com/wspace/keen-whitelie",
+    "https://github.com/wspace/keens-whitelie",
     "https://github.com/KeenS/whitelie",
     "https://gist.github.com/KeenS/6081b0c802a4e575ddbacb1930680870",
     "https://keens.github.io/blog/2020/04/01/whitespacenoserufuhosutokonpairatsukuttayo/",

@@ -1,5 +1,5 @@
 {
-  "id": "java/eia",
+  "id": "java/eiauniversity",
   "name": "WhiteSpaceInterpreter",
   "authors": ["Zuleimi Esteffanny González Muñoz"],
   "license": "MIT",
@@ -7,7 +7,10 @@
   "tags": ["interpreter", "programs"],
   "date": "2016-10-27 09:58:09 -0500",
   "spec_version": "0.2",
-  "source": ["https://github.com/wspace/eia-java", "https://github.com/EIA-University/WhiteSpaceInterpreter"],
+  "source": [
+    "https://github.com/wspace/eiauniversity-java",
+    "https://github.com/EIA-University/WhiteSpaceInterpreter"
+  ],
   "whitespace": {
     "unimplemented": [
       "dup",
