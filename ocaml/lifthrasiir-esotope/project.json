@@ -1,0 +1,49 @@
+{
+  "id": "ocaml/lifthrasiir-esotope",
+  "name": "Esotope",
+  "authors": ["Kang Seonghoon"],
+  "license": "none",
+  "languages": ["OCaml"],
+  "tags": ["interpreter"],
+  "date": "2009-05-07 10:57:56 +0900",
+  "spec_version": "0.3",
+  "source": [
+    "https://github.com/wspace/lifthrasiir-esotope",
+    "https://archive.softwareheritage.org/browse/origin/directory/?origin_url=https://bitbucket.org/lifthrasiir/esotope-esotope",
+    "https://web.archive.org/web/20181210223811/https://bitbucket.org/lifthrasiir/esotope-esotope/",
+    "https://mearie.org/projects/esotope/",
+    "https://github.com/mearie/TEMP_mearie_old/tree/master/projects/esotope",
+    "https://github.com/lifthrasiir",
+    "https://esolangs.org/wiki/User:Tokigun"
+  ],
+  "whitespace": { "nonstandard": [{ "name": "pick" }, { "name": "roll" }, { "name": "discard" }], "extension": "ws" },
+  "assembly": {
+    "mnemonics": {
+      "push": ["push"],
+      "dup": ["dup"],
+      "copy": ["copy"],
+      "swap": ["swap"],
+      "drop": ["pop"],
+      "slide": ["slide"],
+      "add": ["add"],
+      "sub": ["sub"],
+      "mul": ["mul"],
+      "div": ["div"],
+      "mod": ["mod"],
+      "store": ["store"],
+      "retrieve": ["retrieve"],
+      "label": ["<label>:"],
+      "call": ["call"],
+      "jmp": ["jmp"],
+      "jz": ["jz"],
+      "jn": ["jn"],
+      "ret": ["ret"],
+      "end": ["halt"],
+      "printc": ["putchar"],
+      "printi": ["putint"],
+      "readc": ["getchar"],
+      "readi": ["getint"]
+    },
+    "usage": ["debug"]
+  }
+}

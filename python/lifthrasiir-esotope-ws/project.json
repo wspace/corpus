@@ -1,22 +1,21 @@
 {
   "id": "python/lifthrasiir-esotope-ws",
-  "name": "esotape-ws",
+  "name": "esotope-ws",
   "authors": ["Kang Seonghoon"],
-  "license": "unknown",
+  "license": "none",
   "languages": ["Python"],
   "tags": ["interpreter", "assembler", "disassembler"],
-  "date": "2009-06-09 12:45",
+  "date": "2004-12-08 00:00:00 +0900",
   "spec_version": "0.3",
   "source": [
+    "https://github.com/wspace/lifthrasiir-esotope-ws",
     "https://archive.softwareheritage.org/browse/origin/directory/?origin_url=https://bitbucket.org/lifthrasiir/esotope-ws",
     "https://web.archive.org/web/20181210224409/https://bitbucket.org/lifthrasiir/esotope-ws/",
     "https://mearie.org/projects/esotope/ws",
     "https://github.com/mearie/TEMP_mearie_old/tree/master/projects/esotope",
-    "https://github.com/jarrodparkes/a-z-programming/blob/master/whitespace/esotopse-ws.py",
     "https://github.com/lifthrasiir",
     "https://esolangs.org/wiki/User:Tokigun"
   ],
-  "source_unavailable": true,
   "whitespace": { "extension": "ws" },
   "assembly": {
     "mnemonics": {
@@ -48,7 +47,6 @@
     "usage": ["assembler", "disassembler"],
     "extension": "wsa"
   },
-  "build_errors": "Source code unavailable",
   "commands": [
     {
       "type": "interpreter",
@@ -59,6 +57,5 @@
         { "short": "d", "arg": "output_file", "arg_required": true, "desc": "disassembler mode" }
       ]
     }
-  ],
-  "notes": "Date is from edit that mentions esolang-ws: https://esolangs.org/w/index.php?title=User:Tokigun&diff=14612&oldid=14578"
+  ]
 }

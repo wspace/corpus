@@ -148,7 +148,6 @@ Projects that can be built with Docker:
 - python/katc
 - python/kraterkraken
 - python/lachlancourt
-- python/lifthrasiir-esotope-ws: Source code unavailable
 - python/maximegoyette: Needs Codewars entrypoint
 - python/mcolom
 - python/meand
@@ -261,6 +260,7 @@ Building status of individual executables:
   - wsCompiler.py
   - wsInterpreter: `gcc -O3 -Wall -o wsInterpreter wsInterpreter.c`
 - objective-c/emilbahnsen-assembler/build/Release/wsa: `xcodebuild`
+- ❌ ocaml/lifthrasiir-esotope
 - php/codelytv-youtube:
   - top-langs-not-to-use/src/decoder.php
   - top-langs-not-to-use/src/encoder.php
@@ -271,6 +271,7 @@ Building status of individual executables:
 - ❌ php/jseidl-wcc
 - php/mattparker/src/PHPWhiteSpace.php
 - ❌ python/cybis-hapyli
+- python/lifthrasiir-esotope-ws/esotope-ws
 - ⚠️ python/marktraceur-redlandside/main.py
 - ❌ python/res0001-trans32
 - r/bmazoure/R/whitespace.R

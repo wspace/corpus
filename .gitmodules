@@ -443,6 +443,9 @@
 [submodule "ocaml/jgkaplan-wsc/whitespaceTranspiler"]
 	path = ocaml/jgkaplan-wsc/whitespaceTranspiler
 	url = https://github.com/jgkaplan/whitespaceTranspiler
+[submodule "ocaml/lifthrasiir-esotope/esotope-esotope"]
+	path = ocaml/lifthrasiir-esotope/esotope-esotope
+	url = https://github.com/wspace/lifthrasiir-esotope
 [submodule "ocaml/matsud224-c2ws/c2ws"]
 	path = ocaml/matsud224-c2ws/c2ws
 	url = https://github.com/matsud224/c2ws
@@ -575,6 +578,9 @@
 [submodule "python/lachlancourt/whitespace_transpiler"]
 	path = python/lachlancourt/whitespace_transpiler
 	url = https://github.com/LachlanCourt/whitespace_transpiler
+[submodule "python/lifthrasiir-esotope-ws/esotope-ws"]
+	path = python/lifthrasiir-esotope-ws/esotope-ws
+	url = https://github.com/wspace/lifthrasiir-esotope-ws
 [submodule "python/marktraceur-redlandside/redlandside"]
 	path = python/marktraceur-redlandside/redlandside
 	url = https://github.com/wspace/marktraceur-redlandside
