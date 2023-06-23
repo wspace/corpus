@@ -1,6 +1,6 @@
 {
-  "id": "javascript/vii5ard-whitelips-ide",
-  "name": "Whitelips IDE",
+  "id": "javascript/vii5ard-whitelips",
+  "name": "Whitelips",
   "authors": ["Henri Lakk (Vii5ard)"],
   "license": "none",
   "languages": ["JavaScript"],
@@ -41,6 +41,9 @@
       "readc": ["readc"],
       "readi": ["readi"]
     },
+    "instruction_delimiter": "space",
+    "line_comments": [";", "#", "--"],
+    "block_comments": [{ "start": "{-", "end": "-}", "nestable": false }],
     "indentation": "\t",
     "usage": ["assembler", "disassembler", "programs"],
     "extension": "wsa"

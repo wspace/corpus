@@ -252,7 +252,7 @@ Building status of individual executables:
 - ❌ javascript/naokikp-wsi
 - ❌ javascript/pvdz-significant-whitespace
 - ❌ javascript/tranbrian10-generator
-- ❌ javascript/vii5ard-whitelips-ide
+- ❌ javascript/vii5ard-whitelips
 - ⚠️ julia/goropikari-whitespaces/*unspecified*
 - ⚠️ kotlin/ze-space/build/libs/space.jar: `./gradlew` Dependencies not packaged
 - ⚠️ masm/jarsp-wsint/wsint: Requires Visual Studio

@@ -407,8 +407,8 @@
 [submodule "javascript/uraza/whitespace-interpreter"]
 	path = javascript/uraza/whitespace-interpreter
 	url = https://github.com/uraza/whitespace-interpreter
-[submodule "javascript/vii5ard-whitelips-ide/whitespace"]
-	path = javascript/vii5ard-whitelips-ide/whitespace
+[submodule "javascript/vii5ard-whitelips/whitespace"]
+	path = javascript/vii5ard-whitelips/whitespace
 	url = https://github.com/vii5ard/whitespace
 [submodule "javascript/wdalmut/whitespace-lang-compiler"]
 	path = javascript/wdalmut/whitespace-lang-compiler
