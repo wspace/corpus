@@ -10,7 +10,8 @@
   "source": [
     "https://github.com/wspace/shimo-yukicoder",
     "https://github.com/shi-mo/yukicoder/tree/master/whitespace",
-    "https://yukicoder.me/users/1721"
+    "https://yukicoder.me/users/1721",
+    "https://github.com/thaliaarchi/repo-archival/blob/main/scripts/wspace/shimo-yukicoder.sh"
   ],
   "challenges": ["yukicoder"],
   "whitespace": { "extension": "ws" },

@@ -9,7 +9,8 @@
   "spec_version": "0.3",
   "source": [
     "https://github.com/wspace/emilbahnsen-assembler",
-    "https://github.com/EmilBahnsen/projects/tree/master/Whitespace%20assembler"
+    "https://github.com/EmilBahnsen/projects/tree/master/Whitespace%20assembler",
+    "https://github.com/thaliaarchi/repo-archival/blob/main/scripts/wspace/emilbahnsen-assembler.sh"
   ],
   "assembly": {
     "mnemonics": {

@@ -11,7 +11,8 @@
     "https://github.com/wspace/tetris",
     "https://web.archive.org/web/20141011193149/http://compsoc.dur.ac.uk/archives/whitespace/2008-January/000067.html",
     "https://web.archive.org/web/20150817151110/http://compsoc.dur.ac.uk/archives/whitespace/attachments/20080103/20651c47/attachment.zip",
-    "https://www.reddit.com/r/programming/comments/9nw1e/most_unreadable_programming_language_ever/c0dkzzw/"
+    "https://www.reddit.com/r/programming/comments/9nw1e/most_unreadable_programming_language_ever/c0dkzzw/",
+    "https://github.com/thaliaarchi/repo-archival/blob/main/scripts/wspace/pdewacht-tetris.sh"
   ],
   "whitespace": { "extension": "ws" },
   "programs": [

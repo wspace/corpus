@@ -9,7 +9,8 @@
   "spec_version": "0.2",
   "source": [
     "https://github.com/wspace/aniket965-hacktoberfest",
-    "https://github.com/Aniket965/Hello-world/tree/master/Whitespace"
+    "https://github.com/Aniket965/Hello-world/tree/master/Whitespace",
+    "https://github.com/thaliaarchi/repo-archival/blob/main/scripts/wspace/aniket965-hacktoberfest.sh"
   ],
   "challenges": ["Hacktoberfest 2018"],
   "whitespace": { "extension": "ws" },

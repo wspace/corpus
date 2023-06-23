@@ -592,6 +592,9 @@ func GetURLLabel(url string) (string, error) {
 	if host == "docs.google.com" && strings.HasPrefix(u.Path, "/presentation/") {
 		return "Google Slides", nil
 	}
+	if host == "github.com" && strings.HasPrefix(u.Path, "/thaliaarchi/repo-archival/") {
+		return "repo-archival", nil
+	}
 	if i := strings.IndexByte(host, '.'); i != -1 {
 		switch host[:i] {
 		case "www", "www2":

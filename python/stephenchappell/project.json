@@ -11,7 +11,8 @@
     "https://github.com/wspace/stephenchappell-python",
     "https://code.activestate.com/recipes/sets/12/",
     "https://github.com/ActiveState/code",
-    "https://stackoverflow.com/questions/2901274/do-you-have-suggestions-for-these-assembly-mnemonics"
+    "https://stackoverflow.com/questions/2901274/do-you-have-suggestions-for-these-assembly-mnemonics",
+    "https://github.com/thaliaarchi/repo-archival/blob/main/scripts/wspace/stephenchappell-python.sh"
   ],
   "assembly": {
     "mnemonics": {

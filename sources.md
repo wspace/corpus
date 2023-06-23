@@ -144,6 +144,7 @@ TODO:
     [mailing list](https://web.archive.org/web/20141011193126/http://compsoc.dur.ac.uk/archives/whitespace/)
 - [mirror.ox.ac.uk](https://web.archive.org/web/20030414003351/http://mirror.ox.ac.uk:80/Mirrors/whitespace/)
 - [dur.ac.uk/d.j.walrond](https://web.archive.org/web/20030608044924/http://www.dur.ac.uk:80/d.j.walrond/whitespace/)
+- [Debian packages](https://github.com/thaliaarchi/repo-archival/blob/main/scripts/wspace/stribb-debian/archive.sh)
 
 ## Wikis
 

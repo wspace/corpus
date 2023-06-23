@@ -10,7 +10,8 @@
   "source": [
     "https://github.com/wspace/stellwag-wspacegen",
     "https://sourceforge.net/projects/wspacegen/",
-    "https://web.archive.org/web/20041031181043/http://wsdebug.berlios.de:80/wspacegen.php"
+    "https://web.archive.org/web/20041031181043/http://wsdebug.berlios.de:80/wspacegen.php",
+    "https://github.com/thaliaarchi/repo-archival/blob/main/scripts/wspace/stellwag-wspacegen.sh"
   ],
   "relations": [{ "id": "c/ssiegl-wsdebug", "type": "fork" }],
   "mappings": [{ "space": "[SPACE]", "tab": "[TAB]", "lf": "[LF]", "spaces_between": false }],

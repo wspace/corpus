@@ -9,7 +9,8 @@
   "spec_version": "0.3",
   "source": [
     "https://github.com/wspace/0x0dea-lolcode",
-    "https://github.com/hostilefork/whitespacers/tree/master/lolcode"
+    "https://github.com/hostilefork/whitespacers/tree/master/lolcode",
+    "https://github.com/thaliaarchi/repo-archival/blob/main/scripts/wspace/0x0dea-lolcode.sh"
   ],
   "assembly": {
     "mnemonics": {

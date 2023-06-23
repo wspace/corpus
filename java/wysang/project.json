@@ -7,7 +7,11 @@
   "tags": ["parser", "grammar", "programs"],
   "date": "2018-10-21 19:31:04 -0700",
   "spec_version": "0.3",
-  "source": ["https://github.com/wspace/wysang-java", "https://github.com/wysang/Whitespace-Compiler"],
+  "source": [
+    "https://github.com/wspace/wysang-java",
+    "https://github.com/wysang/Whitespace-Compiler",
+    "https://github.com/thaliaarchi/repo-archival/blob/main/scripts/wspace/wysang-java.sh"
+  ],
   "whitespace": { "unimplemented": ["store", "retrieve"], "extension": "whitespace" },
   "assembly": {
     "mnemonics": {

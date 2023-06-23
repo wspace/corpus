@@ -7,7 +7,11 @@
   "tags": ["interpreter", "assembler", "text to Whitespace", "programs"],
   "date": "2010-04-22 15:21:24 +0100",
   "spec_version": "0.3",
-  "source": ["https://github.com/wspace/mash-whitespacesdk", "https://code.google.com/archive/p/whitespacesdk/"],
+  "source": [
+    "https://github.com/wspace/mash-whitespacesdk",
+    "https://code.google.com/archive/p/whitespacesdk/",
+    "https://github.com/thaliaarchi/repo-archival/blob/main/scripts/wspace/mash-whitespacesdk.sh"
+  ],
   "whitespace": {
     "nonstandard": [
       { "name": "Invert", "seq": "STT", "desc": "Invert the stack" },

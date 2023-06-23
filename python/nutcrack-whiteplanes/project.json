@@ -10,7 +10,8 @@
   "source": [
     "https://github.com/wspace/nutcrack-whiteplanes",
     "https://pypi.org/project/whiteplanes/",
-    "https://whiteplanes.github.io/"
+    "https://whiteplanes.github.io/",
+    "https://github.com/thaliaarchi/repo-archival/blob/main/scripts/wspace/nutcrack-whiteplanes.sh"
   ],
   "packages": [{ "name": "whiteplanes", "manager": "PyPI", "url": "https://pypi.org/project/whiteplanes/" }],
   "assembly": {

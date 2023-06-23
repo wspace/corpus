@@ -11,7 +11,8 @@
     "https://github.com/wspace/mrbubble-markov",
     "https://web.archive.org/web/20141011193203/http://compsoc.dur.ac.uk/archives/whitespace/attachments/20070224/2792d9db/markov.zip",
     "https://web.archive.org/web/20070830102217/http://compsoc.dur.ac.uk:80/archives/whitespace/2007-February/000054.html",
-    "https://web.archive.org/web/20070831081100/http://compsoc.dur.ac.uk:80/archives/whitespace/2007-February/000055.html"
+    "https://web.archive.org/web/20070831081100/http://compsoc.dur.ac.uk:80/archives/whitespace/2007-February/000055.html",
+    "https://github.com/thaliaarchi/repo-archival/blob/main/scripts/wspace/mrbubble-markov.sh"
   ],
   "whitespace": { "extension": "ws" },
   "assembly": {

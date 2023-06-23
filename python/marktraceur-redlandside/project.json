@@ -11,7 +11,8 @@
     "https://github.com/wspace/marktraceur-redlandside",
     "https://github.com/MarkTraceur/redlandside",
     "https://sourceforge.net/projects/redlandside/",
-    "http://redlandside.sourceforge.net/"
+    "http://redlandside.sourceforge.net/",
+    "https://github.com/thaliaarchi/repo-archival/blob/main/scripts/wspace/marktraceur-redlandside.sh"
   ],
   "relations": [{ "id": "python/phlip-pywhitespace", "type": "embedded", "release": "pywhitespace2007.tar.bz2" }],
   "commands": [{ "type": "IDE", "bin": "main.py" }],

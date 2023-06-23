@@ -7,7 +7,11 @@
   "tags": ["IDE", "interpreter", "programs"],
   "date": "2013-02-19 11:13:19 +0000",
   "spec_version": "0.3",
-  "source": ["https://github.com/wspace/kreutzer-spacedide", "https://sourceforge.net/projects/spacedide/"],
+  "source": [
+    "https://github.com/wspace/kreutzer-spacedide",
+    "https://sourceforge.net/projects/spacedide/",
+    "https://github.com/thaliaarchi/repo-archival/blob/main/scripts/wspace/kreutzer-spacedide.sh"
+  ],
   "programs": [{ "path": "res/examples/quicksort.ws", "spec_version": "0.3" }],
   "todo": "Credits say 2012/2013"
 }

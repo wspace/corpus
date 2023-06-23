@@ -9,7 +9,8 @@
   "spec_version": "0.2",
   "source": [
     "https://github.com/wspace/remigascou-c",
-    "https://github.com/RemiGascou/small-projects/tree/master/C/whitespace"
+    "https://github.com/RemiGascou/small-projects/tree/master/C/whitespace",
+    "https://github.com/thaliaarchi/repo-archival/blob/main/scripts/wspace/remigascou-c.sh"
   ],
   "whitespace": { "extension": "ws" },
   "assembly": {
