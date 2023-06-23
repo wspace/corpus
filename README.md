@@ -167,7 +167,7 @@ language, including interpreters, compilers, and programs.
 | [whitespace](ruby/nishiwakki)                 | nishiwakki       | Ruby       | interpreter  | 2018-05-16 | [GitHub](https://github.com/nishiwakki/whitespace) |
 | [space](kotlin/ze-space)                      | Zakaria Elkatani | Kotlin     | interpreter, disassembler, generator, programs | 2018-04-22 | [GitHub](https://github.com/ze/space) |
 | [Whitespace-Example1](whitespace/3f)          | Denis Kuzmin     | Whitespace | programs     | 2018-04-19 | [GitHub](https://github.com/3F/sandbox), [Ideone](https://ideone.com/G1uKlw) |
-| [Respace](cpp/thaliaarchi-respace)            | Thalia Archibald | C++        | interpreter, disassembler, bit packer, Binary Whitespace, programs | 2018-04-16 | [GitHub](https://github.com/thaliaarchi/respace) |
+| [Respace](cpp/thaliaarchi-respace)            | Thalia Archibald | C++        | interpreter, assembler, disassembler, bit packer, Binary Whitespace, programs | 2018-04-16 | [GitHub](https://github.com/thaliaarchi/respace) |
 | [projectOne](csharp/north15-projectone)       | Jacob North      | C#         | mapping, GUI | 2018-04-11 | [GitHub](https://github.com/North15/projectOne) |
 | [whitespace_interpreter](python/maximegoyette) | Maxime Goyette  | Python     | interpreter  | 2018-03-09 | [GitHub](https://github.com/MaximeGoyette/whitespace_interpreter) |
 | [erasure](clojure/jmesyou-erasure)            | James You        | Clojure    | interpreter  | 2018-02-25 | [GitHub](https://github.com/wspace/jmesyou-erasure), [GitHub](https://github.com/jmesyou/erasure) |

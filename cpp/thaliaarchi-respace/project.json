@@ -4,10 +4,11 @@
   "authors": ["Thalia Archibald"],
   "license": "MIT",
   "languages": ["C++"],
-  "tags": ["interpreter", "disassembler", "bit packer", "Binary Whitespace", "programs"],
+  "tags": ["interpreter", "assembler", "disassembler", "bit packer", "Binary Whitespace", "programs"],
   "date": "2018-04-15 21:35:34 -0600",
   "spec_version": "0.3",
   "source": ["https://github.com/thaliaarchi/respace"],
+  "relations": [{ "id": "javascript/vii5ard-whitelips-ide", "type": "assembly" }],
   "bounds": { "precision": "fixed" },
   "whitespace": { "extension": "ws" },
   "assembly": {
@@ -39,9 +40,19 @@
       "dumpstack": ["debug_printstack"],
       "dumpheap": ["debug_printheap"]
     },
+    "macros": [
+      { "name": "@include", "args": ["string"] },
+      { "name": "@define", "args": ["ident", "value"] },
+      { "name": "@ifdef", "args": ["ident"] },
+      { "name": "@else" },
+      { "name": "@endif" }
+    ],
+    "instruction_delimiter": ";",
+    "instruction_wrap": false,
     "indentation": "    ",
-    "usage": ["disassembler", "programs"],
-    "extension": "wsa"
+    "usage": ["assembler", "disassembler", "programs"],
+    "extension": "wsa",
+    "notes": "Extends Whitelips syntax with preprocessor directives and `;` instruction delimiters. Allows all C preprocessor directives, with the `#` replaced with `@`."
   },
   "programs": [
     {
@@ -75,7 +86,8 @@
   ],
   "commands": [
     { "type": "interpreter", "bin": "respace", "usage": "<file>" },
-    { "type": "interpreter", "bin": "programs/ws/interpreter.wsa" }
+    { "type": "interpreter", "bin": "programs/ws/interpreter.wsa" },
+    { "type": "assembler", "bin": "programs/preprocess.sh", "usage": "<file> <output>" }
   ],
   "notes": "Disassembler and bit packer are only available via code modification"
 }
