@@ -126,7 +126,8 @@
       "string": "\"[^\"]*\"|_<variable>",
       "whitespace_between_tokens": "[ \\t]"
     },
-    "case_sensitive_instructions": false,
+    "case_sensitive_mnemonics": false,
+    "instruction_delimiter": "none",
     "line_comments": [";", "--"],
     "block_comments": [{ "start": "{-", "end": "-}", "nestable": true }],
     "usage": ["assembler"],

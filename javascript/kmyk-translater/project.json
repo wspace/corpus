@@ -39,7 +39,7 @@
       "readc": ["GETCHAR"],
       "readi": ["GETNUM"]
     },
-    "case_sensitive_instructions": true,
+    "case_sensitive_mnemonics": true,
     "line_comments": ["#"],
     "indentation": "",
     "usage": ["assembler", "disassembler"]

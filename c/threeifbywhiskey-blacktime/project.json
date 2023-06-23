@@ -43,7 +43,7 @@
       "readi": ["inum"]
     },
     "patterns": { "char": "." },
-    "multiple_per_line": true,
+    "instruction_delimiter": "space",
     "line_comments": [";"],
     "indentation": "    ",
     "block_indentation": true,

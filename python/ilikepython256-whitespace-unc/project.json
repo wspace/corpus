@@ -39,7 +39,7 @@
       "readc": ["IO.IN"],
       "readi": ["IO.NIN"]
     },
-    "case_sensitive_instructions": false,
+    "case_sensitive_mnemonics": false,
     "indentation": "",
     "usage": ["assembler", "programs"]
   },

@@ -40,7 +40,7 @@
       "readc": ["READC"],
       "readi": ["READN"]
     },
-    "case_sensitive_instructions": true,
+    "case_sensitive_mnemonics": true,
     "indentation": "",
     "usage": ["assembler", "disassembler"]
   },

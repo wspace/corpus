@@ -54,7 +54,7 @@
       "string_gap": "\\\\[ \\f\\n\\r\\t\\v]+\\\\",
       "string_literal": "\"([^\"\\\\\\u0000-\\u001a]|<string_gap>|<string_escape_empty>|<escape_code>)*\""
     },
-    "case_sensitive_instructions": true,
+    "case_sensitive_mnemonics": true,
     "line_comments": ["#"],
     "indentation": "",
     "notes": "<char_num> greedily consumes digits for the appropriate base and converts it to the UTF-8 encoding for it as an integer using String.fromCharCode (surrogate halves are allowed and values above U+FFFF are truncated). <string_gap> and <string_escape_empty> both parse to the empty string. The combinator for character literals is at https://github.com/susisu/loquat/blob/master/packages/token/lib/token.js#L245-L339. Quirks: x and o are lowercase-only for escapes and case-insensitive for integers, only 26 control characters can be escaped with the \\^ form, and string and char literals disallow a strange range of literal control characters."

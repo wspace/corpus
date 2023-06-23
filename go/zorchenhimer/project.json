@@ -36,7 +36,7 @@
       "readc": ["readchar"],
       "readi": ["readnumber"]
     },
-    "case_sensitive_instructions": false,
+    "case_sensitive_mnemonics": false,
     "line_comments": ["#"],
     "indentation": "",
     "usage": ["enum", "programs"],

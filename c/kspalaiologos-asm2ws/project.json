@@ -37,8 +37,8 @@
       "readi": ["GETN"]
     },
     "patterns": { "label": "@([A-Za-z_][A-Za-z0-9_]*|L<number>)" },
-    "case_sensitive_instructions": false,
-    "multiple_per_line": true,
+    "case_sensitive_mnemonics": false,
+    "instruction_delimiter": "/",
     "line_comments": [";"],
     "indentation": "    ",
     "usage": ["assembler", "disassembler", "programs"],

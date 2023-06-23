@@ -53,7 +53,7 @@
       { "name": "jumppz", "args": ["label"] }
     ],
     "patterns": { "label": "[a-zA-Z0-9_]+" },
-    "case_sensitive_instructions": false,
+    "case_sensitive_mnemonics": false,
     "line_comments": [";", "--"],
     "block_comments": [{ "start": "{-", "end": "-}", "nestable": true }],
     "indentation": "  ",

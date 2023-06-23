@@ -35,7 +35,7 @@
       "readc": ["readc"],
       "readi": ["readi"]
     },
-    "case_sensitive_instructions": true,
+    "case_sensitive_mnemonics": true,
     "line_comments": ["#"],
     "indentation": "  ",
     "label_indentation": "  ",

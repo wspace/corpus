@@ -40,7 +40,7 @@
       "readc": ["ichr"],
       "readi": ["inum"]
     },
-    "multiple_per_line": true,
+    "instruction_delimiter": "space",
     "indentation": "  ",
     "usage": ["assembler", "disassembler", "programs"],
     "extension": "wsa"

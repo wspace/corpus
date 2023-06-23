@@ -75,7 +75,7 @@
       "signed": "[+-]?[0-9]+",
       "unsigned": "[0-9]+"
     },
-    "multiple_per_line": true,
+    "instruction_delimiter": "space",
     "indentation": "    ",
     "usage": ["assembler", "programs"],
     "extension": "wsf"

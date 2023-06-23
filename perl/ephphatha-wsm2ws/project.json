@@ -36,7 +36,7 @@
       "readc": ["ichar", "getchar"],
       "readi": ["inum", "getnum"]
     },
-    "multiple_per_line": true,
+    "instruction_delimiter": "space",
     "line_comments": [";"],
     "indentation": "",
     "usage": ["assembler", "programs"],

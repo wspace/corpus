@@ -48,7 +48,9 @@
       "readc": ["rc"],
       "readi": ["rn"]
     },
-    "case_sensitive_instructions": true,
+    "case_sensitive_mnemonics": true,
+    "instruction_delimiter": "space",
+    "instruction_wrap": true,
     "usage": ["language", "programs"]
   },
   "programs": [

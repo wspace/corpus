@@ -104,11 +104,12 @@ type Project struct {
 			Replace *[]string `json:"replace,omitempty"`
 			Notes   string    `json:"notes,omitempty"`
 		} `json:"macros,omitempty"`
-		Patterns                  map[string]string `json:"patterns,omitempty"`
-		CaseSensitiveInstructions *bool             `json:"case_sensitive_instructions,omitempty"`
-		MultiplePerLine           *bool             `json:"multiple_per_line,omitempty"`
-		LineComments              []string          `json:"line_comments,omitempty"`
-		BlockComments             []struct {
+		Patterns               map[string]string `json:"patterns,omitempty"`
+		CaseSensitiveMnemonics *bool             `json:"case_sensitive_mnemonics,omitempty"`
+		InstructionDelimiter   string            `json:"instruction_delimiter,omitempty"`
+		InstructionWrap        *bool             `json:"instruction_wrap,omitempty"`
+		LineComments           []string          `json:"line_comments,omitempty"`
+		BlockComments          []struct {
 			Start    string `json:"start"`
 			End      string `json:"end"`
 			Nestable bool   `json:"nestable"`

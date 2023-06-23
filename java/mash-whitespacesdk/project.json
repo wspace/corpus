@@ -48,8 +48,8 @@
     },
     "macros": [{ "name": "NullOp", "replace": [ ] }],
     "patterns": { "number": "-?[0-9]+|char ." },
-    "case_sensitive_instructions": false,
-    "multiple_per_line": false,
+    "case_sensitive_mnemonics": false,
+    "instruction_delimiter": "none",
     "line_comments": ["#"],
     "indentation": "",
     "extension": "txt"

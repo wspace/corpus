@@ -34,7 +34,7 @@
       "readc": ["readchar"],
       "readi": ["readnum"]
     },
-    "case_sensitive_instructions": true,
+    "case_sensitive_mnemonics": true,
     "line_comments": ["#"],
     "usage": ["assembler"]
   },

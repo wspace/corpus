@@ -255,8 +255,9 @@
           "patternProperties": { "": { "type": "string" } },
           "additionalProperties": true
         },
-        "case_sensitive_instructions": { "type": "boolean" },
-        "multiple_per_line": { "type": "boolean" },
+        "case_sensitive_mnemonics": { "type": "boolean" },
+        "instruction_delimiter": { "type": "string", "enum": ["none", "space", ";", "/"] },
+        "instruction_wrap": { "type": "boolean" },
         "line_comments": { "type": "array", "items": { "$ref": "#/$defs/line_comment" } },
         "block_comments": {
           "type": "array",
