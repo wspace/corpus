@@ -677,6 +677,10 @@
 [submodule "ruby/mame-quine-relay/quine-relay"]
 	path = ruby/mame-quine-relay/quine-relay
 	url = https://github.com/mame/quine-relay
+[submodule "ruby/mame-quine-relay/spoiler"]
+	path = ruby/mame-quine-relay/spoiler
+	url = https://github.com/mame/quine-relay
+	branch = spoiler
 [submodule "ruby/nishiwakki/whitespace"]
 	path = ruby/nishiwakki/whitespace
 	url = https://github.com/nishiwakki/whitespace
