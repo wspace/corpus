@@ -3,14 +3,16 @@
   "name": "trans32.py",
   "description": "Two-way translator for an arbitrary 3-symbol language and a binary prefix-code version",
   "authors": ["r.e.s."],
-  "license": "unknown",
+  "license": "none",
   "languages": ["Python"],
   "tags": ["Binary Whitespace"],
   "date": "2012-05-30 15:12",
-  "spec_version": "unknown",
+  "spec_version": "-",
   "source": [
+    "https://github.com/wspace/res0001-trans32",
     "https://web.archive.org/web/20130510111931/https://sites.google.com/site/res0001/whitespace/programs",
-    "https://codegolf.stackexchange.com/questions/6025/remove-vowels-without-using-too-many-different-characters/6100#6100"
+    "https://codegolf.stackexchange.com/questions/6025/remove-vowels-without-using-too-many-different-characters/6100#6100",
+    "https://github.com/thaliaarchi/repo-archival/blob/main/scripts/wspace/res0001-trans32.sh"
   ],
-  "source_unavailable": true
+  "commands": [{ "bin": "trans32.py", "run_errors": "No entrypoint" }]
 }

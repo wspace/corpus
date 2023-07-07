@@ -273,7 +273,7 @@ Building status of individual executables:
 - ❌ python/cybis-hapyli
 - python/lifthrasiir-esotope-ws/esotope-ws
 - ⚠️ python/marktraceur-redlandside/main.py
-- ❌ python/res0001-trans32
+- ⚠️ python/res0001-trans32/trans32.py: No entrypoint
 - r/bmazoure/R/whitespace.R
 - scala/dashlambda-eso/target/scala-2.13/eso\_2.13-2.6.1.jar: `sbt assembly`
 - ❌ scala/polyglotpiglet-whitespacing

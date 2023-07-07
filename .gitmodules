@@ -623,6 +623,9 @@
 [submodule "python/qwhxm-baudelaire/baudelaire-whitespace"]
 	path = python/qwhxm-baudelaire/baudelaire-whitespace
 	url = https://github.com/qwhxm/baudelaire-whitespace
+[submodule "python/res0001-trans32/trans32"]
+	path = python/res0001-trans32/trans32
+	url = https://github.com/wspace/res0001-trans32
 [submodule "python/rumaxwell/whitespace-interpreter"]
 	path = python/rumaxwell/whitespace-interpreter
 	url = https://github.com/RuMaxwell/whitespace-interpreter
