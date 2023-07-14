@@ -137,6 +137,7 @@
       "desc": "Brainfuck to Whitespace assembly compiler written in Whitespace assembly. Just open a Brainfuck file and hit the compile button - the assembly is turned into Whitespace automatically."
     }
   ],
+  "commands": [{ "type": "interpreter, assembler, and disassembler", "bin": "ws_cli.js" }],
   "notes": "Local labels start with `.`. The brainfuck-whitespace repo is derived from example/bf.wsa, but it stops reading the program at !, in addition to \\n.",
   "todo": "Document macros"
 }

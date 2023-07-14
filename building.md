@@ -105,6 +105,7 @@ Projects that can be built with Docker:
 - javascript/syntaqx-puzzles: Needs Codewars entrypoint
 - javascript/therebelrobot: Needs Codewars entrypoint
 - javascript/uraza: Needs Codewars entrypoint
+- javascript/vii5ard-whitelips
 - javascript/wdalmut
 - jq/thaliaarchi-wsjq
 - lolcode/0x0dea
@@ -252,7 +253,6 @@ Building status of individual executables:
 - ❌ javascript/naokikp-wsi
 - ❌ javascript/pvdz-significant-whitespace
 - ❌ javascript/tranbrian10-generator
-- ❌ javascript/vii5ard-whitelips
 - ⚠️ julia/goropikari-whitespaces/*unspecified*
 - ⚠️ kotlin/ze-space/build/libs/space.jar: `./gradlew` Dependencies not packaged
 - ⚠️ masm/jarsp-wsint/wsint: Requires Visual Studio
