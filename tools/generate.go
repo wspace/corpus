@@ -558,7 +558,10 @@ var domainLabels = map[string]string{
 	"pastebin.com":                 "Pastebin",
 	"whitespace.pastebin.com":      "Pastebin",
 	"ideone.com":                   "Ideone",
+	"sites.google.com":             "Google Sites",
 	"drive.google.com":             "Google Drive",
+	"amazon.com":                   "Amazon",
+	"speakerdeck.com":              "Speaker Deck",
 	"compsoc.dur.ac.uk":            "Durham CompSoc",
 	"news.ycombinator.com":         "Hacker News",
 	"slashdot.org":                 "Slashdot",
@@ -566,38 +569,49 @@ var domainLabels = map[string]string{
 	"what.thedailywtf.com":         "What the Daily WTF?",
 }
 
+var subdomainLabels = map[string]string{
+	"github.io":       "GitHub Pages",
+	"gitlab.io":       "GitLab Pages",
+	"sourceforge.net": "SourceForge site",
+	"codeberg.page":   "Codeberg Pages",
+	"googlecode.com":  "Google Code",
+	"readthedocs.io":  "Read the Docs",
+	"blogspot.com":    "Blogger",
+}
+
 func GetURLLabel(url string) (string, error) {
 	u, err := urlpkg.Parse(url)
 	if err != nil {
 		return "", err
 	}
-	if archivedURL, archiveLabel := unwrapArchive(u); archivedURL != "" {
+	if archivedURL := unwrapArchive(u); archivedURL != "" {
 		label, err := GetURLLabel(archivedURL)
 		if err != nil {
 			return "", err
 		}
-		return label + " (" + archiveLabel + ")", nil
+		return label + " (archive)", nil
 	}
 	host := u.Hostname()
-	if strings.HasSuffix(host, ".googlecode.com") {
-		return "Google Code", nil
-	}
 	if host == "code.google.com" && strings.HasPrefix(u.Path, "/archive/") {
-		return "Google Code Archive", nil
-	}
-	if host == "compsoc.dur.ac.uk" && strings.HasPrefix(u.Path, "/archives/whitespace/") {
-		return "Mailing list", nil
-	}
-	if site, ok := pathTrimPrefix("sites.google.com", "/site/", host, u.Path); ok {
-		return site + " Google Site", nil
+		return "Google Code", nil
 	}
 	if host == "docs.google.com" && strings.HasPrefix(u.Path, "/presentation/") {
 		return "Google Slides", nil
 	}
+	if host == "compsoc.dur.ac.uk" && strings.HasPrefix(u.Path, "/archives/whitespace/") {
+		return "Mailing list", nil
+	}
 	if host == "github.com" && strings.HasPrefix(u.Path, "/thaliaarchi/repo-archival/") {
 		return "repo-archival", nil
 	}
-	if i := strings.IndexByte(host, '.'); i != -1 {
+	dots := strings.Count(host, ".")
+	if dots == 2 {
+		if label, ok := subdomainLabels[host[strings.IndexByte(host, '.')+1:]]; ok {
+			return label, nil
+		}
+	}
+	if dots >= 2 {
+		i := strings.IndexByte(host, '.')
 		switch host[:i] {
 		case "www", "www2":
 			host = host[i+1:]
@@ -612,19 +626,19 @@ func GetURLLabel(url string) (string, error) {
 	return host, nil
 }
 
-func unwrapArchive(u *urlpkg.URL) (archivedURL, label string) {
+func unwrapArchive(u *urlpkg.URL) string {
 	host := u.Hostname()
 	if host == "web.archive.org" && strings.HasPrefix(u.Path, "/web/") {
 		path := strings.TrimPrefix(u.Path, "/web/")
 		if i := strings.IndexByte(path, '/'); i != -1 {
-			return path[i+1:], "archive"
+			return path[i+1:]
 		}
 	}
 	query := u.Query()
 	if host == "archive.softwareheritage.org" && query.Has("origin_url") {
-		return query.Get("origin_url"), "Software Heritage archive"
+		return query.Get("origin_url")
 	}
-	return "", ""
+	return ""
 }
 
 func pathTrimPrefix(wantedHost, pathPrefix, host, path string) (string, bool) {
@@ -688,7 +702,7 @@ func GetRepoName(url string) string {
 	if err != nil {
 		return ""
 	}
-	if archivedURL, _ := unwrapArchive(u); archivedURL != "" {
+	if archivedURL := unwrapArchive(u); archivedURL != "" {
 		url = strings.TrimSuffix(archivedURL, "/")
 	}
 	_, _, repoName := GetGitURL(url)

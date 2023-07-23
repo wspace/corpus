@@ -7,7 +7,7 @@
   "tags": ["interpreter", "assembler", "debugger", "steganography", "stdlib", "programs"],
   "date": "2022-06-03 17:29:09 +0200",
   "spec_version": "0.3",
-  "source": ["https://codeberg.org/JBanana/whitespace"],
+  "source": ["https://codeberg.org/JBanana/whitespace", "https://jbanana.codeberg.page/whitespace/doc/"],
   "whitespace": { "extension": "ws" },
   "assembly": { "extension": "wsa" },
   "commands": [
