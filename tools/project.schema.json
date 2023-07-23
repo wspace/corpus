@@ -113,7 +113,7 @@
         {
           "type": "string",
           "format": "uri",
-          "pattern": "^https://github\\.com/[^/]+/[^/]+(?:/tree/[^/]+)?$|^https://gist\\.github\\.com/[^/]+/[^/]+$|^https://gitlab\\.com/[^/]+/[^/]+(?:/-/tree/[^/]+)?$|^https://bitbucket\\.org/[^/]+/[^/]+(?:/src/[^/]+)?$|^https://git\\.code\\.sf\\.net/p/[^/]+/code$"
+          "pattern": "^https://github\\.com/[^/]+/[^/]+(?:/tree/[^/]+)?$|^https://gist\\.github\\.com/[^/]+/[^/]+$|^https://gitlab\\.com/[^/]+/[^/]+(?:/-/tree/[^/]+)?$|^https://bitbucket\\.org/[^/]+/[^/]+(?:/src/[^/]+)?$|^https://git\\.code\\.sf\\.net/p/[^/]+/code$|^https://codeberg\\.org/[^/]+/[^/]+$"
         }
       ],
       "minItems": 1,

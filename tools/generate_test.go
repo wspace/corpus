@@ -54,6 +54,7 @@ var urlAndNameTests = []struct {
 	{"https://bitbucket.org/StephenPatrick/whitespace-interpreter", "https://bitbucket.org/StephenPatrick/whitespace-interpreter", "", "whitespace-interpreter", "whitespace-interpreter"},
 	{"https://git.code.sf.net/p/esco/code", "https://git.code.sf.net/p/esco/code", "", "esco", "esco"},
 	{"https://sourceforge.net/projects/esco/", "", "", "", ""},
+	{"https://codeberg.org/JBanana/whitespace", "https://codeberg.org/JBanana/whitespace", "", "whitespace", "whitespace"},
 	{"https://web.archive.org/web/20200906224652/https://github.com/marcellippmann/Whitepp/", "", "", "", "Whitepp"},
 	{"https://archive.softwareheritage.org/browse/origin/directory/?origin_url=https://bitbucket.org/lifthrasiir/esotope-ws", "", "", "", "esotope-ws"},
 }

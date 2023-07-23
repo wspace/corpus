@@ -1,0 +1,20 @@
+{
+  "id": "java/jbanana",
+  "name": "Whitespace",
+  "authors": ["JBanana"],
+  "license": "MIT",
+  "languages": ["Java"],
+  "tags": ["interpreter", "assembler", "debugger", "steganography", "stdlib", "programs"],
+  "date": "2022-06-03 17:29:09 +0200",
+  "spec_version": "0.3",
+  "source": ["https://codeberg.org/JBanana/whitespace"],
+  "whitespace": { "extension": "ws" },
+  "assembly": { "extension": "wsa" },
+  "commands": [
+    { "type": "interpreter", "bin": "bin/ws" },
+    { "type": "assembler", "bin": "bin/wsa" },
+    { "type": "debugger", "bin": "bin/wsd" },
+    { "type": "steganography", "bin": "bin/wsi" }
+  ],
+  "notes": "TODO document"
+}

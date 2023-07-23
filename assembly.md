@@ -53,7 +53,7 @@ instructions, ranked by popularity.
 
 ## File extensions
 
-- `wsa` (25)
+- `wsa` (26)
 - `asm` (5)
 - `txt` (4)
 - "" (2)
@@ -68,3 +68,7 @@ instructions, ranked by popularity.
 - `wsc`
 - `wsf`
 - `wss`
+
+## Need documentation
+
+- java/jbanana

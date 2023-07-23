@@ -305,6 +305,9 @@
 [submodule "java/faurehu/whiteSpaceInterpreter"]
 	path = java/faurehu/whiteSpaceInterpreter
 	url = https://github.com/faurehu/whiteSpaceInterpreter
+[submodule "java/jbanana/whitespace"]
+	path = java/jbanana/whitespace
+	url = https://codeberg.org/JBanana/whitespace
 [submodule "java/kmizu/ws_interpreter"]
 	path = java/kmizu/ws_interpreter
 	url = https://github.com/kmizu/ws_interpreter

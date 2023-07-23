@@ -238,6 +238,11 @@ Building status of individual executables:
 - ⚠️ haskell/takatoh-hws/hws: `make` Needs changes for latest Haskell
 - ⚠️ haskell/tomihisa244-visual/*unspecified*
 - ❌ java/brunokim
+- ⚠️ java/jbanana:
+  - ⚠️ bin/ws
+  - ⚠️ bin/wsa
+  - ⚠️ bin/wsd
+  - ⚠️ bin/wsi
 - ❌ java/kmizu
 - ❌ java/kreutzer-spacedide
 - ❌ java/ralucaa-whitespace4j

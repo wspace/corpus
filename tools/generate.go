@@ -524,6 +524,7 @@ var domainLabels = map[string]string{
 	"code.google.com":              "Google Code",
 	"googlecode.com":               "Google Code",
 	"sr.ht":                        "sourcehut",
+	"codeberg.org":                 "Codeberg",
 	"softwareheritage.org":         "Software Heritage",
 	"archive.softwareheritage.org": "Software Heritage archive",
 	"metacpan.org":                 "CPAN",
@@ -643,6 +644,7 @@ var (
 	gitlabPattern      = regexp.MustCompile(`^(https://gitlab\.com/[^/]+/([^/]+))(?:/-/tree/([^/]+))?$`)
 	bitbucketPattern   = regexp.MustCompile(`^(https://bitbucket\.org/[^/]+/([^/]+))(?:/src/([^/]+))?$`)
 	sourceForgePattern = regexp.MustCompile(`^https://git\.code\.sf\.net/p/([^/]+)/code$`)
+	codebergPattern    = regexp.MustCompile(`^https://codeberg\.org/[^/]+/([^/]+)$`)
 )
 
 func GetGitURL(url string) (gitURL, branch, repoName string) {
@@ -659,6 +661,9 @@ func GetGitURL(url string) (gitURL, branch, repoName string) {
 		return match[1], match[3], match[2]
 	}
 	if match := sourceForgePattern.FindStringSubmatch(url); match != nil {
+		return url, "", match[1]
+	}
+	if match := codebergPattern.FindStringSubmatch(url); match != nil {
 		return url, "", match[1]
 	}
 	return "", "", ""

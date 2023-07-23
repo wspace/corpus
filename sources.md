@@ -84,11 +84,12 @@
     [google-code-export](https://github.com/google-code-export)
 - Bitbucket: [whitespace](https://bitbucket.org/repo/all?name=whitespace)
 - sourcehut: [whitespace](https://sr.ht/projects?search=whitespace&sort=recently-updated)
-- berliOS: [BackupTheBerlios](https://github.com/BackupTheBerlios)
 - CodePlex:
     [repository zips](https://archive.org/details/sylirana_ms_codeplex_zips),
     [Archive Team](https://wiki.archiveteam.org/index.php/CodePlex)
 - Launchpad: [whitespace](https://launchpad.net/projects?text=whitespace)
+- Codeberg: [whitespace](https://codeberg.org/explore/repos?sort=recentupdate&q=whitespace)
+- berliOS: [BackupTheBerlios](https://github.com/BackupTheBerlios)
 - Software Heritage archive: [whitespace interpreter](https://archive.softwareheritage.org/browse/search/?q=whitespace+interpreter&with_visit=true&with_content=true&search_metadata=true)
 
 TODO:
