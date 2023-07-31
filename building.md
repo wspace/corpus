@@ -85,6 +85,7 @@ Projects that can be built with Docker:
 - java/brumbeere-whitespace4j
 - java/eiauniversity
 - java/faurehu
+- java/jbanana
 - java/mash-whitespacesdk
 - java/matou-whasm
 - java/praveenvaka-coder
@@ -238,11 +239,6 @@ Building status of individual executables:
 - ⚠️ haskell/takatoh-hws/hws: `make` Needs changes for latest Haskell
 - ⚠️ haskell/tomihisa244-visual/*unspecified*
 - ❌ java/brunokim
-- ⚠️ java/jbanana:
-  - ⚠️ bin/ws
-  - ⚠️ bin/wsa
-  - ⚠️ bin/wsd
-  - ⚠️ bin/wsi
 - ❌ java/kmizu
 - ❌ java/kreutzer-spacedide
 - ❌ java/ralucaa-whitespace4j

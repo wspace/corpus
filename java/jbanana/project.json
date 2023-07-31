@@ -8,13 +8,370 @@
   "date": "2022-06-03 17:29:09 +0200",
   "spec_version": "0.3",
   "source": ["https://codeberg.org/JBanana/whitespace", "https://jbanana.codeberg.page/whitespace/doc/"],
-  "whitespace": { "extension": "ws" },
-  "assembly": { "extension": "wsa" },
-  "commands": [
-    { "type": "interpreter", "bin": "bin/ws" },
-    { "type": "assembler", "bin": "bin/wsa" },
-    { "type": "debugger", "bin": "bin/wsd" },
-    { "type": "steganography", "bin": "bin/wsi" }
+  "relations": [{ "id": "haskell/edwinb-wspace-0.3", "type": "embedded" }],
+  "whitespace": {
+    "nonstandard": [
+      { "name": "x-dump", "seq": "TTL", "desc": "XDump" },
+      { "name": "x-args", "seq": "TLSL", "desc": "Read from the program arguments" },
+      { "name": "x-readfile", "seq": "TLTLS", "desc": "Read from a file" },
+      { "name": "x-writefile", "seq": "TLTLL", "desc": "Write to a file" },
+      { "name": "x-closefile", "seq": "TLTLT", "desc": "Close a file" }
+    ],
+    "extension": "ws"
+  },
+  "assembly": {
+    "mnemonics": {
+      "push": ["push"],
+      "dup": ["dup"],
+      "copy": ["copyn"],
+      "swap": ["swap"],
+      "drop": ["drop"],
+      "slide": ["slide"],
+      "add": ["add"],
+      "sub": ["sub"],
+      "mul": ["mult"],
+      "div": ["div"],
+      "mod": ["mod"],
+      "store": ["store"],
+      "retrieve": ["retrieve"],
+      "label": [":<label>"],
+      "call": ["call"],
+      "jmp": ["jump"],
+      "jz": ["jumpz"],
+      "jn": ["jumpn"],
+      "ret": ["return"],
+      "end": ["end"],
+      "printc": ["printc"],
+      "printi": ["printn"],
+      "readc": ["readc"],
+      "readi": ["readn"]
+    },
+    "macros": [
+      { "name": "$print" },
+      { "name": "$readctostack" },
+      { "name": "$readntostack" },
+      { "name": "$incr" },
+      { "name": "$incrn" },
+      { "name": "$decr" },
+      { "name": "$decrn" },
+      { "name": "$mult10^n", "notes": "Also called $mult10n, possibly by mistake" },
+      { "name": "$abs" },
+      { "name": "$truncdiv" },
+      { "name": "$truncmod" },
+      { "name": "$mag" },
+      { "name": "$32bcrop" },
+      { "name": "$malloc" },
+      { "name": "$blocksz" },
+      { "name": "$free" },
+      { "name": "$freearr" },
+      { "name": "$lstnew" },
+      { "name": "$lstsz" },
+      { "name": "$lstadd" },
+      { "name": "$lstget" },
+      { "name": "$arr2lst" },
+      { "name": "$lst2arr" },
+      { "name": "$lstdup" },
+      { "name": "$lstrev" },
+      { "name": "$freelst" },
+      { "name": "$freelstlite" },
+      { "name": "$mapnew" },
+      { "name": "$mapsz" },
+      { "name": "$$hash2bucket" },
+      { "name": "$$mapbfind" },
+      { "name": "$mapput" },
+      { "name": "$mapget" },
+      { "name": "$readstr" },
+      { "name": "$printstr" },
+      { "name": "$printc" },
+      { "name": "$printn" },
+      { "name": "$str2int" },
+      { "name": "$int2str" },
+      { "name": "$strlen" },
+      { "name": "$strlens" },
+      { "name": "$storestr" },
+      { "name": "$strcmp" },
+      { "name": "$strcpy" },
+      { "name": "$strncpy" },
+      { "name": "$strcat" },
+      { "name": "$strtok" },
+      { "name": "$startswith" },
+      { "name": "$strhash" },
+      { "name": "$str2fl" },
+      { "name": "$fl2str" },
+      { "name": "$readfl" },
+      { "name": "$storefl" },
+      { "name": "$addfl" },
+      { "name": "$subfl" },
+      { "name": "$multfl" },
+      { "name": "$divfl" },
+      { "name": "$modfl" },
+      { "name": "$truncmodfl" },
+      { "name": "$floorfl" },
+      { "name": "$truncfl" },
+      { "name": "$sqrtfl" },
+      { "name": "$expfl" },
+      { "name": "$printfl" },
+      { "name": "$int2fl" },
+      { "name": "$fl2int" },
+      { "name": "$x-args" }
+    ],
+    "extension": "wsa",
+    "notes": ".wsam files are macro routines"
+  },
+  "programs": [
+    { "path": "examples/%beep.wsam" },
+    { "path": "examples/1-based-loop.wsa", "generated": "examples/1-based-loop.ws", "generate": "ant" },
+    { "path": "examples/abstest.wsa", "generated": "examples/abstest.ws", "generate": "ant" },
+    { "path": "examples/alphabet.wsa", "generated": "examples/alphabet.ws", "generate": "ant" },
+    { "path": "examples/c-style-loop.wsa", "generated": "examples/c-style-loop.ws", "generate": "ant" },
+    { "path": "examples/count.wsa", "generated": "examples/count.ws", "generate": "ant" },
+    {
+      "path": "examples/countdown-to-0-loop.wsa",
+      "generated": "examples/countdown-to-0-loop.ws",
+      "generate": "ant"
+    },
+    {
+      "path": "examples/countdown-to-1-loop.wsa",
+      "generated": "examples/countdown-to-1-loop.ws",
+      "generate": "ant"
+    },
+    { "path": "examples/decrn.wsa", "generated": "examples/decrn.ws", "generate": "ant" },
+    { "path": "examples/divtest.wsa", "generated": "examples/divtest.ws", "generate": "ant" },
+    { "path": "examples/exp.wsa", "generated": "examples/exp.ws", "generate": "ant" },
+    { "path": "examples/fib.wsa", "generated": "examples/fib.ws", "generate": "ant" },
+    { "path": "examples/findCaps.wsa", "generated": "examples/findCaps.ws", "generate": "ant" },
+    { "path": "examples/findLower.wsa", "generated": "examples/findLower.ws", "generate": "ant" },
+    { "path": "examples/fl2strTest.wsa", "generated": "examples/fl2strTest.ws", "generate": "ant" },
+    {
+      "path": "examples/floatroundtrip.wsa",
+      "generated": "examples/floatroundtrip.ws",
+      "generate": "ant"
+    },
+    { "path": "examples/floats.wsa", "generated": "examples/floats.ws", "generate": "ant" },
+    { "path": "examples/floor.wsa", "generated": "examples/floor.ws", "generate": "ant" },
+    { "path": "examples/functest.wsa", "generated": "examples/functest.ws", "generate": "ant" },
+    { "path": "examples/helloworld.wsa", "generated": "examples/helloworld.ws", "generate": "ant" },
+    { "path": "examples/int2strTest.wsa", "generated": "examples/int2strTest.ws", "generate": "ant" },
+    { "path": "examples/lstaddTest.wsa", "generated": "examples/lstaddTest.ws", "generate": "ant" },
+    { "path": "examples/lsts.wsa", "generated": "examples/lsts.ws", "generate": "ant" },
+    { "path": "examples/mag.wsa", "generated": "examples/mag.ws", "generate": "ant" },
+    { "path": "examples/mapTest.wsa", "generated": "examples/mapTest.ws", "generate": "ant" },
+    { "path": "examples/modfltest.wsa", "generated": "examples/modfltest.ws", "generate": "ant" },
+    { "path": "examples/modtest.wsa", "generated": "examples/modtest.ws", "generate": "ant" },
+    { "path": "examples/mult10n.wsa", "generated": "examples/mult10n.ws", "generate": "ant" },
+    { "path": "examples/printfl.wsa", "generated": "examples/printfl.ws", "generate": "ant" },
+    { "path": "examples/read2.wsa", "generated": "examples/read2.ws", "generate": "ant" },
+    { "path": "examples/readStrNum.wsa", "generated": "examples/readStrNum.ws", "generate": "ant" },
+    { "path": "examples/readtostack.wsa", "generated": "examples/readtostack.ws", "generate": "ant" },
+    { "path": "examples/reverse.wsa", "generated": "examples/reverse.ws", "generate": "ant" },
+    { "path": "examples/romeo.wsa", "generated": "examples/romeo.ws", "generate": "ant" },
+    { "path": "examples/rot13.wsa", "generated": "examples/rot13.ws", "generate": "ant" },
+    { "path": "examples/rot13x.wsa", "generated": "examples/rot13x.ws", "generate": "ant" },
+    { "path": "examples/rpncalc.wsa", "generated": "examples/rpncalc.ws", "generate": "ant" },
+    { "path": "examples/saybeep.wsa", "generated": "examples/saybeep.ws", "generate": "ant" },
+    { "path": "examples/simple.wsa", "generated": "examples/simple.ws", "generate": "ant" },
+    { "path": "examples/sqrt.wsa", "generated": "examples/sqrt.ws", "generate": "ant" },
+    {
+      "path": "examples/startsWithTest.wsa",
+      "generated": "examples/startsWithTest.ws",
+      "generate": "ant"
+    },
+    { "path": "examples/storeflTest.wsa", "generated": "examples/storeflTest.ws", "generate": "ant" },
+    { "path": "examples/str2int.wsa", "generated": "examples/str2int.ws", "generate": "ant" },
+    { "path": "examples/strHashTest.wsa", "generated": "examples/strHashTest.ws", "generate": "ant" },
+    { "path": "examples/strlens.wsa", "generated": "examples/strlens.ws", "generate": "ant" },
+    { "path": "examples/strncpy.wsa", "generated": "examples/strncpy.ws", "generate": "ant" },
+    { "path": "examples/strtok.wsa", "generated": "examples/strtok.ws", "generate": "ant" },
+    { "path": "examples/testUnicode.wsa", "generated": "examples/testUnicode.ws", "generate": "ant" },
+    { "path": "examples/x-cat.wsa", "generated": "examples/x-cat.ws", "generate": "ant" },
+    { "path": "examples/x-x.wsa", "generated": "examples/x-x.ws", "generate": "ant" },
+    {
+      "path": "wstests/arith_add.wsa",
+      "generated": "wstests/arith_add.ws",
+      "outputs": ["wstests/out/arith_add.out"],
+      "generate": "ant"
+    },
+    {
+      "path": "wstests/arith_div.wsa",
+      "generated": "wstests/arith_div.ws",
+      "outputs": ["wstests/out/arith_div.out"],
+      "generate": "ant"
+    },
+    {
+      "path": "wstests/arith_mod.wsa",
+      "generated": "wstests/arith_mod.ws",
+      "outputs": ["wstests/out/arith_mod.out"],
+      "generate": "ant"
+    },
+    {
+      "path": "wstests/arith_mult.wsa",
+      "generated": "wstests/arith_mult.ws",
+      "outputs": ["wstests/out/arith_mult.out"],
+      "generate": "ant"
+    },
+    {
+      "path": "wstests/arith_sub.wsa",
+      "generated": "wstests/arith_sub.ws",
+      "outputs": ["wstests/out/arith_sub.out"],
+      "generate": "ant"
+    },
+    {
+      "path": "wstests/flow_callbadlabel.wsa",
+      "generated": "wstests/flow_callbadlabel.ws",
+      "outputs": ["wstests/out/flow_callbadlabel.out"],
+      "generate": "ant"
+    },
+    {
+      "path": "wstests/flow_end.wsa",
+      "generated": "wstests/flow_end.ws",
+      "outputs": ["wstests/out/flow_end.out"],
+      "generate": "ant"
+    },
+    {
+      "path": "wstests/flow_jumpbadlabel.wsa",
+      "generated": "wstests/flow_jumpbadlabel.ws",
+      "outputs": ["wstests/out/flow_jumpbadlabel.out"],
+      "generate": "ant"
+    },
+    {
+      "path": "wstests/flow_jumpn.wsa",
+      "generated": "wstests/flow_jumpn.ws",
+      "outputs": ["wstests/out/flow_jumpn.out"],
+      "generate": "ant"
+    },
+    {
+      "path": "wstests/flow_jumpnbadlabel.wsa",
+      "generated": "wstests/flow_jumpnbadlabel.ws",
+      "outputs": ["wstests/out/flow_jumpnbadlabel.out"],
+      "generate": "ant"
+    },
+    {
+      "path": "wstests/flow_jumpzbadlabel.wsa",
+      "generated": "wstests/flow_jumpzbadlabel.ws",
+      "outputs": ["wstests/out/flow_jumpzbadlabel.out"],
+      "generate": "ant"
+    },
+    {
+      "path": "wstests/flow_labelcalljumpjumpzreturn.wsa",
+      "generated": "wstests/flow_labelcalljumpjumpzreturn.ws",
+      "outputs": ["wstests/out/flow_labelcalljumpjumpzreturn.out"],
+      "generate": "ant"
+    },
+    {
+      "path": "wstests/heap_storeretrieve.wsa",
+      "generated": "wstests/heap_storeretrieve.ws",
+      "outputs": ["wstests/out/heap_storeretrieve.out"],
+      "generate": "ant"
+    },
+    {
+      "path": "wstests/io_readc.wsa",
+      "generated": "wstests/io_readc.ws",
+      "inputs": ["wstests/io_readc.in"],
+      "generate": "ant"
+    },
+    {
+      "path": "wstests/io_readcreadnreadc.wsa",
+      "generated": "wstests/io_readcreadnreadc.ws",
+      "generate": "ant"
+    },
+    { "path": "wstests/io_readn.wsa", "generated": "wstests/io_readn.ws", "generate": "ant" },
+    {
+      "path": "wstests/stack_copynprintcall.wsa",
+      "generated": "wstests/stack_copynprintcall.ws",
+      "outputs": ["wstests/out/stack_copynprintcall.out"],
+      "generate": "ant"
+    },
+    {
+      "path": "wstests/stack_copyntoobig.wsa",
+      "generated": "wstests/stack_copyntoobig.ws",
+      "outputs": ["wstests/out/stack_copyntoobig.out"],
+      "generate": "ant"
+    },
+    {
+      "path": "wstests/stack_drop.wsa",
+      "generated": "wstests/stack_drop.ws",
+      "outputs": ["wstests/out/stack_drop.out"],
+      "generate": "ant"
+    },
+    {
+      "path": "wstests/stack_printcnopush.wsa",
+      "generated": "wstests/stack_printcnopush.ws",
+      "outputs": ["wstests/out/stack_printcnopush.out"],
+      "generate": "ant"
+    },
+    {
+      "path": "wstests/stack_pushdupprintc.wsa",
+      "generated": "wstests/stack_pushdupprintc.ws",
+      "outputs": ["wstests/out/stack_pushdupprintc.out"],
+      "generate": "ant"
+    },
+    {
+      "path": "wstests/stack_pushprintc.wsa",
+      "generated": "wstests/stack_pushprintc.ws",
+      "outputs": ["wstests/out/stack_pushprintc.out"],
+      "generate": "ant"
+    },
+    {
+      "path": "wstests/stack_pushprintn.wsa",
+      "generated": "wstests/stack_pushprintn.ws",
+      "outputs": ["wstests/out/stack_pushprintn.out"],
+      "generate": "ant"
+    },
+    {
+      "path": "wstests/stack_slide.wsa",
+      "generated": "wstests/stack_slide.ws",
+      "outputs": ["wstests/out/stack_slide.out"],
+      "generate": "ant"
+    },
+    {
+      "path": "wstests/stack_swap.wsa",
+      "generated": "wstests/stack_swap.ws",
+      "outputs": ["wstests/out/stack_swap.out"],
+      "generate": "ant"
+    },
+    {
+      "path": "wstests/stack_swapbad.wsa",
+      "generated": "wstests/stack_swapbad.ws",
+      "outputs": ["wstests/out/stack_swapbad.out"],
+      "generate": "ant"
+    }
   ],
-  "notes": "TODO document"
+  "commands": [
+    {
+      "type": "interpreter",
+      "bin": "bin/ws",
+      "usage": "[-a] [-v] [-V] [-x] <ws_file> [args]...",
+      "options": [
+        { "short": "a", "desc": "annotates the program as WsAsm assembler instead of executing it" },
+        { "short": "v", "desc": "verbose output" },
+        { "short": "V", "desc": "very verbose output" },
+        { "short": "x", "desc": "enables extensions" }
+      ],
+      "option_parse": "manual"
+    },
+    {
+      "type": "assembler",
+      "bin": "bin/wsa",
+      "usage": "[-s] [-x] <wsa_file>...",
+      "options": [
+        { "short": "s", "arg": "shebang", "desc": "includes the given shebang in the output" },
+        { "short": "x", "desc": "enables extensions" }
+      ],
+      "option_parse": "manual"
+    },
+    {
+      "type": "debugger",
+      "bin": "bin/wsd",
+      "usage": "[-x] <wsa_file> [args]...",
+      "options": [{ "short": "x", "desc": "enables extensions" }],
+      "option_parse": "manual",
+      "notes": "Interactive"
+    },
+    {
+      "type": "steganography",
+      "bin": "bin/wsi",
+      "usage": "<in_file> <out_file>",
+      "option_parse": "manual"
+    }
+  ]
 }

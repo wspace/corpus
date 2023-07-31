@@ -5,10 +5,10 @@ usage() {
 
 Commands:
 
-    AlpacaVM,    gmh    -- GrassMudHorse interpreter
-    JOTCompiler, gmhd   -- GrassMudHorse disassembler
-    WS2GMH,      ws2gmh -- Whitespace-to-GrassMudHorse converter
-    ErlangVM,    gmherl -- GrassMudHorse interpreter in Erlang' >&2
+    gmh,    AlpacaVM    -- GrassMudHorse interpreter
+    gmhd,   JOTCompiler -- GrassMudHorse disassembler
+    ws2gmh, WS2GMH      -- Whitespace-to-GrassMudHorse converter
+    gmherl, ErlangVM    -- GrassMudHorse interpreter in Erlang' >&2
 
   exit 2
 }
@@ -20,16 +20,16 @@ fi
 command="$1"
 shift
 case "$command" in
-AlpacaVM|gmh)
+gmh|AlpacaVM)
   exec java -cp bin cn.icybear.GrassMudHorse.AlpacaVM "$@"
   ;;
-JOTCompiler|gmhd)
+gmhd|JOTCompiler)
   exec java -cp bin cn.icybear.GrassMudHorse.JOTCompiler "$@"
   ;;
-WS2GMH|ws2gmh)
+ws2gmh|WS2GMH)
   exec java -cp bin cn.icybear.GrassMudHorse.WS2GMH "$@"
   ;;
-ErlangVM|gmherl)
+gmherl|ErlangVM)
   if [ $# != 1 ]; then
     echo 'Usage: grass_mud_horse <gmh_file>' >&2
     exit 2
