@@ -10,5 +10,13 @@
   "source": ["https://github.com/faurehu/whiteSpaceInterpreter"],
   "mappings": [{ "space": "1", "tab": "2", "lf": "3" }],
   "programs": [{ "path": "add2and3thenprint.ws" }, { "path": "evennumbers.ws" }, { "path": "evennumbersto20.ws" }],
-  "commands": [{ "type": "interpreter", "usage": "", "input": "evennumbersto20.ws", "output": "stdout" }]
+  "commands": [
+    {
+      "type": "interpreter",
+      "bin": "dist/WhiteSpaceInterpreter.jar",
+      "usage": "",
+      "input": "evennumbersto20.ws",
+      "output": "stdout"
+    }
+  ]
 }

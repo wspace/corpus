@@ -42,5 +42,12 @@
       "equivalent": "hworld.ws",
       "spec_version": "0.2"
     }
+  ],
+  "commands": [
+    {
+      "type": "interpreter",
+      "bin": "bin/uk/ac/glasgow/whitespace4j/Main",
+      "usage": "(DEFAULT | VISIBLE) <file>"
+    }
   ]
 }

@@ -1,4 +1,4 @@
-FROM alpine AS builder
+FROM alpine
 
 RUN apk add --no-cache openjdk17 apache-ant
 

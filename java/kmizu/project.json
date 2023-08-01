@@ -36,5 +36,6 @@
       "readi": ["READ_NUM"]
     },
     "usage": ["enum"]
-  }
+  },
+  "commands": [{ "bin": "ws.jar", "usage": "<file>" }]
 }

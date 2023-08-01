@@ -1,12 +1,9 @@
-FROM eclipse-temurin:20-jdk-jammy AS builder
+FROM alpine
+
+RUN apk add --no-cache openjdk17 apache-ant
 
 WORKDIR /whiteSpaceInterpreter
-COPY whiteSpaceInterpreter/src .
-RUN javac whitespaceinterpreter/*.java
+COPY whiteSpaceInterpreter .
+RUN ant
 
-FROM eclipse-temurin:20-jre-jammy
-
-WORKDIR /whiteSpaceInterpreter
-COPY --from=builder /whiteSpaceInterpreter/whitespaceinterpreter/*.class whitespaceinterpreter/
-COPY whiteSpaceInterpreter/*.ws ./
-ENTRYPOINT ["java", "-cp", ".", "whitespaceinterpreter.WhiteSpaceInterpreter"]
+ENTRYPOINT ["java", "-jar", "dist/WhiteSpaceInterpreter.jar"]
