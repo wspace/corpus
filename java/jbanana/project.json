@@ -336,6 +336,21 @@
       "generate": "ant"
     }
   ],
+  "scripts": {
+    "run": {
+      "bin": { "jar": "/whitespace/whitespace.jar", "main": "org.codeberg.jbanana.whitespace.Whitespace" },
+      "args": ["IN_FILE"]
+    },
+    "assemble": {
+      "bin": { "jar": "/whitespace/whitespace.jar", "main": "org.codeberg.jbanana.whitespace.WsAsm" },
+      "args": ["IN_FILE"],
+      "notes": "Should this allow multiple input files with `IN_FILE...`?"
+    },
+    "disassemble": {
+      "bin": { "jar": "/whitespace/whitespace.jar", "main": "org.codeberg.jbanana.whitespace.Whitespace" },
+      "args": ["-a", "IN_FILE"]
+    }
+  },
   "commands": [
     {
       "type": "interpreter",

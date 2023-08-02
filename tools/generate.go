@@ -149,11 +149,31 @@ type Project struct {
 		Desc         string   `json:"desc,omitempty"`
 		Notes        string   `json:"notes,omitempty"`
 	} `json:"programs,omitempty"`
-	BuildErrors string    `json:"build_errors,omitempty"`
-	RunErrors   string    `json:"run_errors,omitempty"`
-	Commands    []Command `json:"commands,omitempty"`
-	Notes       string    `json:"notes,omitempty"`
-	TODO        string    `json:"todo,omitempty"`
+	BuildErrors string `json:"build_errors,omitempty"`
+	RunErrors   string `json:"run_errors,omitempty"`
+	Scripts     *struct {
+		Run         *Script `json:"run,omitempty"`
+		Compile     *Script `json:"compile,omitempty"`
+		Assemble    *Script `json:"assemble,omitempty"`
+		Disassemble *Script `json:"disassemble,omitempty"`
+	} `json:"scripts,omitempty"`
+	Commands []Command `json:"commands,omitempty"`
+	Notes    string    `json:"notes,omitempty"`
+	TODO     string    `json:"todo,omitempty"`
+}
+
+type Script struct {
+	Bin   ScriptBin `json:"bin"`
+	Args  []string  `json:"args,omitempty"`
+	Notes string    `json:"notes,omitempty"`
+}
+
+type ScriptBin struct {
+	// Path variant
+	Path string `json:"path,omitempty"`
+	// Jar variant
+	Jar  string `json:"jar,omitempty"`
+	Main string `json:"main,omitempty"`
 }
 
 type Command struct {

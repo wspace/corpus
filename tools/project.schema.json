@@ -56,6 +56,31 @@
     "bound": { "oneOf": [{ "type": "integer" }, { "const": "unbounded" }, { "$ref": "#/$defs/integer_type" }] },
     "line_comment": { "type": "string", "examples": ["#", ";", "//", "--"] },
     "indentation": { "type": "string", "pattern": "^( *|\\t*)$", "examples": ["  ", "    ", "        ", "\t", ""] },
+    "script": {
+      "type": "object",
+      "properties": {
+        "bin": {
+          "anyOf": [
+            {
+              "type": "object",
+              "properties": { "path": { "type": "string" } },
+              "required": "path",
+              "additionalProperties": false
+            },
+            {
+              "type": "object",
+              "properties": { "jar": { "type": "string" }, "main": { "type": "string" } },
+              "required": ["jar"],
+              "additionalProperties": false
+            }
+          ]
+        },
+        "args": { "type": "array", "items": { "type": "string" } },
+        "notes": { "type": "string" }
+      },
+      "required": ["bin"],
+      "additionalProperties": false
+    },
     "command_option": {
       "type": "object",
       "properties": {
@@ -345,6 +370,16 @@
     },
     "build_errors": { "type": "string" },
     "run_errors": { "type": "string" },
+    "scripts": {
+      "type": "object",
+      "properties": {
+        "run": { "type": "#/$defs/script" },
+        "compile": { "type": "#/$defs/script" },
+        "assemble": { "type": "#/$defs/script" },
+        "disassemble": { "type": "#/$defs/script" }
+      },
+      "additionalProperties": false
+    },
     "commands": {
       "type": "array",
       "items": {
