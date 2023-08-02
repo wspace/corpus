@@ -7,5 +7,5 @@ RUN lein uberjar
 FROM eclipse-temurin:20-jre-alpine
 
 WORKDIR /erasure
-COPY --from=builder /erasure/target/uberjar/erasure-2.0-standalone.jar .
-ENTRYPOINT ["java", "-jar", "erasure-2.0-standalone.jar"]
+COPY --from=builder /erasure/target/uberjar/erasure-2.0-standalone.jar erasure-2.0.jar
+ENTRYPOINT ["java", "-jar", "erasure-2.0.jar"]
