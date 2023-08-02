@@ -6,6 +6,8 @@ use std::path::Path;
 use serde::{Deserialize, Serialize};
 use thiserror::Error;
 
+use crate::ws::InstMap;
+
 #[derive(Serialize, Deserialize, Clone, Debug, PartialEq, Eq)]
 pub struct Project {
     pub id: String,
@@ -103,7 +105,7 @@ pub struct NonstandardInst {
 
 #[derive(Serialize, Deserialize, Clone, Debug, PartialEq, Eq)]
 pub struct Assembly {
-    pub mnemonics: Option<Mnemonics>,
+    pub mnemonics: Option<InstMap<Vec<String>>>,
     #[serde(default)]
     pub macros: Vec<Macro>,
     #[serde(default)]
@@ -124,66 +126,6 @@ pub struct Assembly {
     pub usage: Vec<String>,
     pub extension: Option<String>,
     pub notes: Option<String>,
-}
-
-#[derive(Serialize, Deserialize, Clone, Debug, PartialEq, Eq)]
-pub struct Mnemonics {
-    #[serde(default)]
-    pub push: Vec<String>,
-    #[serde(default)]
-    pub dup: Vec<String>,
-    #[serde(default)]
-    pub copy: Vec<String>,
-    #[serde(default)]
-    pub swap: Vec<String>,
-    #[serde(default)]
-    pub drop: Vec<String>,
-    #[serde(default)]
-    pub slide: Vec<String>,
-    #[serde(default)]
-    pub add: Vec<String>,
-    #[serde(default)]
-    pub sub: Vec<String>,
-    #[serde(default)]
-    pub mul: Vec<String>,
-    #[serde(default)]
-    pub div: Vec<String>,
-    #[serde(rename = "mod", default)]
-    pub mod_: Vec<String>,
-    #[serde(default)]
-    pub store: Vec<String>,
-    #[serde(default)]
-    pub retrieve: Vec<String>,
-    #[serde(default)]
-    pub label: Vec<String>,
-    #[serde(default)]
-    pub call: Vec<String>,
-    #[serde(default)]
-    pub jmp: Vec<String>,
-    #[serde(default)]
-    pub jz: Vec<String>,
-    #[serde(default)]
-    pub jn: Vec<String>,
-    #[serde(default)]
-    pub ret: Vec<String>,
-    #[serde(default)]
-    pub end: Vec<String>,
-    #[serde(default)]
-    pub printc: Vec<String>,
-    #[serde(default)]
-    pub printi: Vec<String>,
-    #[serde(default)]
-    pub readc: Vec<String>,
-    #[serde(default)]
-    pub readi: Vec<String>,
-    #[serde(default)]
-    pub shuffle: Vec<String>,
-    #[serde(default)]
-    pub dumpstack: Vec<String>,
-    #[serde(default)]
-    pub dumpheap: Vec<String>,
-    #[serde(default)]
-    pub dumptrace: Vec<String>,
 }
 
 #[derive(Serialize, Deserialize, Clone, Debug, PartialEq, Eq)]
