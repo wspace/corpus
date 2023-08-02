@@ -1,0 +1,12 @@
+[package]
+name = "corpus-cli"
+version = "0.1.0"
+authors = ["Thalia Archibald <thalia@archibald.dev>"]
+edition = "2021"
+license = "MIT"
+
+[dependencies]
+
+[build-dependencies]
+corpus-types = { path = "../types" }
+glob = "0.3"
