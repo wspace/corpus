@@ -45,10 +45,7 @@
     {
       "type": "interpreter",
       "bin": "build/libs/space.jar",
-      "dependencies": ["Java 8"],
-      "build": "./gradlew",
-      "build_errors": "Dependencies not packaged",
-      "usage": "java -jar $0 <file>",
+      "usage": "<file>",
       "input": "<file>",
       "output": "stdout"
     }

@@ -1,0 +1,21 @@
+diff --git a/build.gradle b/build.gradle
+index ffefdfa..6b23bd4 100644
+--- a/build.gradle
++++ b/build.gradle
+@@ -35,4 +35,14 @@ compileTestKotlin {
+     kotlinOptions {
+         jvmTarget = "1.8"
+     }
+-}
+\ No newline at end of file
++}
++
++jar {
++    manifest {
++        attributes["Main-Class"] = "com.zelkatani.Space"
++    }
++
++    from {
++        configurations.compileClasspath.collect { it.isDirectory() ? it : zipTree(it) }
++    }
++}

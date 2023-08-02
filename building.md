@@ -111,6 +111,7 @@ Projects that can be built with Docker:
 - javascript/vii5ard-whitelips
 - javascript/wdalmut
 - jq/thaliaarchi-wsjq
+- kotlin/ze-space
 - lolcode/0x0dea
 - lua/cj5518
 - lua/vyo-callisto
@@ -255,7 +256,6 @@ Building status of individual executables:
 - ❌ javascript/pvdz-significant-whitespace
 - ❌ javascript/tranbrian10-generator
 - ⚠️ julia/goropikari-whitespaces/*unspecified*
-- ⚠️ kotlin/ze-space/build/libs/space.jar: `./gradlew` Dependencies not packaged
 - ⚠️ masm/jarsp-wsint/wsint: Requires Visual Studio
 - nasm/ryzheboka:
   - wsCompiler.py
