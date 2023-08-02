@@ -1,0 +1,84 @@
+services:
+  jars:
+    image: wspace-corpus/jars
+    build:
+      dockerfile: Dockerfile.jars
+
+  clojure_jmesyou-erasure:
+    image: wspace-corpus/clojure/jmesyou-erasure
+    build: clojure/jmesyou-erasure
+  clojure_makenowjust:
+    image: wspace-corpus/clojure/makenowjust
+    build: clojure/makenowjust
+  java_abhijitsharma:
+    image: wspace-corpus/java/abhijitsharma
+    build: java/abhijitsharma
+  java_azige:
+    image: wspace-corpus/java/azige
+    build: java/azige
+  java_bearice-grassmudhorse:
+    image: wspace-corpus/java/bearice-grassmudhorse
+    build: java/bearice-grassmudhorse
+  java_brumbeere-whitespace4j:
+    image: wspace-corpus/java/brumbeere-whitespace4j
+    build: java/brumbeere-whitespace4j
+  java_eiauniversity:
+    image: wspace-corpus/java/eiauniversity
+    build: java/eiauniversity
+  java_faurehu:
+    image: wspace-corpus/java/faurehu
+    build: java/faurehu
+  java_jbanana:
+    image: wspace-corpus/java/jbanana
+    build: java/jbanana
+  java_kmizu:
+    image: wspace-corpus/java/kmizu
+    build: java/kmizu
+  java_kreutzer-spacedide:
+    image: wspace-corpus/java/kreutzer-spacedide
+    build: java/kreutzer-spacedide
+  java_mash-whitespacesdk:
+    image: wspace-corpus/java/mash-whitespacesdk
+    build: java/mash-whitespacesdk
+  java_matou-whasm:
+    image: wspace-corpus/java/matou-whasm
+    build: java/matou-whasm
+  java_praveenvaka-coder:
+    image: wspace-corpus/java/praveenvaka-coder
+    build: java/praveenvaka-coder
+  java_rahulkp:
+    image: wspace-corpus/java/rahulkp
+    build: java/rahulkp
+  java_ralucaa-whitespace4j:
+    image: wspace-corpus/java/ralucaa-whitespace4j
+    build: java/ralucaa-whitespace4j
+  java_thatguy977:
+    image: wspace-corpus/java/thatguy977
+    build: java/thatguy977
+  java_vyo-kairos:
+    image: wspace-corpus/java/vyo-kairos
+    build: java/vyo-kairos
+  java_wrotycz:
+    image: wspace-corpus/java/wrotycz
+    build: java/wrotycz
+  java_wysang:
+    image: wspace-corpus/java/wysang
+    build: java/wysang
+  java_yawkat:
+    image: wspace-corpus/java/yawkat
+    build: java/yawkat
+  java_yuukiaria-wseditor:
+    image: wspace-corpus/java/yuukiaria-wseditor
+    build: java/yuukiaria-wseditor
+  kotlin_ze-space:
+    image: wspace-corpus/kotlin/ze-space
+    build: kotlin/ze-space
+  scala_dashlambda-eso:
+    image: wspace-corpus/scala/dashlambda-eso
+    build: scala/dashlambda-eso
+  scala_sderosiaux:
+    image: wspace-corpus/scala/sderosiaux
+    build: scala/sderosiaux
+  scala_stephenpatrick:
+    image: wspace-corpus/scala/stephenpatrick
+    build: scala/stephenpatrick
