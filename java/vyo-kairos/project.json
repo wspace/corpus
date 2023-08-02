@@ -114,8 +114,7 @@
   "commands": [
     {
       "type": "multiple",
-      "bin": "build/libs/vyo-kairos-1.0.0-all.jar",
-      "build": "./gradlew shadowJar",
+      "bin": "build/libs/kairos-1.0.0-all.jar",
       "subcommands": [
         { "name": "", "desc": "Interactive" },
         { "name": "import", "desc": "Importer", "usage": "import <source> <destination>" },
