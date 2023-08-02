@@ -10,7 +10,7 @@ def fmt:
   if .build_errors!=null then " \(.build_errors | escape)" else "" end +
   if .run_errors!=null then " \(.run_errors | escape)" else "" end;
 
-([(.[] | select(.build_errors!=null or .run_errors!=null).id),
+([(.[] | select(.build_errors!=null or .run_errors!=null or .source_unavailable).id),
     ($dockerfiles | split(" ")[] | sub("/Dockerfile$"; ""))] |
   map({key:.}) | from_entries) as $dockerfiles |
 
@@ -23,7 +23,10 @@ Projects that can be built with Docker:
 (
   map(select(.id | in($dockerfiles))) | sort_by(.id)[] |
   "- \(.id | escape)" +
-  ([.build_errors, .run_errors | select(.!=null)] | join("; ") |
+  ([.build_errors, .run_errors,
+      (if .source_unavailable then "Source unavailable" else null end) |
+      select(.!=null)] |
+    join("; ") |
     if . != "" then ": " + . else "" end)
 ),
 "

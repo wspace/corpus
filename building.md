@@ -84,10 +84,12 @@ Projects that can be built with Docker:
 - java/azige
 - java/bearice-grassmudhorse
 - java/brumbeere-whitespace4j
+- java/brunokim: Source unavailable
 - java/eiauniversity
 - java/faurehu
 - java/jbanana
 - java/kmizu
+- java/kreutzer-spacedide
 - java/mash-whitespacesdk
 - java/matou-whasm
 - java/praveenvaka-coder
@@ -98,6 +100,8 @@ Projects that can be built with Docker:
 - java/vyo-kairos
 - java/wrotycz: Needs Codewars entrypoint
 - java/wysang
+- java/yawkat
+- java/yuukiaria-wseditor
 - javascript/dexteryy-grassmudmonkey
 - javascript/ignovak: Needs Codewars entrypoint
 - javascript/kanra1412
@@ -125,6 +129,7 @@ Projects that can be built with Docker:
 - perl/ephphatha-wsm2ws
 - perl/mkoelbl
 - perl/skabob42-madness
+- php/dcode: Source unavailable
 - php/nobody1986
 - python/0x55aa
 - python/ad9000-evanesco
@@ -242,10 +247,6 @@ Building status of individual executables:
 - ❌ haskell/soimort-grassmudhorse
 - ⚠️ haskell/takatoh-hws/hws: `make` Needs changes for latest Haskell
 - ⚠️ haskell/tomihisa244-visual/*unspecified*
-- ❌ java/brunokim
-- ❌ java/kreutzer-spacedide
-- ❌ java/yawkat
-- ❌ java/yuukiaria-wseditor
 - ❌ javascript/ad9000-evanescojs
 - ❌ javascript/arnauld
 - ❌ javascript/kmyk-translater
@@ -265,7 +266,6 @@ Building status of individual executables:
 - php/codelytv-youtube:
   - top-langs-not-to-use/src/decoder.php
   - top-langs-not-to-use/src/encoder.php
-- ❌ php/dcode
 - php/igorw/bin/interpreter
 - php/igorw-wsm/bin/wsm
 - php/johankj/whitespace.php

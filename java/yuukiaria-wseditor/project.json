@@ -7,5 +7,6 @@
   "tags": ["IDE"],
   "date": "2013-11-21 22:29:13 -0800",
   "spec_version": "-",
-  "source": ["https://github.com/YuukiARIA/wseditor"]
+  "source": ["https://github.com/YuukiARIA/wseditor"],
+  "commands": [{ "type": "ide", "usage": "" }]
 }
