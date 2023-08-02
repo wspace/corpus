@@ -6,6 +6,7 @@ use std::path::Path;
 use serde::{Deserialize, Serialize};
 use thiserror::Error;
 
+use crate::util::OneOrVec;
 use crate::ws::InstMap;
 
 #[derive(Serialize, Deserialize, Clone, Debug, PartialEq, Eq)]
@@ -231,9 +232,10 @@ pub struct Command {
 
 #[derive(Serialize, Deserialize, Clone, Debug, PartialEq, Eq)]
 pub struct CommandOption {
-    // short
-    pub long: Option<String>,
-    pub bare: Option<String>,
+    #[serde(default)]
+    pub short: OneOrVec<String>, // -s
+    pub long: Option<String>, // --long
+    pub bare: Option<String>, // bare
     pub required: Option<bool>,
     pub repeat_allowed: Option<bool>,
     pub arg: Option<String>,
