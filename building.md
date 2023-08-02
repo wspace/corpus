@@ -215,6 +215,10 @@ Projects that can be built with Docker:
 - rust/omurakazuaki
 - rust/thaliaarchi-yspace
 - rust/zrneely
+- scala/dashlambda-eso
+- scala/polyglotpiglet-whitespacing: The `Input` type (a trait?) is not defined and may have been removed in a later release
+- scala/sderosiaux
+- scala/stephenpatrick
 - typescript/davramenko-codewars: Needs Codewars entrypoint
 - typescript/eduardoborsa-codewars: Needs Codewars entrypoint
 - typescript/fy0u11: Needs Codewars entrypoint
@@ -276,10 +280,6 @@ Building status of individual executables:
 - ⚠️ python/marktraceur-redlandside/main.py
 - ⚠️ python/res0001-trans32/trans32.py: No entrypoint
 - r/bmazoure/R/whitespace.R
-- scala/dashlambda-eso/target/scala-2.13/eso\_2.13-2.6.1.jar: `sbt assembly`
-- ❌ scala/polyglotpiglet-whitespacing
-- ❌ scala/sderosiaux
-- ⚠️ scala/stephenpatrick/whitespace.jar: `sbt package` Should set whitespace.jar as package instead of arget/scala-2.11/whitespace-interpreter\_2.11-1.0.jar A JNI error has occurred, please check your installation and try again
 - ❌ scheme/athos-white-scheme
 - ❌ scheme/niyarin
 - ⚠️ textmate/nixinova/grammars/whitespace.yaml-tmLanguage

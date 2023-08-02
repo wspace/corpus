@@ -45,9 +45,8 @@
   "commands": [
     {
       "type": "multiple",
-      "bin": "target/scala-2.13/eso_2.13-2.6.1.jar",
-      "build": "sbt assembly",
-      "usage": "java -jar $0",
+      "bin": "target/scala-2.13/Eso-2.6.1.jar",
+      "usage": "[subcommand]",
       "option_parse": "manual",
       "subcommands": [
         { "name": "" },

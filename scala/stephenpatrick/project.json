@@ -24,10 +24,7 @@
     {
       "type": "interpreter",
       "bin": "whitespace.jar",
-      "build": "sbt package",
-      "build_errors": "Should set whitespace.jar as package instead of arget/scala-2.11/whitespace-interpreter_2.11-1.0.jar",
-      "usage": "java -jar $0 [<file>] [-nh] [-d] [-unsafe] [-int | -long | -bigint]",
-      "run_errors": "A JNI error has occurred, please check your installation and try again",
+      "usage": "[<file>] [-nh] [-d] [-unsafe] [-int | -long | -bigint]",
       "input": "<file> or conf/count.ws",
       "options": [
         { "short": "nh", "desc": "Print no header" },
