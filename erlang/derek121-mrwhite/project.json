@@ -4,9 +4,44 @@
   "authors": ["Derek Brown"],
   "license": "BSD-3-Clause",
   "languages": ["Erlang"],
-  "tags": ["interpreter"],
+  "tags": ["interpreter", "assembler", "disassembler", "programs"],
   "date": "2017-03-23 09:48:51 -0700",
   "spec_version": "0.3",
   "source": ["https://github.com/derek121/mrwhite"],
-  "commands": [{ "dependencies": ["Erlang", "Rebar3"], "build": "make", "run_errors": "Unclear how to run" }]
+  "whitespace": { "extension": "ws" },
+  "assembly": {
+    "mnemonics": {
+      "push": ["stack push <number>"],
+      "dup": ["stack duplicate"],
+      "copy": ["stack copy <number>"],
+      "swap": ["stack swap"],
+      "drop": ["stack discard"],
+      "slide": ["stack slide <number>"],
+      "add": ["arith add"],
+      "sub": ["arith sub"],
+      "mul": ["arith mul"],
+      "div": ["arith divide"],
+      "mod": ["arith mod"],
+      "store": ["heap store"],
+      "retrieve": ["heap retrieve"],
+      "label": ["flow mark <label>"],
+      "call": ["flow call <label>"],
+      "jmp": ["flow jump <label>"],
+      "jz": ["flow jump_zero <label>"],
+      "jn": ["flow jump_negative <label>"],
+      "ret": ["flow end_sub"],
+      "end": ["flow end_program"],
+      "printc": ["io output_char"],
+      "printi": ["io output_num"],
+      "readc": ["io read_char"],
+      "readi": ["io read_num"]
+    },
+    "patterns": { "ignore:whitespace": "[\\s\\r\\n\\t]", "label": "[st]+", "number": "[0-9]+" },
+    "extension": "wst"
+  },
+  "programs": [
+    { "path": "priv/sample/canonical.wst", "generated": "priv/sample/canonical.ws" },
+    { "path": "priv/sample/sample.wst", "generated": "priv/sample/sample.ws" }
+  ],
+  "commands": [{ "type": "interpreter, assembler, and disassembler" }]
 }

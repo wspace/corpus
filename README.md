@@ -188,7 +188,7 @@ language, including interpreters, compilers, and programs.
 | [whitespaceasm.py](python/jrialland)          | Julien Rialland  | Python     | assembler    | 2017-04-28 | [GitHub Gist](https://gist.github.com/jrialland/e0d370034da9c7b1b76a8afccbea7424) |
 | [a-z-programming](whitespace/jarrodparkes-a-z) | Jarrod Parkes   | Whitespace, Docker | programs | 2017-04-19 | [GitHub](https://github.com/jarrodparkes/a-z-programming) |
 | [hello.ws](whitespace/kokoax-hello)           | kokoax           | Whitespace | programs     | 2017-03-24 | [GitHub](https://github.com/kokoax/hello) |
-| [Mr. White](erlang/derek121-mrwhite)          | Derek Brown      | Erlang     | interpreter  | 2017-03-23 | [GitHub](https://github.com/derek121/mrwhite) |
+| [Mr. White](erlang/derek121-mrwhite)          | Derek Brown      | Erlang     | interpreter, assembler, disassembler, programs | 2017-03-23 | [GitHub](https://github.com/derek121/mrwhite) |
 | [Whitespace Esolang Compiler](c/tejaskasetty) | Sushrith Arkal, Tejas Kasetty, Suhas Sumukh | C, Yacc, Lex | disassembler, parser | 2017-03-21 | [GitLab](https://gitlab.com/tejaskasetty/ws-compiler) |
 | [Catch the Chicken](whitespace/ccns-chicken)  | Daniel Chen      | Whitespace | programs     | 2017-02-22 | [GitHub](https://github.com/ccns/105-club-fair-game-problems) |
 | [whitespace-scheme](scheme/niyarin)           | Akira Inoue      | Scheme     | interpreter  | 2017-02-15 | [GitHub](https://github.com/niyarin/whitespace-scheme) |
