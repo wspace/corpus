@@ -4,7 +4,7 @@ RUN apk add --no-cache make gcc musl-dev
 WORKDIR /whitespace-ruby
 COPY whitespace-ruby .
 # Remove `git ls-files` calls and loosen dependency versions:
-RUN sed -i'' \
+RUN sed -i \
         -e "/s\.executables/ s,= .*,= ['whitespace']," \
         -e "/s\.files/       s,= .*,= Dir['**/*']," \
         -e "/s\.test_files/  s,= .*,= Dir['test/**/*.rb']," \

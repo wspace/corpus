@@ -2,7 +2,7 @@ FROM maven:3-eclipse-temurin-20 AS builder
 
 WORKDIR /whitespace
 COPY whitespace .
-RUN sed -i'' 's/>1.6</>1.8</' pom.xml && \
+RUN sed -i 's/>1.6</>1.8</' pom.xml && \
     mvn package
 
 FROM eclipse-temurin:20-jre-jammy

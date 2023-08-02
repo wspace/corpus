@@ -13,7 +13,7 @@ RUN eval $(opam env) && \
     dune runtest && \
     dune build --profile release
 
-RUN sed -i'' 's,$(git rev-parse --show-toplevel),.,' test/functional.sh
+RUN sed -i 's,$(git rev-parse --show-toplevel),.,' test/functional.sh
 # TODO: Needs wspace binary:
 # RUN test/functional.sh
 
