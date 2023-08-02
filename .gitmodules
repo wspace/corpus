@@ -440,7 +440,7 @@
 [submodule "nasm/ryzheboka/Whitespace"]
 	path = nasm/ryzheboka/Whitespace
 	url = https://github.com/ryzheboka/Whitespace
-[submodule "objective-c/emilbahnsen-assembler"]
+[submodule "objective-c/emilbahnsen-assembler/Whitespace assembler"]
 	path = objective-c/emilbahnsen-assembler/Whitespace assembler
 	url = https://github.com/wspace/emilbahnsen-assembler
 [submodule "ocaml/jgkaplan-wsc/whitespaceTranspiler"]
@@ -518,7 +518,7 @@
 [submodule "python/bornlex/Whitespace-interpreter"]
 	path = python/bornlex/Whitespace-interpreter
 	url = https://github.com/Bornlex/Whitespace-interpreter
-[submodule "python/cybis-hapyli/hapyli"]
+[submodule "python/cybis-hapyli/HaPyLi"]
 	path = python/cybis-hapyli/HaPyLi
 	url = https://github.com/wspace/cybis-hapyli
 [submodule "python/dalleng/Whitespace"]
@@ -605,7 +605,7 @@
 [submodule "python/mildsunrise/whitespace"]
 	path = python/mildsunrise/whitespace
 	url = https://gist.github.com/mildsunrise/d948fe1334f36c9a0f6516e58271f936
-[submodule "python/molfar-codewars/CodeWars_Solutions"]
+[submodule "python/molfarua-codewars/CodeWars_Solutions"]
 	path = python/molfarua-codewars/CodeWars_Solutions
 	url = https://github.com/MolfarUA/CodeWars_Solutions
 [submodule "python/musflood/code-katas"]
