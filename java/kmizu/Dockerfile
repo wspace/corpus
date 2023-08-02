@@ -1,6 +1,6 @@
-FROM alpine
+FROM eclipse-temurin:8-jdk-alpine AS builder
 
-RUN apk add --no-cache openjdk8 apache-ant wget moreutils
+RUN apk add --no-cache apache-ant wget moreutils
 RUN mkdir javacc-3.2 && \
     wget https://repo1.maven.org/maven2/net/java/dev/javacc/javacc/3.2/javacc-3.2.jar -O javacc-3.2/javacc.jar
 
@@ -13,4 +13,8 @@ RUN find . -exec sh -c 'iconv -f shift-jis -t utf-8 {} | sponge {}' \; && \
            build.xml && \
     ant install
 
-ENTRYPOINT ["java", "-jar", "/ws/ws.jar"]
+FROM eclipse-temurin:20-jre-alpine
+
+WORKDIR /ws_interpreter
+COPY --from=builder /ws/ws.jar .
+ENTRYPOINT ["java", "-jar", "ws.jar"]

@@ -21,16 +21,16 @@ command="$1"
 shift
 case "$command" in
 ws|Whitespace)
-  exec java -cp classes org.codeberg.jbanana.whitespace.Whitespace "$@"
+  exec java -cp whitespace.jar org.codeberg.jbanana.whitespace.Whitespace "$@"
   ;;
 wsa|WsAsm)
-  exec java -cp classes org.codeberg.jbanana.whitespace.WsAsm "$@"
+  exec java -cp whitespace.jar org.codeberg.jbanana.whitespace.WsAsm "$@"
   ;;
 wsd|Wsd)
-  exec java -cp classes org.codeberg.jbanana.whitespace.Wsd "$@"
+  exec java -cp whitespace.jar org.codeberg.jbanana.whitespace.Wsd "$@"
   ;;
 wsi|WsInject)
-  exec java -cp classes org.codeberg.jbanana.whitespace.WsInject "$@"
+  exec java -cp whitespace.jar org.codeberg.jbanana.whitespace.WsInject "$@"
   ;;
 *)
   usage

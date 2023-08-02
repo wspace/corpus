@@ -1,12 +1,12 @@
-FROM eclipse-temurin:20-jdk-jammy AS builder
+FROM eclipse-temurin:20-jdk-alpine AS builder
 
 WORKDIR /WhiteSpaceInterpreter
 COPY WhiteSpaceInterpreter .
-RUN javac src/whitespace/whitespace.java
+RUN javac -d bin src/whitespace/whitespace.java && \
+    jar -cfe whitespace.jar whitespace.whitespace -C bin .
 
-FROM eclipse-temurin:20-jre-jammy
+FROM eclipse-temurin:20-jre-alpine
 
 WORKDIR /WhiteSpaceInterpreter
-COPY --from=builder /WhiteSpaceInterpreter/src/whitespace/whitespace.class ./whitespace/
-COPY --from=builder /WhiteSpaceInterpreter/src/fichero.bin .
-ENTRYPOINT ["java", "-cp", ".", "whitespace.whitespace"]
+COPY --from=builder /WhiteSpaceInterpreter/whitespace.jar /WhiteSpaceInterpreter/src/fichero.bin ./
+ENTRYPOINT ["java", "-jar", "whitespace.jar"]

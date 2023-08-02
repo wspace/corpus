@@ -21,13 +21,13 @@ command="$1"
 shift
 case "$command" in
 gmh|AlpacaVM)
-  exec java -cp bin cn.icybear.GrassMudHorse.AlpacaVM "$@"
+  exec java -cp GrassMudHorse.jar cn.icybear.GrassMudHorse.AlpacaVM "$@"
   ;;
 gmhd|JOTCompiler)
-  exec java -cp bin cn.icybear.GrassMudHorse.JOTCompiler "$@"
+  exec java -cp GrassMudHorse.jar cn.icybear.GrassMudHorse.JOTCompiler "$@"
   ;;
 ws2gmh|WS2GMH)
-  exec java -cp bin cn.icybear.GrassMudHorse.WS2GMH "$@"
+  exec java -cp GrassMudHorse.jar cn.icybear.GrassMudHorse.WS2GMH "$@"
   ;;
 gmherl|ErlangVM)
   if [ $# != 1 ]; then

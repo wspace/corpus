@@ -1,0 +1,69 @@
+diff --git a/build.xml b/build.xml
+index 9cbde3a..72d63dc 100644
+--- a/build.xml
++++ b/build.xml
+@@ -165,6 +165,45 @@
+ 	</target>
+ 
+ 	
++	<target
++		name="jar"
++		depends="compile"
++		description="Creates a standalone JAR of all class files and dependencies."
++	>
++
++		<jar
++			destfile="whitespace4j.jar"
++			update="true"
++		>
++
++			<manifest>
++
++				<attribute
++					name="Main-Class"
++					value="uk.ac.glasgow.whitespace4j.Main"
++				/>
++
++			</manifest>
++
++			<fileset
++				dir="bin"
++			/>
++
++			<fileset
++				dir="."
++				includes="log4j.properties"
++			/>
++
++			<zipfileset
++				src="lib/log4j-1.2.17.jar"
++				excludes="META-INF/**/*"
++			/>
++
++		</jar>
++
++	</target>
++
++
+ 	<target
+ 		name="build"
+ 		depends="compile"
+diff --git a/src/uk/ac/glasgow/whitespace4j/Main.java b/src/uk/ac/glasgow/whitespace4j/Main.java
+index f07fff3..3d7410c 100644
+--- a/src/uk/ac/glasgow/whitespace4j/Main.java
++++ b/src/uk/ac/glasgow/whitespace4j/Main.java
+@@ -32,8 +32,13 @@ public class Main {
+ 	 */
+ 	public static void main (String[] args){
+ 				
+-		PropertyConfigurator.configure("log4j.properties");
++		PropertyConfigurator.configure(Main.class.getResourceAsStream("/log4j.properties"));
+ 		
++		if (args.length != 2) {
++			System.err.println("Usage: whitespace4k (DEFAULT | VISIBLE) <file>");
++			System.exit(2);
++		}
++
+ 		CharacterSet characterSet = CharacterSet.valueOf(args[0]);
+ 		
+ 		String filePath = args[1];

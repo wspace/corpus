@@ -1,4 +1,4 @@
-FROM maven:3-eclipse-temurin-20
+FROM maven:3-eclipse-temurin-20-alpine
 
 WORKDIR /whitespace-coder
 COPY whitespace-coder .

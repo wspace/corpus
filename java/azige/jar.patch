@@ -1,0 +1,39 @@
+diff --git a/pom.xml b/pom.xml
+index 756e4c3..e8ba885 100644
+--- a/pom.xml
++++ b/pom.xml
+@@ -11,31 +11,15 @@
+                 <groupId>org.apache.maven.plugins</groupId>
+                 <artifactId>maven-assembly-plugin</artifactId>
+                 <version>2.4</version>
+-                <executions>
+-                    <execution>
+-                        <goals>
+-                            <goal>single</goal>
+-                        </goals>
+-                        <phase>package</phase>
+-                    </execution>
+-                </executions>
+-                <configuration>
+-                    <descriptors>
+-                        <descriptor>src/main/assembly/assembly.xml</descriptor>
+-                    </descriptors>
+-                </configuration>
+-            </plugin>
+-            <plugin>
+-                <groupId>org.apache.maven.plugins</groupId>
+-                <artifactId>maven-jar-plugin</artifactId>
+-                <version>2.4</version>
+                 <configuration>
+                     <archive>
+                         <manifest>
+-                            <addClasspath>true</addClasspath>
+                             <mainClass>io.github.azige.whitespace.Cli</mainClass>
+                         </manifest>
+                     </archive>
++                    <descriptorRefs>
++                        <descriptorRef>jar-with-dependencies</descriptorRef>
++                    </descriptorRefs>
+                 </configuration>
+             </plugin>
+             <plugin>

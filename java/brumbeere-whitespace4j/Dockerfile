@@ -1,11 +1,12 @@
-FROM eclipse-temurin:20-jdk-jammy AS builder
+FROM eclipse-temurin:20-jdk-alpine AS builder
 
 WORKDIR /Whitespace4j
 COPY Whitespace4j .
-RUN javac src/spp/Whitespace4j.java
+RUN javac -d bin src/spp/Whitespace4j.java && \
+    jar -cfe Whitespace4j.jar spp.Whitespace4j -C bin .
 
-FROM eclipse-temurin:20-jre-jammy
+FROM eclipse-temurin:20-jre-alpine
 
 WORKDIR /Whitespace4j
-COPY --from=builder /Whitespace4j/src/spp/*.class spp/
-ENTRYPOINT ["java", "-cp", ".", "spp/Whitespace4j"]
+COPY --from=builder /Whitespace4j/Whitespace4j.jar .
+ENTRYPOINT ["java", "-jar", "Whitespace4j.jar"]
