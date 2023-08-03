@@ -6,7 +6,7 @@ use std::path::Path;
 use serde::{Deserialize, Serialize};
 use thiserror::Error;
 
-use crate::util::OneOrVec;
+use crate::util::{Int, OneOrVec, Uint};
 use crate::ws::InstMap;
 
 #[derive(Serialize, Deserialize, Clone, Debug, PartialEq, Eq)]
@@ -66,16 +66,52 @@ pub struct Relation {
 
 #[derive(Serialize, Deserialize, Clone, Debug, PartialEq, Eq)]
 pub struct Bounds {
-    pub precision: Option<String>,
-    pub arg_precision: Option<String>,
-    pub label_precision: Option<String>,
-    // stack_cap
-    // call_stack_cap
-    // heap_min
-    // heap_max
-    // heap_cap
-    // label_cap
-    // instruction_cap
+    pub precision: Option<Precision>,
+    pub arg_precision: Option<Precision>,
+    pub label_precision: Option<Precision>,
+    pub stack_cap: Option<Bound<Uint>>,
+    pub call_stack_cap: Option<Bound<Uint>>,
+    pub heap_min: Option<Bound<Int>>,
+    pub heap_max: Option<Bound<Int>>,
+    pub heap_cap: Option<Bound<Uint>>,
+    pub label_cap: Option<Bound<Uint>>,
+    pub instruction_cap: Option<Bound<Uint>>,
+}
+
+#[derive(Serialize, Deserialize, Clone, Copy, Debug, PartialEq, Eq)]
+#[serde(rename_all = "lowercase")]
+pub enum IntegerType {
+    Int64,
+    Int32,
+    Uint64,
+    Uint32,
+    Float64,
+    Float32,
+    #[serde(rename = "C int")]
+    CInt,
+    #[serde(rename = "Go int")]
+    GoInt,
+    #[serde(rename = "Go uint")]
+    GoUint,
+}
+
+#[derive(Serialize, Deserialize, Clone, Debug, PartialEq, Eq)]
+#[serde(rename_all = "snake_case")]
+pub enum Precision {
+    Arbitrary,
+    Fixed,
+    #[serde(untagged)]
+    Type(IntegerType),
+}
+
+#[derive(Serialize, Deserialize, Clone, Debug, PartialEq, Eq)]
+#[serde(rename_all = "snake_case")]
+pub enum Bound<T> {
+    Unbounded,
+    #[serde(untagged)]
+    Type(IntegerType),
+    #[serde(untagged)]
+    Exact(T),
 }
 
 #[derive(Serialize, Deserialize, Clone, Debug, PartialEq, Eq)]
