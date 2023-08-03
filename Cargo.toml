@@ -1,4 +1,5 @@
 workspace.members = [
   "tools/cli",
+  "tools/format",
   "tools/types",
 ]

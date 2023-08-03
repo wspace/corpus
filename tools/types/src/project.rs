@@ -1,8 +1,9 @@
-use std::collections::HashMap;
+use std::collections::BTreeMap;
 use std::fs::File;
 use std::io;
 use std::path::Path;
 
+use glob::Paths;
 use serde::{Deserialize, Serialize};
 use serde_with::{apply, skip_serializing_none};
 use thiserror::Error;
@@ -243,14 +244,14 @@ pub struct NonstandardInst {
 #[skip_serializing_none]
 #[apply(
     Vec => #[serde(default, skip_serializing_if = "Vec::is_empty")],
-    HashMap => #[serde(default, skip_serializing_if = "HashMap::is_empty")],
+    BTreeMap => #[serde(default, skip_serializing_if = "BTreeMap::is_empty")],
     InstMap => #[serde(default, skip_serializing_if = "InstMap::is_empty")],
 )]
 #[derive(Serialize, Deserialize, Clone, Debug, PartialEq, Eq)]
 pub struct Assembly {
     pub mnemonics: InstMap<OneOrVec<String>>,
     pub macros: Vec<Macro>,
-    pub patterns: HashMap<String, String>,
+    pub patterns: BTreeMap<String, String>,
     pub case_sensitive_mnemonics: Option<bool>,
     pub instruction_delimiter: Option<InstDelim>,
     pub instruction_wrap: Option<bool>,
@@ -490,6 +491,10 @@ impl Project {
         let f = File::open(path.as_ref())?;
         Ok(serde_json::from_reader(f)?)
     }
+}
+
+pub fn all_project_json() -> Paths {
+    glob::glob("*/*/project.json").unwrap()
 }
 
 fn is_false(b: &bool) -> bool {
