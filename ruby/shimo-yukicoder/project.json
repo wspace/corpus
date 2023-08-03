@@ -18,15 +18,15 @@
   "assembly": {
     "mnemonics": {
       "push": ["push <number>", "push <char>"],
-      "sub": ["sub"],
-      "mul": ["mul"],
-      "div": ["div"],
-      "retrieve": ["retrieve"],
-      "end": ["finish"],
-      "printc": ["putchar"],
-      "printi": ["putnum"],
-      "readc": ["readchar"],
-      "readi": ["readnum"]
+      "sub": "sub",
+      "mul": "mul",
+      "div": "div",
+      "retrieve": "retrieve",
+      "end": "finish",
+      "printc": "putchar",
+      "printi": "putnum",
+      "readc": "readchar",
+      "readi": "readnum"
     },
     "patterns": { "char": "\"(.|\\\\n)\"" },
     "indentation": "",

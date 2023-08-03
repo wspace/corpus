@@ -263,7 +263,7 @@
         "mnemonics": {
           "type": "object",
           "propertyNames": { "$ref": "#/$defs/instruction" },
-          "patternProperties": { "": { "type": "array", "items": { "type": "string" } } },
+          "patternProperties": { "": { "anyOf": [{ "type": "string" }, { "type": "array", "items": { "type": "string" } }] } },
           "additionalProperties": false
         },
         "macros": {

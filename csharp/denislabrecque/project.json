@@ -11,18 +11,18 @@
   "whitespace": { "unimplemented": ["div", "mod", "label", "call", "jmp", "jz", "jn", "ret", "readc", "readi"] },
   "assembly": {
     "mnemonics": {
-      "push": ["Push"],
-      "dup": ["Duplicate"],
-      "swap": ["Swap"],
-      "drop": ["Discard"],
-      "add": ["Add"],
-      "sub": ["Subtract"],
-      "mul": ["Multiply"],
-      "store": ["Store"],
-      "retrieve": ["Retrieve"],
-      "end": ["Halt"],
-      "printc": ["OutputCharacter"],
-      "printi": ["OutputNumber"]
+      "push": "Push",
+      "dup": "Duplicate",
+      "swap": "Swap",
+      "drop": "Discard",
+      "add": "Add",
+      "sub": "Subtract",
+      "mul": "Multiply",
+      "store": "Store",
+      "retrieve": "Retrieve",
+      "end": "Halt",
+      "printc": "OutputCharacter",
+      "printi": "OutputNumber"
     },
     "usage": ["enum"]
   },

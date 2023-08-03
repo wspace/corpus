@@ -12,9 +12,9 @@
   "assembly": {
     "mnemonics": {
       "push": ["push <number>", "push <address>"],
-      "dup": ["dup"],
-      "swap": ["swap"],
-      "drop": ["pop"],
+      "dup": "dup",
+      "swap": "swap",
+      "drop": "pop",
       "add": [
         "add",
         "add <number>",
@@ -57,17 +57,17 @@
       ],
       "store": ["store", "store <number>", "store <number> <number>"],
       "retrieve": ["retrieve", "retrieve <number>"],
-      "label": ["lbl .<label>"],
-      "call": ["call .<label>"],
-      "jmp": ["jmp .<label>"],
-      "jz": ["jpz .<label>"],
-      "jn": ["jpn .<label>"],
-      "ret": ["ret"],
-      "end": ["exit"],
-      "printc": ["print_char"],
-      "printi": ["print_number"],
-      "readc": ["read_char"],
-      "readi": ["read_number"]
+      "label": "lbl .<label>",
+      "call": "call .<label>",
+      "jmp": "jmp .<label>",
+      "jz": "jpz .<label>",
+      "jn": "jpn .<label>",
+      "ret": "ret",
+      "end": "exit",
+      "printc": "print_char",
+      "printi": "print_number",
+      "readc": "read_char",
+      "readi": "read_number"
     },
     "patterns": {
       "address": "\\*<variable>",

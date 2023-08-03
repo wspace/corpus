@@ -41,16 +41,16 @@ type Project struct {
 	} `json:"relations,omitempty"`
 	Challenges []string `json:"challenges,omitempty"`
 	Bounds     *struct {
-		Precision      string      `json:"precision,omitempty"`
-		ArgPrecision   string      `json:"arg_precision,omitempty"`   // usually the same as precision
-		LabelPrecision string      `json:"label_precision,omitempty"` // usually the same as precision
-		StackCap       interface{} `json:"stack_cap,omitempty"`       // int or string
-		CallStackCap   interface{} `json:"call_stack_cap,omitempty"`  // int or string
-		HeapMin        interface{} `json:"heap_min,omitempty"`        // int or string
-		HeapMax        interface{} `json:"heap_max,omitempty"`        // int or string
-		HeapCap        interface{} `json:"heap_cap,omitempty"`        // int or string
-		LabelCap       interface{} `json:"label_cap,omitempty"`       // int or string
-		InstructionCap interface{} `json:"instruction_cap,omitempty"` // int or string
+		Precision      string `json:"precision,omitempty"`
+		ArgPrecision   string `json:"arg_precision,omitempty"`   // usually the same as precision
+		LabelPrecision string `json:"label_precision,omitempty"` // usually the same as precision
+		StackCap       any    `json:"stack_cap,omitempty"`       // int or string
+		CallStackCap   any    `json:"call_stack_cap,omitempty"`  // int or string
+		HeapMin        any    `json:"heap_min,omitempty"`        // int or string
+		HeapMax        any    `json:"heap_max,omitempty"`        // int or string
+		HeapCap        any    `json:"heap_cap,omitempty"`        // int or string
+		LabelCap       any    `json:"label_cap,omitempty"`       // int or string
+		InstructionCap any    `json:"instruction_cap,omitempty"` // int or string
 	} `json:"bounds,omitempty"`
 	Behavior *struct {
 		BufferedOutput *bool  `json:"buffered_output,omitempty"`
@@ -69,34 +69,34 @@ type Project struct {
 	} `json:"whitespace,omitempty"`
 	Assembly *struct {
 		Mnemonics *struct {
-			Push      []string `json:"push,omitempty"`
-			Dup       []string `json:"dup,omitempty"`
-			Copy      []string `json:"copy,omitempty"`
-			Swap      []string `json:"swap,omitempty"`
-			Drop      []string `json:"drop,omitempty"`
-			Slide     []string `json:"slide,omitempty"`
-			Add       []string `json:"add,omitempty"`
-			Sub       []string `json:"sub,omitempty"`
-			Mul       []string `json:"mul,omitempty"`
-			Div       []string `json:"div,omitempty"`
-			Mod       []string `json:"mod,omitempty"`
-			Store     []string `json:"store,omitempty"`
-			Retrieve  []string `json:"retrieve,omitempty"`
-			Label     []string `json:"label,omitempty"`
-			Call      []string `json:"call,omitempty"`
-			Jmp       []string `json:"jmp,omitempty"`
-			Jz        []string `json:"jz,omitempty"`
-			Jn        []string `json:"jn,omitempty"`
-			Ret       []string `json:"ret,omitempty"`
-			End       []string `json:"end,omitempty"`
-			Printc    []string `json:"printc,omitempty"`
-			Printi    []string `json:"printi,omitempty"`
-			Readc     []string `json:"readc,omitempty"`
-			Readi     []string `json:"readi,omitempty"`
-			Shuffle   []string `json:"shuffle,omitempty"`
-			DumpStack []string `json:"dumpstack,omitempty"`
-			DumpHeap  []string `json:"dumpheap,omitempty"`
-			DumpTrace []string `json:"dumptrace,omitempty"`
+			Push      any `json:"push,omitempty"`      // string or []string
+			Dup       any `json:"dup,omitempty"`       // string or []string
+			Copy      any `json:"copy,omitempty"`      // string or []string
+			Swap      any `json:"swap,omitempty"`      // string or []string
+			Drop      any `json:"drop,omitempty"`      // string or []string
+			Slide     any `json:"slide,omitempty"`     // string or []string
+			Add       any `json:"add,omitempty"`       // string or []string
+			Sub       any `json:"sub,omitempty"`       // string or []string
+			Mul       any `json:"mul,omitempty"`       // string or []string
+			Div       any `json:"div,omitempty"`       // string or []string
+			Mod       any `json:"mod,omitempty"`       // string or []string
+			Store     any `json:"store,omitempty"`     // string or []string
+			Retrieve  any `json:"retrieve,omitempty"`  // string or []string
+			Label     any `json:"label,omitempty"`     // string or []string
+			Call      any `json:"call,omitempty"`      // string or []string
+			Jmp       any `json:"jmp,omitempty"`       // string or []string
+			Jz        any `json:"jz,omitempty"`        // string or []string
+			Jn        any `json:"jn,omitempty"`        // string or []string
+			Ret       any `json:"ret,omitempty"`       // string or []string
+			End       any `json:"end,omitempty"`       // string or []string
+			Printc    any `json:"printc,omitempty"`    // string or []string
+			Printi    any `json:"printi,omitempty"`    // string or []string
+			Readc     any `json:"readc,omitempty"`     // string or []string
+			Readi     any `json:"readi,omitempty"`     // string or []string
+			Shuffle   any `json:"shuffle,omitempty"`   // string or []string
+			DumpStack any `json:"dumpstack,omitempty"` // string or []string
+			DumpHeap  any `json:"dumpheap,omitempty"`  // string or []string
+			DumpTrace any `json:"dumptrace,omitempty"` // string or []string
 		} `json:"mnemonics,omitempty"`
 		Macros []struct {
 			Name    string    `json:"name"`
@@ -204,17 +204,17 @@ type Command struct {
 }
 
 type CommandOption struct {
-	Short         interface{} `json:"short,omitempty"` // -s
-	Long          string      `json:"long,omitempty"`  // --long
-	Bare          string      `json:"bare,omitempty"`  // bare
-	Required      *bool       `json:"required,omitempty"`
-	RepeatAllowed *bool       `json:"repeat_allowed,omitempty"`
-	Arg           string      `json:"arg,omitempty"`
-	ArgRequired   *bool       `json:"arg_required,omitempty"`
-	Type          string      `json:"type,omitempty"`
-	Default       interface{} `json:"default,omitempty"`
-	Min           interface{} `json:"min,omitempty"`
-	Desc          string      `json:"desc,omitempty"`
+	Short         any    `json:"short,omitempty"` // -s
+	Long          string `json:"long,omitempty"`  // --long
+	Bare          string `json:"bare,omitempty"`  // bare
+	Required      *bool  `json:"required,omitempty"`
+	RepeatAllowed *bool  `json:"repeat_allowed,omitempty"`
+	Arg           string `json:"arg,omitempty"`
+	ArgRequired   *bool  `json:"arg_required,omitempty"`
+	Type          string `json:"type,omitempty"`
+	Default       any    `json:"default,omitempty"`
+	Min           any    `json:"min,omitempty"`
+	Desc          string `json:"desc,omitempty"`
 	Values        []struct {
 		Values []string `json:"values,omitempty"`
 		Desc   string   `json:"desc,omitempty"`

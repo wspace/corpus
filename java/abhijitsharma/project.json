@@ -31,12 +31,12 @@
   },
   "assembly": {
     "mnemonics": {
-      "push": ["STACK.PUSH"],
-      "add": ["MATH.+"],
-      "sub": ["MATH.-"],
-      "mul": ["MATH.*"],
-      "div": ["MATH./"],
-      "printi": ["IO.OUT"]
+      "push": "STACK.PUSH",
+      "add": "MATH.+",
+      "sub": "MATH.-",
+      "mul": "MATH.*",
+      "div": "MATH./",
+      "printi": "IO.OUT"
     },
     "usage": ["disassembler"]
   },

@@ -19,21 +19,21 @@
   },
   "assembly": {
     "mnemonics": {
-      "push": ["push"],
+      "push": "push",
       "dup": ["dup", "doub"],
       "copy": ["pick", "copy"],
-      "swap": ["swap"],
+      "swap": "swap",
       "drop": ["drop", "discard", "pop"],
-      "slide": ["slide"],
+      "slide": "slide",
       "add": ["add", "add <rhs>"],
       "sub": ["sub", "sub <rhs>"],
-      "mul": ["mul"],
-      "div": ["div"],
-      "mod": ["mod"],
+      "mul": "mul",
+      "div": "div",
+      "mod": "mod",
       "store": ["store", "store <lhs>"],
       "retrieve": ["fetch", "retrieve", "retrive", "retrive <number>", "retreive"],
       "label": ["<label>:", "label"],
-      "call": ["call"],
+      "call": "call",
       "jmp": ["jump", "jmp"],
       "jz": ["jz", "jumpz"],
       "jn": ["jn", "jumpn"],
@@ -43,8 +43,8 @@
       "printi": ["outn", "outnum", "printi"],
       "readc": ["readc", "readchar", "inc"],
       "readi": ["readn", "readnum", "readi", "inn"],
-      "dumpstack": ["debug_printstack"],
-      "dumpheap": ["debug_printheap"]
+      "dumpstack": "debug_printstack",
+      "dumpheap": "debug_printheap"
     },
     "macros": [
       {

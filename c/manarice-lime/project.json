@@ -24,7 +24,7 @@
       "mod": ["MOD", "mod"],
       "store": ["STORE", "store"],
       "retrieve": ["FETCH", "fetch", "RETRIEVE", "retrieve"],
-      "label": ["<label>:"],
+      "label": "<label>:",
       "call": ["CALL", "call"],
       "jmp": ["JMP", "jmp"],
       "jz": ["JZ", "jz"],

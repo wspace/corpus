@@ -142,7 +142,7 @@ pub struct NonstandardInst {
 
 #[derive(Serialize, Deserialize, Clone, Debug, PartialEq, Eq)]
 pub struct Assembly {
-    pub mnemonics: Option<InstMap<Vec<String>>>,
+    pub mnemonics: Option<InstMap<OneOrVec<String>>>,
     #[serde(default)]
     pub macros: Vec<Macro>,
     #[serde(default)]

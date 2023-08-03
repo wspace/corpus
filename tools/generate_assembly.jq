@@ -17,6 +17,7 @@ def count_each:
     .assembly.mnemonics | select(. != null) |
     to_entries[] |
     .value |= (
+      if type == "array" then . else [.] end |
       map(
         ascii_downcase |
         gsub("^(stack|arith|math|calc|heap|flow|io)[ ._]|^(mod|[samchfi])[._]"; "") |

@@ -12,14 +12,14 @@
   "whitespace": { "extension": "ws" },
   "assembly": {
     "mnemonics": {
-      "push": ["push"],
-      "add": ["add <number>"],
-      "sub": ["sub <number>"],
-      "label": ["<label>:"],
-      "call": ["call"],
-      "jmp": ["jmp"],
-      "jz": ["jz"],
-      "end": ["exit"]
+      "push": "push",
+      "add": "add <number>",
+      "sub": "sub <number>",
+      "label": "<label>:",
+      "call": "call",
+      "jmp": "jmp",
+      "jz": "jz",
+      "end": "exit"
     },
     "macros": [{ "name": "pushs", "args": ["string"] }, { "name": "include" }],
     "indentation": "  ",
