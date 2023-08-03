@@ -188,7 +188,7 @@
       "type": "array",
       "items": {
         "type": "string",
-        "examples": [
+        "enum": [
           "Advent of Code 2015",
           "Advent of Code 2016",
           "Advent of Code 2017",
@@ -200,6 +200,7 @@
           "Cerner 2^5",
           "Code Golf",
           "Codewars",
+          "Hackergame",
           "Hacktoberfest 2016",
           "Hacktoberfest 2017",
           "Hacktoberfest 2018",
@@ -207,6 +208,7 @@
           "Project Euler",
           "Rosetta Code",
           "Sphere Online Judge",
+          "noxCTF",
           "yukicoder"
         ]
       }
@@ -413,18 +415,19 @@
               "Clojure clojure.tools.cli",
               "Crystal option_parser",
               "Go flag",
+              "Go github.com/alexflint/go-arg",
               "Haskell cmdargs",
               "Haskell optparse-applicative",
               "Java org.apache.commons.cli",
               "JavaScript Commander.js",
-              "OCaml Arg",
               "Objective-C getopt",
+              "OCaml Arg",
               "Perl Getopt::Std",
               "Python argparse",
               "Python click",
               "Python optparse",
-              "Ruby Thor",
               "Ruby optparse",
+              "Ruby Thor",
               "Rust clap",
               "Rust structopt"
             ]

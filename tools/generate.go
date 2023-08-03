@@ -213,7 +213,7 @@ type CommandOption struct {
 	ArgRequired   *bool  `json:"arg_required,omitempty"`
 	Type          string `json:"type,omitempty"`
 	Default       any    `json:"default,omitempty"`
-	Min           any    `json:"min,omitempty"`
+	Min           int    `json:"min,omitempty"`
 	Desc          string `json:"desc,omitempty"`
 	Values        []struct {
 		Values []string `json:"values,omitempty"`
