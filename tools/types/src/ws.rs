@@ -77,6 +77,10 @@ impl<T> InstMap<T> {
         mem::replace(self.get_mut(key), Some(value))
     }
 
+    pub fn is_empty(&self) -> bool {
+        self.len() == 0
+    }
+
     pub fn len(&self) -> usize {
         self.0.iter().filter(|v| v.is_some()).count()
     }

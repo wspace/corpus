@@ -7,6 +7,40 @@ use serde::{Deserialize, Deserializer, Serialize, Serializer};
 #[repr(transparent)]
 pub struct OneOrVec<T>(pub Vec<T>);
 
+impl<T> OneOrVec<T> {
+    pub fn is_empty(&self) -> bool {
+        self.0.is_empty()
+    }
+
+    pub fn len(&self) -> usize {
+        self.0.len()
+    }
+}
+
+impl<T> AsRef<Vec<T>> for OneOrVec<T> {
+    fn as_ref(&self) -> &Vec<T> {
+        &self.0
+    }
+}
+
+impl<T> AsMut<Vec<T>> for OneOrVec<T> {
+    fn as_mut(&mut self) -> &mut Vec<T> {
+        &mut self.0
+    }
+}
+
+impl<T> AsRef<[T]> for OneOrVec<T> {
+    fn as_ref(&self) -> &[T] {
+        &self.0
+    }
+}
+
+impl<T> AsMut<[T]> for OneOrVec<T> {
+    fn as_mut(&mut self) -> &mut [T] {
+        &mut self.0
+    }
+}
+
 impl<T> Default for OneOrVec<T> {
     fn default() -> Self {
         OneOrVec(Vec::new())

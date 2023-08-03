@@ -4,43 +4,44 @@ use std::io;
 use std::path::Path;
 
 use serde::{Deserialize, Serialize};
+use serde_with::{apply, skip_serializing_none};
 use thiserror::Error;
 
 use crate::util::{Int, OneOrVec, TotalF64, Uint};
 use crate::ws::InstMap;
 
+#[skip_serializing_none]
+#[apply(Vec => #[serde(default, skip_serializing_if = "Vec::is_empty")])]
 #[derive(Serialize, Deserialize, Clone, Debug, PartialEq, Eq)]
 pub struct Project {
     pub id: String,
     pub name: String,
     pub description: Option<String>,
+    #[serde_with(skip_apply)]
     pub authors: Vec<String>,
     pub license: String,
+    #[serde_with(skip_apply)]
     pub languages: Vec<String>,
+    #[serde_with(skip_apply)]
     pub tags: Vec<String>,
     pub date: String,
     pub spec_version: SpecVersion,
+    #[serde_with(skip_apply)]
     pub source: Vec<String>,
-    #[serde(default)]
+    #[serde(default, skip_serializing_if = "is_false")]
     pub source_unavailable: bool,
-    #[serde(default)]
     pub packages: Vec<Package>,
-    #[serde(default)]
     pub relations: Vec<Relation>,
-    #[serde(default)]
     pub challenges: Vec<Challenge>,
     pub bounds: Option<Bounds>,
     pub behavior: Option<Behavior>,
     pub whitespace: Option<Whitespace>,
     pub assembly: Option<Assembly>,
-    #[serde(default)]
     pub mappings: Vec<Mapping>,
-    #[serde(default)]
     pub programs: Vec<Program>,
     pub build_errors: Option<String>,
     pub run_errors: Option<String>,
     pub scripts: Option<Scripts>,
-    #[serde(default)]
     pub commands: Vec<Command>,
     pub notes: Option<String>,
     pub todo: Option<String>,
@@ -85,15 +86,14 @@ pub enum PackageManager {
     RubyGems,
 }
 
+#[skip_serializing_none]
 #[derive(Serialize, Deserialize, Clone, Debug, PartialEq, Eq)]
 pub struct Relation {
     pub id: String,
     #[serde(rename = "type")]
     pub typ: String,
-    #[serde(default)]
-    pub commit: String,
-    #[serde(default)]
-    pub release: String,
+    pub commit: Option<String>,
+    pub release: Option<String>,
 }
 
 #[derive(Serialize, Deserialize, Clone, Copy, Debug, PartialEq, Eq)]
@@ -154,6 +154,7 @@ pub enum Challenge {
     Yukicoder,
 }
 
+#[skip_serializing_none]
 #[derive(Serialize, Deserialize, Clone, Debug, PartialEq, Eq)]
 pub struct Bounds {
     pub precision: Option<Precision>,
@@ -204,6 +205,7 @@ pub enum Bound<T> {
     Exact(T),
 }
 
+#[skip_serializing_none]
 #[derive(Serialize, Deserialize, Clone, Debug, PartialEq, Eq)]
 pub struct Behavior {
     pub buffered_output: Option<bool>,
@@ -218,55 +220,56 @@ pub enum EofBehavior {
     Value(Int),
 }
 
+#[skip_serializing_none]
+#[apply(Vec => #[serde(default, skip_serializing_if = "Vec::is_empty")])]
 #[derive(Serialize, Deserialize, Clone, Debug, PartialEq, Eq)]
 pub struct Whitespace {
-    #[serde(default)]
     pub unimplemented: Vec<String>,
-    #[serde(default)]
     pub nonstandard: Vec<NonstandardInst>,
     pub extension: Option<String>,
 }
 
+#[skip_serializing_none]
+#[apply(Vec => #[serde(default, skip_serializing_if = "Vec::is_empty")])]
 #[derive(Serialize, Deserialize, Clone, Debug, PartialEq, Eq)]
 pub struct NonstandardInst {
     pub name: Option<String>,
-    #[serde(default)]
     pub aliases: Vec<String>,
     pub seq: Option<String>,
-    #[serde(default)]
     pub args: Vec<String>,
     pub desc: Option<String>,
 }
 
+#[skip_serializing_none]
+#[apply(
+    Vec => #[serde(default, skip_serializing_if = "Vec::is_empty")],
+    HashMap => #[serde(default, skip_serializing_if = "HashMap::is_empty")],
+    InstMap => #[serde(default, skip_serializing_if = "InstMap::is_empty")],
+)]
 #[derive(Serialize, Deserialize, Clone, Debug, PartialEq, Eq)]
 pub struct Assembly {
-    pub mnemonics: Option<InstMap<OneOrVec<String>>>,
-    #[serde(default)]
+    pub mnemonics: InstMap<OneOrVec<String>>,
     pub macros: Vec<Macro>,
-    #[serde(default)]
     pub patterns: HashMap<String, String>,
     pub case_sensitive_mnemonics: Option<bool>,
-    #[serde(default)]
     pub instruction_delimiter: Option<InstDelim>,
     pub instruction_wrap: Option<bool>,
-    #[serde(default)]
     pub line_comments: Vec<String>,
-    #[serde(default)]
     pub block_comments: Vec<BlockComment>,
     pub indentation: Option<String>,
     pub label_indentation: Option<String>,
     pub block_indentation: Option<bool>,
     pub binary_numbers: Option<bool>,
-    #[serde(default)]
     pub usage: Vec<String>,
     pub extension: Option<String>,
     pub notes: Option<String>,
 }
 
+#[skip_serializing_none]
+#[apply(Vec => #[serde(default, skip_serializing_if = "Vec::is_empty")])]
 #[derive(Serialize, Deserialize, Clone, Debug, PartialEq, Eq)]
 pub struct Macro {
     pub name: String,
-    #[serde(default)]
     pub args: Vec<String>,
     pub replace: Option<Vec<String>>,
     pub notes: Option<String>,
@@ -291,6 +294,7 @@ pub struct BlockComment {
     pub nestable: bool,
 }
 
+#[skip_serializing_none]
 #[derive(Serialize, Deserialize, Clone, Debug, PartialEq, Eq)]
 pub struct Mapping {
     pub space: String,
@@ -305,28 +309,26 @@ pub struct Mapping {
     pub notes: Option<String>,
 }
 
+#[skip_serializing_none]
+#[apply(Vec => #[serde(default, skip_serializing_if = "Vec::is_empty")])]
 #[derive(Serialize, Deserialize, Clone, Debug, PartialEq, Eq)]
 pub struct Program {
     pub path: String,
     pub generated: Option<String>,
-    #[serde(default)]
     pub inputs: Vec<String>,
-    #[serde(default)]
     pub outputs: Vec<String>,
-    #[serde(default)]
     pub aux: Vec<String>,
-    #[serde(default)]
     pub polyglot: Vec<String>,
     pub mapping_index: Option<usize>,
     pub equivalent: Option<String>,
     pub spec_version: Option<SpecVersion>,
     pub generate: Option<String>,
-    #[serde(default)]
     pub authors: Vec<String>,
     pub desc: Option<String>,
     pub notes: Option<String>,
 }
 
+#[skip_serializing_none]
 #[derive(Serialize, Deserialize, Clone, Debug, PartialEq, Eq)]
 pub struct Scripts {
     pub run: Option<Script>,
@@ -335,14 +337,16 @@ pub struct Scripts {
     pub disassemble: Option<Script>,
 }
 
+#[skip_serializing_none]
+#[apply(Vec => #[serde(default, skip_serializing_if = "Vec::is_empty")])]
 #[derive(Serialize, Deserialize, Clone, Debug, PartialEq, Eq)]
 pub struct Script {
     pub bin: ScriptBin,
-    #[serde(default)]
     pub args: Vec<String>,
     pub notes: Option<String>,
 }
 
+#[skip_serializing_none]
 #[derive(Serialize, Deserialize, Clone, Debug, PartialEq, Eq)]
 #[serde(untagged)]
 pub enum ScriptBin {
@@ -350,38 +354,39 @@ pub enum ScriptBin {
     Jar { jar: String, main: Option<String> },
 }
 
+#[skip_serializing_none]
+#[apply(Vec => #[serde(default, skip_serializing_if = "Vec::is_empty")])]
 #[derive(Serialize, Deserialize, Clone, Debug, PartialEq, Eq)]
 pub struct Command {
     #[serde(rename = "type")]
     pub typ: Option<String>,
     pub bin: Option<String>,
-    #[serde(default)]
     pub dependencies: Vec<String>,
     pub install_dependencies: Option<String>,
     pub build: Option<String>,
     pub build_errors: Option<String>,
     pub usage: Option<String>,
-    #[serde(default)]
     pub example_usages: Vec<String>,
     pub run_errors: Option<String>,
     pub input: Option<String>,
     pub output: Option<String>,
-    #[serde(default)]
     pub options: Vec<CommandOption>,
     pub option_parse: Option<OptionParse>,
-    #[serde(default)]
     pub subcommands: Vec<Subcommand>,
-    #[serde(default)]
     pub unimplemented: Vec<String>,
     pub notes: Option<String>,
 }
 
+#[skip_serializing_none]
+#[apply(
+    Vec => #[serde(default, skip_serializing_if = "Vec::is_empty")],
+    OneOrVec => #[serde(default, skip_serializing_if = "OneOrVec::is_empty")],
+)]
 #[derive(Serialize, Deserialize, Clone, Debug, PartialEq, Eq)]
 pub struct CommandOption {
-    #[serde(default)]
     pub short: OneOrVec<String>, // -s
-    pub long: Option<String>, // --long
-    pub bare: Option<String>, // bare
+    pub long: Option<String>,    // --long
+    pub bare: Option<String>,    // bare
     pub required: Option<bool>,
     pub repeat_allowed: Option<bool>,
     pub arg: Option<String>,
@@ -391,7 +396,6 @@ pub struct CommandOption {
     pub default: Option<OptionArg>,
     pub min: Option<Int>,
     pub desc: Option<String>,
-    #[serde(default)]
     pub values: Vec<OptionValue>,
 }
 
@@ -404,13 +408,16 @@ pub enum OptionArg {
     String(String),
 }
 
+#[skip_serializing_none]
+#[apply(Vec => #[serde(default, skip_serializing_if = "Vec::is_empty")])]
 #[derive(Serialize, Deserialize, Clone, Debug, PartialEq, Eq)]
 pub struct OptionValue {
-    #[serde(default)]
     pub values: Vec<String>,
     pub desc: Option<String>,
 }
 
+#[skip_serializing_none]
+#[apply(Vec => #[serde(default, skip_serializing_if = "Vec::is_empty")])]
 #[derive(Serialize, Deserialize, Clone, Debug, PartialEq, Eq)]
 pub struct Subcommand {
     pub name: String,
@@ -418,7 +425,6 @@ pub struct Subcommand {
     pub usage: Option<String>,
     pub input: Option<String>,
     pub output: Option<String>,
-    #[serde(default)]
     pub options: Vec<CommandOption>,
     pub notes: Option<String>,
 }
@@ -480,8 +486,12 @@ pub enum ReadProjectError {
 }
 
 impl Project {
-    pub fn from_file(path: &Path) -> Result<Self, ReadProjectError> {
-        let f = File::open(path)?;
+    pub fn from_file<P: AsRef<Path>>(path: P) -> Result<Self, ReadProjectError> {
+        let f = File::open(path.as_ref())?;
         Ok(serde_json::from_reader(f)?)
     }
+}
+
+fn is_false(b: &bool) -> bool {
+    !b
 }
