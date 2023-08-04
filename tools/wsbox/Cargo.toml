@@ -1,5 +1,5 @@
 [package]
-name = "corpus-cli"
+name = "wsbox"
 version = "0.1.0"
 authors = ["Thalia Archibald <thalia@archibald.dev>"]
 edition = "2021"

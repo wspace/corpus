@@ -82,14 +82,6 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "e496a50fda8aacccc86d7529e2c1e0892dbd0f898a6b5645b5561b89c3210efa"
 
 [[package]]
-name = "corpus-cli"
-version = "0.1.0"
-dependencies = [
- "corpus-types",
- "glob",
-]
-
-[[package]]
 name = "corpus-format"
 version = "0.1.0"
 dependencies = [
@@ -669,3 +661,11 @@ name = "windows_x86_64_msvc"
 version = "0.48.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "1a515f5799fe4961cb532f983ce2b23082366b898e52ffbce459c86f67c8378a"
+
+[[package]]
+name = "wsbox"
+version = "0.1.0"
+dependencies = [
+ "corpus-types",
+ "glob",
+]
