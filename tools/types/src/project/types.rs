@@ -1,12 +1,7 @@
 use std::collections::BTreeMap;
-use std::fs::File;
-use std::io;
-use std::path::Path;
 
-use glob::Paths;
 use serde::{Deserialize, Serialize};
 use serde_with::{apply, skip_serializing_none};
-use thiserror::Error;
 
 use crate::util::{Int, OneOrVec, TotalF64, Uint};
 use crate::ws::InstMap;
@@ -476,25 +471,6 @@ pub enum OptionParse {
     RustClap,
     #[serde(rename = "Rust structopt")]
     RustStructOpt,
-}
-
-#[derive(Error, Debug)]
-pub enum ReadProjectError {
-    #[error(transparent)]
-    Io(#[from] io::Error),
-    #[error(transparent)]
-    Json(#[from] serde_json::Error),
-}
-
-impl Project {
-    pub fn from_file<P: AsRef<Path>>(path: P) -> Result<Self, ReadProjectError> {
-        let f = File::open(path.as_ref())?;
-        Ok(serde_json::from_reader(f)?)
-    }
-}
-
-pub fn all_project_json() -> Paths {
-    glob::glob("*/*/project.json").unwrap()
 }
 
 fn is_false(b: &bool) -> bool {
