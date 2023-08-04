@@ -3,7 +3,7 @@ DOCKERFILES = $(filter-out tools/% .% _%, $(wildcard */Dockerfile */*/Dockerfile
 GO_TOOLS_PACKAGE = tools/generate.go tools/licenses.go
 
 .PHONY: all
-all: tidy_submodules licenses README.md assembly.md building.md challenges.md
+all: tidy_submodules licenses README.md assembly.md building.md challenges.md missing_submodules.md
 
 .PHONY: format
 format: $(PROJECTS) tools/format/format.go $(GO_TOOLS_PACKAGE)
@@ -30,6 +30,10 @@ building.md: $(PROJECTS) $(DOCKERFILES) tools/generate_building.jq
 challenges.md: $(PROJECTS) tools/generate_challenges.jq
 	$(info Generating challenges.md)
 	@jq -rsf tools/generate_challenges.jq $(PROJECTS) > challenges.md
+
+missing_submodules.md: $(PROJECTS) tools/generate_missing_submodules.jq
+	$(info Generating missing_submodules.md)
+	@jq -rsf tools/generate_missing_submodules.jq $(PROJECTS) > missing_submodules.md
 
 .PHONY: docker_build
 docker_build: tools/generate_docker_build.sh
