@@ -8,6 +8,7 @@
   "date": "2021-02-26 19:52:14 +0530",
   "spec_version": "0.2",
   "source": ["https://github.com/AnkitaTandon/WSPC"],
+  "submodules": [{ "path": "WSPC", "url": "https://github.com/AnkitaTandon/WSPC" }],
   "whitespace": { "extension": "ws" },
   "mappings": [{ "space": "S", "tab": "T", "lf": "L", "before_stl": true }],
   "programs": [

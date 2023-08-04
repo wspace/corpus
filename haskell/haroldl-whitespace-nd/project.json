@@ -12,6 +12,7 @@
     "https://web.archive.org/web/20130926165457/http://compsoc.dur.ac.uk:80/archives/whitespace/2011-March/000080.html",
     "https://harold.hotelling.net/shuffle.html"
   ],
+  "submodules": [{ "path": "whitespace-nd", "url": "https://github.com/haroldl/whitespace-nd" }],
   "packages": [
     {
       "name": "whitespace",

@@ -15,6 +15,7 @@
     "https://archive.softwareheritage.org/browse/origin/directory/?origin_url=http://spacesharp.googlecode.com/svn/",
     "http://web.archive.org/web/20160528204735/https://code.google.com/p/spacesharp/"
   ],
+  "submodules": [{ "path": "spacesharp", "url": "https://github.com/nicolasff/spacesharp" }],
   "whitespace": { "extension": "ws" },
   "assembly": {
     "mnemonics": {

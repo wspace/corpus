@@ -8,6 +8,7 @@
   "date": "2020-08-18 16:29:41 +0200",
   "spec_version": "0.3",
   "source": ["https://github.com/CodelyTV/youtube-code-examples"],
+  "submodules": [{ "path": "youtube-code-examples", "url": "https://github.com/CodelyTV/youtube-code-examples" }],
   "relations": [{ "id": "php/igorw", "type": "library" }],
   "whitespace": { "extension": "ws" },
   "programs": [

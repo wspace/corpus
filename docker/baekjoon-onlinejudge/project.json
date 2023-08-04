@@ -8,6 +8,7 @@
   "date": "2015-07-03 09:45:36 +0000",
   "spec_version": "0.2",
   "source": ["https://github.com/Baekjoon/Dockerfiles", "https://help.acmicpc.net/language/info#language-24"],
+  "submodules": [{ "path": "Dockerfiles", "url": "https://github.com/Baekjoon/Dockerfiles" }],
   "packages": [
     {
       "name": "baekjoon/onlinejudge-ws",

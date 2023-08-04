@@ -9,6 +9,7 @@
   "date": "2019-04-24 14:54:48 -0400",
   "spec_version": "0.3",
   "source": ["https://github.com/SkaBob42/madness"],
+  "submodules": [{ "path": "madness", "url": "https://github.com/SkaBob42/madness" }],
   "relations": [{ "id": "perl/mkoelbl", "type": "fork" }],
   "commands": [
     {

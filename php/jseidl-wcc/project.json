@@ -8,5 +8,6 @@
   "date": "2014-02-18 17:13:16 -0300",
   "spec_version": "0.2",
   "source": ["https://github.com/jseidl/whitespace"],
+  "submodules": [{ "path": "whitespace", "url": "https://github.com/jseidl/whitespace" }],
   "notes": "HTTP service that converts text to a sequence of push and printc instructions that produce the same text"
 }

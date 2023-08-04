@@ -12,6 +12,7 @@
     "https://github.com/RemiGascou/small-projects/tree/master/C/whitespace",
     "https://github.com/thaliaarchi/repo-archival/blob/main/scripts/wspace/remigascou-c.sh"
   ],
+  "submodules": [{ "path": "whitespace", "url": "https://github.com/wspace/remigascou-c" }],
   "whitespace": { "extension": "ws" },
   "assembly": {
     "mnemonics": {

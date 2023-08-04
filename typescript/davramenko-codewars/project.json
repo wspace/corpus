@@ -8,6 +8,7 @@
   "date": "2022-07-26 15:19:35 +0300",
   "spec_version": "0.3",
   "source": ["https://github.com/davramenko/codewars-typescript"],
+  "submodules": [{ "path": "codewars-typescript", "url": "https://github.com/davramenko/codewars-typescript" }],
   "challenges": ["Codewars"],
   "run_errors": "Needs Codewars entrypoint",
   "commands": [

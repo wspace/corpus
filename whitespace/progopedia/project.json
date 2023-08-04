@@ -12,5 +12,6 @@
     "http://progopedia.com/language/whitespace/",
     "https://github.com/thaliaarchi/repo-archival/blob/main/scripts/wspace/progopedia.sh"
   ],
+  "submodules": [{ "path": "whitespace", "url": "https://github.com/wspace/progopedia" }],
   "todo": "Add all Whitespace-related pages to repo, convert to Markdown, extract programs, and add site's license"
 }

@@ -8,6 +8,10 @@
   "date": "2021-10-28 17:26:22 +0200",
   "spec_version": "0.3",
   "source": ["https://github.com/ManaRice/whitespace"],
+  "submodules": [
+    { "path": "whitespace", "url": "https://github.com/ManaRice/whitespace" },
+    { "path": "limelib", "url": "https://github.com/ManaRice/limelib" }
+  ],
   "whitespace": { "extension": "ws" },
   "assembly": {
     "mnemonics": {

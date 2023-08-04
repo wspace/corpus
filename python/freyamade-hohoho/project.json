@@ -8,6 +8,7 @@
   "date": "2018-11-22 18:48:52 +0000",
   "spec_version": "-",
   "source": ["https://github.com/freyamade/hohoho"],
+  "submodules": [{ "path": "hohoho", "url": "https://github.com/freyamade/hohoho" }],
   "packages": [{ "name": "hohoho", "manager": "PyPI", "url": "https://pypi.org/project/hohoho/" }],
   "relations": [{ "id": "python/dwayne", "type": "library" }],
   "whitespace": { "extension": "ws" },

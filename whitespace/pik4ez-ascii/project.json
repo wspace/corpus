@@ -16,6 +16,7 @@
     "https://gist.github.com/pik4ez/e3d776091bae3a41e18ae1404bdccac1",
     "https://github.com/thaliaarchi/repo-archival/blob/main/scripts/wspace/pik4ez-ascii.sh"
   ],
+  "submodules": [{ "path": "ascii", "url": "https://github.com/wspace/pik4ez-ascii" }],
   "whitespace": { "extension": "ws" },
   "programs": [
     { "path": "brooks.ws", "spec_version": "0.2" },

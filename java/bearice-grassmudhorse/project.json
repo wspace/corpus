@@ -16,6 +16,7 @@
     "https://web.archive.org/web/20210624084916/https://code.google.com/archive/p/grass-mud-horse/",
     "https://github.com/thaliaarchi/repo-archival/blob/main/scripts/wspace/bearice-grassmudhorse.sh"
   ],
+  "submodules": [{ "path": "grass-mud-horse", "url": "https://github.com/wspace/bearice-grassmudhorse" }],
   "whitespace": {
     "nonstandard": [
       {

@@ -11,6 +11,7 @@
     "https://github.com/0x55aa/python-whitespace",
     "http://www.0x55aa.com/%E7%AE%97%E6%B3%95-%E7%BC%96%E7%A8%8B/1244.html"
   ],
+  "submodules": [{ "path": "python-whitespace", "url": "https://github.com/0x55aa/python-whitespace" }],
   "whitespace": { "extension": "ws" },
   "mappings": [{ "space": "s", "tab": "t", "lf": "l", "before_stl": true }],
   "programs": [

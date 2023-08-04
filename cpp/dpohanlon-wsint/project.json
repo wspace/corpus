@@ -8,6 +8,7 @@
   "date": "2012-12-02 06:45:50 -0800",
   "spec_version": "0.2",
   "source": ["https://github.com/wspace/dpohanlon-wsint", "https://github.com/dpohanlon/wsInt"],
+  "submodules": [{ "path": "wsInt", "url": "https://github.com/wspace/dpohanlon-wsint" }],
   "assembly": {
     "mnemonics": {
       "push": "Push",

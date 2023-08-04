@@ -17,6 +17,7 @@
     "https://github.com/lifthrasiir",
     "https://esolangs.org/wiki/User:Tokigun"
   ],
+  "submodules": [{ "path": "esotope-esotope", "url": "https://github.com/wspace/lifthrasiir-esotope" }],
   "whitespace": { "nonstandard": [{ "name": "pick" }, { "name": "roll" }, { "name": "discard" }], "extension": "ws" },
   "assembly": {
     "mnemonics": {

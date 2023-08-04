@@ -12,6 +12,7 @@
     "https://tieba.baidu.com/p/3173314405",
     "https://pan.baidu.com/s/1hqoWgxI"
   ],
+  "submodules": [{ "path": "whitespace-interpreter", "url": "https://github.com/azige/whitespace-interpreter" }],
   "whitespace": { "extension": "ws" },
   "assembly": {
     "mnemonics": {

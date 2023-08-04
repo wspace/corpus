@@ -8,6 +8,7 @@
   "date": "2019-02-26 02:56:55 +0000",
   "spec_version": "0.2",
   "source": ["https://gist.github.com/jonstites/16784b5c1fb0c1e580d698bb13d4f50f"],
+  "submodules": [{ "path": "hello", "url": "https://gist.github.com/jonstites/16784b5c1fb0c1e580d698bb13d4f50f" }],
   "whitespace": { "extension": "ws" },
   "programs": [{ "path": "hello.ws", "spec_version": "0.2" }]
 }

@@ -12,6 +12,7 @@
     "https://code.google.com/archive/p/whitespacesdk/",
     "https://github.com/thaliaarchi/repo-archival/blob/main/scripts/wspace/mash-whitespacesdk.sh"
   ],
+  "submodules": [{ "path": "whitespacesdk", "url": "https://github.com/wspace/mash-whitespacesdk" }],
   "whitespace": {
     "nonstandard": [
       { "name": "Invert", "seq": "STT", "desc": "Invert the stack" },

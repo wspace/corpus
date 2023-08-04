@@ -8,6 +8,7 @@
   "date": "2015-07-08 09:52:33 -0700",
   "spec_version": "0.3",
   "source": ["https://gist.github.com/K-atc/02b402e9812e066afb78"],
+  "submodules": [{ "path": "whitespace", "url": "https://gist.github.com/K-atc/02b402e9812e066afb78" }],
   "assembly": {
     "mnemonics": {
       "push": "PUSH",

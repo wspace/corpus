@@ -8,6 +8,12 @@
   "date": "2016-01-28 16:53:06 -0600",
   "spec_version": "0.2",
   "source": ["https://bitbucket.org/StephenPatrick/whitespace-interpreter"],
+  "submodules": [
+    {
+      "path": "whitespace-interpreter",
+      "url": "https://bitbucket.org/StephenPatrick/whitespace-interpreter"
+    }
+  ],
   "whitespace": { "extension": "ws" },
   "programs": [
     { "path": "conf/predict-superbowl.ws", "spec_version": "0.2" },

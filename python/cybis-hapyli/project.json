@@ -19,6 +19,7 @@
     "https://pastebin.com/f761fc4b5",
     "https://stackoverflow.com/questions/607830/use-of-haskell-state-monad-a-code-smell"
   ],
+  "submodules": [{ "path": "HaPyLi", "url": "https://github.com/wspace/cybis-hapyli" }],
   "whitespace": { "extension": "ws" },
   "assembly": {
     "mnemonics": {

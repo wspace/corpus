@@ -8,6 +8,7 @@
   "date": "2019-05-11 13:12:54 +0900",
   "spec_version": "0.2",
   "source": ["https://github.com/pocke/gows"],
+  "submodules": [{ "path": "gows", "url": "https://github.com/pocke/gows" }],
   "bounds": {
     "precision": "Go int",
     "stack_cap": "unbounded",

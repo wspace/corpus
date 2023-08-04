@@ -12,6 +12,7 @@
     "https://github.com/edwinb/WS-idr",
     "https://twitter.com/edwinbrady/status/689863187546664960"
   ],
+  "submodules": [{ "path": "WS-idr", "url": "https://github.com/wspace/edwinb-ws-idr" }],
   "whitespace": { "extension": "ws" },
   "assembly": {
     "mnemonics": {

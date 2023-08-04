@@ -8,6 +8,7 @@
   "date": "2020-09-08 16:27:12 +0530",
   "spec_version": "0.2",
   "source": ["https://github.com/bsarthak1803/Cerner-2_pow_5-2020"],
+  "submodules": [{ "path": "Cerner-2_pow_5-2020", "url": "https://github.com/bsarthak1803/Cerner-2_pow_5-2020" }],
   "challenges": ["Cerner 2^5"],
   "whitespace": { "extension": "ws" },
   "programs": [{ "path": "ten.ws", "spec_version": "0.2" }]

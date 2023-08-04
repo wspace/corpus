@@ -8,6 +8,7 @@
   "date": "2015-01-29 00:49:03 +0000",
   "spec_version": "0.3",
   "source": ["https://github.com/faurehu/whiteSpaceInterpreter"],
+  "submodules": [{ "path": "whiteSpaceInterpreter", "url": "https://github.com/faurehu/whiteSpaceInterpreter" }],
   "mappings": [{ "space": "1", "tab": "2", "lf": "3" }],
   "programs": [{ "path": "add2and3thenprint.ws" }, { "path": "evennumbers.ws" }, { "path": "evennumbersto20.ws" }],
   "commands": [

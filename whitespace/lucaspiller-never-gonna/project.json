@@ -11,6 +11,7 @@
     "https://gist.github.com/lucaspiller/2852385",
     "https://codegolf.stackexchange.com/questions/6043/were-no-strangers-to-code-golf-you-know-the-rules-and-so-do-i/6130#6130"
   ],
+  "submodules": [{ "path": "never_gonna", "url": "https://gist.github.com/lucaspiller/2852385" }],
   "whitespace": { "extension": "ws" },
   "programs": [{ "path": "never_gonna.ws", "spec_version": "0.2" }]
 }

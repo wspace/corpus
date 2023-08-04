@@ -11,5 +11,6 @@
     "https://github.com/wspace/marcellippmann-whitepp",
     "https://web.archive.org/web/20200906224652/https://github.com/marcellippmann/Whitepp/"
   ],
+  "submodules": [{ "path": "Whitepp", "url": "https://github.com/wspace/marcellippmann-whitepp" }],
   "commands": [{ "type": "interpreter", "bin": "bin/White++", "usage": "<file>" }]
 }

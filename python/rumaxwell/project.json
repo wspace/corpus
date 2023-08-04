@@ -8,6 +8,7 @@
   "date": "2018-02-21 22:02:54 +0800",
   "spec_version": "0.3",
   "source": ["https://github.com/RuMaxwell/whitespace-interpreter"],
+  "submodules": [{ "path": "whitespace-interpreter", "url": "https://github.com/RuMaxwell/whitespace-interpreter" }],
   "whitespace": { "extension": "whitespace" },
   "mappings": [{ "space": "[s]", "tab": "[t]", "lf": "[n]", "before_stl": true }],
   "programs": [

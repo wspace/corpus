@@ -8,6 +8,7 @@
   "date": "2013-09-25 14:10:25 +0200",
   "spec_version": "0.3",
   "source": ["https://github.com/mcolom/whitespace", "https://sourceforge.net/projects/whitespacetool/"],
+  "submodules": [{ "path": "whitespace", "url": "https://github.com/mcolom/whitespace" }],
   "assembly": {
     "mnemonics": {
       "push": "PUSH",

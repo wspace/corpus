@@ -14,5 +14,6 @@
     "https://codegolf.stackexchange.com/questions/6025/remove-vowels-without-using-too-many-different-characters/6100#6100",
     "https://github.com/thaliaarchi/repo-archival/blob/main/scripts/wspace/res0001-trans32.sh"
   ],
+  "submodules": [{ "path": "trans32", "url": "https://github.com/wspace/res0001-trans32" }],
   "commands": [{ "bin": "trans32.py", "run_errors": "No entrypoint" }]
 }

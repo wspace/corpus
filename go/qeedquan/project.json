@@ -12,6 +12,7 @@
     "https://github.com/qeedquan/misc_utilities/tree/master/esolang/whitespace",
     "https://github.com/thaliaarchi/repo-archival/blob/main/scripts/wspace/qeedquan-go.sh"
   ],
+  "submodules": [{ "path": "whitespace", "url": "https://github.com/wspace/qeedquan-go" }],
   "whitespace": { "extension": "ws" },
   "assembly": {
     "mnemonics": {

@@ -8,6 +8,7 @@
   "date": "2016-11-17 18:52:26 -0500",
   "spec_version": "0.3",
   "source": ["https://github.com/alecGraves/whitespac3"],
+  "submodules": [{ "path": "whitespac3", "url": "https://github.com/alecGraves/whitespac3" }],
   "relations": [{ "id": "python/mcolom", "type": "fork", "commit": "22b569acbf34d9a1fa87e153657bea4793b14315" }],
   "assembly": {
     "mnemonics": {

@@ -8,6 +8,7 @@
   "date": "2022-06-15 23:47:56 +0200",
   "spec_version": "0.3",
   "source": ["https://github.com/D3PSI/spacey", "https://github.com/D3PSI/spacey-wasm-example"],
+  "submodules": [{ "path": "spacey", "url": "https://github.com/D3PSI/spacey" }],
   "packages": [
     { "name": "spacey", "manager": "crates.io", "url": "https://crates.io/crates/spacey" },
     { "name": "node-spacey", "manager": "npm", "url": "https://www.npmjs.com/package/node-spacey" }

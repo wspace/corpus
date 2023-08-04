@@ -8,6 +8,7 @@
   "date": "2015-11-16 15:17:05 +0900",
   "spec_version": "0.2",
   "source": ["https://github.com/yuta0023/TextProc"],
+  "submodules": [{ "path": "TextProc", "url": "https://github.com/yuta0023/TextProc" }],
   "whitespace": { "extension": "ws" },
   "assembly": {
     "mnemonics": {

@@ -8,5 +8,6 @@
   "date": "2021-10-15 22:00:12 +0530",
   "spec_version": "0.2",
   "source": ["https://github.com/knightron0/helloworld", "https://github.com/knightron0/helloworld/pull/20"],
+  "submodules": [{ "path": "helloworld", "url": "https://github.com/knightron0/helloworld" }],
   "programs": [{ "path": "hello.ws", "spec_version": "0.2", "authors": ["ritulkrsingh"] }]
 }

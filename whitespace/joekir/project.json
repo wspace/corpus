@@ -12,5 +12,6 @@
     "https://www.josephkirwin.com/2017/08/12/javascript-polyglot/",
     "https://www.josephkirwin.com/polyglot1.html"
   ],
+  "submodules": [{ "path": "joekir.github.io", "url": "https://github.com/joekir/joekir.github.io" }],
   "programs": [{ "path": "polyglot1.html", "polyglot": ["HTML"], "spec_version": "0.2" }]
 }

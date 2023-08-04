@@ -8,6 +8,7 @@
   "date": "2022-06-03 17:29:09 +0200",
   "spec_version": "0.3",
   "source": ["https://codeberg.org/JBanana/whitespace", "https://jbanana.codeberg.page/whitespace/doc/"],
+  "submodules": [{ "path": "whitespace", "url": "https://codeberg.org/JBanana/whitespace" }],
   "relations": [{ "id": "haskell/edwinb-wspace-0.3", "type": "embedded" }],
   "whitespace": {
     "nonstandard": [

@@ -8,6 +8,7 @@
   "date": "2014-01-20 16:43:08 +0000",
   "spec_version": "0.3",
   "source": ["https://github.com/ralucaa/whitespace4j"],
+  "submodules": [{ "path": "whitespace4j", "url": "https://github.com/ralucaa/whitespace4j" }],
   "whitespace": { "extension": "ws" },
   "mappings": [{ "space": "W", "tab": "T", "lf": "N", "line_comment": "#" }],
   "programs": [

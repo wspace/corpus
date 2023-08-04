@@ -14,6 +14,7 @@
     "https://stackoverflow.com/questions/2901274/do-you-have-suggestions-for-these-assembly-mnemonics",
     "https://github.com/thaliaarchi/repo-archival/blob/main/scripts/wspace/stephenchappell-python.sh"
   ],
+  "submodules": [{ "path": "Whitespace", "url": "https://github.com/wspace/stephenchappell-python" }],
   "assembly": {
     "mnemonics": {
       "push": "push",

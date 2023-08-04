@@ -8,6 +8,7 @@
   "date": "2020-12-14 21:42:38 +0900",
   "spec_version": "0.3",
   "source": ["https://github.com/tomihisa244/visualWhiteSpace"],
+  "submodules": [{ "path": "visualWhiteSpace", "url": "https://github.com/tomihisa244/visualWhiteSpace" }],
   "whitespace": { "extension": "ws" },
   "assembly": {
     "mnemonics": {

@@ -8,6 +8,7 @@
   "date": "2020-12-08 16:33:12 +0100",
   "spec_version": "-",
   "source": ["https://github.com/francois-rozet/whitespacy"],
+  "submodules": [{ "path": "whitespacy", "url": "https://github.com/francois-rozet/whitespacy" }],
   "programs": [{ "path": "polyglot.c", "polyglot": ["C"] }],
   "commands": [
     {

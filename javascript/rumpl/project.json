@@ -8,5 +8,6 @@
   "date": "2013-03-27 23:32:41 +0100",
   "spec_version": "0.3",
   "source": ["https://github.com/rumpl/whitespace"],
+  "submodules": [{ "path": "whitespace", "url": "https://github.com/rumpl/whitespace" }],
   "commands": [{ "bin": "index.js", "usage": "[debug] <file>", "input": "<file>" }]
 }

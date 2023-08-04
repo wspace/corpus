@@ -8,6 +8,7 @@
   "date": "2015-02-11 15:15:52 +0900",
   "spec_version": "0.2",
   "source": ["https://github.com/MakeNowJust/whitespace-clj"],
+  "submodules": [{ "path": "whitespace-clj", "url": "https://github.com/MakeNowJust/whitespace-clj" }],
   "commands": [
     {
       "type": "interpreter",

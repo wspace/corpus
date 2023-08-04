@@ -8,6 +8,7 @@
   "date": "2021-12-03 20:57:45 -0500",
   "spec_version": "0.2",
   "source": ["https://github.com/alchzh/advent-of-code"],
+  "submodules": [{ "path": "advent-of-code", "url": "https://github.com/alchzh/advent-of-code" }],
   "relations": [{ "id": "javascript/vii5ard-whitelips-ide", "type": "assembly" }],
   "challenges": ["Advent of Code 2021"],
   "whitespace": { "extension": "ws" },

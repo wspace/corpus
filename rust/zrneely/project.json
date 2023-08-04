@@ -7,5 +7,6 @@
   "tags": ["JIT", "programs"],
   "date": "2015-12-30 16:56:24 -0500",
   "spec_version": "0.3",
-  "source": ["https://github.com/wspace/zrneely-rust", "https://gitlab.com/zrneely/whitespace"]
+  "source": ["https://github.com/wspace/zrneely-rust", "https://gitlab.com/zrneely/whitespace"],
+  "submodules": [{ "path": "whitespace", "url": "https://github.com/wspace/zrneely-rust" }]
 }

@@ -11,6 +11,7 @@
     "https://github.com/wspace/timvandermeij-cpp",
     "https://github.com/timvandermeij/whitespace-interpreter"
   ],
+  "submodules": [{ "path": "whitespace-interpreter", "url": "https://github.com/wspace/timvandermeij-cpp" }],
   "bounds": { "precision": "fixed", "heap_min": 0 },
   "whitespace": { "extension": "ws" },
   "assembly": {

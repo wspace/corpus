@@ -8,6 +8,7 @@
   "date": "2015-12-31 17:35:38 +0100",
   "spec_version": "0.2",
   "source": ["https://github.com/nullflagblues/WHINT", "https://nullflagblues.github.io/WHINT/"],
+  "submodules": [{ "path": "WHINT", "url": "https://github.com/nullflagblues/WHINT" }],
   "bounds": { "precision": "fixed" },
   "commands": [{ "type": "interpreter", "bin": "whint", "usage": "<file>" }]
 }

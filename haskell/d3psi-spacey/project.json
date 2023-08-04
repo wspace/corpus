@@ -8,6 +8,7 @@
   "date": "2022-09-13 10:26:35 +0200",
   "spec_version": "0.3",
   "source": ["https://github.com/D3PSI/haskell-spacey"],
+  "submodules": [{ "path": "haskell-spacey", "url": "https://github.com/D3PSI/haskell-spacey" }],
   "programs": [
     { "path": "ws/cat.ws", "spec_version": "0.2" },
     { "path": "ws/count.ws", "spec_version": "0.2" },

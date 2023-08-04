@@ -14,6 +14,7 @@
     "http://redlandside.sourceforge.net/",
     "https://github.com/thaliaarchi/repo-archival/blob/main/scripts/wspace/marktraceur-redlandside.sh"
   ],
+  "submodules": [{ "path": "redlandside", "url": "https://github.com/wspace/marktraceur-redlandside" }],
   "relations": [{ "id": "python/phlip-pywhitespace", "type": "embedded", "release": "pywhitespace2007.tar.bz2" }],
   "commands": [{ "type": "IDE", "bin": "main.py" }],
   "notes": "RedlandsIDE supports Python, C++, Prolog, Lisp, LOLCODE, and Whitespace."

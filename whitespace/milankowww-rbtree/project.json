@@ -8,6 +8,7 @@
   "date": "2019-02-01 01:50:01 +0100",
   "spec_version": "0.3",
   "source": ["https://github.com/milankowww/rbtree-whitespace"],
+  "submodules": [{ "path": "rbtree-whitespace", "url": "https://github.com/milankowww/rbtree-whitespace" }],
   "relations": [
     { "id": "c/threeifbywhiskey-blacktime", "type": "assembly" },
     {

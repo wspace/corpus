@@ -11,6 +11,7 @@
     "https://github.com/wspace/eiauniversity-java",
     "https://github.com/EIA-University/WhiteSpaceInterpreter"
   ],
+  "submodules": [{ "path": "WhiteSpaceInterpreter", "url": "https://github.com/wspace/eiauniversity-java" }],
   "whitespace": {
     "unimplemented": [
       "dup",

@@ -11,6 +11,7 @@
     "https://github.com/Resten1497/christmas_tree",
     "https://github.com/Resten1497/christmas_tree/pull/47"
   ],
+  "submodules": [{ "path": "christmas_tree", "url": "https://github.com/Resten1497/christmas_tree" }],
   "whitespace": { "extension": "ws" },
   "programs": [{ "path": "Whitespace/ChristmasTree.ws", "spec_version": "0.2" }]
 }

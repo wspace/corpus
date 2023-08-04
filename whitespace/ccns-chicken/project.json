@@ -8,5 +8,11 @@
   "date": "2017-02-23 01:41:32 +0800",
   "spec_version": "0.2",
   "source": ["https://github.com/ccns/105-club-fair-game-problems"],
+  "submodules": [
+    {
+      "path": "105-club-fair-game-problems",
+      "url": "https://github.com/ccns/105-club-fair-game-problems"
+    }
+  ],
   "programs": [{ "path": "2/2/Did you see anything?", "spec_version": "0.2" }]
 }

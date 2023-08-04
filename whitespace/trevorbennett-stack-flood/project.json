@@ -11,6 +11,9 @@
     "https://github.com/trevorbennett/whitespace-stack-flood",
     "https://www.reddit.com/r/ProgrammerHumor/comments/9dvwhn/java_java/e5kg126/"
   ],
+  "submodules": [
+    { "path": "whitespace-stack-flood", "url": "https://github.com/trevorbennett/whitespace-stack-flood" }
+  ],
   "whitespace": { "extension": "ws" },
   "programs": [{ "path": "goto.ws", "spec_version": "0.2" }]
 }

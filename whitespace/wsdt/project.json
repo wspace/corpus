@@ -8,6 +8,7 @@
   "date": "2018-12-01 23:36:15 +0100",
   "spec_version": "0.2",
   "source": ["https://github.com/wsdt/WhiteSpace_Brainfuck"],
+  "submodules": [{ "path": "WhiteSpace_Brainfuck", "url": "https://github.com/wsdt/WhiteSpace_Brainfuck" }],
   "whitespace": { "extension": "ws" },
   "programs": [{ "path": "KevinLovesWhitespace.ws", "spec_version": "0.2" }]
 }

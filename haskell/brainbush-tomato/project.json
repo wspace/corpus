@@ -8,6 +8,12 @@
   "date": "2015-02-26 20:31:40 +0800",
   "spec_version": "0.3",
   "source": ["https://github.com/brainbush/Tomato-Programming-Language"],
+  "submodules": [
+    {
+      "path": "Tomato-Programming-Language",
+      "url": "https://github.com/brainbush/Tomato-Programming-Language"
+    }
+  ],
   "mappings": [{ "space": "番", "tab": "茄", "lf": "干" }],
   "commands": [
     {

@@ -16,6 +16,7 @@
     "https://gist.github.com/pocke/d4c55e22b3fb5c5fcd5a6016889c3a68",
     "https://pocke.hatenablog.com/entry/2019/05/01/023627"
   ],
+  "submodules": [{ "path": "akaza", "url": "https://github.com/pocke/akaza" }],
   "packages": [{ "name": "akaza", "manager": "RubyGems", "url": "https://rubygems.org/gems/akaza" }],
   "whitespace": { "extension": "ws" },
   "assembly": {

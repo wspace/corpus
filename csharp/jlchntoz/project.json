@@ -9,6 +9,9 @@
   "date": "2017-02-14 18:29:47 +0800",
   "spec_version": "0.2",
   "source": ["https://gist.github.com/JLChnToZ/42bade0f3d4b9e671bcedaafe1000c86"],
+  "submodules": [
+    { "path": "Whitespace", "url": "https://gist.github.com/JLChnToZ/42bade0f3d4b9e671bcedaafe1000c86" }
+  ],
   "assembly": {
     "mnemonics": {
       "push": "Pus",

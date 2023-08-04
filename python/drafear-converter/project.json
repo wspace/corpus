@@ -8,6 +8,12 @@
   "date": "2019-03-30 02:52:41 +0900",
   "spec_version": "0.3",
   "source": ["https://github.com/drafear/whitespace-language-converter"],
+  "submodules": [
+    {
+      "path": "whitespace-language-converter",
+      "url": "https://github.com/drafear/whitespace-language-converter"
+    }
+  ],
   "assembly": {
     "mnemonics": {
       "push": "push",

@@ -8,6 +8,7 @@
   "date": "2021-07-04 14:10:41 +0900",
   "spec_version": "0.3",
   "source": ["https://github.com/guricerin/esolangs"],
+  "submodules": [{ "path": "esolangs", "url": "https://github.com/guricerin/esolangs" }],
   "relations": [{ "id": "ruby/yhara-esolang-book", "type": "design" }],
   "bounds": { "precision": "int64", "arg_precision": "int64", "label_precision": "arbitrary", "heap_min": 0 },
   "whitespace": { "extension": "ws" },

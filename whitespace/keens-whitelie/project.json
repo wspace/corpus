@@ -18,6 +18,7 @@
     "https://github.com/KeenS/KeenS.github.io/blob/master/content/post/Whitespacenoserufuhosutokonpairatsukuttayo.md",
     "https://github.com/KeenS/KeenS.github.io/blob/master/content/post/taneakirakashi__Whitespacekonpairawotsukuttahanashinouragawa.md"
   ],
+  "submodules": [{ "path": "whitelie", "url": "https://github.com/wspace/keens-whitelie" }],
   "whitespace": { "extension": "ws" },
   "assembly": {
     "mnemonics": {

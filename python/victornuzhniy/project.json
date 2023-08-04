@@ -8,6 +8,7 @@
   "date": "2022-05-21 20:38:36 +0300",
   "spec_version": "0.3",
   "source": ["https://github.com/victor-nuzhniy/w_space"],
+  "submodules": [{ "path": "w_space", "url": "https://github.com/victor-nuzhniy/w_space" }],
   "challenges": ["Codewars"],
   "assembly": {
     "mnemonics": {

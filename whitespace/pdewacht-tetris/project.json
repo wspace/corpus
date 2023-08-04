@@ -14,6 +14,7 @@
     "https://www.reddit.com/r/programming/comments/9nw1e/most_unreadable_programming_language_ever/c0dkzzw/",
     "https://github.com/thaliaarchi/repo-archival/blob/main/scripts/wspace/pdewacht-tetris.sh"
   ],
+  "submodules": [{ "path": "tetris", "url": "https://github.com/wspace/tetris" }],
   "whitespace": { "extension": "ws" },
   "programs": [
     { "path": "tetris.ws", "spec_version": "0.3", "authors": ["Peter De Wachter"] },

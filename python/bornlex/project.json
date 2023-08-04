@@ -8,6 +8,7 @@
   "date": "2017-08-09 20:44:04 +0100",
   "spec_version": "0.3",
   "source": ["https://github.com/Bornlex/Whitespace-interpreter"],
+  "submodules": [{ "path": "Whitespace-interpreter", "url": "https://github.com/Bornlex/Whitespace-interpreter" }],
   "whitespace": { "extension": "ws" },
   "assembly": {
     "mnemonics": {

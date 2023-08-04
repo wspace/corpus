@@ -8,6 +8,7 @@
   "date": "2022-04-05 22:12:25 +0200",
   "spec_version": "0.3",
   "source": ["https://github.com/kapustaikwas27/Whitespace-compiler"],
+  "submodules": [{ "path": "Whitespace-compiler", "url": "https://github.com/kapustaikwas27/Whitespace-compiler" }],
   "assembly": {
     "mnemonics": {
       "push": "push",

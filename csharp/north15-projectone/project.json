@@ -9,6 +9,7 @@
   "date": "2018-04-11 01:33:40 -0400",
   "spec_version": "-",
   "source": ["https://github.com/North15/projectOne"],
+  "submodules": [{ "path": "projectOne", "url": "https://github.com/North15/projectOne" }],
   "mappings": [{ "space": "S", "tab": "T", "lf": "L", "extension": "txt" }],
   "run_errors": "The Carbon driver has not been ported to 64-bit, so very few parts of Windows.Forms work properly",
   "commands": [

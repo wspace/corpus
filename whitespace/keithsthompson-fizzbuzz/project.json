@@ -8,6 +8,7 @@
   "date": "2015-02-01 02:10:03 -0800",
   "spec_version": "0.2",
   "source": ["https://github.com/Keith-S-Thompson/fizzbuzz-polyglot"],
+  "submodules": [{ "path": "fizzbuzz-polyglot", "url": "https://github.com/Keith-S-Thompson/fizzbuzz-polyglot" }],
   "whitespace": { "extension": "ws" },
   "programs": [{ "path": "fizzbuzz.ws", "outputs": ["expected-output.txt"], "spec_version": "0.2" }],
   "notes": "Date from when fizzbuzz.ws was committed"

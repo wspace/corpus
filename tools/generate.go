@@ -28,7 +28,12 @@ type Project struct {
 	SpecVersion       string   `json:"spec_version"`
 	Source            []string `json:"source"`
 	SourceUnavailable bool     `json:"source_unavailable,omitempty"`
-	Packages          []struct {
+	Submodules        []struct {
+		Path   string `json:"path"`
+		URL    string `json:"url"`
+		Branch string `json:"branch,omitempty"`
+	} `json:"submodules,omitempty"`
+	Packages []struct {
 		Name    string `json:"name"`
 		Manager string `json:"manager"`
 		URL     string `json:"url"`

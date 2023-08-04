@@ -12,6 +12,7 @@
     "https://github.com/ILikePython256/Whitespace_UnC",
     "https://github.com/thaliaarchi/repo-archival/blob/main/scripts/wspace/ilikepython256-whitespace-unc.sh"
   ],
+  "submodules": [{ "path": "Whitespace_UnC", "url": "https://github.com/wspace/ilikepython256-whitespace-unc" }],
   "assembly": {
     "mnemonics": {
       "push": "MOD.PUSH",

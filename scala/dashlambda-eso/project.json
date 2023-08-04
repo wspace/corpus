@@ -8,6 +8,7 @@
   "date": "2019-06-19 03:00:21 -0400",
   "spec_version": "0.2",
   "source": ["https://github.com/Dash-Lambda/Eso"],
+  "submodules": [{ "path": "Eso", "url": "https://github.com/Dash-Lambda/Eso" }],
   "whitespace": { "extension": "ws" },
   "assembly": {
     "mnemonics": {

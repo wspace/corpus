@@ -13,6 +13,7 @@
     "https://github.com/yhara/esolang-book-website",
     "https://www.amazon.com/dp/4839927847"
   ],
+  "submodules": [{ "path": "esolang-book-sources", "url": "https://github.com/yhara/esolang-book-sources" }],
   "whitespace": { "extension": "ws" },
   "assembly": {
     "mnemonics": {

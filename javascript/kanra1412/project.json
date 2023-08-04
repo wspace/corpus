@@ -8,5 +8,6 @@
   "date": "2016-04-29 21:05:24 +0800",
   "spec_version": "0.3",
   "source": ["https://github.com/kanra1412/whitespace-interpreter"],
+  "submodules": [{ "path": "whitespace-interpreter", "url": "https://github.com/kanra1412/whitespace-interpreter" }],
   "commands": [{ "bin": "whitespace.js", "input": "test/http _compsoc.dur.ac.uk_whitespace_count.ws" }]
 }

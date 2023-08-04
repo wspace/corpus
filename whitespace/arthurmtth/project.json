@@ -8,5 +8,6 @@
   "date": "2022-06-24 14:19:17 -0300",
   "spec_version": "0.2",
   "source": ["https://github.com/ArthurMtTh/useless-codes"],
+  "submodules": [{ "path": "useless-codes", "url": "https://github.com/ArthurMtTh/useless-codes" }],
   "programs": [{ "path": "helloWorlds/helloWolrd.ws", "spec_version": "0.2" }]
 }

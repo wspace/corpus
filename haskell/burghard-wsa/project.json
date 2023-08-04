@@ -15,6 +15,7 @@
     "https://github.com/thaliaarchi/repo-archival/blob/main/scripts/wspace/burghard.sh",
     "https://github.com/helvm/wsa"
   ],
+  "submodules": [{ "path": "wsa", "url": "https://github.com/wspace/burghard-wsa" }],
   "whitespace": { "extension": "ws" },
   "assembly": {
     "mnemonics": {

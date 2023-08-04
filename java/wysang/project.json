@@ -12,6 +12,7 @@
     "https://github.com/wysang/Whitespace-Compiler",
     "https://github.com/thaliaarchi/repo-archival/blob/main/scripts/wspace/wysang-java.sh"
   ],
+  "submodules": [{ "path": "Whitespace-Compiler", "url": "https://github.com/wspace/wysang-java" }],
   "whitespace": { "unimplemented": ["store", "retrieve"], "extension": "whitespace" },
   "assembly": {
     "mnemonics": {

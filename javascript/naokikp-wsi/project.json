@@ -8,6 +8,7 @@
   "date": "2014-06-01 22:27:15 +0900",
   "spec_version": "0.3",
   "source": ["https://github.com/naokikp/naokikp.github.io", "https://naokikp.github.io/wsi/whitespace.html"],
+  "submodules": [{ "path": "naokikp.github.io", "url": "https://github.com/naokikp/naokikp.github.io" }],
   "mappings": [{ "space": "S", "tab": "T", "lf": "L" }, { "space": "S", "tab": "T", "lf": "N" }],
   "notes": "When mapping to visible characters, STL is canonical over STN"
 }

@@ -8,6 +8,7 @@
   "date": "2021-12-17 14:43:02 -0600",
   "spec_version": "0.3",
   "source": ["https://github.com/drebelsky/whitespace-jit"],
+  "submodules": [{ "path": "whitespace-jit", "url": "https://github.com/drebelsky/whitespace-jit" }],
   "whitespace": { "extension": "ws" },
   "assembly": {
     "mnemonics": {

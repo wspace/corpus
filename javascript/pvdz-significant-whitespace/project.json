@@ -12,5 +12,6 @@
     "https://pvdz.ee/weblog/246",
     "https://js1k.com/2012-love/demo/1130"
   ],
+  "submodules": [{ "path": "SignificantWhitespace", "url": "https://github.com/pvdz/SignificantWhitespace" }],
   "notes": "JS1k competition submission"
 }

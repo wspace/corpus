@@ -8,6 +8,7 @@
   "date": "2021-10-22 00:08:29 -0400",
   "spec_version": "0.3",
   "source": ["https://github.com/steiner26/Whitespace"],
+  "submodules": [{ "path": "Whitespace", "url": "https://github.com/steiner26/Whitespace" }],
   "whitespace": { "extension": "ws" },
   "assembly": {
     "mnemonics": {

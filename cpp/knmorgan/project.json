@@ -8,6 +8,7 @@
   "date": "2012-12-29 00:19:16 -0500",
   "spec_version": "0.3",
   "source": ["https://github.com/knmorgan/ws"],
+  "submodules": [{ "path": "ws", "url": "https://github.com/knmorgan/ws" }],
   "bounds": { "precision": "arbitrary" },
   "whitespace": { "extension": "ws" },
   "programs": [

@@ -8,6 +8,7 @@
   "date": "2022-06-15 22:52:03 +0100",
   "spec_version": "0.2",
   "source": ["https://github.com/femifacia/Hello_World"],
+  "submodules": [{ "path": "Hello_World", "url": "https://github.com/femifacia/Hello_World" }],
   "programs": [
     { "path": "whitespace/hello_world.ws1", "spec_version": "0.2" },
     { "path": "whitespace/hello_world2.ws", "spec_version": "0.2" }

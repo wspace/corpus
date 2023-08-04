@@ -7,5 +7,6 @@
   "tags": ["interpreter"],
   "date": "2017-02-15 21:24:19 +0900",
   "spec_version": "0.2",
-  "source": ["https://github.com/niyarin/whitespace-scheme"]
+  "source": ["https://github.com/niyarin/whitespace-scheme"],
+  "submodules": [{ "path": "whitespace-scheme", "url": "https://github.com/niyarin/whitespace-scheme" }]
 }

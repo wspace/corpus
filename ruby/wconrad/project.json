@@ -14,6 +14,7 @@
     "https://github.com/hostilefork/whitespacers/tree/master/ruby",
     "https://github.com/thaliaarchi/repo-archival/blob/main/scripts/wspace/wconrad-ruby.sh"
   ],
+  "submodules": [{ "path": "whitespace", "url": "https://github.com/wspace/wconrad-ruby" }],
   "whitespace": { "extension": "ws" },
   "assembly": {
     "mnemonics": {

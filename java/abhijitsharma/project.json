@@ -8,6 +8,7 @@
   "date": "2013-04-05 10:21:09 -0700",
   "spec_version": "0.2",
   "source": ["https://github.com/abhijitsharma/whitespace"],
+  "submodules": [{ "path": "whitespace", "url": "https://github.com/abhijitsharma/whitespace" }],
   "whitespace": {
     "unimplemented": [
       "dup",

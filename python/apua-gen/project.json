@@ -11,6 +11,7 @@
     "https://gist.github.com/apua/8d565a8a8365a1399b8fae1664b43d65",
     "https://www.ptt.cc/bbs/Programming/M.1478792208.A.EFC.html"
   ],
+  "submodules": [{ "path": "solve", "url": "https://gist.github.com/apua/8d565a8a8365a1399b8fae1664b43d65" }],
   "whitespace": { "extension": "ws" },
   "mappings": [
     { "space": "S", "tab": "T", "lf": "L", "line_comment": "#", "extension": "ws.orig" },

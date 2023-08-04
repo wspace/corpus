@@ -8,6 +8,7 @@
   "date": "2019-07-26 10:30:37 +0200",
   "spec_version": "0.3",
   "source": ["https://github.com/Keirua/whitespace-rs"],
+  "submodules": [{ "path": "whitespace-rs", "url": "https://github.com/Keirua/whitespace-rs" }],
   "relations": [{ "id": "haskell/edwinb-wspace-0.3", "type": "embedded" }],
   "whitespace": { "unimplemented": ["copy", "slide", "readc"], "extension": "ws" },
   "assembly": {

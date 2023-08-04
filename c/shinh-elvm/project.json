@@ -8,6 +8,7 @@
   "date": "2016-09-16 14:45:46 +0900",
   "spec_version": "0.3",
   "source": ["https://github.com/shinh/elvm", "https://esolangs.org/wiki/ELVM"],
+  "submodules": [{ "path": "elvm", "url": "https://github.com/shinh/elvm" }],
   "relations": [{ "id": "c/koturn", "type": "submodule" }],
   "build_errors": "-Werror=enum-conversion",
   "todo": "Document"

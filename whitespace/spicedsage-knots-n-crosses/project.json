@@ -8,6 +8,12 @@
   "date": "2022-10-28 10:54:20 -0400",
   "spec_version": "0.3",
   "source": ["https://github.com/SpicedSage/Whitespace-Knots-N-Crosses"],
+  "submodules": [
+    {
+      "path": "Whitespace-Knots-N-Crosses",
+      "url": "https://github.com/SpicedSage/Whitespace-Knots-N-Crosses"
+    }
+  ],
   "relations": [{ "id": "javascript/vii5ard-whitelips-ide", "type": "assembly" }],
   "programs": [{ "path": "knots_and_crosses.wsa", "generated": "knots_and_crosses.ws" }]
 }

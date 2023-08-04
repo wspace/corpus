@@ -14,6 +14,7 @@
     "https://web.archive.org/web/20061007203840/http://www.cs.newcastle.edu.au:80/~c3018900/pywhitespace.tar.bz2",
     "https://www.mrphlip.com/pywhitespace.tar.bz2"
   ],
+  "submodules": [{ "path": "pywhitespace", "url": "https://github.com/wspace/phlip-pywhitespace" }],
   "whitespace": { "nonstandard": [{ "name": "trace", "seq": "LLT" }], "extension": "ws" },
   "programs": [
     { "path": "examples/chr.ws", "spec_version": "0.2" },

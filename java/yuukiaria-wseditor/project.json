@@ -8,5 +8,6 @@
   "date": "2013-11-21 22:29:13 -0800",
   "spec_version": "-",
   "source": ["https://github.com/YuukiARIA/wseditor"],
+  "submodules": [{ "path": "wseditor", "url": "https://github.com/YuukiARIA/wseditor" }],
   "commands": [{ "type": "ide", "usage": "" }]
 }

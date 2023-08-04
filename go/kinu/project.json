@@ -8,6 +8,7 @@
   "date": "2015-02-19 00:54:08 +0900",
   "spec_version": "0.3",
   "source": ["https://github.com/kinu/whitespace"],
+  "submodules": [{ "path": "whitespace", "url": "https://github.com/kinu/whitespace" }],
   "bounds": {
     "precision": "Go int",
     "stack_cap": 20,

@@ -13,6 +13,7 @@
     "http://bewatermyfriend.org/p/2020/000/",
     "https://news.ycombinator.com/item?id=24763312"
   ],
+  "submodules": [{ "path": "spaceman", "url": "https://gitlab.com/ft/spaceman.git" }],
   "commands": [
     {
       "build": "cabal build",

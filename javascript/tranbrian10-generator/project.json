@@ -7,5 +7,6 @@
   "tags": ["text to Whitespace"],
   "date": "2017-01-22 01:38:36 -0500",
   "spec_version": "0.2",
-  "source": ["https://github.com/TranBrian10/WhitespaceGenerator"]
+  "source": ["https://github.com/TranBrian10/WhitespaceGenerator"],
+  "submodules": [{ "path": "WhitespaceGenerator", "url": "https://github.com/TranBrian10/WhitespaceGenerator" }]
 }

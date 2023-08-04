@@ -11,5 +11,6 @@
     "https://github.com/wspace/peasley-cpp",
     "http://www.rohitab.com/discuss/topic/35639-c-whitespace-interpreter/?p=10074137"
   ],
+  "submodules": [{ "path": "whitespace", "url": "https://github.com/wspace/peasley-cpp" }],
   "commands": [{ "type": "interpreter", "bin": "whitespace", "usage": "<file>" }]
 }

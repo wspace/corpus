@@ -12,6 +12,7 @@
     "https://sourceforge.net/projects/esco/",
     "http://esco.sourceforge.net/"
   ],
+  "submodules": [{ "path": "esco", "url": "https://git.code.sf.net/p/esco/code" }],
   "whitespace": { "extension": "ws" },
   "programs": [
     { "path": "scripts/ws/calc.ws", "equivalent": "calc.ws", "spec_version": "0.2" },

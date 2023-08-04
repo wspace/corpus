@@ -8,5 +8,6 @@
   "date": "2022-12-15 22:34:30 +0100",
   "spec_version": "0.3",
   "source": ["https://github.com/NEPETAISCUTE/prime-whitespace"],
+  "submodules": [{ "path": "prime-whitespace", "url": "https://github.com/NEPETAISCUTE/prime-whitespace" }],
   "programs": [{ "path": "prime.ws", "spec_version": "0.3" }]
 }

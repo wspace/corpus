@@ -27,6 +27,7 @@ pub struct Project {
     pub source: Vec<Url>,
     #[serde(default, skip_serializing_if = "is_false")]
     pub source_unavailable: bool,
+    pub submodules: Vec<Submodule>,
     pub packages: Vec<Package>,
     pub relations: Vec<Relation>,
     pub challenges: Vec<Challenge>,
@@ -56,6 +57,14 @@ pub enum SpecVersion {
     Unknown,
     #[serde(rename = "-")]
     NA,
+}
+
+#[skip_serializing_none]
+#[derive(Serialize, Deserialize, Clone, Debug, PartialEq, Eq)]
+pub struct Submodule {
+    pub path: String,
+    pub url: Url,
+    pub branch: Option<String>,
 }
 
 #[derive(Serialize, Deserialize, Clone, Debug, PartialEq, Eq)]

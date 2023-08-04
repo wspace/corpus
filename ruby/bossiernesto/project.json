@@ -8,6 +8,7 @@
   "date": "2012-10-15 09:37:19 -0300",
   "spec_version": "0.2",
   "source": ["https://github.com/bossiernesto/whitespace"],
+  "submodules": [{ "path": "whitespace", "url": "https://github.com/bossiernesto/whitespace" }],
   "assembly": {
     "mnemonics": {
       "push": "push",

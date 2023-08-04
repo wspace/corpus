@@ -8,6 +8,7 @@
   "date": "2014-09-27 22:24:38 +0200",
   "spec_version": "0.2",
   "source": ["https://github.com/igorw/wsm"],
+  "submodules": [{ "path": "wsm", "url": "https://github.com/igorw/wsm" }],
   "assembly": {
     "mnemonics": {
       "push": "push",

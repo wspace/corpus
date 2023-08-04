@@ -8,6 +8,7 @@
   "date": "2018-10-08 07:57:26 -0700",
   "spec_version": "0.2",
   "source": ["https://github.com/apartmentlist/coding-challenges"],
+  "submodules": [{ "path": "coding-challenges", "url": "https://github.com/apartmentlist/coding-challenges" }],
   "whitespace": { "extension": "ws" },
   "programs": [{ "path": "obfuscated/anoopnimkar/say_my_name.ws", "spec_version": "0.2" }]
 }

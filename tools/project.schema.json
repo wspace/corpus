@@ -151,6 +151,15 @@
       "uniqueItems": true
     },
     "source_unavailable": { "type": "boolean", "description": "Whether the source code is unavailable" },
+    "submodules": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": { "path": { "type": "string" }, "url": { "type": "string" }, "branch": { "type": "string" } },
+        "required": ["path", "url"],
+        "additionalProperties": false
+      }
+    },
     "packages": {
       "type": "array",
       "items": {

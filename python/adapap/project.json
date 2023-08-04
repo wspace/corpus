@@ -8,6 +8,7 @@
   "date": "2018-11-16 01:16:42 -0500",
   "spec_version": "0.3",
   "source": ["https://github.com/adapap/whitespace-interpreter"],
+  "submodules": [{ "path": "whitespace-interpreter", "url": "https://github.com/adapap/whitespace-interpreter" }],
   "commands": [
     {
       "type": "interpreter",

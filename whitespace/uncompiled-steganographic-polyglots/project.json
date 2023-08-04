@@ -11,6 +11,12 @@
     "https://github.com/uncompiled/steganographic-polyglots",
     "https://uncompiled.github.io/steganographic-polyglots/"
   ],
+  "submodules": [
+    {
+      "path": "steganographic-polyglots",
+      "url": "https://github.com/uncompiled/steganographic-polyglots"
+    }
+  ],
   "programs": [
     { "path": "golang/hello.go", "polyglot": ["Go"], "spec_version": "0.2" },
     { "path": "html/index.html", "polyglot": ["HTML"], "spec_version": "0.2" },

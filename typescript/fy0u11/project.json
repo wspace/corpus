@@ -8,6 +8,7 @@
   "date": "2021-01-12 22:32:44 +0600",
   "spec_version": "0.3",
   "source": ["https://github.com/FY0u11/whitespace-interpreter"],
+  "submodules": [{ "path": "whitespace-interpreter", "url": "https://github.com/FY0u11/whitespace-interpreter" }],
   "challenges": ["Codewars"],
   "run_errors": "Needs Codewars entrypoint",
   "commands": [

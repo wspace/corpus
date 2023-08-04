@@ -8,6 +8,7 @@
   "date": "2020-12-17 08:53:57 +0000",
   "spec_version": "0.3",
   "source": ["https://github.com/TechieHelper/Codewars"],
+  "submodules": [{ "path": "Codewars", "url": "https://github.com/TechieHelper/Codewars" }],
   "challenges": ["Codewars"],
   "run_errors": "Needs Codewars entrypoint",
   "commands": [{ "type": "interpreter", "bin": "python/Whitespace.py" }]

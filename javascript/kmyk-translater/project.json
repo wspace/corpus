@@ -12,6 +12,7 @@
     "https://web.archive.org/web/20160205175221/http://solorab.net:80/works/whitespace-translater/",
     "https://web.archive.org/web/20160206165019/http://solorab.net:80/blog/2015/03/01/made-whitespace-translater/"
   ],
+  "submodules": [{ "path": "whitespace-translater", "url": "https://github.com/kmyk/whitespace-translater" }],
   "assembly": {
     "mnemonics": {
       "push": "PUSH",

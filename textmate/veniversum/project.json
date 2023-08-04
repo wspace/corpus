@@ -8,5 +8,6 @@
   "date": "2016-02-20 16:31:58 +0000",
   "spec_version": "-",
   "source": ["https://github.com/veniversum/language-whitespace"],
+  "submodules": [{ "path": "language-whitespace", "url": "https://github.com/veniversum/language-whitespace" }],
   "mappings": [{ "space": "s", "tab": "t", "lf": "¬" }]
 }

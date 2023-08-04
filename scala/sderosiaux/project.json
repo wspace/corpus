@@ -12,5 +12,6 @@
     "https://www.sderosiaux.com/articles/2018/06/15/a-simple-way-to-write-parsers-using-the-state-monad/",
     "https://github.com/sderosiaux/golb/blob/master/src/pages/2018-06-15-parser-with-state-monad/index.md"
   ],
+  "submodules": [{ "path": "whitespace-parser", "url": "https://github.com/sderosiaux/whitespace-parser" }],
   "commands": [{ "type": "interpreter", "input": "hardcoded hello world" }]
 }

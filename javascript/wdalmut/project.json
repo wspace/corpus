@@ -8,6 +8,9 @@
   "date": "2019-12-28 16:28:47 +0100",
   "spec_version": "0.2",
   "source": ["https://github.com/wdalmut/whitespace-lang-compiler"],
+  "submodules": [
+    { "path": "whitespace-lang-compiler", "url": "https://github.com/wdalmut/whitespace-lang-compiler" }
+  ],
   "assembly": {
     "mnemonics": {
       "push": "PUSH_NUMBER_STACK_TOP",

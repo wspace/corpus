@@ -8,6 +8,7 @@
   "date": "2018-11-30 15:45:27 +0100",
   "spec_version": "0.3",
   "source": ["https://github.com/judofyr/aoc2018"],
+  "submodules": [{ "path": "aoc2018", "url": "https://github.com/judofyr/aoc2018" }],
   "relations": [{ "id": "ruby/wconrad", "type": "embedded" }],
   "challenges": ["Advent of Code 2018"],
   "programs": [{ "path": "day2.ws", "spec_version": "0.2" }]

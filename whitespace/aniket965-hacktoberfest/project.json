@@ -12,6 +12,7 @@
     "https://github.com/Aniket965/Hello-world/tree/master/Whitespace",
     "https://github.com/thaliaarchi/repo-archival/blob/main/scripts/wspace/aniket965-hacktoberfest.sh"
   ],
+  "submodules": [{ "path": "Whitespace", "url": "https://github.com/wspace/aniket965-hacktoberfest" }],
   "challenges": ["Hacktoberfest 2018"],
   "whitespace": { "extension": "ws" },
   "programs": [

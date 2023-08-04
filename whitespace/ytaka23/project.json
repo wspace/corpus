@@ -14,6 +14,7 @@
     "https://gist.github.com/y-taka-23/7353612",
     "https://github.com/thaliaarchi/repo-archival/blob/main/scripts/wspace/ytaka23-whitespace.sh"
   ],
+  "submodules": [{ "path": "whitespace", "url": "https://github.com/wspace/ytaka23-whitespace" }],
   "whitespace": { "extension": "ws" },
   "programs": [
     {

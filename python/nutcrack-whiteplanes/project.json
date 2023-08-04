@@ -13,6 +13,7 @@
     "https://whiteplanes.github.io/",
     "https://github.com/thaliaarchi/repo-archival/blob/main/scripts/wspace/nutcrack-whiteplanes.sh"
   ],
+  "submodules": [{ "path": "whiteplanes", "url": "https://github.com/wspace/nutcrack-whiteplanes" }],
   "packages": [{ "name": "whiteplanes", "manager": "PyPI", "url": "https://pypi.org/project/whiteplanes/" }],
   "assembly": {
     "mnemonics": {

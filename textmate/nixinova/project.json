@@ -11,6 +11,7 @@
     "https://github.com/Nixinova/NovaGrammars",
     "https://github.com/github/linguist/discussions/5519#discussioncomment-1185871"
   ],
+  "submodules": [{ "path": "NovaGrammars", "url": "https://github.com/Nixinova/NovaGrammars" }],
   "whitespace": { "extension": "ws" },
   "programs": [{ "path": "samples/whitespace.ws" }],
   "commands": [{ "type": "grammar", "bin": "grammars/whitespace.yaml-tmLanguage" }],

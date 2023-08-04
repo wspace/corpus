@@ -8,6 +8,7 @@
   "date": "2015-10-06 13:38:36 +0000",
   "spec_version": "0.3",
   "source": ["https://github.com/PeterCxy/gogmh"],
+  "submodules": [{ "path": "gogmh", "url": "https://github.com/PeterCxy/gogmh" }],
   "whitespace": { "nonstandard": [{ "name": "END2", "seq": "河蟹" }] },
   "assembly": {
     "mnemonics": {

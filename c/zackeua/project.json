@@ -8,6 +8,7 @@
   "date": "2021-01-10 14:34:18 +0100",
   "spec_version": "0.2",
   "source": ["https://github.com/zackeua/Whitespace"],
+  "submodules": [{ "path": "Whitespace", "url": "https://github.com/zackeua/Whitespace" }],
   "whitespace": { "extension": "ws" },
   "programs": [
     { "path": "code/bf.ws", "aux": ["bf.ws"], "spec_version": "0.3", "notes": "Has extra trailing LF" },

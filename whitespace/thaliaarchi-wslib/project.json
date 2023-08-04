@@ -8,6 +8,7 @@
   "date": "2021-05-24 15:38:17 -0700",
   "spec_version": "0.3",
   "source": ["https://github.com/thaliaarchi/wslib"],
+  "submodules": [{ "path": "wslib", "url": "https://github.com/thaliaarchi/wslib" }],
   "assembly": {
     "mnemonics": {
       "push": "<number_char>",

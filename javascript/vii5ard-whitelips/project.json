@@ -13,6 +13,7 @@
     "https://web.archive.org/web/20130926165520/http://compsoc.dur.ac.uk:80/archives/whitespace/2013-April/000082.html",
     "https://github.com/vii5ard/brainfuck-whitespace"
   ],
+  "submodules": [{ "path": "whitespace", "url": "https://github.com/vii5ard/whitespace" }],
   "whitespace": { "extension": "ws" },
   "assembly": {
     "mnemonics": {

@@ -8,6 +8,7 @@
   "date": "2019-07-25 16:02:44 +1000",
   "spec_version": "0.3",
   "source": ["https://github.com/loklaan/zerowidth-lang"],
+  "submodules": [{ "path": "zerowidth-lang", "url": "https://github.com/loklaan/zerowidth-lang" }],
   "packages": [
     { "name": "zerospace-lang", "manager": "npm", "url": "https://www.npmjs.com/package/zerospace-lang" }
   ],

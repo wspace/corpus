@@ -13,6 +13,7 @@
     "https://yukicoder.me/users/1721",
     "https://github.com/thaliaarchi/repo-archival/blob/main/scripts/wspace/shimo-yukicoder.sh"
   ],
+  "submodules": [{ "path": "whitespace", "url": "https://github.com/wspace/shimo-yukicoder" }],
   "challenges": ["yukicoder"],
   "whitespace": { "extension": "ws" },
   "assembly": {

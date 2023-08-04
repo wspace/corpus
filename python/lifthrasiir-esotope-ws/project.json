@@ -17,6 +17,7 @@
     "https://github.com/lifthrasiir",
     "https://esolangs.org/wiki/User:Tokigun"
   ],
+  "submodules": [{ "path": "esotope-ws", "url": "https://github.com/wspace/lifthrasiir-esotope-ws" }],
   "whitespace": { "extension": "ws" },
   "assembly": {
     "mnemonics": {

@@ -12,5 +12,6 @@
     "http://www.rohitab.com/discuss/topic/35639-c-whitespace-interpreter/",
     "https://github.com/hostilefork/whitespacers/tree/master/c"
   ],
+  "submodules": [{ "path": "whitespace", "url": "https://github.com/wspace/meth0dz-c" }],
   "commands": [{ "type": "interpreter", "bin": "whitespace", "usage": "<file>" }]
 }

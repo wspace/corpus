@@ -12,6 +12,7 @@
     "https://github.com/omurakazuaki/WriteCodeEveryDay/tree/main/rust/whitespace",
     "https://github.com/thaliaarchi/repo-archival/blob/main/scripts/wspace/omurakazuaki-rust.sh"
   ],
+  "submodules": [{ "path": "whitespace", "url": "https://github.com/wspace/omurakazuaki-rust" }],
   "whitespace": { "extension": "ws" },
   "assembly": {
     "mnemonics": {

@@ -8,6 +8,12 @@
   "date": "2017-04-28 14:56:30 +0200",
   "spec_version": "0.3",
   "source": ["https://gist.github.com/jrialland/e0d370034da9c7b1b76a8afccbea7424"],
+  "submodules": [
+    {
+      "path": "whitespaceasm",
+      "url": "https://gist.github.com/jrialland/e0d370034da9c7b1b76a8afccbea7424"
+    }
+  ],
   "assembly": {
     "mnemonics": {
       "push": "push",

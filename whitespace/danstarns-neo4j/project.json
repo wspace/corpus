@@ -8,5 +8,8 @@
   "date": "2022-04-01 11:30:54 +0200",
   "spec_version": "0.2",
   "source": ["https://github.com/danstarns/neo4j-whitespace-driver"],
+  "submodules": [
+    { "path": "neo4j-whitespace-driver", "url": "https://github.com/danstarns/neo4j-whitespace-driver" }
+  ],
   "programs": [{ "path": "driver.ws", "spec_version": "0.2" }]
 }

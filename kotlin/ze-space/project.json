@@ -8,6 +8,7 @@
   "date": "2018-04-21 21:02:23 -0400",
   "spec_version": "0.2",
   "source": ["https://github.com/ze/space"],
+  "submodules": [{ "path": "space", "url": "https://github.com/ze/space" }],
   "whitespace": { "extension": "ws" },
   "assembly": {
     "mnemonics": {

@@ -8,6 +8,7 @@
   "date": "2021-08-28 21:41:44 -0700",
   "spec_version": "0.3",
   "source": ["https://github.com/CJ5518/WhitespaceInterpreter"],
+  "submodules": [{ "path": "WhitespaceInterpreter", "url": "https://github.com/CJ5518/WhitespaceInterpreter" }],
   "programs": [{ "path": "HelloWorld.ws", "spec_version": "0.2" }, { "path": "test.ws", "spec_version": "0.2" }],
   "commands": [{ "type": "interpreter", "bin": "main.lua", "usage": "", "input": "test.ws" }]
 }

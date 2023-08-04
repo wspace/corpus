@@ -8,6 +8,7 @@
   "date": "2016-03-05 16:39:05 +0800",
   "spec_version": "0.3",
   "source": ["https://github.com/alesiong/whitespace-ruby"],
+  "submodules": [{ "path": "whitespace-ruby", "url": "https://github.com/alesiong/whitespace-ruby" }],
   "relations": [{ "id": "ruby/wconrad", "type": "fork" }],
   "whitespace": { "extension": "ws" },
   "assembly": {

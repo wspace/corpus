@@ -11,6 +11,7 @@
     "https://github.com/mattparker/phpwhitespace",
     "https://github.com/domcode/rafflers/tree/master/whitespace-mattp"
   ],
+  "submodules": [{ "path": "phpwhitespace", "url": "https://github.com/mattparker/phpwhitespace" }],
   "whitespace": { "extension": "ws" },
   "assembly": {
     "mnemonics": {

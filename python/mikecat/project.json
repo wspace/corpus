@@ -8,5 +8,6 @@
   "date": "2014-02-16 11:04:37 +0900",
   "spec_version": "0.3",
   "source": ["https://github.com/mikecat/python-whitespace"],
+  "submodules": [{ "path": "python-whitespace", "url": "https://github.com/mikecat/python-whitespace" }],
   "commands": [{ "type": "interpreter", "bin": "whitespace.py", "usage": "<file>" }]
 }
