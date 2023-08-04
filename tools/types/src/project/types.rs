@@ -2,9 +2,10 @@ use std::collections::BTreeMap;
 
 use serde::{Deserialize, Serialize};
 use serde_with::{apply, skip_serializing_none};
+use url::Url;
 
 use crate::util::{Int, OneOrVec, TotalF64, Uint};
-use crate::ws::InstMap;
+use crate::ws::{Inst, InstMap};
 
 #[skip_serializing_none]
 #[apply(Vec => #[serde(default, skip_serializing_if = "Vec::is_empty")])]
@@ -23,7 +24,7 @@ pub struct Project {
     pub date: String,
     pub spec_version: SpecVersion,
     #[serde_with(skip_apply)]
-    pub source: Vec<String>,
+    pub source: Vec<Url>,
     #[serde(default, skip_serializing_if = "is_false")]
     pub source_unavailable: bool,
     pub packages: Vec<Package>,
@@ -61,7 +62,7 @@ pub enum SpecVersion {
 pub struct Package {
     pub name: String,
     pub manager: PackageManager,
-    pub url: String,
+    pub url: Url,
 }
 
 #[derive(Serialize, Deserialize, Clone, Copy, Debug, PartialEq, Eq)]
@@ -220,7 +221,7 @@ pub enum EofBehavior {
 #[apply(Vec => #[serde(default, skip_serializing_if = "Vec::is_empty")])]
 #[derive(Serialize, Deserialize, Clone, Debug, PartialEq, Eq)]
 pub struct Whitespace {
-    pub unimplemented: Vec<String>,
+    pub unimplemented: Vec<Inst>,
     pub nonstandard: Vec<NonstandardInst>,
     pub extension: Option<String>,
 }
@@ -369,7 +370,7 @@ pub struct Command {
     pub options: Vec<CommandOption>,
     pub option_parse: Option<OptionParse>,
     pub subcommands: Vec<Subcommand>,
-    pub unimplemented: Vec<String>,
+    pub unimplemented: Vec<Inst>,
     pub notes: Option<String>,
 }
 
