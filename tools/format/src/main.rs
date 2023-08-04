@@ -33,13 +33,13 @@ fn main() {
 }
 
 fn format_file(path: &Path) -> Result<bool> {
-    let (project, unformatted) = Project::from_file_lax(path)?;
+    let (project, unformatted) = Project::from_json5_file(path)?;
     // TODO: Processing
     let formatted = project.to_json_pretty()?;
     if unformatted == formatted {
         return Ok(false);
     }
     println!("Formatted {}", path.to_string_lossy());
-    fs::write(path, formatted)?;
+    fs::write(path, &formatted)?;
     Ok(true)
 }

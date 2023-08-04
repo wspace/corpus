@@ -7,7 +7,7 @@ fn main() {
     let mut errs = Vec::new();
     for json_path in glob("../../*/*/project.json").unwrap() {
         let json_path = json_path.unwrap();
-        match Project::from_file(&json_path) {
+        match Project::from_json5_file(&json_path) {
             Ok(project) => {
                 println!("{project:?}");
             }
