@@ -1,14 +1,19 @@
 PROJECTS = $(filter-out tools/% .% _%, $(wildcard */*/project.json))
 DOCKERFILES = $(filter-out tools/% .% _%, $(wildcard */Dockerfile */*/Dockerfile))
+RUST_FORMAT_CRATE = $(shell find tools/format -type f)
 GO_TOOLS_PACKAGE = tools/generate.go tools/licenses.go
 
 .PHONY: all
-all: tidy_submodules licenses README.md assembly.md building.md challenges.md missing_submodules.md
+all: format format_submodules licenses README.md assembly.md building.md challenges.md missing_submodules.md
 
 .PHONY: format
-format: $(PROJECTS) tools/format/format.go $(GO_TOOLS_PACKAGE)
+format: build_stamp
+
+build_stamp: $(PROJECTS) $(RUST_FORMAT_CRATE) tools/format/format.go $(GO_TOOLS_PACKAGE)
 	$(info Formatting projects)
-	@go run tools/format/format.go $(PROJECTS)
+	@cargo run -q --bin corpus-format $(filter $(PROJECTS),$?)
+	@go run tools/format/format.go $(filter $(PROJECTS),$?)
+	@touch build_stamp
 
 .PHONY: licenses
 licenses: $(PROJECTS) tools/licenses/licenses.go $(GO_TOOLS_PACKAGE)
@@ -39,10 +44,9 @@ missing_submodules.md: $(PROJECTS) tools/generate_missing_submodules.jq
 docker_build: tools/generate_docker_build.sh
 	@tools/generate_docker_build.sh
 
-.PHONY: tidy_submodules
-tidy_submodules: $(PROJECTS) tools/submodules/submodules.go $(GO_TOOLS_PACKAGE) tools/format_gitmodules.sh
-	$(info Tidying Git submodules)
-	@go run tools/submodules/submodules.go
+.PHONY: format_submodules
+format_gitmodules: $(PROJECTS)
+	$(info Formatting Git submodules)
 	@tools/format_gitmodules.sh
 	@git add .gitmodules
 
@@ -93,9 +97,6 @@ todo:
 	@echo
 	@echo 'Document Whitespace extension:'
 	@jq -r 'select(.programs!=null and .whitespace.extension==null) | "- \(.id).json"' $(PROJECTS)
-	@echo
-	@echo 'Document assembly dialect:'
-	@jq -r 'select(.assembly.mnemonics == null and (.tags|contains(["assembler"]) or contains(["disassembler"]))) | "- \(.id).json"' $(PROJECTS)
 	@echo
 	@echo 'Refine dates:'
 	@jq -r 'select(.date | test("^\\d{4}$$"; "")) | "- \(.id).json: \(.date)"' $(PROJECTS)

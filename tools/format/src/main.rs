@@ -1,9 +1,11 @@
+use std::env;
+use std::fs;
 use std::path::Path;
 use std::process;
-use std::{env, fs};
+use std::process::Command;
 
-use anyhow::Result;
-use corpus_types::project::{all_project_json, Project};
+use anyhow::{bail, Result};
+use corpus_types::project::Project;
 use corpus_types::util::MultiError;
 
 fn main() {
@@ -16,7 +18,7 @@ fn main() {
             }
         }
     } else {
-        for path_res in all_project_json() {
+        for path_res in Project::all_json() {
             let res = match path_res {
                 Ok(path) => format_file(path.as_ref()),
                 Err(err) => Err(err.into()),
@@ -34,7 +36,9 @@ fn main() {
 
 fn format_file(path: &Path) -> Result<bool> {
     let (project, unformatted) = Project::from_json5_file(path)?;
-    // TODO: Processing
+
+    add_submodule(&project)?;
+
     let formatted = project.to_json_pretty()?;
     if unformatted == formatted {
         return Ok(false);
@@ -42,4 +46,30 @@ fn format_file(path: &Path) -> Result<bool> {
     println!("Formatted {}", path.to_string_lossy());
     fs::write(path, &formatted)?;
     Ok(true)
+}
+
+fn add_submodule(project: &Project) -> Result<()> {
+    if let Some(submodule) = project.submodules.first() {
+        let path = format!("{}/{}", project.id, submodule.path);
+        if Path::new(&path).exists() {
+            return Ok(());
+        }
+
+        let mut command = Command::new("git");
+        command.args(&["submodule", "add"]);
+        if let Some(branch) = &submodule.branch {
+            println!("git submodule add -b {branch} {} {path}", submodule.url);
+            command.args(&["-b", &branch]);
+        } else {
+            println!("git submodule add {} {path}", submodule.url);
+        }
+        command.arg(submodule.url.as_str()).arg(&path);
+
+        let mut child = command.spawn().unwrap();
+        let status = child.wait().unwrap();
+        if !status.success() {
+            bail!("git submodule exited with code {status}");
+        }
+    }
+    Ok(())
 }

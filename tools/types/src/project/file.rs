@@ -83,8 +83,8 @@ impl Project {
         fs::write(path, &pretty)?;
         Ok(())
     }
-}
 
-pub fn all_project_json() -> Paths {
-    glob::glob("*/*/project.json").unwrap()
+    pub fn all_json() -> Paths {
+        glob::glob("*/*/project.json").unwrap()
+    }
 }
