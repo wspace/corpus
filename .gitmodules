@@ -187,6 +187,9 @@
 [submodule "csharp/north15-projectone/projectOne"]
 	path = csharp/north15-projectone/projectOne
 	url = https://github.com/North15/projectOne
+[submodule "csharp/nutcrack-whiteplanes/whiteplanes.cs"]
+	path = csharp/nutcrack-whiteplanes/whiteplanes.cs
+	url = https://github.com/wspace/nutcrack-whiteplanes.cs
 [submodule "csharp/reflash/WhiteSpaceInterpreter"]
 	path = csharp/reflash/WhiteSpaceInterpreter
 	url = https://github.com/reflash-blog/WhiteSpaceInterpreter
@@ -211,6 +214,9 @@
 [submodule "erlang/derek121-mrwhite/mrwhite"]
 	path = erlang/derek121-mrwhite/mrwhite
 	url = https://github.com/derek121/mrwhite
+[submodule "fsharp/nutcrack-whiteplanes/whiteplanes.fs"]
+	path = fsharp/nutcrack-whiteplanes/whiteplanes.fs
+	url = https://github.com/wspace/nutcrack-whiteplanes.fs
 [submodule "go/135yshr-wspacego/wspacego"]
 	path = go/135yshr-wspacego/wspacego
 	url = https://github.com/135yshr/wspacego
@@ -389,6 +395,9 @@
 [submodule "javascript/naokikp-wsi/naokikp.github.io"]
 	path = javascript/naokikp-wsi/naokikp.github.io
 	url = https://github.com/naokikp/naokikp.github.io
+[submodule "javascript/nutcrack-whiteplanes/whiteplanes.js"]
+	path = javascript/nutcrack-whiteplanes/whiteplanes.js
+	url = https://github.com/wspace/nutcrack-whiteplanes.js
 [submodule "javascript/pvdz-significant-whitespace/SignificantWhitespace"]
 	path = javascript/pvdz-significant-whitespace/SignificantWhitespace
 	url = https://github.com/pvdz/SignificantWhitespace
@@ -422,6 +431,9 @@
 [submodule "julia/goropikari-whitespaces/Whitespaces.jl"]
 	path = julia/goropikari-whitespaces/Whitespaces.jl
 	url = https://github.com/goropikari/Whitespaces.jl
+[submodule "julia/nutcrack-whiteplanes/whiteplanes.jl"]
+	path = julia/nutcrack-whiteplanes/whiteplanes.jl
+	url = https://github.com/wspace/nutcrack-whiteplanes.jl
 [submodule "kotlin/ze-space/space"]
 	path = kotlin/ze-space/space
 	url = https://github.com/ze/space
@@ -491,6 +503,9 @@
 [submodule "php/nobody1986/whitespace-php"]
 	path = php/nobody1986/whitespace-php
 	url = https://github.com/nobody1986/whitespace-php
+[submodule "php/nutcrack-whiteplanes/whiteplanes.php"]
+	path = php/nutcrack-whiteplanes/whiteplanes.php
+	url = https://github.com/wspace/nutcrack-whiteplanes.php
 [submodule "python/0x55aa/python-whitespace"]
 	path = python/0x55aa/python-whitespace
 	url = https://github.com/0x55aa/python-whitespace
@@ -611,9 +626,9 @@
 [submodule "python/musflood/code-katas"]
 	path = python/musflood/code-katas
 	url = https://github.com/musflood/code-katas
-[submodule "python/nutcrack-whiteplanes/whiteplanes"]
-	path = python/nutcrack-whiteplanes/whiteplanes
-	url = https://github.com/wspace/nutcrack-whiteplanes
+[submodule "python/nutcrack-whiteplanes/whiteplanes.py"]
+	path = python/nutcrack-whiteplanes/whiteplanes.py
+	url = https://github.com/wspace/nutcrack-whiteplanes.py
 [submodule "python/phlip-pywhitespace/pywhitespace"]
 	path = python/phlip-pywhitespace/pywhitespace
 	url = https://github.com/wspace/phlip-pywhitespace
@@ -662,6 +677,9 @@
 [submodule "r/bmazoure/whitespace"]
 	path = r/bmazoure/whitespace
 	url = https://github.com/bmazoure/whitespace
+[submodule "r/nutcrack-whiteplanes/whiteplanes.r"]
+	path = r/nutcrack-whiteplanes/whiteplanes.r
+	url = https://github.com/wspace/nutcrack-whiteplanes.r
 [submodule "rebol/hostilefork/rebol-whitespacers"]
 	path = rebol/hostilefork/rebol-whitespacers
 	url = https://github.com/hostilefork/rebol-whitespacers
@@ -690,6 +708,9 @@
 [submodule "ruby/nishiwakki/whitespace"]
 	path = ruby/nishiwakki/whitespace
 	url = https://github.com/nishiwakki/whitespace
+[submodule "ruby/nutcrack-whiteplanes/whiteplanes.rb"]
+	path = ruby/nutcrack-whiteplanes/whiteplanes.rb
+	url = https://github.com/wspace/nutcrack-whiteplanes.rb
 [submodule "ruby/pocke-akaza/akaza"]
 	path = ruby/pocke-akaza/akaza
 	url = https://github.com/pocke/akaza
@@ -780,6 +801,9 @@
 [submodule "scheme/niyarin/whitespace-scheme"]
 	path = scheme/niyarin/whitespace-scheme
 	url = https://github.com/niyarin/whitespace-scheme
+[submodule "swift/nutcrack-whiteplanes/whiteplanes.swift"]
+	path = swift/nutcrack-whiteplanes/whiteplanes.swift
+	url = https://github.com/wspace/nutcrack-whiteplanes.swift
 [submodule "textmate/nixinova/NovaGrammars"]
 	path = textmate/nixinova/NovaGrammars
 	url = https://github.com/Nixinova/NovaGrammars

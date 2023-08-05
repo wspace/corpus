@@ -1,0 +1,17 @@
+{
+  "id": "r/nutcrack-whiteplanes",
+  "name": "Whiteplanes.r",
+  "authors": ["Takuya Katsurada"],
+  "license": "MIT",
+  "languages": ["R"],
+  "tags": ["stub"],
+  "date": "2016-05-21 15:20:39 +0900",
+  "spec_version": "-",
+  "source": [
+    "https://github.com/wspace/nutcrack-whiteplanes.r",
+    "https://archive.softwareheritage.org/browse/origin/directory/?origin_url=https://github.com/whiteplanes/whiteplanes.r",
+    "https://wspace.github.io/nutcrack-whiteplanes.github.io/",
+    "https://github.com/thaliaarchi/repo-archival/blob/main/scripts/wspace/nutcrack-whiteplanes.sh"
+  ],
+  "submodules": [{ "path": "whiteplanes.r", "url": "https://github.com/wspace/nutcrack-whiteplanes.r" }]
+}

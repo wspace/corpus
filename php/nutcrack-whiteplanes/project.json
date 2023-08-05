@@ -1,0 +1,46 @@
+{
+  "id": "php/nutcrack-whiteplanes",
+  "name": "Whiteplanes.php",
+  "authors": ["Takuya Katsurada"],
+  "license": "MIT",
+  "languages": ["PHP"],
+  "tags": ["interpreter"],
+  "date": "2016-04-14 00:14:55 +0900",
+  "spec_version": "0.3",
+  "source": [
+    "https://github.com/wspace/nutcrack-whiteplanes.php",
+    "https://archive.softwareheritage.org/browse/origin/directory/?origin_url=https://github.com/whiteplanes/whiteplanes.php",
+    "https://wspace.github.io/nutcrack-whiteplanes.github.io/",
+    "https://github.com/thaliaarchi/repo-archival/blob/main/scripts/wspace/nutcrack-whiteplanes.sh"
+  ],
+  "submodules": [{ "path": "whiteplanes.php", "url": "https://github.com/wspace/nutcrack-whiteplanes.php" }],
+  "assembly": {
+    "mnemonics": {
+      "push": "PUSH",
+      "dup": "DUPLICATE",
+      "copy": "COPY",
+      "swap": "SWAP",
+      "drop": "DISCARD",
+      "slide": "SLIDE",
+      "add": "ADD",
+      "sub": "SUB",
+      "mul": "MUL",
+      "div": "DIV",
+      "mod": "MOD",
+      "store": "STORE",
+      "retrieve": "RETRIEVE",
+      "label": "REGISTER",
+      "call": "CALL",
+      "jmp": "JUMP",
+      "jz": "TEST_EQUAL",
+      "jn": "TEST_LESS",
+      "ret": "RETURN",
+      "end": "END",
+      "printc": "OUTPUT_CHAR",
+      "printi": "OUTPUT_INT",
+      "readc": "INPUT_CHAR",
+      "readi": "INPUT_INT"
+    },
+    "usage": ["enum"]
+  }
+}

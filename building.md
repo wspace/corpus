@@ -56,6 +56,7 @@ Projects that can be built with Docker:
 - cpp/worktycho-whitespace-llvm: Requires LLVM
 - cpp/yuukiaria
 - crystal/collidedscope-spiceweight
+- csharp/colchicus: Source unavailable
 - csharp/denislabrecque
 - csharp/jlchntoz: Need to restructure files
 - csharp/littlebughunter-assembler
@@ -231,13 +232,13 @@ Building status of individual executables:
 
 - ⚠️ brainfuck/thaliaarchi-wsbf/ws.bf
 - ⚠️ coffeescript/ehrlichb/*unspecified*: `grunt` Unclear how to run
-- ❌ csharp/colchicus
 - ❌ csharp/nutcrack-whiteplanes
 - ❌ docker/baekjoon-onlinejudge
 - ❌ docker/bensuperpc
 - ❌ docker/hakatashi-esolang-box
 - ❌ elisp/lmitchell
 - ❌ elixir/quinnwilton
+- ❌ fsharp/nutcrack-whiteplanes
 - ⚠️ haskell/brainbush-tomato/wspace: `make` Needs changes for latest Haskell
 - ⚠️ haskell/burghard-wsa/trans
 - ❌ haskell/d3psi-spacey
@@ -258,9 +259,11 @@ Building status of individual executables:
 - ❌ javascript/luilak-ws2js
 - ❌ javascript/macocha-whitespacer
 - ❌ javascript/naokikp-wsi
+- ❌ javascript/nutcrack-whiteplanes
 - ❌ javascript/pvdz-significant-whitespace
 - ❌ javascript/tranbrian10-generator
 - ⚠️ julia/goropikari-whitespaces/*unspecified*
+- ❌ julia/nutcrack-whiteplanes
 - ⚠️ masm/jarsp-wsint/wsint: Requires Visual Studio
 - nasm/ryzheboka:
   - wsCompiler.py
@@ -275,13 +278,17 @@ Building status of individual executables:
 - php/johankj/whitespace.php
 - ❌ php/jseidl-wcc
 - php/mattparker/src/PHPWhiteSpace.php
+- ❌ php/nutcrack-whiteplanes
 - ❌ python/cybis-hapyli
 - python/lifthrasiir-esotope-ws/esotope-ws
 - ⚠️ python/marktraceur-redlandside/main.py
 - ⚠️ python/res0001-trans32/trans32.py: No entrypoint
 - r/bmazoure/R/whitespace.R
+- ❌ r/nutcrack-whiteplanes
+- ❌ ruby/nutcrack-whiteplanes
 - ❌ scheme/athos-white-scheme
 - ❌ scheme/niyarin
+- ❌ swift/nutcrack-whiteplanes
 - ⚠️ textmate/nixinova/grammars/whitespace.yaml-tmLanguage
 - ❌ textmate/thaliaarchi-linguist
 - ❌ textmate/veniversum

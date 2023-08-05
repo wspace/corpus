@@ -1,20 +1,19 @@
 {
-  "id": "python/nutcrack-whiteplanes",
-  "name": "Whiteplanes.py",
+  "id": "fsharp/nutcrack-whiteplanes",
+  "name": "Whiteplanes.fs",
   "authors": ["Takuya Katsurada"],
   "license": "MIT",
-  "languages": ["Python"],
+  "languages": ["F#"],
   "tags": ["interpreter"],
-  "date": "2016-04-22 01:19:35 +0900",
+  "date": "2016-04-29 18:39:40 +0900",
   "spec_version": "0.3",
   "source": [
-    "https://github.com/wspace/nutcrack-whiteplanes.py",
-    "https://archive.softwareheritage.org/browse/origin/directory/?origin_url=https://github.com/whiteplanes/whiteplanes.py",
+    "https://github.com/wspace/nutcrack-whiteplanes.fs",
+    "https://archive.softwareheritage.org/browse/origin/directory/?origin_url=https://github.com/whiteplanes/whiteplanes.fs",
     "https://wspace.github.io/nutcrack-whiteplanes.github.io/",
     "https://github.com/thaliaarchi/repo-archival/blob/main/scripts/wspace/nutcrack-whiteplanes.sh"
   ],
-  "submodules": [{ "path": "whiteplanes.py", "url": "https://github.com/wspace/nutcrack-whiteplanes.py" }],
-  "packages": [{ "name": "whiteplanes", "manager": "PyPI", "url": "https://pypi.org/project/whiteplanes/" }],
+  "submodules": [{ "path": "whiteplanes.fs", "url": "https://github.com/wspace/nutcrack-whiteplanes.fs" }],
   "assembly": {
     "mnemonics": {
       "push": "Push",
@@ -43,8 +42,5 @@
       "readi": "Iin"
     },
     "usage": ["enum"]
-  },
-  "run_errors": "No entrypoint",
-  "commands": [{ "type": "interpreter" }],
-  "notes": "GitHub repo and GitHub Pages site are offline. Date from earliest file in archive."
+  }
 }

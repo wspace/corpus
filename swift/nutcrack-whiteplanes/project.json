@@ -1,0 +1,46 @@
+{
+  "id": "swift/nutcrack-whiteplanes",
+  "name": "Whiteplanes.swift",
+  "authors": ["Takuya Katsurada"],
+  "license": "MIT",
+  "languages": ["Swift"],
+  "tags": ["interpreter"],
+  "date": "2016-04-29 18:46:50 +0900",
+  "spec_version": "0.3",
+  "source": [
+    "https://github.com/wspace/nutcrack-whiteplanes.swift",
+    "https://archive.softwareheritage.org/browse/origin/directory/?origin_url=https://github.com/whiteplanes/whiteplanes.swift",
+    "https://wspace.github.io/nutcrack-whiteplanes.github.io/",
+    "https://github.com/thaliaarchi/repo-archival/blob/main/scripts/wspace/nutcrack-whiteplanes.sh"
+  ],
+  "submodules": [{ "path": "whiteplanes.swift", "url": "https://github.com/wspace/nutcrack-whiteplanes.swift" }],
+  "assembly": {
+    "mnemonics": {
+      "push": "Push",
+      "dup": "Duplicate",
+      "copy": "Copy",
+      "swap": "Swap",
+      "drop": "Discard",
+      "slide": "Slide",
+      "add": "Add",
+      "sub": "Sub",
+      "mul": "Mul",
+      "div": "Div",
+      "mod": "Mod",
+      "store": "Store",
+      "retrieve": "Retrieve",
+      "label": "Register",
+      "call": "Call",
+      "jmp": "Jump",
+      "jz": "ETest",
+      "jn": "NTest",
+      "ret": "Return",
+      "end": "End",
+      "printc": "COutput",
+      "printi": "IOutput",
+      "readc": "CInput",
+      "readi": "IInput"
+    },
+    "usage": ["enum"]
+  }
+}

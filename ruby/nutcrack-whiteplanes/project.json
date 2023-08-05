@@ -1,0 +1,46 @@
+{
+  "id": "ruby/nutcrack-whiteplanes",
+  "name": "Whiteplanes.rb",
+  "authors": ["Takuya Katsurada"],
+  "license": "MIT",
+  "languages": ["Ruby"],
+  "tags": ["interpreter"],
+  "date": "2016-04-22 01:18:16 +0900",
+  "spec_version": "0.3",
+  "source": [
+    "https://github.com/wspace/nutcrack-whiteplanes.rb",
+    "https://archive.softwareheritage.org/browse/origin/directory/?origin_url=https://github.com/whiteplanes/whiteplanes.rb",
+    "https://wspace.github.io/nutcrack-whiteplanes.github.io/",
+    "https://github.com/thaliaarchi/repo-archival/blob/main/scripts/wspace/nutcrack-whiteplanes.sh"
+  ],
+  "submodules": [{ "path": "whiteplanes.rb", "url": "https://github.com/wspace/nutcrack-whiteplanes.rb" }],
+  "assembly": {
+    "mnemonics": {
+      "push": "push",
+      "dup": "duplicate",
+      "copy": "copy",
+      "swap": "swap",
+      "drop": "discard",
+      "slide": "slide",
+      "add": "add",
+      "sub": "sub",
+      "mul": "mul",
+      "div": "div",
+      "mod": "mod",
+      "store": "store",
+      "retrieve": "retrieve",
+      "label": "register",
+      "call": "call",
+      "jmp": "jump",
+      "jz": "equal",
+      "jn": "less",
+      "ret": "return",
+      "end": "end",
+      "printc": "cout",
+      "printi": "iout",
+      "readc": "cin",
+      "readi": "iin"
+    },
+    "usage": ["enum"]
+  }
+}

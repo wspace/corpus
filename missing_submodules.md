@@ -5,7 +5,6 @@
 These projects are missing a submodule, usually because I have not yet converted
 the source to git.
 
-- csharp/nutcrack-whiteplanes
 - elisp/lmitchell
 - haskell/edwinb-wspace-0.2
 - haskell/edwinb-wspace-0.3

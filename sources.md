@@ -130,6 +130,7 @@ TODO:
     ["whitespace interpreter"](https://pypi.org/search/?q=%22whitespace+interpreter%22&o=-created),
     ["whitespace language"](https://pypi.org/search/?q=%22whitespace+language%22&o=-created)
 - RubyGems: [whitespace](https://rubygems.org/search?query=whitespace)
+- Swift Package Registry: [whitespace](https://swiftpackageregistry.com/search?term=whitespace)
 
 ## Internet Archive
 

@@ -8,6 +8,7 @@
   "date": "2015-11-19 10:01:53 +0000",
   "spec_version": "unknown",
   "source": ["https://www.nuget.org/packages/whitespace/", "https://github.com/colchicus/whitespace"],
+  "source_unavailable": true,
   "packages": [{ "name": "whitespace", "manager": "NuGet", "url": "https://www.nuget.org/packages/whitespace/" }],
   "notes": "GitHub repo is offline. Date is package last update date."
 }
