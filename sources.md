@@ -8,6 +8,8 @@
       [#whitespace](https://github.com/topics/whitespace?o=desc&s=updated),
       [#whitespace-interpreter](https://github.com/topics/whitespace-interpreter?o=desc&s=updated),
       [#whitespace-compiler](https://github.com/topics/whitespace-compiler?o=desc&s=updated)
+      [#whitespace-assembler](https://github.com/topics/whitespace-assembler?o=desc&s=updated)
+      [#whitespace-generator](https://github.com/topics/whitespace-generator?o=desc&s=updated)
   - by keywords:
       [whitespace interpreter](https://github.com/search?o=desc&q=whitespace+interpreter+-org%3Awspace&s=updated&type=repositories),
       [whitespace compiler](https://github.com/search?o=desc&q=whitespace+compiler+-org%3Awspace&s=updated&type=repositories),

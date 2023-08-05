@@ -4,8 +4,6 @@ go 1.18
 
 require (
 	github.com/thaliaarchi/browser v0.0.0-20210602185959-ae587407e71c
-	github.com/bradleyfalzon/ghinstallation/v2 v2.0.4
-	github.com/google/go-github/v44 v44.1.0
 	github.com/pelletier/go-toml v1.9.5
 	golang.org/x/sys v0.0.0-20220608164250-635b8c9b7f68
 )

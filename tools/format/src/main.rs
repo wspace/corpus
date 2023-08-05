@@ -10,22 +10,14 @@ use corpus_types::util::MultiError;
 
 fn main() {
     let args = env::args_os().skip(1);
+    if args.len() == 0 {
+        eprintln!("Usage: corpus-format <file>...");
+        process::exit(2);
+    }
     let mut errs = MultiError::new();
-    if args.len() != 0 {
-        for path in args {
-            if let Err(err) = format_file(path.as_ref()) {
-                errs.push(err);
-            }
-        }
-    } else {
-        for path_res in Project::all_json() {
-            let res = match path_res {
-                Ok(path) => format_file(path.as_ref()),
-                Err(err) => Err(err.into()),
-            };
-            if let Err(err) = res {
-                errs.push(err);
-            }
+    for path in args {
+        if let Err(err) = format_file(path.as_ref()) {
+            errs.push(err);
         }
     }
     if let Err(err) = errs.err() {
