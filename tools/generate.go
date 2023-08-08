@@ -34,9 +34,9 @@ type Project struct {
 		Branch string `json:"branch,omitempty"`
 	} `json:"submodules,omitempty"`
 	Packages []struct {
-		Name    string `json:"name"`
-		Manager string `json:"manager"`
-		URL     string `json:"url"`
+		Name     string `json:"name"`
+		Registry string `json:"registry"`
+		URL      string `json:"url"`
 	} `json:"packages,omitempty"`
 	Relations []struct {
 		ID      string `json:"id"`

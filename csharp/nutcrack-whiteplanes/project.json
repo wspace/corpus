@@ -15,7 +15,7 @@
   ],
   "submodules": [{ "path": "whiteplanes.cs", "url": "https://github.com/wspace/nutcrack-whiteplanes.cs" }],
   "packages": [
-    { "name": "whiteplanes", "manager": "NuGet", "url": "https://www.nuget.org/packages/whiteplanes/" }
+    { "name": "whiteplanes", "registry": "NuGet", "url": "https://www.nuget.org/packages/whiteplanes/" }
   ],
   "assembly": {
     "mnemonics": {

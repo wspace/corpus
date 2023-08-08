@@ -12,7 +12,7 @@
   "packages": [
     {
       "name": "esolang/whitespace",
-      "manager": "Docker Hub",
+      "registry": "Docker Hub",
       "url": "https://hub.docker.com/r/esolang/whitespace"
     }
   ],

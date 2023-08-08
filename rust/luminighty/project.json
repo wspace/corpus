@@ -9,7 +9,7 @@
   "spec_version": "0.2",
   "source": ["https://github.com/Luminighty/rustws"],
   "submodules": [{ "path": "rustws", "url": "https://github.com/Luminighty/rustws" }],
-  "packages": [{ "name": "rustws", "manager": "crates.io", "url": "https://crates.io/crates/rustws" }],
+  "packages": [{ "name": "rustws", "registry": "crates.io", "url": "https://crates.io/crates/rustws" }],
   "whitespace": { "extension": "ws" },
   "mappings": [
     {

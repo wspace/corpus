@@ -9,7 +9,7 @@
   "spec_version": "0.3",
   "source": ["https://github.com/collidedscope/spitewaste"],
   "submodules": [{ "path": "spitewaste", "url": "https://github.com/collidedscope/spitewaste" }],
-  "packages": [{ "name": "spitewaste", "manager": "RubyGems", "url": "https://rubygems.org/gems/spitewaste" }],
+  "packages": [{ "name": "spitewaste", "registry": "RubyGems", "url": "https://rubygems.org/gems/spitewaste" }],
   "whitespace": {
     "nonstandard": [{ "name": "shell", "seq": "TLL" }, { "name": "eval", "seq": "LLT" }],
     "extension": "ws"

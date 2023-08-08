@@ -12,7 +12,7 @@
   "packages": [
     {
       "name": "baekjoon/onlinejudge-ws",
-      "manager": "Docker Hub",
+      "registry": "Docker Hub",
       "url": "https://hub.docker.com/r/baekjoon/onlinejudge-ws"
     }
   ],

@@ -12,7 +12,7 @@
   "packages": [
     {
       "name": "whitespace-ruby",
-      "manager": "RubyGems",
+      "registry": "RubyGems",
       "url": "https://rubygems.org/gems/whitespace-ruby"
     }
   ],

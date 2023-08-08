@@ -9,7 +9,7 @@
   "spec_version": "-",
   "source": ["https://github.com/freyamade/hohoho"],
   "submodules": [{ "path": "hohoho", "url": "https://github.com/freyamade/hohoho" }],
-  "packages": [{ "name": "hohoho", "manager": "PyPI", "url": "https://pypi.org/project/hohoho/" }],
+  "packages": [{ "name": "hohoho", "registry": "PyPI", "url": "https://pypi.org/project/hohoho/" }],
   "relations": [{ "id": "python/dwayne", "type": "library" }],
   "whitespace": { "extension": "ws" },
   "mappings": [{ "space": "snow", "tab": "hohoho", "lf": "\n", "spaces_between": true, "extension": "ho" }],

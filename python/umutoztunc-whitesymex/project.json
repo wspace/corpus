@@ -9,7 +9,7 @@
   "spec_version": "0.3",
   "source": ["https://github.com/umutoztunc/whitesymex", "https://whitesymex.readthedocs.io/"],
   "submodules": [{ "path": "whitesymex", "url": "https://github.com/umutoztunc/whitesymex" }],
-  "packages": [{ "name": "whitesymex", "manager": "PyPI", "url": "https://pypi.org/project/whitesymex/" }],
+  "packages": [{ "name": "whitesymex", "registry": "PyPI", "url": "https://pypi.org/project/whitesymex/" }],
   "whitespace": { "extension": "ws" },
   "programs": [
     {

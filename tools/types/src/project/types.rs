@@ -70,12 +70,12 @@ pub struct Submodule {
 #[derive(Serialize, Deserialize, Clone, Debug, PartialEq, Eq)]
 pub struct Package {
     pub name: String,
-    pub manager: PackageManager,
+    pub registry: PackageRegistry,
     pub url: Url,
 }
 
 #[derive(Serialize, Deserialize, Clone, Copy, Debug, PartialEq, Eq)]
-pub enum PackageManager {
+pub enum PackageRegistry {
     #[serde(rename = "crates.io")]
     CratesIo,
     #[serde(rename = "Docker Hub")]

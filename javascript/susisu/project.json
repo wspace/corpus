@@ -12,7 +12,7 @@
   "packages": [
     {
       "name": "@susisu/whitespace-js",
-      "manager": "npm",
+      "registry": "npm",
       "url": "https://www.npmjs.com/package/@susisu/whitespace-js"
     }
   ],

@@ -9,7 +9,7 @@
   "spec_version": "0.2",
   "source": ["https://github.com/dwayne/whitespace-python"],
   "submodules": [{ "path": "whitespace-python", "url": "https://github.com/dwayne/whitespace-python" }],
-  "packages": [{ "name": "whitespace", "manager": "PyPI", "url": "https://pypi.org/project/whitespace/" }],
+  "packages": [{ "name": "whitespace", "registry": "PyPI", "url": "https://pypi.org/project/whitespace/" }],
   "programs": [
     { "path": "tests/fixtures/count.ws", "equivalent": "count.ws", "spec_version": "0.2" },
     { "path": "tests/fixtures/fact.ws", "equivalent": "fact.ws", "spec_version": "0.2" },

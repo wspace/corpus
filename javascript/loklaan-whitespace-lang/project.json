@@ -12,7 +12,7 @@
   "packages": [
     {
       "name": "whitespace-lang",
-      "manager": "npm",
+      "registry": "npm",
       "url": "https://www.npmjs.com/package/whitespace-lang"
     }
   ],

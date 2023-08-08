@@ -10,8 +10,8 @@
   "source": ["https://github.com/D3PSI/spacey", "https://github.com/D3PSI/spacey-wasm-example"],
   "submodules": [{ "path": "spacey", "url": "https://github.com/D3PSI/spacey" }],
   "packages": [
-    { "name": "spacey", "manager": "crates.io", "url": "https://crates.io/crates/spacey" },
-    { "name": "node-spacey", "manager": "npm", "url": "https://www.npmjs.com/package/node-spacey" }
+    { "name": "spacey", "registry": "crates.io", "url": "https://crates.io/crates/spacey" },
+    { "name": "node-spacey", "registry": "npm", "url": "https://www.npmjs.com/package/node-spacey" }
   ],
   "whitespace": { "extension": "ws" },
   "assembly": {

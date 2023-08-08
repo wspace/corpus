@@ -166,13 +166,13 @@
         "type": "object",
         "properties": {
           "name": { "type": "string" },
-          "manager": {
+          "registry": {
             "type": "string",
             "enum": ["crates.io", "Docker Hub", "Hackage", "npm", "NuGet", "PyPI", "RubyGems"]
           },
           "url": { "type": "string", "format": "uri" }
         },
-        "required": ["name", "manager", "url"],
+        "required": ["name", "registry", "url"],
         "additionalProperties": false
       }
     },

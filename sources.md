@@ -109,30 +109,30 @@ TODO:
     [grass-mud-horse (SVN)](https://code.google.com/archive/p/grass-mud-horse/)
 - [Software Heritage archive](https://archive.softwareheritage.org/)
 
-## Package managers
+## Package registries
 
-- CPAN: [whitespace interpreter](https://metacpan.org/search?q=whitespace+interpreter)
-- crates.io:
+- CPAN (Perl): [whitespace interpreter](https://metacpan.org/search?q=whitespace+interpreter)
+- crates.io (Rust):
     [whitespace interpreter](https://crates.io/search?q=whitespace%20interpreter&sort=new),
     [#whitespace](https://crates.io/keywords/whitespace)
-- Docker Hub: [whitespace](https://hub.docker.com/search?q=whitespace&type=image&sort=updated_at&order=desc)
-- Elm Packages: [whitespace](https://package.elm-lang.org/)
-- Hackage: [whitespace](https://hackage.haskell.org/packages/search?terms=whitespace)
-- Hex: [whitespace](https://hex.pm/packages?search=whitespace)
-- Julia Packages: [whitespace](https://juliapackages.com/packages?search=whitespace)
-- Maven: [whitespace](https://mvnrepository.com/search?q=whitespace)
-- npm:
+- Docker Hub (Docker): [whitespace](https://hub.docker.com/search?q=whitespace&type=image&sort=updated_at&order=desc)
+- Elm Packages (Elm): [whitespace](https://package.elm-lang.org/)
+- Hackage (Haskell): [whitespace](https://hackage.haskell.org/packages/search?terms=whitespace)
+- Hex (Erlang): [whitespace](https://hex.pm/packages?search=whitespace)
+- Julia Packages (Julia): [whitespace](https://juliapackages.com/packages?search=whitespace)
+- Maven (Java): [whitespace](https://mvnrepository.com/search?q=whitespace)
+- npm (JavaScript):
     [whitespace language](https://www.npmjs.com/search?q=whitespace%20language),
     [whitespace interpreter](https://www.npmjs.com/search?q=whitespace%20interpreter)
-- NuGet: [whitespace](https://www.nuget.org/packages?q=whitespace)
-- opam: [whitespace](https://opam.ocaml.org/packages/)
-- Packagist: [whitespace](https://packagist.org/?query=whitespace)
-- pkg.go.dev: [whitespace](https://pkg.go.dev/search?q=whitespace)
-- PyPI:
+- NuGet (.NET): [whitespace](https://www.nuget.org/packages?q=whitespace)
+- opam (OCaml): [whitespace](https://opam.ocaml.org/packages/)
+- Packagist (PHP): [whitespace](https://packagist.org/?query=whitespace)
+- pkg.go.dev (Go): [whitespace](https://pkg.go.dev/search?q=whitespace)
+- PyPI (Python):
     ["whitespace interpreter"](https://pypi.org/search/?q=%22whitespace+interpreter%22&o=-created),
     ["whitespace language"](https://pypi.org/search/?q=%22whitespace+language%22&o=-created)
-- RubyGems: [whitespace](https://rubygems.org/search?query=whitespace)
-- Swift Package Registry: [whitespace](https://swiftpackageregistry.com/search?term=whitespace)
+- RubyGems (Ruby): [whitespace](https://rubygems.org/search?query=whitespace)
+- Swift Package Registry (Swift): [whitespace](https://swiftpackageregistry.com/search?term=whitespace)
 
 ## Internet Archive
 

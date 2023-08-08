@@ -16,7 +16,7 @@
   "packages": [
     {
       "name": "whitespace",
-      "manager": "Hackage",
+      "registry": "Hackage",
       "url": "https://hackage.haskell.org/package/whitespace"
     }
   ],

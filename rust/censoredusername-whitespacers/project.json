@@ -9,7 +9,9 @@
   "spec_version": "0.3",
   "source": ["https://github.com/CensoredUsername/whitespace-rs"],
   "submodules": [{ "path": "whitespace-rs", "url": "https://github.com/CensoredUsername/whitespace-rs" }],
-  "packages": [{ "name": "whitespacers", "manager": "crates.io", "url": "https://crates.io/crates/whitespacers" }],
+  "packages": [
+    { "name": "whitespacers", "registry": "crates.io", "url": "https://crates.io/crates/whitespacers" }
+  ],
   "bounds": { "precision": "arbitrary" },
   "assembly": {
     "mnemonics": {
