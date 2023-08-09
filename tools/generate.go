@@ -540,58 +540,59 @@ func formatLink(label, url string) string {
 }
 
 var domainLabels = map[string]string{
-	"github.com":                   "GitHub",
-	"gist.github.com":              "GitHub Gist",
-	"gitlab.com":                   "GitLab",
-	"sourceforge.net":              "SourceForge",
-	"git.code.sf.net":              "SourceForge",
-	"bitbucket.org":                "Bitbucket",
-	"code.google.com":              "Google Code",
-	"googlecode.com":               "Google Code",
-	"sr.ht":                        "sourcehut",
-	"codeberg.org":                 "Codeberg",
-	"softwareheritage.org":         "Software Heritage",
-	"archive.softwareheritage.org": "Software Heritage archive",
-	"metacpan.org":                 "CPAN",
-	"crates.io":                    "crates.io",
-	"hub.docker.com":               "Docker Hub",
-	"package.elm-lang.org":         "Elm Packages",
-	"hackage.haskell.org":          "Hackage",
-	"hex.pm":                       "Hex",
-	"mvnrepository.com":            "Maven",
-	"npmjs.com":                    "npm",
-	"nuget.org":                    "NuGet",
-	"opam.ocaml.org":               "opam",
-	"packagist.org":                "Packagist",
-	"pkg.go.dev":                   "pkg.go.dev",
-	"pypi.org":                     "PyPI",
-	"rubygems.org":                 "RubyGems",
-	"en.wikipedia.org":             "Wikipedia",
-	"esolangs.org":                 "Esolang",
-	"progopedia.com":               "Progopedia",
-	"stackoverflow.com":            "Stack Overflow",
-	"codegolf.stackexchange.com":   "Code Golf",
-	"codewars.com":                 "Codewars",
-	"projecteuler.net":             "Project Euler",
-	"rosettacode.org":              "Rosetta Code",
-	"adventofcode.com":             "Advent of Code",
-	"yukicoder.me":                 "yukicoder",
-	"spoj.com":                     "Sphere Online Judge",
-	"acmicpc.net":                  "Baekjoon Online Judge",
-	"help.acmicpc.net":             "Baekjoon Online Judge",
-	"code.activestate.com":         "ActiveState Code",
-	"pastebin.com":                 "Pastebin",
-	"whitespace.pastebin.com":      "Pastebin",
-	"ideone.com":                   "Ideone",
-	"sites.google.com":             "Google Sites",
-	"drive.google.com":             "Google Drive",
-	"amazon.com":                   "Amazon",
-	"speakerdeck.com":              "Speaker Deck",
-	"compsoc.dur.ac.uk":            "Durham CompSoc",
-	"news.ycombinator.com":         "Hacker News",
-	"slashdot.org":                 "Slashdot",
-	"twitter.com":                  "Twitter",
-	"what.thedailywtf.com":         "What the Daily WTF?",
+	"github.com":                             "GitHub",
+	"gist.github.com":                        "GitHub Gist",
+	"gitlab.com":                             "GitLab",
+	"sourceforge.net":                        "SourceForge",
+	"git.code.sf.net":                        "SourceForge",
+	"bitbucket.org":                          "Bitbucket",
+	"code.google.com":                        "Google Code",
+	"googlecode.com":                         "Google Code",
+	"sr.ht":                                  "sourcehut",
+	"codeberg.org":                           "Codeberg",
+	"softwareheritage.org":                   "Software Heritage",
+	"archive.softwareheritage.org":           "Software Heritage archive",
+	"bitbucket-archive.softwareheritage.org": "Software Heritage Mercurial Bitbucket archive",
+	"metacpan.org":                           "CPAN",
+	"crates.io":                              "crates.io",
+	"hub.docker.com":                         "Docker Hub",
+	"package.elm-lang.org":                   "Elm Packages",
+	"hackage.haskell.org":                    "Hackage",
+	"hex.pm":                                 "Hex",
+	"mvnrepository.com":                      "Maven",
+	"npmjs.com":                              "npm",
+	"nuget.org":                              "NuGet",
+	"opam.ocaml.org":                         "opam",
+	"packagist.org":                          "Packagist",
+	"pkg.go.dev":                             "pkg.go.dev",
+	"pypi.org":                               "PyPI",
+	"rubygems.org":                           "RubyGems",
+	"en.wikipedia.org":                       "Wikipedia",
+	"esolangs.org":                           "Esolang",
+	"progopedia.com":                         "Progopedia",
+	"stackoverflow.com":                      "Stack Overflow",
+	"codegolf.stackexchange.com":             "Code Golf",
+	"codewars.com":                           "Codewars",
+	"projecteuler.net":                       "Project Euler",
+	"rosettacode.org":                        "Rosetta Code",
+	"adventofcode.com":                       "Advent of Code",
+	"yukicoder.me":                           "yukicoder",
+	"spoj.com":                               "Sphere Online Judge",
+	"acmicpc.net":                            "Baekjoon Online Judge",
+	"help.acmicpc.net":                       "Baekjoon Online Judge",
+	"code.activestate.com":                   "ActiveState Code",
+	"pastebin.com":                           "Pastebin",
+	"whitespace.pastebin.com":                "Pastebin",
+	"ideone.com":                             "Ideone",
+	"sites.google.com":                       "Google Sites",
+	"drive.google.com":                       "Google Drive",
+	"amazon.com":                             "Amazon",
+	"speakerdeck.com":                        "Speaker Deck",
+	"compsoc.dur.ac.uk":                      "Durham CompSoc",
+	"news.ycombinator.com":                   "Hacker News",
+	"slashdot.org":                           "Slashdot",
+	"twitter.com":                            "Twitter",
+	"what.thedailywtf.com":                   "What the Daily WTF?",
 }
 
 var subdomainLabels = map[string]string{
@@ -609,12 +610,12 @@ func GetURLLabel(url string) (string, error) {
 	if err != nil {
 		return "", err
 	}
-	if archivedURL := unwrapArchive(u); archivedURL != "" {
+	if archivedURL, archiveLabel := unwrapArchive(url, u); archivedURL != "" {
 		label, err := GetURLLabel(archivedURL)
 		if err != nil {
 			return "", err
 		}
-		return label + " (archive)", nil
+		return label + " (" + archiveLabel + ")", nil
 	}
 	host := u.Hostname()
 	if host == "code.google.com" && strings.HasPrefix(u.Path, "/archive/") {
@@ -651,19 +652,24 @@ func GetURLLabel(url string) (string, error) {
 	return host, nil
 }
 
-func unwrapArchive(u *urlpkg.URL) string {
+var bitbucketHgArchivePattern = regexp.MustCompile(`^https://bitbucket-archive\.softwareheritage\.org/projects/../([^/]+/[^/]+)\.html$`)
+
+func unwrapArchive(url string, u *urlpkg.URL) (string, string) {
 	host := u.Hostname()
 	if host == "web.archive.org" && strings.HasPrefix(u.Path, "/web/") {
 		path := strings.TrimPrefix(u.Path, "/web/")
 		if i := strings.IndexByte(path, '/'); i != -1 {
-			return path[i+1:]
+			return path[i+1:], "archive"
 		}
 	}
 	query := u.Query()
 	if host == "archive.softwareheritage.org" && query.Has("origin_url") {
-		return query.Get("origin_url")
+		return query.Get("origin_url"), "git archive"
 	}
-	return ""
+	if match := bitbucketHgArchivePattern.FindStringSubmatch(url); match != nil {
+		return "https://bitbucket.org/" + match[1], "hg archive"
+	}
+	return "", ""
 }
 
 func pathTrimPrefix(wantedHost, pathPrefix, host, path string) (string, bool) {
@@ -727,7 +733,7 @@ func GetRepoName(url string) string {
 	if err != nil {
 		return ""
 	}
-	if archivedURL := unwrapArchive(u); archivedURL != "" {
+	if archivedURL, _ := unwrapArchive(url, u); archivedURL != "" {
 		url = strings.TrimSuffix(archivedURL, "/")
 	}
 	_, _, repoName := GetGitURL(url)

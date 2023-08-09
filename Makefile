@@ -11,8 +11,8 @@ format: build_stamp
 
 build_stamp: $(PROJECTS) $(RUST_FORMAT_CRATE) tools/format/format.go $(GO_TOOLS_PACKAGE)
 	$(info Formatting projects)
-	@cargo run -q --bin corpus-format $(filter $(PROJECTS),$?)
-	@go run tools/format/format.go $(filter $(PROJECTS),$?)
+	$(if $(filter $(PROJECTS),$?),@cargo run -q --bin corpus-format $(filter $(PROJECTS),$?))
+	$(if $(filter $(PROJECTS),$?),@go run tools/format/format.go $(filter $(PROJECTS),$?))
 	@touch build_stamp
 
 .PHONY: licenses
