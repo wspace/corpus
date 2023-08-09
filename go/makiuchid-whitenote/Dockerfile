@@ -1,7 +1,7 @@
-FROM golang:1.20 AS builder
+FROM golang:1.21 AS builder
 
-WORKDIR /
-COPY whitenote /whitenote
+WORKDIR /whitenote
+COPY whitenote .
 WORKDIR /whitenote/wspace/cmd/wspace
 RUN CGO_ENABLED=0 go build
 

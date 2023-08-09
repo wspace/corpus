@@ -1,4 +1,8 @@
 services:
+  go:
+    image: wspace-corpus/go
+    build:
+      dockerfile: Dockerfile.go
   jars:
     image: wspace-corpus/jars
     build:
@@ -10,6 +14,39 @@ services:
   clojure_makenowjust:
     image: wspace-corpus/clojure/makenowjust
     build: clojure/makenowjust
+  go_135yshr-wspacego:
+    image: wspace-corpus/go/135yshr-wspacego
+    build: go/135yshr-wspacego
+  go_kinu:
+    image: wspace-corpus/go/kinu
+    build: go/kinu
+  go_makiuchid-whitenote:
+    image: wspace-corpus/go/makiuchid-whitenote
+    build: go/makiuchid-whitenote
+  go_pocke-gows:
+    image: wspace-corpus/go/pocke-gows
+    build: go/pocke-gows
+  go_qeedquan:
+    image: wspace-corpus/go/qeedquan
+    build: go/qeedquan
+  go_samuelpratt:
+    image: wspace-corpus/go/samuelpratt
+    build: go/samuelpratt
+  go_simomu:
+    image: wspace-corpus/go/simomu
+    build: go/simomu
+  go_technohippy:
+    image: wspace-corpus/go/technohippy
+    build: go/technohippy
+  go_tempxla-go-wspace:
+    image: wspace-corpus/go/tempxla-go-wspace
+    build: go/tempxla-go-wspace
+  go_thaliaarchi-nebula:
+    image: wspace-corpus/go/thaliaarchi-nebula
+    build: go/thaliaarchi-nebula
+  go_zorchenhimer:
+    image: wspace-corpus/go/zorchenhimer
+    build: go/zorchenhimer
   java_abhijitsharma:
     image: wspace-corpus/java/abhijitsharma
     build: java/abhijitsharma

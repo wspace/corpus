@@ -27,7 +27,7 @@ FROM wspace-corpus/scala/stephenpatrick AS scala_stephenpatrick
 
 FROM eclipse-temurin:20-jre-alpine
 
-WORKDIR /jars
+WORKDIR /wspace
 COPY --from=clojure_jmesyou-erasure     /erasure/erasure-2.0.jar                                        clojure/jmesyou-erasure/
 COPY --from=clojure_makenowjust         /whitespace-clj/whitespace-clj-0.1.0-SNAPSHOT.jar               clojure/makenowjust/
 COPY --from=java_abhijitsharma          /whitespace/whitespace-1.0.jar                                  java/abhijitsharma/
