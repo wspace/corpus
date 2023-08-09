@@ -1,0 +1,43 @@
+From 1f084dafc127b81231ac11930d35b059ee0752bd Mon Sep 17 00:00:00 2001
+From: Thalia Archibald <thalia@archibald.dev>
+Date: Wed, 9 Aug 2023 01:35:21 -0600
+Subject: [PATCH] Fix double free and missing frees
+
+---
+ test.c | 6 +++++-
+ 1 file changed, 5 insertions(+), 1 deletion(-)
+
+diff --git a/test.c b/test.c
+index 8632c07..575c78a 100644
+--- a/test.c
++++ b/test.c
+@@ -63,7 +63,7 @@ void test_list()
+     else
+         printf("Opt dosen't have a value\n");
+ 
+-    int_list_destroy(list);
++    int_list_destroy(list2);
+ 
+     U8List* u8list = u8_list_create(6);
+     u8_list_append(u8list, 'H');
+@@ -72,6 +72,8 @@ void test_list()
+     u8_list_append(u8list, '!');
+     printf("U8List as string: %s\n", u8_list_get_string(u8list));
+ 
++    u8_list_destroy(u8list);
++
+     List* generic_list = list_create(3, sizeof(struct test_struct));
+ 
+     struct test_struct s1 = {.val = 54, .c = 'G', .s="test1"};
+@@ -91,6 +93,8 @@ void test_list()
+     struct test_struct result = *(struct test_struct*)optptr.value;
+     printf("%s\n", result.s);
+     printf("TESTING DONE LIST\n");
++
++    list_destroy(generic_list);
+ }
+ 
+ void test_linkedlist()
+-- 
+2.41.0
+

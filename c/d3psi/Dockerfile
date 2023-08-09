@@ -1,9 +1,9 @@
 FROM alpine AS builder
 
-RUN apk add --no-cache cmake make gcc g++
+RUN apk add --no-cache gcc musl-dev
 WORKDIR /whitespace-interpreter
 COPY whitespace-interpreter/src .
-RUN gcc -O3 -static -o interpreter *.c
+RUN gcc -O3 -g -static -o interpreter *.c
 
 FROM scratch
 

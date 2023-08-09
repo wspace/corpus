@@ -1,10 +1,10 @@
 FROM alpine AS builder
 
-RUN apk add --no-cache make gcc musl-dev perl
+RUN apk add --no-cache gcc musl-dev perl
 WORKDIR /ws
 COPY ws .
-RUN perl parsegen.pl parse.def > gencode.c
-RUN make
+RUN perl parsegen.pl parse.def > gencode.c && \
+    gcc -O3 -g -static -o wspace parse.c vm.c wspace.c
 
 FROM scratch
 

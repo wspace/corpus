@@ -1,13 +1,37 @@
 services:
-  go:
-    image: wspace-corpus/go
+  static:
+    image: wspace-corpus/static
     build:
-      dockerfile: Dockerfile.go
+      dockerfile: Dockerfile.static
   jars:
     image: wspace-corpus/jars
     build:
       dockerfile: Dockerfile.jars
 
+  c_bvisness:
+    image: wspace-corpus/c/bvisness
+    build: c/bvisness
+  c_d3psi:
+    image: wspace-corpus/c/d3psi
+    build: c/d3psi
+  c_hogelog:
+    image: wspace-corpus/c/hogelog
+    build: c/hogelog
+  c_koturn:
+    image: wspace-corpus/c/koturn
+    build: c/koturn
+  c_kspalaiologos-asm2ws:
+    image: wspace-corpus/c/kspalaiologos-asm2ws
+    build: c/kspalaiologos-asm2ws
+  c_manarice-lime:
+    image: wspace-corpus/c/manarice-lime
+    build: c/manarice-lime
+  c_meth0dz:
+    image: wspace-corpus/c/meth0dz
+    build: c/meth0dz
+  c_rdebath:
+    image: wspace-corpus/c/rdebath
+    build: c/rdebath
   clojure_jmesyou-erasure:
     image: wspace-corpus/clojure/jmesyou-erasure
     build: clojure/jmesyou-erasure
