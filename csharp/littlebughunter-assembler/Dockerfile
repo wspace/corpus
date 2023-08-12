@@ -2,7 +2,7 @@ FROM mono AS builder
 
 WORKDIR /WhitespaceAssembler
 COPY WhitespaceAssembler .
-RUN msbuild /p:Configuration=Release
+RUN msbuild -p:Configuration=Release
 
 FROM mono:slim
 

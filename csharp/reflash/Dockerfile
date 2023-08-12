@@ -3,7 +3,7 @@ FROM mono AS builder
 WORKDIR /WhiteSpaceInterpreter
 COPY WhiteSpaceInterpreter .
 WORKDIR /WhiteSpaceInterpreter/WhiteSpaceInterpretator
-RUN msbuild /p:Configuration=Release
+RUN msbuild -p:Configuration=Release
 
 FROM mono:slim
 

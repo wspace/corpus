@@ -2,7 +2,7 @@ FROM mono AS builder
 
 WORKDIR /WhitespaceInterpreter
 COPY projectOne/The-Code/WhitespaceInterpreter .
-RUN msbuild /p:Configuration=Release
+RUN msbuild -p:Configuration=Release
 
 FROM mono:slim
 
