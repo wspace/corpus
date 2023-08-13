@@ -1,3 +1,12 @@
+use std::process;
+
+static USAGE: &str = "Usage: wsbox <project> <command> [args]...";
+
 fn main() {
-    println!("Hello, world!");
+    todo!();
+}
+
+fn usage() {
+    eprintln!("{}", USAGE);
+    process::exit(2);
 }
