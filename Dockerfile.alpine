@@ -1,0 +1,8 @@
+FROM wspace-corpus/c/remigascou as c_remigascou
+
+FROM alpine
+
+# Required by c/remigascou
+RUN apk add --no-cache flex-libs
+WORKDIR /wspace
+COPY --from=c_remigascou /wscc /decompiler c/remigascou/

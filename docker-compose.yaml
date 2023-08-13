@@ -1,4 +1,8 @@
 services:
+  alpine:
+    image: wspace-corpus/alpine
+    build:
+      dockerfile: Dockerfile.alpine
   static:
     image: wspace-corpus/static
     build:
@@ -32,6 +36,9 @@ services:
   c_rdebath:
     image: wspace-corpus/c/rdebath
     build: c/rdebath
+  c_remigascou:
+    image: wspace-corpus/c/remigascou
+    build: c/remigascou
   clojure_jmesyou-erasure:
     image: wspace-corpus/clojure/jmesyou-erasure
     build: clojure/jmesyou-erasure

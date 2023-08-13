@@ -4,7 +4,7 @@
   "authors": ["Rémi Gascou"],
   "license": "none",
   "languages": ["C", "Yacc", "Lex"],
-  "tags": ["language", "assembler", "disassembler", "syntax highlighting", "programs"],
+  "tags": ["assembler", "disassembler", "syntax highlighting", "programs"],
   "date": "2020-03-13 12:59:01 +0100",
   "spec_version": "0.2",
   "source": [
@@ -48,34 +48,13 @@
     { "path": "testprograms/ws/full.ws" },
     { "path": "testprograms/ws/labels.ws" },
     { "path": "testprograms/ws/tes01.ws" },
-    { "path": "testprograms/wsasm/test.wsasm" },
-    { "path": "lexxyacc/asmtestcases/mini1.asm" },
-    { "path": "lexxyacc/asmtestcases/mini2.asm" },
-    { "path": "lexxyacc/asmtestcases/mini3.asm" },
-    { "path": "lexxyacc/asmtestcases/mini4.asm" },
-    { "path": "lexxyacc/asmtestcases/mini5.asm" },
-    { "path": "lexxyacc/asmtestcases/mini6.asm" },
-    { "path": "lexxyacc/testcases/bad_printf.c" },
-    { "path": "lexxyacc/testcases/bad_var_declaration.c" },
-    { "path": "lexxyacc/testcases/good_miniprog.c" },
-    { "path": "lexxyacc/testcases/good_miniprog0.c" },
-    { "path": "lexxyacc/testcases/good_miniprog1.c" },
-    { "path": "lexxyacc/testcases/good_miniprog2.c" },
-    { "path": "lexxyacc/testcases/good_miniprog3.c" },
-    { "path": "lexxyacc/testcases/good_miniprog4.c" },
-    { "path": "lexxyacc/testcases/good_miniprog5.c" },
-    { "path": "lexxyacc/testcases/good_miniprog6.c" },
-    { "path": "lexxyacc/testcases/good_printf_int.c" },
-    { "path": "lexxyacc/testcases/good_printf_string.c" },
-    { "path": "lexxyacc/testcases/good_var_declaration.c" }
+    { "path": "testprograms/wsasm/test.wsasm" }
   ],
-  "build_errors": "Yacc syntax errors",
   "commands": [
-    { "type": "assembler", "bin": "dev/bin/compiler", "usage": "< <file>" },
+    { "type": "assembler", "bin": "dev/bin/wscc", "usage": "< <file>" },
     { "type": "disassembler", "bin": "dev/bin/decompiler", "usage": "< <file>" },
-    { "type": "language compiler", "bin": "lexxyacc/compiler/compiler" },
     { "type": "syntax highlighter", "bin": "dev/beautify_ws.sh", "usage": "<file>" },
     { "type": "syntax highlighter", "bin": "dev/beautify_wsasm.sh", "usage": "<file>" }
   ],
-  "todo": "Figure out how to build and run it and better document assembly dialect"
+  "notes": "lexxyacc/compiler is seemingly incomplete and is missing local headers"
 }
