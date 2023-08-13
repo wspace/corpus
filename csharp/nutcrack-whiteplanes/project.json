@@ -4,7 +4,7 @@
   "authors": ["Takuya Katsurada"],
   "license": "MIT",
   "languages": ["C#"],
-  "tags": ["interpreter"],
+  "tags": ["interpreter", "programs"],
   "date": "2016-04-13 16:33:17 +0900",
   "spec_version": "0.3",
   "source": [
@@ -17,6 +17,7 @@
   "packages": [
     { "name": "whiteplanes", "registry": "NuGet", "url": "https://www.nuget.org/packages/whiteplanes/" }
   ],
+  "whitespace": { "extension": "ws" },
   "assembly": {
     "mnemonics": {
       "push": "Push",
@@ -45,5 +46,13 @@
       "readi": "Input"
     },
     "usage": ["enum"]
-  }
+  },
+  "programs": [
+    { "path": "Whiteplanes.Test/Resources/Input.ws" },
+    { "path": "Whiteplanes.Test/Resources/HelloWorld.ws" },
+    { "path": "Whiteplanes.Test/Resources/HeapControl.ws" },
+    { "path": "Whiteplanes.Test/Resources/FlowControl.ws" },
+    { "path": "Whiteplanes.Test/Resources/Count.ws" }
+  ],
+  "build_errors": "No entrypoint"
 }

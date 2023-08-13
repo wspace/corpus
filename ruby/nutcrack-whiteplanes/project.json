@@ -4,7 +4,7 @@
   "authors": ["Takuya Katsurada"],
   "license": "MIT",
   "languages": ["Ruby"],
-  "tags": ["interpreter"],
+  "tags": ["interpreter", "programs"],
   "date": "2016-04-22 01:18:16 +0900",
   "spec_version": "0.3",
   "source": [
@@ -14,6 +14,7 @@
     "https://github.com/thaliaarchi/repo-archival/blob/main/scripts/wspace/nutcrack-whiteplanes.sh"
   ],
   "submodules": [{ "path": "whiteplanes.rb", "url": "https://github.com/wspace/nutcrack-whiteplanes.rb" }],
+  "whitespace": { "extension": "ws" },
   "assembly": {
     "mnemonics": {
       "push": "push",
@@ -42,5 +43,13 @@
       "readi": "iin"
     },
     "usage": ["enum"]
-  }
+  },
+  "programs": [
+    { "path": "spec/whiteplanes/etc/count.ws" },
+    { "path": "spec/whiteplanes/etc/flow_control.ws" },
+    { "path": "spec/whiteplanes/etc/heap_control.ws" },
+    { "path": "spec/whiteplanes/etc/hello_world.ws" },
+    { "path": "spec/whiteplanes/etc/input.ws" }
+  ],
+  "build_errors": "No entrypoint"
 }

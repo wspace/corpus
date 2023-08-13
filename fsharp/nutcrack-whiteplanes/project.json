@@ -4,7 +4,7 @@
   "authors": ["Takuya Katsurada"],
   "license": "MIT",
   "languages": ["F#"],
-  "tags": ["interpreter"],
+  "tags": ["interpreter", "programs"],
   "date": "2016-04-29 18:39:40 +0900",
   "spec_version": "0.3",
   "source": [
@@ -14,6 +14,7 @@
     "https://github.com/thaliaarchi/repo-archival/blob/main/scripts/wspace/nutcrack-whiteplanes.sh"
   ],
   "submodules": [{ "path": "whiteplanes.fs", "url": "https://github.com/wspace/nutcrack-whiteplanes.fs" }],
+  "whitespace": { "extension": "ws" },
   "assembly": {
     "mnemonics": {
       "push": "Push",
@@ -42,5 +43,13 @@
       "readi": "Iin"
     },
     "usage": ["enum"]
-  }
+  },
+  "programs": [
+    { "path": "Whiteplanes.Test/Count.ws" },
+    { "path": "Whiteplanes.Test/FlowControl.ws" },
+    { "path": "Whiteplanes.Test/HeapControl.ws" },
+    { "path": "Whiteplanes.Test/HelloWorld.ws" },
+    { "path": "Whiteplanes.Test/Input.ws" }
+  ],
+  "build_errors": "No entrypoint"
 }

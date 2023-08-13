@@ -13,5 +13,6 @@
     "https://wspace.github.io/nutcrack-whiteplanes.github.io/",
     "https://github.com/thaliaarchi/repo-archival/blob/main/scripts/wspace/nutcrack-whiteplanes.sh"
   ],
-  "submodules": [{ "path": "whiteplanes.r", "url": "https://github.com/wspace/nutcrack-whiteplanes.r" }]
+  "submodules": [{ "path": "whiteplanes.r", "url": "https://github.com/wspace/nutcrack-whiteplanes.r" }],
+  "build_errors": "No entrypoint"
 }

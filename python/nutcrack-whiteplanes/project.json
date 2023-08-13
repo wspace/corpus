@@ -4,7 +4,7 @@
   "authors": ["Takuya Katsurada"],
   "license": "MIT",
   "languages": ["Python"],
-  "tags": ["interpreter"],
+  "tags": ["interpreter", "programs"],
   "date": "2016-04-22 01:19:35 +0900",
   "spec_version": "0.3",
   "source": [
@@ -15,6 +15,7 @@
   ],
   "submodules": [{ "path": "whiteplanes.py", "url": "https://github.com/wspace/nutcrack-whiteplanes.py" }],
   "packages": [{ "name": "whiteplanes", "registry": "PyPI", "url": "https://pypi.org/project/whiteplanes/" }],
+  "whitespace": { "extension": "ws" },
   "assembly": {
     "mnemonics": {
       "push": "Push",
@@ -44,7 +45,12 @@
     },
     "usage": ["enum"]
   },
-  "run_errors": "No entrypoint",
-  "commands": [{ "type": "interpreter" }],
-  "notes": "GitHub repo and GitHub Pages site are offline. Date from earliest file in archive."
+  "programs": [
+    { "path": "test/etc/count.ws" },
+    { "path": "test/etc/flow_control.ws" },
+    { "path": "test/etc/heap_control.ws" },
+    { "path": "test/etc/hello_world.ws" },
+    { "path": "test/etc/input.ws" }
+  ],
+  "run_errors": "No entrypoint"
 }

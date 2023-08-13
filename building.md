@@ -63,10 +63,12 @@ Projects that can be built with Docker:
 - csharp/meeees
 - csharp/nicolasff-spacesharp
 - csharp/north15-projectone: The Carbon driver has not been ported to 64-bit, so very few parts of Windows.Forms work properly
+- csharp/nutcrack-whiteplanes: No entrypoint
 - csharp/reflash: Mono does not implement WPF APIs
 - csharp/rolisoft-esoteric
 - csharp/ryzngard-dotnot: CSharpGeneratorDriver does not contain a constructor that takes 3 arguments
 - erlang/derek121-mrwhite
+- fsharp/nutcrack-whiteplanes: No entrypoint
 - go/135yshr-wspacego
 - go/kinu
 - go/makiuchid-whitenote
@@ -110,6 +112,7 @@ Projects that can be built with Docker:
 - javascript/loklaan-zerowidth-lang
 - javascript/msucorey-codewars: Needs Codewars entrypoint
 - javascript/namhle-codewars: Needs Codewars entrypoint
+- javascript/nutcrack-whiteplanes: No entrypoint
 - javascript/rumpl
 - javascript/susisu
 - javascript/syntaqx-puzzles: Needs Codewars entrypoint
@@ -118,6 +121,7 @@ Projects that can be built with Docker:
 - javascript/vii5ard-whitelips
 - javascript/wdalmut
 - jq/thaliaarchi-wsjq
+- julia/nutcrack-whiteplanes: No entrypoint
 - kotlin/ze-space
 - lolcode/0x0dea
 - lua/cj5518
@@ -132,6 +136,7 @@ Projects that can be built with Docker:
 - perl/skabob42-madness
 - php/dcode: Source unavailable
 - php/nobody1986
+- php/nutcrack-whiteplanes: No entrypoint
 - python/0x55aa
 - python/ad9000-evanesco
 - python/adapap
@@ -184,6 +189,7 @@ Projects that can be built with Docker:
 - python/victornuzhniy: Needs Codewars entrypoint
 - python/wasabili
 - python/yasn77-whitepy
+- r/nutcrack-whiteplanes: No entrypoint
 - rebol/hostilefork: Bootstrapping issues
 - ruby/alesiong
 - ruby/angelp57
@@ -192,6 +198,7 @@ Projects that can be built with Docker:
 - ruby/dwayne
 - ruby/mame-quine-relay
 - ruby/nishiwakki
+- ruby/nutcrack-whiteplanes: No entrypoint
 - ruby/pocke-akaza
 - ruby/pocke-self-hosted
 - ruby/shimo-yukicoder
@@ -220,6 +227,7 @@ Projects that can be built with Docker:
 - scala/polyglotpiglet-whitespacing: The `Input` type (a trait?) is not defined and may have been removed in a later release
 - scala/sderosiaux
 - scala/stephenpatrick
+- swift/nutcrack-whiteplanes: No entrypoint
 - typescript/davramenko-codewars: Needs Codewars entrypoint
 - typescript/eduardoborsa-codewars: Needs Codewars entrypoint
 - typescript/fy0u11: Needs Codewars entrypoint
@@ -232,13 +240,11 @@ Building status of individual executables:
 
 - ⚠️ brainfuck/thaliaarchi-wsbf/ws.bf
 - ⚠️ coffeescript/ehrlichb/*unspecified*: `grunt` Unclear how to run
-- ❌ csharp/nutcrack-whiteplanes
 - ❌ docker/baekjoon-onlinejudge
 - ❌ docker/bensuperpc
 - ❌ docker/hakatashi-esolang-box
 - ❌ elisp/lmitchell
 - ❌ elixir/quinnwilton
-- ❌ fsharp/nutcrack-whiteplanes
 - ⚠️ haskell/brainbush-tomato/wspace: `make` Needs changes for latest Haskell
 - ⚠️ haskell/burghard-wsa/trans
 - ❌ haskell/d3psi-spacey
@@ -259,11 +265,9 @@ Building status of individual executables:
 - ❌ javascript/luilak-ws2js
 - ❌ javascript/macocha-whitespacer
 - ❌ javascript/naokikp-wsi
-- ❌ javascript/nutcrack-whiteplanes
 - ❌ javascript/pvdz-significant-whitespace
 - ❌ javascript/tranbrian10-generator
 - ⚠️ julia/goropikari-whitespaces/*unspecified*
-- ❌ julia/nutcrack-whiteplanes
 - ⚠️ masm/jarsp-wsint/wsint: Requires Visual Studio
 - nasm/ryzheboka:
   - wsCompiler.py
@@ -278,17 +282,13 @@ Building status of individual executables:
 - php/johankj/whitespace.php
 - ❌ php/jseidl-wcc
 - php/mattparker/src/PHPWhiteSpace.php
-- ❌ php/nutcrack-whiteplanes
 - ❌ python/cybis-hapyli
 - python/lifthrasiir-esotope-ws/esotope-ws
 - ⚠️ python/marktraceur-redlandside/main.py
 - ⚠️ python/res0001-trans32/trans32.py: No entrypoint
 - r/bmazoure/R/whitespace.R
-- ❌ r/nutcrack-whiteplanes
-- ❌ ruby/nutcrack-whiteplanes
 - ❌ scheme/athos-white-scheme
 - ❌ scheme/niyarin
-- ❌ swift/nutcrack-whiteplanes
 - ⚠️ textmate/nixinova/grammars/whitespace.yaml-tmLanguage
 - ❌ textmate/thaliaarchi-linguist
 - ❌ textmate/veniversum
