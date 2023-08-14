@@ -3,11 +3,9 @@ FROM alpine AS builder
 RUN apk add --no-cache make gcc musl-dev
 WORKDIR /wspacegen
 COPY wspacegen .
-RUN make
+RUN make CFLAGS='-O3 -g -static'
 
 FROM scratch
 
-COPY --from=builder /wspacegen/wspacegen /
-COPY --from=builder /wspacegen/wsdbg /
-COPY --from=builder /wspacegen/wsi /
+COPY --from=builder /wspacegen/wspacegen /wspacegen/wsdbg /wspacegen/wsi /
 ENTRYPOINT ["/wspacegen"]

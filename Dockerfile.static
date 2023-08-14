@@ -6,6 +6,11 @@ FROM wspace-corpus/c/kspalaiologos-asm2ws AS c_kspalaiologos-asm2ws
 FROM wspace-corpus/c/manarice-lime AS c_manarice-lime
 FROM wspace-corpus/c/meth0dz AS c_meth0dz
 FROM wspace-corpus/c/rdebath AS c_rdebath
+FROM wspace-corpus/c/rispoli-txt2ws AS c_rispoli-txt2ws
+FROM wspace-corpus/c/sandeep023 AS c_sandeep023
+FROM wspace-corpus/c/siritori AS c_siritori
+FROM wspace-corpus/c/stellwag-wspacegen AS c_stellwag-wspacegen
+FROM wspace-corpus/c/subgeniuskitty-vvhitespace AS c_subgeniuskitty-vvhitespace
 FROM wspace-corpus/go/135yshr-wspacego AS go_135yshr-wspacego
 FROM wspace-corpus/go/kinu AS go_kinu
 FROM wspace-corpus/go/makiuchid-whitenote AS go_makiuchid-whitenote
@@ -21,23 +26,28 @@ FROM wspace-corpus/go/zorchenhimer AS go_zorchenhimer
 FROM scratch
 
 WORKDIR /wspace
-COPY --from=c_bvisness              /whitespace     c/bvisness/
-COPY --from=c_d3psi                 /interpreter    c/d3psi/
-COPY --from=c_hogelog               /wspace         c/hogelog/
-COPY --from=c_koturn                /whitespace.out c/koturn/
-COPY --from=c_kspalaiologos-asm2ws  /wsi            c/kspalaiologos-asm2ws/
-COPY --from=c_manarice-lime         /lwsvm /lwsa    c/manarice-lime/
-COPY --from=c_meth0dz               /whitespace     c/meth0dz/
-# COPY --from=c_rdebath             /wsc            c/rdebath/
-COPY --from=c_rdebath               /ws2c /wsa      c/rdebath/
-COPY --from=go_135yshr-wspacego     /wspacego       go/135yshr-wspacego/
-COPY --from=go_kinu                 /whitespace     go/kinu/
-COPY --from=go_makiuchid-whitenote  /wspace         go/makiuchid-whitenote/
-COPY --from=go_pocke-gows           /gows           go/pocke-gows/
-COPY --from=go_qeedquan             /whitespace     go/qeedquan/
-COPY --from=go_samuelpratt          /whitespace-go  go/samuelpratt/
-COPY --from=go_simomu               /ws             go/simomu/
-COPY --from=go_technohippy          /go-whitespace  go/technohippy/
-COPY --from=go_tempxla-go-wspace    /go-wspace      go/tempxla-go-wspace/
-# COPY --from=go_thaliaarchi-nebula /nebula         go/thaliaarchi-nebula/
-COPY --from=go_zorchenhimer         /wi             go/zorchenhimer/
+COPY --from=c_bvisness                   /whitespace                          c/bvisness/
+COPY --from=c_d3psi                      /interpreter                         c/d3psi/
+COPY --from=c_hogelog                    /wspace                              c/hogelog/
+COPY --from=c_koturn                     /whitespace.out                      c/koturn/
+COPY --from=c_kspalaiologos-asm2ws       /wsi                                 c/kspalaiologos-asm2ws/
+COPY --from=c_manarice-lime              /lwsvm /lwsa                         c/manarice-lime/
+COPY --from=c_meth0dz                    /whitespace                          c/meth0dz/
+# COPY --from=c_rdebath                  /wsc                                 c/rdebath/
+COPY --from=c_rdebath                    /ws2c /wsa                           c/rdebath/
+COPY --from=c_rispoli-txt2ws             /txt2ws                              c/rispoli-txt2ws/
+COPY --from=c_sandeep023                 /white                               c/sandeep023/
+COPY --from=c_siritori                   /wsvm /wscc /wsas /ws_trans /wb_dump c/siritori/
+COPY --from=c_stellwag-wspacegen         /wspacegen /wsdbg /wsi               c/stellwag-wspacegen/
+COPY --from=c_subgeniuskitty-vvhitespace /vvc /vvi                            c/subgeniuskitty-vvhitespace/
+COPY --from=go_135yshr-wspacego          /wspacego                            go/135yshr-wspacego/
+COPY --from=go_kinu                      /whitespace                          go/kinu/
+COPY --from=go_makiuchid-whitenote       /wspace                              go/makiuchid-whitenote/
+COPY --from=go_pocke-gows                /gows                                go/pocke-gows/
+COPY --from=go_qeedquan                  /whitespace                          go/qeedquan/
+COPY --from=go_samuelpratt               /whitespace-go                       go/samuelpratt/
+COPY --from=go_simomu                    /ws                                  go/simomu/
+COPY --from=go_technohippy               /go-whitespace                       go/technohippy/
+COPY --from=go_tempxla-go-wspace         /go-wspace                           go/tempxla-go-wspace/
+# COPY --from=go_thaliaarchi-nebula      /nebula                              go/thaliaarchi-nebula/
+COPY --from=go_zorchenhimer              /wi                                  go/zorchenhimer/

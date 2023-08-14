@@ -1,6 +1,6 @@
 FROM alpine AS builder
 
-RUN apk add --no-cache make gcc musl-dev flex-dev bison
+RUN apk add --no-cache gcc musl-dev flex-dev bison
 WORKDIR /whitespace
 COPY whitespace .
 WORKDIR /whitespace/dev

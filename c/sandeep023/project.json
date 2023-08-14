@@ -17,6 +17,12 @@
     ],
     "extension": "ws"
   },
+  "programs": [
+    { "path": "addition.ws" },
+    { "path": "arthemtic.ws" },
+    { "path": "basic.ws" },
+    { "path": "helloworld.ws" }
+  ],
   "commands": [{ "type": "interpreter", "bin": "white", "usage": "", "input": "basic.ws" }],
   "notes": "Has git conflict markers remaining in source and all programs are malformed"
 }

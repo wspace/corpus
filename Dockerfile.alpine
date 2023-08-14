@@ -1,8 +1,12 @@
 FROM wspace-corpus/c/remigascou as c_remigascou
+FROM wspace-corpus/c/ssiegl-wsdebug AS c_ssiegl-wsdebug
 
 FROM alpine
 
-# Required by c/remigascou
-RUN apk add --no-cache flex-libs
+# Dependencies:
+# - c/remigascou: flex-libs
+# - c/ssiegl-wsdebug: gmp readline
+RUN apk add --no-cache flex-libs gmp readline
 WORKDIR /wspace
-COPY --from=c_remigascou /wscc /decompiler c/remigascou/
+COPY --from=c_remigascou     /wscc /decompiler c/remigascou/
+COPY --from=c_ssiegl-wsdebug /wsdebug /wsi     c/ssiegl-wsdebug/

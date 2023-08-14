@@ -21,7 +21,7 @@ Projects that can be built with Docker:
 - c/stellwag-wspacegen
 - c/strangepan-i-c-whitespace
 - c/subgeniuskitty-vvhitespace
-- c/tejaskasetty: symtab.h: multiple definition of `symtable`; ld: cannot find -ll
+- c/tejaskasetty: symtab.h: multiple definition of `symtable`
 - c/threeifbywhiskey-blacktime
 - c/threeifbywhiskey-satan
 - c/zackeua

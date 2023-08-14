@@ -3,7 +3,7 @@ FROM alpine AS builder
 RUN apk add --no-cache make gcc musl-dev
 WORKDIR /txt2ws
 COPY txt2ws .
-RUN make
+RUN gcc -O3 -g -static -o txt2ws txt2ws.c
 
 FROM scratch
 

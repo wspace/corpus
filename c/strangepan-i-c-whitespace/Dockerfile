@@ -1,9 +1,9 @@
 FROM alpine AS builder
 
-RUN apk add --no-cache make gcc musl-dev
+RUN apk add --no-cache gcc musl-dev
 WORKDIR /I_C_Whitespace
 COPY I_C_Whitespace .
-RUN make
+RUN gcc -O3 -g -static -std=c99 -o whitespace *.c
 
 FROM scratch
 

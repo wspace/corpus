@@ -39,6 +39,24 @@ services:
   c_remigascou:
     image: wspace-corpus/c/remigascou
     build: c/remigascou
+  c_rispoli-txt2ws:
+    image: wspace-corpus/c/rispoli-txt2ws
+    build: c/rispoli-txt2ws
+  c_sandeep023:
+    image: wspace-corpus/c/sandeep023
+    build: c/sandeep023
+  c_siritori:
+    image: wspace-corpus/c/siritori
+    build: c/siritori
+  c_ssiegl-wsdebug:
+    image: wspace-corpus/c/ssiegl-wsdebug
+    build: c/ssiegl-wsdebug
+  c_stellwag-wspacegen:
+    image: wspace-corpus/c/stellwag-wspacegen
+    build: c/stellwag-wspacegen
+  c_subgeniuskitty-vvhitespace:
+    image: wspace-corpus/c/subgeniuskitty-vvhitespace
+    build: c/subgeniuskitty-vvhitespace
   clojure_jmesyou-erasure:
     image: wspace-corpus/clojure/jmesyou-erasure
     build: clojure/jmesyou-erasure
