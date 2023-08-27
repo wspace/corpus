@@ -134,6 +134,10 @@ TODO:
 - RubyGems (Ruby): [whitespace](https://rubygems.org/search?query=whitespace)
 - Swift Package Registry (Swift): [whitespace](https://swiftpackageregistry.com/search?term=whitespace)
 
+TODO:
+
+- FreeBSD Ports: [lang/whitespace](https://www.freshports.org/lang/whitespace)
+
 ## Internet Archive
 
 - [burghard.info](https://web.archive.org/web/20110911114338/http://www.burghard.info/Code/Whitespace/)
