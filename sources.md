@@ -92,6 +92,8 @@
 - Launchpad: [whitespace](https://launchpad.net/projects?text=whitespace)
 - Codeberg: [whitespace](https://codeberg.org/explore/repos?sort=recentupdate&q=whitespace)
 - berliOS: [BackupTheBerlios](https://github.com/BackupTheBerlios)
+- GoDotNet: [shutdown](https://visualstudiomagazine.com/blogs/desmond-file/2007/02/gotdotnet-shuttered.aspx)
+- SSCLI.NET: [shutdown](https://web.archive.org/web/20050920154459/http://mailserver.di.unipi.it/pipermail/dotnet-sscli/msg00260.html)
 - Software Heritage archive: [whitespace interpreter](https://archive.softwareheritage.org/browse/search/?q=whitespace+interpreter&with_visit=true&with_content=true&search_metadata=true)
 
 TODO:
@@ -107,7 +109,6 @@ TODO:
     [rsvndump](https://rsvndump.sourceforge.io/)
 - Google Code:
     [grass-mud-horse (SVN)](https://code.google.com/archive/p/grass-mud-horse/)
-- [Software Heritage archive](https://archive.softwareheritage.org/)
 
 ## Package registries
 
@@ -138,21 +139,38 @@ TODO:
 
 - FreeBSD Ports: [lang/whitespace](https://www.freshports.org/lang/whitespace)
 
-## Internet Archive
+## Web archives
 
-- [burghard.info](https://web.archive.org/web/20110911114338/http://www.burghard.info/Code/Whitespace/)
-- [hapyli.webs.com](https://web.archive.org/web/20110212015726/http://hapyli.webs.com:80/)
-- [yagni.com](https://web.archive.org/web/20120417161917/http://yagni.com:80/whitespace/index.html)
-- [wsdebug.berlios.de](https://web.archive.org/web/20041031040027/http://wsdebug.berlios.de:80/)
+- Internet Archive
+  - [burghard.info](https://web.archive.org/web/20110911114338/http://www.burghard.info/Code/Whitespace/)
+  - [hapyli.webs.com](https://web.archive.org/web/20110212015726/http://hapyli.webs.com:80/)
+  - [yagni.com](https://web.archive.org/web/20120417161917/http://yagni.com:80/whitespace/index.html)
+  - [wsdebug.berlios.de](https://web.archive.org/web/20041031040027/http://wsdebug.berlios.de:80/)
+  - CompSoc:
+      [projects](https://web.archive.org/web/20161209210119/http://compsoc.dur.ac.uk/content/projects/),
+      [summer-go](https://web.archive.org/web/20070825211035/http://compsoc.dur.ac.uk/archives/summer-go/),
+      [Sunday-pubs](https://web.archive.org/web/20070825211126/http://compsoc.dur.ac.uk/archives/sunday-pubs/)
+  - Chris Morris:
+      [personal CompSoc page](https://web.archive.org/web/20130727180904/http://compsoc.dur.ac.uk/~cim/),
+      [SourceForge profile](https://sourceforge.net/u/dcl0cim/profile/)
+  - Benjamin Lerman:
+      [Whitespace interpreter in Whitespace from C-like language](https://web.archive.org/web/20141011193200/http://compsoc.dur.ac.uk/archives/whitespace/2003-April/000016.html),
+      [quines](https://web.archive.org/web/20150717003429/http://compsoc.dur.ac.uk:80/whitespace/contrib.php),
+      [possible university profile](https://web.archive.org/web/20030421090406/http://www.liafa.jussieu.fr/web9/equiprech/fichepers_fr.php?id=67),
+      [possible research profile](https://www.researchgate.net/scientific-contributions/Benjamin-Lerman-19515093)
+  - Dan Walrond: [CompSoc talk](https://web.archive.org/web/20090430124813/http://compsoc.dur.ac.uk/events/info/110/)
+- UK Web Archive:
+    [whitespace programming language](https://www.webarchive.org.uk/en/ukwa/search?text=whitespace+programming+language&search_location=full_text&reset_filters=false&content_type=Web+Page)
 
 TODO:
 
-- Durham CompSoc:
-    [download](https://web.archive.org/web/20150717140342/http://compsoc.dur.ac.uk:80/whitespace/download.php),
-    [mailing list](https://web.archive.org/web/20141011193126/http://compsoc.dur.ac.uk/archives/whitespace/)
-- [mirror.ox.ac.uk](https://web.archive.org/web/20030414003351/http://mirror.ox.ac.uk:80/Mirrors/whitespace/)
-- [dur.ac.uk/d.j.walrond](https://web.archive.org/web/20030608044924/http://www.dur.ac.uk:80/d.j.walrond/whitespace/)
-- [Debian packages](https://github.com/thaliaarchi/repo-archival/blob/main/scripts/wspace/stribb-debian/archive.sh)
+- Internet Archive
+  - Durham CompSoc:
+      [download](https://web.archive.org/web/20150717140342/http://compsoc.dur.ac.uk:80/whitespace/download.php),
+      [mailing list](https://web.archive.org/web/20141011193126/http://compsoc.dur.ac.uk/archives/whitespace/)
+  - [mirror.ox.ac.uk](https://web.archive.org/web/20030414003351/http://mirror.ox.ac.uk:80/Mirrors/whitespace/)
+  - [dur.ac.uk/d.j.walrond](https://web.archive.org/web/20030608044924/http://www.dur.ac.uk:80/d.j.walrond/whitespace/)
+  - [Debian packages](https://github.com/thaliaarchi/repo-archival/blob/main/scripts/wspace/stribb-debian/archive.sh)
 
 ## Wikis
 
@@ -258,4 +276,5 @@ TODO:
     [whitespace (from:edwinbrady)](https://twitter.com/search?q=whitespace%20(from%3Aedwinbrady)),
     [whitespace (to:edwinbrady)](https://twitter.com/search?q=whitespace%20(to%3Aedwinbrady)),
     [whitespace @edwinbrady](https://twitter.com/search?q=whitespace%20(%40edwinbrady))
+- Mastodon: [@edwinb@types.pl](https://types.pl/@edwinb)
 - Hacker News

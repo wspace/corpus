@@ -1,0 +1,16 @@
+{
+  "id": "csharp/cisterni-wspcnet",
+  "name": "wspcnet",
+  "authors": ["Antonio (cisterni)"],
+  "license": "unknown",
+  "languages": ["C#"],
+  "tags": ["compiler"],
+  "date": "2003-08-12 19:58:31 +0200",
+  "spec_version": "unknown",
+  "source": [
+    "https://web.archive.org/web/20041127134333/http://wspcnet.sscli.net:80/",
+    "https://web.archive.org/web/20141011193151/http://compsoc.dur.ac.uk/archives/whitespace/2003-October/000026.html"
+  ],
+  "source_unavailable": true,
+  "notes": "When SSCLI.NET was shutdown, everything was said to be backed up and maintainers were contacted, to have projects migrated, but neither GoDotNet Workspaces nor SourceForge seem to have a project with the name wspcnet (https://web.archive.org/web/20050920154459/http://mailserver.di.unipi.it/pipermail/dotnet-sscli/msg00260.html)."
+}

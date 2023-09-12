@@ -56,6 +56,7 @@ Projects that can be built with Docker:
 - cpp/worktycho-whitespace-llvm: Requires LLVM
 - cpp/yuukiaria
 - crystal/collidedscope-spiceweight
+- csharp/cisterni-wspcnet: Source unavailable
 - csharp/colchicus: Source unavailable
 - csharp/denislabrecque
 - csharp/jlchntoz: Need to restructure files

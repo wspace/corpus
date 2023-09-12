@@ -603,6 +603,7 @@ var subdomainLabels = map[string]string{
 	"googlecode.com":  "Google Code",
 	"readthedocs.io":  "Read the Docs",
 	"blogspot.com":    "Blogger",
+	"sscli.net":       "SSCLI.NET",
 }
 
 func GetURLLabel(url string) (string, error) {
@@ -658,6 +659,12 @@ func unwrapArchive(url string, u *urlpkg.URL) (string, string) {
 	host := u.Hostname()
 	if host == "web.archive.org" && strings.HasPrefix(u.Path, "/web/") {
 		path := strings.TrimPrefix(u.Path, "/web/")
+		if i := strings.IndexByte(path, '/'); i != -1 {
+			return path[i+1:], "archive"
+		}
+	}
+	if host == "www.webarchive.org.uk" && strings.HasPrefix(u.Path, "/wayback/archive/") {
+		path := strings.TrimPrefix(u.Path, "/wayback/archive/")
 		if i := strings.IndexByte(path, '/'); i != -1 {
 			return path[i+1:], "archive"
 		}
