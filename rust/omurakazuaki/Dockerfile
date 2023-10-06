@@ -1,4 +1,4 @@
-FROM rust:1.70 AS builder
+FROM rust:1.73 AS builder
 
 WORKDIR /whitespace
 COPY whitespace .
