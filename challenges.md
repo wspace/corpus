@@ -50,7 +50,6 @@ Codewars, interpreters for Whitespace.
 - [java/wrotycz](java/wrotycz)
 - [javascript/ignovak](javascript/ignovak)
 - [javascript/msucorey-codewars](javascript/msucorey-codewars)
-- [javascript/namhle-codewars](javascript/namhle-codewars)
 - [javascript/syntaqx-puzzles](javascript/syntaqx-puzzles)
 - [javascript/therebelrobot](javascript/therebelrobot)
 - [javascript/uraza](javascript/uraza)

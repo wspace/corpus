@@ -1,6 +1,6 @@
 # The Whitespace Corpus
 
-The definitive collection of 363 projects for the Whitespace programming
+The definitive collection of 362 projects for the Whitespace programming
 language, including interpreters, compilers, and programs.
 
 ## Projects
@@ -103,7 +103,6 @@ language, including interpreters, compilers, and programs.
 | [whitespace-go](go/simomu)                    | simomu           | Go         | interpreter, programs | 2020-07-17 | [GitHub](https://github.com/simomu-github/whitespace_go) |
 | [SpaceMan](haskell/ft-spaceman)               | Frank Terbeck    | Haskell    | interpreter  | 2020-07-09 | [GitLab](https://gitlab.com/ft/spaceman), [GitHub](https://github.com/ft/spaceman), [bewatermyfriend.org](http://bewatermyfriend.org/p/2020/000/), [Hacker News](https://news.ycombinator.com/item?id=24763312) |
 | [aaa…](whitespace/benricheson101-aaa)         | Ben Richeson, Samsamson33 | Whitespace | programs | 2020-06-29 | [GitHub](https://github.com/Benricheson101/aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa) |
-| [codewars.com](javascript/namhle-codewars)    | Nam Hoang Le     | JavaScript | interpreter  | 2020-06-09 | [GitHub](https://github.com/nam-hle/codewars.com) |
 | [whitespace](cpp/ricardoluis0)                | Ricardo Luís Vaz Silva | C++  | interpreter  | 2020-06-03 | [GitHub](https://github.com/RicardoLuis0/whitespace) |
 | [DotNot](csharp/ryzngard-dotnot)              | Andrew Hall      | C#         | parser, programs | 2020-05-10 | [GitHub](https://github.com/ryzngard/DotNot) |
 | [HelPA](haskell/helvm-helpa)                  | Kamil Adam       | Haskell/Eta | language, assembler, programs | 2020-05-09 | [GitHub](https://github.com/helvm/helpa) |

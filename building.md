@@ -112,7 +112,6 @@ Projects that can be built with Docker:
 - javascript/loklaan-whitespace-lang
 - javascript/loklaan-zerowidth-lang
 - javascript/msucorey-codewars: Needs Codewars entrypoint
-- javascript/namhle-codewars: Needs Codewars entrypoint
 - javascript/nutcrack-whiteplanes: No entrypoint
 - javascript/rumpl
 - javascript/susisu

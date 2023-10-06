@@ -389,9 +389,6 @@
 [submodule "javascript/msucorey-codewars/codewars"]
 	path = javascript/msucorey-codewars/codewars
 	url = https://github.com/msucorey/codewars
-[submodule "javascript/namhle-codewars/codewars.com"]
-	path = javascript/namhle-codewars/codewars.com
-	url = https://github.com/nam-hle/codewars.com
 [submodule "javascript/naokikp-wsi/naokikp.github.io"]
 	path = javascript/naokikp-wsi/naokikp.github.io
 	url = https://github.com/naokikp/naokikp.github.io
