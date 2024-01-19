@@ -47,7 +47,7 @@ func main() {
 		try(err)
 		defer f.Close()
 		r = f
-		if strings.HasSuffix(filename, ".gz") {
+		if strings.HasSuffix(filename, ".gz") || strings.HasSuffix(filename, ".tgz") {
 			r, err = gzip.NewReader(f)
 			try(err)
 		}
