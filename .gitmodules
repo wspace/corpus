@@ -780,6 +780,9 @@
 [submodule "rust/zrneely/whitespace"]
 	path = rust/zrneely/whitespace
 	url = https://github.com/wspace/zrneely-rust
+[submodule "scala/andreal2000/WhitespaceEvaluator"]
+	path = scala/andreal2000/WhitespaceEvaluator
+	url = https://gist.github.com/Andreal2000/8d876ba97b70240b50b68e5993119584
 [submodule "scala/dashlambda-eso/Eso"]
 	path = scala/dashlambda-eso/Eso
 	url = https://github.com/Dash-Lambda/Eso

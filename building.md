@@ -223,6 +223,7 @@ Projects that can be built with Docker:
 - rust/omurakazuaki
 - rust/thaliaarchi-yspace
 - rust/zrneely
+- scala/andreal2000
 - scala/dashlambda-eso
 - scala/polyglotpiglet-whitespacing: The `Input` type (a trait?) is not defined and may have been removed in a later release
 - scala/sderosiaux

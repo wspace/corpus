@@ -1,0 +1,47 @@
+{
+  "id": "scala/andreal2000",
+  "name": "WhitespaceEvaluator",
+  "authors": ["Andrea Longoni"],
+  "license": "none",
+  "languages": ["Scala"],
+  "tags": ["interpreter"],
+  "date": "2024-01-21 21:29:48 +0100",
+  "spec_version": "0.3",
+  "source": ["https://gist.github.com/Andreal2000/8d876ba97b70240b50b68e5993119584"],
+  "submodules": [
+    {
+      "path": "WhitespaceEvaluator",
+      "url": "https://gist.github.com/Andreal2000/8d876ba97b70240b50b68e5993119584"
+    }
+  ],
+  "assembly": {
+    "mnemonics": {
+      "push": "stackPush",
+      "dup": "stackDuplicateTop",
+      "copy": "stackCopyToTop",
+      "swap": "stackSwapTop",
+      "drop": "stackPop",
+      "slide": "stackSlide",
+      "add": "addition",
+      "sub": "subtraction",
+      "mul": "multiplication",
+      "div": "integerDivision",
+      "mod": "modulo",
+      "store": "heapStore",
+      "retrieve": "heapRetrive",
+      "label": "markLocation",
+      "call": "callSubroutine",
+      "jmp": "jump",
+      "jz": "jumpZero",
+      "jn": "jumpNegative",
+      "ret": "endSubroutine",
+      "end": "endProgram",
+      "printc": "outputChar",
+      "printi": "outputNumber",
+      "readc": "inputChar",
+      "readi": "inputNumber"
+    },
+    "usage": ["enum"]
+  },
+  "commands": [{ "type": "interpreter", "usage": "[file]...", "input": "<file>..." }]
+}
