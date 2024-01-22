@@ -159,6 +159,9 @@ services:
   kotlin_ze-space:
     image: wspace-corpus/kotlin/ze-space
     build: kotlin/ze-space
+  scala_andreal2000:
+    image: wspace-corpus/scala/andreal2000
+    build: scala/andreal2000
   scala_dashlambda-eso:
     image: wspace-corpus/scala/dashlambda-eso
     build: scala/dashlambda-eso

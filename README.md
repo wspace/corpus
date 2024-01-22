@@ -7,7 +7,7 @@ language, including interpreters, compilers, and programs.
 
 | Name                                          | Authors          | Languages  | Tags         | Date       | Source |
 | --------------------------------------------- | ---------------- | ---------- | ------------ | ---------- | ------ |
-| [WhitespaceEvaluator](scala/andreal2000)      | Andrea Longoni   | Scala      | interpreter  | 2024-01-21 | [GitHub Gist](https://gist.github.com/Andreal2000/8d876ba97b70240b50b68e5993119584) |
+| [WhitespaceEvaluator](scala/andreal2000)      | Andrea Longoni   | Scala      | interpreter  | 2024-01-21 | [GitHub Gist](https://gist.github.com/Andreal2000/8d876ba97b70240b50b68e5993119584), [GitHub](https://github.com/wspace/andreal2000-scala) |
 | [prime-whitespace](whitespace/nepetaiscute-prime) | nepeta       | Whitespace | programs     | 2022-12-15 | [GitHub](https://github.com/NEPETAISCUTE/prime-whitespace) |
 | [wspace-coq](coq/thaliaarchi-wscoq)           | Thalia Archibald | Coq        | interpreter, formalism | 2022-12-14 | [GitHub](https://github.com/thaliaarchi/wscoq) |
 | [AdventOfCode2022.ws](whitespace/lukepebody-advent-of-code) | Luke Pebody | Whitespace, Python | programs, interpreter, assembler | 2022-12-14 | [GitHub](https://github.com/LukePebody/AdventOfCode2022.ws) |

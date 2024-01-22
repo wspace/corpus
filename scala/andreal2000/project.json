@@ -7,13 +7,11 @@
   "tags": ["interpreter"],
   "date": "2024-01-21 21:29:48 +0100",
   "spec_version": "0.3",
-  "source": ["https://gist.github.com/Andreal2000/8d876ba97b70240b50b68e5993119584"],
-  "submodules": [
-    {
-      "path": "WhitespaceEvaluator",
-      "url": "https://gist.github.com/Andreal2000/8d876ba97b70240b50b68e5993119584"
-    }
+  "source": [
+    "https://gist.github.com/Andreal2000/8d876ba97b70240b50b68e5993119584",
+    "https://github.com/wspace/andreal2000-scala"
   ],
+  "submodules": [{ "path": "WhitespaceEvaluator", "url": "https://github.com/wspace/andreal2000-scala" }],
   "assembly": {
     "mnemonics": {
       "push": "stackPush",
@@ -43,5 +41,12 @@
     },
     "usage": ["enum"]
   },
-  "commands": [{ "type": "interpreter", "usage": "[file]...", "input": "<file>..." }]
+  "commands": [
+    {
+      "type": "interpreter",
+      "bin": "target/scala-3.3.1/WhitespaceEvaluator-assembly-0.1.0.jar",
+      "usage": "[file]...",
+      "input": "[file]..."
+    }
+  ]
 }

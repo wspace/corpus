@@ -21,11 +21,12 @@ FROM wspace-corpus/java/wysang AS java_wysang
 FROM wspace-corpus/java/yawkat AS java_yawkat
 FROM wspace-corpus/java/yuukiaria-wseditor AS java_yuukiaria-wseditor
 FROM wspace-corpus/kotlin/ze-space AS kotlin_ze-space
+FROM wspace-corpus/scala/andreal2000 AS scala_andreal2000
 FROM wspace-corpus/scala/dashlambda-eso AS scala_dashlambda-eso
 FROM wspace-corpus/scala/sderosiaux AS scala_sderosiaux
 FROM wspace-corpus/scala/stephenpatrick AS scala_stephenpatrick
 
-FROM eclipse-temurin:20-jre-alpine
+FROM eclipse-temurin:21-jre-alpine
 
 WORKDIR /wspace
 COPY --from=clojure_jmesyou-erasure     /erasure/erasure-2.0.jar                                        clojure/jmesyou-erasure/
@@ -51,6 +52,7 @@ COPY --from=java_wysang                 /Whitespace-Compiler/whitespaceCompiler.
 COPY --from=java_yawkat                 /Whitespace/whitespace.jar                                      java/yawkat/
 COPY --from=java_yuukiaria-wseditor     /wseditor/wseditor.jar                                          java/yuukiaria-wseditor/
 COPY --from=kotlin_ze-space             /space/space.jar                                                kotlin/ze-space/
+COPY --from=scala_andreal2000           /WhitespaceEvaluator/WhitespaceEvaluator.jar                    scala/andreal2000/
 COPY --from=scala_dashlambda-eso        /Eso/Eso-2.6.1.jar                                              scala/dashlambda-eso/
 COPY --from=scala_sderosiaux            /whitespace-parser/whitespace-parser-0.1.jar                    scala/sderosiaux/
 COPY --from=scala_stephenpatrick        /whitespace-interpreter/whitespace.jar                          scala/stephenpatrick/
