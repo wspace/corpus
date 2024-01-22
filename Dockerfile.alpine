@@ -1,4 +1,4 @@
-FROM wspace-corpus/c/remigascou as c_remigascou
+FROM wspace-corpus/c/remigascou AS c_remigascou
 FROM wspace-corpus/c/ssiegl-wsdebug AS c_ssiegl-wsdebug
 
 FROM alpine

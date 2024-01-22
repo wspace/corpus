@@ -1,11 +1,10 @@
-FROM eclipse-temurin:8-jdk-alpine AS builder
+FROM eclipse-temurin:8-jdk-jammy AS builder
 
-RUN apk add --no-cache bash
 WORKDIR /kairos
 COPY kairos .
 RUN ./gradlew shadowJar
 
-FROM eclipse-temurin:20-jre-alpine
+FROM eclipse-temurin:21-jre-alpine
 
 WORKDIR /kairos
 COPY --from=builder /kairos/build/libs/kairos-1.0.0-all.jar kairos-1.0.0.jar

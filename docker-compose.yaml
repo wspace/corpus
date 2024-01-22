@@ -1,3 +1,9 @@
+# Build with `docker compose build`, not `docker compose build <service>`,
+# because the latter does not regard build dependencies and will build images
+# out of order, causing FROM statements to look for images on Docker Hub instead
+# of seeing locally-tagged images.
+
+version: "3.8"
 services:
   alpine:
     image: wspace-corpus/alpine
@@ -90,9 +96,6 @@ services:
   go_tempxla-go-wspace:
     image: wspace-corpus/go/tempxla-go-wspace
     build: go/tempxla-go-wspace
-  go_thaliaarchi-nebula:
-    image: wspace-corpus/go/thaliaarchi-nebula
-    build: go/thaliaarchi-nebula
   go_zorchenhimer:
     image: wspace-corpus/go/zorchenhimer
     build: go/zorchenhimer
