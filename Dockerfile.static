@@ -22,32 +22,66 @@ FROM wspace-corpus/go/technohippy AS go_technohippy
 FROM wspace-corpus/go/tempxla-go-wspace AS go_tempxla-go-wspace
 # FROM wspace-corpus/go/thaliaarchi-nebula AS go_thaliaarchi-nebula
 FROM wspace-corpus/go/zorchenhimer AS go_zorchenhimer
+FROM wspace-corpus/rust/censoredusername-whitespacers AS rust_censoredusername-whitespacers
+FROM wspace-corpus/rust/collidedscope-albus AS rust_collidedscope-albus
+FROM wspace-corpus/rust/d3psi-spacey AS rust_d3psi-spacey
+# FROM wspace-corpus/rust/faultier-albino AS rust_faultier-albino
+FROM wspace-corpus/rust/guricerin AS rust_guricerin
+FROM wspace-corpus/rust/hamidrezakp AS rust_hamidrezakp
+FROM wspace-corpus/rust/jayshua AS rust_jayshua
+FROM wspace-corpus/rust/kaisugi AS rust_kaisugi
+FROM wspace-corpus/rust/keirua AS rust_keirua
+FROM wspace-corpus/rust/lalrpop AS rust_lalrpop
+FROM wspace-corpus/rust/luminighty AS rust_luminighty
+FROM wspace-corpus/rust/nareshganduri AS rust_nareshganduri
+FROM wspace-corpus/rust/omurakazuaki AS rust_omurakazuaki
+FROM wspace-corpus/rust/thaliaarchi-yspace AS rust_thaliaarchi-yspace
+FROM wspace-corpus/rust/zrneely AS rust_zrneely
 
 FROM scratch
 
 WORKDIR /wspace
-COPY --from=c_bvisness                   /whitespace                          c/bvisness/
-COPY --from=c_d3psi                      /interpreter                         c/d3psi/
-COPY --from=c_hogelog                    /wspace                              c/hogelog/
-COPY --from=c_koturn                     /whitespace.out                      c/koturn/
-COPY --from=c_kspalaiologos-asm2ws       /wsi                                 c/kspalaiologos-asm2ws/
-COPY --from=c_manarice-lime              /lwsvm /lwsa                         c/manarice-lime/
-COPY --from=c_meth0dz                    /whitespace                          c/meth0dz/
-# COPY --from=c_rdebath                  /wsc                                 c/rdebath/
-COPY --from=c_rdebath                    /ws2c /wsa                           c/rdebath/
-COPY --from=c_rispoli-txt2ws             /txt2ws                              c/rispoli-txt2ws/
-COPY --from=c_sandeep023                 /white                               c/sandeep023/
-COPY --from=c_siritori                   /wsvm /wscc /wsas /ws_trans /wb_dump c/siritori/
-COPY --from=c_stellwag-wspacegen         /wspacegen /wsdbg /wsi               c/stellwag-wspacegen/
-COPY --from=c_subgeniuskitty-vvhitespace /vvc /vvi                            c/subgeniuskitty-vvhitespace/
-COPY --from=go_135yshr-wspacego          /wspacego                            go/135yshr-wspacego/
-COPY --from=go_kinu                      /whitespace                          go/kinu/
-COPY --from=go_makiuchid-whitenote       /wspace                              go/makiuchid-whitenote/
-COPY --from=go_pocke-gows                /gows                                go/pocke-gows/
-COPY --from=go_qeedquan                  /whitespace                          go/qeedquan/
-COPY --from=go_samuelpratt               /whitespace-go                       go/samuelpratt/
-COPY --from=go_simomu                    /ws                                  go/simomu/
-COPY --from=go_technohippy               /go-whitespace                       go/technohippy/
-COPY --from=go_tempxla-go-wspace         /go-wspace                           go/tempxla-go-wspace/
-# COPY --from=go_thaliaarchi-nebula      /nebula                              go/thaliaarchi-nebula/
-COPY --from=go_zorchenhimer              /wi                                  go/zorchenhimer/
+COPY --from=c_bvisness                         /whitespace                          c/bvisness/
+COPY --from=c_d3psi                            /interpreter                         c/d3psi/
+COPY --from=c_hogelog                          /wspace                              c/hogelog/
+COPY --from=c_koturn                           /whitespace.out                      c/koturn/
+COPY --from=c_kspalaiologos-asm2ws             /wsi                                 c/kspalaiologos-asm2ws/
+COPY --from=c_manarice-lime                    /lwsvm /lwsa                         c/manarice-lime/
+COPY --from=c_meth0dz                          /whitespace                          c/meth0dz/
+# COPY --from=c_rdebath                        /wsc                                 c/rdebath/
+COPY --from=c_rdebath                          /ws2c /wsa                           c/rdebath/
+COPY --from=c_rispoli-txt2ws                   /txt2ws                              c/rispoli-txt2ws/
+COPY --from=c_sandeep023                       /white                               c/sandeep023/
+COPY --from=c_siritori                         /wsvm /wscc /wsas /ws_trans /wb_dump c/siritori/
+COPY --from=c_stellwag-wspacegen               /wspacegen /wsdbg /wsi               c/stellwag-wspacegen/
+COPY --from=c_subgeniuskitty-vvhitespace       /vvc /vvi                            c/subgeniuskitty-vvhitespace/
+COPY --from=go_135yshr-wspacego                /wspacego                            go/135yshr-wspacego/
+COPY --from=go_kinu                            /whitespace                          go/kinu/
+COPY --from=go_makiuchid-whitenote             /wspace                              go/makiuchid-whitenote/
+COPY --from=go_pocke-gows                      /gows                                go/pocke-gows/
+COPY --from=go_qeedquan                        /whitespace                          go/qeedquan/
+COPY --from=go_samuelpratt                     /whitespace-go                       go/samuelpratt/
+COPY --from=go_simomu                          /ws                                  go/simomu/
+COPY --from=go_technohippy                     /go-whitespace                       go/technohippy/
+COPY --from=go_tempxla-go-wspace               /go-wspace                           go/tempxla-go-wspace/
+# COPY --from=go_thaliaarchi-nebula            /nebula                              go/thaliaarchi-nebula/
+COPY --from=go_zorchenhimer                    /wi                                  go/zorchenhimer/
+COPY --from=rust_censoredusername-whitespacers /wsc                                 rust/censoredusername-whitespacers/
+COPY --from=rust_collidedscope-albus           /albus                               rust/collidedscope-albus/
+COPY --from=rust_d3psi-spacey                  /spacey                              rust/d3psi-spacey/
+# COPY --from=rust_faultier-albino             /albino                              rust/faultier-albino/
+# COPY --from=rust_faultier-albino             /albino-run                          rust/faultier-albino/
+# COPY --from=rust_faultier-albino             /albino-build                        rust/faultier-albino/
+# COPY --from=rust_faultier-albino             /albino-exec                         rust/faultier-albino/
+# COPY --from=rust_faultier-albino             /albino-gen                          rust/faultier-albino/
+COPY --from=rust_guricerin                     /whitespace-rs                       rust/guricerin/
+COPY --from=rust_hamidrezakp                   /ws                                  rust/hamidrezakp/
+COPY --from=rust_jayshua                       /whitespace                          rust/jayshua/
+COPY --from=rust_kaisugi                       /wi                                  rust/kaisugi/
+COPY --from=rust_keirua                        /compiler                            rust/keirua/
+COPY --from=rust_lalrpop                       /whitespace                          rust/lalrpop/
+# No entrypoint for rust/luminighty
+COPY --from=rust_nareshganduri                 /whitespace-vm                       rust/nareshganduri/
+COPY --from=rust_omurakazuaki                  /whitespace                          rust/omurakazuaki/
+COPY --from=rust_thaliaarchi-yspace            /yspace                              rust/thaliaarchi-yspace/
+COPY --from=rust_zrneely                       /whitespace                          rust/zrneely/

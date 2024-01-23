@@ -9,14 +9,83 @@ services:
     image: wspace-corpus/alpine
     build:
       dockerfile: Dockerfile.alpine
+    depends_on:
+      - c_remigascou
+      - c_ssiegl-wsdebug
   static:
     image: wspace-corpus/static
     build:
       dockerfile: Dockerfile.static
+    depends_on:
+      - c_bvisness
+      - c_d3psi
+      - c_hogelog
+      - c_koturn
+      - c_kspalaiologos-asm2ws
+      - c_manarice-lime
+      - c_meth0dz
+      - c_rdebath
+      - c_rispoli-txt2ws
+      - c_sandeep023
+      - c_siritori
+      - c_stellwag-wspacegen
+      - c_subgeniuskitty-vvhitespace
+      - go_135yshr-wspacego
+      - go_kinu
+      - go_makiuchid-whitenote
+      - go_pocke-gows
+      - go_qeedquan
+      - go_samuelpratt
+      - go_simomu
+      - go_technohippy
+      - go_tempxla-go-wspace
+      - go_zorchenhimer
+      - rust_censoredusername-whitespacers
+      - rust_collidedscope-albus
+      - rust_d3psi-spacey
+      - rust_guricerin
+      - rust_hamidrezakp
+      - rust_jayshua
+      - rust_kaisugi
+      - rust_keirua
+      - rust_lalrpop
+      - rust_luminighty
+      - rust_nareshganduri
+      - rust_omurakazuaki
+      - rust_thaliaarchi-yspace
+      - rust_zrneely
   jars:
     image: wspace-corpus/jars
     build:
       dockerfile: Dockerfile.jars
+    depends_on:
+      - clojure_jmesyou-erasure
+      - clojure_makenowjust
+      - java_abhijitsharma
+      - java_azige
+      - java_bearice-grassmudhorse
+      - java_brumbeere-whitespace4j
+      - java_eiauniversity
+      - java_faurehu
+      - java_jbanana
+      - java_kmizu
+      - java_kreutzer-spacedide
+      - java_mash-whitespacesdk
+      - java_matou-whasm
+      - java_praveenvaka-coder
+      - java_rahulkp
+      - java_ralucaa-whitespace4j
+      - java_thatguy977
+      - java_vyo-kairos
+      - java_wrotycz
+      - java_wysang
+      - java_yawkat
+      - java_yuukiaria-wseditor
+      - kotlin_ze-space
+      - scala_andreal2000
+      - scala_dashlambda-eso
+      - scala_sderosiaux
+      - scala_stephenpatrick
 
   c_bvisness:
     image: wspace-corpus/c/bvisness
@@ -162,6 +231,48 @@ services:
   kotlin_ze-space:
     image: wspace-corpus/kotlin/ze-space
     build: kotlin/ze-space
+  rust_censoredusername-whitespacers:
+    image: wspace-corpus/rust/censoredusername-whitespacers
+    build: rust/censoredusername-whitespacers
+  rust_collidedscope-albus:
+    image: wspace-corpus/rust/collidedscope-albus
+    build: rust/collidedscope-albus
+  rust_d3psi-spacey:
+    image: wspace-corpus/rust/d3psi-spacey
+    build: rust/d3psi-spacey
+  rust_guricerin:
+    image: wspace-corpus/rust/guricerin
+    build: rust/guricerin
+  rust_hamidrezakp:
+    image: wspace-corpus/rust/hamidrezakp
+    build: rust/hamidrezakp
+  rust_jayshua:
+    image: wspace-corpus/rust/jayshua
+    build: rust/jayshua
+  rust_kaisugi:
+    image: wspace-corpus/rust/kaisugi
+    build: rust/kaisugi
+  rust_keirua:
+    image: wspace-corpus/rust/keirua
+    build: rust/keirua
+  rust_lalrpop:
+    image: wspace-corpus/rust/lalrpop
+    build: rust/lalrpop
+  rust_luminighty:
+    image: wspace-corpus/rust/luminighty
+    build: rust/luminighty
+  rust_nareshganduri:
+    image: wspace-corpus/rust/nareshganduri
+    build: rust/nareshganduri
+  rust_omurakazuaki:
+    image: wspace-corpus/rust/omurakazuaki
+    build: rust/omurakazuaki
+  rust_thaliaarchi-yspace:
+    image: wspace-corpus/rust/thaliaarchi-yspace
+    build: rust/thaliaarchi-yspace
+  rust_zrneely:
+    image: wspace-corpus/rust/zrneely
+    build: rust/zrneely
   scala_andreal2000:
     image: wspace-corpus/scala/andreal2000
     build: scala/andreal2000

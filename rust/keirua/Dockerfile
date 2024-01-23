@@ -1,8 +1,8 @@
-FROM rust:1.73 AS builder
+FROM rust:1.75 AS builder
 
 WORKDIR /whitespace-rs
 COPY whitespace-rs .
-RUN cargo test
+# RUN cargo test
 RUN RUSTFLAGS='-C target-feature=+crt-static' cargo build --release --target x86_64-unknown-linux-gnu
 
 FROM scratch

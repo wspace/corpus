@@ -1,9 +1,9 @@
-FROM rust:1.73 AS builder
+FROM rust:1.75 AS builder
 
 WORKDIR /lalrpop
 COPY lalrpop .
-RUN cargo test --package whitespace
-RUN RUSTFLAGS='-C target-feature=+crt-static' cargo build --release --target x86_64-unknown-linux-gnu --package whitespace
+RUN cargo test --package whitespace && \
+    RUSTFLAGS='-C target-feature=+crt-static' cargo build --release --target x86_64-unknown-linux-gnu --package whitespace
 
 FROM scratch
 
