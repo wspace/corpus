@@ -1,3 +1,4 @@
+# Fails to run Gradle on alpine due to javax.net.ssl.SSLHandshakeException
 FROM eclipse-temurin:8-jdk-jammy AS builder
 
 WORKDIR /kairos

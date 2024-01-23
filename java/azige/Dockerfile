@@ -1,12 +1,12 @@
-FROM maven:3-eclipse-temurin-20-alpine AS builder
+FROM maven:3-eclipse-temurin-21-alpine AS builder
 
-RUN apk add --no-cache patch
 WORKDIR /whitespace-interpreter
 COPY whitespace-interpreter jar.patch ./
-RUN patch -p1 -i jar.patch && \
+RUN apk add --no-cache patch && \
+    patch -p1 -i jar.patch && \
     mvn compile test assembly:single
 
-FROM eclipse-temurin:20-jre-alpine
+FROM eclipse-temurin:21-jre-alpine
 
 WORKDIR /whitespace-interpreter
 COPY --from=builder /whitespace-interpreter/target/whitespace-interpreter-0.4-jar-with-dependencies.jar whitespace-interpreter-0.4.jar

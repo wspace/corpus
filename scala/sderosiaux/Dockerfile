@@ -1,11 +1,17 @@
-FROM sbtscala/scala-sbt:eclipse-temurin-jammy-11.0.17_8_1.9.3_3.3.0 AS builder
+# Fails with what looks to be an ICE:
+# - eclipse-temurin-jammy-21.0.1_12_1.9.8_3.3.1
+# - eclipse-temurin-jammy-21_35_1.9.6_3.3.1
+# - eclipse-temurin-jammy-20.0.2_9_1.9.6_3.3.1
+# - eclipse-temurin-jammy-19.0.1_10_1.9.5_3.3.1
+# - eclipse-temurin-jammy-17.0.9_9_1.9.8_3.3.1
+FROM sbtscala/scala-sbt:eclipse-temurin-jammy-11.0.21_9_1.9.8_3.3.1 AS builder
 
 WORKDIR /whitespace-parser
 COPY whitespace-parser update.patch ./
 RUN patch -p1 -i update.patch && \
     sbt test assembly
 
-FROM eclipse-temurin:20-jre-alpine
+FROM eclipse-temurin:21-jre-alpine
 
 WORKDIR /whitespace-parser
 COPY --from=builder /whitespace-parser/target/scala-2.12/whitespace-parser-assembly-0.1.jar whitespace-parser-0.1.jar

@@ -1,11 +1,11 @@
-FROM eclipse-temurin:20-jdk-alpine AS builder
+FROM eclipse-temurin:21-jdk-alpine AS builder
 
 WORKDIR /grass-mud-horse
 COPY grass-mud-horse .
 RUN javac -d bin src/cn/icybear/GrassMudHorse/*.java && \
     jar -cfe GrassMudHorse.jar cn.icybear.GrassMudHorse.AlpacaVM -C bin .
 
-FROM eclipse-temurin:20-jre-alpine
+FROM eclipse-temurin:21-jre-alpine
 
 RUN apk add --no-cache erlang
 WORKDIR /grass-mud-horse

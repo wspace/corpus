@@ -1,11 +1,11 @@
-FROM eclipse-temurin:20-jdk-alpine AS builder
+FROM eclipse-temurin:21-jdk-alpine AS builder
 
-RUN apk add --no-cache apache-ant
 WORKDIR /whiteSpaceInterpreter
 COPY whiteSpaceInterpreter .
-RUN ant
+RUN apk add --no-cache apache-ant && \
+    ant
 
-FROM eclipse-temurin:20-jre-alpine
+FROM eclipse-temurin:21-jre-alpine
 
 WORKDIR /whiteSpaceInterpreter
 COPY --from=builder /whiteSpaceInterpreter/dist/WhiteSpaceInterpreter.jar .
