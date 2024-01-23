@@ -29,7 +29,11 @@ services:
       - c_sandeep023
       - c_siritori
       - c_stellwag-wspacegen
+      - c_strangepan-i-c-whitespace
       - c_subgeniuskitty-vvhitespace
+      - c_threeifbywhiskey-blacktime
+      - c_threeifbywhiskey-satan
+      - c_zackeua
       - go_135yshr-wspacego
       - go_kinu
       - go_makiuchid-whitenote
@@ -129,9 +133,21 @@ services:
   c_stellwag-wspacegen:
     image: wspace-corpus/c/stellwag-wspacegen
     build: c/stellwag-wspacegen
+  c_strangepan-i-c-whitespace:
+    image: wspace-corpus/c/strangepan-i-c-whitespace
+    build: c/strangepan-i-c-whitespace
   c_subgeniuskitty-vvhitespace:
     image: wspace-corpus/c/subgeniuskitty-vvhitespace
     build: c/subgeniuskitty-vvhitespace
+  c_threeifbywhiskey-blacktime:
+    image: wspace-corpus/c/threeifbywhiskey-blacktime
+    build: c/threeifbywhiskey-blacktime
+  c_threeifbywhiskey-satan:
+    image: wspace-corpus/c/threeifbywhiskey-satan
+    build: c/threeifbywhiskey-satan
+  c_zackeua:
+    image: wspace-corpus/c/zackeua
+    build: c/zackeua
   clojure_jmesyou-erasure:
     image: wspace-corpus/clojure/jmesyou-erasure
     build: clojure/jmesyou-erasure

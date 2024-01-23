@@ -8,9 +8,15 @@ FROM wspace-corpus/c/meth0dz AS c_meth0dz
 FROM wspace-corpus/c/rdebath AS c_rdebath
 FROM wspace-corpus/c/rispoli-txt2ws AS c_rispoli-txt2ws
 FROM wspace-corpus/c/sandeep023 AS c_sandeep023
+# FROM wspace-corpus/c/shinh-elvm AS c_shinh-elvm
 FROM wspace-corpus/c/siritori AS c_siritori
 FROM wspace-corpus/c/stellwag-wspacegen AS c_stellwag-wspacegen
+FROM wspace-corpus/c/strangepan-i-c-whitespace AS c_strangepan-i-c-whitespace
 FROM wspace-corpus/c/subgeniuskitty-vvhitespace AS c_subgeniuskitty-vvhitespace
+# FROM wspace-corpus/c/tejaskasetty AS c_tejaskasetty
+FROM wspace-corpus/c/threeifbywhiskey-blacktime AS c_threeifbywhiskey-blacktime
+FROM wspace-corpus/c/threeifbywhiskey-satan AS c_threeifbywhiskey-satan
+FROM wspace-corpus/c/zackeua AS c_zackeua
 FROM wspace-corpus/go/135yshr-wspacego AS go_135yshr-wspacego
 FROM wspace-corpus/go/kinu AS go_kinu
 FROM wspace-corpus/go/makiuchid-whitenote AS go_makiuchid-whitenote
@@ -51,10 +57,15 @@ COPY --from=c_meth0dz                          /whitespace                      
 # COPY --from=c_rdebath                        /wsc                                 c/rdebath/
 COPY --from=c_rdebath                          /ws2c /wsa                           c/rdebath/
 COPY --from=c_rispoli-txt2ws                   /txt2ws                              c/rispoli-txt2ws/
+COPY --from=c_strangepan-i-c-whitespace        /whitespace                          c/strangepan-i-c-whitespace/
 COPY --from=c_sandeep023                       /white                               c/sandeep023/
 COPY --from=c_siritori                         /wsvm /wscc /wsas /ws_trans /wb_dump c/siritori/
 COPY --from=c_stellwag-wspacegen               /wspacegen /wsdbg /wsi               c/stellwag-wspacegen/
 COPY --from=c_subgeniuskitty-vvhitespace       /vvc /vvi                            c/subgeniuskitty-vvhitespace/
+# COPY --from=c_tejaskasetty                   /ws                                  c/tejaskasetty/
+COPY --from=c_threeifbywhiskey-blacktime       /blacktime                           c/threeifbywhiskey-blacktime/
+COPY --from=c_threeifbywhiskey-satan           /satan                               c/threeifbywhiskey-satan/
+COPY --from=c_zackeua                          /wlang /whitespacecpp                c/zackeua/
 COPY --from=go_135yshr-wspacego                /wspacego                            go/135yshr-wspacego/
 COPY --from=go_kinu                            /whitespace                          go/kinu/
 COPY --from=go_makiuchid-whitenote             /wspace                              go/makiuchid-whitenote/
@@ -69,11 +80,7 @@ COPY --from=go_zorchenhimer                    /wi                              
 COPY --from=rust_censoredusername-whitespacers /wsc                                 rust/censoredusername-whitespacers/
 COPY --from=rust_collidedscope-albus           /albus                               rust/collidedscope-albus/
 COPY --from=rust_d3psi-spacey                  /spacey                              rust/d3psi-spacey/
-# COPY --from=rust_faultier-albino             /albino                              rust/faultier-albino/
-# COPY --from=rust_faultier-albino             /albino-run                          rust/faultier-albino/
-# COPY --from=rust_faultier-albino             /albino-build                        rust/faultier-albino/
-# COPY --from=rust_faultier-albino             /albino-exec                         rust/faultier-albino/
-# COPY --from=rust_faultier-albino             /albino-gen                          rust/faultier-albino/
+# COPY --from=rust_faultier-albino             /albino /albino-run /albino-build /albino-exec /albino-gen rust/faultier-albino/
 COPY --from=rust_guricerin                     /whitespace-rs                       rust/guricerin/
 COPY --from=rust_hamidrezakp                   /ws                                  rust/hamidrezakp/
 COPY --from=rust_jayshua                       /whitespace                          rust/jayshua/
