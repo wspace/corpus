@@ -8,9 +8,9 @@
   "date": "2004-09-09 12:44:40 +0000",
   "spec_version": "0.3",
   "source": [
-    "https://github.com/wspace/stellwag-wspacegen",
     "https://sourceforge.net/projects/wspacegen/",
     "https://web.archive.org/web/20041031181043/http://wsdebug.berlios.de:80/wspacegen.php",
+    "https://github.com/wspace/stellwag-wspacegen",
     "https://github.com/thaliaarchi/repo-archival/blob/main/scripts/wspace/stellwag-wspacegen.sh"
   ],
   "submodules": [{ "path": "wspacegen", "url": "https://github.com/wspace/stellwag-wspacegen" }],

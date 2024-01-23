@@ -8,8 +8,8 @@
   "date": "2013-02-19 11:13:19 +0000",
   "spec_version": "0.3",
   "source": [
-    "https://github.com/wspace/kreutzer-spacedide",
     "https://sourceforge.net/projects/spacedide/",
+    "https://github.com/wspace/kreutzer-spacedide",
     "https://github.com/thaliaarchi/repo-archival/blob/main/scripts/wspace/kreutzer-spacedide.sh"
   ],
   "submodules": [{ "path": "spacedide", "url": "https://github.com/wspace/kreutzer-spacedide" }],

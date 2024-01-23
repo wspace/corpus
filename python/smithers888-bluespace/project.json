@@ -8,9 +8,9 @@
   "date": "2014-07-10 19:59:10 +0100",
   "spec_version": "0.3",
   "source": [
-    "https://github.com/wspace/smithers888-bluespace",
     "https://github.com/Smithers888/BlueSpace",
     "https://cpjsmith.uk/whitespace",
+    "https://github.com/wspace/smithers888-bluespace",
     "https://github.com/thaliaarchi/repo-archival/blob/main/scripts/wspace/smithers888-bluespace.sh"
   ],
   "submodules": [{ "path": "BlueSpace", "url": "https://github.com/wspace/smithers888-bluespace" }],

@@ -1,7 +1,7 @@
 {
   "id": "python/cybis-hapyli",
   "name": "HaPyLi",
-  "authors": ["Kevin (Cybis)"],
+  "authors": ["Cybis"],
   "license": "none",
   "languages": ["Python"],
   "tags": ["language", "interpreter", "standard library", "programs"],

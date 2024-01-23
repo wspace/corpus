@@ -7,7 +7,7 @@
   "tags": ["interpreter", "disassembler", "programs"],
   "date": "2019-05-24 17:22:01 -0500",
   "spec_version": "0.2",
-  "source": ["https://github.com/wspace/meeees-csharp", "https://github.com/meeees/Whitespace"],
+  "source": ["https://github.com/meeees/Whitespace", "https://github.com/wspace/meeees-csharp"],
   "submodules": [{ "path": "Whitespace", "url": "https://github.com/wspace/meeees-csharp" }],
   "bounds": { "precision": "int32" },
   "whitespace": { "extension": "ws" },

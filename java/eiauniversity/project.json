@@ -8,8 +8,8 @@
   "date": "2016-10-27 09:58:09 -0500",
   "spec_version": "0.2",
   "source": [
-    "https://github.com/wspace/eiauniversity-java",
-    "https://github.com/EIA-University/WhiteSpaceInterpreter"
+    "https://github.com/EIA-University/WhiteSpaceInterpreter",
+    "https://github.com/wspace/eiauniversity-java"
   ],
   "submodules": [{ "path": "WhiteSpaceInterpreter", "url": "https://github.com/wspace/eiauniversity-java" }],
   "whitespace": {

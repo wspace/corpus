@@ -8,8 +8,8 @@
   "date": "2016-11-21 01:10:33 -0500",
   "spec_version": "0.3",
   "source": [
-    "https://github.com/wspace/0x0dea-lolcode",
     "https://github.com/hostilefork/whitespacers/tree/master/lolcode",
+    "https://github.com/wspace/0x0dea-lolcode",
     "https://github.com/thaliaarchi/repo-archival/blob/main/scripts/wspace/0x0dea-lolcode.sh"
   ],
   "submodules": [{ "path": "lolcode", "url": "https://github.com/wspace/0x0dea-lolcode" }],

@@ -8,8 +8,8 @@
   "date": "2010-09-14 18:31:00 +0000",
   "spec_version": "0.3",
   "source": [
-    "https://github.com/wspace/progopedia",
     "http://progopedia.com/language/whitespace/",
+    "https://github.com/wspace/progopedia",
     "https://github.com/thaliaarchi/repo-archival/blob/main/scripts/wspace/progopedia.sh"
   ],
   "submodules": [{ "path": "whitespace", "url": "https://github.com/wspace/progopedia" }],

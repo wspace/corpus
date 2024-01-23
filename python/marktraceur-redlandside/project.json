@@ -8,10 +8,10 @@
   "date": "2010-03-14 09:30:28 +0000",
   "spec_version": "0.2",
   "source": [
-    "https://github.com/wspace/marktraceur-redlandside",
     "https://github.com/MarkTraceur/redlandside",
     "https://sourceforge.net/projects/redlandside/",
     "http://redlandside.sourceforge.net/",
+    "https://github.com/wspace/marktraceur-redlandside",
     "https://github.com/thaliaarchi/repo-archival/blob/main/scripts/wspace/marktraceur-redlandside.sh"
   ],
   "submodules": [{ "path": "redlandside", "url": "https://github.com/wspace/marktraceur-redlandside" }],

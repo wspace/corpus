@@ -8,10 +8,10 @@
   "date": "2013-11-07 04:06:05 -0800",
   "spec_version": "0.2",
   "source": [
-    "https://github.com/wspace/ytaka23-whitespace",
     "https://gist.github.com/y-taka-23/7353571",
     "https://gist.github.com/y-taka-23/7353594",
     "https://gist.github.com/y-taka-23/7353612",
+    "https://github.com/wspace/ytaka23-whitespace",
     "https://github.com/thaliaarchi/repo-archival/blob/main/scripts/wspace/ytaka23-whitespace.sh"
   ],
   "submodules": [{ "path": "whitespace", "url": "https://github.com/wspace/ytaka23-whitespace" }],

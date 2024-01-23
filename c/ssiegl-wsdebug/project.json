@@ -8,13 +8,13 @@
   "date": "2004-08-25 14:25:50 +0000",
   "spec_version": "0.3",
   "source": [
-    "https://github.com/wspace/ssiegl-wsdebug",
     "https://wspace.github.io/ssiegl-wsdebug/",
     "https://sourceforge.net/projects/wsdebug.berlios/",
     "https://web.archive.org/web/20041031040027/http://wsdebug.berlios.de:80/",
     "https://github.com/BackupTheBerlios/wsdebug",
     "https://github.com/BackupTheBerlios/wsdebug-devel-maillist",
     "https://github.com/BackupTheBerlios/wsdebug-users-maillist",
+    "https://github.com/wspace/ssiegl-wsdebug",
     "https://github.com/thaliaarchi/repo-archival/blob/main/scripts/wspace/ssiegl-wsdebug.sh"
   ],
   "submodules": [{ "path": "wsdebug", "url": "https://github.com/wspace/ssiegl-wsdebug" }],

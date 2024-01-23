@@ -7,7 +7,7 @@
   "tags": ["interpreter"],
   "date": "2018-02-24 19:28:32 -0500",
   "spec_version": "0.2",
-  "source": ["https://github.com/wspace/jmesyou-erasure", "https://github.com/jmesyou/erasure"],
+  "source": ["https://github.com/jmesyou/erasure", "https://github.com/wspace/jmesyou-erasure"],
   "submodules": [{ "path": "erasure", "url": "https://github.com/wspace/jmesyou-erasure" }],
   "commands": [
     {

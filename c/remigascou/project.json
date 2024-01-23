@@ -8,8 +8,8 @@
   "date": "2020-03-13 12:59:01 +0100",
   "spec_version": "0.2",
   "source": [
-    "https://github.com/wspace/remigascou-c",
     "https://github.com/RemiGascou/small-projects/tree/master/C/whitespace",
+    "https://github.com/wspace/remigascou-c",
     "https://github.com/thaliaarchi/repo-archival/blob/main/scripts/wspace/remigascou-c.sh"
   ],
   "submodules": [{ "path": "whitespace", "url": "https://github.com/wspace/remigascou-c" }],

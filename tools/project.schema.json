@@ -140,13 +140,6 @@
     "source": {
       "type": "array",
       "items": { "type": "string", "format": "uri" },
-      "prefixItems": [
-        {
-          "type": "string",
-          "format": "uri",
-          "pattern": "^https://github\\.com/[^/]+/[^/]+(?:/tree/[^/]+)?$|^https://gist\\.github\\.com/[^/]+/[^/]+$|^https://gitlab\\.com/[^/]+/[^/]+(?:/-/tree/[^/]+)?$|^https://bitbucket\\.org/[^/]+/[^/]+(?:/src/[^/]+)?$|^https://git\\.code\\.sf\\.net/p/[^/]+/code$|^https://codeberg\\.org/[^/]+/[^/]+$"
-        }
-      ],
       "minItems": 1,
       "uniqueItems": true
     },

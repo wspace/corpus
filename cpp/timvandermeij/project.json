@@ -8,8 +8,8 @@
   "date": "2013-02-06 06:24:15 -0800",
   "spec_version": "0.3",
   "source": [
-    "https://github.com/wspace/timvandermeij-cpp",
-    "https://github.com/timvandermeij/whitespace-interpreter"
+    "https://github.com/timvandermeij/whitespace-interpreter",
+    "https://github.com/wspace/timvandermeij-cpp"
   ],
   "submodules": [{ "path": "whitespace-interpreter", "url": "https://github.com/wspace/timvandermeij-cpp" }],
   "bounds": { "precision": "fixed", "heap_min": 0 },

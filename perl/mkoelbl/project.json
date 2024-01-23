@@ -8,10 +8,10 @@
   "date": "2003-04-01 19:34:12 +0000",
   "spec_version": "0.3",
   "source": [
-    "https://github.com/wspace/mkoelbl-perl",
     "https://web.archive.org/web/20030423000132/http://compsoc.dur.ac.uk:80/whitespace/whitespace.pl",
     "https://web.archive.org/web/20150717140342/http://compsoc.dur.ac.uk:80/whitespace/download.php",
     "https://github.com/hostilefork/whitespacers/tree/master/perl",
+    "https://github.com/wspace/mkoelbl-perl",
     "https://github.com/thaliaarchi/repo-archival/blob/main/scripts/wspace/mkoelbl-perl.sh"
   ],
   "submodules": [{ "path": "whitespace", "url": "https://github.com/wspace/mkoelbl-perl" }],

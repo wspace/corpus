@@ -8,8 +8,8 @@
   "date": "2010-02-05 08:24:04 +0000",
   "spec_version": "0.3",
   "source": [
-    "https://github.com/wspace/peasley-cpp",
-    "http://www.rohitab.com/discuss/topic/35639-c-whitespace-interpreter/?p=10074137"
+    "http://www.rohitab.com/discuss/topic/35639-c-whitespace-interpreter/?p=10074137",
+    "https://github.com/wspace/peasley-cpp"
   ],
   "submodules": [{ "path": "whitespace", "url": "https://github.com/wspace/peasley-cpp" }],
   "commands": [{ "type": "interpreter", "bin": "whitespace", "usage": "<file>" }]

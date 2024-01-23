@@ -8,10 +8,10 @@
   "date": "2017-02-03 12:47:46 +0900",
   "spec_version": "0.3",
   "source": [
-    "https://github.com/wspace/0qol-prime",
     "https://gist.github.com/0qol/a57b28d3353cdef08aac34cce8b1d9dc",
     "https://gist.github.com/0qol/55ab44a35c0faba659448f340af8db70",
     "https://gist.github.com/0qol/a317e241860518a79a36c879e710de38",
+    "https://github.com/wspace/0qol-prime",
     "https://github.com/thaliaarchi/repo-archival/blob/main/scripts/wspace/0qol-prime.sh"
   ],
   "submodules": [{ "path": "prime", "url": "https://github.com/wspace/0qol-prime" }],

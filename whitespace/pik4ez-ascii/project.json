@@ -8,12 +8,12 @@
   "date": "2018-08-15 18:42:37 +0300",
   "spec_version": "0.2",
   "source": [
-    "https://github.com/wspace/pik4ez-ascii",
     "https://gist.github.com/pik4ez/a2b0ece78c999e3b9ca54369ffd484f3",
     "https://gist.github.com/pik4ez/61c0678799dbd4a7fc5a6ca08959b7b4",
     "https://gist.github.com/pik4ez/8274216220511d0e42de7881eca782da",
     "https://gist.github.com/pik4ez/fb76073886531d9b888a5c86e870bccd",
     "https://gist.github.com/pik4ez/e3d776091bae3a41e18ae1404bdccac1",
+    "https://github.com/wspace/pik4ez-ascii",
     "https://github.com/thaliaarchi/repo-archival/blob/main/scripts/wspace/pik4ez-ascii.sh"
   ],
   "submodules": [{ "path": "ascii", "url": "https://github.com/wspace/pik4ez-ascii" }],

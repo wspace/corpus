@@ -8,11 +8,11 @@
   "date": "2004-08-03 07:32:50 +0000",
   "spec_version": "0.3",
   "source": [
-    "https://github.com/wspace/phlip-pywhitespace",
     "https://web.archive.org/web/20060517072710/http://compsoc.dur.ac.uk:80/archives/whitespace/2004-August/000048.html",
     "https://web.archive.org/web/20081025231130/http://compsoc.dur.ac.uk:80/archives/whitespace/2007-December/000065.html",
     "https://web.archive.org/web/20061007203840/http://www.cs.newcastle.edu.au:80/~c3018900/pywhitespace.tar.bz2",
-    "https://www.mrphlip.com/pywhitespace.tar.bz2"
+    "https://www.mrphlip.com/pywhitespace.tar.bz2",
+    "https://github.com/wspace/phlip-pywhitespace"
   ],
   "submodules": [{ "path": "pywhitespace", "url": "https://github.com/wspace/phlip-pywhitespace" }],
   "whitespace": { "nonstandard": [{ "name": "trace", "seq": "LLT" }], "extension": "ws" },
@@ -28,5 +28,6 @@
     { "path": "examples/loctest.ws", "equivalent": "loctest.ws", "spec_version": "0.3" },
     { "path": "examples/trace.ws", "spec_version": "0.2", "authors": ["Thalia Archibald"] }
   ],
-  "commands": [{ "type": "interpreter", "bin": "main.py", "usage": "<file>" }]
+  "commands": [{ "type": "interpreter", "bin": "main.py", "usage": "<file>" }],
+  "todo": "Automate repo construction in repo-archival."
 }

@@ -7,6 +7,6 @@
   "tags": ["interpreter"],
   "date": "2020-08-03 23:19:28 +0900",
   "spec_version": "0.2",
-  "source": ["https://github.com/wspace/kosei28-javascript", "https://github.com/kosei28/Whitespace"],
+  "source": ["https://github.com/kosei28/Whitespace", "https://github.com/wspace/kosei28-javascript"],
   "submodules": [{ "path": "Whitespace", "url": "https://github.com/wspace/kosei28-javascript" }]
 }

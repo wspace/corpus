@@ -8,8 +8,8 @@
   "date": "2021-03-30 23:11:02 +0900",
   "spec_version": "0.3",
   "source": [
-    "https://github.com/wspace/omurakazuaki-rust",
     "https://github.com/omurakazuaki/WriteCodeEveryDay/tree/main/rust/whitespace",
+    "https://github.com/wspace/omurakazuaki-rust",
     "https://github.com/thaliaarchi/repo-archival/blob/main/scripts/wspace/omurakazuaki-rust.sh"
   ],
   "submodules": [{ "path": "whitespace", "url": "https://github.com/wspace/omurakazuaki-rust" }],

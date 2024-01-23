@@ -8,10 +8,10 @@
   "date": "2016-03-21 16:16:56 +0900",
   "spec_version": "0.2",
   "source": [
-    "https://github.com/wspace/shimo-yukicoder",
     "https://github.com/shi-mo/yukicoder/tree/master/whitespace",
-    "https://yukicoder.me/users/1721",
-    "https://github.com/thaliaarchi/repo-archival/blob/main/scripts/wspace/shimo-yukicoder.sh"
+    "https://github.com/wspace/shimo-yukicoder",
+    "https://github.com/thaliaarchi/repo-archival/blob/main/scripts/wspace/shimo-yukicoder.sh",
+    "https://yukicoder.me/users/1721"
   ],
   "submodules": [{ "path": "whitespace", "url": "https://github.com/wspace/shimo-yukicoder" }],
   "challenges": ["yukicoder"],

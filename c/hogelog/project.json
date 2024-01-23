@@ -8,8 +8,8 @@
   "date": "2008-04-24 08:21:01 +0000",
   "spec_version": "0.3",
   "source": [
-    "https://github.com/wspace/hogelog-c",
     "https://github.com/hogelog/hogel.org-old/tree/master/content/lib/c",
+    "https://github.com/wspace/hogelog-c",
     "https://github.com/thaliaarchi/repo-archival/blob/main/scripts/wspace/hogelog-c.sh"
   ],
   "submodules": [{ "path": "ws", "url": "https://github.com/wspace/hogelog-c" }],

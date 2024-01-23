@@ -8,12 +8,12 @@
   "date": "2009-03-25 18:20:33 +0000",
   "spec_version": "0.3",
   "source": [
-    "https://github.com/wspace/bearice-grassmudhorse",
     "https://github.com/google-code-export/grass-mud-horse",
     "https://github.com/charlestian/grass-mud-horse",
     "https://archive.softwareheritage.org/browse/origin/directory/?origin_url=http://grass-mud-horse.googlecode.com/svn/",
     "https://web.archive.org/web/20160114185408/https://code.google.com/p/grass-mud-horse/",
     "https://web.archive.org/web/20210624084916/https://code.google.com/archive/p/grass-mud-horse/",
+    "https://github.com/wspace/bearice-grassmudhorse",
     "https://github.com/thaliaarchi/repo-archival/blob/main/scripts/wspace/bearice-grassmudhorse.sh"
   ],
   "submodules": [{ "path": "grass-mud-horse", "url": "https://github.com/wspace/bearice-grassmudhorse" }],

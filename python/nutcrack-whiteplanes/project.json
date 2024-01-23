@@ -8,8 +8,8 @@
   "date": "2016-04-22 01:19:35 +0900",
   "spec_version": "0.3",
   "source": [
-    "https://github.com/wspace/nutcrack-whiteplanes.py",
     "https://archive.softwareheritage.org/browse/origin/directory/?origin_url=https://github.com/whiteplanes/whiteplanes.py",
+    "https://github.com/wspace/nutcrack-whiteplanes.py",
     "https://wspace.github.io/nutcrack-whiteplanes.github.io/",
     "https://github.com/thaliaarchi/repo-archival/blob/main/scripts/wspace/nutcrack-whiteplanes.sh"
   ],
