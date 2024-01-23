@@ -9,9 +9,10 @@
   "spec_version": "0.2",
   "source": [
     "https://github.com/kspalaiologos/codegolf-submissions",
+    "https://github.com/wspace/kspalaiologos-codegolf",
     "https://codegolf.stackexchange.com/questions/55960/im-not-the-language-youre-looking-for/191063#191063"
   ],
-  "submodules": [{ "path": "codegolf-submissions", "url": "https://github.com/kspalaiologos/codegolf-submissions" }],
+  "submodules": [{ "path": "codegolf-submissions", "url": "https://github.com/wspace/kspalaiologos-codegolf" }],
   "challenges": ["Code Golf"],
   "whitespace": { "extension": "ws" },
   "programs": [{ "path": "55960.ws", "polyglot": ["Malbolge"], "spec_version": "0.2" }],

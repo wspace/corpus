@@ -947,7 +947,7 @@
 	url = https://github.com/kokoax/hello
 [submodule "whitespace/kspalaiologos-codegolf/codegolf-submissions"]
 	path = whitespace/kspalaiologos-codegolf/codegolf-submissions
-	url = https://github.com/kspalaiologos/codegolf-submissions
+	url = https://github.com/wspace/kspalaiologos-codegolf
 [submodule "whitespace/kspalaiologos-cosmopolitan-sk/cosmopolitan-sk"]
 	path = whitespace/kspalaiologos-cosmopolitan-sk/cosmopolitan-sk
 	url = https://github.com/kspalaiologos/cosmopolitan-sk

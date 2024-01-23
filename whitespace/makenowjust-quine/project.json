@@ -9,6 +9,6 @@
   "spec_version": "0.2",
   "source": ["https://github.com/MakeNowJust/quine"],
   "submodules": [{ "path": "quine", "url": "https://github.com/MakeNowJust/quine" }],
-  "whitespace": { "extension": "ws" },
-  "programs": [{ "path": "quine.ws", "spec_version": "0.2" }]
+  "whitespace": { "extension": "whitespace" },
+  "programs": [{ "path": "quine.whitespace", "spec_version": "0.2" }]
 }
