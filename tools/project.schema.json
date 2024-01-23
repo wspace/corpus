@@ -390,10 +390,10 @@
     "scripts": {
       "type": "object",
       "properties": {
-        "run": { "type": "#/$defs/script" },
-        "compile": { "type": "#/$defs/script" },
-        "assemble": { "type": "#/$defs/script" },
-        "disassemble": { "type": "#/$defs/script" }
+        "run": { "$ref": "#/$defs/script" },
+        "compile": { "$ref": "#/$defs/script" },
+        "assemble": { "$ref": "#/$defs/script" },
+        "disassemble": { "$ref": "#/$defs/script" }
       },
       "additionalProperties": false
     },
