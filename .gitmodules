@@ -782,7 +782,7 @@
 	url = https://github.com/wspace/zrneely-rust
 [submodule "scala/andreal2000/WhitespaceEvaluator"]
 	path = scala/andreal2000/WhitespaceEvaluator
-	url = https://github.com/wspace/andreal2000-scala
+	url = https://github.com/Andreal2000/WhitespaceEvaluator
 [submodule "scala/dashlambda-eso/Eso"]
 	path = scala/dashlambda-eso/Eso
 	url = https://github.com/Dash-Lambda/Eso

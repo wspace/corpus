@@ -19,7 +19,7 @@ instructions, ranked by popularity.
 - `div` (106), `divide` (13), `division` (8), `/` (3), `intdiv` (2), `integerdivision` (2), `infixdivide`, `op/`
 - `mod` (108), `modulo` (19), `rem` (3), `%` (2), `division_part`, `infixmodulo`
 - `store` (107), `set` (4), `stor` (4), `put` (3), `save` (3), `sto` (3), `push` (2), `write` (2), `addtoheap`, `heapstore`, `heapwrite`, `push_heap`, `st`, `storeat`, `storeheap`, `valuetoadress`
-- `retrieve` (77), `load` (19), `get` (9), `retr` (7), `retrive` (6), `pop` (3), `read` (3), `fetch` (2), `ret` (2), `getfromheap`, `heapread`, `heapretrive`, `ld`, `lod`, `pop_heap`, `rcl`, `reti`, `retreive`, `retri`, `retrieveheap`, `retrv`, `storeatstack`, `valuetostacktop`
+- `retrieve` (77), `load` (19), `get` (9), `retr` (7), `retrive` (6), `pop` (3), `read` (3), `fetch` (2), `ret` (2), `getfromheap`, `heapread`, `heapretrieve`, `ld`, `lod`, `pop_heap`, `rcl`, `reti`, `retreive`, `retri`, `retrieveheap`, `retrv`, `storeatstack`, `valuetostacktop`
 - `label` (53), `mark` (34), `<label>:` (15), `register` (7), `def` (4), `lbl` (4), `<number>:` (3), `label_<number>:` (3), `mark_sub` (2), `marklabel` (2), `mrk` (2), `setlabel` (2), `%<number>:`, `:<label>`, `<<number>>:`, `@<label>`, `addlabel`, `deflabel`, `defun`, `l<number>:`, `label <label>:`, `label#_####`, `label_<number>`, `label_mark`, `labl`, `mark_location`, `marklocation`, `marks`, `part`, `set_label`
 - `call` (112), `callsubroutine` (5), `gosub` (4), `call_sub` (3), `call_subroutine` (2), `jsr` (2), `call_label`, `calls`, `callsrtn`, `callsub`, `cas`, `cll`, `jal`, `sub`, `sub_start`, `subroutine`
 - `jump` (89), `jmp` (36), `goto` (7), `jumplabel` (3), `jp` (2), `unconditionaljump` (2), `b`, `j`, `jumps`

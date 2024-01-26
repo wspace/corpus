@@ -1,17 +1,18 @@
 {
   "id": "scala/andreal2000",
-  "name": "WhitespaceEvaluator",
+  "name": "Whitespace Evaluator",
   "authors": ["Andrea Longoni"],
-  "license": "none",
+  "license": "MIT",
   "languages": ["Scala"],
   "tags": ["interpreter"],
   "date": "2024-01-21 21:29:48 +0100",
   "spec_version": "0.3",
   "source": [
+    "https://github.com/Andreal2000/WhitespaceEvaluator",
     "https://gist.github.com/Andreal2000/8d876ba97b70240b50b68e5993119584",
     "https://github.com/wspace/andreal2000-scala"
   ],
-  "submodules": [{ "path": "WhitespaceEvaluator", "url": "https://github.com/wspace/andreal2000-scala" }],
+  "submodules": [{ "path": "WhitespaceEvaluator", "url": "https://github.com/Andreal2000/WhitespaceEvaluator" }],
   "assembly": {
     "mnemonics": {
       "push": "stackPush",
@@ -26,7 +27,7 @@
       "div": "integerDivision",
       "mod": "modulo",
       "store": "heapStore",
-      "retrieve": "heapRetrive",
+      "retrieve": "heapRetrieve",
       "label": "markLocation",
       "call": "callSubroutine",
       "jmp": "jump",
@@ -41,10 +42,58 @@
     },
     "usage": ["enum"]
   },
+  "programs": [
+    {
+      "path": "src/test/scala/resources/calc/calc.ws",
+      "inputs": ["src/test/scala/resources/calc/calc.in"],
+      "outputs": ["src/test/scala/resources/calc/calc.out"]
+    },
+    {
+      "path": "src/test/scala/resources/count/count.ws",
+      "outputs": ["src/test/scala/resources/count/count.out"]
+    },
+    {
+      "path": "src/test/scala/resources/fibonacci/fibonacci.ws",
+      "inputs": ["src/test/scala/resources/fibonacci/fibonacci.in"],
+      "outputs": ["src/test/scala/resources/fibonacci/fibonacci.out"]
+    },
+    {
+      "path": "src/test/scala/resources/hanoi/hanoi.ws",
+      "inputs": ["src/test/scala/resources/hanoi/hanoi.in"],
+      "outputs": ["src/test/scala/resources/hanoi/hanoi.out"]
+    },
+    {
+      "path": "src/test/scala/resources/hworld/hworld.ws",
+      "outputs": ["src/test/scala/resources/hworld/hworld.out"]
+    },
+    {
+      "path": "src/test/scala/resources/name/name.ws",
+      "inputs": ["src/test/scala/resources/name/name.in"],
+      "outputs": ["src/test/scala/resources/name/name.out"]
+    },
+    {
+      "path": "src/test/scala/resources/quine/quine.ws",
+      "outputs": ["src/test/scala/resources/quine/quine.out"]
+    },
+    {
+      "path": "src/test/scala/resources/quine-2/quine-2.ws",
+      "outputs": ["src/test/scala/resources/quine-2/quine-2.out"]
+    },
+    {
+      "path": "src/test/scala/resources/vm-bf/vm-bf.ws",
+      "inputs": ["src/test/scala/resources/vm-bf/vm-bf.in"],
+      "outputs": ["src/test/scala/resources/vm-bf/vm-bf.out"]
+    },
+    {
+      "path": "src/test/scala/resources/vm-mal/vm-mal.ws",
+      "inputs": ["src/test/scala/resources/vm-mal/vm-mal.in"],
+      "outputs": ["src/test/scala/resources/vm-mal/vm-mal.out"]
+    }
+  ],
   "commands": [
     {
       "type": "interpreter",
-      "bin": "target/scala-3.3.1/WhitespaceEvaluator-assembly-0.1.0.jar",
+      "bin": "target/scala-3.3.1/WhitespaceEvaluator-assembly-0.3.jar",
       "usage": "[file]...",
       "input": "[file]..."
     }

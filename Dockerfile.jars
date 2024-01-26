@@ -56,3 +56,5 @@ COPY --from=scala_andreal2000           /WhitespaceEvaluator/WhitespaceEvaluator
 COPY --from=scala_dashlambda-eso        /Eso/Eso-2.6.1.jar                                              scala/dashlambda-eso/
 COPY --from=scala_sderosiaux            /whitespace-parser/whitespace-parser-0.1.jar                    scala/sderosiaux/
 COPY --from=scala_stephenpatrick        /whitespace-interpreter/whitespace.jar                          scala/stephenpatrick/
+
+ENTRYPOINT ["java", "-jar"]
