@@ -1,11 +1,12 @@
-FROM golang:1.21 AS builder
+FROM golang:1.22 AS builder
 
 WORKDIR /wspacego
 COPY wspacego .
 RUN go mod init github.com/135yshr/wspacego && \
-    go mod tidy
+    go mod tidy && \
+    CGO_ENABLED=0 go build
+# Tests fail
 # RUN go test ./...
-RUN CGO_ENABLED=0 go build
 
 FROM scratch
 

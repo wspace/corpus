@@ -1,9 +1,9 @@
-FROM golang:1.21 AS builder
+FROM golang:1.22 AS builder
 
 WORKDIR /whitespace
 COPY whitespace .
-RUN go mod init github.com/kinu/whitespace
-RUN CGO_ENABLED=0 go build
+RUN go mod init github.com/kinu/whitespace && \
+    CGO_ENABLED=0 go build
 
 FROM scratch
 

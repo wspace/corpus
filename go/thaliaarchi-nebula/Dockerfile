@@ -1,12 +1,12 @@
-FROM golang:1.21 AS builder
+FROM golang:1.22 AS builder
 
 WORKDIR /nebula
 COPY nebula .
 # TODO: Requires LLVM
 RUN go mod init github.com/thaliaarchi/nebula && \
-    go mod tidy
-RUN go test ./...
-RUN go build
+    go mod tidy && \
+    go test ./... && \
+    go build
 
 FROM scratch
 

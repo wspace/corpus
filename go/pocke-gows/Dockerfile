@@ -1,10 +1,10 @@
-FROM golang:1.21 AS builder
+FROM golang:1.22 AS builder
 
 WORKDIR /gows
 COPY gows .
 RUN go mod init github.com/pocke/gows && \
-    go mod tidy
-RUN CGO_ENABLED=0 go build
+    go mod tidy && \
+    CGO_ENABLED=0 go build
 
 FROM scratch
 
