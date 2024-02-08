@@ -1,4 +1,4 @@
-FROM rust:1.75 AS builder
+FROM rust:1.76 AS builder
 
 WORKDIR /rust-whitespace
 COPY rust-whitespace .
