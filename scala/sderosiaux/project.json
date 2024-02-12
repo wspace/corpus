@@ -13,5 +13,6 @@
     "https://github.com/sderosiaux/golb/blob/master/src/pages/2018-06-15-parser-with-state-monad/index.md"
   ],
   "submodules": [{ "path": "whitespace-parser", "url": "https://github.com/sderosiaux/whitespace-parser" }],
+  "programs": [{ "path": "src/test/scala/com/sderosiaux/whitespace/WhitespaceInterpreterTest.scala" }],
   "commands": [{ "type": "interpreter", "input": "hardcoded hello world" }]
 }

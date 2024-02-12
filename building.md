@@ -225,7 +225,7 @@ Projects that can be built with Docker:
 - rust/zrneely
 - scala/andreal2000
 - scala/dashlambda-eso
-- scala/polyglotpiglet-whitespacing: The `Input` type (a trait?) is not defined and may have been removed in a later release
+- scala/polyglotpiglet-whitespacing: The `Input` type (a trait?) is not defined and may have been removed in a later Scala release
 - scala/sderosiaux
 - scala/stephenpatrick
 - swift/nutcrack-whiteplanes: No entrypoint

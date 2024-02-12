@@ -26,14 +26,60 @@
     }
   ],
   "programs": [
-    { "path": "examples/calc.ws", "equivalent": "calc.ws", "spec_version": "0.2" },
-    { "path": "examples/count.ws", "equivalent": "count.ws", "spec_version": "0.2" },
-    { "path": "examples/count.wsw", "equivalent": "count.ws", "spec_version": "0.2" },
-    { "path": "examples/fact.ws", "equivalent": "fact.ws", "spec_version": "0.2" },
-    { "path": "examples/hanoi.ws", "equivalent": "hanoi.ws", "spec_version": "0.2" },
-    { "path": "examples/hworld.ws", "equivalent": "hworld.ws", "spec_version": "0.2" },
-    { "path": "examples/loctest.ws", "equivalent": "loctest.ws", "spec_version": "0.3" },
-    { "path": "examples/name.ws", "equivalent": "name.ws", "spec_version": "0.2" }
+    {
+      "path": "examples/calc.ws",
+      "inputs": ["tests/calc.in"],
+      "outputs": ["tests/calc.out"],
+      "equivalent": "calc.ws",
+      "spec_version": "0.2"
+    },
+    {
+      "path": "examples/count.ws",
+      "outputs": ["tests/count.out"],
+      "equivalent": "count.ws",
+      "spec_version": "0.2"
+    },
+    {
+      "path": "examples/count.wsw",
+      "outputs": ["tests/count.out"],
+      "mapping_index": 0,
+      "equivalent": "count.ws",
+      "spec_version": "0.2"
+    },
+    {
+      "path": "examples/fact.ws",
+      "inputs": ["tests/fact.in"],
+      "outputs": ["tests/fact.out"],
+      "equivalent": "fact.ws",
+      "spec_version": "0.2"
+    },
+    {
+      "path": "examples/hanoi.ws",
+      "inputs": ["tests/hanoi.in"],
+      "outputs": ["tests/hanoi.out"],
+      "equivalent": "hanoi.ws",
+      "spec_version": "0.2"
+    },
+    {
+      "path": "examples/hworld.ws",
+      "outputs": ["tests/hworld.out"],
+      "equivalent": "hworld.ws",
+      "spec_version": "0.2"
+    },
+    {
+      "path": "examples/loctest.ws",
+      "inputs": ["tests/loctest.in"],
+      "outputs": ["tests/loctest.out"],
+      "equivalent": "loctest.ws",
+      "spec_version": "0.3"
+    },
+    {
+      "path": "examples/name.ws",
+      "inputs": ["tests/name.in"],
+      "outputs": ["tests/name.out"],
+      "equivalent": "name.ws",
+      "spec_version": "0.2"
+    }
   ],
   "build_errors": "Bootstrapping issues",
   "commands": [

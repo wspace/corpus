@@ -9,5 +9,5 @@
   "spec_version": "0.2",
   "source": ["https://github.com/polyglotpiglet/Whitespacing"],
   "submodules": [{ "path": "Whitespacing", "url": "https://github.com/polyglotpiglet/Whitespacing" }],
-  "build_errors": "The `Input` type (a trait?) is not defined and may have been removed in a later release"
+  "build_errors": "The `Input` type (a trait?) is not defined and may have been removed in a later Scala release"
 }

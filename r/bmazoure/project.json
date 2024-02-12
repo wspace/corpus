@@ -34,6 +34,7 @@
       "readc": "getc",
       "readi": "getn"
     },
+    "patterns": { "label": "[01]*", "number": "-?[0-9]+" },
     "usage": ["internal"]
   },
   "commands": [
@@ -45,5 +46,5 @@
       "usage": "Rscript -e 'source(\"R/whitespace.R\"); library(readr); compile(parse(dfa(read_file(\"<file>\"))))'"
     }
   ],
-  "notes": "Comments are not allowed. <number> is a binary string with optional `-` sign. <label> is a binary string."
+  "notes": "Comment characters are not supported"
 }

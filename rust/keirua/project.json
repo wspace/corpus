@@ -49,7 +49,26 @@
     { "path": "examples/hworld.ws", "equivalent": "hworld.ws", "spec_version": "0.2" },
     { "path": "examples/hworld2.ws", "equivalent": "hworld.ws", "spec_version": "0.2" },
     { "path": "examples/loctest.ws", "equivalent": "loctest.ws", "spec_version": "0.3" },
-    { "path": "examples/name.ws", "equivalent": "name.ws", "spec_version": "0.2" }
+    { "path": "examples/name.ws", "equivalent": "name.ws", "spec_version": "0.2" },
+    {
+      "path": "docs/WSpace/docs/tutorial.html",
+      "polyglot": ["HTML"],
+      "equivalent": "tutorial.html",
+      "spec_version": "0.2"
+    },
+    {
+      "path": "docs/tutorial.html",
+      "polyglot": ["HTML"],
+      "equivalent": "tutorial.html",
+      "spec_version": "0.2"
+    },
+    { "path": "docs/WSpace/examples/calc.ws", "equivalent": "calc.ws", "spec_version": "0.2" },
+    { "path": "docs/WSpace/examples/count.ws", "equivalent": "count.ws", "spec_version": "0.2" },
+    { "path": "docs/WSpace/examples/fact.ws", "equivalent": "fact.ws", "spec_version": "0.2" },
+    { "path": "docs/WSpace/examples/hanoi.ws", "equivalent": "hanoi.ws", "spec_version": "0.2" },
+    { "path": "docs/WSpace/examples/hworld.ws", "equivalent": "hworld.ws", "spec_version": "0.2" },
+    { "path": "docs/WSpace/examples/loctest.ws", "equivalent": "loctest.ws", "spec_version": "0.3" },
+    { "path": "docs/WSpace/examples/name.ws", "equivalent": "name.ws", "spec_version": "0.2" }
   ],
   "commands": [
     {
