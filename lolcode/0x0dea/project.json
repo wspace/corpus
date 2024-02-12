@@ -4,7 +4,7 @@
   "authors": ["D.E. Akers"],
   "license": "WTFPL",
   "languages": ["LOLCODE"],
-  "tags": ["interpreter"],
+  "tags": ["interpreter", "programs"],
   "date": "2016-11-21 01:10:33 -0500",
   "spec_version": "0.3",
   "source": [
@@ -13,6 +13,7 @@
     "https://github.com/thaliaarchi/repo-archival/blob/main/scripts/wspace/0x0dea-lolcode.sh"
   ],
   "submodules": [{ "path": "lolcode", "url": "https://github.com/wspace/0x0dea-lolcode" }],
+  "whitespace": { "extension": "ws" },
   "assembly": {
     "mnemonics": {
       "push": "push",
@@ -42,6 +43,10 @@
     },
     "usage": ["enum"]
   },
+  "programs": [
+    { "path": "brainfuck.ws", "spec_version": "0.3" },
+    { "path": "fizzbuzz.ws", "spec_version": "0.2" }
+  ],
   "commands": [
     { "type": "interpreter", "bin": "whitespace.lol", "input": "filename from stdin", "output": "stdout" }
   ]

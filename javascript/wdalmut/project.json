@@ -11,6 +11,7 @@
   "submodules": [
     { "path": "whitespace-lang-compiler", "url": "https://github.com/wdalmut/whitespace-lang-compiler" }
   ],
+  "whitespace": { "extension": "ws" },
   "assembly": {
     "mnemonics": {
       "push": "PUSH_NUMBER_STACK_TOP",
@@ -38,6 +39,7 @@
     },
     "usage": ["disassembler"]
   },
+  "programs": [{ "path": "spec/support/hello.ws" }],
   "commands": [
     {
       "type": "disassembler",

@@ -4,7 +4,7 @@
   "authors": ["Harold Lee", "Edwin Brady"],
   "license": "GPL-2.0-or-later",
   "languages": ["Haskell"],
-  "tags": ["interpreter"],
+  "tags": ["interpreter", "programs"],
   "date": "2011-03-10 11:26:53 -0800",
   "spec_version": "0.3",
   "source": [
@@ -21,7 +21,18 @@
     }
   ],
   "relations": [{ "id": "haskell/edwinb-wspace-0.3", "type": "fork" }],
-  "whitespace": { "nonstandard": [{ "name": "shuffle", "seq": "STTS" }] },
+  "whitespace": { "nonstandard": [{ "name": "shuffle", "seq": "STTS" }], "extension": "ws" },
+  "programs": [
+    { "path": "docs/tutorial.html", "polyglot": ["HTML"] },
+    { "path": "examples/calc.ws" },
+    { "path": "examples/count.ws" },
+    { "path": "examples/fact.ws" },
+    { "path": "examples/hanoi.ws" },
+    { "path": "examples/hworld.ws" },
+    { "path": "examples/loctest.ws" },
+    { "path": "examples/name.ws" },
+    { "path": "examples/randperm.ws" }
+  ],
   "commands": [
     {
       "type": "interpreter",

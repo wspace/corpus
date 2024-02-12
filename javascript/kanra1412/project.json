@@ -9,5 +9,11 @@
   "spec_version": "0.3",
   "source": ["https://github.com/kanra1412/whitespace-interpreter"],
   "submodules": [{ "path": "whitespace-interpreter", "url": "https://github.com/kanra1412/whitespace-interpreter" }],
+  "whitespace": { "extension": "ws" },
+  "programs": [
+    { "path": "test/count.ws" },
+    { "path": "test/helloworld.ws" },
+    { "path": "test/http _compsoc.dur.ac.uk_whitespace_count.ws" }
+  ],
   "commands": [{ "bin": "whitespace.js", "input": "test/http _compsoc.dur.ac.uk_whitespace_count.ws" }]
 }

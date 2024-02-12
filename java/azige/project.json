@@ -93,6 +93,13 @@
       "aux": ["src/test/resources/name.ws"],
       "equivalent": "name.ws",
       "spec_version": "0.2"
+    },
+    {
+      "path": "src/main/pack/example/tutorial.html",
+      "aux": ["src/test/resources/tutorial.html"],
+      "polyglot": ["HTML"],
+      "equivalent": "tutorial.html",
+      "spec_version": "0.2"
     }
   ],
   "commands": [

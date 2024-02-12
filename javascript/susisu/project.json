@@ -98,6 +98,5 @@
       "option_parse": "JavaScript Commander.js",
       "notes": "Formats labels as strings of sequences of ' ', '\t', and '\n', which will not parse back to the same label."
     }
-  ],
-  "notes": "Also published identically as https://www.npmjs.com/package/notrun-nocode"
+  ]
 }

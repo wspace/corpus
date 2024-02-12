@@ -14,7 +14,8 @@
       "name": "whitespace-lang",
       "registry": "npm",
       "url": "https://www.npmjs.com/package/whitespace-lang"
-    }
+    },
+    { "name": "notrun-nocode", "registry": "npm", "url": "https://www.npmjs.com/package/notrun-nocode" }
   ],
   "relations": [{ "id": "javascript/vii5ard-whitelips-ide", "type": "fork" }],
   "whitespace": { "extension": "ws" },

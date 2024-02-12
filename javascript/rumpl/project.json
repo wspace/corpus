@@ -9,5 +9,15 @@
   "spec_version": "0.3",
   "source": ["https://github.com/rumpl/whitespace"],
   "submodules": [{ "path": "whitespace", "url": "https://github.com/rumpl/whitespace" }],
+  "whitespace": { "extension": "ws" },
+  "programs": [
+    { "path": "ws/calc.ws" },
+    { "path": "ws/count.ws" },
+    { "path": "ws/fact.ws" },
+    { "path": "ws/hanoi.ws" },
+    { "path": "ws/hworld.ws" },
+    { "path": "ws/loctest.ws" },
+    { "path": "ws/name.ws" }
+  ],
   "commands": [{ "bin": "index.js", "usage": "[debug] <file>", "input": "<file>" }]
 }

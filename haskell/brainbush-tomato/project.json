@@ -4,7 +4,7 @@
   "authors": ["brainbush"],
   "license": "GPL-2.0-or-later",
   "languages": ["Haskell"],
-  "tags": ["interpreter", "mapping", "programs"],
+  "tags": ["interpreter", "mapping"],
   "date": "2015-02-26 20:31:40 +0800",
   "spec_version": "0.3",
   "source": ["https://github.com/brainbush/Tomato-Programming-Language"],
@@ -14,7 +14,18 @@
       "url": "https://github.com/brainbush/Tomato-Programming-Language"
     }
   ],
+  "whitespace": { "extension": "ws" },
   "mappings": [{ "space": "番", "tab": "茄", "lf": "干" }],
+  "programs": [
+    { "path": "docs/tutorial.html", "polyglot": ["HTML"] },
+    { "path": "examples/calc.ws" },
+    { "path": "examples/count.ws" },
+    { "path": "examples/fact.ws" },
+    { "path": "examples/hanoi.ws" },
+    { "path": "examples/hworld.ws" },
+    { "path": "examples/loctest.ws" },
+    { "path": "examples/name.ws" }
+  ],
   "commands": [
     {
       "type": "interpreter",

@@ -14,5 +14,6 @@
   ],
   "relations": [{ "id": "javascript/vii5ard-whitelips-ide", "type": "fork" }],
   "mappings": [{ "space": "&#8203;", "tab": "&#8204;", "lf": "\n", "extension": "zw" }],
+  "programs": [{ "path": "tests.zw", "mapping_index": 0 }],
   "commands": [{ "bin": "index.js", "usage": "[<file>]", "input": "<file> or stdin" }]
 }

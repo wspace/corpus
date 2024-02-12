@@ -4,11 +4,17 @@
   "authors": ["Jim McStanton"],
   "license": "BSD-3-Clause",
   "languages": ["Haskell", "Yacc"],
-  "tags": ["interpreter"],
+  "tags": ["interpreter", "programs"],
   "date": "2019-06-28 20:19:29 -0500",
   "spec_version": "0.2",
   "source": ["https://github.com/jhmcstanton/marginal"],
   "submodules": [{ "path": "marginal", "url": "https://github.com/jhmcstanton/marginal" }],
+  "whitespace": { "extension": "ws" },
+  "programs": [
+    { "path": "examples/collatz.ws" },
+    { "path": "examples/hello_world_loop.ws" },
+    { "path": "examples/hello_world_simple.ws" }
+  ],
   "commands": [
     {
       "install_dependencies": "stack setup",

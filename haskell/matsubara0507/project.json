@@ -14,5 +14,15 @@
       "url": "https://github.com/matsubara0507/whitespace_has",
       "branch": "develop"
     }
+  ],
+  "whitespace": { "extension": "ws" },
+  "programs": [
+    { "path": "examples/calc.ws" },
+    { "path": "examples/fact.ws" },
+    { "path": "examples/fibonacci.ws" },
+    { "path": "examples/hanoi.ws" },
+    { "path": "examples/hw.ws" },
+    { "path": "examples/hworld.ws" },
+    { "path": "examples/name.ws" }
   ]
 }

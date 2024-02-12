@@ -4,11 +4,13 @@
   "authors": ["jarsp"],
   "license": "none",
   "languages": ["MASM"],
-  "tags": ["interpreter"],
+  "tags": ["interpreter", "programs"],
   "date": "2014-06-01 19:15:40 +0800",
   "spec_version": "0.3",
   "source": ["https://github.com/jarsp/wsint"],
   "submodules": [{ "path": "wsint", "url": "https://github.com/jarsp/wsint" }],
+  "mappings": [{ "space": "[SP]", "tab": "[TB]", "lf": "[LF]" }],
+  "programs": [{ "path": "script.ws" }],
   "commands": [
     {
       "type": "interpreter",

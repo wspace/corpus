@@ -37,7 +37,7 @@
       "spec_version": "0.2"
     },
     {
-      "path": "examples/ws/stn/original/hWorld.stn",
+      "path": "examples/ws/stn/original/helloWorld.stn",
       "generated": "examples/ws/ws/original/hworld.ws",
       "equivalent": "hworld.ws",
       "spec_version": "0.2"
@@ -65,8 +65,11 @@
     { "path": "examples/ws/stn/from-wsa/hello4.stn", "spec_version": "0.2" },
     { "path": "examples/ws/stn/from-wsa/prim.stn", "spec_version": "0.2" },
     { "path": "examples/ws/stn/original/cat.stn", "spec_version": "0.2" },
-    { "path": "examples/ws/stn/original/helloWorld.stn", "spec_version": "0.2" },
-    { "path": "examples/ws/stn/original/truthMachine.stn", "spec_version": "0.2" }
+    { "path": "examples/ws/stn/original/hWorld.stn", "spec_version": "0.2" },
+    { "path": "examples/ws/stn/original/truthMachine.stn", "spec_version": "0.2" },
+    { "path": "examples/ws/ws/from-elvm/8cc.c.eir.ws" },
+    { "path": "examples/ws/ws/from-elvm/fizzbuzz.ws" },
+    { "path": "examples/ws/ws/from-elvm/hello.ws" }
   ],
   "commands": [
     {
