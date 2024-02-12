@@ -221,6 +221,7 @@ Projects that can be built with Docker:
 - rust/luminighty: No entrypoint
 - rust/nareshganduri
 - rust/omurakazuaki
+- rust/thaliaarchi-lazy-wspace
 - rust/thaliaarchi-yspace
 - rust/zrneely
 - scala/andreal2000

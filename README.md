@@ -1,6 +1,6 @@
 # The Whitespace Corpus
 
-The definitive collection of 363 projects for the Whitespace programming
+The definitive collection of 364 projects for the Whitespace programming
 language, including interpreters, compilers, and programs.
 
 ## Projects
@@ -8,6 +8,7 @@ language, including interpreters, compilers, and programs.
 | Name                                          | Authors          | Languages  | Tags         | Date       | Source |
 | --------------------------------------------- | ---------------- | ---------- | ------------ | ---------- | ------ |
 | [Whitespace Evaluator](scala/andreal2000)     | Andrea Longoni   | Scala      | interpreter  | 2024-01-21 | [GitHub](https://github.com/Andreal2000/WhitespaceEvaluator), [GitHub Gist](https://gist.github.com/Andreal2000/8d876ba97b70240b50b68e5993119584) |
+| [lazy-wspace](rust/thaliaarchi-lazy-wspace)   | Thalia Archibald | Rust, Coq  | compiler, interpreter, assembler, disassembler, extension, programs | 2023-03-11 | [GitHub](https://github.com/thaliaarchi/lazy-wspace) |
 | [prime-whitespace](whitespace/nepetaiscute-prime) | nepeta       | Whitespace | programs     | 2022-12-15 | [GitHub](https://github.com/NEPETAISCUTE/prime-whitespace) |
 | [wspace-coq](coq/thaliaarchi-wscoq)           | Thalia Archibald | Coq        | interpreter, formalism | 2022-12-14 | [GitHub](https://github.com/thaliaarchi/wscoq) |
 | [AdventOfCode2022.ws](whitespace/lukepebody-advent-of-code) | Luke Pebody | Whitespace, Python | programs, interpreter, assembler | 2022-12-14 | [GitHub](https://github.com/LukePebody/AdventOfCode2022.ws) |
