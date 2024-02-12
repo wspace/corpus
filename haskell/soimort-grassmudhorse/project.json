@@ -17,6 +17,36 @@
     }
   ],
   "whitespace": { "nonstandard": [{ "name": "shuffle", "seq": "STTS" }] },
+  "assembly": {
+    "mnemonics": {
+      "push": "Push",
+      "dup": "Dup",
+      "copy": "Ref",
+      "swap": "Swap",
+      "drop": "Discard",
+      "slide": "Slide",
+      "add": "Infix Plus",
+      "sub": "Infix Minus",
+      "mul": "Infix Times",
+      "div": "Infix Divide",
+      "mod": "Infix Modulo",
+      "store": "Store",
+      "retrieve": "Retrieve",
+      "label": "Label",
+      "call": "Call",
+      "jmp": "Jump",
+      "jz": "If Zero",
+      "jn": "If Negative",
+      "ret": "Return",
+      "end": "End",
+      "printc": "OutputChar",
+      "printi": "OutputNum",
+      "readc": "ReadChar",
+      "readi": "ReadNum",
+      "shuffle": "Shuffle"
+    },
+    "usage": ["enum"]
+  },
   "mappings": [{ "space": "草", "tab": "泥", "lf": "马", "extension": "gmh" }],
   "programs": [
     { "path": "99-grass-mud-horses.gmh", "spec_version": "0.3" },

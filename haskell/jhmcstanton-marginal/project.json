@@ -10,6 +10,33 @@
   "source": ["https://github.com/jhmcstanton/marginal"],
   "submodules": [{ "path": "marginal", "url": "https://github.com/jhmcstanton/marginal" }],
   "whitespace": { "extension": "ws" },
+  "assembly": {
+    "mnemonics": {
+      "push": "Push",
+      "dup": "Dup",
+      "swap": "Swap",
+      "drop": "Drop",
+      "add": "Add",
+      "sub": "Sub",
+      "mul": "Mult",
+      "div": "Div",
+      "mod": "Mod",
+      "store": "Store",
+      "retrieve": "Retrieve",
+      "label": "Mark",
+      "call": "Func",
+      "jmp": "Jump",
+      "jz": "JumpZero",
+      "jn": "JumpNeg",
+      "ret": "Return",
+      "end": "Exit",
+      "printc": "PrintChar",
+      "printi": "PrintNum",
+      "readc": "ReadChar",
+      "readi": "ReadNum"
+    },
+    "usage": ["enum"]
+  },
   "programs": [
     { "path": "examples/collatz.ws" },
     { "path": "examples/hello_world_loop.ws" },

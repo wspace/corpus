@@ -14,6 +14,35 @@
     "https://news.ycombinator.com/item?id=24763312"
   ],
   "submodules": [{ "path": "spaceman", "url": "https://gitlab.com/ft/spaceman.git" }],
+  "assembly": {
+    "mnemonics": {
+      "push": "Push",
+      "dup": "Duplicate",
+      "copy": "Copy",
+      "swap": "Swap",
+      "drop": "Drop",
+      "slide": "Slide",
+      "add": "Add",
+      "sub": "Subtract",
+      "mul": "Multiply",
+      "div": "Divide",
+      "mod": "Modulo",
+      "store": "Store",
+      "retrieve": "Fetch",
+      "label": "Tag",
+      "call": "Call",
+      "jmp": "Jump",
+      "jz": "JumpIfZero",
+      "jn": "JumpIfNegative",
+      "ret": "Return",
+      "end": "ExitFromProgram",
+      "printc": "PrintCharacter",
+      "printi": "PrintNumber",
+      "readc": "ReadCharacter",
+      "readi": "ReadNumber"
+    },
+    "usage": ["enum"]
+  },
   "commands": [
     {
       "build": "cabal build",
