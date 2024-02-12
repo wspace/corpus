@@ -731,7 +731,7 @@
 	url = https://github.com/yhara/esolang-book-sources
 [submodule "ruby/yuta0023-textproc/TextProc"]
 	path = ruby/yuta0023-textproc/TextProc
-	url = https://github.com/yuta0023/TextProc
+	url = https://github.com/wspace/yuta0023-textproc
 [submodule "rust/censoredusername-whitespacers/whitespace-rs"]
 	path = rust/censoredusername-whitespacers/whitespace-rs
 	url = https://github.com/CensoredUsername/whitespace-rs

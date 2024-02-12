@@ -7,8 +7,12 @@
   "tags": ["interpreter"],
   "date": "2015-11-16 15:17:05 +0900",
   "spec_version": "0.2",
-  "source": ["https://github.com/yuta0023/TextProc"],
-  "submodules": [{ "path": "TextProc", "url": "https://github.com/yuta0023/TextProc" }],
+  "source": [
+    "https://archive.softwareheritage.org/browse/origin/directory/?origin_url=https://github.com/yuta0023/TextProc",
+    "http://web.archive.org/web/20200916031929/https://github.com/yuta0023/TextProc",
+    "https://github.com/wspace/yuta0023-textproc"
+  ],
+  "submodules": [{ "path": "TextProc", "url": "https://github.com/wspace/yuta0023-textproc" }],
   "whitespace": { "extension": "ws" },
   "assembly": {
     "mnemonics": {

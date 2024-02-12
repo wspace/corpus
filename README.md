@@ -245,7 +245,7 @@ language, including interpreters, compilers, and programs.
 | [Whitespacing](scala/polyglotpiglet-whitespacing) | Alexandra Ojha | Scala    | interpreter  | 2015-12-11 | [GitHub](https://github.com/polyglotpiglet/Whitespacing) |
 | [whitespace](csharp/colchicus)                | Colchicus        | C#         | interpreter  | 2015-11-19 | [NuGet](https://www.nuget.org/packages/whitespace/), [GitHub](https://github.com/colchicus/whitespace) |
 | [c2ws](ocaml/matsud224-c2ws)                  | Daiki Matsunaga  | OCaml      | language compiler | 2015-11-17 | [GitHub](https://github.com/matsud224/c2ws) |
-| [TextProc](ruby/yuta0023-textproc)            | YutaYamaguchi    | Ruby       | interpreter  | 2015-11-16 | [GitHub](https://github.com/yuta0023/TextProc) |
+| [TextProc](ruby/yuta0023-textproc)            | YutaYamaguchi    | Ruby       | interpreter  | 2015-11-16 | [GitHub (git archive)](https://archive.softwareheritage.org/browse/origin/directory/?origin_url=https://github.com/yuta0023/TextProc), [GitHub (archive)](http://web.archive.org/web/20200916031929/https://github.com/yuta0023/TextProc), [GitHub](https://github.com/wspace/yuta0023-textproc) |
 | [callisto](lua/vyo-callisto)                  | Manu Weidmann    | Lua        | interpreter  | 2015-10-15 | [GitHub](https://github.com/vyo/callisto) |
 | [gogmh](go/petercxy-gogmh)                    | Peter Cai        | Go         | interpreter, mapping | 2015-10-06 | [GitHub](https://github.com/PeterCxy/gogmh) |
 | [2_power_5](whitespace/rafimo-cerner)         | Mohammad Rafi    | Whitespace | programs     | 2015-10-01 | [GitHub](https://github.com/rafimo/2_power_5) |
