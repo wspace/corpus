@@ -10,5 +10,7 @@
   "source": ["https://github.com/benajmin/whitespace-interpreter"],
   "submodules": [{ "path": "whitespace-interpreter", "url": "https://github.com/benajmin/whitespace-interpreter" }],
   "bounds": { "precision": "fixed" },
+  "whitespace": { "extension": "whitespace" },
+  "programs": [{ "path": "SamplePrograms/count.whitespace" }, { "path": "SamplePrograms/helloWorld.whitespace" }],
   "commands": [{ "type": "interpreter", "bin": "WhitespaceInterpreter.out", "usage": "<file>" }]
 }

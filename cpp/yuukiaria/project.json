@@ -10,6 +10,8 @@
   "source": ["https://github.com/YuukiARIA/ws-interpreter"],
   "submodules": [{ "path": "ws-interpreter", "url": "https://github.com/YuukiARIA/ws-interpreter" }],
   "bounds": { "precision": "fixed", "heap_min": 0 },
+  "whitespace": { "extension": "ws" },
+  "programs": [{ "path": "samples/square.ws" }],
   "commands": [
     {
       "type": "interpreter",

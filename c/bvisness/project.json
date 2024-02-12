@@ -4,11 +4,19 @@
   "authors": ["Ben Visness"],
   "license": "none",
   "languages": ["C", "Yacc", "TextMate"],
-  "tags": ["interpreter", "syntax highlighting"],
+  "tags": ["interpreter", "syntax highlighting", "programs"],
   "date": "2016-05-20 22:49:38 -0500",
   "spec_version": "0.3",
   "source": ["https://github.com/bvisness/whitespace"],
   "submodules": [{ "path": "whitespace", "url": "https://github.com/bvisness/whitespace" }],
+  "whitespace": { "extension": "ws" },
+  "programs": [
+    { "path": "tests/arithmetictest.ws" },
+    { "path": "tests/count.ws" },
+    { "path": "tests/heaptest.ws" },
+    { "path": "tests/iotest.ws" },
+    { "path": "tests/stacktest.ws" }
+  ],
   "commands": [
     {
       "type": "interpreter",

@@ -9,6 +9,24 @@
   "spec_version": "0.2",
   "source": ["https://github.com/malkiewiczm/whitespace_compiler"],
   "submodules": [{ "path": "whitespace_compiler", "url": "https://github.com/malkiewiczm/whitespace_compiler" }],
+  "programs": [
+    { "path": "examples/sample_output.txt" },
+    {
+      "path": "examples/spoj.txt",
+      "generated": "examples/spoj.ws",
+      "generate": "./compile examples/spoj.txt > examples/spoj.ws"
+    },
+    {
+      "path": "examples/spoj2.txt",
+      "generated": "examples/spoj2.ws",
+      "generate": "./compile examples/spoj2.txt > examples/spoj2.ws"
+    },
+    {
+      "path": "examples/test.txt",
+      "generated": "examples/test.ws",
+      "generate": "./compile examples/test.txt > examples/test.ws"
+    }
+  ],
   "commands": [
     {
       "type": "language compiler",

@@ -42,12 +42,12 @@
   },
   "programs": [
     {
-      "path": "fib_test.asm",
-      "generated": "fib_test.ws",
-      "equivalent": "fibonacci.ws",
+      "path": "tests/fib_test.asm",
+      "generated": "tests/fib_test.ws",
+      "equivalent": "tests/fibonacci.ws",
       "spec_version": "0.2"
     },
-    { "path": "hello_world.asm", "generated": "hello_world.ws", "spec_version": "0.2" }
+    { "path": "tests/hello_world.asm", "generated": "tests/hello_world.ws", "spec_version": "0.2" }
   ],
   "commands": [
     {

@@ -10,6 +10,14 @@
   "source": ["https://github.com/worktycho/whitespace-llvm"],
   "submodules": [{ "path": "whitespace-llvm", "url": "https://github.com/worktycho/whitespace-llvm" }],
   "bounds": { "precision": "arbitrary" },
+  "whitespace": { "extension": "ws" },
+  "programs": [
+    { "path": "count.ws" },
+    { "path": "test.ws" },
+    { "path": "yet-another-quine.ws" },
+    { "path": "tests/syntaxerror.ws" },
+    { "path": "tests/undefinedlabel.ws" }
+  ],
   "build_errors": "Requires LLVM",
   "commands": [
     {

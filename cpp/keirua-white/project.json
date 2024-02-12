@@ -9,6 +9,7 @@
   "spec_version": "0.3",
   "source": ["https://github.com/Keirua/whitespace"],
   "submodules": [{ "path": "whitespace", "url": "https://github.com/Keirua/whitespace" }],
+  "whitespace": { "extension": "ws" },
   "assembly": {
     "mnemonics": {
       "push": "push",
@@ -39,5 +40,14 @@
     "indentation": "",
     "usage": ["disassembler", "enum"]
   },
+  "programs": [
+    { "path": "examples/count2.ws" },
+    { "path": "examples/hanoi.ws" },
+    { "path": "examples/hworld2.ws" },
+    { "path": "examples/loctest.ws" },
+    { "path": "notworking/calc.ws" },
+    { "path": "notworking/fact.ws" },
+    { "path": "notworking/name.ws" }
+  ],
   "commands": [{ "type": "interpreter", "bin": "white", "usage": "<file>" }]
 }

@@ -9,6 +9,7 @@
   "spec_version": "0.2",
   "source": ["https://gitlab.com/tejaskasetty/ws-compiler"],
   "submodules": [{ "path": "ws-compiler", "url": "https://gitlab.com/tejaskasetty/ws-compiler.git" }],
+  "whitespace": { "extension": "ws" },
   "assembly": {
     "mnemonics": {
       "push": "push <number>",
@@ -37,6 +38,13 @@
     "indentation": "",
     "usage": ["disassembler"]
   },
+  "programs": [
+    { "path": "flex-bison/262_267_256/count.ws" },
+    { "path": "flex-bison/262_267_256/main.ws" },
+    { "path": "flex-bison/count.ws" },
+    { "path": "flex-bison/main.ws" },
+    { "path": "prev-attempts/count.ws" }
+  ],
   "build_errors": "symtab.h: multiple definition of `symtable`",
   "commands": [
     { "type": "disassembler", "bin": "flex-bison/262_267_256/ws", "usage": "< <file>", "input": "stdin" }

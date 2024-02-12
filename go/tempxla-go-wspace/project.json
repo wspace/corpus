@@ -20,6 +20,7 @@
     "label_cap": "unbounded",
     "instruction_cap": "unbounded"
   },
+  "whitespace": { "extension": "ws" },
   "assembly": {
     "mnemonics": {
       "push": "psh",
@@ -47,6 +48,15 @@
     },
     "usage": ["debug"]
   },
+  "programs": [
+    { "path": "examples/calc.ws" },
+    { "path": "examples/count.ws" },
+    { "path": "examples/fact.ws" },
+    { "path": "examples/hanoi.ws" },
+    { "path": "examples/hworld.ws" },
+    { "path": "examples/loctest.ws" },
+    { "path": "examples/name.ws" }
+  ],
   "commands": [{ "type": "interpreter", "bin": "bin/go-wspace", "usage": "<file>" }],
   "notes": "Tests fail to run due to vet error"
 }

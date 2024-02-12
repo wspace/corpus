@@ -20,6 +20,8 @@
     "label_cap": "uint64",
     "instruction_cap": "int32"
   },
+  "whitespace": { "extension": "ws" },
+  "programs": [{ "path": "spec/fixtures/brainfuck.ws" }, { "path": "spec/fixtures/whitespace.ws" }],
   "commands": [
     {
       "type": "interpreter",

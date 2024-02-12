@@ -9,6 +9,16 @@
   "spec_version": "0.2",
   "source": ["https://github.com/noia1/Whitespace-Interpreter"],
   "submodules": [{ "path": "Whitespace-Interpreter", "url": "https://github.com/noia1/Whitespace-Interpreter" }],
-  "whitespace": { "unimplemented": ["dup", "swap", "label", "call", "jmp", "jz", "jn", "ret", "end"] },
+  "whitespace": {
+    "unimplemented": ["dup", "swap", "label", "call", "jmp", "jz", "jn", "ret", "end"],
+    "extension": "ws"
+  },
+  "programs": [
+    { "path": "WsFiles/add.ws" },
+    { "path": "WsFiles/div.ws" },
+    { "path": "WsFiles/hello.ws" },
+    { "path": "WsFiles/mul.ws" },
+    { "path": "WsFiles/sub.ws" }
+  ],
   "commands": [{ "type": "interpreter", "bin": "ws", "usage": "<file>", "notes": "Makefile is broken" }]
 }

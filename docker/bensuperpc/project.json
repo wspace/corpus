@@ -16,5 +16,7 @@
       "url": "https://hub.docker.com/r/bensuperpc/whitespace"
     }
   ],
-  "relations": [{ "id": "c/rdebath", "type": "binary" }]
+  "relations": [{ "id": "c/rdebath", "type": "binary" }],
+  "whitespace": { "extension": "ws" },
+  "programs": [{ "path": "hello.ws" }]
 }

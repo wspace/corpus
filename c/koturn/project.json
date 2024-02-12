@@ -9,6 +9,41 @@
   "spec_version": "0.3",
   "source": ["https://github.com/koturn/Whitespace", "https://github.com/wspace/koturn-c"],
   "submodules": [{ "path": "Whitespace", "url": "https://github.com/wspace/koturn-c" }],
+  "whitespace": { "extension": "ws" },
+  "programs": [
+    {
+      "path": "c/koturn/Whitespace/t/calc.ws",
+      "inputs": ["c/koturn/Whitespace/t/inputs/calc.txt"],
+      "outputs": ["c/koturn/Whitespace/t/expects/calc.txt"]
+    },
+    { "path": "c/koturn/Whitespace/t/count.ws", "outputs": ["c/koturn/Whitespace/t/expects/count.txt"] },
+    {
+      "path": "c/koturn/Whitespace/t/fact.ws",
+      "inputs": ["c/koturn/Whitespace/t/inputs/fact.txt"],
+      "outputs": ["c/koturn/Whitespace/t/expects/fact.txt"]
+    },
+    {
+      "path": "c/koturn/Whitespace/t/fibonacci.ws",
+      "inputs": ["c/koturn/Whitespace/t/inputs/fibonacci.txt"],
+      "outputs": ["c/koturn/Whitespace/t/expects/fibonacci.txt"]
+    },
+    {
+      "path": "c/koturn/Whitespace/t/hanoi.ws",
+      "inputs": ["c/koturn/Whitespace/t/inputs/hanoi.txt"],
+      "outputs": ["c/koturn/Whitespace/t/expects/hanoi.txt"]
+    },
+    { "path": "c/koturn/Whitespace/t/hworld.ws", "outputs": ["c/koturn/Whitespace/t/expects/hworld.txt"] },
+    {
+      "path": "c/koturn/Whitespace/t/name.ws",
+      "inputs": ["c/koturn/Whitespace/t/inputs/name.txt"],
+      "outputs": ["c/koturn/Whitespace/t/expects/name.txt"]
+    },
+    {
+      "path": "c/koturn/Whitespace/t/sudoku.ws",
+      "inputs": ["c/koturn/Whitespace/t/inputs/sudoku.txt"],
+      "outputs": ["c/koturn/Whitespace/t/expects/sudoku.txt"]
+    }
+  ],
   "commands": [
     {
       "bin": "whitespace.out",

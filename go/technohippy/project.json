@@ -19,6 +19,17 @@
     "label_cap": "unbounded",
     "instruction_cap": 30000
   },
+  "whitespace": { "extension": "ws" },
+  "programs": [
+    { "path": "samples/calc.ws" },
+    { "path": "samples/fact.ws" },
+    { "path": "samples/fibonacci.ws" },
+    { "path": "samples/hanoi.ws" },
+    { "path": "samples/helloworld.ws" },
+    { "path": "samples/hworld.ws" },
+    { "path": "samples/name.ws" },
+    { "path": "samples/tutorial.ws" }
+  ],
   "commands": [
     {
       "type": "interpreter",
