@@ -9,6 +9,35 @@
   "spec_version": "0.3",
   "source": ["https://github.com/RicardoLuis0/whitespace"],
   "submodules": [{ "path": "whitespace", "url": "https://github.com/RicardoLuis0/whitespace" }],
+  "assembly": {
+    "mnemonics": {
+      "push": "STACK_PSH",
+      "dup": "STACK_DUP",
+      "copy": "STACK_DUPN",
+      "swap": "STACK_SWP",
+      "drop": "STACK_POP",
+      "slide": "STACK_POPN",
+      "add": "MATH_ADD",
+      "sub": "MATH_SUB",
+      "mul": "MATH_MUL",
+      "div": "MATH_DIV",
+      "mod": "MATH_MOD",
+      "store": "MEM_STORE",
+      "retrieve": "MEM_LOAD",
+      "label": "FC_LBL",
+      "call": "FC_CSR",
+      "jmp": "FC_JMP",
+      "jz": "FC_JZ",
+      "jn": "FC_JN",
+      "ret": "FC_RET",
+      "end": "FC_END",
+      "printc": "IO_OC",
+      "printi": "IO_ON",
+      "readc": "IO_IC",
+      "readi": "IO_IN"
+    },
+    "usage": ["enum"]
+  },
   "build_errors": "`#include <conio.h>` not found; `floor` cannot be used in a constant expression",
   "commands": [{ "type": "interpreter", "bin": "whitespace", "usage": "<file>" }]
 }

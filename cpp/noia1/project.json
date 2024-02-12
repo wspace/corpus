@@ -13,6 +13,24 @@
     "unimplemented": ["dup", "swap", "label", "call", "jmp", "jz", "jn", "ret", "end"],
     "extension": "ws"
   },
+  "assembly": {
+    "mnemonics": {
+      "push": "StackPush",
+      "drop": "StackPop",
+      "add": "Addition",
+      "sub": "Subtraction",
+      "mul": "Multiplication",
+      "div": "Division",
+      "mod": "Modulo",
+      "store": "HeapPush",
+      "retrieve": "HeapRetrieve",
+      "printc": "CharOut",
+      "printi": "IntOut",
+      "readc": "CharIn",
+      "readi": "IntIn"
+    },
+    "usage": ["enum"]
+  },
   "programs": [
     { "path": "WsFiles/add.ws" },
     { "path": "WsFiles/div.ws" },

@@ -15,6 +15,35 @@
     }
   ],
   "whitespace": { "extension": "hs" },
+  "assembly": {
+    "mnemonics": {
+      "push": "PUSH",
+      "dup": "DUP_TOP",
+      "copy": "DUP_NTH",
+      "swap": "SWOP_2_TOP",
+      "drop": "POP",
+      "slide": "POP_N",
+      "add": "ADD",
+      "sub": "SUBTRUCT",
+      "mul": "MULTIPLY",
+      "div": "DIVIDE",
+      "mod": "MOD",
+      "store": "STORE",
+      "retrieve": "RETRIEVE",
+      "label": "MARK_LABLE",
+      "call": "CALL",
+      "jmp": "JMP",
+      "jz": "JMP_IF_0",
+      "jn": "JMP_IF_NEG",
+      "ret": "RETURN",
+      "end": "END_PROGRAM",
+      "printc": "WRITE_CHAR",
+      "printi": "WRITE_NUM",
+      "readc": "READ_CHAR",
+      "readi": "READ_NUM"
+    },
+    "usage": ["enum"]
+  },
   "programs": [{ "path": "whitespace_code/hello_world.hs", "spec_version": "0.2" }],
   "commands": [{ "type": "interpreter", "bin": "whitespace", "usage": "<file>" }],
   "notes": "Tests have no entrypoint"

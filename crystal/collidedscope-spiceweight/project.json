@@ -20,7 +20,36 @@
     "label_cap": "uint64",
     "instruction_cap": "int32"
   },
-  "whitespace": { "extension": "ws" },
+  "whitespace": { "nonstandard": [{ "name": "shell", "seq": "TLL" }], "extension": "ws" },
+  "assembly": {
+    "mnemonics": {
+      "push": "push",
+      "dup": "dup",
+      "copy": "copy",
+      "swap": "swap",
+      "drop": "pop",
+      "slide": "slide",
+      "add": "add",
+      "sub": "sub",
+      "mul": "mul",
+      "div": "div",
+      "mod": "mod",
+      "store": "store",
+      "retrieve": "load",
+      "label": "label",
+      "call": "call",
+      "jmp": "jump",
+      "jz": "jz",
+      "jn": "jn",
+      "ret": "ret",
+      "end": "exit",
+      "printc": "ochr",
+      "printi": "onum",
+      "readc": "ichr",
+      "readi": "inum"
+    },
+    "usage": ["enum"]
+  },
   "programs": [{ "path": "spec/fixtures/brainfuck.ws" }, { "path": "spec/fixtures/whitespace.ws" }],
   "commands": [
     {

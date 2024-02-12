@@ -10,6 +10,35 @@
   "source": ["https://github.com/koturn/Whitespace", "https://github.com/wspace/koturn-c"],
   "submodules": [{ "path": "Whitespace", "url": "https://github.com/wspace/koturn-c" }],
   "whitespace": { "extension": "ws" },
+  "assembly": {
+    "mnemonics": {
+      "push": "STACK_PUSH",
+      "dup": "STACK_DUP",
+      "copy": "STACK_DUP_N",
+      "swap": "STACK_SWAP",
+      "drop": "STACK_DISCARD",
+      "slide": "STACK_SLIDE",
+      "add": "ARITH_ADD",
+      "sub": "ARITH_SUB",
+      "mul": "ARITH_MUL",
+      "div": "ARITH_DIV",
+      "mod": "ARITH_MOD",
+      "store": "HEAP_STORE",
+      "retrieve": "HEAP_LOAD",
+      "label": "FLOW_LABEL",
+      "call": "FLOW_GOSUB",
+      "jmp": "FLOW_JUMP",
+      "jz": "FLOW_BEZ",
+      "jn": "FLOW_BLTZ",
+      "ret": "FLOW_ENDSUB",
+      "end": "FLOW_HALT",
+      "printc": "IO_PUT_CHAR",
+      "printi": "IO_PUT_NUM",
+      "readc": "IO_READ_CHAR",
+      "readi": "IO_READ_NUM"
+    },
+    "usage": ["enum"]
+  },
   "programs": [
     {
       "path": "c/koturn/Whitespace/t/calc.ws",

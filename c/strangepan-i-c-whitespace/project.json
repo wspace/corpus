@@ -19,5 +19,33 @@
     "label_cap": 512,
     "instruction_cap": "unbounded"
   },
+  "assembly": {
+    "mnemonics": {
+      "push": "stack_push",
+      "dup": "stack_duplicate",
+      "copy": "stack_copy",
+      "swap": "stack_swap",
+      "drop": "stack_pop",
+      "slide": "stack_slide",
+      "add": "math_add",
+      "sub": "math_subtract",
+      "mul": "math_multiply",
+      "div": "math_divide",
+      "mod": "math_modulo",
+      "store": "heap_store",
+      "retrieve": "heap_retrieve",
+      "label": "flow_mark",
+      "call": "flow_subroutine",
+      "jmp": "flow_goto",
+      "jz": "flow_goto_zero",
+      "jn": "flow_goto_negative",
+      "ret": "flow_return",
+      "printc": "io_print_char",
+      "printi": "io_print_num",
+      "readc": "io_get_char",
+      "readi": "io_get_num"
+    },
+    "usage": ["enum"]
+  },
   "commands": [{ "type": "interpreter", "bin": "whitespace", "usage": "<file>" }]
 }

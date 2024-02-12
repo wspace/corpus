@@ -10,6 +10,33 @@
   "source": ["https://github.com/jmesyou/erasure", "https://github.com/wspace/jmesyou-erasure"],
   "submodules": [{ "path": "erasure", "url": "https://github.com/wspace/jmesyou-erasure" }],
   "whitespace": { "extension": "ws" },
+  "assembly": {
+    "mnemonics": {
+      "push": "push",
+      "dup": "dup",
+      "swap": "swap",
+      "drop": "pop",
+      "add": "add",
+      "sub": "sub",
+      "mul": "mul",
+      "div": "div",
+      "mod": "mod",
+      "store": "store",
+      "retrieve": "load",
+      "label": "location",
+      "call": "call",
+      "jmp": "jmp",
+      "jz": "jz",
+      "jn": "jn",
+      "ret": "ret",
+      "end": "end",
+      "printc": "print-char",
+      "printi": "print-int",
+      "readc": "read-char",
+      "readi": "read-int"
+    },
+    "usage": ["enum"]
+  },
   "programs": [
     {
       "path": "clojure/jmesyou-erasure/erasure/resources/count.c",

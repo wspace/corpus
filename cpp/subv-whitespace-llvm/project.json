@@ -9,6 +9,35 @@
   "spec_version": "0.3",
   "source": ["https://github.com/Subv/Whitespace-LLVM"],
   "submodules": [{ "path": "Whitespace-LLVM", "url": "https://github.com/Subv/Whitespace-LLVM" }],
+  "assembly": {
+    "mnemonics": {
+      "push": "Push",
+      "dup": "DuplicateTop",
+      "copy": "Copy",
+      "swap": "Swap",
+      "drop": "DiscardTop",
+      "slide": "Slide",
+      "add": "Addition",
+      "sub": "Substraction",
+      "mul": "Multiplication",
+      "div": "IntegerDivision",
+      "mod": "Modulo",
+      "store": "HeapStore",
+      "retrieve": "HeapRetrieve",
+      "label": "MarkLabel",
+      "call": "Call",
+      "jmp": "UnconditionalJump",
+      "jz": "StackZeroJump",
+      "jn": "StackNegativeJump",
+      "ret": "EndSub",
+      "end": "EndProgram",
+      "printc": "OutputCharacter",
+      "printi": "OutputNumber",
+      "readc": "ReadCharacter",
+      "readi": "ReadNumber"
+    },
+    "usage": ["enum"]
+  },
   "build_errors": "Requires LLVM",
   "commands": [{ "type": "compiler", "bin": "bin/Whitespace-LLVM", "usage": "", "input": "count.ws" }]
 }

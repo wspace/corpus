@@ -11,6 +11,35 @@
   "submodules": [{ "path": "ws-interpreter", "url": "https://github.com/YuukiARIA/ws-interpreter" }],
   "bounds": { "precision": "fixed", "heap_min": 0 },
   "whitespace": { "extension": "ws" },
+  "assembly": {
+    "mnemonics": {
+      "push": "PUSH",
+      "dup": "DUP",
+      "copy": "COPY",
+      "swap": "SWAP",
+      "drop": "POP",
+      "slide": "SLIDE",
+      "add": "ADD",
+      "sub": "SUB",
+      "mul": "MUL",
+      "div": "DIV",
+      "mod": "MOD",
+      "store": "STORE",
+      "retrieve": "LOAD",
+      "label": "LABEL",
+      "call": "CALL",
+      "jmp": "JMP",
+      "jz": "JZ",
+      "jn": "JNEG",
+      "ret": "RET",
+      "end": "HALT",
+      "printc": "PUTC",
+      "printi": "PUTI",
+      "readc": "GETC",
+      "readi": "GETI"
+    },
+    "usage": ["enum"]
+  },
   "programs": [{ "path": "samples/square.ws" }],
   "commands": [
     {

@@ -20,6 +20,35 @@
     "instruction_cap": 30000
   },
   "whitespace": { "extension": "ws" },
+  "assembly": {
+    "mnemonics": {
+      "push": "STACK_PUSH",
+      "dup": "STACK_DUPLICATE",
+      "copy": "STACK_COPY",
+      "swap": "STACK_SWAP",
+      "drop": "STACK_DISCARD",
+      "slide": "STACK_SLIDE",
+      "add": "ARITHMETIC_ADD",
+      "sub": "ARITHMETIC_SUB",
+      "mul": "ARITHMETIC_MUL",
+      "div": "ARITHMETIC_DIV",
+      "mod": "ARITHMETIC_MOD",
+      "store": "HEAP_STORE",
+      "retrieve": "HEAP_RETRIEVE",
+      "label": "FLOW_MARK",
+      "call": "FLOW_CALL_SUB",
+      "jmp": "FLOW_JUMP",
+      "jz": "FLOW_JUMP_ZERO",
+      "jn": "FLOW_JUMP_NEGATIVE",
+      "ret": "FLOW_END_SUB",
+      "end": "FLOW_END",
+      "printc": "IO_OUT_CHAR",
+      "printi": "IO_OUT_NUM",
+      "readc": "IO_IN_CHAR",
+      "readi": "IO_IN_NUM"
+    },
+    "usage": ["enum"]
+  },
   "programs": [
     { "path": "samples/calc.ws" },
     { "path": "samples/fact.ws" },

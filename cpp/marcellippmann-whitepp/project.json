@@ -12,5 +12,32 @@
     "https://github.com/wspace/marcellippmann-whitepp"
   ],
   "submodules": [{ "path": "Whitepp", "url": "https://github.com/wspace/marcellippmann-whitepp" }],
+  "assembly": {
+    "mnemonics": {
+      "push": "Push",
+      "dup": "Dupl",
+      "swap": "Swap",
+      "drop": "Discard",
+      "add": "Add",
+      "sub": "Sub",
+      "mul": "Mul",
+      "div": "Div",
+      "mod": "Mod",
+      "store": "Store",
+      "retrieve": "Retrieve",
+      "label": "SetLbl",
+      "call": "CallLbl",
+      "jmp": "Jump",
+      "jz": "JumpZero",
+      "jn": "JumpNeg",
+      "ret": "Ret",
+      "end": "End",
+      "printc": "PrintChar",
+      "printi": "PrintInt",
+      "readc": "ReadChar",
+      "readi": "ReadInt"
+    },
+    "usage": ["enum"]
+  },
   "commands": [{ "type": "interpreter", "bin": "bin/White++", "usage": "<file>" }]
 }

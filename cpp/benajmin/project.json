@@ -11,6 +11,33 @@
   "submodules": [{ "path": "whitespace-interpreter", "url": "https://github.com/benajmin/whitespace-interpreter" }],
   "bounds": { "precision": "fixed" },
   "whitespace": { "extension": "whitespace" },
+  "assembly": {
+    "mnemonics": {
+      "push": "Push",
+      "dup": "Duplicate",
+      "swap": "Swap",
+      "drop": "Pop",
+      "add": "Add",
+      "sub": "Subtract",
+      "mul": "Multiply",
+      "div": "Divide",
+      "mod": "Mod",
+      "store": "Store",
+      "retrieve": "Retrieve",
+      "label": "Mark",
+      "call": "Call",
+      "jmp": "Jump",
+      "jz": "JumpZero",
+      "jn": "JumpNegative",
+      "ret": "EndSub",
+      "end": "End",
+      "printc": "OutChar",
+      "printi": "OutInt",
+      "readc": "InChar",
+      "readi": "InInt"
+    },
+    "usage": ["enum"]
+  },
   "programs": [{ "path": "SamplePrograms/count.whitespace" }, { "path": "SamplePrograms/helloWorld.whitespace" }],
   "commands": [{ "type": "interpreter", "bin": "WhitespaceInterpreter.out", "usage": "<file>" }]
 }

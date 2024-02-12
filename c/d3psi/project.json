@@ -10,6 +10,33 @@
   "source": ["https://github.com/D3PSI/whitespace-interpreter"],
   "submodules": [{ "path": "whitespace-interpreter", "url": "https://github.com/D3PSI/whitespace-interpreter" }],
   "whitespace": { "extension": "ws" },
+  "assembly": {
+    "mnemonics": {
+      "push": "push_stack",
+      "dup": "duplicate_stack",
+      "swap": "swap_stack",
+      "drop": "discard_stack",
+      "add": "addition",
+      "sub": "subtraction",
+      "mul": "multiplication",
+      "div": "int_division",
+      "mod": "modulo",
+      "store": "store",
+      "retrieve": "retrieve",
+      "label": "mark",
+      "call": "call",
+      "jmp": "jump",
+      "jz": "jump_zero",
+      "jn": "jump_negative",
+      "ret": "return_to_caller",
+      "end": "end",
+      "printc": "output_char",
+      "printi": "output_number",
+      "readc": "input_char",
+      "readi": "input_number"
+    },
+    "usage": ["enum"]
+  },
   "programs": [
     { "path": "ws/cat.ws", "spec_version": "0.2" },
     { "path": "ws/hello_world.ws", "spec_version": "0.2" },

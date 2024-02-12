@@ -9,6 +9,33 @@
   "spec_version": "0.2",
   "source": ["https://github.com/MakeNowJust/whitespace-clj"],
   "submodules": [{ "path": "whitespace-clj", "url": "https://github.com/MakeNowJust/whitespace-clj" }],
+  "assembly": {
+    "mnemonics": {
+      "push": "push",
+      "dup": "dup",
+      "swap": "swap",
+      "drop": "discard",
+      "add": "plus",
+      "sub": "minus",
+      "mul": "times",
+      "div": "divide",
+      "mod": "modulo",
+      "store": "store",
+      "retrieve": "retrieve",
+      "label": "label",
+      "call": "call",
+      "jmp": "jump",
+      "jz": "if-zero",
+      "jn": "if-neg",
+      "ret": "return",
+      "end": "end",
+      "printc": "output-char",
+      "printi": "output-num",
+      "readc": "read-char",
+      "readi": "read-num"
+    },
+    "usage": ["enum"]
+  },
   "commands": [
     {
       "type": "interpreter",

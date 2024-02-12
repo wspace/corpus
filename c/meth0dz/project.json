@@ -13,6 +13,35 @@
     "https://github.com/wspace/meth0dz-c"
   ],
   "submodules": [{ "path": "whitespace", "url": "https://github.com/wspace/meth0dz-c" }],
+  "assembly": {
+    "mnemonics": {
+      "push": "stack_push",
+      "dup": "stack_dup",
+      "copy": "stack_copy",
+      "swap": "stack_swap",
+      "drop": "stack_discard",
+      "slide": "stack_slide",
+      "add": "math_add",
+      "sub": "math_sub",
+      "mul": "math_mult",
+      "div": "math_div",
+      "mod": "math_mod",
+      "store": "heap_store",
+      "retrieve": "heap_retrieve",
+      "label": "flow_mark",
+      "call": "flow_call",
+      "jmp": "flow_jump",
+      "jz": "flow_jz",
+      "jn": "flow_jn",
+      "ret": "flow_ret",
+      "end": "flow_exit",
+      "printc": "io_outc",
+      "printi": "io_outn",
+      "readc": "io_inc",
+      "readi": "io_inn"
+    },
+    "usage": ["enum"]
+  },
   "commands": [{ "type": "interpreter", "bin": "whitespace", "usage": "<file>" }],
   "todo": "Automate repo-construction in repo-archival."
 }

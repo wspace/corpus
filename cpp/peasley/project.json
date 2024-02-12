@@ -12,5 +12,34 @@
     "https://github.com/wspace/peasley-cpp"
   ],
   "submodules": [{ "path": "whitespace", "url": "https://github.com/wspace/peasley-cpp" }],
+  "assembly": {
+    "mnemonics": {
+      "push": "STACK_PUSH",
+      "dup": "STACK_DUPLICATE",
+      "copy": "STACK_COPY",
+      "swap": "STACK_SWAP",
+      "drop": "STACK_POP",
+      "slide": "STACK_REMOVE",
+      "add": "ARITHMETIC_ADD",
+      "sub": "ARITHMETIC_SUB",
+      "mul": "ARITHMETIC_MULTIPLICATION",
+      "div": "ARITHMETIC_DIVISION",
+      "mod": "ARITHMETIC_MODULO",
+      "store": "HEAP_STORE",
+      "retrieve": "HEAP_RETRIEVE",
+      "label": "FLOW_MARK",
+      "call": "FLOW_CALL_SUBROUTINE",
+      "jmp": "FLOW_JUMP",
+      "jz": "FLOW_ZJUMP",
+      "jn": "FLOW_NJUMP",
+      "ret": "FLOW_RETURN",
+      "end": "FLOW_ENDPROGRAM",
+      "printc": "IO_OUTPUT_CHAR",
+      "printi": "IO_OUTPUT_NUMBER",
+      "readc": "IO_READ_CHAR",
+      "readi": "IO_READ_NUMBER"
+    },
+    "usage": ["enum"]
+  },
   "commands": [{ "type": "interpreter", "bin": "whitespace", "usage": "<file>" }]
 }
