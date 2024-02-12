@@ -10,5 +10,12 @@
   "source": ["https://github.com/3F/sandbox", "https://ideone.com/G1uKlw"],
   "submodules": [{ "path": "sandbox", "url": "https://github.com/3F/sandbox" }],
   "whitespace": { "extension": "ws" },
-  "programs": [{ "path": "Whitespace/Examples/CodeCpp/CodeCpp.ws", "polyglot": ["C++"], "spec_version": "0.2" }]
+  "programs": [
+    {
+      "path": "Whitespace/Examples/CodeCpp/CodeCpp.ws",
+      "aux": ["Whitespace/Examples/CodeCpp/CodeCpp.ws.gif"],
+      "polyglot": ["C++"],
+      "spec_version": "0.2"
+    }
+  ]
 }
