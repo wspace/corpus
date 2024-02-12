@@ -4,11 +4,12 @@
   "authors": ["nobody1986"],
   "license": "none",
   "languages": ["PHP", "C"],
-  "tags": ["interpreter", "disassembler", "programs"],
+  "tags": ["interpreter", "disassembler", "binary packer", "programs"],
   "date": "2015-02-04 17:15:42 +0800",
   "spec_version": "0.3",
   "source": ["https://github.com/nobody1986/whitespace-php"],
   "submodules": [{ "path": "whitespace-php", "url": "https://github.com/nobody1986/whitespace-php" }],
+  "whitespace": { "extension": "ws" },
   "assembly": {
     "mnemonics": {
       "push": "PUSH",
@@ -39,6 +40,16 @@
     "indentation": "",
     "usage": ["disassembler"]
   },
+  "programs": [
+    { "path": "samples/calc.ws" },
+    { "path": "samples/fact.ws" },
+    { "path": "samples/fibonacci.ws" },
+    { "path": "samples/hanoi.ws" },
+    { "path": "samples/hworld.ws" },
+    { "path": "samples/name.ws" },
+    { "path": "ret.bin" },
+    { "path": "ret.txt" }
+  ],
   "commands": [
     {
       "type": "interpreter",

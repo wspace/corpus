@@ -17,6 +17,7 @@
   "submodules": [{ "path": "pywhitespace", "url": "https://github.com/wspace/phlip-pywhitespace" }],
   "whitespace": { "nonstandard": [{ "name": "trace", "seq": "LLT" }], "extension": "ws" },
   "programs": [
+    { "path": "docs/tutorial.html", "polyglot": ["HTML"], "spec_version": "0.2" },
     { "path": "examples/chr.ws", "spec_version": "0.2" },
     { "path": "examples/ord.ws", "spec_version": "0.2" },
     { "path": "examples/hworld.ws", "equivalent": "hworld.ws", "spec_version": "0.2" },

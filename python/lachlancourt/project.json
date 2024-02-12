@@ -17,6 +17,9 @@
   },
   "programs": [
     { "path": "code.txt", "spec_version": "0.2" },
+    { "path": "Sample whitespace code/Whitespace Calculator.docx" },
+    { "path": "Sample whitespace code/Whitespace Factorial.docx" },
+    { "path": "Sample whitespace code/Whitespace Hello World.docx" },
     {
       "path": "Sample whitespace code/Whitespace tutorial.html",
       "equivalent": "tutorial.html",

@@ -13,13 +13,15 @@
   "whitespace": { "extension": "ws" },
   "programs": [
     {
-      "path": "password_checker.c",
-      "generated": "password_checker.ws",
-      "aux": ["password_checker.eir"],
+      "path": "tests/data/password_checker.c",
+      "generated": "tests/data/password_checker.ws",
+      "aux": ["tests/data/password_checker.eir"],
       "spec_version": "0.2",
       "notes": "Compiled using ELVM"
     },
-    { "path": "xctf-finals-2020-spaceship.ws", "spec_version": "0.2" }
+    { "path": "tests/data/xctf-finals-2020-spaceship.ws", "spec_version": "0.2" },
+    { "path": "tests/data/count.ws" },
+    { "path": "tests/data/hworld.ws" }
   ],
   "commands": [
     {

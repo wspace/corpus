@@ -9,7 +9,7 @@
   "spec_version": "-",
   "source": ["https://github.com/francois-rozet/whitespacy"],
   "submodules": [{ "path": "whitespacy", "url": "https://github.com/francois-rozet/whitespacy" }],
-  "programs": [{ "path": "polyglot.c", "polyglot": ["C"] }],
+  "programs": [{ "path": "polyglot.c", "aux": ["hello-world.c", "hello-world.ws"], "polyglot": ["C"] }],
   "commands": [
     {
       "type": "polyglot formatter",

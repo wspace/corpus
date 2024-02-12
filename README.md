@@ -265,7 +265,7 @@ language, including interpreters, compilers, and programs.
 | [whitespace](go/kinu)                         | Kinuko Yasuda    | Go         | interpreter, disassembler, programs | 2015-02-18 | [GitHub](https://github.com/kinu/whitespace) |
 | [whitespace-clj](clojure/makenowjust)         | TSUYUSATO Kitsune (MakeNowJust) | Clojure | interpreter | 2015-02-11 | [GitHub](https://github.com/MakeNowJust/whitespace-clj) |
 | [PHP to Whitespace](php/mattparker)           | Matt Parker      | PHP        | generator, programs | 2015-02-04 | [GitHub](https://github.com/mattparker/phpwhitespace), [GitHub](https://github.com/domcode/rafflers/tree/master/whitespace-mattp) |
-| [whitespace-php](php/nobody1986)              | nobody1986       | PHP, C     | interpreter, disassembler, programs | 2015-02-04 | [GitHub](https://github.com/nobody1986/whitespace-php) |
+| [whitespace-php](php/nobody1986)              | nobody1986       | PHP, C     | interpreter, disassembler, binary packer, programs | 2015-02-04 | [GitHub](https://github.com/nobody1986/whitespace-php) |
 | [fizzbuzz-polyglot](whitespace/keithsthompson-fizzbuzz) | Keith S Thompson | Whitespace | programs | 2015-02-01 | [GitHub](https://github.com/Keith-S-Thompson/fizzbuzz-polyglot) |
 | [whiteSpaceInterpreter](java/faurehu)         | Matias Faure     | Java       | interpreter, programs | 2015-01-29 | [GitHub](https://github.com/faurehu/whiteSpaceInterpreter) |
 | [FizzBuzz AIT8](whitespace/ait8-fizzbuzz)     | Kengo Yokoyama   | Whitespace | programs     | 2015-01-28 | [GitHub](https://github.com/ait8/fizzbuzz) |

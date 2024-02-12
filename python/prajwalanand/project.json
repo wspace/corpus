@@ -9,7 +9,14 @@
   "spec_version": "0.2",
   "source": ["https://github.com/prajwalanand/whitespace-compiler"],
   "submodules": [{ "path": "whitespace-compiler", "url": "https://github.com/prajwalanand/whitespace-compiler" }],
+  "whitespace": { "extension": "ws" },
   "mappings": [{ "space": "1", "tab": "2", "lf": "3", "spaces_between": false, "extension": "ws" }],
+  "programs": [
+    { "path": "error.ws", "mapping_index": 0 },
+    { "path": "inp.ws", "mapping_index": 0 },
+    { "path": "source.ws", "mapping_index": 0 },
+    { "path": "Whitespace tutorial.html", "polyglot": ["HTML"], "spec_version": "0.2" }
+  ],
   "commands": [
     { "type": "transpiler", "bin": "whitespace", "usage": "<file>", "input": "stdin", "output": "stdout" }
   ]

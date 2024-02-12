@@ -29,7 +29,8 @@
       "ret",
       "readc",
       "readi"
-    ]
+    ],
+    "extension": "ws"
   },
   "assembly": {
     "mnemonics": {

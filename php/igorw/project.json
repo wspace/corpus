@@ -9,5 +9,46 @@
   "spec_version": "0.3",
   "source": ["https://github.com/igorw/whitespace-php"],
   "submodules": [{ "path": "whitespace-php", "url": "https://github.com/igorw/whitespace-php" }],
+  "whitespace": { "extension": "ws" },
+  "assembly": {
+    "mnemonics": {
+      "push": "push",
+      "dup": "dup",
+      "copy": "ref",
+      "swap": "swap",
+      "drop": "discard",
+      "slide": "slide",
+      "add": "add",
+      "sub": "sub",
+      "mul": "mul",
+      "div": "div",
+      "mod": "mod",
+      "store": "store",
+      "retrieve": "retrieve",
+      "label": "label",
+      "call": "call",
+      "jmp": "jump",
+      "jz": "jumpz",
+      "jn": "jumplz",
+      "ret": "ret",
+      "end": "exit",
+      "printc": "write_char",
+      "printi": "write_num",
+      "readc": "read_char",
+      "readi": "read_num"
+    },
+    "usage": ["enum"]
+  },
+  "programs": [
+    { "path": "examples/calc.ws" },
+    { "path": "examples/count.php" },
+    { "path": "examples/fact.ws" },
+    { "path": "examples/fibonacci.ws" },
+    { "path": "examples/hanoi.ws" },
+    { "path": "examples/hworld.ws" },
+    { "path": "examples/name.ws" },
+    { "path": "examples/quine.ws" },
+    { "path": "examples/wsinterws.ws" }
+  ],
   "commands": [{ "type": "interpreter", "bin": "bin/interpreter", "usage": "php $0 <file>" }]
 }
