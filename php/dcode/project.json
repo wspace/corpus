@@ -10,5 +10,6 @@
   "source": ["https://www.dcode.fr/whitespace-language"],
   "source_unavailable": true,
   "relations": [{ "id": "javascript/luilak-ws2js", "type": "embedded" }],
-  "mappings": [{ "space": "S", "tab": "T", "lf": "L", "before_stl": true }]
+  "mappings": [{ "space": "S", "tab": "T", "lf": "L", "before_stl": true }],
+  "notes": "The encoder is written in PHP (proprietary) and the decoder in JavaScript uses WS2JS (MIT). The author stated in private correspondance that the publishing date was 2020-09-23. The earliest public date was when Whitespace was added to the list of all tools between 2020-09-17 16:36:57 +0000 and 2020-09-30 06:55:37 +0000 (https://web.archive.org/web/20200930065537/https://www.dcode.fr/tools-list)."
 }
