@@ -84,6 +84,14 @@ list_dockerfiles:
 	$(foreach dockerfile,$(DOCKERFILES),$(info $(dockerfile)))
 	@:
 
+# List files in project directories, excluding submodules, project.json, and
+# Dockerfile.
+.PHONY: list_patches
+list_patches:
+	@git ls-files --format='%(objectmode) %(path)' | \
+		rg --invert-match '^160000 |/(project\.json|Dockerfile)$$|^\d{6} (tools/|\.vscode/|[^/]+$$)' | \
+		cut -d' ' -f2-
+
 .PHONY: format_tools
 format_tools:
 	@underscore print -i tools/project.schema.json | tools/sponge tools/project.schema.json

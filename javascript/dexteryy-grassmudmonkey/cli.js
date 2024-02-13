@@ -1,7 +1,7 @@
 var fs = require('fs');
 
 function usage() {
-  process.stdout.write("usage: grassmudmonkey [-w | --whitespace] <file>\n");
+  process.stdout.write("Usage: grassmudmonkey [-w | --whitespace] <file>\n");
   process.stdout.write("\n");
   process.stdout.write("    -w, --whitespace\n");
   process.stdout.write("        Use Whitespace syntax instead of GrassMudMonkey syntax\n");
