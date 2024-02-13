@@ -20,5 +20,5 @@
       "notes": "The only implemented mode is `run`"
     }
   ],
-  "notes": "The project was rewritten in Rust and rebased to remove the Python interpreters; the wspace fork preserves the old version."
+  "notes": "The project was rewritten in Rust and force-pushed to remove the Python interpreters; the wspace fork preserves the old version."
 }

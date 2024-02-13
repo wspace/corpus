@@ -9,6 +9,35 @@
   "spec_version": "0.3",
   "source": ["https://github.com/fvogels/pywhitespace"],
   "submodules": [{ "path": "pywhitespace", "url": "https://github.com/fvogels/pywhitespace" }],
+  "assembly": {
+    "mnemonics": {
+      "push": "Push",
+      "dup": "Duplicate",
+      "copy": "Copy",
+      "swap": "Swap",
+      "drop": "Discard",
+      "slide": "Slide",
+      "add": "Add",
+      "sub": "Subtract",
+      "mul": "Multiply",
+      "div": "Division",
+      "mod": "Modulo",
+      "store": "Store",
+      "retrieve": "Retrieve",
+      "label": "Label",
+      "call": "Call",
+      "jmp": "Jump",
+      "jz": "JumpIfZero",
+      "jn": "JumpIfNegative",
+      "ret": "Return",
+      "end": "Exit",
+      "printc": "WriteChar",
+      "printi": "WriteNumber",
+      "readc": "ReadChar",
+      "readi": "ReadNumber"
+    },
+    "usage": ["enum"]
+  },
   "commands": [{ "type": "interpreter", "bin": "whitespace.py", "usage": "", "input": "<constant>" }],
   "notes": "Possibly a Codewars solution"
 }

@@ -15,5 +15,32 @@
     }
   ],
   "bounds": { "heap_min": "unbounded", "heap_max": "unbounded" },
+  "assembly": {
+    "mnemonics": {
+      "push": "stack_push",
+      "dup": "stack_dup",
+      "swap": "stack_swap",
+      "drop": "stack_pop",
+      "add": "arithmetic_add",
+      "sub": "arithmetic_sub",
+      "mul": "arithmetic_mul",
+      "div": "arithmetic_div",
+      "mod": "arithmetic_mod",
+      "store": "heap_store",
+      "retrieve": "heap_retrieve",
+      "label": "flow_label",
+      "call": "flow_call",
+      "jmp": "flow_jump",
+      "jz": "flow_jump_if_zero",
+      "jn": "flow_jump_if_neg",
+      "ret": "flow_return",
+      "end": "flow_exit",
+      "printc": "io_output_char",
+      "printi": "io_output_number",
+      "readc": "io_input_char",
+      "readi": "io_input_number"
+    },
+    "usage": ["enum"]
+  },
   "commands": [{ "type": "interpreter", "bin": "whitespace.py", "usage": "<file>" }]
 }

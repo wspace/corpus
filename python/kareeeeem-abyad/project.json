@@ -9,6 +9,33 @@
   "spec_version": "0.2",
   "source": ["https://github.com/Kareeeeem/abyad"],
   "submodules": [{ "path": "abyad", "url": "https://github.com/Kareeeeem/abyad" }],
+  "assembly": {
+    "mnemonics": {
+      "push": "push",
+      "dup": "dup",
+      "swap": "swap",
+      "drop": "pop",
+      "add": "add",
+      "sub": "sub",
+      "mul": "mul",
+      "div": "div",
+      "mod": "mod",
+      "store": "store",
+      "retrieve": "load",
+      "label": "mark",
+      "call": "call",
+      "jmp": "j",
+      "jz": "jz",
+      "jn": "jn",
+      "ret": "end",
+      "end": "exit",
+      "printc": "write_char",
+      "printi": "write_num",
+      "readc": "read_char",
+      "readi": "read_num"
+    },
+    "usage": ["enum"]
+  },
   "programs": [
     {
       "path": "tests/programs.py",

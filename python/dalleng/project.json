@@ -10,6 +10,35 @@
   "source": ["https://github.com/dalleng/Whitespace"],
   "submodules": [{ "path": "Whitespace", "url": "https://github.com/dalleng/Whitespace" }],
   "challenges": ["Codewars"],
+  "assembly": {
+    "mnemonics": {
+      "push": "push_stack",
+      "dup": "duplicate_top",
+      "copy": "duplicate_nth",
+      "swap": "swap_first_two",
+      "drop": "discard_top",
+      "slide": "discard_top_n",
+      "add": "addition",
+      "sub": "subtraction",
+      "mul": "multiplication",
+      "div": "division",
+      "mod": "modulo",
+      "store": "heap_store",
+      "retrieve": "heap_retrieve",
+      "label": "mark_location",
+      "call": "call_subroutine",
+      "jmp": "jump",
+      "jz": "jump_if_zero",
+      "jn": "jump_if_lt_zero",
+      "ret": "exit_subroutine",
+      "end": "exit_program",
+      "printc": "pop_print",
+      "printi": "pop_print_chr",
+      "readc": "read_char",
+      "readi": "read_number"
+    },
+    "usage": ["enum"]
+  },
   "run_errors": "Needs Codewars entrypoint",
   "commands": [{ "type": "interpreter", "bin": "whitespace.py" }]
 }

@@ -9,6 +9,35 @@
   "spec_version": "0.3",
   "source": ["https://github.com/adapap/whitespace-interpreter"],
   "submodules": [{ "path": "whitespace-interpreter", "url": "https://github.com/adapap/whitespace-interpreter" }],
+  "assembly": {
+    "mnemonics": {
+      "push": "push_num",
+      "dup": "duplicate_top",
+      "copy": "duplicate_nth",
+      "swap": "swap",
+      "drop": "discard_top",
+      "slide": "discard_n",
+      "add": "add",
+      "sub": "sub",
+      "mul": "mul",
+      "div": "floordiv",
+      "mod": "mod",
+      "store": "store",
+      "retrieve": "push",
+      "label": "mark_label",
+      "call": "call_subroutine",
+      "jmp": "jump",
+      "jz": "jump_zero",
+      "jn": "jump_lt_zero",
+      "ret": "exit_subroutine",
+      "end": "exit",
+      "printc": "output_char",
+      "printi": "output_num",
+      "readc": "input_char",
+      "readi": "input_num"
+    },
+    "usage": ["enum"]
+  },
   "commands": [
     {
       "type": "interpreter",

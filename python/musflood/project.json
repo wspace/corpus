@@ -10,6 +10,35 @@
   "source": ["https://github.com/musflood/code-katas"],
   "submodules": [{ "path": "code-katas", "url": "https://github.com/musflood/code-katas" }],
   "challenges": ["Codewars"],
+  "assembly": {
+    "mnemonics": {
+      "push": "push",
+      "dup": "duplicate_top_value",
+      "copy": "duplicate_nth_value",
+      "swap": "swap_top_two_values",
+      "drop": "discard_top_value",
+      "slide": "discard_below_top_value",
+      "add": "+",
+      "sub": "-",
+      "mul": "*",
+      "div": "//",
+      "mod": "%",
+      "store": "stack_to_heap",
+      "retrieve": "heap_to_stack",
+      "label": "label_position",
+      "call": "call_subroutine",
+      "jmp": "jump_unconditionally",
+      "jz": "jump_zero_conditional",
+      "jn": "jump_neg_conditional",
+      "ret": "exit_subroutine",
+      "end": "exit_program",
+      "printc": "output_character",
+      "printi": "output_number",
+      "readc": "input_character",
+      "readi": "input_number"
+    },
+    "usage": ["enum"]
+  },
   "run_errors": "Needs Codewars entrypoint",
   "commands": [{ "type": "interpreter", "bin": "esolang-whitespace/esolang_whitespace.py" }]
 }

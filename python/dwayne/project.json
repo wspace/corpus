@@ -10,6 +10,33 @@
   "source": ["https://github.com/dwayne/whitespace-python"],
   "submodules": [{ "path": "whitespace-python", "url": "https://github.com/dwayne/whitespace-python" }],
   "packages": [{ "name": "whitespace", "registry": "PyPI", "url": "https://pypi.org/project/whitespace/" }],
+  "assembly": {
+    "mnemonics": {
+      "push": "Push",
+      "dup": "Dup",
+      "swap": "Swap",
+      "drop": "Discard",
+      "add": "Add",
+      "sub": "Sub",
+      "mul": "Mul",
+      "div": "Div",
+      "mod": "Mod",
+      "store": "Store",
+      "retrieve": "Retrieve",
+      "label": "Label",
+      "call": "Call",
+      "jmp": "Ujmp",
+      "jz": "Zjmp",
+      "jn": "Njmp",
+      "ret": "Ret",
+      "end": "End",
+      "printc": "Putc",
+      "printi": "Putn",
+      "readc": "Getc",
+      "readi": "Getn"
+    },
+    "usage": ["enum"]
+  },
   "programs": [
     { "path": "tests/fixtures/count.ws", "equivalent": "count.ws", "spec_version": "0.2" },
     { "path": "tests/fixtures/fact.ws", "equivalent": "fact.ws", "spec_version": "0.2" },

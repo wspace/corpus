@@ -22,7 +22,7 @@ def count_each:
       if type == "array" then . else [.] end |
       map(
         ascii_downcase |
-        gsub("^(stack|stk|arith|arithmetic|art|math|calc|infix|heap|hep|mem|flow|flw|fc|io|iop)[ ._-]|^(mod|[samchfi])[._-]"; "") |
+        gsub("^(stack|stk|arith|arithmetic|arithmetics|art|math|calc|infix|heap|hep|mem|flow|flw|fc|io|iop)[ ._-]|^(mod|[samchfi])[._-]"; "") |
         gsub("( ([.%lf]?<[a-z_]+>|<<[a-z_]+>>|_))+$"; "")) |
       unique)) |
   reduce .[] as $inst ($keys; .[$inst.key] += $inst.value)
