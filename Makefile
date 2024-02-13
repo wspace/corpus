@@ -7,13 +7,14 @@ GO_TOOLS_PACKAGE = tools/generate.go tools/licenses.go
 all: format format_submodules licenses README.md assembly.md building.md challenges.md missing_submodules.md
 
 .PHONY: format
-format: build_stamp
+format: target/build_stamp
 
-build_stamp: $(PROJECTS) $(RUST_FORMAT_CRATE) tools/format/format.go $(GO_TOOLS_PACKAGE)
+target/build_stamp: $(PROJECTS) $(RUST_FORMAT_CRATE) tools/format/format.go $(GO_TOOLS_PACKAGE)
 	$(info Formatting projects)
 	$(if $(filter $(PROJECTS),$?),@cargo run -q --bin corpus-format $(filter $(PROJECTS),$?))
 	$(if $(filter $(PROJECTS),$?),@go run tools/format/format.go $(filter $(PROJECTS),$?))
-	@touch build_stamp
+	@mkdir -p target
+	@touch target/build_stamp
 
 .PHONY: licenses
 licenses: $(PROJECTS) tools/licenses/licenses.go $(GO_TOOLS_PACKAGE)
