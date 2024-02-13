@@ -13,6 +13,39 @@
     "https://github.com/sderosiaux/golb/blob/master/src/pages/2018-06-15-parser-with-state-monad/index.md"
   ],
   "submodules": [{ "path": "whitespace-parser", "url": "https://github.com/sderosiaux/whitespace-parser" }],
+  "whitespace": {
+    "unimplemented": [
+      "copy",
+      "slide",
+      "sub",
+      "mul",
+      "div",
+      "mod",
+      "store",
+      "retrieve",
+      "label",
+      "call",
+      "jmp",
+      "jz",
+      "jn",
+      "ret",
+      "readc",
+      "readi"
+    ]
+  },
+  "assembly": {
+    "mnemonics": {
+      "push": "pushNumber",
+      "dup": "duplicate",
+      "swap": "swap",
+      "drop": "discard",
+      "add": "addition",
+      "end": "endProgram",
+      "printc": "printChar",
+      "printi": "printNumber"
+    },
+    "usage": ["enum"]
+  },
   "programs": [{ "path": "src/test/scala/com/sderosiaux/whitespace/WhitespaceInterpreterTest.scala" }],
   "commands": [{ "type": "interpreter", "input": "hardcoded hello world" }]
 }

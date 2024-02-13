@@ -9,5 +9,34 @@
   "spec_version": "0.3",
   "source": ["https://github.com/collidedscope/albus"],
   "submodules": [{ "path": "albus", "url": "https://github.com/collidedscope/albus" }],
+  "assembly": {
+    "mnemonics": {
+      "push": "Push",
+      "dup": "Dup",
+      "copy": "Copy",
+      "swap": "Swap",
+      "drop": "Pop",
+      "slide": "Slide",
+      "add": "Add",
+      "sub": "Sub",
+      "mul": "Mul",
+      "div": "Div",
+      "mod": "Mod",
+      "store": "Store",
+      "retrieve": "Load",
+      "label": "Label",
+      "call": "Call",
+      "jmp": "Jump",
+      "jz": "Jz",
+      "jn": "Jn",
+      "ret": "Ret",
+      "end": "Exit",
+      "printc": "Ochr",
+      "printi": "Onum",
+      "readc": "Ichr",
+      "readi": "Inum"
+    },
+    "usage": ["enum"]
+  },
   "commands": [{ "type": "interpreter", "bin": "target/release/albus", "usage": "<file>" }]
 }

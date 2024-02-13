@@ -8,5 +8,32 @@
   "date": "2017-02-15 21:24:19 +0900",
   "spec_version": "0.2",
   "source": ["https://github.com/niyarin/whitespace-scheme"],
-  "submodules": [{ "path": "whitespace-scheme", "url": "https://github.com/niyarin/whitespace-scheme" }]
+  "submodules": [{ "path": "whitespace-scheme", "url": "https://github.com/niyarin/whitespace-scheme" }],
+  "assembly": {
+    "mnemonics": {
+      "push": "push",
+      "copy": "copy",
+      "swap": "swap",
+      "drop": "peek",
+      "add": "add",
+      "sub": "sub",
+      "mul": "mul",
+      "div": "div",
+      "mod": "mod",
+      "store": "store",
+      "retrieve": "load",
+      "label": "mark",
+      "call": "call",
+      "jmp": "jump",
+      "jz": "jz",
+      "jn": "jmi",
+      "ret": "return",
+      "end": "end",
+      "printc": "print-char",
+      "printi": "print-number",
+      "readc": "read-char",
+      "readi": "read-int"
+    },
+    "usage": ["enum"]
+  }
 }

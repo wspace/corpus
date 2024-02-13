@@ -10,6 +10,35 @@
   "source": ["https://github.com/FY0u11/whitespace-interpreter"],
   "submodules": [{ "path": "whitespace-interpreter", "url": "https://github.com/FY0u11/whitespace-interpreter" }],
   "challenges": ["Codewars"],
+  "assembly": {
+    "mnemonics": {
+      "push": ["STACK_PUSH", "Push"],
+      "dup": ["STACK_DUPLICATE_ONE", "DuplicateOne"],
+      "copy": ["STACK_DUPLICATE_NTH", "DuplicateNth"],
+      "swap": ["STACK_SWAP", "Swap"],
+      "drop": ["STACK_DISCARD_ONE", "DiscardOne"],
+      "slide": ["STACK_DISCARD_MANY", "DiscardMany"],
+      "add": ["ARITHMETICS_SUM", "Sum"],
+      "sub": ["ARITHMETICS_SUBTRACT", "Subtract"],
+      "mul": ["ARITHMETICS_MUL", "Mul"],
+      "div": ["ARITHMETICS_DIV", "Div"],
+      "mod": ["ARITHMETICS_MOD", "Mod"],
+      "store": ["HEAP_STORE", "Store"],
+      "retrieve": ["HEAP_PUSH", "HeapPushInStack"],
+      "label": "FLOW_CONTROL_MARK",
+      "call": ["FLOW_CONTROL_SUB_CALL", "SubCall"],
+      "jmp": ["FLOW_CONTROL_JUMP", "Jump"],
+      "jz": ["FLOW_CONTROL_JUMP_ZERO", "JumpZero"],
+      "jn": ["FLOW_CONTROL_JUMP_LESS", "JumpLess"],
+      "ret": ["FLOW_CONTROL_SUB_EXIT", "SubExit"],
+      "end": ["FLOW_CONTROL_EXIT", "Exit"],
+      "printc": ["IO_OUTPUT_CHARACTER", "OutputCharacter"],
+      "printi": ["IO_OUTPUT_NUMBER", "OutputNumber"],
+      "readc": ["IO_READ_CHARACTER", "ReadCharacter"],
+      "readi": ["IO_READ_NUMBER", "ReadNumber"]
+    },
+    "usage": ["enum"]
+  },
   "run_errors": "Needs Codewars entrypoint",
   "commands": [
     {

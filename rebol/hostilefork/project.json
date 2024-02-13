@@ -15,6 +15,35 @@
   ],
   "submodules": [{ "path": "rebol-whitespacers", "url": "https://github.com/hostilefork/rebol-whitespacers" }],
   "whitespace": { "extension": "ws" },
+  "assembly": {
+    "mnemonics": {
+      "push": "push",
+      "dup": "duplicate-top",
+      "copy": "duplicate-indexed",
+      "swap": "swap-top-2",
+      "drop": "discard-top",
+      "slide": "slide-n-values",
+      "add": "add",
+      "sub": "subtract",
+      "mul": "multiply",
+      "div": "divide",
+      "mod": "modulo",
+      "store": "store",
+      "retrieve": "retrieve",
+      "label": "mark-location",
+      "call": "call-subroutine",
+      "jmp": "jump-to-label",
+      "jz": "jump-if-zero",
+      "jn": "jump-if-negative",
+      "ret": "return-from-subroutine",
+      "end": "end-program",
+      "printc": "output-character-on-stack",
+      "printi": "output-number-on-stack",
+      "readc": "read-character-to-location",
+      "readi": "read-number-to-location"
+    },
+    "usage": ["enum"]
+  },
   "mappings": [
     {
       "space": "space",

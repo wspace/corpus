@@ -10,6 +10,35 @@
   "source": ["https://github.com/technohippy/gorispace", "https://esolangs.org/wiki/Gorispace"],
   "submodules": [{ "path": "gorispace", "url": "https://github.com/technohippy/gorispace" }],
   "whitespace": { "unimplemented": ["slide"], "extension": "ws" },
+  "assembly": {
+    "mnemonics": {
+      "push": "stack_push",
+      "dup": "stack_copy",
+      "copy": "stack_copynth",
+      "swap": "stack_swap",
+      "drop": "stack_discard",
+      "slide": "stack_slide",
+      "add": "arithmetic_add",
+      "sub": "arithmetic_sub",
+      "mul": "arithmetic_mul",
+      "div": "arithmetic_div",
+      "mod": "arithmetic_mod",
+      "store": "heap_store",
+      "retrieve": "heap_restore",
+      "label": "flow_mark",
+      "call": "flow_call",
+      "jmp": "flow_jump",
+      "jz": "flow_zero",
+      "jn": "flow_nega",
+      "ret": "flow_return",
+      "end": "flow_exit",
+      "printc": "io_outchar",
+      "printi": "io_outnum",
+      "readc": "io_readchar",
+      "readi": "io_readnum"
+    },
+    "usage": ["enum"]
+  },
   "mappings": [
     { "space": "ウホ", "tab": "ウッホ", "lf": "ウホーイ", "extension": "gs" },
     { "space": "hoo", "tab": "hoos", "lf": "wraagh", "extension": "gs" }

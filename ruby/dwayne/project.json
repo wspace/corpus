@@ -17,6 +17,33 @@
     }
   ],
   "whitespace": { "extension": "ws" },
+  "assembly": {
+    "mnemonics": {
+      "push": "Push",
+      "dup": "Dup",
+      "swap": "Swap",
+      "drop": "Discard",
+      "add": "Add",
+      "sub": "Sub",
+      "mul": "Mul",
+      "div": "Div",
+      "mod": "Mod",
+      "store": "Store",
+      "retrieve": "Retrieve",
+      "label": "Label",
+      "call": "Call",
+      "jmp": "Ujmp",
+      "jz": "Zjmp",
+      "jn": "Njmp",
+      "ret": "Return",
+      "end": "End",
+      "printc": "Putc",
+      "printi": "Putn",
+      "readc": "Readc",
+      "readi": "Readn"
+    },
+    "usage": ["enum"]
+  },
   "programs": [
     { "path": "examples/count.ws", "equivalent": "count.ws", "spec_version": "0.2" },
     { "path": "examples/fact.ws", "equivalent": "fact.ws (0.2)", "spec_version": "0.2" },

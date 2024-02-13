@@ -9,5 +9,29 @@
   "spec_version": "0.2",
   "source": ["https://github.com/polyglotpiglet/Whitespacing"],
   "submodules": [{ "path": "Whitespacing", "url": "https://github.com/polyglotpiglet/Whitespacing" }],
+  "whitespace": { "unimplemented": ["store", "retrieve", "ret"] },
+  "assembly": {
+    "mnemonics": {
+      "push": "pushToTopOfStack",
+      "dup": "duplicateTopOfStack",
+      "swap": "swapTopOfStack",
+      "drop": "discardTopOfStack",
+      "add": "addTopOfStack",
+      "sub": "subtractTopOfStack",
+      "mul": "multiplyTopOfStack",
+      "div": "divideTopOfStack",
+      "mod": "moduloTopOfStack",
+      "label": "markALocation",
+      "call": "callASubroutine",
+      "jmp": "jumpUnconditionallyToALabel",
+      "jz": "jumpToLabelIfTopOfStackIsZero",
+      "jn": "jumpToLabelIfTopOfStackIsNegative",
+      "printc": "outputCharacterAtTopOfStack",
+      "printi": "outputIntAtTopOfStack",
+      "readc": "inputCharAndPutOnStack",
+      "readi": "inputIntAndPutOnStack"
+    },
+    "usage": ["enum"]
+  },
   "build_errors": "The `Input` type (a trait?) is not defined and may have been removed in a later Scala release"
 }

@@ -15,6 +15,32 @@
     }
   ],
   "whitespace": { "extension": "ws" },
+  "assembly": {
+    "mnemonics": {
+      "push": "stack_push",
+      "dup": "stack_dupe",
+      "swap": "stack_swap",
+      "drop": "stack_discard",
+      "add": "add",
+      "sub": "sub",
+      "mul": "mult",
+      "div": "div",
+      "mod": "mod",
+      "store": "heap_store",
+      "retrieve": "heap_retrieve",
+      "label": "mark_label",
+      "call": "call_sub",
+      "jmp": "jmp",
+      "jz": "jez",
+      "jn": "jlz",
+      "ret": "end_sub",
+      "printc": "print_char",
+      "printi": "print_int",
+      "readc": "read_char",
+      "readi": "read_int"
+    },
+    "usage": ["enum"]
+  },
   "programs": [
     { "path": "conf/predict-superbowl.ws", "spec_version": "0.2" },
     { "path": "conf/calc.ws", "equivalent": "calc.ws", "spec_version": "0.2" },

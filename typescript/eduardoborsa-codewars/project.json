@@ -11,5 +11,5 @@
   "submodules": [{ "path": "code_wars_exercises", "url": "https://github.com/EduardoBorsa/code_wars_exercises" }],
   "challenges": ["Codewars"],
   "run_errors": "Needs Codewars entrypoint",
-  "commands": [{ "type": "interpreter", "bin": "dummy/2/whitespace_interpreter.ts" }]
+  "commands": [{ "type": "interpreter", "bin": "other_languages/2/whitespace_interpreter.ts" }]
 }

@@ -14,6 +14,11 @@
       "id": "python/dalleng",
       "type": "embedded",
       "dest_path": "2 kyu/Whitespace Interpreter/solution.py (5/7)"
+    },
+    {
+      "id": "typescript/fy0u11",
+      "type": "embedded",
+      "dest_path": "2 kyu/Whitespace Interpreter/solution.ts (4/5)"
     }
   ],
   "challenges": ["Codewars"],
