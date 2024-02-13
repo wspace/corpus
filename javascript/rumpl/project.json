@@ -4,12 +4,41 @@
   "authors": ["Djordje Lukic"],
   "license": "MIT",
   "languages": ["JavaScript"],
-  "tags": ["interpreter"],
+  "tags": ["interpreter", "disassembler"],
   "date": "2013-03-27 23:32:41 +0100",
   "spec_version": "0.3",
   "source": ["https://github.com/rumpl/whitespace"],
   "submodules": [{ "path": "whitespace", "url": "https://github.com/rumpl/whitespace" }],
   "whitespace": { "extension": "ws" },
+  "assembly": {
+    "mnemonics": {
+      "push": "PUSH",
+      "dup": "DUP",
+      "copy": "COPY_NTH",
+      "swap": "SWAP",
+      "drop": "DISCARD",
+      "slide": "SLIDE",
+      "add": "ADD",
+      "sub": "SUB",
+      "mul": "MUL",
+      "div": "DIV",
+      "mod": "MOD",
+      "store": "STORE",
+      "retrieve": "RETRIEVE",
+      "label": "MARK",
+      "call": "CALL_SUBROUTINE",
+      "jmp": "JUMP",
+      "jz": "JUMP_IF_ZERO",
+      "jn": "JUMP_IF_NEGATIVE",
+      "ret": "END_SUBROUTINE",
+      "end": "END",
+      "printc": "OUTPUT_CHAR",
+      "printi": "OUTPUT_NUMBER",
+      "readc": "INPUT_CHAR",
+      "readi": "INPUT_NUMBER"
+    },
+    "usage": ["disassembler"]
+  },
   "programs": [
     { "path": "ws/calc.ws" },
     { "path": "ws/count.ws" },
@@ -19,5 +48,12 @@
     { "path": "ws/loctest.ws" },
     { "path": "ws/name.ws" }
   ],
-  "commands": [{ "bin": "index.js", "usage": "[debug] <file>", "input": "<file>" }]
+  "commands": [
+    {
+      "bin": "index.js",
+      "usage": "[debug] <file>",
+      "input": "<file>",
+      "notes": "The \"debug\" subcommand is a disassembler"
+    }
+  ]
 }

@@ -8,5 +8,34 @@
   "date": "2020-02-01 16:44:56 +0000",
   "spec_version": "0.3",
   "source": ["https://codegolf.stackexchange.com/questions/198694/write-a-whitespace-interpreter/198770#198770"],
-  "challenges": ["Code Golf"]
+  "challenges": ["Code Golf"],
+  "assembly": {
+    "mnemonics": {
+      "push": "PSH",
+      "dup": "DUP",
+      "copy": "CPY",
+      "swap": "SWP",
+      "drop": "DIS",
+      "slide": "SLI",
+      "add": "ADD",
+      "sub": "SUB",
+      "mul": "MUL",
+      "div": "DIV",
+      "mod": "MOD",
+      "store": "PUT",
+      "retrieve": "GET",
+      "label": "LBL",
+      "call": "JSR",
+      "jmp": "JMP",
+      "jz": "JZE",
+      "jn": "JMI",
+      "ret": "RTN",
+      "end": "END",
+      "printc": "CHR",
+      "printi": "INT",
+      "readc": "RCH",
+      "readi": "RNU"
+    },
+    "usage": ["enum"]
+  }
 }

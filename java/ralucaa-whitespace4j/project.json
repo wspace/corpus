@@ -10,6 +10,17 @@
   "source": ["https://github.com/ralucaa/whitespace4j"],
   "submodules": [{ "path": "whitespace4j", "url": "https://github.com/ralucaa/whitespace4j" }],
   "whitespace": { "extension": "ws" },
+  "assembly": {
+    "mnemonics": {
+      "add": "ADDITION",
+      "sub": "SUBTRACTION",
+      "mul": "MULTIPLICATION",
+      "div": "DIVISION",
+      "mod": "MODULO"
+    },
+    "usage": ["enum"],
+    "notes": "Instructions are referred to by their sequence in the state machine and only arithmetic ops are named"
+  },
   "mappings": [{ "space": "W", "tab": "T", "lf": "N", "line_comment": "#" }],
   "programs": [
     { "path": "testset/default/calc.ws", "equivalent": "calc.ws", "spec_version": "0.2" },

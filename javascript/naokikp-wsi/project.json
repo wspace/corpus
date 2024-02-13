@@ -4,11 +4,46 @@
   "authors": ["naoki kageyama"],
   "license": "MIT",
   "languages": ["JavaScript"],
-  "tags": ["IDE", "interpreter", "mapping"],
+  "tags": ["IDE", "debugger", "interpreter", "disassembler", "mapping"],
   "date": "2014-06-01 22:27:15 +0900",
   "spec_version": "0.3",
-  "source": ["https://github.com/naokikp/naokikp.github.io", "https://naokikp.github.io/wsi/whitespace.html"],
+  "source": ["https://naokikp.github.io/wsi/whitespace.html", "https://github.com/naokikp/naokikp.github.io"],
   "submodules": [{ "path": "naokikp.github.io", "url": "https://github.com/naokikp/naokikp.github.io" }],
-  "mappings": [{ "space": "S", "tab": "T", "lf": "L" }, { "space": "S", "tab": "T", "lf": "N" }],
-  "notes": "When mapping to visible characters, STL is canonical over STN"
+  "assembly": {
+    "mnemonics": {
+      "push": "push",
+      "dup": "dup",
+      "copy": "copy",
+      "swap": "swap",
+      "drop": "pop",
+      "slide": "slide",
+      "add": "add",
+      "sub": "sub",
+      "mul": "mul",
+      "div": "div",
+      "mod": "mod",
+      "store": "store",
+      "retrieve": "load",
+      "label": "label",
+      "call": "call",
+      "jmp": "jmp",
+      "jz": "jmpz",
+      "jn": "jmpn",
+      "ret": "ret",
+      "end": "end",
+      "printc": "prtc",
+      "printi": "prtn",
+      "readc": "readc",
+      "readi": "readn"
+    },
+    "usage": ["debugger", "disassembler"]
+  },
+  "mappings": [
+    {
+      "space": "S",
+      "tab": "T",
+      "lf": "[LN]",
+      "notes": "When mapping to visible characters, STL is canonical over STN"
+    }
+  ]
 }

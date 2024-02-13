@@ -10,6 +10,29 @@
   "source": ["https://github.com/Rahul-KP/WhiteSpace-Interpreter"],
   "submodules": [{ "path": "WhiteSpace-Interpreter", "url": "https://github.com/Rahul-KP/WhiteSpace-Interpreter" }],
   "relations": [{ "id": "vim/rolf007-ws-vim", "type": "embedded" }],
+  "whitespace": {
+    "unimplemented": ["store", "retrieve", "label", "call", "jmp", "jz", "jn", "ret", "end", "readc"],
+    "extension": "ws"
+  },
+  "assembly": {
+    "mnemonics": {
+      "push": "push",
+      "dup": "duplicateTop",
+      "copy": "copy",
+      "swap": "swap",
+      "drop": "discard",
+      "slide": "slide",
+      "add": "add",
+      "sub": "subtract",
+      "mul": "multiply",
+      "div": "divide",
+      "mod": "modulo",
+      "printc": "outputChar",
+      "printi": "outputInt",
+      "readi": "input"
+    },
+    "usage": ["enum"]
+  },
   "programs": [
     { "path": "add2.ws", "spec_version": "0.2" },
     { "path": "hello.ws", "spec_version": "0.2" },

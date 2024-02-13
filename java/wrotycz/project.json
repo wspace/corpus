@@ -10,6 +10,35 @@
   "source": ["https://github.com/wrotycz/whitespace-interpreter"],
   "submodules": [{ "path": "whitespace-interpreter", "url": "https://github.com/wrotycz/whitespace-interpreter" }],
   "challenges": ["Codewars"],
+  "assembly": {
+    "mnemonics": {
+      "push": "PUSH",
+      "dup": "DUPLICATE_TOP",
+      "copy": "DUPLICATE_NTH",
+      "swap": "SWAP_TOP",
+      "drop": "DISCARD_TOP",
+      "slide": "DISCARD_BELOW_TOP",
+      "add": "ADD",
+      "sub": "SUBTRACT",
+      "mul": "MULTIPLY",
+      "div": "DIVIDE",
+      "mod": "MOD",
+      "store": "STORE",
+      "retrieve": "GET",
+      "label": "MARK",
+      "call": "CALL",
+      "jmp": "JUMP",
+      "jz": "EQ_ZERO",
+      "jn": "LT_ZERO",
+      "ret": "EXIT_SUBROUTINE",
+      "end": "EXIT",
+      "printc": "OUTPUT_CHARACTER",
+      "printi": "OUTPUT_NUMBER",
+      "readc": "STORE_INPUT_CHARACTER",
+      "readi": "STORE_INPUT_NUMBER"
+    },
+    "usage": ["enum"]
+  },
   "run_errors": "Needs Codewars entrypoint",
   "commands": [{ "type": "interpreter", "bin": "target/whitespace-interpreter-1.0-SNAPSHOT.jar" }]
 }

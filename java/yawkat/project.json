@@ -9,6 +9,35 @@
   "spec_version": "0.3",
   "source": ["https://github.com/yawkat/Whitespace"],
   "submodules": [{ "path": "Whitespace", "url": "https://github.com/yawkat/Whitespace" }],
+  "assembly": {
+    "mnemonics": {
+      "push": "Push",
+      "dup": "Duplicate",
+      "copy": "Copy",
+      "swap": "Swap",
+      "drop": "Discard",
+      "slide": "Slide",
+      "add": "Addition",
+      "sub": "Subtraction",
+      "mul": "Multiplication",
+      "div": "Division",
+      "mod": "Modulo",
+      "store": "Store",
+      "retrieve": "Retrieve",
+      "label": "Mark",
+      "call": "Call",
+      "jmp": "JumpTo",
+      "jz": "JumpToIfZero",
+      "jn": "JumpToIfNegative",
+      "ret": "EndSubroutine",
+      "end": "End",
+      "printc": "PrintChar",
+      "printi": "PrintNum",
+      "readc": "ReadChar",
+      "readi": "ReadNum"
+    },
+    "usage": ["enum"]
+  },
   "commands": [{ "type": "interpreter", "usage": "", "input": "hardcoded fibonacci.ws" }],
   "notes": "Program is hardcoded to the source of fibonacci.ws"
 }

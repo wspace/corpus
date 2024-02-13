@@ -9,6 +9,35 @@
   "spec_version": "0.3",
   "source": ["https://github.com/vyo/callisto"],
   "submodules": [{ "path": "callisto", "url": "https://github.com/vyo/callisto" }],
+  "assembly": {
+    "mnemonics": {
+      "push": "push",
+      "dup": "dupe",
+      "copy": "copy",
+      "swap": "swap",
+      "drop": "pop",
+      "slide": "slide",
+      "add": "add",
+      "sub": "sub",
+      "mul": "mul",
+      "div": "div",
+      "mod": "mod",
+      "store": "set",
+      "retrieve": "get",
+      "label": "mark",
+      "call": "call",
+      "jmp": "jump",
+      "jz": "jzero",
+      "jn": "jneg",
+      "ret": "done",
+      "end": "exit",
+      "printc": "charOut",
+      "printi": "numberOut",
+      "readc": "charIn",
+      "readi": "numberIn"
+    },
+    "usage": ["enum"]
+  },
   "commands": [{ "type": "interpreter", "bin": "callisto.lua", "notes": "Does nothing" }],
   "notes": "Unfinished. It has no parser and does not execute a program."
 }
