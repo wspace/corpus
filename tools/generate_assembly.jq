@@ -1,5 +1,9 @@
 # Generate assembly.md
 
+def one_or_array:
+  if . == null then []
+  elif type == "array" then .
+  else [.] end;
 def wrap_code:
   if . == "" then "\"\"" else "`\(.)`" end;
 def count_each:
@@ -14,8 +18,8 @@ def count_each:
     "shuffle", "dumpstack", "dumpheap", "dumptrace" | {key:., value:[]}] |
     from_entries) as $keys |
   map(
-    .id as $id |
-    .assembly.mnemonics | select(. != null) |
+    .assembly | one_or_array[] |
+    .mnemonics | select(. != null) |
     to_entries[] |
     . as $entry |
     .value |= (
@@ -23,7 +27,7 @@ def count_each:
       map(
         ascii_downcase |
         gsub("^(stack|stk|arith|arithmetic|arithmetics|art|math|calc|infix|heap|hep|mem|flow|flw|fc|io|iop)[ ._-]|^(mod|[samchfi])[._-]"; "") |
-        gsub("( ([.%lf]?<[a-z_]+>|<<[a-z_]+>>|_))+$"; "")) |
+        gsub(" ([.%lf]?<[a-z_]+>|<<[a-z_]+>>|_)(,? ([.%lf]?<[a-z_]+>|<<[a-z_]+>>|_))*$"; "")) |
       unique)) |
   reduce .[] as $inst ($keys; .[$inst.key] += $inst.value)
 ) as $mnemonics |
@@ -59,14 +63,17 @@ instructions, ranked by popularity.
 ## File extensions
 ",
 (
-  map(.assembly.extension | select(. != null)) |
+  map(
+    .assembly | one_or_array[] |
+    .extension | select(. != null)
+  ) |
   "- " + count_each[]
 ),
 (
   map(
     select(.tags != null) |
     select(.tags | contains(["assembler"]) or contains(["disassembler"])) |
-    select(.assembly.mnemonics == null) |
+    select(.assembly | one_or_array | map(.mnemonics == null) | any) |
     "- " + (.id // "“\(.name)” by " + (.authors|join(", ")))) |
   sort |
   if length == 0 then empty

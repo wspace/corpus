@@ -47,12 +47,12 @@
       "type": "string",
       "enum": ["int64", "int32", "uint64", "uint32", "float64", "float32", "C int", "Go int", "Go uint"]
     },
-    "big_int": { "anyOf": [{ "type": "integer" }, { "type": "string", "pattern": "^-?([1-9][0-9]*|0)$" }] },
+    "big_int": { "oneOf": [{ "type": "integer" }, { "type": "string", "pattern": "^-?([1-9][0-9]*|0)$" }] },
     "big_uint": {
-      "anyOf": [{ "type": "integer", "minimum": 0 }, { "type": "string", "pattern": "^([1-9][0-9]*|0)$" }]
+      "oneOf": [{ "type": "integer", "minimum": 0 }, { "type": "string", "pattern": "^([1-9][0-9]*|0)$" }]
     },
     "precision": {
-      "anyOf": [{ "type": "string", "enum": ["arbitrary", "fixed"] }, { "$ref": "#/$defs/integer_type" }]
+      "oneOf": [{ "type": "string", "enum": ["arbitrary", "fixed"] }, { "$ref": "#/$defs/integer_type" }]
     },
     "cap": {
       "oneOf": [{ "$ref": "#/$defs/big_uint" }, { "const": "unbounded" }, { "$ref": "#/$defs/integer_type" }]
@@ -60,13 +60,73 @@
     "bound": {
       "oneOf": [{ "$ref": "#/$defs/big_int" }, { "const": "unbounded" }, { "$ref": "#/$defs/integer_type" }]
     },
+    "assembly_dialect": {
+      "type": "object",
+      "properties": {
+        "source": { "type": "string" },
+        "mnemonics": {
+          "type": "object",
+          "propertyNames": { "$ref": "#/$defs/instruction" },
+          "patternProperties": { "": { "oneOf": [{ "type": "string" }, { "type": "array", "items": { "type": "string" } }] } },
+          "additionalProperties": false
+        },
+        "macros": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "name": { "type": "string" },
+              "args": { "type": "array", "items": { "type": "string" } },
+              "replace": { "type": "array", "items": { "type": "string" } },
+              "notes": { "type": "string" }
+            },
+            "required": ["name"],
+            "additionalProperties": false
+          }
+        },
+        "patterns": {
+          "type": "object",
+          "propertyNames": { "examples": ["number", "label"] },
+          "patternProperties": { "": { "type": "string" } },
+          "additionalProperties": true
+        },
+        "case_sensitive_mnemonics": { "type": "boolean" },
+        "instruction_delimiter": { "type": "string", "enum": ["none", "space", ";", "/"] },
+        "instruction_wrap": { "type": "boolean" },
+        "line_comments": { "type": "array", "items": { "$ref": "#/$defs/line_comment" } },
+        "block_comments": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": { "start": { "type": "string" }, "end": { "type": "string" }, "nestable": { "type": "boolean" } },
+            "required": ["start", "end", "nestable"],
+            "additionalProperties": false,
+            "examples": [
+              { "start": "/*", "end": "*/", "nestable": false },
+              { "start": "{-", "end": "-}", "nestable": true }
+            ]
+          }
+        },
+        "indentation": { "$ref": "#/$defs/indentation" },
+        "label_indentation": { "$ref": "#/$defs/indentation" },
+        "block_indentation": { "type": "boolean" },
+        "binary_numbers": { "type": "boolean" },
+        "usage": {
+          "type": "array",
+          "items": { "type": "string", "examples": ["assembler", "disassembler", "programs", "debug", "enum"] }
+        },
+        "extension": { "type": "string", "examples": ["wsa"] },
+        "notes": { "type": "string" }
+      },
+      "additionalProperties": false
+    },
     "line_comment": { "type": "string", "examples": ["#", ";", "//", "--"] },
     "indentation": { "type": "string", "pattern": "^( *|\\t*)$", "examples": ["  ", "    ", "        ", "\t", ""] },
     "script": {
       "type": "object",
       "properties": {
         "bin": {
-          "anyOf": [
+          "oneOf": [
             {
               "type": "object",
               "properties": { "path": { "type": "string" } },
@@ -90,7 +150,7 @@
     "command_option": {
       "type": "object",
       "properties": {
-        "short": { "anyOf": [{ "type": "string" }, { "type": "array", "items": { "type": "string" } }] },
+        "short": { "oneOf": [{ "type": "string" }, { "type": "array", "items": { "type": "string" } }] },
         "long": { "type": "string" },
         "bare": { "type": "string" },
         "required": { "type": "boolean", "description": "Whether this option is required to be present" },
@@ -98,7 +158,7 @@
         "arg": { "type": "string" },
         "arg_required": { "type": "boolean", "description": "Whether an argument is required to be present" },
         "type": { "type": "string" },
-        "default": { "anyOf": [{ "type": "string" }, { "type": "number" }, { "type": "boolean" }] },
+        "default": { "oneOf": [{ "type": "string" }, { "type": "number" }, { "type": "boolean" }] },
         "min": { "type": "number" },
         "desc": { "type": "string" },
         "values": {
@@ -180,7 +240,8 @@
             "enum": ["fork", "submodule", "embedded", "library", "binary", "assembly", "design"]
           },
           "commit": { "type": "string" },
-          "release": { "type": "string" }
+          "release": { "type": "string" },
+          "dest_path": { "type": "string" }
         },
         "required": ["id", "type"],
         "additionalProperties": false
@@ -199,6 +260,7 @@
           "Advent of Code 2020",
           "Advent of Code 2021",
           "Advent of Code 2022",
+          "Advent of Code 2023",
           "Cerner 2^5",
           "Code Golf",
           "Codewars",
@@ -207,10 +269,10 @@
           "Hacktoberfest 2017",
           "Hacktoberfest 2018",
           "Kattis",
+          "noxCTF",
           "Project Euler",
           "Rosetta Code",
           "Sphere Online Judge",
-          "noxCTF",
           "yukicoder"
         ]
       }
@@ -262,63 +324,10 @@
       "additionalProperties": false
     },
     "assembly": {
-      "type": "object",
-      "properties": {
-        "mnemonics": {
-          "type": "object",
-          "propertyNames": { "$ref": "#/$defs/instruction" },
-          "patternProperties": { "": { "anyOf": [{ "type": "string" }, { "type": "array", "items": { "type": "string" } }] } },
-          "additionalProperties": false
-        },
-        "macros": {
-          "type": "array",
-          "items": {
-            "type": "object",
-            "properties": {
-              "name": { "type": "string" },
-              "args": { "type": "array", "items": { "type": "string" } },
-              "replace": { "type": "array", "items": { "type": "string" } },
-              "notes": { "type": "string" }
-            },
-            "required": ["name"],
-            "additionalProperties": false
-          }
-        },
-        "patterns": {
-          "type": "object",
-          "propertyNames": { "examples": ["number", "label"] },
-          "patternProperties": { "": { "type": "string" } },
-          "additionalProperties": true
-        },
-        "case_sensitive_mnemonics": { "type": "boolean" },
-        "instruction_delimiter": { "type": "string", "enum": ["none", "space", ";", "/"] },
-        "instruction_wrap": { "type": "boolean" },
-        "line_comments": { "type": "array", "items": { "$ref": "#/$defs/line_comment" } },
-        "block_comments": {
-          "type": "array",
-          "items": {
-            "type": "object",
-            "properties": { "start": { "type": "string" }, "end": { "type": "string" }, "nestable": { "type": "boolean" } },
-            "required": ["start", "end", "nestable"],
-            "additionalProperties": false,
-            "examples": [
-              { "start": "/*", "end": "*/", "nestable": false },
-              { "start": "{-", "end": "-}", "nestable": true }
-            ]
-          }
-        },
-        "indentation": { "$ref": "#/$defs/indentation" },
-        "label_indentation": { "$ref": "#/$defs/indentation" },
-        "block_indentation": { "type": "boolean" },
-        "binary_numbers": { "type": "boolean" },
-        "usage": {
-          "type": "array",
-          "items": { "type": "string", "examples": ["assembler", "disassembler", "programs", "debug", "enum"] }
-        },
-        "extension": { "type": "string", "examples": ["wsa"] },
-        "notes": { "type": "string" }
-      },
-      "additionalProperties": false
+      "oneOf": [
+        { "type": "array", "items": { "$ref": "#/$defs/assembly_dialect" } },
+        { "$ref": "#/$defs/assembly_dialect" }
+      ]
     },
     "mappings": {
       "type": "array",

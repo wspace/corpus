@@ -84,6 +84,11 @@ list_dockerfiles:
 	$(foreach dockerfile,$(DOCKERFILES),$(info $(dockerfile)))
 	@:
 
+# List files excluding submodules.
+.PHONY: list_dockerfiles
+list_files:
+	@git ls-files --stage | grep --invert-match ^160000 | cut -b51-
+
 # List files in project directories, excluding submodules, project.json, and
 # Dockerfile.
 .PHONY: list_patches

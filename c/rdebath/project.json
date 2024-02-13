@@ -14,62 +14,140 @@
       { "name": "jzp", "aliases": ["jumppz"], "args": ["label"] },
       { "name": "jzn", "aliases": ["jumpnz"], "args": ["label"] },
       { "name": "jp", "aliases": ["jumpp"], "args": ["label"] },
-      { "name": "jnz", "aliases": ["jumppn", "jumpnp"], "args": ["label"] }
+      { "name": "jnz", "aliases": ["jumppn", "jumpnp"], "args": ["label"] },
+      { "name": "trace", "args": ["number"] }
     ],
     "extension": "ws"
   },
-  "assembly": {
-    "mnemonics": {
-      "push": "push",
-      "dup": ["dup", "doub"],
-      "copy": ["pick", "copy"],
-      "swap": "swap",
-      "drop": ["drop", "discard", "pop"],
-      "slide": "slide",
-      "add": ["add", "add <rhs>"],
-      "sub": ["sub", "sub <rhs>"],
-      "mul": "mul",
-      "div": "div",
-      "mod": "mod",
-      "store": ["store", "store <lhs>"],
-      "retrieve": ["fetch", "retrieve", "retrive", "retrive <number>", "retreive"],
-      "label": ["<label>:", "label"],
-      "call": "call",
-      "jmp": ["jump", "jmp"],
-      "jz": ["jz", "jumpz"],
-      "jn": ["jn", "jumpn"],
-      "ret": ["return", "ret"],
-      "end": ["exit", "quit", "end"],
-      "printc": ["outc", "outchar", "printc"],
-      "printi": ["outn", "outnum", "printi"],
-      "readc": ["readc", "readchar", "inc"],
-      "readi": ["readn", "readnum", "readi", "inn"],
-      "dumpstack": "debug_printstack",
-      "dumpheap": "debug_printheap"
-    },
-    "macros": [
-      {
-        "name": "pushs <s>",
-        "replace": ["push 0", "push <sn>", "…", "push <s1>", "push <s0>"],
-        "notes": "Uses dup for matching consecutive characters"
+  "assembly": [
+    {
+      "source": "ws_engine.h, ws_gencode.h, and ws2c.c",
+      "mnemonics": {
+        "push": "push",
+        "dup": "dup",
+        "copy": "pick",
+        "swap": "swap",
+        "drop": "drop",
+        "slide": "slide",
+        "add": "add",
+        "sub": "sub",
+        "mul": "mul",
+        "div": "div",
+        "mod": "mod",
+        "store": "store",
+        "retrieve": "fetch",
+        "label": "label",
+        "call": "call",
+        "jmp": "jump",
+        "jz": "jz",
+        "jn": "jn",
+        "ret": "return",
+        "end": "exit",
+        "printc": "outc",
+        "printi": "outn",
+        "readc": "readc",
+        "readi": "readn"
       },
-      { "name": "test <n>", "replace": ["dup", "push <n>", "sub"] },
-      { "name": "ifoption <x>", "replace": ["#ifdef <x>"] },
-      { "name": "endoption", "replace": ["#endif"] },
-      { "name": "include <file>", "replace": ["#include \"<file>.h\""] }
-    ],
-    "patterns": {
-      "label": "\\.?[A-Za-z_$][A-Za-z0-9_$]*|[0-9]+",
-      "number": "-?[0-9]+",
-      "number_char": "'[^\\]'|'\\[abtn']'",
-      "string": "\"[^\"]*\""
+      "macros": [{ "name": "pushs" }, { "name": "jp" }, { "name": "jzp" }, { "name": "jzn" }, { "name": "jnz" }],
+      "usage": ["interpreter", "program builder"],
+      "notes": "Has `trace` extension instruction"
     },
-    "case_sensitive_mnemonics": false,
-    "line_comments": [";", "#", "--"],
-    "block_comments": [{ "start": "{-", "end": "-}", "nestable": false }],
-    "indentation": "    ",
-    "usage": ["transpiler", "assembler", "enum"]
-  },
+    {
+      "source": "wsa.l",
+      "mnemonics": {
+        "push": "push <number>",
+        "dup": "dup",
+        "copy": ["copy <number>", "pick <number>"],
+        "swap": "swap",
+        "drop": ["drop", "discard"],
+        "slide": "slide <number>",
+        "add": "add",
+        "sub": "sub",
+        "mul": "mul",
+        "div": "div",
+        "mod": "mod",
+        "store": "store",
+        "retrieve": ["fetch", "retrieve", "retrive", "retreive"],
+        "label": ["<label_number>:", "<label_name><optional_space>:", "label <label>"],
+        "call": "call <label>",
+        "jmp": ["jmp <label>", "jump <label>"],
+        "jz": "jz <label>",
+        "jn": "jn <label>",
+        "ret": ["ret", "return"],
+        "end": ["quit", "exit", "end"],
+        "printc": ["outc", "outchar", "printc"],
+        "printi": ["outn", "outnum", "printi"],
+        "readc": ["readc", "readchar"],
+        "readi": ["readn", "readnum", "readi"]
+      },
+      "patterns": {
+        "label": "<label_number>|<label_name>",
+        "label_name": "\\.?[A-Za-z_$][A-Za-z0-9_$]*",
+        "label_number": "[0-9]+",
+        "number": "-?[0-9]+|'[^\\\n']'|'\\[ntab']'",
+        "optional_space": "[ \t]*",
+        "space": "[ \t]+"
+      },
+      "line_comments": [";", "#"],
+      "indentation": "",
+      "usage": ["assembler"]
+    },
+    {
+      "source": "wsa.sed",
+      "mnemonics": {
+        "push": "push <signed_number>",
+        "dup": "doub",
+        "swap": "swap",
+        "drop": "pop",
+        "add": ["add", "add <unsigned_number>"],
+        "sub": ["sub", "sub <unsigned_number>"],
+        "mul": "mul",
+        "div": "div",
+        "mod": "mod",
+        "store": ["store", "store <unsigned_number>"],
+        "retrieve": ["retrive", "retrive <unsigned_number>"],
+        "label": "label <label>",
+        "call": "call <label>",
+        "jmp": "jump <label>",
+        "jz": "jumpz <label>",
+        "jn": "jumpn <label>",
+        "ret": "ret",
+        "end": "exit",
+        "printc": "outC",
+        "printi": "outN",
+        "readc": "InC",
+        "readi": "InN",
+        "dumpstack": "debug_printstack",
+        "dumpheap": "debug_printheap"
+      },
+      "macros": [
+        { "name": "jumppz <label>" },
+        { "name": "jumpnz <label>" },
+        { "name": "jumpp <label>" },
+        { "name": "jumppn <label>" },
+        { "name": "jumpnp <label>" },
+        {
+          "name": "pushs <string>",
+          "replace": ["push 0", "push <sn>", "…", "push <s1>", "push <s0>"],
+          "notes": "Uses dup for matching consecutive characters"
+        },
+        { "name": "test <unsigned_number>", "replace": ["dup", "push <unsigned_number>", "sub"] },
+        { "name": "ifoption <label>", "replace": ["#ifdef <label>"] },
+        { "name": "endoption", "replace": ["#endif"] },
+        { "name": "include <label>", "replace": ["#include \"<label>.h\""] }
+      ],
+      "patterns": {
+        "label": "[A-Za-z][A-Za-z0-9_]*",
+        "signed_number": "-?[0-9]+",
+        "string": "\"[^\"]*\"",
+        "unsigned_number": "[0-9]+"
+      },
+      "line_comments": ["--", ";"],
+      "block_comments": [{ "start": "{-", "end": "-}", "nestable": false }],
+      "usage": ["assembler"],
+      "notes": "outN, outC, InC, and InN are case-insensitive; the reset are case-sensitive."
+    }
+  ],
   "programs": [
     {
       "path": "gencode-deadfish-in-ws.c",
@@ -95,6 +173,8 @@
       "spec_version": "0.2",
       "generate": "gcc -o gen-wsinterws gen-wsinterws.c && ./gen-wsinterws > wsinterws.ws"
     },
+    { "path": "io.h", "spec_version": "0.2" },
+    { "path": "memory.h", "spec_version": "0.2" },
     { "path": "tests/AndrewKemp/99bottles.ws" },
     { "path": "tests/Burghard/endquitend.ws" },
     { "path": "tests/Burghard/prime.ws" },
@@ -165,5 +245,5 @@
       "notes": "Assembles Oliver Burghard's Whitespace assembly dialect, including shorthand instructions"
     }
   ],
-  "notes": "Transpiles to C. The input assembly dialects of wsa and wsa.sed, as well as the output C function calls, are combined in .assembly.mnemonics. Has tests directory that contains Whitespace programs from many authors."
+  "notes": "Transpiles to C. Has tests directory that contains Whitespace programs from many authors."
 }

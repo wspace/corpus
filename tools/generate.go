@@ -39,10 +39,11 @@ type Project struct {
 		URL      string `json:"url"`
 	} `json:"packages,omitempty"`
 	Relations []struct {
-		ID      string `json:"id"`
-		Type    string `json:"type"`
-		Commit  string `json:"commit,omitempty"`
-		Release string `json:"release,omitempty"`
+		ID       string `json:"id"`
+		Type     string `json:"type"`
+		Commit   string `json:"commit,omitempty"`
+		Release  string `json:"release,omitempty"`
+		DestPath string `json:"dest_path,omitempty"`
 	} `json:"relations,omitempty"`
 	Challenges []string `json:"challenges,omitempty"`
 	Bounds     *struct {
@@ -72,61 +73,7 @@ type Project struct {
 		} `json:"nonstandard,omitempty"`
 		Extension string `json:"extension,omitempty"`
 	} `json:"whitespace,omitempty"`
-	Assembly *struct {
-		Mnemonics *struct {
-			Push      any `json:"push,omitempty"`      // string or []string
-			Dup       any `json:"dup,omitempty"`       // string or []string
-			Copy      any `json:"copy,omitempty"`      // string or []string
-			Swap      any `json:"swap,omitempty"`      // string or []string
-			Drop      any `json:"drop,omitempty"`      // string or []string
-			Slide     any `json:"slide,omitempty"`     // string or []string
-			Add       any `json:"add,omitempty"`       // string or []string
-			Sub       any `json:"sub,omitempty"`       // string or []string
-			Mul       any `json:"mul,omitempty"`       // string or []string
-			Div       any `json:"div,omitempty"`       // string or []string
-			Mod       any `json:"mod,omitempty"`       // string or []string
-			Store     any `json:"store,omitempty"`     // string or []string
-			Retrieve  any `json:"retrieve,omitempty"`  // string or []string
-			Label     any `json:"label,omitempty"`     // string or []string
-			Call      any `json:"call,omitempty"`      // string or []string
-			Jmp       any `json:"jmp,omitempty"`       // string or []string
-			Jz        any `json:"jz,omitempty"`        // string or []string
-			Jn        any `json:"jn,omitempty"`        // string or []string
-			Ret       any `json:"ret,omitempty"`       // string or []string
-			End       any `json:"end,omitempty"`       // string or []string
-			Printc    any `json:"printc,omitempty"`    // string or []string
-			Printi    any `json:"printi,omitempty"`    // string or []string
-			Readc     any `json:"readc,omitempty"`     // string or []string
-			Readi     any `json:"readi,omitempty"`     // string or []string
-			Shuffle   any `json:"shuffle,omitempty"`   // string or []string
-			DumpStack any `json:"dumpstack,omitempty"` // string or []string
-			DumpHeap  any `json:"dumpheap,omitempty"`  // string or []string
-			DumpTrace any `json:"dumptrace,omitempty"` // string or []string
-		} `json:"mnemonics,omitempty"`
-		Macros []struct {
-			Name    string    `json:"name"`
-			Args    []string  `json:"args,omitempty"`
-			Replace *[]string `json:"replace,omitempty"`
-			Notes   string    `json:"notes,omitempty"`
-		} `json:"macros,omitempty"`
-		Patterns               map[string]string `json:"patterns,omitempty"`
-		CaseSensitiveMnemonics *bool             `json:"case_sensitive_mnemonics,omitempty"`
-		InstructionDelimiter   string            `json:"instruction_delimiter,omitempty"`
-		InstructionWrap        *bool             `json:"instruction_wrap,omitempty"`
-		LineComments           []string          `json:"line_comments,omitempty"`
-		BlockComments          []struct {
-			Start    string `json:"start"`
-			End      string `json:"end"`
-			Nestable bool   `json:"nestable"`
-		} `json:"block_comments,omitempty"`
-		Indentation      *string  `json:"indentation,omitempty"`
-		LabelIndentation *string  `json:"label_indentation,omitempty"`
-		BlockIndentation *bool    `json:"block_indentation,omitempty"`
-		BinaryNumbers    *bool    `json:"binary_numbers,omitempty"`
-		Usage            []string `json:"usage,omitempty"`
-		Extension        *string  `json:"extension,omitempty"`
-		Notes            string   `json:"notes,omitempty"`
-	} `json:"assembly,omitempty"`
+	Assembly AssemblyDialects `json:"assembly,omitempty"` // AssemblyDialect or []AssemblyDialect
 	Mappings []struct {
 		Space          string `json:"space"`
 		Tab            string `json:"tab"`
@@ -165,6 +112,65 @@ type Project struct {
 	Commands []Command `json:"commands,omitempty"`
 	Notes    string    `json:"notes,omitempty"`
 	TODO     string    `json:"todo,omitempty"`
+}
+
+type AssemblyDialects []AssemblyDialect
+
+type AssemblyDialect struct {
+	Source    string `json:"source,omitempty"`
+	Mnemonics *struct {
+		Push      any `json:"push,omitempty"`      // string or []string
+		Dup       any `json:"dup,omitempty"`       // string or []string
+		Copy      any `json:"copy,omitempty"`      // string or []string
+		Swap      any `json:"swap,omitempty"`      // string or []string
+		Drop      any `json:"drop,omitempty"`      // string or []string
+		Slide     any `json:"slide,omitempty"`     // string or []string
+		Add       any `json:"add,omitempty"`       // string or []string
+		Sub       any `json:"sub,omitempty"`       // string or []string
+		Mul       any `json:"mul,omitempty"`       // string or []string
+		Div       any `json:"div,omitempty"`       // string or []string
+		Mod       any `json:"mod,omitempty"`       // string or []string
+		Store     any `json:"store,omitempty"`     // string or []string
+		Retrieve  any `json:"retrieve,omitempty"`  // string or []string
+		Label     any `json:"label,omitempty"`     // string or []string
+		Call      any `json:"call,omitempty"`      // string or []string
+		Jmp       any `json:"jmp,omitempty"`       // string or []string
+		Jz        any `json:"jz,omitempty"`        // string or []string
+		Jn        any `json:"jn,omitempty"`        // string or []string
+		Ret       any `json:"ret,omitempty"`       // string or []string
+		End       any `json:"end,omitempty"`       // string or []string
+		Printc    any `json:"printc,omitempty"`    // string or []string
+		Printi    any `json:"printi,omitempty"`    // string or []string
+		Readc     any `json:"readc,omitempty"`     // string or []string
+		Readi     any `json:"readi,omitempty"`     // string or []string
+		Shuffle   any `json:"shuffle,omitempty"`   // string or []string
+		DumpStack any `json:"dumpstack,omitempty"` // string or []string
+		DumpHeap  any `json:"dumpheap,omitempty"`  // string or []string
+		DumpTrace any `json:"dumptrace,omitempty"` // string or []string
+	} `json:"mnemonics,omitempty"`
+	Macros []struct {
+		Name    string    `json:"name"`
+		Args    []string  `json:"args,omitempty"`
+		Replace *[]string `json:"replace,omitempty"`
+		Notes   string    `json:"notes,omitempty"`
+	} `json:"macros,omitempty"`
+	Patterns               map[string]string `json:"patterns,omitempty"`
+	CaseSensitiveMnemonics *bool             `json:"case_sensitive_mnemonics,omitempty"`
+	InstructionDelimiter   string            `json:"instruction_delimiter,omitempty"`
+	InstructionWrap        *bool             `json:"instruction_wrap,omitempty"`
+	LineComments           []string          `json:"line_comments,omitempty"`
+	BlockComments          []struct {
+		Start    string `json:"start"`
+		End      string `json:"end"`
+		Nestable bool   `json:"nestable"`
+	} `json:"block_comments,omitempty"`
+	Indentation      *string  `json:"indentation,omitempty"`
+	LabelIndentation *string  `json:"label_indentation,omitempty"`
+	BlockIndentation *bool    `json:"block_indentation,omitempty"`
+	BinaryNumbers    *bool    `json:"binary_numbers,omitempty"`
+	Usage            []string `json:"usage,omitempty"`
+	Extension        *string  `json:"extension,omitempty"`
+	Notes            string   `json:"notes,omitempty"`
 }
 
 type Script struct {
@@ -327,6 +333,25 @@ func (p *Project) Time() time.Time {
 		}
 	}
 	return time.Time{}
+}
+
+func (a *AssemblyDialects) UnmarshalJSON(data []byte) error {
+	if string(data) == "null" {
+		*a = nil
+		return nil
+	}
+	if len(data) == 0 || data[0] == '[' {
+		return json.Unmarshal(data, (*[]AssemblyDialect)(a))
+	}
+	*a = make([]AssemblyDialect, 1)
+	return json.Unmarshal(data, &(*a)[0])
+}
+
+func (a AssemblyDialects) MarshalJSON() ([]byte, error) {
+	if len(a) == 1 {
+		return json.Marshal(a[0])
+	}
+	return json.Marshal([]AssemblyDialect(a))
 }
 
 func (inst *Instruction) UnmarshalText(text []byte) error {

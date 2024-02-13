@@ -8,7 +8,10 @@ use crate::util::{Int, OneOrVec, TotalF64, Uint};
 use crate::ws::{Inst, InstMap};
 
 #[skip_serializing_none]
-#[apply(Vec => #[serde(default, skip_serializing_if = "Vec::is_empty")])]
+#[apply(
+    Vec => #[serde(default, skip_serializing_if = "Vec::is_empty")],
+    OneOrVec => #[serde(default, skip_serializing_if = "OneOrVec::is_empty")],
+)]
 #[derive(Serialize, Deserialize, Clone, Debug, PartialEq, Eq)]
 pub struct Project {
     pub id: String,
@@ -34,7 +37,7 @@ pub struct Project {
     pub bounds: Option<Bounds>,
     pub behavior: Option<Behavior>,
     pub whitespace: Option<Whitespace>,
-    pub assembly: Option<Assembly>,
+    pub assembly: OneOrVec<Assembly>,
     pub mappings: Vec<Mapping>,
     pub programs: Vec<Program>,
     pub build_errors: Option<String>,
@@ -100,6 +103,7 @@ pub struct Relation {
     pub typ: String,
     pub commit: Option<String>,
     pub release: Option<String>,
+    pub dest_path: Option<String>,
 }
 
 #[derive(Serialize, Deserialize, Clone, Copy, Debug, PartialEq, Eq)]
@@ -132,6 +136,8 @@ pub enum Challenge {
     AdventOfCode2021,
     #[serde(rename = "Advent of Code 2022")]
     AdventOfCode2022,
+    #[serde(rename = "Advent of Code 2023")]
+    AdventOfCode2023,
     #[serde(rename = "Cerner 2^5")]
     Cerner2Pow5,
     #[serde(rename = "Code Golf")]
@@ -254,6 +260,7 @@ pub struct NonstandardInst {
 )]
 #[derive(Serialize, Deserialize, Clone, Debug, PartialEq, Eq)]
 pub struct Assembly {
+    pub source: Option<String>,
     pub mnemonics: InstMap<OneOrVec<String>>,
     pub macros: Vec<Macro>,
     pub patterns: BTreeMap<String, String>,
