@@ -447,23 +447,23 @@ language, including interpreters, compilers, and programs.
 
 | Name                                     | Author                       | Date             | Spec | Source |
 | ---------------------------------------- | ---------------------------- | ---------------- | ---- | ------ |
-| FizzBuzz *(replaced)*                    | 80.98.247.63                 | 2011-08-12 12:38 | 0.2  | [Rosetta Code](https://rosettacode.org/mw/index.php?title=FizzBuzz&oldid=117128), [Rosetta Code](https://rosettacode.org/mw/index.php?title=FizzBuzz&oldid=117127) |
-| A+B                                      | Charlace                     | 2012-09-08 05:10 | 0.2  | [Rosetta Code](https://rosettacode.org/wiki/A%2BB#Whitespace), [Rosetta Code](https://rosettacode.org/mw/index.php?title=A%2BB&oldid=143774) |
-| Sorting algorithms/Shell sort            | Iso P. Sephile (Isopsephile) | 2013-03-09 08:17 | 0.3  | [Rosetta Code](https://rosettacode.org/wiki/Sorting_algorithms/Shell_sort/Whitespace), [Rosetta Code](https://rosettacode.org/mw/index.php?title=Sorting_algorithms/Shell_sort/Whitespace&oldid=153397) |
+| Rot-13                                   | Jjuanhdez                    | 2021-07-01 00:39 | 0.2  | [Rosetta Code](https://rosettacode.org/wiki/Rot-13#Whitespace), [Rosetta Code](https://rosettacode.org/mw/index.php?title=Rot-13&oldid=337007) |
+| 99 Bottles of Beer                       | Andrew Kemp, Jjuanhdez       | 2021-07-01 00:28 | 0.2  | [Rosetta Code](https://rosettacode.org/wiki/99_Bottles_of_Beer/EsoLang#Whitespace), [Rosetta Code](https://rosettacode.org/mw/index.php?title=99_Bottles_of_Beer/EsoLang&oldid=337006) |
+| Quine                                    | Laurens                      | 2020-12-25 14:22 | 0.2  | [Rosetta Code](https://rosettacode.org/wiki/Quine#Whitespace), [Rosetta Code](https://rosettacode.org/mw/index.php?title=Quine&oldid=319732) |
+| Hello world/Text                         | Edwin Brady, Hajo            | 2014-10-20 19:44 | 0.2  | [Rosetta Code](https://rosettacode.org/wiki/Hello_world/Text#Whitespace), [Rosetta Code](https://rosettacode.org/mw/index.php?title=Hello_world/Text&oldid=191144) |
+| Terminal control/Cursor positioning      | M il                         | 2014-07-18 08:31 | 0.2  | [Rosetta Code](https://rosettacode.org/wiki/Terminal_control/Cursor_positioning#Whitespace), [Rosetta Code](https://rosettacode.org/mw/index.php?title=Terminal_control/Cursor_positioning&oldid=186144) |
+| FizzBuzz                                 | Iso P. Sephile (Isopsephile) | 2013-04-05 08:42 | 0.2  | [Rosetta Code](https://rosettacode.org/wiki/FizzBuzz/EsoLang#Whitespace), [Rosetta Code](https://rosettacode.org/mw/index.php?title=FizzBuzz&oldid=154929) |
+| Loops/While                              | Iso P. Sephile (Isopsephile) | 2013-03-30 00:45 | 0.2  | [Rosetta Code](https://rosettacode.org/wiki/Loops/While#Whitespace), [Rosetta Code](https://rosettacode.org/mw/index.php?title=Loops/While&oldid=154500) |
+| Harshad or Niven series                  | Iso P. Sephile (Isopsephile) | 2013-03-25 23:48 | 0.3  | [Rosetta Code](https://rosettacode.org/wiki/Harshad_or_Niven_series#Whitespace), [Rosetta Code](https://rosettacode.org/mw/index.php?title=Harshad_or_Niven_series&oldid=154245) |
+| Binary digits                            | Iso P. Sephile (Isopsephile) | 2013-03-18 10:33 | 0.3  | [Rosetta Code](https://rosettacode.org/wiki/Binary_digits#Whitespace), [Rosetta Code](https://rosettacode.org/mw/index.php?title=Binary_digits&oldid=153851) |
+| Langton's ant                            | Iso P. Sephile (Isopsephile) | 2013-03-16 12:50 | 0.3  | [Rosetta Code](https://rosettacode.org/wiki/Langton%27s_ant#Whitespace), [Rosetta Code](https://rosettacode.org/mw/index.php?title=Langton%27s_ant&oldid=153720) |
+| Count in octal                           | Iso P. Sephile (Isopsephile) | 2013-03-12 03:29 | 0.3  | [Rosetta Code](https://rosettacode.org/wiki/Count_in_octal#Whitespace), [Rosetta Code](https://rosettacode.org/mw/index.php?title=Count_in_octal&oldid=153556) |
+| Letter frequency                         | Iso P. Sephile (Isopsephile) | 2013-03-11 14:39 | 0.2  | [Rosetta Code](https://rosettacode.org/wiki/Letter_frequency#Whitespace), [Rosetta Code](https://rosettacode.org/mw/index.php?title=Letter_frequency&oldid=153525) |
 | Fibonacci sequence (Iterative)           | Iso P. Sephile (Isopsephile) | 2013-03-10 23:38 | 0.3  | [Rosetta Code](https://rosettacode.org/wiki/Fibonacci_sequence#Whitespace), [Rosetta Code](https://rosettacode.org/mw/index.php?title=Fibonacci_sequence&oldid=153484) |
 | Fibonacci sequence (Recursive)           | Iso P. Sephile (Isopsephile) | 2013-03-10 23:38 | 0.2  | [Rosetta Code](https://rosettacode.org/wiki/Fibonacci_sequence#Whitespace), [Rosetta Code](https://rosettacode.org/mw/index.php?title=Fibonacci_sequence&oldid=153484) |
-| Letter frequency                         | Iso P. Sephile (Isopsephile) | 2013-03-11 14:39 | 0.2  | [Rosetta Code](https://rosettacode.org/wiki/Letter_frequency#Whitespace), [Rosetta Code](https://rosettacode.org/mw/index.php?title=Letter_frequency&oldid=153525) |
-| Count in octal                           | Iso P. Sephile (Isopsephile) | 2013-03-12 03:29 | 0.3  | [Rosetta Code](https://rosettacode.org/wiki/Count_in_octal#Whitespace), [Rosetta Code](https://rosettacode.org/mw/index.php?title=Count_in_octal&oldid=153556) |
-| Langton's ant                            | Iso P. Sephile (Isopsephile) | 2013-03-16 12:50 | 0.3  | [Rosetta Code](https://rosettacode.org/wiki/Langton%27s_ant#Whitespace), [Rosetta Code](https://rosettacode.org/mw/index.php?title=Langton%27s_ant&oldid=153720) |
-| Binary digits                            | Iso P. Sephile (Isopsephile) | 2013-03-18 10:33 | 0.3  | [Rosetta Code](https://rosettacode.org/wiki/Binary_digits#Whitespace), [Rosetta Code](https://rosettacode.org/mw/index.php?title=Binary_digits&oldid=153851) |
-| Harshad or Niven series                  | Iso P. Sephile (Isopsephile) | 2013-03-25 23:48 | 0.3  | [Rosetta Code](https://rosettacode.org/wiki/Harshad_or_Niven_series#Whitespace), [Rosetta Code](https://rosettacode.org/mw/index.php?title=Harshad_or_Niven_series&oldid=154245) |
-| Loops/While                              | Iso P. Sephile (Isopsephile) | 2013-03-30 00:45 | 0.2  | [Rosetta Code](https://rosettacode.org/wiki/Loops/While#Whitespace), [Rosetta Code](https://rosettacode.org/mw/index.php?title=Loops/While&oldid=154500) |
-| FizzBuzz                                 | Iso P. Sephile (Isopsephile) | 2013-04-05 08:42 | 0.2  | [Rosetta Code](https://rosettacode.org/wiki/FizzBuzz/EsoLang#Whitespace), [Rosetta Code](https://rosettacode.org/mw/index.php?title=FizzBuzz&oldid=154929) |
-| Terminal control/Cursor positioning      | M il                         | 2014-07-18 08:31 | 0.2  | [Rosetta Code](https://rosettacode.org/wiki/Terminal_control/Cursor_positioning#Whitespace), [Rosetta Code](https://rosettacode.org/mw/index.php?title=Terminal_control/Cursor_positioning&oldid=186144) |
-| Hello world/Text                         | Edwin Brady, Hajo            | 2014-10-20 19:44 | 0.2  | [Rosetta Code](https://rosettacode.org/wiki/Hello_world/Text#Whitespace), [Rosetta Code](https://rosettacode.org/mw/index.php?title=Hello_world/Text&oldid=191144) |
-| Quine                                    | Laurens                      | 2020-12-25 14:22 | 0.2  | [Rosetta Code](https://rosettacode.org/wiki/Quine#Whitespace), [Rosetta Code](https://rosettacode.org/mw/index.php?title=Quine&oldid=319732) |
-| 99 Bottles of Beer                       | Andrew Kemp, Jjuanhdez       | 2021-07-01 00:28 | 0.2  | [Rosetta Code](https://rosettacode.org/wiki/99_Bottles_of_Beer/EsoLang#Whitespace), [Rosetta Code](https://rosettacode.org/mw/index.php?title=99_Bottles_of_Beer/EsoLang&oldid=337006) |
-| Rot-13                                   | Jjuanhdez                    | 2021-07-01 00:39 | 0.2  | [Rosetta Code](https://rosettacode.org/wiki/Rot-13#Whitespace), [Rosetta Code](https://rosettacode.org/mw/index.php?title=Rot-13&oldid=337007) |
+| Sorting algorithms/Shell sort            | Iso P. Sephile (Isopsephile) | 2013-03-09 08:17 | 0.3  | [Rosetta Code](https://rosettacode.org/wiki/Sorting_algorithms/Shell_sort/Whitespace), [Rosetta Code](https://rosettacode.org/mw/index.php?title=Sorting_algorithms/Shell_sort/Whitespace&oldid=153397) |
+| A+B                                      | Charlace                     | 2012-09-08 05:10 | 0.2  | [Rosetta Code](https://rosettacode.org/wiki/A%2BB#Whitespace), [Rosetta Code](https://rosettacode.org/mw/index.php?title=A%2BB&oldid=143774) |
+| FizzBuzz *(replaced)*                    | 80.98.247.63                 | 2011-08-12 12:38 | 0.2  | [Rosetta Code](https://rosettacode.org/mw/index.php?title=FizzBuzz&oldid=117128), [Rosetta Code](https://rosettacode.org/mw/index.php?title=FizzBuzz&oldid=117127) |
 
 ## Esolang programs
 
@@ -489,53 +489,50 @@ language, including interpreters, compilers, and programs.
 
 ## Comparison to Whitespacers
 
-[Whitespacers](https://github.com/hostilefork/whitespacers) is a
-collection by Brian Dickens (Hostile Fork) of Whitespace interpreters in
-13 languages. It was the de facto home for maintaining these
-interpreters and received many community contributions, until it was
-superseded by the Whitespace Corpus and archived.
+[Whitespacers](https://github.com/hostilefork/whitespacers) is a collection by
+Brian Dickens (Hostile Fork) of Whitespace interpreters in 13 languages. It was
+the de facto home for maintaining these interpreters and received many community
+contributions, until it was superseded by the Whitespace Corpus and archived.
 
-Most interpreters were copied directly into Whitespacers; these have
-been migrated to individual repos under the [wspace](https://github.com/wspace)
-organization, where maintenance is ongoing. This keeps each
-implementation's history separate and and makes ownership clearer. The
-interpreters, for which a git repository by the original author already
-exists, remain the authoritative source and are included as submodules
-in the Corpus.
+Most interpreters were copied directly into Whitespacers; these have been
+migrated to individual repos under the [wspace](https://github.com/wspace)
+organization, where maintenance is ongoing. This keeps each implementation's
+history separate and and makes ownership clearer. The interpreters, for which a
+git repository by the original author already exists, remain the authoritative
+source and are included as submodules in the Corpus.
 
-Interpreters and programs from Whitespacers, with their equivalents in
-the Corpus:
+Interpreters and programs from Whitespacers, with their equivalents in the
+Corpus:
 
-- c              - [c/meth0dz](c/meth0dz)
-- cpp            - [cpp/burghard-wsintercpp](cpp/burghard-wsintercpp)
-- crystal        - [crystal/collidedscope-spiceweight](crystal/collidedscope-spiceweight)
-- erlang         - [erlang/derek-mrwhite](erlang/derek-mrwhite)
+- c:              [c/meth0dz](c/meth0dz)
+- cpp:            [cpp/burghard-wsintercpp](cpp/burghard-wsintercpp)
+- crystal:        [crystal/collidedscope-spiceweight](crystal/collidedscope-spiceweight)
+- erlang:         [erlang/derek121-mrwhite](erlang/derek121-mrwhite)
 - examples
-  - calc.ws      - [Whitespace examples](https://web.archive.org/web/20150717115008/http://compsoc.dur.ac.uk:80/whitespace/examples.php)
-  - count.ws     - [Whitespace tutorial](https://web.archive.org/web/20150618184706/http://compsoc.dur.ac.uk/whitespace/tutorial.php)
-  - fact.ws      - Whitespace examples
-  - fibonacci.ws - Whitespace examples
-  - hanoi.ws     - Whitespace examples
-  - hworld.ws    - Whitespace examples
-  - name.ws      - Whitespace examples
-  - sudoku.ws    - [python/cybis-hapyli/sudoku.ws](python/cybis-hapyli)
-- haskell        - [haskell/edwinb-wspace-0.3](haskell/edwinb-wspace-0.3)
-- idris          - [idris/edwinb-ws-idr](idris/edwinb-ws-idr)
-- lolcode        - [lolcode/akers](lolcode/akers)
-- perl           - [perl/mkoelbl](perl/mkoelbl)
-- python         - [python/stephenchappell](python/stephenchappell)
-- rebol          - [rebol/hostilefork](rebol/hostilefork)
-- ren-c          - [rebol/hostilefork](rebol/hostilefork)
-- ruby           - [ruby/wconrad](ruby/wconrad)
-- whitespace     - [whitespace/burghard-wsinterws](whitespace/burghard-wsinterws)
-- [whitespacers#5](https://github.com/hostilefork/whitespacers/issues/5) - [rust/censoredusername-whitespacers](rust/censoredusername-whitespacers)
-- [whitespacers#9](https://github.com/hostilefork/whitespacers/pull/9) - [javascript/luilak-ws2js](javascript/luilak-ws2js)
+  - calc.ws:      [Whitespace examples](https://web.archive.org/web/20150717115008/http://compsoc.dur.ac.uk:80/whitespace/examples.php)
+  - count.ws:     [Whitespace tutorial](https://web.archive.org/web/20150618184706/http://compsoc.dur.ac.uk/whitespace/tutorial.php)
+  - fact.ws:      Whitespace examples
+  - fibonacci.ws: Whitespace examples
+  - hanoi.ws:     Whitespace examples
+  - hworld.ws:    Whitespace examples
+  - name.ws:      Whitespace examples
+  - sudoku.ws:    [python/cybis-hapyli/sudoku.ws](python/cybis-hapyli)
+- haskell:        [haskell/edwinb-wspace-0.3](haskell/edwinb-wspace-0.3)
+- idris:          [idris/edwinb-ws-idr](idris/edwinb-ws-idr)
+- lolcode:        [lolcode/0x0dea](lolcode/0x0dea)
+- perl:           [perl/mkoelbl](perl/mkoelbl)
+- python:         [python/stephenchappell](python/stephenchappell)
+- rebol:          [rebol/hostilefork](rebol/hostilefork)
+- ren:c           [rebol/hostilefork](rebol/hostilefork)
+- ruby:           [ruby/wconrad](ruby/wconrad)
+- whitespace:     [whitespace/burghard-wsinterws](whitespace/burghard-wsinterws)
+- [whitespacers#5](https://github.com/hostilefork/whitespacers/issues/5): [rust/censoredusername-whitespacers](rust/censoredusername-whitespacers)
+- [whitespacers#9](https://github.com/hostilefork/whitespacers/pull/9): [javascript/luilak-ws2js](javascript/luilak-ws2js)
 
 ## Usage
 
-Projects with source hosted on GitHub or GitLab are included as
-submodules. Projects from other locations are reconstructed as git
-repositories.
+Projects with source hosted on GitHub or GitLab are included as submodules.
+Projects from other locations are reconstructed as git repositories.
 
 To clone all submodules, run `make init_submodules`.
 
@@ -545,8 +542,9 @@ See [CONTRIBUTING.md](./CONTRIBUTING.md).
 
 ## Dependencies
 
-- [Go](https://golang.org/)
-- [jq](https://stedolan.github.io/jq/) for JSON filtering
+- [Rust](https://www.rust-lang.org/)
+- [Go](https://go.dev/)
+- [jq](https://jqlang.github.io/jq/)
 - [underscore-cli](https://github.com/ddopson/underscore-cli) for JSON
   formatting: `npm install -g underscore-cli`
 - make
