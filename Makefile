@@ -104,6 +104,13 @@ format_tools:
 	@underscore print -i .vscode/settings.json | tools/sponge .vscode/settings.json
 	@underscore print -i .vscode/snippets.code-snippets | tools/sponge .vscode/snippets.code-snippets
 
+# Analyze the size of the repo and its submodules.
+# https://github.com/github/git-sizer
+.PHONY: check_sizer
+check_sizer:
+	git sizer --no-progress
+	git submodule foreach 'git --git-dir "$$(git rev-parse --git-dir)" sizer --no-progress'
+
 .PHONY: todo
 todo:
 	@echo 'List programs:'
