@@ -6,6 +6,7 @@ build:
     COPY whitespace-go .
     RUN CGO_ENABLED=0 go build
     SAVE ARTIFACT whitespace-go /bin/
+    SAVE ARTIFACT examples /programs
 
 docker:
     FROM scratch

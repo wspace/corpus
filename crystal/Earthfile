@@ -1,0 +1,20 @@
+VERSION 0.8
+
+IMPORT ./collidedscope-spiceweight AS crystal-collidedscope-spiceweight
+
+build:
+    FROM scratch
+    BUILD crystal-collidedscope-spiceweight+build
+    WORKDIR /corpus/crystal
+    COPY crystal-collidedscope-spiceweight+build/ collidedscope-spiceweight/
+    SAVE ARTIFACT /corpus /corpus
+
+docker:
+    FROM alpine
+    WORKDIR /corpus/crystal
+    COPY +build/ /
+    SAVE IMAGE wspace-corpus/crystal
+
+docker-all:
+    BUILD +docker
+    BUILD crystal-collidedscope-spiceweight+docker

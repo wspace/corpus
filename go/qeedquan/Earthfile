@@ -7,6 +7,7 @@ build:
     RUN go mod init github.com/wspace/qeedquan-go && \
         CGO_ENABLED=0 go build -o whitespace
     SAVE ARTIFACT whitespace /bin/
+    SAVE ARTIFACT *.ws /programs/
 
 docker:
     FROM scratch

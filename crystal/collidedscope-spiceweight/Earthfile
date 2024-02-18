@@ -5,8 +5,9 @@ build:
     RUN apk add --no-cache make crystal
     WORKDIR /spiceweight
     COPY spiceweight .
-    RUN make
+    RUN crystal build --release --static -o spwt spiceweight.cr
     SAVE ARTIFACT spwt /bin/
+    SAVE ARTIFACT spec/fixtures /programs
 
 docker:
     FROM scratch

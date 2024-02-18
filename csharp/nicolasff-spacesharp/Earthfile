@@ -11,9 +11,10 @@ build:
     RUN make MCS=mcs
     SAVE ARTIFACT wsc.exe /bin/
     SAVE ARTIFACT libwsp.dll /bin/
-    SAVE ARTIFACT tests/ws/*.ws /programs/
+    SAVE ARTIFACT tests/ws /programs
 
 docker:
+    # Requires full mono, not mono:slim, for the mono compiler
     FROM mono
     WORKDIR /spacesharp
     COPY +build/ .

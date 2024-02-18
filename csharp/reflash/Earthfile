@@ -6,6 +6,7 @@ build:
     COPY WhiteSpaceInterpreter .
     WORKDIR /WhiteSpaceInterpreter/WhiteSpaceInterpretator
     RUN msbuild -p:Configuration=Release
+    # TODO: Build fails: Mono does not implement WPF APIs
     SAVE ARTIFACT WhiteSpaceInterpretator/bin/Release/WhiteSpaceInterpretator.exe /bin/
 
 docker:

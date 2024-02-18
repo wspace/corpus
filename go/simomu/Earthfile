@@ -7,6 +7,7 @@ build:
     RUN go test ./... && \
         CGO_ENABLED=0 go build -o releases/ws cmd/ws.go
     SAVE ARTIFACT releases/ws /bin/
+    SAVE ARTIFACT samples /programs
 
 docker:
     FROM scratch

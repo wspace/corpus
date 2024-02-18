@@ -6,6 +6,7 @@ build:
     COPY WhitespaceAssembler .
     RUN msbuild -p:Configuration=Release
     SAVE ARTIFACT bin/Release/WhitespaceAssembler.exe /bin/
+    SAVE ARTIFACT examples /programs
 
 docker:
     FROM mono:slim

@@ -1,0 +1,20 @@
+VERSION 0.8
+
+IMPORT ./edwinb-ws-idr AS idris-edwinb-ws-idr
+
+build:
+    FROM scratch
+    BUILD idris-edwinb-ws-idr+build
+    WORKDIR /corpus/idris
+    COPY idris-edwinb-ws-idr+build/ edwinb-ws-idr/
+    SAVE ARTIFACT /corpus /corpus
+
+docker:
+    FROM alpine
+    WORKDIR /corpus/idris
+    COPY +build/ /
+    SAVE IMAGE wspace-corpus/idris
+
+docker-all:
+    BUILD +docker
+    BUILD idris-edwinb-ws-idr+docker

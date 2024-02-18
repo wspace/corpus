@@ -9,6 +9,7 @@ build:
     # Tests fail
     # RUN go test ./...
     SAVE ARTIFACT bin/go-wspace /bin/
+    SAVE ARTIFACT examples /programs
 
 docker:
     FROM scratch

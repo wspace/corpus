@@ -7,7 +7,7 @@ build:
     WORKDIR /whitenote/wspace/cmd/wspace
     RUN go test && \
         CGO_ENABLED=0 go build
-    SAVE ARTIFACT wspace/cmd/wspace/wspace /bin/
+    SAVE ARTIFACT wspace /bin/
 
 docker:
     FROM scratch

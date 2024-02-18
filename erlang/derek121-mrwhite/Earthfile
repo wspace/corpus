@@ -1,9 +1,9 @@
 VERSION 0.8
 
-docker:
+build:
     FROM erlang
     WORKDIR /mrwhite
-    COPY mrwhite run.sh ./
+    COPY mrwhite .
     COPY mrwhite.erl src/
     RUN erl -noshell \
             -s leex file priv/from_text_lexer \
@@ -14,5 +14,14 @@ docker:
         mv priv/*.erl src/
     RUN rebar3 compile
     RUN rebar3 eunit
-    ENTRYPOINT ["./run.sh"]
+    COPY run.sh .
+    SAVE ARTIFACT _build/default/lib/mrwhite/ebin /bin
+    SAVE ARTIFACT run.sh /bin/
+    SAVE ARTIFACT priv/sample /programs
+
+docker:
+    FROM erlang
+    WORKDIR /mrwhite
+    COPY +build/ .
+    ENTRYPOINT ["bin/run.sh"]
     SAVE IMAGE wspace-corpus/erlang/derek121-mrwhite

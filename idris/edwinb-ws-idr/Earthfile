@@ -2,8 +2,8 @@ VERSION 0.8
 
 build:
     FROM haskell:8-slim-buster
-    RUN cabal update
-    RUN cabal install -j idris
+    RUN cabal update && \
+        cabal install -j idris
     WORKDIR /WS-idr
     COPY WS-idr .
     RUN idris --build wspace.ipkg

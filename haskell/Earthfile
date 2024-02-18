@@ -1,0 +1,20 @@
+VERSION 0.8
+
+IMPORT ./edwinb-wspace-0.3 AS haskell-edwinb-wspace-0.3
+
+build:
+    FROM scratch
+    # BUILD haskell-edwinb-wspace-0.3+build
+    WORKDIR /corpus/haskell
+    # COPY haskell-edwinb-wspace-0.3+build/ edwinb-wspace-0.3/
+    SAVE ARTIFACT /corpus /corpus
+
+docker:
+    FROM alpine
+    WORKDIR /corpus/haskell
+    COPY +build/ /
+    SAVE IMAGE wspace-corpus/haskell
+
+docker-all:
+    BUILD +docker
+    BUILD haskell-edwinb-wspace-0.3+docker

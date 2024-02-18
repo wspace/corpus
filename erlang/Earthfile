@@ -1,0 +1,20 @@
+VERSION 0.8
+
+IMPORT ./derek121-mrwhite AS erlang-derek121-mrwhite
+
+build:
+    FROM scratch
+    BUILD erlang-derek121-mrwhite+docker
+    WORKDIR /corpus/erlang
+    COPY erlang-derek121-mrwhite+build/ derek121-mrwhite/
+    SAVE ARTIFACT /corpus /corpus
+
+docker:
+    FROM alpine
+    WORKDIR /corpus/erlang
+    COPY +build/ /
+    SAVE IMAGE wspace-corpus/erlang
+
+docker-all:
+    BUILD +docker
+    BUILD erlang-derek121-mrwhite+docker

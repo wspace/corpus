@@ -6,7 +6,6 @@ build:
     COPY DotNot .
     RUN nuget restore
     WORKDIR /DotNot/src/Whitespace.TestProject
+    # TODO: Build fails: CSharpGeneratorDriver does not contain a constructor
+    # that takes 3 arguments
     RUN msbuild -p:Configuration=Release
-
-docker:
-    SAVE IMAGE wspace-corpus/csharp/ryzngard-dotnot

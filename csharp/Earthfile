@@ -1,0 +1,48 @@
+VERSION 0.8
+
+IMPORT ./denislabrecque AS csharp-denislabrecque
+IMPORT ./littlebughunter-assembler AS csharp-littlebughunter-assembler
+IMPORT ./meeees AS csharp-meeees
+IMPORT ./nicolasff-spacesharp AS csharp-nicolasff-spacesharp
+IMPORT ./north15-projectone AS csharp-north15-projectone
+IMPORT ./reflash AS csharp-reflash
+IMPORT ./rolisoft-esoteric AS csharp-rolisoft-esoteric
+IMPORT ./ryzngard-dotnot AS csharp-ryzngard-dotnot
+
+build:
+    FROM scratch
+    BUILD csharp-denislabrecque+build
+    BUILD csharp-littlebughunter-assembler+build
+    BUILD csharp-meeees+build
+    BUILD csharp-nicolasff-spacesharp+build
+    BUILD csharp-north15-projectone+build
+    # BUILD csharp-reflash+build
+    BUILD csharp-rolisoft-esoteric+build
+    # BUILD csharp-ryzngard-dotnot+build
+    WORKDIR /corpus/csharp
+    COPY csharp-denislabrecque+build/ denislabrecque/
+    COPY csharp-littlebughunter-assembler+build/ littlebughunter-assembler/
+    COPY csharp-meeees+build/ meeees/
+    COPY csharp-nicolasff-spacesharp+build/ nicolasff-spacesharp/
+    COPY csharp-north15-projectone+build/ north15-projectone/
+    # COPY csharp-reflash+build/ reflash/
+    COPY csharp-rolisoft-esoteric+build/ rolisoft-esoteric/
+    # COPY csharp-ryzngard-dotnot+build/ ryzngard-dotnot/
+    SAVE ARTIFACT /corpus /corpus
+
+docker:
+    FROM alpine
+    WORKDIR /corpus/csharp
+    COPY +build/ /
+    SAVE IMAGE wspace-corpus/csharp
+
+docker-all:
+    BUILD +docker
+    BUILD csharp-denislabrecque+docker
+    BUILD csharp-littlebughunter-assembler+docker
+    BUILD csharp-meeees+docker
+    BUILD csharp-nicolasff-spacesharp+docker
+    BUILD csharp-north15-projectone+docker
+    # BUILD csharp-reflash+docker
+    BUILD csharp-rolisoft-esoteric+docker
+    # BUILD csharp-ryzngard-dotnot+docker

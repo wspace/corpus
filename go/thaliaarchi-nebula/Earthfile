@@ -10,6 +10,7 @@ build:
         go test ./... && \
         go build
     SAVE ARTIFACT nebula /bin/
+    SAVE ARTIFACT programs /programs
 
 docker:
     FROM scratch

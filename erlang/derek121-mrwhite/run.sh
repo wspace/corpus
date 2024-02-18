@@ -1,5 +1,5 @@
 #!/bin/sh -e
 
-exec erl -pa _build/default/lib/mrwhite/ebin -noshell \
+exec erl -pa . -noshell \
   -s mrwhite main "$@" \
   -s erlang halt

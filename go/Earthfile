@@ -1,0 +1,64 @@
+VERSION 0.8
+
+IMPORT ./135yshr-wspacego AS go-135yshr-wspacego
+IMPORT ./kinu AS go-kinu
+IMPORT ./makiuchid-whitenote AS go-makiuchid-whitenote
+# IMPORT ./petercxy-gogmh AS go-petercxy-gogmh
+IMPORT ./pocke-gows AS go-pocke-gows
+IMPORT ./qeedquan AS go-qeedquan
+IMPORT ./samuelpratt AS go-samuelpratt
+IMPORT ./simomu AS go-simomu
+IMPORT ./technohippy AS go-technohippy
+IMPORT ./tempxla-go-wspace AS go-tempxla-go-wspace
+IMPORT ./thaliaarchi-nebula AS go-thaliaarchi-nebula
+IMPORT ./zorchenhimer AS go-zorchenhimer
+
+build:
+    FROM scratch
+    BUILD go-135yshr-wspacego+build
+    BUILD go-kinu+build
+    BUILD go-makiuchid-whitenote+build
+    # BUILD go-petercxy-gogmh+build
+    BUILD go-pocke-gows+build
+    BUILD go-qeedquan+build
+    BUILD go-samuelpratt+build
+    BUILD go-simomu+build
+    BUILD go-technohippy+build
+    BUILD go-tempxla-go-wspace+build
+    # BUILD go-thaliaarchi-nebula+build
+    BUILD go-zorchenhimer+build
+    WORKDIR /corpus/go
+    COPY go-135yshr-wspacego+build/ 135yshr-wspacego/
+    COPY go-kinu+build/ kinu/
+    COPY go-makiuchid-whitenote+build/ makiuchid-whitenote/
+    # COPY go-petercxy-gogmh+build/ petercxy-gogmh/
+    COPY go-pocke-gows+build/ pocke-gows/
+    COPY go-qeedquan+build/ qeedquan/
+    COPY go-samuelpratt+build/ samuelpratt/
+    COPY go-simomu+build/ simomu/
+    COPY go-technohippy+build/ technohippy/
+    COPY go-tempxla-go-wspace+build/ tempxla-go-wspace/
+    # COPY go-thaliaarchi-nebula+build/ thaliaarchi-nebula/
+    COPY go-zorchenhimer+build/ zorchenhimer/
+    SAVE ARTIFACT /corpus /corpus
+
+docker:
+    FROM alpine
+    WORKDIR /corpus/go
+    COPY +build/ /
+    SAVE IMAGE wspace-corpus/go
+
+docker-all:
+    BUILD +docker
+    BUILD go-135yshr-wspacego+docker
+    BUILD go-kinu+docker
+    BUILD go-makiuchid-whitenote+docker
+    # BUILD go-petercxy-gogmh+docker
+    BUILD go-pocke-gows+docker
+    BUILD go-qeedquan+docker
+    BUILD go-samuelpratt+docker
+    BUILD go-simomu+docker
+    BUILD go-technohippy+docker
+    BUILD go-tempxla-go-wspace+docker
+    # BUILD go-thaliaarchi-nebula+docker
+    BUILD go-zorchenhimer+docker
