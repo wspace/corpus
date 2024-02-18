@@ -5,7 +5,7 @@ build:
     WORKDIR /whitespace-clj
     COPY whitespace-clj .
     RUN lein uberjar
-    SAVE ARTIFACT target/whitespace-clj-0.1.0-SNAPSHOT-standalone.jar whitespace-clj-0.1.0-SNAPSHOT.jar
+    SAVE ARTIFACT target/whitespace-clj-0.1.0-SNAPSHOT-standalone.jar /bin/whitespace-clj-0.1.0-SNAPSHOT.jar
 
 docker:
     FROM eclipse-temurin:21-jre-alpine

@@ -1,0 +1,24 @@
+VERSION 0.8
+
+IMPORT ./jmesyou-erasure AS clojure-jmesyou-erasure
+IMPORT ./makenowjust AS clojure-makenowjust
+
+build:
+    FROM scratch
+    BUILD clojure-jmesyou-erasure+build
+    BUILD clojure-makenowjust+build
+    WORKDIR /corpus/clojure
+    COPY clojure-jmesyou-erasure+build/ jmesyou-erasure/
+    COPY clojure-makenowjust+build/ makenowjust/
+    SAVE ARTIFACT /corpus /corpus
+
+docker:
+    FROM alpine
+    WORKDIR /corpus/clojure
+    COPY +build/ /
+    SAVE IMAGE wspace-corpus/clojure
+
+docker-all:
+    BUILD +docker
+    BUILD clojure-jmesyou-erasure+docker
+    BUILD clojure-makenowjust+docker

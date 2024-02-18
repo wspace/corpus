@@ -5,7 +5,8 @@ build:
     WORKDIR /erasure
     COPY erasure .
     RUN lein uberjar
-    SAVE ARTIFACT target/uberjar/erasure-2.0-standalone.jar erasure-2.0.jar
+    SAVE ARTIFACT target/uberjar/erasure-2.0-standalone.jar bin//erasure-2.0.jar
+    SAVE ARTIFACT resources /programs
 
 docker:
     FROM eclipse-temurin:21-jre-alpine

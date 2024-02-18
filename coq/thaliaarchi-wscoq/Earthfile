@@ -5,7 +5,6 @@ build:
     USER coq
     COPY --chown=coq wscoq /home/coq/wscoq
     WORKDIR /home/coq/wscoq
-    RUN make
-
-docker:
-    SAVE IMAGE wspace-corpus/coq/thaliaarchi-wscoq
+    # TODO: BUG? With Docker this can just be `make`, but Earthly seems to
+    # require it to be run as a login shell.
+    RUN sh -lc make

@@ -1,0 +1,22 @@
+VERSION 0.8
+
+# TODO: coq/thaliaarchi-wscoq has no docker target
+
+IMPORT ./thaliaarchi-wscoq AS coq-thaliaarchi-wscoq
+
+build:
+    FROM scratch
+    BUILD coq-thaliaarchi-wscoq+build
+    WORKDIR /corpus/coq
+    COPY coq-thaliaarchi-wscoq+build/ thaliaarchi-wscoq/
+    SAVE ARTIFACT /corpus /corpus
+
+docker:
+    FROM alpine
+    WORKDIR /corpus/coq
+    COPY +build/ /
+    SAVE IMAGE wspace-corpus/coq
+
+docker-all:
+    BUILD +docker
+    # BUILD coq-thaliaarchi-wscoq+docker
