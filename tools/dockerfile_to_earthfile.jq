@@ -46,14 +46,39 @@ end |
   $lines[$ranges[$i] : $ranges[$i+1]] as $stage | $stage |
   # Strip empty lines after FROM and at the end
   first(range(0; length) | select($stage[.] | test("^FROM "))) as $from |
+  first((.[$from] | capture("^FROM [^ ]+ AS (?<name>[^ ]+)$").name), null) as $name |
+  .[$from] |= sub(" AS [^ ]+$"; "") |
   if .[$from+1] == "" then .[:$from+1] + .[$from+2:] end |
-  if .[-1] == "" then .[:-1] end
+  if .[-1] == "" then .[:-1] end |
+  {stage: $name, commands: .}
 ] |
-if length > 2 then
+if length < 1 or length > 2 then
   "Error: \($filename) does not have 1 or 2 stages\n" | halt_error(1)
 end |
+if .[0].stage != "builder" or .[1].stage? != null then
+  "Error: \($filename) stages should be \"builder\" and unlabeled\n" | halt_error(1)
+end |
+map(.stage |= if . == "builder" then "build" end) |
+if .[1].stage? == null then .[1].stage = "docker" end |
+# Convert COPY to SAVE ARTIFACT
+if .[1] != null then
+  .[0].commands += [
+    .[1].commands[] |
+    select(test("^COPY ")) |
+    sub("^COPY --from=builder /[^ /]+/"; "SAVE ARTIFACT ") |
+    sub("^COPY [^ /]+/"; "SAVE ARTIFACT ") |
+    sub("^COPY "; "## COPY ")
+  ] |
+  .[1].commands |= (
+    first(first(.[] | select(test("^COPY "))) = "COPY +build/ /", .) |
+    map(select(test("^COPY [^+]") | not)) + ["SAVE IMAGE wspace-corpus/" + ($filename | sub("/Dockerfile$"; ""))]
+  )
+end |
 map(
-  ["stage:", (.[] | split("\n")[] | if . != "" then "    " + . end)] |
+  [
+    "\(.stage):",
+    (.commands[] | split("\n")[] | if . != "" then "    " + . end)
+  ] |
   join("\n")
 ) |
-join("\n\n")
+"VERSION 0.8\n\n" + join("\n\n")
