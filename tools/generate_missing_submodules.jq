@@ -1,3 +1,7 @@
+#!/bin/bash
+# Usage: generate_missing_submodules.jq [project.json]... > missing_submodules.md \
+exec jq -rsf "$0" -- "${@:1}"
+
 # Generate missing_submodules.md
 
 "# Missing submodules

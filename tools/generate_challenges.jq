@@ -1,3 +1,7 @@
+#!/bin/bash
+# Usage: generate_challenges.jq [project.json]... > challenges.md \
+exec jq -rsf "$0" -- "${@:1}"
+
 # Generate challenges.md
 
 "# Whitespace Coding challenges

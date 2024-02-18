@@ -27,7 +27,7 @@ README.md: $(PROJECTS) README.md.tmpl tools/generate/generate.go $(GO_TOOLS_PACK
 
 assembly.md: $(PROJECTS) tools/generate_assembly.jq
 	$(info Generating assembly.md)
-	@jq -rsf tools/generate_assembly.jq $(PROJECTS) > assembly.md
+	@tools/generate_assembly.jq $(PROJECTS) > assembly.md
 
 building.md: $(PROJECTS) $(DOCKERFILES) tools/generate_building.jq
 	$(info Generating building.md)
@@ -35,11 +35,11 @@ building.md: $(PROJECTS) $(DOCKERFILES) tools/generate_building.jq
 
 challenges.md: $(PROJECTS) tools/generate_challenges.jq
 	$(info Generating challenges.md)
-	@jq -rsf tools/generate_challenges.jq $(PROJECTS) > challenges.md
+	@tools/generate_challenges.jq $(PROJECTS) > challenges.md
 
 missing_submodules.md: $(PROJECTS) tools/generate_missing_submodules.jq
 	$(info Generating missing_submodules.md)
-	@jq -rsf tools/generate_missing_submodules.jq $(PROJECTS) > missing_submodules.md
+	@tools/generate_missing_submodules.jq $(PROJECTS) > missing_submodules.md
 
 .PHONY: docker_build
 docker_build: tools/generate_docker_build.sh

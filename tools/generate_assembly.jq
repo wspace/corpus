@@ -1,3 +1,7 @@
+#!/bin/bash
+# Usage: generate_assembly.jq [project.json]... > assembly.md \
+exec jq -rsf "$0" -- "${@:1}"
+
 # Generate assembly.md
 
 def one_or_array:
