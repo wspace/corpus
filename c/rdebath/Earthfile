@@ -2,39 +2,36 @@ VERSION 0.8
 
 build:
     FROM alpine
+    RUN apk add --no-cache gcc musl-dev flex
     WORKDIR /whitespace
     COPY whitespace .
-    RUN set -e \
+    RUN cp wsc.sh wsc && \
         \
-        apk add --no-cache gcc musl-dev flex \
+        gcc -O3 -g -static -o blockquote blockquote.c && \
+        ( echo 'char * header =' && \
+          ./blockquote -f ws_engine.h && \
+          echo ';' ) > ws_engine_txt.h && \
+        gcc -O3 -g -static -o ws2c ws2c.c && \
         \
-        cp wsc.sh wsc \
+        flex -t wsa.l > wsa.c && \
+        gcc -O3 -g -static -o wsa wsa.c && \
         \
-        gcc -O3 -g -static -o blockquote blockquote.c \
-        ( echo 'char * header =' \
-          ./blockquote -f ws_engine.h \
-          echo ';' ) > ws_engine_txt.h \
-        gcc -O3 -g -static -o ws2c ws2c.c \
-        \
-        flex -t wsa.l > wsa.c \
-        gcc -O3 -g -static -o wsa wsa.c \
-        \
-        gcc -o gencode-deadfish-in-ws gencode-deadfish-in-ws.c \
-        gcc -o gen-99bottles gen-99bottles.c \
-        gcc -o gen-prime gen-prime.c \
-        gcc -o gen-wsinterws gen-wsinterws.c \
-        ./gencode-deadfish-in-ws > deadfish.ws \
-        ./gen-99bottles > 99bottles.ws \
-        ./gen-prime > prime.ws \
+        gcc -o gencode-deadfish-in-ws gencode-deadfish-in-ws.c && \
+        gcc -o gen-99bottles gen-99bottles.c && \
+        gcc -o gen-prime gen-prime.c && \
+        gcc -o gen-wsinterws gen-wsinterws.c && \
+        ./gencode-deadfish-in-ws > deadfish.ws && \
+        ./gen-99bottles > 99bottles.ws && \
+        ./gen-prime > prime.ws && \
         ./gen-wsinterws > wsinterws.ws
     SAVE ARTIFACT wsc /bin/
     SAVE ARTIFACT ws2c /bin/
     SAVE ARTIFACT wsa /bin/
-    SAVE ARTIFACT gen*.c /
-    SAVE ARTIFACT io.h /
-    SAVE ARTIFACT memory.h /
-    SAVE ARTIFACT *.ws /programs/
     SAVE ARTIFACT tests /programs
+    SAVE ARTIFACT gen*.c /programs/
+    SAVE ARTIFACT io.h /programs/
+    SAVE ARTIFACT memory.h /programs/
+    SAVE ARTIFACT *.ws /programs/
 
 docker:
     FROM scratch

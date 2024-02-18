@@ -4,8 +4,8 @@ build:
     FROM alpine
     RUN apk add --no-cache gcc musl-dev
     WORKDIR /whitespace-interpreter
-    COPY whitespace-interpreter/src .
-    RUN gcc -O3 -g -static -o interpreter *.c
+    COPY whitespace-interpreter .
+    RUN gcc -O3 -g -static -o interpreter src/*.c
     SAVE ARTIFACT interpreter /bin/
     SAVE ARTIFACT ws/*.ws /programs/
 

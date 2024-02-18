@@ -12,9 +12,9 @@ build:
     COPY whitespace .
     RUN gcc -O3 -g -static -o lwsvm whitespace_vm.c ../limelib/src/*.c && \
         gcc -O3 -g -static -o lwsa wsa.c ../limelib/src/*.c
-    SAVE ARTIFACT whitespace/lwsvm /bin/
-    SAVE ARTIFACT whitespace/lwsa /bin/
-    SAVE ARTIFACT ws /ws/
+    SAVE ARTIFACT lwsvm /bin/
+    SAVE ARTIFACT lwsa /bin/
+    SAVE ARTIFACT ws /programs
 
 docker:
     FROM scratch

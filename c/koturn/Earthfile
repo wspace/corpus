@@ -22,6 +22,8 @@ build:
             -o whitespace.out whitespace.c
     SAVE ARTIFACT whitespace.out /bin/
     SAVE ARTIFACT t/*.ws /programs/
+    SAVE ARTIFACT t/inputs /programs/inputs
+    SAVE ARTIFACT t/expects /programs/expects
 
 docker:
     FROM scratch

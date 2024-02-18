@@ -83,7 +83,7 @@
       "inputs": ["euler/input/22"],
       "spec_version": "0.3"
     },
-    { "path": "brainfuck.asm", "generated": "brainfuck.ws", "spec_version": "0.3" },
+    { "path": "misc/brainfuck.asm", "generated": "misc/brainfuck.ws", "spec_version": "0.3" },
     { "path": "misc/cat.asm", "generated": "misc/cat.ws", "spec_version": "0.2" },
     { "path": "misc/collatz.asm", "generated": "misc/collatz.ws", "spec_version": "0.2" },
     { "path": "misc/digsum.asm", "generated": "misc/digsum.ws", "spec_version": "0.3" },

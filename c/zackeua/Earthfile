@@ -2,15 +2,14 @@ VERSION 0.8
 
 build:
     FROM alpine
+    RUN apk add --no-cache gcc g++
     WORKDIR /Whitespace
     COPY Whitespace .
-    RUN set -e \
-        \
-        apk add --no-cache gcc g++ \
-        gcc -O3 -static -o wlang whitespace.c \
-        g++ -O3 -static -o whitespacecpp whitespace.cpp
+    RUN gcc -O3 -g -static -o wlang whitespace.c && \
+        g++ -O3 -g -static -o whitespacecpp whitespace.cpp
     SAVE ARTIFACT wlang /bin/
     SAVE ARTIFACT whitespacecpp /bin/
+    SAVE ARTIFACT code /programs
 
 docker:
     FROM scratch

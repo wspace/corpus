@@ -5,7 +5,5 @@ build:
     RUN apk add --no-cache make gcc musl-dev
     WORKDIR /elvm
     COPY elvm .
+    # TODO: Build fails
     RUN make
-
-docker:
-    SAVE IMAGE wspace-corpus/c/shinh-elvm

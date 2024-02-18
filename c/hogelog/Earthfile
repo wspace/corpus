@@ -8,6 +8,7 @@ build:
     RUN perl parsegen.pl parse.def > gencode.c && \
         gcc -O3 -g -static -o wspace parse.c vm.c wspace.c
     SAVE ARTIFACT wspace /bin/
+    SAVE ARTIFACT examples/*.ws /programs/
 
 docker:
     FROM scratch

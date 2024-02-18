@@ -6,7 +6,7 @@ build:
     WORKDIR /asm2ws
     COPY asm2ws .
     RUN ./configure --with-target=release && \
-        make -j$(nproc) wsi CFLAGS='-O3 -g -static'
+        make asm.tab.h wsi CFLAGS='-O3 -g -static'
     SAVE ARTIFACT wsi /bin/
     SAVE ARTIFACT tests /programs
 

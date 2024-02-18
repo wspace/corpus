@@ -5,22 +5,23 @@ build:
     RUN apk add --no-cache gcc musl-dev flex-dev bison
     WORKDIR /ws-compiler
     COPY ws-compiler .
-    RUN \
-        # Error: multiple definition of `symtable` \
-        cd flex-bison \
-        flex lex.l \
-        yacc --debug -d yacc.y \
-        gcc -O3 -g -std=gnu11 -o ws -lfl lex.yy.c y.tab.c \
+    # TODO: Build fails. Multiple definitions of `symtable`.
+    RUN cd flex-bison && \
+        flex lex.l && \
+        yacc --debug -d yacc.y && \
+        gcc -O3 -g -std=gnu11 -o ws -lfl lex.yy.c y.tab.c && \
         \
-        cd 262_267_256 \
-        flex lex.l \
-        yacc --debug -d yacc.y \
+        cd 262_267_256 && \
+        flex lex.l && \
+        yacc --debug -d yacc.y && \
         gcc -O3 -g -std=gnu11 -o ws -lfl lex.yy.c y.tab.c
     SAVE ARTIFACT flex-bison/262_267_256/ws /bin/
+    SAVE ARTIFACT flex-bison/*.ws /programs/
 
 docker:
     FROM alpine
     RUN apk add --no-cache flex-libs
-    COPY +build/ /
-    ENTRYPOINT ["/bin/ws"]
+    WORKDIR /ws-compiler
+    COPY +build/ .
+    ENTRYPOINT ["bin/ws"]
     SAVE IMAGE wspace-corpus/c/tejaskasetty

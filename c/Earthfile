@@ -1,0 +1,102 @@
+VERSION 0.8
+
+# TODO: c/shinh-elvm and c/tejaskasetty builds fail
+
+IMPORT ./bvisness AS c-bvisness
+IMPORT ./d3psi AS c-d3psi
+IMPORT ./hogelog AS c-hogelog
+IMPORT ./koturn AS c-koturn
+IMPORT ./kspalaiologos-asm2ws AS c-kspalaiologos-asm2ws
+IMPORT ./manarice-lime AS c-manarice-lime
+IMPORT ./meth0dz AS c-meth0dz
+IMPORT ./rdebath AS c-rdebath
+IMPORT ./remigascou AS c-remigascou
+IMPORT ./rispoli-txt2ws AS c-rispoli-txt2ws
+IMPORT ./sandeep023 AS c-sandeep023
+IMPORT ./shinh-elvm AS c-shinh-elvm
+IMPORT ./siritori AS c-siritori
+IMPORT ./ssiegl-wsdebug AS c-ssiegl-wsdebug
+IMPORT ./stellwag-wspacegen AS c-stellwag-wspacegen
+IMPORT ./strangepan-i-c-whitespace AS c-strangepan-i-c-whitespace
+IMPORT ./subgeniuskitty-vvhitespace AS c-subgeniuskitty-vvhitespace
+IMPORT ./tejaskasetty AS c-tejaskasetty
+IMPORT ./threeifbywhiskey-blacktime AS c-threeifbywhiskey-blacktime
+IMPORT ./threeifbywhiskey-satan AS c-threeifbywhiskey-satan
+IMPORT ./zackeua AS c-zackeua
+
+build:
+    FROM scratch
+    BUILD c-bvisness+build
+    BUILD c-d3psi+build
+    BUILD c-hogelog+build
+    BUILD c-koturn+build
+    BUILD c-kspalaiologos-asm2ws+build
+    BUILD c-manarice-lime+build
+    BUILD c-meth0dz+build
+    BUILD c-rdebath+build
+    BUILD c-remigascou+build
+    BUILD c-rispoli-txt2ws+build
+    BUILD c-sandeep023+build
+    # BUILD c-shinh-elvm+build
+    BUILD c-siritori+build
+    BUILD c-ssiegl-wsdebug+build
+    BUILD c-stellwag-wspacegen+build
+    BUILD c-strangepan-i-c-whitespace+build
+    BUILD c-subgeniuskitty-vvhitespace+build
+    # BUILD c-tejaskasetty+build
+    BUILD c-threeifbywhiskey-blacktime+build
+    BUILD c-threeifbywhiskey-satan+build
+    BUILD c-zackeua+build
+    WORKDIR /corpus/c
+    COPY c-bvisness+build/ bvisness/
+    COPY c-d3psi+build/ d3psi/
+    COPY c-hogelog+build/ hogelog/
+    COPY c-koturn+build/ koturn/
+    COPY c-kspalaiologos-asm2ws+build/ kspalaiologos-asm2ws/
+    COPY c-manarice-lime+build/ manarice-lime/
+    COPY c-meth0dz+build/ meth0dz/
+    COPY c-rdebath+build/ rdebath/
+    COPY c-remigascou+build/ remigascou/
+    COPY c-rispoli-txt2ws+build/ rispoli-txt2ws/
+    COPY c-sandeep023+build/ sandeep023/
+    # COPY c-shinh-elvm+build/ shinh-elvm/
+    COPY c-siritori+build/ siritori/
+    COPY c-ssiegl-wsdebug+build/ ssiegl-wsdebug/
+    COPY c-stellwag-wspacegen+build/ stellwag-wspacegen/
+    COPY c-strangepan-i-c-whitespace+build/ strangepan-i-c-whitespace/
+    COPY c-subgeniuskitty-vvhitespace+build/ subgeniuskitty-vvhitespace/
+    # COPY c-tejaskasetty+build/ tejaskasetty/
+    COPY c-threeifbywhiskey-blacktime+build/ threeifbywhiskey-blacktime/
+    COPY c-threeifbywhiskey-satan+build/ threeifbywhiskey-satan/
+    COPY c-zackeua+build/ zackeua/
+    SAVE ARTIFACT /corpus /corpus
+
+docker:
+    FROM alpine
+    WORKDIR /corpus/c
+    COPY +build/ /
+    SAVE IMAGE wspace-corpus/c
+
+docker-all:
+    BUILD +docker
+    BUILD c-bvisness+docker
+    BUILD c-d3psi+docker
+    BUILD c-hogelog+docker
+    BUILD c-koturn+docker
+    BUILD c-kspalaiologos-asm2ws+docker
+    BUILD c-manarice-lime+docker
+    BUILD c-meth0dz+docker
+    BUILD c-rdebath+docker
+    BUILD c-remigascou+docker
+    BUILD c-rispoli-txt2ws+docker
+    BUILD c-sandeep023+docker
+    # BUILD c-shinh-elvm+docker
+    BUILD c-siritori+docker
+    BUILD c-ssiegl-wsdebug+docker
+    BUILD c-stellwag-wspacegen+docker
+    BUILD c-strangepan-i-c-whitespace+docker
+    BUILD c-subgeniuskitty-vvhitespace+docker
+    # BUILD c-tejaskasetty+docker
+    BUILD c-threeifbywhiskey-blacktime+docker
+    BUILD c-threeifbywhiskey-satan+docker
+    BUILD c-zackeua+docker

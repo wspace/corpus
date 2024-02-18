@@ -15,6 +15,7 @@ build:
         ./heaptest && \
         ./linkedlisttest
     SAVE ARTIFACT whitespace /bin/
+    SAVE ARTIFACT tests/*.ws /programs/
 
 docker:
     FROM scratch
