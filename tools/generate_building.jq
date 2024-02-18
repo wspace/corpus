@@ -11,8 +11,8 @@ def fmt:
   if .run_errors!=null then " \(.run_errors | escape)" else "" end;
 
 ([(.[] | select(.build_errors!=null or .run_errors!=null or .source_unavailable).id),
-    ($dockerfiles | split(" ")[] | sub("/Dockerfile$"; ""))] |
-  map({key:.}) | from_entries) as $dockerfiles |
+    ($earthfiles | split(" ")[] | sub("/Earthfile$"; ""))] |
+  map({key:.}) | from_entries) as $earthfiles |
 
 "# Building projects
 
@@ -21,7 +21,7 @@ def fmt:
 Projects that can be built with Docker:
 ",
 (
-  map(select(.id | in($dockerfiles))) | sort_by(.id)[] |
+  map(select(.id | in($earthfiles))) | sort_by(.id)[] |
   "- \(.id | escape)" +
   ([.build_errors, .run_errors,
       (if .source_unavailable then "Source unavailable" else null end) |
@@ -33,7 +33,7 @@ Projects that can be built with Docker:
 Building status of individual executables:
 ",
 (
-  map(select(.id | in($dockerfiles) | not)) | sort_by(.id)[] |
+  map(select(.id | in($earthfiles) | not)) | sort_by(.id)[] |
   (.id | escape) as $id |
   if (.commands|length) == 0 and
       .languages == ["Whitespace"] and .tags == ["programs"] then empty

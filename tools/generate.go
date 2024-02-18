@@ -274,7 +274,7 @@ func ReadAllProjects() ([]*Project, error) {
 	return ReadProjects(paths)
 }
 
-var projectRe = regexp.MustCompile(`/(?:project\.json|Dockerfile)?$`)
+var projectRe = regexp.MustCompile(`/(?:project\.json|Earthfile)?$`)
 
 func ReadProjects(paths []string) ([]*Project, error) {
 	var projects []*Project

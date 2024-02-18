@@ -1,5 +1,5 @@
 PROJECTS = $(filter-out tools/% .% _%, $(wildcard */*/project.json))
-DOCKERFILES = $(filter-out tools/% .% _%, $(wildcard */Dockerfile */*/Dockerfile))
+EARTHFILES = $(filter-out tools/% .% _%, $(wildcard */Earthfile */*/Earthfile))
 RUST_FORMAT_CRATE = $(shell find tools/format -type f)
 GO_TOOLS_PACKAGE = tools/generate.go tools/licenses.go
 
@@ -29,9 +29,9 @@ assembly.md: $(PROJECTS) tools/generate_assembly.jq
 	$(info Generating assembly.md)
 	@tools/generate_assembly.jq $(PROJECTS) > assembly.md
 
-building.md: $(PROJECTS) $(DOCKERFILES) tools/generate_building.jq
+building.md: $(PROJECTS) $(EARTHFILES) tools/generate_building.jq
 	$(info Generating building.md)
-	@jq -rsf --arg dockerfiles "$(DOCKERFILES)" tools/generate_building.jq $(PROJECTS) > building.md
+	@jq -rsf --arg earthfiles "$(EARTHFILES)" tools/generate_building.jq $(PROJECTS) > building.md
 
 challenges.md: $(PROJECTS) tools/generate_challenges.jq
 	$(info Generating challenges.md)
@@ -80,22 +80,22 @@ list_project_json:
 	$(foreach project,$(PROJECTS),$(info $(project)))
 	@:
 
-.PHONY: list_dockerfiles
-list_dockerfiles:
-	$(foreach dockerfile,$(DOCKERFILES),$(info $(dockerfile)))
+.PHONY: list_earthfiles
+list_earthfiles:
+	$(foreach earthfile,$(EARTHFILES),$(info $(earthfile)))
 	@:
 
 # List files excluding submodules.
-.PHONY: list_dockerfiles
+.PHONY: list_earthfiles
 list_files:
 	@git ls-files --stage | grep --invert-match ^160000 | cut -b51-
 
 # List files in project directories, excluding submodules, project.json, and
-# Dockerfile.
+# Earthfile.
 .PHONY: list_patches
 list_patches:
 	@git ls-files --format='%(objectmode) %(path)' | \
-		rg --invert-match '^160000 |/(project\.json|Dockerfile)$$|^\d{6} (tools/|\.vscode/|[^/]+$$)' | \
+		rg --invert-match '^160000 |/(project\.json|Earthfile)$$|^\d{6} (tools/|\.vscode/|[^/]+$$)' | \
 		cut -d' ' -f2-
 
 .PHONY: format_tools
