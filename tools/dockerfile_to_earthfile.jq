@@ -3,7 +3,7 @@
 if (( "$#" != 1 )); then echo "Usage: dockerfile_to_earthfile.jq [Dockerfile]" >&2; fi; exec jq -Rrsf "$0" -- "${@:1}"
 
 (input_filename // "File") as $filename |
-[scan("(?:[^\\\\\n]|\\\\\n)*\n?") | sub("\n$"; "")] |
+[scan("(?:\\\\*[^\\\\\n]|\\\\\n)*(?:\n|$)") | sub("\n$"; "")] |
 . as $lines |
 # Desugar heredocs
 (reduce range(0; length) as $i ([];
@@ -70,10 +70,13 @@ if .[-2].stage? == "build" and .[-1].stage? == "docker" then
     select(test("^COPY ")) |
     sub("^COPY --from=builder /[^ /]+/"; "SAVE ARTIFACT ") |
     sub("^COPY [^ /]+/"; "SAVE ARTIFACT ") |
+    sub("^(?<command>SAVE ARTIFACT .+) \\.$"; "\(.command) /") |
     sub("^COPY "; "## COPY ")
   ] |
+  (if isempty(.[-1].commands[] | select(test("^WORKDIR ")))
+    then "/" else "." end) as $dest |
   .[-1].commands |= (
-    first(first(.[] | select(test("^COPY "))) = "COPY +build/ /", .) |
+    first(first(.[] | select(test("^COPY "))) = "COPY +build/ \($dest)", .) |
     map(select(test("^COPY [^+]") | not))
   )
 end |
