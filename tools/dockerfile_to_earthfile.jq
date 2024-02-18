@@ -52,28 +52,36 @@ end |
   if .[-1] == "" then .[:-1] end |
   {stage: $name, commands: .}
 ] |
-if length < 1 or length > 2 then
-  "Error: \($filename) does not have 1 or 2 stages\n" | halt_error(1)
-end |
-if .[0].stage != "builder" or .[1].stage? != null then
-  "Error: \($filename) stages should be \"builder\" and unlabeled\n" | halt_error(1)
-end |
 map(.stage |= if . == "builder" then "build" end) |
-if .[1].stage? == null then .[1].stage = "docker" end |
+# Add implicit stage names
+if length == 1 and .[0].stage == null then
+  .[0].stage =
+    if isempty(.[0].commands[] | select(test("^ENTRYPOINT "))) then "build"
+    else "docker" end
+elif length == 2 and .[1].stage == null and .[0].stage == "build" then
+  .[1].stage = "docker"
+elif length > 2 and .[-1].stage == null then
+  .[-1].stage = "docker"
+end |
 # Convert COPY to SAVE ARTIFACT
-if .[1] != null then
-  .[0].commands += [
-    .[1].commands[] |
+if .[-2].stage? == "build" and .[-1].stage? == "docker" then
+  .[-2].commands += [
+    .[-1].commands[] |
     select(test("^COPY ")) |
     sub("^COPY --from=builder /[^ /]+/"; "SAVE ARTIFACT ") |
     sub("^COPY [^ /]+/"; "SAVE ARTIFACT ") |
     sub("^COPY "; "## COPY ")
   ] |
-  .[1].commands |= (
+  .[-1].commands |= (
     first(first(.[] | select(test("^COPY "))) = "COPY +build/ /", .) |
-    map(select(test("^COPY [^+]") | not)) + ["SAVE IMAGE wspace-corpus/" + ($filename | sub("/Dockerfile$"; ""))]
+    map(select(test("^COPY [^+]") | not))
   )
 end |
+if length == 1 and .[0].stage == "build" then
+  . + [{stage: "docker", commands: []}]
+end |
+.[-1].commands +=
+  ["SAVE IMAGE wspace-corpus/" + ($filename | sub("/(?:Dockerfile|Earthfile)$"; ""))] |
 map(
   [
     "\(.stage):",
