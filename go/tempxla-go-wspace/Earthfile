@@ -1,13 +1,17 @@
-FROM golang:1.22 AS builder
+VERSION 0.8
 
-WORKDIR /go-wspace
-COPY go-wspace .
-RUN go mod init github.com/tempxla/go-wspace && \
-    CGO_ENABLED=0 go build -o bin/go-wspace ./src
-# Tests fail
-# RUN go test ./...
+build:
+    FROM golang:1.22
+    WORKDIR /go-wspace
+    COPY go-wspace .
+    RUN go mod init github.com/tempxla/go-wspace && \
+        CGO_ENABLED=0 go build -o bin/go-wspace ./src
+    # Tests fail
+    # RUN go test ./...
+    SAVE ARTIFACT bin/go-wspace /bin/
 
-FROM scratch
-
-COPY --from=builder /go-wspace/bin/go-wspace /
-ENTRYPOINT ["/go-wspace"]
+docker:
+    FROM scratch
+    COPY +build/ /
+    ENTRYPOINT ["/bin/go-wspace"]
+    SAVE IMAGE wspace-corpus/go/tempxla-go-wspace

@@ -1,6 +1,8 @@
-FROM node:alpine
+VERSION 0.8
 
-WORKDIR /whitespace-interpreter
-COPY whitespace-interpreter .
-
-ENTRYPOINT ["node", "whitespace.js"]
+docker:
+    FROM node:alpine
+    WORKDIR /whitespace-interpreter
+    COPY whitespace-interpreter .
+    ENTRYPOINT ["node", "whitespace.js"]
+    SAVE IMAGE wspace-corpus/javascript/kanra1412

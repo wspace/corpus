@@ -1,11 +1,15 @@
-FROM mono AS builder
+VERSION 0.8
 
-WORKDIR /WhitespaceAssembler
-COPY WhitespaceAssembler .
-RUN msbuild -p:Configuration=Release
+build:
+    FROM mono
+    WORKDIR /WhitespaceAssembler
+    COPY WhitespaceAssembler .
+    RUN msbuild -p:Configuration=Release
+    SAVE ARTIFACT bin/Release/WhitespaceAssembler.exe /bin/
 
-FROM mono:slim
-
-WORKDIR /WhitespaceAssembler
-COPY --from=builder /WhitespaceAssembler/bin/Release/WhitespaceAssembler.exe .
-ENTRYPOINT ["mono", "WhitespaceAssembler.exe"]
+docker:
+    FROM mono:slim
+    WORKDIR /WhitespaceAssembler
+    COPY +build/ .
+    ENTRYPOINT ["mono", "bin/WhitespaceAssembler.exe"]
+    SAVE IMAGE wspace-corpus/csharp/littlebughunter-assembler

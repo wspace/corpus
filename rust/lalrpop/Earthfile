@@ -1,12 +1,16 @@
-FROM rust:1.76 AS builder
+VERSION 0.8
 
-WORKDIR /lalrpop
-COPY lalrpop .
-RUN cargo test --package whitespace && \
-    RUSTFLAGS='-C target-feature=+crt-static' cargo build --release --target x86_64-unknown-linux-gnu --package whitespace
+build:
+    FROM rust:1.76
+    WORKDIR /lalrpop
+    COPY lalrpop .
+    RUN cargo test --package whitespace && \
+        RUSTFLAGS='-C target-feature=+crt-static' cargo build --release --target x86_64-unknown-linux-gnu --package whitespace
+    SAVE ARTIFACT target/x86_64-unknown-linux-gnu/release/whitespace /bin/
+    SAVE ARTIFACT doc/whitespace/hello.ws /programs/
 
-FROM scratch
-
-COPY --from=builder /lalrpop/target/x86_64-unknown-linux-gnu/release/whitespace /
-COPY lalrpop/doc/whitespace/hello.ws /
-ENTRYPOINT ["/whitespace"]
+docker:
+    FROM scratch
+    COPY +build/ /
+    ENTRYPOINT ["/bin/whitespace"]
+    SAVE IMAGE wspace-corpus/rust/lalrpop

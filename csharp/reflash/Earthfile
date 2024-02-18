@@ -1,12 +1,16 @@
-FROM mono AS builder
+VERSION 0.8
 
-WORKDIR /WhiteSpaceInterpreter
-COPY WhiteSpaceInterpreter .
-WORKDIR /WhiteSpaceInterpreter/WhiteSpaceInterpretator
-RUN msbuild -p:Configuration=Release
+build:
+    FROM mono
+    WORKDIR /WhiteSpaceInterpreter
+    COPY WhiteSpaceInterpreter .
+    WORKDIR /WhiteSpaceInterpreter/WhiteSpaceInterpretator
+    RUN msbuild -p:Configuration=Release
+    SAVE ARTIFACT WhiteSpaceInterpretator/bin/Release/WhiteSpaceInterpretator.exe /bin/
 
-FROM mono:slim
-
-WORKDIR /WhiteSpaceInterpreter
-COPY --from=builder /WhiteSpaceInterpreter/WhiteSpaceInterpretator/bin/Release/WhiteSpaceInterpretator.exe .
-ENTRYPOINT ["mono", "WhiteSpaceInterpretator.exe"]
+docker:
+    FROM mono:slim
+    WORKDIR /WhiteSpaceInterpreter
+    COPY +build/ .
+    ENTRYPOINT ["mono", "bin/WhiteSpaceInterpretator.exe"]
+    SAVE IMAGE wspace-corpus/csharp/reflash

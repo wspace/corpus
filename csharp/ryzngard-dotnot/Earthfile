@@ -1,7 +1,12 @@
-FROM mono AS builder
+VERSION 0.8
 
-WORKDIR /DotNot
-COPY DotNot .
-RUN nuget restore
-WORKDIR /DotNot/src/Whitespace.TestProject
-RUN msbuild -p:Configuration=Release
+build:
+    FROM mono
+    WORKDIR /DotNot
+    COPY DotNot .
+    RUN nuget restore
+    WORKDIR /DotNot/src/Whitespace.TestProject
+    RUN msbuild -p:Configuration=Release
+
+docker:
+    SAVE IMAGE wspace-corpus/csharp/ryzngard-dotnot

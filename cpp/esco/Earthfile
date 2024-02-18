@@ -1,11 +1,15 @@
-FROM alpine AS builder
+VERSION 0.8
 
-RUN apk add --no-cache make g++ gmp-dev
-WORKDIR /esco
-COPY esco .
-RUN ./configure && make
+build:
+    FROM alpine
+    RUN apk add --no-cache make g++ gmp-dev
+    WORKDIR /esco
+    COPY esco .
+    RUN ./configure && make
+    SAVE ARTIFACT src/esco /bin/
 
-FROM scratch
-
-COPY --from=builder /esco/src/esco /
-ENTRYPOINT ["/esco"]
+docker:
+    FROM scratch
+    COPY +build/ /
+    ENTRYPOINT ["/bin/esco"]
+    SAVE IMAGE wspace-corpus/cpp/esco

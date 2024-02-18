@@ -1,12 +1,17 @@
-FROM eclipse-temurin:21-jdk-alpine AS builder
+VERSION 0.8
 
-WORKDIR /WhiteSpaceInterpreter
-COPY WhiteSpaceInterpreter .
-RUN javac -d bin src/whitespace/whitespace.java && \
-    jar -cfe whitespace.jar whitespace.whitespace -C bin .
+build:
+    FROM eclipse-temurin:21-jdk-alpine
+    WORKDIR /WhiteSpaceInterpreter
+    COPY WhiteSpaceInterpreter .
+    RUN javac -d bin src/whitespace/whitespace.java && \
+        jar -cfe whitespace.jar whitespace.whitespace -C bin .
+    SAVE ARTIFACT whitespace.jar /bin/
+    SAVE ARTIFACT src/fichero.bin /
 
-FROM eclipse-temurin:21-jre-alpine
-
-WORKDIR /WhiteSpaceInterpreter
-COPY --from=builder /WhiteSpaceInterpreter/whitespace.jar /WhiteSpaceInterpreter/src/fichero.bin ./
-ENTRYPOINT ["java", "-jar", "whitespace.jar"]
+docker:
+    FROM eclipse-temurin:21-jre-alpine
+    WORKDIR /WhiteSpaceInterpreter
+    COPY +build/ .
+    ENTRYPOINT ["java", "-jar", "bin/whitespace.jar"]
+    SAVE IMAGE wspace-corpus/java/eiauniversity

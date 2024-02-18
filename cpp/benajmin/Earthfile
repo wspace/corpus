@@ -1,11 +1,15 @@
-FROM alpine AS builder
+VERSION 0.8
 
-RUN apk add --no-cache g++
-WORKDIR /whitespace-interpreter
-COPY whitespace-interpreter .
-RUN g++ -O3 -static -o WhitespaceInterpreter.out *.cpp
+build:
+    FROM alpine
+    RUN apk add --no-cache g++
+    WORKDIR /whitespace-interpreter
+    COPY whitespace-interpreter .
+    RUN g++ -O3 -static -o WhitespaceInterpreter.out *.cpp
+    SAVE ARTIFACT WhitespaceInterpreter.out /bin/
 
-FROM scratch
-
-COPY --from=builder /whitespace-interpreter/WhitespaceInterpreter.out /
-ENTRYPOINT ["/WhitespaceInterpreter.out"]
+docker:
+    FROM scratch
+    COPY +build/ /
+    ENTRYPOINT ["/bin/WhitespaceInterpreter.out"]
+    SAVE IMAGE wspace-corpus/cpp/benajmin

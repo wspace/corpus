@@ -1,13 +1,17 @@
-FROM alpine AS builder
+VERSION 0.8
 
-RUN apk add --no-cache make gcc musl-dev flex bison
-WORKDIR /asm2ws
-COPY asm2ws .
-RUN ./configure --with-target=release && \
-    make -j$(nproc) wsi CFLAGS='-O3 -g -static'
+build:
+    FROM alpine
+    RUN apk add --no-cache make gcc musl-dev flex bison
+    WORKDIR /asm2ws
+    COPY asm2ws .
+    RUN ./configure --with-target=release && \
+        make -j$(nproc) wsi CFLAGS='-O3 -g -static'
+    SAVE ARTIFACT wsi /bin/
+    SAVE ARTIFACT tests /programs
 
-FROM scratch
-
-COPY --from=builder /asm2ws/wsi /
-COPY asm2ws/tests /tests
-ENTRYPOINT ["/wsi"]
+docker:
+    FROM scratch
+    COPY +build/ /
+    ENTRYPOINT ["/bin/wsi"]
+    SAVE IMAGE wspace-corpus/c/kspalaiologos-asm2ws

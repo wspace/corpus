@@ -1,11 +1,15 @@
-FROM golang:1.22 AS builder
+VERSION 0.8
 
-WORKDIR /whitespace_go
-COPY whitespace_go .
-RUN go test ./... && \
-    CGO_ENABLED=0 go build -o releases/ws cmd/ws.go
+build:
+    FROM golang:1.22
+    WORKDIR /whitespace_go
+    COPY whitespace_go .
+    RUN go test ./... && \
+        CGO_ENABLED=0 go build -o releases/ws cmd/ws.go
+    SAVE ARTIFACT releases/ws /bin/
 
-FROM scratch
-
-COPY --from=builder /whitespace_go/releases/ws /
-ENTRYPOINT ["/ws"]
+docker:
+    FROM scratch
+    COPY +build/ /
+    ENTRYPOINT ["/bin/ws"]
+    SAVE IMAGE wspace-corpus/go/simomu

@@ -1,7 +1,10 @@
-FROM python:2-alpine
+VERSION 0.8
 
-RUN apk add --no-cache gcc musl-dev jpeg-dev zlib-dev
-RUN pip install pillow
-WORKDIR /colorspace
-COPY colorspace run.sh ./
-ENTRYPOINT ["./run.sh"]
+docker:
+    FROM python:2-alpine
+    RUN apk add --no-cache gcc musl-dev jpeg-dev zlib-dev
+    RUN pip install pillow
+    WORKDIR /colorspace
+    COPY colorspace run.sh ./
+    ENTRYPOINT ["./run.sh"]
+    SAVE IMAGE wspace-corpus/python/dos1-colorspace

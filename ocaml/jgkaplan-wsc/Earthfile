@@ -1,16 +1,20 @@
-FROM ocaml/opam:debian AS builder
+VERSION 0.8
 
-USER opam
-RUN opam install ocamlbuild ocamlfind menhir
-COPY --chown=opam whitespaceTranspiler /home/opam/whitespaceTranspiler
-WORKDIR /home/opam/whitespaceTranspiler
-RUN eval $(opam env) && \
-    ocamlbuild -use-ocamlfind -use-menhir -I src main.native
+build:
+    FROM ocaml/opam:debian
+    USER opam
+    RUN opam install ocamlbuild ocamlfind menhir
+    COPY --chown=opam whitespaceTranspiler /home/opam/whitespaceTranspiler
+    WORKDIR /home/opam/whitespaceTranspiler
+    RUN eval $(opam env) && \
+        ocamlbuild -use-ocamlfind -use-menhir -I src main.native
+    SAVE ARTIFACT opam/whitespaceTranspiler/_build/src/main.native /
+    SAVE ARTIFACT lib lib
+    SAVE ARTIFACT test test
 
-FROM debian
-
-WORKDIR /whitespaceTranspiler
-COPY --from=builder /home/opam/whitespaceTranspiler/_build/src/main.native .
-COPY whitespaceTranspiler/lib lib
-COPY whitespaceTranspiler/test test
-ENTRYPOINT ["./main.native"]
+docker:
+    FROM debian
+    WORKDIR /whitespaceTranspiler
+    COPY +build/ .
+    ENTRYPOINT ["bin/main.native"]
+    SAVE IMAGE wspace-corpus/ocaml/jgkaplan-wsc

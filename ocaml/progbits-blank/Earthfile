@@ -1,16 +1,20 @@
-FROM ocaml/opam:debian AS builder
+VERSION 0.8
 
-USER opam
-RUN opam install dune core ounit2
-COPY --chown=opam blank /home/opam/blank
-WORKDIR /home/opam/blank
-RUN eval $(opam env) && \
-    dune runtest && \
-    dune build --profile release
+build:
+    FROM ocaml/opam:debian
+    USER opam
+    RUN opam install dune core ounit2
+    COPY --chown=opam blank /home/opam/blank
+    WORKDIR /home/opam/blank
+    RUN eval $(opam env) && \
+        dune runtest && \
+        dune build --profile release
+    SAVE ARTIFACT opam/blank/_build/default/blank.exe /bin/
+    SAVE ARTIFACT examples /programs
 
-FROM debian
-
-WORKDIR /blank
-COPY --from=builder /home/opam/blank/_build/default/blank.exe ./
-COPY blank/examples .
-ENTRYPOINT ["./blank.exe"]
+docker:
+    FROM debian
+    WORKDIR /blank
+    COPY +build/ .
+    ENTRYPOINT ["bin/blank.exe"]
+    SAVE IMAGE wspace-corpus/ocaml/progbits-blank

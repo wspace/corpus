@@ -1,5 +1,8 @@
-FROM python:3-alpine
+VERSION 0.8
 
-WORKDIR /whitespacy
-COPY whitespacy .
-ENTRYPOINT ["python", "whitespacy.py"]
+docker:
+    FROM python:3-alpine
+    WORKDIR /whitespacy
+    COPY whitespacy .
+    ENTRYPOINT ["python", "whitespacy.py"]
+    SAVE IMAGE wspace-corpus/python/francoisrozet-whitespacy

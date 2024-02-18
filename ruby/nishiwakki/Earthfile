@@ -1,5 +1,8 @@
-FROM ruby:3-alpine
+VERSION 0.8
 
-WORKDIR /whitespace
-COPY whitespace .
-ENTRYPOINT ["ruby", "whitespace.rb"]
+docker:
+    FROM ruby:3-alpine
+    WORKDIR /whitespace
+    COPY whitespace .
+    ENTRYPOINT ["ruby", "whitespace.rb"]
+    SAVE IMAGE wspace-corpus/ruby/nishiwakki

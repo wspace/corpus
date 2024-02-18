@@ -1,5 +1,8 @@
-FROM python:3-alpine
+VERSION 0.8
 
-WORKDIR /whitespace-interpreter
-COPY whitespace-interpreter .
-ENTRYPOINT ["python", "entrance.py"]
+docker:
+    FROM python:3-alpine
+    WORKDIR /whitespace-interpreter
+    COPY whitespace-interpreter .
+    ENTRYPOINT ["python", "entrance.py"]
+    SAVE IMAGE wspace-corpus/python/rumaxwell

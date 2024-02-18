@@ -1,14 +1,18 @@
-FROM eclipse-temurin:21-jdk-alpine AS builder
+VERSION 0.8
 
-WORKDIR /spacedide
-COPY spacedide .
-RUN javac -d bin $(find src -name '*.java' ! -path src/ui/SpacedView_Old.java) && \
-    cp src/spaced/default_settings bin/spaced/ && \
-    jar -cfe spacedide.jar spaced.Spaced -C bin .
+build:
+    FROM eclipse-temurin:21-jdk-alpine
+    WORKDIR /spacedide
+    COPY spacedide .
+    RUN javac -d bin $(find src -name '*.java' ! -path src/ui/SpacedView_Old.java) && \
+        cp src/spaced/default_settings bin/spaced/ && \
+        jar -cfe spacedide.jar spaced.Spaced -C bin .
+    SAVE ARTIFACT spacedide.jar /bin/
+    SAVE ARTIFACT res/examples /programs
 
-FROM eclipse-temurin:21-jre-alpine
-
-WORKDIR /spacedide
-COPY --from=builder /spacedide/spacedide.jar .
-COPY spacedide/res/examples .
-ENTRYPOINT ["java", "-jar", "spacedide.jar"]
+docker:
+    FROM eclipse-temurin:21-jre-alpine
+    WORKDIR /spacedide
+    COPY +build/ .
+    ENTRYPOINT ["java", "-jar", "bin/spacedide.jar"]
+    SAVE IMAGE wspace-corpus/java/kreutzer-spacedide

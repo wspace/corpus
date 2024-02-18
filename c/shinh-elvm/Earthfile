@@ -1,6 +1,11 @@
-FROM alpine AS builder
+VERSION 0.8
 
-RUN apk add --no-cache make gcc musl-dev
-WORKDIR /elvm
-COPY elvm .
-RUN make
+build:
+    FROM alpine
+    RUN apk add --no-cache make gcc musl-dev
+    WORKDIR /elvm
+    COPY elvm .
+    RUN make
+
+docker:
+    SAVE IMAGE wspace-corpus/c/shinh-elvm

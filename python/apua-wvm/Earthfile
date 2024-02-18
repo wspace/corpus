@@ -1,5 +1,8 @@
-FROM python:3-alpine
+VERSION 0.8
 
-WORKDIR /whitespace
-COPY whitespace .
-ENTRYPOINT ["python", "wvm.py"]
+docker:
+    FROM python:3-alpine
+    WORKDIR /whitespace
+    COPY whitespace .
+    ENTRYPOINT ["python", "wvm.py"]
+    SAVE IMAGE wspace-corpus/python/apua-wvm

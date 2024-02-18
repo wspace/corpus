@@ -1,12 +1,16 @@
-FROM alpine AS builder
+VERSION 0.8
 
-RUN apk add --no-cache gcc musl-dev
-WORKDIR /whitespace-interpreter
-COPY whitespace-interpreter/src .
-RUN gcc -O3 -g -static -o interpreter *.c
+build:
+    FROM alpine
+    RUN apk add --no-cache gcc musl-dev
+    WORKDIR /whitespace-interpreter
+    COPY whitespace-interpreter/src .
+    RUN gcc -O3 -g -static -o interpreter *.c
+    SAVE ARTIFACT interpreter /bin/
+    SAVE ARTIFACT ws/*.ws /programs/
 
-FROM scratch
-
-COPY --from=builder /whitespace-interpreter/interpreter /
-COPY whitespace-interpreter/ws/*.ws /
-ENTRYPOINT ["/interpreter"]
+docker:
+    FROM scratch
+    COPY +build/ /
+    ENTRYPOINT ["/bin/interpreter"]
+    SAVE IMAGE wspace-corpus/c/d3psi

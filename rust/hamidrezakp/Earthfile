@@ -1,10 +1,15 @@
-FROM rust:1.76 AS builder
+VERSION 0.8
 
-WORKDIR /ws
-COPY ws .
-RUN RUSTFLAGS='-C target-feature=+crt-static' cargo build --release --target x86_64-unknown-linux-gnu
+build:
+    FROM rust:1.76
+    WORKDIR /ws
+    COPY ws .
+    RUN RUSTFLAGS='-C target-feature=+crt-static' cargo build --release --target x86_64-unknown-linux-gnu
+    SAVE ARTIFACT target/x86_64-unknown-linux-gnu/release/ws /bin/
+    SAVE ARTIFACT examples/*.ws /programs/
 
-FROM scratch
-
-COPY --from=builder /ws/target/x86_64-unknown-linux-gnu/release/ws /ws/examples/*.ws ./
-ENTRYPOINT ["/ws"]
+docker:
+    FROM scratch
+    COPY +build/ /
+    ENTRYPOINT ["/bin/ws"]
+    SAVE IMAGE wspace-corpus/rust/hamidrezakp

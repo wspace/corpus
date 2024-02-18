@@ -1,7 +1,9 @@
-FROM node:alpine
+VERSION 0.8
 
-WORKDIR /zerowidth-lang
-COPY zerowidth-lang .
-RUN npm install
-
-ENTRYPOINT ["node", "index.js"]
+docker:
+    FROM node:alpine
+    WORKDIR /zerowidth-lang
+    COPY zerowidth-lang .
+    RUN npm install
+    ENTRYPOINT ["node", "index.js"]
+    SAVE IMAGE wspace-corpus/javascript/loklaan-zerowidth-lang

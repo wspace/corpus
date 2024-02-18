@@ -1,5 +1,8 @@
-FROM python:3-alpine
+VERSION 0.8
 
-WORKDIR /solve
-COPY solve .
-ENTRYPOINT ["python", "gen_ws.py"]
+docker:
+    FROM python:3-alpine
+    WORKDIR /solve
+    COPY solve .
+    ENTRYPOINT ["python", "gen_ws.py"]
+    SAVE IMAGE wspace-corpus/python/apua-gen

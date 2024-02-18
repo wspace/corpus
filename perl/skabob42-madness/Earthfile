@@ -1,6 +1,9 @@
-FROM perl:slim
+VERSION 0.8
 
-RUN cpanm Acme::Bleach
-WORKDIR /madness
-COPY madness .
-ENTRYPOINT ["perl", "whitespace_bleached.pl"]
+docker:
+    FROM perl:slim
+    RUN cpanm Acme::Bleach
+    WORKDIR /madness
+    COPY madness .
+    ENTRYPOINT ["perl", "whitespace_bleached.pl"]
+    SAVE IMAGE wspace-corpus/perl/skabob42-madness

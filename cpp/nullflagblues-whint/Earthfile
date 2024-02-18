@@ -1,11 +1,15 @@
-FROM alpine AS builder
+VERSION 0.8
 
-RUN apk add --no-cache g++
-WORKDIR /WHINT
-COPY WHINT .
-RUN g++ -O3 -static -o whint whint.cpp
+build:
+    FROM alpine
+    RUN apk add --no-cache g++
+    WORKDIR /WHINT
+    COPY WHINT .
+    RUN g++ -O3 -static -o whint whint.cpp
+    SAVE ARTIFACT whint /bin/
 
-FROM scratch
-
-COPY --from=builder /WHINT/whint /
-ENTRYPOINT ["/whint"]
+docker:
+    FROM scratch
+    COPY +build/ /
+    ENTRYPOINT ["/bin/whint"]
+    SAVE IMAGE wspace-corpus/cpp/nullflagblues-whint

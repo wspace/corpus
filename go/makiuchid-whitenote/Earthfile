@@ -1,12 +1,16 @@
-FROM golang:1.22 AS builder
+VERSION 0.8
 
-WORKDIR /whitenote
-COPY whitenote .
-WORKDIR /whitenote/wspace/cmd/wspace
-RUN go test && \
-    CGO_ENABLED=0 go build
+build:
+    FROM golang:1.22
+    WORKDIR /whitenote
+    COPY whitenote .
+    WORKDIR /whitenote/wspace/cmd/wspace
+    RUN go test && \
+        CGO_ENABLED=0 go build
+    SAVE ARTIFACT wspace/cmd/wspace/wspace /bin/
 
-FROM scratch
-
-COPY --from=builder /whitenote/wspace/cmd/wspace/wspace /
-ENTRYPOINT ["/wspace"]
+docker:
+    FROM scratch
+    COPY +build/ /
+    ENTRYPOINT ["/bin/wspace"]
+    SAVE IMAGE wspace-corpus/go/makiuchid-whitenote

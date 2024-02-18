@@ -1,16 +1,20 @@
-FROM ocaml/opam:debian AS builder
+VERSION 0.8
 
-USER opam
-COPY --chown=opam Whitespace /home/opam/Whitespace
-WORKDIR /home/opam/Whitespace
-RUN eval $(opam env) && \
-	  ocamllex -q lexer.mll && \
-	  ocamlyacc parser.mly && \
-    ocamlopt -O3 -o whitespace $(ocamldep -native -sort *.ml *.mli)
+build:
+    FROM ocaml/opam:debian
+    USER opam
+    COPY --chown=opam Whitespace /home/opam/Whitespace
+    WORKDIR /home/opam/Whitespace
+    RUN eval $(opam env) && \
+    	  ocamllex -q lexer.mll && \
+    	  ocamlyacc parser.mly && \
+        ocamlopt -O3 -o whitespace $(ocamldep -native -sort *.ml *.mli)
+    SAVE ARTIFACT opam/Whitespace/whitespace /bin/
+    SAVE ARTIFACT programs /programs
 
-FROM debian
-
-WORKDIR /Whitespace
-COPY --from=builder /home/opam/Whitespace/whitespace .
-COPY Whitespace/programs .
-ENTRYPOINT ["./whitespace"]
+docker:
+    FROM debian
+    WORKDIR /Whitespace
+    COPY +build/ .
+    ENTRYPOINT ["bin/whitespace"]
+    SAVE IMAGE wspace-corpus/ocaml/steiner26

@@ -1,5 +1,8 @@
-FROM python:3-alpine
+VERSION 0.8
 
-WORKDIR /BlueSpace
-COPY BlueSpace .
-ENTRYPOINT ["python", "bspace.py"]
+docker:
+    FROM python:3-alpine
+    WORKDIR /BlueSpace
+    COPY BlueSpace .
+    ENTRYPOINT ["python", "bspace.py"]
+    SAVE IMAGE wspace-corpus/python/smithers888-bluespace

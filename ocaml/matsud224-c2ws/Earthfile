@@ -1,15 +1,19 @@
-FROM ocaml/opam:debian AS builder
+VERSION 0.8
 
-USER opam
-COPY --chown=opam c2ws /home/opam/c2ws
-WORKDIR /home/opam/c2ws
-RUN eval $(opam env) && \
-    ocamllex -q mylexer.mll && \
-    ocamlyacc myparser.mly && \
-    ocamlopt -O3 -o c2ws $(ocamldep -native -sort *.ml *.mli)
+build:
+    FROM ocaml/opam:debian
+    USER opam
+    COPY --chown=opam c2ws /home/opam/c2ws
+    WORKDIR /home/opam/c2ws
+    RUN eval $(opam env) && \
+        ocamllex -q mylexer.mll && \
+        ocamlyacc myparser.mly && \
+        ocamlopt -O3 -o c2ws $(ocamldep -native -sort *.ml *.mli)
+    SAVE ARTIFACT opam/c2ws/c2ws /bin/
 
-FROM debian
-
-WORKDIR /c2ws
-COPY --from=builder /home/opam/c2ws/c2ws .
-ENTRYPOINT ["./c2ws"]
+docker:
+    FROM debian
+    WORKDIR /c2ws
+    COPY +build/ .
+    ENTRYPOINT ["bin/c2ws"]
+    SAVE IMAGE wspace-corpus/ocaml/matsud224-c2ws

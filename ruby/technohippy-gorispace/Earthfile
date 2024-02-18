@@ -1,5 +1,8 @@
-FROM ruby:3-alpine
+VERSION 0.8
 
-WORKDIR /gorispace
-COPY gorispace .
-ENTRYPOINT ["ruby", "./bin/gorispace"]
+docker:
+    FROM ruby:3-alpine
+    WORKDIR /gorispace
+    COPY gorispace .
+    ENTRYPOINT ["ruby", "./bin/gorispace"]
+    SAVE IMAGE wspace-corpus/ruby/technohippy-gorispace

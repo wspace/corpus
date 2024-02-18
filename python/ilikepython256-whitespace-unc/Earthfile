@@ -1,5 +1,8 @@
-FROM python:3-alpine
+VERSION 0.8
 
-WORKDIR /Whitespace_UnC
-COPY Whitespace_UnC .
-ENTRYPOINT ["python", "WhitespaceCompiler.py"]
+docker:
+    FROM python:3-alpine
+    WORKDIR /Whitespace_UnC
+    COPY Whitespace_UnC .
+    ENTRYPOINT ["python", "WhitespaceCompiler.py"]
+    SAVE IMAGE wspace-corpus/python/ilikepython256-whitespace-unc

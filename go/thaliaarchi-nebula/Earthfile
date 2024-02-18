@@ -1,14 +1,18 @@
-FROM golang:1.22 AS builder
+VERSION 0.8
 
-WORKDIR /nebula
-COPY nebula .
-# TODO: Requires LLVM
-RUN go mod init github.com/thaliaarchi/nebula && \
-    go mod tidy && \
-    go test ./... && \
-    go build
+build:
+    FROM golang:1.22
+    WORKDIR /nebula
+    COPY nebula .
+    # TODO: Requires LLVM
+    RUN go mod init github.com/thaliaarchi/nebula && \
+        go mod tidy && \
+        go test ./... && \
+        go build
+    SAVE ARTIFACT nebula /bin/
 
-FROM scratch
-
-COPY --from=builder /nebula/nebula /
-ENTRYPOINT ["/nebula"]
+docker:
+    FROM scratch
+    COPY +build/ /
+    ENTRYPOINT ["/bin/nebula"]
+    SAVE IMAGE wspace-corpus/go/thaliaarchi-nebula

@@ -1,6 +1,9 @@
-FROM ruby:3-alpine
+VERSION 0.8
 
-WORKDIR /esolang-book-sources
-COPY esolang-book-sources .
-RUN rake test
-ENTRYPOINT ["ruby", "whitespace/bin/whitespace"]
+docker:
+    FROM ruby:3-alpine
+    WORKDIR /esolang-book-sources
+    COPY esolang-book-sources .
+    RUN rake test
+    ENTRYPOINT ["ruby", "whitespace/bin/whitespace"]
+    SAVE IMAGE wspace-corpus/ruby/yhara-esolang-book

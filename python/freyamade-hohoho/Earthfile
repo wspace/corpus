@@ -1,6 +1,9 @@
-FROM python:3-alpine
+VERSION 0.8
 
-RUN pip install whitespace
-WORKDIR /hohoho
-COPY hohoho .
-ENTRYPOINT ["python", "-m", "hohoho"]
+docker:
+    FROM python:3-alpine
+    RUN pip install whitespace
+    WORKDIR /hohoho
+    COPY hohoho .
+    ENTRYPOINT ["python", "-m", "hohoho"]
+    SAVE IMAGE wspace-corpus/python/freyamade-hohoho

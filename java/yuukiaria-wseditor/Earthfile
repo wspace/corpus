@@ -1,12 +1,16 @@
-FROM eclipse-temurin:21-jdk-alpine AS builder
+VERSION 0.8
 
-WORKDIR /wseditor
-COPY wseditor .
-RUN javac -d bin $(find src -name '*.java') && \
-    jar -cfe wseditor.jar wseditor.Main -C bin .
+build:
+    FROM eclipse-temurin:21-jdk-alpine
+    WORKDIR /wseditor
+    COPY wseditor .
+    RUN javac -d bin $(find src -name '*.java') && \
+        jar -cfe wseditor.jar wseditor.Main -C bin .
+    SAVE ARTIFACT wseditor.jar /bin/
 
-FROM eclipse-temurin:21-jre-alpine
-
-WORKDIR /wseditor
-COPY --from=builder /wseditor/wseditor.jar .
-ENTRYPOINT ["java", "-jar", "wseditor.jar"]
+docker:
+    FROM eclipse-temurin:21-jre-alpine
+    WORKDIR /wseditor
+    COPY +build/ .
+    ENTRYPOINT ["java", "-jar", "bin/wseditor.jar"]
+    SAVE IMAGE wspace-corpus/java/yuukiaria-wseditor

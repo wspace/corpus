@@ -1,18 +1,19 @@
-FROM alpine AS builder
+VERSION 0.8
 
-WORKDIR /Whitespace
-COPY Whitespace .
-RUN <<EOF
-set -e
+build:
+    FROM alpine
+    WORKDIR /Whitespace
+    COPY Whitespace .
+    RUN set -e \
+        \
+        apk add --no-cache gcc g++ \
+        gcc -O3 -static -o wlang whitespace.c \
+        g++ -O3 -static -o whitespacecpp whitespace.cpp
+    SAVE ARTIFACT wlang /bin/
+    SAVE ARTIFACT whitespacecpp /bin/
 
-apk add --no-cache gcc g++
-gcc -O3 -static -o wlang whitespace.c
-g++ -O3 -static -o whitespacecpp whitespace.cpp
-
-EOF
-
-FROM scratch
-
-COPY --from=builder /Whitespace/wlang /
-COPY --from=builder /Whitespace/whitespacecpp /
-ENTRYPOINT ["/wlang"]
+docker:
+    FROM scratch
+    COPY +build/ /
+    ENTRYPOINT ["/bin/wlang"]
+    SAVE IMAGE wspace-corpus/c/zackeua

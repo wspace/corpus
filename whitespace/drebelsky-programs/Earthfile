@@ -1,5 +1,8 @@
-FROM python:3-alpine
+VERSION 0.8
 
-WORKDIR /whitespace-programs
-COPY whitespace-programs .
-ENTRYPOINT ["python", "assemble.py"]
+docker:
+    FROM python:3-alpine
+    WORKDIR /whitespace-programs
+    COPY whitespace-programs .
+    ENTRYPOINT ["python", "assemble.py"]
+    SAVE IMAGE wspace-corpus/whitespace/drebelsky-programs

@@ -1,11 +1,15 @@
-FROM alpine AS builder
+VERSION 0.8
 
-RUN apk add --no-cache bash g++
-WORKDIR /whitespace
-COPY whitespace .
-RUN bash build.sh release wspace
+build:
+    FROM alpine
+    RUN apk add --no-cache bash g++
+    WORKDIR /whitespace
+    COPY whitespace .
+    RUN bash build.sh release wspace
+    SAVE ARTIFACT wspace /bin/
 
-FROM scratch
-
-COPY --from=builder /whitespace/wspace /
-ENTRYPOINT ["/wspace"]
+docker:
+    FROM scratch
+    COPY +build/ /
+    ENTRYPOINT ["/bin/wspace"]
+    SAVE IMAGE wspace-corpus/cpp/shadowmitia

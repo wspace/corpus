@@ -1,12 +1,16 @@
-FROM alpine AS builder
+VERSION 0.8
 
-RUN apk add --no-cache make g++
-WORKDIR /respace
-COPY respace .
-RUN make test
-RUN make LDFLAGS=-static
+build:
+    FROM alpine
+    RUN apk add --no-cache make g++
+    WORKDIR /respace
+    COPY respace .
+    RUN make test
+    RUN make LDFLAGS=-static
+    SAVE ARTIFACT respace /bin/
 
-FROM scratch
-
-COPY --from=builder /respace/respace /
-ENTRYPOINT ["/respace"]
+docker:
+    FROM scratch
+    COPY +build/ /
+    ENTRYPOINT ["/bin/respace"]
+    SAVE IMAGE wspace-corpus/cpp/thaliaarchi-respace

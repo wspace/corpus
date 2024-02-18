@@ -1,5 +1,8 @@
-FROM python:3-alpine
+VERSION 0.8
 
-WORKDIR /whitespace_transpiler
-COPY whitespace_transpiler .
-ENTRYPOINT ["python", "transpiler.py"]
+docker:
+    FROM python:3-alpine
+    WORKDIR /whitespace_transpiler
+    COPY whitespace_transpiler .
+    ENTRYPOINT ["python", "transpiler.py"]
+    SAVE IMAGE wspace-corpus/python/lachlancourt

@@ -1,10 +1,14 @@
-FROM golang:1.22 AS builder
+VERSION 0.8
 
-WORKDIR /go-whitespace
-COPY go-whitespace .
-RUN CGO_ENABLED=0 go build -o go-whitespace ./src
+build:
+    FROM golang:1.22
+    WORKDIR /go-whitespace
+    COPY go-whitespace .
+    RUN CGO_ENABLED=0 go build -o go-whitespace ./src
+    SAVE ARTIFACT go-whitespace /bin/
 
-FROM scratch
-
-COPY --from=builder /go-whitespace/go-whitespace /
-ENTRYPOINT ["/go-whitespace"]
+docker:
+    FROM scratch
+    COPY +build/ /
+    ENTRYPOINT ["/bin/go-whitespace"]
+    SAVE IMAGE wspace-corpus/go/technohippy

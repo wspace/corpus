@@ -1,11 +1,15 @@
-FROM alpine AS builder
+VERSION 0.8
 
-RUN apk add --no-cache make gcc musl-dev
-WORKDIR /satan
-COPY satan .
-RUN make
+build:
+    FROM alpine
+    RUN apk add --no-cache make gcc musl-dev
+    WORKDIR /satan
+    COPY satan .
+    RUN make
+    SAVE ARTIFACT satan /bin/
 
-FROM scratch
-
-COPY --from=builder /satan/satan /
-ENTRYPOINT ["/satan"]
+docker:
+    FROM scratch
+    COPY +build/ /
+    ENTRYPOINT ["/bin/satan"]
+    SAVE IMAGE wspace-corpus/c/threeifbywhiskey-satan

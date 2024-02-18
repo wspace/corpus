@@ -1,13 +1,18 @@
-FROM golang:1.22 AS builder
+VERSION 0.8
 
-WORKDIR /whitespace
-COPY whitespace .
-RUN go test . && \
-    CGO_ENABLED=0 go build -o bin/wt cmd/wt.go && \
-    CGO_ENABLED=0 go build -o bin/wi cmd/wi.go
+build:
+    FROM golang:1.22
+    WORKDIR /whitespace
+    COPY whitespace .
+    RUN go test . && \
+        CGO_ENABLED=0 go build -o bin/wt cmd/wt.go && \
+        CGO_ENABLED=0 go build -o bin/wi cmd/wi.go
+    SAVE ARTIFACT bin/wt /bin/
+    SAVE ARTIFACT bin/wi /bin/
+    SAVE ARTIFACT code-examples /bin/
 
-FROM scratch
-
-COPY --from=builder /whitespace/bin/wt /whitespace/bin/wi /
-COPY whitespace/code-examples /
-ENTRYPOINT ["/wi"]
+docker:
+    FROM scratch
+    COPY +build/ /
+    ENTRYPOINT ["/bin/wi"]
+    SAVE IMAGE wspace-corpus/go/zorchenhimer

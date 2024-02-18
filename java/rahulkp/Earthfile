@@ -1,13 +1,17 @@
-FROM eclipse-temurin:21-jdk-alpine AS builder
+VERSION 0.8
 
-WORKDIR /WhiteSpace-Interpreter
-COPY WhiteSpace-Interpreter .
-RUN javac -d bin *.java && \
-    jar -cfe WhiteSpace.jar Test -C bin .
+build:
+    FROM eclipse-temurin:21-jdk-alpine
+    WORKDIR /WhiteSpace-Interpreter
+    COPY WhiteSpace-Interpreter .
+    RUN javac -d bin *.java && \
+        jar -cfe WhiteSpace.jar Test -C bin .
+    SAVE ARTIFACT WhiteSpace.jar /bin/
+    SAVE ARTIFACT *.ws /programs/
 
-FROM eclipse-temurin:21-jre-alpine
-
-WORKDIR /WhiteSpace-Interpreter
-COPY --from=builder /WhiteSpace-Interpreter/WhiteSpace.jar .
-COPY WhiteSpace-Interpreter/*.ws .
-ENTRYPOINT ["java", "-jar", "WhiteSpace.jar"]
+docker:
+    FROM eclipse-temurin:21-jre-alpine
+    WORKDIR /WhiteSpace-Interpreter
+    COPY +build/ .
+    ENTRYPOINT ["java", "-jar", "bin/WhiteSpace.jar"]
+    SAVE IMAGE wspace-corpus/java/rahulkp

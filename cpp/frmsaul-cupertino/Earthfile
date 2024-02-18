@@ -1,11 +1,15 @@
-FROM alpine AS builder
+VERSION 0.8
 
-RUN apk add --no-cache g++
-WORKDIR /Cupertino-WhiteSpace-Interperter
-COPY Cupertino-WhiteSpace-Interperter .
-RUN g++ -O3 -static -o whitespace src/*.cpp
+build:
+    FROM alpine
+    RUN apk add --no-cache g++
+    WORKDIR /Cupertino-WhiteSpace-Interperter
+    COPY Cupertino-WhiteSpace-Interperter .
+    RUN g++ -O3 -static -o whitespace src/*.cpp
+    SAVE ARTIFACT whitespace /bin/
 
-FROM scratch
-
-COPY --from=builder /Cupertino-WhiteSpace-Interperter/whitespace /
-ENTRYPOINT ["/whitespace"]
+docker:
+    FROM scratch
+    COPY +build/ /
+    ENTRYPOINT ["/bin/whitespace"]
+    SAVE IMAGE wspace-corpus/cpp/frmsaul-cupertino

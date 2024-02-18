@@ -1,16 +1,23 @@
-FROM alpine AS builder
+VERSION 0.8
 
-RUN apk add --no-cache git cmake make gcc g++ readline-dev
-RUN git clone https://github.com/justinmeza/lci --branch=future
-WORKDIR /lci
-RUN cmake .
-RUN make
-# RUN ctest
+build:
+    FROM alpine
+    RUN apk add --no-cache git cmake make gcc g++ readline-dev
+    RUN git clone https://github.com/justinmeza/lci --branch=future
+    WORKDIR /lci
+    RUN cmake .
+    RUN make
+    # RUN ctest
+    SAVE ARTIFACT lci /usr/local/bin/
+    SAVE ARTIFACT *.lol /
+    SAVE ARTIFACT *.ws /programs/
+    SAVE ARTIFACT *.b /
+    SAVE ARTIFACT run.bash /bin/
 
-FROM alpine
-
-RUN apk add --no-cache bash readline-dev
-WORKDIR /lolcode
-COPY --from=builder /lci/lci /usr/local/bin/
-COPY lolcode/*.lol lolcode/*.ws lolcode/*.b run.bash ./
-ENTRYPOINT ["./run.bash"]
+docker:
+    FROM alpine
+    RUN apk add --no-cache bash readline-dev
+    WORKDIR /lolcode
+    COPY +build/ .
+    ENTRYPOINT ["bin/run.bash"]
+    SAVE IMAGE wspace-corpus/lolcode/0x0dea

@@ -1,11 +1,15 @@
-FROM alpine AS builder
+VERSION 0.8
 
-RUN apk add --no-cache make gcc musl-dev
-WORKDIR /blacktime
-COPY blacktime .
-RUN make
+build:
+    FROM alpine
+    RUN apk add --no-cache make gcc musl-dev
+    WORKDIR /blacktime
+    COPY blacktime .
+    RUN make
+    SAVE ARTIFACT blacktime /bin/
 
-FROM scratch
-
-COPY --from=builder /blacktime/blacktime /
-ENTRYPOINT ["/blacktime"]
+docker:
+    FROM scratch
+    COPY +build/ /
+    ENTRYPOINT ["/bin/blacktime"]
+    SAVE IMAGE wspace-corpus/c/threeifbywhiskey-blacktime

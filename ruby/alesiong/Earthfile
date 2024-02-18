@@ -1,8 +1,11 @@
-FROM ruby:3-alpine
+VERSION 0.8
 
-WORKDIR /whitespace-ruby
-COPY whitespace-ruby .
-# Fixes: `define_method': tried to create Proc object without a block
-RUN sed -i 's/define_method ops\[1\]/define_method(ops[1])/' wsv.rb
-# sample/facws.rb or sample/fibws.rb
-ENTRYPOINT ["ruby"]
+docker:
+    FROM ruby:3-alpine
+    WORKDIR /whitespace-ruby
+    COPY whitespace-ruby .
+    # Fixes: `define_method': tried to create Proc object without a block
+    RUN sed -i 's/define_method ops\[1\]/define_method(ops[1])/' wsv.rb
+    # sample/facws.rb or sample/fibws.rb
+    ENTRYPOINT ["ruby"]
+    SAVE IMAGE wspace-corpus/ruby/alesiong

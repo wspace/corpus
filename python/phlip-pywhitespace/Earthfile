@@ -1,5 +1,8 @@
-FROM python:3-alpine
+VERSION 0.8
 
-WORKDIR /pywhitespace
-COPY pywhitespace .
-ENTRYPOINT ["python", "main.py"]
+docker:
+    FROM python:3-alpine
+    WORKDIR /pywhitespace
+    COPY pywhitespace .
+    ENTRYPOINT ["python", "main.py"]
+    SAVE IMAGE wspace-corpus/python/phlip-pywhitespace

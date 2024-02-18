@@ -1,11 +1,15 @@
-FROM alpine AS builder
+VERSION 0.8
 
-RUN apk add --no-cache g++
-WORKDIR /Whitespace
-COPY Whitespace .
-RUN g++ -O3 -std=c++11 -static -o wsi whitespace/main.cpp
+build:
+    FROM alpine
+    RUN apk add --no-cache g++
+    WORKDIR /Whitespace
+    COPY Whitespace .
+    RUN g++ -O3 -std=c++11 -static -o wsi whitespace/main.cpp
+    SAVE ARTIFACT wsi /bin/
 
-FROM scratch
-
-COPY --from=builder /Whitespace/wsi /
-ENTRYPOINT ["/wsi"]
+docker:
+    FROM scratch
+    COPY +build/ /
+    ENTRYPOINT ["/bin/wsi"]
+    SAVE IMAGE wspace-corpus/cpp/abcsharp

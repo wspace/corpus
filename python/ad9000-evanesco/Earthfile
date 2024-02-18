@@ -1,5 +1,8 @@
-FROM python:3-alpine
+VERSION 0.8
 
-WORKDIR /Evanesco
-COPY Evanesco/src/textToWhitespace.py .
-ENTRYPOINT ["python", "textToWhitespace.py"]
+docker:
+    FROM python:3-alpine
+    WORKDIR /Evanesco
+    COPY Evanesco/src/textToWhitespace.py .
+    ENTRYPOINT ["python", "textToWhitespace.py"]
+    SAVE IMAGE wspace-corpus/python/ad9000-evanesco

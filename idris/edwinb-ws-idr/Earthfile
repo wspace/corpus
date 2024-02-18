@@ -1,13 +1,18 @@
-FROM haskell:8-slim-buster AS builder
+VERSION 0.8
 
-RUN cabal update
-RUN cabal install -j idris
-WORKDIR /WS-idr
-COPY WS-idr .
-RUN idris --build wspace.ipkg
+build:
+    FROM haskell:8-slim-buster
+    RUN cabal update
+    RUN cabal install -j idris
+    WORKDIR /WS-idr
+    COPY WS-idr .
+    RUN idris --build wspace.ipkg
+    SAVE ARTIFACT wspace /bin/
+    SAVE ARTIFACT *.ws /programs/
 
-FROM debian:buster-slim
-
-WORKDIR /WS-idr
-COPY --from=builder /WS-idr/wspace /WS-idr/*.ws ./
-ENTRYPOINT ["./wspace"]
+docker:
+    FROM debian:buster-slim
+    WORKDIR /WS-idr
+    COPY +build/ .
+    ENTRYPOINT ["bin/wspace"]
+    SAVE IMAGE wspace-corpus/idris/edwinb-ws-idr

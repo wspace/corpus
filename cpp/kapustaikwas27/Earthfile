@@ -1,11 +1,15 @@
-FROM alpine AS builder
+VERSION 0.8
 
-RUN apk add --no-cache g++
-WORKDIR /Whitespace-compiler
-COPY Whitespace-compiler .
-RUN g++ -O3 -static -o pre pre.cpp
+build:
+    FROM alpine
+    RUN apk add --no-cache g++
+    WORKDIR /Whitespace-compiler
+    COPY Whitespace-compiler .
+    RUN g++ -O3 -static -o pre pre.cpp
+    SAVE ARTIFACT pre /bin/
 
-FROM scratch
-
-COPY --from=builder /Whitespace-compiler/pre /
-ENTRYPOINT ["/pre"]
+docker:
+    FROM scratch
+    COPY +build/ /
+    ENTRYPOINT ["/bin/pre"]
+    SAVE IMAGE wspace-corpus/cpp/kapustaikwas27

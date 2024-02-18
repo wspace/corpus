@@ -1,11 +1,15 @@
-FROM alpine AS builder
+VERSION 0.8
 
-RUN apk add --no-cache make g++
-WORKDIR /whitespace-jit
-COPY whitespace-jit .
-RUN make CXXFLAGS='-O3 -static'
+build:
+    FROM alpine
+    RUN apk add --no-cache make g++
+    WORKDIR /whitespace-jit
+    COPY whitespace-jit .
+    RUN make CXXFLAGS='-O3 -static'
+    SAVE ARTIFACT compile /bin/
 
-FROM scratch
-
-COPY --from=builder /whitespace-jit/compile /
-ENTRYPOINT ["/compile"]
+docker:
+    FROM scratch
+    COPY +build/ /
+    ENTRYPOINT ["/bin/compile"]
+    SAVE IMAGE wspace-corpus/cpp/drebelsky-jit

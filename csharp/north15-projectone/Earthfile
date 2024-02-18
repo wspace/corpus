@@ -1,11 +1,15 @@
-FROM mono AS builder
+VERSION 0.8
 
-WORKDIR /WhitespaceInterpreter
-COPY projectOne/The-Code/WhitespaceInterpreter .
-RUN msbuild -p:Configuration=Release
+build:
+    FROM mono
+    WORKDIR /WhitespaceInterpreter
+    COPY projectOne/The-Code/WhitespaceInterpreter .
+    RUN msbuild -p:Configuration=Release
+    SAVE ARTIFACT bin/Release/WhitespaceInterpreter.exe /bin/
 
-FROM mono:slim
-
-WORKDIR /WhitespaceInterpreter
-COPY --from=builder /WhitespaceInterpreter/bin/Release/WhitespaceInterpreter.exe .
-ENTRYPOINT ["mono", "WhitespaceInterpreter.exe"]
+docker:
+    FROM mono:slim
+    WORKDIR /WhitespaceInterpreter
+    COPY +build/ .
+    ENTRYPOINT ["mono", "bin/WhitespaceInterpreter.exe"]
+    SAVE IMAGE wspace-corpus/csharp/north15-projectone

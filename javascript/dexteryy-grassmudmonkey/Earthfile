@@ -1,7 +1,9 @@
-FROM node:alpine
+VERSION 0.8
 
-WORKDIR /GrassMudMonkey
-COPY GrassMudMonkey cli.js ./
-RUN cat cli.js >> grassmudmonkey.js
-
-ENTRYPOINT ["node", "grassmudmonkey"]
+docker:
+    FROM node:alpine
+    WORKDIR /GrassMudMonkey
+    COPY GrassMudMonkey cli.js ./
+    RUN cat cli.js >> grassmudmonkey.js
+    ENTRYPOINT ["node", "grassmudmonkey"]
+    SAVE IMAGE wspace-corpus/javascript/dexteryy-grassmudmonkey

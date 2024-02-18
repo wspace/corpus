@@ -1,6 +1,8 @@
-FROM node:alpine
+VERSION 0.8
 
-WORKDIR /whitespace
-COPY whitespace .
-
-ENTRYPOINT ["node", "ws_cli.js"]
+docker:
+    FROM node:alpine
+    WORKDIR /whitespace
+    COPY whitespace .
+    ENTRYPOINT ["node", "ws_cli.js"]
+    SAVE IMAGE wspace-corpus/javascript/vii5ard-whitelips

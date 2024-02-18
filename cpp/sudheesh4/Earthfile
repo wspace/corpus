@@ -1,11 +1,15 @@
-FROM alpine AS builder
+VERSION 0.8
 
-RUN apk add --no-cache g++
-WORKDIR /Whitespace-Interpreter-C-
-COPY Whitespace-Interpreter-C- .
-RUN g++ -O3 -static -o space space.cpp
+build:
+    FROM alpine
+    RUN apk add --no-cache g++
+    WORKDIR /Whitespace-Interpreter-C-
+    COPY Whitespace-Interpreter-C- .
+    RUN g++ -O3 -static -o space space.cpp
+    SAVE ARTIFACT space /bin/
 
-FROM scratch
-
-COPY --from=builder /Whitespace-Interpreter-C-/space /
-ENTRYPOINT ["/space"]
+docker:
+    FROM scratch
+    COPY +build/ /
+    ENTRYPOINT ["/bin/space"]
+    SAVE IMAGE wspace-corpus/cpp/sudheesh4

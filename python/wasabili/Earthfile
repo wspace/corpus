@@ -1,5 +1,8 @@
-FROM python:2-alpine
+VERSION 0.8
 
-WORKDIR /Whitespace
-COPY Whitespace .
-ENTRYPOINT ["python", "Whitespace.py"]
+docker:
+    FROM python:2-alpine
+    WORKDIR /Whitespace
+    COPY Whitespace .
+    ENTRYPOINT ["python", "Whitespace.py"]
+    SAVE IMAGE wspace-corpus/python/wasabili

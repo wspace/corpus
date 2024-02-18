@@ -1,5 +1,8 @@
-FROM python:3-alpine
+VERSION 0.8
 
-WORKDIR /python-whitespace
-COPY python-whitespace .
-ENTRYPOINT ["python", "whitespace.py"]
+docker:
+    FROM python:3-alpine
+    WORKDIR /python-whitespace
+    COPY python-whitespace .
+    ENTRYPOINT ["python", "whitespace.py"]
+    SAVE IMAGE wspace-corpus/python/mikecat

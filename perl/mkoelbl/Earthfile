@@ -1,5 +1,8 @@
-FROM perl:slim
+VERSION 0.8
 
-WORKDIR /whitespace
-COPY whitespace .
-ENTRYPOINT ["perl", "whitespace.pl"]
+docker:
+    FROM perl:slim
+    WORKDIR /whitespace
+    COPY whitespace .
+    ENTRYPOINT ["perl", "whitespace.pl"]
+    SAVE IMAGE wspace-corpus/perl/mkoelbl

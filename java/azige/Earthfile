@@ -1,14 +1,19 @@
-FROM maven:3-eclipse-temurin-21-alpine AS builder
+VERSION 0.8
 
-WORKDIR /whitespace-interpreter
-COPY whitespace-interpreter jar.patch ./
-RUN apk add --no-cache patch && \
-    patch -p1 -i jar.patch && \
-    mvn compile test assembly:single
+build:
+    FROM maven:3-eclipse-temurin-21-alpine
+    WORKDIR /whitespace-interpreter
+    COPY whitespace-interpreter jar.patch ./
+    RUN apk add --no-cache patch && \
+        patch -p1 -i jar.patch && \
+        mvn compile test assembly:single
+    SAVE ARTIFACT target/whitespace-interpreter-0.4-jar-with-dependencies.jar whitespace-interpreter-0.4.jar
+    SAVE ARTIFACT src/main/pack/example/*.ws /programs/
+    SAVE ARTIFACT src/main/pack/example/*.szm /
 
-FROM eclipse-temurin:21-jre-alpine
-
-WORKDIR /whitespace-interpreter
-COPY --from=builder /whitespace-interpreter/target/whitespace-interpreter-0.4-jar-with-dependencies.jar whitespace-interpreter-0.4.jar
-COPY whitespace-interpreter/src/main/pack/example/*.ws whitespace-interpreter/src/main/pack/example/*.szm ./
-ENTRYPOINT ["java", "-jar", "whitespace-interpreter-0.4.jar"]
+docker:
+    FROM eclipse-temurin:21-jre-alpine
+    WORKDIR /whitespace-interpreter
+    COPY +build/ .
+    ENTRYPOINT ["java", "-jar", "bin/whitespace-interpreter-0.4.jar"]
+    SAVE IMAGE wspace-corpus/java/azige

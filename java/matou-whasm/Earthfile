@@ -1,12 +1,16 @@
-FROM eclipse-temurin:21-jdk-alpine AS builder
+VERSION 0.8
 
-WORKDIR /whasm
-COPY whasm .
-RUN javac -d bin WhAsm.java && \
-    jar -cfe whasm.jar WhAsm -C bin .
+build:
+    FROM eclipse-temurin:21-jdk-alpine
+    WORKDIR /whasm
+    COPY whasm .
+    RUN javac -d bin WhAsm.java && \
+        jar -cfe whasm.jar WhAsm -C bin .
+    SAVE ARTIFACT whasm.jar /bin/
 
-FROM eclipse-temurin:21-jre-alpine
-
-WORKDIR /whasm
-COPY --from=builder /whasm/whasm.jar .
-ENTRYPOINT ["java", "-jar", "whasm.jar"]
+docker:
+    FROM eclipse-temurin:21-jre-alpine
+    WORKDIR /whasm
+    COPY +build/ .
+    ENTRYPOINT ["java", "-jar", "bin/whasm.jar"]
+    SAVE IMAGE wspace-corpus/java/matou-whasm

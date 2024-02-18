@@ -1,11 +1,15 @@
-FROM alpine AS builder
+VERSION 0.8
 
-RUN apk add --no-cache g++
-WORKDIR /Whitespace-Interpreter
-COPY Whitespace-Interpreter .
-RUN g++ -O3 -static -o ws Lexer.cc Parser.cc
+build:
+    FROM alpine
+    RUN apk add --no-cache g++
+    WORKDIR /Whitespace-Interpreter
+    COPY Whitespace-Interpreter .
+    RUN g++ -O3 -static -o ws Lexer.cc Parser.cc
+    SAVE ARTIFACT ws /bin/
 
-FROM scratch
-
-COPY --from=builder /Whitespace-Interpreter/ws /
-ENTRYPOINT ["/ws"]
+docker:
+    FROM scratch
+    COPY +build/ /
+    ENTRYPOINT ["/bin/ws"]
+    SAVE IMAGE wspace-corpus/cpp/noia1

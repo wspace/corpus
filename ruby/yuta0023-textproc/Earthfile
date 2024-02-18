@@ -1,5 +1,8 @@
-FROM ruby:3-alpine
+VERSION 0.8
 
-WORKDIR /TextProc
-COPY TextProc .
-ENTRYPOINT ["ruby", "mywhitespace.rb"]
+docker:
+    FROM ruby:3-alpine
+    WORKDIR /TextProc
+    COPY TextProc .
+    ENTRYPOINT ["ruby", "mywhitespace.rb"]
+    SAVE IMAGE wspace-corpus/ruby/yuta0023-textproc

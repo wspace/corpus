@@ -1,5 +1,8 @@
-FROM python:2-alpine
+VERSION 0.8
 
-WORKDIR /whitespaceasm
-COPY whitespaceasm .
-ENTRYPOINT ["python", "whitespaceasm.py"]
+docker:
+    FROM python:2-alpine
+    WORKDIR /whitespaceasm
+    COPY whitespaceasm .
+    ENTRYPOINT ["python", "whitespaceasm.py"]
+    SAVE IMAGE wspace-corpus/python/jrialland

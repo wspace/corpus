@@ -1,6 +1,9 @@
-FROM alpine
+VERSION 0.8
 
-RUN apk add --no-cache jq bash
-WORKDIR /wsjq
-COPY wsjq .
-ENTRYPOINT ["./wsjq"]
+docker:
+    FROM alpine
+    RUN apk add --no-cache jq bash
+    WORKDIR /wsjq
+    COPY wsjq .
+    ENTRYPOINT ["./wsjq"]
+    SAVE IMAGE wspace-corpus/jq/thaliaarchi-wsjq

@@ -1,11 +1,15 @@
-FROM golang:1.22 AS builder
+VERSION 0.8
 
-WORKDIR /whitespace
-COPY whitespace .
-RUN go mod init github.com/wspace/qeedquan-go && \
-    CGO_ENABLED=0 go build -o whitespace
+build:
+    FROM golang:1.22
+    WORKDIR /whitespace
+    COPY whitespace .
+    RUN go mod init github.com/wspace/qeedquan-go && \
+        CGO_ENABLED=0 go build -o whitespace
+    SAVE ARTIFACT whitespace /bin/
 
-FROM scratch
-
-COPY --from=builder /whitespace/whitespace /
-ENTRYPOINT ["/whitespace"]
+docker:
+    FROM scratch
+    COPY +build/ /
+    ENTRYPOINT ["/bin/whitespace"]
+    SAVE IMAGE wspace-corpus/go/qeedquan

@@ -1,6 +1,8 @@
-FROM node:alpine
+VERSION 0.8
 
-WORKDIR /whitespace
-COPY whitespace .
-
-ENTRYPOINT ["node", "index.js"]
+docker:
+    FROM node:alpine
+    WORKDIR /whitespace
+    COPY whitespace .
+    ENTRYPOINT ["node", "index.js"]
+    SAVE IMAGE wspace-corpus/javascript/rumpl

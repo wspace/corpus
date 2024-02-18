@@ -1,6 +1,9 @@
-FROM python:2.7-alpine
+VERSION 0.8
 
-WORKDIR /abyad
-COPY abyad .
-RUN python generate_programs
-ENTRYPOINT ["python", "-m", "src"]
+docker:
+    FROM python:2.7-alpine
+    WORKDIR /abyad
+    COPY abyad .
+    RUN python generate_programs
+    ENTRYPOINT ["python", "-m", "src"]
+    SAVE IMAGE wspace-corpus/python/kareeeeem-abyad

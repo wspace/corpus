@@ -1,6 +1,11 @@
-FROM python:3.7-alpine AS builder
+VERSION 0.8
 
-WORKDIR /whitepy
-COPY whitepy .
-RUN pip install -r requirements.txt
-ENTRYPOINT ["python", "whitepycli"]
+build:
+    FROM python:3.7-alpine
+    WORKDIR /whitepy
+    COPY whitepy .
+    RUN pip install -r requirements.txt
+    ENTRYPOINT ["python", "whitepycli"]
+
+docker:
+    SAVE IMAGE wspace-corpus/python/yasn77-whitepy

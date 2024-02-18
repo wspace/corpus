@@ -1,6 +1,8 @@
-FROM node:alpine
+VERSION 0.8
 
-WORKDIR /whitespace-lang-compiler
-COPY whitespace-lang-compiler .
-
-ENTRYPOINT ["node", "whitespacec"]
+docker:
+    FROM node:alpine
+    WORKDIR /whitespace-lang-compiler
+    COPY whitespace-lang-compiler .
+    ENTRYPOINT ["node", "whitespacec"]
+    SAVE IMAGE wspace-corpus/javascript/wdalmut

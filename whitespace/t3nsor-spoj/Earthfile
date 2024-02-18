@@ -1,12 +1,16 @@
-FROM alpine AS builder
+VERSION 0.8
 
-RUN apk add --no-cache g++
-WORKDIR /SPOJ
-COPY SPOJ/wstp.cpp .
-RUN g++ -O3 -static -o wstp wstp.cpp
+build:
+    FROM alpine
+    RUN apk add --no-cache g++
+    WORKDIR /SPOJ
+    COPY SPOJ/wstp.cpp .
+    RUN g++ -O3 -static -o wstp wstp.cpp
+    SAVE ARTIFACT wstp /bin/
+    SAVE ARTIFACT sbstr* /
 
-FROM scratch
-
-COPY --from=builder /SPOJ/wstp /
-COPY SPOJ/sbstr* /
-ENTRYPOINT ["/wstp"]
+docker:
+    FROM scratch
+    COPY +build/ /
+    ENTRYPOINT ["/bin/wstp"]
+    SAVE IMAGE wspace-corpus/whitespace/t3nsor-spoj

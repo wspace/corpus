@@ -1,12 +1,16 @@
-FROM eclipse-temurin:21-jdk-alpine AS builder
+VERSION 0.8
 
-WORKDIR /Whitespace4j
-COPY Whitespace4j .
-RUN javac -d bin src/spp/Whitespace4j.java && \
-    jar -cfe whitespace4j.jar spp.Whitespace4j -C bin .
+build:
+    FROM eclipse-temurin:21-jdk-alpine
+    WORKDIR /Whitespace4j
+    COPY Whitespace4j .
+    RUN javac -d bin src/spp/Whitespace4j.java && \
+        jar -cfe whitespace4j.jar spp.Whitespace4j -C bin .
+    SAVE ARTIFACT whitespace4j.jar /bin/
 
-FROM eclipse-temurin:21-jre-alpine
-
-WORKDIR /Whitespace4j
-COPY --from=builder /Whitespace4j/whitespace4j.jar .
-ENTRYPOINT ["java", "-jar", "whitespace4j.jar"]
+docker:
+    FROM eclipse-temurin:21-jre-alpine
+    WORKDIR /Whitespace4j
+    COPY +build/ .
+    ENTRYPOINT ["java", "-jar", "bin/whitespace4j.jar"]
+    SAVE IMAGE wspace-corpus/java/brumbeere-whitespace4j

@@ -1,5 +1,8 @@
-FROM python:3-alpine
+VERSION 0.8
 
-WORKDIR /whitespyce
-COPY whitespyce .
-ENTRYPOINT ["python", "interpreter.py"]
+docker:
+    FROM python:3-alpine
+    WORKDIR /whitespyce
+    COPY whitespyce .
+    ENTRYPOINT ["python", "interpreter.py"]
+    SAVE IMAGE wspace-corpus/python/q2ven-whitespyce

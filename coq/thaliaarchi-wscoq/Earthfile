@@ -1,6 +1,11 @@
-FROM coqorg/coq
+VERSION 0.8
 
-USER coq
-COPY --chown=coq wscoq /home/coq/wscoq
-WORKDIR /home/coq/wscoq
-RUN make
+build:
+    FROM coqorg/coq
+    USER coq
+    COPY --chown=coq wscoq /home/coq/wscoq
+    WORKDIR /home/coq/wscoq
+    RUN make
+
+docker:
+    SAVE IMAGE wspace-corpus/coq/thaliaarchi-wscoq

@@ -1,5 +1,8 @@
-FROM python:3-alpine
+VERSION 0.8
 
-WORKDIR /pyws
-COPY pyws .
-ENTRYPOINT ["python", "pyws.py"]
+docker:
+    FROM python:3-alpine
+    WORKDIR /pyws
+    COPY pyws .
+    ENTRYPOINT ["python", "pyws.py"]
+    SAVE IMAGE wspace-corpus/python/eizoassik-pyws

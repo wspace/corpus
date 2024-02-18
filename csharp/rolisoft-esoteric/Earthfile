@@ -1,11 +1,15 @@
-FROM mono AS builder
+VERSION 0.8
 
-WORKDIR /Esoteric-Code-Interpreter
-COPY Esoteric-Code-Interpreter .
-RUN msbuild -p:Configuration=Release\;AssemblyName=EsotericCodeInterpreter
+build:
+    FROM mono
+    WORKDIR /Esoteric-Code-Interpreter
+    COPY Esoteric-Code-Interpreter .
+    RUN msbuild -p:Configuration=Release\;AssemblyName=EsotericCodeInterpreter
+    SAVE ARTIFACT bin/Release/EsotericCodeInterpreter.exe /bin/
 
-FROM mono:slim
-
-WORKDIR /Esoteric-Code-Interpreter
-COPY --from=builder /Esoteric-Code-Interpreter/bin/Release/EsotericCodeInterpreter.exe .
-ENTRYPOINT ["mono", "EsotericCodeInterpreter.exe"]
+docker:
+    FROM mono:slim
+    WORKDIR /Esoteric-Code-Interpreter
+    COPY +build/ .
+    ENTRYPOINT ["mono", "bin/EsotericCodeInterpreter.exe"]
+    SAVE IMAGE wspace-corpus/csharp/rolisoft-esoteric

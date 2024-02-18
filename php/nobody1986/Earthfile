@@ -1,12 +1,16 @@
-FROM alpine AS builder
+VERSION 0.8
 
-RUN apk add --no-cache gcc musl-dev
-WORKDIR /whitespace-php
-COPY whitespace-php .
-RUN gcc -O3 -static -o whitespace *.c
+build:
+    FROM alpine
+    RUN apk add --no-cache gcc musl-dev
+    WORKDIR /whitespace-php
+    COPY whitespace-php .
+    RUN gcc -O3 -static -o whitespace *.c
+    SAVE ARTIFACT whitespace /bin/
+    SAVE ARTIFACT samples /programs
 
-FROM scratch
-
-COPY --from=builder /whitespace-php/whitespace /
-COPY whitespace-php/samples /
-ENTRYPOINT ["/whitespace"]
+docker:
+    FROM scratch
+    COPY +build/ /
+    ENTRYPOINT ["/bin/whitespace"]
+    SAVE IMAGE wspace-corpus/php/nobody1986

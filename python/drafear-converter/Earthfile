@@ -1,5 +1,8 @@
-FROM python:3-alpine
+VERSION 0.8
 
-WORKDIR /whitespace-language-converter
-COPY whitespace-language-converter .
-ENTRYPOINT ["python", "to_ws.py"]
+docker:
+    FROM python:3-alpine
+    WORKDIR /whitespace-language-converter
+    COPY whitespace-language-converter .
+    ENTRYPOINT ["python", "to_ws.py"]
+    SAVE IMAGE wspace-corpus/python/drafear-converter

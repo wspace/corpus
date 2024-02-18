@@ -1,7 +1,10 @@
-FROM python:3-alpine
+VERSION 0.8
 
-RUN apk add --no-cache make g++ gmp-dev
-RUN pip install -v z3-solver
-WORKDIR /whitesymex
-COPY whitesymex .
-ENTRYPOINT ["python", "-m", "whitesymex.cli"]
+docker:
+    FROM python:3-alpine
+    RUN apk add --no-cache make g++ gmp-dev
+    RUN pip install -v z3-solver
+    WORKDIR /whitesymex
+    COPY whitesymex .
+    ENTRYPOINT ["python", "-m", "whitesymex.cli"]
+    SAVE IMAGE wspace-corpus/python/umutoztunc-whitesymex

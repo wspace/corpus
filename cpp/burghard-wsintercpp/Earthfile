@@ -1,11 +1,15 @@
-FROM alpine AS builder
+VERSION 0.8
 
-RUN apk add --no-cache g++
-WORKDIR /wsintercpp
-COPY wsintercpp .
-RUN g++ -O3 -static -o inter inter.cpp
+build:
+    FROM alpine
+    RUN apk add --no-cache g++
+    WORKDIR /wsintercpp
+    COPY wsintercpp .
+    RUN g++ -O3 -static -o inter inter.cpp
+    SAVE ARTIFACT inter /bin/
 
-FROM scratch
-
-COPY --from=builder /wsintercpp/inter /
-ENTRYPOINT ["/inter"]
+docker:
+    FROM scratch
+    COPY +build/ /
+    ENTRYPOINT ["/bin/inter"]
+    SAVE IMAGE wspace-corpus/cpp/burghard-wsintercpp

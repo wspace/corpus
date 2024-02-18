@@ -1,11 +1,15 @@
-FROM alpine AS builder
+VERSION 0.8
 
-RUN apk add --no-cache make g++ gmp-dev
-WORKDIR /ws
-COPY ws .
-RUN make CC='g++ -static'
+build:
+    FROM alpine
+    RUN apk add --no-cache make g++ gmp-dev
+    WORKDIR /ws
+    COPY ws .
+    RUN make CC='g++ -static'
+    SAVE ARTIFACT ws /bin/
 
-FROM scratch
-
-COPY --from=builder /ws/ws /
-ENTRYPOINT ["/ws"]
+docker:
+    FROM scratch
+    COPY +build/ /
+    ENTRYPOINT ["/bin/ws"]
+    SAVE IMAGE wspace-corpus/cpp/knmorgan

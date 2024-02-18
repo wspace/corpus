@@ -1,6 +1,9 @@
-FROM alpine
+VERSION 0.8
 
-RUN apk add --no-cache lua5.4
-WORKDIR /WhitespaceInterpreter
-COPY WhitespaceInterpreter .
-ENTRYPOINT ["lua5.4", "main.lua"]
+docker:
+    FROM alpine
+    RUN apk add --no-cache lua5.4
+    WORKDIR /WhitespaceInterpreter
+    COPY WhitespaceInterpreter .
+    ENTRYPOINT ["lua5.4", "main.lua"]
+    SAVE IMAGE wspace-corpus/lua/cj5518

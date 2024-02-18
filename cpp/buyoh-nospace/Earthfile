@@ -1,12 +1,16 @@
-FROM alpine AS builder
+VERSION 0.8
 
-RUN apk add --no-cache make g++ ruby
-WORKDIR /nospace
-COPY nospace .
-RUN make release CXXFLAGS='-O3 -static'
-RUN ./test.rb
+build:
+    FROM alpine
+    RUN apk add --no-cache make g++ ruby
+    WORKDIR /nospace
+    COPY nospace .
+    RUN make release CXXFLAGS='-O3 -static'
+    RUN ./test.rb
+    SAVE ARTIFACT maicomp /bin/
 
-FROM scratch
-
-COPY --from=builder /nospace/maicomp /
-ENTRYPOINT ["/maicomp"]
+docker:
+    FROM scratch
+    COPY +build/ /
+    ENTRYPOINT ["/bin/maicomp"]
+    SAVE IMAGE wspace-corpus/cpp/buyoh-nospace

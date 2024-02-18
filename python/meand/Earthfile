@@ -1,5 +1,8 @@
-FROM python:3-alpine
+VERSION 0.8
 
-WORKDIR /whitespace-compiler
-COPY whitespace-compiler .
-ENTRYPOINT ["python", "compile.py"]
+docker:
+    FROM python:3-alpine
+    WORKDIR /whitespace-compiler
+    COPY whitespace-compiler .
+    ENTRYPOINT ["python", "compile.py"]
+    SAVE IMAGE wspace-corpus/python/meand

@@ -1,6 +1,9 @@
-FROM ruby:3-alpine
+VERSION 0.8
 
-WORKDIR /whitespace
-COPY whitespace .
-# whitespace, whitespace-asm, or whitespace-disassem
-ENTRYPOINT ["ruby"]
+docker:
+    FROM ruby:3-alpine
+    WORKDIR /whitespace
+    COPY whitespace .
+    # whitespace, whitespace-asm, or whitespace-disassem
+    ENTRYPOINT ["ruby"]
+    SAVE IMAGE wspace-corpus/ruby/wconrad

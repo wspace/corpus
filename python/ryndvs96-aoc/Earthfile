@@ -1,5 +1,8 @@
-FROM python:3-alpine
+VERSION 0.8
 
-WORKDIR /aoc
-COPY aoc/2018/wsa-to-ws.py aoc/2018/day1 ./
-ENTRYPOINT ["python", "wsa-to-ws.py"]
+docker:
+    FROM python:3-alpine
+    WORKDIR /aoc
+    COPY aoc/2018/wsa-to-ws.py aoc/2018/day1 ./
+    ENTRYPOINT ["python", "wsa-to-ws.py"]
+    SAVE IMAGE wspace-corpus/python/ryndvs96-aoc

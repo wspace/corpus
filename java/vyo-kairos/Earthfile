@@ -1,12 +1,16 @@
-# Fails to run Gradle on alpine due to javax.net.ssl.SSLHandshakeException
-FROM eclipse-temurin:8-jdk-jammy AS builder
+VERSION 0.8
 
-WORKDIR /kairos
-COPY kairos .
-RUN ./gradlew shadowJar
+build:
+    # Fails to run Gradle on alpine due to javax.net.ssl.SSLHandshakeException
+    FROM eclipse-temurin:8-jdk-jammy
+    WORKDIR /kairos
+    COPY kairos .
+    RUN ./gradlew shadowJar
+    SAVE ARTIFACT build/libs/kairos-1.0.0-all.jar kairos-1.0.0.jar
 
-FROM eclipse-temurin:21-jre-alpine
-
-WORKDIR /kairos
-COPY --from=builder /kairos/build/libs/kairos-1.0.0-all.jar kairos-1.0.0.jar
-ENTRYPOINT ["java", "-jar", "kairos-1.0.0.jar"]
+docker:
+    FROM eclipse-temurin:21-jre-alpine
+    WORKDIR /kairos
+    COPY +build/ .
+    ENTRYPOINT ["java", "-jar", "bin/kairos-1.0.0.jar"]
+    SAVE IMAGE wspace-corpus/java/vyo-kairos

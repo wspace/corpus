@@ -1,11 +1,17 @@
-FROM alpine AS builder
+VERSION 0.8
 
-RUN apk add --no-cache make gcc musl-dev
-WORKDIR /wspacegen
-COPY wspacegen .
-RUN make CFLAGS='-O3 -g -static'
+build:
+    FROM alpine
+    RUN apk add --no-cache make gcc musl-dev
+    WORKDIR /wspacegen
+    COPY wspacegen .
+    RUN make CFLAGS='-O3 -g -static'
+    SAVE ARTIFACT wspacegen /bin/
+    SAVE ARTIFACT wsdbg /bin/
+    SAVE ARTIFACT wsi /bin/
 
-FROM scratch
-
-COPY --from=builder /wspacegen/wspacegen /wspacegen/wsdbg /wspacegen/wsi /
-ENTRYPOINT ["/wspacegen"]
+docker:
+    FROM scratch
+    COPY +build/ /
+    ENTRYPOINT ["/bin/wspacegen"]
+    SAVE IMAGE wspace-corpus/c/stellwag-wspacegen

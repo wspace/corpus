@@ -1,13 +1,17 @@
-FROM alpine AS builder
+VERSION 0.8
 
-RUN apk add --no-cache make clang g++
-WORKDIR /wsInt
-COPY wsInt .
-RUN make CPPFLAGS='-O3 -static'
-RUN clang++ -O3 -o bin/ParserTest tests/ParserTest.cpp src/parser/*.o
-RUN bin/ParserTest
+build:
+    FROM alpine
+    RUN apk add --no-cache make clang g++
+    WORKDIR /wsInt
+    COPY wsInt .
+    RUN make CPPFLAGS='-O3 -static'
+    RUN clang++ -O3 -o bin/ParserTest tests/ParserTest.cpp src/parser/*.o
+    RUN bin/ParserTest
+    SAVE ARTIFACT bin/wsInt /bin/
 
-FROM scratch
-
-COPY --from=builder /wsInt/bin/wsInt /
-ENTRYPOINT ["/wsInt"]
+docker:
+    FROM scratch
+    COPY +build/ /
+    ENTRYPOINT ["/bin/wsInt"]
+    SAVE IMAGE wspace-corpus/cpp/dpohanlon-wsint

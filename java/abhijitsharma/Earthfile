@@ -1,13 +1,18 @@
-FROM maven:3-eclipse-temurin-21-alpine AS builder
+VERSION 0.8
 
-WORKDIR /whitespace
-COPY whitespace .
-RUN sed -i 's/>1.6</>1.8</' pom.xml && \
-    mvn package
+build:
+    FROM maven:3-eclipse-temurin-21-alpine
+    WORKDIR /whitespace
+    COPY whitespace .
+    RUN sed -i 's/>1.6</>1.8</' pom.xml && \
+        mvn package
+    SAVE ARTIFACT target/whitespace-1.0.jar /bin/
+    SAVE ARTIFACT docs/*.ws /programs/
+    SAVE ARTIFACT docs/addOneTwo.txt /programs/
 
-FROM eclipse-temurin:21-jre-alpine
-
-WORKDIR /whitespace
-COPY --from=builder /whitespace/target/whitespace-1.0.jar .
-COPY --from=builder /whitespace/docs/*.ws /whitespace/docs/addOneTwo.txt ./
-ENTRYPOINT ["java", "-jar", "whitespace-1.0.jar"]
+docker:
+    FROM eclipse-temurin:21-jre-alpine
+    WORKDIR /whitespace
+    COPY +build/ .
+    ENTRYPOINT ["java", "-jar", "bin/whitespace-1.0.jar"]
+    SAVE IMAGE wspace-corpus/java/abhijitsharma

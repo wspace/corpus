@@ -1,5 +1,8 @@
-FROM python:3-alpine
+VERSION 0.8
 
-WORKDIR /whitespac3
-COPY whitespac3 .
-ENTRYPOINT ["python", "interpreter.py"]
+docker:
+    FROM python:3-alpine
+    WORKDIR /whitespac3
+    COPY whitespac3 .
+    ENTRYPOINT ["python", "interpreter.py"]
+    SAVE IMAGE wspace-corpus/python/alecgraves-whitespac3

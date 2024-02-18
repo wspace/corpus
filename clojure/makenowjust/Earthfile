@@ -1,11 +1,15 @@
-FROM clojure:temurin-21-lein-alpine AS builder
+VERSION 0.8
 
-WORKDIR /whitespace-clj
-COPY whitespace-clj .
-RUN lein uberjar
+build:
+    FROM clojure:temurin-21-lein-alpine
+    WORKDIR /whitespace-clj
+    COPY whitespace-clj .
+    RUN lein uberjar
+    SAVE ARTIFACT target/whitespace-clj-0.1.0-SNAPSHOT-standalone.jar whitespace-clj-0.1.0-SNAPSHOT.jar
 
-FROM eclipse-temurin:21-jre-alpine
-
-WORKDIR /whitespace-clj
-COPY --from=builder /whitespace-clj/target/whitespace-clj-0.1.0-SNAPSHOT-standalone.jar whitespace-clj-0.1.0-SNAPSHOT.jar
-ENTRYPOINT ["java", "-jar", "whitespace-clj-0.1.0-SNAPSHOT.jar"]
+docker:
+    FROM eclipse-temurin:21-jre-alpine
+    WORKDIR /whitespace-clj
+    COPY +build/ .
+    ENTRYPOINT ["java", "-jar", "bin/whitespace-clj-0.1.0-SNAPSHOT.jar"]
+    SAVE IMAGE wspace-corpus/clojure/makenowjust

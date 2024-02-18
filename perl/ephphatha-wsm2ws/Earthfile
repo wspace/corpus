@@ -1,6 +1,9 @@
-FROM perl
+VERSION 0.8
 
-RUN cpanm Algorithm::Combinatorics File::Basename Parse::Token::Lite String::Unescape Tie::RegexpHash
-WORKDIR /wsm2ws
-COPY wsm2ws .
-ENTRYPOINT ["perl", "wsm2ws.pl"]
+docker:
+    FROM perl
+    RUN cpanm Algorithm::Combinatorics File::Basename Parse::Token::Lite String::Unescape Tie::RegexpHash
+    WORKDIR /wsm2ws
+    COPY wsm2ws .
+    ENTRYPOINT ["perl", "wsm2ws.pl"]
+    SAVE IMAGE wspace-corpus/perl/ephphatha-wsm2ws

@@ -1,11 +1,15 @@
-FROM alpine AS builder
+VERSION 0.8
 
-RUN apk add --no-cache make g++
-WORKDIR /Whitepp
-COPY Whitepp .
-RUN make
+build:
+    FROM alpine
+    RUN apk add --no-cache make g++
+    WORKDIR /Whitepp
+    COPY Whitepp .
+    RUN make
+    SAVE ARTIFACT bin/White++ /bin/
 
-FROM scratch
-
-COPY --from=builder /Whitepp/bin/White++ /
-ENTRYPOINT ["/White++"]
+docker:
+    FROM scratch
+    COPY +build/ /
+    ENTRYPOINT ["/bin/White++"]
+    SAVE IMAGE wspace-corpus/cpp/marcellippmann-whitepp

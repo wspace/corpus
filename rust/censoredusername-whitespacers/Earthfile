@@ -1,10 +1,14 @@
-FROM rust:1.76 AS builder
+VERSION 0.8
 
-WORKDIR /whitespace-rs
-COPY whitespace-rs .
-RUN RUSTFLAGS='-C target-feature=+crt-static' cargo build --release --target x86_64-unknown-linux-gnu
+build:
+    FROM rust:1.76
+    WORKDIR /whitespace-rs
+    COPY whitespace-rs .
+    RUN RUSTFLAGS='-C target-feature=+crt-static' cargo build --release --target x86_64-unknown-linux-gnu
+    SAVE ARTIFACT target/x86_64-unknown-linux-gnu/release/wsc /bin/
 
-FROM scratch
-
-COPY --from=builder /whitespace-rs/target/x86_64-unknown-linux-gnu/release/wsc /
-ENTRYPOINT ["/wsc"]
+docker:
+    FROM scratch
+    COPY +build/ /
+    ENTRYPOINT ["/bin/wsc"]
+    SAVE IMAGE wspace-corpus/rust/censoredusername-whitespacers

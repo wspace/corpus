@@ -1,14 +1,18 @@
-FROM rust:1.76 AS builder
+VERSION 0.8
 
-WORKDIR /albino
-COPY albino .
-RUN RUSTFLAGS='-C target-feature=+crt-static' cargo build --release --target x86_64-unknown-linux-gnu
+build:
+    FROM rust:1.76
+    WORKDIR /albino
+    COPY albino .
+    RUN RUSTFLAGS='-C target-feature=+crt-static' cargo build --release --target x86_64-unknown-linux-gnu
+    SAVE ARTIFACT target/x86_64-unknown-linux-gnu/release/albino /bin/
+    SAVE ARTIFACT target/x86_64-unknown-linux-gnu/release/albino-run /bin/
+    SAVE ARTIFACT target/x86_64-unknown-linux-gnu/release/albino-build /bin/
+    SAVE ARTIFACT target/x86_64-unknown-linux-gnu/release/albino-exec /bin/
+    SAVE ARTIFACT target/x86_64-unknown-linux-gnu/release/albino-gen /bin/
 
-FROM scratch
-
-COPY --from=builder /albino/target/x86_64-unknown-linux-gnu/release/albino /
-COPY --from=builder /albino/target/x86_64-unknown-linux-gnu/release/albino-run /
-COPY --from=builder /albino/target/x86_64-unknown-linux-gnu/release/albino-build /
-COPY --from=builder /albino/target/x86_64-unknown-linux-gnu/release/albino-exec /
-COPY --from=builder /albino/target/x86_64-unknown-linux-gnu/release/albino-gen /
-ENTRYPOINT ["/albino"]
+docker:
+    FROM scratch
+    COPY +build/ /
+    ENTRYPOINT ["/bin/albino"]
+    SAVE IMAGE wspace-corpus/rust/faultier-albino

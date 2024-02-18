@@ -1,5 +1,8 @@
-FROM python:3-alpine
+VERSION 0.8
 
-WORKDIR /whitespace
-COPY Codewars-algorithms/Solutions/whitespace_cw.py .
-ENTRYPOINT ["python", "whitespace_cw.py"]
+docker:
+    FROM python:3-alpine
+    WORKDIR /whitespace
+    COPY Codewars-algorithms/Solutions/whitespace_cw.py .
+    ENTRYPOINT ["python", "whitespace_cw.py"]
+    SAVE IMAGE wspace-corpus/python/ericpwilliamson-codewars

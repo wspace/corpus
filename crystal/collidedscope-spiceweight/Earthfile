@@ -1,11 +1,15 @@
-FROM alpine AS builder
+VERSION 0.8
 
-RUN apk add --no-cache make crystal
-WORKDIR /spiceweight
-COPY spiceweight .
-RUN make
+build:
+    FROM alpine
+    RUN apk add --no-cache make crystal
+    WORKDIR /spiceweight
+    COPY spiceweight .
+    RUN make
+    SAVE ARTIFACT spwt /bin/
 
-FROM scratch
-
-COPY --from=builder /spiceweight/spwt /
-ENTRYPOINT ["/spwt"]
+docker:
+    FROM scratch
+    COPY +build/ /
+    ENTRYPOINT ["/bin/spwt"]
+    SAVE IMAGE wspace-corpus/crystal/collidedscope-spiceweight

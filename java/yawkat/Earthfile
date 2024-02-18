@@ -1,12 +1,16 @@
-FROM eclipse-temurin:21-jdk-alpine AS builder
+VERSION 0.8
 
-WORKDIR /Whitespace
-COPY Whitespace .
-RUN javac -d bin $(find src -name '*.java') && \
-    jar -cfe whitespace.jar at.yawk.whitspace.Whitespace -C bin .
+build:
+    FROM eclipse-temurin:21-jdk-alpine
+    WORKDIR /Whitespace
+    COPY Whitespace .
+    RUN javac -d bin $(find src -name '*.java') && \
+        jar -cfe whitespace.jar at.yawk.whitspace.Whitespace -C bin .
+    SAVE ARTIFACT whitespace.jar /bin/
 
-FROM eclipse-temurin:21-jre-alpine
-
-WORKDIR /Whitespace
-COPY --from=builder /Whitespace/whitespace.jar .
-ENTRYPOINT ["java", "-jar", "whitespace.jar"]
+docker:
+    FROM eclipse-temurin:21-jre-alpine
+    WORKDIR /Whitespace
+    COPY +build/ .
+    ENTRYPOINT ["java", "-jar", "bin/whitespace.jar"]
+    SAVE IMAGE wspace-corpus/java/yawkat

@@ -1,11 +1,15 @@
-FROM mono AS builder
+VERSION 0.8
 
-WORKDIR /Whitespace-Interpreter
-COPY Whitespace-Interpreter .
-RUN mcs -optimize -out:WhitespaceInterpreter.exe WhitespaceInterpreter/*.cs
+build:
+    FROM mono
+    WORKDIR /Whitespace-Interpreter
+    COPY Whitespace-Interpreter .
+    RUN mcs -optimize -out:WhitespaceInterpreter.exe WhitespaceInterpreter/*.cs
+    SAVE ARTIFACT WhitespaceInterpreter.exe /bin/
 
-FROM mono:slim
-
-WORKDIR /Whitespace-Interpreter
-COPY --from=builder /Whitespace-Interpreter/WhitespaceInterpreter.exe .
-ENTRYPOINT ["mono", "WhitespaceInterpreter.exe"]
+docker:
+    FROM mono:slim
+    WORKDIR /Whitespace-Interpreter
+    COPY +build/ .
+    ENTRYPOINT ["mono", "bin/WhitespaceInterpreter.exe"]
+    SAVE IMAGE wspace-corpus/csharp/denislabrecque

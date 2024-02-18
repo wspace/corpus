@@ -1,15 +1,21 @@
-FROM mono AS builder
+VERSION 0.8
 
-RUN apt-get update && \
-    apt-get install -y --no-install-recommends \
-        make gcc libc-dev flex bison && \
-    rm -rf /var/lib/apt/lists/*
-WORKDIR /spacesharp
-COPY spacesharp .
-RUN make MCS=mcs
+build:
+    FROM mono
+    RUN apt-get update && \
+        apt-get install -y --no-install-recommends \
+            make gcc libc-dev flex bison && \
+        rm -rf /var/lib/apt/lists/*
+    WORKDIR /spacesharp
+    COPY spacesharp .
+    RUN make MCS=mcs
+    SAVE ARTIFACT wsc.exe /bin/
+    SAVE ARTIFACT libwsp.dll /bin/
+    SAVE ARTIFACT tests/ws/*.ws /programs/
 
-FROM mono
-
-WORKDIR /spacesharp
-COPY --from=builder /spacesharp/wsc.exe /spacesharp/libwsp.dll /spacesharp/tests/ws/*.ws ./
-ENTRYPOINT ["mono", "wsc.exe"]
+docker:
+    FROM mono
+    WORKDIR /spacesharp
+    COPY +build/ .
+    ENTRYPOINT ["mono", "bin/wsc.exe"]
+    SAVE IMAGE wspace-corpus/csharp/nicolasff-spacesharp
