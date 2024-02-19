@@ -1,23 +1,32 @@
 VERSION 0.8
 
-build:
+# TODO: lci should be installed as a system dependency in the joined image
+build-lci:
     FROM alpine
-    RUN apk add --no-cache git cmake make gcc g++ readline-dev
-    RUN git clone https://github.com/justinmeza/lci --branch=future
+    RUN apk add --no-cache cmake make gcc g++ readline-dev
+    GIT CLONE --branch=future https://github.com/justinmeza/lci /lci
     WORKDIR /lci
-    RUN cmake .
-    RUN make
+    RUN cmake . && \
+        make
+    # Tests fail
     # RUN ctest
-    SAVE ARTIFACT lci /usr/local/bin/
-    SAVE ARTIFACT *.lol /
-    SAVE ARTIFACT *.ws /programs/
-    SAVE ARTIFACT *.b /
+    SAVE ARTIFACT lci /
+
+build:
+    FROM scratch
+    COPY lolcode run.bash ./
+    COPY +build-lci/lci .
+    SAVE ARTIFACT *.lol /bin/
+    SAVE ARTIFACT lci /bin/
     SAVE ARTIFACT run.bash /bin/
+    SAVE ARTIFACT *.ws /programs/
+    SAVE ARTIFACT *.b /programs/
 
 docker:
     FROM alpine
     RUN apk add --no-cache bash readline-dev
-    WORKDIR /lolcode
-    COPY +build/ .
-    ENTRYPOINT ["bin/run.bash"]
+    COPY +build/ /lolcode
+    WORKDIR /lolcode/bin
+    RUN mv lci /usr/local/bin/
+    ENTRYPOINT ["./run.bash"]
     SAVE IMAGE wspace-corpus/lolcode/0x0dea

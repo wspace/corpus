@@ -12,6 +12,9 @@ IMPORT ./haskell
 IMPORT ./idris
 IMPORT ./java
 IMPORT ./javascript
+IMPORT ./jq
+IMPORT ./kotlin
+IMPORT ./lolcode
 
 build:
     FROM scratch
@@ -27,6 +30,9 @@ build:
     BUILD idris+build
     BUILD java+build
     BUILD javascript+build
+    BUILD jq+build
+    BUILD kotlin+build
+    BUILD lolcode+build
     WORKDIR /corpus
     COPY c+build/corpus/c c
     COPY clojure+build/corpus/clojure clojure
@@ -40,6 +46,9 @@ build:
     COPY idris+build/corpus/idris idris
     COPY java+build/corpus/java java
     COPY javascript+build/corpus/javascript javascript
+    COPY jq+build/corpus/jq jq
+    COPY kotlin+build/corpus/kotlin kotlin
+    COPY lolcode+build/corpus/lolcode lolcode
     SAVE ARTIFACT /corpus /corpus
 
 docker:
@@ -62,3 +71,6 @@ docker-all:
     BUILD idris+docker-all
     BUILD java+docker-all
     BUILD javascript+docker-all
+    BUILD jq+docker-all
+    BUILD kotlin+docker-all
+    BUILD lolcode+docker-all

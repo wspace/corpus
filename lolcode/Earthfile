@@ -1,0 +1,20 @@
+VERSION 0.8
+
+IMPORT ./0x0dea AS lolcode-0x0dea
+
+build:
+    FROM scratch
+    BUILD lolcode-0x0dea+build
+    WORKDIR /corpus/lolcode
+    COPY lolcode-0x0dea+build/ 0x0dea/
+    SAVE ARTIFACT /corpus /corpus
+
+docker:
+    FROM alpine
+    WORKDIR /corpus/lolcode
+    COPY +build/ /
+    SAVE IMAGE wspace-corpus/lolcode
+
+docker-all:
+    BUILD +docker
+    BUILD lolcode-0x0dea+docker

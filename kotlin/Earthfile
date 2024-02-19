@@ -1,0 +1,20 @@
+VERSION 0.8
+
+IMPORT ./ze-space AS kotlin-ze-space
+
+build:
+    FROM scratch
+    BUILD kotlin-ze-space+build
+    WORKDIR /corpus/kotlin
+    COPY kotlin-ze-space+build/ ze-space/
+    SAVE ARTIFACT /corpus /corpus
+
+docker:
+    FROM alpine
+    WORKDIR /corpus/kotlin
+    COPY +build/ /
+    SAVE IMAGE wspace-corpus/kotlin
+
+docker-all:
+    BUILD +docker
+    BUILD kotlin-ze-space+docker

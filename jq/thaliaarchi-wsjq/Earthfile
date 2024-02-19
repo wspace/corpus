@@ -1,9 +1,16 @@
 VERSION 0.8
 
+build:
+    FROM scratch
+    COPY wsjq .
+    SAVE ARTIFACT wsjq /bin/
+    SAVE ARTIFACT ws.jq /bin/
+    SAVE ARTIFACT main.jq /bin/
+
 docker:
     FROM alpine
     RUN apk add --no-cache jq bash
     WORKDIR /wsjq
-    COPY wsjq .
-    ENTRYPOINT ["./wsjq"]
+    COPY +build/ .
+    ENTRYPOINT ["bin/wsjq"]
     SAVE IMAGE wspace-corpus/jq/thaliaarchi-wsjq
