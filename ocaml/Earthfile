@@ -25,7 +25,7 @@ build:
     SAVE ARTIFACT /corpus /corpus
 
 docker:
-    FROM alpine
+    FROM scratch
     WORKDIR /corpus/ocaml
     COPY +build/ /
     SAVE IMAGE wspace-corpus/ocaml

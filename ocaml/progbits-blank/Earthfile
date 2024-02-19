@@ -1,11 +1,14 @@
 VERSION 0.8
 
 build:
-    FROM ocaml/opam:debian
+    FROM ocaml/opam:alpine
+    USER root
+    RUN apk add --no-cache patch
     USER opam
     RUN opam install dune core ounit2
-    COPY --chown=opam blank /home/opam/blank
+    COPY --chown=opam blank static.patch /home/opam/blank
     WORKDIR /home/opam/blank
+    RUN patch -p1 -i static.patch
     # Build fails with "Unbound module Stream". Module Stdlib.Stream is
     # deprecated and the camlp-streams library should be used instead.
     RUN eval $(opam env) && \
@@ -15,8 +18,7 @@ build:
     SAVE ARTIFACT examples /programs
 
 docker:
-    FROM debian
-    WORKDIR /blank
-    COPY +build/ .
-    ENTRYPOINT ["bin/blank.exe"]
+    FROM scratch
+    COPY +build/ /
+    ENTRYPOINT ["/bin/blank.exe"]
     SAVE IMAGE wspace-corpus/ocaml/progbits-blank

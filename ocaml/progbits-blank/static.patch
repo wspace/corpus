@@ -1,0 +1,9 @@
+diff --git a/dune b/dune
+index 732f33e..708e314 100644
+--- a/dune
++++ b/dune
+@@ -1,3 +1,4 @@
+ (executable
+  (name blank)
++ (flags (:standard -cclib -static))
+  (libraries lib core))

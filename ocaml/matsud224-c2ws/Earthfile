@@ -1,19 +1,18 @@
 VERSION 0.8
 
 build:
-    FROM ocaml/opam:debian
+    FROM ocaml/opam:alpine
     USER opam
     COPY --chown=opam c2ws /home/opam/c2ws
     WORKDIR /home/opam/c2ws
     RUN eval $(opam env) && \
         ocamllex -q mylexer.mll && \
         ocamlyacc myparser.mly && \
-        ocamlopt -O3 -o c2ws $(ocamldep -native -sort *.ml *.mli)
+        ocamlopt -O3 -cclib -static -o c2ws $(ocamldep -native -sort *.ml *.mli)
     SAVE ARTIFACT c2ws /bin/
 
 docker:
-    FROM debian
-    WORKDIR /c2ws
-    COPY +build/ .
-    ENTRYPOINT ["bin/c2ws"]
+    FROM scratch
+    COPY +build/ /
+    ENTRYPOINT ["/bin/c2ws"]
     SAVE IMAGE wspace-corpus/ocaml/matsud224-c2ws

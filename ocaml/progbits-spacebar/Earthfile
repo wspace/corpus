@@ -1,15 +1,14 @@
 VERSION 0.8
 
 build:
-    FROM ocaml/opam:debian
+    FROM ocaml/opam:alpine
     USER root
-    RUN apt-get update && \
-        apt-get install -y --no-install-recommends bats && \
-        rm -rf /var/lib/apt/lists/*
+    RUN apk add --no-cache bats patch
     USER opam
     RUN opam install dune menhir ounit2
-    COPY --chown=opam spacebar /home/opam/spacebar
+    COPY --chown=opam spacebar static.patch /home/opam/spacebar
     WORKDIR /home/opam/spacebar
+    RUN patch -p1 -i static.patch
     RUN eval $(opam env) && \
         dune runtest && \
         dune build --profile release
@@ -20,8 +19,7 @@ build:
     SAVE ARTIFACT test/*.c /programs/
 
 docker:
-    FROM debian
-    WORKDIR /spacebar
-    COPY +build/ .
-    ENTRYPOINT ["bin/spacebar.exe"]
+    FROM scratch
+    COPY +build/ /
+    ENTRYPOINT ["/bin/spacebar.exe"]
     SAVE IMAGE wspace-corpus/ocaml/progbits-spacebar

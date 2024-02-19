@@ -1,0 +1,10 @@
+diff --git a/dune b/dune
+index f910e75..c914a7e 100644
+--- a/dune
++++ b/dune
+@@ -6,4 +6,5 @@
+ 
+ (executable
+  (name spacebar)
++ (flags (:standard -cclib -static))
+  (libraries lib))
