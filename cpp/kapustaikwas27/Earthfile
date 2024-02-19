@@ -7,6 +7,9 @@ build:
     COPY Whitespace-compiler .
     RUN g++ -O3 -static -o pre pre.cpp
     SAVE ARTIFACT pre /bin/
+    SAVE ARTIFACT wsc.sh /bin/
+    SAVE ARTIFACT a.txt /bin/
+    SAVE ARTIFACT c.txt /bin/
 
 docker:
     FROM scratch

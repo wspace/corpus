@@ -2,10 +2,11 @@ VERSION 0.8
 
 build:
     FROM alpine
-    RUN apk add --no-cache make g++
+    RUN apk add --no-cache g++
     WORKDIR /wspace
     COPY wspace .
-    RUN make
+    RUN g++ -O3 -static -o wspace wspace.cpp && \
+        g++ -O3 -static -o assembler assembler.cpp
     SAVE ARTIFACT wspace /bin/
     SAVE ARTIFACT assembler /bin/
 

@@ -2,11 +2,12 @@ VERSION 0.8
 
 build:
     FROM alpine
-    RUN apk add --no-cache bash g++
+    RUN apk add --no-cache g++
     WORKDIR /whitespace
     COPY whitespace .
-    RUN bash build.sh release wspace
+    RUN g++ -std=c++20 -O3 -static -fopenmp -foptimize-sibling-calls src/main.cpp -o wspace
     SAVE ARTIFACT wspace /bin/
+    SAVE ARTIFACT examples /programs
 
 docker:
     FROM scratch

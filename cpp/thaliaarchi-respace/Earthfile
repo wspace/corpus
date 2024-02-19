@@ -2,12 +2,14 @@ VERSION 0.8
 
 build:
     FROM alpine
-    RUN apk add --no-cache make g++
+    RUN apk add --no-cache g++
     WORKDIR /respace
     COPY respace .
-    RUN make test
-    RUN make LDFLAGS=-static
+    RUN g++ -std=c++11 -O3 -static -o respace src/main.cpp src/parser.cpp src/reader.cpp src/vm.cpp src/writer.cpp && \
+        g++ -std=c++11 -g -o run_tests test/test.cpp src/parser.cpp src/reader.cpp src/vm.cpp src/writer.cpp
+    RUN ./run_tests
     SAVE ARTIFACT respace /bin/
+    SAVE ARTIFACT programs /programs
 
 docker:
     FROM scratch

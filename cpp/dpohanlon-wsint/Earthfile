@@ -2,11 +2,12 @@ VERSION 0.8
 
 build:
     FROM alpine
-    RUN apk add --no-cache make clang g++
+    RUN apk add --no-cache g++
     WORKDIR /wsInt
     COPY wsInt .
-    RUN make CPPFLAGS='-O3 -static'
-    RUN clang++ -O3 -o bin/ParserTest tests/ParserTest.cpp src/parser/*.o
+    RUN mkdir bin && \
+        g++ -O3 -static -o bin/wsInt src/*.cpp src/parser/*.cpp src/vm/*.cpp && \
+        g++ -g -o bin/ParserTest tests/ParserTest.cpp src/parser/*.cpp
     RUN bin/ParserTest
     SAVE ARTIFACT bin/wsInt /bin/
 

@@ -6,7 +6,7 @@ build:
     WORKDIR /ws-interpreter
     COPY ws-interpreter .
     RUN mkdir bin
-    RUN make -C src TARGET=../bin/ws CXX='g++ -static'
+    RUN make -C src TARGET=../bin/ws CXX='g++ -O3 -static'
     SAVE ARTIFACT bin/ws /bin/
 
 docker:

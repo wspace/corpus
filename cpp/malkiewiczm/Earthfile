@@ -4,41 +4,31 @@ build:
     FROM ubuntu
     WORKDIR /whitespace_compiler
     COPY whitespace_compiler .
-    RUN set -e \
-        \
-        apt-get update \
-        apt-get install -y --no-install-recommends make g++ flex bison \
-        rm -rf /var/lib/apt/lists/* \
-        \
-        make \
-        \
-        ./compile examples/spoj.txt > examples/spoj.ws \
-        ./compile -a examples/spoj.txt > examples/spoj_a.ws \
-        ./compile -i examples/spoj.txt > examples/spoj_i.ws \
-        ./compile -a -i examples/spoj.txt > examples/spoj_ai.ws \
-        \
-        ./compile examples/spoj.txt > examples/spoj.ws \
-        ./compile -a examples/spoj.txt > examples/spoj_a.ws \
-        ./compile -i examples/spoj.txt > examples/spoj_i.ws \
-        ./compile -a -i examples/spoj.txt > examples/spoj_ai.ws \
-        \
-        ./compile examples/spoj2.txt > examples/spoj2.ws \
-        ./compile -a examples/spoj2.txt > examples/spoj2_a.ws \
-        ./compile -i examples/spoj2.txt > examples/spoj2_i.ws \
-        ./compile -a -i examples/spoj2.txt > examples/spoj2_ai.ws \
-        \
-        ./compile examples/test.txt > examples/test.ws \
-        ./compile -a examples/test.txt > examples/test_a.ws \
-        ./compile -i examples/test.txt > examples/test_i.ws \
-        ./compile -a -i examples/test.txt > examples/test_ai.ws
+    RUN apt-get update && \
+        apt-get install -y --no-install-recommends g++ flex bison && \
+        rm -rf /var/lib/apt/lists/*
+    # Compiling parser.tab.c with -O1, -O2, or -O3 or on alpine causes segfaults
+    # when running ./compile with some programs.
+    RUN flex lexer.l && \
+        bison -d parser.y && \
+        g++ -std=c++11 -c -o main.o main.cpp && \
+        g++ -std=gnu++11 -c -o lex.yy.o lex.yy.c && \
+        g++ -std=gnu++11 -c -o parser.tab.o parser.tab.c && \
+        g++ -static -o compile main.o lex.yy.o parser.tab.o
+    RUN set -e && \
+        mkdir compiled && \
+        for f in spoj spoj2 test; do \
+            ./compile examples/$f.txt > compiled/$f.ws && \
+            ./compile -a examples/$f.txt > compiled/${f}_a.ws && \
+            ./compile -i examples/$f.txt > compiled/${f}_i.ws && \
+            ./compile -a -i examples/$f.txt > compiled/${f}_ai.ws; \
+        done
     SAVE ARTIFACT compile /bin/
     SAVE ARTIFACT examples /programs
+    SAVE ARTIFACT compiled /programs/
 
 docker:
-    FROM ubuntu
-    RUN apt-get update && \
-        apt-get install -y --no-install-recommends flex bison && \
-        rm -rf /var/lib/apt/lists/*
+    FROM scratch
     COPY +build/ /
     ENTRYPOINT ["/bin/compile"]
     SAVE IMAGE wspace-corpus/cpp/malkiewiczm

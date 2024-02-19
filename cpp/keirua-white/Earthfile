@@ -7,6 +7,8 @@ build:
     COPY whitespace .
     RUN g++ -O3 -static -o white main.cpp
     SAVE ARTIFACT white /bin/
+    SAVE ARTIFACT examples /programs
+    SAVE ARTIFACT notworking /programs/
 
 docker:
     FROM scratch

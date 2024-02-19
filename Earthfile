@@ -3,6 +3,7 @@ VERSION 0.8
 IMPORT ./c
 IMPORT ./clojure
 IMPORT ./coq
+IMPORT ./cpp
 IMPORT ./crystal
 IMPORT ./csharp
 IMPORT ./erlang
@@ -17,6 +18,7 @@ build:
     BUILD c+build
     BUILD clojure+build
     BUILD coq+build
+    BUILD cpp+build
     BUILD crystal+build
     BUILD csharp+build
     BUILD erlang+build
@@ -29,6 +31,7 @@ build:
     COPY c+build/corpus/c c
     COPY clojure+build/corpus/clojure clojure
     COPY coq+build/corpus/coq coq
+    COPY cpp+build/corpus/cpp cpp
     COPY crystal+build/corpus/crystal crystal
     COPY csharp+build/corpus/csharp csharp
     COPY erlang+build/corpus/erlang erlang
@@ -50,6 +53,7 @@ docker-all:
     BUILD c+docker-all
     BUILD clojure+docker-all
     BUILD coq+docker-all
+    BUILD cpp+docker-all
     BUILD crystal+docker-all
     BUILD csharp+docker-all
     BUILD erlang+docker-all

@@ -1,0 +1,124 @@
+VERSION 0.8
+
+IMPORT ./abcsharp AS cpp-abcsharp
+IMPORT ./benajmin AS cpp-benajmin
+IMPORT ./burghard-wsintercpp AS cpp-burghard-wsintercpp
+IMPORT ./buyoh-nospace AS cpp-buyoh-nospace
+IMPORT ./codesiiita-spoj AS cpp-codesiiita-spoj
+IMPORT ./dpohanlon-wsint AS cpp-dpohanlon-wsint
+IMPORT ./drebelsky-jit AS cpp-drebelsky-jit
+IMPORT ./esco AS cpp-esco
+IMPORT ./frmsaul-cupertino AS cpp-frmsaul-cupertino
+IMPORT ./kapustaikwas27 AS cpp-kapustaikwas27
+IMPORT ./keirua-white AS cpp-keirua-white
+IMPORT ./knmorgan AS cpp-knmorgan
+IMPORT ./malkiewiczm AS cpp-malkiewiczm
+IMPORT ./marcellippmann-whitepp AS cpp-marcellippmann-whitepp
+IMPORT ./noia1 AS cpp-noia1
+IMPORT ./nullflagblues-whint AS cpp-nullflagblues-whint
+IMPORT ./pavel987 AS cpp-pavel987
+IMPORT ./peasley AS cpp-peasley
+IMPORT ./ricardoluis0 AS cpp-ricardoluis0
+IMPORT ./shadowmitia AS cpp-shadowmitia
+# IMPORT ./sonicyang-ws-frontend AS cpp-sonicyang-ws-frontend
+# IMPORT ./subv-whitespace-llvm AS cpp-subv-whitespace-llvm
+IMPORT ./sudheesh4 AS cpp-sudheesh4
+IMPORT ./thaliaarchi-respace AS cpp-thaliaarchi-respace
+IMPORT ./timvandermeij AS cpp-timvandermeij
+# IMPORT ./worktycho-whitespace-llvm AS cpp-worktycho-whitespace-llvm
+IMPORT ./yuukiaria AS cpp-yuukiaria
+
+build:
+    FROM scratch
+    BUILD cpp-abcsharp+build
+    BUILD cpp-benajmin+build
+    BUILD cpp-burghard-wsintercpp+build
+    BUILD cpp-buyoh-nospace+build
+    BUILD cpp-codesiiita-spoj+build
+    BUILD cpp-dpohanlon-wsint+build
+    BUILD cpp-drebelsky-jit+build
+    BUILD cpp-esco+build
+    BUILD cpp-frmsaul-cupertino+build
+    BUILD cpp-kapustaikwas27+build
+    BUILD cpp-keirua-white+build
+    BUILD cpp-knmorgan+build
+    BUILD cpp-malkiewiczm+build
+    BUILD cpp-marcellippmann-whitepp+build
+    BUILD cpp-noia1+build
+    BUILD cpp-nullflagblues-whint+build
+    BUILD cpp-pavel987+build
+    BUILD cpp-peasley+build
+    # BUILD cpp-ricardoluis0+build
+    BUILD cpp-shadowmitia+build
+    # BUILD cpp-sonicyang-ws-frontend+build
+    # BUILD cpp-subv-whitespace-llvm+build
+    BUILD cpp-sudheesh4+build
+    BUILD cpp-thaliaarchi-respace+build
+    BUILD cpp-timvandermeij+build
+    # BUILD cpp-worktycho-whitespace-llvm+build
+    BUILD cpp-yuukiaria+build
+    WORKDIR /corpus/cpp
+    COPY cpp-abcsharp+build/ abcsharp/
+    COPY cpp-benajmin+build/ benajmin/
+    COPY cpp-burghard-wsintercpp+build/ burghard-wsintercpp/
+    COPY cpp-buyoh-nospace+build/ buyoh-nospace/
+    COPY cpp-codesiiita-spoj+build/ codesiiita-spoj/
+    COPY cpp-dpohanlon-wsint+build/ dpohanlon-wsint/
+    COPY cpp-drebelsky-jit+build/ drebelsky-jit/
+    COPY cpp-esco+build/ esco/
+    COPY cpp-frmsaul-cupertino+build/ frmsaul-cupertino/
+    COPY cpp-kapustaikwas27+build/ kapustaikwas27/
+    COPY cpp-keirua-white+build/ keirua-white/
+    COPY cpp-knmorgan+build/ knmorgan/
+    COPY cpp-malkiewiczm+build/ malkiewiczm/
+    COPY cpp-marcellippmann-whitepp+build/ marcellippmann-whitepp/
+    COPY cpp-noia1+build/ noia1/
+    COPY cpp-nullflagblues-whint+build/ nullflagblues-whint/
+    COPY cpp-pavel987+build/ pavel987/
+    COPY cpp-peasley+build/ peasley/
+    # # COPY cpp-ricardoluis0+build/ ricardoluis0/
+    COPY cpp-shadowmitia+build/ shadowmitia/
+    # # COPY cpp-sonicyang-ws-frontend+build/ sonicyang-ws-frontend/
+    # # COPY cpp-subv-whitespace-llvm+build/ subv-whitespace-llvm/
+    COPY cpp-sudheesh4+build/ sudheesh4/
+    COPY cpp-thaliaarchi-respace+build/ thaliaarchi-respace/
+    COPY cpp-timvandermeij+build/ timvandermeij/
+    # # COPY cpp-worktycho-whitespace-llvm+build/ worktycho-whitespace-llvm/
+    COPY cpp-yuukiaria+build/ yuukiaria/
+    SAVE ARTIFACT /corpus /corpus
+
+docker:
+    FROM alpine
+    WORKDIR /corpus/cpp
+    COPY +build/ /
+    SAVE IMAGE wspace-corpus/cpp
+
+docker-all:
+    BUILD +docker
+    BUILD cpp-abcsharp+docker
+    BUILD cpp-benajmin+docker
+    BUILD cpp-burghard-wsintercpp+docker
+    BUILD cpp-buyoh-nospace+docker
+    BUILD cpp-codesiiita-spoj+docker
+    BUILD cpp-dpohanlon-wsint+docker
+    BUILD cpp-drebelsky-jit+docker
+    BUILD cpp-esco+docker
+    BUILD cpp-frmsaul-cupertino+docker
+    BUILD cpp-kapustaikwas27+docker
+    BUILD cpp-keirua-white+docker
+    BUILD cpp-knmorgan+docker
+    BUILD cpp-malkiewiczm+docker
+    BUILD cpp-marcellippmann-whitepp+docker
+    BUILD cpp-noia1+docker
+    BUILD cpp-nullflagblues-whint+docker
+    BUILD cpp-pavel987+docker
+    BUILD cpp-peasley+docker
+    # BUILD cpp-ricardoluis0+docker
+    BUILD cpp-shadowmitia+docker
+    # BUILD cpp-sonicyang-ws-frontend+docker
+    # BUILD cpp-subv-whitespace-llvm+docker
+    BUILD cpp-sudheesh4+docker
+    BUILD cpp-thaliaarchi-respace+docker
+    BUILD cpp-timvandermeij+docker
+    # BUILD cpp-worktycho-whitespace-llvm+docker
+    BUILD cpp-yuukiaria+docker

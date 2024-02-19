@@ -2,11 +2,12 @@ VERSION 0.8
 
 build:
     FROM alpine
-    RUN apk add --no-cache make g++
+    RUN apk add --no-cache g++
     WORKDIR /whitespace-jit
     COPY whitespace-jit .
-    RUN make CXXFLAGS='-O3 -static'
+    RUN g++ -std=c++17 -O3 -static -o compile *.cc
     SAVE ARTIFACT compile /bin/
+    SAVE ARTIFACT programs /programs
 
 docker:
     FROM scratch

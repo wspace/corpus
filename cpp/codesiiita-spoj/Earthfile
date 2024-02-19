@@ -7,7 +7,7 @@ build:
     COPY SPOJ .
     RUN g++ -O3 -static -o wstp wstp.cpp
     SAVE ARTIFACT wstp /bin/
-    SAVE ARTIFACT sbstr1 /bin/
+    SAVE ARTIFACT sbstr1 /programs/
     SAVE ARTIFACT sbstr1.ws /programs/
 
 docker:

@@ -5,8 +5,11 @@ build:
     RUN apk add --no-cache make g++ gmp-dev
     WORKDIR /esco
     COPY esco .
-    RUN ./configure && make
+    # TODO: Not statically linked
+    RUN ./configure && \
+        make
     SAVE ARTIFACT src/esco /bin/
+    SAVE ARTIFACT scripts/ws /programs
 
 docker:
     FROM scratch

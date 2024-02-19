@@ -7,6 +7,7 @@ build:
     COPY Cupertino-WhiteSpace-Interperter .
     RUN g++ -O3 -static -o whitespace src/*.cpp
     SAVE ARTIFACT whitespace /bin/
+    SAVE ARTIFACT whitespace_code /programs
 
 docker:
     FROM scratch

@@ -2,11 +2,13 @@ VERSION 0.8
 
 build:
     FROM alpine
-    RUN apk add --no-cache make g++ gmp-dev
+    RUN apk add --no-cache g++ gmp-dev
     WORKDIR /ws
     COPY ws .
-    RUN make CC='g++ -static'
+    RUN mkdir obj
+    RUN g++ -O3 -static -o ws src/*.cc -lgmpxx -lgmp
     SAVE ARTIFACT ws /bin/
+    SAVE ARTIFACT examples /programs
 
 docker:
     FROM scratch

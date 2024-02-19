@@ -2,11 +2,13 @@ VERSION 0.8
 
 build:
     FROM alpine
-    RUN apk add --no-cache make g++
+    RUN apk add --no-cache g++
     WORKDIR /whitespace-interpreter
     COPY whitespace-interpreter .
-    RUN make
+    RUN g++ -std=c++11 -O3 -static -o whitespace *.cpp
     SAVE ARTIFACT whitespace /bin/
+    SAVE ARTIFACT *.ws /programs/
+    SAVE ARTIFACT *.txt /programs/
 
 docker:
     FROM scratch

@@ -2,10 +2,11 @@ VERSION 0.8
 
 build:
     FROM alpine
-    RUN apk add --no-cache make g++
+    RUN apk add --no-cache g++
     WORKDIR /Whitepp
     COPY Whitepp .
-    RUN make
+    RUN mkdir bin && \
+        g++ -std=gnu++14 -O3 -static -I include -o bin/White++ src/*.cpp
     SAVE ARTIFACT bin/White++ /bin/
 
 docker:

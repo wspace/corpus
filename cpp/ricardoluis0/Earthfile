@@ -5,7 +5,8 @@ build:
     RUN apk add --no-cache g++
     WORKDIR /whitespace
     COPY whitespace .
-    RUN g++ -O3 -std=c++11 -static -o whitespace whitespace.cpp
+    # TODO: Build fails
+    RUN g++ -std=c++11 -O3 -static -o whitespace whitespace.cpp
     SAVE ARTIFACT whitespace /bin/
 
 docker:

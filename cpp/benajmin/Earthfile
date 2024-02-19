@@ -7,6 +7,7 @@ build:
     COPY whitespace-interpreter .
     RUN g++ -O3 -static -o WhitespaceInterpreter.out *.cpp
     SAVE ARTIFACT WhitespaceInterpreter.out /bin/
+    SAVE ARTIFACT SamplePrograms /programs
 
 docker:
     FROM scratch
