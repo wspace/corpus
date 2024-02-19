@@ -34,7 +34,7 @@ if (( "$#" != 1 )); then echo "Usage: dockerfile_to_earthfile.jq [Dockerfile]" >
   # Group lines into FROM stages
   range(0; $lines | length) as $i |
   if $lines[$i] | test("^FROM ") then
-    $i | if $lines[.-1] | test("^\\s*#") then .-1 end
+    $i | if $i > 0 and ($lines[.-1] | test("^\\s*#")) then .-1 end
   else empty end
 ] as $ranges |
 $ranges |
@@ -68,10 +68,25 @@ if .[-2].stage? == "build" and .[-1].stage? == "docker" then
   .[-2].commands += [
     .[-1].commands[] |
     select(test("^COPY ")) |
-    sub("^COPY --from=builder /[^ /]+/"; "SAVE ARTIFACT ") |
-    sub("^COPY [^ /]+/"; "SAVE ARTIFACT ") |
-    sub("^(?<command>SAVE ARTIFACT .+) \\.$"; "\(.command) /") |
-    sub("^COPY "; "## COPY ")
+    gsub("\\s*\\\\\n\\s*"; " ") |
+    sub("^COPY(?: --from=(?<from>builder))? (?<paths>\\[.+\\])$";
+      . as {$from, $paths} | ($paths | fromjson) as $paths |
+      ($paths[-1] | if . == "." then "/" end) as $dest |
+      $paths[:-1][] |
+      sub(if $from == "builder" then "^/[^/]+/" else "^[^/]+/" end; "") |
+      if (. | contains(" ")) or ($dest | contains(" ")) then
+        "SAVE ARTIFACT [\(tojson), \($dest | tojson)]"
+      else
+        "SAVE ARTIFACT \(.) \($dest)"
+      end
+    ) |
+    sub("^COPY(?: --from=(?<from>builder))? (?<src>[^ ]+(?: [^ ]+)*) (?<dest>[^ ]+)$";
+      . as {$from, $src, $dest} |
+      ($dest | if . == "." then "/" end) as $dest |
+      $src | split(" ")[] |
+      sub(if $from == "builder" then "^/[^/]+/" else "^[^/]+/" end; "") |
+      "SAVE ARTIFACT \(.) \($dest)"
+    )
   ] |
   (if isempty(.[-1].commands[] | select(test("^WORKDIR ")))
     then "/" else "." end) as $dest |
