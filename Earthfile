@@ -15,6 +15,7 @@ IMPORT ./javascript
 IMPORT ./jq
 IMPORT ./kotlin
 IMPORT ./lolcode
+IMPORT ./lua
 
 build:
     FROM scratch
@@ -33,6 +34,7 @@ build:
     BUILD jq+build
     BUILD kotlin+build
     BUILD lolcode+build
+    BUILD lua+build
     WORKDIR /corpus
     COPY c+build/corpus/c c
     COPY clojure+build/corpus/clojure clojure
@@ -49,6 +51,7 @@ build:
     COPY jq+build/corpus/jq jq
     COPY kotlin+build/corpus/kotlin kotlin
     COPY lolcode+build/corpus/lolcode lolcode
+    COPY lua+build/corpus/lua lua
     SAVE ARTIFACT /corpus /corpus
 
 docker:
@@ -74,3 +77,4 @@ docker-all:
     BUILD jq+docker-all
     BUILD kotlin+docker-all
     BUILD lolcode+docker-all
+    BUILD lua+docker-all

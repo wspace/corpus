@@ -1,0 +1,25 @@
+VERSION 0.8
+
+IMPORT ./cj5518 AS lua-cj5518
+IMPORT ./vyo-callisto AS lua-vyo-callisto
+
+build:
+    FROM scratch
+    BUILD lua-cj5518+build
+    # BUILD lua-vyo-callisto+build
+    WORKDIR /corpus/lua
+    COPY lua-cj5518+build/ cj5518/
+    # COPY lua-vyo-callisto+build/ vyo-callisto/
+    SAVE ARTIFACT /corpus /corpus
+
+docker:
+    FROM alpine
+    RUN apk add --no-cache lua5.4
+    WORKDIR /corpus/lua
+    COPY +build/ /
+    SAVE IMAGE wspace-corpus/lua
+
+docker-all:
+    BUILD +docker
+    BUILD lua-cj5518+docker
+    BUILD lua-vyo-callisto+docker

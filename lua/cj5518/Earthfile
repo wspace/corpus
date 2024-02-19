@@ -1,9 +1,20 @@
 VERSION 0.8
 
+build:
+    FROM alpine
+    WORKDIR /WhitespaceInterpreter
+    COPY WhitespaceInterpreter .
+    # Fix the hardcoded input path
+    RUN sed -i 's/"test.ws"/arg[1]/' main.lua
+    SAVE ARTIFACT *.lua /bin/
+    SAVE ARTIFACT *.ws /programs/
+
 docker:
     FROM alpine
     RUN apk add --no-cache lua5.4
     WORKDIR /WhitespaceInterpreter
-    COPY WhitespaceInterpreter .
+    COPY +build/ .
+    # Must be relative to its local imports
+    WORKDIR /WhitespaceInterpreter/bin
     ENTRYPOINT ["lua5.4", "main.lua"]
     SAVE IMAGE wspace-corpus/lua/cj5518
