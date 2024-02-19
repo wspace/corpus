@@ -10,6 +10,7 @@ IMPORT ./go
 IMPORT ./haskell
 IMPORT ./idris
 IMPORT ./java
+IMPORT ./javascript
 
 build:
     FROM scratch
@@ -23,6 +24,7 @@ build:
     BUILD haskell+build
     BUILD idris+build
     BUILD java+build
+    BUILD javascript+build
     WORKDIR /corpus
     COPY c+build/corpus/c c
     COPY clojure+build/corpus/clojure clojure
@@ -34,6 +36,7 @@ build:
     COPY haskell+build/corpus/haskell haskell
     COPY idris+build/corpus/idris idris
     COPY java+build/corpus/java java
+    COPY javascript+build/corpus/javascript javascript
     SAVE ARTIFACT /corpus /corpus
 
 docker:
@@ -54,3 +57,4 @@ docker-all:
     BUILD haskell+docker-all
     BUILD idris+docker-all
     BUILD java+docker-all
+    BUILD javascript+docker-all

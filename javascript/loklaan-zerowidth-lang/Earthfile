@@ -1,9 +1,19 @@
 VERSION 0.8
 
-docker:
+build:
     FROM node:alpine
     WORKDIR /zerowidth-lang
     COPY zerowidth-lang .
     RUN npm install
-    ENTRYPOINT ["node", "index.js"]
+    SAVE ARTIFACT index.js /bin/
+    SAVE ARTIFACT lib /bin/
+    SAVE ARTIFACT node_modules /bin/
+    SAVE ARTIFACT package.json /bin/
+    SAVE ARTIFACT tests.zw /programs/
+
+docker:
+    FROM node:alpine
+    WORKDIR /zerowidth-lang
+    COPY +build/ .
+    ENTRYPOINT ["node", "bin/index.js"]
     SAVE IMAGE wspace-corpus/javascript/loklaan-zerowidth-lang

@@ -1,10 +1,21 @@
 VERSION 0.8
 
-docker:
+build:
     FROM node:alpine
     WORKDIR /Whitespace-JS
     COPY Whitespace-JS .
     RUN npm install
+    # Move bin/ to the root and omit the unused index.js library entrypoint.
+    RUN sed -Ei 's,require\("\.\./,require("./,' bin/*
+    SAVE ARTIFACT bin /bin
+    SAVE ARTIFACT lib /bin/
+    SAVE ARTIFACT node_modules /bin/
+    SAVE ARTIFACT package.json /bin/
+
+docker:
+    FROM node:alpine
+    WORKDIR /Whitespace-JS
+    COPY +build/ .
     ENTRYPOINT ["node", "bin/wspace"]
     # ENTRYPOINT ["node", "bin/unws2ws"]
     # ENTRYPOINT ["node", "bin/ws2unws"]

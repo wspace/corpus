@@ -39,6 +39,7 @@
     },
     "usage": ["disassembler"]
   },
+  "mappings": [{ "space": "[Space]", "tab": "[Tab]", "lf": "[LF]", "notes": "conv.js" }],
   "programs": [{ "path": "spec/support/hello.ws" }],
   "commands": [
     {

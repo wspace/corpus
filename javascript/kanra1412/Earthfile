@@ -1,8 +1,14 @@
 VERSION 0.8
 
+build:
+    FROM scratch
+    COPY whitespace-interpreter .
+    SAVE ARTIFACT whitespace.js /bin/
+    SAVE ARTIFACT test /programs
+
 docker:
     FROM node:alpine
     WORKDIR /whitespace-interpreter
-    COPY whitespace-interpreter .
-    ENTRYPOINT ["node", "whitespace.js"]
+    COPY +build/ .
+    ENTRYPOINT ["node", "bin/whitespace.js"]
     SAVE IMAGE wspace-corpus/javascript/kanra1412

@@ -1,8 +1,15 @@
 VERSION 0.8
 
+build:
+    FROM scratch
+    COPY whitespace .
+    SAVE ARTIFACT index.js /bin/
+    SAVE ARTIFACT lib /bin/
+    SAVE ARTIFACT ws /programs
+
 docker:
     FROM node:alpine
     WORKDIR /whitespace
-    COPY whitespace .
-    ENTRYPOINT ["node", "index.js"]
+    COPY +build/ .
+    ENTRYPOINT ["node", "bin/index.js"]
     SAVE IMAGE wspace-corpus/javascript/rumpl

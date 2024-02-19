@@ -1,8 +1,20 @@
 VERSION 0.8
 
+build:
+    FROM node:alpine
+    COPY whitespace-lang-compiler .
+    RUN npm install && \
+        npm test
+    RUN sed -i "s,'\./spec/support/hello.ws',process.argv[2]," conv.js
+    SAVE ARTIFACT whitespacec /bin/
+    SAVE ARTIFACT src /bin/
+    SAVE ARTIFACT conv.js /bin/
+    SAVE ARTIFACT spec/support/*.ws /programs/
+
 docker:
     FROM node:alpine
     WORKDIR /whitespace-lang-compiler
-    COPY whitespace-lang-compiler .
-    ENTRYPOINT ["node", "whitespacec"]
+    COPY +build/ .
+    ENTRYPOINT ["node", "bin/whitespacec"]
+    # ENTRYPOINT ["node", "bin/conv.js"]
     SAVE IMAGE wspace-corpus/javascript/wdalmut

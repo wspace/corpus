@@ -1,9 +1,14 @@
 VERSION 0.8
 
+build:
+    FROM alpine
+    COPY GrassMudMonkey cli.js ./
+    RUN cat cli.js >> grassmudmonkey.js
+    SAVE ARTIFACT grassmudmonkey.js /bin/
+
 docker:
     FROM node:alpine
     WORKDIR /GrassMudMonkey
-    COPY GrassMudMonkey cli.js ./
-    RUN cat cli.js >> grassmudmonkey.js
-    ENTRYPOINT ["node", "grassmudmonkey"]
+    COPY +build/ .
+    ENTRYPOINT ["node", "bin/grassmudmonkey.js"]
     SAVE IMAGE wspace-corpus/javascript/dexteryy-grassmudmonkey

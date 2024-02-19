@@ -1,0 +1,108 @@
+VERSION 0.8
+
+# IMPORT ./ad9000-evanescojs AS javascript-ad9000-evanescojs
+# IMPORT ./arnauld AS javascript-arnauld
+IMPORT ./dexteryy-grassmudmonkey AS javascript-dexteryy-grassmudmonkey
+# IMPORT ./ignovak AS javascript-ignovak
+IMPORT ./kanra1412 AS javascript-kanra1412
+# IMPORT ./kmyk-translater AS javascript-kmyk-translater
+# IMPORT ./kosei28 AS javascript-kosei28
+IMPORT ./loklaan-whitespace-lang AS javascript-loklaan-whitespace-lang
+IMPORT ./loklaan-zerowidth-lang AS javascript-loklaan-zerowidth-lang
+# IMPORT ./luilak-ws2js AS javascript-luilak-ws2js
+# IMPORT ./macocha-whitespacer AS javascript-macocha-whitespacer
+# IMPORT ./msucorey-codewars AS javascript-msucorey-codewars
+# IMPORT ./naokikp-wsi AS javascript-naokikp-wsi
+# IMPORT ./nutcrack-whiteplanes AS javascript-nutcrack-whiteplanes
+# IMPORT ./pvdz-significant-whitespace AS javascript-pvdz-significant-whitespace
+IMPORT ./rumpl AS javascript-rumpl
+IMPORT ./susisu AS javascript-susisu
+# IMPORT ./syntaqx-puzzles AS javascript-syntaqx-puzzles
+# IMPORT ./therebelrobot AS javascript-therebelrobot
+# IMPORT ./tranbrian10-generator AS javascript-tranbrian10-generator
+# IMPORT ./uraza AS javascript-uraza
+IMPORT ./vii5ard-whitelips AS javascript-vii5ard-whitelips
+IMPORT ./wdalmut AS javascript-wdalmut
+
+build:
+    FROM scratch
+    # BUILD javascript-ad9000-evanescojs+build
+    # BUILD javascript-arnauld+build
+    BUILD javascript-dexteryy-grassmudmonkey+build
+    # BUILD javascript-ignovak+build
+    BUILD javascript-kanra1412+build
+    # BUILD javascript-kmyk-translater+build
+    # BUILD javascript-kosei28+build
+    BUILD javascript-loklaan-whitespace-lang+build
+    BUILD javascript-loklaan-zerowidth-lang+build
+    # BUILD javascript-luilak-ws2js+build
+    # BUILD javascript-macocha-whitespacer+build
+    # BUILD javascript-msucorey-codewars+build
+    # BUILD javascript-naokikp-wsi+build
+    # BUILD javascript-nutcrack-whiteplanes+build
+    # BUILD javascript-pvdz-significant-whitespace+build
+    BUILD javascript-rumpl+build
+    BUILD javascript-susisu+build
+    # BUILD javascript-syntaqx-puzzles+build
+    # BUILD javascript-therebelrobot+build
+    # BUILD javascript-tranbrian10-generator+build
+    # BUILD javascript-uraza+build
+    BUILD javascript-vii5ard-whitelips+build
+    BUILD javascript-wdalmut+build
+    WORKDIR /corpus/javascript
+    # COPY javascript-ad9000-evanescojs+build/ ad9000-evanescojs/
+    # COPY javascript-arnauld+build/ arnauld/
+    COPY javascript-dexteryy-grassmudmonkey+build/ dexteryy-grassmudmonkey/
+    # COPY javascript-ignovak+build/ ignovak/
+    COPY javascript-kanra1412+build/ kanra1412/
+    # COPY javascript-kmyk-translater+build/ kmyk-translater/
+    # COPY javascript-kosei28+build/ kosei28/
+    COPY javascript-loklaan-whitespace-lang+build/ loklaan-whitespace-lang/
+    COPY javascript-loklaan-zerowidth-lang+build/ loklaan-zerowidth-lang/
+    # COPY javascript-luilak-ws2js+build/ luilak-ws2js/
+    # COPY javascript-macocha-whitespacer+build/ macocha-whitespacer/
+    # COPY javascript-msucorey-codewars+build/ msucorey-codewars/
+    # COPY javascript-naokikp-wsi+build/ naokikp-wsi/
+    # COPY javascript-nutcrack-whiteplanes+build/ nutcrack-whiteplanes/
+    # COPY javascript-pvdz-significant-whitespace+build/ pvdz-significant-whitespace/
+    COPY javascript-rumpl+build/ rumpl/
+    COPY javascript-susisu+build/ susisu/
+    # # COPY javascript-syntaqx-puzzles+build/ syntaqx-puzzles/
+    # # COPY javascript-therebelrobot+build/ therebelrobot/
+    # # COPY javascript-tranbrian10-generator+build/ tranbrian10-generator/
+    # # COPY javascript-uraza+build/ uraza/
+    COPY javascript-vii5ard-whitelips+build/ vii5ard-whitelips/
+    COPY javascript-wdalmut+build/ wdalmut/
+    SAVE ARTIFACT /corpus /corpus
+
+docker:
+    FROM node:alpine
+    WORKDIR /corpus/javascript
+    COPY +build/ /
+    SAVE IMAGE wspace-corpus/javascript
+
+docker-all:
+    BUILD +docker
+    # BUILD javascript-ad9000-evanescojs+docker
+    # BUILD javascript-arnauld+docker
+    BUILD javascript-dexteryy-grassmudmonkey+docker
+    # BUILD javascript-ignovak+docker
+    BUILD javascript-kanra1412+docker
+    # BUILD javascript-kmyk-translater+docker
+    # BUILD javascript-kosei28+docker
+    BUILD javascript-loklaan-whitespace-lang+docker
+    BUILD javascript-loklaan-zerowidth-lang+docker
+    # BUILD javascript-luilak-ws2js+docker
+    # BUILD javascript-macocha-whitespacer+docker
+    # BUILD javascript-msucorey-codewars+docker
+    # BUILD javascript-naokikp-wsi+docker
+    # BUILD javascript-nutcrack-whiteplanes+docker
+    # BUILD javascript-pvdz-significant-whitespace+docker
+    BUILD javascript-rumpl+docker
+    BUILD javascript-susisu+docker
+    # BUILD javascript-syntaqx-puzzles+docker
+    # BUILD javascript-therebelrobot+docker
+    # BUILD javascript-tranbrian10-generator+docker
+    # BUILD javascript-uraza+docker
+    BUILD javascript-vii5ard-whitelips+docker
+    BUILD javascript-wdalmut+docker

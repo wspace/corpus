@@ -1,8 +1,21 @@
 VERSION 0.8
 
+build:
+    FROM scratch
+    WORKDIR /whitespace
+    COPY whitespace .
+    # Only include scripts needed for the CLI, not the IDE.
+    # TODO: Serve the IDE from the container.
+    SAVE ARTIFACT ws_cli.js /bin/
+    SAVE ARTIFACT ws_asm.js /bin/
+    SAVE ARTIFACT ws_core.js /bin/
+    SAVE ARTIFACT ws_opt.js /bin/
+    SAVE ARTIFACT ws_util.js /bin/
+    SAVE ARTIFACT example /programs
+
 docker:
     FROM node:alpine
     WORKDIR /whitespace
-    COPY whitespace .
-    ENTRYPOINT ["node", "ws_cli.js"]
+    COPY +build/ .
+    ENTRYPOINT ["node", "bin/ws_cli.js"]
     SAVE IMAGE wspace-corpus/javascript/vii5ard-whitelips
