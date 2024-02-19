@@ -6,10 +6,10 @@ build:
     COPY --chown=opam Whitespace /home/opam/Whitespace
     WORKDIR /home/opam/Whitespace
     RUN eval $(opam env) && \
-    	  ocamllex -q lexer.mll && \
-    	  ocamlyacc parser.mly && \
+        ocamllex -q lexer.mll && \
+        ocamlyacc parser.mly && \
         ocamlopt -O3 -o whitespace $(ocamldep -native -sort *.ml *.mli)
-    SAVE ARTIFACT opam/Whitespace/whitespace /bin/
+    SAVE ARTIFACT whitespace /bin/
     SAVE ARTIFACT programs /programs
 
 docker:

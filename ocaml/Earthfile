@@ -1,0 +1,40 @@
+VERSION 0.8
+
+IMPORT ./jgkaplan-wsc AS ocaml-jgkaplan-wsc
+# IMPORT ./lifthrasiir-esotope AS ocaml-lifthrasiir-esotope
+IMPORT ./matsud224-c2ws AS ocaml-matsud224-c2ws
+IMPORT ./progbits-blank AS ocaml-progbits-blank
+IMPORT ./progbits-spacebar AS ocaml-progbits-spacebar
+IMPORT ./steiner26 AS ocaml-steiner26
+
+build:
+    FROM scratch
+    # BUILD ocaml-jgkaplan-wsc+build
+    # BUILD ocaml-lifthrasiir-esotope+build
+    BUILD ocaml-matsud224-c2ws+build
+    # BUILD ocaml-progbits-blank+build
+    BUILD ocaml-progbits-spacebar+build
+    BUILD ocaml-steiner26+build
+    WORKDIR /corpus/ocaml
+    # # COPY ocaml-jgkaplan-wsc+build/ jgkaplan-wsc/
+    # # COPY ocaml-lifthrasiir-esotope+build/ lifthrasiir-esotope/
+    COPY ocaml-matsud224-c2ws+build/ matsud224-c2ws/
+    # # COPY ocaml-progbits-blank+build/ progbits-blank/
+    COPY ocaml-progbits-spacebar+build/ progbits-spacebar/
+    COPY ocaml-steiner26+build/ steiner26/
+    SAVE ARTIFACT /corpus /corpus
+
+docker:
+    FROM alpine
+    WORKDIR /corpus/ocaml
+    COPY +build/ /
+    SAVE IMAGE wspace-corpus/ocaml
+
+docker-all:
+    BUILD +docker
+    # BUILD ocaml-jgkaplan-wsc+docker
+    # BUILD ocaml-lifthrasiir-esotope+docker
+    BUILD ocaml-matsud224-c2ws+docker
+    # BUILD ocaml-progbits-blank+docker
+    BUILD ocaml-progbits-spacebar+docker
+    BUILD ocaml-steiner26+docker

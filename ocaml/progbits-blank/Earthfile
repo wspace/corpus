@@ -6,10 +6,12 @@ build:
     RUN opam install dune core ounit2
     COPY --chown=opam blank /home/opam/blank
     WORKDIR /home/opam/blank
+    # Build fails with "Unbound module Stream". Module Stdlib.Stream is
+    # deprecated and the camlp-streams library should be used instead.
     RUN eval $(opam env) && \
         dune runtest && \
         dune build --profile release
-    SAVE ARTIFACT opam/blank/_build/default/blank.exe /bin/
+    SAVE ARTIFACT _build/default/blank.exe /bin/
     SAVE ARTIFACT examples /programs
 
 docker:

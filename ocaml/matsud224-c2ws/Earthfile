@@ -9,7 +9,7 @@ build:
         ocamllex -q mylexer.mll && \
         ocamlyacc myparser.mly && \
         ocamlopt -O3 -o c2ws $(ocamldep -native -sort *.ml *.mli)
-    SAVE ARTIFACT opam/c2ws/c2ws /bin/
+    SAVE ARTIFACT c2ws /bin/
 
 docker:
     FROM debian

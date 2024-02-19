@@ -6,11 +6,12 @@ build:
     RUN opam install ocamlbuild ocamlfind menhir
     COPY --chown=opam whitespaceTranspiler /home/opam/whitespaceTranspiler
     WORKDIR /home/opam/whitespaceTranspiler
+    # Build fails with "Unbound module Pervasives".
     RUN eval $(opam env) && \
         ocamlbuild -use-ocamlfind -use-menhir -I src main.native
-    SAVE ARTIFACT opam/whitespaceTranspiler/_build/src/main.native /
-    SAVE ARTIFACT lib lib
-    SAVE ARTIFACT test test
+    SAVE ARTIFACT opam/whitespaceTranspiler/_build/src/main.native /bin/
+    SAVE ARTIFACT lib programs/
+    SAVE ARTIFACT test programs/
 
 docker:
     FROM debian

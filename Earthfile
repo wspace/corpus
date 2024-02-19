@@ -16,6 +16,7 @@ IMPORT ./jq
 IMPORT ./kotlin
 IMPORT ./lolcode
 IMPORT ./lua
+IMPORT ./ocaml
 
 build:
     FROM scratch
@@ -35,6 +36,7 @@ build:
     BUILD kotlin+build
     BUILD lolcode+build
     BUILD lua+build
+    BUILD ocaml+build
     WORKDIR /corpus
     COPY c+build/corpus/c c
     COPY clojure+build/corpus/clojure clojure
@@ -52,6 +54,7 @@ build:
     COPY kotlin+build/corpus/kotlin kotlin
     COPY lolcode+build/corpus/lolcode lolcode
     COPY lua+build/corpus/lua lua
+    COPY ocaml+build/corpus/ocaml ocaml
     SAVE ARTIFACT /corpus /corpus
 
 docker:
@@ -78,3 +81,4 @@ docker-all:
     BUILD kotlin+docker-all
     BUILD lolcode+docker-all
     BUILD lua+docker-all
+    BUILD ocaml+docker-all
