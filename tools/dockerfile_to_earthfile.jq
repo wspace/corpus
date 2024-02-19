@@ -69,30 +69,61 @@ if .[-2].stage? == "build" and .[-1].stage? == "docker" then
     .[-1].commands[] |
     select(test("^COPY ")) |
     gsub("\\s*\\\\\n\\s*"; " ") |
-    sub("^COPY(?: --from=(?<from>builder))? (?<paths>\\[.+\\])$";
-      . as {$from, $paths} | ($paths | fromjson) as $paths |
-      ($paths[-1] | if . == "." then "/" end) as $dest |
-      $paths[:-1][] |
-      sub(if $from == "builder" then "^/[^/]+/" else "^[^/]+/" end; "") |
-      if (. | contains(" ")) or ($dest | contains(" ")) then
-        "SAVE ARTIFACT [\(tojson), \($dest | tojson)]"
-      else
-        "SAVE ARTIFACT \(.) \($dest)"
-      end
+    first(
+      (capture("^COPY(?: --from=(?<from>builder))? (?<paths>\\[.+\\])$") |
+        .paths | fromjson | {src: .[:-1], dest: .[-1]}),
+      (capture("^COPY(?: --from=(?<from>builder))? (?<src>[^ ]+(?: [^ ]+)*) (?<dest>[^ ]+)$") |
+        {src: .src | split(" "), dest}),
+      ("Error: \($filename): Unrecognized COPY: \(.)\n" | halt_error(1))
     ) |
-    sub("^COPY(?: --from=(?<from>builder))? (?<src>[^ ]+(?: [^ ]+)*) (?<dest>[^ ]+)$";
-      . as {$from, $src, $dest} |
-      ($dest | if . == "." then "/" end) as $dest |
-      $src | split(" ")[] |
-      sub(if $from == "builder" then "^/[^/]+/" else "^[^/]+/" end; "") |
-      "SAVE ARTIFACT \(.) \($dest)"
-    )
+    .src = (.src[] | sub("^/?[^/]+/"; "")) |
+    .dest |= if . == "." or . == "./" then "/" end |
+    # Classify some files
+    if .dest == "/" then
+      .dest =
+        if .src | test("(?:^|/)(?:programs|samples|examples|tests?|resources)$") then "/programs"
+        elif .src | test("\\.(?:ws|wsa|txt|asm|wsp|whitespace)$") then "/programs/"
+        elif .src | test("(?:^|/)(bin|target|out)$") then "/bin"
+        elif .src | test("\\.(?:out|sh|bash|jar|exe|dll)$|(?:/|^)[^.*]+$") then "/bin/"
+        else .dest end
+    elif (.dest | test("^/[^/]+$")) and (.dest == .src or .dest == "/\(.src)") then
+      .dest =
+        if .src | test("(?:^|/)(?:programs|samples|examples|tests?|resources)$") then "/programs"
+        else .dest end
+    end |
+    if (.src | contains(" ")) or (.dest | contains(" ")) then
+      "SAVE ARTIFACT [\(.src | tojson), \(.dest | tojson)]"
+    else
+      "SAVE ARTIFACT \(.src) \(.dest)"
+    end
   ] |
   (if isempty(.[-1].commands[] | select(test("^WORKDIR ")))
     then "/" else "." end) as $dest |
   .[-1].commands |= (
     first(first(.[] | select(test("^COPY "))) = "COPY +build/ \($dest)", .) |
-    map(select(test("^COPY [^+]") | not))
+    map(select(test("^COPY [^+]") | not)) |
+    # Move entrypoint into bin/
+    map(
+      . as $line |
+      sub("^ENTRYPOINT (?<args>\\[.+\\])$";
+        .args | fromjson | . as $args |
+        (if .[0] | contains("/") then 0
+          else
+            first(
+              (range(1; length) | select($args[.] | test("^-") | not)),
+              ("Error: \($filename): Unable to identify entrypoint: \($line)\n" | halt_error(1))
+            )
+          end) as $bin_i |
+        .[$bin_i] |=
+          if test("^\\.?/") then
+            sub("^(?<dot>\\.?)(?<root>(?:/[^/]+)?)/";
+              if .dot == "." and .root == "" then "bin/"
+              else "\(.dot)\(.root)/bin/" end
+            )
+          else "bin/" + . end |
+        "ENTRYPOINT [\(map(tojson) | join(", "))]"
+      )
+    )
   )
 end |
 if length == 1 and .[0].stage == "build" then
