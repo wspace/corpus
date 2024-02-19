@@ -6,7 +6,9 @@ build:
     WORKDIR /kairos
     COPY kairos .
     RUN ./gradlew shadowJar
-    SAVE ARTIFACT build/libs/kairos-1.0.0-all.jar kairos-1.0.0.jar
+    SAVE ARTIFACT build/libs/kairos-1.0.0-all.jar /bin/kairos-1.0.0.jar
+    SAVE ARTIFACT wsa_examples /programs/
+    SAVE ARTIFACT wsa_functions /programs/
 
 docker:
     FROM eclipse-temurin:21-jre-alpine

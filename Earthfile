@@ -9,6 +9,7 @@ IMPORT ./erlang
 IMPORT ./go
 IMPORT ./haskell
 IMPORT ./idris
+IMPORT ./java
 
 build:
     FROM scratch
@@ -21,6 +22,7 @@ build:
     BUILD go+build
     BUILD haskell+build
     BUILD idris+build
+    BUILD java+build
     WORKDIR /corpus
     COPY c+build/corpus/c c
     COPY clojure+build/corpus/clojure clojure
@@ -31,6 +33,7 @@ build:
     COPY go+build/corpus/go go
     COPY haskell+build/corpus/haskell haskell
     COPY idris+build/corpus/idris idris
+    COPY java+build/corpus/java java
     SAVE ARTIFACT /corpus /corpus
 
 docker:
@@ -50,3 +53,4 @@ docker-all:
     BUILD go+docker-all
     BUILD haskell+docker-all
     BUILD idris+docker-all
+    BUILD java+docker-all

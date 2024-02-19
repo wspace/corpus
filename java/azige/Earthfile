@@ -2,14 +2,14 @@ VERSION 0.8
 
 build:
     FROM maven:3-eclipse-temurin-21-alpine
+    RUN apk add --no-cache patch
     WORKDIR /whitespace-interpreter
     COPY whitespace-interpreter jar.patch ./
-    RUN apk add --no-cache patch && \
-        patch -p1 -i jar.patch && \
+    RUN patch -p1 -i jar.patch && \
         mvn compile test assembly:single
-    SAVE ARTIFACT target/whitespace-interpreter-0.4-jar-with-dependencies.jar whitespace-interpreter-0.4.jar
+    SAVE ARTIFACT target/whitespace-interpreter-0.4-jar-with-dependencies.jar /bin/whitespace-interpreter-0.4.jar
     SAVE ARTIFACT src/main/pack/example/*.ws /programs/
-    SAVE ARTIFACT src/main/pack/example/*.szm /
+    SAVE ARTIFACT src/main/pack/example/*.szm /programs/
 
 docker:
     FROM eclipse-temurin:21-jre-alpine

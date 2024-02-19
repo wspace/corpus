@@ -7,8 +7,7 @@ build:
     RUN sed -i 's/>1.6</>1.8</' pom.xml && \
         mvn package
     SAVE ARTIFACT target/whitespace-1.0.jar /bin/
-    SAVE ARTIFACT docs/*.ws /programs/
-    SAVE ARTIFACT docs/addOneTwo.txt /programs/
+    SAVE ARTIFACT docs /programs
 
 docker:
     FROM eclipse-temurin:21-jre-alpine

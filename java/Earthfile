@@ -1,0 +1,104 @@
+VERSION 0.8
+
+IMPORT ./abhijitsharma AS java-abhijitsharma
+IMPORT ./azige AS java-azige
+IMPORT ./bearice-grassmudhorse AS java-bearice-grassmudhorse
+IMPORT ./brumbeere-whitespace4j AS java-brumbeere-whitespace4j
+# IMPORT ./brunokim AS java-brunokim
+IMPORT ./eiauniversity AS java-eiauniversity
+IMPORT ./faurehu AS java-faurehu
+IMPORT ./jbanana AS java-jbanana
+IMPORT ./kmizu AS java-kmizu
+IMPORT ./kreutzer-spacedide AS java-kreutzer-spacedide
+IMPORT ./mash-whitespacesdk AS java-mash-whitespacesdk
+IMPORT ./matou-whasm AS java-matou-whasm
+IMPORT ./praveenvaka-coder AS java-praveenvaka-coder
+# IMPORT ./pyeroh AS java-pyeroh
+IMPORT ./rahulkp AS java-rahulkp
+IMPORT ./ralucaa-whitespace4j AS java-ralucaa-whitespace4j
+IMPORT ./thatguy977 AS java-thatguy977
+IMPORT ./vyo-kairos AS java-vyo-kairos
+IMPORT ./wrotycz AS java-wrotycz
+IMPORT ./wysang AS java-wysang
+IMPORT ./yawkat AS java-yawkat
+IMPORT ./yuukiaria-wseditor AS java-yuukiaria-wseditor
+
+build:
+    FROM scratch
+    BUILD java-abhijitsharma+build
+    BUILD java-azige+build
+    BUILD java-bearice-grassmudhorse+build
+    BUILD java-brumbeere-whitespace4j+build
+    # BUILD java-brunokim+build
+    BUILD java-eiauniversity+build
+    BUILD java-faurehu+build
+    BUILD java-jbanana+build
+    BUILD java-kmizu+build
+    BUILD java-kreutzer-spacedide+build
+    BUILD java-mash-whitespacesdk+build
+    BUILD java-matou-whasm+build
+    BUILD java-praveenvaka-coder+build
+    # BUILD java-pyeroh+build
+    BUILD java-rahulkp+build
+    BUILD java-ralucaa-whitespace4j+build
+    BUILD java-thatguy977+build
+    BUILD java-vyo-kairos+build
+    BUILD java-wrotycz+build
+    BUILD java-wysang+build
+    BUILD java-yawkat+build
+    BUILD java-yuukiaria-wseditor+build
+    WORKDIR /corpus/java
+    COPY java-abhijitsharma+build/ abhijitsharma/
+    COPY java-azige+build/ azige/
+    COPY java-bearice-grassmudhorse+build/ bearice-grassmudhorse/
+    COPY java-brumbeere-whitespace4j+build/ brumbeere-whitespace4j/
+    # COPY java-brunokim+build/ brunokim/
+    COPY java-eiauniversity+build/ eiauniversity/
+    COPY java-faurehu+build/ faurehu/
+    COPY java-jbanana+build/ jbanana/
+    COPY java-kmizu+build/ kmizu/
+    COPY java-kreutzer-spacedide+build/ kreutzer-spacedide/
+    COPY java-mash-whitespacesdk+build/ mash-whitespacesdk/
+    COPY java-matou-whasm+build/ matou-whasm/
+    COPY java-praveenvaka-coder+build/ praveenvaka-coder/
+    # COPY java-pyeroh+build/ pyeroh/
+    COPY java-rahulkp+build/ rahulkp/
+    COPY java-ralucaa-whitespace4j+build/ ralucaa-whitespace4j/
+    COPY java-thatguy977+build/ thatguy977/
+    COPY java-vyo-kairos+build/ vyo-kairos/
+    COPY java-wrotycz+build/ wrotycz/
+    COPY java-wysang+build/ wysang/
+    COPY java-yawkat+build/ yawkat/
+    COPY java-yuukiaria-wseditor+build/ yuukiaria-wseditor/
+    SAVE ARTIFACT /corpus /corpus
+
+docker:
+    FROM alpine
+    WORKDIR /corpus/java
+    COPY +build/ /
+    SAVE IMAGE wspace-corpus/java
+
+docker-all:
+    BUILD +docker
+    BUILD java-abhijitsharma+docker
+    BUILD java-azige+docker
+    BUILD java-bearice-grassmudhorse+docker
+    BUILD java-brumbeere-whitespace4j+docker
+    # BUILD java-brunokim+docker
+    BUILD java-eiauniversity+docker
+    BUILD java-faurehu+docker
+    BUILD java-jbanana+docker
+    BUILD java-kmizu+docker
+    BUILD java-kreutzer-spacedide+docker
+    BUILD java-mash-whitespacesdk+docker
+    BUILD java-matou-whasm+docker
+    BUILD java-praveenvaka-coder+docker
+    # BUILD java-pyeroh+docker
+    BUILD java-rahulkp+docker
+    BUILD java-ralucaa-whitespace4j+docker
+    BUILD java-thatguy977+docker
+    BUILD java-vyo-kairos+docker
+    BUILD java-wrotycz+docker
+    BUILD java-wysang+docker
+    BUILD java-yawkat+docker
+    BUILD java-yuukiaria-wseditor+docker

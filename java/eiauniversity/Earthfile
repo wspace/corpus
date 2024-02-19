@@ -7,7 +7,7 @@ build:
     RUN javac -d bin src/whitespace/whitespace.java && \
         jar -cfe whitespace.jar whitespace.whitespace -C bin .
     SAVE ARTIFACT whitespace.jar /bin/
-    SAVE ARTIFACT src/fichero.bin /
+    SAVE ARTIFACT src/fichero.bin /programs/
 
 docker:
     FROM eclipse-temurin:21-jre-alpine

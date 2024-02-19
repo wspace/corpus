@@ -4,22 +4,20 @@ build:
     FROM eclipse-temurin:21-jdk-alpine
     WORKDIR /whitespacesdk
     COPY whitespacesdk .
-    RUN set -e \
-        \
-        javac -d bin -cp lib/commons-lang-2.4.jar $(find src -name '*.java') \
+    RUN javac -d bin -cp lib/commons-lang-2.4.jar $(find src -name '*.java') && \
         \
         # Merge whitespacesdk and commons-lang jars: \
-        mkdir tmp \
-        cd tmp \
-        jar -xf ../lib/commons-lang-2.4.jar \
-        rm -rf META-INF \
-        cp -r ../bin/* . \
-        jar -cfe ../whitespacesdk.jar uk.co.mash.whitespace.executable.WhitespaceProgramRunner . \
-        cd .. \
+        mkdir tmp && \
+        ( cd tmp && \
+          jar -xf ../lib/commons-lang-2.4.jar && \
+          rm -rf META-INF && \
+          cp -r ../bin/* . && \
+          jar -cfe ../whitespacesdk.jar uk.co.mash.whitespace.executable.WhitespaceProgramRunner . ) && \
         rm -rf tmp
+    COPY run.sh .
     SAVE ARTIFACT whitespacesdk.jar /bin/
-    SAVE ARTIFACT src/uk/co/mash/whitespace/example/ example
     SAVE ARTIFACT run.sh /bin/
+    SAVE ARTIFACT src/uk/co/mash/whitespace/example /programs
 
 docker:
     FROM eclipse-temurin:21-jre-alpine

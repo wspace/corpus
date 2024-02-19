@@ -2,15 +2,16 @@ VERSION 0.8
 
 build:
     FROM eclipse-temurin:21-jdk-alpine
+    RUN apk add --no-cache apache-ant
     WORKDIR /whitespace
     COPY whitespace .
-    RUN apk add --no-cache apache-ant && \
-        ant all && \
+    RUN ant all && \
         jar -cfe whitespace.jar org.codeberg.jbanana.whitespace.Whitespace -C classes .
+    COPY run.sh .
     SAVE ARTIFACT whitespace.jar /bin/
-    SAVE ARTIFACT examples examples
-    SAVE ARTIFACT wstests wstests
     SAVE ARTIFACT run.sh /bin/
+    SAVE ARTIFACT examples /programs/examples
+    SAVE ARTIFACT wstests /programs/wstests
 
 docker:
     FROM eclipse-temurin:21-jre-alpine

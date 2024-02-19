@@ -39,7 +39,12 @@
     "usage": ["enum"]
   },
   "programs": [
-    { "path": "java/whitespace-polyglot/HelloWorld.java", "polyglot": ["Java"], "spec_version": "0.2" }
+    {
+      "path": "java/whitespace-polyglot/HelloWorld.java",
+      "aux": ["ws/java-polyglot/HelloWorld.ws"],
+      "polyglot": ["Java"],
+      "spec_version": "0.2"
+    }
   ],
   "commands": [
     {

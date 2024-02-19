@@ -6,8 +6,9 @@ build:
     COPY misc-proj/java/whitespace-interpreter .
     RUN javac -d bin Whitespace.java && \
         jar -cfe whitespace.jar Whitespace -C bin .
+    COPY misc-proj/java/whitespace-polyglot/HelloWorld.java .
     SAVE ARTIFACT whitespace.jar /bin/
-    SAVE ARTIFACT java/whitespace-polyglot/HelloWorld.java /
+    SAVE ARTIFACT HelloWorld.java /programs/
 
 docker:
     FROM eclipse-temurin:21-jre-alpine

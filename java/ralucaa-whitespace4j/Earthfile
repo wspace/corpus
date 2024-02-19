@@ -2,18 +2,17 @@ VERSION 0.8
 
 build:
     FROM eclipse-temurin:21-jdk-alpine
+    RUN apk add --no-cache apache-ant wget patch
     WORKDIR /whitespace4j
     COPY whitespace4j jar.patch ./
-    RUN set -e \
+    RUN wget https://dlcdn.apache.org/ant/ivy/2.5.2/apache-ivy-2.5.2-bin.zip && \
+        unzip -j apache-ivy-2.5.2-bin.zip apache-ivy-2.5.2/ivy-2.5.2.jar -d /usr/share/java/apache-ant/lib/ && \
+        rm -rf apache-ivy-2.5.2-bin.zip && \
         \
-        apk add --no-cache apache-ant wget patch \
-        wget https://dlcdn.apache.org/ant/ivy/2.5.2/apache-ivy-2.5.2-bin.zip \
-        unzip -j apache-ivy-2.5.2-bin.zip apache-ivy-2.5.2/ivy-2.5.2.jar -d /usr/share/java/apache-ant/lib/ \
-        rm -rf apache-ivy-2.5.2-bin.zip \
-        \
-        patch -p1 -i jar.patch \
+        patch -p1 -i jar.patch && \
         ant test jar
     SAVE ARTIFACT whitespace4j.jar /bin/
+    SAVE ARTIFACT testset /programs
 
 docker:
     FROM eclipse-temurin:21-jre-alpine

@@ -1,23 +1,35 @@
 VERSION 0.8
 
-build:
+build-java:
     FROM eclipse-temurin:21-jdk-alpine
     WORKDIR /grass-mud-horse
-    COPY grass-mud-horse .
+    COPY grass-mud-horse/src src
     RUN javac -d bin src/cn/icybear/GrassMudHorse/*.java && \
         jar -cfe GrassMudHorse.jar cn.icybear.GrassMudHorse.AlpacaVM -C bin .
     SAVE ARTIFACT GrassMudHorse.jar /bin/
-    SAVE ARTIFACT erlang /bin/
-    SAVE ARTIFACT run.sh /bin/
-    SAVE ARTIFACT *.gmh /
-    SAVE ARTIFACT *.ws /programs/
+
+build-erlang:
+    FROM eclipse-temurin:21-jre-alpine
+    RUN apk add --no-cache erlang
+    WORKDIR /grass-mud-horse
+    COPY grass-mud-horse/erlang .
+    RUN erlc grass_mud_horse.erl
+    SAVE ARTIFACT *.beam /bin/
+
+build:
+    FROM scratch
+    WORKDIR /grass-mud-horse
+    COPY +build-java/ .
+    COPY +build-erlang/ .
+    COPY run.sh bin/
+    COPY grass-mud-horse/*.gmh grass-mud-horse/*.ws programs/
+    SAVE ARTIFACT bin /bin
+    SAVE ARTIFACT programs /programs
 
 docker:
     FROM eclipse-temurin:21-jre-alpine
     RUN apk add --no-cache erlang
     WORKDIR /grass-mud-horse
     COPY +build/ .
-    RUN erlc grass_mud_horse.erl && \
-        rm grass_mud_horse.erl grass_mud_horse.hrl
     ENTRYPOINT ["bin/run.sh"]
     SAVE IMAGE wspace-corpus/java/bearice-grassmudhorse

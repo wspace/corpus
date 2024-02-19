@@ -2,10 +2,10 @@ VERSION 0.8
 
 build:
     FROM eclipse-temurin:21-jdk-alpine
+    RUN apk add --no-cache apache-ant
     WORKDIR /whiteSpaceInterpreter
     COPY whiteSpaceInterpreter .
-    RUN apk add --no-cache apache-ant && \
-        ant
+    RUN ant
     SAVE ARTIFACT dist/WhiteSpaceInterpreter.jar /bin/
     SAVE ARTIFACT *.ws /programs/
 
