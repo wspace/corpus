@@ -3,21 +3,18 @@ VERSION 0.8
 build:
     FROM alpine
     WORKDIR /wsdebug
-    COPY wsdebug/htdocs htdocs
-    # TODO: wsdebug-0.1.tar.gz has ./configure, but not git
-    RUN apk add --no-cache curl make gcc g++ gmp-dev readline-dev && \
-        curl https://master.dl.sourceforge.net/project/wsdebug.berlios/wsdebug-0.1.tar.gz?viasf=1 | \
-            gunzip | tar xf - --strip-components 1 && \
-        ./configure && \
-        make CFLAGS='-O3 -g -static'
+    RUN apk add --no-cache gcc musl-dev gmp-dev readline-static
+    COPY wsdebug .
+    RUN echo '#define VERSION "0.1"' > config.h && \
+        gcc -O3 -static -DHAVE_CONFIG_H -I. -o wsdebug wsdebug.c debug.c fileio.c interprt.c storage.c -lgmp -lreadline && \
+        gcc -O3 -static -DHAVE_CONFIG_H -I. -o wsi wsi.c fileio.c interprt.c storage.c -lgmp -lreadline
     SAVE ARTIFACT wsdebug /bin/
     SAVE ARTIFACT wsi /bin/
     SAVE ARTIFACT htdocs/*.ws /programs/
+    SAVE IMAGE tmp
 
 docker:
-    FROM alpine
-    RUN apk add --no-cache gmp readline
-    WORKDIR /wsdebug
-    COPY +build/ .
-    ENTRYPOINT ["bin/wsdebug"]
+    FROM scratch
+    COPY +build/ /
+    ENTRYPOINT ["/bin/wsdebug"]
     SAVE IMAGE wspace-corpus/c/ssiegl-wsdebug
