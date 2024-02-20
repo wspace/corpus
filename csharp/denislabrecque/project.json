@@ -32,6 +32,10 @@
     },
     "usage": ["enum"]
   },
+  "programs": [
+    { "path": "WhitespaceInterpreter/Program.cs", "generated": "helloWorld.ws" },
+    { "path": "WhitespaceInterpreter/Program.cs", "generated": "heapAccess.ws" }
+  ],
   "commands": [
     {
       "type": "interpreter",

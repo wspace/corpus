@@ -2,10 +2,22 @@ VERSION 0.8
 
 build:
     FROM mono
+    RUN apt-get update && \
+        apt-get install -y --no-install-recommends patch && \
+        rm -rf /var/lib/apt/lists/*
     WORKDIR /Whitespace-Interpreter
-    COPY Whitespace-Interpreter .
-    RUN mcs -optimize -out:WhitespaceInterpreter.exe WhitespaceInterpreter/*.cs
+    COPY Whitespace-Interpreter cli.patch ./
+    RUN nuget restore
+    # Generate programs from the constants in Main
+    RUN ( echo 'using System.IO;' && \
+          grep -E 'string (helloWorld|heapAccess) =' WhitespaceInterpreter/Program.cs && \
+          echo 'File.WriteAllText("helloWorld.ws", helloWorld);' && \
+          echo 'File.WriteAllText("heapAccess.ws", heapAccess);' ) | \
+        csharp
+    RUN patch -p1 -i cli.patch && \
+        mcs -optimize -out:WhitespaceInterpreter.exe WhitespaceInterpreter/*.cs
     SAVE ARTIFACT WhitespaceInterpreter.exe /bin/
+    SAVE ARTIFACT *.ws /programs/
 
 docker:
     FROM mono:slim
