@@ -57,8 +57,33 @@ build:
     COPY ocaml+build/corpus/ocaml ocaml
     SAVE ARTIFACT /corpus /corpus
 
+# Dependencies:
+#   c: -
+#   clojure: jre-21
+#   coq: -
+#   cpp: -
+#     cpp/buyoh-nospace: ruby
+#   crystal: -
+#   csharp: mono-runtime
+#     csharp/nicolasff-spacesharp: mono-runtime libmono-compilerservices-symbolwriter4.0-cil
+#   erlang: erlang
+#   go: -
+#   haskell: TODO
+#   idris: ?
+#   java: jre-21
+#   javascript: node
+#   jq: jq bash
+#   kotlin: jre-21
+#   lolcode: bash readline-dev
+#   lua: lua5.4
+#   ocaml: -
 docker:
     FROM ubuntu:24.04
+    RUN apt-get update && \
+        DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends \
+            mono-runtime libmono-compilerservices-symbolwriter4.0-cil \
+        && \
+        rm -rf /var/lib/apt/lists/*
     WORKDIR /corpus
     COPY +build/ /
     SAVE IMAGE wspace-corpus
