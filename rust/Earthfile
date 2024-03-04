@@ -1,0 +1,84 @@
+VERSION 0.8
+
+IMPORT ./censoredusername-whitespacers AS rust-censoredusername-whitespacers
+IMPORT ./collidedscope-albus AS rust-collidedscope-albus
+IMPORT ./d3psi-spacey AS rust-d3psi-spacey
+# IMPORT ./faultier-albino AS rust-faultier-albino
+# IMPORT ./faultier-whitebase AS rust-faultier-whitebase
+IMPORT ./guricerin AS rust-guricerin
+IMPORT ./hamidrezakp AS rust-hamidrezakp
+IMPORT ./jayshua AS rust-jayshua
+IMPORT ./kaisugi AS rust-kaisugi
+IMPORT ./keirua AS rust-keirua
+IMPORT ./lalrpop AS rust-lalrpop
+IMPORT ./luminighty AS rust-luminighty
+IMPORT ./nareshganduri AS rust-nareshganduri
+IMPORT ./omurakazuaki AS rust-omurakazuaki
+IMPORT ./thaliaarchi-lazy-wspace AS rust-thaliaarchi-lazy-wspace
+IMPORT ./thaliaarchi-yspace AS rust-thaliaarchi-yspace
+IMPORT ./zrneely AS rust-zrneely
+
+build:
+    FROM scratch
+    BUILD rust-censoredusername-whitespacers+build
+    BUILD rust-collidedscope-albus+build
+    BUILD rust-d3psi-spacey+build
+    # BUILD rust-faultier-albino+build
+    # BUILD rust-faultier-whitebase+build
+    BUILD rust-guricerin+build
+    BUILD rust-hamidrezakp+build
+    BUILD rust-jayshua+build
+    BUILD rust-kaisugi+build
+    BUILD rust-keirua+build
+    BUILD rust-lalrpop+build
+    BUILD rust-luminighty+build
+    BUILD rust-nareshganduri+build
+    BUILD rust-omurakazuaki+build
+    BUILD rust-thaliaarchi-lazy-wspace+build
+    BUILD rust-thaliaarchi-yspace+build
+    BUILD rust-zrneely+build
+    WORKDIR /corpus/rust
+    COPY rust-censoredusername-whitespacers+build/ censoredusername-whitespacers/
+    COPY rust-collidedscope-albus+build/ collidedscope-albus/
+    COPY rust-d3psi-spacey+build/ d3psi-spacey/
+    # # COPY rust-faultier-albino+build/ faultier-albino/
+    # # COPY rust-faultier-whitebase+build/ faultier-whitebase/
+    COPY rust-guricerin+build/ guricerin/
+    COPY rust-hamidrezakp+build/ hamidrezakp/
+    COPY rust-jayshua+build/ jayshua/
+    COPY rust-kaisugi+build/ kaisugi/
+    COPY rust-keirua+build/ keirua/
+    COPY rust-lalrpop+build/ lalrpop/
+    COPY rust-luminighty+build/ luminighty/
+    COPY rust-nareshganduri+build/ nareshganduri/
+    COPY rust-omurakazuaki+build/ omurakazuaki/
+    COPY rust-thaliaarchi-lazy-wspace+build/ thaliaarchi-lazy-wspace/
+    COPY rust-thaliaarchi-yspace+build/ thaliaarchi-yspace/
+    COPY rust-zrneely+build/ zrneely/
+    SAVE ARTIFACT /corpus /corpus
+
+docker:
+    FROM alpine
+    WORKDIR /corpus/rust
+    COPY +build/ /
+    SAVE IMAGE wspace-corpus/rust
+
+docker-all:
+    BUILD +docker
+    BUILD rust-censoredusername-whitespacers+docker
+    BUILD rust-collidedscope-albus+docker
+    BUILD rust-d3psi-spacey+docker
+    # BUILD rust-faultier-albino+docker
+    # BUILD rust-faultier-whitebase+docker
+    BUILD rust-guricerin+docker
+    BUILD rust-hamidrezakp+docker
+    BUILD rust-jayshua+docker
+    BUILD rust-kaisugi+docker
+    BUILD rust-keirua+docker
+    BUILD rust-lalrpop+docker
+    BUILD rust-luminighty+docker
+    BUILD rust-nareshganduri+docker
+    BUILD rust-omurakazuaki+docker
+    BUILD rust-thaliaarchi-lazy-wspace+docker
+    BUILD rust-thaliaarchi-yspace+docker
+    BUILD rust-zrneely+docker

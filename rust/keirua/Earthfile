@@ -8,6 +8,8 @@ build:
     RUN RUSTFLAGS='-C target-feature=+crt-static' cargo build --release --target x86_64-unknown-linux-gnu
     SAVE ARTIFACT target/x86_64-unknown-linux-gnu/release/compiler /bin/
     SAVE ARTIFACT target/x86_64-unknown-linux-gnu/release/interpreter /bin/
+    SAVE ARTIFACT examples /programs
+    # Omitted docs/ from /programs/
 
 docker:
     FROM scratch

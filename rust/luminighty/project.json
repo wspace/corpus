@@ -13,9 +13,9 @@
   "whitespace": { "extension": "ws" },
   "mappings": [
     {
-      "space": "S",
-      "tab": "T",
-      "lf": "L",
+      "space": "[Ss]",
+      "tab": "[Tt]",
+      "lf": "[Ll]",
       "spaces_between": false,
       "line_comment": "--",
       "ignore_case": true,

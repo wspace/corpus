@@ -6,8 +6,9 @@ theories:
     COPY --chown=coq lazy-wspace/theories /home/coq/lazy-wspace/theories
     COPY --chown=coq lazy-wspace/_CoqProject lazy-wspace/Makefile /home/coq/lazy-wspace
     WORKDIR /home/coq/lazy-wspace
-    RUN make
-    RUN touch build_stamp
+    # TODO: BUG? With Docker this can just be `make`, but Earthly seems to
+    # require it to be run as a login shell.
+    RUN sh -lc make
 
 build:
     FROM rust:1.76
@@ -19,12 +20,11 @@ build:
                    --package lazy-wspace-macros \
                    --package wspace-syntax && \
         RUSTFLAGS='-C target-feature=+crt-static' cargo build --release --target x86_64-unknown-linux-gnu
-    # Force a dependency on the proofs, since no artifacts are used.
-    COPY --from=theories /home/coq/lazy-wspace/build_stamp .
     SAVE ARTIFACT target/x86_64-unknown-linux-gnu/release/compile /bin/
     SAVE ARTIFACT target/x86_64-unknown-linux-gnu/release/wspace /bin/
     SAVE ARTIFACT target/x86_64-unknown-linux-gnu/release/wspace-syntax /bin/
     SAVE ARTIFACT tests /programs
+    BUILD +theories
 
 docker:
     FROM scratch

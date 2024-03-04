@@ -17,6 +17,7 @@ IMPORT ./kotlin
 IMPORT ./lolcode
 IMPORT ./lua
 IMPORT ./ocaml
+IMPORT ./rust
 
 build:
     FROM scratch
@@ -37,6 +38,7 @@ build:
     BUILD lolcode+build
     BUILD lua+build
     BUILD ocaml+build
+    BUILD rust+build
     WORKDIR /corpus
     COPY c+build/corpus/c c
     COPY clojure+build/corpus/clojure clojure
@@ -55,6 +57,7 @@ build:
     COPY lolcode+build/corpus/lolcode lolcode
     COPY lua+build/corpus/lua lua
     COPY ocaml+build/corpus/ocaml ocaml
+    COPY rust+build/corpus/rust rust
     SAVE ARTIFACT /corpus /corpus
 
 # Dependencies:
@@ -77,6 +80,7 @@ build:
 #   lolcode: bash readline-dev
 #   lua: lua5.4
 #   ocaml: -
+#   rust: -
 docker:
     FROM ubuntu:24.04
     RUN apt-get update && \
@@ -107,3 +111,4 @@ docker-all:
     BUILD lolcode+docker-all
     BUILD lua+docker-all
     BUILD ocaml+docker-all
+    BUILD rust+docker-all

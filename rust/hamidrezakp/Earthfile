@@ -6,7 +6,7 @@ build:
     COPY ws .
     RUN RUSTFLAGS='-C target-feature=+crt-static' cargo build --release --target x86_64-unknown-linux-gnu
     SAVE ARTIFACT target/x86_64-unknown-linux-gnu/release/ws /bin/
-    SAVE ARTIFACT examples/*.ws /programs/
+    SAVE ARTIFACT examples /programs
 
 docker:
     FROM scratch

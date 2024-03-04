@@ -5,6 +5,9 @@ build:
     WORKDIR /rustws
     COPY rustws .
     RUN cargo test
+    # TODO: wsconvert.py
+    SAVE ARTIFACT test.ws /programs/
+    SAVE ARTIFACT test.wsv /programs/
 
 docker:
     SAVE IMAGE wspace-corpus/rust/luminighty

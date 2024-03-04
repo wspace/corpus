@@ -6,6 +6,7 @@ build:
     COPY rust-whitespace .
     RUN RUSTFLAGS='-C target-feature=+crt-static' cargo build --release --target x86_64-unknown-linux-gnu
     SAVE ARTIFACT target/x86_64-unknown-linux-gnu/release/whitespace /bin/
+    SAVE ARTIFACT examples /programs
 
 docker:
     FROM scratch

@@ -10,6 +10,7 @@ build:
     SAVE ARTIFACT target/x86_64-unknown-linux-gnu/release/albino-build /bin/
     SAVE ARTIFACT target/x86_64-unknown-linux-gnu/release/albino-exec /bin/
     SAVE ARTIFACT target/x86_64-unknown-linux-gnu/release/albino-gen /bin/
+    SAVE ARTIFACT examples /programs
 
 docker:
     FROM scratch

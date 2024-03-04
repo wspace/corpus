@@ -6,6 +6,7 @@ build:
     COPY WhitespaceInterpreter .
     RUN rustc -C target-feature=+crt-static -o wi whitespace_interpreter.rs
     SAVE ARTIFACT wi /bin/
+    SAVE ARTIFACT examples /programs
 
 docker:
     FROM scratch
