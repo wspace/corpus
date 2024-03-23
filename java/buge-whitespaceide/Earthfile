@@ -1,0 +1,20 @@
+VERSION 0.8
+
+build:
+    FROM eclipse-temurin:8-jdk-alpine
+    RUN apk add --no-cache wget
+    WORKDIR /whitespaceide
+    COPY whitespaceide .
+    RUN wget https://repo1.maven.org/maven2/net/java/dev/javacc/javacc/3.2/javacc-3.2.jar
+    RUN java -cp javacc-3.2.jar javacc net/sourceforge/whitespace/parser/WhitespaceLit.jj && \
+        mkdir bin && \
+        javac -d bin *.java && \
+        jar -cfe whitespaceide.jar Whitespace -C bin .
+    SAVE ARTIFACT whitespaceide.jar /bin/
+
+docker:
+    FROM eclipse-temurin:21-jre-alpine
+    WORKDIR /whitespaceide
+    COPY +build/ .
+    ENTRYPOINT ["java", "-jar", "bin/whitespaceide.jar"]
+    SAVE IMAGE wspace-corpus/java/buge-whitespaceide

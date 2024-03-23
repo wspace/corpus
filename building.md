@@ -89,6 +89,7 @@ Projects that can be built with Docker:
 - java/bearice-grassmudhorse
 - java/brumbeere-whitespace4j
 - java/brunokim: Source unavailable
+- java/buge-whitespaceide
 - java/eiauniversity
 - java/faurehu
 - java/jbanana

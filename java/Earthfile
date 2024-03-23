@@ -4,6 +4,7 @@ IMPORT ./abhijitsharma AS java-abhijitsharma
 IMPORT ./azige AS java-azige
 IMPORT ./bearice-grassmudhorse AS java-bearice-grassmudhorse
 IMPORT ./brumbeere-whitespace4j AS java-brumbeere-whitespace4j
+IMPORT ./buge-whitespaceide AS java-buge-whitespaceide
 # IMPORT ./brunokim AS java-brunokim
 IMPORT ./eiauniversity AS java-eiauniversity
 IMPORT ./faurehu AS java-faurehu
@@ -29,6 +30,7 @@ build:
     BUILD java-azige+build
     BUILD java-bearice-grassmudhorse+build
     BUILD java-brumbeere-whitespace4j+build
+    BUILD java-buge-whitespaceide+build
     # BUILD java-brunokim+build
     BUILD java-eiauniversity+build
     BUILD java-faurehu+build
@@ -52,6 +54,7 @@ build:
     COPY java-azige+build/ azige/
     COPY java-bearice-grassmudhorse+build/ bearice-grassmudhorse/
     COPY java-brumbeere-whitespace4j+build/ brumbeere-whitespace4j/
+    COPY java-buge-whitespaceide+build/ buge-whitespaceide/
     # COPY java-brunokim+build/ brunokim/
     COPY java-eiauniversity+build/ eiauniversity/
     COPY java-faurehu+build/ faurehu/
@@ -73,7 +76,7 @@ build:
     SAVE ARTIFACT /corpus /corpus
 
 docker:
-    FROM alpine
+    FROM eclipse-temurin:21-jre-alpine
     WORKDIR /corpus/java
     COPY +build/ /
     SAVE IMAGE wspace-corpus/java
@@ -84,6 +87,7 @@ docker-all:
     BUILD java-azige+docker
     BUILD java-bearice-grassmudhorse+docker
     BUILD java-brumbeere-whitespace4j+docker
+    BUILD java-buge-whitespaceide+docker
     # BUILD java-brunokim+docker
     BUILD java-eiauniversity+docker
     BUILD java-faurehu+docker

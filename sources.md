@@ -105,7 +105,6 @@ TODO:
     [github-artifact-exporter](https://github.com/github/github-artifact-exporter)
 - GitHub Gist: [whitespace](https://gist.github.com/search?q=whitespace)
 - SourceForge:
-    [Whitespace IDE (CVS)](https://sourceforge.net/projects/whitespaceide/),
     [rsvndump](https://rsvndump.sourceforge.io/)
 - Google Code:
     [grass-mud-horse (SVN)](https://code.google.com/archive/p/grass-mud-horse/)

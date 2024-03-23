@@ -305,6 +305,9 @@
 [submodule "java/brumbeere-whitespace4j/Whitespace4j"]
 	path = java/brumbeere-whitespace4j/Whitespace4j
 	url = https://github.com/Brumbeere/Whitespace4j
+[submodule "java/buge-whitespaceide/whitespaceide"]
+	path = java/buge-whitespaceide/whitespaceide
+	url = https://github.com/wspace/buge-whitespaceide
 [submodule "java/eiauniversity/WhiteSpaceInterpreter"]
 	path = java/eiauniversity/WhiteSpaceInterpreter
 	url = https://github.com/wspace/eiauniversity-java

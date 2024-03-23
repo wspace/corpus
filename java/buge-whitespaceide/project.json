@@ -1,0 +1,47 @@
+{
+  "id": "java/buge-whitespaceide",
+  "name": "Whitespace IDE",
+  "authors": ["Philipp Bunge", "David Gurtner"],
+  "license": "none",
+  "languages": ["Java"],
+  "tags": ["disassembler"],
+  "date": "2004-03-16 20:47:19 +0000",
+  "spec_version": "0.2",
+  "source": [
+    "https://sourceforge.net/projects/whitespaceide/",
+    "https://github.com/wspace/buge-whitespaceide",
+    "https://github.com/thaliaarchi/repo-archival/blob/main/scripts/wspace/buge-whitespaceide.sh"
+  ],
+  "submodules": [{ "path": "whitespaceide", "url": "https://github.com/wspace/buge-whitespaceide" }],
+  "assembly": {
+    "mnemonics": {
+      "push": "PSH",
+      "dup": "DPL",
+      "swap": "SWP",
+      "drop": "DSC",
+      "add": "ADD",
+      "sub": "SUB",
+      "mul": "MUL",
+      "div": "DIV",
+      "mod": "MOD",
+      "store": "STR",
+      "retrieve": "RTR",
+      "label": "LBL",
+      "call": "BRA",
+      "jmp": "JPU",
+      "jz": "JPZ",
+      "jn": "JPN",
+      "ret": "RET",
+      "end": "END",
+      "printc": "OPC",
+      "printi": "OPN",
+      "readc": "RDC",
+      "readi": "RDN"
+    },
+    "patterns": { "number": "0x[0-9A-F]+( [ -~])?" },
+    "indentation": "",
+    "usage": ["disassembler"],
+    "notes": "Prints number and label arguments as hex with the ASCII character printed afterwards for U+0020 through U+007E."
+  },
+  "commands": [{ "type": "disassembler", "usage": "", "input": "stdin", "output": "stdout" }]
+}
