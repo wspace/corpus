@@ -212,7 +212,15 @@ TODO:
       [Special:Export](https://esolangs.org/wiki/Special:Export)
 - Progopedia:
     [Whitespace [en]](http://progopedia.com/language/whitespace/),
-    [[ru]](http://progopedia.ru/language/whitespace/)
+    [[ru]](http://progopedia.ru/language/whitespace/),
+    [Editor's application](http://progopedia.com/edit/)
+- C2: [Whitespace Language](https://wiki.c2.com/?WhitespaceLanguage=)
+
+## Blogs
+
+- [Esoteric.Codes](https://www.esoteric.codes/) by [Daniel Temkin](https://danieltemkin.com/Writing):
+    [“Three Post-Whitespace Languages”](http://web.archive.org/web/20210508132229/https://abc.perspektive.at/esolanger-esoteric-codes/)
+    [[presentation](https://20.piksel.no/2020/11/21/three-post-whitespace-languages/)],
 
 ## Stack Exchange
 
@@ -267,13 +275,42 @@ TODO:
 - Reddit:
     [r/esolangs](https://www.reddit.com/r/esolangs/search/?q=whitespace),
     [r/ProgrammingLanguages](https://www.reddit.com/r/ProgrammingLanguages/search/?q=whitespace)
+- Interviews:
+  - [“From Whitespace to Idris: Interview With Edwin Brady”](https://serokell.io/blog/from-whitespace-to-idris)
+    (2021)
 
 TODO:
 
+- Slashdot:
+    [2003-04-01](https://slashdot.org/story/03/04/01/0332202/New-Whitespace-Only-Programming-Language)
 - Twitter:
     [@edwinbrady](https://twitter.com/edwinbrady),
     [whitespace (from:edwinbrady)](https://twitter.com/search?q=whitespace%20(from%3Aedwinbrady)),
     [whitespace (to:edwinbrady)](https://twitter.com/search?q=whitespace%20(to%3Aedwinbrady)),
     [whitespace @edwinbrady](https://twitter.com/search?q=whitespace%20(%40edwinbrady))
 - Mastodon: [@edwinb@types.pl](https://types.pl/@edwinb)
-- Hacker News
+- Hacker News: [whitespace](https://hn.algolia.com/?q=whitespace)
+
+  - [2015-10-19](https://news.ycombinator.com/item?id=10414728):
+
+    > Wrote a whitespace interpreter for a PL class in college. For kicks, the
+    > project writeup was converted to a whitespace program that would print the
+    > writeup when run. That program, composed entirely of whitespace, was
+    > submitted in place of the writeup. Fun times.
+
+    I've emailed the commenter with the contact info in their profile.
+
+  - [2015-10-19](https://news.ycombinator.com/item?id=10416000):
+
+    > See it here in action: http://samy.pl/
+
+    This comment vaguely suggests, that something Whitespace-related may be
+    there, but I've found nothing on their site, archived on IA, or their
+    GitHub.
+
+  - [2020-10-14](https://news.ycombinator.com/item?id=24774883):
+
+    > I and a few other students once cornered him to ask if he's the same Edwin
+    > Brady who wrote whitespace. He said no, it must be some other Edwin Brady.
+    > We returned later, with better evidence. He said "Ok, yes, it was me. But
+    > in my defense, I was drunk at the time." :)

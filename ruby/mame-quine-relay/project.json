@@ -7,7 +7,10 @@
   "tags": ["quine", "polyglot", "interpreter", "programs"],
   "date": "2013-07-15 22:28:53 +0900",
   "spec_version": "0.3",
-  "source": ["https://github.com/mame/quine-relay"],
+  "source": [
+    "https://github.com/mame/quine-relay",
+    "https://www.esoteric.codes/blog/the-128-language-quine-relay"
+  ],
   "submodules": [
     { "path": "quine-relay", "url": "https://github.com/mame/quine-relay" },
     { "path": "spoiler", "url": "https://github.com/mame/quine-relay", "branch": "spoiler" }

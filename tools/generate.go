@@ -595,6 +595,7 @@ var domainLabels = map[string]string{
 	"en.wikipedia.org":                       "Wikipedia",
 	"esolangs.org":                           "Esolang",
 	"progopedia.com":                         "Progopedia",
+	"esoteric.codes":                         "Esoteric.Codes",
 	"stackoverflow.com":                      "Stack Overflow",
 	"codegolf.stackexchange.com":             "Code Golf",
 	"codewars.com":                           "Codewars",

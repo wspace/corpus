@@ -7,7 +7,7 @@
   "tags": ["interpreter", "mapping"],
   "date": "2017-01-31 16:21:48 +0000",
   "spec_version": "0.2",
-  "source": ["https://github.com/yasn77/whitepy"],
+  "source": ["https://github.com/yasn77/whitepy", "https://news.ycombinator.com/item?id=14580089"],
   "submodules": [{ "path": "whitepy", "url": "https://github.com/yasn77/whitepy" }],
   "packages": [{ "name": "whitepy", "registry": "PyPI", "url": "https://pypi.org/project/whitepy/" }],
   "whitespace": { "extension": "ws" },
