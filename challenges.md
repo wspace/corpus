@@ -41,7 +41,7 @@ Codewars, interpreters for Whitespace.
 ## Code Golf
 
 - [javascript/arnauld](javascript/arnauld)
-- [whitespace/kspalaiologos-codegolf](whitespace/kspalaiologos-codegolf)
+- [whitespace/kspalaiologos-recreational](whitespace/kspalaiologos-recreational)
 - [whitespace/thaliaarchi-challenges](whitespace/thaliaarchi-challenges)
 
 ## Codewars

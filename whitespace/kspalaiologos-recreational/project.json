@@ -1,6 +1,6 @@
 {
-  "id": "whitespace/kspalaiologos-codegolf",
-  "name": "codegolf-submissions",
+  "id": "whitespace/kspalaiologos-recreational",
+  "name": "recreational",
   "authors": ["Kamila Szewczyk (Palaiologos)"],
   "license": "GPL-3.0",
   "languages": ["Whitespace"],
@@ -8,13 +8,20 @@
   "date": "2019-08-30 12:16:06 +2000",
   "spec_version": "0.2",
   "source": [
+    "https://github.com/kspalaiologos/recreational",
     "https://web.archive.org/web/20230622203235/https://github.com/kspalaiologos/codegolf-submissions",
     "https://github.com/wspace/kspalaiologos-codegolf",
     "https://codegolf.stackexchange.com/questions/55960/im-not-the-language-youre-looking-for/191063#191063"
   ],
-  "submodules": [{ "path": "codegolf-submissions", "url": "https://github.com/wspace/kspalaiologos-codegolf" }],
+  "submodules": [
+    { "path": "recreational", "url": "https://github.com/kspalaiologos/recreational" },
+    { "path": "codegolf-submissions", "url": "https://github.com/wspace/kspalaiologos-codegolf" }
+  ],
   "challenges": ["Code Golf"],
   "whitespace": { "extension": "ws" },
-  "programs": [{ "path": "55960.ws", "polyglot": ["Malbolge"], "spec_version": "0.2" }],
+  "programs": [
+    { "path": "55960.ws", "polyglot": ["Malbolge"], "spec_version": "0.2" },
+    { "path": "237085.ws", "spec_version": "0.2" }
+  ],
   "notes": "Date from submission date, with timezone from git log"
 }

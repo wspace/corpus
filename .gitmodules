@@ -951,12 +951,15 @@
 [submodule "whitespace/kokoax-hello/hello"]
 	path = whitespace/kokoax-hello/hello
 	url = https://github.com/kokoax/hello
-[submodule "whitespace/kspalaiologos-codegolf/codegolf-submissions"]
-	path = whitespace/kspalaiologos-codegolf/codegolf-submissions
-	url = https://github.com/wspace/kspalaiologos-codegolf
 [submodule "whitespace/kspalaiologos-cosmopolitan-sk/cosmopolitan-sk"]
 	path = whitespace/kspalaiologos-cosmopolitan-sk/cosmopolitan-sk
 	url = https://github.com/kspalaiologos/cosmopolitan-sk
+[submodule "whitespace/kspalaiologos-recreational/codegolf-submissions"]
+	path = whitespace/kspalaiologos-recreational/codegolf-submissions
+	url = https://github.com/wspace/kspalaiologos-codegolf
+[submodule "whitespace/kspalaiologos-recreational/recreational"]
+	path = whitespace/kspalaiologos-recreational/recreational
+	url = https://github.com/kspalaiologos/recreational
 [submodule "whitespace/kunde21-hello/challenge"]
 	path = whitespace/kunde21-hello/challenge
 	url = https://gist.github.com/Kunde21/f3e7878c92f3a1db2ea31ea1140153ce
