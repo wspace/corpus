@@ -91,7 +91,12 @@
     [Archive Team](https://wiki.archiveteam.org/index.php/CodePlex)
 - Launchpad: [whitespace](https://launchpad.net/projects?text=whitespace)
 - Codeberg: [whitespace](https://codeberg.org/explore/repos?sort=recentupdate&q=whitespace)
-- berliOS: [BackupTheBerlios](https://github.com/BackupTheBerlios)
+- darcs hub: [homepage](https://hub.darcs.net/)
+- BerliOS:
+    [Archive Team](https://wiki.archiveteam.org/index.php/BerliOS),
+    [Archive Team grab](https://archive.org/search?query=archiveteam%20berlios),
+    [BerliOS on SourceForge](https://sourceforge.net/blog/berlios-projects-saved-moving-to-sourceforge-for-distribution/),
+    [BackupTheBerlios](https://github.com/BackupTheBerlios)
 - GoDotNet: [shutdown](https://visualstudiomagazine.com/blogs/desmond-file/2007/02/gotdotnet-shuttered.aspx)
 - SSCLI.NET: [shutdown](https://web.archive.org/web/20050920154459/http://mailserver.di.unipi.it/pipermail/dotnet-sscli/msg00260.html)
 - Software Heritage archive: [whitespace interpreter](https://archive.softwareheritage.org/browse/search/?q=whitespace+interpreter&with_visit=true&with_content=true&search_metadata=true)
