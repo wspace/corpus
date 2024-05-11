@@ -87,6 +87,7 @@
 - Bitbucket: [whitespace](https://bitbucket.org/repo/all?name=whitespace)
 - sourcehut: [whitespace](https://sr.ht/projects?search=whitespace&sort=recently-updated)
 - CodePlex:
+    [CodePlex Archive](https://codeplexarchive.org/),
     [repository zips](https://archive.org/details/sylirana_ms_codeplex_zips),
     [Archive Team](https://wiki.archiveteam.org/index.php/CodePlex)
 - Launchpad: [whitespace](https://launchpad.net/projects?text=whitespace)
