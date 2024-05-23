@@ -93,6 +93,7 @@
 - Launchpad: [whitespace](https://launchpad.net/projects?text=whitespace)
 - Codeberg: [whitespace](https://codeberg.org/explore/repos?sort=recentupdate&q=whitespace)
 - darcs hub: [homepage](https://hub.darcs.net/)
+- repo.or.cz: [whitespace](https://repo.or.cz/?a=project_list&s=whitespace)
 - BerliOS:
     [Archive Team](https://wiki.archiveteam.org/index.php/BerliOS),
     [Archive Team grab](https://archive.org/search?query=archiveteam%20berlios),
