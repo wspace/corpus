@@ -7,7 +7,10 @@
   "tags": ["interpreter"],
   "date": "2021-09-29 14:42:29 -0300",
   "spec_version": "0.3",
-  "source": ["https://github.com/wspace/joaquinrossi-esoteric", "https://github.com/joaquin-rossi/esoteric"],
+  "source": [
+    "https://github.com/wspace/joaquinrossi-esoteric",
+    "https://archive.softwareheritage.org/browse/origin/directory/?origin_url=https://github.com/joaquin-rossi/esoteric"
+  ],
   "submodules": [{ "path": "esoteric", "url": "https://github.com/wspace/joaquinrossi-esoteric" }],
   "programs": [{ "path": "tests/hello.ws", "spec_version": "0.2" }],
   "commands": [
@@ -20,5 +23,5 @@
       "notes": "The only implemented mode is `run`"
     }
   ],
-  "notes": "The project was rewritten in Rust and force-pushed to remove the Python interpreters; the wspace fork preserves the old version."
+  "notes": "The project was rewritten in Rust (only Brainfuck) and force-pushed to remove the Python interpreters (Brainfuck and Whitespace); the wspace archive preserves the old version. The original repo is now offline."
 }

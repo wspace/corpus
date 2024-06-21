@@ -55,7 +55,7 @@ language, including interpreters, compilers, and programs.
 | [Hello World!](whitespace/knightron0-hello)   | Sarthak Mangla, ritulkrsingh | Whitespace | programs | 2021-10-15 | [GitHub](https://github.com/knightron0/helloworld), [GitHub](https://github.com/knightron0/helloworld/pull/20) |
 | [cerner_2tothe5th](whitespace/truptibaliga-cerner) | Trupti Baliga | Whitespace | programs   | 2021-10-06 | [GitHub](https://github.com/Trupti-Baliga/cerner_2tothe5th) |
 | [cerner_2-5](whitespace/srinandanpai-cerner)  | Srinandan Pai    | Whitespace | programs     | 2021-10-01 | [GitHub](https://github.com/SrinandanPai/cerner_2-5) |
-| [esoteric](python/joaquinrossi-esoteric)      | Joaquín Rossi    | Python     | interpreter  | 2021-09-29 | [GitHub](https://github.com/wspace/joaquinrossi-esoteric), [GitHub](https://github.com/joaquin-rossi/esoteric) |
+| [esoteric](python/joaquinrossi-esoteric)      | Joaquín Rossi    | Python     | interpreter  | 2021-09-29 | [GitHub](https://github.com/wspace/joaquinrossi-esoteric), [GitHub (git archive)](https://archive.softwareheritage.org/browse/origin/directory/?origin_url=https://github.com/joaquin-rossi/esoteric) |
 | [SPOJ](cpp/codesiiita-spoj)                   | Codes-iiita      | C++        | assembler, programs | 2021-09-23 | [GitHub](https://github.com/Codes-iiita/SPOJ) |
 | [WhitespaceInterpreter](lua/cj5518)           | Carson Rueber    | Lua        | interpreter, programs | 2021-08-29 | [GitHub](https://github.com/CJ5518/WhitespaceInterpreter) |
 | [Whitespace grammar for GitHub](textmate/thaliaarchi-linguist) | Thalia Archibald | TextMate | grammar | 2021-08-15 | [GitHub](https://github.com/thaliaarchi/wspace-linguist) |
