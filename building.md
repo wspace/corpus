@@ -296,6 +296,7 @@ Building status of individual executables:
 - ❌ textmate/thaliaarchi-linguist
 - ❌ textmate/veniversum
 - typescript/simomu/bin/ws.js: `npm run build`
+- ⚠️ typescript/voliva-wsa/wsa
 - ❌ vim/rolf007
 - ❌ whitespace/ankitatandon-wspc
 - ❌ whitespace/arthurmtth

@@ -831,6 +831,9 @@
 [submodule "typescript/simomu/whitespace_ts"]
 	path = typescript/simomu/whitespace_ts
 	url = https://github.com/simomu-github/whitespace_ts
+[submodule "typescript/voliva-wsa/wsa"]
+	path = typescript/voliva-wsa/wsa
+	url = https://github.com/voliva/wsa
 [submodule "vim/rolf007/ws.vim"]
 	path = vim/rolf007/ws.vim
 	url = https://github.com/rolf007/ws.vim

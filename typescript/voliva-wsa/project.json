@@ -1,0 +1,161 @@
+{
+  "id": "typescript/voliva-wsa",
+  "name": "WSA",
+  "authors": ["Victor Oliva"],
+  "license": "none",
+  "languages": ["TypeScript"],
+  "tags": ["assembler", "interpreter", "debugger", "IDE"],
+  "date": "2024-06-20 08:24:23 +0800",
+  "spec_version": "0.3",
+  "source": ["https://github.com/voliva/wsa", "https://voliva.github.io/wsa/"],
+  "submodules": [{ "path": "wsa", "url": "https://github.com/voliva/wsa" }],
+  "whitespace": {
+    "nonstandard": [
+      { "name": "or", "seq": "LS", "desc": "bitwise OR" },
+      { "name": "not", "seq": "LT", "desc": "bitwise complement" },
+      { "name": "and", "seq": "LL", "desc": "bitwise AND" },
+      { "name": "dbg", "seq": "LLS", "desc": "breakpoint" },
+      { "name": "dbg", "seq": "LLT", "desc": "breakpoint" }
+    ],
+    "extension": "wspace"
+  },
+  "assembly": [
+    {
+      "mnemonics": {
+        "push": "push",
+        "dup": "dup",
+        "copy": "copy",
+        "swap": "swap",
+        "drop": "pop",
+        "slide": "slide",
+        "add": "add",
+        "sub": "sub",
+        "mul": "mul",
+        "div": "div",
+        "mod": "mod",
+        "store": "store",
+        "retrieve": "retrieve",
+        "label": "mark",
+        "call": "call",
+        "jmp": "jmp",
+        "jz": "jmpz",
+        "jn": "jmpn",
+        "ret": "ret",
+        "end": "exit",
+        "printc": "outc",
+        "printi": "outn",
+        "readc": "readc",
+        "readi": "readn"
+      },
+      "usage": ["debugger", "enum"],
+      "extension": "wsa",
+      "notes": "Extension instructions `or`, `not`, `and`, and `dbg` are included here with those mnemonics"
+    },
+    {
+      "mnemonics": {
+        "push": "push",
+        "dup": "dup",
+        "copy": "copy",
+        "swap": "swap",
+        "drop": "pop",
+        "slide": "slide",
+        "add": "add",
+        "sub": "sub",
+        "mul": "mul",
+        "div": "div",
+        "mod": "mod",
+        "store": "store",
+        "retrieve": "retrieve",
+        "label": "label",
+        "call": "call",
+        "jmp": "jump",
+        "jz": "jumpz",
+        "jn": "jumpn",
+        "ret": "ret",
+        "end": "exit",
+        "printc": "outc",
+        "printi": "outn",
+        "readc": "readc",
+        "readi": "readn"
+      },
+      "macros": [
+        { "name": "and" },
+        { "name": "or" },
+        { "name": "not" },
+        { "name": "storestr" },
+        { "name": "jumpp" },
+        { "name": "jumpnz" },
+        { "name": "jumppz" },
+        { "name": "jumppn" },
+        { "name": "jumpnp" },
+        { "name": "valuestring" },
+        { "name": "valueinteger" },
+        { "name": "debugger" },
+        { "name": "import" }
+      ],
+      "line_comments": [";"],
+      "usage": ["assembler"]
+    }
+  ],
+  "mappings": [
+    {
+      "space": "[Space]",
+      "tab": "[Tab]",
+      "lf": "[LF]",
+      "notes": "Mapped from in the `run` subcommand when the source program contains `[LF]`"
+    },
+    {
+      "space": "S ",
+      "tab": "T\t",
+      "lf": "N\n",
+      "notes": "Used when formatting opcodes in parse errors and in assembler output when `withAnnotations` is enabled (hardcoded disabled)"
+    }
+  ],
+  "programs": [
+    { "path": "playground.wsa", "spec_version": "0.3" },
+    { "path": "src/experiments/hello-world.ts", "spec_version": "0.2" },
+    { "path": "src/experiments/cat.ts", "spec_version": "0.2" },
+    {
+      "path": "src/wsa/lib/bitwise.extensions.wsa",
+      "spec_version": "0.3",
+      "notes": "Bitwise operations implemented with extension instructions"
+    },
+    {
+      "path": "src/wsa/lib/bitwise.wsa",
+      "spec_version": "0.3",
+      "notes": "Bitwise operations implemented without extension instructions"
+    },
+    { "path": "src/wsa/lib/io.wsa", "spec_version": "0.2" },
+    { "path": "src/wsa/lib/math.wsa", "spec_version": "0.2" },
+    { "path": "src/wsa/lib/memory.wsa", "spec_version": "0.3" },
+    { "path": "wsa-tests/arithmetic.wsa", "spec_version": "0.2" },
+    { "path": "wsa-tests/count.wsa", "spec_version": "0.2" },
+    { "path": "wsa-tests/heap.wsa", "spec_version": "0.2" },
+    { "path": "wsa-tests/hello_world.wsa", "spec_version": "0.2" },
+    { "path": "wsa-tests/jumps.wsa", "spec_version": "0.2" },
+    { "path": "wsa-tests/swap.wsa", "spec_version": "0.2" }
+  ],
+  "commands": [
+    {
+      "bin": "wsa",
+      "option_parse": "JavaScript Commander.js",
+      "subcommands": [
+        {
+          "name": "compile",
+          "desc": "Compile assembly file into whitespace",
+          "usage": "compile <main> <output> [--debugger]",
+          "input": "<main>",
+          "output": "<output>",
+          "options": [{ "long": "debugger", "desc": "include debugger symbols" }]
+        },
+        {
+          "name": "run",
+          "desc": "Run a whitespace program",
+          "usage": "run <file> [--asm]",
+          "input": "<file>",
+          "options": [{ "long": "asm", "desc": "assemble before running" }]
+        }
+      ]
+    }
+  ]
+}
