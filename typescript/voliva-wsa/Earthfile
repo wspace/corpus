@@ -1,0 +1,13 @@
+VERSION 0.8
+
+build:
+    FROM node:22
+    WORKDIR /wsa
+    COPY wsa .
+    RUN npm install && \
+        npm run build
+
+docker:
+    FROM +build
+    ENTRYPOINT ["node", "dist/cli.js"]
+    SAVE IMAGE wspace-corpus/typescript/voliva-wsa

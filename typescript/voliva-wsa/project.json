@@ -143,18 +143,25 @@
         {
           "name": "compile",
           "desc": "Compile assembly file into whitespace",
-          "usage": "compile <main> <output> [--debugger]",
+          "usage": "compile [--debugger] <main> <output>",
           "input": "<main>",
           "output": "<output>",
-          "options": [{ "long": "debugger", "desc": "include debugger symbols" }]
+          "options": [
+            { "long": "debugger", "desc": "include debugger symbols" },
+            { "short": "h", "long": "help", "desc": "display help for command" }
+          ]
         },
         {
           "name": "run",
           "desc": "Run a whitespace program",
-          "usage": "run <file> [--asm]",
+          "usage": "run [--asm] <file>",
           "input": "<file>",
-          "options": [{ "long": "asm", "desc": "assemble before running" }]
-        }
+          "options": [
+            { "long": "asm", "desc": "assemble before running" },
+            { "short": "h", "long": "help", "desc": "display help for command" }
+          ]
+        },
+        { "name": "help", "usage": "help [compile | run]" }
       ]
     }
   ]

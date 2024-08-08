@@ -234,6 +234,7 @@ Projects that can be built with Docker:
 - typescript/davramenko-codewars: Needs Codewars entrypoint
 - typescript/eduardoborsa-codewars: Needs Codewars entrypoint
 - typescript/fy0u11: Needs Codewars entrypoint
+- typescript/voliva-wsa
 - whitespace/drebelsky-programs
 - whitespace/lukepebody-advent-of-code
 - whitespace/t3nsor-spoj
@@ -296,7 +297,6 @@ Building status of individual executables:
 - ❌ textmate/thaliaarchi-linguist
 - ❌ textmate/veniversum
 - typescript/simomu/bin/ws.js: `npm run build`
-- ⚠️ typescript/voliva-wsa/wsa
 - ❌ vim/rolf007
 - ❌ whitespace/ankitatandon-wspc
 - ❌ whitespace/arthurmtth
