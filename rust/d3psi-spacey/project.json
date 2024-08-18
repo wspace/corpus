@@ -7,7 +7,11 @@
   "tags": ["interpreter", "programs"],
   "date": "2022-06-15 23:47:56 +0200",
   "spec_version": "0.3",
-  "source": ["https://github.com/D3PSI/spacey", "https://github.com/D3PSI/spacey-wasm-example"],
+  "source": [
+    "https://github.com/D3PSI/spacey",
+    "https://github.com/D3PSI/spacey-wasm-example",
+    "https://github.com/wspace/corpus/issues/3"
+  ],
   "submodules": [{ "path": "spacey", "url": "https://github.com/D3PSI/spacey" }],
   "packages": [
     { "name": "spacey", "registry": "crates.io", "url": "https://crates.io/crates/spacey" },

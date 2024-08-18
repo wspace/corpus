@@ -657,6 +657,12 @@ func GetURLLabel(url string) (string, error) {
 	if host == "github.com" && strings.HasPrefix(u.Path, "/thaliaarchi/repo-archival/") {
 		return "repo-archival", nil
 	}
+	if host == "github.com" && strings.HasPrefix(u.Path, "/wspace/corpus/issues/") {
+		return "issue#" + strings.TrimPrefix(u.Path, "/wspace/corpus/issues/"), nil
+	}
+	if host == "github.com" && strings.HasPrefix(u.Path, "/wspace/corpus/pull/") {
+		return "PR#" + strings.TrimPrefix(u.Path, "/wspace/corpus/pull/"), nil
+	}
 	dots := strings.Count(host, ".")
 	if dots == 2 {
 		if label, ok := subdomainLabels[host[strings.IndexByte(host, '.')+1:]]; ok {

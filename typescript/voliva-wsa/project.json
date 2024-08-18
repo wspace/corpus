@@ -7,7 +7,11 @@
   "tags": ["assembler", "interpreter", "debugger", "IDE"],
   "date": "2024-06-20 08:24:23 +0800",
   "spec_version": "0.3",
-  "source": ["https://github.com/voliva/wsa", "https://voliva.github.io/wsa/"],
+  "source": [
+    "https://github.com/voliva/wsa",
+    "https://voliva.github.io/wsa/",
+    "https://github.com/wspace/corpus/issues/5"
+  ],
   "submodules": [{ "path": "wsa", "url": "https://github.com/voliva/wsa" }],
   "whitespace": {
     "nonstandard": [

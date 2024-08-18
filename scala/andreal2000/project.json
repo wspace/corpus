@@ -9,7 +9,8 @@
   "spec_version": "0.3",
   "source": [
     "https://github.com/Andreal2000/WhitespaceEvaluator",
-    "https://gist.github.com/Andreal2000/8d876ba97b70240b50b68e5993119584"
+    "https://gist.github.com/Andreal2000/8d876ba97b70240b50b68e5993119584",
+    "https://github.com/wspace/corpus/issues/4"
   ],
   "submodules": [{ "path": "WhitespaceEvaluator", "url": "https://github.com/Andreal2000/WhitespaceEvaluator" }],
   "assembly": {
