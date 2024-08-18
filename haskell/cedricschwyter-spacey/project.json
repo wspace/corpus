@@ -1,5 +1,5 @@
 {
-  "id": "haskell/d3psi-spacey",
+  "id": "haskell/cedricschwyter-spacey",
   "name": "haskell-spacey",
   "authors": ["Cedric Schwyter"],
   "license": "GPL-3.0-or-later",
@@ -7,8 +7,8 @@
   "tags": ["programs"],
   "date": "2022-09-13 10:26:35 +0200",
   "spec_version": "0.3",
-  "source": ["https://github.com/D3PSI/haskell-spacey"],
-  "submodules": [{ "path": "haskell-spacey", "url": "https://github.com/D3PSI/haskell-spacey" }],
+  "source": ["https://github.com/cedricschwyter/haskell-spacey"],
+  "submodules": [{ "path": "haskell-spacey", "url": "https://github.com/cedricschwyter/haskell-spacey" }],
   "programs": [
     { "path": "ws/cat.ws", "spec_version": "0.2" },
     { "path": "ws/count.ws", "spec_version": "0.2" },

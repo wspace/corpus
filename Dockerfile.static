@@ -1,5 +1,5 @@
 FROM wspace-corpus/c/bvisness AS c_bvisness
-FROM wspace-corpus/c/d3psi AS c_d3psi
+FROM wspace-corpus/c/cedricschwyter AS c_cedricschwyter
 FROM wspace-corpus/c/hogelog AS c_hogelog
 FROM wspace-corpus/c/koturn AS c_koturn
 FROM wspace-corpus/c/kspalaiologos-asm2ws AS c_kspalaiologos-asm2ws
@@ -30,7 +30,7 @@ FROM wspace-corpus/go/tempxla-go-wspace AS go_tempxla-go-wspace
 FROM wspace-corpus/go/zorchenhimer AS go_zorchenhimer
 FROM wspace-corpus/rust/censoredusername-whitespacers AS rust_censoredusername-whitespacers
 FROM wspace-corpus/rust/collidedscope-albus AS rust_collidedscope-albus
-FROM wspace-corpus/rust/d3psi-spacey AS rust_d3psi-spacey
+FROM wspace-corpus/rust/cedricschwyter-spacey AS rust_cedricschwyter-spacey
 # FROM wspace-corpus/rust/faultier-albino AS rust_faultier-albino
 FROM wspace-corpus/rust/guricerin AS rust_guricerin
 FROM wspace-corpus/rust/hamidrezakp AS rust_hamidrezakp
@@ -48,7 +48,7 @@ FROM scratch
 
 WORKDIR /wspace
 COPY --from=c_bvisness                         /whitespace                          c/bvisness/
-COPY --from=c_d3psi                            /interpreter                         c/d3psi/
+COPY --from=c_cedricschwyter                   /interpreter                         c/cedricschwyter/
 COPY --from=c_hogelog                          /wspace                              c/hogelog/
 COPY --from=c_koturn                           /whitespace.out                      c/koturn/
 COPY --from=c_kspalaiologos-asm2ws             /wsi                                 c/kspalaiologos-asm2ws/
@@ -79,7 +79,7 @@ COPY --from=go_tempxla-go-wspace               /go-wspace                       
 COPY --from=go_zorchenhimer                    /wi                                  go/zorchenhimer/
 COPY --from=rust_censoredusername-whitespacers /wsc                                 rust/censoredusername-whitespacers/
 COPY --from=rust_collidedscope-albus           /albus                               rust/collidedscope-albus/
-COPY --from=rust_d3psi-spacey                  /spacey                              rust/d3psi-spacey/
+COPY --from=rust_cedricschwyter-spacey         /spacey                              rust/cedricschwyter-spacey/
 # COPY --from=rust_faultier-albino             /albino /albino-run /albino-build /albino-exec /albino-gen rust/faultier-albino/
 COPY --from=rust_guricerin                     /whitespace-rs                       rust/guricerin/
 COPY --from=rust_hamidrezakp                   /ws                                  rust/hamidrezakp/

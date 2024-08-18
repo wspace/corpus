@@ -5,7 +5,7 @@
 Projects that can be built with Docker:
 
 - c/bvisness
-- c/d3psi
+- c/cedricschwyter
 - c/hogelog
 - c/koturn
 - c/kspalaiologos-asm2ws
@@ -208,9 +208,9 @@ Projects that can be built with Docker:
 - ruby/wconrad
 - ruby/yhara-esolang-book
 - ruby/yuta0023-textproc
+- rust/cedricschwyter-spacey
 - rust/censoredusername-whitespacers
 - rust/collidedscope-albus
-- rust/d3psi-spacey
 - rust/faultier-albino: Needs many changes for latest Rust
 - rust/faultier-whitebase: Needs many changes for latest Rust
 - rust/guricerin
@@ -251,7 +251,7 @@ Building status of individual executables:
 - ❌ elixir/quinnwilton
 - ⚠️ haskell/brainbush-tomato/wspace: `make` Needs changes for latest Haskell
 - ⚠️ haskell/burghard-wsa/trans
-- ❌ haskell/d3psi-spacey
+- ❌ haskell/cedricschwyter-spacey
 - ❌ haskell/edwinb-wspace-0.2
 - ⚠️ haskell/ft-spaceman/*unspecified*: `cabal build`
 - ⚠️ haskell/haroldl-whitespace-nd/wspace: `make` Needs changes for latest Haskell

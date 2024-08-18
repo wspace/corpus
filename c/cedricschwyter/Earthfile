@@ -13,4 +13,4 @@ docker:
     FROM scratch
     COPY +build/ /
     ENTRYPOINT ["/bin/interpreter"]
-    SAVE IMAGE wspace-corpus/c/d3psi
+    SAVE IMAGE wspace-corpus/c/cedricschwyter

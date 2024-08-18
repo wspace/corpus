@@ -4,9 +4,9 @@
 [submodule "c/bvisness/whitespace"]
 	path = c/bvisness/whitespace
 	url = https://github.com/bvisness/whitespace
-[submodule "c/d3psi/whitespace-interpreter"]
-	path = c/d3psi/whitespace-interpreter
-	url = https://github.com/D3PSI/whitespace-interpreter
+[submodule "c/cedricschwyter/whitespace-interpreter"]
+	path = c/cedricschwyter/whitespace-interpreter
+	url = https://github.com/cedricschwyter/whitespace-interpreter
 [submodule "c/hogelog/ws"]
 	path = c/hogelog/ws
 	url = https://github.com/wspace/hogelog-c
@@ -259,9 +259,9 @@
 [submodule "haskell/burghard-wsa/wsa"]
 	path = haskell/burghard-wsa/wsa
 	url = https://github.com/wspace/burghard-wsa
-[submodule "haskell/d3psi-spacey/haskell-spacey"]
-	path = haskell/d3psi-spacey/haskell-spacey
-	url = https://github.com/D3PSI/haskell-spacey
+[submodule "haskell/cedricschwyter-spacey/haskell-spacey"]
+	path = haskell/cedricschwyter-spacey/haskell-spacey
+	url = https://github.com/cedricschwyter/haskell-spacey
 [submodule "haskell/ft-spaceman/spaceman"]
 	path = haskell/ft-spaceman/spaceman
 	url = https://gitlab.com/ft/spaceman.git
@@ -735,15 +735,15 @@
 [submodule "ruby/yuta0023-textproc/TextProc"]
 	path = ruby/yuta0023-textproc/TextProc
 	url = https://github.com/wspace/yuta0023-textproc
+[submodule "rust/cedricschwyter-spacey/spacey"]
+	path = rust/cedricschwyter-spacey/spacey
+	url = https://github.com/cedricschwyter/spacey
 [submodule "rust/censoredusername-whitespacers/whitespace-rs"]
 	path = rust/censoredusername-whitespacers/whitespace-rs
 	url = https://github.com/CensoredUsername/whitespace-rs
 [submodule "rust/collidedscope-albus/albus"]
 	path = rust/collidedscope-albus/albus
 	url = https://github.com/collidedscope/albus
-[submodule "rust/d3psi-spacey/spacey"]
-	path = rust/d3psi-spacey/spacey
-	url = https://github.com/D3PSI/spacey
 [submodule "rust/faultier-albino/albino"]
 	path = rust/faultier-albino/albino
 	url = https://github.com/faultier/albino

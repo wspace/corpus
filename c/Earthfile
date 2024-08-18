@@ -3,7 +3,7 @@ VERSION 0.8
 # TODO: c/shinh-elvm and c/tejaskasetty builds fail
 
 IMPORT ./bvisness AS c-bvisness
-IMPORT ./d3psi AS c-d3psi
+IMPORT ./cedricschwyter AS c-cedricschwyter
 IMPORT ./hogelog AS c-hogelog
 IMPORT ./koturn AS c-koturn
 IMPORT ./kspalaiologos-asm2ws AS c-kspalaiologos-asm2ws
@@ -27,7 +27,7 @@ IMPORT ./zackeua AS c-zackeua
 build:
     FROM scratch
     BUILD c-bvisness+build
-    BUILD c-d3psi+build
+    BUILD c-cedricschwyter+build
     BUILD c-hogelog+build
     BUILD c-koturn+build
     BUILD c-kspalaiologos-asm2ws+build
@@ -49,7 +49,7 @@ build:
     BUILD c-zackeua+build
     WORKDIR /corpus/c
     COPY c-bvisness+build/ bvisness/
-    COPY c-d3psi+build/ d3psi/
+    COPY c-cedricschwyter+build/ cedricschwyter/
     COPY c-hogelog+build/ hogelog/
     COPY c-koturn+build/ koturn/
     COPY c-kspalaiologos-asm2ws+build/ kspalaiologos-asm2ws/
@@ -80,7 +80,7 @@ docker:
 docker-all:
     BUILD +docker
     BUILD c-bvisness+docker
-    BUILD c-d3psi+docker
+    BUILD c-cedricschwyter+docker
     BUILD c-hogelog+docker
     BUILD c-koturn+docker
     BUILD c-kspalaiologos-asm2ws+docker

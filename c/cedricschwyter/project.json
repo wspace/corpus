@@ -1,5 +1,5 @@
 {
-  "id": "c/d3psi",
+  "id": "c/cedricschwyter",
   "name": "whitespace-interpreter",
   "authors": ["Cedric Schwyter"],
   "license": "GPL-3.0-or-later",
@@ -7,8 +7,13 @@
   "tags": ["interpreter", "programs"],
   "date": "2020-10-09 14:27:42 +0200",
   "spec_version": "0.2",
-  "source": ["https://github.com/D3PSI/whitespace-interpreter"],
-  "submodules": [{ "path": "whitespace-interpreter", "url": "https://github.com/D3PSI/whitespace-interpreter" }],
+  "source": ["https://github.com/cedricschwyter/whitespace-interpreter"],
+  "submodules": [
+    {
+      "path": "whitespace-interpreter",
+      "url": "https://github.com/cedricschwyter/whitespace-interpreter"
+    }
+  ],
   "whitespace": { "extension": "ws" },
   "assembly": {
     "mnemonics": {

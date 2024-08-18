@@ -16,7 +16,7 @@ language, including interpreters, compilers, and programs.
 | [whitespace-interpreter](ruby/shimpeisaito)   | Shimpei Saito    | Ruby       | interpreter, programs | 2022-11-13 | [GitHub](https://github.com/ShimpeiSaito/whitespace-interpreter) |
 | [Whitespace-Knots-N-Crosses](whitespace/spicedsage-knots-n-crosses) | Sage | Whitespace | programs | 2022-10-28 | [GitHub](https://github.com/SpicedSage/Whitespace-Knots-N-Crosses) |
 | [WhiteSpace-Examples](whitespace/tshoang-examples) | Thái Sơn Hoàng | Whitespace | programs  | 2022-10-23 | [GitHub](https://github.com/tshoang/WhiteSpace-Examples) |
-| [haskell-spacey](haskell/d3psi-spacey)        | Cedric Schwyter  | Haskell    | programs     | 2022-09-13 | [GitHub](https://github.com/D3PSI/haskell-spacey) |
+| [haskell-spacey](haskell/cedricschwyter-spacey) | Cedric Schwyter | Haskell   | programs     | 2022-09-13 | [GitHub](https://github.com/cedricschwyter/haskell-spacey) |
 | [whitespace](go/zorchenhimer)                 | Zorchenhimer     | Go         | interpreter, assembler, disassembler, programs | 2022-08-27 | [GitHub](https://github.com/zorchenhimer/whitespace) |
 | [pywhitespace](python/fvogels)                | Frederic Vogels  | Python     | interpreter  | 2022-07-28 | [GitHub](https://github.com/fvogels/pywhitespace) |
 | [codewars-typescript](typescript/davramenko-codewars) | Dmitry Avramenko | TypeScript | interpreter | 2022-07-26 | [GitHub](https://github.com/davramenko/codewars-typescript) |
@@ -26,7 +26,7 @@ language, including interpreters, compilers, and programs.
 | [whitenote](go/makiuchid-whitenote)           | MakKi            | Go         | Jupyter kernel, interpreter | 2022-07-06 | [GitHub](https://github.com/makiuchi-d/whitenote) |
 | [useless-codes](whitespace/arthurmtth)        | Arthur Monteiro  | whitespace | programs     | 2022-06-24 | [GitHub](https://github.com/ArthurMtTh/useless-codes) |
 | [Hello_World](whitespace/femifacia-hello)     | Facia Femi       | Whitespace | programs     | 2022-06-15 | [GitHub](https://github.com/femifacia/Hello_World) |
-| [spacey](rust/d3psi-spacey)                   | Cedric Schwyter  | Rust       | interpreter, programs | 2022-06-15 | [GitHub](https://github.com/D3PSI/spacey), [GitHub](https://github.com/D3PSI/spacey-wasm-example), [issue#3](https://github.com/wspace/corpus/issues/3) |
+| [spacey](rust/cedricschwyter-spacey)          | Cedric Schwyter  | Rust       | interpreter, programs | 2022-06-15 | [GitHub](https://github.com/cedricschwyter/spacey), [GitHub](https://github.com/cedricschwyter/spacey-wasm-example), [issue#3](https://github.com/wspace/corpus/issues/3) |
 | [Whitespace](java/jbanana)                    | JBanana          | Java       | interpreter, assembler, debugger, steganography, stdlib, programs | 2022-06-03 | [Codeberg](https://codeberg.org/JBanana/whitespace), [Codeberg Pages](https://jbanana.codeberg.page/whitespace/doc/) |
 | [w_space](python/victornuzhniy)               | Victor Nuzhniy   | Python     | interpreter  | 2022-05-21 | [GitHub](https://github.com/victor-nuzhniy/w_space) |
 | [Whitespace-lang example](whitespace/p1atdev-hello) | Plat       | Whitespace | programs     | 2022-05-05 | [GitHub](https://github.com/p1atdev/hello_world_ws) |
@@ -95,7 +95,7 @@ language, including interpreters, compilers, and programs.
 | [Spiceweight](crystal/collidedscope-spiceweight) | Collided Scope | Crystal   | interpreter, benchmarking, programs | 2020-12-12 | [GitHub](https://github.com/collidedscope/spiceweight) |
 | [Merry Christmas](whitespace/rameshdahiya-merry-christmas) | Ramesh Kumar | Whitespace | programs | 2020-12-10 | [GitHub Gist](https://gist.github.com/rameshdahiya/c5705032173968999ecd0c3c1cf238c7) |
 | [Whitespacy](python/francoisrozet-whitespacy) | François Rozet   | Python     | polyglot formatter, programs | 2020-12-08 | [GitHub](https://github.com/francois-rozet/whitespacy) |
-| [whitespace-interpreter](c/d3psi)             | Cedric Schwyter  | C          | interpreter, programs | 2020-10-09 | [GitHub](https://github.com/D3PSI/whitespace-interpreter) |
+| [whitespace-interpreter](c/cedricschwyter)    | Cedric Schwyter  | C          | interpreter, programs | 2020-10-09 | [GitHub](https://github.com/cedricschwyter/whitespace-interpreter) |
 | [Whitespace Language - Online Translator/Interpreter](php/dcode) | dCode | PHP, JavaScript | interpreter, text to Whitespace, mapping | 2020-09-23 | [dcode.fr](https://www.dcode.fr/whitespace-language) |
 | [snakulator](whitespace/donno2048-snakulator) | Elisha Hollander | Whitespace | programs     | 2020-09-15 | [GitHub](https://github.com/donno2048/snakulator), [GitHub Pages](https://donno2048.github.io/snakulator/) |
 | [Repo for 2^5 Coding Competition - Cerner](whitespace/davidjkling-cerner) | David J Kling | Whitespace | programs | 2020-09-14 | [GitHub](https://github.com/davidjkling/cerner_2_5_2020) |

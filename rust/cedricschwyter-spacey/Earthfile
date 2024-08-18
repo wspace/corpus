@@ -16,4 +16,4 @@ docker:
     FROM scratch
     COPY +build/ /
     ENTRYPOINT ["/bin/spacey"]
-    SAVE IMAGE wspace-corpus/rust/d3psi-spacey
+    SAVE IMAGE wspace-corpus/rust/cedricschwyter-spacey

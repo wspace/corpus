@@ -18,7 +18,7 @@ services:
       dockerfile: Dockerfile.static
     depends_on:
       - c_bvisness
-      - c_d3psi
+      - c_cedricschwyter
       - c_hogelog
       - c_koturn
       - c_kspalaiologos-asm2ws
@@ -46,7 +46,7 @@ services:
       - go_zorchenhimer
       - rust_censoredusername-whitespacers
       - rust_collidedscope-albus
-      - rust_d3psi-spacey
+      - rust_cedricschwyter-spacey
       - rust_guricerin
       - rust_hamidrezakp
       - rust_jayshua
@@ -94,9 +94,9 @@ services:
   c_bvisness:
     image: wspace-corpus/c/bvisness
     build: c/bvisness
-  c_d3psi:
-    image: wspace-corpus/c/d3psi
-    build: c/d3psi
+  c_cedricschwyter:
+    image: wspace-corpus/c/cedricschwyter
+    build: c/cedricschwyter
   c_hogelog:
     image: wspace-corpus/c/hogelog
     build: c/hogelog
@@ -253,9 +253,9 @@ services:
   rust_collidedscope-albus:
     image: wspace-corpus/rust/collidedscope-albus
     build: rust/collidedscope-albus
-  rust_d3psi-spacey:
-    image: wspace-corpus/rust/d3psi-spacey
-    build: rust/d3psi-spacey
+  rust_cedricschwyter-spacey:
+    image: wspace-corpus/rust/cedricschwyter-spacey
+    build: rust/cedricschwyter-spacey
   rust_guricerin:
     image: wspace-corpus/rust/guricerin
     build: rust/guricerin

@@ -1,8 +1,8 @@
 VERSION 0.8
 
+IMPORT ./cedricschwyter-spacey AS rust-cedricschwyter-spacey
 IMPORT ./censoredusername-whitespacers AS rust-censoredusername-whitespacers
 IMPORT ./collidedscope-albus AS rust-collidedscope-albus
-IMPORT ./d3psi-spacey AS rust-d3psi-spacey
 # IMPORT ./faultier-albino AS rust-faultier-albino
 # IMPORT ./faultier-whitebase AS rust-faultier-whitebase
 IMPORT ./guricerin AS rust-guricerin
@@ -20,9 +20,9 @@ IMPORT ./zrneely AS rust-zrneely
 
 build:
     FROM scratch
+    BUILD rust-cedricschwyter-spacey+build
     BUILD rust-censoredusername-whitespacers+build
     BUILD rust-collidedscope-albus+build
-    BUILD rust-d3psi-spacey+build
     # BUILD rust-faultier-albino+build
     # BUILD rust-faultier-whitebase+build
     BUILD rust-guricerin+build
@@ -38,9 +38,9 @@ build:
     BUILD rust-thaliaarchi-yspace+build
     BUILD rust-zrneely+build
     WORKDIR /corpus/rust
+    COPY rust-cedricschwyter-spacey+build/ cedricschwyter-spacey/
     COPY rust-censoredusername-whitespacers+build/ censoredusername-whitespacers/
     COPY rust-collidedscope-albus+build/ collidedscope-albus/
-    COPY rust-d3psi-spacey+build/ d3psi-spacey/
     # # COPY rust-faultier-albino+build/ faultier-albino/
     # # COPY rust-faultier-whitebase+build/ faultier-whitebase/
     COPY rust-guricerin+build/ guricerin/
@@ -65,9 +65,9 @@ docker:
 
 docker-all:
     BUILD +docker
+    BUILD rust-cedricschwyter-spacey+docker
     BUILD rust-censoredusername-whitespacers+docker
     BUILD rust-collidedscope-albus+docker
-    BUILD rust-d3psi-spacey+docker
     # BUILD rust-faultier-albino+docker
     # BUILD rust-faultier-whitebase+docker
     BUILD rust-guricerin+docker
