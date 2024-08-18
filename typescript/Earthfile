@@ -1,0 +1,36 @@
+VERSION 0.8
+
+# IMPORT ./davramenko-codewars AS typescript-davramenko-codewars
+# IMPORT ./eduardoborsa-codewars AS typescript-eduardoborsa-codewars
+# IMPORT ./fy0u11 AS typescript-fy0u11
+# IMPORT ./simomu AS typescript-simomu
+IMPORT ./voliva-wsa AS typescript-voliva-wsa
+
+build:
+    FROM scratch
+    # BUILD typescript-davramenko-codewars+build
+    # BUILD typescript-eduardoborsa-codewars+build
+    # BUILD typescript-fy0u11+build
+    # BUILD typescript-simomu+build
+    BUILD typescript-voliva-wsa+build
+    WORKDIR /corpus/typescript
+    # COPY typescript-davramenko-codewars+build/ davramenko-codewars/
+    # COPY typescript-eduardoborsa-codewars+build/ eduardoborsa-codewars/
+    # COPY typescript-fy0u11+build/ fy0u11/
+    # COPY typescript-simomu+build/ simomu/
+    COPY typescript-voliva-wsa+build/ voliva-wsa/
+    SAVE ARTIFACT /corpus /corpus
+
+docker:
+    FROM node:alpine
+    WORKDIR /corpus/typescript
+    COPY +build/ /
+    SAVE IMAGE wspace-corpus/typescript
+
+docker-all:
+    BUILD +docker
+    # BUILD typescript-davramenko-codewars+docker
+    # BUILD typescript-eduardoborsa-codewars+docker
+    # BUILD typescript-fy0u11+docker
+    # BUILD typescript-simomu+docker
+    BUILD typescript-voliva-wsa+docker

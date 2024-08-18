@@ -18,6 +18,7 @@ IMPORT ./lolcode
 IMPORT ./lua
 IMPORT ./ocaml
 IMPORT ./rust
+IMPORT ./typescript
 
 build:
     FROM scratch
@@ -39,6 +40,7 @@ build:
     BUILD lua+build
     BUILD ocaml+build
     BUILD rust+build
+    BUILD typescript+build
     WORKDIR /corpus
     COPY c+build/corpus/c c
     COPY clojure+build/corpus/clojure clojure
@@ -58,6 +60,7 @@ build:
     COPY lua+build/corpus/lua lua
     COPY ocaml+build/corpus/ocaml ocaml
     COPY rust+build/corpus/rust rust
+    COPY typescript+build/corpus/rust rust
     SAVE ARTIFACT /corpus /corpus
 
 # Dependencies:
@@ -81,6 +84,7 @@ build:
 #   lua: lua5.4
 #   ocaml: -
 #   rust: -
+#   typescript: TODO
 docker:
     FROM ubuntu:24.04
     RUN apt-get update && \
@@ -112,3 +116,4 @@ docker-all:
     BUILD lua+docker-all
     BUILD ocaml+docker-all
     BUILD rust+docker-all
+    BUILD typescript+docker-all
