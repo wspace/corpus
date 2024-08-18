@@ -15,11 +15,11 @@
   "submodules": [{ "path": "wsa", "url": "https://github.com/voliva/wsa" }],
   "whitespace": {
     "nonstandard": [
-      { "name": "or", "seq": "LS", "desc": "bitwise OR" },
-      { "name": "not", "seq": "LT", "desc": "bitwise complement" },
-      { "name": "and", "seq": "LL", "desc": "bitwise AND" },
-      { "name": "dbg", "seq": "LLS", "desc": "breakpoint" },
-      { "name": "dbg", "seq": "LLT", "desc": "breakpoint" }
+      { "name": "or", "seq": "TSLS", "desc": "bitwise OR" },
+      { "name": "not", "seq": "TSLT", "desc": "bitwise complement" },
+      { "name": "and", "seq": "TSLL", "desc": "bitwise AND" },
+      { "name": "debugger", "seq": "LLS", "desc": "breakpoint" },
+      { "name": "debugger", "seq": "LLT", "desc": "breakpoint (alternate encoding)" }
     ],
     "extension": "wspace"
   },
@@ -51,9 +51,10 @@
         "readc": "readc",
         "readi": "readn"
       },
+      "patterns": { "label": "label_{n}" },
       "usage": ["debugger", "enum"],
       "extension": "wsa",
-      "notes": "Extension instructions `or`, `not`, `and`, and `dbg` are included here with those mnemonics"
+      "notes": "Extension instructions `or`, `not`, `and`, and `dbg` are included here with those mnemonics. Labels are disassembled as `label_{n}` with the parsed unsigned integer, unless the source was wsa."
     },
     {
       "mnemonics": {
