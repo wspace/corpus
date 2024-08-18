@@ -667,7 +667,7 @@
 	url = https://github.com/umutoztunc/whitesymex
 [submodule "python/victornuzhniy/w_space"]
 	path = python/victornuzhniy/w_space
-	url = https://github.com/victor-nuzhniy/w_space
+	url = https://github.com/wspace/victornuzhniy-codewars
 [submodule "python/wasabili/Whitespace"]
 	path = python/wasabili/Whitespace
 	url = https://gist.github.com/wasabili/708773
