@@ -5,10 +5,13 @@
   "license": "none",
   "languages": ["Whitespace"],
   "tags": ["programs"],
-  "date": "2021-07-22 02:16:42 -0700",
+  "date": "2020-08-29 23:48:38 -0700",
   "spec_version": "0.2",
-  "source": ["https://github.com/Reconcyl/eso"],
-  "submodules": [{ "path": "eso", "url": "https://github.com/Reconcyl/eso" }],
+  "source": ["https://github.com/Reconcyl/eso", "https://github.com/Reconcyl/wsbf"],
+  "submodules": [
+    { "path": "eso", "url": "https://github.com/Reconcyl/eso" },
+    { "path": "wsbf", "url": "https://github.com/Reconcyl/wsbf" }
+  ],
   "relations": [{ "id": "rust/censoredusername-whitespace-rs", "type": "assembly" }],
   "whitespace": { "extension": "ws" },
   "assembly": { "extension": "wsasm" },
@@ -21,5 +24,6 @@
       "authors": ["Reconcyl"],
       "desc": "BF interpreter in Whitespace."
     }
-  ]
+  ],
+  "notes": "Reconcyl/wsbf is the original repo. wsbf was moved into eso on 2021-07-22 with its history intact, but moved into wsbf/. eso has a mostly linear history with imported projects back to back instead of interleaved, so commit dates are out of order."
 }

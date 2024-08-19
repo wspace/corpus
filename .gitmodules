@@ -1029,6 +1029,9 @@
 [submodule "whitespace/reconcyl-wsbf/eso"]
 	path = whitespace/reconcyl-wsbf/eso
 	url = https://github.com/Reconcyl/eso
+[submodule "whitespace/reconcyl-wsbf/wsbf"]
+	path = whitespace/reconcyl-wsbf/wsbf
+	url = https://github.com/Reconcyl/wsbf
 [submodule "whitespace/resten1497-christmas-tree/christmas_tree"]
 	path = whitespace/resten1497-christmas-tree/christmas_tree
 	url = https://github.com/Resten1497/christmas_tree

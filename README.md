@@ -62,7 +62,6 @@ language, including interpreters, compilers, and programs.
 | [Whitespace grammar for GitHub](textmate/thaliaarchi-linguist) | Thalia Archibald | TextMate | grammar | 2021-08-15 | [GitHub](https://github.com/thaliaarchi/wspace-linguist) |
 | [NovaGrammars](textmate/nixinova)             | Nixinova         | TextMate   | syntax highlighting, programs | 2021-08-15 | [GitHub](https://github.com/Nixinova/NovaGrammars), [GitHub](https://github.com/github/linguist/discussions/5519#discussioncomment-1185871) |
 | [SPOJ](whitespace/t3nsor-spoj)                | Brian Bi         | Whitespace | assembler, programs | 2021-08-11 | [GitHub](https://github.com/t3nsor/SPOJ) |
-| [wsbf](whitespace/reconcyl-wsbf)              | Reconcyl         | Whitespace | programs     | 2021-07-22 | [GitHub](https://github.com/Reconcyl/eso) |
 | [whitespace-rs](rust/guricerin)               | guricerin        | Rust       | interpreter, programs | 2021-07-04 | [GitHub](https://github.com/guricerin/esolangs) |
 | [whitespace-compiler](python/prajwalanand)    | Prajwal Anand    | Python     | transpiler, mapping, programs | 2021-07-01 | [GitHub](https://github.com/prajwalanand/whitespace-compiler) |
 | [WhiteSpace program](whitespace/techvstechie) | techVstechie     | Whitespace | programs     | 2021-06-30 | [GitHub Gist](https://gist.github.com/techVstechie/a1af13232e5c8145ffb770884d32187b) |
@@ -100,6 +99,7 @@ language, including interpreters, compilers, and programs.
 | [snakulator](whitespace/donno2048-snakulator) | Elisha Hollander | Whitespace | programs     | 2020-09-15 | [GitHub](https://github.com/donno2048/snakulator), [GitHub Pages](https://donno2048.github.io/snakulator/) |
 | [Repo for 2^5 Coding Competition - Cerner](whitespace/davidjkling-cerner) | David J Kling | Whitespace | programs | 2020-09-14 | [GitHub](https://github.com/davidjkling/cerner_2_5_2020) |
 | [Cerner-2_pow_5-2020](whitespace/bsarthak1803-cerner) | Satadru Datta | Whitespace | programs | 2020-09-08 | [GitHub](https://github.com/bsarthak1803/Cerner-2_pow_5-2020) |
+| [wsbf](whitespace/reconcyl-wsbf)              | Reconcyl         | Whitespace | programs     | 2020-08-30 | [GitHub](https://github.com/Reconcyl/eso), [GitHub](https://github.com/Reconcyl/wsbf) |
 | [top-langs-not-to-use](php/codelytv-youtube)  | Rafa Gómez       | PHP        | steganography, programs | 2020-08-18 | [GitHub](https://github.com/CodelyTV/youtube-code-examples) |
 | [rustws](rust/luminighty)                     | Luminight        | Rust       | library, mapping, programs | 2020-08-04 | [GitHub](https://github.com/Luminighty/rustws) |
 | [Whitespace](javascript/kosei28)              | kosei28          | JavaScript | interpreter  | 2020-08-03 | [GitHub](https://github.com/kosei28/Whitespace), [GitHub](https://github.com/wspace/kosei28-javascript) |
