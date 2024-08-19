@@ -5,12 +5,13 @@
   "license": "MIT",
   "languages": ["Go"],
   "tags": ["interpreter", "disassembler", "programs"],
-  "date": "2021-11-10 21:20:39 -0600",
+  "date": "2020-04-14 19:09:50 -0700",
   "spec_version": "0.2",
   "source": [
     "https://github.com/qeedquan/misc_utilities/tree/master/esolang/whitespace",
     "https://github.com/wspace/qeedquan-go",
-    "https://github.com/thaliaarchi/repo-archival/blob/main/scripts/wspace/qeedquan-go.sh"
+    "https://archive.softwareheritage.org/browse/origin/directory/?origin_url=https://github.com/qeedquan/misc_utilities&path=esolang/whitespace&timestamp=2020-04-15T14:31:36Z",
+    "https://github.com/thaliaarchi/repo-archival/tree/main/scripts/wspace/qeedquan-go"
   ],
   "submodules": [{ "path": "whitespace", "url": "https://github.com/wspace/qeedquan-go" }],
   "whitespace": { "extension": "ws" },
@@ -65,5 +66,5 @@
       "option_parse": "Go flag"
     }
   ],
-  "notes": "Disassembly includes the argument as a Unicode codepoint. Disassembled labels show the sequential label definition index, not the label value."
+  "notes": "Disassembly includes the argument as a Unicode codepoint. Disassembled labels show the sequential label definition index, not the label value. The repo is force-pushed every time a change is made to it. The version from SWH is the earliest known version including esolang/whitespace/ and no changes to this among the force pushes since then have been observed."
 }
