@@ -24,7 +24,7 @@ language, including interpreters, compilers, and programs.
 | [whitespace-experiments](whitespace/sammifs)  | sammifs          | Whitespace | programs     | 2022-07-10 | [GitHub](https://github.com/sammifs/whitespace-experiments) |
 | [ws](rust/hamidrezakp)                        | Hamid R. K. Pisghadam | Rust  | parser, programs | 2022-07-08 | [GitHub](https://github.com/hamidrezakp/ws) |
 | [whitenote](go/makiuchid-whitenote)           | MakKi            | Go         | Jupyter kernel, interpreter | 2022-07-06 | [GitHub](https://github.com/makiuchi-d/whitenote) |
-| [useless-codes](whitespace/arthurmtth)        | Arthur Monteiro  | whitespace | programs     | 2022-06-24 | [GitHub](https://github.com/ArthurMtTh/useless-codes) |
+| [useless-codes](whitespace/arthurmtth)        | Arthur Monteiro  | Whitespace | programs     | 2022-06-24 | [GitHub](https://github.com/ArthurMtTh/useless-codes) |
 | [Hello_World](whitespace/femifacia-hello)     | Facia Femi       | Whitespace | programs     | 2022-06-15 | [GitHub](https://github.com/femifacia/Hello_World) |
 | [spacey](rust/cedricschwyter-spacey)          | Cedric Schwyter  | Rust       | interpreter, programs | 2022-06-15 | [GitHub](https://github.com/cedricschwyter/spacey), [GitHub](https://github.com/cedricschwyter/spacey-wasm-example), [issue#3](https://github.com/wspace/corpus/issues/3) |
 | [Whitespace](java/jbanana)                    | JBanana          | Java       | interpreter, assembler, debugger, steganography, stdlib, programs | 2022-06-03 | [Codeberg](https://codeberg.org/JBanana/whitespace), [Codeberg Pages](https://jbanana.codeberg.page/whitespace/doc/) |

@@ -299,7 +299,6 @@ Building status of individual executables:
 - typescript/simomu/bin/ws.js: `npm run build`
 - ❌ vim/rolf007
 - ❌ whitespace/ankitatandon-wspc
-- ❌ whitespace/arthurmtth
 - ❌ whitespace/burghard-wsinterws
 - ❌ whitespace/datomalania-hello
 - ❌ whitespace/helowld
