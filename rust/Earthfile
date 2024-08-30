@@ -15,6 +15,7 @@ IMPORT ./luminighty AS rust-luminighty
 IMPORT ./nareshganduri AS rust-nareshganduri
 IMPORT ./omurakazuaki AS rust-omurakazuaki
 IMPORT ./thaliaarchi-lazy-wspace AS rust-thaliaarchi-lazy-wspace
+IMPORT ./thaliaarchi-omniwsa AS rust-thaliaarchi-omniwsa
 IMPORT ./thaliaarchi-yspace AS rust-thaliaarchi-yspace
 IMPORT ./zrneely AS rust-zrneely
 
@@ -35,6 +36,7 @@ build:
     BUILD rust-nareshganduri+build
     BUILD rust-omurakazuaki+build
     BUILD rust-thaliaarchi-lazy-wspace+build
+    BUILD rust-thaliaarchi-omniwsa+build
     BUILD rust-thaliaarchi-yspace+build
     BUILD rust-zrneely+build
     WORKDIR /corpus/rust
@@ -53,6 +55,7 @@ build:
     COPY rust-nareshganduri+build/ nareshganduri/
     COPY rust-omurakazuaki+build/ omurakazuaki/
     COPY rust-thaliaarchi-lazy-wspace+build/ thaliaarchi-lazy-wspace/
+    COPY rust-thaliaarchi-omniwsa+build/ thaliaarchi-omniwsa/
     COPY rust-thaliaarchi-yspace+build/ thaliaarchi-yspace/
     COPY rust-zrneely+build/ zrneely/
     SAVE ARTIFACT /corpus /corpus
@@ -80,5 +83,6 @@ docker-all:
     BUILD rust-nareshganduri+docker
     BUILD rust-omurakazuaki+docker
     BUILD rust-thaliaarchi-lazy-wspace+docker
+    BUILD rust-thaliaarchi-omniwsa+docker
     BUILD rust-thaliaarchi-yspace+docker
     BUILD rust-zrneely+docker

@@ -224,6 +224,7 @@ Projects that can be built with Docker:
 - rust/nareshganduri
 - rust/omurakazuaki
 - rust/thaliaarchi-lazy-wspace
+- rust/thaliaarchi-omniwsa
 - rust/thaliaarchi-yspace
 - rust/zrneely
 - scala/andreal2000

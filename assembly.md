@@ -64,7 +64,7 @@ instructions, ranked by popularity.
 
 ## File extensions
 
-- `wsa` (29)
+- `wsa` (30)
 - `asm` (5)
 - `txt` (4)
 - "" (2)
@@ -80,3 +80,7 @@ instructions, ranked by popularity.
 - `wsf`
 - `wss`
 - `wst`
+
+## Need documentation
+
+- rust/thaliaarchi-omniwsa

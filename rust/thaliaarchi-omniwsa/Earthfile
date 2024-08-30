@@ -1,0 +1,16 @@
+VERSION 0.8
+
+build:
+    FROM rust:1.80
+    WORKDIR /omniwsa
+    COPY omniwsa .
+    RUN cargo test && \
+        RUSTFLAGS='-C target-feature=+crt-static' cargo build --release --target x86_64-unknown-linux-gnu
+    SAVE ARTIFACT target/x86_64-unknown-linux-gnu/release/omniwsa /bin/
+    SAVE ARTIFACT tests /programs
+
+docker:
+    FROM scratch
+    COPY +build/ /
+    ENTRYPOINT ["/bin/omniwsa"]
+    SAVE IMAGE wspace-corpus/rust/omniwsa

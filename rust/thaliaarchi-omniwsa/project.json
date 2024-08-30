@@ -1,0 +1,19 @@
+{
+  "id": "rust/thaliaarchi-omniwsa",
+  "name": "omniwsa",
+  "authors": ["Thalia Archibald"],
+  "license": "MPL-2.0",
+  "languages": ["Rust"],
+  "tags": ["assembler", "programs"],
+  "date": "2024-08-08 17:56:42 -0700",
+  "spec_version": "0.3",
+  "source": ["https://github.com/thaliaarchi/omniwsa"],
+  "submodules": [{ "path": "omniwsa", "url": "https://github.com/thaliaarchi/omniwsa" }],
+  "relations": [
+    { "id": "c/kspalaiologos-asm2ws", "type": "assembly" },
+    { "id": "haskell/burghard-wsa", "type": "assembly" },
+    { "id": "rust/censoredusername-whitespace-rs", "type": "assembly" }
+  ],
+  "whitespace": { "extension": "ws" },
+  "assembly": { "extension": "wsa" }
+}

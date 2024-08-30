@@ -1,12 +1,13 @@
 # The Whitespace Corpus
 
-The definitive collection of 367 projects for the Whitespace programming
+The definitive collection of 368 projects for the Whitespace programming
 language, including interpreters, compilers, and programs.
 
 ## Projects
 
 | Name                                          | Authors          | Languages  | Tags         | Date       | Source |
 | --------------------------------------------- | ---------------- | ---------- | ------------ | ---------- | ------ |
+| [omniwsa](rust/thaliaarchi-omniwsa)           | Thalia Archibald | Rust       | assembler, programs | 2024-08-09 | [GitHub](https://github.com/thaliaarchi/omniwsa) |
 | [WSA](typescript/voliva-wsa)                  | Victor Oliva     | TypeScript | assembler, interpreter, debugger, IDE | 2024-06-20 | [GitHub](https://github.com/voliva/wsa), [GitHub Pages](https://voliva.github.io/wsa/), [issue#5](https://github.com/wspace/corpus/issues/5) |
 | [Whitespace Evaluator](scala/andreal2000)     | Andrea Longoni   | Scala      | interpreter  | 2024-01-21 | [GitHub](https://github.com/Andreal2000/WhitespaceEvaluator), [GitHub Gist](https://gist.github.com/Andreal2000/8d876ba97b70240b50b68e5993119584), [issue#4](https://github.com/wspace/corpus/issues/4) |
 | [lazy-wspace](rust/thaliaarchi-lazy-wspace)   | Thalia Archibald | Rust, Coq  | compiler, interpreter, assembler, disassembler, extension, programs | 2023-03-11 | [GitHub](https://github.com/thaliaarchi/lazy-wspace) |

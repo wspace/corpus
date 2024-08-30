@@ -783,6 +783,9 @@
 [submodule "rust/thaliaarchi-lazy-wspace/lazy-wspace"]
 	path = rust/thaliaarchi-lazy-wspace/lazy-wspace
 	url = https://github.com/thaliaarchi/lazy-wspace
+[submodule "rust/thaliaarchi-omniwsa/omniwsa"]
+	path = rust/thaliaarchi-omniwsa/omniwsa
+	url = https://github.com/thaliaarchi/omniwsa
 [submodule "rust/thaliaarchi-yspace/yspace"]
 	path = rust/thaliaarchi-yspace/yspace
 	url = https://github.com/thaliaarchi/yspace
