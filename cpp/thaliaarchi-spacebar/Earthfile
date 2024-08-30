@@ -1,0 +1,16 @@
+VERSION 0.8
+
+build:
+    FROM alpine
+    RUN apk add --no-cache g++
+    WORKDIR /spacebar
+    COPY spacebar .
+    RUN g++ -std=c++17 -O3 -static -o spacebar src/*.cpp
+    SAVE ARTIFACT spacebar /bin/
+    SAVE ARTIFACT ws /programs
+
+docker:
+    FROM scratch
+    COPY +build/ /
+    ENTRYPOINT ["/bin/spacebar"]
+    SAVE IMAGE wspace-corpus/cpp/thaliaarchi-spacebar

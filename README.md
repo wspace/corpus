@@ -1,6 +1,6 @@
 # The Whitespace Corpus
 
-The definitive collection of 366 projects for the Whitespace programming
+The definitive collection of 367 projects for the Whitespace programming
 language, including interpreters, compilers, and programs.
 
 ## Projects
@@ -145,6 +145,7 @@ language, including interpreters, compilers, and programs.
 | [whitespace-language-converter](python/drafear-converter) | Takeshi Nishikawa | Python | assembler, programs | 2019-03-29 | [GitHub](https://github.com/drafear/whitespace-language-converter) |
 | [Hello in Whitespace](whitespace/jonstites-hello) | Jonathan Stites | Whitespace | programs  | 2019-02-26 | [GitHub Gist](https://gist.github.com/jonstites/16784b5c1fb0c1e580d698bb13d4f50f) |
 | [go-wspace](go/tempxla-go-wspace)             | tempxla          | Go         | interpreter  | 2019-02-24 | [GitHub](https://github.com/tempxla/go-wspace) |
+| [spacebar](cpp/thaliaarchi-spacebar)          | Thalia Archibald | C++        | disassembler, programs | 2019-02-01 | [GitHub](https://github.com/thaliaarchi/spacebar) |
 | [rbtree-whitespace](whitespace/milankowww-rbtree) | Milan Pikula | Whitespace | programs     | 2019-02-01 | [GitHub](https://github.com/milankowww/rbtree-whitespace) |
 | [Hello-Whitespace](whitespace/tewort-hello)   | David (Tewort)   | Whitespace | programs     | 2019-01-28 | [GitHub](https://github.com/Tewort/Hello-Whitespace) |
 | [WhiteSpace assembler/disassembler](ruby/angelp57) | angel-p57   | Ruby, Perl | interpreter, assembler, disassembler, programs | 2018-12-16 | [GitHub](https://github.com/angel-p57/whitespace) |

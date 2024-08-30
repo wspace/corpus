@@ -1,0 +1,81 @@
+{
+  "id": "cpp/thaliaarchi-spacebar",
+  "name": "spacebar",
+  "authors": ["Thalia Archibald"],
+  "license": "none",
+  "languages": ["C++"],
+  "tags": ["disassembler", "programs"],
+  "date": "2019-01-31 22:17:07 -0700",
+  "spec_version": "0.3",
+  "source": ["https://github.com/thaliaarchi/spacebar"],
+  "submodules": [{ "path": "spacebar", "url": "https://github.com/thaliaarchi/spacebar" }],
+  "assembly": [
+    {
+      "mnemonics": {
+        "push": "push <number>",
+        "dup": "dup",
+        "copy": "copy <number>",
+        "swap": "swap",
+        "drop": "drop",
+        "slide": "slide <number>",
+        "add": "add",
+        "sub": "sub",
+        "mul": "mul",
+        "div": "div",
+        "mod": "mod",
+        "store": "store",
+        "retrieve": "retrieve",
+        "label": "label_<label>:",
+        "call": "call label_<label>",
+        "jmp": "jmp label_<label>",
+        "jz": "jz label_<label>",
+        "jn": "jn label_<label>",
+        "ret": "ret",
+        "end": "end",
+        "printc": "printc",
+        "printi": "printi",
+        "readc": "readc",
+        "readi": "readi"
+      },
+      "indentation": "\t",
+      "label_indentation": "",
+      "usage": ["disassembler", "programs"],
+      "extension": "wsa"
+    },
+    {
+      "mnemonics": {
+        "push": "PUSH",
+        "dup": "DUP",
+        "copy": "COPY",
+        "swap": "SWAP",
+        "drop": "DROP",
+        "slide": "SLIDE",
+        "add": "ADD",
+        "sub": "SUB",
+        "mul": "MUL",
+        "div": "DIV",
+        "mod": "MOD",
+        "store": "STORE",
+        "retrieve": "RETRIEVE",
+        "label": "LABEL",
+        "call": "CALL",
+        "jmp": "JMP",
+        "jz": "JZ",
+        "jn": "JN",
+        "ret": "RET",
+        "end": "END",
+        "printc": "PRINTC",
+        "printi": "PRINTI",
+        "readc": "READC",
+        "readi": "READI"
+      },
+      "usage": ["enum"]
+    }
+  ],
+  "programs": [
+    { "path": "ws/io/print.wsa" },
+    { "path": "ws/math/pow.wsa" },
+    { "path": "ws/math/pow_test.wsa" },
+    { "path": "ws/test/compare.wsa" }
+  ]
+}

@@ -157,6 +157,9 @@
 [submodule "cpp/thaliaarchi-respace/respace"]
 	path = cpp/thaliaarchi-respace/respace
 	url = https://github.com/thaliaarchi/respace
+[submodule "cpp/thaliaarchi-spacebar/spacebar"]
+	path = cpp/thaliaarchi-spacebar/spacebar
+	url = https://github.com/thaliaarchi/spacebar
 [submodule "cpp/timvandermeij/whitespace-interpreter"]
 	path = cpp/timvandermeij/whitespace-interpreter
 	url = https://github.com/wspace/timvandermeij-cpp

@@ -52,6 +52,7 @@ Projects that can be built with Docker:
 - cpp/subv-whitespace-llvm: Requires LLVM
 - cpp/sudheesh4
 - cpp/thaliaarchi-respace
+- cpp/thaliaarchi-spacebar
 - cpp/timvandermeij
 - cpp/worktycho-whitespace-llvm: Requires LLVM
 - cpp/yuukiaria
