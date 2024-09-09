@@ -138,7 +138,12 @@
     { "path": "wsa-tests/heap.wsa", "spec_version": "0.2" },
     { "path": "wsa-tests/hello_world.wsa", "spec_version": "0.2" },
     { "path": "wsa-tests/jumps.wsa", "spec_version": "0.2" },
-    { "path": "wsa-tests/swap.wsa", "spec_version": "0.2" }
+    { "path": "wsa-tests/swap.wsa", "spec_version": "0.2" },
+    { "path": "wsa-tests/regress/case_folding.wsa", "spec_version": "0.3" },
+    { "path": "wsa-tests/regress/ignored_arguments.wsa", "spec_version": "0.2" },
+    { "path": "wsa-tests/regress/internal_label_conflict_after.wsa", "spec_version": "0.2" },
+    { "path": "wsa-tests/regress/internal_label_conflict_before.wsa", "spec_version": "0.2" },
+    { "path": "wsa-tests/regress/storestr_char.wsa", "spec_version": "0.2" }
   ],
   "commands": [
     {

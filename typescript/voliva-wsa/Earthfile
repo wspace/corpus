@@ -5,7 +5,7 @@ build:
     WORKDIR /wsa
     COPY wsa .
     RUN npm install && \
-        npm run build
+        npm run build-debug
     SAVE ARTIFACT dist /bin/
     SAVE ARTIFACT node_modules /bin/
     SAVE ARTIFACT package.json /bin/
