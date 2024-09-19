@@ -25,6 +25,9 @@
 [submodule "c/meth0dz/whitespace"]
 	path = c/meth0dz/whitespace
 	url = https://github.com/wspace/meth0dz-c
+[submodule "c/rdebath-brainfuck/brainfuck"]
+	path = c/rdebath-brainfuck/brainfuck
+	url = https://github.com/rdebath/Brainfuck
 [submodule "c/rdebath/whitespace"]
 	path = c/rdebath/whitespace
 	url = https://github.com/wspace/rdebath-c

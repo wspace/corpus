@@ -1,0 +1,15 @@
+VERSION 0.8
+
+build:
+    FROM alpine
+    RUN apk add --no-cache make gcc musl-dev
+    WORKDIR /bf2any
+    COPY brainfuck/bf2any .
+    RUN make CFLAGS='-O3 -g -static' bf2whitespace
+    SAVE ARTIFACT bf2whitespace /bin/
+
+docker:
+    FROM alpine
+    COPY +build/ /
+    ENTRYPOINT ["/bin/bf2whitespace"]
+    SAVE IMAGE wspace-corpus/c/rdebath-brainfuck

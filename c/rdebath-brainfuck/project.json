@@ -1,0 +1,66 @@
+{
+  "id": "c/rdebath-brainfuck",
+  "name": "bf2any",
+  "authors": ["Robert de Bath"],
+  "license": "GPL-2.0-or-later AND Public Domain",
+  "languages": ["C"],
+  "tags": ["compiler"],
+  "date": "2013-08-18 19:20:00 +0000",
+  "spec_version": "0.2",
+  "source": ["https://github.com/rdebath/Brainfuck"],
+  "submodules": [{ "path": "brainfuck", "url": "https://github.com/rdebath/Brainfuck" }],
+  "assembly": {
+    "mnemonics": {
+      "push": "PUSH",
+      "dup": "DUP",
+      "swap": "SWAP",
+      "drop": "DROP",
+      "add": "ADD",
+      "sub": "SUB",
+      "mul": "MUL",
+      "div": "DIV",
+      "mod": "MOD",
+      "store": "STORE",
+      "retrieve": "FETCH",
+      "label": "LABEL",
+      "call": "CALL",
+      "jmp": "JMP",
+      "jz": "JZ",
+      "jn": "JN",
+      "ret": "RET",
+      "end": "EXIT",
+      "printc": "OUTCHAR",
+      "printi": "OUTNUM",
+      "readc": "READCHAR",
+      "readi": "READNUM"
+    },
+    "usage": ["enum"]
+  },
+  "commands": [
+    {
+      "bin": "bf2any/bf2whitespace",
+      "options": [
+        { "short": "h", "desc": "This message" },
+        { "short": "b", "desc": "Force byte cells" },
+        { "short": "R", "desc": "Decode rle on '+-<>', quoted strings and '='." },
+        { "short": "m", "desc": "Disable optimisation (including dead loop removal)" },
+        { "short": "p", "desc": "Optimise as part of a BF program" },
+        { "short": "O", "desc": "Enable optimisation" },
+        { "short": "M", "arg": "num", "arg_required": true, "desc": "Set length of tape, default is 1048576" },
+        { "short": "M", "desc": "Set the tape to dynamic" },
+        { "short": "be-pipe" },
+        { "short": "n", "desc": "Set EOF behavior #0 (default)" },
+        { "short": "z", "desc": "Set EOF behavior #1" },
+        { "short": "e", "desc": "Set EOF behavior #2" },
+        { "short": "tokens", "desc": "Include token names in output." },
+        { "short": "semi", "desc": "Generate code for 'semicolon' language" },
+        { "short": "signbug", "desc": "Interpreter has signed int bug" },
+        { "short": "fullinit", "desc": "Init every tape cell." },
+        { "short": "quickinit", "desc": "Write to last tape cell." }
+      ],
+      "option_parse": "manual",
+      "notes": "Compiles Brainfuck to Whitespace"
+    }
+  ],
+  "notes": "Compiles Brainfuck to many languages, including Whitespace"
+}

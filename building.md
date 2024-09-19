@@ -12,6 +12,7 @@ Projects that can be built with Docker:
 - c/manarice-lime
 - c/meth0dz
 - c/rdebath
+- c/rdebath-brainfuck
 - c/remigascou
 - c/rispoli-txt2ws
 - c/sandeep023

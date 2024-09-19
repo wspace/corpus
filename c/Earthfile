@@ -10,6 +10,7 @@ IMPORT ./kspalaiologos-asm2ws AS c-kspalaiologos-asm2ws
 IMPORT ./manarice-lime AS c-manarice-lime
 IMPORT ./meth0dz AS c-meth0dz
 IMPORT ./rdebath AS c-rdebath
+IMPORT ./rdebath-brainfuck AS c-rdebath-brainfuck
 IMPORT ./remigascou AS c-remigascou
 IMPORT ./rispoli-txt2ws AS c-rispoli-txt2ws
 IMPORT ./sandeep023 AS c-sandeep023
@@ -34,6 +35,7 @@ build:
     BUILD c-manarice-lime+build
     BUILD c-meth0dz+build
     BUILD c-rdebath+build
+    BUILD c-rdebath-brainfuck+build
     BUILD c-remigascou+build
     BUILD c-rispoli-txt2ws+build
     BUILD c-sandeep023+build
@@ -56,6 +58,7 @@ build:
     COPY c-manarice-lime+build/ manarice-lime/
     COPY c-meth0dz+build/ meth0dz/
     COPY c-rdebath+build/ rdebath/
+    COPY c-rdebath-brainfuck+build/ rdebath-brainfuck/
     COPY c-remigascou+build/ remigascou/
     COPY c-rispoli-txt2ws+build/ rispoli-txt2ws/
     COPY c-sandeep023+build/ sandeep023/
@@ -87,6 +90,7 @@ docker-all:
     BUILD c-manarice-lime+docker
     BUILD c-meth0dz+docker
     BUILD c-rdebath+docker
+    BUILD c-rdebath-brainfuck+docker
     BUILD c-remigascou+docker
     BUILD c-rispoli-txt2ws+docker
     BUILD c-sandeep023+docker
