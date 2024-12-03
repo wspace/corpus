@@ -29,6 +29,14 @@ Codewars, interpreters for Whitespace.
 - [whitespace/lukepebody-advent-of-code](whitespace/lukepebody-advent-of-code)
 - [whitespace/thaliaarchi-challenges](whitespace/thaliaarchi-challenges)
 
+## Advent of Code 2023
+
+- [whitespace/thaliaarchi-challenges](whitespace/thaliaarchi-challenges)
+
+## Advent of Code 2024
+
+- [whitespace/thaliaarchi-challenges](whitespace/thaliaarchi-challenges)
+
 ## Cerner 2^5
 
 - [whitespace/bsarthak1803-cerner](whitespace/bsarthak1803-cerner)

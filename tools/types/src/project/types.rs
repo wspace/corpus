@@ -138,6 +138,8 @@ pub enum Challenge {
     AdventOfCode2022,
     #[serde(rename = "Advent of Code 2023")]
     AdventOfCode2023,
+    #[serde(rename = "Advent of Code 2024")]
+    AdventOfCode2024,
     #[serde(rename = "Cerner 2^5")]
     Cerner2Pow5,
     #[serde(rename = "Code Golf")]

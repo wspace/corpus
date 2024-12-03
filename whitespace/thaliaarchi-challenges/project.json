@@ -15,6 +15,8 @@
     "Advent of Code 2020",
     "Advent of Code 2021",
     "Advent of Code 2022",
+    "Advent of Code 2023",
+    "Advent of Code 2024",
     "Code Golf",
     "Kattis",
     "Project Euler",
@@ -132,6 +134,20 @@
       "generated": "advent/2022/3.ws",
       "inputs": ["advent/2022/3.in"],
       "outputs": ["advent/2022/3.out"],
+      "spec_version": "0.3"
+    },
+    {
+      "path": "advent/2023/1.wsf",
+      "generated": "advent/2023/1.ws",
+      "inputs": ["advent/2023/1.in"],
+      "outputs": ["advent/2023/1.out"],
+      "spec_version": "0.3"
+    },
+    {
+      "path": "advent/2024/1.wsf",
+      "generated": "advent/2024/1.ws",
+      "inputs": ["advent/2024/1.in"],
+      "outputs": ["advent/2024/1.out"],
       "spec_version": "0.3"
     },
     { "path": "codegolf/cowsay.wsf", "generated": "build/codegolf/cowsay.ws", "spec_version": "0.3" },
@@ -273,6 +289,13 @@
       "path": "misc/ascii4.wsf",
       "generated": "build/misc/ascii4.ws",
       "outputs": ["misc/ascii4.out"],
+      "spec_version": "0.3"
+    },
+    { "path": "misc/quine.ws", "aux": ["misc/quine.wsf"], "spec_version": "0.3" },
+    {
+      "path": "misc/quine_encode.wsf",
+      "generated": "build/misc/quine_encode.ws",
+      "aux": ["misc/quine.wsf"],
       "spec_version": "0.3"
     },
     {

@@ -12,7 +12,9 @@
   "relations": [
     { "id": "c/kspalaiologos-asm2ws", "type": "assembly" },
     { "id": "haskell/burghard-wsa", "type": "assembly" },
-    { "id": "rust/censoredusername-whitespace-rs", "type": "assembly" }
+    { "id": "rust/censoredusername-whitespace-rs", "type": "assembly" },
+    { "id": "typescript/voliva-wsa", "type": "assembly" },
+    { "id": "whitespace/thaliaarchi-wslib", "type": "assembly" }
   ],
   "whitespace": { "extension": "ws" },
   "assembly": { "extension": "wsa" }

@@ -18,8 +18,7 @@
       { "name": "or", "seq": "TSLS", "desc": "bitwise OR" },
       { "name": "not", "seq": "TSLT", "desc": "bitwise complement" },
       { "name": "and", "seq": "TSLL", "desc": "bitwise AND" },
-      { "name": "debugger", "seq": "LLS", "desc": "breakpoint" },
-      { "name": "debugger", "seq": "LLT", "desc": "breakpoint (alternate encoding)" }
+      { "name": "dbg", "seq": "LLS", "desc": "breakpoint" }
     ],
     "extension": "wspace"
   },
@@ -95,7 +94,7 @@
         { "name": "jumpnp" },
         { "name": "valuestring" },
         { "name": "valueinteger" },
-        { "name": "debugger" },
+        { "name": "dbg" },
         { "name": "import" }
       ],
       "line_comments": [";"],
@@ -118,6 +117,7 @@
   ],
   "programs": [
     { "path": "playground.wsa", "spec_version": "0.3" },
+    { "path": "examples/keccak.wsa", "generated": "examples/keccak.ws", "spec_version": "0.3" },
     { "path": "src/experiments/hello-world.ts", "spec_version": "0.2" },
     { "path": "src/experiments/cat.ts", "spec_version": "0.2" },
     {
@@ -141,8 +141,16 @@
     { "path": "wsa-tests/swap.wsa", "spec_version": "0.2" },
     { "path": "wsa-tests/regress/case_folding.wsa", "spec_version": "0.3" },
     { "path": "wsa-tests/regress/ignored_arguments.wsa", "spec_version": "0.2" },
-    { "path": "wsa-tests/regress/internal_label_conflict_after.wsa", "spec_version": "0.2" },
-    { "path": "wsa-tests/regress/internal_label_conflict_before.wsa", "spec_version": "0.2" },
+    {
+      "path": "wsa-tests/regress/internal_label_conflict_after.wsa",
+      "generated": "wsa-tests/regress/internal_label_conflict_after.ws",
+      "spec_version": "0.2"
+    },
+    {
+      "path": "wsa-tests/regress/internal_label_conflict_before.wsa",
+      "generated": "wsa-tests/regress/internal_label_conflict_before.ws",
+      "spec_version": "0.2"
+    },
     { "path": "wsa-tests/regress/storestr_char.wsa", "spec_version": "0.2" }
   ],
   "commands": [
@@ -153,11 +161,11 @@
         {
           "name": "compile",
           "desc": "Compile assembly file into whitespace",
-          "usage": "compile [--debugger] <main> <output>",
+          "usage": "compile [--extensions] <main> <output>",
           "input": "<main>",
           "output": "<output>",
           "options": [
-            { "long": "debugger", "desc": "include debugger symbols" },
+            { "long": "extensions", "desc": "use extension instructions" },
             { "short": "h", "long": "help", "desc": "display help for command" }
           ]
         },
