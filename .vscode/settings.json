@@ -9,6 +9,7 @@
       { "match": "/project\\.json$", "cmd": "go run tools/format/format.go ${file}" }
     ]
   },
+  "dotnet.defaultSolution": "disable",
   "files.associations": { "*.md.tmpl": "markdown" },
   "git.autoRepositoryDetection": false,
   "git.detectSubmodules": false,
