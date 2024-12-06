@@ -1,6 +1,6 @@
 {
-  "id": "rust/censoredusername-whitespacers",
-  "name": "Whitespacers",
+  "id": "rust/censoredusername-whitespace-rs",
+  "name": "whitespace-rs",
   "authors": ["CensoredUsername"],
   "license": "MPL-2.0",
   "languages": ["Rust"],
@@ -152,5 +152,6 @@
       ],
       "option_parse": "manual"
     }
-  ]
+  ],
+  "notes": "From CensoredUsername: \"The official name of the project is whitespace-rs, but crate names cannot use -'s in the code, so that got shortened to whitespacers. The compiler tool created by the project is called `wsc`, for whitespace compiler, following the common convention for compiler command line tools.\" (https://github.com/CensoredUsername/whitespace-rs/pull/3#issuecomment-2522744900)"
 }

@@ -44,7 +44,7 @@ services:
       - go_technohippy
       - go_tempxla-go-wspace
       - go_zorchenhimer
-      - rust_censoredusername-whitespacers
+      - rust_censoredusername-whitespace-rs
       - rust_collidedscope-albus
       - rust_cedricschwyter-spacey
       - rust_guricerin
@@ -247,9 +247,9 @@ services:
   kotlin_ze-space:
     image: wspace-corpus/kotlin/ze-space
     build: kotlin/ze-space
-  rust_censoredusername-whitespacers:
-    image: wspace-corpus/rust/censoredusername-whitespacers
-    build: rust/censoredusername-whitespacers
+  rust_censoredusername-whitespace-rs:
+    image: wspace-corpus/rust/censoredusername-whitespace-rs
+    build: rust/censoredusername-whitespace-rs
   rust_collidedscope-albus:
     image: wspace-corpus/rust/collidedscope-albus
     build: rust/collidedscope-albus

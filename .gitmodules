@@ -744,8 +744,8 @@
 [submodule "rust/cedricschwyter-spacey/spacey"]
 	path = rust/cedricschwyter-spacey/spacey
 	url = https://github.com/cedricschwyter/spacey
-[submodule "rust/censoredusername-whitespacers/whitespace-rs"]
-	path = rust/censoredusername-whitespacers/whitespace-rs
+[submodule "rust/censoredusername-whitespace-rs/whitespace-rs"]
+	path = rust/censoredusername-whitespace-rs/whitespace-rs
 	url = https://github.com/CensoredUsername/whitespace-rs
 [submodule "rust/collidedscope-albus/albus"]
 	path = rust/collidedscope-albus/albus

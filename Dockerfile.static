@@ -28,7 +28,7 @@ FROM wspace-corpus/go/technohippy AS go_technohippy
 FROM wspace-corpus/go/tempxla-go-wspace AS go_tempxla-go-wspace
 # FROM wspace-corpus/go/thaliaarchi-nebula AS go_thaliaarchi-nebula
 FROM wspace-corpus/go/zorchenhimer AS go_zorchenhimer
-FROM wspace-corpus/rust/censoredusername-whitespacers AS rust_censoredusername-whitespacers
+FROM wspace-corpus/rust/censoredusername-whitespace-rs AS rust_censoredusername-whitespace-rs
 FROM wspace-corpus/rust/collidedscope-albus AS rust_collidedscope-albus
 FROM wspace-corpus/rust/cedricschwyter-spacey AS rust_cedricschwyter-spacey
 # FROM wspace-corpus/rust/faultier-albino AS rust_faultier-albino
@@ -77,7 +77,7 @@ COPY --from=go_technohippy                     /go-whitespace                   
 COPY --from=go_tempxla-go-wspace               /go-wspace                           go/tempxla-go-wspace/
 # COPY --from=go_thaliaarchi-nebula            /nebula                              go/thaliaarchi-nebula/
 COPY --from=go_zorchenhimer                    /wi                                  go/zorchenhimer/
-COPY --from=rust_censoredusername-whitespacers /wsc                                 rust/censoredusername-whitespacers/
+COPY --from=rust_censoredusername-whitespace-rs /wsc                                 rust/censoredusername-whitespace-rs/
 COPY --from=rust_collidedscope-albus           /albus                               rust/collidedscope-albus/
 COPY --from=rust_cedricschwyter-spacey         /spacey                              rust/cedricschwyter-spacey/
 # COPY --from=rust_faultier-albino             /albino /albino-run /albino-build /albino-exec /albino-gen rust/faultier-albino/

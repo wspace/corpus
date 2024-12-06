@@ -220,7 +220,7 @@ language, including interpreters, compilers, and programs.
 | [Euler's Melting Pot](whitespace/mercerenies-euler) | Silvio Mayolo (Mercerenies) | Whitespace | programs | 2016-07-05 | [GitHub](https://github.com/Mercerenies/eulers-melting-pot) |
 | [steganographic-polyglots](whitespace/uncompiled-steganographic-polyglots) | Chris Nguyen | Whitespace | programs | 2016-06-26 | [GitHub](https://github.com/uncompiled/steganographic-polyglots), [GitHub Pages](https://uncompiled.github.io/steganographic-polyglots/) |
 | [whitespace.js](javascript/ignovak)           | Igor             | JavaScript | interpreter  | 2016-06-20 | [GitHub Gist](https://gist.github.com/ignovak/c6173c31207fd6fcbec606411460c73c) |
-| [Whitespacers](rust/censoredusername-whitespacers) | CensoredUsername | Rust  | JIT, assembler, disassembler | 2016-06-18 | [GitHub](https://github.com/CensoredUsername/whitespace-rs) |
+| [whitespace-rs](rust/censoredusername-whitespace-rs) | CensoredUsername | Rust | JIT, assembler, disassembler | 2016-06-18 | [GitHub](https://github.com/CensoredUsername/whitespace-rs) |
 | [Whiteplanes.r](r/nutcrack-whiteplanes)       | Takuya Katsurada | R          | stub         | 2016-05-21 | [GitHub (git archive)](https://archive.softwareheritage.org/browse/origin/directory/?origin_url=https://github.com/whiteplanes/whiteplanes.r), [GitHub](https://github.com/wspace/nutcrack-whiteplanes.r), [GitHub Pages](https://wspace.github.io/nutcrack-whiteplanes.github.io/), [repo-archival](https://github.com/thaliaarchi/repo-archival/blob/main/scripts/wspace/nutcrack-whiteplanes.sh) |
 | [whitespace](c/bvisness)                      | Ben Visness      | C, Yacc, TextMate | interpreter, syntax highlighting, programs | 2016-05-21 | [GitHub](https://github.com/bvisness/whitespace) |
 | [Whiteplanes.jl](julia/nutcrack-whiteplanes)  | Takuya Katsurada | Julia      | stub         | 2016-05-14 | [GitHub (git archive)](https://archive.softwareheritage.org/browse/origin/directory/?origin_url=https://github.com/whiteplanes/whiteplanes.jl), [GitHub](https://github.com/wspace/nutcrack-whiteplanes.jl), [GitHub Pages](https://wspace.github.io/nutcrack-whiteplanes.github.io/), [repo-archival](https://github.com/thaliaarchi/repo-archival/blob/main/scripts/wspace/nutcrack-whiteplanes.sh) |
@@ -531,7 +531,7 @@ Corpus:
 - ren:c           [rebol/hostilefork](rebol/hostilefork)
 - ruby:           [ruby/wconrad](ruby/wconrad)
 - whitespace:     [whitespace/burghard-wsinterws](whitespace/burghard-wsinterws)
-- [whitespacers#5](https://github.com/hostilefork/whitespacers/issues/5): [rust/censoredusername-whitespacers](rust/censoredusername-whitespacers)
+- [whitespacers#5](https://github.com/hostilefork/whitespacers/issues/5): [rust/censoredusername-whitespace-rs](rust/censoredusername-whitespace-rs)
 - [whitespacers#9](https://github.com/hostilefork/whitespacers/pull/9): [javascript/luilak-ws2js](javascript/luilak-ws2js)
 
 ## Usage

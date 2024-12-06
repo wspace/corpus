@@ -11,4 +11,4 @@ docker:
     FROM scratch
     COPY +build/ /
     ENTRYPOINT ["/bin/wsc"]
-    SAVE IMAGE wspace-corpus/rust/censoredusername-whitespacers
+    SAVE IMAGE wspace-corpus/rust/censoredusername-whitespace-rs

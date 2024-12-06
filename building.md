@@ -211,7 +211,7 @@ Projects that can be built with Docker:
 - ruby/yhara-esolang-book
 - ruby/yuta0023-textproc
 - rust/cedricschwyter-spacey
-- rust/censoredusername-whitespacers
+- rust/censoredusername-whitespace-rs
 - rust/collidedscope-albus
 - rust/faultier-albino: Needs many changes for latest Rust
 - rust/faultier-whitebase: Needs many changes for latest Rust
