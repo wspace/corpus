@@ -20,33 +20,64 @@
   ],
   "submodules": [{ "path": "esotope-esotope", "url": "https://github.com/wspace/lifthrasiir-esotope" }],
   "whitespace": { "nonstandard": [{ "name": "pick" }, { "name": "roll" }, { "name": "discard" }], "extension": "ws" },
-  "assembly": {
-    "mnemonics": {
-      "push": "push",
-      "dup": "dup",
-      "copy": "copy",
-      "swap": "swap",
-      "drop": "pop",
-      "slide": "slide",
-      "add": "add",
-      "sub": "sub",
-      "mul": "mul",
-      "div": "div",
-      "mod": "mod",
-      "store": "store",
-      "retrieve": "retrieve",
-      "label": "<label>:",
-      "call": "call",
-      "jmp": "jmp",
-      "jz": "jz",
-      "jn": "jn",
-      "ret": "ret",
-      "end": "halt",
-      "printc": "putchar",
-      "printi": "putint",
-      "readc": "getchar",
-      "readi": "getint"
+  "assembly": [
+    {
+      "mnemonics": {
+        "push": "push",
+        "dup": "dup",
+        "copy": "copy",
+        "swap": "swap",
+        "drop": "pop",
+        "slide": "slide",
+        "add": "add",
+        "sub": "sub",
+        "mul": "mul",
+        "div": "div",
+        "mod": "mod",
+        "store": "store",
+        "retrieve": "retrieve",
+        "label": "<label>:",
+        "call": "call",
+        "jmp": "jmp",
+        "jz": "jz",
+        "jn": "jn",
+        "ret": "ret",
+        "end": "halt",
+        "printc": "putchar",
+        "printi": "putint",
+        "readc": "getchar",
+        "readi": "getint"
+      },
+      "usage": ["debug"]
     },
-    "usage": ["debug"]
-  }
+    {
+      "mnemonics": {
+        "push": "Push",
+        "dup": "Pick (1,0)",
+        "copy": "Pick (1,v)",
+        "swap": "Roll (1,1)",
+        "drop": "Discard (1,0)",
+        "slide": "Discard (v,1)",
+        "add": "Add",
+        "sub": "Subtract",
+        "mul": "Multiply",
+        "div": "Quotient",
+        "mod": "Modulo",
+        "store": "Store",
+        "retrieve": "Retrieve",
+        "label": "Label",
+        "call": "Call",
+        "jmp": "Jump",
+        "jz": "JumpIfZero",
+        "jn": "JumpIfNeg",
+        "ret": "Return",
+        "end": "Exit",
+        "printc": "OutputChar",
+        "printi": "OutputNum",
+        "readc": "InputChar",
+        "readi": "InputNum"
+      },
+      "usage": ["enum"]
+    }
+  ]
 }
