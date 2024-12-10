@@ -4,6 +4,7 @@ VERSION 0.8
 
 IMPORT ./bvisness AS c-bvisness
 IMPORT ./cedricschwyter AS c-cedricschwyter
+IMPORT ./censoredusername AS c-censoredusername
 IMPORT ./hogelog AS c-hogelog
 IMPORT ./koturn AS c-koturn
 IMPORT ./kspalaiologos-asm2ws AS c-kspalaiologos-asm2ws
@@ -29,6 +30,7 @@ build:
     FROM scratch
     BUILD c-bvisness+build
     BUILD c-cedricschwyter+build
+    BUILD c-censoredusername+build
     BUILD c-hogelog+build
     BUILD c-koturn+build
     BUILD c-kspalaiologos-asm2ws+build
@@ -52,6 +54,7 @@ build:
     WORKDIR /corpus/c
     COPY c-bvisness+build/ bvisness/
     COPY c-cedricschwyter+build/ cedricschwyter/
+    COPY c-censoredusername+build/ censoredusername/
     COPY c-hogelog+build/ hogelog/
     COPY c-koturn+build/ koturn/
     COPY c-kspalaiologos-asm2ws+build/ kspalaiologos-asm2ws/
@@ -84,6 +87,7 @@ docker-all:
     BUILD +docker
     BUILD c-bvisness+docker
     BUILD c-cedricschwyter+docker
+    BUILD c-censoredusername+docker
     BUILD c-hogelog+docker
     BUILD c-koturn+docker
     BUILD c-kspalaiologos-asm2ws+docker

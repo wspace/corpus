@@ -6,6 +6,7 @@ Projects that can be built with Docker:
 
 - c/bvisness
 - c/cedricschwyter
+- c/censoredusername
 - c/hogelog
 - c/koturn
 - c/kspalaiologos-asm2ws

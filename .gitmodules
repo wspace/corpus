@@ -7,6 +7,9 @@
 [submodule "c/cedricschwyter/whitespace-interpreter"]
 	path = c/cedricschwyter/whitespace-interpreter
 	url = https://github.com/cedricschwyter/whitespace-interpreter
+[submodule "c/censoredusername/whitespace"]
+	path = c/censoredusername/whitespace
+	url = https://github.com/CensoredUsername/whitespace
 [submodule "c/hogelog/ws"]
 	path = c/hogelog/ws
 	url = https://github.com/wspace/hogelog-c
