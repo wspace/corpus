@@ -840,6 +840,9 @@
 [submodule "typescript/fy0u11/whitespace-interpreter"]
 	path = typescript/fy0u11/whitespace-interpreter
 	url = https://github.com/FY0u11/whitespace-interpreter
+[submodule "typescript/leahhirst-nospace/nospace"]
+	path = typescript/leahhirst-nospace/nospace
+	url = https://github.com/LeahHirst/nospace
 [submodule "typescript/simomu/whitespace_ts"]
 	path = typescript/simomu/whitespace_ts
 	url = https://github.com/simomu-github/whitespace_ts

@@ -300,6 +300,7 @@ Building status of individual executables:
 - ⚠️ textmate/nixinova/grammars/whitespace.yaml-tmLanguage
 - ❌ textmate/thaliaarchi-linguist
 - ❌ textmate/veniversum
+- ❌ typescript/leahhirst-nospace
 - typescript/simomu/bin/ws.js: `npm run build`
 - ❌ vim/rolf007
 - ❌ whitespace/ankitatandon-wspc

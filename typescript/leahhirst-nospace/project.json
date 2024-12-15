@@ -1,0 +1,61 @@
+{
+  "id": "typescript/leahhirst-nospace",
+  "name": "Nospace",
+  "authors": ["Leah Hirst"],
+  "license": "MIT",
+  "languages": ["TypeScript"],
+  "tags": ["interpreter", "assembler", "disassembler", "IDE"],
+  "date": "2024-08-06 20:58:17 +0100",
+  "spec_version": "0.3",
+  "source": ["https://github.com/LeahHirst/nospace", "https://nospacelang.org/"],
+  "submodules": [{ "path": "nospace", "url": "https://github.com/LeahHirst/nospace" }],
+  "packages": [{ "name": "nospace", "registry": "npm", "url": "https://www.npmjs.com/package/nospace" }],
+  "whitespace": { "nonstandard": [{ "name": "Cast" }, { "name": "Assert" }, { "name": "Strict" }] },
+  "assembly": {
+    "mnemonics": {
+      "push": "Push",
+      "dup": "Duplicate",
+      "copy": "Copy",
+      "swap": "Swap",
+      "drop": "Pop",
+      "slide": "Slide",
+      "add": "Add",
+      "sub": "Subtract",
+      "mul": "Multiply",
+      "div": "Divide",
+      "mod": "Mod",
+      "store": "Store",
+      "retrieve": "Retrieve",
+      "label": "Label",
+      "call": "Call",
+      "jmp": "Jump",
+      "jz": "JumpZero",
+      "jn": "JumpNegative",
+      "ret": "Return",
+      "end": "End",
+      "printc": "WriteChar",
+      "printi": "WriteInt",
+      "readc": "ReadChar",
+      "readi": "ReadInt"
+    },
+    "usage": ["disassembler", "enum"],
+    "extension": "nsa",
+    "notes": "Named \"Nossembly\""
+  },
+  "mappings": [
+    { "space": "[s ]", "tab": "[t\t]", "lf": "[n\n]" },
+    {
+      "space": "[s ​]",
+      "tab": "[t\t‌]",
+      "lf": "[n\n‍]",
+      "extension": "ns",
+      "notes": "Token 'x' is U+2060"
+    }
+  ],
+  "programs": [
+    { "path": "examples/cat_program.ns" },
+    { "path": "examples/hello_world.ns" },
+    { "path": "examples/truth_machine.ns" },
+    { "path": "examples/nossembly/hello_world.nsa" }
+  ]
+}
