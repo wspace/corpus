@@ -12,6 +12,7 @@
     { "path": "whitespace", "url": "https://github.com/ManaRice/whitespace" },
     { "path": "limelib", "url": "https://github.com/ManaRice/limelib" }
   ],
+  "challenges": ["Project Euler"],
   "whitespace": { "extension": "ws" },
   "assembly": {
     "mnemonics": {

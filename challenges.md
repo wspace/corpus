@@ -102,6 +102,7 @@ Codewars, interpreters for Whitespace.
 
 ## Project Euler
 
+- [c/manarice-lime](c/manarice-lime)
 - [c/threeifbywhiskey-blacktime](c/threeifbywhiskey-blacktime)
 - [whitespace/drsam94-pelc](whitespace/drsam94-pelc)
 - [whitespace/gregorymorrison-euler](whitespace/gregorymorrison-euler)
