@@ -996,9 +996,12 @@
 [submodule "whitespace/lucaspiller-never-gonna/never_gonna"]
 	path = whitespace/lucaspiller-never-gonna/never_gonna
 	url = https://gist.github.com/lucaspiller/2852385
+[submodule "whitespace/lukepebody-advent-of-code/Advent-of-Whitespace"]
+	path = whitespace/lukepebody-advent-of-code/Advent-of-Whitespace
+	url = https://github.com/LukePebody/Advent-of-Whitespace
 [submodule "whitespace/lukepebody-advent-of-code/AdventOfCode2022.ws"]
 	path = whitespace/lukepebody-advent-of-code/AdventOfCode2022.ws
-	url = https://github.com/LukePebody/AdventOfCode2022.ws
+	url = https://github.com/wspace/lukepebody-advent-of-code
 [submodule "whitespace/makenowjust-quine/quine"]
 	path = whitespace/makenowjust-quine/quine
 	url = https://github.com/MakeNowJust/quine

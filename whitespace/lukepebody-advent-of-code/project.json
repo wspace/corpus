@@ -7,8 +7,12 @@
   "tags": ["programs", "interpreter", "assembler"],
   "date": "2022-12-14 01:31:07 +0000",
   "spec_version": "0.3",
-  "source": ["https://github.com/LukePebody/AdventOfCode2022.ws"],
-  "submodules": [{ "path": "AdventOfCode2022.ws", "url": "https://github.com/LukePebody/AdventOfCode2022.ws" }],
+  "source": [
+    "https://github.com/wspace/lukepebody-advent-of-code",
+    "https://archive.softwareheritage.org/browse/origin/directory/?origin_url=https://github.com/LukePebody/AdventOfCode2022.ws",
+    "https://github.com/LukePebody/Advent-of-Whitespace"
+  ],
+  "submodules": [{ "path": "AdventOfCode2022.ws", "url": "https://github.com/wspace/lukepebody-advent-of-code" }],
   "challenges": ["Advent of Code 2022"],
   "whitespace": { "nonstandard": [{ "name": "SPLURGE", "desc": "Dump stack and memory" }], "extension": "ws" },
   "assembly": {
@@ -106,5 +110,6 @@
   ],
   "commands": [
     { "type": "interpreter and assembler", "bin": "main.py", "notes": "Hardcoded input and output paths" }
-  ]
+  ],
+  "notes": "AdventOfCode2022.ws is now offline. Of the two repos owned by LukePebody, one is named Advent-of-Whitespace, with only a blank README. Track it, in case it that repo eventually replaces the 2022 one."
 }
