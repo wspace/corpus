@@ -7,8 +7,12 @@
   "tags": ["interpreter"],
   "date": "2015-12-31 17:35:38 +0100",
   "spec_version": "0.2",
-  "source": ["https://github.com/nullflagblues/WHINT", "https://nullflagblues.github.io/WHINT/"],
-  "submodules": [{ "path": "WHINT", "url": "https://github.com/nullflagblues/WHINT" }],
+  "source": [
+    "https://github.com/wspace/nullflagblues-whint",
+    "https://archive.softwareheritage.org/browse/origin/directory/?origin_url=https://github.com/nullflagblues/WHINT",
+    "https://nullflagblues.github.io/WHINT/"
+  ],
+  "submodules": [{ "path": "WHINT", "url": "https://github.com/wspace/nullflagblues-whint" }],
   "bounds": { "precision": "fixed" },
   "commands": [{ "type": "interpreter", "bin": "whint", "usage": "<file>" }]
 }

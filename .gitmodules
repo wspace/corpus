@@ -138,7 +138,7 @@
 	url = https://github.com/noia1/Whitespace-Interpreter
 [submodule "cpp/nullflagblues-whint/WHINT"]
 	path = cpp/nullflagblues-whint/WHINT
-	url = https://github.com/nullflagblues/WHINT
+	url = https://github.com/wspace/nullflagblues-whint
 [submodule "cpp/pavel987/wspace"]
 	path = cpp/pavel987/wspace
 	url = https://github.com/wspace/pavel987-cpp
