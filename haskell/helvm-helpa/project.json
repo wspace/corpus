@@ -123,7 +123,29 @@
     {
       "path": "examples/eas/writestr.eas",
       "desc": "A variadic function to print a NUL-terminated string."
-    }
+    },
+    { "path": "examples/hpl/programs/99bottles.hpl", "generated": "examples/hpl/programs/99bottles.ws" },
+    { "path": "examples/hpl/programs/brainfuck.hpl" },
+    { "path": "examples/hpl/programs/sudoku.hpl", "generated": "examples/hpl/programs/sudoku.ws" },
+    { "path": "examples/hpl/stdlib/base.hpl" },
+    { "path": "examples/hpl/stdlib/list.hpl" },
+    { "path": "examples/hpl/tutorial/alloc.hpl" },
+    { "path": "examples/hpl/tutorial/asmcall.hpl" },
+    { "path": "examples/hpl/tutorial/asmparams.hpl" },
+    { "path": "examples/hpl/tutorial/count.hpl" },
+    { "path": "examples/hpl/tutorial/do.hpl" },
+    { "path": "examples/hpl/tutorial/execute.hpl" },
+    { "path": "examples/hpl/tutorial/globals.hpl" },
+    { "path": "examples/hpl/tutorial/hello.hpl" },
+    { "path": "examples/hpl/tutorial/if.hpl" },
+    { "path": "examples/hpl/tutorial/inline.hpl" },
+    { "path": "examples/hpl/tutorial/inline_labels.hpl" },
+    { "path": "examples/hpl/tutorial/literal.hpl" },
+    { "path": "examples/hpl/tutorial/params.hpl" },
+    { "path": "examples/hpl/tutorial/pointers.hpl" },
+    { "path": "examples/hpl/tutorial/power1.hpl" },
+    { "path": "examples/hpl/tutorial/power2.hpl" },
+    { "path": "examples/hpl/tutorial/prompt.hpl" }
   ],
   "commands": [
     {
