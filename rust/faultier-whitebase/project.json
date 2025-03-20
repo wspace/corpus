@@ -1,14 +1,17 @@
 {
   "id": "rust/faultier-whitebase",
   "name": "Whitebase",
-  "authors": ["Taro Sako"],
+  "authors": ["Taro Sako (faultier)"],
   "license": "MIT",
   "languages": ["Rust"],
   "tags": ["interpreter", "assembler", "disassembler", "bytecode", "Brainfuck to Whitespace", "library"],
   "date": "2014-07-15 22:27:17 +0900",
   "spec_version": "0.3",
   "source": ["https://github.com/faultier/whitebase", "https://github.com/wspace/faultier-whitebase"],
-  "submodules": [{ "path": "whitebase", "url": "https://github.com/faultier/whitebase" }],
+  "submodules": [
+    { "path": "whitebase", "url": "https://github.com/faultier/whitebase" },
+    { "path": "fork", "url": "https://github.com/wspace/faultier-whitebase" }
+  ],
   "assembly": {
     "mnemonics": {
       "push": "PUSH",
@@ -36,7 +39,7 @@
       "readc": "GETC",
       "readi": "GETN"
     },
-    "usage": ["debug"]
+    "usage": ["assembler", "disassembler", "enum"]
   },
-  "build_errors": "Needs many changes for latest Rust"
+  "build_errors": "Cannot be built; it's a library"
 }

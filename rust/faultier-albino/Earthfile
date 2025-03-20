@@ -1,9 +1,9 @@
 VERSION 0.8
 
 build:
-    FROM rust:1.76
+    FROM rust:1.85
     WORKDIR /albino
-    COPY albino .
+    COPY fork .
     RUN RUSTFLAGS='-C target-feature=+crt-static' cargo build --release --target x86_64-unknown-linux-gnu
     SAVE ARTIFACT target/x86_64-unknown-linux-gnu/release/albino /bin/
     SAVE ARTIFACT target/x86_64-unknown-linux-gnu/release/albino-run /bin/

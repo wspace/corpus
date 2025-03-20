@@ -756,6 +756,12 @@
 [submodule "rust/faultier-albino/albino"]
 	path = rust/faultier-albino/albino
 	url = https://github.com/faultier/albino
+[submodule "rust/faultier-albino/fork"]
+	path = rust/faultier-albino/fork
+	url = https://github.com/wspace/faultier-albino
+[submodule "rust/faultier-whitebase/fork"]
+	path = rust/faultier-whitebase/fork
+	url = https://github.com/wspace/faultier-whitebase
 [submodule "rust/faultier-whitebase/whitebase"]
 	path = rust/faultier-whitebase/whitebase
 	url = https://github.com/faultier/whitebase

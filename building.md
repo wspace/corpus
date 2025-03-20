@@ -214,8 +214,8 @@ Projects that can be built with Docker:
 - rust/cedricschwyter-spacey
 - rust/censoredusername-whitespace-rs
 - rust/collidedscope-albus
-- rust/faultier-albino: Needs many changes for latest Rust
-- rust/faultier-whitebase: Needs many changes for latest Rust
+- rust/faultier-albino
+- rust/faultier-whitebase: Cannot be built; it's a library
 - rust/guricerin
 - rust/hamidrezakp
 - rust/jayshua

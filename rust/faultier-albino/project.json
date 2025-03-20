@@ -1,50 +1,26 @@
 {
   "id": "rust/faultier-albino",
   "name": "Albino",
-  "authors": ["Taro Sako"],
+  "authors": ["Taro Sako (faultier)"],
   "license": "MIT",
   "languages": ["Rust"],
   "tags": ["interpreter", "assembler", "disassembler", "bytecode", "Brainfuck to Whitespace", "programs"],
   "date": "2014-07-18 09:13:55 +0900",
   "spec_version": "0.3",
-  "source": ["https://github.com/faultier/albino"],
-  "submodules": [{ "path": "albino", "url": "https://github.com/faultier/albino" }],
-  "relations": [{ "id": "rust/faultier-whitebase", "type": "library" }],
+  "source": ["https://github.com/faultier/albino", "https://github.com/wspace/faultier-albino"],
+  "submodules": [
+    { "path": "albino", "url": "https://github.com/faultier/albino" },
+    { "path": "fork", "url": "https://github.com/wspace/faultier-albino" }
+  ],
+  "relations": [
+    { "id": "rust/faultier-whitebase", "type": "library" },
+    { "id": "rust/faultier-whitebase", "type": "assembly" }
+  ],
   "whitespace": { "extension": "ws" },
-  "assembly": {
-    "mnemonics": {
-      "push": "PUSH",
-      "dup": "DUP",
-      "copy": "COPY",
-      "swap": "SWAP",
-      "drop": "DISCARD",
-      "slide": "SLIDE",
-      "add": "ADD",
-      "sub": "SUB",
-      "mul": "MUL",
-      "div": "DIV",
-      "mod": "MOD",
-      "store": "STORE",
-      "retrieve": "RETRIEVE",
-      "label": "MARK",
-      "call": "CALL",
-      "jmp": "JUMP",
-      "jz": "JUMPZ",
-      "jn": "JUMPN",
-      "ret": "RETURN",
-      "end": "EXIT",
-      "printc": "PUTC",
-      "printi": "PUTN",
-      "readc": "GETC",
-      "readi": "GETN"
-    },
-    "usage": ["assembler", "disassembler"]
-  },
   "programs": [
     { "path": "examples/fib.ws", "spec_version": "0.2" },
     { "path": "examples/hello.ws", "equivalent": "hworld.ws", "spec_version": "0.2" }
   ],
-  "build_errors": "Needs many changes for latest Rust",
   "commands": [
     { "bin": "target/release/albino", "option_parse": "manual" },
     { "bin": "target/release/albino-run", "option_parse": "manual" },
